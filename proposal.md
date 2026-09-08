@@ -1,6 +1,6 @@
 # Measuring Lineup Synergy in the LPL
 
-**Group members:** Terasa Tu and Xuye Chen  
+**Group members:** Terasa Tu， Xuye Chen  
 **Course:** STATS 401 Final Visualization Project
 
 ## 1. Topic, Goals, and Questions
