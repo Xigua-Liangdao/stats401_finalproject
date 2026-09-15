@@ -6,7 +6,7 @@
 
 This demo follows the project from **player → pair → lineup**. The backend is implemented: real match data, a context-adjusted damage baseline, reusable analytical tables and **three working static visualizations**. Interaction designs below are planned; user evaluation has not yet been conducted.
 
-[Original proposal](proposal.md) · [Dataset and frontend contract](data/README.md) · [Model and validation](model/README.md) · [中文后端交接说明](model/HANDOFF_ZH.md)
+[Original proposal](proposal.md) · [Dataset and frontend contract](data/README.md) · [Model and validation](model/README.md)
 
 ## Dataset
 
