@@ -1,0 +1,84 @@
+"""Run offline from the committed raw snapshot: python model/run.py."""
+from __future__ import annotations
+
+import hashlib
+import json
+import platform
+from pathlib import Path
+
+import numpy as np
+import pandas as pd
+import sklearn
+
+from aggregate import aggregate, BOOTSTRAPS, MIN_DAYS, MIN_GAMES, SHRINKAGE_GAMES
+from baseline import evaluate
+from plots import make_figures
+from prepare import prepare, read_raw
+
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def write_json(path, value):
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(value, indent=2, ensure_ascii=False, allow_nan=False) + "\n", encoding="utf-8")
+
+
+def records(frame):
+    # pandas converts unavailable floats to JSON null, never JavaScript NaN.
+    return json.loads(frame.to_json(orient="records", double_precision=8))
+
+
+def main():
+    processed, reports = ROOT / "data/processed", ROOT / "model/reports"
+    processed.mkdir(parents=True, exist_ok=True)
+    reports.mkdir(parents=True, exist_ok=True)
+    raw_path = ROOT / "data/raw/lpl_2025.csv.gz"
+    source = json.loads(raw_path.with_name("source.json").read_text())
+    raw_hash = hashlib.sha256(raw_path.read_bytes()).hexdigest()
+    if raw_hash != source["raw_csv_gz_sha256"]:
+        raise ValueError("Raw snapshot checksum differs from data/raw/source.json.")
+    clean, quality, rejected = prepare(read_raw(raw_path))
+    print(f"Validated {len(clean):,} player rows / {clean.game_id.nunique():,} games.", flush=True)
+    scored, evaluation, artifact = evaluate(clean)
+    tables = aggregate(scored)
+    tables = {"player_games": scored, **tables}
+    schema = {"schema_version": "1.0.0", "tables": {}}
+    for name, table in tables.items():
+        table.to_csv(processed / f"{name}.csv", index=False, float_format="%.8f", lineterminator="\n")
+        schema["tables"][name] = {"file": f"{name}.csv", "rows": len(table), "fields": {
+            column: {"dtype": str(table[column].dtype), "nullable": bool(table[column].isna().any())} for column in table}}
+    rejected.to_csv(reports / "rejected_games.csv", index=False)
+    quality["processed_missing_values"] = {c: int(scored[c].isna().sum()) for c in scored}
+    quality["raw_csv_gz_sha256"] = raw_hash
+    write_json(reports / "data_quality.json", quality)
+    write_json(reports / "evaluation.json", evaluation)
+    write_json(reports / "fitted_model.json", artifact)
+    write_json(reports / "environment.json", {"python": platform.python_version(), "pandas": pd.__version__, "numpy": np.__version__, "scikit_learn": sklearn.__version__})
+    fixture = scored[scored.game_id.isin(scored.game_id.drop_duplicates().head(3))]
+    (ROOT / "data/test").mkdir(parents=True, exist_ok=True)
+    fixture.to_csv(ROOT / "data/test/sample_player_games.csv", index=False, float_format="%.8f")
+    examples = make_figures(tables, ROOT / "model/figures")
+    metadata = {"schema_version": "1.0.0", "season": 2025, "source": source,
+                "coverage": quality, "evaluation": evaluation, "examples": examples,
+                "score_definition": "(actual DPM - expected DPM) / training-role DPM SD",
+                "pair_definition": "mean of both players' adjusted damage per shared game; descriptive association",
+                "shrinkage_games": SHRINKAGE_GAMES, "minimum_games": MIN_GAMES, "minimum_days": MIN_DAYS,
+                "bootstrap_replicates": BOOTSTRAPS,
+                "scope": "Aggregates use out-of-time games only. n_games_total also includes warmup.",
+                "limitations": ["DPM measures damage output, not overall player value.",
+                                "Pair scores do not identify causal synergy or support roster-swap predictions.",
+                                "15-minute differences and objective fields are unavailable in this snapshot.",
+                                "Intervals resample match days with fixed fitted predictions; model uncertainty is omitted."]}
+    dashboard = {"metadata": metadata, **{name: records(tables[name]) for name in ["players", "pairs", "lineups", "teams", "timeline"]}}
+    write_json(processed / "dashboard.json", dashboard)
+    write_json(processed / "schema.json", schema)
+    write_json(reports / "figure_selection.json", examples)
+    manifest = {str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
+                for directory in [processed, ROOT / "model/figures"] for path in sorted(directory.iterdir()) if path.is_file() and path.name != ".gitkeep"}
+    write_json(reports / "manifest.json", manifest)
+    print(json.dumps({"tables": {name: len(table) for name, table in tables.items()},
+                      "context_ridge": evaluation["context_ridge"], "role_mean": evaluation["role_mean"]}, indent=2))
+
+
+if __name__ == "__main__":
+    main()

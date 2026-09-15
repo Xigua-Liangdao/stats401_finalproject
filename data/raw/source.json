@@ -1,0 +1,13 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://raw.githubusercontent.com/cbplexiglass/LoL-Esports-Regional-Analyses/ff34a9f935070b7a9c9610cff423eac1fd6deddc/2025_LoL_esports_match_data_from_OraclesElixir.csv",
+  "mirror_commit": "ff34a9f935070b7a9c9610cff423eac1fd6deddc",
+  "retrieved_at_utc": "2026-09-15T04:45:22.167470+00:00",
+  "annual_csv_sha256": "1adfa81d8ea54cd62b332d18f8a4089cb64331da448b11f0ff7084fac55ed406",
+  "annual_rows": 120636,
+  "filter": "league == 'LPL' and year == '2025'; all positions and all original columns preserved",
+  "raw_rows": 9660,
+  "raw_columns": 165,
+  "raw_csv_gz_sha256": "42fcad51eda89ffb7a8eaee63797dbde0aed2c9d02b6ca0fec2d9b4e2be94d16"
+}
