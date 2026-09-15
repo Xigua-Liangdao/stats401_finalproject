@@ -12,20 +12,12 @@ import sklearn
 
 from aggregate import aggregate, BOOTSTRAPS, MIN_DAYS, MIN_GAMES, SHRINKAGE_GAMES
 from baseline import evaluate
+from build_test_data import build_test_data, read_tables
+from export_data import dataset_info, export_dataset, write_json
 from plots import make_figures
 from prepare import prepare, read_raw
 
 ROOT = Path(__file__).resolve().parents[1]
-
-
-def write_json(path, value):
-    path.parent.mkdir(parents=True, exist_ok=True)
-    path.write_text(json.dumps(value, indent=2, ensure_ascii=False, allow_nan=False) + "\n", encoding="utf-8")
-
-
-def records(frame):
-    # pandas converts unavailable floats to JSON null, never JavaScript NaN.
-    return json.loads(frame.to_json(orient="records", double_precision=8))
 
 
 def main():
@@ -42,11 +34,6 @@ def main():
     scored, evaluation, artifact = evaluate(clean)
     tables = aggregate(scored)
     tables = {"player_games": scored, **tables}
-    schema = {"schema_version": "1.0.0", "tables": {}}
-    for name, table in tables.items():
-        table.to_csv(processed / f"{name}.csv", index=False, float_format="%.8f", lineterminator="\n")
-        schema["tables"][name] = {"file": f"{name}.csv", "rows": len(table), "fields": {
-            column: {"dtype": str(table[column].dtype), "nullable": bool(table[column].isna().any())} for column in table}}
     rejected.to_csv(reports / "rejected_games.csv", index=False)
     quality["processed_missing_values"] = {c: int(scored[c].isna().sum()) for c in scored}
     quality["raw_csv_gz_sha256"] = raw_hash
@@ -54,11 +41,9 @@ def main():
     write_json(reports / "evaluation.json", evaluation)
     write_json(reports / "fitted_model.json", artifact)
     write_json(reports / "environment.json", {"python": platform.python_version(), "pandas": pd.__version__, "numpy": np.__version__, "scikit_learn": sklearn.__version__})
-    fixture = scored[scored.game_id.isin(scored.game_id.drop_duplicates().head(3))]
-    (ROOT / "data/test").mkdir(parents=True, exist_ok=True)
-    fixture.to_csv(ROOT / "data/test/sample_player_games.csv", index=False, float_format="%.8f")
     examples = make_figures(tables, ROOT / "model/figures")
     metadata = {"schema_version": "1.0.0", "season": 2025, "source": source,
+                "dataset": dataset_info(tables, "processed"),
                 "coverage": quality, "evaluation": evaluation, "examples": examples,
                 "score_definition": "(actual DPM - expected DPM) / training-role DPM SD",
                 "pair_definition": "mean of both players' adjusted damage per shared game; descriptive association",
@@ -69,12 +54,11 @@ def main():
                                 "Pair scores do not identify causal synergy or support roster-swap predictions.",
                                 "15-minute differences and objective fields are unavailable in this snapshot.",
                                 "Intervals resample match days with fixed fitted predictions; model uncertainty is omitted."]}
-    dashboard = {"metadata": metadata, **{name: records(tables[name]) for name in ["players", "pairs", "lineups", "teams", "timeline"]}}
-    write_json(processed / "dashboard.json", dashboard)
-    write_json(processed / "schema.json", schema)
+    schema = export_dataset(processed, tables, metadata)
+    build_test_data(read_tables(processed, schema), metadata, schema=schema)
     write_json(reports / "figure_selection.json", examples)
     manifest = {str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
-                for directory in [processed, ROOT / "model/figures"] for path in sorted(directory.iterdir()) if path.is_file() and path.name != ".gitkeep"}
+                for directory in [processed, ROOT / "data/test", ROOT / "model/figures"] for path in sorted(directory.iterdir()) if path.is_file() and path.name != ".gitkeep"}
     write_json(reports / "manifest.json", manifest)
     print(json.dumps({"tables": {name: len(table) for name, table in tables.items()},
                       "context_ridge": evaluation["context_ridge"], "role_mean": evaluation["role_mean"]}, indent=2))

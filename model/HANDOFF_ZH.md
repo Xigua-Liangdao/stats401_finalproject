@@ -1,5 +1,27 @@
 # Demo 后端交接说明
 
+## 给前端朋友：先用 `data/test/`
+
+当前清洗和指标定义仍可以调整。先用 **`data/test/`** 接前端，确认后把路径换成 **`data/processed/`**。
+
+两边均提供 8 个同名 CSV + `dashboard.json` + `schema.json`。CSV 字段及顺序、声明的数据类型和空值规则一致；JSON 的键和数据类型一致。数据内容与行数不同，不需要为 test 单独写另一套加载逻辑。
+
+```js
+const dataset = 'test'; // 确认后改为 'processed'
+const root = `../data/${dataset}`; // 从 view/index.html 出发
+const response = await fetch(`${root}/dashboard.json`);
+if (!response.ok) throw new Error(`Data load failed: ${response.status}`);
+const data = await response.json();
+```
+
+测试集是保留双方完整阵容的真实比赛子集，包含有模型预测的记录，也包含 warmup 的空预测值。所有汇总只使用该子集中的记录重新计算；没有伪造指标，也没有在小样本上重新训练模型。`metadata.dataset` 是当前加载数据的计数，`metadata.coverage`、`metadata.source` 和 `metadata.evaluation` 是完整后端数据的审计与模型说明。
+
+运行 `python model/run.py` 会同步生成两边；只重建 test 用 `python model/build_test_data.py`。格式检查命令：
+
+```bash
+python -m unittest discover -s model/tests -p 'test_data_contract.py' -v
+```
+
 ## 现在完成了什么
 
 - **真实数据**：2025 LPL，805 场比赛、8,050 条选手记录、99 位选手、16 支队伍、46 套阵容。原始文件还保留 1,610 条队伍记录，共 165 个源字段。
@@ -11,7 +33,7 @@
 
 ## 发给前端同学的入口
 
-1. [`../data/processed/dashboard.json`](../data/processed/dashboard.json)：直接 `fetch`，包含 `players`、`pairs`、`lineups`、`teams`、`timeline` 和元数据。
+1. 先用 [`../data/test/dashboard.json`](../data/test/dashboard.json)，再切到 [`../data/processed/dashboard.json`](../data/processed/dashboard.json)：直接 `fetch`，包含 `players`、`pairs`、`lineups`、`teams`、`timeline` 和元数据。
 2. [`../data/README.md`](../data/README.md)：字段含义、路径、单位、null、筛选及聚合注意事项。
 3. [`figures/`](figures/)：3 张 PNG + 3 张 SVG，可以直接嵌入网页。
 4. [`../README.md`](../README.md)：英文 demo 内容，已包括 dataset、静态图、每张图的交互计划、evaluation plan。

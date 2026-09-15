@@ -92,6 +92,6 @@ python model/run.py
 python -m unittest discover -s model/tests -v
 ```
 
-Frontend integration starts with [`data/processed/dashboard.json`](data/processed/dashboard.json). From `view/index.html`, use `../data/processed/dashboard.json`. The existing `view/` remains the location for the group's D3 interface. Network and parallel-coordinates views are planned; their pair and lineup data are already exported.
+Frontend development can start with [`data/test/dashboard.json`](data/test/dashboard.json). It has the same format as [`data/processed/dashboard.json`](data/processed/dashboard.json), and both directories contain the same CSV filenames and field contract. From `view/index.html`, switch `../data/test/` to `../data/processed/` when ready. Cleaning decisions remain provisional; both exports are regenerated together. The existing `view/` remains the location for the group's D3 interface. Network and parallel-coordinates views are planned; their pair and lineup data are already exported.
 
 The repository README contains the demo progress material. A deployed **GitHub Pages website** is a separate deliverable: the frontend must embed the figures/data and publish a working page before that website URL is submitted if the course requires a `github.io` page.

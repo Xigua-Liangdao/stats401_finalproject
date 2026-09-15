@@ -3,7 +3,7 @@
   "tables": {
     "player_games": {
       "file": "player_games.csv",
-      "rows": 8050,
+      "rows": 160,
       "fields": {
         "record_id": {
           "dtype": "object",
@@ -197,7 +197,7 @@
     },
     "players": {
       "file": "players.csv",
-      "rows": 114,
+      "rows": 50,
       "fields": {
         "player_id": {
           "dtype": "object",
@@ -283,7 +283,7 @@
     },
     "pairs": {
       "file": "pairs.csv",
-      "rows": 292,
+      "rows": 100,
       "fields": {
         "pair_id": {
           "dtype": "object",
@@ -357,7 +357,7 @@
     },
     "lineups": {
       "file": "lineups.csv",
-      "rows": 46,
+      "rows": 10,
       "fields": {
         "lineup_id": {
           "dtype": "object",
@@ -511,7 +511,7 @@
     },
     "teams": {
       "file": "teams.csv",
-      "rows": 16,
+      "rows": 10,
       "fields": {
         "team_id": {
           "dtype": "object",
@@ -565,7 +565,7 @@
     },
     "timeline": {
       "file": "timeline.csv",
-      "rows": 2410,
+      "rows": 60,
       "fields": {
         "player_id": {
           "dtype": "string",
@@ -611,7 +611,7 @@
     },
     "pair_games": {
       "file": "pair_games.csv",
-      "rows": 16100,
+      "rows": 320,
       "fields": {
         "game_id": {
           "dtype": "object",
@@ -677,7 +677,7 @@
     },
     "lineup_games": {
       "file": "lineup_games.csv",
-      "rows": 1610,
+      "rows": 32,
       "fields": {
         "game_id": {
           "dtype": "object",

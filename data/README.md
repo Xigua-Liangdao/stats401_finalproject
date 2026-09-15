@@ -1,5 +1,29 @@
 # Dataset and frontend contract
 
+## Start with `test/`, switch to `processed/` later
+
+The cleaning rules and model definitions are a **provisional demo baseline**. The frontend can be developed against `data/test/` while those decisions are refined.
+
+Both directories expose the **same 10 filenames**, CSV column order, declared dtypes/nullability, JSON keys and primitive types. Only dataset values, counts and scope differ. `test/` is a small subset of **real, complete games**, including both valid out-of-time predictions and warmup/null cases. Its player/pair/lineup summaries are recomputed for the subset. It is a frontend fixture, not an independent statistical model test set.
+
+From `view/index.html`, change only the directory:
+
+```js
+const dataset = 'test'; // Change to 'processed' when integrating the full data.
+const dataRoot = `../data/${dataset}`;
+const response = await fetch(`${dataRoot}/dashboard.json`);
+if (!response.ok) throw new Error(`Data load failed: ${response.status}`);
+const data = await response.json();
+// The same rendering code handles both directories.
+// CSV paths also match: `${dataRoot}/player_games.csv`, `${dataRoot}/pairs.csv`, etc.
+```
+
+`metadata.dataset` reports the loaded directory's row/game counts. `metadata.source`, `metadata.coverage` and `metadata.evaluation` retain the parent pipeline's provenance, cleaning audit and model evaluation in both files. Test-specific summaries and example IDs describe only the fixture; do not label them as whole-season results.
+
+`model/run.py` generates both directories with the same serializer. To rebuild only the test fixture from existing exports: `python model/build_test_data.py`. Verify compatibility with `python -m unittest discover -s model/tests -p 'test_data_contract.py' -v`.
+
+When cleaning changes, regenerate both directories together. Preserve the public field contract or update its version and notify the frontend developer if a breaking change is necessary. `schema.json` records **permitted** nulls, even if a particular dataset has no null in that field. Its `rows` counts intentionally differ between directories.
+
 ## Raw snapshot
 
 `raw/lpl_2025.csv.gz` contains **9,660 rows and all 165 source columns** from Oracle's Elixir: 8,050 player-game rows and 1,610 team-game rows. It covers **805 LPL games, 99 players and 16 teams, from January 12 to September 21, 2025**, in the downloaded snapshot. This is the snapshot's observed coverage, not an independently verified complete season inventory.
@@ -35,7 +59,7 @@ Audited counts and missing values: [`model/reports/data_quality.json`](../model/
 | `lineups.csv` | Team + role-ordered five-player roster, `lineup_id` | Lineup comparison / parallel coordinates |
 | `lineup_games.csv` | Lineup × game | Filterable lineup profiles; 1,610 rows |
 | `teams.csv` | Team, `team_id` | Team selector and sample sizes |
-| `schema.json` | Actual fields, dtypes, nullability and row counts | Machine-readable export schema |
+| `schema.json` | Fields, declared dtypes, permitted nulls and row counts | Shared machine-readable export contract |
 
 ## Field definitions
 
@@ -109,6 +133,6 @@ For a page at repository root use `data/processed/...` instead. Serve through HT
 - A pair appears once; mirror it in the heatmap, keep a single edge in a network. The network remains a **planned** view.
 - Team/role/minimum-game filters can select summary rows directly. **Split, patch and date filters require filtering game-level rows first and recomputing statistics.** Do not average precomputed averages or reuse whole-snapshot intervals after filtering. `model/aggregate.py:score_summary` is the reference for recomputation.
 - For CSV use explicit numeric conversion and map empty numeric cells to `null`. Avoid indiscriminate `d3.autoType`, which changes patch strings.
-- The 30 real rows in `data/test/sample_player_games.csv` are a deterministic integration fixture containing the first three games. They are **not** the statistical evaluation set and naturally contain warmup null predictions.
+- `data/test/` mirrors every filename in `data/processed/`. Use its `player_games.csv` and `dashboard.json` for frontend development, then change only the directory. The older `sample_player_games.csv` filename has been replaced.
 
 All three generated figures are under [`model/figures/`](../model/figures/) and can be embedded with ordinary `<img>` tags.

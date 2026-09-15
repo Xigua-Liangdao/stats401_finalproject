@@ -15,6 +15,25 @@
       "raw_columns": 165,
       "raw_csv_gz_sha256": "42fcad51eda89ffb7a8eaee63797dbde0aed2c9d02b6ca0fec2d9b4e2be94d16"
     },
+    "dataset": {
+      "kind": "processed",
+      "player_rows": 8050,
+      "games": 805,
+      "evaluated_player_rows": 6570,
+      "warmup_player_rows": 1480,
+      "date_start": "2025-01-12",
+      "date_end": "2025-09-21",
+      "table_rows": {
+        "player_games": 8050,
+        "players": 114,
+        "pairs": 292,
+        "lineups": 46,
+        "teams": 16,
+        "timeline": 2410,
+        "pair_games": 16100,
+        "lineup_games": 1610
+      }
+    },
     "coverage": {
       "raw_rows": 9660,
       "raw_columns": 165,

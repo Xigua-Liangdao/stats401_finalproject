@@ -18,6 +18,8 @@ The committed raw snapshot makes the normal run **offline**. To fetch the same p
 
 The pipeline checks the raw checksum, validates complete games, estimates out-of-time predictions, exports CSV/JSON, creates three PNG/SVG figures, and writes reports. It does not need an API server: GitHub Pages can serve its static outputs. `reports/manifest.json` records output hashes.
 
+Cleaning remains provisional. Both `data/test/` and `data/processed/` are exported through `export_data.py` with the same filenames and field contract. The test fixture preserves complete real games and reuses existing predictions, then recomputes its summaries. The frontend can switch directories without changing its loader. Run `python model/build_test_data.py` to regenerate the fixture from the existing processed exports.
+
 ## What the model predicts
 
 Target: `damage to champions / game duration in minutes`.
@@ -92,6 +94,9 @@ Each also has an SVG version. Examples are selected by sample coverage, with sta
 | `aggregate.py` | Player/pair/lineup/team tables, bootstrap intervals and daily series |
 | `plots.py` | Three actual-data static PNG/SVG figures |
 | `run.py` | Offline end-to-end pipeline, CSV/JSON export, schema and manifest |
+| `export_data.py` | Shared typed CSV/JSON serialization and null contract for both directories |
+| `build_test_data.py` | Complete-game test sampling and consistent subset summaries |
 | `tests/test_pipeline.py` | Roster integrity, missingness, time leakage, exported model and frontend data checks |
+| `tests/test_data_contract.py` | Matching test/processed filenames, columns, types, JSON structure and sample links |
 
 For frontend paths, field units and filtering rules see [`data/README.md`](../data/README.md).
