@@ -3,7 +3,7 @@
 }
 
 .home {
-  width: min(1280px, 100%);
+  width: min(var(--page-max), 100%);
   margin: 0 auto;
   padding: 1.6rem var(--page-pad) 3.2rem;
 }
@@ -17,7 +17,7 @@
 
 .home-title {
   margin: 0.4rem 0 0.8rem;
-  font-size: clamp(4.2rem, 11vw, 9.2rem);
+  font-size: clamp(3.4rem, 8vw, 6.4rem);
 }
 
 .home-sub {
@@ -96,7 +96,7 @@
 .choice-card h2 {
   margin: 1.4rem 0 0.3rem;
   font-family: var(--font-display);
-  font-size: clamp(2.6rem, 6vw, 4.2rem);
+  font-size: var(--title-size);
   letter-spacing: 0.06em;
 }
 

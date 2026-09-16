@@ -17,8 +17,11 @@
   --loss: var(--ember);
   --side-blue: #4d8dff;
   --side-red: #e24b4b;
-  --header-h: 58px;
-  --page-pad: clamp(1.1rem, 3vw, 2.4rem);
+  --header-h: 68px;
+  --page-max: 1440px;
+  --page-pad: clamp(1.2rem, 3.2vw, 2.8rem);
+  --title-size: clamp(2.15rem, 4.2vw, 3.25rem);
+  --display-leading: 1.08;
   --radius: 2px;
   --font-display: "Big Shoulders Display", "Arial Narrow", sans-serif;
   --font-ui: "IBM Plex Sans", "Helvetica Neue", sans-serif;
@@ -43,7 +46,7 @@ body {
   font-family: "IBM Plex Sans", "Helvetica Neue", sans-serif;
   font-family: var(--font-ui);
   font-size: 15px;
-  line-height: 1.45;
+  line-height: 1.55;
   overflow-x: hidden;
 }
 
@@ -118,7 +121,7 @@ img {
 }
 
 .page {
-  width: min(1240px, 100%);
+  width: min(var(--page-max), 100%);
   margin: 0 auto;
   padding: 1.4rem var(--page-pad) 3.5rem;
 }
@@ -154,7 +157,7 @@ img {
   font-family: var(--font-display);
   font-weight: 700;
   letter-spacing: 0.02em;
-  line-height: 0.88;
+  line-height: var(--display-leading);
   text-transform: uppercase;
 }
 
