@@ -51,7 +51,7 @@ export async function renderPlayerPage(target, id) {
           }),
         ],
       }),
-      renderPlayerStats(player),
+      renderPlayerStats(player, games),
       renderPlayerGamesCatalogue(games),
     ]),
   );

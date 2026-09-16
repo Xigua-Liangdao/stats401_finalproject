@@ -10,14 +10,28 @@ export function formatResult(result) {
   return PLACEHOLDER;
 }
 
-export function formatDate(iso) {
-  if (!iso) return PLACEHOLDER;
+export function parseGameDate(iso) {
+  if (!iso) return null;
   const date = String(iso).includes('T') ? new Date(iso) : new Date(`${iso}T00:00:00`);
-  if (Number.isNaN(date.getTime())) return iso;
+  return Number.isNaN(date.getTime()) ? null : date;
+}
+
+export function formatDate(iso) {
+  const date = parseGameDate(iso);
+  if (!date) return iso || PLACEHOLDER;
   return new Intl.DateTimeFormat('en-GB', {
     day: '2-digit',
     month: 'short',
     year: 'numeric',
+  }).format(date);
+}
+
+export function formatCompactDate(iso) {
+  const date = parseGameDate(iso);
+  if (!date) return PLACEHOLDER;
+  return new Intl.DateTimeFormat('en-GB', {
+    day: '2-digit',
+    month: 'short',
   }).format(date);
 }
 
