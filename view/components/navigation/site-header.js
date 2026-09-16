@@ -30,7 +30,6 @@ export function renderSiteHeader(target, routeName) {
       ),
     ),
     h('div', { class: 'site-header__status' }, [
-      createStatusChip({ label: 'Live data', live: true, variant: 'live' }),
       createStatusChip({ label: DATASET_MODE, variant: 'mock' }),
     ]),
   );

@@ -12,7 +12,7 @@ export function renderPlayerStats(player) {
     createSectionBlock({
       index: '02 / Metrics',
       title: 'Player statistics',
-      meta: isEligible(stats) ? 'data/test · players.csv' : 'Ineligible',
+      meta: isEligible(stats) ? null : 'Ineligible',
       children: h('div', {}, [
         createEligibilityNotice(isEligible(stats), 'player'),
         createStatGrid(fillStatCards(PLAYER_STAT_CARDS, stats)),

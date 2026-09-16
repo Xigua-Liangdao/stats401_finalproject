@@ -7,7 +7,7 @@ export function renderPlayerGamesCatalogue(games) {
   return createSectionBlock({
     index: '04 / Related games',
     title: 'Player game catalogue',
-    meta: 'Source: player_games',
+    meta: `${games.length} games`,
     children: games.length
       ? h(
           'div',
@@ -22,6 +22,6 @@ export function renderPlayerGamesCatalogue(games) {
             }),
           ),
         )
-      : h('div', { class: 'empty-state' }, ['No player-games in data/test/player_games.csv for this player.']),
+      : h('div', { class: 'empty-state' }, ['No recorded games for this player.']),
   });
 }

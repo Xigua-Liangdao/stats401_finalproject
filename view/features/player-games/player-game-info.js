@@ -10,7 +10,7 @@ export function openPlayerGameInfo(game) {
     title: `${game.player?.name ?? 'Player'} · ${formatResult(game.result)}`,
     body: h('div', {}, [
       h('p', { class: 'notice' }, [
-        'Player-game detail. Separate CSV from lineup-games. Values are placeholders.',
+        'Player-game detail. Values shown here are placeholders.',
       ]),
       createDrawerSection({
         title: 'Game metadata',

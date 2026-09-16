@@ -16,7 +16,7 @@ export function renderTeamStats({ team, playerCount, lineupCount }) {
   return createSectionBlock({
     index: '02 / Metrics',
     title: 'Team statistics',
-    meta: isEligible(stats) ? 'data/test · teams.csv' : 'Ineligible',
+    meta: isEligible(stats) ? null : 'Ineligible',
     children: h('div', {}, [
       createEligibilityNotice(isEligible(stats), 'team'),
       createStatGrid(fillStatCards(TEAM_STAT_CARDS, stats)),

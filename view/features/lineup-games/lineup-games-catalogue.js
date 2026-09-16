@@ -7,7 +7,7 @@ export function renderLineupGamesCatalogue(games) {
   return createSectionBlock({
     index: '04 / Related games',
     title: 'Lineup game catalogue',
-    meta: 'Source: lineup_games',
+    meta: `${games.length} games`,
     children: games.length
       ? h(
           'div',
@@ -22,6 +22,6 @@ export function renderLineupGamesCatalogue(games) {
             }),
           ),
         )
-      : h('div', { class: 'empty-state' }, ['No lineup-games in data/test/lineup_games.csv for this lineup.']),
+      : h('div', { class: 'empty-state' }, ['No recorded games for this lineup.']),
   });
 }

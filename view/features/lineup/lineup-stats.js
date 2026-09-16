@@ -12,7 +12,7 @@ export function renderLineupStats(lineup) {
     createSectionBlock({
       index: '02 / Metrics',
       title: 'Lineup statistics',
-      meta: isEligible(stats) ? 'data/test · lineups.csv' : 'Ineligible',
+      meta: isEligible(stats) ? null : 'Ineligible',
       children: h('div', {}, [
         createEligibilityNotice(isEligible(stats), 'lineup'),
         createStatGrid(fillStatCards(LINEUP_STAT_CARDS, stats)),

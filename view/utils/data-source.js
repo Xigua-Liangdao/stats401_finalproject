@@ -171,11 +171,14 @@ function datasetUrl(filename) {
 }
 
 async function fetchCsv(filename) {
-  const response = await fetch(datasetUrl(filename));
+  const url = datasetUrl(filename);
+  const response = await fetch(url);
   if (!response.ok) {
     throw new Error(`Failed to load ${filename} (${response.status})`);
   }
-  return parseCsv(await response.text());
+  const rows = parseCsv(await response.text());
+  console.info('[data]', filename, { dataset: DATASET, url: url.href, rows: rows.length });
+  return rows;
 }
 
 let catalogPromise;
@@ -313,9 +316,13 @@ export const dataSource = {
 
   async loadPlayerGames(playerId) {
     const [catalog, rows] = await Promise.all([loadCatalogRecord(), loadPlayerGameRows()]);
-    return rows
+    const games = rows
       .filter((row) => row.player_id === playerId)
       .map((row) => enrichGame(mapPlayerGame(row), catalog));
+    if (!games.length) {
+      console.info('[data] no player games', { playerId, file: 'player_games.csv' });
+    }
+    return games;
   },
 
   async loadLineupGames(lineupId) {
@@ -326,12 +333,16 @@ export const dataSource = {
       if (list) list.push(row);
       else byGame.set(row.game_id, [row]);
     }
-    return rows
+    const games = rows
       .filter((row) => row.lineup_id === lineupId)
       .map((row) => {
         const other = (byGame.get(row.game_id) ?? []).find((item) => item.team_id !== row.team_id);
         return enrichGame(mapLineupGame(row, other?.team_id ?? null), catalog);
       });
+    if (!games.length) {
+      console.info('[data] no lineup games', { lineupId, file: 'lineup_games.csv' });
+    }
+    return games;
   },
 };
 

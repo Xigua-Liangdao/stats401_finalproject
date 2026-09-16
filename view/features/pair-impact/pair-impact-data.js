@@ -14,11 +14,18 @@ export async function loadPairImpactContext(origin) {
       ? await dataSource.listPairsForPlayers(ids, origin.teamId)
       : await dataSource.listPairsForPlayer(ids[0], origin.teamId);
 
-  return {
+  const context = {
     origin,
     selectedPlayers: ids,
     pairs,
     focus: pairs[0] ?? null,
-    note: 'Pair scores stay in data/test/pairs.csv. This drawer is a visualization stage; pair rows are not listed here.',
   };
+  console.info('[data] pair impact', {
+    source: origin.source,
+    teamId: origin.teamId,
+    selected: ids.length,
+    pairs: pairs.length,
+    file: 'pairs.csv',
+  });
+  return context;
 }

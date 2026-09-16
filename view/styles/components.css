@@ -87,16 +87,6 @@
   color: var(--muted);
 }
 
-.status-chip--live {
-  color: var(--accent);
-  border-color: rgba(214, 255, 60, 0.28);
-}
-
-.status-chip--live .status-chip__dot {
-  background: var(--accent);
-  box-shadow: 0 0 8px var(--accent-glow);
-}
-
 .status-chip--mock {
   color: var(--ember);
   border-color: rgba(255, 106, 69, 0.3);
@@ -106,16 +96,6 @@
   width: 6px;
   height: 6px;
   background: var(--dim);
-}
-
-.status-chip--live .status-chip__dot {
-  animation: pulse 1.8s ease-in-out infinite;
-}
-
-@keyframes pulse {
-  0%,
-  100% { opacity: 1; }
-  50% { opacity: 0.35; }
 }
 
 .site-footer {

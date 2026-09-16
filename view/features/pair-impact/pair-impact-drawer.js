@@ -5,17 +5,17 @@ import { h } from '../../utils/dom.js';
 import { loadPairImpactContext } from './pair-impact-data.js';
 
 export async function openPairImpactDrawer(origin) {
-  const context = await loadPairImpactContext(origin);
+  await loadPairImpactContext(origin);
   const selected =
     origin.selectedNames?.length
       ? origin.selectedNames.join(' · ')
       : origin.selectedPlayerIds?.join(' · ') || 'Awaiting selection';
 
+  // Visualization stage only: pair rows are loaded but not listed here.
   openDrawer({
     kicker: 'Shared feature',
     title: 'Pair impact',
     body: h('div', {}, [
-      h('p', { class: 'notice' }, [context.note]),
       createDrawerSection({
         title: 'Selected players',
         children: createMetaGrid([

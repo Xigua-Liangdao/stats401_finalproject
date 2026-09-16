@@ -3,7 +3,6 @@ import { createBreadcrumbs } from '../../components/layout/page-shell.js';
 import { loadTeam, loadTeamLineups, loadTeamPlayers } from '../../features/team/team-data.js';
 import { renderTeamLineups, renderTeamPlayers } from '../../features/team/team-rosters.js';
 import { renderTeamStages, renderTeamStats } from '../../features/team/team-stats.js';
-import { TEST_ROSTER_NOTICE } from '../../utils/constants.js';
 import { h } from '../../utils/dom.js';
 import { href } from '../../utils/navigation.js';
 import { renderNotFound } from '../not-found.js';
@@ -27,7 +26,6 @@ export async function renderTeamPage(target, id) {
         { label: 'Team' },
         { label: team.name },
       ]),
-      h('p', { class: 'notice' }, [TEST_ROSTER_NOTICE]),
       createIdentityHeader({
         kicker: 'Organization',
         title: team.name,

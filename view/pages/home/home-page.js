@@ -13,7 +13,7 @@ export async function renderHomePage(target) {
           h('div', { class: 'kicker' }, [`${APP_KICKER} · Scouting terminal`]),
           h('h1', { class: 'home-title display' }, ['Lineup', h('br'), 'Synergy']),
           h('p', { class: 'home-sub' }, [
-            'An LPL analytics terminal for context-adjusted player performance, five-man compositions, and pair impact. Organizations are not lineups.',
+            'Lineup synergy in the League of Legends Pro League (LPL)',
           ]),
         ]),
         h('aside', { class: 'home-status panel' }, [
@@ -30,7 +30,7 @@ export async function renderHomePage(target) {
           h('div', { class: 'choice-card__index' }, ['01 / Entity']),
           h('div', {}, [
             h('h2', { class: 'display' }, ['Player']),
-            h('p', {}, ['Browse rosters grouped by organization, then open a player file.']),
+            //h('p', {}, ['Browse rosters grouped by organization, then open a player file.']),
           ]),
           h('div', { class: 'choice-card__go' }, ['Enter catalogue →']),
         ]),
@@ -38,7 +38,7 @@ export async function renderHomePage(target) {
           h('div', { class: 'choice-card__index' }, ['02 / Composition']),
           h('div', {}, [
             h('h2', { class: 'display' }, ['Lineup']),
-            h('p', {}, ['Inspect five-player compositions belonging to each team.']),
+            //h('p', {}, ['Inspect five-player compositions belonging to each team.']),
           ]),
           h('div', { class: 'choice-card__go' }, ['Enter catalogue →']),
         ]),
