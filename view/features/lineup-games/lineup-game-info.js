@@ -22,6 +22,7 @@ export function openLineupGameInfo(game) {
           { label: 'Opponent', value: game.opponent?.name ?? placeholderValue() },
           { label: 'Split', value: game.split },
           { label: 'Patch', value: game.patch },
+          { label: 'Side', value: game.side ?? placeholderValue() },
           { label: 'Result', value: formatResult(game.result) },
           { label: 'Lineup', value: game.lineup?.name ?? placeholderValue() },
         ]),

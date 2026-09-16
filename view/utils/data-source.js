@@ -228,7 +228,7 @@ function mapPlayerGame(row) {
   };
 }
 
-function mapLineupGame(row, opponentTeamId) {
+function mapLineupGame(row, opponentTeamId, side) {
   return {
     id: `${row.game_id}|${row.team_id}`,
     source: 'lineup_games',
@@ -238,7 +238,18 @@ function mapLineupGame(row, opponentTeamId) {
     result: asNumber(row.result),
     split: row.split,
     patch: row.patch,
+    side,
   };
+}
+
+function sideByLineupGame(playerRows) {
+  const sides = new Map();
+  for (const row of playerRows) {
+    if (!row.game_id || !row.lineup_id || !row.side) continue;
+    const key = `${row.game_id}|${row.lineup_id}`;
+    if (!sides.has(key)) sides.set(key, row.side);
+  }
+  return sides;
 }
 
 function pairsForPlayer(catalog, playerId, teamId) {
@@ -326,18 +337,24 @@ export const dataSource = {
   },
 
   async loadLineupGames(lineupId) {
-    const [catalog, rows] = await Promise.all([loadCatalogRecord(), loadLineupGameRows()]);
+    const [catalog, rows, playerRows] = await Promise.all([
+      loadCatalogRecord(),
+      loadLineupGameRows(),
+      loadPlayerGameRows(),
+    ]);
     const byGame = new Map();
     for (const row of rows) {
       const list = byGame.get(row.game_id);
       if (list) list.push(row);
       else byGame.set(row.game_id, [row]);
     }
+    const sides = sideByLineupGame(playerRows);
     const games = rows
       .filter((row) => row.lineup_id === lineupId)
       .map((row) => {
         const other = (byGame.get(row.game_id) ?? []).find((item) => item.team_id !== row.team_id);
-        return enrichGame(mapLineupGame(row, other?.team_id ?? null), catalog);
+        const side = sides.get(`${row.game_id}|${row.lineup_id}`) ?? null;
+        return enrichGame(mapLineupGame(row, other?.team_id ?? null, side), catalog);
       });
     if (!games.length) {
       console.info('[data] no lineup games', { lineupId, file: 'lineup_games.csv' });

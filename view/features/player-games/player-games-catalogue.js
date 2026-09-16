@@ -1,4 +1,5 @@
 import { createGameRow } from '../../components/catalogue/game-row.js';
+import { createPagedList } from '../../components/catalogue/paged-list.js';
 import { createSectionBlock } from '../../components/layout/section-block.js';
 import { h } from '../../utils/dom.js';
 import { openPlayerGameInfo } from './player-game-info.js';
@@ -9,19 +10,17 @@ export function renderPlayerGamesCatalogue(games) {
     title: 'Player game catalogue',
     meta: `${games.length} games`,
     children: games.length
-      ? h(
-          'div',
-          {},
-          games.map((game) =>
+      ? createPagedList({
+          items: games,
+          renderItem: (game) =>
             createGameRow({
               game: {
                 ...game,
-                summary: game.champion ? `${game.side} · ${game.champion}` : 'Player-game record',
+                summary: game.champion ?? null,
               },
               onInfo: openPlayerGameInfo,
             }),
-          ),
-        )
+        })
       : h('div', { class: 'empty-state' }, ['No recorded games for this player.']),
   });
 }
