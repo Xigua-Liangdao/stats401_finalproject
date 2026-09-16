@@ -1,10 +1,9 @@
 /**
  * Single data access point for the UI.
- * Pages and visualizations consume these objects; they do not load CSV files.
- * Replace the mock imports with fetch('../data/test/...') later.
+ * Pages consume these objects; they do not load CSV files themselves.
  */
-import { ROLE_ORDER } from './constants.js';
-import { mockCatalog, mockPlayerGames, mockLineupGames } from './mock-data.js';
+import { DATASET, ROLE_ORDER } from './constants.js';
+import { parseCsv } from './csv.js';
 
 function indexById(items) {
   return Object.fromEntries(items.map((item) => [item.id, item]));
@@ -16,58 +15,268 @@ function sortByRole(players) {
   );
 }
 
-function hydrate() {
-  const teams = mockCatalog.teams.map((team) => ({ ...team }));
+function asNumber(value) {
+  if (value == null || value === '') return null;
+  const number = Number(value);
+  return Number.isFinite(number) ? number : null;
+}
+
+function asBool(value) {
+  return String(value).toLowerCase() === 'true';
+}
+
+function playerKey(playerId, teamId, role) {
+  return `${playerId}|${teamId}|${role}`;
+}
+
+function summaryStats(row, fields) {
+  const stats = { eligible: asBool(row.eligible) };
+  for (const field of fields) stats[field] = asNumber(row[field]);
+  return stats;
+}
+
+const PLAYER_STAT_FIELDS = [
+  'n_games_total', 'n_games', 'n_days', 'mean_impact', 'shrunk_impact',
+  'ci_low', 'ci_high', 'mean_gold_share', 'mean_damage_share', 'mean_dpm',
+  'mean_expected_dpm', 'win_rate', 'mean_vision_per_minute',
+];
+const LINEUP_STAT_FIELDS = [
+  'n_games_total', 'n_games', 'n_days', 'mean_impact', 'shrunk_impact',
+  'ci_low', 'ci_high', 'win_rate', 'mean_dpm', 'mean_vision_per_minute',
+  'gold_concentration', 'damage_concentration',
+];
+const PAIR_STAT_FIELDS = [
+  'n_games_total', 'n_games', 'n_days', 'mean_impact', 'shrunk_impact',
+  'ci_low', 'ci_high', 'win_rate',
+];
+const TEAM_STAT_FIELDS = [
+  'n_games_total', 'n_games', 'n_days', 'mean_impact', 'shrunk_impact',
+  'ci_low', 'ci_high', 'win_rate',
+];
+
+function sortPairs(pairs) {
+  return [...pairs].sort((a, b) => {
+    const games = (b.stats.n_games ?? -1) - (a.stats.n_games ?? -1);
+    return games !== 0 ? games : a.id.localeCompare(b.id);
+  });
+}
+
+function lineupPlayersFromRow(row, playerById) {
+  return ROLE_ORDER.map((role) => {
+    const id = row[`${role}_id`];
+    const name = row[`${role}_player`];
+    if (playerById[id]) return playerById[id];
+    if (!id) return null;
+    return { id, name: name || id, role, teamId: row.team_id, team: null };
+  }).filter(Boolean);
+}
+
+function hydrateFromPanel(rows, summaries = {}) {
+  const playerRows = rows.filter((row) => row.kind === 'player');
+  const lineupRows = rows.filter((row) => row.kind === 'lineup');
+  const playerStats = new Map(
+    (summaries.players ?? []).map((row) => [
+      playerKey(row.player_id, row.team_id, row.role),
+      summaryStats(row, PLAYER_STAT_FIELDS),
+    ]),
+  );
+  const lineupStats = new Map(
+    (summaries.lineups ?? []).map((row) => [row.lineup_id, summaryStats(row, LINEUP_STAT_FIELDS)]),
+  );
+  const teamStats = new Map(
+    (summaries.teams ?? []).map((row) => [row.team_id, summaryStats(row, TEAM_STAT_FIELDS)]),
+  );
+
+  const teams = [];
+  const seenTeams = new Set();
+  for (const row of rows) {
+    if (!row.team_id || seenTeams.has(row.team_id)) continue;
+    seenTeams.add(row.team_id);
+    teams.push({
+      id: row.team_id,
+      name: row.team,
+      short: row.team_short || row.team,
+      season: Number(row.season) || row.season,
+      split: row.split || 'Unknown',
+      stats: teamStats.get(row.team_id) ?? { eligible: false },
+    });
+  }
   const teamById = indexById(teams);
 
-  const players = mockCatalog.players.map((player) => ({
-    ...player,
-    team: teamById[player.teamId],
+  const players = playerRows.map((row) => ({
+    id: row.player_id,
+    name: row.player,
+    role: row.role,
+    teamId: row.team_id,
+    team: teamById[row.team_id],
+    stats: playerStats.get(playerKey(row.player_id, row.team_id, row.role)) ?? { eligible: false },
   }));
   const playerById = indexById(players);
 
-  const lineups = mockCatalog.lineups.map((lineup) => ({
-    ...lineup,
-    team: teamById[lineup.teamId],
-    players: sortByRole(lineup.playerIds.map((id) => playerById[id]).filter(Boolean)),
-  }));
+  const lineups = lineupRows.map((row) => {
+    const attached = lineupPlayersFromRow(row, playerById).map((player) => ({
+      ...player,
+      team: player.team || teamById[row.team_id],
+    }));
+    const games = row.n_games === '' ? null : Number(row.n_games);
+    const split = row.split || teamById[row.team_id]?.split || 'Unknown';
+    const context = Number.isFinite(games)
+      ? `${split} · ${games} game${games === 1 ? '' : 's'}`
+      : split;
+    return {
+      id: row.lineup_id,
+      name: row.lineup_name || row.lineup_id,
+      teamId: row.team_id,
+      context,
+      playerIds: ROLE_ORDER.map((role) => row[`${role}_id`]).filter(Boolean),
+      team: teamById[row.team_id],
+      players: attached,
+      stats: lineupStats.get(row.lineup_id) ?? { eligible: false },
+    };
+  });
   const lineupById = indexById(lineups);
 
+  const pairs = sortPairs(
+    (summaries.pairs ?? []).map((row) => ({
+      id: row.pair_id,
+      teamId: row.team_id,
+      teamName: row.team,
+      playerAId: row.player_a_id,
+      playerBId: row.player_b_id,
+      playerA: row.player_a,
+      playerB: row.player_b,
+      stats: summaryStats(row, PAIR_STAT_FIELDS),
+    })),
+  );
+  const first = rows[0] || {};
+
   return {
-    season: mockCatalog.season,
-    split: mockCatalog.split,
-    sourceLabel: mockCatalog.sourceLabel,
+    season: Number(first.season) || teams[0]?.season || null,
+    split: first.split || teams[0]?.split || 'Unknown',
+    sourceLabel: `${DATASET} / team_panel`,
+    mode: DATASET,
     teams,
     players,
     lineups,
+    pairs,
     teamById,
     playerById,
     lineupById,
   };
 }
 
-const catalog = hydrate();
+function datasetUrl(filename) {
+  const dataset = DATASET || 'test';
+  return new URL(`../../data/${dataset}/${filename}`, import.meta.url);
+}
+
+async function fetchCsv(filename) {
+  const response = await fetch(datasetUrl(filename));
+  if (!response.ok) {
+    throw new Error(`Failed to load ${filename} (${response.status})`);
+  }
+  return parseCsv(await response.text());
+}
+
+let catalogPromise;
+let playerGamesPromise;
+let lineupGamesPromise;
+
+function loadCatalogRecord() {
+  if (!catalogPromise) {
+    catalogPromise = Promise.all([
+      fetchCsv('team_panel.csv'),
+      fetchCsv('players.csv'),
+      fetchCsv('lineups.csv'),
+      fetchCsv('pairs.csv'),
+      fetchCsv('teams.csv'),
+    ]).then(([panel, players, lineups, pairs, teams]) => {
+      if (!panel.length) throw new Error('team_panel.csv is empty.');
+      return hydrateFromPanel(panel, { players, lineups, pairs, teams });
+    });
+  }
+  return catalogPromise;
+}
+
+function loadPlayerGameRows() {
+  if (!playerGamesPromise) playerGamesPromise = fetchCsv('player_games.csv');
+  return playerGamesPromise;
+}
+
+function loadLineupGameRows() {
+  if (!lineupGamesPromise) lineupGamesPromise = fetchCsv('lineup_games.csv');
+  return lineupGamesPromise;
+}
+
+function mapPlayerGame(row) {
+  return {
+    id: row.record_id,
+    source: 'player_games',
+    playerId: row.player_id,
+    lineupId: row.lineup_id,
+    date: row.date || row.day,
+    opponentTeamId: row.opponent_team_id,
+    result: asNumber(row.result),
+    split: row.split,
+    patch: row.patch,
+    side: row.side,
+    champion: row.champion,
+    opponentChampion: row.opponent_champion,
+  };
+}
+
+function mapLineupGame(row, opponentTeamId) {
+  return {
+    id: `${row.game_id}|${row.team_id}`,
+    source: 'lineup_games',
+    lineupId: row.lineup_id,
+    date: row.day,
+    opponentTeamId,
+    result: asNumber(row.result),
+    split: row.split,
+    patch: row.patch,
+  };
+}
+
+function pairsForPlayer(catalog, playerId, teamId) {
+  return catalog.pairs.filter((pair) => {
+    if (teamId && pair.teamId !== teamId) return false;
+    return pair.playerAId === playerId || pair.playerBId === playerId;
+  });
+}
+
+function pairsForPlayers(catalog, playerIds, teamId) {
+  const ids = new Set(playerIds.filter(Boolean));
+  return catalog.pairs.filter((pair) => {
+    if (teamId && pair.teamId !== teamId) return false;
+    return ids.has(pair.playerAId) && ids.has(pair.playerBId);
+  });
+}
 
 export const dataSource = {
-  mode: 'mock',
+  mode: DATASET,
 
   async loadCatalog() {
-    return catalog;
+    return loadCatalogRecord();
   },
 
   async getTeam(id) {
+    const catalog = await loadCatalogRecord();
     return catalog.teamById[id] ?? null;
   },
 
   async getPlayer(id) {
+    const catalog = await loadCatalogRecord();
     return catalog.playerById[id] ?? null;
   },
 
   async getLineup(id) {
+    const catalog = await loadCatalogRecord();
     return catalog.lineupById[id] ?? null;
   },
 
   async listPlayersByTeam() {
+    const catalog = await loadCatalogRecord();
     return catalog.teams.map((team) => ({
       team,
       players: sortByRole(catalog.players.filter((player) => player.teamId === team.id)),
@@ -75,6 +284,7 @@ export const dataSource = {
   },
 
   async listLineupsByTeam() {
+    const catalog = await loadCatalogRecord();
     return catalog.teams.map((team) => ({
       team,
       lineups: catalog.lineups.filter((lineup) => lineup.teamId === team.id),
@@ -82,23 +292,46 @@ export const dataSource = {
   },
 
   async listTeamPlayers(teamId) {
+    const catalog = await loadCatalogRecord();
     return sortByRole(catalog.players.filter((player) => player.teamId === teamId));
   },
 
   async listTeamLineups(teamId) {
+    const catalog = await loadCatalogRecord();
     return catalog.lineups.filter((lineup) => lineup.teamId === teamId);
   },
 
+  async listPairsForPlayer(playerId, teamId) {
+    const catalog = await loadCatalogRecord();
+    return pairsForPlayer(catalog, playerId, teamId);
+  },
+
+  async listPairsForPlayers(playerIds, teamId) {
+    const catalog = await loadCatalogRecord();
+    return pairsForPlayers(catalog, playerIds, teamId);
+  },
+
   async loadPlayerGames(playerId) {
-    return mockPlayerGames
-      .filter((game) => game.playerId === playerId)
-      .map((game) => enrichGame(game, catalog));
+    const [catalog, rows] = await Promise.all([loadCatalogRecord(), loadPlayerGameRows()]);
+    return rows
+      .filter((row) => row.player_id === playerId)
+      .map((row) => enrichGame(mapPlayerGame(row), catalog));
   },
 
   async loadLineupGames(lineupId) {
-    return mockLineupGames
-      .filter((game) => game.lineupId === lineupId)
-      .map((game) => enrichGame(game, catalog));
+    const [catalog, rows] = await Promise.all([loadCatalogRecord(), loadLineupGameRows()]);
+    const byGame = new Map();
+    for (const row of rows) {
+      const list = byGame.get(row.game_id);
+      if (list) list.push(row);
+      else byGame.set(row.game_id, [row]);
+    }
+    return rows
+      .filter((row) => row.lineup_id === lineupId)
+      .map((row) => {
+        const other = (byGame.get(row.game_id) ?? []).find((item) => item.team_id !== row.team_id);
+        return enrichGame(mapLineupGame(row, other?.team_id ?? null), catalog);
+      });
   },
 };
 

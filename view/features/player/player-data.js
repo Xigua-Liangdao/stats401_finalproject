@@ -9,12 +9,12 @@ export function loadPlayer(id) {
 }
 
 export const PLAYER_STAT_CARDS = [
-  { key: 'n_games', label: 'Games played', hint: 'Evaluated player-games' },
-  { key: 'win_rate', label: 'Win rate', hint: 'Placeholder' },
-  { key: 'gold_share', label: 'Gold share', hint: 'Placeholder' },
-  { key: 'damage_share', label: 'Damage share', hint: 'Placeholder' },
-  { key: 'dpm', label: 'DPM', hint: 'Damage per minute' },
-  { key: 'vision_per_minute', label: 'Vision / min', hint: 'Placeholder' },
+  { key: 'n_games', field: 'n_games', format: 'count', label: 'Games played', hint: 'Evaluated player-games' },
+  { key: 'win_rate', field: 'win_rate', format: 'percent', label: 'Win rate', hint: 'Evaluated games won' },
+  { key: 'gold_share', field: 'mean_gold_share', format: 'share', label: 'Gold share', hint: 'Mean total-gold share' },
+  { key: 'damage_share', field: 'mean_damage_share', format: 'share', label: 'Damage share', hint: 'Mean damage share' },
+  { key: 'dpm', field: 'mean_dpm', format: 'dpm', label: 'DPM', hint: 'Damage per minute' },
+  { key: 'vision_per_minute', field: 'mean_vision_per_minute', format: 'vision', label: 'Vision / min', hint: 'Mean vision per minute' },
 ];
 
 export const PLAYER_VIZ = [

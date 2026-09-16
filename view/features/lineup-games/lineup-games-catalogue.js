@@ -22,6 +22,6 @@ export function renderLineupGamesCatalogue(games) {
             }),
           ),
         )
-      : h('div', { class: 'empty-state' }, ['No mock lineup-games in this file.']),
+      : h('div', { class: 'empty-state' }, ['No lineup-games in data/test/lineup_games.csv for this lineup.']),
   });
 }

@@ -1,5 +1,4 @@
 import { h } from '../../utils/dom.js';
-import { createButton } from '../buttons/button.js';
 
 let active = null;
 let closeTimer = 0;
@@ -29,11 +28,8 @@ export function openDrawer({ kicker, title, body }) {
     h('div', { class: 'drawer-backdrop', onClick: closeDrawer }),
     h('aside', { class: 'drawer', role: 'dialog', 'aria-modal': 'true', 'aria-label': title }, [
       h('header', { class: 'drawer-header' }, [
-        h('div', {}, [
-          h('div', { class: 'kicker' }, [kicker]),
-          h('h2', {}, [title]),
-        ]),
-        createButton({ label: 'Close', onClick: closeDrawer, ariaLabel: 'Close drawer' }),
+        h('div', { class: 'kicker' }, [kicker]),
+        h('h2', {}, [title]),
       ]),
       h('div', { class: 'drawer-body' }, [body]),
     ]),

@@ -7,7 +7,7 @@ import { renderLineupStats } from '../../features/lineup/lineup-stats.js';
 import { loadLineupGames } from '../../features/lineup-games/lineup-games-data.js';
 import { renderLineupGamesCatalogue } from '../../features/lineup-games/lineup-games-catalogue.js';
 import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js';
-import { MOCK_NOTICE } from '../../utils/constants.js';
+import { TEST_STATS_NOTICE } from '../../utils/constants.js';
 import { h } from '../../utils/dom.js';
 import { href } from '../../utils/navigation.js';
 import { renderNotFound } from '../not-found.js';
@@ -28,7 +28,7 @@ export async function renderLineupPage(target, id) {
         { label: 'Lineup catalogue', href: href.lineups },
         { label: lineup.name },
       ]),
-      h('p', { class: 'notice' }, [MOCK_NOTICE]),
+      h('p', { class: 'notice' }, [TEST_STATS_NOTICE]),
       createIdentityHeader({
         kicker: 'Lineup file',
         title: lineup.name,
@@ -45,6 +45,7 @@ export async function renderLineupPage(target, id) {
             onClick: () =>
               openPairImpactDrawer({
                 source: 'lineup',
+                teamId: lineup.team.id,
                 teamName: lineup.team.name,
                 selectedPlayerIds: lineup.players.map((player) => player.id),
                 selectedNames: lineup.players.map((player) => player.name),
@@ -53,7 +54,7 @@ export async function renderLineupPage(target, id) {
         ],
       }),
       renderLineupRoster(lineup.players),
-      renderLineupStats(),
+      renderLineupStats(lineup),
       renderLineupGamesCatalogue(games),
     ]),
   );

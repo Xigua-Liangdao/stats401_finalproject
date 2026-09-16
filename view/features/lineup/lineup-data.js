@@ -9,12 +9,12 @@ export function loadLineup(id) {
 }
 
 export const LINEUP_STAT_CARDS = [
-  { key: 'n_games', label: 'Games together', hint: 'Lineup-games' },
-  { key: 'win_rate', label: 'Win rate', hint: 'Placeholder' },
-  { key: 'gold_concentration', label: 'Gold concentration', hint: 'Placeholder' },
-  { key: 'damage_concentration', label: 'Damage concentration', hint: 'Placeholder' },
-  { key: 'mean_dpm', label: 'Mean DPM', hint: 'Placeholder' },
-  { key: 'vision_per_minute', label: 'Vision / min', hint: 'Placeholder' },
+  { key: 'n_games', field: 'n_games', format: 'count', label: 'Games together', hint: 'Evaluated lineup-games' },
+  { key: 'win_rate', field: 'win_rate', format: 'percent', label: 'Win rate', hint: 'Evaluated games won' },
+  { key: 'gold_concentration', field: 'gold_concentration', format: 'share', label: 'Gold concentration', hint: 'Sum of squared gold shares' },
+  { key: 'damage_concentration', field: 'damage_concentration', format: 'share', label: 'Damage concentration', hint: 'Sum of squared damage shares' },
+  { key: 'mean_dpm', field: 'mean_dpm', format: 'dpm', label: 'Mean DPM', hint: 'Five-player mean DPM' },
+  { key: 'vision_per_minute', field: 'mean_vision_per_minute', format: 'vision', label: 'Vision / min', hint: 'Mean vision per minute' },
 ];
 
 export const LINEUP_VIZ = [

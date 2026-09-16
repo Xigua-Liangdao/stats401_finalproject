@@ -12,7 +12,7 @@ export function formatResult(result) {
 
 export function formatDate(iso) {
   if (!iso) return PLACEHOLDER;
-  const date = new Date(`${iso}T00:00:00`);
+  const date = String(iso).includes('T') ? new Date(iso) : new Date(`${iso}T00:00:00`);
   if (Number.isNaN(date.getTime())) return iso;
   return new Intl.DateTimeFormat('en-GB', {
     day: '2-digit',
@@ -23,6 +23,34 @@ export function formatDate(iso) {
 
 export function placeholderValue() {
   return PLACEHOLDER;
+}
+
+export function formatCount(value) {
+  if (value == null || value === '') return PLACEHOLDER;
+  const number = Number(value);
+  if (!Number.isFinite(number)) return PLACEHOLDER;
+  return String(Math.round(number));
+}
+
+export function formatFixed(value, digits = 2) {
+  if (value == null || value === '') return PLACEHOLDER;
+  const number = Number(value);
+  if (!Number.isFinite(number)) return PLACEHOLDER;
+  return number.toFixed(digits);
+}
+
+export function formatPercent(value) {
+  if (value == null || value === '') return PLACEHOLDER;
+  const number = Number(value);
+  if (!Number.isFinite(number)) return PLACEHOLDER;
+  return `${(number * 100).toFixed(1)}%`;
+}
+
+export function formatImpact(value) {
+  if (value == null || value === '') return PLACEHOLDER;
+  const number = Number(value);
+  if (!Number.isFinite(number)) return PLACEHOLDER;
+  return `${number >= 0 ? '+' : ''}${number.toFixed(3)}`;
 }
 
 export function lineupPlayerIds(lineup) {

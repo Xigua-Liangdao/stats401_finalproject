@@ -22,6 +22,6 @@ export function renderPlayerGamesCatalogue(games) {
             }),
           ),
         )
-      : h('div', { class: 'empty-state' }, ['No mock player-games in this file.']),
+      : h('div', { class: 'empty-state' }, ['No player-games in data/test/player_games.csv for this player.']),
   });
 }

@@ -6,7 +6,7 @@ import { loadPlayer } from '../../features/player/player-data.js';
 import { loadPlayerGames } from '../../features/player-games/player-games-data.js';
 import { renderPlayerGamesCatalogue } from '../../features/player-games/player-games-catalogue.js';
 import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js';
-import { MOCK_NOTICE } from '../../utils/constants.js';
+import { TEST_STATS_NOTICE } from '../../utils/constants.js';
 import { h } from '../../utils/dom.js';
 import { href } from '../../utils/navigation.js';
 import { renderNotFound } from '../not-found.js';
@@ -27,7 +27,7 @@ export async function renderPlayerPage(target, id) {
         { label: 'Player catalogue', href: href.players },
         { label: player.name },
       ]),
-      h('p', { class: 'notice' }, [MOCK_NOTICE]),
+      h('p', { class: 'notice' }, [TEST_STATS_NOTICE]),
       createIdentityHeader({
         kicker: 'Player file',
         title: player.name,
@@ -45,6 +45,7 @@ export async function renderPlayerPage(target, id) {
             onClick: () =>
               openPairImpactDrawer({
                 source: 'player',
+                teamId: player.team.id,
                 teamName: player.team.name,
                 selectedPlayerIds: [player.id],
                 selectedNames: [player.name],
@@ -52,7 +53,7 @@ export async function renderPlayerPage(target, id) {
           }),
         ],
       }),
-      renderPlayerStats(),
+      renderPlayerStats(player),
       renderPlayerGamesCatalogue(games),
     ]),
   );

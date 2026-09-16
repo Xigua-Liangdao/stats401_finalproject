@@ -188,6 +188,10 @@
   margin: 1.8rem 0;
 }
 
+.section-block .notice {
+  margin-bottom: 0.85rem;
+}
+
 .section-block__head {
   display: flex;
   justify-content: space-between;
@@ -625,9 +629,6 @@
 }
 
 .drawer-header {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
   padding: 1.1rem 1.1rem 0.9rem;
   border-bottom: 1px solid var(--line);
 }

@@ -18,7 +18,7 @@ export function renderTeamPlayers(players) {
 
 export function renderTeamLineups(lineups) {
   return createSectionBlock({
-    index: '04 / Compositions',
+    index: '03 / Compositions',
     title: 'Lineups',
     meta: `${lineups.length} files`,
     children: h(
