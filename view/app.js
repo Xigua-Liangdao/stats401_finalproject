@@ -1,7 +1,7 @@
 import { closeDrawer } from './components/drawers/drawer.js';
 import { renderSiteHeader } from './components/navigation/site-header.js';
 import { renderHomePage } from './pages/home/home-page.js';
-import { renderLineupCataloguePage } from './pages/lineup/lineup-catalogue-page.js';
+import { renderLineupCataloguePage } from './pages/lineup/lineup-catalogue-page.js?v=lineup-3';
 import { renderLineupPage } from './pages/lineup/lineup-page.js?v=game-stats';
 import { renderNotFound } from './pages/not-found.js';
 import { renderPlayerCataloguePage } from './pages/player/player-catalogue-page.js';

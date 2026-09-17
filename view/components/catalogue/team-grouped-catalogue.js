@@ -5,7 +5,7 @@ import { href } from '../../utils/navigation.js';
 
 export const CATALOGUE_PAGE_SIZE = {
   players: 10,
-  lineups: 6,
+  lineups: 3,
 };
 
 export function createTeamBlockHeader(team, meta) {

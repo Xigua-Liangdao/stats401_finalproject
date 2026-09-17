@@ -1,5 +1,5 @@
 import { createMiniSlot } from '../../components/catalogue/roster-slot.js';
-import { createTeamGroupedCatalogue } from '../../components/catalogue/team-grouped-catalogue.js';
+import { createTeamGroupedCatalogue } from '../../components/catalogue/team-grouped-catalogue.js?v=lineup-3';
 import { createPageShell } from '../../components/layout/page-shell.js';
 import { loadLineupCatalog } from '../../features/lineup/lineup-data.js';
 import { h } from '../../utils/dom.js';
