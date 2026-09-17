@@ -1,6 +1,6 @@
 import { h } from '../../utils/dom.js';
 import { PLAYER_CHART_CATEGORIES, findCategory } from './player-chart-config.js';
-import { mountPlayerRadar, createRadarAxes, createRadarScaleNote } from './player-radar-chart.js?v=radar-scale2';
+import { mountPlayerRadar, createRadarAxes, createRadarScaleNote } from './player-radar-chart.js?v=scale-zoom';
 import { mountPlayerTimeline } from './player-timeline-chart.js';
 
 function createSelect(options, value) {
@@ -109,9 +109,25 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
     title: 'Player profile',
     vizId: 'player-radar',
     stageClass: 'player-radar-stage',
-    controls: expectedToggle,
+    controls: h('div', { class: 'chart-controls' }, [
+      expectedToggle,
+      h('div', { class: 'radar-zoom-controls', role: 'group', 'aria-label': 'Radar scale zoom' }, [
+        h('button', { class: 'radar-zoom-btn', type: 'button', 'aria-label': 'Tighten scale', dataset: { zoom: 'in' } }, ['+']),
+        h('button', { class: 'radar-zoom-btn', type: 'button', 'aria-label': 'Widen scale', dataset: { zoom: 'out' } }, ['−']),
+        h('button', { class: 'radar-zoom-btn', type: 'button', 'aria-label': 'Reset scale', dataset: { zoom: 'reset' } }, ['Reset']),
+      ]),
+    ]),
   });
-  radar.node.append(createRadarScaleNote(radarAxes));
+  const scaleNoteHost = h('div', { class: 'radar-scale-note-host' });
+  const zoomInBtn = radar.node.querySelector('[data-zoom="in"]');
+  const zoomOutBtn = radar.node.querySelector('[data-zoom="out"]');
+  const renderScaleNote = (span = 1, floor = 0.25) => {
+    scaleNoteHost.replaceChildren(createRadarScaleNote(radarAxes, span));
+    if (zoomInBtn) zoomInBtn.disabled = span <= floor + 1e-9;
+    if (zoomOutBtn) zoomOutBtn.disabled = span >= 1 - 1e-9;
+  };
+  renderScaleNote();
+  radar.node.append(scaleNoteHost);
 
   const expectedInput = expectedToggle.querySelector('input');
   const expected = player.stats?.mean_expected_dpm;
@@ -127,9 +143,17 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
 
   queueMicrotask(() => {
     timelineChart = mountPlayerTimeline(timeline.stage, { games });
-    const radarChart = mountPlayerRadar(radar.stage, { stats: player.stats ?? {}, axes: radarAxes });
+    const radarChart = mountPlayerRadar(radar.stage, {
+      stats: player.stats ?? {},
+      axes: radarAxes,
+      onSpanChange: renderScaleNote,
+    });
     timelineChart.update(selectedFields(category, selectedIds));
     if (expectedInput.checked) radarChart.setExpected(true);
+
+    radar.node.querySelector('[data-zoom="in"]')?.addEventListener('click', () => radarChart.zoomIn());
+    radar.node.querySelector('[data-zoom="out"]')?.addEventListener('click', () => radarChart.zoomOut());
+    radar.node.querySelector('[data-zoom="reset"]')?.addEventListener('click', () => radarChart.resetZoom());
 
     categorySelect.addEventListener('change', () => {
       category = findCategory(categorySelect.value);

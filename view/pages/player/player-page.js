@@ -2,7 +2,7 @@ import { createButton } from '../../components/buttons/button.js';
 import { createIdentityHeader, roleFact, teamFact } from '../../components/cards/identity-header.js';
 import { createPlayerPortrait } from '../../components/media/entity-images.js';
 import { createBreadcrumbs } from '../../components/layout/page-shell.js';
-import { renderPlayerStats } from '../../features/player/player-stats.js';
+import { renderPlayerStats } from '../../features/player/player-stats.js?v=scale-zoom';
 import { loadPlayer, loadPlayerCatalog } from '../../features/player/player-data.js';
 import { loadPlayerGames } from '../../features/player-games/player-games-data.js?v=game-stats';
 import { renderPlayerGamesCatalogue } from '../../features/player-games/player-games-catalogue.js?v=game-stats';

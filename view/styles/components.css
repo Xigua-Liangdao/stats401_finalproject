@@ -770,6 +770,47 @@
   cursor: not-allowed;
 }
 
+.radar-zoom-controls {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.radar-zoom-btn {
+  min-height: 1.7rem;
+  min-width: 1.7rem;
+  padding: 0.15rem 0.45rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-panel);
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.radar-zoom-btn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.radar-zoom-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.radar-zoom-hint {
+  position: absolute;
+  right: 0.55rem;
+  bottom: 0.45rem;
+  z-index: 2;
+  color: var(--dim);
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
+  pointer-events: none;
+}
+
 .player-radar-stage {
   min-height: 340px;
 }

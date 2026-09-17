@@ -4,7 +4,7 @@ import { createSectionBlock } from '../../components/layout/section-block.js';
 import { h } from '../../utils/dom.js';
 import { isEligible, statValue } from '../../utils/stats.js';
 import { dpmFormVsModel, seasonRecord } from './player-chart-config.js';
-import { renderPlayerVisualizations } from './player-viz.js';
+import { renderPlayerVisualizations } from './player-viz.js?v=scale-zoom';
 
 function renderSeasonStats(player, games) {
   const season = player.team?.season;

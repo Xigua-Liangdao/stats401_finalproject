@@ -2,6 +2,10 @@ import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatFixed, formatImpact, formatPercent } from '../../utils/formatting.js';
 
+const SPAN_STEP = 0.05;
+const SPAN_PAD = 1.04;
+const MIN_SPAN_FLOOR = 0.25;
+
 function finiteValues(players, key) {
   return players
     .map((player) => player.stats?.[key])
@@ -11,6 +15,18 @@ function finiteValues(players, key) {
 function extent(values, fallbackMin, fallbackMax) {
   if (!values.length) return [fallbackMin, fallbackMax];
   return [Math.min(...values), Math.max(...values)];
+}
+
+function snapSpan(span) {
+  return Number((Math.round(span / SPAN_STEP) * SPAN_STEP).toFixed(2));
+}
+
+export function displayMax(axis, span = 1) {
+  return axis.min + (axis.max - axis.min) * span;
+}
+
+export function axisRangeLabel(axis, span = 1) {
+  return `${axis.format(axis.min)}–${axis.format(displayMax(axis, span))}`;
 }
 
 export function createRadarAxes(players = []) {
@@ -71,9 +87,9 @@ export function createRadarAxes(players = []) {
   ];
 }
 
-export function createRadarScaleNote(axes) {
+export function createRadarScaleNote(axes, span = 1) {
   return h('div', { class: 'radar-scale-note' }, [
-    h('div', { class: 'radar-scale-note__title coord' }, ['Metric scale']),
+    h('div', { class: 'radar-scale-note__title coord' }, ['Metric scale · outer ring']),
     h(
       'dl',
       { class: 'radar-scale-note__list' },
@@ -81,7 +97,7 @@ export function createRadarScaleNote(axes) {
         h('div', { class: 'radar-scale-note__row' }, [
           h('dt', {}, [axis.label]),
           h('dd', {}, [
-            axis.rangeLabel,
+            axisRangeLabel(axis, span),
             ' · ',
             axis.kind,
             axis.zeroLabel ? ` · ${axis.zeroLabel}` : '',
@@ -92,10 +108,11 @@ export function createRadarScaleNote(axes) {
   ]);
 }
 
-function radiusFor(axis, value) {
+function radiusFor(axis, value, span = 1) {
   if (value == null || !Number.isFinite(value)) return null;
-  if (axis.max === axis.min) return 0;
-  return Math.max(0, Math.min(1, (value - axis.min) / (axis.max - axis.min)));
+  const max = displayMax(axis, span);
+  if (max === axis.min) return 0;
+  return Math.max(0, Math.min(1, (value - axis.min) / (max - axis.min)));
 }
 
 function pointAt(center, radius, index, total, value) {
@@ -110,23 +127,83 @@ function polygon(values, center, radius) {
     .join(' ');
 }
 
-export function mountPlayerRadar(stage, { stats = {}, axes }) {
+export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {}) {
   stage.classList.add('is-mounted');
   stage.replaceChildren();
 
   const tooltip = document.createElement('div');
   tooltip.className = 'chart-tooltip';
   tooltip.hidden = true;
+  const hint = document.createElement('div');
+  hint.className = 'radar-zoom-hint coord';
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
-  stage.append(svg.node(), tooltip);
+  stage.append(svg.node(), tooltip, hint);
 
   let showExpected = false;
-  const observer = new ResizeObserver(() => draw());
-  observer.observe(stage);
+  let span = 1;
 
   function hideTip() {
     tooltip.hidden = true;
   }
+
+  function profileValue(axis) {
+    return axis.key === 'mean_dpm' ? stats.mean_dpm : stats[axis.key];
+  }
+
+  function minSpan() {
+    const values = axes.map((axis) => {
+      const actual = radiusFor(axis, profileValue(axis), 1);
+      const expected =
+        showExpected && axis.key === 'mean_dpm' ? radiusFor(axis, stats.mean_expected_dpm, 1) : null;
+      return Math.max(actual ?? 0, expected ?? 0);
+    });
+    const peak = Math.max(0, ...values);
+    const floor = Math.min(1, Math.max(peak * SPAN_PAD, MIN_SPAN_FLOOR));
+    return Math.min(1, Math.ceil(floor / SPAN_STEP) * SPAN_STEP);
+  }
+
+  function clampSpan(next) {
+    return Math.min(1, Math.max(minSpan(), snapSpan(next)));
+  }
+
+  function notifySpan() {
+    onSpanChange?.(span, minSpan());
+  }
+
+  function setSpan(next) {
+    const clamped = clampSpan(next);
+    if (clamped === span) {
+      updateHint();
+      notifySpan();
+      return span;
+    }
+    span = clamped;
+    draw();
+    notifySpan();
+    return span;
+  }
+
+  function updateHint() {
+    const pct = Math.round(span * 100);
+    const floor = Math.round(minSpan() * 100);
+    hint.textContent =
+      floor >= 100
+        ? `Outer ring at full scale · this player already reaches the rim`
+        : `Outer ring = ${pct}% of full scale · zoom in stops at ${floor}% so the profile stays inside`;
+  }
+
+  const observer = new ResizeObserver(() => draw());
+  observer.observe(stage);
+
+  svg.node().addEventListener(
+    'wheel',
+    (event) => {
+      event.preventDefault();
+      const direction = event.deltaY > 0 ? SPAN_STEP : -SPAN_STEP;
+      setSpan(span + direction);
+    },
+    { passive: false },
+  );
 
   function showTip(event, axis) {
     const rows = [];
@@ -149,7 +226,7 @@ export function mountPlayerRadar(stage, { stats = {}, axes }) {
       rows.push(axis.label);
       rows.push(axis.format(stats[axis.key]));
     }
-    rows.push(`${axis.rangeLabel} · ${axis.kind}`);
+    rows.push(`${axisRangeLabel(axis, span)} · ${axis.kind}`);
     tooltip.innerHTML = rows.map((line) => `<div>${line}</div>`).join('');
     tooltip.hidden = false;
     const bounds = stage.getBoundingClientRect();
@@ -158,7 +235,7 @@ export function mountPlayerRadar(stage, { stats = {}, axes }) {
   }
 
   function profileRadii(dpmValue) {
-    return axes.map((axis) => radiusFor(axis, axis.key === 'mean_dpm' ? dpmValue : stats[axis.key]));
+    return axes.map((axis) => radiusFor(axis, axis.key === 'mean_dpm' ? dpmValue : stats[axis.key], span));
   }
 
   function draw() {
@@ -167,6 +244,7 @@ export function mountPlayerRadar(stage, { stats = {}, axes }) {
     if (width < 40) return;
     svg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
     svg.selectAll('*').remove();
+    updateHint();
 
     const hasAny = axes.some((axis) => stats[axis.key] != null && Number.isFinite(stats[axis.key]));
     if (!hasAny) {
@@ -194,7 +272,7 @@ export function mountPlayerRadar(stage, { stats = {}, axes }) {
 
     const impactAxis = axes.find((axis) => axis.key === 'shrunk_impact');
     const impactIndex = axes.findIndex((axis) => axis.key === 'shrunk_impact');
-    const zeroRadius = impactAxis ? radiusFor(impactAxis, 0) : null;
+    const zeroRadius = impactAxis ? radiusFor(impactAxis, 0, span) : null;
     if (zeroRadius != null && zeroRadius > 0 && zeroRadius < 1) {
       root.append('polygon')
         .attr('class', 'radar-zero')
@@ -229,7 +307,7 @@ export function mountPlayerRadar(stage, { stats = {}, axes }) {
         .attr('class', 'radar-range')
         .attr('x', lx)
         .attr('dy', '1.2em')
-        .text(axis.rangeLabel);
+        .text(axisRangeLabel(axis, span));
     });
 
     const actual = profileRadii(stats.mean_dpm);
@@ -274,10 +352,23 @@ export function mountPlayerRadar(stage, { stats = {}, axes }) {
   }
 
   draw();
+  notifySpan();
+
   return {
     setExpected(enabled) {
       showExpected = enabled;
+      span = clampSpan(span);
       draw();
+      notifySpan();
+    },
+    zoomIn() {
+      setSpan(span - SPAN_STEP);
+    },
+    zoomOut() {
+      setSpan(span + SPAN_STEP);
+    },
+    resetZoom() {
+      setSpan(1);
     },
     destroy() {
       observer.disconnect();
