@@ -52,7 +52,7 @@ export const PLAYER_CHART_CATEGORIES = [
   },
 ];
 
-export const SERIES_PALETTE = ['var(--accent)', 'var(--ember)', 'var(--side-blue)', '#c9a7ff', '#7ee0c6'];
+export const SERIES_PALETTE = ['var(--accent)', 'var(--ember)', 'var(--side-blue)', '#7a5c9e', '#2a9d8f'];
 
 export const SERIES_META = {
   kills: { label: 'Kills' },
