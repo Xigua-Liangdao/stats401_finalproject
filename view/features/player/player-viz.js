@@ -1,6 +1,6 @@
 import { h } from '../../utils/dom.js';
 import { PLAYER_CHART_CATEGORIES, findCategory } from './player-chart-config.js';
-import { mountPlayerRadar } from './player-radar-chart.js';
+import { mountPlayerRadar, createRadarAxes, createRadarScaleNote } from './player-radar-chart.js?v=radar-scale2';
 import { mountPlayerTimeline } from './player-timeline-chart.js';
 
 function createSelect(options, value) {
@@ -68,7 +68,7 @@ function createPanel({ index, title, controls, stageClass, vizId, chromeClass })
   };
 }
 
-export function renderPlayerVisualizations({ player, games }) {
+export function renderPlayerVisualizations({ player, games, players = [] }) {
   let category = PLAYER_CHART_CATEGORIES[0];
   const selectedIds = new Set(category.metrics.slice(0, 3).map((metric) => metric.id));
 
@@ -103,6 +103,7 @@ export function renderPlayerVisualizations({ player, games }) {
     ]),
   });
 
+  const radarAxes = createRadarAxes(players);
   const radar = createPanel({
     index: 'VIZ 02',
     title: 'Player profile',
@@ -110,6 +111,7 @@ export function renderPlayerVisualizations({ player, games }) {
     stageClass: 'player-radar-stage',
     controls: expectedToggle,
   });
+  radar.node.append(createRadarScaleNote(radarAxes));
 
   const expectedInput = expectedToggle.querySelector('input');
   const expected = player.stats?.mean_expected_dpm;
@@ -125,7 +127,7 @@ export function renderPlayerVisualizations({ player, games }) {
 
   queueMicrotask(() => {
     timelineChart = mountPlayerTimeline(timeline.stage, { games });
-    const radarChart = mountPlayerRadar(radar.stage, { stats: player.stats ?? {} });
+    const radarChart = mountPlayerRadar(radar.stage, { stats: player.stats ?? {}, axes: radarAxes });
     timelineChart.update(selectedFields(category, selectedIds));
     if (expectedInput.checked) radarChart.setExpected(true);
 

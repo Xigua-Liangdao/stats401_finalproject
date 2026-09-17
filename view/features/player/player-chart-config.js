@@ -19,7 +19,6 @@ export const PLAYER_CHART_CATEGORIES = [
       { id: 'total_cs', label: 'Total CS', field: 'total_cs' },
       { id: 'damage', label: 'Damage', field: 'damage' },
       { id: 'dpm', label: 'DPM', field: 'dpm' },
-      { id: 'vision_per_minute', label: 'Vision / Minute', field: 'vision_per_minute' },
     ],
   },
   {

@@ -46,7 +46,7 @@ function renderSeasonStats(player, games) {
   ]);
 }
 
-export function renderPlayerStats(player, games) {
+export function renderPlayerStats(player, games, players = []) {
   const stats = player.stats ?? {};
   return h('div', {}, [
     createSectionBlock({
@@ -61,7 +61,7 @@ export function renderPlayerStats(player, games) {
     createSectionBlock({
       index: '03 / Stages',
       title: 'Player visualizations',
-      children: renderPlayerVisualizations({ player, games }),
+      children: renderPlayerVisualizations({ player, games, players }),
     }),
   ]);
 }

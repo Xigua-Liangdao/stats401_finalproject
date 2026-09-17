@@ -5,7 +5,7 @@ import { renderLineupCataloguePage } from './pages/lineup/lineup-catalogue-page.
 import { renderLineupPage } from './pages/lineup/lineup-page.js';
 import { renderNotFound } from './pages/not-found.js';
 import { renderPlayerCataloguePage } from './pages/player/player-catalogue-page.js';
-import { renderPlayerPage } from './pages/player/player-page.js';
+import { renderPlayerPage } from './pages/player/player-page.js?v=radar-scale2';
 import { renderTeamPage } from './pages/team/team-page.js';
 import { h } from './utils/dom.js';
 import { startRouter } from './utils/navigation.js';

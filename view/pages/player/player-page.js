@@ -3,7 +3,7 @@ import { createIdentityHeader, roleFact, teamFact } from '../../components/cards
 import { createPlayerPortrait } from '../../components/media/entity-images.js';
 import { createBreadcrumbs } from '../../components/layout/page-shell.js';
 import { renderPlayerStats } from '../../features/player/player-stats.js';
-import { loadPlayer } from '../../features/player/player-data.js';
+import { loadPlayer, loadPlayerCatalog } from '../../features/player/player-data.js';
 import { loadPlayerGames } from '../../features/player-games/player-games-data.js';
 import { renderPlayerGamesCatalogue } from '../../features/player-games/player-games-catalogue.js';
 import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js';
@@ -12,13 +12,14 @@ import { href } from '../../utils/navigation.js';
 import { renderNotFound } from '../not-found.js';
 
 export async function renderPlayerPage(target, id) {
-  const player = await loadPlayer(id);
+  const [player, groups] = await Promise.all([loadPlayer(id), loadPlayerCatalog()]);
   if (!player) {
     renderNotFound(target);
     return;
   }
 
   const games = await loadPlayerGames(player.id);
+  const players = groups.flatMap((group) => group.players);
 
   target.append(
     h('div', { class: 'page' }, [
@@ -52,7 +53,7 @@ export async function renderPlayerPage(target, id) {
           }),
         ],
       }),
-      renderPlayerStats(player, games),
+      renderPlayerStats(player, games, players),
       renderPlayerGamesCatalogue(games),
     ]),
   );
