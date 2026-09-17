@@ -333,6 +333,11 @@ export const dataSource = {
     return catalog.lineups.filter((lineup) => lineup.teamId === teamId);
   },
 
+  async listTeamPairs(teamId) {
+    const catalog = await loadCatalogRecord();
+    return catalog.pairs.filter((pair) => pair.teamId === teamId);
+  },
+
   async listPairsForPlayer(playerId, teamId) {
     const catalog = await loadCatalogRecord();
     return pairsForPlayer(catalog, playerId, teamId);

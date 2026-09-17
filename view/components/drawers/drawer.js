@@ -17,7 +17,7 @@ export function closeDrawer() {
   closeTimer = window.setTimeout(() => root.remove(), 180);
 }
 
-export function openDrawer({ kicker, title, body }) {
+export function openDrawer({ kicker, title, body, className }) {
   window.clearTimeout(closeTimer);
   document.querySelectorAll('.drawer-root').forEach((node) => node.remove());
   active = null;
@@ -26,7 +26,7 @@ export function openDrawer({ kicker, title, body }) {
 
   const root = h('div', { class: 'drawer-root', role: 'presentation' }, [
     h('div', { class: 'drawer-backdrop', onClick: closeDrawer }),
-    h('aside', { class: 'drawer', role: 'dialog', 'aria-modal': 'true', 'aria-label': title }, [
+    h('aside', { class: `drawer ${className ?? ''}`.trim(), role: 'dialog', 'aria-modal': 'true', 'aria-label': title }, [
       h('header', { class: 'drawer-header' }, [
         h('div', { class: 'kicker' }, [kicker]),
         h('h2', {}, [title]),

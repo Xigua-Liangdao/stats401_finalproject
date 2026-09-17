@@ -7,7 +7,7 @@ import { renderLineupRoster } from '../../features/lineup/lineup-roster.js';
 import { renderLineupStats } from '../../features/lineup/lineup-stats.js';
 import { loadLineupGames } from '../../features/lineup-games/lineup-games-data.js';
 import { renderLineupGamesCatalogue } from '../../features/lineup-games/lineup-games-catalogue.js';
-import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js';
+import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js?v=pair-heatmap6';
 import { h } from '../../utils/dom.js';
 import { href } from '../../utils/navigation.js';
 import { renderNotFound } from '../not-found.js';
