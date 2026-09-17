@@ -9,33 +9,38 @@ import { renderPlayerPage } from './pages/player/player-page.js';
 import { renderTeamPage } from './pages/team/team-page.js';
 import { h } from './utils/dom.js';
 import { startRouter } from './utils/navigation.js';
+import { createRouteTransition, shouldPlayRouteWipe } from './utils/route-transition.js';
 
 const header = document.querySelector('#site-header');
 const app = document.querySelector('#app');
+const wipe = document.querySelector('#route-wipe');
+const transition = createRouteTransition(app, wipe);
+let currentRouteName = null;
 
 async function render(route) {
   closeDrawer();
   renderSiteHeader(header, route.name);
-  app.replaceChildren();
+  const cinematic = shouldPlayRouteWipe(currentRouteName, route.name);
+  currentRouteName = route.name;
 
-  try {
-    if (route.name === 'home') await renderHomePage(app);
-    else if (route.name === 'players') await renderPlayerCataloguePage(app);
-    else if (route.name === 'player') await renderPlayerPage(app, route.id);
-    else if (route.name === 'lineups') await renderLineupCataloguePage(app);
-    else if (route.name === 'lineup') await renderLineupPage(app, route.id);
-    else if (route.name === 'team') await renderTeamPage(app, route.id);
-    else renderNotFound(app);
-  } catch (error) {
-    console.error(error);
-    app.replaceChildren(
-      h('div', { class: 'page' }, [
-        h('p', { class: 'notice' }, ['Terminal failed to load this file. See console.']),
-      ]),
-    );
-  }
-
-  window.scrollTo(0, 0);
+  await transition(async (target) => {
+    try {
+      if (route.name === 'home') await renderHomePage(target);
+      else if (route.name === 'players') await renderPlayerCataloguePage(target);
+      else if (route.name === 'player') await renderPlayerPage(target, route.id);
+      else if (route.name === 'lineups') await renderLineupCataloguePage(target);
+      else if (route.name === 'lineup') await renderLineupPage(target, route.id);
+      else if (route.name === 'team') await renderTeamPage(target, route.id);
+      else renderNotFound(target);
+    } catch (error) {
+      console.error(error);
+      target.replaceChildren(
+        h('div', { class: 'page' }, [
+          h('p', { class: 'notice' }, ['Terminal failed to load this file. See console.']),
+        ]),
+      );
+    }
+  }, { cinematic });
 }
 
 startRouter(render);

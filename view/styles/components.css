@@ -1,3 +1,92 @@
+.route-wipe {
+  pointer-events: none;
+  position: fixed;
+  top: var(--header-h);
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 12;
+  overflow: hidden;
+}
+
+.route-wipe.is-covering {
+  pointer-events: auto;
+}
+
+.route-wipe__panel {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(118deg, #050d1a 0 44%, #0b1d38 68%, #22161c 100%);
+  clip-path: polygon(-8% 0, -8% 0, -24% 100%, -24% 100%);
+}
+
+.route-wipe.is-covering .route-wipe__panel {
+  clip-path: polygon(-8% 0, 108% 0, 92% 100%, -24% 100%);
+  transition: clip-path 0.32s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+.route-wipe.is-clearing .route-wipe__panel {
+  clip-path: polygon(108% 0, 108% 0, 124% 100%, 92% 100%);
+  transition: clip-path 0.38s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.route-wipe__slash {
+  position: absolute;
+  top: -12%;
+  bottom: -12%;
+  left: -18%;
+  width: 5px;
+  opacity: 0;
+  background: linear-gradient(180deg, var(--accent), var(--ember) 58%, var(--gold));
+  box-shadow: 0 0 18px var(--accent-glow);
+  transform: skewX(-18deg);
+}
+
+.route-wipe.is-covering .route-wipe__slash {
+  animation: route-slash 0.32s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.route-wipe__mark {
+  position: absolute;
+  right: var(--page-pad);
+  bottom: 1.4rem;
+  opacity: 0;
+  color: var(--accent);
+  letter-spacing: 0.2em;
+}
+
+.route-wipe.is-covering .route-wipe__mark {
+  opacity: 1;
+  transition: opacity 0.16s ease 0.08s;
+}
+
+#app.is-entering > * {
+  animation: route-enter 0.48s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+@keyframes route-slash {
+  from {
+    opacity: 1;
+    transform: skewX(-18deg) translateX(0);
+  }
+  to {
+    opacity: 1;
+    transform: skewX(-18deg) translateX(130vw);
+  }
+}
+
+@keyframes route-enter {
+  from {
+    opacity: 0;
+    transform: translate3d(24px, 8px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
 .site-header {
   position: sticky;
   top: 0;

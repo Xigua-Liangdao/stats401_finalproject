@@ -1,0 +1,70 @@
+LPL font notes (2026-09-17)
+Do not load these into the app yet. Saved for a later multilingual pass.
+
+Sources
+- https://lpl.qq.com/  (live site, DevTools document.fonts)
+- https://lpl.qq.com/act/a20220303brand/typography.html  (brand guidelines)
+- LoL client typekit (CommunityDragon fonts.css), CN fallbacks only
+
+==================================================
+CHINESE  —  keep these for i18n
+==================================================
+
+Headline
+  方正强克体简 / FZQiangKTJW
+  Brand guidelines label: Chinese Headline
+  Role: LPL Chinese display titles (Tension upright; Eruption sheared 28°)
+  License: Founder Type — not free to embed. Need a licensed cut before production.
+
+Secondary / body
+  Noto Sans SC Light 300
+  Brand guidelines label: Chinese Secondary
+  Role: body, technical copy, high-legibility UI
+  License: SIL OFL — OK to use later
+
+Live site / client fallbacks
+  微软雅黑  Microsoft YaHei
+  黑体      SimHei
+  syhtb / syhtr   (lpl.qq.com family names; almost certainly 思源黑体
+                  Source Han Sans / Noto Sans SC Bold + Regular)
+  LoL Body CN / LoL Display CN  →  local("Microsoft YaHei"), local("SimHei")
+
+Practical i18n pairing later
+  Display CN  →  licensed 方正强克体, or Noto Sans SC ExtraBold as a stand-in
+  UI / body CN →  Noto Sans SC (400/500/700)
+  Do not use the English headline face for long Chinese copy
+
+==================================================
+LATIN / ENGLISH  —  current + reference
+==================================================
+
+Current app
+  Display  Barlow Condensed 600–800   (free DIN-like stand-in)
+  UI       IBM Plex Sans
+  Mono     IBM Plex Mono
+
+LPL official (do not embed without a license)
+  LPLKoriumVF / LPLKorium-Headline
+    Custom T1 Foundry / Valerio Monopoli for DesignStudio x Riot LPL
+    Brand name: LPL Headline
+    Use: all English headlines, Tension = upright
+  LPL Italic 28
+    Same Korium family, 28° italic/shear
+    Use: Eruption headlines only
+  Fraktion / FraktionSans
+    Brand secondary: body, stats, technical UI
+  DIN-Bold / DIN-Medium / DIN-Regular
+    Loaded on lpl.qq.com (numbers / interface)
+  Knucklehead
+    Also loaded on lpl.qq.com; role not fully mapped
+
+==================================================
+RULES FROM LPL GUIDELINES
+==================================================
+
+- Headlines stay short, punchy, uppercase
+- Do not over-track or over-lead
+- Do not use the secondary face for headlines
+- Do not use the headline face for long body copy
+- Chinese headlines should match English size when possible;
+  half-size is OK when the layout is copy-heavy
