@@ -9,7 +9,7 @@ export function renderLineupRoster(players) {
     meta: `${players.length} slots`,
     children: h(
       'div',
-      { class: 'team-block__items', style: { padding: 0, display: 'grid' } },
+      { class: 'lineup-roster' },
       players.map((player) => createRosterSlot(player)),
     ),
   });

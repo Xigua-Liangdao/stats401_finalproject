@@ -1,5 +1,6 @@
 import { createButton } from '../../components/buttons/button.js';
 import { createIdentityHeader, teamFact } from '../../components/cards/identity-header.js';
+import { createTeamLogo } from '../../components/media/entity-images.js';
 import { createBreadcrumbs } from '../../components/layout/page-shell.js';
 import { loadLineup } from '../../features/lineup/lineup-data.js';
 import { renderLineupRoster } from '../../features/lineup/lineup-roster.js';
@@ -30,7 +31,7 @@ export async function renderLineupPage(target, id) {
       createIdentityHeader({
         kicker: 'Lineup file',
         title: lineup.name,
-        mark: lineup.team.short,
+        mark: createTeamLogo(lineup.team),
         facts: [
           teamFact(lineup.team),
           { label: 'Context', value: lineup.context },

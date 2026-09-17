@@ -1,9 +1,10 @@
+import { createTeamLogo } from '../media/entity-images.js';
 import { h } from '../../utils/dom.js';
 import { href } from '../../utils/navigation.js';
 
 export function createTeamBlockHeader(team, meta) {
   return h('header', { class: 'team-block__header' }, [
-    h('div', { class: 'identity-mark' }, [team.short]),
+    createTeamLogo(team),
     h('a', { href: href.team(team.id) }, [
       h('div', { class: 'coord' }, ['Organization']),
       h('h2', { class: 'team-block__name' }, [team.name]),

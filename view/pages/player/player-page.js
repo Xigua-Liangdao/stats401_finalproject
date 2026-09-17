@@ -1,5 +1,6 @@
 import { createButton } from '../../components/buttons/button.js';
 import { createIdentityHeader, roleFact, teamFact } from '../../components/cards/identity-header.js';
+import { createPlayerPortrait } from '../../components/media/entity-images.js';
 import { createBreadcrumbs } from '../../components/layout/page-shell.js';
 import { renderPlayerStats } from '../../features/player/player-stats.js';
 import { loadPlayer } from '../../features/player/player-data.js';
@@ -29,7 +30,7 @@ export async function renderPlayerPage(target, id) {
       createIdentityHeader({
         kicker: 'Player file',
         title: player.name,
-        mark: player.team.short,
+        mark: createPlayerPortrait(player, { variant: 'hero' }),
         facts: [
           roleFact(player.role),
           teamFact(player.team),

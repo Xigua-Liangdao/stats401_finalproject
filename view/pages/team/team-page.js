@@ -1,4 +1,5 @@
 import { createIdentityHeader } from '../../components/cards/identity-header.js';
+import { createTeamLogo } from '../../components/media/entity-images.js';
 import { createBreadcrumbs } from '../../components/layout/page-shell.js';
 import { loadTeam, loadTeamLineups, loadTeamPlayers } from '../../features/team/team-data.js';
 import { renderTeamLineups, renderTeamPlayers } from '../../features/team/team-rosters.js';
@@ -29,7 +30,7 @@ export async function renderTeamPage(target, id) {
       createIdentityHeader({
         kicker: 'Organization',
         title: team.name,
-        mark: team.short,
+        mark: createTeamLogo(team),
         facts: [
           { label: 'Season', value: String(team.season) },
           { label: 'Split', value: team.split },
