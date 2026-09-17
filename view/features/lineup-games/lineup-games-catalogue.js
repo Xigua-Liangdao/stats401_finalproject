@@ -2,7 +2,7 @@ import { createGameRow } from '../../components/catalogue/game-row.js';
 import { createPagedList } from '../../components/catalogue/paged-list.js';
 import { createSectionBlock } from '../../components/layout/section-block.js';
 import { h } from '../../utils/dom.js';
-import { openLineupGameInfo } from './lineup-game-info.js';
+import { openLineupGameInfo } from './lineup-game-info.js?v=game-stats';
 
 export function renderLineupGamesCatalogue(games) {
   return createSectionBlock({

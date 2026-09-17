@@ -1,4 +1,4 @@
-import { dataSource } from '../../utils/data-source.js';
+import { dataSource } from '../../utils/data-source.js?v=game-stats';
 
 export function loadPlayerGames(playerId) {
   return dataSource.loadPlayerGames(playerId);

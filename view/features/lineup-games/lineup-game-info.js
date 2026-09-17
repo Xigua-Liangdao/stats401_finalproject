@@ -5,16 +5,27 @@ import { createMiniSlot } from '../../components/catalogue/roster-slot.js';
 import { createVizPlaceholder } from '../../components/cards/viz-placeholder.js';
 import { h } from '../../utils/dom.js';
 import { formatDate, formatResult, placeholderValue } from '../../utils/formatting.js';
+import { fillStatCards } from '../../utils/stats.js?v=game-stats';
+
+const LINEUP_GAME_STAT_CARDS = [
+  { key: 'lineup_impact', format: 'impact', label: 'Lineup impact', hint: 'Mean adjusted damage of the five players' },
+  { key: 'mean_dpm', format: 'dpm', label: 'Mean DPM', hint: 'Five-player mean DPM' },
+  { key: 'gold_concentration', format: 'share', label: 'Gold concentration', hint: 'Sum of squared gold shares' },
+  { key: 'damage_concentration', format: 'share', label: 'Damage concentration', hint: 'Sum of squared damage shares' },
+];
 
 export function openLineupGameInfo(game) {
   const players = game.lineup?.players ?? [];
+  const unevaluated = game.lineup_impact == null;
   openDrawer({
     kicker: 'Lineup game info',
     title: `${game.lineup?.name ?? 'Lineup'} · ${formatResult(game.result)}`,
     body: h('div', {}, [
-      h('p', { class: 'notice' }, [
-        'Lineup-game detail. Values shown here are placeholders.',
-      ]),
+      unevaluated
+        ? h('p', { class: 'notice' }, [
+            'Lineup impact is unavailable for this game because it was not in the evaluated window. Resource fields are still shown.',
+          ])
+        : null,
       createDrawerSection({
         title: 'Game metadata',
         children: createMetaGrid([
@@ -37,12 +48,7 @@ export function openLineupGameInfo(game) {
       }),
       createDrawerSection({
         title: 'Lineup stat cards',
-        children: createStatGrid([
-          { label: 'Lineup impact', hint: 'Placeholder' },
-          { label: 'Mean DPM', hint: 'Placeholder' },
-          { label: 'Gold concentration', hint: 'Placeholder' },
-          { label: 'Damage concentration', hint: 'Placeholder' },
-        ]),
+        children: createStatGrid(fillStatCards(LINEUP_GAME_STAT_CARDS, game)),
       }),
       createDrawerSection({
         title: 'Share sketch',

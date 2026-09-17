@@ -243,6 +243,8 @@ function mapPlayerGame(row) {
     gold_diff_at_15: asNumber(row.gold_diff_at_15),
     xp_diff_at_15: asNumber(row.xp_diff_at_15),
     cs_diff_at_15: asNumber(row.cs_diff_at_15),
+    adjusted_impact: asNumber(row.adjusted_impact),
+    prediction_status: row.prediction_status || null,
   };
 }
 
@@ -257,6 +259,11 @@ function mapLineupGame(row, opponentTeamId, side) {
     split: row.split,
     patch: row.patch,
     side,
+    lineup_impact: asNumber(row.lineup_impact),
+    mean_dpm: asNumber(row.mean_dpm),
+    mean_vision_per_minute: asNumber(row.mean_vision_per_minute),
+    gold_concentration: asNumber(row.gold_concentration),
+    damage_concentration: asNumber(row.damage_concentration),
   };
 }
 

@@ -6,6 +6,7 @@ const FORMATTERS = {
   percent: formatPercent,
   share: (value) => formatFixed(value, 3),
   dpm: (value) => formatFixed(value, 1),
+  kda: (value) => formatFixed(value, 2),
   impact: formatImpact,
   vision: (value) => formatFixed(value, 2),
 };
