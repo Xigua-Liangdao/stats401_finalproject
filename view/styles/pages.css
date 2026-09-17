@@ -28,8 +28,12 @@
 }
 
 .home-title {
-  margin: 0.4rem 0 0.8rem;
-  font-size: clamp(3.4rem, 8vw, 6.4rem);
+  margin: 0.28rem 0 0.7rem;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(4.1rem, 10vw, 7.6rem);
+  letter-spacing: 0.02em;
+  line-height: 0.84;
   color: #fff;
   text-shadow: 0 10px 40px rgba(30, 90, 200, 0.35);
 }

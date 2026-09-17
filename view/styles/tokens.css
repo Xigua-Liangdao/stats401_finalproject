@@ -27,7 +27,7 @@
   --title-size: clamp(2.15rem, 4.2vw, 3.25rem);
   --display-leading: 1.08;
   --radius: 3px;
-  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-display: "Barlow Condensed", "Arial Narrow", sans-serif;
   --font-ui: "IBM Plex Sans", "Helvetica Neue", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, monospace;
   --shadow-soft: 0 18px 44px rgba(1, 6, 18, 0.38);

@@ -23,20 +23,19 @@ export async function renderLineupCataloguePage(target) {
           ...group,
           meta: `${String(group.lineups.length).padStart(2, '0')} lineups`,
         })),
-        renderItems: (group) =>
-          group.lineups.map((lineup) =>
-            h('a', { class: 'lineup-strip', href: href.lineup(lineup.id) }, [
-              h('div', { class: 'lineup-strip__top' }, [
-                h('div', { class: 'lineup-strip__name' }, [lineup.name]),
-                h('div', { class: 'coord' }, [lineup.context, ' · Open file →']),
-              ]),
-              h(
-                'div',
-                { class: 'lineup-strip__slots' },
-                lineup.players.map((player) => createMiniSlot(player)),
-              ),
+        getItems: (group) => group.lineups,
+        renderItem: (lineup) =>
+          h('a', { class: 'lineup-strip', href: href.lineup(lineup.id) }, [
+            h('div', { class: 'lineup-strip__top' }, [
+              h('div', { class: 'lineup-strip__name' }, [lineup.name]),
+              h('div', { class: 'coord' }, [lineup.context, ' · Open file →']),
             ]),
-          ),
+            h(
+              'div',
+              { class: 'lineup-strip__slots' },
+              lineup.players.map((player) => createMiniSlot(player)),
+            ),
+          ]),
       }),
     }),
   );

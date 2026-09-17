@@ -22,7 +22,8 @@ export async function renderPlayerCataloguePage(target) {
           ...group,
           meta: `${String(group.players.length).padStart(2, '0')} players`,
         })),
-        renderItems: (group) => group.players.map((player) => createRosterSlot(player)),
+        getItems: (group) => group.players,
+        renderItem: (player) => createRosterSlot(player),
       }),
     }),
   );
