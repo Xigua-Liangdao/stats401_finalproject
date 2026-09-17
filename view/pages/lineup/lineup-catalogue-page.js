@@ -1,12 +1,13 @@
 import { createMiniSlot } from '../../components/catalogue/roster-slot.js';
-import { createTeamGroupedCatalogue } from '../../components/catalogue/team-grouped-catalogue.js?v=lineup-3';
+import { createTeamGroupedCatalogue } from '../../components/catalogue/team-grouped-catalogue.js?v=catalogue-back';
 import { createPageShell } from '../../components/layout/page-shell.js';
 import { loadLineupCatalog } from '../../features/lineup/lineup-data.js';
 import { h } from '../../utils/dom.js';
-import { href } from '../../utils/navigation.js';
+import { href, rememberCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
 
-export async function renderLineupCataloguePage(target) {
+export async function renderLineupCataloguePage(target, page = 1) {
   const groups = await loadLineupCatalog();
+  const onPageChange = rememberCataloguePage('lineups', page);
 
   target.append(
     createPageShell({
@@ -19,6 +20,8 @@ export async function renderLineupCataloguePage(target) {
       ],
       children: createTeamGroupedCatalogue({
         variant: 'lineups',
+        initialPage: page,
+        onPageChange,
         groups: groups.map((group) => ({
           ...group,
           meta: `${String(group.lineups.length).padStart(2, '0')} lineups`,

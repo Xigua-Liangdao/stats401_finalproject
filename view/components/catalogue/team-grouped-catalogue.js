@@ -1,4 +1,4 @@
-import { createPagedList } from './paged-list.js';
+import { createPagedList } from './paged-list.js?v=catalogue-back';
 import { createTeamLogo } from '../media/entity-images.js';
 import { h } from '../../utils/dom.js';
 import { href } from '../../utils/navigation.js';
@@ -53,6 +53,8 @@ export function createTeamGroupedCatalogue({
   renderItem,
   renderItems,
   pageSize = CATALOGUE_PAGE_SIZE[variant] ?? CATALOGUE_PAGE_SIZE.players,
+  initialPage = 1,
+  onPageChange,
 }) {
   const resolveItems = typeof getItems === 'function' ? getItems : (group) => itemsFor(group, variant);
   const entries = groups.flatMap((group) => resolveItems(group).map((item) => ({ group, item })));
@@ -60,6 +62,8 @@ export function createTeamGroupedCatalogue({
   return createPagedList({
     items: entries,
     pageSize,
+    initialPage,
+    onPageChange,
     listClass: 'catalogue',
     renderPage: (pageEntries) =>
       groupPageEntries(pageEntries).map(({ group, items }) =>

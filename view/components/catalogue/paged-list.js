@@ -5,12 +5,14 @@ export const GAME_PAGE_SIZE = 5;
 export function createPagedList({
   items,
   pageSize = GAME_PAGE_SIZE,
+  initialPage = 1,
+  onPageChange,
   renderItem,
   renderPage,
   listClass = 'paged-list__items',
 }) {
   const pageCount = Math.max(1, Math.ceil(items.length / pageSize));
-  let page = 1;
+  let page = Math.min(pageCount, Math.max(1, initialPage));
   let hasRendered = false;
 
   const list = h('div', { class: listClass });
@@ -42,6 +44,7 @@ export function createPagedList({
               onClick: () => {
                 if (page === number) return;
                 page = number;
+                onPageChange?.(page);
                 render();
               },
             },
