@@ -4,6 +4,7 @@
  */
 import { DATASET, ROLE_ORDER } from './constants.js';
 import { parseCsv } from './csv.js';
+import { loadMediaManifest } from './assets.js';
 
 function indexById(items) {
   return Object.fromEntries(items.map((item) => [item.id, item]));
@@ -61,13 +62,14 @@ function sortPairs(pairs) {
   });
 }
 
-function lineupPlayersFromRow(row, playerById) {
+function lineupPlayersFromRow(row, playerByTeam) {
   return ROLE_ORDER.map((role) => {
     const id = row[`${role}_id`];
     const name = row[`${role}_player`];
-    if (playerById[id]) return playerById[id];
+    const player = playerByTeam.get(playerKey(id, row.team_id, role));
+    if (player) return player;
     if (!id) return null;
-    return { id, name: name || id, role, teamId: row.team_id, team: null };
+    return { id, name: name || id, role, season: Number(row.season), teamId: row.team_id, team: null };
   }).filter(Boolean);
 }
 
@@ -107,14 +109,18 @@ function hydrateFromPanel(rows, summaries = {}) {
     id: row.player_id,
     name: row.player,
     role: row.role,
+    season: Number(row.season),
     teamId: row.team_id,
     team: teamById[row.team_id],
     stats: playerStats.get(playerKey(row.player_id, row.team_id, row.role)) ?? { eligible: false },
   }));
   const playerById = indexById(players);
+  const playerByTeam = new Map(players.map((player) => [
+    playerKey(player.id, player.teamId, player.role), player,
+  ]));
 
   const lineups = lineupRows.map((row) => {
-    const attached = lineupPlayersFromRow(row, playerById).map((player) => ({
+    const attached = lineupPlayersFromRow(row, playerByTeam).map((player) => ({
       ...player,
       team: player.team || teamById[row.team_id],
     }));
@@ -193,6 +199,7 @@ function loadCatalogRecord() {
       fetchCsv('lineups.csv'),
       fetchCsv('pairs.csv'),
       fetchCsv('teams.csv'),
+      loadMediaManifest(),
     ]).then(([panel, players, lineups, pairs, teams]) => {
       if (!panel.length) throw new Error('team_panel.csv is empty.');
       return hydrateFromPanel(panel, { players, lineups, pairs, teams });
@@ -304,8 +311,13 @@ export const dataSource = {
     return catalog.teamById[id] ?? null;
   },
 
-  async getPlayer(id) {
+  async getPlayer(id, teamId, season) {
     const catalog = await loadCatalogRecord();
+    if (teamId || season) {
+      return catalog.players.find((player) => player.id === id
+        && (!teamId || player.teamId === teamId)
+        && (!season || String(player.season) === String(season))) ?? null;
+    }
     return catalog.playerById[id] ?? null;
   },
 

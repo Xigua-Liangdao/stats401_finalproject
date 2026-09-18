@@ -7,6 +7,7 @@ import pandas as pd
 
 from aggregate import aggregate
 from export_data import dataset_info, export_dataset, make_schema
+from scripts.build_team_panel import build_team_panel, write_team_panel
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -50,6 +51,7 @@ def build_test_data(tables, metadata, destination=ROOT / "data/test", schema=Non
                         "timeline_role": player.role, "heatmap_team_id": team.team_id,
                         "selection_rule": "largest evaluated sample inside this test fixture; stable ID breaks ties"}
     export_dataset(destination, test_tables, meta, schema or make_schema(tables))
+    write_team_panel(destination, build_team_panel(destination))
     return test_tables
 
 

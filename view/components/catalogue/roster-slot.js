@@ -4,7 +4,7 @@ import { href } from '../../utils/navigation.js';
 import { formatRole } from '../../utils/formatting.js';
 
 export function createRosterSlot(player) {
-  return h('a', { class: 'roster-slot', href: href.player(player.id) }, [
+  return h('a', { class: 'roster-slot', href: href.player(player.id, player.teamId, player.season) }, [
     h('div', { class: 'roster-slot__role' }, [formatRole(player.role)]),
     createPlayerPortrait(player),
     h('div', { class: 'roster-slot__name' }, [player.name]),

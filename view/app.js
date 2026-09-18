@@ -27,7 +27,7 @@ async function render(route) {
     try {
       if (route.name === 'home') await renderHomePage(target);
       else if (route.name === 'players') await renderPlayerCataloguePage(target, route.page);
-      else if (route.name === 'player') await renderPlayerPage(target, route.id);
+      else if (route.name === 'player') await renderPlayerPage(target, route.id, route.teamId, route.season);
       else if (route.name === 'lineups') await renderLineupCataloguePage(target, route.page);
       else if (route.name === 'lineup') await renderLineupPage(target, route.id);
       else if (route.name === 'team') await renderTeamPage(target, route.id);

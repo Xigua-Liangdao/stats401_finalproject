@@ -4,6 +4,6 @@ export function loadPlayerCatalog() {
   return dataSource.listPlayersByTeam();
 }
 
-export function loadPlayer(id) {
-  return dataSource.getPlayer(id);
+export function loadPlayer(id, teamId, season) {
+  return dataSource.getPlayer(id, teamId, season);
 }

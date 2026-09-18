@@ -49,8 +49,9 @@ class DataContractTests(unittest.TestCase):
 
     def test_same_filenames_columns_types_and_null_contract(self):
         files = lambda directory: {p.name for p in directory.iterdir() if p.is_file() and not p.name.startswith(".")}
-        extra = {"team_panel.csv"}
-        self.assertEqual(files(self.processed) - extra, files(self.test) - extra)
+        self.assertEqual(files(self.processed), files(self.test))
+        with (self.processed / "team_panel.csv").open() as full, (self.test / "team_panel.csv").open() as sample:
+            self.assertEqual(next(csv.reader(full)), next(csv.reader(sample)))
         self.assertEqual(self.schema["schema_version"], self.test_schema["schema_version"])
         self.assertEqual(set(self.schema["tables"]), set(self.test_schema["tables"]))
         for name, spec in self.schema["tables"].items():

@@ -4,7 +4,7 @@
 
 The cleaning rules and model definitions are a **provisional demo baseline**. The frontend can be developed against `data/test/` while those decisions are refined.
 
-Both directories expose the **same 10 filenames**, CSV column order, declared dtypes/nullability, JSON keys and primitive types. Only dataset values, counts and scope differ. `test/` is a small subset of **real, complete games**, including both valid out-of-time predictions and warmup/null cases. Its player/pair/lineup summaries are recomputed for the subset. It is a frontend fixture, not an independent statistical model test set.
+Both directories expose the **same 11 filenames**, CSV column order, declared dtypes/nullability, JSON keys and primitive types. Only dataset values, counts and scope differ. `test/` is a small subset of **real, complete games**, including both valid out-of-time predictions and warmup/null cases. Its player/pair/lineup summaries are recomputed for the subset. It is a frontend fixture, not an independent statistical model test set.
 
 From `view/index.html`, change only the directory:
 
@@ -23,6 +23,12 @@ const data = await response.json();
 `model/run.py` generates both directories with the same serializer. To rebuild only the test fixture from existing exports: `python model/build_test_data.py`. Verify compatibility with `python -m unittest discover -s model/tests -p 'test_data_contract.py' -v`.
 
 When cleaning changes, regenerate both directories together. Preserve the public field contract or update its version and notify the frontend developer if a breaking change is necessary. `schema.json` records **permitted** nulls, even if a particular dataset has no null in that field. Its `rows` counts intentionally differ between directories.
+
+## Season-specific identity images
+
+Both datasets share [`img/manifest.json`](img/manifest.json) and local images under `img/player/2025/` and `img/team/2025/`. The manifest covers 112 of 114 player/team combinations and all 16 logos; all test-fixture identities have photos. Source seasons, split labels, transfer handling and the two explicit gaps are documented in the [media catalogue](img/README.md). The UI matches by year + team + player ID.
+
+`team_panel.csv` is the frontend catalogue export in both directories. It is generated from the same player/lineup summaries and is outside the ten analytical files described by `schema.json`. Its `split` label is the most common split per team, not a split-specific roster. `model/run.py` now refreshes both catalogues; `model/build_test_data.py` also refreshes the test catalogue.
 
 ## Raw snapshot
 
@@ -59,6 +65,7 @@ Audited counts and missing values: [`model/reports/data_quality.json`](../model/
 | `lineups.csv` | Team + role-ordered five-player roster, `lineup_id` | Lineup comparison / parallel coordinates |
 | `lineup_games.csv` | Lineup × game | Filterable lineup profiles; 1,610 rows |
 | `teams.csv` | Team, `team_id` | Team selector and sample sizes |
+| `team_panel.csv` | Player/lineup catalogue rows | Frontend identities; same columns in test and processed |
 | `schema.json` | Fields, declared dtypes, permitted nulls and row counts | Shared machine-readable export contract |
 
 ## Field definitions

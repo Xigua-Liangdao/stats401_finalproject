@@ -4,6 +4,7 @@ import {
   TEAM_LOGO_FALLBACK,
   bindImageFallback,
   playerImageUrl,
+  playerImageAsset,
   teamLogoUrl,
 } from '../../utils/assets.js';
 
@@ -19,10 +20,14 @@ export function createTeamLogo(team) {
 }
 
 export function createPlayerPortrait(player, { variant = 'slot' } = {}) {
+  const asset = playerImageAsset(player);
   const img = h('img', {
     class: 'entity-image entity-image--portrait',
     src: playerImageUrl(player),
     alt: player?.name ? player.name : 'Player portrait',
+    title: asset
+      ? `${asset.player} · ${asset.team_short} · ${asset.season} ${asset.source_split} photo (Leaguepedia)`
+      : 'Season/team photo unavailable',
     draggable: 'false',
   });
   bindImageFallback(img, PLAYER_IMAGE_FALLBACK);

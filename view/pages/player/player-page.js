@@ -11,8 +11,8 @@ import { h } from '../../utils/dom.js';
 import { href, readCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
 import { renderNotFound } from '../not-found.js';
 
-export async function renderPlayerPage(target, id) {
-  const [player, groups] = await Promise.all([loadPlayer(id), loadPlayerCatalog()]);
+export async function renderPlayerPage(target, id, teamId, season) {
+  const [player, groups] = await Promise.all([loadPlayer(id, teamId, season), loadPlayerCatalog()]);
   if (!player) {
     renderNotFound(target);
     return;

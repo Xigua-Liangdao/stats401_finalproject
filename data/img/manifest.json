@@ -1,0 +1,4309 @@
+{
+  "schema_version": 1,
+  "retrieved_at": "2026-09-18T02:29:56.864925+00:00",
+  "description": "Historical LPL identity media shared by test and processed datasets.",
+  "selection_policy": {
+    "player": "Match season, team ID and player ID. Prefer exact source split, then an earlier split in the same season/team. No cross-team or cross-year fallback.",
+    "team": "Leaguepedia image revisions uploaded by 2025-01-12; OMG uses the official Tencent LPL asset dated 2023-01-03 in its URL.",
+    "missing": "Use the neutral local placeholder; gaps are explicit."
+  },
+  "coverage": {
+    "seasons": [
+      2025
+    ],
+    "unique_players": 99,
+    "player_team_total": 114,
+    "player_team_matched": 112,
+    "team_total": 16,
+    "team_matched": 16
+  },
+  "players": [
+    {
+      "season": 2025,
+      "team_id": "oe:team:ed28f87f0cfdba0a2a8f183cebae73a",
+      "team": "Anyone's Legend",
+      "team_short": "AL",
+      "player_id": "oe:player:aad3806ef26a116c73b11efa07e9bd8",
+      "player": "Flandre",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/al/flandre.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "46d8d56cd617e02118b1e9415006395a0f5c5fc4f594904f35cd4c0b0a9fb46c",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:AL Flandre 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:AL_Flandre_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/92/AL_Flandre_2025_Split_1.png/revision/latest?cb=20250109143837&format=original",
+        "uploaded_at": "2025-01-09T14:38:37Z",
+        "sha1": "cf4e98e2436ca8292d2aef670315a626ea7d81d0",
+        "metadata": {
+          "player": "Flandre",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Anyone's Legend",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:ed28f87f0cfdba0a2a8f183cebae73a",
+      "team": "Anyone's Legend",
+      "team_short": "AL",
+      "player_id": "oe:player:7cf68f44e5dc31827b1d3f0a3b4a28e",
+      "player": "Hope",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/al/hope.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "a6c00f1f4cf95d91c4ead6897d8f95f2eeeabb351b32d86da927c0e21550bc77",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:AL Hope 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:AL_Hope_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a5/AL_Hope_2025_Split_1.png/revision/latest?cb=20250109143833&format=original",
+        "uploaded_at": "2025-01-09T14:38:33Z",
+        "sha1": "038d19ea01323a98d5f8dc886cd695510b518a21",
+        "metadata": {
+          "player": "Hope (Wang Jie)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Anyone's Legend",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:ed28f87f0cfdba0a2a8f183cebae73a",
+      "team": "Anyone's Legend",
+      "team_short": "AL",
+      "player_id": "oe:player:d24f38ec30ce6f7577066f80e43e4bf",
+      "player": "Kael",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/al/kael.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "9a601a93630cd0ebc6b24ce5d2062e5c452541db6174b8a5b56ef40b24e1400c",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:AL Kael 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:AL_Kael_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cf/AL_Kael_2025_Split_1.png/revision/latest?cb=20250109143832&format=original",
+        "uploaded_at": "2025-01-09T14:38:32Z",
+        "sha1": "2fa7b80e65439ad5986c1eccaca30b0d1763ef72",
+        "metadata": {
+          "player": "Kael (Kim Jin-hong)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Anyone's Legend",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:ed28f87f0cfdba0a2a8f183cebae73a",
+      "team": "Anyone's Legend",
+      "team_short": "AL",
+      "player_id": "oe:player:0e2f0d3ded24c190dd6a4b3d6f89f04",
+      "player": "Shanks",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/al/shanks.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "d3b6792666a5f382b7170c9fad6870a2bb9d90bb0eafef275d1bcd3e2a99db51",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:AL Shanks 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:AL_Shanks_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/17/AL_Shanks_2025_Split_1.png/revision/latest?cb=20250109143834&format=original",
+        "uploaded_at": "2025-01-09T14:38:34Z",
+        "sha1": "e8e15668745638dae42952dc0f6377a44a283594",
+        "metadata": {
+          "player": "Shanks",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Anyone's Legend",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:ed28f87f0cfdba0a2a8f183cebae73a",
+      "team": "Anyone's Legend",
+      "team_short": "AL",
+      "player_id": "oe:player:62922f2b370657a966de4d84f5586bf",
+      "player": "Tarzan",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/al/tarzan.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "ac3dc3ed71cb84b292ddabc313a1b124f01312c4768959e95a0f1be27efd603b",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:AL Tarzan 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:AL_Tarzan_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b8/AL_Tarzan_2025_Split_1.png/revision/latest?cb=20250109143835&format=original",
+        "uploaded_at": "2025-01-09T14:38:35Z",
+        "sha1": "f02c4ece3dc59afc135c183cf42a7989bb67a289",
+        "metadata": {
+          "player": "Tarzan (Lee Seung-yong)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Anyone's Legend",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:d356a144644879dabb5f34cd99c886d",
+      "team": "Bilibili Gaming",
+      "team_short": "BLG",
+      "player_id": "oe:player:05326a1c42e9c27a1067768c88955e7",
+      "player": "Beichuan",
+      "observed_splits": [
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 2 Placements",
+      "path": "player/2025/blg/beichuan.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "4462bbb3f53f98aaffbf714037aac48b74aed3fa7e91d7ca9e355a4e541c97b5",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:BLG Beichuan 2025 Split 2.png",
+        "page_url": "https://lol.fandom.com/wiki/File:BLG_Beichuan_2025_Split_2.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0a/BLG_Beichuan_2025_Split_2.png/revision/latest?cb=20250502160831&format=original",
+        "uploaded_at": "2025-05-02T16:08:31Z",
+        "sha1": "8fdbb75b7ab9353afc15d80a239f340bbdbad24a",
+        "metadata": {
+          "player": "Beichuan",
+          "tournament": "LPL 2025 Split 2 Placements",
+          "team": "Bilibili Gaming",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No",
+          "date": "2025-05-01"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:d356a144644879dabb5f34cd99c886d",
+      "team": "Bilibili Gaming",
+      "team_short": "BLG",
+      "player_id": "oe:player:fb66ef5885b4be9323905b821dc3a42",
+      "player": "Bin",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/blg/bin.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "7a3c660412462678470ba1cf6d8b827537e2ec72219476dfd66112433c506796",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:BLG Bin 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:BLG_Bin_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0a/BLG_Bin_2025_Split_1.png/revision/latest?cb=20250109143831&format=original",
+        "uploaded_at": "2025-01-09T14:38:31Z",
+        "sha1": "6612ae03b45c734e05e1f25d392e7ec4085972f3",
+        "metadata": {
+          "player": "Bin (Chen Ze-Bin)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "BLG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:d356a144644879dabb5f34cd99c886d",
+      "team": "Bilibili Gaming",
+      "team_short": "BLG",
+      "player_id": "oe:player:a58a0d41103cdc5b58cbb547eeaca2d",
+      "player": "Elk",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/blg/elk.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "fd8480c586a29c2772c4ec8f3f68bca12bdf4f10e278c770387ac2ce5ac1a499",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:BLG Elk 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:BLG_Elk_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/99/BLG_Elk_2025_Split_1.png/revision/latest?cb=20250109143827&format=original",
+        "uploaded_at": "2025-01-09T14:38:27Z",
+        "sha1": "8f2e3f469ec63de9fc3abac936a74c3de576783a",
+        "metadata": {
+          "player": "Elk",
+          "tournament": "LPL 2025 Split 1",
+          "team": "BLG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:d356a144644879dabb5f34cd99c886d",
+      "team": "Bilibili Gaming",
+      "team_short": "BLG",
+      "player_id": "oe:player:ed29043422e3c515e1cb292464b990b",
+      "player": "Knight",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/blg/knight.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "75c68c08e355eafcf002638367d1539a499bc1174c08a7074b183daa0d6f7151",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:BLG Knight 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:BLG_Knight_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/39/BLG_Knight_2025_Split_1.png/revision/latest?cb=20250109143828&format=original",
+        "uploaded_at": "2025-01-09T14:38:28Z",
+        "sha1": "92bae5483422cf6aa2f292cb5f873fc29e7bb0ad",
+        "metadata": {
+          "player": "Knight (Zhuo Ding)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "BLG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:d356a144644879dabb5f34cd99c886d",
+      "team": "Bilibili Gaming",
+      "team_short": "BLG",
+      "player_id": "oe:player:90651ebea9a35ec4e018c8157492e17",
+      "player": "ON",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/blg/on.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "b78b7407aea80568c2618bf52cf0237ffd1ab918218ae05a2d8e324aca6eda82",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:BLG ON 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:BLG_ON_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9e/BLG_ON_2025_Split_1.png/revision/latest?cb=20250109143826&format=original",
+        "uploaded_at": "2025-01-09T14:38:26Z",
+        "sha1": "458dfec28a2fa33a4090175bdfebac912d9005c1",
+        "metadata": {
+          "player": "ON",
+          "tournament": "LPL 2025 Split 1",
+          "team": "BLG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:d356a144644879dabb5f34cd99c886d",
+      "team": "Bilibili Gaming",
+      "team_short": "BLG",
+      "player_id": "oe:player:c332dc879e14f1feb266190c7f396fd",
+      "player": "Shad0w",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/blg/shad0w.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "9f6f6694ad2d77b3d750a0452f84352b1aff0f30dfce594961a05f924d41bf07",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:BLG Shad0w 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:BLG_Shad0w_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/64/BLG_Shad0w_2025_Split_3.png/revision/latest?cb=20250726031456&format=original",
+        "uploaded_at": "2025-07-26T03:14:56Z",
+        "sha1": "1050690211ee2aa4a8fa00426fd3a619c8cdea0b",
+        "metadata": {
+          "player": "Shad0w",
+          "tournament": "LPL 2025 Split 3",
+          "team": "BLG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:d356a144644879dabb5f34cd99c886d",
+      "team": "Bilibili Gaming",
+      "team_short": "BLG",
+      "player_id": "oe:player:b61e517b1a6027160aafaf56e9867c0",
+      "player": "Wei",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/blg/wei.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "adb145bce4dc04aa83a84cb832d07d2ea54e8bb282e962a4b23dfc9afdabcab3",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:BLG Wei 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:BLG_Wei_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d2/BLG_Wei_2025_Split_1.png/revision/latest?cb=20250109143830&format=original",
+        "uploaded_at": "2025-01-09T14:38:30Z",
+        "sha1": "b272f05cf664e7db6d8fdf3f4777c60ebce9e467",
+        "metadata": {
+          "player": "Wei (Yan Yang-Wei)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "BLG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:056c3140a119e44a03d462e2c832f27",
+      "team": "EDward Gaming",
+      "team_short": "EDG",
+      "player_id": "oe:player:66d0ff0f8f9b5296770c1dbda549950",
+      "player": "Ahn",
+      "observed_splits": [
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 2 Placements",
+      "path": "player/2025/edg/ahn.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "59a21225c8466f38c03265913308828ab55e04d109000cf021707ee644c76ae4",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:EDG Ahn 2025 Split 2.png",
+        "page_url": "https://lol.fandom.com/wiki/File:EDG_Ahn_2025_Split_2.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f0/EDG_Ahn_2025_Split_2.png/revision/latest?cb=20250325152953&format=original",
+        "uploaded_at": "2025-03-25T15:29:53Z",
+        "sha1": "ee0b852795b5c3b65361327ece93628e22c08f99",
+        "metadata": {
+          "player": "Ahn",
+          "tournament": "LPL 2025 Split 2 Placements",
+          "team": "EDG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:056c3140a119e44a03d462e2c832f27",
+      "team": "EDward Gaming",
+      "team_short": "EDG",
+      "player_id": "oe:player:542b1268b090a5fc82442efbd8d8165",
+      "player": "Angel",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/edg/angel.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "4731b002ee7bb5d902d9a091f3b8f00b35c363387bb22287a654a5577d3381d3",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:EDG Angel 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:EDG_Angel_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/48/EDG_Angel_2025_Split_1.png/revision/latest?cb=20250109143822&format=original",
+        "uploaded_at": "2025-01-09T14:38:22Z",
+        "sha1": "ab9abc155ebca93dfe02ab33994324f9d7e4fe9b",
+        "metadata": {
+          "player": "Angel (Xiang Tao)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "EDG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:056c3140a119e44a03d462e2c832f27",
+      "team": "EDward Gaming",
+      "team_short": "EDG",
+      "player_id": "oe:player:da3299cd46f1ad8a86bbadeb6b8a320",
+      "player": "Assum",
+      "observed_splits": [
+        "Split 1"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/edg/assum.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "04153db745457fc0786129a244630940fc6474e3dcefc543e578b3f05db26606",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:EDG Assum 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:EDG_Assum_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/74/EDG_Assum_2025_Split_1.png/revision/latest?cb=20250109143821&format=original",
+        "uploaded_at": "2025-01-09T14:38:21Z",
+        "sha1": "6814ce5d4237ed2cb63fc9503c6edf5b986974d5",
+        "metadata": {
+          "player": "Assum",
+          "tournament": "LPL 2025 Split 1",
+          "team": "EDG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:056c3140a119e44a03d462e2c832f27",
+      "team": "EDward Gaming",
+      "team_short": "EDG",
+      "player_id": "oe:player:13166913111075999f2adeb687548eb",
+      "player": "Parukia",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/edg/parukia.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "60bb66f2aa3392e73463dc73ac9f17deedc3c30ec3eb7e5aa8ce9738489baf95",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:EDG Parukia 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:EDG_Parukia_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/13/EDG_Parukia_2025_Split_3.png/revision/latest?cb=20250719110507&format=original",
+        "uploaded_at": "2025-07-19T11:05:07Z",
+        "sha1": "e6c6de7ea3c32a2e894ae57045c4077a48e7435d",
+        "metadata": {
+          "player": "Parukia",
+          "tournament": "LPL 2025 Split 3",
+          "team": "EDG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:056c3140a119e44a03d462e2c832f27",
+      "team": "EDward Gaming",
+      "team_short": "EDG",
+      "player_id": "oe:player:39d7885ab4602a7f8d202883d253f5e",
+      "player": "Wink",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/edg/wink.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "63980d3a5d8af45f92886125a007c79f4875ac1049cc451604d8f2ad0e32c576",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:EDG Wink 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:EDG_Wink_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/80/EDG_Wink_2025_Split_1.png/revision/latest?cb=20250109143820&format=original",
+        "uploaded_at": "2025-01-09T14:38:20Z",
+        "sha1": "a50488f6a7de28a681aeeafdd5471aeeb153077e",
+        "metadata": {
+          "player": "Wink",
+          "tournament": "LPL 2025 Split 1",
+          "team": "EDG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:056c3140a119e44a03d462e2c832f27",
+      "team": "EDward Gaming",
+      "team_short": "EDG",
+      "player_id": "oe:player:58771d428ade54dd5983bbe70ce0383",
+      "player": "Xiaohao",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/edg/xiaohao.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "80435b8076d0d7073270c127b7ef5e23366efcd2bfa23e24064b9a36fb6b479f",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:EDG Xiaohao 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:EDG_Xiaohao_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6a/EDG_Xiaohao_2025_Split_1.png/revision/latest?cb=20250109143823&format=original",
+        "uploaded_at": "2025-01-09T14:38:23Z",
+        "sha1": "f43dbc2968d9f7e78df0a5bdc12bd35b774fe502",
+        "metadata": {
+          "player": "Xiaohao",
+          "tournament": "LPL 2025 Split 1",
+          "team": "EDG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:056c3140a119e44a03d462e2c832f27",
+      "team": "EDward Gaming",
+      "team_short": "EDG",
+      "player_id": "oe:player:132ee4b29ebeac294a420dcebe64bdc",
+      "player": "Zdz",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/edg/zdz.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "0728d7d5c8ee19e5c98f595fa285c43a5285fd67dd0d84e3622dd71cddb1e0d4",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:EDG Zdz 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:EDG_Zdz_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6f/EDG_Zdz_2025_Split_1.png/revision/latest?cb=20250109143824&format=original",
+        "uploaded_at": "2025-01-09T14:38:24Z",
+        "sha1": "3169381fcdc0d5a972038e0ab4759f72e7cab282",
+        "metadata": {
+          "player": "Zdz",
+          "tournament": "LPL 2025 Split 1",
+          "team": "EDG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:33d17f3717f58e12a3da80b377221fb",
+      "team": "FunPlus Phoenix",
+      "team_short": "FPX",
+      "player_id": "oe:player:da3299cd46f1ad8a86bbadeb6b8a320",
+      "player": "Assum",
+      "observed_splits": [
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 2 Placements",
+      "path": "player/2025/fpx/assum.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "90418a3aa3ab478b24031aa6a4ae72aab85d10061f3c7f11072d7e10ec839639",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:FPX Assum 2025 Split 2.png",
+        "page_url": "https://lol.fandom.com/wiki/File:FPX_Assum_2025_Split_2.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3d/FPX_Assum_2025_Split_2.png/revision/latest?cb=20250325152952&format=original",
+        "uploaded_at": "2025-03-25T15:29:52Z",
+        "sha1": "98c9cc259003203f982e4a3c8a8142c1fb0d12c1",
+        "metadata": {
+          "player": "Assum",
+          "tournament": "LPL 2025 Split 2 Placements",
+          "team": "FPX",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:33d17f3717f58e12a3da80b377221fb",
+      "team": "FunPlus Phoenix",
+      "team_short": "FPX",
+      "player_id": "oe:player:4462a94df8bf2cf755c0c5da35f0282",
+      "player": "bat",
+      "observed_splits": [
+        "Split 1"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/fpx/bat.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "c27706fd78914b73bf1692c9f9360d58e3e1c11eb1e250c538b11f2978bcc823",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:FPX bat 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:FPX_bat_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/94/FPX_bat_2025_Split_1.png/revision/latest?cb=20250109143814&format=original",
+        "uploaded_at": "2025-01-09T14:38:14Z",
+        "sha1": "9b6904b071944ef55626d198126ae41f1ad58f4f",
+        "metadata": {
+          "player": "bat (Gao Jun)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "FPX",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:33d17f3717f58e12a3da80b377221fb",
+      "team": "FunPlus Phoenix",
+      "team_short": "FPX",
+      "player_id": "oe:player:6bc43cc1537fa4ac6295b4899e972cf",
+      "player": "Care",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/fpx/care.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "077b80bc33870de6d318c9e228131ce0c52dd2d4a47637143a1eea5c2b9d0227",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:FPX Care 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:FPX_Care_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7a/FPX_Care_2025_Split_1.png/revision/latest?cb=20250109143815&format=original",
+        "uploaded_at": "2025-01-09T14:38:15Z",
+        "sha1": "bd6b4b70acbfd8777d6d9c6cadb8c40e8f60241a",
+        "metadata": {
+          "player": "Care",
+          "tournament": "LPL 2025 Split 1",
+          "team": "FPX",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:33d17f3717f58e12a3da80b377221fb",
+      "team": "FunPlus Phoenix",
+      "team_short": "FPX",
+      "player_id": "oe:player:b8d0c78f3ecdcf7ca398a77dc8ef5af",
+      "player": "iyy",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/fpx/iyy.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "e22173089a195269156d39737a3aef71eed0e531c78ae0145a571ed1f025bc0d",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:FPX iyy 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:FPX_iyy_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/23/FPX_iyy_2025_Split_3.png/revision/latest?cb=20250717151727&format=original",
+        "uploaded_at": "2025-07-17T15:17:27Z",
+        "sha1": "9e2aca13f50abe4a3e3fd47063612735ef9fd64b",
+        "metadata": {
+          "player": "iyy",
+          "tournament": "LPL 2025 Split 3",
+          "team": "FPX",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:33d17f3717f58e12a3da80b377221fb",
+      "team": "FunPlus Phoenix",
+      "team_short": "FPX",
+      "player_id": "oe:player:d971df9441d60af93a87545e6a8f884",
+      "player": "JiaQi",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/fpx/jiaqi.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "ac0c14a7e5c3434ef3cdc54126cc9ec2819454b44cb4f44e9dca0a7635c9c177",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:FPX JiaQi 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:FPX_JiaQi_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ab/FPX_JiaQi_2025_Split_3.png/revision/latest?cb=20250726032853&format=original",
+        "uploaded_at": "2025-07-26T03:28:53Z",
+        "sha1": "e73c9c14c8691b11f65b95970c387436b12f1500",
+        "metadata": {
+          "player": "JiaQi",
+          "tournament": "LPL 2025 Split 3",
+          "team": "FPX",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:33d17f3717f58e12a3da80b377221fb",
+      "team": "FunPlus Phoenix",
+      "team_short": "FPX",
+      "player_id": "oe:player:88bba3108e62145a9780becd3eb553d",
+      "player": "Jiejie",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/fpx/jiejie.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "e4c4067e9db7344ccd6cf2d8aeb11e971fd9a275ff8c5f7ddedba7e89547a7f2",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:FPX Jiejie 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:FPX_Jiejie_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2a/FPX_Jiejie_2025_Split_3.png/revision/latest?cb=20250824085614&format=original",
+        "uploaded_at": "2025-08-24T08:56:14Z",
+        "sha1": "ea173e250b8f12ea4cc737b1f31967feca093cd1",
+        "metadata": {
+          "player": "Jiejie",
+          "tournament": "LPL 2025 Split 3",
+          "team": "FPX",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:33d17f3717f58e12a3da80b377221fb",
+      "team": "FunPlus Phoenix",
+      "team_short": "FPX",
+      "player_id": "oe:player:dfe5b204f04f40a84019af080662259",
+      "player": "Jwei",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/fpx/jwei.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "792fc1da6e4caf1bd90d25697a3ee8273f800bbbac59cdbced115ea9c71e7017",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:FPX Jwei 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:FPX_Jwei_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f1/FPX_Jwei_2025_Split_1.png/revision/latest?cb=20250109143813&format=original",
+        "uploaded_at": "2025-01-09T14:38:13Z",
+        "sha1": "c7e8c880f787ba64909bf9047bee98f3f2d72807",
+        "metadata": {
+          "player": "Jwei",
+          "tournament": "LPL 2025 Split 1",
+          "team": "FPX",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:33d17f3717f58e12a3da80b377221fb",
+      "team": "FunPlus Phoenix",
+      "team_short": "FPX",
+      "player_id": "oe:player:31b62cc3cf89d670fdef677faed2789",
+      "player": "milkyway",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/fpx/milkyway.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "917ded860e4c964d061adac8a92f913ee2fd17377464bdb4e10ec3f85649b15e",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:FPX milkyway 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:FPX_milkyway_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f8/FPX_milkyway_2025_Split_3.png/revision/latest?cb=20250730142422&format=original",
+        "uploaded_at": "2025-07-30T14:24:22Z",
+        "sha1": "05a695315f0d97e6f32bba19a0be8df0159d1508",
+        "metadata": {
+          "player": "milkyway",
+          "tournament": "LPL 2025 Split 3",
+          "team": "FPX",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:33d17f3717f58e12a3da80b377221fb",
+      "team": "FunPlus Phoenix",
+      "team_short": "FPX",
+      "player_id": "oe:player:c332dc879e14f1feb266190c7f396fd",
+      "player": "Shad0w",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/fpx/shad0w.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "c5a7901b57c7038e298ac863a206848a8f2ac5aa788e48511eb93e453e415b4f",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:FPX shad0w 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:FPX_shad0w_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/46/FPX_shad0w_2025_Split_1.png/revision/latest?cb=20250109143818&format=original",
+        "uploaded_at": "2025-01-09T14:38:18Z",
+        "sha1": "1a144518f180f9eb053e458aac45c10adeae230f",
+        "metadata": {
+          "player": "shad0w",
+          "tournament": "LPL 2025 Split 1",
+          "team": "FPX",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:33d17f3717f58e12a3da80b377221fb",
+      "team": "FunPlus Phoenix",
+      "team_short": "FPX",
+      "player_id": "oe:player:3ce68cf813bc34243279fd7fe3cecbb",
+      "player": "sheer",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/fpx/sheer.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "896e8d54d319faf1e6993968b929566f7e6a26dd790d35ff38df50eec9092c18",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:FPX sheer 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:FPX_sheer_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/75/FPX_sheer_2025_Split_1.png/revision/latest?cb=20250109143819&format=original",
+        "uploaded_at": "2025-01-09T14:38:19Z",
+        "sha1": "4bfd93aee2276699659dd151b529f03e3ea5dc0e",
+        "metadata": {
+          "player": "sheer",
+          "tournament": "LPL 2025 Split 1",
+          "team": "FPX",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:33d17f3717f58e12a3da80b377221fb",
+      "team": "FunPlus Phoenix",
+      "team_short": "FPX",
+      "player_id": "oe:player:4aa496a041ce3b1febfc4887d057f11",
+      "player": "sorrow",
+      "observed_splits": [
+        "Split 1"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/fpx/sorrow.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "2aec5c50b9806e24fc47467fefdd7f7a3674731618c6490174d39589fec391a5",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:FPX sorrow 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:FPX_sorrow_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/58/FPX_sorrow_2025_Split_1.png/revision/latest?cb=20250109143816&format=original",
+        "uploaded_at": "2025-01-09T14:38:16Z",
+        "sha1": "5f2a4d01c52229c53ae67c89776e6488e79fa447",
+        "metadata": {
+          "player": "sorrow (Li De-Ming)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "FPX",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:53a258f289c26d94431c0496a54e151",
+      "team": "Invictus Gaming",
+      "team_short": "IG",
+      "player_id": "oe:player:867e8957fae1cb59f0808dbcc3aada2",
+      "player": "GALA",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/ig/gala.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "b24f4aac9d3132e1e80a8b701c1b4eecf7cfeec8a2601061ed95429cebfcaafc",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:IG GALA 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:IG_GALA_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7a/IG_GALA_2025_Split_1.png/revision/latest?cb=20250109143808&format=original",
+        "uploaded_at": "2025-01-09T14:38:08Z",
+        "sha1": "5432da0f8fb6c760a6f75e4b5d7cd31f258eb105",
+        "metadata": {
+          "player": "GALA",
+          "tournament": "LPL 2025 Split 1",
+          "team": "IG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:53a258f289c26d94431c0496a54e151",
+      "team": "Invictus Gaming",
+      "team_short": "IG",
+      "player_id": "oe:player:88bba3108e62145a9780becd3eb553d",
+      "player": "Jiejie",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/ig/jiejie.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "93728659226ae5a9a8f20244bb0c7bd66648c1ffb24646c496524b3a1a62d270",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:IG Jiejie 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:IG_Jiejie_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5c/IG_Jiejie_2025_Split_1.png/revision/latest?cb=20250109143811&format=original",
+        "uploaded_at": "2025-01-09T14:38:11Z",
+        "sha1": "9eec9d78aabfe8cf016d88cea865a68546d86b55",
+        "metadata": {
+          "player": "JieJie",
+          "tournament": "LPL 2025 Split 1",
+          "team": "IG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:53a258f289c26d94431c0496a54e151",
+      "team": "Invictus Gaming",
+      "team_short": "IG",
+      "player_id": "oe:player:bda7cc061d7a1576f1dcad33dd505cd",
+      "player": "Meiko",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/ig/meiko.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "23d0d122c970c821dc9c905ca0d25d3d93504994106f100c78f26c9b489e6179",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:IG Meiko 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:IG_Meiko_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d9/IG_Meiko_2025_Split_1.png/revision/latest?cb=20250109143807&format=original",
+        "uploaded_at": "2025-01-09T14:38:07Z",
+        "sha1": "f686a98ab79336e1585bb4d89ca1df2c1c776084",
+        "metadata": {
+          "player": "Meiko",
+          "tournament": "LPL 2025 Split 1",
+          "team": "IG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:53a258f289c26d94431c0496a54e151",
+      "team": "Invictus Gaming",
+      "team_short": "IG",
+      "player_id": "oe:player:1213778b5c6d69dcb26aa89f7d0aaa9",
+      "player": "Rookie",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/ig/rookie.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "e09521d644f2ad689dd7cbb7e609253c61c08726de5a362e90bda07e005ec2ab",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:IG Rookie 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:IG_Rookie_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d4/IG_Rookie_2025_Split_1.png/revision/latest?cb=20250109143809&format=original",
+        "uploaded_at": "2025-01-09T14:38:09Z",
+        "sha1": "0de05cf163f292f89dd7f1621ee587b118b2e6db",
+        "metadata": {
+          "player": "Rookie",
+          "tournament": "LPL 2025 Split 1",
+          "team": "IG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:53a258f289c26d94431c0496a54e151",
+      "team": "Invictus Gaming",
+      "team_short": "IG",
+      "player_id": "oe:player:37f20525a39d17ec49fd10294f9c994",
+      "player": "TheShy",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/ig/theshy.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "0eb96dfe4e01ba828dca383f44d95c0797fcbe44f29c34720ce78ec23ec2b527",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:IG TheShy 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:IG_TheShy_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7d/IG_TheShy_2025_Split_1.png/revision/latest?cb=20250109143812&format=original",
+        "uploaded_at": "2025-01-09T14:38:12Z",
+        "sha1": "bf90858dc6c5f7bf206af91f1ef17c46443935f1",
+        "metadata": {
+          "player": "TheShy",
+          "tournament": "LPL 2025 Split 1",
+          "team": "IG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:53a258f289c26d94431c0496a54e151",
+      "team": "Invictus Gaming",
+      "team_short": "IG",
+      "player_id": "oe:player:b61e517b1a6027160aafaf56e9867c0",
+      "player": "Wei",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/ig/wei.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "a18ad0c8d68248b3d4285b49cb4e33672be87439bb560d73df8d79a70a13107c",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:IG Wei 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:IG_Wei_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3b/IG_Wei_2025_Split_3.png/revision/latest?cb=20250719110506&format=original",
+        "uploaded_at": "2025-07-19T11:05:06Z",
+        "sha1": "22ca9df657d57388ff60366df08850e3da57e2da",
+        "metadata": {
+          "player": "Wei (Yan Yang-Wei)",
+          "tournament": "LPL 2025 Split 3",
+          "team": "IG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:b42d0f31f2727621b963042276817c4",
+      "team": "JD Gaming",
+      "team_short": "JDG",
+      "player_id": "oe:player:f40f1b0923c35568f417aef1e01ca6b",
+      "player": "Ale",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/jdg/ale.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "eb108ab84bc82a8252035ac4bfef65df03902be5aff43ab6d74e39e54df987a6",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:JDG Ale 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:JDG_Ale_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f2/JDG_Ale_2025_Split_1.png/revision/latest?cb=20250109143806&format=original",
+        "uploaded_at": "2025-01-09T14:38:06Z",
+        "sha1": "2c57a26cb0c41bddf6397d74a3528657c419b20c",
+        "metadata": {
+          "player": "Ale",
+          "tournament": "LPL 2025 Split 1",
+          "team": "JDG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:b42d0f31f2727621b963042276817c4",
+      "team": "JD Gaming",
+      "team_short": "JDG",
+      "player_id": "oe:player:10d1208b485425756fcc932229386b0",
+      "player": "MISSING",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/jdg/missing.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "7122d888ec5797abe73db42b3c56905774a2c26aeb79a2cf3fd0980b62af8036",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:JDG MISSING 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:JDG_MISSING_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6d/JDG_MISSING_2025_Split_1.png/revision/latest?cb=20250109143801&format=original",
+        "uploaded_at": "2025-01-09T14:38:01Z",
+        "sha1": "576e7686e5b99ae00822ddc9dd84301c940fa2d2",
+        "metadata": {
+          "player": "MISSING",
+          "tournament": "LPL 2025 Split 1",
+          "team": "JDG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:b42d0f31f2727621b963042276817c4",
+      "team": "JD Gaming",
+      "team_short": "JDG",
+      "player_id": "oe:player:5bbc2b92348d930ebd500cb9ce71bb7",
+      "player": "Peyz",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/jdg/peyz.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "8f169707d858c8c03f178dc04d0865f5c371c7db7998dbdf296c2450e27ebd67",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:JDG Peyz 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:JDG_Peyz_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e4/JDG_Peyz_2025_Split_1.png/revision/latest?cb=20250109143802&format=original",
+        "uploaded_at": "2025-01-09T14:38:02Z",
+        "sha1": "60b8adae849f329b931cd7a8ee07a58ceac8f564",
+        "metadata": {
+          "player": "Peyz",
+          "tournament": "LPL 2025 Split 1",
+          "team": "JDG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:b42d0f31f2727621b963042276817c4",
+      "team": "JD Gaming",
+      "team_short": "JDG",
+      "player_id": "oe:player:71e79ef80600d398d90cfebe3b0b758",
+      "player": "Scout",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/jdg/scout.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "e6c681a9318963af31400d12f9fecfcf6f9d091a6b20fcfb520ef6c68dadacb9",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:JDG Scout 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:JDG_Scout_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/19/JDG_Scout_2025_Split_1.png/revision/latest?cb=20250109143803&format=original",
+        "uploaded_at": "2025-01-09T14:38:03Z",
+        "sha1": "3dfb64b57e61d7b61119d1580f12ba25471b4fdd",
+        "metadata": {
+          "player": "Scout",
+          "tournament": "LPL 2025 Split 1",
+          "team": "JDG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:b42d0f31f2727621b963042276817c4",
+      "team": "JD Gaming",
+      "team_short": "JDG",
+      "player_id": "oe:player:39d7885ab4602a7f8d202883d253f5e",
+      "player": "Wink",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/jdg/wink.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "5e0903f474691e3a5d71219d368bf51a35c869f2e3f3cba36f3c7f2f78483843",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:JDG Wink 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:JDG_Wink_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e3/JDG_Wink_2025_Split_3.png/revision/latest?cb=20250719110501&format=original",
+        "uploaded_at": "2025-07-19T11:05:01Z",
+        "sha1": "dde85e8607fe53a583164899bfe000d7f973836d",
+        "metadata": {
+          "player": "Wink",
+          "tournament": "LPL 2025 Split 3",
+          "team": "JDG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:b42d0f31f2727621b963042276817c4",
+      "team": "JD Gaming",
+      "team_short": "JDG",
+      "player_id": "oe:player:fbdc4428b2d095c83aebeed5da4e4b2",
+      "player": "Xun",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/jdg/xun.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "c5cc90d171c018de90e5a99d3fb3f749ea18b1bf650efc09ece67392f03d7eb0",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:JDG Xun 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:JDG_Xun_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/JDG_Xun_2025_Split_1.png/revision/latest?cb=20250109143805&format=original",
+        "uploaded_at": "2025-01-09T14:38:05Z",
+        "sha1": "206d59890b62bd2b9dcf996d7c68493d3bcd48c2",
+        "metadata": {
+          "player": "Xun",
+          "tournament": "LPL 2025 Split 1",
+          "team": "JDG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:b42d0f31f2727621b963042276817c4",
+      "team": "JD Gaming",
+      "team_short": "JDG",
+      "player_id": "oe:player:e78da55d6db43d982f841204a8e51ac",
+      "player": "Zhuo",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/jdg/zhuo.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "5f9c2e60dea305da2ed7f658f89f6b402d01a744d90d54b5346058f94f4d83cd",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:JDG Zhuo 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:JDG_Zhuo_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/52/JDG_Zhuo_2025_Split_3.png/revision/latest?cb=20250809191757&format=original",
+        "uploaded_at": "2025-08-09T19:17:57Z",
+        "sha1": "667e8a505c477eb8042d582ffac38295ecaeb0f5",
+        "metadata": {
+          "player": "Zhuo",
+          "tournament": "LPL 2025 Split 3",
+          "team": "JDG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:5f401785b6b78326f9a46b3c6b206ed",
+      "team": "LGD Gaming",
+      "team_short": "LGD",
+      "player_id": "oe:player:30b18cd72f0d41ae18f14378d2dab48",
+      "player": "Climber",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/lgd/climber.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "fc681ed42313d6d7d6a087f09fb471dd3c997689191b5e50fc04d4fe3746e646",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LGD climber 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LGD_climber_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c8/LGD_climber_2025_Split_1.png/revision/latest?cb=20250109143757&format=original",
+        "uploaded_at": "2025-01-09T14:37:57Z",
+        "sha1": "51742dfddfbe70aec28277e07d6fb64703d66279",
+        "metadata": {
+          "player": "climber",
+          "tournament": "LPL 2025 Split 1",
+          "team": "LGD",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:5f401785b6b78326f9a46b3c6b206ed",
+      "team": "LGD Gaming",
+      "team_short": "LGD",
+      "player_id": "oe:player:a7b51467f09577883d7150f37393964",
+      "player": "naiyou",
+      "observed_splits": [
+        "Split 2"
+      ],
+      "source_split": "Split 2 Placements",
+      "path": "player/2025/lgd/naiyou.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "62734f8641a93b25bc25756a2a983269027edd5d9606de489f5ca873e80f7c56",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LGD naiyou 2025 Split 2.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LGD_naiyou_2025_Split_2.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e9/LGD_naiyou_2025_Split_2.png/revision/latest?cb=20250425140809&format=original",
+        "uploaded_at": "2025-04-25T14:08:09Z",
+        "sha1": "d138e9c0d38aee84d3c54eff8e944708f9fa3ecf",
+        "metadata": {
+          "player": "naiyou",
+          "tournament": "LPL 2025 Split 2 Placements",
+          "team": "LGD Gaming",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:5f401785b6b78326f9a46b3c6b206ed",
+      "team": "LGD Gaming",
+      "team_short": "LGD",
+      "player_id": "oe:player:e85e46c5f3d3fcce55af9ca6a4cb45c",
+      "player": "sasi",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/lgd/sasi.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "9d21b46ec37dafdf0f2e34ca56cbb9da879cef95269216735f1e8221023d5c29",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LGD sasi 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LGD_sasi_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/01/LGD_sasi_2025_Split_1.png/revision/latest?cb=20250109143800&format=original",
+        "uploaded_at": "2025-01-09T14:38:00Z",
+        "sha1": "92b11f1244aa8013c94df45b23fd58ba5c928cef",
+        "metadata": {
+          "player": "sasi (Yan Rui)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "LGD",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:5f401785b6b78326f9a46b3c6b206ed",
+      "team": "LGD Gaming",
+      "team_short": "LGD",
+      "player_id": "oe:player:6d734e1e86b978852d95cfd63d6a643",
+      "player": "Shaoye",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/lgd/shaoye.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "3beca694f817ce5551c15668fdb1ed3c7ad3c4304e96f682aac2bf9e07084aa3",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LGD Shaoye 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LGD_Shaoye_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/90/LGD_Shaoye_2025_Split_1.png/revision/latest?cb=20250109143755&format=original",
+        "uploaded_at": "2025-01-09T14:37:55Z",
+        "sha1": "dd8b50ccdd2a26a1fe4d209ea033b12f4ec1dad6",
+        "metadata": {
+          "player": "Shaoye",
+          "tournament": "LPL 2025 Split 1",
+          "team": "LGD",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:5f401785b6b78326f9a46b3c6b206ed",
+      "team": "LGD Gaming",
+      "team_short": "LGD",
+      "player_id": "oe:player:905e2f4e54700b9ed0ddfb13deec4e9",
+      "player": "xqw",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/lgd/xqw.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "d002a528a747c4a4bedd362d52d38824cacc5a1da8b5e1e5bc8cb21499316873",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LGD xqw 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LGD_xqw_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/22/LGD_xqw_2025_Split_1.png/revision/latest?cb=20250109143756&format=original",
+        "uploaded_at": "2025-01-09T14:37:56Z",
+        "sha1": "ba023b68cf86e38f72dda6c439b532a8e8975529",
+        "metadata": {
+          "player": "xqw",
+          "tournament": "LPL 2025 Split 1",
+          "team": "LGD",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:5f401785b6b78326f9a46b3c6b206ed",
+      "team": "LGD Gaming",
+      "team_short": "LGD",
+      "player_id": "oe:player:397bcf46311de3cf780469b2a842b67",
+      "player": "Ycx",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/lgd/ycx.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "797faffb3d41c283441d4915aba3fd7f193910e52387239ba0ecd9e5ac1b723e",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LGD Ycx 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LGD_Ycx_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/df/LGD_Ycx_2025_Split_1.png/revision/latest?cb=20250109143754&format=original",
+        "uploaded_at": "2025-01-09T14:37:54Z",
+        "sha1": "9c29710beca1f0b2b019be382275d75345006812",
+        "metadata": {
+          "player": "Ycx",
+          "tournament": "LPL 2025 Split 1",
+          "team": "LGD",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:a9145b7711873f53e610fbba0493484",
+      "team": "LNG Esports",
+      "team_short": "LNG",
+      "player_id": "oe:player:5e1c1cfafed233a25b0621a15629d20",
+      "player": "5t5",
+      "observed_splits": [
+        "Split 2"
+      ],
+      "source_split": "Split 2",
+      "path": "player/2025/lng/5t5.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "cbdf2c0491a60ef80db42bf1e37200102bf03d5c6ef817ffe6a6dbd59a2820b2",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LNG 5t5 2025 Split 2.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LNG_5t5_2025_Split_2.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ea/LNG_5t5_2025_Split_2.png/revision/latest?cb=20250417145236&format=original",
+        "uploaded_at": "2025-04-17T14:52:36Z",
+        "sha1": "1b2e8837d9fcdeb86cfd9897897fff2a4ab2bbf3",
+        "metadata": {
+          "player": "5t5",
+          "tournament": "LPL 2025 Split 2",
+          "team": "LNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:a9145b7711873f53e610fbba0493484",
+      "team": "LNG Esports",
+      "team_short": "LNG",
+      "player_id": "oe:player:0dcf834c627e57895f26132ec33d99c",
+      "player": "fishone",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/lng/fishone.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "ea69b3a9031264aea9884e3be67fc626d006d6df933a82238e0a90a375429b49",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LNG fishone 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LNG_fishone_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9b/LNG_fishone_2025_Split_3.png/revision/latest?cb=20250805161759&format=original",
+        "uploaded_at": "2025-08-05T16:17:59Z",
+        "sha1": "adb9a4cc92982ef5ccef4150fcbe124de05ca24e",
+        "metadata": {
+          "player": "fishone",
+          "tournament": "LPL 2025 Split 3",
+          "team": "LNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:a9145b7711873f53e610fbba0493484",
+      "team": "LNG Esports",
+      "team_short": "LNG",
+      "player_id": "oe:player:f886838ee1808c2f217208267a829ce",
+      "player": "haichao",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/lng/haichao.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "07729fa752348f2c87d36cc789d9fd48946b77ce2cabdbce7ce48dc5b8183feb",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LNG haichao 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LNG_haichao_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2c/LNG_haichao_2025_Split_1.png/revision/latest?cb=20250109143749&format=original",
+        "uploaded_at": "2025-01-09T14:37:49Z",
+        "sha1": "bc1e4d125bf4041efb779b8f96e897c1b4e23e84",
+        "metadata": {
+          "player": "haichao",
+          "tournament": "LPL 2025 Split 1",
+          "team": "LNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:a9145b7711873f53e610fbba0493484",
+      "team": "LNG Esports",
+      "team_short": "LNG",
+      "player_id": "oe:player:233724c5adf28da47784390134db3c6",
+      "player": "LP",
+      "observed_splits": [
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 2",
+      "path": "player/2025/lng/lp.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "f12536eb31c7923fd91724aba5b141770ef0da3890cd29cbe3f5211a1a1f7ef7",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LNG LP 2025 Split 2.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LNG_LP_2025_Split_2.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/09/LNG_LP_2025_Split_2.png/revision/latest?cb=20250417145235&format=original",
+        "uploaded_at": "2025-04-17T14:52:35Z",
+        "sha1": "8ca870d26dfea99954fbb5f48e6a9d5b16f75126",
+        "metadata": {
+          "player": "LP",
+          "tournament": "LPL 2025 Split 2",
+          "team": "LNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:a9145b7711873f53e610fbba0493484",
+      "team": "LNG Esports",
+      "team_short": "LNG",
+      "player_id": "oe:player:a7bb2d8b4e4c1a1fde8c3e584ef6835",
+      "player": "OvO",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/lng/ovo.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "0f76d08df51189b15fdc5fe9405b3756c8a9c27e548a27396f6410d1d1ee07f8",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LNG OvO 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LNG_OvO_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e2/LNG_OvO_2025_Split_3.png/revision/latest?cb=20250805161839&format=original",
+        "uploaded_at": "2025-08-05T16:18:39Z",
+        "sha1": "f99ffacd4467b7920bad233bd58d0f8e7919bf6a",
+        "metadata": {
+          "player": "OvO",
+          "tournament": "LPL 2025 Split 3",
+          "team": "LNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:a9145b7711873f53e610fbba0493484",
+      "team": "LNG Esports",
+      "team_short": "LNG",
+      "player_id": "oe:player:1c42d9266c8b391c7870b7a39f25a12",
+      "player": "Photic",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/lng/photic.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "5f51e4b0483759d32d5a1641e73fa0415357ba6f31cdfc17c18f1209e4e1faa7",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LNG Photic 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LNG_Photic_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8b/LNG_Photic_2025_Split_1.png/revision/latest?cb=20250109143748&format=original",
+        "uploaded_at": "2025-01-09T14:37:48Z",
+        "sha1": "6b2323064498d294cd94fb219c4a3d9dff0fb6bd",
+        "metadata": {
+          "player": "Photic",
+          "tournament": "LPL 2025 Split 1",
+          "team": "LNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:a9145b7711873f53e610fbba0493484",
+      "team": "LNG Esports",
+      "team_short": "LNG",
+      "player_id": "oe:player:57da8dfcfbdb4e5b019fe93003db1c4",
+      "player": "Weiwei",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/lng/weiwei.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "84e127cf46c60abbbefe94099f1aff1f35dbb3610877e27430bc8c0843f5c20f",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LNG Weiwei 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LNG_Weiwei_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ac/LNG_Weiwei_2025_Split_1.png/revision/latest?cb=20250109143751&format=original",
+        "uploaded_at": "2025-01-09T14:37:51Z",
+        "sha1": "86b8c8ef79e122c3bdc0d0bf6302ced129362cd3",
+        "metadata": {
+          "player": "Weiwei",
+          "tournament": "LPL 2025 Split 1",
+          "team": "LNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:a9145b7711873f53e610fbba0493484",
+      "team": "LNG Esports",
+      "team_short": "LNG",
+      "player_id": "oe:player:863519e5df81ff9b308c90f6a59495b",
+      "player": "xiaofang",
+      "observed_splits": [
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 2",
+      "path": "player/2025/lng/xiaofang.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "205c2df5253c048fba7b31dc51a82c295b24f96b7b595d729ab1d89118350115",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LNG xiaofang 2025 Split 2.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LNG_xiaofang_2025_Split_2.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/93/LNG_xiaofang_2025_Split_2.png/revision/latest?cb=20250420065536&format=original",
+        "uploaded_at": "2025-04-20T06:55:36Z",
+        "sha1": "318b96675cf115feec6114e3d2b3fe1996809bf8",
+        "metadata": {
+          "player": "xiaofang",
+          "tournament": "LPL 2025 Split 2",
+          "team": "LNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:a9145b7711873f53e610fbba0493484",
+      "team": "LNG Esports",
+      "team_short": "LNG",
+      "player_id": "oe:player:e78da55d6db43d982f841204a8e51ac",
+      "player": "Zhuo",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/lng/zhuo.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "f4d226455324f4f6a04e82df70cde4467459b2597e24e128144d22fe08e584b8",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LNG Zhuo 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LNG_Zhuo_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9b/LNG_Zhuo_2025_Split_1.png/revision/latest?cb=20250109143747&format=original",
+        "uploaded_at": "2025-01-09T14:37:47Z",
+        "sha1": "d358605504846627c8f9af743f889dc3a0fe2d21",
+        "metadata": {
+          "player": "Zhuo",
+          "tournament": "LPL 2025 Split 1",
+          "team": "LNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:a9145b7711873f53e610fbba0493484",
+      "team": "LNG Esports",
+      "team_short": "LNG",
+      "player_id": "oe:player:65ed20b21e2993fb00dbd21a2fd991b",
+      "player": "Zika",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/lng/zika.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "bbef017ef64cc7f71b556548c811e6994c176cc665aa1a8d1cffb419e74125bd",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LNG Zika 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LNG_Zika_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6b/LNG_Zika_2025_Split_1.png/revision/latest?cb=20250109143752&format=original",
+        "uploaded_at": "2025-01-09T14:37:52Z",
+        "sha1": "51c8ba335641dac60297222c268745fb29ffe73b",
+        "metadata": {
+          "player": "Zika",
+          "tournament": "LPL 2025 Split 1",
+          "team": "LNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:48d7941ccbd5b89aca46c57b0c2f8fb",
+      "team": "Ninjas in Pyjamas",
+      "team_short": "NIP",
+      "player_id": "oe:player:3faae62fb907ad7cbcf2167beb8b2c7",
+      "player": "Aki",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/nip/aki.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "927cad77b69041a3ee7e808cff03db362ce35a81ad74be1f3d5631bdb4e79c9a",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:NIP Aki 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:NIP_Aki_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e9/NIP_Aki_2025_Split_1.png/revision/latest?cb=20250109143744&format=original",
+        "uploaded_at": "2025-01-09T14:37:44Z",
+        "sha1": "065bc84215d745893309160ef562bd6a543b312e",
+        "metadata": {
+          "player": "Aki (Mao An)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Ninjas in Pyjamas.CN",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:48d7941ccbd5b89aca46c57b0c2f8fb",
+      "team": "Ninjas in Pyjamas",
+      "team_short": "NIP",
+      "player_id": "oe:player:9b73925063fe3714ebb4e8c10f551c0",
+      "player": "Doinb",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/nip/doinb.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "5460832a55006071ba9a34877ccc1d07df33f628f04f95424d9f52d6ddad0586",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:NIP Doinb 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:NIP_Doinb_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0d/NIP_Doinb_2025_Split_1.png/revision/latest?cb=20250109143743&format=original",
+        "uploaded_at": "2025-01-09T14:37:43Z",
+        "sha1": "3e35fa2bd9ca2a6a8c36c14d38ecdbab0f20a4aa",
+        "metadata": {
+          "player": "Doinb",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Ninjas in Pyjamas.CN",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:48d7941ccbd5b89aca46c57b0c2f8fb",
+      "team": "Ninjas in Pyjamas",
+      "team_short": "NIP",
+      "player_id": "oe:player:a52945dbe283de2f7e9d63ca3417f36",
+      "player": "Leave",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/nip/leave.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "197c3568cf0686b076977ae5e576d0e74da41926b541a1af69feb10ac5fa6660",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:NIP Leave 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:NIP_Leave_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/07/NIP_Leave_2025_Split_1.png/revision/latest?cb=20250109143741&format=original",
+        "uploaded_at": "2025-01-09T14:37:41Z",
+        "sha1": "31e73b79bd6fe0204716eda76ed34d1f1ab62806",
+        "metadata": {
+          "player": "Leave",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Ninjas in Pyjamas.CN",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:48d7941ccbd5b89aca46c57b0c2f8fb",
+      "team": "Ninjas in Pyjamas",
+      "team_short": "NIP",
+      "player_id": "oe:player:a7b51467f09577883d7150f37393964",
+      "player": "naiyou",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/nip/naiyou.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "ad4c85489856a8f5a8175c5fdaef3684d48466bb92a2d41d3bbbe7727db339c5",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:NIP naiyou 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:NIP_naiyou_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8b/NIP_naiyou_2025_Split_3.png/revision/latest?cb=20250714162148&format=original",
+        "uploaded_at": "2025-07-14T16:21:48Z",
+        "sha1": "040561ca58df87fd1d3fb1d638673e2142d91020",
+        "metadata": {
+          "player": "naiyou",
+          "tournament": "LPL 2025 Split 3",
+          "team": "Ninjas in Pyjamas.CN",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:48d7941ccbd5b89aca46c57b0c2f8fb",
+      "team": "Ninjas in Pyjamas",
+      "team_short": "NIP",
+      "player_id": "oe:player:6ad53ca055b82d5e23b83df6093df11",
+      "player": "Niket",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/nip/niket.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "5369c5df94c8d6f4fc417bd13c7e2e67d69c181c7f086b89549e26f96f058fa0",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:NIP Niket 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:NIP_Niket_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/be/NIP_Niket_2025_Split_3.png/revision/latest?cb=20250714162150&format=original",
+        "uploaded_at": "2025-07-14T16:21:50Z",
+        "sha1": "8bdb2bbc23bbce8b69fb51c50afd3062c19c52c1",
+        "metadata": {
+          "player": "Niket",
+          "tournament": "LPL 2025 Split 3",
+          "team": "Ninjas in Pyjamas.CN",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:48d7941ccbd5b89aca46c57b0c2f8fb",
+      "team": "Ninjas in Pyjamas",
+      "team_short": "NIP",
+      "player_id": "oe:player:615b1f347cdf6bc6df1883ed9e18496",
+      "player": "ppgod",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/nip/ppgod.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "fad37989b735fbc590094d25e7fca998183ad2617f22a0702dd47859ebea5b10",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:NIP ppgod 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:NIP_ppgod_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1b/NIP_ppgod_2025_Split_1.png/revision/latest?cb=20250109143740&format=original",
+        "uploaded_at": "2025-01-09T14:37:40Z",
+        "sha1": "77515c37df9cb46bb6fe5385b11bd60200838e48",
+        "metadata": {
+          "player": "ppgod",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Ninjas in Pyjamas.CN",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:48d7941ccbd5b89aca46c57b0c2f8fb",
+      "team": "Ninjas in Pyjamas",
+      "team_short": "NIP",
+      "player_id": "oe:player:708bbc09836488d812e6775a07d785f",
+      "player": "shanji",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/nip/shanji.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "69df723a3cba8f3285144dad819eef6b39f7b59f4a334c2e99254dc995fc6d1f",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:NIP shanji 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:NIP_shanji_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1b/NIP_shanji_2025_Split_1.png/revision/latest?cb=20250109143746&format=original",
+        "uploaded_at": "2025-01-09T14:37:46Z",
+        "sha1": "5ef6591ea0a9ef0c3a5cd40ea2553b8105135a31",
+        "metadata": {
+          "player": "shanji",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Ninjas in Pyjamas.CN",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:48d7941ccbd5b89aca46c57b0c2f8fb",
+      "team": "Ninjas in Pyjamas",
+      "team_short": "NIP",
+      "player_id": "oe:player:b42e757e6ed7f3eb263f69eb034f092",
+      "player": "Solokill",
+      "observed_splits": [
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 2",
+      "path": "player/2025/nip/solokill.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "22bda48b8e8b30507594c0d4d42fe21e51da89863f5f9b1f85034866e596c4fa",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:NIP Solokill 2025 Split 2.png",
+        "page_url": "https://lol.fandom.com/wiki/File:NIP_Solokill_2025_Split_2.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d0/NIP_Solokill_2025_Split_2.png/revision/latest?cb=20250502160830&format=original",
+        "uploaded_at": "2025-05-02T16:08:30Z",
+        "sha1": "613b8d3545debc4801f9ceb5b1036f14fa9d61a1",
+        "metadata": {
+          "player": "Solokill",
+          "tournament": "LPL 2025 Split 2",
+          "team": "Ninjas in Pyjamas.CN",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:f4c4528c6981e104a11ea7548630c23",
+      "team": "Oh My God",
+      "team_short": "OMG",
+      "player_id": "oe:player:48b7344051c2365da81acb5c3de8eb1",
+      "player": "beishang",
+      "observed_splits": [
+        "Split 2"
+      ],
+      "source_split": "Split 2 Placements",
+      "path": "player/2025/omg/beishang.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "80747d52fd13aa95e743f9836f3c6de0040ef55cdf73c883e66ef6dd80db22df",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:OMG beishang 2025 Split 2.png",
+        "page_url": "https://lol.fandom.com/wiki/File:OMG_beishang_2025_Split_2.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e4/OMG_beishang_2025_Split_2.png/revision/latest?cb=20250430134332&format=original",
+        "uploaded_at": "2025-04-30T13:43:32Z",
+        "sha1": "6b66c80535ad991943de039e20303341172ccbf2",
+        "metadata": {
+          "player": "beishang",
+          "tournament": "LPL 2025 Split 2 Placements",
+          "team": "Oh My God",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:f4c4528c6981e104a11ea7548630c23",
+      "team": "Oh My God",
+      "team_short": "OMG",
+      "player_id": "oe:player:9bcf397008d511151380efd9e6b2ae6",
+      "player": "charlotte",
+      "observed_splits": [
+        "Split 2"
+      ],
+      "source_split": "Split 2 Placements",
+      "path": "player/2025/omg/charlotte.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "400515b7e9bfadc9fcb082e92fe7941b776c0f0f1e16466eff9358330f207882",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:OMG charlotte 2025 Split 2.png",
+        "page_url": "https://lol.fandom.com/wiki/File:OMG_charlotte_2025_Split_2.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bc/OMG_charlotte_2025_Split_2.png/revision/latest?cb=20250425140810&format=original",
+        "uploaded_at": "2025-04-25T14:08:10Z",
+        "sha1": "1972de03f3db8594d328d8922fedaf0e4dfcc9fb",
+        "metadata": {
+          "player": "charlotte (Xue Le-Hui)",
+          "tournament": "LPL 2025 Split 2 Placements",
+          "team": "Oh My God",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:f4c4528c6981e104a11ea7548630c23",
+      "team": "Oh My God",
+      "team_short": "OMG",
+      "player_id": "oe:player:92f0831b560a15d8be3be25275adb08",
+      "player": "Heng",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/omg/heng.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "4fb837f854f119d75f8906b9492a992cb904a1081242b2eb55d50d27fae48328",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:OMG Heng 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:OMG_Heng_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/66/OMG_Heng_2025_Split_1.png/revision/latest?cb=20250109143738&format=original",
+        "uploaded_at": "2025-01-09T14:37:38Z",
+        "sha1": "0ab6a9c35fad03f1bed2937bd8a09e53844f94b8",
+        "metadata": {
+          "player": "Heng",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Oh My God",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:f4c4528c6981e104a11ea7548630c23",
+      "team": "Oh My God",
+      "team_short": "OMG",
+      "player_id": "oe:player:407b2b8fcb2fd977fc766d5df3f4dff",
+      "player": "Hery",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/omg/hery.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "959643cd6646a2f621e8fc7011a96f30c37478b2685a7468e95842ab60782809",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:OMG Hery 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:OMG_Hery_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/af/OMG_Hery_2025_Split_1.png/revision/latest?cb=20250109143739&format=original",
+        "uploaded_at": "2025-01-09T14:37:39Z",
+        "sha1": "9c8d284de5220db254cd1dfa13f4bb17eb6d69ea",
+        "metadata": {
+          "player": "Hery",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Oh My God",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:f4c4528c6981e104a11ea7548630c23",
+      "team": "Oh My God",
+      "team_short": "OMG",
+      "player_id": "oe:player:cb6616189a21f8e8ed43ccdb3f6904a",
+      "player": "Linfeng",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/omg/linfeng.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "6cde0f7dd63ea7a192414911da8333569b2419800129481166fc60b4792a82a5",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:OMG Linfeng 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:OMG_Linfeng_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ec/OMG_Linfeng_2025_Split_1.png/revision/latest?cb=20250109143736&format=original",
+        "uploaded_at": "2025-01-09T14:37:36Z",
+        "sha1": "1da3f3ecdea4bc9fa9806f8c2dab56beacd56a28",
+        "metadata": {
+          "player": "Linfeng",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Oh My God",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:f4c4528c6981e104a11ea7548630c23",
+      "team": "Oh My God",
+      "team_short": "OMG",
+      "player_id": "oe:player:dfc279de8d7bd571aa8edfd7eb89c03",
+      "player": "Moham",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/omg/moham.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "1bfbf3e337c348b4b55e074f66f9c8bf7b2b1afed96726d54c4254bf637caa9b",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:OMG Moham 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:OMG_Moham_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e5/OMG_Moham_2025_Split_1.png/revision/latest?cb=20250109143734&format=original",
+        "uploaded_at": "2025-01-09T14:37:34Z",
+        "sha1": "d1ff5d64e18a0b0c2bcd0d0d6ce4ef2f75ce22f1",
+        "metadata": {
+          "player": "Moham",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Oh My God",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:f4c4528c6981e104a11ea7548630c23",
+      "team": "Oh My God",
+      "team_short": "OMG",
+      "player_id": "oe:player:0be01924125adebc1a95bbb09d0c4d1",
+      "player": "Starry",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/omg/starry.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "493e06218a5ce05500e6caecf4cb14c5093598087f067f40dd8ff99d46f1e288",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:OMG Starry 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:OMG_Starry_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/65/OMG_Starry_2025_Split_1.png/revision/latest?cb=20250109143735&format=original",
+        "uploaded_at": "2025-01-09T14:37:35Z",
+        "sha1": "54703ca7a01787172a3c77aa052a02e3b30c2a66",
+        "metadata": {
+          "player": "Starry",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Oh My God",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:73f3126d91d35faa5d5ce34abadb865",
+      "team": "Royal Never Give Up",
+      "team_short": "RNG",
+      "player_id": "oe:player:d971df9441d60af93a87545e6a8f884",
+      "player": "JiaQi",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/rng/jiaqi.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "39b44eb4c0319a7118f3479c35ea7f02a629e0104db6f5bee2977a1f097b3b6e",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:RNG JiaQi 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:RNG_JiaQi_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e5/RNG_JiaQi_2025_Split_1.png/revision/latest?cb=20250109143728&format=original",
+        "uploaded_at": "2025-01-09T14:37:28Z",
+        "sha1": "4ae822bb5ad1787c1e8ebe0b75d39efba8580aa6",
+        "metadata": {
+          "player": "JiaQi",
+          "tournament": "LPL 2025 Split 1",
+          "team": "RNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:73f3126d91d35faa5d5ce34abadb865",
+      "team": "Royal Never Give Up",
+      "team_short": "RNG",
+      "player_id": "oe:player:ad991b9f2f7e553d4eefb9f5d06afc9",
+      "player": "Lele",
+      "observed_splits": [
+        "Split 1"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/rng/lele.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "9053c4de1008d6839f54e04e8adfc22da90570b4ea3f80cc36a26ab951d971dd",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:RNG Lele 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:RNG_Lele_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/05/RNG_Lele_2025_Split_1.png/revision/latest?cb=20250109143727&format=original",
+        "uploaded_at": "2025-01-09T14:37:27Z",
+        "sha1": "ac4b71401952b086305771ce2c4b1f2b437e11e0",
+        "metadata": {
+          "player": "Lele (Dang Bo-Lin)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "RNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:73f3126d91d35faa5d5ce34abadb865",
+      "team": "Royal Never Give Up",
+      "team_short": "RNG",
+      "player_id": "oe:player:31b62cc3cf89d670fdef677faed2789",
+      "player": "milkyway",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/rng/milkyway.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "3eac47e580bae08024a05a8756a970afe84c33b9a3c7f620c05f352f9f653435",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:RNG milkyway 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:RNG_milkyway_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c7/RNG_milkyway_2025_Split_1.png/revision/latest?cb=20250109143731&format=original",
+        "uploaded_at": "2025-01-09T14:37:31Z",
+        "sha1": "fcd32b7514bba1f34e6697a535acece6520f9014",
+        "metadata": {
+          "player": "milkyway",
+          "tournament": "LPL 2025 Split 1",
+          "team": "RNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:73f3126d91d35faa5d5ce34abadb865",
+      "team": "Royal Never Give Up",
+      "team_short": "RNG",
+      "player_id": "oe:player:6ad53ca055b82d5e23b83df6093df11",
+      "player": "Niket",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/rng/niket.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "b649e484a225e65b6bdc690af95d3725d55255f9181a0de0c8eb166e03fb0302",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:RNG Niket 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:RNG_Niket_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/ff/RNG_Niket_2025_Split_1.png/revision/latest?cb=20250125133858&format=original",
+        "uploaded_at": "2025-01-25T13:38:58Z",
+        "sha1": "b64bd514513f1de5bd97e338222b163f7cb22259",
+        "metadata": {
+          "player": "Niket",
+          "tournament": "LPL 2025 Split 1",
+          "team": "RNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:73f3126d91d35faa5d5ce34abadb865",
+      "team": "Royal Never Give Up",
+      "team_short": "RNG",
+      "player_id": "oe:player:3c93fcbfb525315f6412904e5b9abbd",
+      "player": "Tangyuan",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/rng/tangyuan.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "2b0f1baa2c7d324efb80af5a345352c0068bab7f3e447f25bb38189a2630ef53",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:RNG Tangyuan 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:RNG_Tangyuan_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cd/RNG_Tangyuan_2025_Split_1.png/revision/latest?cb=20250109143729&format=original",
+        "uploaded_at": "2025-01-09T14:37:29Z",
+        "sha1": "9a236e76cba7c747d811346b5fe583e7ade910a6",
+        "metadata": {
+          "player": "Tangyuan",
+          "tournament": "LPL 2025 Split 1",
+          "team": "RNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:73f3126d91d35faa5d5ce34abadb865",
+      "team": "Royal Never Give Up",
+      "team_short": "RNG",
+      "player_id": "oe:player:8007ba25dee37ac1e4445a6e9f8d252",
+      "player": "Xiaoxu",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/rng/xiaoxu.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "4008e885701b3a7b3a5e2f2729041d3d7b42e0d49bd22ce8cac9f8ac856cd516",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:RNG Xiaoxu 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:RNG_Xiaoxu_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/66/RNG_Xiaoxu_2025_Split_1.png/revision/latest?cb=20250109143732&format=original",
+        "uploaded_at": "2025-01-09T14:37:32Z",
+        "sha1": "26a38acfc1b3556793812525eafcc68ec844fb14",
+        "metadata": {
+          "player": "Xiaoxu",
+          "tournament": "LPL 2025 Split 1",
+          "team": "RNG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:fcec508e780bbd1ad493852640f5b36",
+      "team": "Top Esports",
+      "team_short": "TES",
+      "player_id": "oe:player:0c74b7f78409a4022a2c4c5a5ca3ee1",
+      "player": "369",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/tes/369.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "a884a3eeee42f885efe09fee45ae3b21337cf7bb1e074731337ad26d9f422017",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:TES 369 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:TES_369_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ce/TES_369_2025_Split_1.png/revision/latest?cb=20250109143726&format=original",
+        "uploaded_at": "2025-01-09T14:37:26Z",
+        "sha1": "ddd6eb28ece199863d2dfd6145d58c4348068704",
+        "metadata": {
+          "player": "369",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Top Esports",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:fcec508e780bbd1ad493852640f5b36",
+      "team": "Top Esports",
+      "team_short": "TES",
+      "player_id": "oe:player:6e7908512cb309a43388bb464a312a2",
+      "player": "Creme",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/tes/creme.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "056eff6c6ec7fd7814cb4c756b9fa1b29dca0c92a5d4d049fb952061015f242a",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:TES Creme 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:TES_Creme_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ca/TES_Creme_2025_Split_1.png/revision/latest?cb=20250109143724&format=original",
+        "uploaded_at": "2025-01-09T14:37:24Z",
+        "sha1": "a7da65f636a2988f02c4fe846de53cf41461d375",
+        "metadata": {
+          "player": "Creme",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Top Esports",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:fcec508e780bbd1ad493852640f5b36",
+      "team": "Top Esports",
+      "team_short": "TES",
+      "player_id": "oe:player:6059545b206c4b230b97fd3651b473a",
+      "player": "Crisp",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/tes/crisp.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "1592a1a59478051d10aa38feed482301fd6cb357ef62de6ca6cd3ad4fa40c808",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:TES Crisp 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:TES_Crisp_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/ba/TES_Crisp_2025_Split_1.png/revision/latest?cb=20250109143721&format=original",
+        "uploaded_at": "2025-01-09T14:37:21Z",
+        "sha1": "643b46e37000b0c9b48ee472aa9067d2e101ec8f",
+        "metadata": {
+          "player": "Crisp",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Top Esports",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:fcec508e780bbd1ad493852640f5b36",
+      "team": "Top Esports",
+      "team_short": "TES",
+      "player_id": "oe:player:ab2455e33b8ddb6a9d2d41107a2ed4f",
+      "player": "Hang",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/tes/hang.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "e2260664a4aad0b95a89ed1f82e321360800420902c29fa0ddd2ce6925470deb",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:TES Hang 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:TES_Hang_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/87/TES_Hang_2025_Split_3.png/revision/latest?cb=20250719110503&format=original",
+        "uploaded_at": "2025-07-19T11:05:03Z",
+        "sha1": "0be1066e5d9ff2a3441b95d7ac0d1d5935a4f788",
+        "metadata": {
+          "player": "Hang",
+          "tournament": "LPL 2025 Split 3",
+          "team": "TES",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:fcec508e780bbd1ad493852640f5b36",
+      "team": "Top Esports",
+      "team_short": "TES",
+      "player_id": "oe:player:c54e1090ef1faa736b12493051c4855",
+      "player": "JackeyLove",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/tes/jackeylove.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "23c98a68c00958403dd0a1006469e8c4a291b30dee9d8306b14fa87722d19285",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:TES JackeyLove 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:TES_JackeyLove_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/26/TES_JackeyLove_2025_Split_1.png/revision/latest?cb=20250109143722&format=original",
+        "uploaded_at": "2025-01-09T14:37:22Z",
+        "sha1": "0bd594c387e15f2c1cdd86c32e76ee561da7cb7d",
+        "metadata": {
+          "player": "JackeyLove",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Top Esports",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:fcec508e780bbd1ad493852640f5b36",
+      "team": "Top Esports",
+      "team_short": "TES",
+      "player_id": "oe:player:41deab55354f57a94135989133f9968",
+      "player": "Kanavi",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/tes/kanavi.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "58e19eeef7779e431933f742f95cd539b22c465182f11d8bac546e5defdbadc1",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:TES Kanavi 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:TES_Kanavi_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/37/TES_Kanavi_2025_Split_1.png/revision/latest?cb=20250109143725&format=original",
+        "uploaded_at": "2025-01-09T14:37:25Z",
+        "sha1": "c7f6afd7a1e6d0b8fe3244ad5cfc53fa94d51e1c",
+        "metadata": {
+          "player": "Kanavi",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Top Esports",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:df80f468a3f9a722df056fe9104f052",
+      "team": "ThunderTalk Gaming",
+      "team_short": "TT",
+      "player_id": "oe:player:d2b317a92a71a850ae3da1e0d83e883",
+      "player": "1xn",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/tt/1xn.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "f563cea4896509647855c5d8a296a9fad8b62c35a4bca3cf2a888fff0c0184f2",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:TT 1xn 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:TT_1xn_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/45/TT_1xn_2025_Split_1.png/revision/latest?cb=20250109143717&format=original",
+        "uploaded_at": "2025-01-09T14:37:17Z",
+        "sha1": "2f98d50495a4e68caa09722d3ef42b6f9f339156",
+        "metadata": {
+          "player": "1xn",
+          "tournament": "LPL 2025 Split 1",
+          "team": "ThunderTalk Gaming",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:df80f468a3f9a722df056fe9104f052",
+      "team": "ThunderTalk Gaming",
+      "team_short": "TT",
+      "player_id": "oe:player:3faae62fb907ad7cbcf2167beb8b2c7",
+      "player": "Aki",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "source_split": "Split 3",
+      "path": "player/2025/tt/aki.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "f680b14a32c69a76d075a8058e2234dc7f17e47781c3dddc476dec6f81b6b741",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:TT Aki 2025 Split 3.png",
+        "page_url": "https://lol.fandom.com/wiki/File:TT_Aki_2025_Split_3.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b8/TT_Aki_2025_Split_3.png/revision/latest?cb=20250719110504&format=original",
+        "uploaded_at": "2025-07-19T11:05:04Z",
+        "sha1": "1d9fb7822251933726bce9ba28cfd2f52cd3e73d",
+        "metadata": {
+          "player": "Aki (Mao An)",
+          "tournament": "LPL 2025 Split 3",
+          "team": "ThunderTalk Gaming",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:df80f468a3f9a722df056fe9104f052",
+      "team": "ThunderTalk Gaming",
+      "team_short": "TT",
+      "player_id": "oe:player:05326a1c42e9c27a1067768c88955e7",
+      "player": "Beichuan",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/tt/beichuan.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "584bba58d55c3d3941502e38b108b28a69eaa027a77e9c5b469fbb2f6fdc1f20",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:TT Beichuan 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:TT_Beichuan_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/45/TT_Beichuan_2025_Split_1.png/revision/latest?cb=20250109143719&format=original",
+        "uploaded_at": "2025-01-09T14:37:19Z",
+        "sha1": "d2366b307acc0a46fae036394ece39a915027bfe",
+        "metadata": {
+          "player": "Beichuan",
+          "tournament": "LPL 2025 Split 1",
+          "team": "ThunderTalk Gaming",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:df80f468a3f9a722df056fe9104f052",
+      "team": "ThunderTalk Gaming",
+      "team_short": "TT",
+      "player_id": "oe:player:5000a68e43f946c726a17e1008e230a",
+      "player": "Feather",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/tt/feather.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "1a36511a2a600fec3badef86fec8ffece1b2892f3d86dbab4f5ae88cdf572554",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:TT Feather 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:TT_Feather_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a4/TT_Feather_2025_Split_1.png/revision/latest?cb=20250109143715&format=original",
+        "uploaded_at": "2025-01-09T14:37:15Z",
+        "sha1": "fcc96eb2c4fbd3611cf223ecc3371a7a9c446f03",
+        "metadata": {
+          "player": "Feather",
+          "tournament": "LPL 2025 Split 1",
+          "team": "ThunderTalk Gaming",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:df80f468a3f9a722df056fe9104f052",
+      "team": "ThunderTalk Gaming",
+      "team_short": "TT",
+      "player_id": "oe:player:57ac9f77eae511aeee1e854434f73f2",
+      "player": "HOYA",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/tt/hoya.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "4432fa01809360de75eee61d9f13e7be80c660ae23666d1760c4e9b5f5279287",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:TT HOYA 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:TT_HOYA_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fb/TT_HOYA_2025_Split_1.png/revision/latest?cb=20250109143720&format=original",
+        "uploaded_at": "2025-01-09T14:37:20Z",
+        "sha1": "b00c5add4f153c55a446841f3f65bb3748d7b45a",
+        "metadata": {
+          "player": "HOYA",
+          "tournament": "LPL 2025 Split 1",
+          "team": "ThunderTalk Gaming",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:df80f468a3f9a722df056fe9104f052",
+      "team": "ThunderTalk Gaming",
+      "team_short": "TT",
+      "player_id": "oe:player:4ff7b91bbc9492e9f96d28dda496653",
+      "player": "SeTab",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/tt/setab.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "8c0e465ce13fd6a97fb251a76c90d687ebb8838858f8c7e8e94ea18e6cd38ef8",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:TT SeTab 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:TT_SeTab_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a7/TT_SeTab_2025_Split_1.png/revision/latest?cb=20250109143718&format=original",
+        "uploaded_at": "2025-01-09T14:37:18Z",
+        "sha1": "123044fb10f8b40d638a9b8da157c818a6340e62",
+        "metadata": {
+          "player": "SeTab",
+          "tournament": "LPL 2025 Split 1",
+          "team": "ThunderTalk Gaming",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:df80f468a3f9a722df056fe9104f052",
+      "team": "ThunderTalk Gaming",
+      "team_short": "TT",
+      "player_id": "oe:player:a57c46c636a00b1721780dd44f9c42f",
+      "player": "xiaohuangren",
+      "observed_splits": [
+        "Split 2"
+      ],
+      "source_split": "Split 2 Placements",
+      "path": "player/2025/tt/xiaohuangren.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "371c024bfac4d63174cf017dfbf4a7f7c5e51c0684b1191e00cbf5acb39fc7c0",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:TT xiaohuangren 2025 Split 2.png",
+        "page_url": "https://lol.fandom.com/wiki/File:TT_xiaohuangren_2025_Split_2.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8f/TT_xiaohuangren_2025_Split_2.png/revision/latest?cb=20250429144751&format=original",
+        "uploaded_at": "2025-04-29T14:47:51Z",
+        "sha1": "95cab4494cf9a56dd8be4adbb053b443993fbbaa",
+        "metadata": {
+          "player": "xiaohuangren",
+          "tournament": "LPL 2025 Split 2 Placements",
+          "team": "ThunderTalk Gaming",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:8d09428f093dfbf3c488bce350af0b1",
+      "team": "Ultra Prime",
+      "team_short": "UP",
+      "player_id": "oe:player:2cec4b6803b4678250233ae79205f2e",
+      "player": "1Jiang",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/up/1jiang.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "33dde5304bcce9cf022354042148f718cd5b30d65abfa06ad9aa28c8411e8680",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:UP 1Jiang 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:UP_1Jiang_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d4/UP_1Jiang_2025_Split_1.png/revision/latest?cb=20250109143714&format=original",
+        "uploaded_at": "2025-01-09T14:37:14Z",
+        "sha1": "20da9f8ca7b07dd9259ec3fe44925ec02791b786",
+        "metadata": {
+          "player": "1Jiang",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Ultra Prime",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:8d09428f093dfbf3c488bce350af0b1",
+      "team": "Ultra Prime",
+      "team_short": "UP",
+      "player_id": "oe:player:2c356e2803d68c33c11e65496fff9bd",
+      "player": "Baiye",
+      "observed_splits": [
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 2 Placements",
+      "path": "player/2025/up/baiye.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "9468fa6bfed89ac0d4e7872c85bd5b0741164a54d6a230fac464ade3c27081f2",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:UP Baiye 2025 Split 2.png",
+        "page_url": "https://lol.fandom.com/wiki/File:UP_Baiye_2025_Split_2.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/dc/UP_Baiye_2025_Split_2.png/revision/latest?cb=20250425140812&format=original",
+        "uploaded_at": "2025-04-25T14:08:12Z",
+        "sha1": "60ee7c4fcda5e5691f441432db0c273989c3e567",
+        "metadata": {
+          "player": "Baiye",
+          "tournament": "LPL 2025 Split 2 Placements",
+          "team": "Ultra Prime",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:8d09428f093dfbf3c488bce350af0b1",
+      "team": "Ultra Prime",
+      "team_short": "UP",
+      "player_id": "oe:player:211333df928f872c063bce4ef25ea63",
+      "player": "Junhao",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/up/junhao.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "a7701b786cd27fa4992cf8611fd0017f39b681e09f62d6fe4cd3c215894ee36a",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:UP Junhao 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:UP_Junhao_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c8/UP_Junhao_2025_Split_1.png/revision/latest?cb=20250109143713&format=original",
+        "uploaded_at": "2025-01-09T14:37:13Z",
+        "sha1": "f0fb7a32969200051b6030b2031e63e8a1c04f15",
+        "metadata": {
+          "player": "Junhao",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Ultra Prime",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:8d09428f093dfbf3c488bce350af0b1",
+      "team": "Ultra Prime",
+      "team_short": "UP",
+      "player_id": "oe:player:b0bc58cfe06ee4ee966c77790520a9b",
+      "player": "Rosielove",
+      "observed_splits": [
+        "Split 1"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/up/rosielove.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "d2f9c4ba12590b48c683ba3345e9cb5e5e368f24650873fe079b254a6ffdf3c1",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:UP Rosielove 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:UP_Rosielove_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/81/UP_Rosielove_2025_Split_1.png/revision/latest?cb=20250109143709&format=original",
+        "uploaded_at": "2025-01-09T14:37:09Z",
+        "sha1": "dd980f86fc16397e7a3dd80db37a714b87d1fad4",
+        "metadata": {
+          "player": "Rosielove",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Ultra Prime",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:8d09428f093dfbf3c488bce350af0b1",
+      "team": "Ultra Prime",
+      "team_short": "UP",
+      "player_id": "oe:player:da42b9f18367dc6c30476ec117c29de",
+      "player": "Saber",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/up/saber.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "69c06e275d9e940924d8155f50e03049b1b0d6ac04db3a8b9d56789c2537c67e",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:UP Saber 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:UP_Saber_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cf/UP_Saber_2025_Split_1.png/revision/latest?cb=20250109143712&format=original",
+        "uploaded_at": "2025-01-09T14:37:12Z",
+        "sha1": "49f78117918060d6536af66a58a7d9b459147ae8",
+        "metadata": {
+          "player": "Saber (Song Dai-Lin)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Ultra Prime",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:8d09428f093dfbf3c488bce350af0b1",
+      "team": "Ultra Prime",
+      "team_short": "UP",
+      "player_id": "oe:player:64ff4f1dd75a5654ab87c0bbee89c1e",
+      "player": "Wako",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/up/wako.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "33973e8c3db6cdc0698562312ae541fe0929b7b8c1a7c8ea986fa0fe4a867ee5",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:UP Wako 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:UP_Wako_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3c/UP_Wako_2025_Split_1.png/revision/latest?cb=20250109143711&format=original",
+        "uploaded_at": "2025-01-09T14:37:11Z",
+        "sha1": "0c5d8851c492acf5130585a51721a37a91a121c6",
+        "metadata": {
+          "player": "Wako",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Ultra Prime",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:8d09428f093dfbf3c488bce350af0b1",
+      "team": "Ultra Prime",
+      "team_short": "UP",
+      "player_id": "oe:player:403937c97942cb4634ef8907077ede5",
+      "player": "Xiaoxia",
+      "observed_splits": [
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 2 Placements",
+      "path": "player/2025/up/xiaoxia.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "894ed0f582a2dbae736f415b110f505becd5783317a6ae9148b1d15395d92828",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:UP Xiaoxia 2025 Split 2.png",
+        "page_url": "https://lol.fandom.com/wiki/File:UP_Xiaoxia_2025_Split_2.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/de/UP_Xiaoxia_2025_Split_2.png/revision/latest?cb=20250325152951&format=original",
+        "uploaded_at": "2025-03-25T15:29:51Z",
+        "sha1": "d63dcd55ccf0de8cf3b26bc76e931026e75dbeda",
+        "metadata": {
+          "player": "Xiaoxia",
+          "tournament": "LPL 2025 Split 2 Placements",
+          "team": "Ultra Prime",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:606c6ac695907af3823ee6405c58ff1",
+      "team": "Weibo Gaming",
+      "team_short": "WBG",
+      "player_id": "oe:player:0d9b0a3b3a93a8f759c9d8ac8eef97c",
+      "player": "Breathe",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/wbg/breathe.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "069210c588e68e85629ac2fb9877e2e8c940b30e56a44d8a2cc8f2b7b30f921d",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:WBG Breathe 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:WBG_Breathe_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b2/WBG_Breathe_2025_Split_1.png/revision/latest?cb=20250109143708&format=original",
+        "uploaded_at": "2025-01-09T14:37:08Z",
+        "sha1": "4fb1e3341702b832a4c850b997cd0d32abb1b5d4",
+        "metadata": {
+          "player": "Breathe",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Weibo Gaming",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:606c6ac695907af3823ee6405c58ff1",
+      "team": "Weibo Gaming",
+      "team_short": "WBG",
+      "player_id": "oe:player:a7128975a782c11d8c34525be8e1b6c",
+      "player": "Erha",
+      "observed_splits": [
+        "Split 2"
+      ],
+      "source_split": "Split 2",
+      "path": "player/2025/wbg/erha.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "24f742706b0a46aedb4a2e52ed587b37a05b25b56c877accb94a149de3db4d03",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:WBG Erha 2025 Split 2.png",
+        "page_url": "https://lol.fandom.com/wiki/File:WBG_Erha_2025_Split_2.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/dc/WBG_Erha_2025_Split_2.png/revision/latest?cb=20250417145238&format=original",
+        "uploaded_at": "2025-04-17T14:52:38Z",
+        "sha1": "301de618fdc034516f26800d5f88818a25586594",
+        "metadata": {
+          "player": "Erha",
+          "tournament": "LPL 2025 Split 2",
+          "team": "WBG",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:606c6ac695907af3823ee6405c58ff1",
+      "team": "Weibo Gaming",
+      "team_short": "WBG",
+      "player_id": "oe:player:ab2455e33b8ddb6a9d2d41107a2ed4f",
+      "player": "Hang",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/wbg/hang.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "11c0e38365b0add2a55127ccbfa782afdfc337bd16420afe7c41d4cb7fc2a6fd",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:WBG Hang 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:WBG_Hang_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1c/WBG_Hang_2025_Split_1.png/revision/latest?cb=20250109143704&format=original",
+        "uploaded_at": "2025-01-09T14:37:04Z",
+        "sha1": "e482c7ac1cf05386cb55ec786ccfeea85ca9c056",
+        "metadata": {
+          "player": "Hang",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Weibo Gaming",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:606c6ac695907af3823ee6405c58ff1",
+      "team": "Weibo Gaming",
+      "team_short": "WBG",
+      "player_id": "oe:player:3c4d21c7addb20fea3fec30418ac3d3",
+      "player": "Light",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/wbg/light.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "1a0186a10811ba063ed92fc2dd2fbea4d07b963aec2b7125781af9ab2c368901",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:WBG Light 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:WBG_Light_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/61/WBG_Light_2025_Split_1.png/revision/latest?cb=20250109143705&format=original",
+        "uploaded_at": "2025-01-09T14:37:05Z",
+        "sha1": "6dde7c763de3b79e17ac953145aef0741f98a602",
+        "metadata": {
+          "player": "Light (Wang Guang-Yu)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Weibo Gaming",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:606c6ac695907af3823ee6405c58ff1",
+      "team": "Weibo Gaming",
+      "team_short": "WBG",
+      "player_id": "oe:player:0da0eeb199e8fa3ab773cf84f9de9ab",
+      "player": "Tian",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/wbg/tian.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "1e8ed884892e1cd663677ada83dd406f5ebfb719c4d256261d0da8122fb86f9b",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:WBG Tian 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:WBG_Tian_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/18/WBG_Tian_2025_Split_1.png/revision/latest?cb=20250109143707&format=original",
+        "uploaded_at": "2025-01-09T14:37:07Z",
+        "sha1": "077bfd0fbb15f73fdf4e8626c8fbe9778213516d",
+        "metadata": {
+          "player": "Tian",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Weibo Gaming",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:606c6ac695907af3823ee6405c58ff1",
+      "team": "Weibo Gaming",
+      "team_short": "WBG",
+      "player_id": "oe:player:beea9fe15bff6a7ab0b3913d3d5fde6",
+      "player": "Xiaohu",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/wbg/xiaohu.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "d46614157771300b3a2e556eeee67964fdd88591d5700cc2c4989817b504b082",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:WBG Xiaohu 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:WBG_Xiaohu_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c1/WBG_Xiaohu_2025_Split_1.png/revision/latest?cb=20250109143706&format=original",
+        "uploaded_at": "2025-01-09T14:37:06Z",
+        "sha1": "fafe602f9d70ae0c29344ba43e4adcd5bca2e5e5",
+        "metadata": {
+          "player": "Xiaohu",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Weibo Gaming",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:62c1cd9465dc63824593ee5046f5aa8",
+      "team": "Team WE",
+      "team_short": "WE",
+      "player_id": "oe:player:b6603b64c5cabad210826735469838b",
+      "player": "Cube",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/we/cube.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "6c705fd6bf42f13c04ad2551924af1ffe35255f3311b3ccc9efa29adb64feb61",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:WE Cube 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:WE_Cube_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4a/WE_Cube_2025_Split_1.png/revision/latest?cb=20250109143702&format=original",
+        "uploaded_at": "2025-01-09T14:37:02Z",
+        "sha1": "926315d2be965885f9a04b7dfeaa9348d7ce7cf4",
+        "metadata": {
+          "player": "Cube (Dai Yi)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Team WE",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:62c1cd9465dc63824593ee5046f5aa8",
+      "team": "Team WE",
+      "team_short": "WE",
+      "player_id": "oe:player:498246d6c44175256a07ed5f322c817",
+      "player": "Karis",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/we/karis.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "27b6113e4d5daa8ee73ca7e6326142a793cf0fe7a01ea68f76c050d794d68513",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:WE Karis 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:WE_Karis_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bb/WE_Karis_2025_Split_1.png/revision/latest?cb=20250109143700&format=original",
+        "uploaded_at": "2025-01-09T14:37:00Z",
+        "sha1": "12caa33c8fb500b14f2a0e61e70b68e25fe099f9",
+        "metadata": {
+          "player": "Karis",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Team WE",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:62c1cd9465dc63824593ee5046f5aa8",
+      "team": "Team WE",
+      "team_short": "WE",
+      "player_id": "oe:player:a23b45071ea855f85e43db4b5a1683d",
+      "player": "Monki",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/we/monki.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "e556344b16ba6eac4d6aefafe01b7872005338ba31520c5dd7397078dcb7847b",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:WE Monki 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:WE_Monki_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1c/WE_Monki_2025_Split_1.png/revision/latest?cb=20250209085042&format=original",
+        "uploaded_at": "2025-02-09T08:50:42Z",
+        "sha1": "342cbd189cd4349a725d2786969e9e0c93553529",
+        "metadata": {
+          "player": "Monki",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Team WE",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:62c1cd9465dc63824593ee5046f5aa8",
+      "team": "Team WE",
+      "team_short": "WE",
+      "player_id": "oe:player:952237fce714ed1eca8ded17523bee9",
+      "player": "Taeyoon",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/we/taeyoon.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "e320f114911ba56a6af4b75d3a98891ee20be71db2a09baae701424b24cf87bf",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:WE Taeyoon 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:WE_Taeyoon_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a6/WE_Taeyoon_2025_Split_1.png/revision/latest?cb=20250109143659&format=original",
+        "uploaded_at": "2025-01-09T14:36:59Z",
+        "sha1": "f08cfd72b52e99a95bd306668981caedb8f1a809",
+        "metadata": {
+          "player": "Taeyoon (Kim Tae-yoon)",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Team WE",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:62c1cd9465dc63824593ee5046f5aa8",
+      "team": "Team WE",
+      "team_short": "WE",
+      "player_id": "oe:player:e9aecf3f86eadc4cabbf95b7d92be0d",
+      "player": "Tianzhen",
+      "observed_splits": [
+        "Split 1"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/we/tianzhen.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "e8c96dfdf4142fd2a8f08150c96b5de8f01e521fe92d0a223a9f9c7530ad6f7a",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:WE Tianzhen 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:WE_Tianzhen_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e6/WE_Tianzhen_2025_Split_1.png/revision/latest?cb=20250109143701&format=original",
+        "uploaded_at": "2025-01-09T14:37:01Z",
+        "sha1": "a8495b3d30c6ab306969d5571d72b23a19207f8e",
+        "metadata": {
+          "player": "Tianzhen",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Team WE",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:62c1cd9465dc63824593ee5046f5aa8",
+      "team": "Team WE",
+      "team_short": "WE",
+      "player_id": "oe:player:41ad87cfc159526f62529db61162a2a",
+      "player": "Vampire",
+      "observed_splits": [
+        "Split 1",
+        "Split 2 Placements",
+        "Split 2",
+        "Split 3"
+      ],
+      "source_split": "Split 1",
+      "path": "player/2025/we/vampire.png",
+      "width": 250,
+      "height": 250,
+      "sha256": "3b93cf5d3e4401a9db98477a49a0cbde4e5abfdc0d8c4d3faee50f5f82ec65c5",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:WE Vampire 2025 Split 1.png",
+        "page_url": "https://lol.fandom.com/wiki/File:WE_Vampire_2025_Split_1.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a1/WE_Vampire_2025_Split_1.png/revision/latest?cb=20250109143657&format=original",
+        "uploaded_at": "2025-01-09T14:36:57Z",
+        "sha1": "fd4bd1b5e4821cc708d8f34e7b43e620b8750949",
+        "metadata": {
+          "player": "Vampire",
+          "tournament": "LPL 2025 Split 1",
+          "team": "Team WE",
+          "imagetype": "Headshot",
+          "is_profile": "Yes",
+          "ignorewarnings": "No"
+        },
+        "license_template": "EsportsFairuse"
+      }
+    }
+  ],
+  "teams": [
+    {
+      "season": 2025,
+      "team_id": "oe:team:ed28f87f0cfdba0a2a8f183cebae73a",
+      "team": "Anyone's Legend",
+      "team_short": "AL",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/al.png",
+      "width": 2114,
+      "height": 2114,
+      "sha256": "e8483cfd3a78e18dc346f369290df6e5a5347f631e2513e125abc7af25f1ef3a",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:Anyone's Legendlogo square.png",
+        "page_url": "https://lol.fandom.com/wiki/File:Anyone%27s_Legendlogo_square.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/25/Anyone%27s_Legendlogo_square.png/revision/20260109094925?format=original",
+        "uploaded_at": "2022-01-11T18:57:13Z",
+        "sha1": "0ab872a20119166704551e15ae21d3db2b0c5914",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:d356a144644879dabb5f34cd99c886d",
+      "team": "Bilibili Gaming",
+      "team_short": "BLG",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/blg.png",
+      "width": 1606,
+      "height": 1606,
+      "sha256": "ff66336a54b39c965de572e6a087b908410e10d6bb2fc3c8bf6ebe9416da7a37",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:Bilibili Gaminglogo square.png",
+        "page_url": "https://lol.fandom.com/wiki/File:Bilibili_Gaminglogo_square.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/Bilibili_Gaminglogo_square.png/revision/20260109092042?format=original",
+        "uploaded_at": "2023-05-03T00:41:20Z",
+        "sha1": "45bc10bd482fdd621ce8a175ea1957480a03107c",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:056c3140a119e44a03d462e2c832f27",
+      "team": "EDward Gaming",
+      "team_short": "EDG",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/edg.png",
+      "width": 5000,
+      "height": 5000,
+      "sha256": "e65b33be1b7e5f2e71e17790d046c655906e09ad0aa7f8bef32525d3e15768d3",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:EDward Gaminglogo square.png",
+        "page_url": "https://lol.fandom.com/wiki/File:EDward_Gaminglogo_square.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/56/EDward_Gaminglogo_square.png/revision/20260109115902?format=original",
+        "uploaded_at": "2021-10-24T13:31:23Z",
+        "sha1": "7dd08769354905cff42e20b4e7004806d9c603fe",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:33d17f3717f58e12a3da80b377221fb",
+      "team": "FunPlus Phoenix",
+      "team_short": "FPX",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/fpx.png",
+      "width": 5000,
+      "height": 5000,
+      "sha256": "13f7ffba84fbc719d9069f4f02b6f2b40fbebc513431e35592079ffd4d44ea26",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:FunPlus Phoenixlogo square.png",
+        "page_url": "https://lol.fandom.com/wiki/File:FunPlus_Phoenixlogo_square.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b1/FunPlus_Phoenixlogo_square.png/revision/latest?cb=20230426040632&format=original",
+        "uploaded_at": "2023-04-26T04:06:32Z",
+        "sha1": "41f00e6589d727c5617d087569fc67be20b86979",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:53a258f289c26d94431c0496a54e151",
+      "team": "Invictus Gaming",
+      "team_short": "IG",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/ig.png",
+      "width": 5000,
+      "height": 5000,
+      "sha256": "c5914c2c62059b39942150261458fa21918739429b6b0ecc0100b731a3e3ba57",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:Invictus Gaminglogo square.png",
+        "page_url": "https://lol.fandom.com/wiki/File:Invictus_Gaminglogo_square.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e4/Invictus_Gaminglogo_square.png/revision/latest?cb=20220121030730&format=original",
+        "uploaded_at": "2022-01-21T03:07:30Z",
+        "sha1": "9a14afebebf7793615c45dd0fd8977b0ef9b28d5",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:b42d0f31f2727621b963042276817c4",
+      "team": "JD Gaming",
+      "team_short": "JDG",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/jdg.png",
+      "width": 5000,
+      "height": 5000,
+      "sha256": "638cc1cef5f3cb1eb1c0f8833f098419b595233a7a61d9fccc3da533636a7be7",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:JD Gaminglogo square.png",
+        "page_url": "https://lol.fandom.com/wiki/File:JD_Gaminglogo_square.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/00/JD_Gaminglogo_square.png/revision/latest?cb=20230512083646&format=original",
+        "uploaded_at": "2023-05-12T08:36:46Z",
+        "sha1": "ac4576993cc237543db5c54d2b3c9a33d99a1b0b",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:5f401785b6b78326f9a46b3c6b206ed",
+      "team": "LGD Gaming",
+      "team_short": "LGD",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/lgd.png",
+      "width": 800,
+      "height": 800,
+      "sha256": "4b059a98d99c6a7e0b6186080f255d6c2aa76bc9a044060a65fa5b05499c39ed",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LGD Gaminglogo square.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LGD_Gaminglogo_square.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/55/LGD_Gaminglogo_square.png/revision/20260109090145?format=original",
+        "uploaded_at": "2022-01-29T01:50:52Z",
+        "sha1": "14c292b26d4c97d305ca0a110b75963051eb8ab9",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:a9145b7711873f53e610fbba0493484",
+      "team": "LNG Esports",
+      "team_short": "LNG",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/lng.png",
+      "width": 5000,
+      "height": 5000,
+      "sha256": "aeac4dde8e809476b135172534307a8ce3643f3ffed126613f1d7e234803e659",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:LNG Esportslogo square.png",
+        "page_url": "https://lol.fandom.com/wiki/File:LNG_Esportslogo_square.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d5/LNG_Esportslogo_square.png/revision/20260109132003?format=original",
+        "uploaded_at": "2023-04-26T04:10:03Z",
+        "sha1": "f5b07c3d6b1e58ba79024aaaebc5a6b5cb60cc5b",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:48d7941ccbd5b89aca46c57b0c2f8fb",
+      "team": "Ninjas in Pyjamas",
+      "team_short": "NIP",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/nip.png",
+      "width": 60,
+      "height": 25,
+      "sha256": "38fda92ddb5e8b1d39d5ef53e6bbbc90a4911ebaa282f29312f5a1abc54c4f19",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:Ninjas in Pyjamas 2017logo std.png",
+        "page_url": "https://lol.fandom.com/wiki/File:Ninjas_in_Pyjamas_2017logo_std.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/98/Ninjas_in_Pyjamas_2017logo_std.png/revision/latest?cb=20240319084730&format=original",
+        "uploaded_at": "2024-03-19T08:47:30Z",
+        "sha1": "be24132c5769595a0ac420d50d37c813df13fd18",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:f4c4528c6981e104a11ea7548630c23",
+      "team": "Oh My God",
+      "team_short": "OMG",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/omg.png",
+      "width": 200,
+      "height": 200,
+      "sha256": "f924c99b89669ff328f90cd0045efb90d0275cba059656c0880196f74df78d2b",
+      "source": {
+        "provider": "Tencent LPL",
+        "file_title": "TeamList.msg[\"6\"].TeamLogo",
+        "page_url": "https://lpl.qq.com/es/team_detail.shtml?tid=6",
+        "image_url": "https://img.crawler.qq.com/lolwebvideo/20230103152756/56c5bb71d14d13ec280908542ac8e1a9/0",
+        "uploaded_at": "2023-01-03",
+        "sha1": null,
+        "metadata": {
+          "TeamId": "6",
+          "TeamName": "OMG",
+          "TeamShortName": "OMG",
+          "TeamEnName": "OhMyGod",
+          "TeamLogo": "//img.crawler.qq.com/lolwebvideo/20230103152756/56c5bb71d14d13ec280908542ac8e1a9/0",
+          "sUrl": "LPL",
+          "Place": "1",
+          "TeamLogoDeep": "",
+          "date_evidence": "20230103152756 in the official asset URL",
+          "registry_url": "https://lpl.qq.com/web201612/data/LOL_MATCH2_TEAM_LIST.js"
+        },
+        "license_template": "See official source",
+        "date_basis": "Date embedded in official asset URL; not an archive revision timestamp."
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:73f3126d91d35faa5d5ce34abadb865",
+      "team": "Royal Never Give Up",
+      "team_short": "RNG",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/rng.png",
+      "width": 6250,
+      "height": 6250,
+      "sha256": "c60ea6311da3629782ef23cd3bc807b22974011ee10a6514d489a52082e9e2c4",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:Royal Never Give Uplogo square.png",
+        "page_url": "https://lol.fandom.com/wiki/File:Royal_Never_Give_Uplogo_square.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/eb/Royal_Never_Give_Uplogo_square.png/revision/20260204111737?format=original",
+        "uploaded_at": "2021-05-21T11:42:22Z",
+        "sha1": "4b54f7477e9a851a7dd487ac5748db5b64d1c472",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:fcec508e780bbd1ad493852640f5b36",
+      "team": "Top Esports",
+      "team_short": "TES",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/tes.png",
+      "width": 5000,
+      "height": 5000,
+      "sha256": "7e427c5853102e9ffe98384e11357becaa8218160f8071f3fd229c54ed40e111",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:Top Esportslogo square.png",
+        "page_url": "https://lol.fandom.com/wiki/File:Top_Esportslogo_square.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/46/Top_Esportslogo_square.png/revision/20260109111427?format=original",
+        "uploaded_at": "2021-10-24T13:01:37Z",
+        "sha1": "1f4045c90fee820d317307cb34086bc09b41550e",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:df80f468a3f9a722df056fe9104f052",
+      "team": "ThunderTalk Gaming",
+      "team_short": "TT",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/tt.png",
+      "width": 820,
+      "height": 820,
+      "sha256": "0101765427f7d77a03080e29b63e0de0560431f7c4b31eb84b81ecb7bb6ae70c",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:ThunderTalk Gaminglogo square.png",
+        "page_url": "https://lol.fandom.com/wiki/File:ThunderTalk_Gaminglogo_square.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/22/ThunderTalk_Gaminglogo_square.png/revision/20260109123657?format=original",
+        "uploaded_at": "2021-03-06T23:14:56Z",
+        "sha1": "c84bfe2a2d7ca645836f7c0825e63a8f65250b4e",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:8d09428f093dfbf3c488bce350af0b1",
+      "team": "Ultra Prime",
+      "team_short": "UP",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/up.png",
+      "width": 422,
+      "height": 422,
+      "sha256": "929594b3b67df571c212eb2c3904b4fedb8a0b72fb0a8536fca7d2180c554a9c",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:Ultra Primelogo square.png",
+        "page_url": "https://lol.fandom.com/wiki/File:Ultra_Primelogo_square.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d6/Ultra_Primelogo_square.png/revision/20260109073705?format=original",
+        "uploaded_at": "2021-05-31T06:35:08Z",
+        "sha1": "30ab23bc2c9ffa2570cf7030aec50fb4a82990be",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:606c6ac695907af3823ee6405c58ff1",
+      "team": "Weibo Gaming",
+      "team_short": "WBG",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/wbg.png",
+      "width": 5000,
+      "height": 5000,
+      "sha256": "894d2db791f0018257f85eda3550ef339680cff8aca762cf7ca7938ece53e451",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:Weibo Gaminglogo square.png",
+        "page_url": "https://lol.fandom.com/wiki/File:Weibo_Gaminglogo_square.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/58/Weibo_Gaminglogo_square.png/revision/20260109113137?format=original",
+        "uploaded_at": "2021-11-22T16:39:01Z",
+        "sha1": "bac69abc464034bef4208939ced6701e35eb186a",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:62c1cd9465dc63824593ee5046f5aa8",
+      "team": "Team WE",
+      "team_short": "WE",
+      "as_of": "2025-01-12T00:00:00Z",
+      "path": "team/2025/we.png",
+      "width": 1794,
+      "height": 1794,
+      "sha256": "29efacff81daef171de276146f9fa0a677051ed7d7bba99e76d896a5c0627dc2",
+      "source": {
+        "provider": "Leaguepedia",
+        "file_title": "File:Team WElogo square.png",
+        "page_url": "https://lol.fandom.com/wiki/File:Team_WElogo_square.png",
+        "image_url": "https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0a/Team_WElogo_square.png/revision/20260109121413?format=original",
+        "uploaded_at": "2021-03-18T22:44:20Z",
+        "sha1": "a0440c8ac532601d34341db361eba8f5fd118bcf",
+        "metadata": {},
+        "license_template": "See source page"
+      }
+    }
+  ],
+  "missing": [
+    {
+      "season": 2025,
+      "team_id": "oe:team:b42d0f31f2727621b963042276817c4",
+      "team": "JD Gaming",
+      "team_short": "JDG",
+      "player_id": "oe:player:8007ba25dee37ac1e4445a6e9f8d252",
+      "player": "Xiaoxu",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "reason": "No verified 2025 headshot for this team in the consulted archive; other seasons/teams are not substituted."
+    },
+    {
+      "season": 2025,
+      "team_id": "oe:team:606c6ac695907af3823ee6405c58ff1",
+      "team": "Weibo Gaming",
+      "team_short": "WBG",
+      "player_id": "oe:player:6059545b206c4b230b97fd3651b473a",
+      "player": "Crisp",
+      "observed_splits": [
+        "Split 3"
+      ],
+      "reason": "No verified 2025 headshot for this team in the consulted archive; other seasons/teams are not substituted."
+    }
+  ]
+}

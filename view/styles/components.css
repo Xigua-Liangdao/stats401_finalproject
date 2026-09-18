@@ -442,9 +442,9 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  width: auto;
-  max-width: none;
-  height: 3.75rem;
+  width: calc(100% - 12px);
+  max-width: 100%;
+  height: calc(100% - 12px);
   transform: translate(-50%, -50%);
   object-fit: contain;
   object-position: center;

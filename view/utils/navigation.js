@@ -2,7 +2,12 @@ export const href = {
   home: '#/',
   players: '#/players',
   playersAt: (page) => catalogueHref('players', page),
-  player: (id) => `#/player/${encodeURIComponent(id)}`,
+  player: (id, teamId, season) => {
+    const params = new URLSearchParams();
+    if (teamId) params.set('team', teamId);
+    if (season) params.set('season', String(season));
+    return `#/player/${encodeURIComponent(id)}${params.size ? `?${params}` : ''}`;
+  },
   lineups: '#/lineups',
   lineupsAt: (page) => catalogueHref('lineups', page),
   lineup: (id) => `#/lineup/${encodeURIComponent(id)}`,
@@ -57,7 +62,8 @@ function parseCataloguePage(value) {
 }
 
 export function parseHash(hash = window.location.hash) {
-  const path = (hash || '#/').replace(/^#/, '') || '/';
+  const [path, query] = ((hash || '#/').replace(/^#/, '') || '/').split('?');
+  const params = new URLSearchParams(query);
   const parts = path.split('/').filter(Boolean);
 
   if (parts.length === 0) return { name: 'home' };
@@ -65,7 +71,10 @@ export function parseHash(hash = window.location.hash) {
     if (parts[1] && !/^\d+$/.test(parts[1])) return { name: 'not-found' };
     return { name: 'players', page: parseCataloguePage(parts[1]) };
   }
-  if (parts[0] === 'player' && parts[1]) return { name: 'player', id: decodeURIComponent(parts[1]) };
+  if (parts[0] === 'player' && parts[1]) return {
+    name: 'player', id: decodeURIComponent(parts[1]),
+    teamId: params.get('team'), season: params.get('season'),
+  };
   if (parts[0] === 'lineups') {
     if (parts[1] && !/^\d+$/.test(parts[1])) return { name: 'not-found' };
     return { name: 'lineups', page: parseCataloguePage(parts[1]) };

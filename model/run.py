@@ -16,6 +16,7 @@ from build_test_data import build_test_data, read_tables
 from export_data import dataset_info, export_dataset, write_json
 from plots import make_figures
 from prepare import prepare, read_raw
+from scripts.build_team_panel import build_team_panel, write_team_panel
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -56,6 +57,7 @@ def main():
                                 "Intervals resample match days with fixed fitted predictions; model uncertainty is omitted."]}
     schema = export_dataset(processed, tables, metadata)
     build_test_data(read_tables(processed, schema), metadata, schema=schema)
+    write_team_panel(processed, build_team_panel(processed))
     write_json(reports / "figure_selection.json", examples)
     manifest = {str(path.relative_to(ROOT)): hashlib.sha256(path.read_bytes()).hexdigest()
                 for directory in [processed, ROOT / "data/test", ROOT / "model/figures"] for path in sorted(directory.iterdir()) if path.is_file() and path.name != ".gitkeep"}
