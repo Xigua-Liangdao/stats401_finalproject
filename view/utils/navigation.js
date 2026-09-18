@@ -52,6 +52,71 @@ export function rememberCataloguePage(kind, page) {
   };
 }
 
+const BACK_STACK_KEY = 'nav-back-stack';
+const BACK_STACK_MAX = 8;
+const BACK_ROOTS = new Set(['home', 'players']);
+
+function normalizeHash(hash) {
+  const value = hash || '#/';
+  return value.startsWith('#') ? value : `#${value}`;
+}
+
+function readBackStack() {
+  try {
+    const parsed = JSON.parse(sessionStorage.getItem(BACK_STACK_KEY) || '[]');
+    return Array.isArray(parsed) ? parsed.filter((item) => typeof item === 'string') : [];
+  } catch {
+    return [];
+  }
+}
+
+function writeBackStack(stack) {
+  try {
+    sessionStorage.setItem(BACK_STACK_KEY, JSON.stringify(stack.slice(-BACK_STACK_MAX)));
+  } catch {
+    /* ignore quota / private mode */
+  }
+}
+
+function recordNavigation(fromHash, toHash) {
+  const from = normalizeHash(fromHash);
+  const to = normalizeHash(toHash);
+  if (from === to) return;
+
+  const toRoute = parseHash(to);
+  if (BACK_ROOTS.has(toRoute.name)) {
+    writeBackStack([]);
+    return;
+  }
+
+  const stack = readBackStack();
+  if (stack.at(-1) === to) {
+    stack.pop();
+  } else if (parseHash(from).name !== 'not-found' && stack.at(-1) !== from) {
+    stack.push(from);
+  }
+  writeBackStack(stack);
+}
+
+function peekBackHref() {
+  return readBackStack().at(-1) || null;
+}
+
+function labelForBack(targetHref) {
+  const route = parseHash(targetHref);
+  if (route.name === 'players') return 'Back to catalogue';
+  if (route.name === 'team') return 'Back to team';
+  if (route.name === 'lineup') return 'Back to lineup';
+  if (route.name === 'player') return 'Back to player';
+  if (route.name === 'home') return 'Back to home';
+  return 'Back';
+}
+
+export function backAction(fallbackHref = href.players) {
+  const target = peekBackHref() || fallbackHref;
+  return { href: target, label: labelForBack(target) };
+}
+
 function parseCataloguePage(value) {
   if (value == null || value === '') return 1;
   return clampPage(value);
@@ -85,7 +150,13 @@ export function navigate(to) {
 }
 
 export function startRouter(onRoute) {
-  const handle = () => onRoute(parseHash());
+  let lastHash = null;
+  const handle = () => {
+    const nextHash = normalizeHash(window.location.hash || '#/');
+    if (lastHash) recordNavigation(lastHash, nextHash);
+    lastHash = nextHash;
+    onRoute(parseHash(nextHash));
+  };
   window.addEventListener('hashchange', handle);
   if (!window.location.hash) window.location.hash = '/';
   else handle();
