@@ -24,10 +24,10 @@ export const LINEUP_VIZ = [
     description: 'Each related game plots five role points. Newer games are larger.',
   },
   {
-    vizId: 'lineup-network',
+    vizId: 'lineup-share-bars',
     index: 'VIZ 02',
-    title: 'Internal network',
-    description: 'Pair relationships inside this five-player composition. Network will mount here.',
+    title: 'Player shares',
+    description: 'Mean gold or damage share for the five players across related games.',
   },
 ];
 

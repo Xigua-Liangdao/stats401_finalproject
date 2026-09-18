@@ -637,6 +637,26 @@
   min-height: 360px;
 }
 
+.lineup-share-bars-panel {
+  min-height: 360px;
+}
+
+.lineup-share-bars-stage.is-mounted {
+  min-height: 280px;
+  overflow: visible;
+}
+
+.share-bar {
+  fill-opacity: 0.88;
+  cursor: pointer;
+}
+
+.share-bar:hover,
+.share-bar:focus {
+  fill-opacity: 1;
+  outline: none;
+}
+
 .lineup-share-stage.is-mounted {
   min-height: 320px;
   overflow: visible;
