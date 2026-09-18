@@ -1,4 +1,3 @@
-import { createButton } from '../../components/buttons/button.js';
 import { APP_KICKER } from '../../utils/constants.js';
 import { h } from '../../utils/dom.js';
 import { href } from '../../utils/navigation.js';
@@ -26,13 +25,7 @@ export async function renderHomePage(target) {
           ]),
         ]),
       ]),
-      h('div', { class: 'home-more' }, [
-        createButton({
-          label: 'See more →',
-          href: href.players,
-          variant: 'accent',
-        }),
-      ]),
+      h('a', { class: 'home-more', href: href.players }, ['See more →']),
     ]),
   );
 }

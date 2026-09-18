@@ -3,9 +3,13 @@
 }
 
 .home {
+  display: flex;
+  flex-direction: column;
   width: min(var(--page-max), 100%);
+  min-height: calc(100dvh - var(--header-h));
   margin: 0 auto;
   padding: 1.6rem var(--page-pad) 3.2rem;
+  box-sizing: border-box;
 }
 
 .home-top {
@@ -73,7 +77,22 @@
 }
 
 .home-more {
-  margin: 2.2rem 0 1.8rem;
+  margin-top: auto;
+  align-self: flex-end;
+  padding: 0;
+  border: 0;
+  background: none;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.home-more:hover,
+.home-more:focus-visible {
+  color: #fff;
+  outline: none;
 }
 
 .system-map {
