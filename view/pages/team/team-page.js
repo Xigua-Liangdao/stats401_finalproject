@@ -1,7 +1,7 @@
 import { createIdentityHeader } from '../../components/cards/identity-header.js';
 import { createTeamLogo } from '../../components/media/entity-images.js';
 import { createBreadcrumbs } from '../../components/layout/page-shell.js';
-import { loadTeam, loadTeamLineups, loadTeamPlayers } from '../../features/team/team-data.js';
+import { loadTeam, loadTeamLineups, loadTeamPlayerGames, loadTeamPlayers } from '../../features/team/team-data.js';
 import { renderTeamLineups, renderTeamPlayers } from '../../features/team/team-rosters.js';
 import { renderTeamStages, renderTeamStats } from '../../features/team/team-stats.js';
 import { h } from '../../utils/dom.js';
@@ -15,9 +15,10 @@ export async function renderTeamPage(target, id) {
     return;
   }
 
-  const [players, lineups] = await Promise.all([
+  const [players, lineups, games] = await Promise.all([
     loadTeamPlayers(team.id),
     loadTeamLineups(team.id),
+    loadTeamPlayerGames(team.id),
   ]);
 
   target.append(
@@ -41,7 +42,7 @@ export async function renderTeamPage(target, id) {
       renderTeamPlayers(players),
       renderTeamStats({ team, playerCount: players.length, lineupCount: lineups.length }),
       renderTeamLineups(lineups),
-      renderTeamStages(),
+      renderTeamStages({ team, players, games }),
     ]),
   );
 }

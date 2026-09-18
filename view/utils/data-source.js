@@ -223,6 +223,7 @@ function mapPlayerGame(row) {
     id: row.record_id,
     source: 'player_games',
     playerId: row.player_id,
+    teamId: row.team_id,
     lineupId: row.lineup_id,
     date: row.date || row.day,
     season: asNumber(row.season) ?? row.season,
@@ -374,6 +375,17 @@ export const dataSource = {
       .map((row) => enrichGame(mapPlayerGame(row), catalog));
     if (!games.length) {
       console.info('[data] no player games', { playerId, file: 'player_games.csv' });
+    }
+    return games;
+  },
+
+  async loadTeamPlayerGames(teamId) {
+    const [catalog, rows] = await Promise.all([loadCatalogRecord(), loadPlayerGameRows()]);
+    const games = rows
+      .filter((row) => row.team_id === teamId)
+      .map((row) => enrichGame(mapPlayerGame(row), catalog));
+    if (!games.length) {
+      console.info('[data] no team player games', { teamId, file: 'player_games.csv' });
     }
     return games;
   },
