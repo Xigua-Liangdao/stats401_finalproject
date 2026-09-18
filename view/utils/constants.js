@@ -17,4 +17,12 @@ export const ROLE_LABELS = {
   sup: 'SUP',
 };
 
+export const ROLE_COLORS = {
+  top: '#3569ab',
+  jng: '#0c8979',
+  mid: '#b58018',
+  bot: '#c35264',
+  sup: '#8857ad',
+};
+
 export const PLACEHOLDER = '—';

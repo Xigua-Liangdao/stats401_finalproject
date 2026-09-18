@@ -257,6 +257,17 @@ function mapPlayerGame(row) {
 }
 
 function mapLineupGame(row, opponentTeamId, side) {
+  const roles = Object.fromEntries(
+    ROLE_ORDER.map((role) => [
+      role,
+      {
+        id: row[`${role}_id`] || null,
+        name: row[`${role}_player`] || null,
+        gold_share: asNumber(row[`${role}_gold_share`]),
+        damage_share: asNumber(row[`${role}_damage_share`]),
+      },
+    ]),
+  );
   return {
     id: `${row.game_id}|${row.team_id}`,
     source: 'lineup_games',
@@ -272,6 +283,7 @@ function mapLineupGame(row, opponentTeamId, side) {
     mean_vision_per_minute: asNumber(row.mean_vision_per_minute),
     gold_concentration: asNumber(row.gold_concentration),
     damage_concentration: asNumber(row.damage_concentration),
+    roles,
   };
 }
 

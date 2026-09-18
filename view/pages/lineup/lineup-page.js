@@ -58,7 +58,7 @@ export async function renderLineupPage(target, id) {
         ],
       }),
       renderLineupRoster(lineup.players),
-      renderLineupStats(lineup),
+      renderLineupStats(lineup, games),
       renderLineupGamesCatalogue(games),
     ]),
   );

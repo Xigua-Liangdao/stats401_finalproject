@@ -16,13 +16,12 @@ export const LINEUP_STAT_CARDS = [
   { key: 'mean_dpm', field: 'mean_dpm', format: 'dpm', label: 'Mean DPM', hint: 'Five-player mean DPM' },
   { key: 'vision_per_minute', field: 'mean_vision_per_minute', format: 'vision', label: 'Vision / min', hint: 'Mean vision per minute' },
 ];
-
 export const LINEUP_VIZ = [
   {
-    vizId: 'lineup-parallel',
+    vizId: 'lineup-share-scatter',
     index: 'VIZ 01',
-    title: 'Lineup profile',
-    description: 'Parallel coordinates for resource, vision, and impact. D3 will mount here.',
+    title: 'Gold share vs damage share',
+    description: 'Each related game plots five role points. Newer games are larger.',
   },
   {
     vizId: 'lineup-network',
@@ -31,3 +30,4 @@ export const LINEUP_VIZ = [
     description: 'Pair relationships inside this five-player composition. Network will mount here.',
   },
 ];
+
