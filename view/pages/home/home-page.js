@@ -1,3 +1,4 @@
+import { createResourceImpactPanel } from '../../features/home/resource-impact-scatter.js';
 import { APP_KICKER } from '../../utils/constants.js';
 import { h } from '../../utils/dom.js';
 import { href } from '../../utils/navigation.js';
@@ -25,7 +26,10 @@ export async function renderHomePage(target) {
           ]),
         ]),
       ]),
-      h('a', { class: 'home-more', href: href.players }, ['See more →']),
+      h('div', { class: 'home-figure-block' }, [
+        createResourceImpactPanel({ players: catalog.players }),
+        h('a', { class: 'home-more', href: href.players }, ['See more →']),
+      ]),
     ]),
   );
 }

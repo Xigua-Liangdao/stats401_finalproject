@@ -6,7 +6,6 @@
   display: flex;
   flex-direction: column;
   width: min(var(--page-max), 100%);
-  min-height: calc(100dvh - var(--header-h));
   margin: 0 auto;
   padding: 1.6rem var(--page-pad) 3.2rem;
   box-sizing: border-box;
@@ -76,9 +75,44 @@
   color: #fff;
 }
 
+.home-figure-block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+
+.home-scatter-panel {
+  min-height: 0;
+}
+
+.home-scatter-stage.is-mounted {
+  min-height: 420px;
+  overflow: visible;
+}
+
+.home-scatter-dot {
+  fill-opacity: 0.78;
+  stroke: rgba(255, 255, 255, 0.45);
+  stroke-width: 0.8;
+  cursor: pointer;
+}
+
+.home-scatter-dot:hover,
+.home-scatter-dot:focus {
+  fill-opacity: 1;
+  outline: none;
+}
+
+.home-scatter-stage .chart-zero {
+  fill: none;
+  stroke: var(--dim);
+  stroke-width: 1;
+  stroke-dasharray: 5 4;
+  pointer-events: none;
+}
+
 .home-more {
-  margin-top: auto;
-  align-self: flex-end;
+  margin: 0.85rem 0 0 auto;
   padding: 0;
   border: 0;
   background: none;
