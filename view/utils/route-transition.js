@@ -1,7 +1,7 @@
 const COVER_MS = 320;
 const CLEAR_MS = 380;
 
-const CINEMATIC_ROUTES = new Set(['home', 'players', 'lineups']);
+const CINEMATIC_ROUTES = new Set(['home', 'players']);
 
 export function shouldPlayRouteWipe(fromName, toName) {
   if (!toName || fromName === toName) return false;

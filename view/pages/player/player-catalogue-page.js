@@ -10,12 +10,12 @@ export async function renderPlayerCataloguePage(target, page = 1) {
 
   target.append(
     createPageShell({
-      kicker: '01 / Player catalogue',
-      title: 'Players',
+      kicker: '01 / Catalogue',
+      title: 'Catalogue',
       meta: ['Grouped by team'],
       breadcrumbs: [
         { label: 'Home', href: href.home },
-        { label: 'Player catalogue' },
+        { label: 'Catalogue' },
       ],
       children: createTeamGroupedCatalogue({
         variant: 'players',

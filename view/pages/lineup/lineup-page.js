@@ -9,7 +9,7 @@ import { loadLineupGames } from '../../features/lineup-games/lineup-games-data.j
 import { renderLineupGamesCatalogue } from '../../features/lineup-games/lineup-games-catalogue.js?v=game-stats';
 import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js?v=pair-heatmap6';
 import { h } from '../../utils/dom.js';
-import { href, readCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
+import { href } from '../../utils/navigation.js?v=catalogue-back';
 import { renderNotFound } from '../not-found.js';
 
 export async function renderLineupPage(target, id) {
@@ -20,13 +20,14 @@ export async function renderLineupPage(target, id) {
   }
 
   const games = await loadLineupGames(lineup.id);
-  const catalogueHref = href.lineupsAt(readCataloguePage('lineups'));
+  const teamHref = href.team(lineup.team.id);
 
   target.append(
     h('div', { class: 'page' }, [
       createBreadcrumbs([
         { label: 'Home', href: href.home },
-        { label: 'Lineup catalogue', href: catalogueHref },
+        { label: 'Catalogue', href: href.players },
+        { label: lineup.team.name, href: teamHref },
         { label: lineup.name },
       ]),
       createIdentityHeader({
@@ -40,8 +41,8 @@ export async function renderLineupPage(target, id) {
         ],
         actions: [
           createButton({
-            label: 'Back to catalogue',
-            href: catalogueHref,
+            label: 'Back to team',
+            href: teamHref,
           }),
           createButton({
             label: 'Check Pair Impact',

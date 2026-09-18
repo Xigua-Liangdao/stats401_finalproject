@@ -25,7 +25,7 @@ export async function renderTeamPage(target, id) {
     h('div', { class: 'page' }, [
       createBreadcrumbs([
         { label: 'Home', href: href.home },
-        { label: 'Team' },
+        { label: 'Catalogue', href: href.players },
         { label: team.name },
       ]),
       createIdentityHeader({

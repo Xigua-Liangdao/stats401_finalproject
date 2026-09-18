@@ -8,15 +8,12 @@ export const href = {
     if (season) params.set('season', String(season));
     return `#/player/${encodeURIComponent(id)}${params.size ? `?${params}` : ''}`;
   },
-  lineups: '#/lineups',
-  lineupsAt: (page) => catalogueHref('lineups', page),
   lineup: (id) => `#/lineup/${encodeURIComponent(id)}`,
   team: (id) => `#/team/${encodeURIComponent(id)}`,
 };
 
 const CATALOGUE_PAGE_KEYS = {
   players: 'catalogue-page-players',
-  lineups: 'catalogue-page-lineups',
 };
 
 function clampPage(value) {
@@ -25,9 +22,8 @@ function clampPage(value) {
 }
 
 export function catalogueHref(kind, page) {
-  const base = kind === 'lineups' ? 'lineups' : 'players';
   const n = clampPage(page);
-  return n > 1 ? `#/${base}/${n}` : `#/${base}`;
+  return n > 1 ? `#/players/${n}` : '#/players';
 }
 
 export function readCataloguePage(kind) {
@@ -77,7 +73,7 @@ export function parseHash(hash = window.location.hash) {
   };
   if (parts[0] === 'lineups') {
     if (parts[1] && !/^\d+$/.test(parts[1])) return { name: 'not-found' };
-    return { name: 'lineups', page: parseCataloguePage(parts[1]) };
+    return { name: 'players', page: parseCataloguePage(parts[1]) };
   }
   if (parts[0] === 'lineup' && parts[1]) return { name: 'lineup', id: decodeURIComponent(parts[1]) };
   if (parts[0] === 'team' && parts[1]) return { name: 'team', id: decodeURIComponent(parts[1]) };
