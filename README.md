@@ -89,9 +89,16 @@ python -m venv .venv
 source .venv/bin/activate
 pip install -r model/requirements.txt
 python model/run.py
+python model/scripts/version_frontend.py
 python -m unittest discover -s model/tests -v
 ```
 
 Frontend development can start with [`data/test/dashboard.json`](data/test/dashboard.json). It has the same format as [`data/processed/dashboard.json`](data/processed/dashboard.json), and both directories contain the same CSV filenames and field contract. From `view/index.html`, switch `../data/test/` to `../data/processed/` when ready. Cleaning decisions remain provisional; both exports are regenerated together. The existing `view/` remains the location for the group's D3 interface. Network and parallel-coordinates views are planned; their pair and lineup data are already exported.
 
 The repository README contains the demo progress material. A deployed **GitHub Pages website** is a separate deliverable: the frontend must embed the figures/data and publish a working page before that website URL is submitted if the course requires a `github.io` page.
+
+### Publishing frontend updates
+
+After changing frontend JavaScript, CSS or the media manifest, run `python model/scripts/version_frontend.py` and commit the updated `view/index.html` before pushing. The generated import map gives the entire module graph one content-based version, including existing query-string aliases; updating only the HTML URL or `app.js` does not refresh cached dependencies. The entry script, stylesheets and media manifest use the same release version. Check it with `python model/scripts/version_frontend.py --check`.
+
+Wait until the GitHub Pages build for the pushed commit is `built`, then verify the public `view/` page. A successful git push alone does not mean that the website is live. If a tab still holds the previous HTML, navigate to `view/?release=<generated-version>#/players` once; the versioned module graph then loads together without requiring visitors to clear their browser cache.

@@ -25,7 +25,9 @@ export function setMediaManifest(manifest) {
 
 export function loadMediaManifest() {
   if (!manifestPromise) {
-    manifestPromise = fetch(new URL('manifest.json', IMG_ROOT)).then(async (response) => {
+    const manifestUrl = new URL('manifest.json', IMG_ROOT);
+    manifestUrl.search = new URL(import.meta.url).search;
+    manifestPromise = fetch(manifestUrl).then(async (response) => {
       if (!response.ok) throw new Error(`Failed to load media manifest (${response.status})`);
       setMediaManifest(await response.json());
     });
