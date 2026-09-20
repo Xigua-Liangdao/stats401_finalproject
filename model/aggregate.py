@@ -7,7 +7,7 @@ import numpy as np
 import pandas as pd
 
 from prepare import ROLES, stable_id
-from baseline import PROFILE_BASELINE_METRICS
+from player_baseline import season_role_baselines
 
 SHRINKAGE_GAMES = 10
 MIN_GAMES = 10
@@ -34,18 +34,20 @@ def score_summary(group, column, seed=401):
             "eligible": bool(n >= MIN_GAMES and days >= MIN_DAYS)}
 
 
-def aggregate(p):
+def aggregate(p, baseline_reference=None):
+    # Test fixtures use the complete parent season for their comparison profile.
+    references = (season_role_baselines(p, SHRINKAGE_GAMES)
+                  if baseline_reference is None else baseline_reference)
     players = []
-    for (pid, tid, role), group in p.groupby(["player_id", "team_id", "role"], sort=True):
+    for (pid, tid, role, season), group in p.groupby(["player_id", "team_id", "role", "season"], sort=True):
         scored = group.dropna(subset=["adjusted_impact"])
         players.append({"player_id": pid, "player": group.player.iloc[-1], "team_id": tid,
-                        "team": group.team.iloc[-1], "role": role, "season": 2025,
+                        "team": group.team.iloc[-1], "role": role, "season": season,
                         "n_games_total": len(group), **score_summary(group, "adjusted_impact"),
                         "mean_gold_share": scored.gold_share.mean(), "mean_damage_share": scored.damage_share.mean(),
                         "mean_dpm": scored.dpm.mean(), "mean_expected_dpm": scored.expected_dpm.mean(),
                         "win_rate": scored.result.mean(), "mean_vision_per_minute": scored.vision_per_minute.mean(),
-                        **{f"mean_baseline_{metric}": scored.loc[scored[metric].notna(), f"baseline_{metric}"].mean()
-                           for metric in ["dpm", *PROFILE_BASELINE_METRICS]}})
+                        **references.loc[(season, role)].to_dict()})
     pair_games, lineup_games = [], []
     for (game_id, tid), group in p.groupby(["game_id", "team_id"], sort=True):
         context = {"game_id": game_id, "day": group.day.iloc[0], "season": 2025,

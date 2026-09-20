@@ -41,7 +41,7 @@ const PLAYER_STAT_FIELDS = [
   'ci_low', 'ci_high', 'mean_gold_share', 'mean_damage_share', 'mean_dpm',
   'mean_expected_dpm', 'win_rate', 'mean_vision_per_minute',
   'mean_baseline_gold_share', 'mean_baseline_damage_share',
-  'mean_baseline_dpm', 'mean_baseline_vision_per_minute',
+  'mean_baseline_dpm', 'mean_baseline_vision_per_minute', 'mean_baseline_impact',
 ];
 const LINEUP_STAT_FIELDS = [
   'n_games_total', 'n_games', 'n_days', 'mean_impact', 'shrunk_impact',
@@ -225,6 +225,7 @@ function mapPlayerGame(row) {
     id: row.record_id,
     source: 'player_games',
     playerId: row.player_id,
+    role: row.role,
     teamId: row.team_id,
     lineupId: row.lineup_id,
     date: row.date || row.day,

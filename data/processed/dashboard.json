@@ -1,6 +1,6 @@
 {
   "metadata": {
-    "schema_version": "1.1.0",
+    "schema_version": "1.2.0",
     "season": 2025,
     "source": {
       "source_name": "Oracle's Elixir",
@@ -117,9 +117,6 @@
         "baseline_dpm": 1480,
         "training_role_sd": 1480,
         "adjusted_impact": 1480,
-        "baseline_gold_share": 1480,
-        "baseline_damage_share": 1480,
-        "baseline_vision_per_minute": 1480,
         "train_end_day": 1480
       },
       "raw_csv_gz_sha256": "42fcad51eda89ffb7a8eaee63797dbde0aed2c9d02b6ca0fec2d9b4e2be94d16"
@@ -315,13 +312,13 @@
       "selection_rule": "largest number of evaluated games; stable ID breaks ties"
     },
     "score_definition": "(actual DPM - expected DPM) / training-role DPM SD",
-    "player_baseline_definition": "Earlier-training same-role means for gold share, damage share, DPM and vision/min; player summaries average these references over evaluated games with observed values. Radar impact reference is zero (on expected DPM).",
+    "player_baseline_definition": "Full-season same-role player means: average each player's observed season/role values across teams, then weight players equally. Gold share, damage share, DPM and vision/min include warmup; Impact averages each player's shrunk evaluated impact. Missing values are omitted. Descriptive season reference, not a forecast.",
     "pair_definition": "mean of both players' adjusted damage per shared game; descriptive association",
     "shrinkage_games": 10,
     "minimum_games": 10,
     "minimum_days": 3,
     "bootstrap_replicates": 1000,
-    "scope": "Aggregates use out-of-time games only. n_games_total also includes warmup.",
+    "scope": "Actual player/team/pair/lineup score summaries use out-of-time games only. n_games_total and ordinary-metric season-role baselines also include warmup. Baselines use the full observed season and weight distinct players equally.",
     "limitations": [
       "DPM measures damage output, not overall player value.",
       "Pair scores do not identify causal synergy or support roster-swap predictions.",
@@ -351,10 +348,11 @@
       "mean_expected_dpm": 476.61507614,
       "win_rate": 0.66037736,
       "mean_vision_per_minute": 1.30808137,
-      "mean_baseline_dpm": 459.97895813,
-      "mean_baseline_gold_share": 0.19966692,
-      "mean_baseline_damage_share": 0.17568481,
-      "mean_baseline_vision_per_minute": 1.47942535
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:05326a1c42e9c27a1067768c88955e7",
@@ -377,10 +375,11 @@
       "mean_expected_dpm": 456.07384103,
       "win_rate": 0.32,
       "mean_vision_per_minute": 1.29250862,
-      "mean_baseline_dpm": 455.9530015,
-      "mean_baseline_gold_share": 0.19955208,
-      "mean_baseline_damage_share": 0.17731283,
-      "mean_baseline_vision_per_minute": 1.4722411
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:0be01924125adebc1a95bbb09d0c4d1",
@@ -403,10 +402,11 @@
       "mean_expected_dpm": 699.88238441,
       "win_rate": 0.26315789,
       "mean_vision_per_minute": 1.15315596,
-      "mean_baseline_dpm": 731.79998087,
-      "mean_baseline_gold_share": 0.23804801,
-      "mean_baseline_damage_share": 0.28268268,
-      "mean_baseline_vision_per_minute": 1.19346041
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:0c74b7f78409a4022a2c4c5a5ca3ee1",
@@ -429,10 +429,11 @@
       "mean_expected_dpm": 616.35587607,
       "win_rate": 0.6557377,
       "mean_vision_per_minute": 0.93514036,
-      "mean_baseline_dpm": 559.09076292,
-      "mean_baseline_gold_share": 0.20660419,
-      "mean_baseline_damage_share": 0.21587234,
-      "mean_baseline_vision_per_minute": 0.97862167
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:0d9b0a3b3a93a8f759c9d8ac8eef97c",
@@ -455,10 +456,11 @@
       "mean_expected_dpm": 541.40420264,
       "win_rate": 0.45689655,
       "mean_vision_per_minute": 1.08947354,
-      "mean_baseline_dpm": 559.31806014,
-      "mean_baseline_gold_share": 0.20667162,
-      "mean_baseline_damage_share": 0.21594236,
-      "mean_baseline_vision_per_minute": 0.97918605
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:0da0eeb199e8fa3ab773cf84f9de9ab",
@@ -481,10 +483,11 @@
       "mean_expected_dpm": 433.30036813,
       "win_rate": 0.45689655,
       "mean_vision_per_minute": 1.60056754,
-      "mean_baseline_dpm": 458.81835359,
-      "mean_baseline_gold_share": 0.19976789,
-      "mean_baseline_damage_share": 0.17582122,
-      "mean_baseline_vision_per_minute": 1.47972682
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:0dcf834c627e57895f26132ec33d99c",
@@ -507,10 +510,11 @@
       "mean_expected_dpm": 682.16886434,
       "win_rate": 0.375,
       "mean_vision_per_minute": 0.983863,
-      "mean_baseline_dpm": 729.00532027,
-      "mean_baseline_gold_share": 0.23810256,
-      "mean_baseline_damage_share": 0.27812054,
-      "mean_baseline_vision_per_minute": 1.20300328
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:0e2f0d3ded24c190dd6a4b3d6f89f04",
@@ -533,10 +537,11 @@
       "mean_expected_dpm": 678.67275445,
       "win_rate": 0.64912281,
       "mean_vision_per_minute": 1.06207061,
-      "mean_baseline_dpm": 654.49229811,
-      "mean_baseline_gold_share": 0.22044367,
-      "mean_baseline_damage_share": 0.25197015,
-      "mean_baseline_vision_per_minute": 1.12778742
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:10d1208b485425756fcc932229386b0",
@@ -559,10 +564,11 @@
       "mean_expected_dpm": 215.43212881,
       "win_rate": 0.61111111,
       "mean_vision_per_minute": 3.62787712,
-      "mean_baseline_dpm": 196.47952158,
-      "mean_baseline_gold_share": 0.13585932,
-      "mean_baseline_damage_share": 0.07688541,
-      "mean_baseline_vision_per_minute": 3.56867857
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:1213778b5c6d69dcb26aa89f7d0aaa9",
@@ -585,10 +591,11 @@
       "mean_expected_dpm": 668.61458198,
       "win_rate": 0.59649123,
       "mean_vision_per_minute": 1.17036061,
-      "mean_baseline_dpm": 654.19297942,
-      "mean_baseline_gold_share": 0.22057407,
-      "mean_baseline_damage_share": 0.25202018,
-      "mean_baseline_vision_per_minute": 1.12785636
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:13166913111075999f2adeb687548eb",
@@ -611,10 +618,11 @@
       "mean_expected_dpm": 171.89936746,
       "win_rate": 0.64705882,
       "mean_vision_per_minute": 3.52412287,
-      "mean_baseline_dpm": 195.77099446,
-      "mean_baseline_gold_share": 0.13417204,
-      "mean_baseline_damage_share": 0.07546146,
-      "mean_baseline_vision_per_minute": 3.59261507
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:132ee4b29ebeac294a420dcebe64bdc",
@@ -637,10 +645,11 @@
       "mean_expected_dpm": 523.69767633,
       "win_rate": 0.56363636,
       "mean_vision_per_minute": 1.13367817,
-      "mean_baseline_dpm": 559.58481961,
-      "mean_baseline_gold_share": 0.2065721,
-      "mean_baseline_damage_share": 0.2159978,
-      "mean_baseline_vision_per_minute": 0.97729625
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:1c42d9266c8b391c7870b7a39f25a12",
@@ -663,10 +672,11 @@
       "mean_expected_dpm": 679.64494297,
       "win_rate": 0.0,
       "mean_vision_per_minute": 0.88465968,
-      "mean_baseline_dpm": 734.4469305,
-      "mean_baseline_gold_share": 0.23834548,
-      "mean_baseline_damage_share": 0.28465851,
-      "mean_baseline_vision_per_minute": 1.19081077
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:211333df928f872c063bce4ef25ea63",
@@ -689,10 +699,11 @@
       "mean_expected_dpm": 401.59366244,
       "win_rate": 0.36363636,
       "mean_vision_per_minute": 1.54336354,
-      "mean_baseline_dpm": 459.31444785,
-      "mean_baseline_gold_share": 0.1998205,
-      "mean_baseline_damage_share": 0.17623419,
-      "mean_baseline_vision_per_minute": 1.47763383
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:233724c5adf28da47784390134db3c6",
@@ -715,10 +726,11 @@
       "mean_expected_dpm": 682.17668362,
       "win_rate": 0.44444444,
       "mean_vision_per_minute": 1.12551514,
-      "mean_baseline_dpm": 731.4075103,
-      "mean_baseline_gold_share": 0.23820022,
-      "mean_baseline_damage_share": 0.28166547,
-      "mean_baseline_vision_per_minute": 1.1962047
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:2c356e2803d68c33c11e65496fff9bd",
@@ -741,10 +753,11 @@
       "mean_expected_dpm": 699.88841085,
       "win_rate": 0.32258065,
       "mean_vision_per_minute": 0.91750221,
-      "mean_baseline_dpm": 728.8594141,
-      "mean_baseline_gold_share": 0.2380772,
-      "mean_baseline_damage_share": 0.27810469,
-      "mean_baseline_vision_per_minute": 1.20291671
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:2cec4b6803b4678250233ae79205f2e",
@@ -767,10 +780,11 @@
       "mean_expected_dpm": 527.58452244,
       "win_rate": 0.36363636,
       "mean_vision_per_minute": 1.05094966,
-      "mean_baseline_dpm": 556.72502131,
-      "mean_baseline_gold_share": 0.20626432,
-      "mean_baseline_damage_share": 0.21509556,
-      "mean_baseline_vision_per_minute": 0.97717199
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:30b18cd72f0d41ae18f14378d2dab48",
@@ -793,10 +807,11 @@
       "mean_expected_dpm": 445.27883479,
       "win_rate": 0.40540541,
       "mean_vision_per_minute": 1.52061729,
-      "mean_baseline_dpm": 460.28725479,
-      "mean_baseline_gold_share": 0.19992459,
-      "mean_baseline_damage_share": 0.17590451,
-      "mean_baseline_vision_per_minute": 1.47941389
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:31b62cc3cf89d670fdef677faed2789",
@@ -819,10 +834,11 @@
       "mean_expected_dpm": 422.4540247,
       "win_rate": 0.22222222,
       "mean_vision_per_minute": 1.48917968,
-      "mean_baseline_dpm": 464.63036555,
-      "mean_baseline_gold_share": 0.19995023,
-      "mean_baseline_damage_share": 0.17685848,
-      "mean_baseline_vision_per_minute": 1.47269958
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:31b62cc3cf89d670fdef677faed2789",
@@ -845,10 +861,11 @@
       "mean_expected_dpm": 395.59042594,
       "win_rate": 0.29411765,
       "mean_vision_per_minute": 1.38545861,
-      "mean_baseline_dpm": 457.24834657,
-      "mean_baseline_gold_share": 0.19943788,
-      "mean_baseline_damage_share": 0.17690029,
-      "mean_baseline_vision_per_minute": 1.47324038
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:37f20525a39d17ec49fd10294f9c994",
@@ -871,10 +888,11 @@
       "mean_expected_dpm": 596.77727736,
       "win_rate": 0.59649123,
       "mean_vision_per_minute": 0.88504274,
-      "mean_baseline_dpm": 559.00928967,
-      "mean_baseline_gold_share": 0.20664876,
-      "mean_baseline_damage_share": 0.21584601,
-      "mean_baseline_vision_per_minute": 0.97931725
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:397bcf46311de3cf780469b2a842b67",
@@ -897,10 +915,11 @@
       "mean_expected_dpm": 211.34041985,
       "win_rate": 0.48,
       "mean_vision_per_minute": 3.61209474,
-      "mean_baseline_dpm": 196.43314774,
-      "mean_baseline_gold_share": 0.13520967,
-      "mean_baseline_damage_share": 0.07642023,
-      "mean_baseline_vision_per_minute": 3.57600637
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:39d7885ab4602a7f8d202883d253f5e",
@@ -923,10 +942,11 @@
       "mean_expected_dpm": 169.19589731,
       "win_rate": 0.42857143,
       "mean_vision_per_minute": 3.55486262,
-      "mean_baseline_dpm": 196.20981149,
-      "mean_baseline_gold_share": 0.13641224,
-      "mean_baseline_damage_share": 0.07716437,
-      "mean_baseline_vision_per_minute": 3.56496953
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:39d7885ab4602a7f8d202883d253f5e",
@@ -949,10 +969,11 @@
       "mean_expected_dpm": 203.30178835,
       "win_rate": 0.3125,
       "mean_vision_per_minute": 3.55535896,
-      "mean_baseline_dpm": 197.86774775,
-      "mean_baseline_gold_share": 0.13429233,
-      "mean_baseline_damage_share": 0.07632063,
-      "mean_baseline_vision_per_minute": 3.57394262
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:3c4d21c7addb20fea3fec30418ac3d3",
@@ -975,10 +996,11 @@
       "mean_expected_dpm": 703.21612793,
       "win_rate": 0.45689655,
       "mean_vision_per_minute": 1.0346441,
-      "mean_baseline_dpm": 729.98116645,
-      "mean_baseline_gold_share": 0.23799025,
-      "mean_baseline_damage_share": 0.2799886,
-      "mean_baseline_vision_per_minute": 1.19869811
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:3c93fcbfb525315f6412904e5b9abbd",
@@ -1001,10 +1023,11 @@
       "mean_expected_dpm": 584.68394655,
       "win_rate": 0.29411765,
       "mean_vision_per_minute": 1.20253227,
-      "mean_baseline_dpm": 649.34439282,
-      "mean_baseline_gold_share": 0.22136402,
-      "mean_baseline_damage_share": 0.25236289,
-      "mean_baseline_vision_per_minute": 1.11959064
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:3ce68cf813bc34243279fd7fe3cecbb",
@@ -1027,10 +1050,11 @@
       "mean_expected_dpm": 524.00289503,
       "win_rate": 0.34285714,
       "mean_vision_per_minute": 0.91909337,
-      "mean_baseline_dpm": 555.53653514,
-      "mean_baseline_gold_share": 0.20627694,
-      "mean_baseline_damage_share": 0.21481916,
-      "mean_baseline_vision_per_minute": 0.97969386
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:3faae62fb907ad7cbcf2167beb8b2c7",
@@ -1053,10 +1077,11 @@
       "mean_expected_dpm": 446.55088942,
       "win_rate": 0.35185185,
       "mean_vision_per_minute": 1.32564202,
-      "mean_baseline_dpm": 457.72010804,
-      "mean_baseline_gold_share": 0.19939629,
-      "mean_baseline_damage_share": 0.17675004,
-      "mean_baseline_vision_per_minute": 1.47360432
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:3faae62fb907ad7cbcf2167beb8b2c7",
@@ -1079,10 +1104,11 @@
       "mean_expected_dpm": 434.67245438,
       "win_rate": 0.32,
       "mean_vision_per_minute": 1.524404,
-      "mean_baseline_dpm": 462.14950857,
-      "mean_baseline_gold_share": 0.20007139,
-      "mean_baseline_damage_share": 0.17587387,
-      "mean_baseline_vision_per_minute": 1.47946687
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:403937c97942cb4634ef8907077ede5",
@@ -1105,10 +1131,11 @@
       "mean_expected_dpm": 161.31330519,
       "win_rate": 0.36363636,
       "mean_vision_per_minute": 3.47251752,
-      "mean_baseline_dpm": 196.41822355,
-      "mean_baseline_gold_share": 0.1352627,
-      "mean_baseline_damage_share": 0.07645094,
-      "mean_baseline_vision_per_minute": 3.57555861
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:407b2b8fcb2fd977fc766d5df3f4dff",
@@ -1131,10 +1158,11 @@
       "mean_expected_dpm": 535.02928408,
       "win_rate": 0.26315789,
       "mean_vision_per_minute": 0.90981601,
-      "mean_baseline_dpm": 542.29303033,
-      "mean_baseline_gold_share": 0.20477996,
-      "mean_baseline_damage_share": 0.21089327,
-      "mean_baseline_vision_per_minute": 0.98001477
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:41ad87cfc159526f62529db61162a2a",
@@ -1157,10 +1185,11 @@
       "mean_expected_dpm": 174.99727161,
       "win_rate": 0.43859649,
       "mean_vision_per_minute": 3.57906967,
-      "mean_baseline_dpm": 196.58930201,
-      "mean_baseline_gold_share": 0.13519045,
-      "mean_baseline_damage_share": 0.07646543,
-      "mean_baseline_vision_per_minute": 3.57492625
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:41deab55354f57a94135989133f9968",
@@ -1183,10 +1212,11 @@
       "mean_expected_dpm": 513.57572042,
       "win_rate": 0.6557377,
       "mean_vision_per_minute": 1.54762358,
-      "mean_baseline_dpm": 458.51652809,
-      "mean_baseline_gold_share": 0.19981821,
-      "mean_baseline_damage_share": 0.17571464,
-      "mean_baseline_vision_per_minute": 1.48065568
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:4462a94df8bf2cf755c0c5da35f0282",
@@ -1209,10 +1239,11 @@
       "mean_expected_dpm": null,
       "win_rate": null,
       "mean_vision_per_minute": null,
-      "mean_baseline_dpm": null,
-      "mean_baseline_gold_share": null,
-      "mean_baseline_damage_share": null,
-      "mean_baseline_vision_per_minute": null
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:48b7344051c2365da81acb5c3de8eb1",
@@ -1235,10 +1266,11 @@
       "mean_expected_dpm": 449.01252221,
       "win_rate": 0.5,
       "mean_vision_per_minute": 1.36663927,
-      "mean_baseline_dpm": 459.62314586,
-      "mean_baseline_gold_share": 0.19922852,
-      "mean_baseline_damage_share": 0.17614396,
-      "mean_baseline_vision_per_minute": 1.4750724
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:498246d6c44175256a07ed5f322c817",
@@ -1261,10 +1293,11 @@
       "mean_expected_dpm": 612.48130528,
       "win_rate": 0.43859649,
       "mean_vision_per_minute": 1.13009094,
-      "mean_baseline_dpm": 653.44315658,
-      "mean_baseline_gold_share": 0.22064144,
-      "mean_baseline_damage_share": 0.25188563,
-      "mean_baseline_vision_per_minute": 1.12658649
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:4aa496a041ce3b1febfc4887d057f11",
@@ -1287,10 +1320,11 @@
       "mean_expected_dpm": null,
       "win_rate": null,
       "mean_vision_per_minute": null,
-      "mean_baseline_dpm": null,
-      "mean_baseline_gold_share": null,
-      "mean_baseline_damage_share": null,
-      "mean_baseline_vision_per_minute": null
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:4ff7b91bbc9492e9f96d28dda496653",
@@ -1313,10 +1347,11 @@
       "mean_expected_dpm": 637.82513885,
       "win_rate": 0.2972973,
       "mean_vision_per_minute": 1.21729661,
-      "mean_baseline_dpm": 652.8433746,
-      "mean_baseline_gold_share": 0.22083452,
-      "mean_baseline_damage_share": 0.25203212,
-      "mean_baseline_vision_per_minute": 1.12607438
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:5000a68e43f946c726a17e1008e230a",
@@ -1339,10 +1374,11 @@
       "mean_expected_dpm": 190.13525434,
       "win_rate": 0.2972973,
       "mean_vision_per_minute": 3.59747099,
-      "mean_baseline_dpm": 196.55915087,
-      "mean_baseline_gold_share": 0.13538024,
-      "mean_baseline_damage_share": 0.07658514,
-      "mean_baseline_vision_per_minute": 3.57314763
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:542b1268b090a5fc82442efbd8d8165",
@@ -1365,10 +1401,11 @@
       "mean_expected_dpm": 630.53631091,
       "win_rate": 0.56363636,
       "mean_vision_per_minute": 1.25694501,
-      "mean_baseline_dpm": 654.06580091,
-      "mean_baseline_gold_share": 0.22032759,
-      "mean_baseline_damage_share": 0.25193109,
-      "mean_baseline_vision_per_minute": 1.12575212
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:57ac9f77eae511aeee1e854434f73f2",
@@ -1391,10 +1428,11 @@
       "mean_expected_dpm": 547.42214772,
       "win_rate": 0.2972973,
       "mean_vision_per_minute": 1.02750025,
-      "mean_baseline_dpm": 554.93126968,
-      "mean_baseline_gold_share": 0.20621594,
-      "mean_baseline_damage_share": 0.21461379,
-      "mean_baseline_vision_per_minute": 0.97961695
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:57da8dfcfbdb4e5b019fe93003db1c4",
@@ -1417,10 +1455,11 @@
       "mean_expected_dpm": 353.92156596,
       "win_rate": 0.0,
       "mean_vision_per_minute": 1.54498679,
-      "mean_baseline_dpm": 455.9530015,
-      "mean_baseline_gold_share": 0.19955208,
-      "mean_baseline_damage_share": 0.17731283,
-      "mean_baseline_vision_per_minute": 1.4722411
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:58771d428ade54dd5983bbe70ce0383",
@@ -1443,10 +1482,11 @@
       "mean_expected_dpm": 422.66693286,
       "win_rate": 0.56363636,
       "mean_vision_per_minute": 1.56779947,
-      "mean_baseline_dpm": 458.33458278,
-      "mean_baseline_gold_share": 0.19992813,
-      "mean_baseline_damage_share": 0.17556179,
-      "mean_baseline_vision_per_minute": 1.48206152
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:5bbc2b92348d930ebd500cb9ce71bb7",
@@ -1469,10 +1509,11 @@
       "mean_expected_dpm": 737.89452975,
       "win_rate": 0.52777778,
       "mean_vision_per_minute": 1.23972621,
-      "mean_baseline_dpm": 730.49722698,
-      "mean_baseline_gold_share": 0.23805164,
-      "mean_baseline_damage_share": 0.28016457,
-      "mean_baseline_vision_per_minute": 1.19863289
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:5e1c1cfafed233a25b0621a15629d20",
@@ -1495,10 +1536,11 @@
       "mean_expected_dpm": 402.42282658,
       "win_rate": 0.2,
       "mean_vision_per_minute": 1.51412078,
-      "mean_baseline_dpm": 455.9530015,
-      "mean_baseline_gold_share": 0.19955208,
-      "mean_baseline_damage_share": 0.17731283,
-      "mean_baseline_vision_per_minute": 1.4722411
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:6059545b206c4b230b97fd3651b473a",
@@ -1521,10 +1563,11 @@
       "mean_expected_dpm": 172.63398704,
       "win_rate": 0.46153846,
       "mean_vision_per_minute": 3.95383177,
-      "mean_baseline_dpm": 195.84395841,
-      "mean_baseline_gold_share": 0.13417622,
-      "mean_baseline_damage_share": 0.07549135,
-      "mean_baseline_vision_per_minute": 3.5919653
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:6059545b206c4b230b97fd3651b473a",
@@ -1547,10 +1590,11 @@
       "mean_expected_dpm": 273.44554422,
       "win_rate": 0.65625,
       "mean_vision_per_minute": 3.48102912,
-      "mean_baseline_dpm": 196.48151211,
-      "mean_baseline_gold_share": 0.13586346,
-      "mean_baseline_damage_share": 0.07688896,
-      "mean_baseline_vision_per_minute": 3.56861699
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:615b1f347cdf6bc6df1883ed9e18496",
@@ -1573,10 +1617,11 @@
       "mean_expected_dpm": 202.23788274,
       "win_rate": 0.35185185,
       "mean_vision_per_minute": 3.34244783,
-      "mean_baseline_dpm": 196.36967325,
-      "mean_baseline_gold_share": 0.13598141,
-      "mean_baseline_damage_share": 0.07692881,
-      "mean_baseline_vision_per_minute": 3.56828252
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:62922f2b370657a966de4d84f5586bf",
@@ -1599,10 +1644,11 @@
       "mean_expected_dpm": 494.37304139,
       "win_rate": 0.64912281,
       "mean_vision_per_minute": 1.55309431,
-      "mean_baseline_dpm": 458.89899755,
-      "mean_baseline_gold_share": 0.19982104,
-      "mean_baseline_damage_share": 0.17574011,
-      "mean_baseline_vision_per_minute": 1.48036929
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:64ff4f1dd75a5654ab87c0bbee89c1e",
@@ -1625,10 +1671,11 @@
       "mean_expected_dpm": 722.56931506,
       "win_rate": 0.41666667,
       "mean_vision_per_minute": 1.21395172,
-      "mean_baseline_dpm": 732.70067901,
-      "mean_baseline_gold_share": 0.23814923,
-      "mean_baseline_damage_share": 0.28335501,
-      "mean_baseline_vision_per_minute": 1.1925588
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:65ed20b21e2993fb00dbd21a2fd991b",
@@ -1651,10 +1698,11 @@
       "mean_expected_dpm": 497.40004631,
       "win_rate": 0.37837838,
       "mean_vision_per_minute": 0.9979574,
-      "mean_baseline_dpm": 556.46952847,
-      "mean_baseline_gold_share": 0.20616519,
-      "mean_baseline_damage_share": 0.21496574,
-      "mean_baseline_vision_per_minute": 0.97585675
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:66d0ff0f8f9b5296770c1dbda549950",
@@ -1677,10 +1725,11 @@
       "mean_expected_dpm": 697.7416665,
       "win_rate": 0.56363636,
       "mean_vision_per_minute": 1.23172642,
-      "mean_baseline_dpm": 731.1182419,
-      "mean_baseline_gold_share": 0.23814479,
-      "mean_baseline_damage_share": 0.28039766,
-      "mean_baseline_vision_per_minute": 1.19859224
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:6ad53ca055b82d5e23b83df6093df11",
@@ -1703,10 +1752,11 @@
       "mean_expected_dpm": 198.58806624,
       "win_rate": 0.60526316,
       "mean_vision_per_minute": 3.61449087,
-      "mean_baseline_dpm": 196.25971139,
-      "mean_baseline_gold_share": 0.13420007,
-      "mean_baseline_damage_share": 0.07566172,
-      "mean_baseline_vision_per_minute": 3.58826285
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:6ad53ca055b82d5e23b83df6093df11",
@@ -1729,10 +1779,11 @@
       "mean_expected_dpm": 156.67709719,
       "win_rate": 0.29411765,
       "mean_vision_per_minute": 3.52763695,
-      "mean_baseline_dpm": 196.26470837,
-      "mean_baseline_gold_share": 0.1362643,
-      "mean_baseline_damage_share": 0.07708348,
-      "mean_baseline_vision_per_minute": 3.56610722
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:6bc43cc1537fa4ac6295b4899e972cf",
@@ -1755,10 +1806,11 @@
       "mean_expected_dpm": 588.83866653,
       "win_rate": 0.34285714,
       "mean_vision_per_minute": 1.2290104,
-      "mean_baseline_dpm": 653.13757226,
-      "mean_baseline_gold_share": 0.2207663,
-      "mean_baseline_damage_share": 0.25209783,
-      "mean_baseline_vision_per_minute": 1.12621077
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:6d734e1e86b978852d95cfd63d6a643",
@@ -1781,10 +1833,11 @@
       "mean_expected_dpm": 725.24708149,
       "win_rate": 0.48,
       "mean_vision_per_minute": 1.22857044,
-      "mean_baseline_dpm": 730.31915303,
-      "mean_baseline_gold_share": 0.23808155,
-      "mean_baseline_damage_share": 0.28024433,
-      "mean_baseline_vision_per_minute": 1.19858058
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:6e7908512cb309a43388bb464a312a2",
@@ -1807,10 +1860,11 @@
       "mean_expected_dpm": 710.30076964,
       "win_rate": 0.6557377,
       "mean_vision_per_minute": 1.12393363,
-      "mean_baseline_dpm": 654.14241481,
-      "mean_baseline_gold_share": 0.22047686,
-      "mean_baseline_damage_share": 0.25201718,
-      "mean_baseline_vision_per_minute": 1.12694942
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:708bbc09836488d812e6775a07d785f",
@@ -1833,10 +1887,11 @@
       "mean_expected_dpm": 535.87313796,
       "win_rate": 0.35714286,
       "mean_vision_per_minute": 0.83319312,
-      "mean_baseline_dpm": 533.65850831,
-      "mean_baseline_gold_share": 0.20358293,
-      "mean_baseline_damage_share": 0.20825955,
-      "mean_baseline_vision_per_minute": 0.9767671
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:71e79ef80600d398d90cfebe3b0b758",
@@ -1859,10 +1914,11 @@
       "mean_expected_dpm": 651.58088493,
       "win_rate": 0.52777778,
       "mean_vision_per_minute": 1.00762449,
-      "mean_baseline_dpm": 654.32635148,
-      "mean_baseline_gold_share": 0.22043631,
-      "mean_baseline_damage_share": 0.25201299,
-      "mean_baseline_vision_per_minute": 1.1271583
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:7cf68f44e5dc31827b1d3f0a3b4a28e",
@@ -1885,10 +1941,11 @@
       "mean_expected_dpm": 770.76900304,
       "win_rate": 0.64912281,
       "mean_vision_per_minute": 1.34124583,
-      "mean_baseline_dpm": 730.0992273,
-      "mean_baseline_gold_share": 0.2380231,
-      "mean_baseline_damage_share": 0.27991219,
-      "mean_baseline_vision_per_minute": 1.19900716
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:8007ba25dee37ac1e4445a6e9f8d252",
@@ -1911,10 +1968,11 @@
       "mean_expected_dpm": 511.49169705,
       "win_rate": 0.29411765,
       "mean_vision_per_minute": 0.96919559,
-      "mean_baseline_dpm": 543.30885645,
-      "mean_baseline_gold_share": 0.20492078,
-      "mean_baseline_damage_share": 0.21120312,
-      "mean_baseline_vision_per_minute": 0.98039685
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:8007ba25dee37ac1e4445a6e9f8d252",
@@ -1937,10 +1995,11 @@
       "mean_expected_dpm": 555.51419154,
       "win_rate": 0.44444444,
       "mean_vision_per_minute": 0.94804677,
-      "mean_baseline_dpm": 570.83044971,
-      "mean_baseline_gold_share": 0.20775113,
-      "mean_baseline_damage_share": 0.21934094,
-      "mean_baseline_vision_per_minute": 0.97587766
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:863519e5df81ff9b308c90f6a59495b",
@@ -1963,10 +2022,11 @@
       "mean_expected_dpm": 409.67285369,
       "win_rate": 0.44827586,
       "mean_vision_per_minute": 1.4541181,
-      "mean_baseline_dpm": 461.0019033,
-      "mean_baseline_gold_share": 0.19995738,
-      "mean_baseline_damage_share": 0.17622494,
-      "mean_baseline_vision_per_minute": 1.47760518
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:867e8957fae1cb59f0808dbcc3aada2",
@@ -1989,10 +2049,11 @@
       "mean_expected_dpm": 758.58045013,
       "win_rate": 0.59649123,
       "mean_vision_per_minute": 1.01600842,
-      "mean_baseline_dpm": 729.81283582,
-      "mean_baseline_gold_share": 0.23797337,
-      "mean_baseline_damage_share": 0.27994593,
-      "mean_baseline_vision_per_minute": 1.19870206
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:88bba3108e62145a9780becd3eb553d",
@@ -2015,10 +2076,11 @@
       "mean_expected_dpm": 415.584944,
       "win_rate": 0.3,
       "mean_vision_per_minute": 1.52074658,
-      "mean_baseline_dpm": 455.77016206,
-      "mean_baseline_gold_share": 0.20038295,
-      "mean_baseline_damage_share": 0.17334199,
-      "mean_baseline_vision_per_minute": 1.49686849
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:88bba3108e62145a9780becd3eb553d",
@@ -2041,10 +2103,11 @@
       "mean_expected_dpm": 478.77820907,
       "win_rate": 0.56944444,
       "mean_vision_per_minute": 1.57374369,
-      "mean_baseline_dpm": 459.01183362,
-      "mean_baseline_gold_share": 0.19946012,
-      "mean_baseline_damage_share": 0.17669145,
-      "mean_baseline_vision_per_minute": 1.47364815
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:905e2f4e54700b9ed0ddfb13deec4e9",
@@ -2067,10 +2130,11 @@
       "mean_expected_dpm": 634.5944207,
       "win_rate": 0.48,
       "mean_vision_per_minute": 0.99531572,
-      "mean_baseline_dpm": 653.22017857,
-      "mean_baseline_gold_share": 0.22054158,
-      "mean_baseline_damage_share": 0.25183938,
-      "mean_baseline_vision_per_minute": 1.12527268
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:90651ebea9a35ec4e018c8157492e17",
@@ -2093,10 +2157,11 @@
       "mean_expected_dpm": 239.18522553,
       "win_rate": 0.62295082,
       "mean_vision_per_minute": 3.70725917,
-      "mean_baseline_dpm": 196.188499,
-      "mean_baseline_gold_share": 0.13494481,
-      "mean_baseline_damage_share": 0.07614823,
-      "mean_baseline_vision_per_minute": 3.58088335
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:92f0831b560a15d8be3be25275adb08",
@@ -2119,10 +2184,11 @@
       "mean_expected_dpm": 463.1884145,
       "win_rate": 0.15384615,
       "mean_vision_per_minute": 1.40803164,
-      "mean_baseline_dpm": 455.9530015,
-      "mean_baseline_gold_share": 0.19955208,
-      "mean_baseline_damage_share": 0.17731283,
-      "mean_baseline_vision_per_minute": 1.4722411
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:952237fce714ed1eca8ded17523bee9",
@@ -2145,10 +2211,11 @@
       "mean_expected_dpm": 723.67452848,
       "win_rate": 0.43859649,
       "mean_vision_per_minute": 1.35897472,
-      "mean_baseline_dpm": 729.64809759,
-      "mean_baseline_gold_share": 0.23799432,
-      "mean_baseline_damage_share": 0.27996454,
-      "mean_baseline_vision_per_minute": 1.19874018
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:9b73925063fe3714ebb4e8c10f551c0",
@@ -2171,10 +2238,11 @@
       "mean_expected_dpm": 633.95548484,
       "win_rate": 0.45652174,
       "mean_vision_per_minute": 1.1633458,
-      "mean_baseline_dpm": 653.38939055,
-      "mean_baseline_gold_share": 0.22067842,
-      "mean_baseline_damage_share": 0.25203595,
-      "mean_baseline_vision_per_minute": 1.12637259
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:9bcf397008d511151380efd9e6b2ae6",
@@ -2197,10 +2265,11 @@
       "mean_expected_dpm": 621.58359863,
       "win_rate": 0.3,
       "mean_vision_per_minute": 1.16141459,
-      "mean_baseline_dpm": 652.01605444,
-      "mean_baseline_gold_share": 0.2212839,
-      "mean_baseline_damage_share": 0.25243424,
-      "mean_baseline_vision_per_minute": 1.12634737
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:a23b45071ea855f85e43db4b5a1683d",
@@ -2223,10 +2292,11 @@
       "mean_expected_dpm": 424.38981037,
       "win_rate": 0.43859649,
       "mean_vision_per_minute": 1.45190134,
-      "mean_baseline_dpm": 459.68903922,
-      "mean_baseline_gold_share": 0.19972478,
-      "mean_baseline_damage_share": 0.17632723,
-      "mean_baseline_vision_per_minute": 1.47652097
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:a52945dbe283de2f7e9d63ca3417f36",
@@ -2249,10 +2319,11 @@
       "mean_expected_dpm": 731.07911697,
       "win_rate": 0.45652174,
       "mean_vision_per_minute": 1.19969922,
-      "mean_baseline_dpm": 730.08852878,
-      "mean_baseline_gold_share": 0.23799312,
-      "mean_baseline_damage_share": 0.28031573,
-      "mean_baseline_vision_per_minute": 1.1980357
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:a57c46c636a00b1721780dd44f9c42f",
@@ -2275,10 +2346,11 @@
       "mean_expected_dpm": 437.90631876,
       "win_rate": 0.25,
       "mean_vision_per_minute": 1.35478649,
-      "mean_baseline_dpm": 459.62314586,
-      "mean_baseline_gold_share": 0.19922852,
-      "mean_baseline_damage_share": 0.17614396,
-      "mean_baseline_vision_per_minute": 1.4750724
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:a58a0d41103cdc5b58cbb547eeaca2d",
@@ -2301,10 +2373,11 @@
       "mean_expected_dpm": 757.80015451,
       "win_rate": 0.62295082,
       "mean_vision_per_minute": 1.23813754,
-      "mean_baseline_dpm": 730.08691615,
-      "mean_baseline_gold_share": 0.23802672,
-      "mean_baseline_damage_share": 0.27986959,
-      "mean_baseline_vision_per_minute": 1.1991106
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:a7128975a782c11d8c34525be8e1b6c",
@@ -2327,10 +2400,11 @@
       "mean_expected_dpm": 182.2803436,
       "win_rate": 0.4375,
       "mean_vision_per_minute": 3.54730181,
-      "mean_baseline_dpm": 196.62746089,
-      "mean_baseline_gold_share": 0.13548236,
-      "mean_baseline_damage_share": 0.07668223,
-      "mean_baseline_vision_per_minute": 3.57150942
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:a7b51467f09577883d7150f37393964",
@@ -2353,10 +2427,11 @@
       "mean_expected_dpm": 444.88733762,
       "win_rate": 0.60526316,
       "mean_vision_per_minute": 1.86569713,
-      "mean_baseline_dpm": 460.43342705,
-      "mean_baseline_gold_share": 0.2001552,
-      "mean_baseline_damage_share": 0.17519278,
-      "mean_baseline_vision_per_minute": 1.48414801
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:a7b51467f09577883d7150f37393964",
@@ -2379,10 +2454,11 @@
       "mean_expected_dpm": 480.76282635,
       "win_rate": 0.69230769,
       "mean_vision_per_minute": 1.70267348,
-      "mean_baseline_dpm": 456.79995789,
-      "mean_baseline_gold_share": 0.19947741,
-      "mean_baseline_damage_share": 0.17704309,
-      "mean_baseline_vision_per_minute": 1.47289447
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:a7bb2d8b4e4c1a1fde8c3e584ef6835",
@@ -2405,10 +2481,11 @@
       "mean_expected_dpm": 121.60590204,
       "win_rate": 0.45454545,
       "mean_vision_per_minute": 3.50559795,
-      "mean_baseline_dpm": 196.01606952,
-      "mean_baseline_gold_share": 0.1341861,
-      "mean_baseline_damage_share": 0.07556188,
-      "mean_baseline_vision_per_minute": 3.59043258
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:aad3806ef26a116c73b11efa07e9bd8",
@@ -2431,10 +2508,11 @@
       "mean_expected_dpm": 596.02394608,
       "win_rate": 0.64912281,
       "mean_vision_per_minute": 0.99929572,
-      "mean_baseline_dpm": 560.27527023,
-      "mean_baseline_gold_share": 0.20674537,
-      "mean_baseline_damage_share": 0.21621508,
-      "mean_baseline_vision_per_minute": 0.97862797
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:ab2455e33b8ddb6a9d2d41107a2ed4f",
@@ -2457,10 +2535,11 @@
       "mean_expected_dpm": 177.9706585,
       "win_rate": 0.5,
       "mean_vision_per_minute": 3.59113301,
-      "mean_baseline_dpm": 196.18064752,
-      "mean_baseline_gold_share": 0.13649084,
-      "mean_baseline_damage_share": 0.07720734,
-      "mean_baseline_vision_per_minute": 3.56436514
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:ab2455e33b8ddb6a9d2d41107a2ed4f",
@@ -2483,10 +2562,11 @@
       "mean_expected_dpm": 235.95696809,
       "win_rate": 0.65517241,
       "mean_vision_per_minute": 3.71027787,
-      "mean_baseline_dpm": 195.64360551,
-      "mean_baseline_gold_share": 0.13416473,
-      "mean_baseline_damage_share": 0.07540926,
-      "mean_baseline_vision_per_minute": 3.59374952
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:ad991b9f2f7e553d4eefb9f5d06afc9",
@@ -2509,10 +2589,11 @@
       "mean_expected_dpm": null,
       "win_rate": null,
       "mean_vision_per_minute": null,
-      "mean_baseline_dpm": null,
-      "mean_baseline_gold_share": null,
-      "mean_baseline_damage_share": null,
-      "mean_baseline_vision_per_minute": null
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:b0bc58cfe06ee4ee966c77790520a9b",
@@ -2535,10 +2616,11 @@
       "mean_expected_dpm": null,
       "win_rate": null,
       "mean_vision_per_minute": null,
-      "mean_baseline_dpm": null,
-      "mean_baseline_gold_share": null,
-      "mean_baseline_damage_share": null,
-      "mean_baseline_vision_per_minute": null
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:b42e757e6ed7f3eb263f69eb034f092",
@@ -2561,10 +2643,11 @@
       "mean_expected_dpm": 557.93993786,
       "win_rate": 0.5,
       "mean_vision_per_minute": 0.95568763,
-      "mean_baseline_dpm": 566.7029085,
-      "mean_baseline_gold_share": 0.20759373,
-      "mean_baseline_damage_share": 0.21814451,
-      "mean_baseline_vision_per_minute": 0.98025461
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:b61e517b1a6027160aafaf56e9867c0",
@@ -2587,10 +2670,11 @@
       "mean_expected_dpm": 461.55735662,
       "win_rate": 0.64285714,
       "mean_vision_per_minute": 1.64370731,
-      "mean_baseline_dpm": 458.93452045,
-      "mean_baseline_gold_share": 0.20022841,
-      "mean_baseline_damage_share": 0.17459788,
-      "mean_baseline_vision_per_minute": 1.48823673
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:b61e517b1a6027160aafaf56e9867c0",
@@ -2613,10 +2697,11 @@
       "mean_expected_dpm": 468.63238663,
       "win_rate": 0.53846154,
       "mean_vision_per_minute": 1.58594036,
-      "mean_baseline_dpm": 455.9530015,
-      "mean_baseline_gold_share": 0.19955208,
-      "mean_baseline_damage_share": 0.17731283,
-      "mean_baseline_vision_per_minute": 1.4722411
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:b6603b64c5cabad210826735469838b",
@@ -2639,10 +2724,11 @@
       "mean_expected_dpm": 530.66560388,
       "win_rate": 0.43859649,
       "mean_vision_per_minute": 1.00955702,
-      "mean_baseline_dpm": 557.53639263,
-      "mean_baseline_gold_share": 0.206449,
-      "mean_baseline_damage_share": 0.21535717,
-      "mean_baseline_vision_per_minute": 0.97853293
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:b8d0c78f3ecdcf7ca398a77dc8ef5af",
@@ -2665,10 +2751,11 @@
       "mean_expected_dpm": 394.05295865,
       "win_rate": 0.16666667,
       "mean_vision_per_minute": 1.45736285,
-      "mean_baseline_dpm": 460.69249733,
-      "mean_baseline_gold_share": 0.20014255,
-      "mean_baseline_damage_share": 0.1752956,
-      "mean_baseline_vision_per_minute": 1.48344131
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:bda7cc061d7a1576f1dcad33dd505cd",
@@ -2691,10 +2778,11 @@
       "mean_expected_dpm": 228.56682273,
       "win_rate": 0.59649123,
       "mean_vision_per_minute": 3.58693304,
-      "mean_baseline_dpm": 196.29529071,
-      "mean_baseline_gold_share": 0.13506064,
-      "mean_baseline_damage_share": 0.07626774,
-      "mean_baseline_vision_per_minute": 3.57876134
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:beea9fe15bff6a7ab0b3913d3d5fde6",
@@ -2717,10 +2805,11 @@
       "mean_expected_dpm": 627.17568266,
       "win_rate": 0.45689655,
       "mean_vision_per_minute": 1.17260172,
-      "mean_baseline_dpm": 654.29274819,
-      "mean_baseline_gold_share": 0.22053429,
-      "mean_baseline_damage_share": 0.25202701,
-      "mean_baseline_vision_per_minute": 1.12780714
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:c332dc879e14f1feb266190c7f396fd",
@@ -2743,10 +2832,11 @@
       "mean_expected_dpm": 418.18498062,
       "win_rate": 0.41176471,
       "mean_vision_per_minute": 1.5307037,
-      "mean_baseline_dpm": 457.78807368,
-      "mean_baseline_gold_share": 0.1993903,
-      "mean_baseline_damage_share": 0.1767284,
-      "mean_baseline_vision_per_minute": 1.47365675
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:c332dc879e14f1feb266190c7f396fd",
@@ -2769,10 +2859,11 @@
       "mean_expected_dpm": 480.64470833,
       "win_rate": 0.62790698,
       "mean_vision_per_minute": 1.56652401,
-      "mean_baseline_dpm": 459.47908445,
-      "mean_baseline_gold_share": 0.20020181,
-      "mean_baseline_damage_share": 0.17481401,
-      "mean_baseline_vision_per_minute": 1.48675127
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:c54e1090ef1faa736b12493051c4855",
@@ -2795,10 +2886,11 @@
       "mean_expected_dpm": 782.74000155,
       "win_rate": 0.6557377,
       "mean_vision_per_minute": 1.35697036,
-      "mean_baseline_dpm": 730.45912138,
-      "mean_baseline_gold_share": 0.23804488,
-      "mean_baseline_damage_share": 0.28021034,
-      "mean_baseline_vision_per_minute": 1.19850548
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:cb6616189a21f8e8ed43ccdb3f6904a",
@@ -2821,10 +2913,11 @@
       "mean_expected_dpm": 634.36750731,
       "win_rate": 0.22222222,
       "mean_vision_per_minute": 0.93575846,
-      "mean_baseline_dpm": 645.52773337,
-      "mean_baseline_gold_share": 0.22147848,
-      "mean_baseline_damage_share": 0.25226095,
-      "mean_baseline_vision_per_minute": 1.10993816
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:d24f38ec30ce6f7577066f80e43e4bf",
@@ -2847,10 +2940,11 @@
       "mean_expected_dpm": 243.62522389,
       "win_rate": 0.64912281,
       "mean_vision_per_minute": 3.87717937,
-      "mean_baseline_dpm": 196.18600905,
-      "mean_baseline_gold_share": 0.13496681,
-      "mean_baseline_damage_share": 0.07616246,
-      "mean_baseline_vision_per_minute": 3.58066866
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:d2b317a92a71a850ae3da1e0d83e883",
@@ -2873,10 +2967,11 @@
       "mean_expected_dpm": 723.25679912,
       "win_rate": 0.2972973,
       "mean_vision_per_minute": 1.11117523,
-      "mean_baseline_dpm": 729.6868761,
-      "mean_baseline_gold_share": 0.23794672,
-      "mean_baseline_damage_share": 0.28032136,
-      "mean_baseline_vision_per_minute": 1.19779469
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:d971df9441d60af93a87545e6a8f884",
@@ -2899,10 +2994,11 @@
       "mean_expected_dpm": 712.76643808,
       "win_rate": 0.21621622,
       "mean_vision_per_minute": 1.10787961,
-      "mean_baseline_dpm": 729.71111646,
-      "mean_baseline_gold_share": 0.23814138,
-      "mean_baseline_damage_share": 0.27846493,
-      "mean_baseline_vision_per_minute": 1.20250453
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:d971df9441d60af93a87545e6a8f884",
@@ -2925,10 +3021,11 @@
       "mean_expected_dpm": 691.07154764,
       "win_rate": 0.29411765,
       "mean_vision_per_minute": 1.42605935,
-      "mean_baseline_dpm": 731.48857503,
-      "mean_baseline_gold_share": 0.23801301,
-      "mean_baseline_damage_share": 0.28245023,
-      "mean_baseline_vision_per_minute": 1.19377213
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:da3299cd46f1ad8a86bbadeb6b8a320",
@@ -2951,10 +3048,11 @@
       "mean_expected_dpm": null,
       "win_rate": null,
       "mean_vision_per_minute": null,
-      "mean_baseline_dpm": null,
-      "mean_baseline_gold_share": null,
-      "mean_baseline_damage_share": null,
-      "mean_baseline_vision_per_minute": null
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:da3299cd46f1ad8a86bbadeb6b8a320",
@@ -2977,10 +3075,11 @@
       "mean_expected_dpm": 658.95956221,
       "win_rate": 0.41176471,
       "mean_vision_per_minute": 1.09856629,
-      "mean_baseline_dpm": 730.25592692,
-      "mean_baseline_gold_share": 0.23787449,
-      "mean_baseline_damage_share": 0.28153011,
-      "mean_baseline_vision_per_minute": 1.19500604
+      "mean_baseline_dpm": 702.84949371,
+      "mean_baseline_gold_share": 0.23628768,
+      "mean_baseline_damage_share": 0.27692939,
+      "mean_baseline_vision_per_minute": 1.16023305,
+      "mean_baseline_impact": 0.00475491
     },
     {
       "player_id": "oe:player:da42b9f18367dc6c30476ec117c29de",
@@ -3003,10 +3102,11 @@
       "mean_expected_dpm": 598.59195476,
       "win_rate": 0.36363636,
       "mean_vision_per_minute": 1.11588163,
-      "mean_baseline_dpm": 652.94456986,
-      "mean_baseline_gold_share": 0.22054385,
-      "mean_baseline_damage_share": 0.25182357,
-      "mean_baseline_vision_per_minute": 1.12454809
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:dfc279de8d7bd571aa8edfd7eb89c03",
@@ -3029,10 +3129,11 @@
       "mean_expected_dpm": 177.54757949,
       "win_rate": 0.26315789,
       "mean_vision_per_minute": 3.69996718,
-      "mean_baseline_dpm": 196.23437062,
-      "mean_baseline_gold_share": 0.13634606,
-      "mean_baseline_damage_share": 0.07712818,
-      "mean_baseline_vision_per_minute": 3.5654785
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:dfe5b204f04f40a84019af080662259",
@@ -3055,10 +3156,11 @@
       "mean_expected_dpm": 164.46087118,
       "win_rate": 0.34285714,
       "mean_vision_per_minute": 3.49702011,
-      "mean_baseline_dpm": 196.32540349,
-      "mean_baseline_gold_share": 0.13532643,
-      "mean_baseline_damage_share": 0.07646161,
-      "mean_baseline_vision_per_minute": 3.57566255
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:e78da55d6db43d982f841204a8e51ac",
@@ -3081,10 +3183,11 @@
       "mean_expected_dpm": 150.60738479,
       "win_rate": 0.34615385,
       "mean_vision_per_minute": 4.05072632,
-      "mean_baseline_dpm": 196.84938343,
-      "mean_baseline_gold_share": 0.13577239,
-      "mean_baseline_damage_share": 0.07696007,
-      "mean_baseline_vision_per_minute": 3.5665074
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:e78da55d6db43d982f841204a8e51ac",
@@ -3107,10 +3210,11 @@
       "mean_expected_dpm": 187.31239198,
       "win_rate": 0.5,
       "mean_vision_per_minute": 3.77163155,
-      "mean_baseline_dpm": 194.65167504,
-      "mean_baseline_gold_share": 0.13410782,
-      "mean_baseline_damage_share": 0.0750028,
-      "mean_baseline_vision_per_minute": 3.60258307
+      "mean_baseline_dpm": 193.44737568,
+      "mean_baseline_gold_share": 0.13377889,
+      "mean_baseline_damage_share": 0.07638572,
+      "mean_baseline_vision_per_minute": 3.58593424,
+      "mean_baseline_impact": -0.00992733
     },
     {
       "player_id": "oe:player:e85e46c5f3d3fcce55af9ca6a4cb45c",
@@ -3133,10 +3237,11 @@
       "mean_expected_dpm": 596.29994829,
       "win_rate": 0.48,
       "mean_vision_per_minute": 0.81133499,
-      "mean_baseline_dpm": 557.37166685,
-      "mean_baseline_gold_share": 0.20635887,
-      "mean_baseline_damage_share": 0.21529552,
-      "mean_baseline_vision_per_minute": 0.97749987
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:e9aecf3f86eadc4cabbf95b7d92be0d",
@@ -3159,10 +3264,11 @@
       "mean_expected_dpm": null,
       "win_rate": null,
       "mean_vision_per_minute": null,
-      "mean_baseline_dpm": null,
-      "mean_baseline_gold_share": null,
-      "mean_baseline_damage_share": null,
-      "mean_baseline_vision_per_minute": null
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     },
     {
       "player_id": "oe:player:ed29043422e3c515e1cb292464b990b",
@@ -3185,10 +3291,11 @@
       "mean_expected_dpm": 669.57749609,
       "win_rate": 0.62295082,
       "mean_vision_per_minute": 1.08767821,
-      "mean_baseline_dpm": 654.56770157,
-      "mean_baseline_gold_share": 0.22042372,
-      "mean_baseline_damage_share": 0.2519565,
-      "mean_baseline_vision_per_minute": 1.1278748
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:f40f1b0923c35568f417aef1e01ca6b",
@@ -3211,10 +3318,11 @@
       "mean_expected_dpm": 555.26891749,
       "win_rate": 0.61111111,
       "mean_vision_per_minute": 1.00058501,
-      "mean_baseline_dpm": 548.50635556,
-      "mean_baseline_gold_share": 0.20557467,
-      "mean_baseline_damage_share": 0.21275143,
-      "mean_baseline_vision_per_minute": 0.98120203
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:f886838ee1808c2f217208267a829ce",
@@ -3237,10 +3345,11 @@
       "mean_expected_dpm": 607.6626193,
       "win_rate": 0.37837838,
       "mean_vision_per_minute": 1.19157556,
-      "mean_baseline_dpm": 652.51306629,
-      "mean_baseline_gold_share": 0.2204945,
-      "mean_baseline_damage_share": 0.25165451,
-      "mean_baseline_vision_per_minute": 1.12333483
+      "mean_baseline_dpm": 640.63447161,
+      "mean_baseline_gold_share": 0.218906,
+      "mean_baseline_damage_share": 0.25076245,
+      "mean_baseline_vision_per_minute": 1.13042391,
+      "mean_baseline_impact": 0.0621136
     },
     {
       "player_id": "oe:player:fb66ef5885b4be9323905b821dc3a42",
@@ -3263,10 +3372,11 @@
       "mean_expected_dpm": 596.50549693,
       "win_rate": 0.62295082,
       "mean_vision_per_minute": 0.92572516,
-      "mean_baseline_dpm": 560.57254337,
-      "mean_baseline_gold_share": 0.20677378,
-      "mean_baseline_damage_share": 0.21630084,
-      "mean_baseline_vision_per_minute": 0.97853488
+      "mean_baseline_dpm": 564.65130784,
+      "mean_baseline_gold_share": 0.20737979,
+      "mean_baseline_damage_share": 0.21934174,
+      "mean_baseline_vision_per_minute": 0.96817032,
+      "mean_baseline_impact": 0.09139434
     },
     {
       "player_id": "oe:player:fbdc4428b2d095c83aebeed5da4e4b2",
@@ -3289,10 +3399,11 @@
       "mean_expected_dpm": 465.80265795,
       "win_rate": 0.52777778,
       "mean_vision_per_minute": 1.353177,
-      "mean_baseline_dpm": 458.47525385,
-      "mean_baseline_gold_share": 0.19983824,
-      "mean_baseline_damage_share": 0.17563692,
-      "mean_baseline_vision_per_minute": 1.4811728
+      "mean_baseline_dpm": 418.73476473,
+      "mean_baseline_gold_share": 0.19961878,
+      "mean_baseline_damage_share": 0.16743072,
+      "mean_baseline_vision_per_minute": 1.48443762,
+      "mean_baseline_impact": -0.03589034
     }
   ],
   "pairs": [

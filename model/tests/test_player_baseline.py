@@ -1,4 +1,4 @@
-"""Historical profile references must never use the evaluated game's outcomes."""
+"""Season-role references weight players equally and preserve full-season scope."""
 import sys
 import unittest
 from pathlib import Path
@@ -7,60 +7,89 @@ import numpy as np
 import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from baseline import PROFILE_BASELINE_METRICS, evaluate
-from prepare import prepare, read_raw
+from player_baseline import PROFILE_METRICS, season_role_baselines
 
 ROOT = Path(__file__).resolve().parents[2]
-METRICS = ["dpm", *PROFILE_BASELINE_METRICS]
+METRICS = [*PROFILE_METRICS, "impact"]
+
+
+def record(player, dpm, *, season=2025, role="mid", team="a", impact=np.nan, vision=1.):
+    return {"player_id": player, "season": season, "role": role, "team_id": team,
+            "dpm": dpm, "gold_share": dpm / 1000, "damage_share": dpm / 1000,
+            "vision_per_minute": vision, "adjusted_impact": impact}
 
 
 class PlayerBaselineTests(unittest.TestCase):
-    @classmethod
-    def setUpClass(cls):
-        clean, _, _ = prepare(read_raw(ROOT / "data/raw/lpl_2025.csv.gz"))
-        cls.clean = clean[clean.day.isin(sorted(clean.day.unique())[:15])].copy()
-        cls.scored, _, _ = evaluate(cls.clean)
+    def test_equal_player_weights_merge_transfers_before_averaging(self):
+        games = pd.DataFrame([
+            record("a", 100, team="old"), record("a", 300, team="new", impact=2.),
+            record("b", 800, impact=4.),
+        ])
+        reference = season_role_baselines(games, 10).loc[(2025, "mid")]
+        # A's season mean is 200; B's is 800. Neither games (400) nor
+        # team stints (also 400) are the units receiving equal weight.
+        self.assertEqual(reference.mean_baseline_dpm, 500.)
+        self.assertEqual(reference.mean_baseline_gold_share, .5)
+        self.assertAlmostEqual(reference.mean_baseline_impact, 3 / 11)
 
-    def test_references_are_earlier_same_role_means_and_warmup_is_null(self):
-        p = self.scored
-        for metric in METRICS:
-            self.assertTrue(p.loc[p.fold == 0, f"baseline_{metric}"].isna().all())
-        for fold, held in p[p.fold > 0].groupby("fold"):
-            train = self.clean[self.clean.day < held.day.min()]
-            self.assertTrue((held.train_end_day < held.day).all(), fold)
-            for metric in METRICS:
-                expected = held.role.map(train.groupby("role")[metric].mean())
-                np.testing.assert_allclose(held[f"baseline_{metric}"], expected, equal_nan=True)
+    def test_seasons_and_roles_do_not_mix(self):
+        games = pd.DataFrame([
+            record("a", 100), record("b", 500),
+            record("a", 9000, season=2024), record("c", 2000, role="top"),
+        ])
+        reference = season_role_baselines(games, 10)
+        self.assertEqual(reference.loc[(2025, "mid"), "mean_baseline_dpm"], 300.)
+        self.assertEqual(reference.loc[(2024, "mid"), "mean_baseline_dpm"], 9000.)
+        self.assertEqual(reference.loc[(2025, "top"), "mean_baseline_dpm"], 2000.)
 
-    def test_current_and_future_values_cannot_change_their_own_block_reference(self):
-        changed = self.clean.copy()
-        final_block = self.scored.fold == self.scored.fold.max()
-        changed.loc[final_block, METRICS] *= 4
-        after, _, _ = evaluate(changed)
-        for metric in METRICS:
-            np.testing.assert_allclose(self.scored[f"baseline_{metric}"], after[f"baseline_{metric}"], equal_nan=True)
+    def test_warmup_included_for_observed_metrics_but_not_impact(self):
+        games = pd.DataFrame([
+            record("a", 100), record("a", 300, impact=2.),
+            record("b", 800, impact=4.), record("warmup-only", 1000),
+        ])
+        reference = season_role_baselines(games, 10).loc[(2025, "mid")]
+        self.assertAlmostEqual(reference.mean_baseline_dpm, (200 + 800 + 1000) / 3)
+        self.assertAlmostEqual(reference.mean_baseline_impact, 3 / 11)
 
-    def test_missing_training_metric_stays_null_for_that_role(self):
-        changed = self.clean.copy()
-        first_held_day = self.scored.loc[self.scored.fold == 1, "day"].min()
-        changed.loc[(changed.day < first_held_day) & (changed.role == "sup"), "vision_per_minute"] = np.nan
-        after, _, _ = evaluate(changed)
-        held = after[(after.fold == 1) & (after.role == "sup")]
-        self.assertTrue(held.baseline_vision_per_minute.isna().all())
-        self.assertTrue(held.baseline_dpm.notna().all())
-        self.assertTrue(after.loc[(after.fold == 1) & (after.role == "top"), "baseline_vision_per_minute"].notna().all())
+    def test_missing_metrics_omit_missing_players_and_never_become_zero(self):
+        games = pd.DataFrame([
+            record("a", 100, vision=np.nan), record("a", 300, vision=2.),
+            record("b", 800, vision=np.nan),
+        ])
+        games["damage_share"] = np.nan
+        reference = season_role_baselines(games, 10).loc[(2025, "mid")]
+        self.assertEqual(reference.mean_baseline_vision_per_minute, 2.)
+        self.assertTrue(pd.isna(reference.mean_baseline_damage_share))
+        self.assertTrue(pd.isna(reference.mean_baseline_impact))
 
-    def test_exported_player_references_use_the_players_evaluated_games(self):
+    def test_exports_match_full_season_role_means_in_both_datasets(self):
+        full = pd.read_csv(ROOT / "data/processed/player_games.csv")
+        # Independently derive expected values from per-player seasonal records.
+        per_player = full.groupby(["season", "role", "player_id"])
+        expected = per_player[PROFILE_METRICS].mean()
+        scores = per_player.adjusted_impact.agg(["mean", "count"])
+        expected["impact"] = scores["mean"] * scores["count"] / (scores["count"] + 10)
+        expected = expected.groupby(["season", "role"]).mean()
         for kind in ["processed", "test"]:
-            games = pd.read_csv(ROOT / f"data/{kind}/player_games.csv")
             players = pd.read_csv(ROOT / f"data/{kind}/players.csv")
             for row in players.itertuples():
-                held = games[(games.player_id == row.player_id) & (games.team_id == row.team_id)
-                             & (games.role == row.role) & games.adjusted_impact.notna()]
                 for metric in METRICS:
-                    expected = held.loc[held[metric].notna(), f"baseline_{metric}"].mean()
-                    actual = getattr(row, f"mean_baseline_{metric}")
-                    np.testing.assert_allclose(actual, expected, atol=1e-7, equal_nan=True)
+                    np.testing.assert_allclose(
+                        getattr(row, f"mean_baseline_{metric}"), expected.loc[(row.season, row.role), metric],
+                        atol=1e-7, equal_nan=True,
+                    )
+            # Even a player without evaluated games can see the season reference.
+            warmup_only = players[players.n_games == 0]
+            self.assertFalse(warmup_only.empty)
+            self.assertTrue(warmup_only.mean_baseline_dpm.notna().all())
+
+    def test_fixture_keeps_full_season_reference_instead_of_recomputing_subset(self):
+        games = pd.read_csv(ROOT / "data/test/player_games.csv")
+        players = pd.read_csv(ROOT / "data/test/players.csv")
+        subset_reference = games.groupby(["season", "role", "player_id"]).dpm.mean().groupby(["season", "role"]).mean()
+        different = [abs(row.mean_baseline_dpm - subset_reference.loc[(row.season, row.role)]) > .001
+                     for row in players.itertuples()]
+        self.assertTrue(any(different), "Fixture must retain full-season role reference, not its small subset mean")
 
 
 if __name__ == "__main__":

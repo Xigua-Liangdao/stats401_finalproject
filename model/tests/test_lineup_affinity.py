@@ -23,17 +23,13 @@ def game_rows(game_id, day, impacts, replacement=False):
         if replacement and role == "sup":
             player_id += "-sub"
         rows.append({
-            "game_id": game_id, "day": day, "team_id": "team-a", "team": "Team A",
+            "game_id": game_id, "day": day, "season": 2025, "team_id": "team-a", "team": "Team A",
             "player_id": player_id, "player": player_id, "role": role,
             "lineup_id": "lineup-sub" if replacement else "lineup-main",
             "split": "Spring", "patch": "15.1", "result": 1,
             "adjusted_impact": impact, "gold_share": .2, "damage_share": .2,
             "dpm": 500., "expected_dpm": 400. if pd.notna(impact) else np.nan,
             "vision_per_minute": 1.,
-            "baseline_dpm": 450. if pd.notna(impact) else np.nan,
-            "baseline_gold_share": .2 if pd.notna(impact) else np.nan,
-            "baseline_damage_share": .2 if pd.notna(impact) else np.nan,
-            "baseline_vision_per_minute": .9 if pd.notna(impact) else np.nan,
         })
     return rows
 

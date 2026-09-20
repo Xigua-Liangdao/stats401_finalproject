@@ -32,13 +32,20 @@ def select_sample(p):
 
 def build_test_data(tables, metadata, destination=ROOT / "data/test", schema=None):
     sample = select_sample(tables["player_games"])
-    generated = {"player_games": sample, **aggregate(sample)}
+    # Copy the already exported references exactly, rather than recomputing
+    # them from rounded CSV game values (which can change the last digit).
+    baseline_fields = [c for c in tables["players"] if c.startswith("mean_baseline_")]
+    references = tables["players"][["season", "role", *baseline_fields]].drop_duplicates().set_index(["season", "role"])
+    if references.index.has_duplicates:
+        raise ValueError("Season-role baseline must be identical for all players in that season and role.")
+    generated = {"player_games": sample, **aggregate(sample, baseline_reference=references)}
     # Column order and declared types belong to one shared production contract.
     test_tables = {name: generated[name][table.columns] for name, table in tables.items()}
     meta = deepcopy(metadata)
     meta["dataset"] = dataset_info(test_tables, "test")
     meta["scope"] = ("Frontend integration fixture, sampled from complete processed games. "
-                     "Summaries are recomputed for this subset; predictions are retained from the full pipeline. "
+                     "Player/pair/lineup statistics are recomputed for this subset; season-role player baselines "
+                     "and predictions are retained from the full parent season. "
                      "metadata.dataset describes this subset. Source, coverage audit and evaluation describe the parent processed dataset. "
                      "This fixture is not an independent statistical test set. Cleaning decisions remain provisional.")
     players = test_tables["players"].query("eligible").sort_values(

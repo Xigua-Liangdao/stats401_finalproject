@@ -18,7 +18,7 @@ The committed raw snapshot makes the normal run **offline**. To fetch the same p
 
 The pipeline checks the raw checksum, validates complete games, estimates out-of-time predictions, exports CSV/JSON, creates three PNG/SVG figures, and writes reports. It does not need an API server: GitHub Pages can serve its static outputs. `reports/manifest.json` records output hashes.
 
-Cleaning remains provisional. Both `data/test/` and `data/processed/` are exported through `export_data.py` with the same filenames and field contract. The test fixture preserves complete real games and reuses existing predictions, then recomputes its summaries. The frontend can switch directories without changing its loader. Run `python model/build_test_data.py` to regenerate the fixture from the existing processed exports.
+Cleaning remains provisional. Both `data/test/` and `data/processed/` are exported through `export_data.py` with the same filenames and field contract. The test fixture preserves complete real games and reuses existing predictions, then recomputes its player/team and co-performance summaries. Its season-role player baselines retain the full processed season's values rather than being recomputed from the 16 sampled games. The frontend can switch directories without changing its loader. Run `python model/build_test_data.py` to regenerate the fixture from the existing processed exports.
 
 ## What the model predicts
 
@@ -32,7 +32,7 @@ The model excludes current-game result, kills, gold, damage share, duration and 
 
 1. Sort distinct source match days and divide them into five contiguous blocks of nearly equal numbers of days.
 2. Use the first block as warmup. Fit on all earlier days and predict the next block, repeating four times.
-3. All ten players, both sides and all games on the same day stay together. Encoding, role reference means and role SDs are fitted from training rows only.
+3. All ten players, both sides and all games on the same day stay together. Encoding, the evaluation's role-mean DPM reference and role SDs are fitted from training rows only.
 4. Keep warmup `expected_dpm` and `adjusted_impact` null. Do not replace them with in-sample fitted values.
 5. After evaluation, fit a separate full-data model and export JSON coefficients to `reports/fitted_model.json` for future inference. It never supplies the demo residuals.
 
@@ -47,9 +47,11 @@ Lower MAE/RMSE is better. Overall R² partly reflects large differences between 
 
 ### Player profile baseline
 
-The radar's **Show baseline** overlay compares gold share, damage share, DPM and vision/min with the mean of the same role in that evaluation fold's earlier training games. `baseline_dpm` remains the existing role-mean reference; the other three fields are `baseline_gold_share`, `baseline_damage_share` and `baseline_vision_per_minute`. These are reference averages, not additional fitted Ridge targets. Warmup and unavailable historical metrics remain null.
+The radar's **Show baseline** overlay compares a player with **all players in the same role across the full observed season**. For gold share, damage share, DPM and vision/min, first average each distinct player's observations within that season and role, then average those player means with equal weight. Resource and DPM observations include warmup games. Transfer spells are combined using `player_id`, the current player is included, and the `eligible` display flag does not restrict the reference population. Missing values are omitted separately for each metric; a player with no value for that metric is omitted from that metric's reference, and an entirely unavailable reference remains null.
 
-`players.csv` exports `mean_baseline_dpm`, `mean_baseline_gold_share`, `mean_baseline_damage_share` and `mean_baseline_vision_per_minute`. Each averages the per-game references over that player/team/role's evaluated games with an observed value for the metric, so a player's changing fold context is weighted by games. Missing references are omitted and an entirely unavailable reference remains null. The radar's impact reference is **zero**, meaning on the context model's expected DPM; it is not the observed role's mean residual. The timeline continues to show both context `expected_dpm` and historical-role `baseline_dpm` separately.
+`players.csv` exports these references as `mean_baseline_gold_share`, `mean_baseline_damage_share`, `mean_baseline_dpm` and `mean_baseline_vision_per_minute`. The impact axis uses `mean_baseline_impact`: compute each season-role player's mean valid evaluated adjusted damage, shrink it by `n / (n + 10)` using that player's valid evaluated-game count, then equally average those player scores. Warmup-only players do not contribute to the impact reference. Each baseline is fixed for a season and role, including across team transfers. Player summaries are keyed by `player_id`, `team_id`, `role` and `season`; the profile's actual `mean_*` values and `shrunk_impact` still summarize that player's evaluated games for the selected team, role and season.
+
+These are descriptive, retrospective full-season references, not out-of-time forecasts or additional fitted Ridge targets. The game-level `baseline_dpm` keeps its original earlier-training-data meaning for model evaluation and the timeline, labeled **Training role mean DPM**. The full-season profile reference is labeled **Season role baseline DPM**. The two fields have different populations and purposes; the seasonal reference never supplies model predictions or adjusted damage.
 
 ## Metric definitions
 
@@ -75,7 +77,7 @@ The final column of `lineups.csv`, **`affinity_score` (lineup affinity / 亲密�
 - Default eligibility is **10 evaluated games and 3 match days**. Ineligible groups remain in the data for inspection.
 - A 1,000-replicate bootstrap (seed 401) resamples whole match days, retaining all games on sampled days. Intervals are the 2.5% and 97.5% quantiles of the resampled mean multiplied by the original sample's `n/(n+10)` factor. Below three days, intervals are null.
 - These intervals condition on the fitted predictions and observed shrinkage factor. They omit model uncertainty and possible dependence across days. They do not constitute tests of causal synergy or correct for scanning many pairs.
-- Players' resource means and all score summaries use the same evaluated games. The scatterplot shows the unshrunk mean; the heatmap shows the shrunk mean.
+- Players' actual resource means and all score summaries use the same evaluated games. Season-role resource baselines additionally include warmup observations as described above. The scatterplot shows the unshrunk mean; the heatmap shows the shrunk mean.
 
 ## Three implemented visualizations
 

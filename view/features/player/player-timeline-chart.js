@@ -38,6 +38,40 @@ function tooltipLines(game, field, value) {
   ].filter(Boolean);
 }
 
+function drawLegend(svg, series, left, width) {
+  const legend = svg.append('g').attr('class', 'chart-legend').attr('transform', `translate(${left},16)`);
+  let x = 0;
+  let y = 0;
+  let rowHeight = 18;
+  for (const item of series) {
+    const entry = legend.append('g');
+    entry.append('rect').attr('width', 8).attr('height', 8).attr('y', -7).attr('fill', item.color);
+    const label = entry.append('text').attr('x', 12).attr('font-size', 10);
+    let words = [];
+    let line = label.append('tspan').attr('x', 12).attr('dy', 0);
+    for (const word of item.label.split(' ')) {
+      words.push(word);
+      line.text(words.join(' '));
+      if (words.length > 1 && line.node().getComputedTextLength() > width - 12) {
+        words.pop();
+        line.text(words.join(' '));
+        words = [word];
+        line = label.append('tspan').attr('x', 12).attr('dy', 13).text(word);
+      }
+    }
+    const bounds = entry.node().getBBox();
+    if (x > 0 && x + bounds.width > width) {
+      x = 0;
+      y += rowHeight;
+      rowHeight = 18;
+    }
+    entry.attr('transform', `translate(${x},${y})`);
+    x += bounds.width + 20;
+    rowHeight = Math.max(rowHeight, bounds.height + 8);
+  }
+  return 16 + y + rowHeight;
+}
+
 export function mountPlayerTimeline(stage, { games }) {
   stage.classList.add('is-mounted');
   stage.replaceChildren();
@@ -89,6 +123,7 @@ export function mountPlayerTimeline(stage, { games }) {
 
     const margin = { top: 28, right: 16, bottom: 42, left: 52 };
     const innerWidth = width - margin.left - margin.right;
+    if (series.length > 1) margin.top = drawLegend(svg, series, margin.left, innerWidth);
     const innerHeight = height - margin.top - margin.bottom;
     const plot = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
     const x = d3.scalePoint()
@@ -148,14 +183,6 @@ export function mountPlayerTimeline(stage, { games }) {
         .on('mouseleave', hideTip);
     }
 
-    if (series.length > 1) {
-      const legend = svg.append('g').attr('class', 'chart-legend').attr('transform', `translate(${margin.left},${14})`);
-      series.forEach((item, index) => {
-        const entry = legend.append('g').attr('transform', `translate(${index * 128},0)`);
-        entry.append('rect').attr('width', 8).attr('height', 8).attr('y', -7).attr('fill', item.color);
-        entry.append('text').attr('x', 12).attr('font-size', 10).text(item.label);
-      });
-    }
   }
 
   draw();

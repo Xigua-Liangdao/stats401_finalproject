@@ -15,8 +15,9 @@ function snapSpan(span) {
 export function createRadarScaleNote(axes, span = 1) {
   return h('div', { class: 'radar-scale-note' }, [
     h('div', {}, [
-      'Dashed baseline: historical same-role means from earlier training games for gold, damage, DPM and vision. ',
-      'Impact baseline is 0 (model expectation). Missing values are omitted.',
+      'Dashed season role baseline: equal-weight average of same-role players’ full-season averages, including warmup games. ',
+      'Impact uses their season shrunk impacts from evaluated games. Transfers count as one player. ',
+      'Solid profile: this player’s evaluated-game summary for the selected team and season. Missing values are omitted.',
     ]),
     h('div', { class: 'radar-scale-note__title coord' }, ['Metric scale · outer ring']),
     h(
@@ -63,6 +64,8 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
 
   let showBaseline = false;
   let span = 1;
+  const hasActual = profileValues(stats, axes).some(Number.isFinite);
+  const hasBaseline = profileValues(stats, axes, true).some(Number.isFinite);
 
   function hideTip() {
     tooltip.hidden = true;
@@ -94,6 +97,12 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
   }
 
   function updateHint() {
+    if (!hasActual) {
+      hint.textContent = showBaseline && hasBaseline
+        ? 'No evaluated player profile · showing season role baseline only'
+        : 'No evaluated player profile available';
+      return;
+    }
     const pct = Math.round(span * 100);
     const floor = Math.round(minSpan() * 100);
     hint.textContent =
@@ -120,7 +129,7 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
     const baseline = baselineValue(stats, axis.key);
     const rows = [axis.label, `Actual: ${axis.format(actual)}`];
     if (showBaseline) {
-      rows.push(`Baseline: ${axis.format(baseline)}`);
+      rows.push(`Season role baseline: ${axis.format(baseline)}`);
       if (Number.isFinite(actual) && baseline != null) {
         const diff = actual - baseline;
         rows.push(`Difference: ${diff > 0 && axis.key !== 'shrunk_impact' ? '+' : ''}${axis.format(diff)}`);
@@ -165,8 +174,7 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
     svg.selectAll('*').remove();
     updateHint();
 
-    const hasAny = axes.some((axis) => stats[axis.key] != null && Number.isFinite(stats[axis.key]));
-    if (!hasAny) {
+    if (!hasActual && !(showBaseline && hasBaseline)) {
       svg.append('text')
         .attr('class', 'chart-empty')
         .attr('x', width / 2)

@@ -2,7 +2,7 @@ import { h } from '../../utils/dom.js';
 import { PLAYER_CHART_CATEGORIES, findCategory } from './player-chart-config.js';
 import { mountPlayerRadar, createRadarAxes, createRadarScaleNote } from './player-radar-chart.js?v=scale-zoom';
 import { mountPlayerTimeline } from './player-timeline-chart.js';
-import { profileValues } from './player-baseline.js';
+import { profileValues, timelineGamesForPlayer } from './player-baseline.js';
 
 function createSelect(options, value) {
   return h(
@@ -77,7 +77,7 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
   const metricWrap = h('div', { class: 'chart-control' }, ['Metrics']);
   const baselineToggle = h('label', { class: 'chart-toggle' }, [
     h('input', { type: 'checkbox' }),
-    'Show baseline',
+    'Season role baseline',
   ]);
 
   let timelineChart;
@@ -94,7 +94,7 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
 
   const timeline = createPanel({
     index: 'VIZ 01',
-    title: 'Performance over time',
+    title: 'Performance over time · selected season and role',
     vizId: 'player-timeline',
     stageClass: 'player-timeline-stage',
     chromeClass: 'player-viz-chrome--stacked',
@@ -135,7 +135,7 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
   if (!hasBaseline) {
     baselineInput.disabled = true;
     baselineToggle.classList.add('is-disabled');
-    baselineToggle.title = 'No historical baseline available for this player.';
+    baselineToggle.title = 'No season role baseline available for this player.';
   } else {
     baselineInput.checked = true;
   }
@@ -144,7 +144,7 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
   mountPicks();
 
   queueMicrotask(() => {
-    timelineChart = mountPlayerTimeline(timeline.stage, { games });
+    timelineChart = mountPlayerTimeline(timeline.stage, { games: timelineGamesForPlayer(player, games) });
     const radarChart = mountPlayerRadar(radar.stage, {
       stats: player.stats ?? {},
       axes: radarAxes,

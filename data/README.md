@@ -4,7 +4,7 @@
 
 The cleaning rules and model definitions are a **provisional demo baseline**. The frontend can be developed against `data/test/` while those decisions are refined.
 
-Both directories expose the **same 11 filenames**, CSV column order, declared dtypes/nullability, JSON keys and primitive types. Only dataset values, counts and scope differ. `test/` is a small subset of **real, complete games**, including both valid out-of-time predictions and warmup/null cases. Its player/pair/lineup summaries are recomputed for the subset. It is a frontend fixture, not an independent statistical model test set.
+Both directories expose the **same 11 filenames**, CSV column order, declared dtypes/nullability, JSON keys and primitive types. Only dataset values, counts and scope differ. `test/` is a small subset of **real, complete games**, including both valid out-of-time predictions and warmup/null cases. Its player/team and co-performance summaries are recomputed for the subset, while its player baseline fields retain the full processed season's references rather than being recomputed from the 16 sampled games. It is a frontend fixture, not an independent statistical model test set.
 
 From `view/index.html`, change only the directory:
 
@@ -18,7 +18,7 @@ const data = await response.json();
 // CSV paths also match: `${dataRoot}/player_games.csv`, `${dataRoot}/pairs.csv`, etc.
 ```
 
-`metadata.dataset` reports the loaded directory's row/game counts. `metadata.source`, `metadata.coverage` and `metadata.evaluation` retain the parent pipeline's provenance, cleaning audit and model evaluation in both files. Test-specific summaries and example IDs describe only the fixture; do not label them as whole-season results.
+`metadata.dataset` reports the loaded directory's row/game counts. `metadata.source`, `metadata.coverage` and `metadata.evaluation` retain the parent pipeline's provenance, cleaning audit and model evaluation in both files. Test-specific summaries and example IDs describe only the fixture; only the inherited season-role baseline fields describe the full season's reference population.
 
 `model/run.py` generates both directories with the same serializer. To rebuild only the test fixture from existing exports: `python model/build_test_data.py`. Verify compatibility with `python -m unittest discover -s model/tests -p 'test_data_contract.py' -v`.
 
@@ -58,7 +58,7 @@ Audited counts and missing values: [`model/reports/data_quality.json`](../model/
 |---|---|---|
 | `dashboard.json` | Metadata + `players`, `pairs`, `lineups`, `teams`, `timeline` arrays | Easiest static-page integration; numbers/booleans/nulls already typed |
 | `player_games.csv` | One player-game, `record_id` | Detail view and arbitrary game-level filters; 8,050 rows |
-| `players.csv` | Player × team × role | Resource–impact scatterplot |
+| `players.csv` | Player × team × role × season | Resource–impact scatterplot and seasonal role references |
 | `timeline.csv` | Player × team × role × observed day | Actual/expected DPM timeline; evaluated dates only |
 | `pairs.csv` | Unordered player pair × team, `pair_id` | Heatmap and network edges |
 | `pair_games.csv` | Pair × team × game | Recompute pair scores after split/patch/date filtering; 10 pairs per five-player team-game |
@@ -70,7 +70,7 @@ Audited counts and missing values: [`model/reports/data_quality.json`](../model/
 
 ## Field definitions
 
-Schema **1.1.0** adds player profile baseline fields and the final lineup `affinity_score` column. Existing field meanings are preserved; both dataset directories use the same version.
+Schema **1.2.0** defines the player profile `mean_baseline_*` fields as full-season, same-role player references and adds `mean_baseline_impact`. Player summary keys explicitly include `season` alongside `player_id`, `team_id` and `role`. It removes the earlier-training game-level `baseline_gold_share`, `baseline_damage_share` and `baseline_vision_per_minute` fields introduced in 1.1.0. Game-level `baseline_dpm` keeps its original model-evaluation meaning. The final lineup `affinity_score` column is unchanged; both dataset directories use the same version.
 
 ### Game-level fields
 
@@ -92,8 +92,7 @@ Schema **1.1.0** adds player profile baseline fields and the final lineup `affin
 | `kill_participation` | (kills + assists) / team kills; null if denominator is zero or incomplete |
 | `gold_diff_at_15`, `xp_diff_at_15`, `cs_diff_at_15` | Optional source differences at minute 15; all null in this snapshot |
 | `prediction_status`, `fold`, `train_end_day` | `warmup` / fold 0 / null cutoff, or `out_of_time` / folds 1–4 / last training date |
-| `expected_dpm`, `baseline_dpm` | Context Ridge prediction, role-mean reference prediction; null in warmup |
-| `baseline_gold_share`, `baseline_damage_share`, `baseline_vision_per_minute` | Same-role means from strictly earlier training days in the same fold as `baseline_dpm`; null in warmup or when that historical metric is unavailable |
+| `expected_dpm`, `baseline_dpm` | Context Ridge prediction and same-role mean DPM from strictly earlier training days in the evaluation fold; null in warmup. The latter is labeled **Training role mean DPM**, distinct from the season-role profile baseline. |
 | `training_role_sd` | Sample SD of DPM for this role in that fold's training set; minimum 1 |
 | `adjusted_impact` | `(dpm − expected_dpm) / training_role_sd`; **adjusted damage**, not overall impact or causal value |
 | `pair_impact`, `lineup_impact` | Mean adjusted damage of the two / five players for that game; null if not evaluated |
@@ -104,7 +103,7 @@ Schema **1.1.0** adds player profile baseline fields and the final lineup `affin
 
 ### Summary fields
 
-All score-related summaries, win rates and resource means use **the same out-of-time subset**. Warmup games appear only in `n_games_total`. Aggregates cover the full evaluated snapshot and are not split-specific.
+Actual player/team summaries, score summaries, win rates and resource means use **the same out-of-time subset**. Warmup games appear in `n_games_total` and also contribute to the descriptive season-role resource/DPM baselines. They do not contribute to adjusted damage or its baseline. Aggregates cover the full evaluated snapshot and are not split-specific; player baseline fields instead use the full season-role reference population described below.
 
 | Fields | Meaning |
 |---|---|
@@ -116,10 +115,13 @@ All score-related summaries, win rates and resource means use **the same out-of-
 | `eligible` | At least 10 evaluated games and 3 match days; default display rule, not a significance test |
 | `win_rate` | Fraction of evaluated games won |
 | `mean_gold_share`, `mean_damage_share`, `mean_dpm`, `mean_expected_dpm`, `mean_vision_per_minute` | Arithmetic means over evaluated games |
-| `mean_baseline_gold_share`, `mean_baseline_damage_share`, `mean_baseline_dpm`, `mean_baseline_vision_per_minute` | Player/team/role's historical-role references averaged over evaluated games with that metric observed; unavailable references are omitted, all unavailable stays null. Radar impact uses zero (on expected DPM), not an empirical role residual mean. |
+| `mean_baseline_gold_share`, `mean_baseline_damage_share`, `mean_baseline_dpm`, `mean_baseline_vision_per_minute` | Full-season same-role reference: average each distinct player's observed metric across the season and role, including warmup, then equally average those player means. Transfers are combined by `player_id`; the current player is included; no eligibility filter is applied. Omit missing metric values and players with no observed value; all unavailable stays null. These values are fixed for the season and role. |
+| `mean_baseline_impact` | Full-season same-role reference for the radar's adjusted-damage axis: equally average each distinct player's shrunk mean valid evaluated adjusted damage, using `n / (n + 10)` for that player's valid evaluated-game count across teams. Excludes players without evaluated adjusted damage; all unavailable stays null. |
 | `actual_dpm`, `expected_dpm`, `adjusted_impact` in `timeline` | Arithmetic means over a player's evaluated games on that day; `n_games` gives weight |
 
 **Scatterplots use `mean_impact`; heatmaps use `shrunk_impact`.** The exported confidence intervals belong to `shrunk_impact`. Do not attach them to the scatterplot's unshrunk mean.
+
+The profile's actual `mean_*` fields remain means for the selected player's evaluated games on that team, in that role and season. Its **Show baseline** overlay is a retrospective full-season comparison, not a forecast: the baseline uses equal weight per player rather than per game or team spell. `mean_baseline_dpm` is labeled **Season role baseline DPM** and must not be substituted for the earlier-training `baseline_dpm` used to evaluate the model. Test-fixture baseline values are inherited from `processed/`.
 
 Lineup affinity averages the five players' adjusted damage within each evaluated game of that exact team and role-ordered roster, then averages these games and multiplies by `n_games / (n_games + 10)`. Averaging all ten pair scores on those same games gives the same result. Averaging season-level pair rows can mix other rosters and is not the lineup affinity. Warmup-only lineups keep `affinity_score` null; low-sample lineups retain `eligible = false` even when a score is available. The lineup's `ci_low` / `ci_high` apply to affinity as well as `shrunk_impact`.
 
@@ -145,7 +147,7 @@ For a page at repository root use `data/processed/...` instead. Serve through HT
 - Render null values as unavailable; grey missing pair cells must not look like zero scores.
 - Keep fixed diverging color limits when comparing filtered heatmaps. Show sample counts and interval scope in tooltips.
 - A pair appears once; mirror it in the heatmap, keep a single edge in a network. The network remains a **planned** view.
-- Team/role/minimum-game filters can select summary rows directly. **Split, patch and date filters require filtering game-level rows first and recomputing statistics.** Do not average precomputed averages or reuse whole-snapshot intervals after filtering. `model/aggregate.py:score_summary` is the reference for recomputation.
+- Team/role/minimum-game filters can select summary rows directly. **Split, patch and date filters require filtering game-level rows first and recomputing actual statistics.** Do not average precomputed averages or reuse whole-snapshot intervals after filtering. `model/aggregate.py:score_summary` is the reference for recomputation. Season-role player baselines remain fixed for the selected season and role when the displayed player sample changes.
 - For CSV use explicit numeric conversion and map empty numeric cells to `null`. Avoid indiscriminate `d3.autoType`, which changes patch strings.
 - `data/test/` mirrors every filename in `data/processed/`. Use its `player_games.csv` and `dashboard.json` for frontend development, then change only the directory. The older `sample_player_games.csv` filename has been replaced.
 

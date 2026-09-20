@@ -46,7 +46,8 @@ export const PLAYER_CHART_CATEGORIES = [
     metrics: [
       { id: 'dpm', label: 'Actual DPM', field: 'dpm' },
       { id: 'expected_dpm', label: 'Expected DPM', field: 'expected_dpm' },
-      { id: 'baseline_dpm', label: 'Baseline DPM', field: 'baseline_dpm' },
+      { id: 'season_role_baseline_dpm', label: 'Season role baseline DPM', field: 'season_role_baseline_dpm' },
+      { id: 'baseline_dpm', label: 'Training role mean DPM', field: 'baseline_dpm' },
     ],
   },
 ];
@@ -63,7 +64,8 @@ export const SERIES_META = {
   damage: { label: 'Damage' },
   dpm: { label: 'Actual DPM' },
   expected_dpm: { label: 'Expected DPM' },
-  baseline_dpm: { label: 'Baseline DPM' },
+  season_role_baseline_dpm: { label: 'Season role baseline DPM' },
+  baseline_dpm: { label: 'Training role mean DPM' },
   vision_per_minute: { label: 'Vision / Minute' },
   gold_share: { label: 'Gold Share' },
   damage_share: { label: 'Damage Share' },
@@ -86,14 +88,14 @@ export function colorForSeries(index) {
 export function formatChartValue(field, value) {
   if (value == null || !Number.isFinite(value)) return '—';
   if (PERCENT_FIELDS.has(field)) return formatPercent(value);
-  if (field === 'kda' || field === 'dpm' || field === 'expected_dpm' || field === 'baseline_dpm' || field === 'vision_per_minute') {
+  if (field === 'kda' || DPM_FIELDS.has(field) || field === 'vision_per_minute') {
     return formatFixed(value, 2);
   }
   if (field.endsWith('_at_15')) return formatCount(value);
   return formatCount(value);
 }
 
-const DPM_FIELDS = new Set(['dpm', 'expected_dpm', 'baseline_dpm']);
+const DPM_FIELDS = new Set(['dpm', 'expected_dpm', 'baseline_dpm', 'season_role_baseline_dpm']);
 
 export function yTickFormat(fields) {
   if (fields.every((field) => PERCENT_FIELDS.has(field))) return (value) => formatPercent(value);
@@ -108,7 +110,7 @@ const DPM_FORM_BAND = 0.05;
 export function dpmFormVsModel(stats) {
   const actual = stats?.mean_dpm;
   const expected = stats?.mean_expected_dpm;
-  const hint = 'Season mean DPM vs model-expected DPM';
+  const hint = 'Evaluated-game mean DPM vs model-expected DPM';
   if (actual == null || expected == null || !Number.isFinite(actual) || !Number.isFinite(expected) || expected === 0) {
     return {
       value: '—',

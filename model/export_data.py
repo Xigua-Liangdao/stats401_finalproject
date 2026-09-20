@@ -5,11 +5,10 @@ from numbers import Real
 
 import pandas as pd
 
-SCHEMA_VERSION = "1.1.0"
+SCHEMA_VERSION = "1.2.0"
 SUMMARY_TABLES = ["players", "pairs", "lineups", "teams", "timeline"]
 NULLABLE_FIELDS = {
     "expected_dpm", "baseline_dpm", "training_role_sd", "adjusted_impact", "train_end_day",
-    "baseline_gold_share", "baseline_damage_share", "baseline_vision_per_minute",
     "pair_impact", "lineup_impact", "mean_impact", "shrunk_impact", "affinity_score", "ci_low", "ci_high", "win_rate",
     "gold_concentration", "damage_concentration", "gold_diff_at_15", "xp_diff_at_15", "cs_diff_at_15",
     "vision_score", "vision_per_minute", "kill_participation", "kills", "deaths", "assists", "kda", "total_cs",

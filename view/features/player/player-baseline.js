@@ -5,6 +5,7 @@ const SPAN_PAD = 1.04;
 const MIN_SPAN_FLOOR = 0.25;
 
 const BASELINE_FIELDS = {
+  shrunk_impact: 'mean_baseline_impact',
   mean_gold_share: 'mean_baseline_gold_share',
   mean_damage_share: 'mean_baseline_damage_share',
   mean_dpm: 'mean_baseline_dpm',
@@ -16,10 +17,16 @@ function finiteOrNull(value) {
 }
 
 export function baselineValue(stats = {}, key) {
-  // Impact is a residual against the context model, whose reference is zero.
-  // The other axes use same-role means from earlier training games.
-  if (key === 'shrunk_impact') return Number.isFinite(stats.n_games) && stats.n_games > 0 ? 0 : null;
   return finiteOrNull(stats[BASELINE_FIELDS[key]]);
+}
+
+export function timelineGamesForPlayer(player, games = []) {
+  const season = player.season ?? player.team?.season;
+  const baselineDpm = baselineValue(player.stats, 'mean_dpm');
+  return games
+    .filter((game) => (season == null || String(game.season) === String(season))
+      && (!player.role || !game.role || game.role === player.role))
+    .map((game) => ({ ...game, season_role_baseline_dpm: baselineDpm }));
 }
 
 export function profileValues(stats = {}, axes = [], baseline = false) {
