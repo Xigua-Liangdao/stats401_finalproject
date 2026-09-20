@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "1.1.0",
   "tables": {
     "player_games": {
       "file": "player_games.csv",
@@ -189,6 +189,18 @@
           "dtype": "float64",
           "nullable": true
         },
+        "baseline_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "baseline_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "baseline_vision_per_minute": {
+          "dtype": "float64",
+          "nullable": true
+        },
         "train_end_day": {
           "dtype": "string",
           "nullable": true
@@ -276,6 +288,22 @@
           "nullable": true
         },
         "mean_vision_per_minute": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_baseline_dpm": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_baseline_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_baseline_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_baseline_vision_per_minute": {
           "dtype": "float64",
           "nullable": true
         }
@@ -504,6 +532,10 @@
           "nullable": true
         },
         "sup_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "affinity_score": {
           "dtype": "float64",
           "nullable": true
         }

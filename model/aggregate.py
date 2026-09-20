@@ -7,6 +7,7 @@ import numpy as np
 import pandas as pd
 
 from prepare import ROLES, stable_id
+from baseline import PROFILE_BASELINE_METRICS
 
 SHRINKAGE_GAMES = 10
 MIN_GAMES = 10
@@ -42,7 +43,9 @@ def aggregate(p):
                         "n_games_total": len(group), **score_summary(group, "adjusted_impact"),
                         "mean_gold_share": scored.gold_share.mean(), "mean_damage_share": scored.damage_share.mean(),
                         "mean_dpm": scored.dpm.mean(), "mean_expected_dpm": scored.expected_dpm.mean(),
-                        "win_rate": scored.result.mean(), "mean_vision_per_minute": scored.vision_per_minute.mean()})
+                        "win_rate": scored.result.mean(), "mean_vision_per_minute": scored.vision_per_minute.mean(),
+                        **{f"mean_baseline_{metric}": scored.loc[scored[metric].notna(), f"baseline_{metric}"].mean()
+                           for metric in ["dpm", *PROFILE_BASELINE_METRICS]}})
     pair_games, lineup_games = [], []
     for (game_id, tid), group in p.groupby(["game_id", "team_id"], sort=True):
         context = {"game_id": game_id, "day": group.day.iloc[0], "season": 2025,
@@ -77,6 +80,9 @@ def aggregate(p):
         row.update({"n_games_total": len(group), **score_summary(group, "lineup_impact"), "win_rate": scored.result.mean()})
         for col in ["mean_dpm", "mean_vision_per_minute", "gold_concentration", "damage_concentration"] + [f"{r}_{s}_share" for r in ROLES for s in ["gold", "damage"]]:
             row[col] = scored[col].mean()
+        # Final exported column: all ten pairs averaged over these exact-roster
+        # evaluated games equal the five-player mean, with the same shrinkage.
+        row["affinity_score"] = row["shrunk_impact"]
         lineups.append(row)
     teams = []
     for tid, group in lg.groupby("team_id", sort=True):

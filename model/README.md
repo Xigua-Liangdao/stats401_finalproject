@@ -45,6 +45,12 @@ The source has **1,480 warmup rows** and **6,570 evaluated rows (657 games)**. O
 
 Lower MAE/RMSE is better. Overall R² partly reflects large differences between roles and is not proof of useful player ranking. Per-role errors, all fold boundaries and unseen-category rates are in [`reports/evaluation.json`](reports/evaluation.json). This is a baseline validation, not a final untouched holdout after model selection. Further model development requires fresh later data or nested time-aware tuning.
 
+### Player profile baseline
+
+The radar's **Show baseline** overlay compares gold share, damage share, DPM and vision/min with the mean of the same role in that evaluation fold's earlier training games. `baseline_dpm` remains the existing role-mean reference; the other three fields are `baseline_gold_share`, `baseline_damage_share` and `baseline_vision_per_minute`. These are reference averages, not additional fitted Ridge targets. Warmup and unavailable historical metrics remain null.
+
+`players.csv` exports `mean_baseline_dpm`, `mean_baseline_gold_share`, `mean_baseline_damage_share` and `mean_baseline_vision_per_minute`. Each averages the per-game references over that player/team/role's evaluated games with an observed value for the metric, so a player's changing fold context is weighted by games. Missing references are omitted and an entirely unavailable reference remains null. The radar's impact reference is **zero**, meaning on the context model's expected DPM; it is not the observed role's mean residual. The timeline continues to show both context `expected_dpm` and historical-role `baseline_dpm` separately.
+
 ## Metric definitions
 
 For player *i* in game *g*:
@@ -54,11 +60,14 @@ adjusted_impact[i,g] = (actual_dpm[i,g] − expected_dpm[i,g]) / training_role_s
 pair_impact[a,b,g]   = (adjusted_impact[a,g] + adjusted_impact[b,g]) / 2
 lineup_impact[g]     = mean(adjusted_impact of the five teammates)
 shrunk_impact       = mean_impact × n_games / (n_games + 10)
+affinity_score      = lineup shrunk_impact
 ```
 
 `adjusted_impact` is retained as an interface field name, but charts label it **adjusted damage**. A value of +1 means one training-role standard deviation above predicted DPM. It does not mean one extra win or a causal contribution.
 
 For a pair, average its per-game scores over games actually played together on the same team. Do not use the correlation between career averages. Pair IDs sort both player IDs and include team ID. A lineup fixes all five players, their roles and their team.
+
+The final column of `lineups.csv`, **`affinity_score` (lineup affinity / 亲密度)**, gives that exact lineup's mean adjusted damage multiplied by `n_games / (n_games + 10)`. It equals the average of its ten pair scores when every pair uses those same evaluated lineup-games and the same shrinkage factor. Do not average season-level `pairs.csv` rows, which can include games with other rosters. This field exposes the existing descriptive co-performance definition; it is signed, is not a 0–100 scale, and does not estimate interpersonal closeness or causal synergy. Warmup-only lineups have a null score. Small samples retain their score and the existing `eligible` flag; the lineup's `ci_low` / `ci_high` also apply to this score.
 
 ### Sample size and uncertainty
 
@@ -98,5 +107,6 @@ Each also has an SVG version. Examples are selected by sample coverage, with sta
 | `build_test_data.py` | Complete-game test sampling and consistent subset summaries |
 | `tests/test_pipeline.py` | Roster integrity, missingness, time leakage, exported model and frontend data checks |
 | `tests/test_data_contract.py` | Matching test/processed filenames, columns, types, JSON structure and sample links |
+| `tests/test_lineup_affinity.py` | Exact-roster affinity arithmetic, pair equivalence, nulls, eligibility and final-column export |
 
 For frontend paths, field units and filtering rules see [`data/README.md`](../data/README.md).

@@ -2,6 +2,7 @@ import { h } from '../../utils/dom.js';
 import { PLAYER_CHART_CATEGORIES, findCategory } from './player-chart-config.js';
 import { mountPlayerRadar, createRadarAxes, createRadarScaleNote } from './player-radar-chart.js?v=scale-zoom';
 import { mountPlayerTimeline } from './player-timeline-chart.js';
+import { profileValues } from './player-baseline.js';
 
 function createSelect(options, value) {
   return h(
@@ -74,9 +75,9 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
 
   const categorySelect = createSelect(PLAYER_CHART_CATEGORIES, category.id);
   const metricWrap = h('div', { class: 'chart-control' }, ['Metrics']);
-  const expectedToggle = h('label', { class: 'chart-toggle' }, [
+  const baselineToggle = h('label', { class: 'chart-toggle' }, [
     h('input', { type: 'checkbox' }),
-    'Show Expected DPM',
+    'Show baseline',
   ]);
 
   let timelineChart;
@@ -103,14 +104,14 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
     ]),
   });
 
-  const radarAxes = createRadarAxes(players);
+  const radarAxes = createRadarAxes([...players, player]);
   const radar = createPanel({
     index: 'VIZ 02',
     title: 'Player profile',
     vizId: 'player-radar',
     stageClass: 'player-radar-stage',
     controls: h('div', { class: 'chart-controls' }, [
-      expectedToggle,
+      baselineToggle,
       h('div', { class: 'radar-zoom-controls', role: 'group', 'aria-label': 'Radar scale zoom' }, [
         h('button', { class: 'radar-zoom-btn', type: 'button', 'aria-label': 'Tighten scale', dataset: { zoom: 'in' } }, ['+']),
         h('button', { class: 'radar-zoom-btn', type: 'button', 'aria-label': 'Widen scale', dataset: { zoom: 'out' } }, ['−']),
@@ -129,13 +130,14 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
   renderScaleNote();
   radar.node.append(scaleNoteHost);
 
-  const expectedInput = expectedToggle.querySelector('input');
-  const expected = player.stats?.mean_expected_dpm;
-  if (expected == null || !Number.isFinite(expected)) {
-    expectedInput.disabled = true;
-    expectedToggle.classList.add('is-disabled');
+  const baselineInput = baselineToggle.querySelector('input');
+  const hasBaseline = profileValues(player.stats, radarAxes, true).some(Number.isFinite);
+  if (!hasBaseline) {
+    baselineInput.disabled = true;
+    baselineToggle.classList.add('is-disabled');
+    baselineToggle.title = 'No historical baseline available for this player.';
   } else {
-    expectedInput.checked = true;
+    baselineInput.checked = true;
   }
 
   const root = h('div', { class: 'viz-grid player-viz-grid' }, [timeline.node, radar.node]);
@@ -149,7 +151,7 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
       onSpanChange: renderScaleNote,
     });
     timelineChart.update(selectedFields(category, selectedIds));
-    if (expectedInput.checked) radarChart.setExpected(true);
+    if (baselineInput.checked) radarChart.setBaseline(true);
 
     radar.node.querySelector('[data-zoom="in"]')?.addEventListener('click', () => radarChart.zoomIn());
     radar.node.querySelector('[data-zoom="out"]')?.addEventListener('click', () => radarChart.zoomOut());
@@ -163,8 +165,8 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
       mountPicks();
       timelineChart.update(selectedFields(category, selectedIds));
     });
-    expectedInput.addEventListener('change', (event) => {
-      radarChart.setExpected(event.target.checked);
+    baselineInput.addEventListener('change', (event) => {
+      radarChart.setBaseline(event.target.checked);
     });
   });
 

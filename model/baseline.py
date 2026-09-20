@@ -10,6 +10,7 @@ from sklearn.preprocessing import OneHotEncoder
 
 FEATURES = ["role", "role_champion", "opponent_champion", "patch", "side", "team_id", "opponent_team_id"]
 ALPHA = 20.0
+PROFILE_BASELINE_METRICS = ["gold_share", "damage_share", "vision_per_minute"]
 
 
 def make_model():
@@ -36,6 +37,8 @@ def evaluate(frame):
     p["prediction_status"] = "warmup"
     for c in ["expected_dpm", "baseline_dpm", "training_role_sd", "adjusted_impact"]:
         p[c] = np.nan
+    for metric in PROFILE_BASELINE_METRICS:
+        p[f"baseline_{metric}"] = np.nan
     p["train_end_day"] = pd.Series(pd.NA, index=p.index, dtype="string")
     folds = []
     for number, days in enumerate(chronological_blocks(p)[1:], start=1):
@@ -50,6 +53,11 @@ def evaluate(frame):
         sd = test.role.map(role_sd).fillna(max(1, train.dpm.std()))
         p.loc[mask, "expected_dpm"] = predicted
         p.loc[mask, "baseline_dpm"] = naive
+        # Reference profiles use only earlier games in the same role. Missing
+        # historical observations stay unavailable, rather than becoming zero.
+        for metric in PROFILE_BASELINE_METRICS:
+            role_reference = train.groupby("role")[metric].mean()
+            p.loc[mask, f"baseline_{metric}"] = test.role.map(role_reference).to_numpy(dtype=float, na_value=np.nan)
         p.loc[mask, "training_role_sd"] = sd
         p.loc[mask, "adjusted_impact"] = (test.dpm - predicted) / sd
         p.loc[mask, "fold"] = number

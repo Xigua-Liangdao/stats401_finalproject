@@ -40,11 +40,13 @@ const PLAYER_STAT_FIELDS = [
   'n_games_total', 'n_games', 'n_days', 'mean_impact', 'shrunk_impact',
   'ci_low', 'ci_high', 'mean_gold_share', 'mean_damage_share', 'mean_dpm',
   'mean_expected_dpm', 'win_rate', 'mean_vision_per_minute',
+  'mean_baseline_gold_share', 'mean_baseline_damage_share',
+  'mean_baseline_dpm', 'mean_baseline_vision_per_minute',
 ];
 const LINEUP_STAT_FIELDS = [
   'n_games_total', 'n_games', 'n_days', 'mean_impact', 'shrunk_impact',
   'ci_low', 'ci_high', 'win_rate', 'mean_dpm', 'mean_vision_per_minute',
-  'gold_concentration', 'damage_concentration',
+  'gold_concentration', 'damage_concentration', 'affinity_score',
 ];
 const PAIR_STAT_FIELDS = [
   'n_games_total', 'n_games', 'n_days', 'mean_impact', 'shrunk_impact',

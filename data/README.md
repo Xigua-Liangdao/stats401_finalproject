@@ -62,13 +62,15 @@ Audited counts and missing values: [`model/reports/data_quality.json`](../model/
 | `timeline.csv` | Player × team × role × observed day | Actual/expected DPM timeline; evaluated dates only |
 | `pairs.csv` | Unordered player pair × team, `pair_id` | Heatmap and network edges |
 | `pair_games.csv` | Pair × team × game | Recompute pair scores after split/patch/date filtering; 10 pairs per five-player team-game |
-| `lineups.csv` | Team + role-ordered five-player roster, `lineup_id` | Lineup comparison / parallel coordinates |
+| `lineups.csv` | Team + role-ordered five-player roster, `lineup_id` | Lineup comparison / parallel coordinates; final column is `affinity_score` |
 | `lineup_games.csv` | Lineup × game | Filterable lineup profiles; 1,610 rows |
 | `teams.csv` | Team, `team_id` | Team selector and sample sizes |
 | `team_panel.csv` | Player/lineup catalogue rows | Frontend identities; same columns in test and processed |
 | `schema.json` | Fields, declared dtypes, permitted nulls and row counts | Shared machine-readable export contract |
 
 ## Field definitions
+
+Schema **1.1.0** adds player profile baseline fields and the final lineup `affinity_score` column. Existing field meanings are preserved; both dataset directories use the same version.
 
 ### Game-level fields
 
@@ -91,6 +93,7 @@ Audited counts and missing values: [`model/reports/data_quality.json`](../model/
 | `gold_diff_at_15`, `xp_diff_at_15`, `cs_diff_at_15` | Optional source differences at minute 15; all null in this snapshot |
 | `prediction_status`, `fold`, `train_end_day` | `warmup` / fold 0 / null cutoff, or `out_of_time` / folds 1–4 / last training date |
 | `expected_dpm`, `baseline_dpm` | Context Ridge prediction, role-mean reference prediction; null in warmup |
+| `baseline_gold_share`, `baseline_damage_share`, `baseline_vision_per_minute` | Same-role means from strictly earlier training days in the same fold as `baseline_dpm`; null in warmup or when that historical metric is unavailable |
 | `training_role_sd` | Sample SD of DPM for this role in that fold's training set; minimum 1 |
 | `adjusted_impact` | `(dpm − expected_dpm) / training_role_sd`; **adjusted damage**, not overall impact or causal value |
 | `pair_impact`, `lineup_impact` | Mean adjusted damage of the two / five players for that game; null if not evaluated |
@@ -108,13 +111,17 @@ All score-related summaries, win rates and resource means use **the same out-of-
 | `n_games_total`, `n_games`, `n_days` | All observed games; evaluated games; distinct evaluated match days |
 | `mean_impact` | Unshrunk mean adjusted damage (or pair/lineup mean) |
 | `shrunk_impact` | `mean_impact × n_games / (n_games + 10)`; stabilization rule, not a fitted empirical-Bayes model |
+| `affinity_score` in `lineups` | Final numeric nullable column: the exact five-player lineup's `shrunk_impact`, also exposed in `dashboard.json`; signed descriptive co-performance / 亲密度, not a 0–100 or causal synergy score |
 | `ci_low`, `ci_high` | 95% day-cluster bootstrap interval for the shrunk mean, conditional on fixed fitted predictions; null below 3 days |
 | `eligible` | At least 10 evaluated games and 3 match days; default display rule, not a significance test |
 | `win_rate` | Fraction of evaluated games won |
 | `mean_gold_share`, `mean_damage_share`, `mean_dpm`, `mean_expected_dpm`, `mean_vision_per_minute` | Arithmetic means over evaluated games |
+| `mean_baseline_gold_share`, `mean_baseline_damage_share`, `mean_baseline_dpm`, `mean_baseline_vision_per_minute` | Player/team/role's historical-role references averaged over evaluated games with that metric observed; unavailable references are omitted, all unavailable stays null. Radar impact uses zero (on expected DPM), not an empirical role residual mean. |
 | `actual_dpm`, `expected_dpm`, `adjusted_impact` in `timeline` | Arithmetic means over a player's evaluated games on that day; `n_games` gives weight |
 
 **Scatterplots use `mean_impact`; heatmaps use `shrunk_impact`.** The exported confidence intervals belong to `shrunk_impact`. Do not attach them to the scatterplot's unshrunk mean.
+
+Lineup affinity averages the five players' adjusted damage within each evaluated game of that exact team and role-ordered roster, then averages these games and multiplies by `n_games / (n_games + 10)`. Averaging all ten pair scores on those same games gives the same result. Averaging season-level pair rows can mix other rosters and is not the lineup affinity. Warmup-only lineups keep `affinity_score` null; low-sample lineups retain `eligible = false` even when a score is available. The lineup's `ci_low` / `ci_high` apply to affinity as well as `shrunk_impact`.
 
 ## Frontend integration
 
