@@ -28,6 +28,7 @@ export async function openPairImpactDrawer(origin) {
         children: createPairHeatmapPanel({
           players: context.players,
           pairs: context.pairs,
+          precomputed: context.precomputed,
           selectedIds: context.selectedPlayers,
           teamName: origin.teamName,
         }),

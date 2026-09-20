@@ -8,6 +8,7 @@ import pandas as pd
 
 from prepare import ROLES, stable_id
 from player_baseline import season_role_baselines
+from lineup_affinity import encode_heatmap
 
 SHRINKAGE_GAMES = 10
 MIN_GAMES = 10
@@ -82,10 +83,10 @@ def aggregate(p, baseline_reference=None):
         row.update({"n_games_total": len(group), **score_summary(group, "lineup_impact"), "win_rate": scored.result.mean()})
         for col in ["mean_dpm", "mean_vision_per_minute", "gold_concentration", "damage_concentration"] + [f"{r}_{s}_share" for r in ROLES for s in ["gold", "damage"]]:
             row[col] = scored[col].mean()
-        # Final exported column: all ten pairs averaged over these exact-roster
-        # evaluated games equal the five-player mean, with the same shrinkage.
-        row["affinity_score"] = row["shrunk_impact"]
         lineups.append(row)
+    for lineup in lineups:
+        # Final column preserves all 25 original heatmap cells and their detail.
+        lineup["affinity_score"] = encode_heatmap(lineup, players, pairs)
     teams = []
     for tid, group in lg.groupby("team_id", sort=True):
         scored = group.dropna(subset=["lineup_impact"])

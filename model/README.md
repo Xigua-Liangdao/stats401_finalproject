@@ -62,14 +62,17 @@ adjusted_impact[i,g] = (actual_dpm[i,g] − expected_dpm[i,g]) / training_role_s
 pair_impact[a,b,g]   = (adjusted_impact[a,g] + adjusted_impact[b,g]) / 2
 lineup_impact[g]     = mean(adjusted_impact of the five teammates)
 shrunk_impact       = mean_impact × n_games / (n_games + 10)
-affinity_score      = lineup shrunk_impact
 ```
 
 `adjusted_impact` is retained as an interface field name, but charts label it **adjusted damage**. A value of +1 means one training-role standard deviation above predicted DPM. It does not mean one extra win or a causal contribution.
 
 For a pair, average its per-game scores over games actually played together on the same team. Do not use the correlation between career averages. Pair IDs sort both player IDs and include team ID. A lineup fixes all five players, their roles and their team.
 
-The final column of `lineups.csv`, **`affinity_score` (lineup affinity / 亲密度)**, gives that exact lineup's mean adjusted damage multiplied by `n_games / (n_games + 10)`. It equals the average of its ten pair scores when every pair uses those same evaluated lineup-games and the same shrinkage factor. Do not average season-level `pairs.csv` rows, which can include games with other rosters. This field exposes the existing descriptive co-performance definition; it is signed, is not a 0–100 scale, and does not estimate interpersonal closeness or causal synergy. Warmup-only lineups have a null score. Small samples retain their score and the existing `eligible` flag; the lineup's `ci_low` / `ci_high` also apply to this score.
+The final column of `lineups.csv`, **`affinity_score` (亲密度)**, is a JSON string containing the precomputed five-player pair heatmap. It preserves the selection, scores and cell states of `view/features/pair-impact/pair-impact-heatmap.js`, introduced in commit `cf63f4f`. For each lineup, select rows from that dataset's `pairs.csv` with the same team and both player IDs in the roster. These pair histories include games played with other teammates; they are not restricted to games of the exact five-player lineup. Pair values use the same eight-decimal representation as the exported pair table. The test fixture builds its payload from its own pair summaries, while player season-role baselines continue to inherit the full-season reference.
+
+The version-1 payload contains the five `players`, 25 row-major `cells`, a symmetric color `limit` and `hasEligiblePair`. Each cell contains `row`, `col`, `kind`, `value` and its `pair` details. Diagonal cells are `self` with null values and pairs; unavailable scores are `missing` with null values. Finite pair `shrunk_impact` values are retained for both `eligible` and `sparse` cells. The color limit is `max(0.15, max(abs(finite cell values)))`. The frontend decodes this column once and draws the lineup heatmap without loading the global pair table. Player and team pair views still load pair rows when needed. See the [payload contract](../data/README.md#lineup-affinity-payload) for the complete shape.
+
+`affinity_score` contains the ten distinct pair results mirrored across the heatmap; it is not a scalar lineup score. The existing lineup `shrunk_impact` remains the separate shrunk mean adjusted damage for the exact five-player roster, with its own lineup confidence interval. Each payload pair retains that pair's confidence interval. These signed descriptive co-performance measures do not estimate interpersonal closeness or causal synergy.
 
 ### Sample size and uncertainty
 
@@ -109,6 +112,6 @@ Each also has an SVG version. Examples are selected by sample coverage, with sta
 | `build_test_data.py` | Complete-game test sampling and consistent subset summaries |
 | `tests/test_pipeline.py` | Roster integrity, missingness, time leakage, exported model and frontend data checks |
 | `tests/test_data_contract.py` | Matching test/processed filenames, columns, types, JSON structure and sample links |
-| `tests/test_lineup_affinity.py` | Exact-roster affinity arithmetic, pair equivalence, nulls, eligibility and final-column export |
+| `tests/test_lineup_affinity.py` | Original pair heatmap parity, roster selection, missing/sparse cells and final-column JSON export |
 
 For frontend paths, field units and filtering rules see [`data/README.md`](../data/README.md).

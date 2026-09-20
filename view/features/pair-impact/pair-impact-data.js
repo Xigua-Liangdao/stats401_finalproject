@@ -1,4 +1,4 @@
-import { dataSource } from '../../utils/data-source.js?v=pair-heatmap5';
+import { dataSource } from '../../utils/data-source.js';
 import { ROLE_ORDER } from '../../utils/constants.js';
 
 export const PAIR_STAT_CARDS = [
@@ -23,34 +23,37 @@ function uniqueById(players) {
 function buildRoster(origin, teamPlayers) {
   const selectedIds = origin.selectedPlayerIds ?? [];
   const selected = new Set(selectedIds);
-  const byId = Object.fromEntries(teamPlayers.map((player) => [player.id, player]));
-
-  if (origin.source === 'lineup') {
-    return selectedIds.map((id, index) => {
-      if (byId[id]) return byId[id];
-      return {
-        id,
-        name: origin.selectedNames?.[index] ?? id,
-        role: null,
-        stats: { eligible: false },
-      };
-    });
-  }
-
   return uniqueById(
     teamPlayers.filter((player) => (player.stats?.n_games ?? 0) > 0 || selected.has(player.id)),
   );
 }
 
 export async function loadPairImpactContext(origin) {
+  if (origin.source === 'lineup') {
+    const precomputed = await dataSource.getLineupAffinity(origin.lineupId);
+    if (!precomputed) throw new Error(`No affinity_score found for lineup ${origin.lineupId}.`);
+    console.info('[data] pair impact', {
+      source: origin.source,
+      lineupId: origin.lineupId,
+      players: precomputed.players.length,
+      file: 'lineups.csv',
+      column: 'affinity_score',
+    });
+    return {
+      origin,
+      selectedPlayers: precomputed.players.map((player) => player.id),
+      players: precomputed.players,
+      pairs: [],
+      precomputed,
+    };
+  }
+
   const ids = origin.selectedPlayerIds ?? [];
   const [teamPlayers, pairs] = await Promise.all([
     origin.teamId ? dataSource.listTeamPlayers(origin.teamId) : Promise.resolve([]),
-    origin.source === 'lineup'
-      ? dataSource.listPairsForPlayers(ids, origin.teamId)
-      : origin.teamId
-        ? dataSource.listTeamPairs(origin.teamId)
-        : dataSource.listPairsForPlayer(ids[0], origin.teamId),
+    origin.teamId
+      ? dataSource.listTeamPairs(origin.teamId)
+      : dataSource.listPairsForPlayer(ids[0], origin.teamId),
   ]);
 
   const players = buildRoster(origin, teamPlayers);

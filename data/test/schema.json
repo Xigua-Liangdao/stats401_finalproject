@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.2.0",
+  "schema_version": "2.0.0",
   "tables": {
     "player_games": {
       "file": "player_games.csv",
@@ -528,8 +528,8 @@
           "nullable": true
         },
         "affinity_score": {
-          "dtype": "float64",
-          "nullable": true
+          "dtype": "object",
+          "nullable": false
         }
       }
     },

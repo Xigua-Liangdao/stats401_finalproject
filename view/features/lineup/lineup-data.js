@@ -9,7 +9,6 @@ export function loadLineup(id) {
 }
 
 export const LINEUP_STAT_CARDS = [
-  { key: 'affinity_score', field: 'affinity_score', format: 'impact', label: 'Lineup affinity', hint: 'Mean adjusted damage × n / (n + 10), for this five-player roster' },
   { key: 'n_games', field: 'n_games', format: 'count', label: 'Games together', hint: 'Evaluated lineup-games' },
   { key: 'win_rate', field: 'win_rate', format: 'percent', label: 'Win rate', hint: 'Evaluated games won' },
   { key: 'gold_concentration', field: 'gold_concentration', format: 'share', label: 'Gold concentration', hint: 'Sum of squared gold shares' },

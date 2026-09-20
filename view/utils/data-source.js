@@ -46,7 +46,7 @@ const PLAYER_STAT_FIELDS = [
 const LINEUP_STAT_FIELDS = [
   'n_games_total', 'n_games', 'n_days', 'mean_impact', 'shrunk_impact',
   'ci_low', 'ci_high', 'win_rate', 'mean_dpm', 'mean_vision_per_minute',
-  'gold_concentration', 'damage_concentration', 'affinity_score',
+  'gold_concentration', 'damage_concentration',
 ];
 const PAIR_STAT_FIELDS = [
   'n_games_total', 'n_games', 'n_days', 'mean_impact', 'shrunk_impact',
@@ -62,6 +62,44 @@ function sortPairs(pairs) {
     const games = (b.stats.n_games ?? -1) - (a.stats.n_games ?? -1);
     return games !== 0 ? games : a.id.localeCompare(b.id);
   });
+}
+
+function mapPair(row) {
+  return {
+    id: row.pair_id,
+    teamId: row.team_id,
+    teamName: row.team,
+    playerAId: row.player_a_id,
+    playerBId: row.player_b_id,
+    playerA: row.player_a,
+    playerB: row.player_b,
+    stats: summaryStats(row, PAIR_STAT_FIELDS),
+  };
+}
+
+function parseLineupAffinity(value, lineupId) {
+  let payload;
+  try {
+    payload = JSON.parse(value);
+  } catch {
+    throw new Error(`Invalid affinity_score JSON for lineup ${lineupId}. Regenerate lineups.csv.`);
+  }
+  const kinds = new Set(['self', 'missing', 'sparse', 'eligible']);
+  const validPlayers = Array.isArray(payload?.players) && payload.players.length === ROLE_ORDER.length
+    && payload.players.every((player) => typeof player?.id === 'string'
+      && typeof player.name === 'string' && (player.role === null || typeof player.role === 'string'));
+  const n = payload?.players?.length;
+  const validCells = validPlayers && Array.isArray(payload.cells) && payload.cells.length === n * n
+    && payload.cells.every((cell, index) => cell?.row === Math.floor(index / n)
+      && cell.col === index % n && kinds.has(cell.kind)
+      && (cell.value === null || Number.isFinite(cell.value))
+      && (cell.pair === null || (typeof cell.pair === 'object' && cell.pair.stats))
+      && (cell.value === null || cell.pair !== null));
+  if (payload?.version !== 1 || !validCells || !Number.isFinite(payload.limit)
+    || payload.limit < 0.15 || typeof payload.hasEligiblePair !== 'boolean') {
+    throw new Error(`Invalid affinity_score payload for lineup ${lineupId}. Regenerate lineups.csv.`);
+  }
+  return payload;
 }
 
 function lineupPlayersFromRow(row, playerByTeam) {
@@ -144,18 +182,6 @@ function hydrateFromPanel(rows, summaries = {}) {
   });
   const lineupById = indexById(lineups);
 
-  const pairs = sortPairs(
-    (summaries.pairs ?? []).map((row) => ({
-      id: row.pair_id,
-      teamId: row.team_id,
-      teamName: row.team,
-      playerAId: row.player_a_id,
-      playerBId: row.player_b_id,
-      playerA: row.player_a,
-      playerB: row.player_b,
-      stats: summaryStats(row, PAIR_STAT_FIELDS),
-    })),
-  );
   const first = rows[0] || {};
 
   return {
@@ -166,7 +192,6 @@ function hydrateFromPanel(rows, summaries = {}) {
     teams,
     players,
     lineups,
-    pairs,
     teamById,
     playerById,
     lineupById,
@@ -190,21 +215,33 @@ async function fetchCsv(filename) {
 }
 
 let catalogPromise;
+let lineupRowsPromise;
+let pairsPromise;
 let playerGamesPromise;
 let lineupGamesPromise;
+const lineupAffinityById = new Map();
+
+function loadLineupRows() {
+  if (!lineupRowsPromise) lineupRowsPromise = fetchCsv('lineups.csv');
+  return lineupRowsPromise;
+}
+
+function loadPairs() {
+  if (!pairsPromise) pairsPromise = fetchCsv('pairs.csv').then((rows) => sortPairs(rows.map(mapPair)));
+  return pairsPromise;
+}
 
 function loadCatalogRecord() {
   if (!catalogPromise) {
     catalogPromise = Promise.all([
       fetchCsv('team_panel.csv'),
       fetchCsv('players.csv'),
-      fetchCsv('lineups.csv'),
-      fetchCsv('pairs.csv'),
+      loadLineupRows(),
       fetchCsv('teams.csv'),
       loadMediaManifest(),
-    ]).then(([panel, players, lineups, pairs, teams]) => {
+    ]).then(([panel, players, lineups, teams]) => {
       if (!panel.length) throw new Error('team_panel.csv is empty.');
-      return hydrateFromPanel(panel, { players, lineups, pairs, teams });
+      return hydrateFromPanel(panel, { players, lineups, teams });
     });
   }
   return catalogPromise;
@@ -300,16 +337,16 @@ function sideByLineupGame(playerRows) {
   return sides;
 }
 
-function pairsForPlayer(catalog, playerId, teamId) {
-  return catalog.pairs.filter((pair) => {
+function pairsForPlayer(pairs, playerId, teamId) {
+  return pairs.filter((pair) => {
     if (teamId && pair.teamId !== teamId) return false;
     return pair.playerAId === playerId || pair.playerBId === playerId;
   });
 }
 
-function pairsForPlayers(catalog, playerIds, teamId) {
+function pairsForPlayers(pairs, playerIds, teamId) {
   const ids = new Set(playerIds.filter(Boolean));
-  return catalog.pairs.filter((pair) => {
+  return pairs.filter((pair) => {
     if (teamId && pair.teamId !== teamId) return false;
     return ids.has(pair.playerAId) && ids.has(pair.playerBId);
   });
@@ -342,6 +379,18 @@ export const dataSource = {
     return catalog.lineupById[id] ?? null;
   },
 
+  async getLineupAffinity(id) {
+    if (!lineupAffinityById.has(id)) {
+      const rows = await loadLineupRows();
+      const row = rows.find((item) => item.lineup_id === id);
+      if (!row) return null;
+      if (!lineupAffinityById.has(id)) {
+        lineupAffinityById.set(id, parseLineupAffinity(row.affinity_score, id));
+      }
+    }
+    return lineupAffinityById.get(id);
+  },
+
   async listPlayersByTeam() {
     const catalog = await loadCatalogRecord();
     return catalog.teams.map((team) => ({
@@ -369,18 +418,16 @@ export const dataSource = {
   },
 
   async listTeamPairs(teamId) {
-    const catalog = await loadCatalogRecord();
-    return catalog.pairs.filter((pair) => pair.teamId === teamId);
+    const pairs = await loadPairs();
+    return pairs.filter((pair) => pair.teamId === teamId);
   },
 
   async listPairsForPlayer(playerId, teamId) {
-    const catalog = await loadCatalogRecord();
-    return pairsForPlayer(catalog, playerId, teamId);
+    return pairsForPlayer(await loadPairs(), playerId, teamId);
   },
 
   async listPairsForPlayers(playerIds, teamId) {
-    const catalog = await loadCatalogRecord();
-    return pairsForPlayers(catalog, playerIds, teamId);
+    return pairsForPlayers(await loadPairs(), playerIds, teamId);
   },
 
   async loadPlayerGames(playerId) {

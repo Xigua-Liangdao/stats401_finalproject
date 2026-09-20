@@ -49,6 +49,7 @@ def main():
                 "score_definition": "(actual DPM - expected DPM) / training-role DPM SD",
                 "player_baseline_definition": "Full-season same-role player means: average each player's observed season/role values across teams, then weight players equally. Gold share, damage share, DPM and vision/min include warmup; Impact averages each player's shrunk evaluated impact. Missing values are omitted. Descriptive season reference, not a forecast.",
                 "pair_definition": "mean of both players' adjusted damage per shared game; descriptive association",
+                "affinity_definition": "JSON-encoded original lineup pair-impact heatmap: same-team pair summaries for the five roster IDs, including shared games in other lineups; preserves cells, scores, eligibility, detail and color limit from the frontend.",
                 "shrinkage_games": SHRINKAGE_GAMES, "minimum_games": MIN_GAMES, "minimum_days": MIN_DAYS,
                 "bootstrap_replicates": BOOTSTRAPS,
                 "scope": "Actual player/team/pair/lineup score summaries use out-of-time games only. n_games_total and ordinary-metric season-role baselines also include warmup. Baselines use the full observed season and weight distinct players equally.",
