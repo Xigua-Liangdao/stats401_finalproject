@@ -5,6 +5,7 @@ from numbers import Real
 
 import pandas as pd
 
+SCHEMA_VERSION = "2.0.0"
 SUMMARY_TABLES = ["players", "pairs", "lineups", "teams", "timeline"]
 NULLABLE_FIELDS = {
     "expected_dpm", "baseline_dpm", "training_role_sd", "adjusted_impact", "train_end_day",
@@ -47,7 +48,7 @@ def cast_table(table, fields):
 
 
 def make_schema(tables):
-    return {"schema_version": "1.0.0", "tables": {
+    return {"schema_version": SCHEMA_VERSION, "tables": {
         name: {"file": f"{name}.csv", "rows": len(table), "fields": {
             column: {"dtype": field_dtype(table[column]),
                      "nullable": bool(table[column].isna().any() or column in NULLABLE_FIELDS

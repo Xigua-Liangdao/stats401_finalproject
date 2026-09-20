@@ -1,5 +1,5 @@
 {
-  "schema_version": "1.0.0",
+  "schema_version": "2.0.0",
   "tables": {
     "player_games": {
       "file": "player_games.csv",
@@ -278,6 +278,26 @@
         "mean_vision_per_minute": {
           "dtype": "float64",
           "nullable": true
+        },
+        "mean_baseline_dpm": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_baseline_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_baseline_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_baseline_vision_per_minute": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_baseline_impact": {
+          "dtype": "float64",
+          "nullable": true
         }
       }
     },
@@ -506,6 +526,10 @@
         "sup_damage_share": {
           "dtype": "float64",
           "nullable": true
+        },
+        "affinity_score": {
+          "dtype": "object",
+          "nullable": false
         }
       }
     },

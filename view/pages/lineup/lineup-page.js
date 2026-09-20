@@ -49,6 +49,7 @@ export async function renderLineupPage(target, id) {
             onClick: () =>
               openPairImpactDrawer({
                 source: 'lineup',
+                lineupId: lineup.id,
                 teamId: lineup.team.id,
                 teamName: lineup.team.name,
                 selectedPlayerIds: lineup.players.map((player) => player.id),

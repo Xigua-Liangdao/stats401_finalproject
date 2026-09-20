@@ -30,4 +30,3 @@ export const LINEUP_VIZ = [
     description: 'Mean gold or damage share for the five players across related games.',
   },
 ];
-

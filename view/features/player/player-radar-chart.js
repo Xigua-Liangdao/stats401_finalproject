@@ -1,94 +1,24 @@
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
-import { formatFixed, formatImpact, formatPercent } from '../../utils/formatting.js';
+import { formatFixed } from '../../utils/formatting.js';
+import {
+  SPAN_STEP, axisRangeLabel, baselineValue, minimumRadarSpan,
+  profileSegments, profileValues, radiusFor,
+} from './player-baseline.js';
 
-const SPAN_STEP = 0.05;
-const SPAN_PAD = 1.04;
-const MIN_SPAN_FLOOR = 0.25;
-
-function finiteValues(players, key) {
-  return players
-    .map((player) => player.stats?.[key])
-    .filter((value) => value != null && Number.isFinite(value));
-}
-
-function extent(values, fallbackMin, fallbackMax) {
-  if (!values.length) return [fallbackMin, fallbackMax];
-  return [Math.min(...values), Math.max(...values)];
-}
+export { createRadarAxes, displayMax, axisRangeLabel } from './player-baseline.js';
 
 function snapSpan(span) {
   return Number((Math.round(span / SPAN_STEP) * SPAN_STEP).toFixed(2));
 }
 
-export function displayMax(axis, span = 1) {
-  return axis.min + (axis.max - axis.min) * span;
-}
-
-export function axisRangeLabel(axis, span = 1) {
-  return `${axis.format(axis.min)}–${axis.format(displayMax(axis, span))}`;
-}
-
-export function createRadarAxes(players = []) {
-  const dpmValues = [...finiteValues(players, 'mean_dpm'), ...finiteValues(players, 'mean_expected_dpm')];
-  const visionValues = finiteValues(players, 'mean_vision_per_minute');
-  const impactValues = finiteValues(players, 'shrunk_impact');
-  const dpmMax = Math.max(0, ...dpmValues);
-  const visionMax = Math.max(0, ...visionValues);
-  const [impactMin, impactMax] = extent(impactValues, 0, 0);
-
-  return [
-    {
-      key: 'mean_gold_share',
-      label: 'Gold Share',
-      min: 0,
-      max: 1,
-      kind: 'theoretical',
-      rangeLabel: '0–100%',
-      format: (value) => formatPercent(value),
-    },
-    {
-      key: 'mean_damage_share',
-      label: 'Damage Share',
-      min: 0,
-      max: 1,
-      kind: 'theoretical',
-      rangeLabel: '0–100%',
-      format: (value) => formatPercent(value),
-    },
-    {
-      key: 'mean_dpm',
-      label: 'DPM',
-      min: 0,
-      max: dpmMax || 1,
-      kind: 'observed',
-      rangeLabel: `0–${formatFixed(dpmMax || 0, 1)}`,
-      format: (value) => formatFixed(value, 1),
-    },
-    {
-      key: 'mean_vision_per_minute',
-      label: 'Vision / min',
-      min: 0,
-      max: visionMax || 1,
-      kind: 'observed',
-      rangeLabel: `0–${formatFixed(visionMax || 0, 2)}`,
-      format: (value) => formatFixed(value, 2),
-    },
-    {
-      key: 'shrunk_impact',
-      label: 'Impact',
-      min: impactMin,
-      max: impactMax === impactMin ? impactMin + 1 : impactMax,
-      kind: 'observed',
-      rangeLabel: `${formatImpact(impactMin)}–${formatImpact(impactMax)}`,
-      format: (value) => formatImpact(value),
-      zeroLabel: '0 = on expected DPM',
-    },
-  ];
-}
-
 export function createRadarScaleNote(axes, span = 1) {
   return h('div', { class: 'radar-scale-note' }, [
+    h('div', {}, [
+      'Dashed season role baseline: equal-weight average of same-role players’ full-season averages, including warmup games. ',
+      'Impact uses their season shrunk impacts from evaluated games. Transfers count as one player. ',
+      'Solid profile: this player’s evaluated-game summary for the selected team and season. Missing values are omitted.',
+    ]),
     h('div', { class: 'radar-scale-note__title coord' }, ['Metric scale · outer ring']),
     h(
       'dl',
@@ -106,13 +36,6 @@ export function createRadarScaleNote(axes, span = 1) {
       ),
     ),
   ]);
-}
-
-function radiusFor(axis, value, span = 1) {
-  if (value == null || !Number.isFinite(value)) return null;
-  const max = displayMax(axis, span);
-  if (max === axis.min) return 0;
-  return Math.max(0, Math.min(1, (value - axis.min) / (max - axis.min)));
 }
 
 function pointAt(center, radius, index, total, value) {
@@ -139,27 +62,17 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
   stage.append(svg.node(), tooltip, hint);
 
-  let showExpected = false;
+  let showBaseline = false;
   let span = 1;
+  const hasActual = profileValues(stats, axes).some(Number.isFinite);
+  const hasBaseline = profileValues(stats, axes, true).some(Number.isFinite);
 
   function hideTip() {
     tooltip.hidden = true;
   }
 
-  function profileValue(axis) {
-    return axis.key === 'mean_dpm' ? stats.mean_dpm : stats[axis.key];
-  }
-
   function minSpan() {
-    const values = axes.map((axis) => {
-      const actual = radiusFor(axis, profileValue(axis), 1);
-      const expected =
-        showExpected && axis.key === 'mean_dpm' ? radiusFor(axis, stats.mean_expected_dpm, 1) : null;
-      return Math.max(actual ?? 0, expected ?? 0);
-    });
-    const peak = Math.max(0, ...values);
-    const floor = Math.min(1, Math.max(peak * SPAN_PAD, MIN_SPAN_FLOOR));
-    return Math.min(1, Math.ceil(floor / SPAN_STEP) * SPAN_STEP);
+    return minimumRadarSpan(stats, axes, showBaseline);
   }
 
   function clampSpan(next) {
@@ -184,6 +97,12 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
   }
 
   function updateHint() {
+    if (!hasActual) {
+      hint.textContent = showBaseline && hasBaseline
+        ? 'No evaluated player profile · showing season role baseline only'
+        : 'No evaluated player profile available';
+      return;
+    }
     const pct = Math.round(span * 100);
     const floor = Math.round(minSpan() * 100);
     hint.textContent =
@@ -206,25 +125,18 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
   );
 
   function showTip(event, axis) {
-    const rows = [];
-    if (axis.key === 'mean_dpm') {
-      const actual = stats.mean_dpm;
-      const expected = stats.mean_expected_dpm;
-      rows.push('DPM');
-      rows.push(`Actual: ${axis.format(actual)}`);
-      if (expected != null && Number.isFinite(expected)) {
-        const diff = actual == null ? null : actual - expected;
-        const pct = actual && expected ? (diff / expected) * 100 : null;
-        rows.push(`Expected: ${axis.format(expected)}`);
-        if (diff != null) {
-          let difference = `Difference: ${diff >= 0 ? '+' : ''}${formatFixed(diff, 1)}`;
-          if (pct != null && Number.isFinite(pct)) difference += ` (${pct >= 0 ? '+' : ''}${pct.toFixed(1)}%)`;
-          rows.push(difference);
-        }
+    const actual = stats[axis.key];
+    const baseline = baselineValue(stats, axis.key);
+    const rows = [axis.label, `Actual: ${axis.format(actual)}`];
+    if (showBaseline) {
+      rows.push(`Season role baseline: ${axis.format(baseline)}`);
+      if (Number.isFinite(actual) && baseline != null) {
+        const diff = actual - baseline;
+        rows.push(`Difference: ${diff > 0 && axis.key !== 'shrunk_impact' ? '+' : ''}${axis.format(diff)}`);
       }
-    } else {
-      rows.push(axis.label);
-      rows.push(axis.format(stats[axis.key]));
+    }
+    if (axis.key === 'mean_dpm' && Number.isFinite(stats.mean_expected_dpm)) {
+      rows.push(`Model-expected DPM: ${formatFixed(stats.mean_expected_dpm, 1)}`);
     }
     rows.push(`${axisRangeLabel(axis, span)} · ${axis.kind}`);
     tooltip.innerHTML = rows.map((line) => `<div>${line}</div>`).join('');
@@ -234,8 +146,24 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
     tooltip.style.top = `${Math.max(8, event.clientY - bounds.top - 10)}px`;
   }
 
-  function profileRadii(dpmValue) {
-    return axes.map((axis) => radiusFor(axis, axis.key === 'mean_dpm' ? dpmValue : stats[axis.key], span));
+  function drawProfile(root, values, center, radius, className, dotRadius) {
+    const radii = values.map((value, index) => radiusFor(axes[index], value, span));
+    for (const segment of profileSegments(radii)) {
+      const points = segment.points.map(({ index, value }) =>
+        pointAt(center, radius, index, axes.length, value).join(','),
+      ).join(' ');
+      if (segment.points.length > 1) {
+        const shape = root.append(segment.closed ? 'polygon' : 'polyline')
+          .attr('class', className)
+          .attr('points', points);
+        if (!segment.closed) shape.style('fill', 'none');
+      }
+      for (const { index, value } of segment.points) {
+        const [x, y] = pointAt(center, radius, index, axes.length, value);
+        root.append('circle').attr('class', `${className}-point`)
+          .attr('cx', x).attr('cy', y).attr('r', dotRadius);
+      }
+    }
   }
 
   function draw() {
@@ -246,8 +174,7 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
     svg.selectAll('*').remove();
     updateHint();
 
-    const hasAny = axes.some((axis) => stats[axis.key] != null && Number.isFinite(stats[axis.key]));
-    if (!hasAny) {
+    if (!hasActual && !(showBaseline && hasBaseline)) {
       svg.append('text')
         .attr('class', 'chart-empty')
         .attr('x', width / 2)
@@ -310,30 +237,9 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
         .text(axisRangeLabel(axis, span));
     });
 
-    const actual = profileRadii(stats.mean_dpm);
-    const expectedValue = stats.mean_expected_dpm;
-    const hasExpected = expectedValue != null && Number.isFinite(expectedValue);
-
-    root.append('polygon')
-      .attr('class', 'radar-actual')
-      .attr('points', polygon(actual, center, radius));
-
-    actual.forEach((value, index) => {
-      if (value == null) return;
-      const [x, y] = pointAt(center, radius, index, axes.length, value);
-      root.append('circle').attr('class', 'radar-actual-point').attr('cx', x).attr('cy', y).attr('r', 3.2);
-    });
-
-    if (showExpected && hasExpected) {
-      const expected = profileRadii(expectedValue);
-      root.append('polygon')
-        .attr('class', 'radar-expected')
-        .attr('points', polygon(expected, center, radius));
-      expected.forEach((value, index) => {
-        if (value == null) return;
-        const [x, y] = pointAt(center, radius, index, axes.length, value);
-        root.append('circle').attr('class', 'radar-expected-point').attr('cx', x).attr('cy', y).attr('r', 3.8);
-      });
+    drawProfile(root, profileValues(stats, axes), center, radius, 'radar-actual', 3.2);
+    if (showBaseline) {
+      drawProfile(root, profileValues(stats, axes, true), center, radius, 'radar-expected', 3.8);
     }
 
     root.append('circle')
@@ -355,8 +261,8 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
   notifySpan();
 
   return {
-    setExpected(enabled) {
-      showExpected = enabled;
+    setBaseline(enabled) {
+      showBaseline = enabled;
       span = clampSpan(span);
       draw();
       notifySpan();

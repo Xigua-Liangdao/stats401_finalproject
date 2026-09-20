@@ -18,7 +18,7 @@ The committed raw snapshot makes the normal run **offline**. To fetch the same p
 
 The pipeline checks the raw checksum, validates complete games, estimates out-of-time predictions, exports CSV/JSON, creates three PNG/SVG figures, and writes reports. It does not need an API server: GitHub Pages can serve its static outputs. `reports/manifest.json` records output hashes.
 
-Cleaning remains provisional. Both `data/test/` and `data/processed/` are exported through `export_data.py` with the same filenames and field contract. The test fixture preserves complete real games and reuses existing predictions, then recomputes its summaries. The frontend can switch directories without changing its loader. Run `python model/build_test_data.py` to regenerate the fixture from the existing processed exports.
+Cleaning remains provisional. Both `data/test/` and `data/processed/` are exported through `export_data.py` with the same filenames and field contract. The test fixture preserves complete real games and reuses existing predictions, then recomputes its player/team and co-performance summaries. Its season-role player baselines retain the full processed season's values rather than being recomputed from the 16 sampled games. The frontend can switch directories without changing its loader. Run `python model/build_test_data.py` to regenerate the fixture from the existing processed exports.
 
 ## What the model predicts
 
@@ -32,7 +32,7 @@ The model excludes current-game result, kills, gold, damage share, duration and 
 
 1. Sort distinct source match days and divide them into five contiguous blocks of nearly equal numbers of days.
 2. Use the first block as warmup. Fit on all earlier days and predict the next block, repeating four times.
-3. All ten players, both sides and all games on the same day stay together. Encoding, role reference means and role SDs are fitted from training rows only.
+3. All ten players, both sides and all games on the same day stay together. Encoding, the evaluation's role-mean DPM reference and role SDs are fitted from training rows only.
 4. Keep warmup `expected_dpm` and `adjusted_impact` null. Do not replace them with in-sample fitted values.
 5. After evaluation, fit a separate full-data model and export JSON coefficients to `reports/fitted_model.json` for future inference. It never supplies the demo residuals.
 
@@ -44,6 +44,14 @@ The source has **1,480 warmup rows** and **6,570 evaluated rows (657 games)**. O
 | Context Ridge | 129.868 | 174.214 | 0.578 |
 
 Lower MAE/RMSE is better. Overall R² partly reflects large differences between roles and is not proof of useful player ranking. Per-role errors, all fold boundaries and unseen-category rates are in [`reports/evaluation.json`](reports/evaluation.json). This is a baseline validation, not a final untouched holdout after model selection. Further model development requires fresh later data or nested time-aware tuning.
+
+### Player profile baseline
+
+The radar's **Show baseline** overlay compares a player with **all players in the same role across the full observed season**. For gold share, damage share, DPM and vision/min, first average each distinct player's observations within that season and role, then average those player means with equal weight. Resource and DPM observations include warmup games. Transfer spells are combined using `player_id`, the current player is included, and the `eligible` display flag does not restrict the reference population. Missing values are omitted separately for each metric; a player with no value for that metric is omitted from that metric's reference, and an entirely unavailable reference remains null.
+
+`players.csv` exports these references as `mean_baseline_gold_share`, `mean_baseline_damage_share`, `mean_baseline_dpm` and `mean_baseline_vision_per_minute`. The impact axis uses `mean_baseline_impact`: compute each season-role player's mean valid evaluated adjusted damage, shrink it by `n / (n + 10)` using that player's valid evaluated-game count, then equally average those player scores. Warmup-only players do not contribute to the impact reference. Each baseline is fixed for a season and role, including across team transfers. Player summaries are keyed by `player_id`, `team_id`, `role` and `season`; the profile's actual `mean_*` values and `shrunk_impact` still summarize that player's evaluated games for the selected team, role and season.
+
+These are descriptive, retrospective full-season references, not out-of-time forecasts or additional fitted Ridge targets. The game-level `baseline_dpm` keeps its original earlier-training-data meaning for model evaluation and the timeline, labeled **Training role mean DPM**. The full-season profile reference is labeled **Season role baseline DPM**. The two fields have different populations and purposes; the seasonal reference never supplies model predictions or adjusted damage.
 
 ## Metric definitions
 
@@ -60,13 +68,19 @@ shrunk_impact       = mean_impact × n_games / (n_games + 10)
 
 For a pair, average its per-game scores over games actually played together on the same team. Do not use the correlation between career averages. Pair IDs sort both player IDs and include team ID. A lineup fixes all five players, their roles and their team.
 
+The final column of `lineups.csv`, **`affinity_score` (亲密度)**, is a JSON string containing the precomputed five-player pair heatmap. It preserves the selection, scores and cell states of `view/features/pair-impact/pair-impact-heatmap.js`, introduced in commit `cf63f4f`. For each lineup, select rows from that dataset's `pairs.csv` with the same team and both player IDs in the roster. These pair histories include games played with other teammates; they are not restricted to games of the exact five-player lineup. Pair values use the same eight-decimal representation as the exported pair table. The test fixture builds its payload from its own pair summaries, while player season-role baselines continue to inherit the full-season reference.
+
+The version-1 payload contains the five `players`, 25 row-major `cells`, a symmetric color `limit` and `hasEligiblePair`. Each cell contains `row`, `col`, `kind`, `value` and its `pair` details. Diagonal cells are `self` with null values and pairs; unavailable scores are `missing` with null values. Finite pair `shrunk_impact` values are retained for both `eligible` and `sparse` cells. The color limit is `max(0.15, max(abs(finite cell values)))`. The frontend decodes this column once and draws the lineup heatmap without loading the global pair table. Player and team pair views still load pair rows when needed. See the [payload contract](../data/README.md#lineup-affinity-payload) for the complete shape.
+
+`affinity_score` contains the ten distinct pair results mirrored across the heatmap; it is not a scalar lineup score. The existing lineup `shrunk_impact` remains the separate shrunk mean adjusted damage for the exact five-player roster, with its own lineup confidence interval. Each payload pair retains that pair's confidence interval. These signed descriptive co-performance measures do not estimate interpersonal closeness or causal synergy.
+
 ### Sample size and uncertainty
 
 - Every summary exports all-game count, evaluated-game count and number of observed match days.
 - Default eligibility is **10 evaluated games and 3 match days**. Ineligible groups remain in the data for inspection.
 - A 1,000-replicate bootstrap (seed 401) resamples whole match days, retaining all games on sampled days. Intervals are the 2.5% and 97.5% quantiles of the resampled mean multiplied by the original sample's `n/(n+10)` factor. Below three days, intervals are null.
 - These intervals condition on the fitted predictions and observed shrinkage factor. They omit model uncertainty and possible dependence across days. They do not constitute tests of causal synergy or correct for scanning many pairs.
-- Players' resource means and all score summaries use the same evaluated games. The scatterplot shows the unshrunk mean; the heatmap shows the shrunk mean.
+- Players' actual resource means and all score summaries use the same evaluated games. Season-role resource baselines additionally include warmup observations as described above. The scatterplot shows the unshrunk mean; the heatmap shows the shrunk mean.
 
 ## Three implemented visualizations
 
@@ -98,5 +112,6 @@ Each also has an SVG version. Examples are selected by sample coverage, with sta
 | `build_test_data.py` | Complete-game test sampling and consistent subset summaries |
 | `tests/test_pipeline.py` | Roster integrity, missingness, time leakage, exported model and frontend data checks |
 | `tests/test_data_contract.py` | Matching test/processed filenames, columns, types, JSON structure and sample links |
+| `tests/test_lineup_affinity.py` | Original pair heatmap parity, roster selection, missing/sparse cells and final-column JSON export |
 
 For frontend paths, field units and filtering rules see [`data/README.md`](../data/README.md).

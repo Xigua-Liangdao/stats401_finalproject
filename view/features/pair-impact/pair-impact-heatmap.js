@@ -112,11 +112,11 @@ function renderDetail(detail, cell, players) {
   );
 }
 
-export function createPairHeatmapPanel({ players, pairs, selectedIds = [], teamName }) {
+export function createPairHeatmapPanel({ players, pairs = [], precomputed, selectedIds = [], teamName }) {
   const stage = h('div', { class: 'viz-stage pair-heatmap-stage', role: 'presentation' });
   const detail = h('div', { class: 'heatmap-detail', 'aria-live': 'polite' });
   renderDetail(detail, null, players);
-  const hasEligiblePair = pairs.some((pair) => pair.stats?.eligible);
+  const hasEligiblePair = precomputed ? precomputed.hasEligiblePair : pairs.some((pair) => pair.stats?.eligible);
 
   const node = h('article', { class: 'viz-placeholder panel pair-heatmap-panel', dataset: { viz: 'pair-impact' } }, [
     h('div', { class: 'viz-placeholder__chrome' }, [
@@ -131,13 +131,13 @@ export function createPairHeatmapPanel({ players, pairs, selectedIds = [], teamN
   ]);
 
   queueMicrotask(() => {
-    mountPairHeatmap(stage, detail, { players, pairs, selectedIds });
+    mountPairHeatmap(stage, detail, { players, pairs, precomputed, selectedIds });
   });
 
   return node;
 }
 
-export function mountPairHeatmap(stage, detail, { players = [], pairs = [], selectedIds = [] }) {
+export function mountPairHeatmap(stage, detail, { players = [], pairs = [], precomputed, selectedIds = [] }) {
   stage.classList.add('is-mounted');
   stage.replaceChildren();
 
@@ -146,16 +146,23 @@ export function mountPairHeatmap(stage, detail, { players = [], pairs = [], sele
   stage.append(svg.node());
 
   const selected = new Set(selectedIds);
-  const pairMap = indexPairs(pairs);
   const n = players.length;
-  const cells = [];
-  for (let row = 0; row < n; row += 1) {
-    for (let col = 0; col < n; col += 1) {
-      cells.push({ row, col, ...cellState(players[row], players[col], pairMap) });
+  let cells;
+  let limit;
+  if (precomputed) {
+    cells = precomputed.cells;
+    limit = precomputed.limit;
+  } else {
+    const pairMap = indexPairs(pairs);
+    cells = [];
+    for (let row = 0; row < n; row += 1) {
+      for (let col = 0; col < n; col += 1) {
+        cells.push({ row, col, ...cellState(players[row], players[col], pairMap) });
+      }
     }
+    const scoredValues = cells.filter((cell) => hasScore(cell)).map((cell) => Math.abs(cell.value));
+    limit = Math.max(0.15, scoredValues.length ? Math.max(...scoredValues) : 0.15);
   }
-  const scoredValues = cells.filter((cell) => hasScore(cell)).map((cell) => Math.abs(cell.value));
-  const limit = Math.max(0.15, scoredValues.length ? Math.max(...scoredValues) : 0.15);
   const fill = colorScale(limit);
 
   let pinned = null;

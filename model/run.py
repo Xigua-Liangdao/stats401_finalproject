@@ -13,7 +13,7 @@ import sklearn
 from aggregate import aggregate, BOOTSTRAPS, MIN_DAYS, MIN_GAMES, SHRINKAGE_GAMES
 from baseline import evaluate
 from build_test_data import build_test_data, read_tables
-from export_data import dataset_info, export_dataset, write_json
+from export_data import SCHEMA_VERSION, dataset_info, export_dataset, write_json
 from plots import make_figures
 from prepare import prepare, read_raw
 from scripts.build_team_panel import build_team_panel, write_team_panel
@@ -43,14 +43,16 @@ def main():
     write_json(reports / "fitted_model.json", artifact)
     write_json(reports / "environment.json", {"python": platform.python_version(), "pandas": pd.__version__, "numpy": np.__version__, "scikit_learn": sklearn.__version__})
     examples = make_figures(tables, ROOT / "model/figures")
-    metadata = {"schema_version": "1.0.0", "season": 2025, "source": source,
+    metadata = {"schema_version": SCHEMA_VERSION, "season": 2025, "source": source,
                 "dataset": dataset_info(tables, "processed"),
                 "coverage": quality, "evaluation": evaluation, "examples": examples,
                 "score_definition": "(actual DPM - expected DPM) / training-role DPM SD",
+                "player_baseline_definition": "Full-season same-role player means: average each player's observed season/role values across teams, then weight players equally. Gold share, damage share, DPM and vision/min include warmup; Impact averages each player's shrunk evaluated impact. Missing values are omitted. Descriptive season reference, not a forecast.",
                 "pair_definition": "mean of both players' adjusted damage per shared game; descriptive association",
+                "affinity_definition": "JSON-encoded original lineup pair-impact heatmap: same-team pair summaries for the five roster IDs, including shared games in other lineups; preserves cells, scores, eligibility, detail and color limit from the frontend.",
                 "shrinkage_games": SHRINKAGE_GAMES, "minimum_games": MIN_GAMES, "minimum_days": MIN_DAYS,
                 "bootstrap_replicates": BOOTSTRAPS,
-                "scope": "Aggregates use out-of-time games only. n_games_total also includes warmup.",
+                "scope": "Actual player/team/pair/lineup score summaries use out-of-time games only. n_games_total and ordinary-metric season-role baselines also include warmup. Baselines use the full observed season and weight distinct players equally.",
                 "limitations": ["DPM measures damage output, not overall player value.",
                                 "Pair scores do not identify causal synergy or support roster-swap predictions.",
                                 "15-minute differences and objective fields are unavailable in this snapshot.",

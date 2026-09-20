@@ -4,7 +4,7 @@
 
 The cleaning rules and model definitions are a **provisional demo baseline**. The frontend can be developed against `data/test/` while those decisions are refined.
 
-Both directories expose the **same 11 filenames**, CSV column order, declared dtypes/nullability, JSON keys and primitive types. Only dataset values, counts and scope differ. `test/` is a small subset of **real, complete games**, including both valid out-of-time predictions and warmup/null cases. Its player/pair/lineup summaries are recomputed for the subset. It is a frontend fixture, not an independent statistical model test set.
+Both directories expose the **same 11 filenames**, CSV column order, declared dtypes/nullability, JSON keys and primitive types. Only dataset values, counts and scope differ. `test/` is a small subset of **real, complete games**, including both valid out-of-time predictions and warmup/null cases. Its player/team and co-performance summaries are recomputed for the subset, while its player baseline fields retain the full processed season's references rather than being recomputed from the 16 sampled games. It is a frontend fixture, not an independent statistical model test set.
 
 From `view/index.html`, change only the directory:
 
@@ -18,7 +18,7 @@ const data = await response.json();
 // CSV paths also match: `${dataRoot}/player_games.csv`, `${dataRoot}/pairs.csv`, etc.
 ```
 
-`metadata.dataset` reports the loaded directory's row/game counts. `metadata.source`, `metadata.coverage` and `metadata.evaluation` retain the parent pipeline's provenance, cleaning audit and model evaluation in both files. Test-specific summaries and example IDs describe only the fixture; do not label them as whole-season results.
+`metadata.dataset` reports the loaded directory's row/game counts. `metadata.source`, `metadata.coverage` and `metadata.evaluation` retain the parent pipeline's provenance, cleaning audit and model evaluation in both files. Test-specific summaries and example IDs describe only the fixture; only the inherited season-role baseline fields describe the full season's reference population.
 
 `model/run.py` generates both directories with the same serializer. To rebuild only the test fixture from existing exports: `python model/build_test_data.py`. Verify compatibility with `python -m unittest discover -s model/tests -p 'test_data_contract.py' -v`.
 
@@ -58,17 +58,19 @@ Audited counts and missing values: [`model/reports/data_quality.json`](../model/
 |---|---|---|
 | `dashboard.json` | Metadata + `players`, `pairs`, `lineups`, `teams`, `timeline` arrays | Easiest static-page integration; numbers/booleans/nulls already typed |
 | `player_games.csv` | One player-game, `record_id` | Detail view and arbitrary game-level filters; 8,050 rows |
-| `players.csv` | Player × team × role | Resource–impact scatterplot |
+| `players.csv` | Player × team × role × season | Resource–impact scatterplot and seasonal role references |
 | `timeline.csv` | Player × team × role × observed day | Actual/expected DPM timeline; evaluated dates only |
 | `pairs.csv` | Unordered player pair × team, `pair_id` | Heatmap and network edges |
 | `pair_games.csv` | Pair × team × game | Recompute pair scores after split/patch/date filtering; 10 pairs per five-player team-game |
-| `lineups.csv` | Team + role-ordered five-player roster, `lineup_id` | Lineup comparison / parallel coordinates |
+| `lineups.csv` | Team + role-ordered five-player roster, `lineup_id` | Lineup summaries and precomputed pair heatmap; final column is the JSON string `affinity_score` |
 | `lineup_games.csv` | Lineup × game | Filterable lineup profiles; 1,610 rows |
 | `teams.csv` | Team, `team_id` | Team selector and sample sizes |
 | `team_panel.csv` | Player/lineup catalogue rows | Frontend identities; same columns in test and processed |
 | `schema.json` | Fields, declared dtypes, permitted nulls and row counts | Shared machine-readable export contract |
 
 ## Field definitions
+
+Schema **2.0.0** changes the final lineup `affinity_score` column from a nullable number to a JSON string containing the original pair heatmap result. Both dataset directories use this contract. The player profile `mean_baseline_*` fields retain their full-season, same-role player definitions, including `mean_baseline_impact`. Player summary keys include `season` alongside `player_id`, `team_id` and `role`. Game-level `baseline_dpm` keeps its original model-evaluation meaning; the earlier-training game-level `baseline_gold_share`, `baseline_damage_share` and `baseline_vision_per_minute` fields remain removed.
 
 ### Game-level fields
 
@@ -90,7 +92,7 @@ Audited counts and missing values: [`model/reports/data_quality.json`](../model/
 | `kill_participation` | (kills + assists) / team kills; null if denominator is zero or incomplete |
 | `gold_diff_at_15`, `xp_diff_at_15`, `cs_diff_at_15` | Optional source differences at minute 15; all null in this snapshot |
 | `prediction_status`, `fold`, `train_end_day` | `warmup` / fold 0 / null cutoff, or `out_of_time` / folds 1–4 / last training date |
-| `expected_dpm`, `baseline_dpm` | Context Ridge prediction, role-mean reference prediction; null in warmup |
+| `expected_dpm`, `baseline_dpm` | Context Ridge prediction and same-role mean DPM from strictly earlier training days in the evaluation fold; null in warmup. The latter is labeled **Training role mean DPM**, distinct from the season-role profile baseline. |
 | `training_role_sd` | Sample SD of DPM for this role in that fold's training set; minimum 1 |
 | `adjusted_impact` | `(dpm − expected_dpm) / training_role_sd`; **adjusted damage**, not overall impact or causal value |
 | `pair_impact`, `lineup_impact` | Mean adjusted damage of the two / five players for that game; null if not evaluated |
@@ -101,20 +103,46 @@ Audited counts and missing values: [`model/reports/data_quality.json`](../model/
 
 ### Summary fields
 
-All score-related summaries, win rates and resource means use **the same out-of-time subset**. Warmup games appear only in `n_games_total`. Aggregates cover the full evaluated snapshot and are not split-specific.
+Actual player/team summaries, score summaries, win rates and resource means use **the same out-of-time subset**. Warmup games appear in `n_games_total` and also contribute to the descriptive season-role resource/DPM baselines. They do not contribute to adjusted damage or its baseline. Aggregates cover the full evaluated snapshot and are not split-specific; player baseline fields instead use the full season-role reference population described below.
 
 | Fields | Meaning |
 |---|---|
 | `n_games_total`, `n_games`, `n_days` | All observed games; evaluated games; distinct evaluated match days |
 | `mean_impact` | Unshrunk mean adjusted damage (or pair/lineup mean) |
 | `shrunk_impact` | `mean_impact × n_games / (n_games + 10)`; stabilization rule, not a fitted empirical-Bayes model |
+| `affinity_score` in `lineups` | Final JSON-string column containing the precomputed pair heatmap, also exposed as a string in `dashboard.json`; decode using `JSON.parse` and use the payload contract below |
 | `ci_low`, `ci_high` | 95% day-cluster bootstrap interval for the shrunk mean, conditional on fixed fitted predictions; null below 3 days |
 | `eligible` | At least 10 evaluated games and 3 match days; default display rule, not a significance test |
 | `win_rate` | Fraction of evaluated games won |
 | `mean_gold_share`, `mean_damage_share`, `mean_dpm`, `mean_expected_dpm`, `mean_vision_per_minute` | Arithmetic means over evaluated games |
+| `mean_baseline_gold_share`, `mean_baseline_damage_share`, `mean_baseline_dpm`, `mean_baseline_vision_per_minute` | Full-season same-role reference: average each distinct player's observed metric across the season and role, including warmup, then equally average those player means. Transfers are combined by `player_id`; the current player is included; no eligibility filter is applied. Omit missing metric values and players with no observed value; all unavailable stays null. These values are fixed for the season and role. |
+| `mean_baseline_impact` | Full-season same-role reference for the radar's adjusted-damage axis: equally average each distinct player's shrunk mean valid evaluated adjusted damage, using `n / (n + 10)` for that player's valid evaluated-game count across teams. Excludes players without evaluated adjusted damage; all unavailable stays null. |
 | `actual_dpm`, `expected_dpm`, `adjusted_impact` in `timeline` | Arithmetic means over a player's evaluated games on that day; `n_games` gives weight |
 
 **Scatterplots use `mean_impact`; heatmaps use `shrunk_impact`.** The exported confidence intervals belong to `shrunk_impact`. Do not attach them to the scatterplot's unshrunk mean.
+
+The profile's actual `mean_*` fields remain means for the selected player's evaluated games on that team, in that role and season. Its **Show baseline** overlay is a retrospective full-season comparison, not a forecast: the baseline uses equal weight per player rather than per game or team spell. `mean_baseline_dpm` is labeled **Season role baseline DPM** and must not be substituted for the earlier-training `baseline_dpm` used to evaluate the model. Test-fixture baseline values are inherited from `processed/`.
+
+### Lineup affinity payload
+
+`affinity_score` preserves the original pair heatmap algorithm in `view/features/pair-impact/pair-impact-heatmap.js` (introduced in `cf63f4f`). Select the dataset's pair rows whose team matches the lineup and whose two player IDs are in the five-player roster. For each pair, the displayed score is its existing `shrunk_impact`: mean adjusted damage of the two players over their shared evaluated games, multiplied by `n_games / (n_games + 10)`. Those shared games can include other five-player rosters. Exported payload numbers match the eight-decimal pair CSV values.
+
+Each final-column cell contains one JSON object with the following fields:
+
+| Field | Contract |
+|---|---|
+| `version` | `1`, the payload format version |
+| `players` | Five `{id, name, role}` objects in top, jungle, middle, bottom, support order |
+| `cells` | 25 row-major `{row, col, kind, value, pair}` objects; row and column indices address `players` |
+| `cells[].kind` | `self` on the diagonal; `missing` without a finite score; otherwise `eligible` or `sparse` according to the pair's eligibility flag |
+| `cells[].value` | Pair `shrunk_impact`, or null for self/unavailable cells; each of the ten distinct pairs appears twice |
+| `cells[].pair` | The selected pair's identity and statistics, or null for self/absent pairs; an existing pair with no evaluated score retains its details |
+| `limit` | `max(0.15, max(abs(finite cell values)))`; use `0.15` when no cell has a score |
+| `hasEligiblePair` | Whether any selected pair satisfies its existing eligibility rule |
+
+A pair object contains `id`, `teamId`, `teamName`, `playerAId`, `playerBId`, `playerA`, `playerB` and `stats`. Its statistics are `n_games_total`, `n_games`, `n_days`, `mean_impact`, `shrunk_impact`, `ci_low`, `ci_high`, `win_rate` and `eligible`, matching the original frontend pair representation. Missing numeric values remain null. Sparse scores remain visible and colored. Pair confidence intervals describe the corresponding pair, while the lineup row's `ci_low` / `ci_high` continue to describe its separate `shrunk_impact`.
+
+Every lineup gets a payload, including lineups with no evaluated lineup games. Some of their pair histories can still have scores from other rosters. `data/test/` builds these payloads from its own pair values; only the player season-role baselines inherit `processed/` values. The frontend decodes this column once and uses the stored players, cells and color limit directly. It does not average pair scores into a new scalar.
 
 ## Frontend integration
 
@@ -125,7 +153,8 @@ const response = await fetch('../data/processed/dashboard.json');
 if (!response.ok) throw new Error(`Data load failed: ${response.status}`);
 const data = await response.json();
 const scatterRows = data.players.filter(d => d.eligible);
-const heatmapEdges = data.pairs.filter(d => d.eligible);
+const heatmapEdges = data.pairs; // Retain sparse and unavailable pair states.
+const lineupHeatmap = JSON.parse(data.lineups[0].affinity_score);
 const timelineRows = data.timeline.filter(d =>
   d.player_id === data.metadata.examples.timeline_player_id &&
   d.team_id === data.metadata.examples.timeline_team_id &&
@@ -136,9 +165,10 @@ const timelineRows = data.timeline.filter(d =>
 For a page at repository root use `data/processed/...` instead. Serve through HTTP (`python -m http.server 8000`); browser `fetch()` generally cannot load local `file://` CSV/JSON.
 
 - Render null values as unavailable; grey missing pair cells must not look like zero scores.
+- The lineup pair heatmap needs only its `affinity_score` column. Player and team pair views load `pairs.csv` lazily when needed.
 - Keep fixed diverging color limits when comparing filtered heatmaps. Show sample counts and interval scope in tooltips.
 - A pair appears once; mirror it in the heatmap, keep a single edge in a network. The network remains a **planned** view.
-- Team/role/minimum-game filters can select summary rows directly. **Split, patch and date filters require filtering game-level rows first and recomputing statistics.** Do not average precomputed averages or reuse whole-snapshot intervals after filtering. `model/aggregate.py:score_summary` is the reference for recomputation.
+- Team/role/minimum-game filters can select summary rows directly. **Split, patch and date filters require filtering game-level rows first and recomputing actual statistics.** Do not average precomputed averages or reuse whole-snapshot intervals after filtering. `model/aggregate.py:score_summary` is the reference for recomputation. Season-role player baselines remain fixed for the selected season and role when the displayed player sample changes.
 - For CSV use explicit numeric conversion and map empty numeric cells to `null`. Avoid indiscriminate `d3.autoType`, which changes patch strings.
 - `data/test/` mirrors every filename in `data/processed/`. Use its `player_games.csv` and `dashboard.json` for frontend development, then change only the directory. The older `sample_player_games.csv` filename has been replaced.
 

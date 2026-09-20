@@ -7,6 +7,8 @@ import numpy as np
 import pandas as pd
 
 from prepare import ROLES, stable_id
+from player_baseline import season_role_baselines
+from lineup_affinity import encode_heatmap
 
 SHRINKAGE_GAMES = 10
 MIN_GAMES = 10
@@ -33,16 +35,20 @@ def score_summary(group, column, seed=401):
             "eligible": bool(n >= MIN_GAMES and days >= MIN_DAYS)}
 
 
-def aggregate(p):
+def aggregate(p, baseline_reference=None):
+    # Test fixtures use the complete parent season for their comparison profile.
+    references = (season_role_baselines(p, SHRINKAGE_GAMES)
+                  if baseline_reference is None else baseline_reference)
     players = []
-    for (pid, tid, role), group in p.groupby(["player_id", "team_id", "role"], sort=True):
+    for (pid, tid, role, season), group in p.groupby(["player_id", "team_id", "role", "season"], sort=True):
         scored = group.dropna(subset=["adjusted_impact"])
         players.append({"player_id": pid, "player": group.player.iloc[-1], "team_id": tid,
-                        "team": group.team.iloc[-1], "role": role, "season": 2025,
+                        "team": group.team.iloc[-1], "role": role, "season": season,
                         "n_games_total": len(group), **score_summary(group, "adjusted_impact"),
                         "mean_gold_share": scored.gold_share.mean(), "mean_damage_share": scored.damage_share.mean(),
                         "mean_dpm": scored.dpm.mean(), "mean_expected_dpm": scored.expected_dpm.mean(),
-                        "win_rate": scored.result.mean(), "mean_vision_per_minute": scored.vision_per_minute.mean()})
+                        "win_rate": scored.result.mean(), "mean_vision_per_minute": scored.vision_per_minute.mean(),
+                        **references.loc[(season, role)].to_dict()})
     pair_games, lineup_games = [], []
     for (game_id, tid), group in p.groupby(["game_id", "team_id"], sort=True):
         context = {"game_id": game_id, "day": group.day.iloc[0], "season": 2025,
@@ -78,6 +84,9 @@ def aggregate(p):
         for col in ["mean_dpm", "mean_vision_per_minute", "gold_concentration", "damage_concentration"] + [f"{r}_{s}_share" for r in ROLES for s in ["gold", "damage"]]:
             row[col] = scored[col].mean()
         lineups.append(row)
+    for lineup in lineups:
+        # Final column preserves all 25 original heatmap cells and their detail.
+        lineup["affinity_score"] = encode_heatmap(lineup, players, pairs)
     teams = []
     for tid, group in lg.groupby("team_id", sort=True):
         scored = group.dropna(subset=["lineup_impact"])

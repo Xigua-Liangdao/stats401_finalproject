@@ -107,7 +107,10 @@ class DataContractTests(unittest.TestCase):
 
     def test_aggregates_are_for_the_sample_and_all_links_resolve(self):
         tables = self.frames["test"]
-        recomputed = aggregate(tables["player_games"])
+        full_players = self.frames["processed"]["players"]
+        baseline_fields = [c for c in full_players if c.startswith("mean_baseline_")]
+        references = full_players[["season", "role", *baseline_fields]].drop_duplicates().set_index(["season", "role"])
+        recomputed = aggregate(tables["player_games"], baseline_reference=references)
         for name, expected in recomputed.items():
             actual = tables[name]
             for c, field in self.schema["tables"][name]["fields"].items():
