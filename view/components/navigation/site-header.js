@@ -5,8 +5,7 @@ import { createStatusChip } from '../layout/status-chip.js';
 
 const LINKS = [
   { href: href.home, label: 'Home', names: ['home'] },
-  { href: href.players, label: 'Player', names: ['players', 'player'] },
-  { href: href.lineups, label: 'Lineup', names: ['lineups', 'lineup'] },
+  { href: href.players, label: 'Catalogue', names: ['players', 'player', 'team'] },
 ];
 
 export function renderSiteHeader(target, routeName) {

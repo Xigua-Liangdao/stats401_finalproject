@@ -125,7 +125,7 @@ test('real catalog loader preserves baseline fields in both generated datasets',
   try {
     for (const dataset of ['test', 'processed']) {
       globalThis.fetch = async (url) => new Response(await readFile(
-        new URL(String(url).replace('/data/test/', `/data/${dataset}/`)),
+        new URL(String(url).replace(/\/data\/(?:test|processed)\//, `/data/${dataset}/`)),
       ));
       const csvRows = parseCsv(await readFile(new URL(`../../data/${dataset}/players.csv`, import.meta.url), 'utf8'));
       const byPlayer = new Map(csvRows.map((row) => [`${row.season}|${row.player_id}|${row.team_id}|${row.role}`, row]));

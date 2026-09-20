@@ -1,3 +1,4 @@
+import { createResourceImpactPanel } from '../../features/home/resource-impact-scatter.js';
 import { APP_KICKER } from '../../utils/constants.js';
 import { h } from '../../utils/dom.js';
 import { href } from '../../utils/navigation.js';
@@ -25,23 +26,9 @@ export async function renderHomePage(target) {
           ]),
         ]),
       ]),
-      h('div', { class: 'home-choices' }, [
-        h('a', { class: 'choice-card panel', href: href.players }, [
-          h('div', { class: 'choice-card__index' }, ['01 / Entity']),
-          h('div', {}, [
-            h('h2', { class: 'display' }, ['Player']),
-            //h('p', {}, ['Browse rosters grouped by organization, then open a player file.']),
-          ]),
-          h('div', { class: 'choice-card__go' }, ['Enter catalogue →']),
-        ]),
-        h('a', { class: 'choice-card panel', href: href.lineups }, [
-          h('div', { class: 'choice-card__index' }, ['02 / Composition']),
-          h('div', {}, [
-            h('h2', { class: 'display' }, ['Lineup']),
-            //h('p', {}, ['Inspect five-player compositions belonging to each team.']),
-          ]),
-          h('div', { class: 'choice-card__go' }, ['Enter catalogue →']),
-        ]),
+      h('div', { class: 'home-figure-block' }, [
+        createResourceImpactPanel({ players: catalog.players }),
+        h('a', { class: 'home-more', href: href.players }, ['See more →']),
       ]),
     ]),
   );

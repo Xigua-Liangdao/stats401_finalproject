@@ -46,10 +46,10 @@ test('player links preserve team/year and older links still parse', () => {
 });
 
 test('the full-data loader keeps all 46 lineups and linked player pages in their own team', async () => {
-  // Exercise the real loader with full data, without changing the UI's test default.
+  // Exercise the real loader with full data regardless of the UI's default dataset.
   const previousFetch = globalThis.fetch;
   globalThis.fetch = async (url) => new Response(await readFile(
-    new URL(String(url).replace('/data/test/', '/data/processed/')),
+    new URL(String(url).replace(/\/data\/(?:test|processed)\//, '/data/processed/')),
   ));
   try {
     const { dataSource } = await import('../utils/data-source.js');

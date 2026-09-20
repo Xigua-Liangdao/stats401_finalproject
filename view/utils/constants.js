@@ -1,6 +1,6 @@
 export const APP_NAME = 'LPL Synergy Terminal';
 export const APP_KICKER = 'LPL 2025 · STATS 401';
-export const DATASET = 'test';
+export const DATASET = 'processed';
 export const DATA_ROOT = `../data/${DATASET}`;
 export const DATASET_MODE = DATASET;
 

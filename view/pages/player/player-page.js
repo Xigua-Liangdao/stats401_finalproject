@@ -8,7 +8,7 @@ import { loadPlayerGames } from '../../features/player-games/player-games-data.j
 import { renderPlayerGamesCatalogue } from '../../features/player-games/player-games-catalogue.js?v=game-stats';
 import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js?v=pair-heatmap6';
 import { h } from '../../utils/dom.js';
-import { href, readCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
+import { backAction, href, readCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
 import { renderNotFound } from '../not-found.js';
 
 export async function renderPlayerPage(target, id, teamId, season) {
@@ -22,12 +22,13 @@ export async function renderPlayerPage(target, id, teamId, season) {
   const players = groups.flatMap((group) => group.players);
 
   const catalogueHref = href.playersAt(readCataloguePage('players'));
+  const back = backAction(catalogueHref);
 
   target.append(
     h('div', { class: 'page' }, [
       createBreadcrumbs([
         { label: 'Home', href: href.home },
-        { label: 'Player catalogue', href: catalogueHref },
+        { label: 'Catalogue', href: catalogueHref },
         { label: player.name },
       ]),
       createIdentityHeader({
@@ -42,8 +43,8 @@ export async function renderPlayerPage(target, id, teamId, season) {
         ],
         actions: [
           createButton({
-            label: 'Back to catalogue',
-            href: catalogueHref,
+            label: back.label,
+            href: back.href,
           }),
           createButton({
             label: 'Check Pair Impact',
