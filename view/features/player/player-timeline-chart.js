@@ -88,10 +88,30 @@ function windowFromSelection(rawStart, rawEnd, count) {
   return [start, end];
 }
 
+const PLAYBACK_WINDOW = 20;
+const PLAYBACK_SPEEDS = [0.25, 0.5, 1, 2, 4];
+const BASE_PACE_MS = 700;
+
 function clipSeries(values, start, end) {
   const last = Math.floor(end);
   const fraction = end - last;
   const points = values.filter((point) => point.index >= start && point.index <= last);
+  const leadIndex = Math.floor(start);
+  const lead = values[leadIndex];
+  const leadNext = values[leadIndex + 1];
+  if (
+    lead?.value != null
+    && leadNext?.value != null
+    && start > lead.index
+    && start < leadNext.index
+  ) {
+    points.unshift({
+      game: leadNext.game,
+      index: start,
+      value: lead.value + (leadNext.value - lead.value) * (start - lead.index),
+      partial: true,
+    });
+  }
   const previous = values[last];
   const next = values[last + 1];
   if (fraction > 0.02 && previous?.value != null && next?.value != null && next.index >= start) {
@@ -105,16 +125,26 @@ function clipSeries(values, start, end) {
   return points;
 }
 
-function xTickIndexes(start, end, innerWidth) {
+function xTickIndexes(start, end, innerWidth, labelAt = () => '') {
   const first = Math.ceil(start);
   const last = Math.floor(end);
   if (last <= first) return [first];
-  const budget = Math.max(2, Math.floor(innerWidth / 84));
+  const budget = Math.max(2, Math.floor(innerWidth / 108));
   const step = Math.max(1, Math.ceil((last - first) / budget));
   const ticks = [];
-  for (let index = first; index <= last; index += step) ticks.push(index);
-  if (ticks[ticks.length - 1] !== last) ticks.push(last);
-  return ticks;
+  let previousLabel = null;
+  for (let index = first; index <= last; index += step) {
+    const label = labelAt(index);
+    if (label && label === previousLabel) continue;
+    ticks.push(index);
+    previousLabel = label;
+  }
+  if (ticks.at(-1) !== last) {
+    const label = labelAt(last);
+    const previous = ticks.at(-1);
+    if (label !== previousLabel && last - previous >= step) ticks.push(last);
+  }
+  return ticks.length ? ticks : [first];
 }
 
 export function mountPlayerTimeline(stage, { games }) {
@@ -128,6 +158,9 @@ export function mountPlayerTimeline(stage, { games }) {
   const playButton = h('button', { class: 'timeline-btn', type: 'button', dataset: { action: 'play' } }, ['Play']);
   const pauseButton = h('button', { class: 'timeline-btn', type: 'button', dataset: { action: 'pause' } }, ['Pause']);
   const restartButton = h('button', { class: 'timeline-btn', type: 'button', dataset: { action: 'restart' } }, ['Restart']);
+  const speedSelect = h('select', { class: 'timeline-speed', 'aria-label': 'Playback speed' }, PLAYBACK_SPEEDS.map((value) => (
+    h('option', { value: String(value), selected: value === 1 }, [`${value}×`])
+  )));
   const brushSvg = d3.create('svg')
     .attr('class', 'timeline-brush-svg')
     .attr('role', 'slider')
@@ -138,6 +171,10 @@ export function mountPlayerTimeline(stage, { games }) {
       playButton,
       pauseButton,
       restartButton,
+      h('label', { class: 'timeline-speed-control' }, [
+        h('span', { class: 'timeline-speed-label' }, ['Speed']),
+        speedSelect,
+      ]),
     ]),
     rangeLabel,
     brushSvg.node(),
@@ -159,6 +196,7 @@ export function mountPlayerTimeline(stage, { games }) {
   let lastFrame = 0;
   let brushWidth = 0;
   let xIndex = null;
+  let speed = 1;
   const brush = d3.brushX().on('start brush end', onBrush);
   const brushG = brushSvg.append('g').attr('class', 'timeline-brush');
 
@@ -187,8 +225,7 @@ export function mountPlayerTimeline(stage, { games }) {
   }
 
   function paceMs() {
-    const steps = Math.max(1, to - from);
-    return Math.min(260, Math.max(70, 8000 / steps));
+    return BASE_PACE_MS / speed;
   }
 
   function frame(now) {
@@ -241,6 +278,20 @@ export function mountPlayerTimeline(stage, { games }) {
     drawChart();
     syncBrush();
     play();
+  }
+
+  function cameraBounds() {
+    const selected = Math.max(to - from, 0);
+    if (finished || sorted.length < 2) return [from, to];
+    const size = Math.min(PLAYBACK_WINDOW, Math.max(selected, 1));
+    let start = cursor - size;
+    if (start < from) start = from;
+    let end = start + size;
+    if (end > to) {
+      end = to;
+      start = Math.max(from, end - size);
+    }
+    return [start, end];
   }
 
   function visibleEnd() {
@@ -377,10 +428,11 @@ export function mountPlayerTimeline(stage, { games }) {
     if (series.length > 1) margin.top = drawLegend(svg, series, margin.left, innerWidth);
     const innerHeight = Math.max(1, height - margin.top - margin.bottom);
     const plot = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
-    const span = Math.max(cursor - from, 1);
-    const pad = span * 0.04;
+    const [viewStart, viewEnd] = cameraBounds();
+    const viewSpan = Math.max(viewEnd - viewStart, 1);
+    const pad = viewSpan * 0.04;
     const x = d3.scaleLinear()
-      .domain(sorted.length < 2 ? [-0.5, 0.5] : [from - pad, cursor + pad])
+      .domain(sorted.length < 2 ? [-0.5, 0.5] : [viewStart - pad, viewEnd + pad])
       .range([0, innerWidth]);
     const yValues = defined.map((point) => point.value);
     const y = d3.scaleLinear()
@@ -389,7 +441,12 @@ export function mountPlayerTimeline(stage, { games }) {
       .range([innerHeight, 0]);
 
     const xAxis = d3.axisBottom(x)
-      .tickValues(sorted.length < 2 ? [0] : xTickIndexes(from, cursor, innerWidth))
+      .tickValues(sorted.length < 2 ? [0] : xTickIndexes(
+        viewStart,
+        viewEnd,
+        innerWidth,
+        (index) => formatCompactDate(sorted[clamp(index, 0, lastIndex)]?.date),
+      ))
       .tickFormat((index) => formatCompactDate(sorted[clamp(index, 0, lastIndex)]?.date))
       .tickSizeOuter(0);
     const yAxis = d3.axisLeft(y).ticks(5).tickFormat(yTickFormat(fields)).tickSizeOuter(0);
@@ -407,27 +464,18 @@ export function mountPlayerTimeline(stage, { games }) {
 
     plot.append('g').attr('class', 'chart-axis').call(yAxis);
 
-    if (playing || cursor < to - 0.02) {
-      plot.append('line')
-        .attr('class', 'timeline-playhead')
-        .attr('x1', x(cursor))
-        .attr('x2', x(cursor))
-        .attr('y1', 0)
-        .attr('y2', innerHeight);
-    }
-
     const line = d3.line()
       .defined((point) => point.value != null)
       .x((point) => x(point.index))
       .y((point) => y(point.value));
 
     for (const item of series) {
-      const visible = clipSeries(item.values, from, cursor);
+      const visible = clipSeries(item.values, viewStart, cursor);
       plot.append('path')
         .attr('class', 'chart-line')
         .attr('fill', 'none')
         .attr('stroke', item.color)
-        .attr('stroke-width', 1.8)
+        .attr('stroke-width', 2.2)
         .attr('stroke-linejoin', 'round')
         .attr('stroke-linecap', 'round')
         .attr('d', line(visible));
@@ -438,10 +486,19 @@ export function mountPlayerTimeline(stage, { games }) {
         .attr('class', 'chart-point')
         .attr('cx', (point) => x(point.index))
         .attr('cy', (point) => y(point.value))
-        .attr('r', 3.4)
+        .attr('r', Math.max(1.8, Math.min(3.4, 120 / viewSpan)))
         .attr('fill', item.color)
         .on('mousemove', (event, point) => showTip(event, point, item.field))
         .on('mouseleave', hideTip);
+    }
+
+    if (playing || cursor < to - 0.02) {
+      plot.append('line')
+        .attr('class', 'timeline-playhead')
+        .attr('x1', x(cursor))
+        .attr('x2', x(cursor))
+        .attr('y1', 0)
+        .attr('y2', innerHeight);
     }
 
     svg.attr('aria-label', `Performance over time, ${rangeText()}`);
@@ -463,6 +520,10 @@ export function mountPlayerTimeline(stage, { games }) {
   playButton.addEventListener('click', play);
   pauseButton.addEventListener('click', pause);
   restartButton.addEventListener('click', restart);
+  speedSelect.addEventListener('change', () => {
+    const next = Number(speedSelect.value);
+    if (PLAYBACK_SPEEDS.includes(next)) speed = next;
+  });
 
   render();
   return {
