@@ -782,6 +782,10 @@
   min-height: 520px;
 }
 
+.player-viz-panel[data-viz="player-timeline"] {
+  min-height: 520px;
+}
+
 .player-viz-chrome {
   align-items: flex-start;
 }
@@ -887,7 +891,8 @@
   gap: 0.3rem;
 }
 
-.radar-zoom-btn {
+.radar-zoom-btn,
+.timeline-btn {
   min-height: 1.7rem;
   min-width: 1.7rem;
   padding: 0.15rem 0.45rem;
@@ -902,12 +907,14 @@
   cursor: pointer;
 }
 
-.radar-zoom-btn:hover {
+.radar-zoom-btn:hover,
+.timeline-btn:hover {
   border-color: var(--accent);
   color: var(--accent);
 }
 
-.radar-zoom-btn:disabled {
+.radar-zoom-btn:disabled,
+.timeline-btn:disabled {
   opacity: 0.4;
   cursor: not-allowed;
 }
@@ -931,6 +938,87 @@
   display: block;
   width: 100%;
   height: 100%;
+}
+
+.player-timeline-stage.is-mounted {
+  display: flex;
+  flex-direction: column;
+  min-height: 360px;
+}
+
+.timeline-plot {
+  position: relative;
+  flex: 1 1 280px;
+  min-height: 280px;
+}
+
+.timeline-plot .chart-svg {
+  height: auto;
+}
+
+.timeline-dock {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 0.35rem 0.75rem;
+  padding: 0.45rem 0.7rem 0.55rem;
+  border-top: 1px solid var(--line);
+}
+
+.timeline-transport {
+  display: flex;
+  gap: 0.3rem;
+}
+
+.timeline-range {
+  margin: 0;
+  justify-self: end;
+  color: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.timeline-brush-svg {
+  grid-column: 1 / -1;
+  display: block;
+  width: 100%;
+  height: 36px;
+  touch-action: none;
+}
+
+.timeline-track {
+  stroke: var(--line-strong);
+  stroke-width: 1;
+}
+
+.timeline-spark {
+  stroke: var(--dim);
+  stroke-width: 1.25;
+  opacity: 0.9;
+}
+
+.timeline-playhead {
+  stroke: var(--accent);
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+  pointer-events: none;
+}
+
+.timeline-brush .selection {
+  fill: rgba(62, 200, 255, 0.18);
+  stroke: var(--accent);
+  stroke-width: 1;
+}
+
+.timeline-brush .handle {
+  fill: var(--accent);
+  cursor: ew-resize;
+}
+
+.timeline-brush .overlay {
+  cursor: crosshair;
 }
 
 .chart-axis text {
