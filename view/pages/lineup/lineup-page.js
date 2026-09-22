@@ -7,7 +7,7 @@ import { renderLineupRoster } from '../../features/lineup/lineup-roster.js';
 import { renderLineupStats } from '../../features/lineup/lineup-stats.js';
 import { loadLineupGames } from '../../features/lineup-games/lineup-games-data.js?v=game-stats';
 import { renderLineupGamesCatalogue } from '../../features/lineup-games/lineup-games-catalogue.js?v=game-stats';
-import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js?v=pair-heatmap6';
+import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js';
 import { h } from '../../utils/dom.js';
 import { backAction, href } from '../../utils/navigation.js?v=catalogue-back';
 import { renderNotFound } from '../not-found.js';
@@ -50,12 +50,8 @@ export async function renderLineupPage(target, id) {
             variant: 'accent',
             onClick: () =>
               openPairImpactDrawer({
-                source: 'lineup',
                 lineupId: lineup.id,
-                teamId: lineup.team.id,
                 teamName: lineup.team.name,
-                selectedPlayerIds: lineup.players.map((player) => player.id),
-                selectedNames: lineup.players.map((player) => player.name),
               }),
           }),
         ],

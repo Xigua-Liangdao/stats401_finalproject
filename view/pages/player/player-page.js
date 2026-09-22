@@ -6,7 +6,6 @@ import { renderPlayerStats } from '../../features/player/player-stats.js?v=scale
 import { loadPlayer, loadPlayerCatalog } from '../../features/player/player-data.js';
 import { loadPlayerGames } from '../../features/player-games/player-games-data.js?v=game-stats';
 import { renderPlayerGamesCatalogue } from '../../features/player-games/player-games-catalogue.js?v=game-stats';
-import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js?v=pair-heatmap6';
 import { h } from '../../utils/dom.js';
 import { backAction, href, readCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
 import { renderNotFound } from '../not-found.js';
@@ -45,18 +44,6 @@ export async function renderPlayerPage(target, id, teamId, season) {
           createButton({
             label: back.label,
             href: back.href,
-          }),
-          createButton({
-            label: 'Check Pair Impact',
-            variant: 'accent',
-            onClick: () =>
-              openPairImpactDrawer({
-                source: 'player',
-                teamId: player.team.id,
-                teamName: player.team.name,
-                selectedPlayerIds: [player.id],
-                selectedNames: [player.name],
-              }),
           }),
         ],
       }),

@@ -1,15 +1,12 @@
 import { createDrawerSection, createMetaGrid } from '../../components/drawers/drawer-section.js';
 import { openDrawer } from '../../components/drawers/drawer.js';
 import { h } from '../../utils/dom.js';
-import { loadPairImpactContext } from './pair-impact-data.js?v=pair-heatmap5';
-import { createPairHeatmapPanel } from './pair-impact-heatmap.js?v=pair-heatmap5';
+import { loadLineupHeatmap } from './pair-impact-data.js';
+import { createPairHeatmapPanel } from './pair-impact-heatmap.js';
 
-export async function openPairImpactDrawer(origin) {
-  const context = await loadPairImpactContext(origin);
-  const selected =
-    origin.selectedNames?.length
-      ? origin.selectedNames.join(' · ')
-      : origin.selectedPlayerIds?.join(' · ') || 'Awaiting selection';
+export async function openPairImpactDrawer({ lineupId, teamName }) {
+  const heatmap = await loadLineupHeatmap(lineupId);
+  const players = heatmap.players.map((player) => player.name).join(' · ');
 
   openDrawer({
     kicker: 'Shared feature',
@@ -19,18 +16,16 @@ export async function openPairImpactDrawer(origin) {
       createDrawerSection({
         title: 'Selected players',
         children: createMetaGrid([
-          { label: 'Team', value: origin.teamName ?? '—' },
-          { label: 'Players', value: selected },
+          { label: 'Team', value: teamName ?? '—' },
+          { label: 'Players', value: players || '—' },
         ]),
       }),
       createDrawerSection({
         title: 'Visualization',
         children: createPairHeatmapPanel({
-          players: context.players,
-          pairs: context.pairs,
-          precomputed: context.precomputed,
-          selectedIds: context.selectedPlayers,
-          teamName: origin.teamName,
+          heatmap,
+          selectedIds: heatmap.players.map((player) => player.id),
+          teamName,
         }),
       }),
     ]),

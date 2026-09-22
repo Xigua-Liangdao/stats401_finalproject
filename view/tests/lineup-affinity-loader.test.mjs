@@ -43,17 +43,14 @@ test('lineup drawer context loads only affinity_score, preserves payload, and sh
     return new Response(affinityCsv(JSON.stringify(payload)));
   };
   try {
-    const { loadPairImpactContext } = await import('../features/pair-impact/pair-impact-data.js');
+    const { loadLineupHeatmap } = await import('../features/pair-impact/pair-impact-data.js');
     const { dataSource } = await import('../utils/data-source.js');
-    const [context, cached] = await Promise.all([
-      loadPairImpactContext({ source: 'lineup', lineupId: 'lineup-1', teamId: 'team' }),
+    const [heatmap, cached] = await Promise.all([
+      loadLineupHeatmap('lineup-1'),
       dataSource.getLineupAffinity('lineup-1'),
     ]);
-    assert.deepEqual(context.precomputed, payload);
-    assert.equal(context.precomputed, cached);
-    assert.equal(context.players, cached.players);
-    assert.deepEqual(context.selectedPlayers, payload.players.map((player) => player.id));
-    assert.deepEqual(context.pairs, []);
+    assert.equal(heatmap, cached);
+    assert.deepEqual(heatmap, payload);
     assert.equal(await dataSource.getLineupAffinity('lineup-1'), cached);
     assert.equal(await dataSource.getLineupAffinity('unknown-lineup'), null);
     assert.deepEqual(requests, ['lineups.csv']);
