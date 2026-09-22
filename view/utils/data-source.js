@@ -5,6 +5,7 @@
 import { DATASET, ROLE_ORDER } from './constants.js';
 import { parseCsv } from './csv.js';
 import { loadMediaManifest } from './assets.js';
+import { setLoadProgress } from './load-progress.js';
 
 function indexById(items) {
   return Object.fromEntries(items.map((item) => [item.id, item]));
@@ -233,12 +234,20 @@ function loadPairs() {
 
 function loadCatalogRecord() {
   if (!catalogPromise) {
+    // Five startup reads share the span from the boot mark (8) up to 92.
+    // The first rendered page sets 100 once it is actually on screen.
+    let completed = 0;
+    const track = (promise) => promise.then((value) => {
+      completed += 1;
+      setLoadProgress(8 + completed * (84 / 5));
+      return value;
+    });
     catalogPromise = Promise.all([
-      fetchCsv('team_panel.csv'),
-      fetchCsv('players.csv'),
-      loadLineupRows(),
-      fetchCsv('teams.csv'),
-      loadMediaManifest(),
+      track(fetchCsv('team_panel.csv')),
+      track(fetchCsv('players.csv')),
+      track(loadLineupRows()),
+      track(fetchCsv('teams.csv')),
+      track(loadMediaManifest()),
     ]).then(([panel, players, lineups, teams]) => {
       if (!panel.length) throw new Error('team_panel.csv is empty.');
       return hydrateFromPanel(panel, { players, lineups, teams });
