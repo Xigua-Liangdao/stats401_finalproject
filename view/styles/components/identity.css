@@ -1,0 +1,220 @@
+.identity-header {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 1.2rem;
+  align-items: center;
+  margin-bottom: 1.6rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.identity-header::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 96px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--accent), var(--gold));
+}
+
+.identity-header .page-shell__actions {
+  align-self: start;
+}
+
+.identity-mark {
+  width: 84px;
+  height: 84px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  clip-path: polygon(10px 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%, 0 10px);
+  background:
+    linear-gradient(135deg, rgba(62, 200, 255, 0.16), transparent 42%),
+    linear-gradient(var(--line) 1px, transparent 1px) 0 0 / 12px 12px,
+    linear-gradient(90deg, var(--line) 1px, transparent 1px) 0 0 / 12px 12px,
+    var(--bg-slot);
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  letter-spacing: 0.06em;
+}
+
+.identity-mark--logo {
+  position: relative;
+  overflow: hidden;
+}
+
+.identity-mark--logo .entity-image {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: calc(100% - 12px);
+  max-width: 100%;
+  height: calc(100% - 12px);
+  transform: translate(-50%, -50%);
+  object-fit: contain;
+  object-position: center;
+}
+
+.entity-image {
+  display: block;
+}
+
+.entity-image--portrait {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: auto;
+  max-width: none;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+.player-portrait {
+  position: relative;
+  display: block;
+  overflow: visible;
+}
+
+.player-portrait::before {
+  content: "";
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 0;
+  height: 42%;
+  z-index: 0;
+  pointer-events: none;
+  background: radial-gradient(ellipse at 50% 80%, var(--accent-glow), transparent 72%);
+}
+
+.player-portrait--hero {
+  width: min(240px, 38vw);
+  align-self: end;
+}
+
+.identity-header--player {
+  align-items: end;
+  overflow: visible;
+}
+
+.identity-header--player .player-portrait--hero {
+  margin-bottom: -0.35rem;
+}
+
+.identity-header h1 {
+  margin: 0.2rem 0 0.45rem;
+  font-size: var(--title-size);
+}
+
+.identity-facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.identity-facts a {
+  color: var(--accent);
+}
+
+.identity-facts a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.stat-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0.8rem 0.85rem 0.75rem;
+  background: linear-gradient(180deg, rgba(12, 30, 58, 0.62), rgba(7, 16, 34, 0.38));
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  box-shadow: inset 0 1px 0 rgba(186, 220, 255, 0.08);
+  min-height: 92px;
+}
+
+.stat-card__label {
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dim);
+}
+
+.stat-card__value {
+  margin-top: 0.45rem;
+  font-family: var(--font-display);
+  font-size: 2.15rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--text);
+}
+
+.stat-card__hint {
+  margin-top: auto;
+  padding-top: 0.35rem;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+.stat-card__value--phrase {
+  font-size: 1.55rem;
+  line-height: 1.1;
+  letter-spacing: 0.01em;
+}
+
+.stat-card[data-tone='above'] .stat-card__value {
+  color: var(--gold);
+}
+
+.stat-card[data-tone='below'] .stat-card__value {
+  color: var(--ember);
+}
+.stat-groups {
+  display: grid;
+  grid-template-columns: minmax(0, 3fr) minmax(0, 1fr);
+  gap: 0.7rem;
+  align-items: stretch;
+}
+
+.stat-group {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.stat-group__kicker {
+  margin-bottom: 0.55rem;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.stat-group .stat-grid {
+  flex: 1;
+  grid-auto-rows: 1fr;
+}
+
+.stat-group:first-child .stat-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.stat-group:last-child .stat-grid {
+  grid-template-columns: minmax(0, 1fr);
+}

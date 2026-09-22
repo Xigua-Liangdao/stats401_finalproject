@@ -1,0 +1,122 @@
+.pair-heatmap-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.pair-heatmap-panel .viz-placeholder__chrome {
+  align-items: flex-start;
+}
+
+.pair-heatmap-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  min-height: 0;
+}
+
+.pair-heatmap-panel .notice {
+  margin: 0;
+}
+
+.pair-heatmap-stage {
+  min-height: 420px;
+}
+
+.pair-heatmap-stage.is-mounted {
+  overflow: hidden;
+}
+
+.heatmap-tick {
+  fill: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 8px;
+  letter-spacing: 0.02em;
+}
+
+.heatmap-tick--selected {
+  fill: var(--accent);
+}
+
+.heatmap-cell {
+  cursor: pointer;
+  stroke: rgba(170, 214, 255, 0.12);
+  stroke-width: 1;
+}
+
+.heatmap-cell--sparse {
+  stroke-dasharray: 3 2;
+}
+
+.heatmap-cell.is-active {
+  stroke: var(--gold);
+  stroke-width: 1.6;
+}
+
+.heatmap-cell-label {
+  fill: var(--text);
+  font-family: var(--font-mono);
+  font-size: 8px;
+}
+
+.heatmap-cell-label--on {
+  fill: #f5f8fc;
+}
+
+.heatmap-legend-tick {
+  fill: var(--dim);
+  font-family: var(--font-mono);
+  font-size: 8px;
+}
+
+.heatmap-detail {
+  margin-top: 0.65rem;
+  padding: 0.55rem 0.65rem 0.5rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(6, 14, 30, 0.45);
+  color: var(--dim);
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.04em;
+  line-height: 1.45;
+}
+
+.heatmap-detail__title {
+  margin-bottom: 0.2rem;
+  color: var(--muted);
+}
+
+.heatmap-detail__pair {
+  margin: 0 0 0.35rem;
+  color: var(--text);
+  font-size: 0.78rem;
+  letter-spacing: 0.02em;
+}
+
+.heatmap-detail__lead,
+.heatmap-detail__note {
+  margin: 0 0 0.45rem;
+}
+
+.heatmap-detail__note {
+  color: var(--dim);
+}
+
+.heatmap-detail__list {
+  margin: 0 0 0.45rem;
+}
+
+.heatmap-detail__row {
+  display: grid;
+  grid-template-columns: 7.6rem minmax(0, 1fr);
+  gap: 0.55rem;
+}
+
+.heatmap-detail__row dt {
+  color: var(--muted);
+}
+
+.heatmap-detail__row dd {
+  margin: 0;
+  color: var(--text);
+}

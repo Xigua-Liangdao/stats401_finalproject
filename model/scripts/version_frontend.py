@@ -18,7 +18,7 @@ IMPORT = re.compile(r'''\b(?:from\s*|import\s*\(?\s*)['"](\.[^'"\n]+\.js(?:\?[^'
 
 def build_html():
     modules = sorted(path for path in VIEW.rglob("*.js") if "tests" not in path.relative_to(VIEW).parts)
-    inputs = sorted(modules + list((VIEW / "styles").glob("*.css")) + [ROOT / "data/img/manifest.json"])
+    inputs = sorted(modules + list((VIEW / "styles").rglob("*.css")) + [ROOT / "data/img/manifest.json"])
     digest = hashlib.sha256()
     for path in inputs:
         digest.update(str(path.relative_to(ROOT)).encode() + b"\0" + path.read_bytes() + b"\0")

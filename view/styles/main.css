@@ -1,3 +1,13 @@
 @import url("./tokens.css");
-@import url("./components.css");
+@import url("./components/shell.css");
+@import url("./components/identity.css");
+@import url("./components/viz.css");
+@import url("./components/lineup-charts.css");
+@import url("./components/player-charts.css");
+@import url("./components/heatmap.css");
+@import url("./components/team-chart.css");
+@import url("./components/catalogue.css");
+@import url("./components/drawer.css");
+@import url("./components/responsive.css");
+@import url("./components/startup.css");
 @import url("./pages.css");

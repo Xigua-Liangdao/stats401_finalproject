@@ -1,0 +1,62 @@
+.team-champion-panel {
+  min-height: 360px;
+}
+
+.team-champion-notice:empty {
+  display: none;
+}
+
+.team-champion-panel .notice {
+  margin: 0 0 0.7rem;
+}
+
+.team-champion-stage.is-mounted {
+  overflow: visible;
+}
+
+.chart-bar {
+  fill: var(--accent);
+  fill-opacity: 0.82;
+  cursor: pointer;
+}
+
+.chart-bar:hover,
+.chart-bar:focus {
+  fill: var(--accent-strong);
+  fill-opacity: 1;
+  outline: none;
+}
+
+.team-champion-stage .chart-axis .tick line {
+  stroke: none;
+}
+
+.chart-bar-count,
+.chart-axis-label {
+  fill: var(--muted);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.04em;
+}
+
+.chart-point {
+  cursor: pointer;
+}
+
+.chart-tooltip {
+  position: absolute;
+  z-index: 4;
+  min-width: 8rem;
+  max-width: 16rem;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--radius);
+  background: var(--bg-panel);
+  color: var(--text);
+  box-shadow: var(--shadow-soft);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  line-height: 1.4;
+  letter-spacing: 0.04em;
+  pointer-events: none;
+}
