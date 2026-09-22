@@ -285,10 +285,19 @@ export function mountPlayerTimeline(stage, { games }) {
       xIndex.invert(event.selection[1]),
       sorted.length,
     );
-    from = start;
-    to = end;
-    cursor = end;
-    finished = true;
+    if (finished) {
+      from = start;
+      to = end;
+      cursor = end;
+    } else {
+      from = start;
+      cursor = end;
+      if (cursor > to) to = cursor;
+      if (cursor >= to - 1e-3) {
+        cursor = to;
+        finished = true;
+      }
+    }
     drawChart();
     syncControls();
     if (event.type === 'end') {
