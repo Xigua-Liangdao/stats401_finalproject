@@ -34,6 +34,33 @@ function mountMeter(svg) {
   const x = (index) => CELL_X + index * (CELL_W + GAP);
   const indexes = d3.range(CELLS);
 
+  if (root.select('.startup__shell').empty()) {
+    root.append('rect')
+      .attr('class', 'startup__shell')
+      .attr('x', SHELL.x)
+      .attr('y', SHELL.y)
+      .attr('width', SHELL.w)
+      .attr('height', SHELL.h)
+      .attr('rx', 3);
+    root.append('rect')
+      .attr('class', 'startup__nub')
+      .attr('x', NUB.x)
+      .attr('y', NUB.y)
+      .attr('width', NUB.w)
+      .attr('height', NUB.h)
+      .attr('rx', 2);
+    root.append('g')
+      .selectAll('rect')
+      .data(indexes)
+      .join('rect')
+      .attr('class', 'startup__slot')
+      .attr('x', (index) => x(index))
+      .attr('y', CELL_Y)
+      .attr('width', CELL_W)
+      .attr('height', CELL_H)
+      .attr('rx', 1);
+  }
+
   const glow = root.append('defs')
     .append('filter')
     .attr('id', 'startup-glow')
@@ -49,31 +76,7 @@ function mountMeter(svg) {
   merge.append('feMergeNode').attr('in', 'blur');
   merge.append('feMergeNode').attr('in', 'SourceGraphic');
 
-  root.append('rect')
-    .attr('class', 'startup__shell')
-    .attr('x', SHELL.x)
-    .attr('y', SHELL.y)
-    .attr('width', SHELL.w)
-    .attr('height', SHELL.h)
-    .attr('rx', 3);
-  const nub = root.append('rect')
-    .attr('class', 'startup__nub')
-    .attr('x', NUB.x)
-    .attr('y', NUB.y)
-    .attr('width', NUB.w)
-    .attr('height', NUB.h)
-    .attr('rx', 2);
-
-  root.append('g')
-    .selectAll('rect')
-    .data(indexes)
-    .join('rect')
-    .attr('class', 'startup__slot')
-    .attr('x', (index) => x(index))
-    .attr('y', CELL_Y)
-    .attr('width', CELL_W)
-    .attr('height', CELL_H)
-    .attr('rx', 1);
+  const nub = root.select('.startup__nub');
 
   const fills = root.append('g')
     .attr('filter', 'url(#startup-glow)')
