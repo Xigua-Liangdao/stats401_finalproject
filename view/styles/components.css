@@ -637,6 +637,36 @@
   min-height: 360px;
 }
 
+.lineup-share-panel .viz-placeholder__chrome {
+  align-items: center;
+}
+
+.lineup-share-heading,
+.lineup-share-zoom {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.lineup-share-zoom__range {
+  color: var(--dim);
+  font-variant-numeric: tabular-nums;
+}
+
+.lineup-share-stage.is-zoomed .chart-svg,
+.lineup-share-stage.is-zoomed .share-dot {
+  cursor: grab;
+  touch-action: none;
+}
+
+.lineup-share-stage.is-panning .chart-svg {
+  cursor: grabbing;
+}
+
+.lineup-share-stage .chart-axis--y {
+  pointer-events: none;
+}
+
 .lineup-share-bars-panel {
   min-height: 360px;
 }
