@@ -53,11 +53,4 @@
     grid-template-columns: 1fr 1fr;
   }
 
-  .game-row {
-    grid-template-columns: minmax(0, 1fr) 2rem auto;
-  }
-
-  .game-row > .coord:first-child {
-    grid-column: 1 / -1;
-  }
 }

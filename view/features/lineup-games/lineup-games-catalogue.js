@@ -1,5 +1,4 @@
-import { createGameRow } from '../../components/catalogue/game-row.js';
-import { createPagedList } from '../../components/catalogue/paged-list.js';
+import { createGameCatalogue } from '../../components/catalogue/game-catalogue.js';
 import { createSectionBlock } from '../../components/layout/section-block.js';
 import { h } from '../../utils/dom.js';
 import { openLineupGameInfo } from './lineup-game-info.js?v=game-stats';
@@ -10,12 +9,9 @@ export function renderLineupGamesCatalogue(games) {
     title: 'Lineup game catalogue',
     meta: `${games.length} games`,
     children: games.length
-      ? createPagedList({
-          items: games,
-          renderItem: (game) => createGameRow({
-            game,
-            onInfo: (item) => openLineupGameInfo(item, games),
-          }),
+      ? createGameCatalogue({
+          games,
+          onInfo: (item) => openLineupGameInfo(item, games),
         })
       : h('div', { class: 'empty-state' }, ['No recorded games for this lineup.']),
   });
