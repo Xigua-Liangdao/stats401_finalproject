@@ -46,14 +46,14 @@ function renderPageItems({ group, items, variant, renderItem, renderItems }) {
   return [];
 }
 
-export function createTeamGroupedCatalogue({
+function renderGroupedList({
   groups,
-  variant = 'players',
+  variant,
   getItems,
   renderItem,
   renderItems,
-  pageSize = CATALOGUE_PAGE_SIZE[variant] ?? CATALOGUE_PAGE_SIZE.players,
-  initialPage = 1,
+  pageSize,
+  initialPage,
   onPageChange,
 }) {
   const resolveItems = typeof getItems === 'function' ? getItems : (group) => itemsFor(group, variant);
@@ -77,4 +77,68 @@ export function createTeamGroupedCatalogue({
         ]),
       ),
   });
+}
+
+function teamMatches(group, needle) {
+  const team = group.team ?? {};
+  return `${team.name ?? ''} ${team.short ?? ''}`.toLowerCase().includes(needle);
+}
+
+export function createTeamGroupedCatalogue({
+  groups,
+  variant = 'players',
+  getItems,
+  renderItem,
+  renderItems,
+  pageSize = CATALOGUE_PAGE_SIZE[variant] ?? CATALOGUE_PAGE_SIZE.players,
+  initialPage = 1,
+  onPageChange,
+}) {
+  const host = h('div', { class: 'catalogue-results' });
+  const input = h('input', {
+    type: 'search',
+    class: 'catalogue-team-search__input',
+    placeholder: 'Search team',
+    'aria-label': 'Search team',
+  });
+  let query = '';
+  let filteredPage = 1;
+
+  function paint() {
+    const needle = query.trim().toLowerCase();
+    const shown = needle ? groups.filter((group) => teamMatches(group, needle)) : groups;
+    if (!shown.length) {
+      host.replaceChildren(h('p', { class: 'empty-state' }, ['No teams']));
+      return;
+    }
+    host.replaceChildren(renderGroupedList({
+      groups: shown,
+      variant,
+      getItems,
+      renderItem,
+      renderItems,
+      pageSize,
+      initialPage: needle ? filteredPage : initialPage,
+      onPageChange: needle
+        ? (page) => {
+          filteredPage = page;
+        }
+        : onPageChange,
+    }));
+  }
+
+  input.addEventListener('input', () => {
+    query = input.value;
+    filteredPage = 1;
+    paint();
+  });
+  paint();
+
+  return {
+    search: h('label', { class: 'catalogue-team-search' }, [
+      h('span', { class: 'kicker' }, ['Team']),
+      input,
+    ]),
+    root: host,
+  };
 }

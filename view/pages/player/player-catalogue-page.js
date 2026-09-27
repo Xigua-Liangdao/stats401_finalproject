@@ -8,26 +8,29 @@ export async function renderPlayerCataloguePage(target, page = 1) {
   const groups = await loadPlayerCatalog();
   const onPageChange = rememberCataloguePage('players', page);
 
+  const catalogue = createTeamGroupedCatalogue({
+    variant: 'players',
+    initialPage: page,
+    onPageChange,
+    groups: groups.map((group) => ({
+      ...group,
+      meta: `${String(group.players.length).padStart(2, '0')} players`,
+    })),
+    getItems: (group) => group.players,
+    renderItem: (player) => createRosterSlot(player),
+  });
+
   target.append(
     createPageShell({
       kicker: '01 / Catalogue',
       title: 'Catalogue',
       meta: ['Grouped by team'],
+      actions: [catalogue.search],
       breadcrumbs: [
         { label: 'Home', href: href.home },
         { label: 'Catalogue' },
       ],
-      children: createTeamGroupedCatalogue({
-        variant: 'players',
-        initialPage: page,
-        onPageChange,
-        groups: groups.map((group) => ({
-          ...group,
-          meta: `${String(group.players.length).padStart(2, '0')} players`,
-        })),
-        getItems: (group) => group.players,
-        renderItem: (player) => createRosterSlot(player),
-      }),
+      children: catalogue.root,
     }),
   );
 }
