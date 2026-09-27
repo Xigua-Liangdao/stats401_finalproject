@@ -14,6 +14,32 @@
   min-height: 0;
 }
 
+.pair-heatmap-stack.is-split {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(14.5rem, 17rem);
+  gap: 0.75rem 0.85rem;
+  align-items: stretch;
+}
+
+.pair-heatmap-stack.is-split > .notice {
+  grid-column: 1 / -1;
+}
+
+.pair-heatmap-stack.is-split > .pair-heatmap-stage {
+  min-height: 0;
+}
+
+.pair-heatmap-stack.is-split > .heatmap-detail {
+  margin-top: 0;
+  min-height: 0;
+  max-height: 100%;
+  overflow: auto;
+}
+
+.drawer .pair-heatmap-stack:not(.is-split) > .heatmap-detail {
+  min-height: 18.5rem;
+}
+
 .pair-heatmap-panel .notice {
   margin: 0;
 }
@@ -119,4 +145,14 @@
 .heatmap-detail__row dd {
   margin: 0;
   color: var(--text);
+}
+
+@media (max-width: 720px) {
+  .pair-heatmap-stack.is-split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .pair-heatmap-stack.is-split > .heatmap-detail {
+    max-height: 18.5rem;
+  }
 }

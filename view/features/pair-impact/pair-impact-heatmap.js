@@ -96,13 +96,14 @@ export function createPairHeatmapPanel({ heatmap, selectedIds = [], teamName, on
   const stage = h('div', { class: 'viz-stage pair-heatmap-stage', role: 'presentation' });
   const detail = h('div', { class: 'heatmap-detail', 'aria-live': 'polite' });
   renderDetail(detail, null, players);
+  const split = players.length > 5;
 
   const node = h('article', { class: 'viz-placeholder panel pair-heatmap-panel', dataset: { viz: 'pair-impact' } }, [
     h('div', { class: 'viz-placeholder__chrome' }, [
       h('span', {}, ['VIZ']),
       h('span', {}, [teamName ? `Teammate co-performance · ${teamName}` : 'Teammate co-performance']),
     ]),
-    h('div', { class: 'pair-heatmap-stack' }, [
+    h('div', { class: split ? 'pair-heatmap-stack is-split' : 'pair-heatmap-stack' }, [
       createEligibilityNotice(hasEligiblePair, 'pair heatmap'),
       stage,
       detail,
@@ -111,7 +112,8 @@ export function createPairHeatmapPanel({ heatmap, selectedIds = [], teamName, on
 
   queueMicrotask(() => {
     if (!stage.isConnected) return;
-    bind?.(mountPairHeatmap(stage, detail, { heatmap, selectedIds, onInspect }));
+    const api = mountPairHeatmap(stage, detail, { heatmap, selectedIds, onInspect });
+    bind?.(api);
   });
 
   return node;
@@ -132,6 +134,7 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
 
   let pinned = null;
   let hovered = null;
+  let drawnWidth = -1;
   const gradientId = `heatmap-scale-${heatmapSerial += 1}`;
   const observer = new ResizeObserver(() => draw());
   observer.observe(stage);
@@ -203,8 +206,17 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
       return;
     }
     const width = stage.clientWidth;
-    const height = Math.max(stage.clientHeight, 280);
-    if (width < 40) return;
+    if (width < 40 || width === drawnWidth) return;
+    drawnWidth = width;
+    const split = n > 5;
+    const labelW = Math.min(108, Math.max(72, width * 0.22));
+    const labelH = 72;
+    const legendGutter = split ? 64 : 28;
+    const size = split
+      ? Math.max(160, width - labelW - legendGutter)
+      : Math.min(width - labelW - legendGutter, Math.max(stage.clientHeight, 280) - labelH - 8);
+    const height = split ? size + labelH + 12 : Math.max(stage.clientHeight, 280);
+    if (split) stage.style.height = `${height}px`;
     svg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
     svg.selectAll('*').remove();
     svg.append('title').text('Teammate co-performance heatmap');
@@ -219,11 +231,7 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
       return;
     }
 
-    const labelW = Math.min(108, Math.max(72, width * 0.22));
-    const labelH = 72;
     const legendW = 12;
-    const padR = 28;
-    const size = Math.min(width - labelW - padR, height - labelH - 8);
     const originX = labelW;
     const originY = 6;
     const cellSize = size / n;
@@ -267,7 +275,10 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
         (cell) => `${playerLabel(players[cell.row])} and ${playerLabel(players[cell.col])}. ${kindCopy(cell.kind)}`,
       )
       .on('mouseenter', (_, cell) => selectCell(cell))
-      .on('mouseleave', clearHover)
+      .on('mouseleave', (event) => {
+        if (event.relatedTarget && stage.contains(event.relatedTarget)) return;
+        clearHover();
+      })
       .on('focus', (_, cell) => selectCell(cell))
       .on('blur', clearHover)
       .on('click', (_, cell) => togglePin(cell))

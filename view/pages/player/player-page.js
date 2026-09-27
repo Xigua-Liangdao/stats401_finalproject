@@ -8,18 +8,12 @@ import { loadPlayerGames } from '../../features/player-games/player-games-data.j
 import { renderPlayerGamesCatalogue } from '../../features/player-games/player-games-catalogue.js?v=game-stats';
 import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js';
 import { h } from '../../utils/dom.js';
-import { dataSource } from '../../utils/data-source.js';
 import { backAction, href, readCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
 import { renderNotFound } from '../not-found.js';
 
 async function openPlayerPairImpact(player) {
-  const lineups = await dataSource.listTeamLineups(player.team.id);
-  const lineup = lineups
-    .filter((item) => item.playerIds.includes(player.id))
-    .sort((a, b) => (b.stats?.n_games ?? -1) - (a.stats?.n_games ?? -1))[0];
-  if (!lineup) return;
   await openPairImpactDrawer({
-    lineupId: lineup.id,
+    teamId: player.team.id,
     teamName: player.team.name,
     selectedIds: [player.id],
   });

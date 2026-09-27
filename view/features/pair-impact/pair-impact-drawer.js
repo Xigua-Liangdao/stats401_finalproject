@@ -1,11 +1,11 @@
 import { createDrawerSection, createMetaGrid } from '../../components/drawers/drawer-section.js';
 import { openDrawer } from '../../components/drawers/drawer.js';
 import { h } from '../../utils/dom.js';
-import { loadLineupHeatmap } from './pair-impact-data.js';
+import { loadLineupHeatmap, loadTeamHeatmap } from './pair-impact-data.js';
 import { createPairHeatmapPanel } from './pair-impact-heatmap.js';
 
-export async function openPairImpactDrawer({ lineupId, teamName, selectedIds }) {
-  const heatmap = await loadLineupHeatmap(lineupId);
+export async function openPairImpactDrawer({ lineupId, teamId, teamName, selectedIds }) {
+  const heatmap = teamId ? await loadTeamHeatmap(teamId) : await loadLineupHeatmap(lineupId);
   const players = heatmap.players.map((player) => player.name).join(' · ');
   const highlighted = selectedIds?.length
     ? selectedIds
@@ -14,10 +14,10 @@ export async function openPairImpactDrawer({ lineupId, teamName, selectedIds }) 
   openDrawer({
     kicker: 'Shared feature',
     title: 'Pair impact',
-    className: 'drawer--heatmap',
+    className: heatmap.players.length > 5 ? 'drawer--heatmap drawer--heatmap-wide' : 'drawer--heatmap',
     body: h('div', {}, [
       createDrawerSection({
-        title: 'Selected players',
+        title: teamId ? 'Team roster' : 'Selected players',
         children: createMetaGrid([
           { label: 'Team', value: teamName ?? '—' },
           { label: 'Players', value: players || '—' },

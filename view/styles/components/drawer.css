@@ -41,6 +41,14 @@
   width: min(560px, 100%);
 }
 
+.drawer--heatmap-wide {
+  width: min(880px, 100%);
+}
+
+.drawer--heatmap .drawer-body {
+  scrollbar-gutter: stable;
+}
+
 .drawer-header {
   padding: 1.1rem 1.1rem 0.9rem;
   border-bottom: 1px solid var(--line);
