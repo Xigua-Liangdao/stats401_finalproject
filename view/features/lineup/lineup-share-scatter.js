@@ -2,46 +2,13 @@ import { openLineupGameInfo } from '../lineup-games/lineup-game-info.js?v=game-s
 import { ROLE_COLORS, ROLE_ORDER } from '../../utils/constants.js';
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
-import { formatCompactDate, formatDate, formatPercent, formatResult, formatRole, parseGameDate } from '../../utils/formatting.js';
-
-function datedGames(games) {
-  return [...games]
-    .map((game) => ({ game, time: parseGameDate(game.date)?.getTime() ?? 0 }))
-    .sort((a, b) => a.time - b.time || String(a.game.id).localeCompare(String(b.game.id)));
-}
-
-function pointsFromGames(games) {
-  const dated = datedGames(games);
-  const last = Math.max(1, dated.length - 1);
-  const points = [];
-
-  dated.forEach(({ game }, index) => {
-    const recency = dated.length === 1 ? 1 : index / last;
-    for (const role of ROLE_ORDER) {
-      const slot = game.roles?.[role];
-      if (!slot) continue;
-      const goldShare = slot.gold_share;
-      const damageShare = slot.damage_share;
-      if (goldShare == null || damageShare == null || !Number.isFinite(goldShare) || !Number.isFinite(damageShare)) {
-        continue;
-      }
-      points.push({
-        game,
-        role,
-        playerId: slot.id,
-        name: slot.name,
-        goldShare,
-        damageShare,
-        recency,
-      });
-    }
-  });
-
-  return points;
-}
+import { formatDate, formatPercent, formatRole } from '../../utils/formatting.js';
+import { createGameMark } from './lineup-range-dock.js';
+import { mixValue, roleValue } from './lineup-playback.js';
 
 const SPAN_STEP = 0.1;
 const MIN_SPAN = 0.4;
+const DOT_RADIUS = 5.6;
 
 function snapSpan(span) {
   return Number((Math.round(span / SPAN_STEP) * SPAN_STEP).toFixed(2));
@@ -51,37 +18,22 @@ function clamp(value, min, max) {
   return Math.min(max, Math.max(min, value));
 }
 
-function radiusFor(recency) {
-  return 2.8 + recency * 6.2;
+function sharePoints(games) {
+  const points = [];
+  for (const game of games) {
+    for (const role of ROLE_ORDER) {
+      const goldShare = roleValue(game, role, 'gold_share');
+      const damageShare = roleValue(game, role, 'damage_share');
+      if (goldShare == null || damageShare == null) continue;
+      points.push({ goldShare, damageShare });
+    }
+  }
+  return points;
 }
 
-function createShareLegend(games) {
-  const dated = datedGames(games);
-  const oldest = dated[0]?.game.date;
-  const newest = dated[dated.length - 1]?.game.date;
-  const stops = [
-    { recency: 0, label: oldest ? formatCompactDate(oldest) : 'Oldest' },
-    { recency: 0.5, label: '→' },
-    { recency: 1, label: newest ? formatCompactDate(newest) : 'Newest' },
-  ];
-
-  return h('div', { class: 'share-legend', 'aria-label': 'Size encodes recency; color encodes role' }, [
-    h('div', { class: 'share-legend__kicker' }, ['Size · recency']),
+function createShareLegend() {
+  return h('div', { class: 'share-legend', 'aria-label': 'Color encodes role' }, [
     h('div', { class: 'share-legend__kicker' }, ['Role']),
-    h(
-      'div',
-      { class: 'share-legend__sizes' },
-      stops.map((stop) => {
-        const diameter = `${Math.round(radiusFor(stop.recency) * 2)}px`;
-        return h('div', { class: 'share-legend__size' }, [
-          h('span', {
-            class: 'share-legend__ring',
-            style: { width: diameter, height: diameter },
-          }),
-          h('span', { class: 'share-legend__caption' }, [stop.label]),
-        ]);
-      }),
-    ),
     h(
       'div',
       { class: 'share-legend__roles' },
@@ -98,7 +50,7 @@ function createShareLegend(games) {
   ]);
 }
 
-export function createLineupShareScatterPanel({ games = [] }) {
+export function createLineupShareScatterPanel({ games = [], playback }) {
   const stage = h('div', { class: 'viz-stage lineup-share-stage', role: 'presentation' });
   const rangeLabel = h('span', { class: 'lineup-share-zoom__range' }, ['0–100%']);
   const zoomInBtn = h('button', {
@@ -110,6 +62,28 @@ export function createLineupShareScatterPanel({ games = [] }) {
   const resetBtn = h('button', {
     class: 'radar-zoom-btn', type: 'button', 'aria-label': 'Reset gold share scale', dataset: { zoom: 'reset' },
   }, ['Reset']);
+  const visibleRoles = new Set(ROLE_ORDER);
+  let chart = null;
+  const roleFilters = h(
+    'div',
+    { class: 'lineup-role-filters', role: 'group', 'aria-label': 'Roles shown on this chart' },
+    ROLE_ORDER.map((role) => {
+      const input = h('input', { type: 'checkbox' });
+      input.checked = true;
+      const label = h('label', { class: 'lineup-role-filter is-on' }, [
+        input,
+        h('span', { class: 'lineup-role-filter__swatch', style: { background: ROLE_COLORS[role] } }),
+        formatRole(role),
+      ]);
+      input.addEventListener('change', () => {
+        if (input.checked) visibleRoles.add(role);
+        else visibleRoles.delete(role);
+        label.classList.toggle('is-on', input.checked);
+        chart?.setVisibleRoles();
+      });
+      return label;
+    }),
+  );
   const node = h('article', { class: 'viz-placeholder panel lineup-share-panel', dataset: { viz: 'lineup-share-scatter' } }, [
     h('div', { class: 'viz-placeholder__chrome' }, [
       h('div', { class: 'lineup-share-heading' }, [
@@ -125,8 +99,9 @@ export function createLineupShareScatterPanel({ games = [] }) {
         ]),
       ]),
     ]),
+    roleFilters,
     stage,
-    createShareLegend(games),
+    createShareLegend(),
   ]);
 
   const syncZoom = (span, floor, start, end) => {
@@ -137,7 +112,7 @@ export function createLineupShareScatterPanel({ games = [] }) {
   };
 
   queueMicrotask(() => {
-    const chart = mountLineupShareScatter(stage, { games, onSpanChange: syncZoom });
+    chart = mountLineupShareScatter(stage, { games, playback, onSpanChange: syncZoom, visibleRoles });
     zoomInBtn.addEventListener('click', () => chart.zoomIn());
     zoomOutBtn.addEventListener('click', () => chart.zoomOut());
     resetBtn.addEventListener('click', () => chart.resetZoom());
@@ -146,11 +121,16 @@ export function createLineupShareScatterPanel({ games = [] }) {
   return node;
 }
 
-export function mountLineupShareScatter(stage, { games = [], onSpanChange } = {}) {
+function gameTip(game) {
+  return `<div class="lineup-tip-game">${createGameMark(game).outerHTML}<span>${formatDate(game.date)}</span></div>`;
+}
+
+export function mountLineupShareScatter(stage, { games = [], playback, onSpanChange, visibleRoles = new Set(ROLE_ORDER) } = {}) {
   stage.classList.add('is-mounted');
   stage.replaceChildren();
 
-  const points = pointsFromGames(games);
+  const ordered = playback?.games ?? games;
+  const points = sharePoints(ordered);
   const dataMax = Math.max(0.2, d3.max(points, (point) => point.goldShare) ?? 0.2);
   const fullMax = d3.scaleLinear().domain([0, dataMax]).nice().domain()[1];
   const floor = points.length ? MIN_SPAN : 1;
@@ -162,32 +142,19 @@ export function mountLineupShareScatter(stage, { games = [], onSpanChange } = {}
   let panStartX = 0;
   let lastPanX = 0;
   let suppressClick = false;
+  let frameState = null;
+  let paintKey = '';
+  let x = null;
+  let y = null;
+
+  const plotHost = h('div', { class: 'lineup-share-plot' });
   const tooltip = document.createElement('div');
   tooltip.className = 'chart-tooltip';
   tooltip.hidden = true;
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
-  svg.append('title').text('Related-game gold share versus damage share');
-  stage.append(svg.node(), tooltip);
-
-  function windowWidth() {
-    return fullMax * span;
-  }
-
-  function clampStart(start) {
-    return clamp(start, 0, Math.max(0, fullMax - windowWidth()));
-  }
-
-  function setSpan(next) {
-    const clamped = Math.min(1, Math.max(floor, snapSpan(next)));
-    if (clamped !== span) {
-      const center = xStart + windowWidth() / 2;
-      span = clamped;
-      xStart = clampStart(center - windowWidth() / 2);
-      draw();
-    }
-    return span;
-  }
-
+  svg.append('title').text('One game at a time: five role points move between games');
+  plotHost.append(svg.node(), tooltip);
+  stage.append(plotHost);
   const svgNode = svg.node();
 
   svgNode.addEventListener('pointerdown', (event) => {
@@ -201,16 +168,14 @@ export function mountLineupShareScatter(stage, { games = [], onSpanChange } = {}
     svgNode.setPointerCapture(event.pointerId);
     stage.classList.add('is-panning');
   });
-
   svgNode.addEventListener('pointermove', (event) => {
     if (!panning) return;
     const dx = event.clientX - lastPanX;
     lastPanX = event.clientX;
     if (!dx || plotWidth <= 0) return;
     xStart = clampStart(xStart - (dx / plotWidth) * windowWidth());
-    draw();
+    layout();
   });
-
   svgNode.addEventListener('pointerup', (event) => {
     if (!panning) return;
     const moved = Math.abs(event.clientX - panStartX) > 4;
@@ -228,45 +193,67 @@ export function mountLineupShareScatter(stage, { games = [], onSpanChange } = {}
     stage.classList.remove('is-panning');
   });
 
-  const observer = new ResizeObserver(() => draw());
-  observer.observe(stage);
+  const observer = new ResizeObserver(() => layout());
+  observer.observe(plotHost);
+
+  function windowWidth() {
+    return fullMax * span;
+  }
+
+  function clampStart(start) {
+    return clamp(start, 0, Math.max(0, fullMax - windowWidth()));
+  }
+
+  function setSpan(next) {
+    const clamped = Math.min(1, Math.max(floor, snapSpan(next)));
+    if (clamped !== span) {
+      const center = xStart + windowWidth() / 2;
+      span = clamped;
+      xStart = clampStart(center - windowWidth() / 2);
+      layout();
+    }
+    return span;
+  }
 
   function hideTip() {
     tooltip.hidden = true;
   }
 
-  function showTip(event, point) {
-    const opponent = point.game.opponent?.name ?? point.game.opponent?.short;
+  function currentGame() {
+    if (!frameState) return ordered[0] ?? null;
+    return frameState.games[frameState.landed ?? frameState.index] ?? ordered[0] ?? null;
+  }
+
+  function showTip(event, role) {
+    const game = currentGame();
+    const slot = game?.roles?.[role];
+    if (!game || !slot) return;
+    const opponent = game.opponent?.name ?? game.opponent?.short;
     tooltip.innerHTML = [
-      `<div>${point.name ?? point.playerId} · ${formatRole(point.role)}</div>`,
-      `<div>${formatDate(point.game.date)} · ${formatResult(point.game.result)}</div>`,
+      `<div>${slot.name ?? slot.id} · ${formatRole(role)}</div>`,
+      gameTip(game),
       opponent ? `<div>vs ${opponent}</div>` : null,
-      `<div>Gold share: ${formatPercent(point.goldShare)}</div>`,
-      `<div>Damage share: ${formatPercent(point.damageShare)}</div>`,
-    ]
-      .filter(Boolean)
-      .join('');
+      `<div>Gold share: ${formatPercent(roleValue(game, role, 'gold_share'))}</div>`,
+      `<div>Damage share: ${formatPercent(roleValue(game, role, 'damage_share'))}</div>`,
+    ].filter(Boolean).join('');
     tooltip.hidden = false;
-    const bounds = stage.getBoundingClientRect();
+    const bounds = plotHost.getBoundingClientRect();
     tooltip.style.left = `${Math.min(event.clientX - bounds.left + 12, bounds.width - 180)}px`;
     tooltip.style.top = `${Math.max(8, event.clientY - bounds.top - 12)}px`;
   }
 
-  function setActiveGame(gameId) {
-    svg.selectAll('.share-dot').classed('is-linked', (point) => Boolean(gameId && point.game.id === gameId));
-  }
-
-  function draw() {
-    if (!stage.isConnected) {
+  function layout() {
+    if (!plotHost.isConnected) {
       observer.disconnect();
+      playback?.destroy();
       return;
     }
-    const width = stage.clientWidth;
-    const height = Math.max(stage.clientHeight, 320);
+    const width = plotHost.clientWidth;
+    const height = Math.max(plotHost.clientHeight, 280);
     if (width < 40) return;
     svg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
     svg.selectAll('*').remove();
-    svg.append('title').text('Related-game gold share versus damage share');
+    svg.append('title').text('One game at a time: five role points move between games');
 
     if (!points.length) {
       svg.append('text')
@@ -286,27 +273,24 @@ export function mountLineupShareScatter(stage, { games = [], onSpanChange } = {}
     xStart = clampStart(xStart);
     const plot = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
     const yMax = Math.max(0.2, d3.max(points, (point) => point.damageShare));
-    const x = d3.scaleLinear().domain([xStart, xStart + windowWidth()]).range([0, innerWidth]);
-    const y = d3.scaleLinear().domain([0, yMax]).nice().range([innerHeight, 0]);
+    x = d3.scaleLinear().domain([xStart, xStart + windowWidth()]).range([0, innerWidth]);
+    y = d3.scaleLinear().domain([0, yMax]).nice().range([innerHeight, 0]);
 
     plot.append('g')
       .attr('class', 'chart-grid')
       .call(d3.axisLeft(y).ticks(5).tickSize(-innerWidth).tickFormat(() => ''))
       .select('.domain')
       .remove();
-
     plot.append('g')
       .attr('class', 'chart-axis')
       .attr('transform', `translate(0,${innerHeight})`)
       .call(d3.axisBottom(x).ticks(5).tickFormat((value) => formatPercent(value)).tickSizeOuter(0));
-
     plot.append('text')
       .attr('class', 'chart-axis-label')
       .attr('x', innerWidth)
       .attr('y', innerHeight + 32)
       .attr('text-anchor', 'end')
       .text('Gold share');
-
     plot.append('text')
       .attr('class', 'chart-axis-label')
       .attr('transform', 'rotate(-90)')
@@ -316,44 +300,88 @@ export function mountLineupShareScatter(stage, { games = [], onSpanChange } = {}
       .text('Damage share');
 
     const clipId = `lineup-share-clip-${Math.round(innerWidth)}-${Math.round(innerHeight)}`;
-    svg.append('clipPath')
-      .attr('id', clipId)
-      .append('rect')
-      .attr('width', innerWidth)
-      .attr('height', innerHeight);
-    const dots = plot.append('g').attr('clip-path', `url(#${clipId})`);
+    svg.append('clipPath').attr('id', clipId).append('rect').attr('width', innerWidth).attr('height', innerHeight);
+    plot.append('g').attr('class', 'share-dots').attr('clip-path', `url(#${clipId})`);
+    paintKey = '';
 
-    dots
-      .selectAll('.share-dot')
-      .data(points)
+    plot.append('g')
+      .attr('class', 'chart-axis chart-axis--y')
+      .call(d3.axisLeft(y).ticks(5).tickFormat((value) => formatPercent(value)).tickSizeOuter(0));
+
+    onSpanChange?.(span, floor, xStart, xStart + windowWidth());
+    stage.classList.toggle('is-zoomed', span < 1 - 1e-9);
+    paint(frameState);
+  }
+
+  function pointsInRange(state) {
+    const slice = state.games.slice(state.from, state.to + 1);
+    const last = Math.max(1, slice.length - 1);
+    const cloud = [];
+    slice.forEach((game, index) => {
+      const recency = slice.length === 1 ? 1 : index / last;
+      for (const role of ROLE_ORDER) {
+        if (!visibleRoles.has(role)) continue;
+        const gold = roleValue(game, role, 'gold_share');
+        const damage = roleValue(game, role, 'damage_share');
+        if (gold == null || damage == null) continue;
+        cloud.push({
+          game,
+          role,
+          gold,
+          damage,
+          recency,
+          name: game.roles?.[role]?.name,
+        });
+      }
+    });
+    return cloud;
+  }
+
+  function paint(state) {
+    frameState = state;
+    if (!x || !y || !state) return;
+    const layer = svg.select('.share-dots');
+    if (layer.empty()) return;
+    const roles = ROLE_ORDER.filter((role) => visibleRoles.has(role)).join(',');
+    const key = state.mode === 'static' ? `static:${state.from}:${state.to}:${roles}` : `dynamic:${roles}`;
+    if (key !== paintKey) {
+      layer.selectAll('*').remove();
+      paintKey = key;
+      if (state.mode === 'static') buildStatic(layer, state);
+      else buildDynamic(layer);
+    }
+    if (state.mode === 'dynamic') updateDynamic(layer, state);
+  }
+
+  function buildStatic(layer, state) {
+    layer.selectAll('.share-dot')
+      .data(pointsInRange(state), (point) => `${point.game.id}|${point.role}`)
       .join('circle')
       .attr('class', 'share-dot')
-      .attr('cx', (point) => x(point.goldShare))
-      .attr('cy', (point) => y(point.damageShare))
-      .attr('r', (point) => radiusFor(point.recency))
+      .attr('cx', (point) => x(point.gold))
+      .attr('cy', (point) => y(point.damage))
+      .attr('r', (point) => 2.8 + point.recency * 6.2)
       .attr('fill', (point) => ROLE_COLORS[point.role] ?? '#7adfff')
       .attr('tabindex', 0)
       .attr('role', 'button')
-      .attr(
-        'aria-label',
-        (point) =>
-          `${point.name ?? point.playerId}, ${formatRole(point.role)}, ${formatDate(point.game.date)}. Gold ${formatPercent(point.goldShare)}, damage ${formatPercent(point.damageShare)}.`,
-      )
+      .attr('aria-label', (point) => `${point.name ?? point.role}, ${formatRole(point.role)}, ${formatDate(point.game.date)}`)
       .on('mousemove', (event, point) => {
-        if (panning) return;
-        setActiveGame(point.game.id);
-        showTip(event, point);
+        layer.selectAll('.share-dot').classed('is-linked', (item) => item.game.id === point.game.id);
+        const opponent = point.game.opponent?.name ?? point.game.opponent?.short;
+        tooltip.innerHTML = [
+          `<div>${point.name ?? point.role} · ${formatRole(point.role)}</div>`,
+          gameTip(point.game),
+          opponent ? `<div>vs ${opponent}</div>` : null,
+          `<div>Gold share: ${formatPercent(point.gold)}</div>`,
+          `<div>Damage share: ${formatPercent(point.damage)}</div>`,
+        ].filter(Boolean).join('');
+        tooltip.hidden = false;
+        const bounds = plotHost.getBoundingClientRect();
+        tooltip.style.left = `${Math.min(event.clientX - bounds.left + 12, bounds.width - 180)}px`;
+        tooltip.style.top = `${Math.max(8, event.clientY - bounds.top - 12)}px`;
       })
       .on('mouseleave', () => {
-        setActiveGame(null);
-        hideTip();
-      })
-      .on('focus', (event, point) => {
-        setActiveGame(point.game.id);
-        showTip(event, point);
-      })
-      .on('blur', () => {
-        setActiveGame(null);
+        layer.selectAll('.share-dot').classed('is-linked', false);
         hideTip();
       })
       .on('click', (event, point) => {
@@ -363,23 +391,76 @@ export function mountLineupShareScatter(stage, { games = [], onSpanChange } = {}
           return;
         }
         openLineupGameInfo(point.game);
-      })
-      .on('keydown', (event, point) => {
-        if (event.key === 'Enter' || event.key === ' ') {
-          event.preventDefault();
-          openLineupGameInfo(point.game);
-        }
       });
-
-    plot.append('g')
-      .attr('class', 'chart-axis chart-axis--y')
-      .call(d3.axisLeft(y).ticks(5).tickFormat((value) => formatPercent(value)).tickSizeOuter(0));
-
-    onSpanChange?.(span, floor, xStart, xStart + windowWidth());
-    stage.classList.toggle('is-zoomed', span < 1 - 1e-9);
   }
 
-  draw();
+  function buildDynamic(layer) {
+    const marks = layer.selectAll('.share-mark').data(ROLE_ORDER).join('g').attr('class', 'share-mark');
+    marks.append('circle').attr('class', 'share-dot-ring').attr('r', DOT_RADIUS + 4);
+    marks.append('circle')
+      .attr('class', 'share-dot')
+      .attr('r', DOT_RADIUS)
+      .attr('tabindex', 0)
+      .attr('role', 'button')
+      .on('mousemove', (event, role) => showTip(event, role))
+      .on('mouseleave', hideTip)
+      .on('click', (event, role) => {
+        if (suppressClick) {
+          suppressClick = false;
+          event.stopPropagation();
+          return;
+        }
+        const game = currentGame();
+        if (game?.roles?.[role]) openLineupGameInfo(game);
+      });
+  }
+
+  function updateDynamic(layer, state) {
+    const settled = state.phase === 'hold';
+    layer.selectAll('.share-mark').each(function mark(role) {
+      const node = d3.select(this);
+      const fromGame = state.games[state.previous];
+      const toGame = state.games[state.index];
+      const gold = mixValue(
+        roleValue(fromGame, role, 'gold_share'),
+        roleValue(toGame, role, 'gold_share'),
+        state.progress,
+      );
+      const damage = mixValue(
+        roleValue(fromGame, role, 'damage_share'),
+        roleValue(toGame, role, 'damage_share'),
+        state.progress,
+      );
+      const visible = visibleRoles.has(role) && gold != null && damage != null;
+      const color = ROLE_COLORS[role] ?? '#7adfff';
+      node.select('.share-dot')
+        .attr('cx', visible ? x(gold) : 0)
+        .attr('cy', visible ? y(damage) : 0)
+        .attr('fill', color)
+        .attr('display', visible ? null : 'none')
+        .classed('is-settled', settled && visible)
+        .attr('aria-label', visible
+          ? `${toGame?.roles?.[role]?.name ?? role}, ${formatRole(role)}, ${formatDate(toGame?.date)}`
+          : formatRole(role));
+      node.select('.share-dot-ring')
+        .attr('cx', visible ? x(gold) : 0)
+        .attr('cy', visible ? y(damage) : 0)
+        .attr('stroke', color)
+        .attr('display', visible && settled ? null : 'none');
+    });
+  }
+
+  let unsubscribe = () => {};
+  unsubscribe = playback?.subscribe((state) => {
+    if (!plotHost.isConnected) {
+      unsubscribe();
+      playback.destroy();
+      return;
+    }
+    paint(state);
+  }) ?? unsubscribe;
+
+  layout();
   return {
     zoomIn() {
       setSpan(span - SPAN_STEP);
@@ -390,7 +471,13 @@ export function mountLineupShareScatter(stage, { games = [], onSpanChange } = {}
     resetZoom() {
       setSpan(1);
     },
+    setVisibleRoles() {
+      paintKey = '';
+      paint(frameState);
+    },
     destroy() {
+      unsubscribe?.();
+      playback?.destroy();
       observer.disconnect();
     },
   };

@@ -4,11 +4,14 @@ import { createSectionBlock } from '../../components/layout/section-block.js';
 import { h } from '../../utils/dom.js';
 import { fillStatCards, isEligible } from '../../utils/stats.js';
 import { LINEUP_STAT_CARDS } from './lineup-data.js';
+import { createLineupRangeDock } from './lineup-range-dock.js';
+import { createLineupPlayback } from './lineup-playback.js';
 import { createLineupShareBarsPanel } from './lineup-share-bars.js';
 import { createLineupShareScatterPanel } from './lineup-share-scatter.js';
 
 export function renderLineupStats(lineup, games = []) {
   const stats = lineup.stats ?? {};
+  const playback = createLineupPlayback(games);
   return h('div', {}, [
     createSectionBlock({
       index: '02 / Metrics',
@@ -22,9 +25,12 @@ export function renderLineupStats(lineup, games = []) {
     createSectionBlock({
       index: '03 / Stages',
       title: 'Visualization mounts',
-      children: h('div', { class: 'viz-grid' }, [
-        createLineupShareScatterPanel({ games }),
-        createLineupShareBarsPanel({ lineup, games }),
+      children: h('div', { class: 'lineup-stage' }, [
+        createLineupRangeDock({ playback }),
+        h('div', { class: 'viz-grid' }, [
+          createLineupShareScatterPanel({ games, playback }),
+          createLineupShareBarsPanel({ lineup, games, playback }),
+        ]),
       ]),
     }),
   ]);

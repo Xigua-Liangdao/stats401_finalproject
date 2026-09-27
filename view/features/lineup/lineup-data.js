@@ -21,12 +21,12 @@ export const LINEUP_VIZ = [
     vizId: 'lineup-share-scatter',
     index: 'VIZ 01',
     title: 'Gold share vs damage share',
-    description: 'Each related game plots five role points. Newer games are larger.',
+    description: 'Static mode plots every game in the selected range. Dynamic mode moves one game’s five points, then holds.',
   },
   {
     vizId: 'lineup-share-bars',
     index: 'VIZ 02',
     title: 'Player shares',
-    description: 'Mean gold or damage share for the five players across related games.',
+    description: 'Static mode is the mean across the selected games. Dynamic mode follows the same game as the scatter.',
   },
 ];
