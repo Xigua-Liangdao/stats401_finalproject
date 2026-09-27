@@ -7,8 +7,10 @@ import { renderNotFound } from './pages/not-found.js';
 import { renderPlayerCataloguePage } from './pages/player/player-catalogue-page.js?v=catalogue-back';
 import { renderPlayerPage } from './pages/player/player-page.js?v=scale-zoom';
 import { renderTeamPage } from './pages/team/team-page.js';
+import { dataSource } from './utils/data-source.js';
 import { h } from './utils/dom.js';
 import { startRouter } from './utils/navigation.js?v=catalogue-back';
+import { ensureSeason, seasonOptions, setSelectedSeason } from './utils/season.js';
 import { createRouteTransition, shouldPlayRouteWipe } from './utils/route-transition.js';
 
 const header = document.querySelector('#site-header');
@@ -23,7 +25,17 @@ async function render(route) {
   const opening = !booted;
   booted = true;
   closeDrawer();
-  renderSiteHeader(header, route.name);
+  const catalog = await dataSource.loadCatalog();
+  const seasons = seasonOptions(catalog);
+  const season = ensureSeason(seasons);
+  renderSiteHeader(header, route.name, {
+    seasons,
+    season,
+    onSeasonChange: (value) => {
+      setSelectedSeason(value);
+      if (currentRouteName === 'home') render({ name: 'home' });
+    },
+  });
   const cinematic = shouldPlayRouteWipe(currentRouteName, route.name);
   currentRouteName = route.name;
 

@@ -8,7 +8,19 @@ const LINKS = [
   { href: href.players, label: 'Catalogue', names: ['players', 'player', 'team'] },
 ];
 
-export function renderSiteHeader(target, routeName) {
+function createSeasonSelect({ seasons = [], season, onSeasonChange }) {
+  const options = seasons.length ? seasons : [season].filter((value) => value != null);
+  return h('select', {
+    class: 'season-select',
+    'aria-label': 'Season',
+    onchange: (event) => onSeasonChange?.(event.target.value),
+  }, options.map((value) => h('option', {
+    value: String(value),
+    selected: String(value) === String(season),
+  }, [String(value)])));
+}
+
+export function renderSiteHeader(target, routeName, { seasons = [], season, onSeasonChange } = {}) {
   target.replaceChildren(
     h('div', { class: 'site-header__brand' }, [
       h('span', { class: 'coord' }, [APP_KICKER]),
@@ -29,6 +41,7 @@ export function renderSiteHeader(target, routeName) {
       ),
     ),
     h('div', { class: 'site-header__status' }, [
+      createSeasonSelect({ seasons, season, onSeasonChange }),
       createStatusChip({ label: DATASET_MODE, variant: 'mock' }),
     ]),
   );
