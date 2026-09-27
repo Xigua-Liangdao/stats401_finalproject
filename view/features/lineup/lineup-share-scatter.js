@@ -390,7 +390,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
           event.stopPropagation();
           return;
         }
-        openLineupGameInfo(point.game);
+        openLineupGameInfo(point.game, ordered);
       });
   }
 
@@ -411,7 +411,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
           return;
         }
         const game = currentGame();
-        if (game?.roles?.[role]) openLineupGameInfo(game);
+        if (game?.roles?.[role]) openLineupGameInfo(game, ordered);
       });
   }
 

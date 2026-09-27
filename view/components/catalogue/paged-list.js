@@ -1,6 +1,6 @@
 import { h } from '../../utils/dom.js';
 
-export const GAME_PAGE_SIZE = 5;
+export const GAME_PAGE_SIZE = 10;
 
 export function createPagedList({
   items,

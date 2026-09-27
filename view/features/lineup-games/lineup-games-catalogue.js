@@ -12,7 +12,10 @@ export function renderLineupGamesCatalogue(games) {
     children: games.length
       ? createPagedList({
           items: games,
-          renderItem: (game) => createGameRow({ game, onInfo: openLineupGameInfo }),
+          renderItem: (game) => createGameRow({
+            game,
+            onInfo: (item) => openLineupGameInfo(item, games),
+          }),
         })
       : h('div', { class: 'empty-state' }, ['No recorded games for this lineup.']),
   });

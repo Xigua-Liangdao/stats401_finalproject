@@ -4,6 +4,8 @@ import { createStatGrid } from '../../components/cards/stat-card.js';
 import { h } from '../../utils/dom.js';
 import { formatDate, formatResult, formatRole, placeholderValue } from '../../utils/formatting.js';
 import { fillStatCards } from '../../utils/stats.js?v=game-stats';
+import { loadLineupGames } from '../lineup-games/lineup-games-data.js?v=game-stats';
+import { createLineupGameShareChart, findLineupGameSlice } from '../lineup-games/lineup-game-share.js';
 
 const PLAYER_GAME_STAT_CARDS = [
   { key: 'kda', format: 'kda', label: 'KDA', hint: '(Kills + assists) / max(deaths, 1)' },
@@ -16,6 +18,8 @@ const PLAYER_GAME_STAT_CARDS = [
 
 export function openPlayerGameInfo(game) {
   const unevaluated = game.prediction_status === 'warmup' || game.adjusted_impact == null;
+  const shareHost = h('div', { class: 'lineup-game-share-host' });
+  const role = game.role ?? game.player?.role ?? null;
   openDrawer({
     kicker: 'Player game info',
     title: `${game.player?.name ?? 'Player'} · ${formatResult(game.result)}`,
@@ -49,6 +53,24 @@ export function openPlayerGameInfo(game) {
         title: 'Stat cards',
         children: createStatGrid(fillStatCards(PLAYER_GAME_STAT_CARDS, game)),
       }),
+      createDrawerSection({
+        title: 'Gold share vs damage share',
+        children: shareHost,
+      }),
     ]),
   });
+  mountPlayerShare(shareHost, game, role);
+}
+
+async function mountPlayerShare(host, game, role) {
+  if (!game.lineupId) {
+    host.replaceChildren(h('div', { class: 'empty-state' }, ['No lineup share slice for this game.']));
+    return;
+  }
+  const games = await loadLineupGames(game.lineupId);
+  if (!host.isConnected) return;
+  const match = findLineupGameSlice(game, games);
+  host.replaceChildren(match
+    ? createLineupGameShareChart({ game: match, games, highlightRole: role })
+    : h('div', { class: 'empty-state' }, ['No lineup share slice for this game.']));
 }

@@ -2,6 +2,24 @@
   min-height: 360px;
 }
 
+.lineup-game-share-panel {
+  min-height: 0;
+}
+
+.lineup-game-share.is-mounted {
+  height: 260px;
+  min-height: 240px;
+  overflow: visible;
+}
+
+.lineup-game-share .chart-svg {
+  height: 260px;
+}
+
+.drawer .share-legend {
+  margin-top: 0.45rem;
+}
+
 .lineup-share-panel .viz-placeholder__chrome {
   align-items: center;
 }

@@ -2,8 +2,8 @@ import { createDrawerSection, createMetaGrid } from '../../components/drawers/dr
 import { openDrawer } from '../../components/drawers/drawer.js';
 import { createStatGrid } from '../../components/cards/stat-card.js';
 import { createMiniSlot } from '../../components/catalogue/roster-slot.js';
-import { createVizPlaceholder } from '../../components/cards/viz-placeholder.js';
 import { h } from '../../utils/dom.js';
+import { createLineupGameShareChart } from './lineup-game-share.js';
 import { formatDate, formatResult, placeholderValue } from '../../utils/formatting.js';
 import { fillStatCards } from '../../utils/stats.js?v=game-stats';
 
@@ -14,7 +14,7 @@ const LINEUP_GAME_STAT_CARDS = [
   { key: 'damage_concentration', format: 'share', label: 'Damage concentration', hint: 'Sum of squared damage shares' },
 ];
 
-export function openLineupGameInfo(game) {
+export function openLineupGameInfo(game, games = []) {
   const players = game.lineup?.players ?? [];
   const unevaluated = game.lineup_impact == null;
   openDrawer({
@@ -51,13 +51,8 @@ export function openLineupGameInfo(game) {
         children: createStatGrid(fillStatCards(LINEUP_GAME_STAT_CARDS, game)),
       }),
       createDrawerSection({
-        title: 'Share sketch',
-        children: createVizPlaceholder({
-          vizId: 'lineup-game-shares',
-          index: 'VIZ',
-          title: 'Role shares',
-          description: 'Gold and damage shares by role for this game. D3 will mount here.',
-        }),
+        title: 'Gold share vs damage share',
+        children: createLineupGameShareChart({ game, games }),
       }),
     ]),
   });
