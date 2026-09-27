@@ -1,8 +1,11 @@
 import { formatFixed, formatImpact, formatPercent } from '../../utils/formatting.js';
 
 export const SPAN_STEP = 0.05;
+export const BASELINE_RADIUS = 0.5;
 const SPAN_PAD = 1.04;
 const MIN_SPAN_FLOOR = 0.25;
+const DEVIATION_QUANTILE = 0.9;
+const DEVIATION_PAD = 1.1;
 
 const BASELINE_FIELDS = {
   shrunk_impact: 'mean_baseline_impact',
@@ -12,12 +15,20 @@ const BASELINE_FIELDS = {
   mean_vision_per_minute: 'mean_baseline_vision_per_minute',
 };
 
+const PREDICTED_FIELDS = {
+  mean_dpm: 'mean_expected_dpm',
+};
+
 function finiteOrNull(value) {
   return Number.isFinite(value) ? value : null;
 }
 
 export function baselineValue(stats = {}, key) {
   return finiteOrNull(stats[BASELINE_FIELDS[key]]);
+}
+
+export function predictedValue(stats = {}, key) {
+  return finiteOrNull(stats[PREDICTED_FIELDS[key]]);
 }
 
 export function timelineGamesForPlayer(player, games = []) {
@@ -33,65 +44,83 @@ export function profileValues(stats = {}, axes = [], baseline = false) {
   return axes.map((axis) => baseline ? baselineValue(stats, axis.key) : finiteOrNull(stats[axis.key]));
 }
 
-function valuesFor(players, key) {
-  return players.flatMap(({ stats = {} }) => [stats[key], baselineValue(stats, key)]).filter(Number.isFinite);
+function absoluteDeviations(players, key) {
+  const deviations = [];
+  for (const player of players) {
+    const stats = player.stats ?? {};
+    const baseline = baselineValue(stats, key);
+    if (baseline == null) continue;
+    for (const value of [stats[key], predictedValue(stats, key)]) {
+      if (Number.isFinite(value)) deviations.push(Math.abs(value - baseline));
+    }
+  }
+  return deviations.sort((a, b) => a - b);
 }
 
-export function displayMax(axis, span = 1) {
-  return axis.min + (axis.max - axis.min) * span;
+function deviationHalf(players, key) {
+  const deviations = absoluteDeviations(players, key);
+  if (!deviations.length) return 0;
+  const index = Math.round((deviations.length - 1) * DEVIATION_QUANTILE);
+  return deviations[index] * DEVIATION_PAD;
+}
+
+function formatWindow(axis, half) {
+  const text = axis.format(Math.abs(half));
+  return text.replace(/^\+/, '');
 }
 
 export function axisRangeLabel(axis, span = 1) {
-  return `${axis.format(axis.min)}–${axis.format(displayMax(axis, span))}`;
+  return `±${formatWindow(axis, axis.half * span)}`;
 }
 
 export function createRadarAxes(players = []) {
-  const dpmMax = Math.max(0, ...valuesFor(players, 'mean_dpm'));
-  const visionMax = Math.max(0, ...valuesFor(players, 'mean_vision_per_minute'));
-  const impactValues = valuesFor(players, 'shrunk_impact');
-  const impactMin = Math.min(0, ...impactValues);
-  const impactMax = Math.max(0, ...impactValues);
-
   return [
     {
-      key: 'mean_gold_share', label: 'Gold Share', min: 0, max: 1,
-      kind: 'theoretical', rangeLabel: '0–100%', format: formatPercent,
+      key: 'mean_gold_share', label: 'Gold Share',
+      half: deviationHalf(players, 'mean_gold_share'),
+      format: formatPercent,
     },
     {
-      key: 'mean_damage_share', label: 'Damage Share', min: 0, max: 1,
-      kind: 'theoretical', rangeLabel: '0–100%', format: formatPercent,
+      key: 'mean_damage_share', label: 'Damage Share',
+      half: deviationHalf(players, 'mean_damage_share'),
+      format: formatPercent,
     },
     {
-      key: 'mean_dpm', label: 'DPM', min: 0, max: dpmMax || 1,
-      kind: 'observed', rangeLabel: `0–${formatFixed(dpmMax, 1)}`,
+      key: 'mean_dpm', label: 'DPM',
+      half: deviationHalf(players, 'mean_dpm'),
       format: (value) => formatFixed(value, 1),
     },
     {
-      key: 'mean_vision_per_minute', label: 'Vision / min', min: 0, max: visionMax || 1,
-      kind: 'observed', rangeLabel: `0–${formatFixed(visionMax, 2)}`,
+      key: 'mean_vision_per_minute', label: 'Vision / min',
+      half: deviationHalf(players, 'mean_vision_per_minute'),
       format: (value) => formatFixed(value, 2),
     },
     {
-      key: 'shrunk_impact', label: 'Impact', min: impactMin,
-      max: impactMax === impactMin ? impactMin + 1 : impactMax,
-      kind: 'observed', rangeLabel: `${formatImpact(impactMin)}–${formatImpact(impactMax)}`,
-      format: formatImpact, zeroLabel: '0 = on expected DPM',
+      key: 'shrunk_impact', label: 'Impact',
+      half: deviationHalf(players, 'shrunk_impact'),
+      format: formatImpact,
     },
   ];
 }
 
-export function radiusFor(axis, value, span = 1) {
-  if (!Number.isFinite(value)) return null;
-  const max = displayMax(axis, span);
-  if (max === axis.min) return 0;
-  return Math.max(0, Math.min(1, (value - axis.min) / (max - axis.min)));
+export function radiusFor(axis, value, baseline, span = 1) {
+  if (!Number.isFinite(value) || !Number.isFinite(baseline)) return null;
+  const half = axis.half * span;
+  if (!(half > 0)) return value === baseline ? BASELINE_RADIUS : null;
+  const shifted = (value - baseline) / half;
+  return Math.max(0, Math.min(1, BASELINE_RADIUS + BASELINE_RADIUS * shifted));
 }
 
-export function minimumRadarSpan(stats, axes, showBaseline = false) {
-  const peak = Math.max(0, ...axes.map((axis) => Math.max(
-    radiusFor(axis, stats[axis.key]) ?? 0,
-    showBaseline ? radiusFor(axis, baselineValue(stats, axis.key)) ?? 0 : 0,
-  )));
+export function minimumRadarSpan(stats, axes, showPredicted = false) {
+  const peak = Math.max(0, ...axes.map((axis) => {
+    const baseline = baselineValue(stats, axis.key);
+    if (baseline == null || !(axis.half > 0)) return 0;
+    const values = [stats[axis.key]];
+    if (showPredicted) values.push(predictedValue(stats, axis.key));
+    return Math.max(0, ...values.map((value) => (
+      Number.isFinite(value) ? Math.abs(value - baseline) / axis.half : 0
+    )));
+  }));
   const floor = Math.min(1, Math.max(peak * SPAN_PAD, MIN_SPAN_FLOOR));
   return Math.min(1, Math.ceil(floor / SPAN_STEP) * SPAN_STEP);
 }

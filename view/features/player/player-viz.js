@@ -2,7 +2,7 @@ import { h } from '../../utils/dom.js';
 import { PLAYER_CHART_CATEGORIES, findCategory } from './player-chart-config.js';
 import { mountPlayerRadar, createRadarAxes, createRadarScaleNote } from './player-radar-chart.js?v=scale-zoom';
 import { mountPlayerTimeline } from './player-timeline-chart.js';
-import { profileValues, timelineGamesForPlayer } from './player-baseline.js';
+import { predictedValue, profileValues, timelineGamesForPlayer } from './player-baseline.js';
 
 function createSelect(options, value) {
   return h(
@@ -79,6 +79,10 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
     h('input', { type: 'checkbox' }),
     'Season role baseline',
   ]);
+  const predictedToggle = h('label', { class: 'chart-toggle' }, [
+    h('input', { type: 'checkbox' }),
+    'Predicted',
+  ]);
 
   let timelineChart;
   function syncMetrics(picks) {
@@ -112,32 +116,30 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
     stageClass: 'player-radar-stage',
     controls: h('div', { class: 'chart-controls' }, [
       baselineToggle,
-      h('div', { class: 'radar-zoom-controls', role: 'group', 'aria-label': 'Radar scale zoom' }, [
-        h('button', { class: 'radar-zoom-btn', type: 'button', 'aria-label': 'Tighten scale', dataset: { zoom: 'in' } }, ['+']),
-        h('button', { class: 'radar-zoom-btn', type: 'button', 'aria-label': 'Widen scale', dataset: { zoom: 'out' } }, ['−']),
-        h('button', { class: 'radar-zoom-btn', type: 'button', 'aria-label': 'Reset scale', dataset: { zoom: 'reset' } }, ['Reset']),
-      ]),
+      predictedToggle,
     ]),
   });
   const scaleNoteHost = h('div', { class: 'radar-scale-note-host' });
-  const zoomInBtn = radar.node.querySelector('[data-zoom="in"]');
-  const zoomOutBtn = radar.node.querySelector('[data-zoom="out"]');
-  const renderScaleNote = (span = 1, floor = 0.25) => {
-    scaleNoteHost.replaceChildren(createRadarScaleNote(radarAxes, span));
-    if (zoomInBtn) zoomInBtn.disabled = span <= floor + 1e-9;
-    if (zoomOutBtn) zoomOutBtn.disabled = span >= 1 - 1e-9;
-  };
-  renderScaleNote();
+  scaleNoteHost.replaceChildren(createRadarScaleNote(radarAxes));
   radar.node.append(scaleNoteHost);
 
   const baselineInput = baselineToggle.querySelector('input');
+  const predictedInput = predictedToggle.querySelector('input');
   const hasBaseline = profileValues(player.stats, radarAxes, true).some(Number.isFinite);
+  const hasPredicted = radarAxes.some((axis) => predictedValue(player.stats, axis.key) != null);
   if (!hasBaseline) {
     baselineInput.disabled = true;
     baselineToggle.classList.add('is-disabled');
     baselineToggle.title = 'No season role baseline available for this player.';
   } else {
     baselineInput.checked = true;
+  }
+  if (!hasPredicted) {
+    predictedInput.disabled = true;
+    predictedToggle.classList.add('is-disabled');
+    predictedToggle.title = 'No predicted value available for this player.';
+  } else {
+    predictedInput.checked = true;
   }
 
   const root = h('div', { class: 'viz-grid player-viz-grid' }, [timeline.node, radar.node]);
@@ -148,14 +150,10 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
     const radarChart = mountPlayerRadar(radar.stage, {
       stats: player.stats ?? {},
       axes: radarAxes,
-      onSpanChange: renderScaleNote,
     });
     timelineChart.update(selectedFields(category, selectedIds));
     if (baselineInput.checked) radarChart.setBaseline(true);
-
-    radar.node.querySelector('[data-zoom="in"]')?.addEventListener('click', () => radarChart.zoomIn());
-    radar.node.querySelector('[data-zoom="out"]')?.addEventListener('click', () => radarChart.zoomOut());
-    radar.node.querySelector('[data-zoom="reset"]')?.addEventListener('click', () => radarChart.resetZoom());
+    if (predictedInput.checked) radarChart.setPredicted(true);
 
     categorySelect.addEventListener('change', () => {
       category = findCategory(categorySelect.value);
@@ -167,6 +165,9 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
     });
     baselineInput.addEventListener('change', (event) => {
       radarChart.setBaseline(event.target.checked);
+    });
+    predictedInput.addEventListener('change', (event) => {
+      radarChart.setPredicted(event.target.checked);
     });
   });
 

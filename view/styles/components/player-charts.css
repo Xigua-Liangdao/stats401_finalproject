@@ -170,17 +170,6 @@
   cursor: not-allowed;
 }
 
-.radar-zoom-hint {
-  position: absolute;
-  right: 0.55rem;
-  bottom: 0.45rem;
-  z-index: 2;
-  color: var(--dim);
-  font-size: 0.58rem;
-  letter-spacing: 0.1em;
-  pointer-events: none;
-}
-
 .player-radar-stage {
   min-height: 340px;
 }
@@ -290,20 +279,6 @@
   font-size: 9px;
 }
 
-.radar-zero {
-  fill: none;
-  stroke: var(--gold);
-  stroke-width: 1.4;
-  stroke-dasharray: 4 3;
-}
-
-.radar-zero-label {
-  fill: var(--gold);
-  font-family: var(--font-mono);
-  font-size: 9px;
-  font-weight: 500;
-}
-
 .radar-scale-note {
   margin-top: 0.65rem;
   padding: 0.55rem 0.65rem 0.45rem;
@@ -355,9 +330,9 @@
   stroke-width: 1.6;
 }
 
-.radar-expected {
+.radar-baseline {
   fill: none;
-  stroke: var(--ember);
+  stroke: var(--gold);
   stroke-width: 2.2;
   stroke-dasharray: 5 3;
 }
@@ -366,10 +341,10 @@
   fill: var(--accent);
 }
 
-.radar-expected-point {
-  fill: var(--bg);
-  stroke: var(--ember);
-  stroke-width: 1.6;
+.radar-predicted-point {
+  fill: var(--ember);
+  stroke: var(--bg);
+  stroke-width: 1.2;
 }
 
 .radar-hit {

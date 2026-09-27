@@ -1,37 +1,29 @@
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
-import { formatFixed } from '../../utils/formatting.js';
 import {
-  SPAN_STEP, axisRangeLabel, baselineValue, minimumRadarSpan,
-  profileSegments, profileValues, radiusFor,
+  BASELINE_RADIUS, axisRangeLabel, baselineValue,
+  predictedValue, profileSegments, profileValues, radiusFor,
 } from './player-baseline.js';
 
-export { createRadarAxes, displayMax, axisRangeLabel } from './player-baseline.js';
-
-function snapSpan(span) {
-  return Number((Math.round(span / SPAN_STEP) * SPAN_STEP).toFixed(2));
-}
+export { createRadarAxes, axisRangeLabel } from './player-baseline.js';
 
 export function createRadarScaleNote(axes, span = 1) {
   return h('div', { class: 'radar-scale-note' }, [
     h('div', {}, [
-      'Dashed season role baseline: equal-weight average of same-role players’ full-season averages, including warmup games. ',
+      'Yellow dashed pentagon: season role baseline, used as the zero line. It is the equal-weight average of same-role players’ full-season averages, including warmup games. ',
       'Impact uses their season shrunk impacts from evaluated games. Transfers count as one player. ',
-      'Solid profile: this player’s evaluated-game summary for the selected team and season. Missing values are omitted.',
+      'Distance from that pentagon is the difference from baseline. The outer ring and the center are the same distance above and below it. Values past the window sit on the rim or at the center. ',
+      'Solid profile: this player’s evaluated-game summary for the selected team and season. Missing values are omitted. ',
+      'Red dots: model-expected value, on the same scale. Only DPM has a prediction.',
     ]),
-    h('div', { class: 'radar-scale-note__title coord' }, ['Metric scale · outer ring']),
+    h('div', { class: 'radar-scale-note__title coord' }, ['Deviation window · rim to center']),
     h(
       'dl',
       { class: 'radar-scale-note__list' },
       axes.map((axis) =>
         h('div', { class: 'radar-scale-note__row' }, [
           h('dt', {}, [axis.label]),
-          h('dd', {}, [
-            axisRangeLabel(axis, span),
-            ' · ',
-            axis.kind,
-            axis.zeroLabel ? ` · ${axis.zeroLabel}` : '',
-          ]),
+          h('dd', {}, [axisRangeLabel(axis, span), ' from the baseline pentagon']),
         ]),
       ),
     ),
@@ -50,20 +42,19 @@ function polygon(values, center, radius) {
     .join(' ');
 }
 
-export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {}) {
+export function mountPlayerRadar(stage, { stats = {}, axes } = {}) {
   stage.classList.add('is-mounted');
   stage.replaceChildren();
 
   const tooltip = document.createElement('div');
   tooltip.className = 'chart-tooltip';
   tooltip.hidden = true;
-  const hint = document.createElement('div');
-  hint.className = 'radar-zoom-hint coord';
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
-  stage.append(svg.node(), tooltip, hint);
+  stage.append(svg.node(), tooltip);
 
   let showBaseline = false;
-  let span = 1;
+  let showPredicted = false;
+  const span = 1;
   const hasActual = profileValues(stats, axes).some(Number.isFinite);
   const hasBaseline = profileValues(stats, axes, true).some(Number.isFinite);
 
@@ -71,74 +62,23 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
     tooltip.hidden = true;
   }
 
-  function minSpan() {
-    return minimumRadarSpan(stats, axes, showBaseline);
-  }
-
-  function clampSpan(next) {
-    return Math.min(1, Math.max(minSpan(), snapSpan(next)));
-  }
-
-  function notifySpan() {
-    onSpanChange?.(span, minSpan());
-  }
-
-  function setSpan(next) {
-    const clamped = clampSpan(next);
-    if (clamped === span) {
-      updateHint();
-      notifySpan();
-      return span;
-    }
-    span = clamped;
-    draw();
-    notifySpan();
-    return span;
-  }
-
-  function updateHint() {
-    if (!hasActual) {
-      hint.textContent = showBaseline && hasBaseline
-        ? 'No evaluated player profile · showing season role baseline only'
-        : 'No evaluated player profile available';
-      return;
-    }
-    const pct = Math.round(span * 100);
-    const floor = Math.round(minSpan() * 100);
-    hint.textContent =
-      floor >= 100
-        ? `Outer ring at full scale · this player already reaches the rim`
-        : `Outer ring = ${pct}% of full scale · zoom in stops at ${floor}% so the profile stays inside`;
-  }
-
   const observer = new ResizeObserver(() => draw());
   observer.observe(stage);
-
-  svg.node().addEventListener(
-    'wheel',
-    (event) => {
-      event.preventDefault();
-      const direction = event.deltaY > 0 ? SPAN_STEP : -SPAN_STEP;
-      setSpan(span + direction);
-    },
-    { passive: false },
-  );
 
   function showTip(event, axis) {
     const actual = stats[axis.key];
     const baseline = baselineValue(stats, axis.key);
     const rows = [axis.label, `Actual: ${axis.format(actual)}`];
-    if (showBaseline) {
+    if (baseline != null) {
       rows.push(`Season role baseline: ${axis.format(baseline)}`);
-      if (Number.isFinite(actual) && baseline != null) {
+      if (Number.isFinite(actual)) {
         const diff = actual - baseline;
         rows.push(`Difference: ${diff > 0 && axis.key !== 'shrunk_impact' ? '+' : ''}${axis.format(diff)}`);
       }
     }
-    if (axis.key === 'mean_dpm' && Number.isFinite(stats.mean_expected_dpm)) {
-      rows.push(`Model-expected DPM: ${formatFixed(stats.mean_expected_dpm, 1)}`);
-    }
-    rows.push(`${axisRangeLabel(axis, span)} · ${axis.kind}`);
+    const predicted = predictedValue(stats, axis.key);
+    if (showPredicted && predicted != null) rows.push(`Predicted: ${axis.format(predicted)}`);
+    rows.push(`Window ${axisRangeLabel(axis, span)} from baseline`);
     tooltip.innerHTML = rows.map((line) => `<div>${line}</div>`).join('');
     tooltip.hidden = false;
     const bounds = stage.getBoundingClientRect();
@@ -147,7 +87,9 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
   }
 
   function drawProfile(root, values, center, radius, className, dotRadius) {
-    const radii = values.map((value, index) => radiusFor(axes[index], value, span));
+    const radii = values.map((value, index) => (
+      radiusFor(axes[index], value, baselineValue(stats, axes[index].key), span)
+    ));
     for (const segment of profileSegments(radii)) {
       const points = segment.points.map(({ index, value }) =>
         pointAt(center, radius, index, axes.length, value).join(','),
@@ -172,7 +114,6 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
     if (width < 40) return;
     svg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
     svg.selectAll('*').remove();
-    updateHint();
 
     if (!hasActual && !(showBaseline && hasBaseline)) {
       svg.append('text')
@@ -191,27 +132,15 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
     const offsetY = (height - size) / 2;
     const root = svg.append('g').attr('transform', `translate(${offsetX},${offsetY})`);
 
-    for (const ring of [0.25, 0.5, 0.75, 1]) {
+    for (const ring of [0.25, 0.75, 1]) {
       root.append('polygon')
         .attr('class', 'radar-grid')
         .attr('points', polygon(axes.map(() => ring), center, radius));
     }
-
-    const impactAxis = axes.find((axis) => axis.key === 'shrunk_impact');
-    const impactIndex = axes.findIndex((axis) => axis.key === 'shrunk_impact');
-    const zeroRadius = impactAxis ? radiusFor(impactAxis, 0, span) : null;
-    if (zeroRadius != null && zeroRadius > 0 && zeroRadius < 1) {
+    if (!showBaseline) {
       root.append('polygon')
-        .attr('class', 'radar-zero')
-        .attr('points', polygon(axes.map(() => zeroRadius), center, radius));
-      const [zx, zy] = pointAt(center, radius, impactIndex, axes.length, zeroRadius);
-      root.append('text')
-        .attr('class', 'radar-zero-label')
-        .attr('x', zx)
-        .attr('y', zy)
-        .attr('text-anchor', 'middle')
-        .attr('dominant-baseline', 'middle')
-        .text('0');
+        .attr('class', 'radar-grid')
+        .attr('points', polygon(axes.map(() => BASELINE_RADIUS), center, radius));
     }
 
     axes.forEach((axis, index) => {
@@ -237,10 +166,27 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
         .text(axisRangeLabel(axis, span));
     });
 
-    drawProfile(root, profileValues(stats, axes), center, radius, 'radar-actual', 3.2);
     if (showBaseline) {
-      drawProfile(root, profileValues(stats, axes, true), center, radius, 'radar-expected', 3.8);
+      root.append('polygon')
+        .attr('class', 'radar-baseline')
+        .attr('points', polygon(axes.map(() => BASELINE_RADIUS), center, radius));
     }
+    drawProfile(root, profileValues(stats, axes), center, radius, 'radar-actual', 3.2);
+    if (showPredicted) axes.forEach((axis, index) => {
+      const value = radiusFor(
+        axis,
+        predictedValue(stats, axis.key),
+        baselineValue(stats, axis.key),
+        span,
+      );
+      if (value == null) return;
+      const [x, y] = pointAt(center, radius, index, axes.length, value);
+      root.append('circle')
+        .attr('class', 'radar-predicted-point')
+        .attr('cx', x)
+        .attr('cy', y)
+        .attr('r', 4.2);
+    });
 
     root.append('circle')
       .attr('class', 'radar-hit')
@@ -258,23 +204,15 @@ export function mountPlayerRadar(stage, { stats = {}, axes, onSpanChange } = {})
   }
 
   draw();
-  notifySpan();
 
   return {
     setBaseline(enabled) {
       showBaseline = enabled;
-      span = clampSpan(span);
       draw();
-      notifySpan();
     },
-    zoomIn() {
-      setSpan(span - SPAN_STEP);
-    },
-    zoomOut() {
-      setSpan(span + SPAN_STEP);
-    },
-    resetZoom() {
-      setSpan(1);
+    setPredicted(enabled) {
+      showPredicted = enabled;
+      draw();
     },
     destroy() {
       observer.disconnect();
