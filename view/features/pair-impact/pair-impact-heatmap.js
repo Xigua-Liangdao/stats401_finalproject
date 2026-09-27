@@ -89,7 +89,9 @@ function renderDetail(detail, cell, players) {
   );
 }
 
-export function createPairHeatmapPanel({ heatmap, selectedIds = [], teamName }) {
+let heatmapSerial = 0;
+
+export function createPairHeatmapPanel({ heatmap, selectedIds = [], teamName, onInspect, bind }) {
   const { players, hasEligiblePair } = heatmap;
   const stage = h('div', { class: 'viz-stage pair-heatmap-stage', role: 'presentation' });
   const detail = h('div', { class: 'heatmap-detail', 'aria-live': 'polite' });
@@ -108,13 +110,14 @@ export function createPairHeatmapPanel({ heatmap, selectedIds = [], teamName }) 
   ]);
 
   queueMicrotask(() => {
-    mountPairHeatmap(stage, detail, { heatmap, selectedIds });
+    if (!stage.isConnected) return;
+    bind?.(mountPairHeatmap(stage, detail, { heatmap, selectedIds, onInspect }));
   });
 
   return node;
 }
 
-export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [] }) {
+export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onInspect } = {}) {
   stage.classList.add('is-mounted');
   stage.replaceChildren();
 
@@ -129,8 +132,14 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [] }) {
 
   let pinned = null;
   let hovered = null;
+  const gradientId = `heatmap-scale-${heatmapSerial += 1}`;
   const observer = new ResizeObserver(() => draw());
   observer.observe(stage);
+
+  function findCell(row, col) {
+    if (row == null || col == null) return null;
+    return cells.find((cell) => cell.row === row && cell.col === col) ?? null;
+  }
 
   function activeCell() {
     return hovered ?? pinned;
@@ -151,20 +160,39 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [] }) {
     });
   }
 
+  function publish() {
+    onInspect?.({
+      row: hovered?.row ?? null,
+      col: hovered?.col ?? null,
+      pinnedRow: pinned?.row ?? null,
+      pinnedCol: pinned?.col ?? null,
+    });
+  }
+
   function selectCell(cell) {
     hovered = cell;
     syncDetail();
     applyActive();
+    publish();
   }
 
   function clearHover() {
     hovered = null;
     syncDetail();
     applyActive();
+    publish();
   }
 
   function togglePin(cell) {
     pinned = pinned && pinned.row === cell.row && pinned.col === cell.col ? null : cell;
+    syncDetail();
+    applyActive();
+    publish();
+  }
+
+  function highlight(state) {
+    pinned = findCell(state?.pinnedRow, state?.pinnedCol);
+    hovered = findCell(state?.row, state?.col);
     syncDetail();
     applyActive();
   }
@@ -283,7 +311,7 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [] }) {
     const legendScale = d3.scaleLinear().domain([limit, -limit]).range([legendY, legendY + legendH]);
     const ticks = [limit, 0, -limit];
     const defs = svg.append('defs');
-    const gradient = defs.append('linearGradient').attr('id', 'heatmap-scale').attr('x1', '0').attr('x2', '0').attr('y1', '0').attr('y2', '1');
+    const gradient = defs.append('linearGradient').attr('id', gradientId).attr('x1', '0').attr('x2', '0').attr('y1', '0').attr('y2', '1');
     gradient.append('stop').attr('offset', '0%').attr('stop-color', fill(limit));
     gradient.append('stop').attr('offset', '50%').attr('stop-color', fill(0));
     gradient.append('stop').attr('offset', '100%').attr('stop-color', fill(-limit));
@@ -292,7 +320,7 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [] }) {
       .attr('y', legendY)
       .attr('width', legendW)
       .attr('height', legendH)
-      .attr('fill', 'url(#heatmap-scale)');
+      .attr('fill', `url(#${gradientId})`);
     ticks.forEach((tick) => {
       root.append('text')
         .attr('class', 'heatmap-legend-tick')
@@ -305,6 +333,7 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [] }) {
 
   draw();
   return {
+    highlight,
     destroy() {
       observer.disconnect();
     },

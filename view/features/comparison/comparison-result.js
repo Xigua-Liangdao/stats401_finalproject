@@ -49,20 +49,37 @@ export function createLineupComparison({ left, right }) {
 
   Promise.all([loadPanel(left), loadPanel(right)]).then((results) => {
     if (!root.isConnected) return;
-    charts.replaceChildren(...results.map((result) => (
-      result.heatmap
-        ? createPairHeatmapPanel({
-          heatmap: result.heatmap,
-          teamName: [result.lineup.name, result.lineup.team?.name].filter(Boolean).join(' · '),
-        })
-        : h('div', { class: 'panel compare-heatmap-empty' }, [
-          h('p', { class: 'viz-placeholder__title' }, [result.lineup.name]),
-          h('p', { class: 'empty-state' }, ['No pair impact for this lineup.']),
-        ])
-    )));
+    charts.replaceChildren(...syncedHeatmaps(results));
   });
 
   return root;
+}
+
+function syncedHeatmaps(results) {
+  const apis = [null, null];
+  let origin = null;
+  return results.map((result, index) => {
+    if (!result.heatmap) {
+      return h('div', { class: 'panel compare-heatmap-empty' }, [
+        h('p', { class: 'viz-placeholder__title' }, [result.lineup.name]),
+        h('p', { class: 'empty-state' }, ['No pair impact for this lineup.']),
+      ]);
+    }
+    return createPairHeatmapPanel({
+      heatmap: result.heatmap,
+      teamName: [result.lineup.name, result.lineup.team?.name].filter(Boolean).join(' · '),
+      onInspect(state) {
+        const other = apis[1 - index];
+        if (!other || origin != null) return;
+        origin = index;
+        other.highlight(state);
+        origin = null;
+      },
+      bind(api) {
+        apis[index] = api;
+      },
+    });
+  });
 }
 
 function loadPanel(lineup) {

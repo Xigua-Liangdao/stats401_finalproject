@@ -1,4 +1,5 @@
 import { TEAM_LOGO_FALLBACK, bindImageFallback, teamLogoUrl } from '../../utils/assets.js';
+import { ROLE_ORDER } from '../../utils/constants.js';
 import { h } from '../../utils/dom.js';
 import { formatRole } from '../../utils/formatting.js';
 import { createLineupComparison, createPlayerComparison } from './comparison-result.js';
@@ -156,6 +157,8 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
   const rightSubject = createSubjectSelect('Player');
   const contentSelect = h('select', { class: 'chart-select', 'aria-label': 'Comparison' });
   const contentNote = h('p', { class: 'compare-content__note' }, ['Same role only']);
+  const leftRoster = h('div', { class: 'compare-roster compare-roster--left' });
+  const rightRoster = h('div', { class: 'compare-roster compare-roster--right' });
   const result = h('div', { class: 'compare-stage' }, [
     h('p', { class: 'compare-stage__label' }, ['Select both sides']),
   ]);
@@ -218,7 +221,24 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
       : 'One pair-impact chart per lineup';
   }
 
+  function rosterRows(lineup) {
+    if (!lineup) return [];
+    const byRole = ROLE_ORDER.map((role) => (lineup.players ?? []).find((player) => player.role === role));
+    const players = byRole.some(Boolean) ? byRole.filter(Boolean) : (lineup.players ?? []);
+    return players.map((player) => h('div', { class: 'compare-roster__row' }, [
+      h('span', { class: 'compare-roster__role' }, [formatRole(player.role)]),
+      h('span', { class: 'compare-roster__name' }, [player.name]),
+    ]));
+  }
+
+  function paintRosters() {
+    const show = mode === 'lineup';
+    leftRoster.replaceChildren(...(show ? rosterRows(entity(leftTeamId, leftId)) : []));
+    rightRoster.replaceChildren(...(show ? rosterRows(entity(rightTeamId, rightId)) : []));
+  }
+
   function paint() {
+    paintRosters();
     const left = entity(leftTeamId, leftId);
     const right = entity(rightTeamId, rightId);
     if (!left || !right || left.id === right.id) {
@@ -288,10 +308,11 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
   fillSubject(rightSubject, 'right');
   syncContent();
 
-  const side = (kicker, teamSelect, subject) => h('div', { class: 'compare-side' }, [
+  const side = (kicker, teamSelect, subject, roster) => h('div', { class: 'compare-side' }, [
     h('div', { class: 'coord compare-side__label' }, [kicker]),
     teamSelect.node,
     subject.node,
+    roster,
   ]);
 
   return h('div', { class: 'compare-section' }, [
@@ -300,13 +321,13 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
       lineupButton,
     ]),
     h('div', { class: 'compare-board' }, [
-      side('Left', leftTeam, leftSubject),
+      side('Left', leftTeam, leftSubject, leftRoster),
       h('div', { class: 'compare-content' }, [
         h('div', { class: 'coord compare-side__label' }, ['Content']),
         h('label', { class: 'chart-control' }, ['Comparison', contentSelect]),
         contentNote,
       ]),
-      side('Right', rightTeam, rightSubject),
+      side('Right', rightTeam, rightSubject, rightRoster),
     ]),
     result,
   ]);

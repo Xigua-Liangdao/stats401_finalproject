@@ -41,6 +41,38 @@
   min-width: 0;
 }
 
+.compare-roster:empty {
+  display: none;
+}
+
+.compare-roster {
+  display: grid;
+  gap: 0.28rem;
+}
+
+.compare-roster__row {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  gap: 0.4rem;
+  align-items: baseline;
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.03em;
+}
+
+.compare-roster__role {
+  color: var(--dim);
+  letter-spacing: 0.08em;
+}
+
+.compare-roster--left .compare-roster__name {
+  color: var(--accent);
+}
+
+.compare-roster--right .compare-roster__name {
+  color: var(--ember);
+}
+
 .compare-side .chart-select:disabled,
 .compare-content .chart-select:disabled {
   opacity: 0.45;
