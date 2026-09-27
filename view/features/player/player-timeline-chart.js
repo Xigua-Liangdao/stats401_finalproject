@@ -88,10 +88,6 @@ function windowFromSelection(rawStart, rawEnd, count) {
   return [start, end];
 }
 
-const PLAYBACK_WINDOW = 20;
-const PLAYBACK_SPEEDS = [0.25, 0.5, 1, 2, 4];
-const BASE_PACE_MS = 700;
-
 function clipSeries(values, start, end) {
   const last = Math.floor(end);
   const fraction = end - last;
@@ -155,27 +151,12 @@ export function mountPlayerTimeline(stage, { games }) {
   const lastIndex = Math.max(0, sorted.length - 1);
   const plotHost = h('div', { class: 'timeline-plot' });
   const rangeLabel = h('p', { class: 'timeline-range' });
-  const playButton = h('button', { class: 'timeline-btn', type: 'button', dataset: { action: 'play' } }, ['Play']);
-  const pauseButton = h('button', { class: 'timeline-btn', type: 'button', dataset: { action: 'pause' } }, ['Pause']);
-  const restartButton = h('button', { class: 'timeline-btn', type: 'button', dataset: { action: 'restart' } }, ['Restart']);
-  const speedSelect = h('select', { class: 'timeline-speed', 'aria-label': 'Playback speed' }, PLAYBACK_SPEEDS.map((value) => (
-    h('option', { value: String(value), selected: value === 1 }, [`${value}×`])
-  )));
   const brushSvg = d3.create('svg')
     .attr('class', 'timeline-brush-svg')
     .attr('role', 'slider')
     .attr('aria-label', 'Game range')
     .attr('aria-orientation', 'horizontal');
   const dock = h('div', { class: 'timeline-dock' }, [
-    h('div', { class: 'timeline-transport', role: 'group', 'aria-label': 'Timeline playback' }, [
-      playButton,
-      pauseButton,
-      restartButton,
-      h('label', { class: 'timeline-speed-control' }, [
-        h('span', { class: 'timeline-speed-label' }, ['Speed']),
-        speedSelect,
-      ]),
-    ]),
     rangeLabel,
     brushSvg.node(),
   ]);
@@ -187,16 +168,10 @@ export function mountPlayerTimeline(stage, { games }) {
   let fields = ['kills', 'deaths', 'assists'];
   let from = 0;
   let to = lastIndex;
-  let cursor = lastIndex;
-  let finished = true;
-  let playing = false;
   let userBrushing = false;
   let movingBrush = false;
-  let raf = 0;
-  let lastFrame = 0;
   let brushWidth = 0;
   let xIndex = null;
-  let speed = 1;
   const brush = d3.brushX().on('start brush end', onBrush);
   const brushG = brushSvg.append('g').attr('class', 'timeline-brush');
 
@@ -218,84 +193,12 @@ export function mountPlayerTimeline(stage, { games }) {
     tooltip.style.top = `${Math.max(8, event.clientY - bounds.top - 12)}px`;
   }
 
-  function stopPlayback() {
-    playing = false;
-    if (raf) cancelAnimationFrame(raf);
-    raf = 0;
-  }
-
-  function paceMs() {
-    return BASE_PACE_MS / speed;
-  }
-
-  function frame(now) {
-    if (!playing || !plotHost.isConnected) {
-      if (!plotHost.isConnected) stopPlayback();
-      return;
-    }
-    const dt = lastFrame ? Math.min(48, now - lastFrame) : 16;
-    lastFrame = now;
-    cursor = Math.min(to, cursor + dt / paceMs());
-    if (!playing) return;
-    drawChart();
-    syncBrush();
-    syncControls();
-    if (!playing) return;
-    if (cursor >= to - 1e-3) {
-      cursor = to;
-      finished = true;
-      stopPlayback();
-      drawChart();
-      syncBrush();
-      syncControls();
-      return;
-    }
-    raf = requestAnimationFrame(frame);
-  }
-
-  function play() {
-    if (sorted.length < 2) return;
-    if (raf) cancelAnimationFrame(raf);
-    if (finished) cursor = Math.min(to, from + 1);
-    finished = false;
-    playing = true;
-    lastFrame = 0;
-    drawChart();
-    syncBrush();
-    syncControls();
-    raf = requestAnimationFrame(frame);
-  }
-
-  function pause() {
-    stopPlayback();
-    syncControls();
-  }
-
-  function restart() {
-    if (sorted.length < 2) return;
-    stopPlayback();
-    cursor = Math.min(to, from + 1);
-    drawChart();
-    syncBrush();
-    play();
-  }
-
   function cameraBounds() {
-    const selected = Math.max(to - from, 0);
-    if (finished || sorted.length < 2) return [from, to];
-    const size = Math.min(PLAYBACK_WINDOW, Math.max(selected, 1));
-    let start = cursor - size;
-    if (start < from) start = from;
-    let end = start + size;
-    if (end > to) {
-      end = to;
-      start = Math.max(from, end - size);
-    }
-    return [start, end];
+    return [from, to];
   }
 
   function visibleEnd() {
-    return clamp(Math.round(cursor), from, to);
+    return to;
   }
 
   function rangeText() {
@@ -306,11 +209,6 @@ export function mountPlayerTimeline(stage, { games }) {
   }
 
   function syncControls() {
-    const canPlay = sorted.length > 1;
-    playButton.disabled = !canPlay || playing;
-    pauseButton.disabled = !playing;
-    restartButton.disabled = !canPlay;
-    playButton.setAttribute('aria-pressed', playing ? 'true' : 'false');
     const text = rangeText();
     if (rangeLabel.textContent !== text) rangeLabel.textContent = text;
     brushSvg.attr('aria-valuetext', text);
@@ -323,7 +221,6 @@ export function mountPlayerTimeline(stage, { games }) {
     if (movingBrush || !event.sourceEvent) return;
     if (event.type === 'start') {
       userBrushing = true;
-      pause();
       return;
     }
     if (!userBrushing || !event.selection || !xIndex) {
@@ -336,19 +233,8 @@ export function mountPlayerTimeline(stage, { games }) {
       xIndex.invert(event.selection[1]),
       sorted.length,
     );
-    if (finished) {
-      from = start;
-      to = end;
-      cursor = end;
-    } else {
-      from = start;
-      cursor = end;
-      if (cursor > to) to = cursor;
-      if (cursor >= to - 1e-3) {
-        cursor = to;
-        finished = true;
-      }
-    }
+    from = start;
+    to = end;
     drawChart();
     syncControls();
     if (event.type === 'end') {
@@ -360,7 +246,7 @@ export function mountPlayerTimeline(stage, { games }) {
   function syncBrush() {
     if (userBrushing || !xIndex || sorted.length < 2) return;
     const x0 = xIndex(from);
-    const x1 = xIndex(clamp(cursor, from, to));
+    const x1 = xIndex(to);
     if (!Number.isFinite(x0) || !Number.isFinite(x1)) return;
     movingBrush = true;
     brushG.call(brush.move, x1 - x0 < 1 ? [x0, x0 + 1] : [x0, x1]);
@@ -470,7 +356,7 @@ export function mountPlayerTimeline(stage, { games }) {
       .y((point) => y(point.value));
 
     for (const item of series) {
-      const visible = clipSeries(item.values, viewStart, cursor);
+      const visible = clipSeries(item.values, viewStart, viewEnd);
       plot.append('path')
         .attr('class', 'chart-line')
         .attr('fill', 'none')
@@ -492,21 +378,11 @@ export function mountPlayerTimeline(stage, { games }) {
         .on('mouseleave', hideTip);
     }
 
-    if (playing || cursor < to - 0.02) {
-      plot.append('line')
-        .attr('class', 'timeline-playhead')
-        .attr('x1', x(cursor))
-        .attr('x2', x(cursor))
-        .attr('y1', 0)
-        .attr('y2', innerHeight);
-    }
-
     svg.attr('aria-label', `Performance over time, ${rangeText()}`);
   }
 
   function render() {
     if (!plotHost.isConnected) {
-      stopPlayback();
       observer.disconnect();
       return;
     }
@@ -517,14 +393,6 @@ export function mountPlayerTimeline(stage, { games }) {
     syncControls();
   }
 
-  playButton.addEventListener('click', play);
-  pauseButton.addEventListener('click', pause);
-  restartButton.addEventListener('click', restart);
-  speedSelect.addEventListener('change', () => {
-    const next = Number(speedSelect.value);
-    if (PLAYBACK_SPEEDS.includes(next)) speed = next;
-  });
-
   render();
   return {
     update(nextFields) {
@@ -533,7 +401,6 @@ export function mountPlayerTimeline(stage, { games }) {
       render();
     },
     destroy() {
-      stopPlayback();
       observer.disconnect();
     },
   };
