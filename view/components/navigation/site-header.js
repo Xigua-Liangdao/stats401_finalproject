@@ -6,6 +6,7 @@ import { createStatusChip } from '../layout/status-chip.js';
 const LINKS = [
   { href: href.home, label: 'Home', names: ['home'] },
   { href: href.players, label: 'Catalogue', names: ['players', 'player', 'team'] },
+  { href: href.compare, label: 'Comparison', names: ['compare'] },
 ];
 
 function createSeasonSelect({ seasons = [], season, onSeasonChange }) {

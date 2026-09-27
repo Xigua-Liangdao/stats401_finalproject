@@ -1,9 +1,10 @@
 let selected = null;
 
-export function seasonOptions(catalog) {
-  return [...new Set(catalog.teams.map((team) => team.season))]
-    .filter((season) => season != null && season !== '')
-    .sort((a, b) => Number(b) - Number(a));
+// Fixed until the choices are the directory names under data/processed.
+export const AVAILABLE_SEASONS = ['2025'];
+
+export function seasonOptions() {
+  return AVAILABLE_SEASONS;
 }
 
 export function ensureSeason(seasons) {

@@ -1,13 +1,13 @@
 import { closeDrawer } from './components/drawers/drawer.js';
 import { createStartupScreen } from './components/layout/startup-screen.js';
 import { renderSiteHeader } from './components/navigation/site-header.js';
+import { renderComparisonPage } from './pages/comparison/comparison-page.js';
 import { renderHomePage } from './pages/home/home-page.js';
 import { renderLineupPage } from './pages/lineup/lineup-page.js?v=catalogue-back';
 import { renderNotFound } from './pages/not-found.js';
 import { renderPlayerCataloguePage } from './pages/player/player-catalogue-page.js?v=catalogue-back';
 import { renderPlayerPage } from './pages/player/player-page.js?v=scale-zoom';
 import { renderTeamPage } from './pages/team/team-page.js';
-import { dataSource } from './utils/data-source.js';
 import { h } from './utils/dom.js';
 import { startRouter } from './utils/navigation.js?v=catalogue-back';
 import { ensureSeason, seasonOptions, setSelectedSeason } from './utils/season.js';
@@ -25,8 +25,7 @@ async function render(route) {
   const opening = !booted;
   booted = true;
   closeDrawer();
-  const catalog = await dataSource.loadCatalog();
-  const seasons = seasonOptions(catalog);
+  const seasons = seasonOptions();
   const season = ensureSeason(seasons);
   renderSiteHeader(header, route.name, {
     seasons,
@@ -43,6 +42,7 @@ async function render(route) {
     await transition(async (target) => {
       try {
         if (route.name === 'home') await renderHomePage(target);
+        else if (route.name === 'compare') await renderComparisonPage(target);
         else if (route.name === 'players') await renderPlayerCataloguePage(target, route.page);
         else if (route.name === 'player') await renderPlayerPage(target, route.id, route.teamId, route.season);
         else if (route.name === 'lineup') await renderLineupPage(target, route.id);

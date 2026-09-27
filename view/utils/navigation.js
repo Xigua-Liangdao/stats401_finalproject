@@ -1,6 +1,7 @@
 export const href = {
   home: '#/',
   players: '#/players',
+  compare: '#/compare',
   playersAt: (page) => catalogueHref('players', page),
   player: (id, teamId, season) => {
     const params = new URLSearchParams();
@@ -54,7 +55,7 @@ export function rememberCataloguePage(kind, page) {
 
 const BACK_STACK_KEY = 'nav-back-stack';
 const BACK_STACK_MAX = 8;
-const BACK_ROOTS = new Set(['home', 'players']);
+const BACK_ROOTS = new Set(['home', 'players', 'compare']);
 
 function normalizeHash(hash) {
   const value = hash || '#/';
@@ -109,6 +110,7 @@ function labelForBack(targetHref) {
   if (route.name === 'lineup') return 'Back to lineup';
   if (route.name === 'player') return 'Back to player';
   if (route.name === 'home') return 'Back to home';
+  if (route.name === 'compare') return 'Back to comparison';
   return 'Back';
 }
 
@@ -128,6 +130,7 @@ export function parseHash(hash = window.location.hash) {
   const parts = path.split('/').filter(Boolean);
 
   if (parts.length === 0) return { name: 'home' };
+  if (parts[0] === 'compare' && parts.length === 1) return { name: 'compare' };
   if (parts[0] === 'players') {
     if (parts[1] && !/^\d+$/.test(parts[1])) return { name: 'not-found' };
     return { name: 'players', page: parseCataloguePage(parts[1]) };
