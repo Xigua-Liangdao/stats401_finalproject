@@ -1,3 +1,4 @@
+import { initAnalytics } from '../../../analytics/index.js';
 import { createPlayerPortrait, createTeamLogo } from '../../components/media/entity-images.js';
 import { dataSource } from '../../utils/data-source.js';
 import { h } from '../../utils/dom.js';
@@ -159,6 +160,7 @@ function createTeamCard(team, index) {
 }
 
 export async function renderHomePage(target) {
+  initAnalytics();
   const catalog = await dataSource.loadCatalog();
   const season = getSelectedSeason() ?? catalog.season;
   const view = forSeason(catalog, season);

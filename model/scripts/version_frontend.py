@@ -15,6 +15,7 @@ START = "    <!-- BEGIN GENERATED MODULE VERSIONS -->"
 END = "    <!-- END GENERATED MODULE VERSIONS -->"
 IMPORT = re.compile(r'''\b(?:from\s*|import\s*\(?\s*)['"](\.[^'"\n]+\.js(?:\?[^'"\n]*)?)['"]''')
 LANG = ROOT / "data" / "lang"
+ANALYTICS = ROOT / "analytics"
 
 
 def language_binding(stem, used):
@@ -101,7 +102,8 @@ def sync_language_index(check):
 def frontend_modules():
     view_modules = [path for path in VIEW.rglob("*.js") if "tests" not in path.relative_to(VIEW).parts]
     lang_modules = list(LANG.rglob("*.js")) if LANG.is_dir() else []
-    return sorted(view_modules + lang_modules)
+    analytics_modules = list(ANALYTICS.rglob("*.js")) if ANALYTICS.is_dir() else []
+    return sorted(view_modules + lang_modules + analytics_modules)
 
 
 def map_key(path):
@@ -123,7 +125,8 @@ def build_html():
         for specifier in IMPORT.findall(path.read_text()):
             parsed = urlsplit(specifier)
             target = (path.parent / parsed.path).resolve()
-            if not target.is_file() or not (target.is_relative_to(VIEW) or target.is_relative_to(LANG)):
+            allowed = target.is_relative_to(VIEW) or target.is_relative_to(LANG) or target.is_relative_to(ANALYTICS)
+            if not target.is_file() or not allowed:
                 raise ValueError(f"Unresolved local import in {path.relative_to(ROOT)}: {specifier}")
             # Existing ?v=scale-zoom / ?v=catalogue-back aliases must converge on
             # the same URL, including stateful modules such as assets.js.
