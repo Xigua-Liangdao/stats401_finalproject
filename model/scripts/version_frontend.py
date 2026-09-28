@@ -16,6 +16,9 @@ END = "    <!-- END GENERATED MODULE VERSIONS -->"
 IMPORT = re.compile(r'''\b(?:from\s*|import\s*\(?\s*)['"](\.[^'"\n]+\.js(?:\?[^'"\n]*)?)['"]''')
 LANG = ROOT / "data" / "lang"
 ANALYTICS = ROOT / "analytics"
+# Official browser ESM build for supabase-js v2. Not a local file, so it is
+# pinned on the v2 line rather than the content-hash release.
+SUPABASE_JS = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm"
 
 
 def language_binding(stem, used):
@@ -132,6 +135,7 @@ def build_html():
             # the same URL, including stateful modules such as assets.js.
             alias = map_key(target) + (f"?{parsed.query}" if parsed.query else "")
             imports[alias] = f"{map_key(target)}?v={version}"
+    imports["@supabase/supabase-js"] = SUPABASE_JS
     block = "\n".join([START, '    <script type="importmap">',
                         json.dumps({"imports": dict(sorted(imports.items()))}, indent=2),
                         "    </script>", END])
