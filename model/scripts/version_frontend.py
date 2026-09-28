@@ -4,7 +4,7 @@ from __future__ import annotations
 import argparse
 import hashlib
 import json
-import posixpath
+import os
 import re
 from pathlib import Path
 from urllib.parse import urlsplit
@@ -14,7 +14,7 @@ VIEW = ROOT / "view"
 START = "    <!-- BEGIN GENERATED MODULE VERSIONS -->"
 END = "    <!-- END GENERATED MODULE VERSIONS -->"
 IMPORT = re.compile(r'''\b(?:from\s*|import\s*\(?\s*)['"](\.[^'"\n]+\.js(?:\?[^'"\n]*)?)['"]''')
-LANG = VIEW / "res" / "lang"
+LANG = ROOT / "data" / "lang"
 
 
 def language_binding(stem, used):
@@ -36,7 +36,7 @@ PACK_SKIP = {"index.js", "meta.js", "names.js"}
 def pack_dirs():
     folders = sorted(path for path in LANG.iterdir() if path.is_dir() and (path / "meta.js").is_file())
     if not any(path.name == "en" for path in folders):
-        raise ValueError("view/res/lang/en/meta.js is required")
+        raise ValueError("data/lang/en/meta.js is required")
     return folders
 
 
@@ -98,8 +98,19 @@ def sync_language_index(check):
         raise SystemExit("Stale language index: run python model/scripts/version_frontend.py")
 
 
+def frontend_modules():
+    view_modules = [path for path in VIEW.rglob("*.js") if "tests" not in path.relative_to(VIEW).parts]
+    lang_modules = list(LANG.rglob("*.js")) if LANG.is_dir() else []
+    return sorted(view_modules + lang_modules)
+
+
+def map_key(path):
+    relative = Path(os.path.relpath(path.resolve(), VIEW.resolve())).as_posix()
+    return relative if relative.startswith("../") else f"./{relative}"
+
+
 def build_html():
-    modules = sorted(path for path in VIEW.rglob("*.js") if "tests" not in path.relative_to(VIEW).parts)
+    modules = frontend_modules()
     inputs = sorted(modules + list((VIEW / "styles").rglob("*.css")) + [ROOT / "data/img/manifest.json"])
     digest = hashlib.sha256()
     for path in inputs:
@@ -107,17 +118,17 @@ def build_html():
     version = digest.hexdigest()[:12]
     imports = {}
     for path in modules:
-        name = path.relative_to(VIEW).as_posix()
-        imports[f"./{name}"] = f"./{name}?v={version}"
+        key = map_key(path)
+        imports[key] = f"{key}?v={version}"
         for specifier in IMPORT.findall(path.read_text()):
             parsed = urlsplit(specifier)
-            target = posixpath.normpath(posixpath.join(posixpath.dirname(name), parsed.path))
-            if target.startswith("../") or not (VIEW / target).is_file():
-                raise ValueError(f"Unresolved local import in {name}: {specifier}")
+            target = (path.parent / parsed.path).resolve()
+            if not target.is_file() or not (target.is_relative_to(VIEW) or target.is_relative_to(LANG)):
+                raise ValueError(f"Unresolved local import in {path.relative_to(ROOT)}: {specifier}")
             # Existing ?v=scale-zoom / ?v=catalogue-back aliases must converge on
             # the same URL, including stateful modules such as assets.js.
-            key = f"./{target}" + (f"?{parsed.query}" if parsed.query else "")
-            imports[key] = f"./{target}?v={version}"
+            alias = map_key(target) + (f"?{parsed.query}" if parsed.query else "")
+            imports[alias] = f"{map_key(target)}?v={version}"
     block = "\n".join([START, '    <script type="importmap">',
                         json.dumps({"imports": dict(sorted(imports.items()))}, indent=2),
                         "    </script>", END])

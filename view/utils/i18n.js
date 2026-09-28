@@ -1,4 +1,4 @@
-import { defaultLanguage, languagePacks } from '../res/lang/index.js';
+import { defaultLanguage, languagePacks } from '../../data/lang/index.js';
 
 const STORAGE_KEY = 'stats401-language';
 
