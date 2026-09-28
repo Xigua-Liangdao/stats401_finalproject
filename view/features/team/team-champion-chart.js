@@ -2,6 +2,7 @@ import { createEligibilityNotice } from '../../components/layout/eligibility-not
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatCount, formatRole } from '../../utils/formatting.js';
+import { t } from '../../utils/i18n.js';
 import { PLACEHOLDER } from '../../utils/constants.js';
 import { isEligible } from '../../utils/stats.js';
 
@@ -42,7 +43,7 @@ export function createTeamChampionPanel({ players = [], games = [], teamName }) 
   const noticeHost = h('div', { class: 'team-champion-notice' });
   const select = h(
     'select',
-    { class: 'chart-select', 'aria-label': 'Player' },
+    { class: 'chart-select', 'aria-label': t('common.player') },
     players.map((player) =>
       h('option', { value: player.id, selected: defaultPlayer && player.id === defaultPlayer.id }, [
         playerLabel(player),
@@ -62,11 +63,11 @@ export function createTeamChampionPanel({ players = [], games = [], teamName }) 
   const node = h('article', { class: 'viz-placeholder panel team-champion-panel', dataset: { viz: 'team-champions' } }, [
     h('div', { class: 'viz-placeholder__chrome player-viz-chrome player-viz-chrome--stacked' }, [
       h('div', { class: 'player-viz-chrome__titles' }, [
-        h('span', {}, ['VIZ 01']),
-        h('span', {}, [teamName ? `Champion picks · ${teamName}` : 'Champion picks']),
+        h('span', {}, [t('chart.viz1')]),
+        h('span', {}, [teamName ? t('team.pickTitle', { name: teamName }) : t('team.picks')]),
       ]),
       h('div', { class: 'chart-controls' }, [
-        h('label', { class: 'chart-control' }, ['Player', select]),
+        h('label', { class: 'chart-control' }, [t('common.player'), select]),
       ]),
     ]),
     noticeHost,
@@ -101,7 +102,7 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
   tooltip.className = 'chart-tooltip';
   tooltip.hidden = true;
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
-  svg.append('title').text('Champion pick frequency');
+  svg.append('title').text(t('team.pickFrequency'));
   stage.append(svg.node(), tooltip);
 
   let current = { rows, playerName };
@@ -116,8 +117,8 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
     const share = total ? Math.round((row.n / total) * 100) : 0;
     tooltip.innerHTML = [
       `<div>${row.champion}</div>`,
-      `<div>Games: ${formatCount(row.n)}</div>`,
-      `<div>Share: ${share}%</div>`,
+      `<div>${t('team.pickGames', { count: formatCount(row.n) })}</div>`,
+      `<div>${t('team.pickShare', { share })}</div>`,
     ].join('');
     tooltip.hidden = false;
     const bounds = stage.getBoundingClientRect();
@@ -138,7 +139,7 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
     svg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
     svg.selectAll('*').remove();
     svg.append('title').text(
-      name ? `Champion pick frequency for ${name}` : 'Champion pick frequency',
+      name ? t('team.pickFor', { name }) : t('team.pickFrequency'),
     );
 
     if (!data.length) {
@@ -147,7 +148,7 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
         .attr('x', width / 2)
         .attr('y', height / 2)
         .attr('text-anchor', 'middle')
-        .text('No champion picks for this player.');
+        .text(t('team.noPicks'));
       return;
     }
 
@@ -182,7 +183,7 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
       .attr('x', innerWidth)
       .attr('y', innerHeight + 30)
       .attr('text-anchor', 'end')
-      .text('Games');
+      .text(t('common.games'));
 
     plot
       .selectAll('.chart-bar')
@@ -196,7 +197,7 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
       .attr('rx', 2)
       .attr('tabindex', 0)
       .attr('role', 'img')
-      .attr('aria-label', (row) => `${row.champion}, ${formatCount(row.n)} games`)
+      .attr('aria-label', (row) => t('team.pickLabel', { champion: row.champion, count: formatCount(row.n) }))
       .on('mousemove', (event, row) => showTip(event, row, total))
       .on('mouseleave', hideTip)
       .on('focus', (event, row) => showTip(event, row, total))

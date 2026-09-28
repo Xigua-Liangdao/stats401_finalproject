@@ -2,6 +2,7 @@ import { createRosterSlot } from '../../components/catalogue/roster-slot.js';
 import { createTeamGroupedCatalogue } from '../../components/catalogue/team-grouped-catalogue.js?v=catalogue-back';
 import { createPageShell } from '../../components/layout/page-shell.js';
 import { loadPlayerCatalog } from '../../features/player/player-data.js';
+import { t } from '../../utils/i18n.js';
 import { href, rememberCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
 
 export async function renderPlayerCataloguePage(target, page = 1) {
@@ -14,7 +15,7 @@ export async function renderPlayerCataloguePage(target, page = 1) {
     onPageChange,
     groups: groups.map((group) => ({
       ...group,
-      meta: `${String(group.players.length).padStart(2, '0')} players`,
+      meta: t('catalogue.players', { count: String(group.players.length).padStart(2, '0') }),
     })),
     getItems: (group) => group.players,
     renderItem: (player) => createRosterSlot(player),
@@ -22,13 +23,13 @@ export async function renderPlayerCataloguePage(target, page = 1) {
 
   target.append(
     createPageShell({
-      kicker: '01 / Catalogue',
-      title: 'Catalogue',
-      meta: ['Grouped by team'],
+      kicker: t('catalogue.kicker'),
+      title: t('nav.catalogue'),
+      meta: [t('catalogue.grouped')],
       actions: [catalogue.search],
       breadcrumbs: [
-        { label: 'Home', href: href.home },
-        { label: 'Catalogue' },
+        { label: t('nav.home'), href: href.home },
+        { label: t('nav.catalogue') },
       ],
       children: catalogue.root,
     }),

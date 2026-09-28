@@ -1,4 +1,5 @@
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 import {
   PLAYER_IMAGE_FALLBACK,
   TEAM_LOGO_FALLBACK,
@@ -12,7 +13,7 @@ export function createTeamLogo(team) {
   const img = h('img', {
     class: 'entity-image entity-image--logo',
     src: teamLogoUrl(team),
-    alt: team?.name ? `${team.name} logo` : 'Team logo',
+    alt: team?.name ? t('team.logo', { name: team.name }) : t('team.logoFallback'),
     draggable: 'false',
   });
   bindImageFallback(img, TEAM_LOGO_FALLBACK);
@@ -24,10 +25,15 @@ export function createPlayerPortrait(player, { variant = 'slot' } = {}) {
   const img = h('img', {
     class: 'entity-image entity-image--portrait',
     src: playerImageUrl(player),
-    alt: player?.name ? player.name : 'Player portrait',
+    alt: player?.name ? player.name : t('player.portrait'),
     title: asset
-      ? `${asset.player} · ${asset.team_short} · ${asset.season} ${asset.source_split} photo (Leaguepedia)`
-      : 'Season/team photo unavailable',
+      ? t('player.photo', {
+        player: asset.player,
+        team: asset.team_short,
+        season: asset.season,
+        split: asset.source_split,
+      })
+      : t('player.photoMissing'),
     draggable: 'false',
   });
   bindImageFallback(img, PLAYER_IMAGE_FALLBACK);

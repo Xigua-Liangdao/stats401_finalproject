@@ -3,6 +3,7 @@
  * Pages consume these objects; they do not load CSV files themselves.
  */
 import { DATASET, ROLE_ORDER } from './constants.js';
+import { t } from './i18n.js';
 import { parseCsv } from './csv.js';
 import { loadMediaManifest } from './assets.js';
 import { setLoadProgress } from './load-progress.js';
@@ -140,7 +141,7 @@ function hydrateFromPanel(rows, summaries = {}) {
       name: row.team,
       short: row.team_short || row.team,
       season: Number(row.season) || row.season,
-      split: row.split || 'Unknown',
+      split: row.split || t('common.unknown'),
       stats: teamStats.get(row.team_id) ?? { eligible: false },
     });
   }
@@ -166,7 +167,7 @@ function hydrateFromPanel(rows, summaries = {}) {
       team: player.team || teamById[row.team_id],
     }));
     const games = row.n_games === '' ? null : Number(row.n_games);
-    const split = row.split || teamById[row.team_id]?.split || 'Unknown';
+    const split = row.split || teamById[row.team_id]?.split || t('common.unknown');
     const context = Number.isFinite(games)
       ? `${split} · ${games} game${games === 1 ? '' : 's'}`
       : split;
@@ -187,7 +188,7 @@ function hydrateFromPanel(rows, summaries = {}) {
 
   return {
     season: Number(first.season) || teams[0]?.season || null,
-    split: first.split || teams[0]?.split || 'Unknown',
+    split: first.split || teams[0]?.split || t('common.unknown'),
     sourceLabel: `${DATASET} / team_panel`,
     mode: DATASET,
     teams,

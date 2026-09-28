@@ -6,6 +6,7 @@ import { loadTeam, loadTeamLineups, loadTeamPlayerGames, loadTeamPlayers } from 
 import { renderTeamLineups, renderTeamPlayers } from '../../features/team/team-rosters.js';
 import { renderTeamStages, renderTeamStats } from '../../features/team/team-stats.js';
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 import { backAction, href, readCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
 import { renderNotFound } from '../not-found.js';
 
@@ -28,19 +29,19 @@ export async function renderTeamPage(target, id) {
   target.append(
     h('div', { class: 'page' }, [
       createBreadcrumbs([
-        { label: 'Home', href: href.home },
-        { label: 'Catalogue', href: catalogueHref },
+        { label: t('nav.home'), href: href.home },
+        { label: t('nav.catalogue'), href: catalogueHref },
         { label: team.name },
       ]),
       createIdentityHeader({
-        kicker: 'Organization',
+        kicker: t('common.organization'),
         title: team.name,
         mark: createTeamLogo(team),
         facts: [
-          { label: 'Season', value: String(team.season) },
-          { label: 'Split', value: team.split },
-          { label: 'Players', value: String(players.length) },
-          { label: 'Lineups', value: String(lineups.length) },
+          { label: t('common.season'), value: String(team.season) },
+          { label: t('common.split'), value: team.split },
+          { label: t('common.players'), value: String(players.length) },
+          { label: t('common.lineups'), value: String(lineups.length) },
         ],
         actions: [
           createButton({

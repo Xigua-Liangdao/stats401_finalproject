@@ -2,6 +2,7 @@ import { ROLE_ORDER } from '../../utils/constants.js';
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatCompactDate, formatResult } from '../../utils/formatting.js';
+import { t } from '../../utils/i18n.js';
 import { roleValue } from './lineup-playback.js';
 
 function sideKey(side) {
@@ -11,16 +12,18 @@ function sideKey(side) {
 }
 
 export function createGameMark(game) {
+  const won = game?.result === 1;
+  const lost = game?.result === 0;
   const result = formatResult(game?.result);
   const side = sideKey(game?.side);
-  const sideLabel = side === 'blue' ? 'Blue' : side === 'red' ? 'Red' : '';
-  const outcome = result === 'W' ? 'Win' : result === 'L' ? 'Loss' : '';
+  const sideLabel = side === 'blue' ? t('side.blue') : side === 'red' ? t('side.red') : '';
+  const outcome = won ? t('result.win') : lost ? t('result.loss') : '';
   return h('span', {
     class: `game-mark${side ? ` game-mark--${side}` : ''}`,
-    'aria-label': [sideLabel ? `${sideLabel} side` : null, outcome].filter(Boolean).join(', ') || undefined,
+    'aria-label': [sideLabel ? t('side.named', { side: sideLabel }) : null, outcome].filter(Boolean).join(', ') || undefined,
   }, [
     h('span', {
-      class: `game-mark__result${result === 'W' ? ' is-win' : result === 'L' ? ' is-loss' : ''}`,
+      class: `game-mark__result${won ? ' is-win' : lost ? ' is-loss' : ''}`,
     }, [result]),
     sideLabel ? h('span', { class: 'game-mark__side' }, [sideLabel]) : null,
   ]);
@@ -44,30 +47,30 @@ export function createLineupRangeDock({ playback }) {
   const windowLabel = h('p', { class: 'timeline-range' });
   const staticButton = h('button', {
     class: 'radar-zoom-btn', type: 'button', 'aria-pressed': 'true',
-  }, ['Static']);
+  }, [t('lineup.static')]);
   const dynamicButton = h('button', {
     class: 'radar-zoom-btn', type: 'button', 'aria-pressed': 'false',
-  }, ['Dynamic']);
-  const playButton = h('button', { class: 'radar-zoom-btn', type: 'button' }, ['Play']);
-  const pauseButton = h('button', { class: 'radar-zoom-btn', type: 'button' }, ['Pause']);
-  const restartButton = h('button', { class: 'radar-zoom-btn', type: 'button' }, ['Restart']);
+  }, [t('lineup.dynamic')]);
+  const playButton = h('button', { class: 'radar-zoom-btn', type: 'button' }, [t('lineup.play')]);
+  const pauseButton = h('button', { class: 'radar-zoom-btn', type: 'button' }, [t('lineup.pause')]);
+  const restartButton = h('button', { class: 'radar-zoom-btn', type: 'button' }, [t('lineup.restart')]);
   const prevButton = h('button', {
-    class: 'radar-zoom-btn', type: 'button', 'aria-label': 'Previous game',
+    class: 'radar-zoom-btn', type: 'button', 'aria-label': t('lineup.previous'),
   }, ['←']);
   const nextButton = h('button', {
-    class: 'radar-zoom-btn', type: 'button', 'aria-label': 'Next game',
+    class: 'radar-zoom-btn', type: 'button', 'aria-label': t('lineup.next'),
   }, ['→']);
   const transport = h('div', {
-    class: 'lineup-transport', role: 'group', 'aria-label': 'Playback', hidden: true,
+    class: 'lineup-transport', role: 'group', 'aria-label': t('common.playback'), hidden: true,
   }, [playButton, pauseButton, restartButton, prevButton, nextButton]);
   const brushSvg = d3.create('svg')
     .attr('class', 'timeline-brush-svg')
     .attr('role', 'slider')
-    .attr('aria-label', 'Game range')
+    .attr('aria-label', t('lineup.gameRange'))
     .attr('aria-orientation', 'horizontal');
   const node = h('div', { class: 'lineup-shared-dock panel' }, [
     h('div', { class: 'lineup-shared-dock__bar' }, [
-      h('div', { class: 'lineup-transport', role: 'group', 'aria-label': 'Chart mode' }, [
+      h('div', { class: 'lineup-transport', role: 'group', 'aria-label': t('lineup.chartMode') }, [
         staticButton,
         dynamicButton,
       ]),
@@ -75,7 +78,7 @@ export function createLineupRangeDock({ playback }) {
       h('div', { class: 'lineup-shared-dock__labels' }, [frameLabel, windowLabel]),
     ]),
     brushSvg.node(),
-    h('p', { class: 'lineup-axis-note' }, ['Line: mean gold share of the five roles']),
+    h('p', { class: 'lineup-axis-note' }, [t('lineup.meanLine')]),
   ]);
 
   let frameState = null;
@@ -87,11 +90,16 @@ export function createLineupRangeDock({ playback }) {
   const brushG = brushSvg.append('g').attr('class', 'timeline-brush');
 
   function rangeText() {
-    if (!ordered.length) return 'No games';
+    if (!ordered.length) return t('common.noGames');
     const from = frameState?.from ?? 0;
     const to = frameState?.to ?? lastIndex;
     const count = to - from + 1;
-    return `${formatCompactDate(ordered[from].date)} – ${formatCompactDate(ordered[to].date)} · ${count} ${count === 1 ? 'game' : 'games'}`;
+    return t('lineup.rangeSummary', {
+      start: formatCompactDate(ordered[from].date),
+      end: formatCompactDate(ordered[to].date),
+      count,
+      unit: count === 1 ? t('common.game') : t('common.gamesWord'),
+    });
   }
 
   function syncControls(state) {
@@ -107,18 +115,18 @@ export function createLineupRangeDock({ playback }) {
     nextButton.disabled = !dynamic || (state.landed ?? state.index) >= state.to;
     frameLabel.replaceChildren();
     if (!dynamic) {
-      frameLabel.textContent = 'All games in the selected range';
+      frameLabel.textContent = t('lineup.allInRange');
     } else {
       const shown = state.landed ?? state.index;
       const game = state.games[shown];
       const opponent = game?.opponent?.name ?? game?.opponent?.short;
       const place = `${shown - state.from + 1}/${state.to - state.from + 1}`;
       frameLabel.append(
-        `${state.playing ? 'Playing' : 'Paused'} · ${place}`,
+        `${state.playing ? t('lineup.playing') : t('lineup.paused')} · ${place}`,
         game ? createGameMark(game) : '',
         [
           game ? formatCompactDate(game.date) : null,
-          opponent ? `vs ${opponent}` : null,
+          opponent ? t('lineup.vs', { name: opponent }) : null,
         ].filter(Boolean).join(' · '),
       );
     }

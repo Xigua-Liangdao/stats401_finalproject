@@ -2,12 +2,13 @@ import { createRosterSlot, createMiniSlot } from '../../components/catalogue/ros
 import { createSectionBlock } from '../../components/layout/section-block.js';
 import { href } from '../../utils/navigation.js';
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 
 export function renderTeamPlayers(players) {
   return createSectionBlock({
-    index: '01 / Roster',
-    title: 'Players',
-    meta: `${players.length} files`,
+    index: t('team.rosterKicker'),
+    title: t('common.players'),
+    meta: t('team.files', { count: players.length }),
     children: h(
       'div',
       { class: 'team-block__items', style: { padding: 0 } },
@@ -18,9 +19,9 @@ export function renderTeamPlayers(players) {
 
 export function renderTeamLineups(lineups) {
   return createSectionBlock({
-    index: '03 / Compositions',
-    title: 'Lineups',
-    meta: `${lineups.length} files`,
+    index: t('team.compositions'),
+    title: t('common.lineups'),
+    meta: t('team.files', { count: lineups.length }),
     children: h(
       'div',
       { class: 'team-block team-block--lineups', style: { border: '0', background: 'transparent' } },

@@ -9,9 +9,12 @@ import { renderPlayerCataloguePage } from './pages/player/player-catalogue-page.
 import { renderPlayerPage } from './pages/player/player-page.js?v=scale-zoom';
 import { renderTeamPage } from './pages/team/team-page.js';
 import { h } from './utils/dom.js';
+import { applyDocumentCopy, t } from './utils/i18n.js';
 import { startRouter } from './utils/navigation.js?v=catalogue-back';
 import { ensureSeason, seasonOptions, setSelectedSeason } from './utils/season.js';
 import { createRouteTransition, shouldPlayRouteWipe } from './utils/route-transition.js';
+
+applyDocumentCopy();
 
 const header = document.querySelector('#site-header');
 const app = document.querySelector('#app');
@@ -52,7 +55,7 @@ async function render(route) {
         console.error(error);
         target.replaceChildren(
           h('div', { class: 'page' }, [
-            h('p', { class: 'notice' }, ['Terminal failed to load this file. See console.']),
+            h('p', { class: 'notice' }, [t('app.loadFailed')]),
           ]),
         );
       }

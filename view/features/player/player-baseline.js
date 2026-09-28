@@ -1,4 +1,5 @@
 import { formatFixed, formatImpact, formatPercent } from '../../utils/formatting.js';
+import { t } from '../../utils/i18n.js';
 
 export const SPAN_STEP = 0.05;
 export const BASELINE_RADIUS = 0.5;
@@ -76,27 +77,27 @@ export function axisRangeLabel(axis, span = 1) {
 export function createRadarAxes(players = []) {
   return [
     {
-      key: 'mean_gold_share', label: 'Gold Share',
+      key: 'mean_gold_share', get label() { return t('chart.goldShare'); },
       half: deviationHalf(players, 'mean_gold_share'),
       format: formatPercent,
     },
     {
-      key: 'mean_damage_share', label: 'Damage Share',
+      key: 'mean_damage_share', get label() { return t('chart.damageShare'); },
       half: deviationHalf(players, 'mean_damage_share'),
       format: formatPercent,
     },
     {
-      key: 'mean_dpm', label: 'DPM',
+      key: 'mean_dpm', get label() { return t('common.dpm'); },
       half: deviationHalf(players, 'mean_dpm'),
       format: (value) => formatFixed(value, 1),
     },
     {
-      key: 'mean_vision_per_minute', label: 'Vision / min',
+      key: 'mean_vision_per_minute', get label() { return t('common.vision'); },
       half: deviationHalf(players, 'mean_vision_per_minute'),
       format: (value) => formatFixed(value, 2),
     },
     {
-      key: 'shrunk_impact', label: 'Impact',
+      key: 'shrunk_impact', get label() { return t('common.impact'); },
       half: deviationHalf(players, 'shrunk_impact'),
       format: formatImpact,
     },

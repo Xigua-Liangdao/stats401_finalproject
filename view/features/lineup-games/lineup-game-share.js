@@ -2,6 +2,7 @@ import { ROLE_COLORS, ROLE_ORDER } from '../../utils/constants.js';
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatPercent, formatRole } from '../../utils/formatting.js';
+import { t } from '../../utils/i18n.js';
 import { roleValue } from '../lineup/lineup-playback.js';
 
 const DOT_RADIUS = 5.6;
@@ -66,8 +67,8 @@ export function findLineupGameSlice(playerGame, lineupGames = []) {
 }
 
 function createRoleLegend() {
-  return h('div', { class: 'share-legend', 'aria-label': 'Color encodes role' }, [
-    h('div', { class: 'share-legend__kicker' }, ['Role']),
+  return h('div', { class: 'share-legend', 'aria-label': t('lineup.colorRole') }, [
+    h('div', { class: 'share-legend__kicker' }, [t('common.role')]),
     h(
       'div',
       { class: 'share-legend__roles' },
@@ -103,7 +104,7 @@ export function mountGameShareSlice(stage, { game, games = [], highlightRole = n
   tooltip.className = 'chart-tooltip';
   tooltip.hidden = true;
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
-  svg.append('title').text('Gold share versus damage share for this game');
+  svg.append('title').text(t('lineup.gameShare'));
   stage.append(svg.node(), tooltip);
   const margin = { top: 16, right: 12, bottom: 36, left: 58 };
   const observer = new ResizeObserver(() => layout());
@@ -123,14 +124,14 @@ export function mountGameShareSlice(stage, { game, games = [], highlightRole = n
     if (width < 40) return;
     svg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
     svg.selectAll('*').remove();
-    svg.append('title').text('Gold share versus damage share for this game');
+    svg.append('title').text(t('lineup.gameShare'));
     if (!points.length) {
       svg.append('text')
         .attr('class', 'chart-empty')
         .attr('x', width / 2)
         .attr('y', height / 2)
         .attr('text-anchor', 'middle')
-        .text('No gold and damage shares for this game.');
+        .text(t('lineup.noGameShares'));
       return;
     }
 
@@ -157,14 +158,14 @@ export function mountGameShareSlice(stage, { game, games = [], highlightRole = n
       .attr('x', innerWidth)
       .attr('y', innerHeight + 28)
       .attr('text-anchor', 'end')
-      .text('Gold share');
+      .text(t('common.goldShare'));
     plot.append('text')
       .attr('class', 'chart-axis-label')
       .attr('transform', 'rotate(-90)')
       .attr('x', 0)
       .attr('y', -44)
       .attr('text-anchor', 'end')
-      .text('Damage share');
+      .text(t('common.damageShare'));
 
     plot.selectAll('.share-dot')
       .data(points)
@@ -181,8 +182,8 @@ export function mountGameShareSlice(stage, { game, games = [], highlightRole = n
       .on('mousemove', (event, point) => {
         tooltip.innerHTML = [
           `<div>${point.name ?? point.role} · ${formatRole(point.role)}</div>`,
-          `<div>Gold share: ${formatPercent(point.gold)}</div>`,
-          `<div>Damage share: ${formatPercent(point.damage)}</div>`,
+          `<div>${t('lineup.tipShare', { label: t('common.goldShare'), value: formatPercent(point.gold) })}</div>`,
+          `<div>${t('lineup.tipShare', { label: t('common.damageShare'), value: formatPercent(point.damage) })}</div>`,
         ].join('');
         tooltip.hidden = false;
         const bounds = stage.getBoundingClientRect();

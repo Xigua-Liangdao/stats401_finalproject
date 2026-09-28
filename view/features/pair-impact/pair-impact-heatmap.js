@@ -2,6 +2,7 @@ import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatCount, formatImpact, formatPercent, formatRole } from '../../utils/formatting.js';
 import { PLACEHOLDER } from '../../utils/constants.js';
+import { t } from '../../utils/i18n.js';
 import { createEligibilityNotice } from '../../components/layout/eligibility-notice.js';
 
 function playerLabel(player) {
@@ -22,23 +23,17 @@ function colorScale(limit) {
 }
 
 function kindCopy(kind) {
-  if (kind === 'self') return 'Self-pair. Diagonal cells are not scores.';
-  if (kind === 'missing') return 'No shared evaluated games in this snapshot.';
-  if (kind === 'sparse') {
-    return 'Score is computed, but this pair is below the default display rule (10 evaluated games and 3 match days). Shown for inspection only.';
-  }
-  return 'Eligible pair. Color encodes shrunk co-performance.';
+  if (kind === 'self') return t('heat.self');
+  if (kind === 'missing') return t('heat.missing');
+  if (kind === 'sparse') return t('heat.sparse');
+  return t('heat.eligible');
 }
 
 function idleDetail() {
   return [
-    h('div', { class: 'heatmap-detail__title coord' }, ['Inspect a cell']),
-    h('p', { class: 'heatmap-detail__lead' }, [
-      'Hover or focus a pair. Detail stays here instead of a floating label.',
-    ]),
-    h('p', { class: 'heatmap-detail__note' }, [
-      'Color is shrunk co-performance on a fixed diverging scale centered at 0. Grey cells are self-pairs or pairs with no computed score (no shared evaluated games). Ineligible scores are still colored and labeled.',
-    ]),
+    h('div', { class: 'heatmap-detail__title coord' }, [t('heat.inspect')]),
+    h('p', { class: 'heatmap-detail__lead' }, [t('heat.hover')]),
+    h('p', { class: 'heatmap-detail__note' }, [t('heat.scale')]),
   ];
 }
 
@@ -48,15 +43,15 @@ function detailRows(cell) {
   const interval =
     stats.ci_low != null && stats.ci_high != null
       ? `${formatImpact(stats.ci_low)} – ${formatImpact(stats.ci_high)}`
-      : 'Unavailable · needs 3 match days';
+      : t('heat.unavailable');
 
   return [
-    { label: 'Games together', value: pair ? formatCount(stats.n_games) : PLACEHOLDER },
-    { label: 'Match days', value: pair ? formatCount(stats.n_days) : PLACEHOLDER },
-    { label: 'Win rate', value: pair ? formatPercent(stats.win_rate) : PLACEHOLDER },
-    { label: 'Mean impact', value: pair ? formatImpact(stats.mean_impact) : PLACEHOLDER },
-    { label: 'Shrunk impact', value: pair ? formatImpact(stats.shrunk_impact) : PLACEHOLDER },
-    { label: '95% interval', value: pair ? interval : PLACEHOLDER },
+    { label: t('lineup.gamesTogether'), value: pair ? formatCount(stats.n_games) : PLACEHOLDER },
+    { label: t('heat.matchDays'), value: pair ? formatCount(stats.n_days) : PLACEHOLDER },
+    { label: t('common.winRate'), value: pair ? formatPercent(stats.win_rate) : PLACEHOLDER },
+    { label: t('common.meanImpact'), value: pair ? formatImpact(stats.mean_impact) : PLACEHOLDER },
+    { label: t('common.shrunkImpact'), value: pair ? formatImpact(stats.shrunk_impact) : PLACEHOLDER },
+    { label: t('heat.interval'), value: pair ? interval : PLACEHOLDER },
   ];
 }
 
@@ -69,7 +64,7 @@ function renderDetail(detail, cell, players) {
   const col = players[cell.col];
   detail.replaceChildren(
     h('div', { class: 'heatmap-detail__title coord' }, [
-      cell.kind === 'self' || cell.kind === 'missing' ? 'Unavailable cell' : 'Pair',
+      cell.kind === 'self' || cell.kind === 'missing' ? t('heat.unavailableCell') : t('heat.pair'),
     ]),
     h('p', { class: 'heatmap-detail__pair' }, [`${playerLabel(row)}  ×  ${playerLabel(col)}`]),
     h('p', { class: 'heatmap-detail__lead' }, [kindCopy(cell.kind)]),
@@ -84,7 +79,7 @@ function renderDetail(detail, cell, players) {
       ),
     ),
     h('p', { class: 'heatmap-detail__note' }, [
-      'Score = mean of both players\' adjusted damage × n/(n+10). Shared match context can affect both players. This is descriptive co-performance, not causal synergy.',
+      t('heat.scoreNote'),
     ]),
   );
 }
@@ -100,11 +95,11 @@ export function createPairHeatmapPanel({ heatmap, selectedIds = [], teamName, on
 
   const node = h('article', { class: 'viz-placeholder panel pair-heatmap-panel', dataset: { viz: 'pair-impact' } }, [
     h('div', { class: 'viz-placeholder__chrome' }, [
-      h('span', {}, ['VIZ']),
-      h('span', {}, [teamName ? `Teammate co-performance · ${teamName}` : 'Teammate co-performance']),
+      h('span', {}, [t('common.viz')]),
+      h('span', {}, [teamName ? t('heat.titleTeam', { team: teamName }) : t('heat.title')]),
     ]),
     h('div', { class: split ? 'pair-heatmap-stack is-split' : 'pair-heatmap-stack' }, [
-      createEligibilityNotice(hasEligiblePair, 'pair heatmap'),
+      createEligibilityNotice(hasEligiblePair, 'pair'),
       stage,
       detail,
     ]),
@@ -125,7 +120,7 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
 
   const { players, cells, limit } = heatmap;
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
-  svg.append('title').text('Teammate co-performance heatmap');
+  svg.append('title').text(t('heat.svg'));
   stage.append(svg.node());
 
   const selected = new Set(selectedIds);
@@ -219,7 +214,7 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
     if (split) stage.style.height = `${height}px`;
     svg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
     svg.selectAll('*').remove();
-    svg.append('title').text('Teammate co-performance heatmap');
+    svg.append('title').text(t('heat.svg'));
 
     if (!n) {
       svg.append('text')
@@ -227,7 +222,7 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
         .attr('x', width / 2)
         .attr('y', height / 2)
         .attr('text-anchor', 'middle')
-        .text('No teammates available for this heatmap.');
+        .text(t('heat.empty'));
       return;
     }
 
@@ -272,7 +267,11 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
       .attr('aria-pressed', 'false')
       .attr(
         'aria-label',
-        (cell) => `${playerLabel(players[cell.row])} and ${playerLabel(players[cell.col])}. ${kindCopy(cell.kind)}`,
+        (cell) => t('heat.cell', {
+          row: playerLabel(players[cell.row]),
+          col: playerLabel(players[cell.col]),
+          kind: kindCopy(cell.kind),
+        }),
       )
       .on('mouseenter', (_, cell) => selectCell(cell))
       .on('mouseleave', (event) => {

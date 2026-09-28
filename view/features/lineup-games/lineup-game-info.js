@@ -4,42 +4,41 @@ import { createStatGrid } from '../../components/cards/stat-card.js';
 import { createMiniSlot } from '../../components/catalogue/roster-slot.js';
 import { h } from '../../utils/dom.js';
 import { createLineupGameShareChart } from './lineup-game-share.js';
-import { formatDate, formatResult, placeholderValue } from '../../utils/formatting.js';
+import { formatDate, formatResult, formatSide, placeholderValue } from '../../utils/formatting.js';
+import { t } from '../../utils/i18n.js';
 import { fillStatCards } from '../../utils/stats.js?v=game-stats';
 
 const LINEUP_GAME_STAT_CARDS = [
-  { key: 'lineup_impact', format: 'impact', label: 'Lineup impact', hint: 'Mean adjusted damage of the five players' },
-  { key: 'mean_dpm', format: 'dpm', label: 'Mean DPM', hint: 'Five-player mean DPM' },
-  { key: 'gold_concentration', format: 'share', label: 'Gold concentration', hint: 'Sum of squared gold shares' },
-  { key: 'damage_concentration', format: 'share', label: 'Damage concentration', hint: 'Sum of squared damage shares' },
+  { key: 'lineup_impact', format: 'impact', get label() { return t('stat.lineupImpact'); }, get hint() { return t('stat.lineupImpactHint'); } },
+  { key: 'mean_dpm', format: 'dpm', get label() { return t('lineup.meanDpm'); }, get hint() { return t('lineup.meanDpmHint'); } },
+  { key: 'gold_concentration', format: 'share', get label() { return t('lineup.goldConcentration'); }, get hint() { return t('lineup.goldHint'); } },
+  { key: 'damage_concentration', format: 'share', get label() { return t('lineup.damageConcentration'); }, get hint() { return t('lineup.damageHint'); } },
 ];
 
 export function openLineupGameInfo(game, games = []) {
   const players = game.lineup?.players ?? [];
   const unevaluated = game.lineup_impact == null;
   openDrawer({
-    kicker: 'Lineup game info',
-    title: `${game.lineup?.name ?? 'Lineup'} · ${formatResult(game.result)}`,
+    kicker: t('drawer.lineupGame'),
+    title: t('drawer.playerTitle', { name: game.lineup?.name ?? t('common.lineup'), result: formatResult(game.result) }),
     body: h('div', {}, [
       unevaluated
-        ? h('p', { class: 'notice' }, [
-            'Lineup impact is unavailable for this game because it was not in the evaluated window. Resource fields are still shown.',
-          ])
+        ? h('p', { class: 'notice' }, [t('drawer.lineupUnevaluated')])
         : null,
       createDrawerSection({
-        title: 'Game metadata',
+        title: t('drawer.gameMeta'),
         children: createMetaGrid([
-          { label: 'Date', value: formatDate(game.date) },
-          { label: 'Opponent', value: game.opponent?.name ?? placeholderValue() },
-          { label: 'Split', value: game.split },
-          { label: 'Patch', value: game.patch },
-          { label: 'Side', value: game.side ?? placeholderValue() },
-          { label: 'Result', value: formatResult(game.result) },
-          { label: 'Lineup', value: game.lineup?.name ?? placeholderValue() },
+          { label: t('common.date'), value: formatDate(game.date) },
+          { label: t('common.opponent'), value: game.opponent?.name ?? placeholderValue() },
+          { label: t('common.split'), value: game.split },
+          { label: t('common.patch'), value: game.patch },
+          { label: t('common.side'), value: formatSide(game.side) },
+          { label: t('common.result'), value: formatResult(game.result) },
+          { label: t('common.lineup'), value: game.lineup?.name ?? placeholderValue() },
         ]),
       }),
       createDrawerSection({
-        title: 'Composition',
+        title: t('drawer.composition'),
         children: h(
           'div',
           { class: 'lineup-strip__slots' },
@@ -47,11 +46,11 @@ export function openLineupGameInfo(game, games = []) {
         ),
       }),
       createDrawerSection({
-        title: 'Lineup stat cards',
+        title: t('drawer.lineupStats'),
         children: createStatGrid(fillStatCards(LINEUP_GAME_STAT_CARDS, game)),
       }),
       createDrawerSection({
-        title: 'Gold share vs damage share',
+        title: t('lineup.vizGold'),
         children: createLineupGameShareChart({ game, games }),
       }),
     ]),

@@ -1,6 +1,7 @@
 import { createPagedList } from './paged-list.js?v=catalogue-back';
 import { createTeamLogo } from '../media/entity-images.js';
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
 
 export const CATALOGUE_PAGE_SIZE = {
@@ -12,7 +13,7 @@ export function createTeamBlockHeader(team, meta) {
   return h('header', { class: 'team-block__header' }, [
     createTeamLogo(team),
     h('a', { href: href.team(team.id) }, [
-      h('div', { class: 'coord' }, ['Organization']),
+      h('div', { class: 'coord' }, [t('common.organization')]),
       h('h2', { class: 'team-block__name' }, [team.name]),
     ]),
     h('div', { class: 'team-block__meta' }, [meta]),
@@ -98,8 +99,8 @@ export function createTeamGroupedCatalogue({
   const input = h('input', {
     type: 'search',
     class: 'catalogue-team-search__input',
-    placeholder: 'Search team',
-    'aria-label': 'Search team',
+    placeholder: t('catalogue.searchTeam'),
+    'aria-label': t('catalogue.searchTeam'),
   });
   let query = '';
   let filteredPage = 1;
@@ -108,7 +109,7 @@ export function createTeamGroupedCatalogue({
     const needle = query.trim().toLowerCase();
     const shown = needle ? groups.filter((group) => teamMatches(group, needle)) : groups;
     if (!shown.length) {
-      host.replaceChildren(h('p', { class: 'empty-state' }, ['No teams']));
+      host.replaceChildren(h('p', { class: 'empty-state' }, [t('catalogue.noTeams')]));
       return;
     }
     host.replaceChildren(renderGroupedList({
@@ -136,7 +137,7 @@ export function createTeamGroupedCatalogue({
 
   return {
     search: h('label', { class: 'catalogue-team-search' }, [
-      h('span', { class: 'kicker' }, ['Team']),
+      h('span', { class: 'kicker' }, [t('catalogue.teamKicker')]),
       input,
     ]),
     root: host,

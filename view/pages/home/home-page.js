@@ -1,7 +1,7 @@
 import { createPlayerPortrait, createTeamLogo } from '../../components/media/entity-images.js';
-import { APP_KICKER } from '../../utils/constants.js';
 import { dataSource } from '../../utils/data-source.js';
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 import { formatCount, formatFixed, formatImpact, formatPercent, formatRole } from '../../utils/formatting.js';
 import { href } from '../../utils/navigation.js';
 import { getSelectedSeason } from '../../utils/season.js';
@@ -77,21 +77,24 @@ function overviewItems(view) {
   const games = sidedGames(view.teams, 'n_games_total');
   const evaluated = sidedGames(view.teams, 'n_games');
   return [
-    ['teams', 'Teams', formatCount(view.teams.length), `${view.season} season`],
-    ['players', 'Players', formatCount(players), shareText(countEligible(view.players), players, 'eligible')],
-    ['lineups', 'Lineups', formatCount(lineups), shareText(countEligible(view.lineups), lineups, 'eligible')],
-    ['games', 'Evaluated games', formatCount(evaluated), shareText(evaluated, games, 'of all games')],
+    ['teams', t('common.teams'), formatCount(view.teams.length), t('home.season', { season: view.season })],
+    ['players', t('common.players'), formatCount(players), shareText(countEligible(view.players), players, t('home.eligible'))],
+    ['lineups', t('common.lineups'), formatCount(lineups), shareText(countEligible(view.lineups), lineups, t('home.eligible'))],
+    ['games', t('home.evaluated'), formatCount(evaluated), shareText(evaluated, games, t('home.ofAll'))],
   ];
 }
 
 function createChampion(team) {
   if (!team) return null;
   return h('a', { class: 'home-champion panel', href: href.team(team.id) }, [
-    h('div', { class: 'home-champion__kicker coord' }, ['Season champion']),
+    h('div', { class: 'home-champion__kicker coord' }, [t('home.champion')]),
     createTeamLogo(team),
     h('div', { class: 'home-champion__name display' }, [team.name]),
     h('p', { class: 'home-champion__meta' }, [
-      `${formatPercent(team.stats?.win_rate)} win rate · ${formatCount(team.stats?.n_games)} evaluated games`,
+      t('home.championLine', {
+        rate: formatPercent(team.stats?.win_rate),
+        games: formatCount(team.stats?.n_games),
+      }),
     ]),
   ]);
 }
@@ -99,11 +102,11 @@ function createChampion(team) {
 function playerFacts(player) {
   const stats = player.stats ?? {};
   return [
-    ['Win rate', formatPercent(stats.win_rate)],
-    ['Evaluated games', formatCount(stats.n_games)],
-    ['DPM', formatFixed(stats.mean_dpm, 0)],
-    ['Gold share', formatPercent(stats.mean_gold_share)],
-    ['Shrunk impact', formatImpact(stats.shrunk_impact)],
+    [t('common.winRate'), formatPercent(stats.win_rate)],
+    [t('home.evaluated'), formatCount(stats.n_games)],
+    [t('common.dpm'), formatFixed(stats.mean_dpm, 0)],
+    [t('common.goldShare'), formatPercent(stats.mean_gold_share)],
+    [t('common.shrunkImpact'), formatImpact(stats.shrunk_impact)],
   ];
 }
 
@@ -112,7 +115,7 @@ function createTopPlayer(player) {
   const playerHref = href.player(player.id, player.teamId, player.season);
   const teamName = player.team?.name;
   return h('section', { class: 'home-player' }, [
-    h('h2', { class: 'section-block__title' }, ['Top player']),
+    h('h2', { class: 'section-block__title' }, [t('home.topPlayer')]),
     h('article', { class: 'home-player__card' }, [
       h('a', { class: 'home-player__photo', href: playerHref }, [
         createPlayerPortrait(player),
@@ -136,7 +139,10 @@ function createTeamCard(team, index) {
     createTeamLogo(team),
     h('span', { class: 'home-team__name' }, [team.name]),
     h('span', { class: 'home-team__meta' }, [
-      `${formatPercent(team.stats?.win_rate)} · ${formatCount(team.stats?.n_games)} games`,
+      t('home.teamMeta', {
+        rate: formatPercent(team.stats?.win_rate),
+        count: formatCount(team.stats?.n_games),
+      }),
     ]),
   ]);
 }
@@ -151,15 +157,13 @@ export async function renderHomePage(target) {
     h('div', { class: 'home' }, [
       h('section', { class: 'home-hero' }, [
         h('div', { class: 'home-hero__copy' }, [
-          h('div', { class: 'kicker' }, [`${APP_KICKER} · Scouting terminal`]),
-          h('h1', { class: 'home-title display' }, ['Lineup Synergy']),
-          h('p', { class: 'home-sub' }, [
-            'Lineup synergy in the League of Legends Pro League (LPL)',
-          ]),
+          h('div', { class: 'kicker' }, [t('app.scouting', { kicker: t('app.kicker') })]),
+          h('h1', { class: 'home-title display' }, [t('home.title')]),
+          h('p', { class: 'home-sub' }, [t('home.lead')]),
         ]),
         createChampion(ranked[0]),
       ]),
-      h('section', { class: 'home-overview', 'aria-label': 'Season overview' }, [
+      h('section', { class: 'home-overview', 'aria-label': t('home.overview') }, [
         h('dl', {}, overviewItems(view).map(([kind, label, value, note]) => (
           h('div', { class: 'home-metric' }, [
             h('div', { class: 'home-metric__head' }, [
@@ -174,10 +178,10 @@ export async function renderHomePage(target) {
       createTopPlayer(topPlayer(view.players)),
       h('section', { class: 'home-teams' }, [
         h('div', { class: 'home-teams__head' }, [
-          h('h2', { class: 'section-block__title' }, ['Top teams']),
+          h('h2', { class: 'section-block__title' }, [t('home.topTeams')]),
         ]),
         h('div', { class: 'home-teams__row' }, ranked.slice(0, TOP_TEAM_COUNT).map(createTeamCard)),
-        h('a', { class: 'home-more', href: href.players }, ['See more →']),
+        h('a', { class: 'home-more', href: href.players }, [t('nav.seeMore')]),
       ]),
     ]),
   );

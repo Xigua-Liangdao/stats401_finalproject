@@ -1,4 +1,5 @@
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
 import { formatRole } from '../../utils/formatting.js';
 
@@ -45,9 +46,9 @@ export function createIdentityHeader({
 }
 
 export function teamFact(team) {
-  return { label: 'Team', value: team.name, href: href.team(team.id) };
+  return { label: t('common.team'), value: team.name, href: href.team(team.id) };
 }
 
 export function roleFact(role) {
-  return { label: 'Role', value: formatRole(role) };
+  return { label: t('common.role'), value: formatRole(role) };
 }

@@ -1,4 +1,6 @@
 /** Historical media, shared by data/test and data/processed. */
+import { t } from './i18n.js';
+
 const IMG_ROOT = new URL('../../data/img/', import.meta.url);
 
 export const TEAM_LOGO_FALLBACK = new URL('team/unknown.svg', IMG_ROOT).href;
@@ -66,7 +68,7 @@ export function bindImageFallback(img, fallback) {
   img.addEventListener('error', () => {
     if (img.dataset.fallbackApplied === 'true') return;
     img.dataset.fallbackApplied = 'true';
-    img.title = 'Image unavailable';
+    img.title = t('player.imageMissing');
     img.src = fallback;
   });
 }

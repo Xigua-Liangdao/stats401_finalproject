@@ -1,20 +1,17 @@
-export const APP_NAME = 'LPL Synergy Terminal';
-export const APP_KICKER = 'LPL 2025 · STATS 401';
+import { t } from './i18n.js';
+
 export const DATASET = 'processed';
 export const DATA_ROOT = `../data/${DATASET}`;
 export const DATASET_MODE = DATASET;
 
-export const ELIGIBLE_NOTICE =
-  'Default display requires at least 10 evaluated games and 3 match days. Values are shown for inspection only.';
-
 export const ROLE_ORDER = ['top', 'jng', 'mid', 'bot', 'sup'];
 
 export const ROLE_LABELS = {
-  top: 'TOP',
-  jng: 'JNG',
-  mid: 'MID',
-  bot: 'BOT',
-  sup: 'SUP',
+  get top() { return t('role.top'); },
+  get jng() { return t('role.jng'); },
+  get mid() { return t('role.mid'); },
+  get bot() { return t('role.bot'); },
+  get sup() { return t('role.sup'); },
 };
 
 export const ROLE_COLORS = {

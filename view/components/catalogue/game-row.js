@@ -1,6 +1,7 @@
 import { h } from '../../utils/dom.js';
 import { PLACEHOLDER } from '../../utils/constants.js';
 import { formatDate, formatResult } from '../../utils/formatting.js';
+import { t } from '../../utils/i18n.js';
 import { createButton } from '../buttons/button.js';
 
 function sideModifier(side) {
@@ -21,9 +22,9 @@ export function createGameRow({ game, onInfo, champion = false }) {
     h('td', {}, [game.split || PLACEHOLDER]),
     h('td', {}, [game.patch ?? PLACEHOLDER]),
     champion ? h('td', { class: 'game-row__summary' }, [game.summary || PLACEHOLDER]) : null,
-    h('td', { class: `game-row__result ${result === 'W' ? 'is-win' : 'is-loss'}` }, [result]),
+    h('td', { class: `game-row__result ${game.result === 1 ? 'is-win' : 'is-loss'}` }, [result]),
     h('td', { class: 'game-table__info' }, [
-      createButton({ label: 'Info', onClick: () => onInfo(game) }),
+      createButton({ label: t('common.info'), onClick: () => onInfo(game) }),
     ]),
   ]);
 }

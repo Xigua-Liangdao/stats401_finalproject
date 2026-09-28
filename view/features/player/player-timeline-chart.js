@@ -1,6 +1,7 @@
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatCompactDate, formatDate, parseGameDate } from '../../utils/formatting.js';
+import { t } from '../../utils/i18n.js';
 import { colorForSeries, formatChartValue, SERIES_META, yTickFormat } from './player-chart-config.js';
 
 function sortByDate(games) {
@@ -32,10 +33,10 @@ function tooltipLines(game, field, value) {
   const team = game.opponent?.short ?? game.opponent?.name;
   return [
     formatDate(game.date),
-    game.champion ? `Champion: ${game.champion}` : null,
-    team ? `Opponent team: ${team}` : null,
-    game.opponentChampion ? `Opponent champion: ${game.opponentChampion}` : null,
-    `${SERIES_META[field]?.label ?? field}: ${formatChartValue(field, value)}`,
+    game.champion ? t('chart.champion', { name: game.champion }) : null,
+    team ? t('chart.opponentTeam', { name: team }) : null,
+    game.opponentChampion ? t('chart.opponentChampion', { name: game.opponentChampion }) : null,
+    t('chart.series', { label: SERIES_META[field]?.label ?? field, value: formatChartValue(field, value) }),
   ].filter(Boolean);
 }
 
@@ -154,7 +155,7 @@ export function mountPlayerTimeline(stage, { games }) {
   const brushSvg = d3.create('svg')
     .attr('class', 'timeline-brush-svg')
     .attr('role', 'slider')
-    .attr('aria-label', 'Game range')
+    .attr('aria-label', t('lineup.gameRange'))
     .attr('aria-orientation', 'horizontal');
   const dock = h('div', { class: 'timeline-dock' }, [
     rangeLabel,
@@ -202,10 +203,15 @@ export function mountPlayerTimeline(stage, { games }) {
   }
 
   function rangeText() {
-    if (!sorted.length) return 'No games';
+    if (!sorted.length) return t('common.noGames');
     const end = visibleEnd();
     const count = end - from + 1;
-    return `${formatCompactDate(sorted[from].date)} – ${formatCompactDate(sorted[end].date)} · ${count} ${count === 1 ? 'game' : 'games'}`;
+    return t('chart.range', {
+      start: formatCompactDate(sorted[from].date),
+      end: formatCompactDate(sorted[end].date),
+      count,
+      unit: count === 1 ? t('common.game') : t('common.gamesWord'),
+    });
   }
 
   function syncControls() {
@@ -304,8 +310,8 @@ export function mountPlayerTimeline(stage, { games }) {
         .attr('x', width / 2)
         .attr('y', height / 2)
         .attr('text-anchor', 'middle')
-        .text('No values available for this metric.');
-      svg.attr('aria-label', 'No values available for this metric');
+        .text(t('chart.noMetric'));
+      svg.attr('aria-label', t('chart.noMetric'));
       return;
     }
 
@@ -378,7 +384,7 @@ export function mountPlayerTimeline(stage, { games }) {
         .on('mouseleave', hideTip);
     }
 
-    svg.attr('aria-label', `Performance over time, ${rangeText()}`);
+    svg.attr('aria-label', t('chart.timelineAria', { range: rangeText() }));
   }
 
   function render() {

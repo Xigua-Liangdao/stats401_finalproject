@@ -1,19 +1,20 @@
-import { APP_KICKER, APP_NAME, DATASET_MODE } from '../../utils/constants.js';
+import { DATASET_MODE } from '../../utils/constants.js';
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
 import { createStatusChip } from '../layout/status-chip.js';
 
 const LINKS = [
-  { href: href.home, label: 'Home', names: ['home'] },
-  { href: href.players, label: 'Catalogue', names: ['players', 'player', 'team'] },
-  { href: href.compare, label: 'Comparison', names: ['compare'] },
+  { href: href.home, key: 'nav.home', names: ['home'] },
+  { href: href.players, key: 'nav.catalogue', names: ['players', 'player', 'team'] },
+  { href: href.compare, key: 'nav.comparison', names: ['compare'] },
 ];
 
 function createSeasonSelect({ seasons = [], season, onSeasonChange }) {
   const options = seasons.length ? seasons : [season].filter((value) => value != null);
   return h('select', {
     class: 'season-select',
-    'aria-label': 'Season',
+    'aria-label': t('nav.season'),
     onchange: (event) => onSeasonChange?.(event.target.value),
   }, options.map((value) => h('option', {
     value: String(value),
@@ -24,12 +25,12 @@ function createSeasonSelect({ seasons = [], season, onSeasonChange }) {
 export function renderSiteHeader(target, routeName, { seasons = [], season, onSeasonChange } = {}) {
   target.replaceChildren(
     h('div', { class: 'site-header__brand' }, [
-      h('span', { class: 'coord' }, [APP_KICKER]),
-      h('a', { class: 'site-header__brand-name', href: href.home }, [APP_NAME]),
+      h('span', { class: 'coord' }, [t('app.kicker')]),
+      h('a', { class: 'site-header__brand-name', href: href.home }, [t('app.name')]),
     ]),
     h(
       'nav',
-      { class: 'site-nav', 'aria-label': 'Primary' },
+      { class: 'site-nav', 'aria-label': t('nav.primary') },
       LINKS.map((link) =>
         h(
           'a',
@@ -37,7 +38,7 @@ export function renderSiteHeader(target, routeName, { seasons = [], season, onSe
             href: link.href,
             class: link.names.includes(routeName) ? 'is-active' : '',
           },
-          [link.label],
+          [t(link.key)],
         ),
       ),
     ),

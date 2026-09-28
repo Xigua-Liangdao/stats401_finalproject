@@ -2,6 +2,7 @@ import { TEAM_LOGO_FALLBACK, bindImageFallback, teamLogoUrl } from '../../utils/
 import { ROLE_ORDER } from '../../utils/constants.js';
 import { h } from '../../utils/dom.js';
 import { formatRole } from '../../utils/formatting.js';
+import { t } from '../../utils/i18n.js';
 import { createLineupComparison, createPlayerComparison } from './comparison-result.js';
 
 function teamMark(team) {
@@ -28,8 +29,8 @@ function createSearchSelect({ label, placeholder, options, onChange }) {
   const input = h('input', {
     type: 'search',
     class: 'search-select__input',
-    placeholder: 'Search',
-    'aria-label': `Search ${label.toLowerCase()}`,
+    placeholder: t('common.search'),
+    'aria-label': t('compare.search', { label: String(label).toLowerCase() }),
   });
   const list = h('div', { class: 'search-select__list', role: 'listbox', 'aria-label': label });
   const menu = h('div', { class: 'search-select__menu', hidden: true }, [input, list]);
@@ -77,7 +78,7 @@ function createSearchSelect({ label, placeholder, options, onChange }) {
         });
         return item;
       })
-      : [h('p', { class: 'search-select__empty' }, ['No teams'])]));
+      : [h('p', { class: 'search-select__empty' }, [t('catalogue.noTeams')])]));
   }
 
   function close() {
@@ -126,11 +127,11 @@ function createSubjectSelect(labelText) {
 }
 
 function subjectLabel(mode) {
-  return mode === 'lineup' ? 'Lineup' : 'Player';
+  return mode === 'lineup' ? t('common.lineup') : t('common.player');
 }
 
 function subjectPlaceholder(mode) {
-  return mode === 'lineup' ? 'Select lineup' : 'Select player';
+  return mode === 'lineup' ? t('compare.selectLineup') : t('compare.selectPlayer');
 }
 
 export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam }) {
@@ -149,18 +150,18 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
 
   const playerButton = h('button', {
     class: 'radar-zoom-btn', type: 'button', 'aria-pressed': 'true',
-  }, ['Player']);
+  }, [t('common.player')]);
   const lineupButton = h('button', {
     class: 'radar-zoom-btn', type: 'button', 'aria-pressed': 'false',
-  }, ['Lineup']);
-  const leftSubject = createSubjectSelect('Player');
-  const rightSubject = createSubjectSelect('Player');
-  const contentSelect = h('select', { class: 'chart-select', 'aria-label': 'Comparison' });
-  const contentNote = h('p', { class: 'compare-content__note' }, ['Same role only']);
+  }, [t('common.lineup')]);
+  const leftSubject = createSubjectSelect(t('common.player'));
+  const rightSubject = createSubjectSelect(t('common.player'));
+  const contentSelect = h('select', { class: 'chart-select', 'aria-label': t('common.comparison') });
+  const contentNote = h('p', { class: 'compare-content__note' }, [t('compare.sameRole')]);
   const leftRoster = h('div', { class: 'compare-roster compare-roster--left' });
   const rightRoster = h('div', { class: 'compare-roster compare-roster--right' });
   const result = h('div', { class: 'compare-stage' }, [
-    h('p', { class: 'compare-stage__label' }, ['Select both sides']),
+    h('p', { class: 'compare-stage__label' }, [t('compare.selectBoth')]),
   ]);
 
   function roster(teamId) {
@@ -210,15 +211,15 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
 
   function syncContent() {
     const options = mode === 'player'
-      ? [{ id: 'profile', label: 'Player profile' }]
-      : [{ id: 'pair-impact', label: 'Pair impact' }];
+      ? [{ id: 'profile', label: t('compare.profile') }]
+      : [{ id: 'pair-impact', label: t('compare.pair') }];
     contentSelect.replaceChildren(
       ...options.map((option) => h('option', { value: option.id }, [option.label])),
     );
     contentSelect.value = options[0].id;
     contentNote.textContent = mode === 'player'
-      ? 'Same role only'
-      : 'One pair-impact chart per lineup';
+      ? t('compare.sameRole')
+      : t('compare.pairNote');
   }
 
   function rosterRows(lineup) {
@@ -243,7 +244,7 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     const right = entity(rightTeamId, rightId);
     if (!left || !right || left.id === right.id) {
       result.className = 'compare-stage';
-      result.replaceChildren(h('p', { class: 'compare-stage__label' }, ['Select both sides']));
+      result.replaceChildren(h('p', { class: 'compare-stage__label' }, [t('compare.selectBoth')]));
       return;
     }
     result.className = 'compare-result';
@@ -259,8 +260,8 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
   }
 
   const leftTeam = createSearchSelect({
-    label: 'Team',
-    placeholder: 'Select team',
+    label: t('common.team'),
+    placeholder: t('compare.selectTeam'),
     options: teamOptions,
     onChange: (teamId) => {
       leftTeamId = teamId;
@@ -269,8 +270,8 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     },
   });
   const rightTeam = createSearchSelect({
-    label: 'Team',
-    placeholder: 'Select team',
+    label: t('common.team'),
+    placeholder: t('compare.selectTeam'),
     options: teamOptions,
     onChange: (teamId) => {
       rightTeamId = teamId;
@@ -316,18 +317,18 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
   ]);
 
   return h('div', { class: 'compare-section' }, [
-    h('div', { class: 'compare-mode', role: 'group', 'aria-label': 'Comparison type' }, [
+    h('div', { class: 'compare-mode', role: 'group', 'aria-label': t('compare.type') }, [
       playerButton,
       lineupButton,
     ]),
     h('div', { class: 'compare-board' }, [
-      side('Left', leftTeam, leftSubject, leftRoster),
+      side(t('common.left'), leftTeam, leftSubject, leftRoster),
       h('div', { class: 'compare-content' }, [
-        h('div', { class: 'coord compare-side__label' }, ['Content']),
-        h('label', { class: 'chart-control' }, ['Comparison', contentSelect]),
+        h('div', { class: 'coord compare-side__label' }, [t('common.content')]),
+        h('label', { class: 'chart-control' }, [t('common.comparison'), contentSelect]),
         contentNote,
       ]),
-      side('Right', rightTeam, rightSubject, rightRoster),
+      side(t('common.right'), rightTeam, rightSubject, rightRoster),
     ]),
     result,
   ]);

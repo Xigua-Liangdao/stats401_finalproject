@@ -1,5 +1,6 @@
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 import {
   BASELINE_RADIUS,
   axisRangeLabel,
@@ -34,14 +35,12 @@ export function createCompareRadar({ left, right, players }) {
   return h('article', { class: 'panel compare-radar' }, [
     h('div', { class: 'viz-placeholder__chrome' }, [
       h('div', {}, [
-        h('p', { class: 'viz-placeholder__title' }, ['Player profile']),
-        h('p', { class: 'viz-placeholder__note' }, [
-          'One season-role baseline. Distance from the pentagon is each player’s difference from that baseline.',
-        ]),
+        h('p', { class: 'viz-placeholder__title' }, [t('compare.profile')]),
+        h('p', { class: 'viz-placeholder__note' }, [t('compare.profileNote')]),
       ]),
     ]),
     h('div', { class: 'compare-radar__legend' }, [
-      h('span', { class: 'compare-key compare-key--baseline' }, ['Baseline']),
+      h('span', { class: 'compare-key compare-key--baseline' }, [t('compare.baseline')]),
       h('span', { class: 'compare-key compare-key--left' }, [left.name]),
       h('span', { class: 'compare-key compare-key--right' }, [right.name]),
     ]),
@@ -54,7 +53,7 @@ function mount(stage, tip, { left, right, axes }) {
   const svg = d3.create('svg')
     .attr('class', 'chart-svg')
     .attr('role', 'img')
-    .attr('aria-label', `${left.name} and ${right.name} player profile`);
+    .attr('aria-label', t('compare.aria', { left: left.name, right: right.name }));
   stage.insertBefore(svg.node(), tip);
 
   const observer = new ResizeObserver(() => draw());
@@ -67,9 +66,9 @@ function mount(stage, tip, { left, right, axes }) {
   function showTip(event, axis) {
     const lines = [
       axis.label,
-      `${left.name}: ${axis.format(left.stats?.[axis.key])}`,
-      `${right.name}: ${axis.format(right.stats?.[axis.key])}`,
-      `Baseline: ${axis.format(baselineValue(left.stats, axis.key))}`,
+      t('compare.leftValue', { name: left.name, value: axis.format(left.stats?.[axis.key]) }),
+      t('compare.leftValue', { name: right.name, value: axis.format(right.stats?.[axis.key]) }),
+      t('compare.baselineValue', { value: axis.format(baselineValue(left.stats, axis.key)) }),
     ];
     tip.replaceChildren(...lines.map((line) => h('div', {}, [line])));
     tip.hidden = false;

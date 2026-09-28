@@ -1,3 +1,5 @@
+import { t } from './i18n.js';
+
 export const href = {
   home: '#/',
   players: '#/players',
@@ -105,13 +107,13 @@ function peekBackHref() {
 
 function labelForBack(targetHref) {
   const route = parseHash(targetHref);
-  if (route.name === 'players') return 'Back to catalogue';
-  if (route.name === 'team') return 'Back to team';
-  if (route.name === 'lineup') return 'Back to lineup';
-  if (route.name === 'player') return 'Back to player';
-  if (route.name === 'home') return 'Back to home';
-  if (route.name === 'compare') return 'Back to comparison';
-  return 'Back';
+  if (route.name === 'players') return t('nav.backCatalogue');
+  if (route.name === 'team') return t('nav.backTeam');
+  if (route.name === 'lineup') return t('nav.backLineup');
+  if (route.name === 'player') return t('nav.backPlayer');
+  if (route.name === 'home') return t('nav.backHome');
+  if (route.name === 'compare') return t('nav.backComparison');
+  return t('nav.back');
 }
 
 export function backAction(fallbackHref = href.players) {

@@ -1,4 +1,5 @@
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 import { statValue } from '../../utils/stats.js';
 import { LINEUP_STAT_CARDS } from '../lineup/lineup-data.js';
 import { loadLineupHeatmap } from '../pair-impact/pair-impact-data.js';
@@ -6,13 +7,13 @@ import { createPairHeatmapPanel } from '../pair-impact/pair-impact-heatmap.js';
 import { createCompareRadar } from './comparison-radar.js';
 
 const PLAYER_STATS = [
-  { label: 'Games', field: 'n_games', format: 'count' },
-  { label: 'Win rate', field: 'win_rate', format: 'percent' },
-  { label: 'Gold share', field: 'mean_gold_share', format: 'percent' },
-  { label: 'Damage share', field: 'mean_damage_share', format: 'percent' },
-  { label: 'DPM', field: 'mean_dpm', format: 'dpm' },
-  { label: 'Vision / min', field: 'mean_vision_per_minute', format: 'vision' },
-  { label: 'Impact', field: 'shrunk_impact', format: 'impact' },
+  { field: 'n_games', format: 'count', get label() { return t('common.games'); } },
+  { field: 'win_rate', format: 'percent', get label() { return t('common.winRate'); } },
+  { field: 'mean_gold_share', format: 'percent', get label() { return t('common.goldShare'); } },
+  { field: 'mean_damage_share', format: 'percent', get label() { return t('common.damageShare'); } },
+  { field: 'mean_dpm', format: 'dpm', get label() { return t('common.dpm'); } },
+  { field: 'mean_vision_per_minute', format: 'vision', get label() { return t('common.vision'); } },
+  { field: 'shrunk_impact', format: 'impact', get label() { return t('common.impact'); } },
 ];
 
 export function createStatCompare({ rows, left, right }) {
@@ -40,7 +41,7 @@ export function createPlayerComparison({ left, right, players }) {
 export function createLineupComparison({ left, right }) {
   const root = h('div', { class: 'compare-output' });
   const charts = h('div', { class: 'compare-heatmaps' }, [
-    h('p', { class: 'compare-stage__label' }, ['Loading pair impact']),
+    h('p', { class: 'compare-stage__label' }, [t('compare.loading')]),
   ]);
   root.append(
     charts,
@@ -62,7 +63,7 @@ function syncedHeatmaps(results) {
     if (!result.heatmap) {
       return h('div', { class: 'panel compare-heatmap-empty' }, [
         h('p', { class: 'viz-placeholder__title' }, [result.lineup.name]),
-        h('p', { class: 'empty-state' }, ['No pair impact for this lineup.']),
+        h('p', { class: 'empty-state' }, [t('compare.missing')]),
       ]);
     }
     return createPairHeatmapPanel({

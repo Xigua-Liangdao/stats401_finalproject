@@ -1,13 +1,21 @@
 import { PLACEHOLDER, ROLE_LABELS, ROLE_ORDER } from './constants.js';
+import { t, textLocale } from './i18n.js';
 
 export function formatRole(role) {
   return ROLE_LABELS[role] ?? String(role).toUpperCase();
 }
 
 export function formatResult(result) {
-  if (result === 1) return 'W';
-  if (result === 0) return 'L';
+  if (result === 1) return t('result.w');
+  if (result === 0) return t('result.l');
   return PLACEHOLDER;
+}
+
+export function formatSide(side) {
+  const value = String(side ?? '').toLowerCase();
+  if (value === 'blue') return t('side.blue');
+  if (value === 'red') return t('side.red');
+  return side || PLACEHOLDER;
 }
 
 export function parseGameDate(iso) {
@@ -19,7 +27,7 @@ export function parseGameDate(iso) {
 export function formatDate(iso) {
   const date = parseGameDate(iso);
   if (!date) return iso || PLACEHOLDER;
-  return new Intl.DateTimeFormat('en-GB', {
+  return new Intl.DateTimeFormat(textLocale(), {
     day: '2-digit',
     month: 'short',
     year: 'numeric',
@@ -29,7 +37,7 @@ export function formatDate(iso) {
 export function formatCompactDate(iso) {
   const date = parseGameDate(iso);
   if (!date) return PLACEHOLDER;
-  return new Intl.DateTimeFormat('en-GB', {
+  return new Intl.DateTimeFormat(textLocale(), {
     day: '2-digit',
     month: 'short',
   }).format(date);

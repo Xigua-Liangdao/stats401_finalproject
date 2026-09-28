@@ -9,6 +9,7 @@ import { loadLineupGames } from '../../features/lineup-games/lineup-games-data.j
 import { renderLineupGamesCatalogue } from '../../features/lineup-games/lineup-games-catalogue.js?v=game-stats';
 import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js';
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 import { backAction, href } from '../../utils/navigation.js?v=catalogue-back';
 import { renderNotFound } from '../not-found.js';
 
@@ -26,19 +27,19 @@ export async function renderLineupPage(target, id) {
   target.append(
     h('div', { class: 'page' }, [
       createBreadcrumbs([
-        { label: 'Home', href: href.home },
-        { label: 'Catalogue', href: href.players },
+        { label: t('nav.home'), href: href.home },
+        { label: t('nav.catalogue'), href: href.players },
         { label: lineup.team.name, href: teamHref },
         { label: lineup.name },
       ]),
       createIdentityHeader({
-        kicker: 'Lineup file',
+        kicker: t('lineup.file'),
         title: lineup.name,
         mark: createTeamLogo(lineup.team),
         facts: [
           teamFact(lineup.team),
-          { label: 'Context', value: lineup.context },
-          { label: 'Season', value: String(lineup.team.season) },
+          { label: t('common.context'), value: lineup.context },
+          { label: t('common.season'), value: String(lineup.team.season) },
         ],
         actions: [
           createButton({
@@ -46,7 +47,7 @@ export async function renderLineupPage(target, id) {
             href: back.href,
           }),
           createButton({
-            label: 'Check Pair Impact',
+            label: t('player.pairImpact'),
             variant: 'accent',
             onClick: () =>
               openPairImpactDrawer({

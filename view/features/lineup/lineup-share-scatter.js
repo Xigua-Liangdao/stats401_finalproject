@@ -3,6 +3,7 @@ import { ROLE_COLORS, ROLE_ORDER } from '../../utils/constants.js';
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatDate, formatPercent, formatRole } from '../../utils/formatting.js';
+import { t } from '../../utils/i18n.js';
 import { createGameMark } from './lineup-range-dock.js';
 import { mixValue, roleValue } from './lineup-playback.js';
 
@@ -32,8 +33,8 @@ function sharePoints(games) {
 }
 
 function createShareLegend() {
-  return h('div', { class: 'share-legend', 'aria-label': 'Color encodes role' }, [
-    h('div', { class: 'share-legend__kicker' }, ['Role']),
+  return h('div', { class: 'share-legend', 'aria-label': t('lineup.colorRole') }, [
+    h('div', { class: 'share-legend__kicker' }, [t('common.role')]),
     h(
       'div',
       { class: 'share-legend__roles' },
@@ -54,19 +55,19 @@ export function createLineupShareScatterPanel({ games = [], playback }) {
   const stage = h('div', { class: 'viz-stage lineup-share-stage', role: 'presentation' });
   const rangeLabel = h('span', { class: 'lineup-share-zoom__range' }, ['0–100%']);
   const zoomInBtn = h('button', {
-    class: 'radar-zoom-btn', type: 'button', 'aria-label': 'Tighten gold share scale', dataset: { zoom: 'in' },
+    class: 'radar-zoom-btn', type: 'button', 'aria-label': t('lineup.tighten'), dataset: { zoom: 'in' },
   }, ['+']);
   const zoomOutBtn = h('button', {
-    class: 'radar-zoom-btn', type: 'button', 'aria-label': 'Widen gold share scale', dataset: { zoom: 'out' },
+    class: 'radar-zoom-btn', type: 'button', 'aria-label': t('lineup.widen'), dataset: { zoom: 'out' },
   }, ['−']);
   const resetBtn = h('button', {
-    class: 'radar-zoom-btn', type: 'button', 'aria-label': 'Reset gold share scale', dataset: { zoom: 'reset' },
-  }, ['Reset']);
+    class: 'radar-zoom-btn', type: 'button', 'aria-label': t('lineup.resetScale'), dataset: { zoom: 'reset' },
+  }, [t('lineup.reset')]);
   const visibleRoles = new Set(ROLE_ORDER);
   let chart = null;
   const roleFilters = h(
     'div',
-    { class: 'lineup-role-filters', role: 'group', 'aria-label': 'Roles shown on this chart' },
+    { class: 'lineup-role-filters', role: 'group', 'aria-label': t('lineup.rolesShown') },
     ROLE_ORDER.map((role) => {
       const input = h('input', { type: 'checkbox' });
       input.checked = true;
@@ -87,12 +88,12 @@ export function createLineupShareScatterPanel({ games = [], playback }) {
   const node = h('article', { class: 'viz-placeholder panel lineup-share-panel', dataset: { viz: 'lineup-share-scatter' } }, [
     h('div', { class: 'viz-placeholder__chrome' }, [
       h('div', { class: 'lineup-share-heading' }, [
-        h('span', {}, ['VIZ 01']),
-        h('span', {}, ['Gold share vs damage share']),
+        h('span', {}, [t('lineup.vizMark')]),
+        h('span', {}, [t('lineup.vizGold')]),
       ]),
       h('div', { class: 'lineup-share-zoom' }, [
         rangeLabel,
-        h('div', { class: 'radar-zoom-controls', role: 'group', 'aria-label': 'Gold share axis scale' }, [
+        h('div', { class: 'radar-zoom-controls', role: 'group', 'aria-label': t('lineup.axisScale') }, [
           zoomInBtn,
           zoomOutBtn,
           resetBtn,
@@ -152,7 +153,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
   tooltip.className = 'chart-tooltip';
   tooltip.hidden = true;
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
-  svg.append('title').text('One game at a time: five role points move between games');
+  svg.append('title').text(t('lineup.oneGame'));
   plotHost.append(svg.node(), tooltip);
   stage.append(plotHost);
   const svgNode = svg.node();
@@ -232,9 +233,9 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
     tooltip.innerHTML = [
       `<div>${slot.name ?? slot.id} · ${formatRole(role)}</div>`,
       gameTip(game),
-      opponent ? `<div>vs ${opponent}</div>` : null,
-      `<div>Gold share: ${formatPercent(roleValue(game, role, 'gold_share'))}</div>`,
-      `<div>Damage share: ${formatPercent(roleValue(game, role, 'damage_share'))}</div>`,
+      opponent ? `<div>${t('lineup.vs', { name: opponent })}</div>` : null,
+      `<div>${t('lineup.tipShare', { label: t('common.goldShare'), value: formatPercent(roleValue(game, role, 'gold_share')) })}</div>`,
+      `<div>${t('lineup.tipShare', { label: t('common.damageShare'), value: formatPercent(roleValue(game, role, 'damage_share')) })}</div>`,
     ].filter(Boolean).join('');
     tooltip.hidden = false;
     const bounds = plotHost.getBoundingClientRect();
@@ -253,7 +254,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
     if (width < 40) return;
     svg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
     svg.selectAll('*').remove();
-    svg.append('title').text('One game at a time: five role points move between games');
+    svg.append('title').text(t('lineup.oneGame'));
 
     if (!points.length) {
       svg.append('text')
@@ -261,7 +262,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
         .attr('x', width / 2)
         .attr('y', height / 2)
         .attr('text-anchor', 'middle')
-        .text('No related games with gold and damage shares.');
+        .text(t('lineup.noShareGames'));
       onSpanChange?.(1, 1, 0, fullMax);
       stage.classList.remove('is-zoomed');
       return;
@@ -290,14 +291,14 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
       .attr('x', innerWidth)
       .attr('y', innerHeight + 32)
       .attr('text-anchor', 'end')
-      .text('Gold share');
+      .text(t('common.goldShare'));
     plot.append('text')
       .attr('class', 'chart-axis-label')
       .attr('transform', 'rotate(-90)')
       .attr('x', 0)
       .attr('y', -44)
       .attr('text-anchor', 'end')
-      .text('Damage share');
+      .text(t('common.damageShare'));
 
     const clipId = `lineup-share-clip-${Math.round(innerWidth)}-${Math.round(innerHeight)}`;
     svg.append('clipPath').attr('id', clipId).append('rect').attr('width', innerWidth).attr('height', innerHeight);

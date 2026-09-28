@@ -1,4 +1,5 @@
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
 
 export function createBreadcrumbs(items) {
@@ -8,7 +9,7 @@ export function createBreadcrumbs(items) {
     if (item.href) nodes.push(h('a', { href: item.href }, [item.label]));
     else nodes.push(h('span', {}, [item.label]));
   });
-  return h('nav', { class: 'breadcrumbs', 'aria-label': 'Breadcrumb' }, nodes);
+  return h('nav', { class: 'breadcrumbs', 'aria-label': t('nav.breadcrumb') }, nodes);
 }
 
 export function createPageShell({ kicker, title, meta = [], actions = [], breadcrumbs = [], children }) {
@@ -27,5 +28,5 @@ export function createPageShell({ kicker, title, meta = [], actions = [], breadc
 }
 
 export function homeCrumbs() {
-  return [{ label: 'Home', href: href.home }];
+  return [{ label: t('nav.home'), href: href.home }];
 }

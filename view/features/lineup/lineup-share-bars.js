@@ -2,13 +2,14 @@ import { ROLE_COLORS, ROLE_ORDER } from '../../utils/constants.js';
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatCompactDate, formatPercent, formatRole } from '../../utils/formatting.js';
+import { t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
 import { createGameMark } from './lineup-range-dock.js';
 import { mixValue, roleValue } from './lineup-playback.js';
 
 const SHARE_METRICS = [
-  { id: 'damage_share', label: 'Damage share' },
-  { id: 'gold_share', label: 'Gold share' },
+  { id: 'damage_share', get label() { return t('common.damageShare'); } },
+  { id: 'gold_share', get label() { return t('common.goldShare'); } },
 ];
 
 function rosterRows(lineup, games) {
@@ -33,18 +34,18 @@ export function createLineupShareBarsPanel({ lineup, games = [], playback }) {
   const stage = h('div', { class: 'viz-stage lineup-share-bars-stage', role: 'presentation' });
   const select = h(
     'select',
-    { class: 'chart-select', 'aria-label': 'Share metric' },
+    { class: 'chart-select', 'aria-label': t('lineup.shareMetric') },
     SHARE_METRICS.map((metric) => h('option', { value: metric.id }, [metric.label])),
   );
 
   const node = h('article', { class: 'viz-placeholder panel lineup-share-bars-panel', dataset: { viz: 'lineup-share-bars' } }, [
     h('div', { class: 'viz-placeholder__chrome player-viz-chrome player-viz-chrome--stacked' }, [
       h('div', { class: 'player-viz-chrome__titles' }, [
-        h('span', {}, ['VIZ 02']),
-        h('span', {}, ['Player shares']),
+        h('span', {}, [t('lineup.vizMark2')]),
+        h('span', {}, [t('lineup.vizShares')]),
       ]),
       h('div', { class: 'chart-controls' }, [
-        h('label', { class: 'chart-control' }, ['Metric', select]),
+        h('label', { class: 'chart-control' }, [t('common.metric'), select]),
       ]),
     ]),
     stage,
@@ -76,7 +77,7 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback, m
   tooltip.className = 'chart-tooltip';
   tooltip.hidden = true;
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
-  svg.append('title').text('Player shares for the same game as the scatter');
+  svg.append('title').text(t('lineup.sameGame'));
   stage.append(frameLabel, svg.node(), tooltip);
 
   let activeMetric = metric;
@@ -116,8 +117,8 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback, m
       `<div>${row.name} · ${formatRole(row.role)}</div>`,
       frameState?.mode === 'dynamic' && game
         ? `<div class="lineup-tip-game">${createGameMark(game).outerHTML}<span>${formatCompactDate(game.date)}</span></div>`
-        : `<div>Mean · ${count} ${count === 1 ? 'game' : 'games'}</div>`,
-      `<div>${activeMetric?.label ?? 'Share'}: ${formatPercent(shownValue(row))}</div>`,
+        : `<div>${t('lineup.meanOf', { count, unit: count === 1 ? t('common.game') : t('common.gamesWord') })}</div>`,
+      `<div>${t('lineup.tipShare', { label: activeMetric?.label ?? t('common.share'), value: formatPercent(shownValue(row)) })}</div>`,
     ].filter(Boolean).join('');
     tooltip.hidden = false;
     const bounds = stage.getBoundingClientRect();
@@ -141,7 +142,7 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback, m
     if (width < 40) return;
     svg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
     svg.selectAll('*').remove();
-    svg.append('title').text(activeMetric ? `Player ${activeMetric.label.toLowerCase()}` : 'Player shares');
+    svg.append('title').text(activeMetric ? t('lineup.playerMetric', { metric: activeMetric.label.toLowerCase() }) : t('lineup.vizShares'));
 
     const field = activeMetric?.id ?? 'damage_share';
     const hasShare = games.some((game) => rows.some((row) => roleValue(game, row.role, field) != null));
@@ -151,7 +152,7 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback, m
         .attr('x', width / 2)
         .attr('y', height / 2)
         .attr('text-anchor', 'middle')
-        .text('No related-game shares for this lineup.');
+        .text(t('lineup.noShares'));
       return;
     }
 
@@ -184,7 +185,7 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback, m
       .attr('x', 0)
       .attr('y', -40)
       .attr('text-anchor', 'end')
-      .text(activeMetric?.label ?? 'Share');
+      .text(activeMetric?.label ?? t('common.share'));
 
     const marks = plot.selectAll('.share-mark').data(rows).join('g').attr('class', 'share-mark');
     marks.append('rect')
@@ -220,7 +221,7 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback, m
     if (state?.mode === 'dynamic' && game) {
       frameLabel.append(createGameMark(game), formatCompactDate(game.date));
     } else {
-      frameLabel.textContent = 'Mean of selected games';
+      frameLabel.textContent = t('lineup.meanSelected');
     }
     if (!x || !y || !state) return;
     const settled = state.mode === 'dynamic' && state.phase === 'hold';
@@ -232,7 +233,7 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback, m
         .attr('y', top)
         .attr('height', value == null ? 0 : Math.max(0, innerHeight - top))
         .classed('is-settled', settled && value != null)
-        .attr('aria-label', `${row.name}, ${formatRole(row.role)}, ${activeMetric?.label ?? 'share'} ${formatPercent(value)}`);
+        .attr('aria-label', `${row.name}, ${formatRole(row.role)}, ${activeMetric?.label ?? t('common.share')} ${formatPercent(value)}`);
       node.select('.chart-bar-count')
         .attr('x', x(row.role) + x.bandwidth() / 2)
         .attr('y', value == null ? innerHeight : top - 6)

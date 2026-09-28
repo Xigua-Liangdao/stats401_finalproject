@@ -1,4 +1,5 @@
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 
 export const GAME_PAGE_SIZE = 10;
 
@@ -16,7 +17,7 @@ export function createPagedList({
   let hasRendered = false;
 
   const list = h('div', { class: listClass });
-  const pager = h('nav', { class: 'pager', 'aria-label': 'Pages' });
+  const pager = h('nav', { class: 'pager', 'aria-label': t('nav.pages') });
   const root = h('div', { class: 'paged-list' }, [list, pager]);
 
   function render() {
@@ -39,7 +40,7 @@ export function createPagedList({
             {
               class: current ? 'pager__page is-current' : 'pager__page',
               type: 'button',
-              'aria-label': `Page ${number}`,
+              'aria-label': t('nav.page', { number }),
               'aria-current': current ? 'page' : undefined,
               onClick: () => {
                 if (page === number) return;

@@ -1,4 +1,5 @@
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 import { PLAYER_CHART_CATEGORIES, findCategory } from './player-chart-config.js';
 import { mountPlayerRadar, createRadarAxes, createRadarScaleNote } from './player-radar-chart.js?v=scale-zoom';
 import { mountPlayerTimeline } from './player-timeline-chart.js';
@@ -15,7 +16,7 @@ function createSelect(options, value) {
 }
 
 function createMetricPicks(metrics, selectedIds, onChange) {
-  const root = h('div', { class: 'metric-picks', 'aria-label': 'Metrics' });
+  const root = h('div', { class: 'metric-picks', 'aria-label': t('common.metrics') });
 
   function render() {
     root.replaceChildren(
@@ -74,19 +75,19 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
   const selectedIds = new Set(category.metrics.slice(0, 3).map((metric) => metric.id));
 
   const categorySelect = createSelect(PLAYER_CHART_CATEGORIES, category.id);
-  const metricWrap = h('div', { class: 'chart-control' }, ['Metrics']);
+  const metricWrap = h('div', { class: 'chart-control' }, [t('common.metrics')]);
   const baselineToggle = h('label', { class: 'chart-toggle' }, [
     h('input', { type: 'checkbox' }),
-    'Season role baseline',
+    t('chart.baseline'),
   ]);
   const predictedToggle = h('label', { class: 'chart-toggle' }, [
     h('input', { type: 'checkbox' }),
-    'Predicted',
+    t('chart.predicted'),
   ]);
 
   let timelineChart;
   function syncMetrics(picks) {
-    metricWrap.replaceChildren('Metrics', picks);
+    metricWrap.replaceChildren(t('common.metrics'), picks);
   }
 
   function mountPicks() {
@@ -97,21 +98,21 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
   }
 
   const timeline = createPanel({
-    index: 'VIZ 01',
-    title: 'Performance over time · selected season and role',
+    index: t('chart.viz1'),
+    title: t('chart.timeline'),
     vizId: 'player-timeline',
     stageClass: 'player-timeline-stage',
     chromeClass: 'player-viz-chrome--stacked',
     controls: h('div', { class: 'chart-controls' }, [
-      h('label', { class: 'chart-control' }, ['Category', categorySelect]),
+      h('label', { class: 'chart-control' }, [t('chart.category'), categorySelect]),
       metricWrap,
     ]),
   });
 
   const radarAxes = createRadarAxes([...players, player]);
   const radar = createPanel({
-    index: 'VIZ 02',
-    title: 'Player profile',
+    index: t('chart.viz2'),
+    title: t('chart.profile'),
     vizId: 'player-radar',
     stageClass: 'player-radar-stage',
     controls: h('div', { class: 'chart-controls' }, [
@@ -130,14 +131,14 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
   if (!hasBaseline) {
     baselineInput.disabled = true;
     baselineToggle.classList.add('is-disabled');
-    baselineToggle.title = 'No season role baseline available for this player.';
+    baselineToggle.title = t('chart.noBaseline');
   } else {
     baselineInput.checked = true;
   }
   if (!hasPredicted) {
     predictedInput.disabled = true;
     predictedToggle.classList.add('is-disabled');
-    predictedToggle.title = 'No predicted value available for this player.';
+    predictedToggle.title = t('chart.noPredicted');
   } else {
     predictedInput.checked = true;
   }

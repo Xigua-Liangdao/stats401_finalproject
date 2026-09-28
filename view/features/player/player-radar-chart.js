@@ -1,5 +1,6 @@
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 import {
   BASELINE_RADIUS, axisRangeLabel, baselineValue,
   predictedValue, profileSegments, profileValues, radiusFor,
@@ -9,21 +10,15 @@ export { createRadarAxes, axisRangeLabel } from './player-baseline.js';
 
 export function createRadarScaleNote(axes, span = 1) {
   return h('div', { class: 'radar-scale-note' }, [
-    h('div', {}, [
-      'Yellow dashed pentagon: season role baseline, used as the zero line. It is the equal-weight average of same-role players’ full-season averages, including warmup games. ',
-      'Impact uses their season shrunk impacts from evaluated games. Transfers count as one player. ',
-      'Distance from that pentagon is the difference from baseline. The outer ring and the center are the same distance above and below it. Values past the window sit on the rim or at the center. ',
-      'Solid profile: this player’s evaluated-game summary for the selected team and season. Missing values are omitted. ',
-      'Red dots: model-expected value, on the same scale. Only DPM has a prediction.',
-    ]),
-    h('div', { class: 'radar-scale-note__title coord' }, ['Deviation window · rim to center']),
+    h('div', {}, [t('radar.note')]),
+    h('div', { class: 'radar-scale-note__title coord' }, [t('radar.window')]),
     h(
       'dl',
       { class: 'radar-scale-note__list' },
       axes.map((axis) =>
         h('div', { class: 'radar-scale-note__row' }, [
           h('dt', {}, [axis.label]),
-          h('dd', {}, [axisRangeLabel(axis, span), ' from the baseline pentagon']),
+          h('dd', {}, [axisRangeLabel(axis, span), t('radar.fromBaseline')]),
         ]),
       ),
     ),
@@ -68,17 +63,19 @@ export function mountPlayerRadar(stage, { stats = {}, axes } = {}) {
   function showTip(event, axis) {
     const actual = stats[axis.key];
     const baseline = baselineValue(stats, axis.key);
-    const rows = [axis.label, `Actual: ${axis.format(actual)}`];
+    const rows = [axis.label, t('radar.actual', { value: axis.format(actual) })];
     if (baseline != null) {
-      rows.push(`Season role baseline: ${axis.format(baseline)}`);
+      rows.push(t('radar.baseline', { value: axis.format(baseline) }));
       if (Number.isFinite(actual)) {
         const diff = actual - baseline;
-        rows.push(`Difference: ${diff > 0 && axis.key !== 'shrunk_impact' ? '+' : ''}${axis.format(diff)}`);
+        rows.push(t('radar.difference', {
+          value: `${diff > 0 && axis.key !== 'shrunk_impact' ? '+' : ''}${axis.format(diff)}`,
+        }));
       }
     }
     const predicted = predictedValue(stats, axis.key);
-    if (showPredicted && predicted != null) rows.push(`Predicted: ${axis.format(predicted)}`);
-    rows.push(`Window ${axisRangeLabel(axis, span)} from baseline`);
+    if (showPredicted && predicted != null) rows.push(t('radar.predicted', { value: axis.format(predicted) }));
+    rows.push(t('radar.windowFrom', { range: axisRangeLabel(axis, span) }));
     tooltip.innerHTML = rows.map((line) => `<div>${line}</div>`).join('');
     tooltip.hidden = false;
     const bounds = stage.getBoundingClientRect();
@@ -121,7 +118,7 @@ export function mountPlayerRadar(stage, { stats = {}, axes } = {}) {
         .attr('x', width / 2)
         .attr('y', height / 2)
         .attr('text-anchor', 'middle')
-        .text('No profile statistics available.');
+        .text(t('chart.noProfile'));
       return;
     }
 

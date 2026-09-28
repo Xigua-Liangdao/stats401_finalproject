@@ -8,6 +8,7 @@ import { loadPlayerGames } from '../../features/player-games/player-games-data.j
 import { renderPlayerGamesCatalogue } from '../../features/player-games/player-games-catalogue.js?v=game-stats';
 import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js';
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 import { backAction, href, readCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
 import { renderNotFound } from '../not-found.js';
 
@@ -35,19 +36,19 @@ export async function renderPlayerPage(target, id, teamId, season) {
   target.append(
     h('div', { class: 'page' }, [
       createBreadcrumbs([
-        { label: 'Home', href: href.home },
-        { label: 'Catalogue', href: catalogueHref },
+        { label: t('nav.home'), href: href.home },
+        { label: t('nav.catalogue'), href: catalogueHref },
         { label: player.name },
       ]),
       createIdentityHeader({
-        kicker: 'Player file',
+        kicker: t('player.file'),
         title: player.name,
         mark: createPlayerPortrait(player, { variant: 'hero' }),
         facts: [
           roleFact(player.role),
           teamFact(player.team),
-          { label: 'Season', value: String(player.team.season) },
-          { label: 'Split', value: player.team.split },
+          { label: t('common.season'), value: String(player.team.season) },
+          { label: t('common.split'), value: player.team.split },
         ],
         actions: [
           createButton({
@@ -55,7 +56,7 @@ export async function renderPlayerPage(target, id, teamId, season) {
             href: back.href,
           }),
           createButton({
-            label: 'Check Pair Impact',
+            label: t('player.pairImpact'),
             variant: 'accent',
             onClick: () => openPlayerPairImpact(player),
           }),

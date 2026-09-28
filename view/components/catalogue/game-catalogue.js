@@ -1,5 +1,6 @@
 import { h } from '../../utils/dom.js';
 import { parseGameDate } from '../../utils/formatting.js';
+import { t } from '../../utils/i18n.js';
 import { GAME_PAGE_SIZE } from './paged-list.js';
 import { createGameRow } from './game-row.js';
 
@@ -24,7 +25,7 @@ function headButton(className, onClick) {
 
 export function createGameCatalogue({ games, onInfo, champion = false }) {
   const tbody = h('tbody');
-  const pager = h('nav', { class: 'pager', 'aria-label': 'Pages' });
+  const pager = h('nav', { class: 'pager', 'aria-label': t('nav.pages') });
   const menu = h('div', { class: 'game-table__menu', role: 'menu', hidden: true });
   let page = 1;
   let dateOrder = 'desc';
@@ -49,21 +50,21 @@ export function createGameCatalogue({ games, onInfo, champion = false }) {
   });
   const splitButton = headButton('game-table__filter', () => {
     toggleFilter('split', splitButton, [
-      { value: '', label: 'All' },
+      { value: '', label: t('common.all') },
       ...splits.map((value) => ({ value, label: value })),
     ], split, (value) => { split = value; });
   });
   const patchButton = headButton('game-table__filter', () => {
     toggleFilter('patch', patchButton, [
-      { value: '', label: 'All' },
+      { value: '', label: t('common.all') },
       ...patches.map((value) => ({ value, label: value })),
     ], patch, (value) => { patch = value; });
   });
   const resultButton = headButton('game-table__filter', () => {
     toggleFilter('result', resultButton, [
-      { value: '', label: 'All' },
-      { value: 'win', label: 'W' },
-      { value: 'loss', label: 'L' },
+      { value: '', label: t('common.all') },
+      { value: 'win', label: t('result.w') },
+      { value: 'loss', label: t('result.l') },
     ], result, (value) => { result = value; });
   });
   const dateHead = h('th', { scope: 'col', class: 'game-table__date' }, [dateButton]);
@@ -100,20 +101,20 @@ export function createGameCatalogue({ games, onInfo, champion = false }) {
   function syncHeads() {
     const newest = dateOrder !== 'asc';
     dateHead.setAttribute('aria-sort', newest ? 'descending' : 'ascending');
-    dateButton.setAttribute('aria-label', newest ? 'Sort by date, newest first' : 'Sort by date, oldest first');
+    dateButton.setAttribute('aria-label', newest ? t('catalogue.sortNewest') : t('catalogue.sortOldest'));
     dateButton.replaceChildren(
-      'Date',
+      t('common.date'),
       h('span', { class: 'game-table__arrow', 'aria-hidden': 'true' }, [newest ? '↓' : '↑']),
     );
-    splitButton.setAttribute('aria-label', split ? `Filter by split, ${split}` : 'Filter by split');
-    patchButton.setAttribute('aria-label', patch ? `Filter by patch, ${patch}` : 'Filter by patch');
+    splitButton.setAttribute('aria-label', split ? t('catalogue.filterSplitOn', { value: split }) : t('catalogue.filterSplit'));
+    patchButton.setAttribute('aria-label', patch ? t('catalogue.filterPatchOn', { value: patch }) : t('catalogue.filterPatch'));
     resultButton.setAttribute(
       'aria-label',
-      result === 'win' ? 'Filter by result, win' : result === 'loss' ? 'Filter by result, loss' : 'Filter by result',
+      result === 'win' ? t('catalogue.filterResultWin') : result === 'loss' ? t('catalogue.filterResultLoss') : t('catalogue.filterResult'),
     );
-    paintMark(splitButton, 'Split', '▾', Boolean(split), openMenu === 'split');
-    paintMark(patchButton, 'Patch', '▾', Boolean(patch), openMenu === 'patch');
-    paintMark(resultButton, 'Result', '▾', Boolean(result), openMenu === 'result');
+    paintMark(splitButton, t('common.split'), '▾', Boolean(split), openMenu === 'split');
+    paintMark(patchButton, t('common.patch'), '▾', Boolean(patch), openMenu === 'patch');
+    paintMark(resultButton, t('common.result'), '▾', Boolean(result), openMenu === 'result');
   }
 
   function placeMenu(button) {
@@ -184,7 +185,7 @@ export function createGameCatalogue({ games, onInfo, champion = false }) {
       return h('button', {
         class: current ? 'pager__page is-current' : 'pager__page',
         type: 'button',
-        'aria-label': `Page ${number}`,
+        'aria-label': t('nav.page', { number }),
         'aria-current': current ? 'page' : undefined,
         onClick: () => {
           if (page === number) return;
@@ -205,7 +206,7 @@ export function createGameCatalogue({ games, onInfo, champion = false }) {
     tbody.replaceChildren(...(slice.length
       ? slice.map((game) => createGameRow({ game, onInfo, champion }))
       : [h('tr', {}, [
-          h('td', { class: 'game-table__empty', colspan: String(columnCount) }, ['No games match these filters.']),
+          h('td', { class: 'game-table__empty', colspan: String(columnCount) }, [t('catalogue.emptyGames')]),
         ])]));
     paintPager(items.length ? pageCount : 1);
   }
@@ -217,11 +218,11 @@ export function createGameCatalogue({ games, onInfo, champion = false }) {
         h('th', { scope: 'col', class: 'game-table__split' }, [splitButton]),
         h('th', { scope: 'col', class: 'game-table__patch' }, [patchButton]),
         champion ? h('th', { scope: 'col', class: 'game-table__champion' }, [
-          h('span', { class: 'game-table__label' }, ['Champion']),
+          h('span', { class: 'game-table__label' }, [t('common.champion')]),
         ]) : null,
         h('th', { scope: 'col', class: 'game-table__result' }, [resultButton]),
         h('th', { scope: 'col', class: 'game-table__info' }, [
-          h('span', { class: 'game-table__label' }, ['Info']),
+          h('span', { class: 'game-table__label' }, [t('common.info')]),
         ]),
       ]),
     ]),

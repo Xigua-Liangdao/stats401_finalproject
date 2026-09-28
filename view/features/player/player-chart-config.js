@@ -1,78 +1,88 @@
 import { formatCount, formatFixed, formatPercent } from '../../utils/formatting.js';
+import { t } from '../../utils/i18n.js';
+import { PLACEHOLDER } from '../../utils/constants.js';
+
+function metric(id, key, field = id) {
+  return { id, field, get label() { return t(key); } };
+}
 
 export const PLAYER_CHART_CATEGORIES = [
   {
     id: 'combat',
-    label: 'Combat Performance',
+    get label() { return t('chart.combat'); },
     metrics: [
-      { id: 'kills', label: 'Kills', field: 'kills' },
-      { id: 'deaths', label: 'Deaths', field: 'deaths' },
-      { id: 'assists', label: 'Assists', field: 'assists' },
-      { id: 'kda', label: 'KDA', field: 'kda' },
+      metric('kills', 'chart.kills'),
+      metric('deaths', 'chart.deaths'),
+      metric('assists', 'chart.assists'),
+      metric('kda', 'stat.kda'),
     ],
   },
   {
     id: 'resources',
-    label: 'Resources & Output',
+    get label() { return t('chart.resources'); },
     metrics: [
-      { id: 'total_gold', label: 'Total Gold', field: 'total_gold' },
-      { id: 'total_cs', label: 'Total CS', field: 'total_cs' },
-      { id: 'damage', label: 'Damage', field: 'damage' },
-      { id: 'dpm', label: 'DPM', field: 'dpm' },
+      metric('total_gold', 'chart.totalGold'),
+      metric('total_cs', 'chart.totalCs'),
+      metric('damage', 'chart.damage'),
+      metric('dpm', 'common.dpm'),
     ],
   },
   {
     id: 'contribution',
-    label: 'Team Contribution',
+    get label() { return t('chart.contribution'); },
     metrics: [
-      { id: 'gold_share', label: 'Gold Share', field: 'gold_share' },
-      { id: 'damage_share', label: 'Damage Share', field: 'damage_share' },
-      { id: 'vision_per_minute', label: 'Vision / Minute', field: 'vision_per_minute' },
-      { id: 'kill_participation', label: 'Kill Participation', field: 'kill_participation' },
+      metric('gold_share', 'chart.goldShare'),
+      metric('damage_share', 'chart.damageShare'),
+      metric('vision_per_minute', 'chart.visionMinute'),
+      metric('kill_participation', 'chart.killPart'),
     ],
   },
   {
     id: 'early',
-    label: 'Early Game Advantage @ 15 min',
+    get label() { return t('chart.early'); },
     metrics: [
-      { id: 'gold_diff_at_15', label: 'Gold Difference @ 15', field: 'gold_diff_at_15' },
-      { id: 'xp_diff_at_15', label: 'XP Difference @ 15', field: 'xp_diff_at_15' },
-      { id: 'cs_diff_at_15', label: 'CS Difference @ 15', field: 'cs_diff_at_15' },
+      metric('gold_diff_at_15', 'chart.gold15'),
+      metric('xp_diff_at_15', 'chart.xp15'),
+      metric('cs_diff_at_15', 'chart.cs15'),
     ],
   },
   {
     id: 'dpm',
-    label: 'DPM Analysis',
+    get label() { return t('chart.dpmAnalysis'); },
     metrics: [
-      { id: 'dpm', label: 'Actual DPM', field: 'dpm' },
-      { id: 'expected_dpm', label: 'Expected DPM', field: 'expected_dpm' },
-      { id: 'season_role_baseline_dpm', label: 'Season role baseline DPM', field: 'season_role_baseline_dpm' },
-      { id: 'baseline_dpm', label: 'Training role mean DPM', field: 'baseline_dpm' },
+      metric('dpm', 'chart.actualDpm'),
+      metric('expected_dpm', 'chart.expectedDpm'),
+      metric('season_role_baseline_dpm', 'chart.seasonDpm'),
+      metric('baseline_dpm', 'chart.trainingDpm'),
     ],
   },
 ];
 
 export const SERIES_PALETTE = ['var(--accent)', 'var(--ember)', 'var(--side-blue)', 'var(--gold)', 'var(--accent-strong)'];
 
+function series(key) {
+  return { get label() { return t(key); } };
+}
+
 export const SERIES_META = {
-  kills: { label: 'Kills' },
-  deaths: { label: 'Deaths' },
-  assists: { label: 'Assists' },
-  kda: { label: 'KDA' },
-  total_gold: { label: 'Total Gold' },
-  total_cs: { label: 'Total CS' },
-  damage: { label: 'Damage' },
-  dpm: { label: 'Actual DPM' },
-  expected_dpm: { label: 'Expected DPM' },
-  season_role_baseline_dpm: { label: 'Season role baseline DPM' },
-  baseline_dpm: { label: 'Training role mean DPM' },
-  vision_per_minute: { label: 'Vision / Minute' },
-  gold_share: { label: 'Gold Share' },
-  damage_share: { label: 'Damage Share' },
-  kill_participation: { label: 'Kill Participation' },
-  gold_diff_at_15: { label: 'Gold Difference @ 15' },
-  xp_diff_at_15: { label: 'XP Difference @ 15' },
-  cs_diff_at_15: { label: 'CS Difference @ 15' },
+  kills: series('chart.kills'),
+  deaths: series('chart.deaths'),
+  assists: series('chart.assists'),
+  kda: series('stat.kda'),
+  total_gold: series('chart.totalGold'),
+  total_cs: series('chart.totalCs'),
+  damage: series('chart.damage'),
+  dpm: series('chart.actualDpm'),
+  expected_dpm: series('chart.expectedDpm'),
+  season_role_baseline_dpm: series('chart.seasonDpm'),
+  baseline_dpm: series('chart.trainingDpm'),
+  vision_per_minute: series('chart.visionMinute'),
+  gold_share: series('chart.goldShare'),
+  damage_share: series('chart.damageShare'),
+  kill_participation: series('chart.killPart'),
+  gold_diff_at_15: series('chart.gold15'),
+  xp_diff_at_15: series('chart.xp15'),
+  cs_diff_at_15: series('chart.cs15'),
 };
 
 const PERCENT_FIELDS = new Set(['gold_share', 'damage_share', 'kill_participation']);
@@ -86,7 +96,7 @@ export function colorForSeries(index) {
 }
 
 export function formatChartValue(field, value) {
-  if (value == null || !Number.isFinite(value)) return '—';
+  if (value == null || !Number.isFinite(value)) return PLACEHOLDER;
   if (PERCENT_FIELDS.has(field)) return formatPercent(value);
   if (field === 'kda' || DPM_FIELDS.has(field) || field === 'vision_per_minute') {
     return formatFixed(value, 2);
@@ -110,22 +120,22 @@ const DPM_FORM_BAND = 0.05;
 export function dpmFormVsModel(stats) {
   const actual = stats?.mean_dpm;
   const expected = stats?.mean_expected_dpm;
-  const hint = 'Evaluated-game mean DPM vs model-expected DPM';
+  const hint = t('chart.dpmHint');
   if (actual == null || expected == null || !Number.isFinite(actual) || !Number.isFinite(expected) || expected === 0) {
     return {
-      value: '—',
-      hint: 'Not enough modeled games this season',
+      value: PLACEHOLDER,
+      hint: t('chart.dpmEmpty'),
       tone: 'empty',
     };
   }
   const relative = (actual - expected) / expected;
   if (relative > DPM_FORM_BAND) {
-    return { value: 'Above Expected', hint, tone: 'above' };
+    return { value: t('chart.above'), hint, tone: 'above' };
   }
   if (relative < -DPM_FORM_BAND) {
-    return { value: 'Below Expected', hint, tone: 'below' };
+    return { value: t('chart.below'), hint, tone: 'below' };
   }
-  return { value: 'As Expected', hint, tone: 'inline' };
+  return { value: t('chart.inline'), hint, tone: 'inline' };
 }
 
 export function seasonRecord(games, season) {

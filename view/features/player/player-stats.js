@@ -2,6 +2,8 @@ import { createStatGrid } from '../../components/cards/stat-card.js';
 import { createEligibilityNotice } from '../../components/layout/eligibility-notice.js';
 import { createSectionBlock } from '../../components/layout/section-block.js';
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
+import { PLACEHOLDER } from '../../utils/constants.js';
 import { isEligible, statValue } from '../../utils/stats.js';
 import { dpmFormVsModel, seasonRecord } from './player-chart-config.js';
 import { renderPlayerVisualizations } from './player-viz.js?v=scale-zoom';
@@ -12,20 +14,20 @@ function renderSeasonStats(player, games) {
   const form = dpmFormVsModel(player.stats);
   return h('div', { class: 'stat-groups' }, [
     h('div', { class: 'stat-group' }, [
-      h('div', { class: 'stat-group__kicker' }, [`Current season · ${season ?? '—'}`]),
+      h('div', { class: 'stat-group__kicker' }, [t('player.currentSeason', { season: season ?? PLACEHOLDER })]),
       createStatGrid([
         {
-          label: 'Games played',
-          hint: 'Player-games in the selected season',
+          label: t('player.gamesPlayed'),
+          hint: t('player.gamesHint'),
           value: statValue(record.gamesPlayed, 'count'),
         },
         {
-          label: 'Win rate',
-          hint: 'Wins among decided games this season',
+          label: t('common.winRate'),
+          hint: t('player.winHint'),
           value: statValue(record.winRate, 'percent'),
         },
         {
-          label: 'Actual vs expected',
+          label: t('player.actualVsExpected'),
           hint: form.hint,
           value: form.value,
           valueClass: 'stat-card__value--phrase',
@@ -34,11 +36,11 @@ function renderSeasonStats(player, games) {
       ]),
     ]),
     h('div', { class: 'stat-group' }, [
-      h('div', { class: 'stat-group__kicker' }, ['Overall']),
+      h('div', { class: 'stat-group__kicker' }, [t('player.overall')]),
       createStatGrid([
         {
-          label: 'Total games',
-          hint: 'All available seasons in the dataset',
+          label: t('player.totalGames'),
+          hint: t('player.totalHint'),
           value: statValue(record.totalGames, 'count'),
         },
       ]),
@@ -50,17 +52,17 @@ export function renderPlayerStats(player, games, players = []) {
   const stats = player.stats ?? {};
   return h('div', {}, [
     createSectionBlock({
-      index: '02 / Metrics',
-      title: 'Player statistics',
-      meta: isEligible(stats) ? null : 'Ineligible',
+      index: t('player.metricsKicker'),
+      title: t('player.stats'),
+      meta: isEligible(stats) ? null : t('common.ineligible'),
       children: h('div', {}, [
         createEligibilityNotice(isEligible(stats), 'player'),
         renderSeasonStats(player, games),
       ]),
     }),
     createSectionBlock({
-      index: '03 / Stages',
-      title: 'Player visualizations',
+      index: t('player.stagesKicker'),
+      title: t('player.viz'),
       children: renderPlayerVisualizations({ player, games, players }),
     }),
   ]);

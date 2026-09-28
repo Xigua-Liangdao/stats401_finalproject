@@ -2,18 +2,19 @@ import { createDrawerSection, createMetaGrid } from '../../components/drawers/dr
 import { openDrawer } from '../../components/drawers/drawer.js';
 import { createStatGrid } from '../../components/cards/stat-card.js';
 import { h } from '../../utils/dom.js';
-import { formatDate, formatResult, formatRole, placeholderValue } from '../../utils/formatting.js';
+import { formatDate, formatResult, formatRole, formatSide, placeholderValue } from '../../utils/formatting.js';
+import { t } from '../../utils/i18n.js';
 import { fillStatCards } from '../../utils/stats.js?v=game-stats';
 import { loadLineupGames } from '../lineup-games/lineup-games-data.js?v=game-stats';
 import { createLineupGameShareChart, findLineupGameSlice } from '../lineup-games/lineup-game-share.js';
 
 const PLAYER_GAME_STAT_CARDS = [
-  { key: 'kda', format: 'kda', label: 'KDA', hint: '(Kills + assists) / max(deaths, 1)' },
-  { key: 'dpm', format: 'dpm', label: 'DPM', hint: 'Damage to champions per minute' },
-  { key: 'gold_share', format: 'percent', label: 'Gold share', hint: 'Share of team total gold' },
-  { key: 'damage_share', format: 'percent', label: 'Damage share', hint: 'Share of team champion damage' },
-  { key: 'vision_per_minute', format: 'vision', label: 'Vision / min', hint: 'Vision score per minute' },
-  { key: 'adjusted_impact', format: 'impact', label: 'Adjusted impact', hint: '(DPM − expected DPM) / training-role SD' },
+  { key: 'kda', format: 'kda', get label() { return t('stat.kda'); }, get hint() { return t('stat.kdaHint'); } },
+  { key: 'dpm', format: 'dpm', get label() { return t('common.dpm'); }, get hint() { return t('stat.dpmHint'); } },
+  { key: 'gold_share', format: 'percent', get label() { return t('common.goldShare'); }, get hint() { return t('stat.goldHint'); } },
+  { key: 'damage_share', format: 'percent', get label() { return t('common.damageShare'); }, get hint() { return t('stat.damageHint'); } },
+  { key: 'vision_per_minute', format: 'vision', get label() { return t('common.vision'); }, get hint() { return t('stat.visionHint'); } },
+  { key: 'adjusted_impact', format: 'impact', get label() { return t('stat.adjusted'); }, get hint() { return t('stat.adjustedHint'); } },
 ];
 
 export function openPlayerGameInfo(game) {
@@ -21,40 +22,38 @@ export function openPlayerGameInfo(game) {
   const shareHost = h('div', { class: 'lineup-game-share-host' });
   const role = game.role ?? game.player?.role ?? null;
   openDrawer({
-    kicker: 'Player game info',
-    title: `${game.player?.name ?? 'Player'} · ${formatResult(game.result)}`,
+    kicker: t('drawer.playerGame'),
+    title: t('drawer.playerTitle', { name: game.player?.name ?? t('common.player'), result: formatResult(game.result) }),
     body: h('div', {}, [
       unevaluated
-        ? h('p', { class: 'notice' }, [
-            'This game is outside the evaluated window, so expected DPM and adjusted impact are unavailable. Other box-score fields are still shown.',
-          ])
+        ? h('p', { class: 'notice' }, [t('drawer.outsideWindow')])
         : null,
       createDrawerSection({
-        title: 'Game metadata',
+        title: t('drawer.gameMeta'),
         children: createMetaGrid([
-          { label: 'Date', value: formatDate(game.date) },
-          { label: 'Opponent', value: game.opponent?.name ?? placeholderValue() },
-          { label: 'Split', value: game.split },
-          { label: 'Patch', value: game.patch },
-          { label: 'Side', value: game.side ?? placeholderValue() },
-          { label: 'Result', value: formatResult(game.result) },
+          { label: t('common.date'), value: formatDate(game.date) },
+          { label: t('common.opponent'), value: game.opponent?.name ?? placeholderValue() },
+          { label: t('common.split'), value: game.split },
+          { label: t('common.patch'), value: game.patch },
+          { label: t('common.side'), value: formatSide(game.side) },
+          { label: t('common.result'), value: formatResult(game.result) },
         ]),
       }),
       createDrawerSection({
-        title: 'Player metadata',
+        title: t('drawer.playerMeta'),
         children: createMetaGrid([
-          { label: 'Player', value: game.player?.name ?? placeholderValue() },
-          { label: 'Role', value: game.player?.role ? formatRole(game.player.role) : placeholderValue() },
-          { label: 'Champion', value: game.champion ?? placeholderValue() },
-          { label: 'Opponent champion', value: game.opponentChampion ?? placeholderValue() },
+          { label: t('common.player'), value: game.player?.name ?? placeholderValue() },
+          { label: t('common.role'), value: game.player?.role ? formatRole(game.player.role) : placeholderValue() },
+          { label: t('common.champion'), value: game.champion ?? placeholderValue() },
+          { label: t('drawer.opponentChampion'), value: game.opponentChampion ?? placeholderValue() },
         ]),
       }),
       createDrawerSection({
-        title: 'Stat cards',
+        title: t('drawer.statCards'),
         children: createStatGrid(fillStatCards(PLAYER_GAME_STAT_CARDS, game)),
       }),
       createDrawerSection({
-        title: 'Gold share vs damage share',
+        title: t('lineup.vizGold'),
         children: shareHost,
       }),
     ]),
@@ -64,7 +63,7 @@ export function openPlayerGameInfo(game) {
 
 async function mountPlayerShare(host, game, role) {
   if (!game.lineupId) {
-    host.replaceChildren(h('div', { class: 'empty-state' }, ['No lineup share slice for this game.']));
+    host.replaceChildren(h('div', { class: 'empty-state' }, [t('drawer.noSlice')]));
     return;
   }
   const games = await loadLineupGames(game.lineupId);
@@ -72,5 +71,5 @@ async function mountPlayerShare(host, game, role) {
   const match = findLineupGameSlice(game, games);
   host.replaceChildren(match
     ? createLineupGameShareChart({ game: match, games, highlightRole: role })
-    : h('div', { class: 'empty-state' }, ['No lineup share slice for this game.']));
+    : h('div', { class: 'empty-state' }, [t('drawer.noSlice')]));
 }
