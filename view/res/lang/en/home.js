@@ -1,0 +1,15 @@
+export default {
+  "home.title": "Lineup Synergy",
+  "home.lead": "Lineup synergy in the League of Legends Pro League (LPL)",
+  "home.overview": "Season overview",
+  "home.topTeams": "Top teams",
+  "home.season": "{season} season",
+  "home.evaluated": "Evaluated games",
+  "home.ofAll": "of all games",
+  "home.eligible": "eligible",
+  "home.teamMeta": "{rate} · {count} games",
+  "home.champion": "Season champion",
+  "home.championLine": "{rate} win rate · {games} evaluated games",
+  "home.topPlayer": "Top player",
+  "home.playerLine": "{rate} · {games} games",
+};

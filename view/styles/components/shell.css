@@ -155,7 +155,8 @@
   background: linear-gradient(90deg, var(--accent), var(--gold));
 }
 
-.season-select {
+.season-select,
+.language-select {
   appearance: none;
   min-height: 26px;
   margin: 0;
@@ -177,8 +178,15 @@
   cursor: pointer;
 }
 
+.language-select {
+  letter-spacing: 0.04em;
+  text-transform: none;
+}
+
 .season-select:hover,
-.season-select:focus-visible {
+.season-select:focus-visible,
+.language-select:hover,
+.language-select:focus-visible {
   border-color: var(--line-strong);
   outline: none;
 }

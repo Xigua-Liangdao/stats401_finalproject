@@ -14,6 +14,88 @@ VIEW = ROOT / "view"
 START = "    <!-- BEGIN GENERATED MODULE VERSIONS -->"
 END = "    <!-- END GENERATED MODULE VERSIONS -->"
 IMPORT = re.compile(r'''\b(?:from\s*|import\s*\(?\s*)['"](\.[^'"\n]+\.js(?:\?[^'"\n]*)?)['"]''')
+LANG = VIEW / "res" / "lang"
+
+
+def language_binding(stem, used):
+    ident = re.sub(r"[^A-Za-z0-9_]", "_", stem)
+    if not ident or not (ident[0].isalpha() or ident[0] == "_"):
+        ident = f"_{ident}"
+    binding = ident
+    suffix = 2
+    while binding in used:
+        binding = f"{ident}_{suffix}"
+        suffix += 1
+    used.add(binding)
+    return binding
+
+
+PACK_SKIP = {"index.js", "meta.js", "names.js"}
+
+
+def pack_dirs():
+    folders = sorted(path for path in LANG.iterdir() if path.is_dir() and (path / "meta.js").is_file())
+    if not any(path.name == "en" for path in folders):
+        raise ValueError("view/res/lang/en/meta.js is required")
+    return folders
+
+
+def message_files(folder):
+    return sorted(path for path in folder.glob("*.js") if path.name not in PACK_SKIP)
+
+
+def pack_index_source(folder):
+    used = set()
+    bindings = [(path.stem, language_binding(path.stem, used)) for path in message_files(folder)]
+    lines = [
+        "/** Generated from the message files in this folder. */",
+        "import { locale, name } from './meta.js';",
+        "import names from './names.js';",
+        *[f"import {binding} from './{stem}.js';" for stem, binding in bindings],
+        "",
+        "export default {",
+        "  name,",
+        "  locale,",
+        "  messages: {",
+        *[f"    ...{binding}," for _, binding in bindings],
+        "  },",
+        "  names,",
+        "};",
+        "",
+    ]
+    return "\n".join(lines)
+
+
+def language_index_source(folders):
+    used = set()
+    bindings = [(path.name, language_binding(path.name, used)) for path in folders]
+    lines = [
+        "/** Generated from the language folders in this directory. */",
+        *[f"import {binding} from './{stem}/index.js';" for stem, binding in bindings],
+        "",
+        "export const languagePacks = {",
+        *[f"  {json.dumps(stem)}: {binding}," for stem, binding in bindings],
+        "};",
+        "",
+        "export const defaultLanguage = 'en';",
+        "",
+    ]
+    return "\n".join(lines)
+
+
+def sync_language_index(check):
+    folders = pack_dirs()
+    targets = [(folder / "index.js", pack_index_source(folder)) for folder in folders]
+    targets.append((LANG / "index.js", language_index_source(folders)))
+    stale = []
+    for path, source in targets:
+        current = path.read_text() if path.is_file() else ""
+        if current != source:
+            stale.append(path)
+            if not check:
+                path.write_text(source)
+    if check and stale:
+        raise SystemExit("Stale language index: run python model/scripts/version_frontend.py")
 
 
 def build_html():
@@ -55,6 +137,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Fail if index.html has stale asset versions")
     args = parser.parse_args()
+    sync_language_index(args.check)
     html, version, count = build_html()
     path = VIEW / "index.html"
     if args.check:

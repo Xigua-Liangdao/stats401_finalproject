@@ -1,0 +1,18 @@
+export default {
+  "drawer.shared": "Shared feature",
+  "drawer.pair": "Pair impact",
+  "drawer.roster": "Team roster",
+  "drawer.selected": "Selected players",
+  "drawer.playerGame": "Player game info",
+  "drawer.lineupGame": "Lineup game info",
+  "drawer.playerTitle": "{name} · {result}",
+  "drawer.gameMeta": "Game metadata",
+  "drawer.playerMeta": "Player metadata",
+  "drawer.statCards": "Stat cards",
+  "drawer.composition": "Composition",
+  "drawer.lineupStats": "Lineup stat cards",
+  "drawer.outsideWindow": "This game is outside the evaluated window, so expected DPM and adjusted impact are unavailable. Other box-score fields are still shown.",
+  "drawer.lineupUnevaluated": "Lineup impact is unavailable for this game because it was not in the evaluated window. Resource fields are still shown.",
+  "drawer.noSlice": "No lineup share slice for this game.",
+  "drawer.opponentChampion": "Opponent champion",
+};

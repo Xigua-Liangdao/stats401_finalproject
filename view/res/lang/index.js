@@ -1,9 +1,10 @@
-import en from './en.js';
+/** Generated from the language folders in this directory. */
+import en from './en/index.js';
+import zh from './zh/index.js';
 
-/**
- * Language packs live in this folder. To add one, copy en.js, translate
- * `messages`, and register the pack here under its id.
- */
-export const languagePacks = { en };
+export const languagePacks = {
+  "en": en,
+  "zh": zh,
+};
 
 export const defaultLanguage = 'en';

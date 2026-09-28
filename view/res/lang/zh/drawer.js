@@ -1,0 +1,18 @@
+export default {
+  "drawer.shared": "共用功能",
+  "drawer.pair": "配对影响",
+  "drawer.roster": "战队名单",
+  "drawer.selected": "所选选手",
+  "drawer.playerGame": "选手单场信息",
+  "drawer.lineupGame": "阵容单场信息",
+  "drawer.playerTitle": "{name} · {result}",
+  "drawer.gameMeta": "比赛信息",
+  "drawer.playerMeta": "选手信息",
+  "drawer.statCards": "统计卡片",
+  "drawer.composition": "组成",
+  "drawer.lineupStats": "阵容统计卡片",
+  "drawer.outsideWindow": "这场比赛在评估窗口之外，因此没有预期 DPM 和调整后影响。其他记分项仍会显示。",
+  "drawer.lineupUnevaluated": "这场比赛不在评估窗口内，因此没有阵容影响。资源项仍会显示。",
+  "drawer.noSlice": "这场比赛没有阵容占比切片。",
+  "drawer.opponentChampion": "对手英雄",
+};

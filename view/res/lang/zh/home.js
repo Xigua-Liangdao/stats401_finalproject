@@ -1,0 +1,15 @@
+export default {
+  "home.title": "狂拽酷霸炫的名字！",
+  "home.lead": "英雄联盟职业联赛（LPL）中的阵容协同",
+  "home.overview": "赛季概览",
+  "home.topTeams": "热门战队",
+  "home.season": "{season} 赛季",
+  "home.evaluated": "已评估比赛",
+  "home.ofAll": "占全部比赛",
+  "home.eligible": "达到展示标准",
+  "home.teamMeta": "{rate} · {count} 场",
+  "home.champion": "赛季冠军",
+  "home.championLine": "胜率 {rate} · {games} 场已评估比赛",
+  "home.topPlayer": "热门选手",
+  "home.playerLine": "{rate} · {games} 场",
+};

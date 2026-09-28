@@ -2,7 +2,7 @@ import { createPageShell } from '../../components/layout/page-shell.js';
 import { createComparisonBoard } from '../../features/comparison/comparison-board.js';
 import { dataSource } from '../../utils/data-source.js';
 import { h } from '../../utils/dom.js';
-import { t } from '../../utils/i18n.js';
+import { indexed, t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
 import { getSelectedSeason } from '../../utils/season.js';
 
@@ -25,7 +25,7 @@ export async function renderComparisonPage(target) {
 
   target.append(
     createPageShell({
-      kicker: t('compare.kicker'),
+      kicker: indexed('01', t('nav.comparison')),
       title: t('nav.comparison'),
       breadcrumbs: [
         { label: t('nav.home'), href: href.home },

@@ -1,6 +1,6 @@
 import { DATASET_MODE } from '../../utils/constants.js';
 import { h } from '../../utils/dom.js';
-import { t } from '../../utils/i18n.js';
+import { currentLanguage, languageChoices, t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
 import { createStatusChip } from '../layout/status-chip.js';
 
@@ -22,11 +22,23 @@ function createSeasonSelect({ seasons = [], season, onSeasonChange }) {
   }, [String(value)])));
 }
 
-export function renderSiteHeader(target, routeName, { seasons = [], season, onSeasonChange } = {}) {
+function createLanguageSelect({ onLanguageChange }) {
+  const current = currentLanguage();
+  return h('select', {
+    class: 'language-select',
+    'aria-label': t('nav.language'),
+    onchange: (event) => onLanguageChange?.(event.target.value),
+  }, languageChoices().map((choice) => h('option', {
+    value: choice.id,
+    selected: choice.id === current,
+  }, [choice.name])));
+}
+
+export function renderSiteHeader(target, routeName, { seasons = [], season, onSeasonChange, onLanguageChange } = {}) {
   target.replaceChildren(
     h('div', { class: 'site-header__brand' }, [
       h('span', { class: 'coord' }, [t('app.kicker')]),
-      h('a', { class: 'site-header__brand-name', href: href.home }, [t('app.name')]),
+      h('a', { class: 'site-header__brand-name', href: href.home }, [t('home.title')]),
     ]),
     h(
       'nav',
@@ -44,6 +56,7 @@ export function renderSiteHeader(target, routeName, { seasons = [], season, onSe
     ),
     h('div', { class: 'site-header__status' }, [
       createSeasonSelect({ seasons, season, onSeasonChange }),
+      createLanguageSelect({ onLanguageChange }),
       createStatusChip({ label: DATASET_MODE, variant: 'mock' }),
     ]),
   );

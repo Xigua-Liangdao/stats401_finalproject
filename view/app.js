@@ -9,7 +9,7 @@ import { renderPlayerCataloguePage } from './pages/player/player-catalogue-page.
 import { renderPlayerPage } from './pages/player/player-page.js?v=scale-zoom';
 import { renderTeamPage } from './pages/team/team-page.js';
 import { h } from './utils/dom.js';
-import { applyDocumentCopy, t } from './utils/i18n.js';
+import { applyDocumentCopy, setLanguage, t } from './utils/i18n.js';
 import { startRouter } from './utils/navigation.js?v=catalogue-back';
 import { ensureSeason, seasonOptions, setSelectedSeason } from './utils/season.js';
 import { createRouteTransition, shouldPlayRouteWipe } from './utils/route-transition.js';
@@ -21,7 +21,7 @@ const app = document.querySelector('#app');
 const wipe = document.querySelector('#route-wipe');
 const transition = createRouteTransition(app, wipe);
 const startup = createStartupScreen(document.querySelector('#startup'));
-let currentRouteName = null;
+let currentRoute = { name: 'home' };
 let booted = false;
 
 async function render(route) {
@@ -30,16 +30,21 @@ async function render(route) {
   closeDrawer();
   const seasons = seasonOptions();
   const season = ensureSeason(seasons);
+  const previousName = currentRoute.name;
+  currentRoute = route;
   renderSiteHeader(header, route.name, {
     seasons,
     season,
     onSeasonChange: (value) => {
       setSelectedSeason(value);
-      if (currentRouteName === 'home') render({ name: 'home' });
+      if (currentRoute.name === 'home') render({ name: 'home' });
+    },
+    onLanguageChange: (id) => {
+      if (!setLanguage(id)) return;
+      render(currentRoute);
     },
   });
-  const cinematic = shouldPlayRouteWipe(currentRouteName, route.name);
-  currentRouteName = route.name;
+  const cinematic = shouldPlayRouteWipe(previousName, route.name);
 
   try {
     await transition(async (target) => {

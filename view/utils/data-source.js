@@ -3,13 +3,37 @@
  * Pages consume these objects; they do not load CSV files themselves.
  */
 import { DATASET, ROLE_ORDER } from './constants.js';
-import { t } from './i18n.js';
+import { fromData, t } from './i18n.js';
 import { parseCsv } from './csv.js';
 import { loadMediaManifest } from './assets.js';
 import { setLoadProgress } from './load-progress.js';
 
 function indexById(items) {
   return Object.fromEntries(items.map((item) => [item.id, item]));
+}
+
+function bindText(record, field, group, raw) {
+  const key = raw == null || raw === '' ? null : String(raw);
+  Object.defineProperty(record, field, {
+    enumerable: true,
+    configurable: true,
+    get() {
+      return fromData(group, key);
+    },
+  });
+  return record;
+}
+
+function copyRecord(source, extra = {}) {
+  const copy = {};
+  for (const key of Object.keys(source)) {
+    const description = Object.getOwnPropertyDescriptor(source, key);
+    if (description.get || description.set) Object.defineProperty(copy, key, description);
+    else copy[key] = source[key];
+  }
+  const sourceName = Object.getOwnPropertyDescriptor(source, 'sourceName');
+  if (sourceName) Object.defineProperty(copy, 'sourceName', sourceName);
+  return Object.assign(copy, extra);
 }
 
 function sortByRole(players) {
@@ -67,16 +91,17 @@ function sortPairs(pairs) {
 }
 
 function mapPair(row) {
-  return {
+  const pair = {
     id: row.pair_id,
     teamId: row.team_id,
-    teamName: row.team,
     playerAId: row.player_a_id,
     playerBId: row.player_b_id,
-    playerA: row.player_a,
-    playerB: row.player_b,
     stats: summaryStats(row, PAIR_STAT_FIELDS),
   };
+  bindText(pair, 'teamName', 'teams', row.team);
+  bindText(pair, 'playerA', 'players', row.player_a);
+  bindText(pair, 'playerB', 'players', row.player_b);
+  return pair;
 }
 
 function parseLineupAffinity(value, lineupId) {
@@ -101,6 +126,7 @@ function parseLineupAffinity(value, lineupId) {
     || payload.limit < 0.15 || typeof payload.hasEligiblePair !== 'boolean') {
     throw new Error(`Invalid affinity_score payload for lineup ${lineupId}. Regenerate lineups.csv.`);
   }
+  for (const player of payload.players) bindText(player, 'name', 'players', player.name);
   return payload;
 }
 
@@ -111,7 +137,8 @@ function lineupPlayersFromRow(row, playerByTeam) {
     const player = playerByTeam.get(playerKey(id, row.team_id, role));
     if (player) return player;
     if (!id) return null;
-    return { id, name: name || id, role, season: Number(row.season), teamId: row.team_id, team: null };
+    const fallback = { id, role, season: Number(row.season), teamId: row.team_id, team: null };
+    return bindText(fallback, 'name', 'players', name || id);
   }).filter(Boolean);
 }
 
@@ -136,36 +163,41 @@ function hydrateFromPanel(rows, summaries = {}) {
   for (const row of rows) {
     if (!row.team_id || seenTeams.has(row.team_id)) continue;
     seenTeams.add(row.team_id);
-    teams.push({
+    const team = {
       id: row.team_id,
-      name: row.team,
       short: row.team_short || row.team,
       season: Number(row.season) || row.season,
       split: row.split || t('common.unknown'),
       stats: teamStats.get(row.team_id) ?? { eligible: false },
-    });
+    };
+    bindText(team, 'name', 'teams', row.team);
+    Object.defineProperty(team, 'sourceName', { value: row.team || '', enumerable: false });
+    teams.push(team);
   }
   const teamById = indexById(teams);
 
-  const players = playerRows.map((row) => ({
-    id: row.player_id,
-    name: row.player,
-    role: row.role,
-    season: Number(row.season),
-    teamId: row.team_id,
-    team: teamById[row.team_id],
-    stats: playerStats.get(playerKey(row.player_id, row.team_id, row.role)) ?? { eligible: false },
-  }));
+  const players = playerRows.map((row) => {
+    const player = {
+      id: row.player_id,
+      role: row.role,
+      season: Number(row.season),
+      teamId: row.team_id,
+      team: teamById[row.team_id],
+      stats: playerStats.get(playerKey(row.player_id, row.team_id, row.role)) ?? { eligible: false },
+    };
+    bindText(player, 'name', 'players', row.player);
+    Object.defineProperty(player, 'sourceName', { value: row.player || '', enumerable: false });
+    return player;
+  });
   const playerById = indexById(players);
   const playerByTeam = new Map(players.map((player) => [
     playerKey(player.id, player.teamId, player.role), player,
   ]));
 
   const lineups = lineupRows.map((row) => {
-    const attached = lineupPlayersFromRow(row, playerByTeam).map((player) => ({
-      ...player,
-      team: player.team || teamById[row.team_id],
-    }));
+    const attached = lineupPlayersFromRow(row, playerByTeam).map((player) => (
+      copyRecord(player, { team: player.team || teamById[row.team_id] })
+    ));
     const games = row.n_games === '' ? null : Number(row.n_games);
     const split = row.split || teamById[row.team_id]?.split || t('common.unknown');
     const context = Number.isFinite(games)
@@ -268,7 +300,7 @@ function loadLineupGameRows() {
 }
 
 function mapPlayerGame(row) {
-  return {
+  const game = {
     id: row.record_id,
     source: 'player_games',
     playerId: row.player_id,
@@ -282,8 +314,6 @@ function mapPlayerGame(row) {
     split: row.split,
     patch: row.patch,
     side: row.side,
-    champion: row.champion,
-    opponentChampion: row.opponent_champion,
     kills: asNumber(row.kills),
     deaths: asNumber(row.deaths),
     assists: asNumber(row.assists),
@@ -304,19 +334,22 @@ function mapPlayerGame(row) {
     adjusted_impact: asNumber(row.adjusted_impact),
     prediction_status: row.prediction_status || null,
   };
+  bindText(game, 'champion', 'champions', row.champion);
+  bindText(game, 'opponentChampion', 'champions', row.opponent_champion);
+  return game;
 }
 
 function mapLineupGame(row, opponentTeamId, side) {
   const roles = Object.fromEntries(
-    ROLE_ORDER.map((role) => [
-      role,
-      {
+    ROLE_ORDER.map((role) => {
+      const slot = {
         id: row[`${role}_id`] || null,
-        name: row[`${role}_player`] || null,
         gold_share: asNumber(row[`${role}_gold_share`]),
         damage_share: asNumber(row[`${role}_damage_share`]),
-      },
-    ]),
+      };
+      bindText(slot, 'name', 'players', row[`${role}_player`] || null);
+      return [role, slot];
+    }),
   );
   return {
     id: `${row.game_id}|${row.team_id}`,
@@ -490,10 +523,9 @@ export const dataSource = {
 };
 
 function enrichGame(game, { teamById, playerById, lineupById }) {
-  return {
-    ...game,
+  return copyRecord(game, {
     opponent: teamById[game.opponentTeamId] ?? null,
     player: game.playerId ? playerById[game.playerId] ?? null : null,
     lineup: game.lineupId ? lineupById[game.lineupId] ?? null : null,
-  };
+  });
 }

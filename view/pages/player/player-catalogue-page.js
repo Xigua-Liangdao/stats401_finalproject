@@ -2,7 +2,7 @@ import { createRosterSlot } from '../../components/catalogue/roster-slot.js';
 import { createTeamGroupedCatalogue } from '../../components/catalogue/team-grouped-catalogue.js?v=catalogue-back';
 import { createPageShell } from '../../components/layout/page-shell.js';
 import { loadPlayerCatalog } from '../../features/player/player-data.js';
-import { t } from '../../utils/i18n.js';
+import { indexed, t } from '../../utils/i18n.js';
 import { href, rememberCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
 
 export async function renderPlayerCataloguePage(target, page = 1) {
@@ -23,7 +23,7 @@ export async function renderPlayerCataloguePage(target, page = 1) {
 
   target.append(
     createPageShell({
-      kicker: t('catalogue.kicker'),
+      kicker: indexed('01', t('nav.catalogue')),
       title: t('nav.catalogue'),
       meta: [t('catalogue.grouped')],
       actions: [catalogue.search],

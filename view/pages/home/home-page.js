@@ -8,6 +8,11 @@ import { getSelectedSeason } from '../../utils/season.js';
 
 const TOP_TEAM_COUNT = 6;
 
+// Temporary until the dataset carries a season-champion field.
+const SEASON_CHAMPIONS = {
+  2025: "Anyone's Legend",
+};
+
 function countEligible(items) {
   return items.filter((item) => item.stats?.eligible).length;
 }
@@ -84,6 +89,12 @@ function overviewItems(view) {
   ];
 }
 
+function championTeam(teams, season) {
+  const name = SEASON_CHAMPIONS[String(season)];
+  if (!name) return null;
+  return teams.find((team) => team.sourceName === name) ?? null;
+}
+
 function createChampion(team) {
   if (!team) return null;
   return h('a', { class: 'home-champion panel', href: href.team(team.id) }, [
@@ -157,11 +168,11 @@ export async function renderHomePage(target) {
     h('div', { class: 'home' }, [
       h('section', { class: 'home-hero' }, [
         h('div', { class: 'home-hero__copy' }, [
-          h('div', { class: 'kicker' }, [t('app.scouting', { kicker: t('app.kicker') })]),
+          h('div', { class: 'kicker' }, [t('app.kicker')]),
           h('h1', { class: 'home-title display' }, [t('home.title')]),
           h('p', { class: 'home-sub' }, [t('home.lead')]),
         ]),
-        createChampion(ranked[0]),
+        createChampion(championTeam(view.teams, season)),
       ]),
       h('section', { class: 'home-overview', 'aria-label': t('home.overview') }, [
         h('dl', {}, overviewItems(view).map(([kind, label, value, note]) => (

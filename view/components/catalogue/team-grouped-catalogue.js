@@ -82,7 +82,7 @@ function renderGroupedList({
 
 function teamMatches(group, needle) {
   const team = group.team ?? {};
-  return `${team.name ?? ''} ${team.short ?? ''}`.toLowerCase().includes(needle);
+  return `${team.sourceName ?? ''} ${team.name ?? ''} ${team.short ?? ''}`.toLowerCase().includes(needle);
 }
 
 export function createTeamGroupedCatalogue({
@@ -137,7 +137,7 @@ export function createTeamGroupedCatalogue({
 
   return {
     search: h('label', { class: 'catalogue-team-search' }, [
-      h('span', { class: 'kicker' }, [t('catalogue.teamKicker')]),
+      h('span', { class: 'kicker' }, [t('common.team')]),
       input,
     ]),
     root: host,
