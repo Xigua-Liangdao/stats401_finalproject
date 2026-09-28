@@ -10,8 +10,6 @@ export default {
   "catalogue.lineupGames": "Lineup game catalogue",
   "catalogue.related": "04 / Related games",
   "catalogue.gameCount": "{count} games",
-  "catalogue.sortNewest": "Sort by date, newest first",
-  "catalogue.sortOldest": "Sort by date, oldest first",
   "catalogue.filterSplit": "Filter by split",
   "catalogue.filterSplitOn": "Filter by split, {value}",
   "catalogue.filterPatch": "Filter by patch",

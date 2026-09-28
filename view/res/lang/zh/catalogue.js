@@ -10,8 +10,6 @@ export default {
   "catalogue.lineupGames": "赛事目录",
   "catalogue.related": "04 / 相关赛事",
   "catalogue.gameCount": "{count} 场比赛",
-  "catalogue.sortNewest": "按日期排序，最新在前",
-  "catalogue.sortOldest": "按日期排序，最早在前",
   "catalogue.filterSplit": "按赛段筛选",
   "catalogue.filterSplitOn": "按赛段筛选，{value}",
   "catalogue.filterPatch": "按版本筛选",
