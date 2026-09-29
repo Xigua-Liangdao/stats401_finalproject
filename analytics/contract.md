@@ -225,6 +225,8 @@ Example:
 
 Sorting is treated as one general event type rather than creating a separate event for every sortable field.
 
+`device` is not an event type. It is a field on every event, described in section 6.
+
 ---
 
 # 6. Database Schema
@@ -249,6 +251,25 @@ Schema:
 | `target_id`    | TEXT        |       No | Identifier of the specific target                 |
 | `is_test`      | BOOLEAN     |      Yes | Whether the event was generated in developer mode |
 | `metadata`     | JSONB       |       No | Additional event-specific information             |
+| `device`       | TEXT        |       No | Responsive layout bucket at the time of the event |
+
+`device` is nullable. Existing rows are left unchanged, including any historical rows whose `event_name` is `device`. Those historical rows are not part of the current event taxonomy.
+
+### Responsive layout
+
+`device` records the responsive layout bucket, not a user-agent string, a physical device model, or an exact screen resolution.
+
+The bucket follows the layout breakpoints already used by the interface:
+
+* `phone`: viewport width at most 640px;
+* `pad`: viewport width from 641px through 980px;
+* `laptop`: viewport width above 980px.
+
+`trackEvent()` attaches the current bucket to every tracked event. The UI does not pass `device` itself.
+
+When analytics initializes, the current viewport bucket is stored in the analytics context. When the viewport crosses a breakpoint, that stored value is updated. Crossing a breakpoint does not create an event. The next ordinary event, such as a click or a filter change, carries the new value.
+
+Refreshing the page does not write a device-only row. There is nothing to write until the user produces a normal event.
 
 ---
 
@@ -262,7 +283,8 @@ Schema:
   "page": "catalogue",
   "target_type": "team_card",
   "target_id": "BLG",
-  "is_test": false
+  "is_test": false,
+  "device": "laptop"
 }
 ```
 
@@ -297,6 +319,7 @@ Schema:
   "page": "catalogue",
   "target_type": "season_filter",
   "is_test": false,
+  "device": "pad",
   "metadata": {
     "from": "2026",
     "to": "2025"
@@ -354,7 +377,8 @@ Analytics context
 ├── anonymous_id
 ├── session_id
 ├── timestamp
-└── is_test
+├── is_test
+└── device
        ↓
 Supabase Data API
        ↓
@@ -445,6 +469,6 @@ Potential future uses include:
 * identifying frequently used or ignored features;
 * measuring changes in interaction patterns after UI updates.
 
-New event types should only be introduced when the existing semantic event model cannot represent the required behavior clearly.
+New event types should only be introduced when the existing semantic event model cannot represent the required behavior clearly. Responsive layout is context on each event, not an event type.
 
 The goal is to keep the event taxonomy small, stable, and meaningful.

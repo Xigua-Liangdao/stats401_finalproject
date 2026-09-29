@@ -1,3 +1,4 @@
+import { currentDevice, watchDevice } from './device.js';
 import { bindDeveloperMode, isDeveloperMode, syncDeveloperIndicator } from './developerMode.js';
 import { getAnonymousId, readOrCreateAnonymousId } from './identity.js';
 import { getSessionId, readOrCreateSessionId } from './session.js';
@@ -11,6 +12,7 @@ export function getAnalyticsContext() {
     anonymous_id: getAnonymousId(),
     session_id: getSessionId(),
     is_test: isDeveloperMode(),
+    device: currentDevice(),
   };
 }
 
@@ -20,6 +22,7 @@ function logIdentity(label, record) {
 }
 
 export function initAnalytics() {
+  watchDevice();
   const anonymous = readOrCreateAnonymousId();
   const session = readOrCreateSessionId();
   const isTest = isDeveloperMode();
@@ -29,6 +32,7 @@ export function initAnalytics() {
     logIdentity('anonymous_id', anonymous);
     logIdentity('session_id', session);
     console.log(`[Analytics] is_test: ${isTest}`);
+    console.log(`[Analytics] device: ${currentDevice()}`);
   }
   bindDeveloperMode();
   syncDeveloperIndicator();

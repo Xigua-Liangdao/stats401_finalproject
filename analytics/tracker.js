@@ -1,3 +1,4 @@
+import { currentDevice, watchDevice } from './device.js';
 import { isDeveloperMode } from './developerMode.js';
 import { getAnonymousId } from './identity.js';
 import { getSessionId } from './session.js';
@@ -18,6 +19,7 @@ function reportFailure(error) {
 }
 
 async function sendEvent(event) {
+  watchDevice();
   const { event_name, page, target_type, target_id, metadata } = event ?? {};
   if (!EVENT_NAMES.has(event_name)) {
     reportFailure(new Error(`Unknown event_name: ${event_name}`));
@@ -32,6 +34,7 @@ async function sendEvent(event) {
     target_type,
     target_id,
     metadata,
+    device: currentDevice(),
   });
   if (error) reportFailure(error);
 }
