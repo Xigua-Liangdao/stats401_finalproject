@@ -8,33 +8,33 @@ export const PLAYER_IMAGE_FALLBACK = new URL('player/unknown.svg', IMG_ROOT).hre
 
 let teams = new Map();
 let players = new Map();
-let manifestPromise;
+let mediaPromise;
 
 const teamKey = (season, teamId) => `${season}|${teamId}`;
 const playerKey = (season, teamId, playerId) => `${season}|${teamId}|${playerId}`;
 const splitNumber = (split) => Number(/^Split ([1-3])(?: Placements)?$/.exec(split)?.[1]) || null;
 
-export function setMediaManifest(manifest) {
-  if (manifest.schema_version !== 1) throw new Error('Unsupported media manifest version');
-  teams = new Map(manifest.teams.map((item) => [teamKey(item.season, item.team_id), item]));
+export function setMedia(media) {
+  if (media.schema_version !== 1) throw new Error('Unsupported media.json version');
+  teams = new Map(media.teams.map((item) => [teamKey(item.season, item.team_id), item]));
   players = new Map();
-  for (const item of manifest.players) {
+  for (const item of media.players) {
     const key = playerKey(item.season, item.team_id, item.player_id);
     if (!players.has(key)) players.set(key, []);
     players.get(key).push(item);
   }
 }
 
-export function loadMediaManifest() {
-  if (!manifestPromise) {
-    const manifestUrl = new URL('media.json', IMG_ROOT);
-    manifestUrl.search = new URL(import.meta.url).search;
-    manifestPromise = fetch(manifestUrl).then(async (response) => {
-      if (!response.ok) throw new Error(`Failed to load media manifest (${response.status})`);
-      setMediaManifest(await response.json());
+export function loadMedia() {
+  if (!mediaPromise) {
+    const mediaUrl = new URL('media.json', IMG_ROOT);
+    mediaUrl.search = new URL(import.meta.url).search;
+    mediaPromise = fetch(mediaUrl).then(async (response) => {
+      if (!response.ok) throw new Error(`Failed to load media.json (${response.status})`);
+      setMedia(await response.json());
     });
   }
-  return manifestPromise;
+  return mediaPromise;
 }
 
 export function teamLogoAsset(team) {

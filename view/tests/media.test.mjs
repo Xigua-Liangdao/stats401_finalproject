@@ -2,14 +2,14 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import { readFile } from 'node:fs/promises';
 import {
-  setMediaManifest, playerImageAsset, playerImageUrl, teamLogoUrl,
+  setMedia, playerImageAsset, playerImageUrl, teamLogoUrl,
   PLAYER_IMAGE_FALLBACK, TEAM_LOGO_FALLBACK,
 } from '../utils/assets.js';
 import { href, parseHash } from '../utils/navigation.js';
 
-const manifest = JSON.parse(await readFile(new URL('../../data/img/media.json', import.meta.url)));
-setMediaManifest(manifest);
-const portrait = (name, short) => manifest.players.find((p) => p.player === name && p.team_short === short);
+const media = JSON.parse(await readFile(new URL('../../data/img/media.json', import.meta.url)));
+setMedia(media);
+const portrait = (name, short) => media.players.find((p) => p.player === name && p.team_short === short);
 const entity = (p) => ({ id: p.player_id, season: p.season, teamId: p.team_id });
 
 test('transferred players retain the selected team portrait', () => {
@@ -29,8 +29,8 @@ test('split lookup reuses an earlier same-team photo but never a later or differ
 });
 
 test('missing transfer portraits do not borrow another jersey; unknown teams/years have a neutral fallback', () => {
-  for (const missing of manifest.missing) assert.equal(playerImageUrl(entity(missing)), PLAYER_IMAGE_FALLBACK);
-  const blg = manifest.teams.find((team) => team.team_short === 'BLG');
+  for (const missing of media.missing) assert.equal(playerImageUrl(entity(missing)), PLAYER_IMAGE_FALLBACK);
+  const blg = media.teams.find((team) => team.team_short === 'BLG');
   assert.ok(teamLogoUrl({ id: blg.team_id, season: 2025 }).endsWith('/team/2025/blg.png'));
   assert.equal(teamLogoUrl({ id: blg.team_id, season: 2026 }), TEAM_LOGO_FALLBACK);
   assert.equal(playerImageUrl({ id: 'unknown', season: 2025 }), PLAYER_IMAGE_FALLBACK);
