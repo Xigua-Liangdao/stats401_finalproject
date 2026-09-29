@@ -1,6 +1,7 @@
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
+import { createTooltipWatch } from '../../utils/track.js';
 import {
   BASELINE_RADIUS,
   axisRangeLabel,
@@ -59,11 +60,15 @@ function mount(stage, tip, { left, right, axes }) {
   const observer = new ResizeObserver(() => draw());
   observer.observe(stage);
 
+  const tooltipWatch = createTooltipWatch('comparison-radar');
+
   function hideTip() {
     tip.hidden = true;
+    tooltipWatch.hide();
   }
 
   function showTip(event, axis) {
+    tooltipWatch.show(`${left.id}|${right.id}|${axis.key}`);
     const lines = [
       axis.label,
       t('compare.leftValue', { name: left.name, value: axis.format(left.stats?.[axis.key]) }),

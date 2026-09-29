@@ -26,6 +26,39 @@ export function routeTargetId(hash) {
   return route.name;
 }
 
+export const TOOLTIP_DWELL_MS = 500;
+
+export function createTooltipWatch(targetType) {
+  let timer = 0;
+  let pendingId = '';
+  let openId = '';
+
+  return {
+    show(targetId) {
+      const id = targetId == null ? '' : String(targetId);
+      if (!id || id === openId || id === pendingId) return;
+      window.clearTimeout(timer);
+      pendingId = id;
+      timer = window.setTimeout(() => {
+        if (pendingId !== id) return;
+        pendingId = '';
+        openId = id;
+        trackUi({
+          event_name: 'tooltip_open',
+          target_type: targetType,
+          target_id: id,
+        });
+      }, TOOLTIP_DWELL_MS);
+    },
+    hide() {
+      window.clearTimeout(timer);
+      timer = 0;
+      pendingId = '';
+      openId = '';
+    },
+  };
+}
+
 export function trackUi(event) {
   try {
     const payload = {

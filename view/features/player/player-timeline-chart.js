@@ -2,7 +2,7 @@ import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatCompactDate, formatDate, parseGameDate } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
-import { trackUi } from '../../utils/track.js';
+import { createTooltipWatch, trackUi } from '../../utils/track.js';
 import { colorForSeries, formatChartValue, SERIES_META, yTickFormat } from './player-chart-config.js';
 
 function sortByDate(games) {
@@ -163,6 +163,7 @@ export function mountPlayerTimeline(stage, { games }) {
     brushSvg.node(),
   ]);
   const tooltip = h('div', { class: 'chart-tooltip', hidden: true });
+  const tooltipWatch = createTooltipWatch('player-timeline');
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
   plotHost.append(svg.node(), tooltip);
   stage.append(plotHost, dock);
@@ -184,9 +185,11 @@ export function mountPlayerTimeline(stage, { games }) {
 
   function hideTip() {
     tooltip.hidden = true;
+    tooltipWatch.hide();
   }
 
   function showTip(event, point, field) {
+    tooltipWatch.show(`${point.game?.id ?? point.index}|${field}`);
     tooltip.innerHTML = tooltipLines(point.game, field, point.value)
       .map((line) => `<div>${line}</div>`)
       .join('');

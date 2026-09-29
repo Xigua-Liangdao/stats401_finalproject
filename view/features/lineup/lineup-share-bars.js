@@ -3,7 +3,7 @@ import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatCompactDate, formatPercent, formatRole } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
-import { trackUi } from '../../utils/track.js';
+import { createTooltipWatch, trackUi } from '../../utils/track.js';
 import { createGameMark } from './lineup-range-dock.js';
 import { mixValue, roleValue } from './lineup-playback.js';
 
@@ -87,6 +87,7 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback, m
   const tooltip = document.createElement('div');
   tooltip.className = 'chart-tooltip';
   tooltip.hidden = true;
+  const tooltipWatch = createTooltipWatch('lineup-share-bars');
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
   svg.append('title').text(t('lineup.sameGame'));
   stage.append(frameLabel, svg.node(), tooltip);
@@ -102,6 +103,7 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback, m
 
   function hideTip() {
     tooltip.hidden = true;
+    tooltipWatch.hide();
   }
 
   function shownValue(row) {
@@ -123,6 +125,9 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback, m
 
   function showTip(event, row) {
     const game = frameState?.games?.[frameState.landed ?? frameState.index];
+    const subject = row.player?.id || row.role;
+    const shownGame = frameState?.mode === 'dynamic' && game ? game.id : 'range';
+    tooltipWatch.show(`${subject}|${activeMetric?.id || ''}|${shownGame}`);
     const count = frameState ? frameState.to - frameState.from + 1 : 0;
     tooltip.innerHTML = [
       `<div>${row.name} · ${formatRole(row.role)}</div>`,

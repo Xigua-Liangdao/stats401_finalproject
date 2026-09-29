@@ -3,6 +3,7 @@ import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatPercent, formatRole } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
+import { createTooltipWatch } from '../../utils/track.js';
 import { roleValue } from '../lineup/lineup-playback.js';
 
 const DOT_RADIUS = 5.6;
@@ -103,6 +104,7 @@ export function mountGameShareSlice(stage, { game, games = [], highlightRole = n
   const tooltip = document.createElement('div');
   tooltip.className = 'chart-tooltip';
   tooltip.hidden = true;
+  const tooltipWatch = createTooltipWatch('lineup-game-shares');
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
   svg.append('title').text(t('lineup.gameShare'));
   stage.append(svg.node(), tooltip);
@@ -112,6 +114,7 @@ export function mountGameShareSlice(stage, { game, games = [], highlightRole = n
 
   function hideTip() {
     tooltip.hidden = true;
+    tooltipWatch.hide();
   }
 
   function layout() {
@@ -180,6 +183,7 @@ export function mountGameShareSlice(stage, { game, games = [], highlightRole = n
       .attr('role', 'img')
       .attr('aria-label', (point) => `${point.name ?? point.role}, ${formatRole(point.role)}`)
       .on('mousemove', (event, point) => {
+        tooltipWatch.show(`${game.id}|${point.role}`);
         tooltip.innerHTML = [
           `<div>${point.name ?? point.role} · ${formatRole(point.role)}</div>`,
           `<div>${t('lineup.tipShare', { label: t('common.goldShare'), value: formatPercent(point.gold) })}</div>`,

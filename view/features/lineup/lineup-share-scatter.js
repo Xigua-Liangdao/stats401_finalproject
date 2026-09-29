@@ -4,7 +4,7 @@ import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatDate, formatPercent, formatRole } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
-import { trackUi } from '../../utils/track.js';
+import { createTooltipWatch, trackUi } from '../../utils/track.js';
 import { createGameMark } from './lineup-range-dock.js';
 import { mixValue, roleValue } from './lineup-playback.js';
 
@@ -169,6 +169,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
   const tooltip = document.createElement('div');
   tooltip.className = 'chart-tooltip';
   tooltip.hidden = true;
+  const tooltipWatch = createTooltipWatch('lineup-share-scatter');
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
   svg.append('title').text(t('lineup.oneGame'));
   plotHost.append(svg.node(), tooltip);
@@ -235,6 +236,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
 
   function hideTip() {
     tooltip.hidden = true;
+    tooltipWatch.hide();
   }
 
   function currentGame() {
@@ -246,6 +248,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
     const game = currentGame();
     const slot = game?.roles?.[role];
     if (!game || !slot) return;
+    tooltipWatch.show(`${game.id}|${role}`);
     const opponent = game.opponent?.name ?? game.opponent?.short;
     tooltip.innerHTML = [
       `<div>${slot.name ?? slot.id} · ${formatRole(role)}</div>`,
@@ -384,6 +387,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
       .attr('role', 'button')
       .attr('aria-label', (point) => `${point.name ?? point.role}, ${formatRole(point.role)}, ${formatDate(point.game.date)}`)
       .on('mousemove', (event, point) => {
+        tooltipWatch.show(`${point.game.id}|${point.role}`);
         layer.selectAll('.share-dot').classed('is-linked', (item) => item.game.id === point.game.id);
         const opponent = point.game.opponent?.name ?? point.game.opponent?.short;
         tooltip.innerHTML = [

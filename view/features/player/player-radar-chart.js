@@ -1,6 +1,7 @@
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
+import { createTooltipWatch } from '../../utils/track.js';
 import {
   BASELINE_RADIUS, axisRangeLabel, baselineValue,
   predictedValue, profileSegments, profileValues, radiusFor,
@@ -44,6 +45,7 @@ export function mountPlayerRadar(stage, { stats = {}, axes } = {}) {
   const tooltip = document.createElement('div');
   tooltip.className = 'chart-tooltip';
   tooltip.hidden = true;
+  const tooltipWatch = createTooltipWatch('player-radar');
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
   stage.append(svg.node(), tooltip);
 
@@ -55,12 +57,14 @@ export function mountPlayerRadar(stage, { stats = {}, axes } = {}) {
 
   function hideTip() {
     tooltip.hidden = true;
+    tooltipWatch.hide();
   }
 
   const observer = new ResizeObserver(() => draw());
   observer.observe(stage);
 
   function showTip(event, axis) {
+    tooltipWatch.show(axis.key);
     const actual = stats[axis.key];
     const baseline = baselineValue(stats, axis.key);
     const rows = [axis.label, t('radar.actual', { value: axis.format(actual) })];

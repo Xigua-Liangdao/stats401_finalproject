@@ -5,7 +5,7 @@ import { formatCount, formatRole } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
 import { PLACEHOLDER } from '../../utils/constants.js';
 import { isEligible } from '../../utils/stats.js';
-import { trackUi } from '../../utils/track.js';
+import { createTooltipWatch, trackUi } from '../../utils/track.js';
 
 export function championPickCounts(games) {
   const counts = new Map();
@@ -114,6 +114,7 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
   const tooltip = document.createElement('div');
   tooltip.className = 'chart-tooltip';
   tooltip.hidden = true;
+  const tooltipWatch = createTooltipWatch('team-champions');
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
   svg.append('title').text(t('team.pickFrequency'));
   stage.append(svg.node(), tooltip);
@@ -124,6 +125,7 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
 
   function hideTip() {
     tooltip.hidden = true;
+    tooltipWatch.hide();
   }
 
   function showTip(event, row, total) {
@@ -211,7 +213,10 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
       .attr('tabindex', 0)
       .attr('role', 'img')
       .attr('aria-label', (row) => t('team.pickLabel', { champion: row.champion, count: formatCount(row.n) }))
-      .on('mousemove', (event, row) => showTip(event, row, total))
+      .on('mousemove', (event, row) => {
+        tooltipWatch.show(row.champion);
+        showTip(event, row, total);
+      })
       .on('mouseleave', hideTip)
       .on('focus', (event, row) => showTip(event, row, total))
       .on('blur', hideTip);
