@@ -2,6 +2,7 @@ import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
 import { formatRole } from '../../utils/formatting.js';
+import { routeTargetId, trackUi } from '../../utils/track.js';
 
 function asIdentityMark(mark) {
   if (!mark) return null;
@@ -35,7 +36,17 @@ export function createIdentityHeader({
         { class: 'identity-facts' },
         facts.map((fact) => {
           if (fact.href) {
-            return h('span', {}, [fact.label ? `${fact.label}: ` : null, h('a', { href: fact.href }, [fact.value])]);
+            return h('span', {}, [
+              fact.label ? `${fact.label}: ` : null,
+              h('a', {
+                href: fact.href,
+                onClick: () => trackUi({
+                  event_name: 'click',
+                  target_type: 'team_link',
+                  target_id: routeTargetId(fact.href),
+                }),
+              }, [fact.value]),
+            ]);
           }
           return h('span', {}, [fact.label ? `${fact.label}: ${fact.value}` : fact.value]);
         }),

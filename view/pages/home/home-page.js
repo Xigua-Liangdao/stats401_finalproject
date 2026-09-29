@@ -6,6 +6,7 @@ import { t } from '../../utils/i18n.js';
 import { formatCount, formatFixed, formatImpact, formatPercent, formatRole } from '../../utils/formatting.js';
 import { href } from '../../utils/navigation.js';
 import { getSelectedSeason } from '../../utils/season.js';
+import { trackUi } from '../../utils/track.js';
 
 const TOP_TEAM_COUNT = 6;
 
@@ -98,7 +99,15 @@ function championTeam(teams, season) {
 
 function createChampion(team) {
   if (!team) return null;
-  return h('a', { class: 'home-champion panel', href: href.team(team.id) }, [
+  return h('a', {
+    class: 'home-champion panel',
+    href: href.team(team.id),
+    onClick: () => trackUi({
+      event_name: 'click',
+      target_type: 'champion_panel',
+      target_id: team.id,
+    }),
+  }, [
     h('div', { class: 'home-champion__kicker coord' }, [t('home.champion')]),
     createTeamLogo(team),
     h('div', { class: 'home-champion__name display' }, [team.name]),
@@ -129,11 +138,27 @@ function createTopPlayer(player) {
   return h('section', { class: 'home-player' }, [
     h('h2', { class: 'section-block__title' }, [t('home.topPlayer')]),
     h('article', { class: 'home-player__card' }, [
-      h('a', { class: 'home-player__photo', href: playerHref }, [
+      h('a', {
+        class: 'home-player__photo',
+        href: playerHref,
+        onClick: () => trackUi({
+          event_name: 'click',
+          target_type: 'player_card',
+          target_id: player.id,
+        }),
+      }, [
         createPlayerPortrait(player),
       ]),
       h('div', { class: 'home-player__copy' }, [
-        h('a', { class: 'home-player__name display', href: playerHref }, [player.name]),
+        h('a', {
+          class: 'home-player__name display',
+          href: playerHref,
+          onClick: () => trackUi({
+            event_name: 'click',
+            target_type: 'player_card',
+            target_id: player.id,
+          }),
+        }, [player.name]),
         h('p', { class: 'home-player__team' }, [
           [teamName, formatRole(player.role)].filter(Boolean).join(' · '),
         ]),
@@ -146,7 +171,15 @@ function createTopPlayer(player) {
 }
 
 function createTeamCard(team, index) {
-  return h('a', { class: 'home-team', href: href.team(team.id) }, [
+  return h('a', {
+    class: 'home-team',
+    href: href.team(team.id),
+    onClick: () => trackUi({
+      event_name: 'click',
+      target_type: 'team_card',
+      target_id: team.id,
+    }),
+  }, [
     h('span', { class: 'home-team__rank' }, [String(index + 1).padStart(2, '0')]),
     createTeamLogo(team),
     h('span', { class: 'home-team__name' }, [team.name]),
@@ -194,7 +227,15 @@ export async function renderHomePage(target) {
           h('h2', { class: 'section-block__title' }, [t('home.topTeams')]),
         ]),
         h('div', { class: 'home-teams__row' }, ranked.slice(0, TOP_TEAM_COUNT).map(createTeamCard)),
-        h('a', { class: 'home-more', href: href.players }, [t('nav.seeMore')]),
+        h('a', {
+          class: 'home-more',
+          href: href.players,
+          onClick: () => trackUi({
+            event_name: 'click',
+            target_type: 'see_more',
+            target_id: 'catalogue',
+          }),
+        }, [t('nav.seeMore')]),
       ]),
     ]),
   );

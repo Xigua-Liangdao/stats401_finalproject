@@ -1,6 +1,7 @@
 import { h } from '../../utils/dom.js';
 import { parseGameDate } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
+import { trackUi } from '../../utils/track.js';
 import { GAME_PAGE_SIZE } from './paged-list.js';
 import { createGameRow } from './game-row.js';
 
@@ -44,6 +45,11 @@ export function createGameCatalogue({ games, onInfo, champion = false }) {
   const dateButton = headButton('game-table__sort', () => {
     closeMenu();
     dateOrder = dateOrder === 'desc' ? 'asc' : 'desc';
+    trackUi({
+      event_name: 'sort_change',
+      target_type: 'game_table',
+      metadata: { field: 'date', direction: dateOrder },
+    });
     page = 1;
     syncHeads();
     paint();
@@ -148,7 +154,15 @@ export function createGameCatalogue({ games, onInfo, champion = false }) {
       class: option.value === current ? 'game-table__option is-current' : 'game-table__option',
       role: 'menuitem',
       onClick: () => {
-        assign(option.value);
+        const next = option.value;
+        if (next !== current) {
+          trackUi({
+            event_name: 'filter_change',
+            target_type: `${key}_filter`,
+            metadata: { from: current, to: next },
+          });
+        }
+        assign(next);
         page = 1;
         closeMenu();
         paint();
@@ -190,6 +204,11 @@ export function createGameCatalogue({ games, onInfo, champion = false }) {
         onClick: () => {
           if (page === number) return;
           page = number;
+          trackUi({
+            event_name: 'click',
+            target_type: 'game_pager',
+            target_id: number,
+          });
           paint();
           table.scrollIntoView({ block: 'start' });
         },

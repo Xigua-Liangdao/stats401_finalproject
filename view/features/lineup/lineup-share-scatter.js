@@ -4,6 +4,7 @@ import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatDate, formatPercent, formatRole } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
+import { trackUi } from '../../utils/track.js';
 import { createGameMark } from './lineup-range-dock.js';
 import { mixValue, roleValue } from './lineup-playback.js';
 
@@ -77,10 +78,17 @@ export function createLineupShareScatterPanel({ games = [], playback }) {
         formatRole(role),
       ]);
       input.addEventListener('change', () => {
-        if (input.checked) visibleRoles.add(role);
+        const to = input.checked;
+        if (to) visibleRoles.add(role);
         else visibleRoles.delete(role);
-        label.classList.toggle('is-on', input.checked);
+        label.classList.toggle('is-on', to);
         chart?.setVisibleRoles();
+        trackUi({
+          event_name: 'filter_change',
+          target_type: 'role_filter',
+          target_id: `lineup-share-scatter|${role}`,
+          metadata: { from: !to, to },
+        });
       });
       return label;
     }),
@@ -114,9 +122,18 @@ export function createLineupShareScatterPanel({ games = [], playback }) {
 
   queueMicrotask(() => {
     chart = mountLineupShareScatter(stage, { games, playback, onSpanChange: syncZoom, visibleRoles });
-    zoomInBtn.addEventListener('click', () => chart.zoomIn());
-    zoomOutBtn.addEventListener('click', () => chart.zoomOut());
-    resetBtn.addEventListener('click', () => chart.resetZoom());
+    zoomInBtn.addEventListener('click', () => {
+      trackUi({ event_name: 'click', target_type: 'chart_zoom', target_id: 'lineup-share-scatter|in' });
+      chart.zoomIn();
+    });
+    zoomOutBtn.addEventListener('click', () => {
+      trackUi({ event_name: 'click', target_type: 'chart_zoom', target_id: 'lineup-share-scatter|out' });
+      chart.zoomOut();
+    });
+    resetBtn.addEventListener('click', () => {
+      trackUi({ event_name: 'click', target_type: 'chart_zoom', target_id: 'lineup-share-scatter|reset' });
+      chart.resetZoom();
+    });
   });
 
   return node;

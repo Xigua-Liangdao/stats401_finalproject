@@ -3,7 +3,7 @@ import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatCompactDate, formatPercent, formatRole } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
-import { href } from '../../utils/navigation.js';
+import { trackUi } from '../../utils/track.js';
 import { createGameMark } from './lineup-range-dock.js';
 import { mixValue, roleValue } from './lineup-playback.js';
 
@@ -58,9 +58,20 @@ export function createLineupShareBarsPanel({ lineup, games = [], playback }) {
       playback,
       metric: SHARE_METRICS.find((item) => item.id === select.value),
     });
+    let metricId = select.value;
     select.addEventListener('change', () => {
+      const from = metricId;
+      metricId = select.value;
+      if (from !== metricId) {
+        trackUi({
+          event_name: 'filter_change',
+          target_type: 'share_metric',
+          target_id: `lineup-share-bars|${metricId}`,
+          metadata: { from, to: metricId },
+        });
+      }
       chart.update({
-        metric: SHARE_METRICS.find((item) => item.id === select.value),
+        metric: SHARE_METRICS.find((item) => item.id === metricId),
       });
     });
   });
@@ -126,12 +137,6 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback, m
     tooltip.style.top = `${Math.max(8, event.clientY - bounds.top - 12)}px`;
   }
 
-  function openPlayer(row) {
-    const player = row.player;
-    if (!player) return;
-    window.location.hash = href.player(player.id, player.teamId, player.season);
-  }
-
   function layout() {
     if (!stage.isConnected) {
       observer.disconnect();
@@ -194,19 +199,8 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback, m
       .attr('width', x.bandwidth())
       .attr('rx', 2)
       .attr('fill', (row) => ROLE_COLORS[row.role] ?? '#7adfff')
-      .attr('tabindex', 0)
-      .attr('role', 'link')
       .on('mousemove', (event, row) => showTip(event, row))
-      .on('mouseleave', hideTip)
-      .on('focus', (event, row) => showTip(event, row))
-      .on('blur', hideTip)
-      .on('click', (_, row) => openPlayer(row))
-      .on('keydown', (event, row) => {
-        if (event.key === 'Enter' || event.key === ' ') {
-          event.preventDefault();
-          openPlayer(row);
-        }
-      });
+      .on('mouseleave', hideTip);
     marks.append('text')
       .attr('class', 'chart-bar-count')
       .attr('pointer-events', 'none')

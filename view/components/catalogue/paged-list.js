@@ -1,5 +1,6 @@
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
+import { trackUi } from '../../utils/track.js';
 
 export const GAME_PAGE_SIZE = 10;
 
@@ -45,6 +46,11 @@ export function createPagedList({
               onClick: () => {
                 if (page === number) return;
                 page = number;
+                trackUi({
+                  event_name: 'click',
+                  target_type: 'catalogue_pager',
+                  target_id: number,
+                });
                 onPageChange?.(page);
                 render();
               },

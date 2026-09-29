@@ -2,6 +2,7 @@ import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatCompactDate, formatDate, parseGameDate } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
+import { trackUi } from '../../utils/track.js';
 import { colorForSeries, formatChartValue, SERIES_META, yTickFormat } from './player-chart-config.js';
 
 function sortByDate(games) {
@@ -171,6 +172,7 @@ export function mountPlayerTimeline(stage, { games }) {
   let to = lastIndex;
   let userBrushing = false;
   let movingBrush = false;
+  let brushGesture = null;
   let brushWidth = 0;
   let xIndex = null;
   const brush = d3.brushX().on('start brush end', onBrush);
@@ -223,14 +225,39 @@ export function mountPlayerTimeline(stage, { games }) {
     brushSvg.attr('aria-valuenow', visibleEnd());
   }
 
+  function trackAxis(gesture) {
+    if (!gesture || (gesture.from === from && gesture.to === to)) return;
+    const targetType = gesture.mode === 'drag'
+      ? 'axis_move'
+      : gesture.mode === 'handle' ? 'axis_resize' : null;
+    if (!targetType) return;
+    const metadata = {
+      from: { start: gesture.from, end: gesture.to },
+      to: { start: from, end: to },
+    };
+    if (targetType === 'axis_resize') {
+      const startMoved = gesture.from !== from;
+      const endMoved = gesture.to !== to;
+      metadata.edge = startMoved && endMoved ? 'both' : startMoved ? 'start' : 'end';
+    }
+    trackUi({
+      event_name: 'filter_change',
+      target_type: targetType,
+      target_id: 'player-timeline',
+      metadata,
+    });
+  }
+
   function onBrush(event) {
     if (movingBrush || !event.sourceEvent) return;
     if (event.type === 'start') {
       userBrushing = true;
+      brushGesture = { mode: event.mode, from, to };
       return;
     }
     if (!userBrushing || !event.selection || !xIndex) {
       userBrushing = false;
+      brushGesture = null;
       syncBrush();
       return;
     }
@@ -244,8 +271,11 @@ export function mountPlayerTimeline(stage, { games }) {
     drawChart();
     syncControls();
     if (event.type === 'end') {
+      const gesture = brushGesture;
+      brushGesture = null;
       userBrushing = false;
       syncBrush();
+      trackAxis(gesture);
     }
   }
 

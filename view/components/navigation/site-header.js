@@ -2,6 +2,7 @@ import { DATASET_MODE } from '../../utils/constants.js';
 import { h } from '../../utils/dom.js';
 import { currentLanguage, languageChoices, t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
+import { routeTargetId, trackUi } from '../../utils/track.js';
 import { createStatusChip } from '../layout/status-chip.js';
 
 const LINKS = [
@@ -15,7 +16,17 @@ function createSeasonSelect({ seasons = [], season, onSeasonChange }) {
   return h('select', {
     class: 'season-select',
     'aria-label': t('nav.season'),
-    onchange: (event) => onSeasonChange?.(event.target.value),
+    onchange: (event) => {
+      const next = event.target.value;
+      if (String(next) !== String(season ?? '')) {
+        trackUi({
+          event_name: 'filter_change',
+          target_type: 'season_filter',
+          metadata: { from: season == null ? '' : String(season), to: String(next) },
+        });
+      }
+      onSeasonChange?.(next);
+    },
   }, options.map((value) => h('option', {
     value: String(value),
     selected: String(value) === String(season),
@@ -27,7 +38,18 @@ function createLanguageSelect({ onLanguageChange }) {
   return h('select', {
     class: 'language-select',
     'aria-label': t('nav.language'),
-    onchange: (event) => onLanguageChange?.(event.target.value),
+    onchange: (event) => {
+      const next = event.target.value;
+      if (next !== current) {
+        trackUi({
+          event_name: 'click',
+          target_type: 'language_select',
+          target_id: next,
+          metadata: { from: current, to: next },
+        });
+      }
+      onLanguageChange?.(next);
+    },
   }, languageChoices().map((choice) => h('option', {
     value: choice.id,
     selected: choice.id === current,
@@ -38,7 +60,15 @@ export function renderSiteHeader(target, routeName, { seasons = [], season, onSe
   target.replaceChildren(
     h('div', { class: 'site-header__brand' }, [
       h('span', { class: 'coord' }, [t('app.kicker')]),
-      h('a', { class: 'site-header__brand-name', href: href.home }, [t('home.title')]),
+      h('a', {
+        class: 'site-header__brand-name',
+        href: href.home,
+        onClick: () => trackUi({
+          event_name: 'click',
+          target_type: 'nav_link',
+          target_id: 'home',
+        }),
+      }, [t('home.title')]),
     ]),
     h(
       'nav',
@@ -49,6 +79,11 @@ export function renderSiteHeader(target, routeName, { seasons = [], season, onSe
           {
             href: link.href,
             class: link.names.includes(routeName) ? 'is-active' : '',
+            onClick: () => trackUi({
+              event_name: 'click',
+              target_type: 'nav_link',
+              target_id: routeTargetId(link.href),
+            }),
           },
           [t(link.key)],
         ),

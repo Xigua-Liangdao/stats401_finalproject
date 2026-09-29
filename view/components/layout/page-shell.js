@@ -1,12 +1,22 @@
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
+import { routeTargetId, trackUi } from '../../utils/track.js';
 
 export function createBreadcrumbs(items) {
   const nodes = [];
   items.forEach((item, index) => {
     if (index > 0) nodes.push(h('span', { class: 'sep' }, ['/']));
-    if (item.href) nodes.push(h('a', { href: item.href }, [item.label]));
+    if (item.href) {
+      nodes.push(h('a', {
+        href: item.href,
+        onClick: () => trackUi({
+          event_name: 'click',
+          target_type: 'breadcrumb',
+          target_id: routeTargetId(item.href),
+        }),
+      }, [item.label]));
+    }
     else nodes.push(h('span', {}, [item.label]));
   });
   return h('nav', { class: 'breadcrumbs', 'aria-label': t('nav.breadcrumb') }, nodes);

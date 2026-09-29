@@ -5,6 +5,7 @@ import { formatCount, formatRole } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
 import { PLACEHOLDER } from '../../utils/constants.js';
 import { isEligible } from '../../utils/stats.js';
+import { trackUi } from '../../utils/track.js';
 
 export function championPickCounts(games) {
   const counts = new Map();
@@ -81,8 +82,20 @@ export function createTeamChampionPanel({ players = [], games = [], teamName }) 
       rows: championPickCounts(grouped.get(select.value) ?? []),
       playerName: playerById(select.value)?.name,
     });
+    let selectedId = select.value;
     select.addEventListener('change', () => {
-      const player = playerById(select.value);
+      const from = selectedId;
+      const to = select.value;
+      selectedId = to;
+      if (from !== to) {
+        trackUi({
+          event_name: 'filter_change',
+          target_type: 'player_filter',
+          target_id: `team-champions|${to}`,
+          metadata: { from, to },
+        });
+      }
+      const player = playerById(to);
       syncNotice(player);
       chart.update({
         rows: championPickCounts(grouped.get(select.value) ?? []),

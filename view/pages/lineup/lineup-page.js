@@ -11,6 +11,7 @@ import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-dra
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
 import { backAction, href } from '../../utils/navigation.js?v=catalogue-back';
+import { routeTargetId, trackUi } from '../../utils/track.js';
 import { renderNotFound } from '../not-found.js';
 
 export async function renderLineupPage(target, id) {
@@ -45,15 +46,26 @@ export async function renderLineupPage(target, id) {
           createButton({
             label: back.label,
             href: back.href,
+            track: {
+              event_name: 'click',
+              target_type: 'nav_link',
+              target_id: routeTargetId(back.href),
+            },
           }),
           createButton({
             label: t('player.pairImpact'),
             variant: 'accent',
-            onClick: () =>
+            onClick: () => {
+              trackUi({
+                event_name: 'click',
+                target_type: 'pair_impact_button',
+                target_id: lineup.id,
+              });
               openPairImpactDrawer({
                 lineupId: lineup.id,
                 teamName: lineup.team.name,
-              }),
+              });
+            },
           }),
         ],
       }),

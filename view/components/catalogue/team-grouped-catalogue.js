@@ -3,6 +3,7 @@ import { createTeamLogo } from '../media/entity-images.js';
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
+import { trackUi } from '../../utils/track.js';
 
 export const CATALOGUE_PAGE_SIZE = {
   players: 100,
@@ -12,7 +13,14 @@ export const CATALOGUE_PAGE_SIZE = {
 export function createTeamBlockHeader(team, meta) {
   return h('header', { class: 'team-block__header' }, [
     createTeamLogo(team),
-    h('a', { href: href.team(team.id) }, [
+    h('a', {
+      href: href.team(team.id),
+      onClick: () => trackUi({
+        event_name: 'click',
+        target_type: 'team_link',
+        target_id: team.id,
+      }),
+    }, [
       h('div', { class: 'coord' }, [t('common.organization')]),
       h('h2', { class: 'team-block__name' }, [team.name]),
     ]),
