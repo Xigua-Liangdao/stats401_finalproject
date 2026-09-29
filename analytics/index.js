@@ -2,6 +2,8 @@ import { bindDeveloperMode, isDeveloperMode, syncDeveloperIndicator } from './de
 import { getAnonymousId, readOrCreateAnonymousId } from './identity.js';
 import { getSessionId, readOrCreateSessionId } from './session.js';
 
+export { trackEvent } from './tracker.js';
+
 let started = false;
 
 export function getAnalyticsContext() {

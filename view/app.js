@@ -1,3 +1,4 @@
+import { trackEvent } from '../analytics/index.js';
 import { closeDrawer } from './components/drawers/drawer.js';
 import { createStartupScreen } from './components/layout/startup-screen.js';
 import { renderSiteHeader } from './components/navigation/site-header.js';
@@ -15,6 +16,17 @@ import { ensureSeason, seasonOptions, setSelectedSeason } from './utils/season.j
 import { createRouteTransition, shouldPlayRouteWipe } from './utils/route-transition.js';
 
 applyDocumentCopy();
+
+// Temporary startup insert to verify the tracker. Not tied to a UI control.
+trackEvent({
+  event_name: 'click',
+  page: 'home',
+  target_type: 'analytics_test',
+  target_id: 'supabase_connection_test',
+  metadata: {
+    source: 'manual_tracker_test',
+  },
+});
 
 const header = document.querySelector('#site-header');
 const app = document.querySelector('#app');

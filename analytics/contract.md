@@ -2,7 +2,7 @@
 
 ## 1. Purpose
 
-This document defines the data contract for anonymous user interaction analytics in the LPL visualization project.
+This document defines the data contract for anonymous user interaction analytics and developers' testing in the LPL visualization project.
 
 The analytics system is designed to help us understand:
 
@@ -11,6 +11,8 @@ The analytics system is designed to help us understand:
 * which UI elements receive attention;
 * how users navigate and compare information;
 * how the interface can be improved based on actual usage.
+
+For the testing, when the record is labeled with `is_test` = True, it would be used for checking and debugging.
 
 The system does **not** collect personally identifiable information.
 
