@@ -99,6 +99,6 @@ The repository README contains the demo progress material. A deployed **GitHub P
 
 ### Publishing frontend updates
 
-After changing frontend JavaScript, CSS or the media manifest, run `python model/scripts/version_frontend.py` and commit the updated `view/index.html` before pushing. The generated import map gives the entire module graph one content-based version, including existing query-string aliases; updating only the HTML URL or `app.js` does not refresh cached dependencies. The entry script, stylesheets and media manifest use the same release version. Check it with `python model/scripts/version_frontend.py --check`.
+After changing frontend JavaScript, CSS or `data/img/media.json`, run `python model/scripts/version_frontend.py` and commit the updated `view/index.html` before pushing. The generated import map gives the entire module graph one content-based version, including existing query-string aliases; updating only the HTML URL or `app.js` does not refresh cached dependencies. The entry script, stylesheets and `data/img/media.json` use the same release version. Check it with `python model/scripts/version_frontend.py --check`.
 
 Wait until the GitHub Pages build for the pushed commit is `built`, then verify the public `view/` page. A successful git push alone does not mean that the website is live. If a tab still holds the previous HTML, navigate to `view/?release=<generated-version>#/players` once; the versioned module graph then loads together without requiring visitors to clear their browser cache.

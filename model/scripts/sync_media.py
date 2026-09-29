@@ -65,7 +65,7 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--download", action="store_true", help="Restore absent/corrupt files from pinned URLs")
     args = parser.parse_args()
-    manifest = json.loads((IMAGE_ROOT / "manifest.json").read_text())
+    manifest = json.loads((IMAGE_ROOT / "media.json").read_text())
     coverage = verify_catalog(manifest)
 
     def check(entry):

@@ -111,7 +111,7 @@ def map_key(path):
 
 def build_html():
     modules = frontend_modules()
-    inputs = sorted(modules + list((VIEW / "styles").rglob("*.css")) + [ROOT / "data/img/manifest.json"])
+    inputs = sorted(modules + list((VIEW / "styles").rglob("*.css")) + [ROOT / "data/img/media.json"])
     digest = hashlib.sha256()
     for path in inputs:
         digest.update(str(path.relative_to(ROOT)).encode() + b"\0" + path.read_bytes() + b"\0")

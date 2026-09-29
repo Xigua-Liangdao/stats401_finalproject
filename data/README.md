@@ -26,7 +26,7 @@ When cleaning changes, regenerate both directories together. Preserve the public
 
 ## Season-specific identity images
 
-Both datasets share [`img/manifest.json`](img/manifest.json) and local images under `img/player/2025/` and `img/team/2025/`. The manifest covers 112 of 114 player/team combinations and all 16 logos; all test-fixture identities have photos. Source seasons, split labels, transfer handling and the two explicit gaps are documented in the [media catalogue](img/README.md). The UI matches by year + team + player ID.
+Both datasets share [`img/media.json`](img/media.json) and local images under `img/player/2025/` and `img/team/2025/`. The catalogue covers 112 of 114 player/team combinations and all 16 logos; all test-fixture identities have photos. Source seasons, split labels, transfer handling and the two explicit gaps are documented in the [media catalogue](img/README.md). The UI matches by year + team + player ID.
 
 `team_panel.csv` is the frontend catalogue export in both directories. It is generated from the same player/lineup summaries and is outside the ten analytical files described by `schema.json`. Its `split` label is the most common split per team, not a split-specific roster. `model/run.py` now refreshes both catalogues; `model/build_test_data.py` also refreshes the test catalogue.
 

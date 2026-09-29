@@ -7,7 +7,7 @@ import {
 } from '../utils/assets.js';
 import { href, parseHash } from '../utils/navigation.js';
 
-const manifest = JSON.parse(await readFile(new URL('../../data/img/manifest.json', import.meta.url)));
+const manifest = JSON.parse(await readFile(new URL('../../data/img/media.json', import.meta.url)));
 setMediaManifest(manifest);
 const portrait = (name, short) => manifest.players.find((p) => p.player === name && p.team_short === short);
 const entity = (p) => ({ id: p.player_id, season: p.season, teamId: p.team_id });
