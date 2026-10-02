@@ -68,7 +68,9 @@ export function applyDocumentCopy() {
   const skip = document.querySelector('.skip-link');
   if (skip) skip.textContent = t('app.skip');
   const footer = document.querySelector('.site-footer span');
-  if (footer) footer.textContent = t('app.footer');
+  if (footer) {
+    footer.textContent = ['STATS 401', t('home.title'), t('app.authorTu'), t('app.authorChen')].join(' · ');
+  }
   const startup = document.querySelector('#startup');
   if (startup) startup.setAttribute('aria-label', t('app.loading'));
   const startupId = document.querySelector('.startup__id');
