@@ -1,7 +1,7 @@
 import { h } from '../../utils/dom.js';
 import { parseGameDate } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
-import { GAME_PAGE_SIZE } from './paged-list.js';
+import { GAME_PAGE_SIZE, fillPager } from './paged-list.js';
 import { createGameRow } from './game-row.js';
 
 const SPLIT_ORDER = ['Split 1', 'Split 2 Placements', 'Split 2', 'Split 3'];
@@ -173,28 +173,15 @@ export function createGameCatalogue({ games, onInfo, champion = false }) {
   }
 
   function paintPager(pageCount) {
-    if (pageCount <= 1) {
-      pager.replaceChildren();
-      pager.hidden = true;
-      return;
-    }
-    pager.hidden = false;
-    pager.replaceChildren(...Array.from({ length: pageCount }, (_, index) => {
-      const number = index + 1;
-      const current = number === page;
-      return h('button', {
-        class: current ? 'pager__page is-current' : 'pager__page',
-        type: 'button',
-        'aria-label': t('nav.page', { number }),
-        'aria-current': current ? 'page' : undefined,
-        onClick: () => {
-          if (page === number) return;
-          page = number;
-          paint();
-          table.scrollIntoView({ block: 'start' });
-        },
-      }, [String(number)]);
-    }));
+    fillPager(pager, {
+      page,
+      pageCount,
+      onPage: (number) => {
+        page = number;
+        paint();
+        table.scrollIntoView({ block: 'start' });
+      },
+    });
   }
 
   function paint() {

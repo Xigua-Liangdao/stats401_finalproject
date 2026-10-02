@@ -420,9 +420,58 @@
 
 .pager {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  align-items: center;
   gap: 0.35rem;
   margin-top: 0.85rem;
+}
+
+.pager__ellipsis,
+.pager__go,
+.pager__count {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--dim);
+  white-space: nowrap;
+}
+
+.pager__ellipsis {
+  min-width: 1.1rem;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+.pager__go {
+  margin-left: 0.45rem;
+}
+
+.pager__count {
+  margin-left: 0.15rem;
+}
+
+.pager__jump {
+  width: 3.1rem;
+  min-height: 2rem;
+  padding: 0 0.4rem;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--bg-panel);
+  color: var(--text);
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+
+.pager__jump::placeholder {
+  color: var(--dim);
+}
+
+.pager__jump:focus-visible {
+  border-color: var(--accent);
+  outline: none;
 }
 
 .pager__page {
