@@ -3,6 +3,7 @@ import { ROLE_ORDER } from '../../utils/constants.js';
 import { h } from '../../utils/dom.js';
 import { formatRole } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
+import { entityNameParts, matchesQuery } from '../../utils/search-text.js';
 import { createLineupComparison, createPlayerComparison } from './comparison-result.js';
 
 function teamMark(team) {
@@ -55,11 +56,10 @@ function createSearchSelect({ label, placeholder, options, onChange }) {
   }
 
   function paintList() {
-    const needle = query.trim().toLowerCase();
-    const shown = options.filter((option) => {
-      const haystack = `${option.label} ${option.hint ?? ''}`.toLowerCase();
-      return haystack.includes(needle);
-    });
+    const shown = options.filter((option) => matchesQuery(query, [
+      ...entityNameParts('teams', option.team),
+      ...(option.players ?? []).flatMap((player) => entityNameParts('players', player)),
+    ]));
     list.replaceChildren(...(shown.length
       ? shown.map((option) => {
         const item = h('button', {
@@ -146,6 +146,7 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     label: team.name,
     hint: team.short,
     team,
+    players: playersByTeam.get(team.id) ?? [],
   }));
 
   const playerButton = h('button', {

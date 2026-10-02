@@ -1,7 +1,7 @@
 export default {
   "catalogue.grouped": "按战队分组",
   "catalogue.players": "{count} 名选手",
-  "catalogue.searchTeam": "搜索战队",
+  "catalogue.searchTeam": "搜索战队或选手",
   "catalogue.noTeams": "没有战队",
   "catalogue.emptyGames": "没有符合这些筛选的赛事。",
   "catalogue.noPlayerGames": "这名选手没有记录在案的赛事。",

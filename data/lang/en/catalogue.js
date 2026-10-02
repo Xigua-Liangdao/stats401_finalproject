@@ -1,7 +1,7 @@
 export default {
   "catalogue.grouped": "Grouped by team",
   "catalogue.players": "{count} players",
-  "catalogue.searchTeam": "Search team",
+  "catalogue.searchTeam": "Search team or player",
   "catalogue.noTeams": "No teams",
   "catalogue.emptyGames": "No games match these filters.",
   "catalogue.noPlayerGames": "No recorded games for this player.",
