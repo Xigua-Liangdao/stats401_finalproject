@@ -135,7 +135,8 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
   const dataMax = Math.max(0.2, d3.max(points, (point) => point.goldShare) ?? 0.2);
   const fullMax = d3.scaleLinear().domain([0, dataMax]).nice().domain()[1];
   const floor = points.length ? MIN_SPAN : 1;
-  const margin = { top: 18, right: 18, bottom: 44, left: 58 };
+  const desktopMargin = { top: 18, right: 18, bottom: 44, left: 58 };
+  let margin = { ...desktopMargin };
   let span = 1;
   let xStart = 0;
   let plotWidth = 1;
@@ -243,6 +244,45 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
     tooltip.style.top = `${Math.max(8, event.clientY - bounds.top - 12)}px`;
   }
 
+  function tickLabelWidth(text, fontSize) {
+    const host = svg.append('g').attr('class', 'chart-axis').style('visibility', 'hidden');
+    const width = host.append('text').style('font-size', `${fontSize}px`).text(text).node().getBoundingClientRect().width;
+    host.remove();
+    return width;
+  }
+
+  function rotatedTitleWidth(text, fontSize) {
+    const probe = svg.append('text')
+      .attr('class', 'chart-axis-label')
+      .attr('transform', 'rotate(-90)')
+      .style('font-size', `${fontSize}px`)
+      .style('visibility', 'hidden')
+      .text(text);
+    const width = probe.node().getBoundingClientRect().width;
+    probe.remove();
+    return width;
+  }
+
+  function compactYAxis(scale) {
+    const axis = d3.axisLeft(scale).ticks(5).tickFormat((value) => formatPercent(value)).tickSizeOuter(0);
+    if (!window.matchMedia('(max-width: 640px)').matches) {
+      return { left: desktopMargin.left, offset: -44, font: null, axis };
+    }
+    const font = 9;
+    const tickSize = 3;
+    const tickPadding = 2;
+    const gap = 4;
+    const pad = 2;
+    axis.tickPadding(tickPadding).tickSizeInner(tickSize);
+    const labelWidth = Math.max(
+      0,
+      ...scale.ticks(5).map((value) => tickLabelWidth(formatPercent(value), font)),
+    );
+    const titleWidth = rotatedTitleWidth(t('common.damageShare'), font);
+    const offset = -(tickSize + tickPadding + labelWidth + gap);
+    return { left: Math.ceil(-offset + titleWidth + pad), offset, font, axis };
+  }
+
   function layout() {
     if (!plotHost.isConnected) {
       observer.disconnect();
@@ -268,14 +308,16 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
       return;
     }
 
-    const innerWidth = Math.max(40, width - margin.left - margin.right);
+    const yMax = Math.max(0.2, d3.max(points, (point) => point.damageShare));
     const innerHeight = height - margin.top - margin.bottom;
+    y = d3.scaleLinear().domain([0, yMax]).nice().range([innerHeight, 0]);
+    const yTitle = compactYAxis(y);
+    margin = { ...desktopMargin, left: yTitle.left };
+    const innerWidth = Math.max(40, width - margin.left - margin.right);
     plotWidth = innerWidth;
     xStart = clampStart(xStart);
     const plot = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
-    const yMax = Math.max(0.2, d3.max(points, (point) => point.damageShare));
     x = d3.scaleLinear().domain([xStart, xStart + windowWidth()]).range([0, innerWidth]);
-    y = d3.scaleLinear().domain([0, yMax]).nice().range([innerHeight, 0]);
 
     plot.append('g')
       .attr('class', 'chart-grid')
@@ -292,22 +334,24 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
       .attr('y', innerHeight + 32)
       .attr('text-anchor', 'end')
       .text(t('common.goldShare'));
-    plot.append('text')
+    const yLabel = plot.append('text')
       .attr('class', 'chart-axis-label')
       .attr('transform', 'rotate(-90)')
       .attr('x', 0)
-      .attr('y', -44)
+      .attr('y', yTitle.offset)
       .attr('text-anchor', 'end')
       .text(t('common.damageShare'));
+    if (yTitle.font) yLabel.style('font-size', `${yTitle.font}px`);
 
     const clipId = `lineup-share-clip-${Math.round(innerWidth)}-${Math.round(innerHeight)}`;
     svg.append('clipPath').attr('id', clipId).append('rect').attr('width', innerWidth).attr('height', innerHeight);
     plot.append('g').attr('class', 'share-dots').attr('clip-path', `url(#${clipId})`);
     paintKey = '';
 
-    plot.append('g')
+    const yAxis = plot.append('g')
       .attr('class', 'chart-axis chart-axis--y')
-      .call(d3.axisLeft(y).ticks(5).tickFormat((value) => formatPercent(value)).tickSizeOuter(0));
+      .call(yTitle.axis);
+    if (yTitle.font) yAxis.selectAll('text').style('font-size', `${yTitle.font}px`);
 
     onSpanChange?.(span, floor, xStart, xStart + windowWidth());
     stage.classList.toggle('is-zoomed', span < 1 - 1e-9);
