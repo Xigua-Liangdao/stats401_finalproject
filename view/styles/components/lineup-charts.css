@@ -254,6 +254,13 @@
   margin: 0.4rem 0.7rem 0;
 }
 
+.share-guide {
+  stroke: var(--dim);
+  stroke-width: 1;
+  stroke-dasharray: 4 4;
+  pointer-events: none;
+}
+
 .share-dot {
   fill-opacity: 0.78;
   stroke: rgba(255, 255, 255, 0.45);

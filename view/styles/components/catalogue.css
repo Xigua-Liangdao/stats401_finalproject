@@ -385,6 +385,26 @@
 
 .game-table__info { width: 4.6rem; text-align: right; }
 
+@media (max-width: 640px) {
+  .game-table {
+    border-collapse: separate;
+    border-spacing: 0;
+  }
+
+  .game-table__info {
+    position: sticky;
+    right: 0;
+    z-index: 1;
+    background: #0b1830;
+    box-shadow: -10px 0 12px rgba(5, 12, 24, 0.4);
+  }
+
+  .game-table thead .game-table__info {
+    z-index: 2;
+    background: #10243f;
+  }
+}
+
 .game-table tbody td {
   border-bottom: 1px solid var(--line);
   font-family: var(--font-mono);

@@ -369,6 +369,19 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
 
     const clipId = `lineup-share-clip-${Math.round(innerWidth)}-${Math.round(innerHeight)}`;
     svg.append('clipPath').attr('id', clipId).append('rect').attr('width', innerWidth).attr('height', innerHeight);
+    const [x0, x1] = x.domain();
+    const [y0, y1] = y.domain();
+    const guideStart = Math.max(x0, y0);
+    const guideEnd = Math.min(x1, y1);
+    if (guideEnd > guideStart) {
+      plot.append('line')
+        .attr('class', 'share-guide')
+        .attr('x1', x(guideStart))
+        .attr('y1', y(guideStart))
+        .attr('x2', x(guideEnd))
+        .attr('y2', y(guideEnd))
+        .attr('clip-path', `url(#${clipId})`);
+    }
     plot.append('g').attr('class', 'share-dots').attr('clip-path', `url(#${clipId})`);
     paintKey = '';
 

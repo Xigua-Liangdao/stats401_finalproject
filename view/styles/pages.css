@@ -395,8 +395,10 @@
   }
 
   .home-player__card {
-    grid-template-columns: 1fr;
-    column-gap: 1rem;
+    grid-template-columns: auto minmax(0, 1fr);
+    column-gap: 0.85rem;
+    row-gap: 0.75rem;
+    align-items: center;
   }
 
   .home-player__facts {
