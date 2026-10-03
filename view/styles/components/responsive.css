@@ -45,12 +45,58 @@
 }
 
 @media (max-width: 640px) {
-  .stat-grid,
+  .app-root,
+  .app-root > *,
+  .page,
+  .home,
+  .site-header,
+  .site-footer,
+  .site-footer span,
+  .page-shell__header,
+  .page-shell__header > *,
+  .identity-header,
+  .identity-header > *,
+  .game-catalogue,
+  .game-table-wrap,
+  .paged-list,
+  .catalogue,
+  .team-block,
+  .team-block__header,
+  .team-block__header > *,
   .team-block__items,
+  .roster-slot,
+  .pager {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .stat-grid,
   .lineup-roster,
   .meta-grid,
   .lineup-strip__slots {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .team-block__items {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .site-header {
+    gap: 0.28rem 0.6rem;
+    min-height: 0;
+    padding-top: 0.35rem;
+    padding-bottom: 0.4rem;
+  }
+
+  .site-header .coord,
+  .site-footer span,
+  .page-shell__title,
+  .identity-header h1,
+  .team-block__name,
+  .roster-slot__name,
+  .roster-slot__open,
+  .site-nav a {
+    overflow-wrap: anywhere;
   }
 
   .site-header__brand,
@@ -63,12 +109,32 @@
     margin-left: 0;
   }
 
+  .site-header__brand {
+    gap: 0;
+  }
+
+  .site-header__status {
+    flex-wrap: wrap;
+    row-gap: 0.35rem;
+  }
+
+  .season-select,
+  .language-select,
+  .status-chip,
+  .catalogue-team-search__input,
+  input,
+  select {
+    min-width: 0;
+    max-width: 100%;
+  }
+
   .site-header__title-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 0.75rem;
     width: 100%;
+    min-width: 0;
   }
 
   .site-header__brand-name {
@@ -149,7 +215,40 @@
     border-radius: 0;
     background: transparent;
     min-height: 44px;
-    padding: 0.85rem 0.15rem;
+    padding: 0.4rem 0.15rem;
+  }
+
+  .home,
+  .page {
+    padding-top: 0.85rem;
+  }
+
+  .team-block__header {
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 0.2rem 0.75rem;
+  }
+
+  .team-block__header .identity-mark {
+    grid-row: span 2;
+    align-self: center;
+  }
+
+  .team-block__name {
+    font-size: clamp(1.35rem, 6.5vw, 2.15rem);
+  }
+
+  .roster-slot .player-portrait,
+  .roster-slot .entity-image--portrait {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .roster-slot__name {
+    font-size: clamp(1.15rem, 5vw, 1.85rem);
+  }
+
+  .pager {
+    flex-wrap: wrap;
   }
 
   .site-header.is-nav-open .site-nav a {
