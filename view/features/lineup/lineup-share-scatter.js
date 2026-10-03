@@ -10,6 +10,14 @@ import { mixValue, roleValue } from './lineup-playback.js';
 const SPAN_STEP = 0.1;
 const MIN_SPAN = 0.4;
 const DOT_RADIUS = 5.6;
+const SHARE_ORIGIN_STEP = 0.05;
+
+function shareOrigin(minValue, step = SHARE_ORIGIN_STEP) {
+  if (!Number.isFinite(minValue) || minValue <= step) return 0;
+  const snapped = Math.floor((minValue - 1e-6) / step) * step;
+  const origin = minValue - snapped < step * 0.2 ? snapped - step : snapped;
+  return Math.max(0, Number(origin.toFixed(4)));
+}
 
 function snapSpan(span) {
   return Number((Math.round(span / SPAN_STEP) * SPAN_STEP).toFixed(2));
@@ -133,12 +141,14 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
   const ordered = playback?.games ?? games;
   const points = sharePoints(ordered);
   const dataMax = Math.max(0.2, d3.max(points, (point) => point.goldShare) ?? 0.2);
+  const xOrigin = shareOrigin(d3.min(points, (point) => point.goldShare));
   const fullMax = d3.scaleLinear().domain([0, dataMax]).nice().domain()[1];
+  const fullSpan = Math.max(SHARE_ORIGIN_STEP, fullMax - xOrigin);
   const floor = points.length ? MIN_SPAN : 1;
   const desktopMargin = { top: 18, right: 18, bottom: 44, left: 58 };
   let margin = { ...desktopMargin };
   let span = 1;
-  let xStart = 0;
+  let xStart = xOrigin;
   let plotWidth = 1;
   let panning = false;
   let panStartX = 0;
@@ -199,11 +209,11 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
   observer.observe(plotHost);
 
   function windowWidth() {
-    return fullMax * span;
+    return fullSpan * span;
   }
 
   function clampStart(start) {
-    return clamp(start, 0, Math.max(0, fullMax - windowWidth()));
+    return clamp(start, xOrigin, Math.max(xOrigin, fullMax - windowWidth()));
   }
 
   function setSpan(next) {
@@ -244,43 +254,57 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
     tooltip.style.top = `${Math.max(8, event.clientY - bounds.top - 12)}px`;
   }
 
-  function tickLabelWidth(text, fontSize) {
-    const host = svg.append('g').attr('class', 'chart-axis').style('visibility', 'hidden');
-    const width = host.append('text').style('font-size', `${fontSize}px`).text(text).node().getBoundingClientRect().width;
-    host.remove();
-    return width;
-  }
-
-  function rotatedTitleWidth(text, fontSize) {
-    const probe = svg.append('text')
-      .attr('class', 'chart-axis-label')
+  function rotatedBox(text, { fontSize, anchor, axis = false }) {
+    const host = svg.append('g').attr('class', axis ? 'chart-axis' : null).style('visibility', 'hidden');
+    const probe = host.append('text')
+      .attr('class', axis ? null : 'chart-axis-label')
       .attr('transform', 'rotate(-90)')
+      .attr('text-anchor', anchor)
+      .attr('x', 0)
+      .attr('y', 0)
       .style('font-size', `${fontSize}px`)
-      .style('visibility', 'hidden')
       .text(text);
-    const width = probe.node().getBoundingClientRect().width;
-    probe.remove();
-    return width;
+    const box = probe.node().getBoundingClientRect();
+    const origin = svg.node().getBoundingClientRect().left;
+    host.remove();
+    return { width: box.width, right: box.right - origin, left: origin - box.left };
   }
 
   function compactYAxis(scale) {
     const axis = d3.axisLeft(scale).ticks(5).tickFormat((value) => formatPercent(value)).tickSizeOuter(0);
     if (!window.matchMedia('(max-width: 640px)').matches) {
-      return { left: desktopMargin.left, offset: -44, font: null, axis };
+      return { left: desktopMargin.left, offset: -44, font: null, rotateTicks: false, axis };
     }
     const font = 9;
     const tickSize = 3;
-    const tickPadding = 2;
-    const gap = 4;
+    const titleGap = 3;
     const pad = 2;
-    axis.tickPadding(tickPadding).tickSizeInner(tickSize);
-    const labelWidth = Math.max(
-      0,
-      ...scale.ticks(5).map((value) => tickLabelWidth(formatPercent(value), font)),
-    );
-    const titleWidth = rotatedTitleWidth(t('common.damageShare'), font);
-    const offset = -(tickSize + tickPadding + labelWidth + gap);
-    return { left: Math.ceil(-offset + titleWidth + pad), offset, font, axis };
+    axis.tickPadding(2).tickSizeInner(tickSize);
+    const tickBox = scale.ticks(5)
+      .map((value) => rotatedBox(formatPercent(value), { fontSize: font, anchor: 'middle', axis: true }))
+      .reduce((widest, box) => (box.width > widest.width ? box : widest), { width: 0, right: 0, left: 0 });
+    const titleBox = rotatedBox(t('common.damageShare'), { fontSize: font, anchor: 'end' });
+    const axisGap = tickSize + 2;
+    const tickY = -(axisGap + tickBox.right);
+    const offset = -(axisGap + tickBox.width + titleGap + titleBox.right);
+    const left = Math.ceil(-(offset - titleBox.left) + pad);
+    return { left, offset, tickY, font, rotateTicks: true, axis };
+  }
+
+  function xTickValues(scale) {
+    const [start, end] = scale.domain();
+    const generated = scale.ticks(5);
+    if (start <= 1e-6) return generated;
+    const values = [start];
+    generated.forEach((value) => {
+      if (value <= start + 1e-6 || value >= end - 1e-6) return;
+      const previous = values[values.length - 1];
+      if (Math.abs(scale(value) - scale(previous)) >= 44) values.push(value);
+    });
+    const last = values[values.length - 1];
+    if (Math.abs(scale(end) - scale(last)) < 44) values[values.length - 1] = end;
+    else values.push(end);
+    return values;
   }
 
   function layout() {
@@ -327,7 +351,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
     plot.append('g')
       .attr('class', 'chart-axis')
       .attr('transform', `translate(0,${innerHeight})`)
-      .call(d3.axisBottom(x).ticks(5).tickFormat((value) => formatPercent(value)).tickSizeOuter(0));
+      .call(d3.axisBottom(x).tickValues(xTickValues(x)).tickFormat((value) => formatPercent(value)).tickSizeOuter(0));
     plot.append('text')
       .attr('class', 'chart-axis-label')
       .attr('x', innerWidth)
@@ -352,6 +376,21 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
       .attr('class', 'chart-axis chart-axis--y')
       .call(yTitle.axis);
     if (yTitle.font) yAxis.selectAll('text').style('font-size', `${yTitle.font}px`);
+    if (yTitle.rotateTicks) {
+      yAxis.selectAll('text')
+        .attr('transform', 'rotate(-90)')
+        .attr('text-anchor', 'middle')
+        .attr('x', 0)
+        .attr('dx', null)
+        .attr('dy', null)
+        .attr('y', yTitle.tickY);
+      const xTop = Math.min(...plot.selectAll('.chart-axis:not(.chart-axis--y) .tick text').nodes()
+        .map((node) => node.getBoundingClientRect().top));
+      yAxis.selectAll('text').each(function liftClear() {
+        const overlap = this.getBoundingClientRect().bottom - xTop + 6;
+        if (overlap > 0) this.setAttribute('x', overlap);
+      });
+    }
 
     onSpanChange?.(span, floor, xStart, xStart + windowWidth());
     stage.classList.toggle('is-zoomed', span < 1 - 1e-9);
