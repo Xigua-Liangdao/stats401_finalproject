@@ -11,6 +11,8 @@ export default {
   "nav.catalogue": "目录",
   "nav.comparison": "对比",
   "nav.primary": "主导航",
+  "nav.menu": "菜单",
+  "nav.menuClose": "关闭菜单",
   "nav.season": "赛季",
   "nav.language": "语言",
   "nav.breadcrumb": "面包屑",

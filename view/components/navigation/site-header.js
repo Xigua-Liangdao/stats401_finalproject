@@ -35,25 +35,64 @@ function createLanguageSelect({ onLanguageChange }) {
 }
 
 export function renderSiteHeader(target, routeName, { seasons = [], season, onSeasonChange, onLanguageChange } = {}) {
+  target.classList.remove('is-nav-open');
+  const nav = h(
+    'nav',
+    { id: 'site-nav', class: 'site-nav', 'aria-label': t('nav.primary') },
+    LINKS.map((link) =>
+      h(
+        'a',
+        {
+          href: link.href,
+          class: link.names.includes(routeName) ? 'is-active' : '',
+        },
+        [t(link.key)],
+      ),
+    ),
+  );
+  const menu = h('button', {
+    class: 'site-header__menu',
+    type: 'button',
+    'aria-expanded': 'false',
+    'aria-controls': 'site-nav',
+    'aria-label': t('nav.menu'),
+  }, [
+    h('span', { class: 'site-header__menu-bars', 'aria-hidden': 'true' }, [
+      h('span'),
+      h('span'),
+      h('span'),
+    ]),
+  ]);
+
+  function setMenuOpen(open) {
+    target.classList.toggle('is-nav-open', open);
+    menu.setAttribute('aria-expanded', open ? 'true' : 'false');
+    menu.setAttribute('aria-label', t(open ? 'nav.menuClose' : 'nav.menu'));
+  }
+
+  menu.addEventListener('click', () => {
+    setMenuOpen(!target.classList.contains('is-nav-open'));
+  });
+  nav.addEventListener('click', (event) => {
+    if (event.target.closest('a')) setMenuOpen(false);
+  });
+  function closeOnEscape(event) {
+    if (event.key !== 'Escape') return;
+    setMenuOpen(false);
+    menu.focus();
+  }
+  menu.addEventListener('keydown', closeOnEscape);
+  nav.addEventListener('keydown', closeOnEscape);
+
   target.replaceChildren(
     h('div', { class: 'site-header__brand' }, [
       h('span', { class: 'coord' }, [t('app.kicker')]),
-      h('a', { class: 'site-header__brand-name', href: href.home }, [t('home.title')]),
+      h('div', { class: 'site-header__title-row' }, [
+        h('a', { class: 'site-header__brand-name', href: href.home }, [t('home.title')]),
+        menu,
+      ]),
     ]),
-    h(
-      'nav',
-      { class: 'site-nav', 'aria-label': t('nav.primary') },
-      LINKS.map((link) =>
-        h(
-          'a',
-          {
-            href: link.href,
-            class: link.names.includes(routeName) ? 'is-active' : '',
-          },
-          [t(link.key)],
-        ),
-      ),
-    ),
+    nav,
     h('div', { class: 'site-header__status' }, [
       createSeasonSelect({ seasons, season, onSeasonChange }),
       createLanguageSelect({ onLanguageChange }),

@@ -54,6 +54,23 @@
   border-bottom: 1px solid var(--line);
 }
 
+.drawer-header__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.drawer-header__bar .kicker {
+  min-width: 0;
+}
+
+.drawer-header__bar .btn {
+  flex: 0 0 auto;
+  min-width: 44px;
+  min-height: 44px;
+}
+
 .drawer-header h2 {
   margin: 0.2rem 0 0;
   font-family: var(--font-display);

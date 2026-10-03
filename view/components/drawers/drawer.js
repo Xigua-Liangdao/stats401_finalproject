@@ -1,4 +1,6 @@
+import { createButton } from '../buttons/button.js';
 import { h } from '../../utils/dom.js';
+import { t } from '../../utils/i18n.js';
 
 let active = null;
 let closeTimer = 0;
@@ -28,7 +30,10 @@ export function openDrawer({ kicker, title, body, className }) {
     h('div', { class: 'drawer-backdrop', onClick: closeDrawer }),
     h('aside', { class: `drawer ${className ?? ''}`.trim(), role: 'dialog', 'aria-modal': 'true', 'aria-label': title }, [
       h('header', { class: 'drawer-header' }, [
-        h('div', { class: 'kicker' }, [kicker]),
+        h('div', { class: 'drawer-header__bar' }, [
+          h('div', { class: 'kicker' }, [kicker]),
+          createButton({ label: t('nav.back'), onClick: closeDrawer }),
+        ]),
         h('h2', {}, [title]),
       ]),
       h('div', { class: 'drawer-body' }, [body]),

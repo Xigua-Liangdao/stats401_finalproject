@@ -11,6 +11,8 @@ export default {
   "nav.catalogue": "Catalogue",
   "nav.comparison": "Comparison",
   "nav.primary": "Primary",
+  "nav.menu": "Menu",
+  "nav.menuClose": "Close menu",
   "nav.season": "Season",
   "nav.language": "Language",
   "nav.breadcrumb": "Breadcrumb",
