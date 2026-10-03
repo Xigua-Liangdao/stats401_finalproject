@@ -60,14 +60,56 @@
 }
 
 .share-bar {
-  fill-opacity: 0.88;
   cursor: pointer;
+}
+
+.share-bar--gold {
+  fill: color-mix(in oklch, var(--gold) 74%, var(--muted));
+  fill-opacity: 0.84;
+}
+
+.share-bar--damage {
+  fill: color-mix(in oklch, var(--accent) 68%, var(--muted));
+  fill-opacity: 0.84;
 }
 
 .share-bar:hover,
 .share-bar:focus {
   fill-opacity: 1;
   outline: none;
+}
+
+.share-pair-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem 0.9rem;
+  color: var(--dim);
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.share-pair-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.share-pair-legend__swatch {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 1px;
+  background: var(--muted);
+}
+
+.share-pair-legend__swatch--gold {
+  background: color-mix(in oklch, var(--gold) 74%, var(--muted));
+}
+
+.share-pair-legend__swatch--damage {
+  background: color-mix(in oklch, var(--accent) 68%, var(--muted));
 }
 
 .lineup-share-stage.is-mounted {

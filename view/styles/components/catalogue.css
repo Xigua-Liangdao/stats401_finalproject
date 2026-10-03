@@ -395,13 +395,12 @@
     position: sticky;
     right: 0;
     z-index: 1;
-    background: #0b1830;
-    box-shadow: -10px 0 12px rgba(5, 12, 24, 0.4);
+    background: #08162b;
   }
 
   .game-table thead .game-table__info {
     z-index: 2;
-    background: #10243f;
+    background: #08162b;
   }
 }
 
