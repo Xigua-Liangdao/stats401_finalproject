@@ -196,6 +196,17 @@
   height: auto;
 }
 
+.player-timeline-stage.is-zoomed .chart-svg,
+.player-timeline-stage.is-zoomed .chart-point {
+  cursor: grab;
+  touch-action: none;
+}
+
+.player-timeline-stage.is-panning .chart-svg,
+.player-timeline-stage.is-panning .chart-point {
+  cursor: grabbing;
+}
+
 .timeline-dock {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
