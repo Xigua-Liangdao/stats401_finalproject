@@ -1,12 +1,12 @@
 # Historical team logos and player portraits
 
-`manifest.json` and the local PNGs are shared by **both** `data/test` and `data/processed`. No image URL columns are added to the statistical tables. The frontend loads this manifest before rendering its catalogues; it does not contact an external image host at runtime.
+`media.json` and the local PNGs are shared by **both** `data/test` and `data/processed`. No image URL columns are added to the statistical tables. The frontend loads this catalogue before rendering its pages; it does not contact an external image host at runtime. The file is not a web app manifest.
 
 ## Coverage
 
 The current match dataset contains **2025 only**: 99 distinct players, 114 player/team combinations and 16 teams. This snapshot provides **112 player/team portraits and all 16 logos**. The 50 player/team combinations and 10 teams in `test` are fully covered.
 
-Two combinations have no verified 2025 photo in the consulted archive: **Crisp / WBG** and **Xiaoxu / JDG**, both in Split 3. They are listed in `manifest.missing` and render a neutral “PHOTO UNAVAILABLE” silhouette. Their TES/RNG photos, older WBG photos and 2026 JDG photos are deliberately not substituted.
+Two combinations have no verified 2025 photo in the consulted archive: **Crisp / WBG** and **Xiaoxu / JDG**, both in Split 3. They are listed in `media.json` under `missing` and render a neutral “PHOTO UNAVAILABLE” silhouette. Their TES/RNG photos, older WBG photos and 2026 JDG photos are deliberately not substituted.
 
 ## Source and season matching
 
@@ -18,7 +18,7 @@ Two combinations have no verified 2025 photo in the consulted archive: **Crisp /
 
 The lookup key is **`season + team_id + player_id`** for portraits and **`season + team_id`** for logos. It uses Oracle's Elixir IDs, not ambiguous display names. Wei has separate BLG and IG images, for example.
 
-If a caller supplies an explicit `player.split`, the resolver chooses an exact split photo when available, otherwise the most recent earlier split **within the same year and team**. `Split 2 Placements` uses the Split 2 rank. A Split 1 photo reused for Split 2 is still labeled **Split 1 photo** in the tooltip and manifest; this is not a claim that every split has a new photoshoot. Without a split filter, the annual catalogue uses that year's available team portrait.
+If a caller supplies an explicit `player.split`, the resolver chooses an exact split photo when available, otherwise the most recent earlier split **within the same year and team**. `Split 2 Placements` uses the Split 2 rank. A Split 1 photo reused for Split 2 is still labeled **Split 1 photo** in the tooltip and in `media.json`; this is not a claim that every split has a new photoshoot. Without a split filter, the annual catalogue uses that year's available team portrait.
 
 `team_panel.csv` aggregates the year, and its `split` is the most common split for the team. It is **not** an individual player's photo date or a split-specific roster. Media resolution therefore does not use that team-level label to date a photo. Player links carry team/year context, and lineup members are joined by player + team + role to prevent transfer photos from being mixed.
 
@@ -33,7 +33,7 @@ python model/scripts/sync_media.py --download
 node --test view/tests/media.test.mjs
 ```
 
-For another year or a newly found image, first verify the file's historical metadata, then add an explicit manifest record and local image. Never replace a 2025 entry with a current profile picture. Relevant public API queries at `https://lol.fandom.com/api.php`:
+For another year or a newly found image, first verify the file's historical metadata, then add an explicit `media.json` record and local image. Never replace a 2025 entry with a current profile picture. Relevant public API queries at `https://lol.fandom.com/api.php`:
 
 - Discover archive files with `action=query&list=categorymembers&cmtitle=Category:Player Images - 2025 Split 1&cmlimit=500&format=json` (follow continuation).
 - Inspect a file with `action=query&prop=revisions|imageinfo&rvprop=content&rvslots=main&iiprop=url|timestamp|size|sha1&titles=File:BLG Bin 2025 Split 1.png&format=json`.

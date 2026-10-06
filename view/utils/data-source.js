@@ -5,7 +5,7 @@
 import { DATASET, ROLE_ORDER } from './constants.js';
 import { fromData, t } from './i18n.js';
 import { parseCsv } from './csv.js';
-import { loadMediaManifest } from './assets.js';
+import { loadMedia } from './assets.js';
 import { setLoadProgress } from './load-progress.js';
 
 function indexById(items) {
@@ -278,7 +278,7 @@ function loadCatalogRecord() {
       track(fetchCsv('players.csv')),
       track(loadLineupRows()),
       track(fetchCsv('teams.csv')),
-      track(loadMediaManifest()),
+      track(loadMedia()),
     ]).then(([panel, players, lineups, teams]) => {
       if (!panel.length) throw new Error('team_panel.csv is empty.');
       return hydrateFromPanel(panel, { players, lineups, teams });

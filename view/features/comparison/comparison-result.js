@@ -25,8 +25,8 @@ export function createStatCompare({ rows, left, right }) {
     ]),
     ...rows.map((row) => h('div', { class: 'compare-stats__row' }, [
       h('span', { class: 'compare-stats__label' }, [row.label]),
-      h('span', { class: 'compare-stats__value' }, [statValue(left.stats?.[row.field ?? row.key], row.format)]),
-      h('span', { class: 'compare-stats__value' }, [statValue(right.stats?.[row.field ?? row.key], row.format)]),
+      h('span', { class: 'compare-stats__value compare-stats__value--left' }, [statValue(left.stats?.[row.field ?? row.key], row.format)]),
+      h('span', { class: 'compare-stats__value compare-stats__value--right' }, [statValue(right.stats?.[row.field ?? row.key], row.format)]),
     ])),
   ]);
 }

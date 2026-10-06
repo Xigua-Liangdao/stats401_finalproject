@@ -29,21 +29,21 @@ def verify_image(entry, blob):
         raise ValueError(f"Image dimensions differ: {entry['path']}")
 
 
-def verify_catalog(manifest):
-    if manifest["schema_version"] != 1:
-        raise ValueError("Unsupported media schema version")
-    photos = {player_key(row) for row in manifest["players"]}
-    missing = {player_key(row) for row in manifest["missing"]}
+def verify_catalog(media):
+    if media["schema_version"] != 1:
+        raise ValueError("Unsupported media.json version")
+    photos = {player_key(row) for row in media["players"]}
+    missing = {player_key(row) for row in media["missing"]}
     if photos & missing:
         raise ValueError("A portrait is both available and missing")
-    logos = {(row["season"], row["team_id"]) for row in manifest["teams"]}
-    for entry in manifest["players"]:
+    logos = {(row["season"], row["team_id"]) for row in media["teams"]}
+    for entry in media["players"]:
         source = entry["source"]["metadata"]
         if source["tournament"] != f"LPL {entry['season']} {entry['source_split']}":
             raise ValueError(f"Portrait season/split mismatch: {entry['path']}")
         if source["team"].casefold().removesuffix(".cn") not in {entry["team"].casefold(), entry["team_short"].casefold()}:
             raise ValueError(f"Portrait team mismatch: {entry['path']}")
-    for entry in manifest["teams"]:
+    for entry in media["teams"]:
         if entry["source"]["uploaded_at"] > entry["as_of"]:
             raise ValueError(f"Logo is newer than its historical cutoff: {entry['path']}")
     coverage = {}
@@ -53,11 +53,11 @@ def verify_catalog(manifest):
         people = {player_key(row) for row in rows}
         teams = {(int(row["season"]), row["team_id"]) for row in rows}
         if people - photos - missing or teams - logos:
-            raise ValueError(f"Untracked media identities in {dataset}; update the manifest")
+            raise ValueError(f"Untracked media identities in {dataset}; update media.json")
         coverage[dataset] = {"portraits": len(people & photos), "player_team_total": len(people),
                              "logos": len(teams & logos), "team_total": len(teams)}
         if dataset == "processed" and people != photos | missing:
-            raise ValueError("Media manifest and processed player identities differ")
+            raise ValueError("media.json and processed player identities differ")
     return coverage
 
 
@@ -65,8 +65,8 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--download", action="store_true", help="Restore absent/corrupt files from pinned URLs")
     args = parser.parse_args()
-    manifest = json.loads((IMAGE_ROOT / "manifest.json").read_text())
-    coverage = verify_catalog(manifest)
+    media = json.loads((IMAGE_ROOT / "media.json").read_text())
+    coverage = verify_catalog(media)
 
     def check(entry):
         path = (IMAGE_ROOT / entry["path"]).resolve()
@@ -85,7 +85,7 @@ def main():
         path.parent.mkdir(parents=True, exist_ok=True)
         path.write_bytes(blob)
 
-    entries = manifest["players"] + manifest["teams"]
+    entries = media["players"] + media["teams"]
     with ThreadPoolExecutor(max_workers=4) as pool:
         list(pool.map(check, entries))
     print(json.dumps({"verified_files": len(entries), "coverage": coverage}, indent=2))

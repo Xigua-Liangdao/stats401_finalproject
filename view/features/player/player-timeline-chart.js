@@ -176,6 +176,58 @@ export function mountPlayerTimeline(stage, { games }) {
   let brushGesture = null;
   let brushWidth = 0;
   let xIndex = null;
+  let plotMetrics = null;
+  let panning = false;
+  let panStartX = 0;
+  let lastPanX = 0;
+  let panOrigin = null;
+  const svgNode = svg.node();
+
+  svgNode.addEventListener('pointerdown', (event) => {
+    if (event.button !== 0 || !windowIsNarrow() || !plotMetrics) return;
+    const bounds = svgNode.getBoundingClientRect();
+    const localX = event.clientX - bounds.left;
+    const localY = event.clientY - bounds.top;
+    if (localX < plotMetrics.left || localX > plotMetrics.left + plotMetrics.width) return;
+    if (localY < plotMetrics.top || localY > plotMetrics.top + plotMetrics.height) return;
+    panning = true;
+    panStartX = event.clientX;
+    lastPanX = event.clientX;
+    panOrigin = { mode: 'drag', from, to };
+    hideTip();
+    svgNode.setPointerCapture(event.pointerId);
+    stage.classList.add('is-panning');
+  });
+  svgNode.addEventListener('pointermove', (event) => {
+    if (!panning || !plotMetrics || plotMetrics.width <= 0) return;
+    const dx = event.clientX - lastPanX;
+    lastPanX = event.clientX;
+    if (!dx) return;
+    const windowSize = to - from;
+    const nextFrom = clamp(from - (dx / plotMetrics.width) * windowSize, 0, Math.max(0, lastIndex - windowSize));
+    from = nextFrom;
+    to = nextFrom + windowSize;
+    drawChart();
+    syncBrush();
+    syncControls();
+  });
+  function endPan() {
+    if (!panning) return;
+    panning = false;
+    panOrigin = null;
+    stage.classList.remove('is-panning');
+  }
+  svgNode.addEventListener('pointerup', (event) => {
+    if (!panning) return;
+    const moved = Math.abs(event.clientX - panStartX) > 4;
+    const gesture = panOrigin;
+    endPan();
+    if (!moved) return;
+    hideTip();
+    trackAxis(gesture);
+  });
+  svgNode.addEventListener('pointercancel', endPan);
+
   const brush = d3.brushX().on('start brush end', onBrush);
   const brushG = brushSvg.append('g').attr('class', 'timeline-brush');
 
@@ -189,6 +241,7 @@ export function mountPlayerTimeline(stage, { games }) {
   }
 
   function showTip(event, point, field) {
+    if (panning) return;
     tooltipWatch.show(`${point.game?.id ?? point.index}|${field}`);
     tooltip.innerHTML = tooltipLines(point.game, field, point.value)
       .map((line) => `<div>${line}</div>`)
@@ -207,13 +260,22 @@ export function mountPlayerTimeline(stage, { games }) {
     return to;
   }
 
+  function indexAt(value) {
+    return clamp(Math.round(value), 0, lastIndex);
+  }
+
+  function windowIsNarrow() {
+    return sorted.length > 1 && to - from < lastIndex - 1e-6;
+  }
+
   function rangeText() {
     if (!sorted.length) return t('common.noGames');
-    const end = visibleEnd();
-    const count = end - from + 1;
+    const startIndex = indexAt(from);
+    const endIndex = indexAt(to);
+    const count = Math.max(1, endIndex - startIndex + 1);
     return t('chart.range', {
-      start: formatCompactDate(sorted[from].date),
-      end: formatCompactDate(sorted[end].date),
+      start: formatCompactDate(sorted[startIndex].date),
+      end: formatCompactDate(sorted[endIndex].date),
       count,
       unit: count === 1 ? t('common.game') : t('common.gamesWord'),
     });
@@ -338,6 +400,8 @@ export function mountPlayerTimeline(stage, { games }) {
     svg.selectAll('*').remove();
 
     if (!sorted.length || !defined.length) {
+      plotMetrics = null;
+      stage.classList.remove('is-zoomed', 'is-panning');
       svg.append('text')
         .attr('class', 'chart-empty')
         .attr('x', width / 2)
@@ -352,6 +416,8 @@ export function mountPlayerTimeline(stage, { games }) {
     const innerWidth = Math.max(1, width - margin.left - margin.right);
     if (series.length > 1) margin.top = drawLegend(svg, series, margin.left, innerWidth);
     const innerHeight = Math.max(1, height - margin.top - margin.bottom);
+    plotMetrics = { left: margin.left, top: margin.top, width: innerWidth, height: innerHeight };
+    stage.classList.toggle('is-zoomed', windowIsNarrow());
     const plot = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
     const [viewStart, viewEnd] = cameraBounds();
     const viewSpan = Math.max(viewEnd - viewStart, 1);

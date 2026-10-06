@@ -3,6 +3,7 @@ import { createTeamLogo } from '../media/entity-images.js';
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
+import { groupMatches } from '../../utils/search-text.js';
 import { trackUi } from '../../utils/track.js';
 
 export const CATALOGUE_PAGE_SIZE = {
@@ -88,10 +89,6 @@ function renderGroupedList({
   });
 }
 
-function teamMatches(group, needle) {
-  const team = group.team ?? {};
-  return `${team.sourceName ?? ''} ${team.name ?? ''} ${team.short ?? ''}`.toLowerCase().includes(needle);
-}
 
 export function createTeamGroupedCatalogue({
   groups,
@@ -115,7 +112,7 @@ export function createTeamGroupedCatalogue({
 
   function paint() {
     const needle = query.trim().toLowerCase();
-    const shown = needle ? groups.filter((group) => teamMatches(group, needle)) : groups;
+    const shown = needle ? groups.filter((group) => groupMatches(group, needle)) : groups;
     if (!shown.length) {
       host.replaceChildren(h('p', { class: 'empty-state' }, [t('catalogue.noTeams')]));
       return;
@@ -136,6 +133,13 @@ export function createTeamGroupedCatalogue({
     }));
   }
 
+  input.addEventListener('focus', () => {
+    trackUi({
+      event_name: 'search_open',
+      target_type: 'team_search',
+      target_id: variant,
+    });
+  });
   input.addEventListener('input', () => {
     query = input.value;
     filteredPage = 1;

@@ -111,12 +111,20 @@
   min-width: 0;
 }
 
+.site-header__title-row {
+  display: contents;
+}
+
 .site-header__brand-name {
   font-family: var(--font-display);
   font-size: 1.28rem;
   letter-spacing: 0.14em;
   line-height: var(--display-leading);
   text-transform: uppercase;
+}
+
+.site-header__menu {
+  display: none;
 }
 
 .site-nav {

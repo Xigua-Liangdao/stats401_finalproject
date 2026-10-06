@@ -105,7 +105,10 @@ Examples:
 * clicking a team/member link;
 * clicking a comparison selector;
 * clicking a comparison target;
-* clicking a navigation button.
+* clicking a navigation button;
+* opening or closing the narrow-screen menu;
+* clicking a lineup share bar, which opens that player;
+* moving a catalogue or game-table page, including the page jump.
 
 Example:
 
@@ -186,7 +189,9 @@ Examples:
 
 * changing the season filter;
 * changing a team filter;
-* changing another visualization-level filter.
+* changing another visualization-level filter;
+* dragging a zoomed chart window, recorded as `target_type` `axis_move` with the previous and next window in `metadata`;
+* resizing a range handle, recorded as `target_type` `axis_resize`.
 
 Example:
 
