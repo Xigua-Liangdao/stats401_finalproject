@@ -1,0 +1,35 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2017.csv.gz",
+  "source_kind": "pinned_github_mirror",
+  "source_revision": "834ce914f0c79289881697084227fa2933ad344a",
+  "annual_sources": [
+    {
+      "year": 2017,
+      "url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2017.csv.gz",
+      "sha256": "d27d5634f4d523c1b756e87c4ef576918633d3b713a1f42647f5ff40e7e9e472",
+      "revision": "834ce914f0c79289881697084227fa2933ad344a",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:05.534507+00:00",
+      "size_bytes": 47990667,
+      "listed_size_bytes": 47990667,
+      "rows": 68424,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "download_sha256": "912fd25df90467bba84a90fb7f208a53022c1c78ea8edf3c4c20a438d1492c9f",
+      "filename": "2017_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 768
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:34:41.385600+00:00",
+  "annual_csv_sha256": "d27d5634f4d523c1b756e87c4ef576918633d3b713a1f42647f5ff40e7e9e472",
+  "annual_rows": 68424,
+  "league": "GPL",
+  "year": 2017,
+  "filter": "league == 'GPL' and year == '2017'; all positions and columns preserved",
+  "raw_rows": 768,
+  "raw_columns": 161,
+  "raw_games": 64,
+  "raw_csv_gz_sha256": "fb2d99911cc81432caef945fa45af4e9aaa8384a491f791dee77526a5101564b"
+}

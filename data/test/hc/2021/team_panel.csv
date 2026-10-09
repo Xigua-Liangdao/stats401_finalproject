@@ -1,0 +1,58 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:91ec0b2fa7bcf8baa6b4deddec7141e,Dark Tigers Academy,DTA,2021,Unknown,oe:player:5d36172323ff0ff9fb8e37f163bf44a,EdbyK,top,,,,,,,,,,,,,,
+player,oe:team:91ec0b2fa7bcf8baa6b4deddec7141e,Dark Tigers Academy,DTA,2021,Unknown,oe:player:aa969cb2d09ce43fdd6c19ffc6d74cc,Sammy,top,,,,,,,,,,,,,,
+player,oe:team:91ec0b2fa7bcf8baa6b4deddec7141e,Dark Tigers Academy,DTA,2021,Unknown,oe:player:0f16ac390bc43949625d1d01b1c5e41,Rostak,jng,,,,,,,,,,,,,,
+player,oe:team:91ec0b2fa7bcf8baa6b4deddec7141e,Dark Tigers Academy,DTA,2021,Unknown,oe:player:da13539e133132113df109837a6ee08,Nora,mid,,,,,,,,,,,,,,
+player,oe:team:91ec0b2fa7bcf8baa6b4deddec7141e,Dark Tigers Academy,DTA,2021,Unknown,oe:player:1685c8d6cf1c07c0dcb264ae3cbb98d,Viktor,bot,,,,,,,,,,,,,,
+player,oe:team:91ec0b2fa7bcf8baa6b4deddec7141e,Dark Tigers Academy,DTA,2021,Unknown,oe:player:d03db9eb6f9a2ff695d192301a0cdc8,Jekyll,sup,,,,,,,,,,,,,,
+lineup,oe:team:91ec0b2fa7bcf8baa6b4deddec7141e,Dark Tigers Academy,DTA,2021,Unknown,,,,lineup-54f0ca03c966289c,DTA-01,1,3,oe:player:5d36172323ff0ff9fb8e37f163bf44a,oe:player:0f16ac390bc43949625d1d01b1c5e41,oe:player:da13539e133132113df109837a6ee08,oe:player:1685c8d6cf1c07c0dcb264ae3cbb98d,oe:player:d03db9eb6f9a2ff695d192301a0cdc8,EdbyK,Rostak,Nora,Viktor,Jekyll
+lineup,oe:team:91ec0b2fa7bcf8baa6b4deddec7141e,Dark Tigers Academy,DTA,2021,Unknown,,,,lineup-87561ab5f8cc6438,DTA-02,2,1,oe:player:aa969cb2d09ce43fdd6c19ffc6d74cc,oe:player:0f16ac390bc43949625d1d01b1c5e41,oe:player:da13539e133132113df109837a6ee08,oe:player:1685c8d6cf1c07c0dcb264ae3cbb98d,oe:player:d03db9eb6f9a2ff695d192301a0cdc8,Sammy,Rostak,Nora,Viktor,Jekyll
+player,oe:team:b877c78301f2b9da3105af161ac16f3,Dynamo Eclot Academy,DEA,2021,Unknown,oe:player:7a9f0649bbba9d3e50029f35e8ae789,Tomasino,top,,,,,,,,,,,,,,
+player,oe:team:b877c78301f2b9da3105af161ac16f3,Dynamo Eclot Academy,DEA,2021,Unknown,oe:player:9d6488594f3b57d54e5610fd5c085e5,Xanfii,jng,,,,,,,,,,,,,,
+player,oe:team:b877c78301f2b9da3105af161ac16f3,Dynamo Eclot Academy,DEA,2021,Unknown,oe:player:40f56f907091dbd478989b2006639b1,keve,jng,,,,,,,,,,,,,,
+player,oe:team:b877c78301f2b9da3105af161ac16f3,Dynamo Eclot Academy,DEA,2021,Unknown,oe:player:dc626cf398af77bfa6e60ac107ec0a0,Unicornleader,mid,,,,,,,,,,,,,,
+player,oe:team:b877c78301f2b9da3105af161ac16f3,Dynamo Eclot Academy,DEA,2021,Unknown,oe:player:ba1c003769638fb7993b8d39e47b8a0,KNEZA,bot,,,,,,,,,,,,,,
+player,oe:team:b877c78301f2b9da3105af161ac16f3,Dynamo Eclot Academy,DEA,2021,Unknown,oe:player:15b2b9b4cd18e3c1d985c867a6fb03f,Dawerko,sup,,,,,,,,,,,,,,
+lineup,oe:team:b877c78301f2b9da3105af161ac16f3,Dynamo Eclot Academy,DEA,2021,Unknown,,,,lineup-9d1c8ef6c91b106c,DEA-01,1,12,oe:player:7a9f0649bbba9d3e50029f35e8ae789,oe:player:9d6488594f3b57d54e5610fd5c085e5,oe:player:dc626cf398af77bfa6e60ac107ec0a0,oe:player:ba1c003769638fb7993b8d39e47b8a0,oe:player:15b2b9b4cd18e3c1d985c867a6fb03f,Tomasino,Xanfii,Unicornleader,KNEZA,Dawerko
+lineup,oe:team:b877c78301f2b9da3105af161ac16f3,Dynamo Eclot Academy,DEA,2021,Unknown,,,,lineup-e1cefe3c2091096f,DEA-02,2,1,oe:player:7a9f0649bbba9d3e50029f35e8ae789,oe:player:40f56f907091dbd478989b2006639b1,oe:player:dc626cf398af77bfa6e60ac107ec0a0,oe:player:ba1c003769638fb7993b8d39e47b8a0,oe:player:15b2b9b4cd18e3c1d985c867a6fb03f,Tomasino,keve,Unicornleader,KNEZA,Dawerko
+player,oe:team:6aaed163c1cc8908851232141caceca,Dynamo Esports,DE,2021,Spring,oe:player:7caf6bb2eb0b83ea65e698a457938a7,Ways,top,,,,,,,,,,,,,,
+player,oe:team:6aaed163c1cc8908851232141caceca,Dynamo Esports,DE,2021,Spring,oe:player:ffab7ddd1a77f4348c19f21fbf1de42,Petipino,jng,,,,,,,,,,,,,,
+player,oe:team:6aaed163c1cc8908851232141caceca,Dynamo Esports,DE,2021,Spring,oe:player:c05579e8624ada6989734cbf2ab2e07,Benda,mid,,,,,,,,,,,,,,
+player,oe:team:6aaed163c1cc8908851232141caceca,Dynamo Esports,DE,2021,Spring,oe:player:96dad9bf478a9698a3acf04d672dbef,HoTy,bot,,,,,,,,,,,,,,
+player,oe:team:6aaed163c1cc8908851232141caceca,Dynamo Esports,DE,2021,Spring,oe:player:fedd1e92aa2d2a6e3ee95c110509805,Sobakk,sup,,,,,,,,,,,,,,
+lineup,oe:team:6aaed163c1cc8908851232141caceca,Dynamo Esports,DE,2021,Spring,,,,lineup-9aff7c032f82651f,DE-01,1,1,oe:player:7caf6bb2eb0b83ea65e698a457938a7,oe:player:ffab7ddd1a77f4348c19f21fbf1de42,oe:player:c05579e8624ada6989734cbf2ab2e07,oe:player:96dad9bf478a9698a3acf04d672dbef,oe:player:fedd1e92aa2d2a6e3ee95c110509805,Ways,Petipino,Benda,HoTy,Sobakk
+player,oe:team:1d2d98dc13fa45e5f9b24ddce88c9e0,Gaming Team Kravaře,GTK,2021,Spring,oe:player:de52e722e09f7579c207fc2cd557f60,Trungi,top,,,,,,,,,,,,,,
+player,oe:team:1d2d98dc13fa45e5f9b24ddce88c9e0,Gaming Team Kravaře,GTK,2021,Spring,oe:player:a6784b79b58b818c5a68eb7064462eb,Majoss,jng,,,,,,,,,,,,,,
+player,oe:team:1d2d98dc13fa45e5f9b24ddce88c9e0,Gaming Team Kravaře,GTK,2021,Spring,oe:player:06beba40597232d5fe31c7a24a1504f,Vasekfel,mid,,,,,,,,,,,,,,
+player,oe:team:1d2d98dc13fa45e5f9b24ddce88c9e0,Gaming Team Kravaře,GTK,2021,Spring,oe:player:66d040632ba3e1ae771ddced2f6e050,Esko,bot,,,,,,,,,,,,,,
+player,oe:team:1d2d98dc13fa45e5f9b24ddce88c9e0,Gaming Team Kravaře,GTK,2021,Spring,oe:player:7b72b6fd4c6222dfe6770dcf5b7a8a5,Zaki,sup,,,,,,,,,,,,,,
+lineup,oe:team:1d2d98dc13fa45e5f9b24ddce88c9e0,Gaming Team Kravaře,GTK,2021,Spring,,,,lineup-cff1066945b86ec7,GTK-01,1,1,oe:player:de52e722e09f7579c207fc2cd557f60,oe:player:a6784b79b58b818c5a68eb7064462eb,oe:player:06beba40597232d5fe31c7a24a1504f,oe:player:66d040632ba3e1ae771ddced2f6e050,oe:player:7b72b6fd4c6222dfe6770dcf5b7a8a5,Trungi,Majoss,Vasekfel,Esko,Zaki
+player,oe:team:fbc692c1e8c7eb9e89861374b186c53,Inside Games Challengers,IGC,2021,Spring,oe:player:0bc5fcab55bbf49db26783e2567e41c,Vizi,top,,,,,,,,,,,,,,
+player,oe:team:fbc692c1e8c7eb9e89861374b186c53,Inside Games Challengers,IGC,2021,Spring,oe:player:76cd37a6bb754bf0970a0c7c0efca9d,Vlaren,jng,,,,,,,,,,,,,,
+player,oe:team:fbc692c1e8c7eb9e89861374b186c53,Inside Games Challengers,IGC,2021,Spring,oe:player:ea7fb2b47622d7fb1683668cc091a26,Downed,mid,,,,,,,,,,,,,,
+player,oe:team:fbc692c1e8c7eb9e89861374b186c53,Inside Games Challengers,IGC,2021,Spring,oe:player:fa743f59cb9b36a929f395bc2811910,Stealshot,bot,,,,,,,,,,,,,,
+player,oe:team:fbc692c1e8c7eb9e89861374b186c53,Inside Games Challengers,IGC,2021,Spring,oe:player:290f275fcd7a67c8e770bfe8c5dc5d4,NephAddie,sup,,,,,,,,,,,,,,
+lineup,oe:team:fbc692c1e8c7eb9e89861374b186c53,Inside Games Challengers,IGC,2021,Spring,,,,lineup-a0ccf7694604ce00,IGC-01,1,1,oe:player:0bc5fcab55bbf49db26783e2567e41c,oe:player:76cd37a6bb754bf0970a0c7c0efca9d,oe:player:ea7fb2b47622d7fb1683668cc091a26,oe:player:fa743f59cb9b36a929f395bc2811910,oe:player:290f275fcd7a67c8e770bfe8c5dc5d4,Vizi,Vlaren,Downed,Stealshot,NephAddie
+player,oe:team:0cca6f834d9b13e58facbfe117a4fce,STOPWATCH eSports,SE,2021,Spring,oe:player:7a3604a20189456cf34c2e0ebe4c20d,Forse,top,,,,,,,,,,,,,,
+player,oe:team:0cca6f834d9b13e58facbfe117a4fce,STOPWATCH eSports,SE,2021,Spring,oe:player:173a81bea75aea455e938e92ae5e751,Vodin,top,,,,,,,,,,,,,,
+player,oe:team:0cca6f834d9b13e58facbfe117a4fce,STOPWATCH eSports,SE,2021,Spring,oe:player:bbf90fedf1b044fbc5782d1cde4cb4c,Semík,jng,,,,,,,,,,,,,,
+player,oe:team:0cca6f834d9b13e58facbfe117a4fce,STOPWATCH eSports,SE,2021,Spring,oe:player:6e16406e6e365ee25332ef089a03ad4,Vibe,jng,,,,,,,,,,,,,,
+player,oe:team:0cca6f834d9b13e58facbfe117a4fce,STOPWATCH eSports,SE,2021,Spring,oe:player:45a9ce2e9f69371995a7accb44c865d,Eškeree,mid,,,,,,,,,,,,,,
+player,oe:team:0cca6f834d9b13e58facbfe117a4fce,STOPWATCH eSports,SE,2021,Spring,oe:player:c75227def3056432eb678205378c536,Romča,bot,,,,,,,,,,,,,,
+player,oe:team:0cca6f834d9b13e58facbfe117a4fce,STOPWATCH eSports,SE,2021,Spring,oe:player:f650a6b05c51f7c87e742ae2583d45b,Sewayx,sup,,,,,,,,,,,,,,
+lineup,oe:team:0cca6f834d9b13e58facbfe117a4fce,STOPWATCH eSports,SE,2021,Spring,,,,lineup-30d818657a0a81fd,SE-01,1,1,oe:player:173a81bea75aea455e938e92ae5e751,oe:player:bbf90fedf1b044fbc5782d1cde4cb4c,oe:player:45a9ce2e9f69371995a7accb44c865d,oe:player:c75227def3056432eb678205378c536,oe:player:f650a6b05c51f7c87e742ae2583d45b,Vodin,Semík,Eškeree,Romča,Sewayx
+lineup,oe:team:0cca6f834d9b13e58facbfe117a4fce,STOPWATCH eSports,SE,2021,Spring,,,,lineup-d2e74fdb5f5790c0,SE-02,2,1,oe:player:7a3604a20189456cf34c2e0ebe4c20d,oe:player:6e16406e6e365ee25332ef089a03ad4,oe:player:45a9ce2e9f69371995a7accb44c865d,oe:player:c75227def3056432eb678205378c536,oe:player:f650a6b05c51f7c87e742ae2583d45b,Forse,Vibe,Eškeree,Romča,Sewayx
+player,oe:team:199c31b0e7e7a1940be7eb7e4aa53ec,Team Universe,TU,2021,Unknown,oe:player:da82cc5bb6f742ff6a37e4a17784f04,Kars,top,,,,,,,,,,,,,,
+player,oe:team:199c31b0e7e7a1940be7eb7e4aa53ec,Team Universe,TU,2021,Unknown,oe:player:b7620e5cfb1622aba573f9bd5c88a90,Vezzy,jng,,,,,,,,,,,,,,
+player,oe:team:199c31b0e7e7a1940be7eb7e4aa53ec,Team Universe,TU,2021,Unknown,oe:player:a8a23fdcae23b49eedd8b3c9b198ce1,nebechod,jng,,,,,,,,,,,,,,
+player,oe:team:199c31b0e7e7a1940be7eb7e4aa53ec,Team Universe,TU,2021,Unknown,oe:player:8b94525f25b441bd6788b6604034321,Patosh,mid,,,,,,,,,,,,,,
+player,oe:team:199c31b0e7e7a1940be7eb7e4aa53ec,Team Universe,TU,2021,Unknown,oe:player:486b15ce70823783b065447af81083e,Dudeoji,bot,,,,,,,,,,,,,,
+player,oe:team:199c31b0e7e7a1940be7eb7e4aa53ec,Team Universe,TU,2021,Unknown,oe:player:eeaf1e38c16726eaa1266ff7333c30c,Phenix,sup,,,,,,,,,,,,,,
+lineup,oe:team:199c31b0e7e7a1940be7eb7e4aa53ec,Team Universe,TU,2021,Unknown,,,,lineup-025934bf2854b3db,TU-01,1,4,oe:player:da82cc5bb6f742ff6a37e4a17784f04,oe:player:a8a23fdcae23b49eedd8b3c9b198ce1,oe:player:8b94525f25b441bd6788b6604034321,oe:player:486b15ce70823783b065447af81083e,oe:player:eeaf1e38c16726eaa1266ff7333c30c,Kars,nebechod,Patosh,Dudeoji,Phenix
+lineup,oe:team:199c31b0e7e7a1940be7eb7e4aa53ec,Team Universe,TU,2021,Unknown,,,,lineup-dbd623301d40c175,TU-02,2,1,oe:player:da82cc5bb6f742ff6a37e4a17784f04,oe:player:b7620e5cfb1622aba573f9bd5c88a90,oe:player:8b94525f25b441bd6788b6604034321,oe:player:486b15ce70823783b065447af81083e,oe:player:eeaf1e38c16726eaa1266ff7333c30c,Kars,Vezzy,Patosh,Dudeoji,Phenix
+player,oe:team:f3e93a37225a7f012ac53604a9afcae,Vikingekrig Academy,VA,2021,Spring,oe:player:85117df5924af087900b300fe0f3ec3,Kulvas,top,,,,,,,,,,,,,,
+player,oe:team:f3e93a37225a7f012ac53604a9afcae,Vikingekrig Academy,VA,2021,Spring,oe:player:b4c1ccfbb0c996bdb6369cc6b7163eb,Knedla,jng,,,,,,,,,,,,,,
+player,oe:team:f3e93a37225a7f012ac53604a9afcae,Vikingekrig Academy,VA,2021,Spring,oe:player:204746c853a12888ad72d8035cdf8c7,Jackies,mid,,,,,,,,,,,,,,
+player,oe:team:f3e93a37225a7f012ac53604a9afcae,Vikingekrig Academy,VA,2021,Spring,oe:player:3347bc35a973e435b5f1be348518e30,Majkkl,bot,,,,,,,,,,,,,,
+player,oe:team:f3e93a37225a7f012ac53604a9afcae,Vikingekrig Academy,VA,2021,Spring,oe:player:f8d698aea36fcbead2b9d5359ffca76,Smarty,sup,,,,,,,,,,,,,,
+lineup,oe:team:f3e93a37225a7f012ac53604a9afcae,Vikingekrig Academy,VA,2021,Spring,,,,lineup-1c8e2009a2f12139,VA-01,1,1,oe:player:85117df5924af087900b300fe0f3ec3,oe:player:b4c1ccfbb0c996bdb6369cc6b7163eb,oe:player:204746c853a12888ad72d8035cdf8c7,oe:player:3347bc35a973e435b5f1be348518e30,oe:player:f8d698aea36fcbead2b9d5359ffca76,Kulvas,Knedla,Jackies,Majkkl,Smarty

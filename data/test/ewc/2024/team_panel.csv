@@ -1,0 +1,49 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Unknown,oe:player:fb66ef5885b4be9323905b821dc3a42,Bin,top,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Unknown,oe:player:fbdc4428b2d095c83aebeed5da4e4b2,Xun,jng,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Unknown,oe:player:ed29043422e3c515e1cb292464b990b,Knight,mid,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Unknown,oe:player:a58a0d41103cdc5b58cbb547eeaca2d,Elk,bot,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Unknown,oe:player:90651ebea9a35ec4e018c8157492e17,ON,sup,,,,,,,,,,,,,,
+lineup,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Unknown,,,,lineup-0367033f55941805,BLG-01,1,3,oe:player:fb66ef5885b4be9323905b821dc3a42,oe:player:fbdc4428b2d095c83aebeed5da4e4b2,oe:player:ed29043422e3c515e1cb292464b990b,oe:player:a58a0d41103cdc5b58cbb547eeaca2d,oe:player:90651ebea9a35ec4e018c8157492e17,Bin,Xun,Knight,Elk,ON
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2024,Unknown,oe:player:7e2505960c12cc54c96a0a6efb2e055,Bwipo,top,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2024,Unknown,oe:player:a8307167f3a1c933295bb9e3d43700e,Inspired,jng,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2024,Unknown,oe:player:e9017664588010860a92ceb5f8fcb82,Quad,mid,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2024,Unknown,oe:player:c145139d26813639b8fe6f4d0b28228,Massu,bot,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2024,Unknown,oe:player:3e722c8ede909c83af9342c41805a16,Busio,sup,,,,,,,,,,,,,,
+lineup,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2024,Unknown,,,,lineup-7aee2de81637e078,FLY-01,1,3,oe:player:7e2505960c12cc54c96a0a6efb2e055,oe:player:a8307167f3a1c933295bb9e3d43700e,oe:player:e9017664588010860a92ceb5f8fcb82,oe:player:c145139d26813639b8fe6f4d0b28228,oe:player:3e722c8ede909c83af9342c41805a16,Bwipo,Inspired,Quad,Massu,Busio
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2024,Unknown,oe:player:be9758f87345bcce47970a8f17b3c07,Oscarinin,top,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2024,Unknown,oe:player:390ca7b6b38d552363eba1b5b54ff18,Razork,jng,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2024,Unknown,oe:player:edf8b064c096691e539b7e2a3e28179,Humanoid,mid,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2024,Unknown,oe:player:95d286ec0a5d750d09e848a4e630c56,Noah,bot,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2024,Unknown,oe:player:054e5f8aeb885db6713f4a3e7328efc,Jun,sup,,,,,,,,,,,,,,
+lineup,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2024,Unknown,,,,lineup-b1afd656ef173505,FNA-01,1,2,oe:player:be9758f87345bcce47970a8f17b3c07,oe:player:390ca7b6b38d552363eba1b5b54ff18,oe:player:edf8b064c096691e539b7e2a3e28179,oe:player:95d286ec0a5d750d09e848a4e630c56,oe:player:054e5f8aeb885db6713f4a3e7328efc,Oscarinin,Razork,Humanoid,Noah,Jun
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2024,Unknown,oe:player:84bff3a326833c7c9181c698f676878,BrokenBlade,top,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2024,Unknown,oe:player:4203fc46c4c6333e9bfa9d0a8618677,Yike,jng,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2024,Unknown,oe:player:55dd587cdc4a278be6a5c37f9e539de,Caps,mid,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2024,Unknown,oe:player:c62a5235ad6bc113a1e64eb0e9aa8c8,Hans Sama,bot,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2024,Unknown,oe:player:9d5052e9f9f4a63835f738441a3b1f6,Mikyx,sup,,,,,,,,,,,,,,
+lineup,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2024,Unknown,,,,lineup-95832685698b0882,GE-01,1,5,oe:player:84bff3a326833c7c9181c698f676878,oe:player:4203fc46c4c6333e9bfa9d0a8618677,oe:player:55dd587cdc4a278be6a5c37f9e539de,oe:player:c62a5235ad6bc113a1e64eb0e9aa8c8,oe:player:9d5052e9f9f4a63835f738441a3b1f6,BrokenBlade,Yike,Caps,Hans Sama,Mikyx
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2024,Unknown,oe:player:03daae1844b9ad257324c3eedf41e28,Kiin,top,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2024,Unknown,oe:player:92544d7a994bd6841cccd9f6e42e3de,Canyon,jng,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2024,Unknown,oe:player:fb6e61b8acb05df17b7e5ad4ae7c800,Chovy,mid,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2024,Unknown,oe:player:5bbc2b92348d930ebd500cb9ce71bb7,Peyz,bot,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2024,Unknown,oe:player:e4e24b8656e4e6a74b939af730b0148,Lehends,sup,,,,,,,,,,,,,,
+lineup,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2024,Unknown,,,,lineup-b6168d385e479660,GEN-01,1,2,oe:player:03daae1844b9ad257324c3eedf41e28,oe:player:92544d7a994bd6841cccd9f6e42e3de,oe:player:fb6e61b8acb05df17b7e5ad4ae7c800,oe:player:5bbc2b92348d930ebd500cb9ce71bb7,oe:player:e4e24b8656e4e6a74b939af730b0148,Kiin,Canyon,Chovy,Peyz,Lehends
+player,oe:team:ce499dea30cfce118f4fe85da0227e8,T1,T1,2024,Unknown,oe:player:98dd15c330fb5abb4508347265a7f76,Zeus,top,,,,,,,,,,,,,,
+player,oe:team:ce499dea30cfce118f4fe85da0227e8,T1,T1,2024,Unknown,oe:player:f8b68f268106124fc4bc1c946adc9b0,Oner,jng,,,,,,,,,,,,,,
+player,oe:team:ce499dea30cfce118f4fe85da0227e8,T1,T1,2024,Unknown,oe:player:e1edfc5cea461399a63cb813cf795cc,Faker,mid,,,,,,,,,,,,,,
+player,oe:team:ce499dea30cfce118f4fe85da0227e8,T1,T1,2024,Unknown,oe:player:c7319736816efe935787b4381c6f321,Gumayusi,bot,,,,,,,,,,,,,,
+player,oe:team:ce499dea30cfce118f4fe85da0227e8,T1,T1,2024,Unknown,oe:player:db79ce6ad35451c938fbe2995dabd37,Keria,sup,,,,,,,,,,,,,,
+lineup,oe:team:ce499dea30cfce118f4fe85da0227e8,T1,T1,2024,Unknown,,,,lineup-b877c44ec2c6f3ca,T1-01,1,7,oe:player:98dd15c330fb5abb4508347265a7f76,oe:player:f8b68f268106124fc4bc1c946adc9b0,oe:player:e1edfc5cea461399a63cb813cf795cc,oe:player:c7319736816efe935787b4381c6f321,oe:player:db79ce6ad35451c938fbe2995dabd37,Zeus,Oner,Faker,Gumayusi,Keria
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2024,Unknown,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,Impact,top,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2024,Unknown,oe:player:1970fcb701acce66e0771946bbb3105,UmTi,jng,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2024,Unknown,oe:player:ea9ed09584feecae0991089f087d2ce,APA,mid,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2024,Unknown,oe:player:f6b8af05a5af22004a67a78f3046b92,Yeon,bot,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2024,Unknown,oe:player:05fafeaf23dc3285558a4e968970b9f,CoreJJ,sup,,,,,,,,,,,,,,
+lineup,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2024,Unknown,,,,lineup-d110519228415592,TL-01,1,5,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,oe:player:1970fcb701acce66e0771946bbb3105,oe:player:ea9ed09584feecae0991089f087d2ce,oe:player:f6b8af05a5af22004a67a78f3046b92,oe:player:05fafeaf23dc3285558a4e968970b9f,Impact,UmTi,APA,Yeon,CoreJJ
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2024,Unknown,oe:player:0c74b7f78409a4022a2c4c5a5ca3ee1,369,top,,,,,,,,,,,,,,
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2024,Unknown,oe:player:0da0eeb199e8fa3ab773cf84f9de9ab,Tian,jng,,,,,,,,,,,,,,
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2024,Unknown,oe:player:6e7908512cb309a43388bb464a312a2,Creme,mid,,,,,,,,,,,,,,
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2024,Unknown,oe:player:c54e1090ef1faa736b12493051c4855,JackeyLove,bot,,,,,,,,,,,,,,
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2024,Unknown,oe:player:bda7cc061d7a1576f1dcad33dd505cd,Meiko,sup,,,,,,,,,,,,,,
+lineup,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2024,Unknown,,,,lineup-e707aa0a209f6049,TES-01,1,5,oe:player:0c74b7f78409a4022a2c4c5a5ca3ee1,oe:player:0da0eeb199e8fa3ab773cf84f9de9ab,oe:player:6e7908512cb309a43388bb464a312a2,oe:player:c54e1090ef1faa736b12493051c4855,oe:player:bda7cc061d7a1576f1dcad33dd505cd,369,Tian,Creme,JackeyLove,Meiko

@@ -1,0 +1,34 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://raw.githubusercontent.com/weiyuanoh/Worlds-LOL/3c363cbce4a9dec5c164e85d2ae95fd88b45139c/data/raw/2023_LoL_esports_match_data_from_OraclesElixir.csv",
+  "source_kind": "pinned_github_mirror",
+  "source_revision": "3c363cbce4a9dec5c164e85d2ae95fd88b45139c",
+  "annual_sources": [
+    {
+      "year": 2023,
+      "url": "https://raw.githubusercontent.com/weiyuanoh/Worlds-LOL/3c363cbce4a9dec5c164e85d2ae95fd88b45139c/data/raw/2023_LoL_esports_match_data_from_OraclesElixir.csv",
+      "sha256": "c2d78a95931dbdc162b989dc05f0293072cf8be646122a548889c140985e2837",
+      "revision": "3c363cbce4a9dec5c164e85d2ae95fd88b45139c",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:12.104425+00:00",
+      "size_bytes": 85894248,
+      "listed_size_bytes": 85894248,
+      "rows": 133272,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "filename": "2023_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 1692
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:34:41.831249+00:00",
+  "annual_csv_sha256": "c2d78a95931dbdc162b989dc05f0293072cf8be646122a548889c140985e2837",
+  "annual_rows": 133272,
+  "league": "HC",
+  "year": 2023,
+  "filter": "league == 'HC' and year == '2023'; all positions and columns preserved",
+  "raw_rows": 1692,
+  "raw_columns": 165,
+  "raw_games": 141,
+  "raw_csv_gz_sha256": "dcf5329e608005a1dd2541184723fc1952be1513a6a7b05f3e5eb8e277a3e3c5"
+}

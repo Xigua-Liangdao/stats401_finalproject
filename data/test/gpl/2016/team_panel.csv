@@ -1,0 +1,45 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:5fae505234a3d1c41f885c3b7bc3876,Bangkok Titans,BT,2016,Spring,oe:player:24170a477d0c0a03dbd47063724af07,InTreso,top,,,,,,,,,,,,,,
+player,oe:team:5fae505234a3d1c41f885c3b7bc3876,Bangkok Titans,BT,2016,Spring,oe:player:ec63cf489b6bd36bc584ebb4dac2eeb,Sek,top,,,,,,,,,,,,,,
+player,oe:team:5fae505234a3d1c41f885c3b7bc3876,Bangkok Titans,BT,2016,Spring,oe:player:f6fcdef5f785db3fc49bc3ceeb2bd26,007x,jng,,,,,,,,,,,,,,
+player,oe:team:5fae505234a3d1c41f885c3b7bc3876,Bangkok Titans,BT,2016,Spring,oe:player:a0190496ceaf3dc7c2ae9373dd7317b,G4,mid,,,,,,,,,,,,,,
+player,oe:team:5fae505234a3d1c41f885c3b7bc3876,Bangkok Titans,BT,2016,Spring,oe:player:5cb8d6b6c6d88582c1dd77bf6b6f616,Lloyd,bot,,,,,,,,,,,,,,
+player,oe:team:5fae505234a3d1c41f885c3b7bc3876,Bangkok Titans,BT,2016,Spring,oe:player:b31237ff76f855416e0500bde3e7adf,Moss,sup,,,,,,,,,,,,,,
+lineup,oe:team:5fae505234a3d1c41f885c3b7bc3876,Bangkok Titans,BT,2016,Spring,,,,lineup-511d24a3e83f276b,BT-01,1,4,oe:player:ec63cf489b6bd36bc584ebb4dac2eeb,oe:player:f6fcdef5f785db3fc49bc3ceeb2bd26,oe:player:a0190496ceaf3dc7c2ae9373dd7317b,oe:player:5cb8d6b6c6d88582c1dd77bf6b6f616,oe:player:b31237ff76f855416e0500bde3e7adf,Sek,007x,G4,Lloyd,Moss
+lineup,oe:team:5fae505234a3d1c41f885c3b7bc3876,Bangkok Titans,BT,2016,Spring,,,,lineup-61f0f943acb4e3cb,BT-02,2,2,oe:player:24170a477d0c0a03dbd47063724af07,oe:player:f6fcdef5f785db3fc49bc3ceeb2bd26,oe:player:a0190496ceaf3dc7c2ae9373dd7317b,oe:player:5cb8d6b6c6d88582c1dd77bf6b6f616,oe:player:b31237ff76f855416e0500bde3e7adf,InTreso,007x,G4,Lloyd,Moss
+player,oe:team:d685ccc695e935d012e859cb3574f1c,Imperium Pro Team,IPT,2016,Spring,oe:player:a25aa587b94ed3a5f42db60092d6af1,JLC,top,,,,,,,,,,,,,,
+player,oe:team:d685ccc695e935d012e859cb3574f1c,Imperium Pro Team,IPT,2016,Spring,oe:player:f7012e856246ade90281407fc8b9131,Suez,jng,,,,,,,,,,,,,,
+player,oe:team:d685ccc695e935d012e859cb3574f1c,Imperium Pro Team,IPT,2016,Spring,oe:player:5a0c58734394c032e2bd2d1e31db712,Light,mid,,,,,,,,,,,,,,
+player,oe:team:d685ccc695e935d012e859cb3574f1c,Imperium Pro Team,IPT,2016,Spring,oe:player:8b0ff6cb3fdeb2efcd47dcce88b94f2,H4TE,bot,,,,,,,,,,,,,,
+player,oe:team:d685ccc695e935d012e859cb3574f1c,Imperium Pro Team,IPT,2016,Spring,oe:player:68457d409988f8034fb2377bd99e2d1,Poysanity,sup,,,,,,,,,,,,,,
+lineup,oe:team:d685ccc695e935d012e859cb3574f1c,Imperium Pro Team,IPT,2016,Spring,,,,lineup-49ff864b69d9d442,IPT-01,1,7,oe:player:a25aa587b94ed3a5f42db60092d6af1,oe:player:f7012e856246ade90281407fc8b9131,oe:player:5a0c58734394c032e2bd2d1e31db712,oe:player:8b0ff6cb3fdeb2efcd47dcce88b94f2,oe:player:68457d409988f8034fb2377bd99e2d1,JLC,Suez,Light,H4TE,Poysanity
+player,oe:team:a87f96bba57cf77564601348d413ced,Kayana Gaming,KG,2016,Spring,oe:player:8ca6aecfec2c24316126302778eacb9,Oceans11,top,,,,,,,,,,,,,,
+player,oe:team:a87f96bba57cf77564601348d413ced,Kayana Gaming,KG,2016,Spring,oe:player:ebc57292abdae05636e3639f1d74411,rubeN,top,,,,,,,,,,,,,,
+player,oe:team:a87f96bba57cf77564601348d413ced,Kayana Gaming,KG,2016,Spring,oe:player:8bccb18ee11b1498ab14e93b5c5e285,Phoenix,jng,,,,,,,,,,,,,,
+player,oe:team:a87f96bba57cf77564601348d413ced,Kayana Gaming,KG,2016,Spring,oe:player:b38f6bf2b6a24ae9acaaf408a304f13,Banana,mid,,,,,,,,,,,,,,
+player,oe:team:a87f96bba57cf77564601348d413ced,Kayana Gaming,KG,2016,Spring,oe:player:c90f27240da8d7a3709db3cb74c81f0,Chupper,bot,,,,,,,,,,,,,,
+player,oe:team:a87f96bba57cf77564601348d413ced,Kayana Gaming,KG,2016,Spring,oe:player:69281295089e026befcc43c67976db8,Andre,sup,,,,,,,,,,,,,,
+lineup,oe:team:a87f96bba57cf77564601348d413ced,Kayana Gaming,KG,2016,Spring,,,,lineup-7f802edbef2a8650,KG-01,1,2,oe:player:8ca6aecfec2c24316126302778eacb9,oe:player:8bccb18ee11b1498ab14e93b5c5e285,oe:player:b38f6bf2b6a24ae9acaaf408a304f13,oe:player:c90f27240da8d7a3709db3cb74c81f0,oe:player:69281295089e026befcc43c67976db8,Oceans11,Phoenix,Banana,Chupper,Andre
+lineup,oe:team:a87f96bba57cf77564601348d413ced,Kayana Gaming,KG,2016,Spring,,,,lineup-63533b99fe66893b,KG-02,2,1,oe:player:ebc57292abdae05636e3639f1d74411,oe:player:8bccb18ee11b1498ab14e93b5c5e285,oe:player:b38f6bf2b6a24ae9acaaf408a304f13,oe:player:c90f27240da8d7a3709db3cb74c81f0,oe:player:69281295089e026befcc43c67976db8,rubeN,Phoenix,Banana,Chupper,Andre
+player,oe:team:ad9fce8cc6928691a352c901c980942,Kuala Lumpur Hunters,KLH,2016,Spring,oe:player:add56bbfc8570cdd67ff748175a442a,13Ghost,top,,,,,,,,,,,,,,
+player,oe:team:ad9fce8cc6928691a352c901c980942,Kuala Lumpur Hunters,KLH,2016,Spring,oe:player:3f7902cf7a41c8a9ba116a2695b70c8,QaspieL,jng,,,,,,,,,,,,,,
+player,oe:team:ad9fce8cc6928691a352c901c980942,Kuala Lumpur Hunters,KLH,2016,Spring,oe:player:3f63eff00e527fb3640ff3326985b2f,OzoraVeki,mid,,,,,,,,,,,,,,
+player,oe:team:ad9fce8cc6928691a352c901c980942,Kuala Lumpur Hunters,KLH,2016,Spring,oe:player:edc0031371a1afbf138379ce4aedff8,CoolCat,bot,,,,,,,,,,,,,,
+player,oe:team:ad9fce8cc6928691a352c901c980942,Kuala Lumpur Hunters,KLH,2016,Spring,oe:player:e4db9ec920dc2c3411f48d336604c4b,SOUPerior,sup,,,,,,,,,,,,,,
+lineup,oe:team:ad9fce8cc6928691a352c901c980942,Kuala Lumpur Hunters,KLH,2016,Spring,,,,lineup-9b37004b1b58ee08,KLH-01,1,6,oe:player:add56bbfc8570cdd67ff748175a442a,oe:player:3f7902cf7a41c8a9ba116a2695b70c8,oe:player:3f63eff00e527fb3640ff3326985b2f,oe:player:edc0031371a1afbf138379ce4aedff8,oe:player:e4db9ec920dc2c3411f48d336604c4b,13Ghost,QaspieL,OzoraVeki,CoolCat,SOUPerior
+player,oe:team:c509b8c47b3761cbc2c790b576d0eb6,Saigon Jokers,SJ,2016,Spring,oe:player:a70367aa7cb74e510f4f9413ccf059d,Row,top,,,,,,,,,,,,,,
+player,oe:team:c509b8c47b3761cbc2c790b576d0eb6,Saigon Jokers,SJ,2016,Spring,oe:player:54e02ed201964af1e7def32df23af03,Jinkey,jng,,,,,,,,,,,,,,
+player,oe:team:c509b8c47b3761cbc2c790b576d0eb6,Saigon Jokers,SJ,2016,Spring,oe:player:86b41b0e4c89e3a7d92e3baa4f9e1d2,Lovida,mid,,,,,,,,,,,,,,
+player,oe:team:c509b8c47b3761cbc2c790b576d0eb6,Saigon Jokers,SJ,2016,Spring,oe:player:6859f47f49cfd9c55c91335c9400c0c,Warzone,mid,,,,,,,,,,,,,,
+player,oe:team:c509b8c47b3761cbc2c790b576d0eb6,Saigon Jokers,SJ,2016,Spring,oe:player:0867a39381398f90adff27ad461d616,Celebrity,bot,,,,,,,,,,,,,,
+player,oe:team:c509b8c47b3761cbc2c790b576d0eb6,Saigon Jokers,SJ,2016,Spring,oe:player:64d4bb75a5d28528e2b0aac73b10059,Tsu,sup,,,,,,,,,,,,,,
+lineup,oe:team:c509b8c47b3761cbc2c790b576d0eb6,Saigon Jokers,SJ,2016,Spring,,,,lineup-16bf2083ab2e3b3e,SJ-01,1,5,oe:player:a70367aa7cb74e510f4f9413ccf059d,oe:player:54e02ed201964af1e7def32df23af03,oe:player:86b41b0e4c89e3a7d92e3baa4f9e1d2,oe:player:0867a39381398f90adff27ad461d616,oe:player:64d4bb75a5d28528e2b0aac73b10059,Row,Jinkey,Lovida,Celebrity,Tsu
+lineup,oe:team:c509b8c47b3761cbc2c790b576d0eb6,Saigon Jokers,SJ,2016,Spring,,,,lineup-0e2b7d0b0cd44c2b,SJ-02,2,2,oe:player:a70367aa7cb74e510f4f9413ccf059d,oe:player:54e02ed201964af1e7def32df23af03,oe:player:6859f47f49cfd9c55c91335c9400c0c,oe:player:0867a39381398f90adff27ad461d616,oe:player:64d4bb75a5d28528e2b0aac73b10059,Row,Jinkey,Warzone,Celebrity,Tsu
+player,oe:team:95786f2a93617fcde81ed16ee15f5bb,Team Rigel,TR,2016,Spring,oe:player:a263ff189e0de0ff524d5fdc9dee809,Revive,top,,,,,,,,,,,,,,
+player,oe:team:95786f2a93617fcde81ed16ee15f5bb,Team Rigel,TR,2016,Spring,oe:player:bdc6e5ef5a22c522082f74e41114267,Zancazor,jng,,,,,,,,,,,,,,
+player,oe:team:95786f2a93617fcde81ed16ee15f5bb,Team Rigel,TR,2016,Spring,oe:player:09a4fa18558919465f98c1dafd3ece9,Arykelic,mid,,,,,,,,,,,,,,
+player,oe:team:95786f2a93617fcde81ed16ee15f5bb,Team Rigel,TR,2016,Spring,oe:player:992a3e5fc8e34effe2d4a00cca0313e,PandaPaws,mid,,,,,,,,,,,,,,
+player,oe:team:95786f2a93617fcde81ed16ee15f5bb,Team Rigel,TR,2016,Spring,oe:player:d19deeefca7fddaa319f8a8e390292b,Mexi,bot,,,,,,,,,,,,,,
+player,oe:team:95786f2a93617fcde81ed16ee15f5bb,Team Rigel,TR,2016,Spring,oe:player:9b59b40ceb8e288ec0b2e082bbdb0db,Arkane,sup,,,,,,,,,,,,,,
+lineup,oe:team:95786f2a93617fcde81ed16ee15f5bb,Team Rigel,TR,2016,Spring,,,,lineup-357cdf02abaa1b68,TR-01,1,2,oe:player:a263ff189e0de0ff524d5fdc9dee809,oe:player:bdc6e5ef5a22c522082f74e41114267,oe:player:992a3e5fc8e34effe2d4a00cca0313e,oe:player:d19deeefca7fddaa319f8a8e390292b,oe:player:9b59b40ceb8e288ec0b2e082bbdb0db,Revive,Zancazor,PandaPaws,Mexi,Arkane
+lineup,oe:team:95786f2a93617fcde81ed16ee15f5bb,Team Rigel,TR,2016,Spring,,,,lineup-190b795002829cca,TR-02,2,1,oe:player:a263ff189e0de0ff524d5fdc9dee809,oe:player:bdc6e5ef5a22c522082f74e41114267,oe:player:09a4fa18558919465f98c1dafd3ece9,oe:player:d19deeefca7fddaa319f8a8e390292b,oe:player:9b59b40ceb8e288ec0b2e082bbdb0db,Revive,Zancazor,Arykelic,Mexi,Arkane
