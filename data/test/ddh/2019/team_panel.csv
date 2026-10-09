@@ -1,0 +1,55 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:a376ed223776110ba2749fc65c07896,Anáhuac Esports,AE,2019,Unknown,oe:player:e40c3eae105d7d22ea5f310035e5d95,Bazu,top,,,,,,,,,,,,,,
+player,oe:team:a376ed223776110ba2749fc65c07896,Anáhuac Esports,AE,2019,Unknown,oe:player:a7410c5807c60cecbeb2002a0c2e21d,Carita,top,,,,,,,,,,,,,,
+player,oe:team:a376ed223776110ba2749fc65c07896,Anáhuac Esports,AE,2019,Unknown,oe:player:e1a1ab1e81eb3f1e40c6c0d52683648,2Night,jng,,,,,,,,,,,,,,
+player,oe:team:a376ed223776110ba2749fc65c07896,Anáhuac Esports,AE,2019,Unknown,oe:player:7a70dc91a6fd63338f34b6d1b02ad01,Chevis,jng,,,,,,,,,,,,,,
+player,oe:team:a376ed223776110ba2749fc65c07896,Anáhuac Esports,AE,2019,Unknown,oe:player:6f23383b72c3b56024a5b7d568ce680,Flacoyo,mid,,,,,,,,,,,,,,
+player,oe:team:a376ed223776110ba2749fc65c07896,Anáhuac Esports,AE,2019,Unknown,oe:player:24821b50d04fe912ca95eb314bb1a9b,Joelito,mid,,,,,,,,,,,,,,
+player,oe:team:a376ed223776110ba2749fc65c07896,Anáhuac Esports,AE,2019,Unknown,oe:player:ee3739639ef71ccf61bb0e35842cd37,Güereca,bot,,,,,,,,,,,,,,
+player,oe:team:a376ed223776110ba2749fc65c07896,Anáhuac Esports,AE,2019,Unknown,oe:player:32e06e466b6f6c248a537ee7da246e7,Hielo,bot,,,,,,,,,,,,,,
+player,oe:team:a376ed223776110ba2749fc65c07896,Anáhuac Esports,AE,2019,Unknown,oe:player:691a3cec4a68fa3ae81d37817476660,Keoo,sup,,,,,,,,,,,,,,
+player,oe:team:a376ed223776110ba2749fc65c07896,Anáhuac Esports,AE,2019,Unknown,oe:player:0d4820eb20f2b494ab522bfccb72fff,MacCuin,sup,,,,,,,,,,,,,,
+lineup,oe:team:a376ed223776110ba2749fc65c07896,Anáhuac Esports,AE,2019,Unknown,,,,lineup-5c85e3fd6e6b9816,AE-01,1,4,oe:player:e40c3eae105d7d22ea5f310035e5d95,oe:player:e1a1ab1e81eb3f1e40c6c0d52683648,oe:player:6f23383b72c3b56024a5b7d568ce680,oe:player:ee3739639ef71ccf61bb0e35842cd37,oe:player:691a3cec4a68fa3ae81d37817476660,Bazu,2Night,Flacoyo,Güereca,Keoo
+lineup,oe:team:a376ed223776110ba2749fc65c07896,Anáhuac Esports,AE,2019,Unknown,,,,lineup-fbe8e2c380127daa,AE-02,2,1,oe:player:a7410c5807c60cecbeb2002a0c2e21d,oe:player:7a70dc91a6fd63338f34b6d1b02ad01,oe:player:24821b50d04fe912ca95eb314bb1a9b,oe:player:32e06e466b6f6c248a537ee7da246e7,oe:player:0d4820eb20f2b494ab522bfccb72fff,Carita,Chevis,Joelito,Hielo,MacCuin
+player,oe:team:ac655e92876e020fc404aff244a95e3,Arctic Gaming México,AGM,2019,Unknown,oe:player:a76329ee995ca432d9a5f53affcca46,Horatito,top,,,,,,,,,,,,,,
+player,oe:team:ac655e92876e020fc404aff244a95e3,Arctic Gaming México,AGM,2019,Unknown,oe:player:f0921b20e587a4942756c7572071178,Techo,jng,,,,,,,,,,,,,,
+player,oe:team:ac655e92876e020fc404aff244a95e3,Arctic Gaming México,AGM,2019,Unknown,oe:player:492379b2b8f7ac3f7cc8e0ca6254f4b,Kyoto,mid,,,,,,,,,,,,,,
+player,oe:team:ac655e92876e020fc404aff244a95e3,Arctic Gaming México,AGM,2019,Unknown,oe:player:66ab489a258eb5f955bb3fe12efcdc3,1an,bot,,,,,,,,,,,,,,
+player,oe:team:ac655e92876e020fc404aff244a95e3,Arctic Gaming México,AGM,2019,Unknown,oe:player:b4e17497eeb47d39ba72dbfcf14fc2b,Vipér,sup,,,,,,,,,,,,,,
+lineup,oe:team:ac655e92876e020fc404aff244a95e3,Arctic Gaming México,AGM,2019,Unknown,,,,lineup-5b6b5168474a26cd,AGM-01,1,2,oe:player:a76329ee995ca432d9a5f53affcca46,oe:player:f0921b20e587a4942756c7572071178,oe:player:492379b2b8f7ac3f7cc8e0ca6254f4b,oe:player:66ab489a258eb5f955bb3fe12efcdc3,oe:player:b4e17497eeb47d39ba72dbfcf14fc2b,Horatito,Techo,Kyoto,1an,Vipér
+player,oe:team:9874244e1d55d280cb0bad2070d9a13,Cream Real Betis,CRB,2019,Unknown,oe:player:33f3974dc527251f8f8297fdca3ff90,Porky,top,,,,,,,,,,,,,,
+player,oe:team:9874244e1d55d280cb0bad2070d9a13,Cream Real Betis,CRB,2019,Unknown,oe:player:73fac438d3c20a0bf023d3b4c8b26b2,LiquidDiego,jng,,,,,,,,,,,,,,
+player,oe:team:9874244e1d55d280cb0bad2070d9a13,Cream Real Betis,CRB,2019,Unknown,oe:player:6078377b92dbf76a7e7aae35fe9f6c7,Icytower,mid,,,,,,,,,,,,,,
+player,oe:team:9874244e1d55d280cb0bad2070d9a13,Cream Real Betis,CRB,2019,Unknown,oe:player:c92846465f8656d027f9148726b2b5c,Gavotto,bot,,,,,,,,,,,,,,
+player,oe:team:9874244e1d55d280cb0bad2070d9a13,Cream Real Betis,CRB,2019,Unknown,oe:player:980ec552cadeaca681fcac098452eca,NerzhuL,sup,,,,,,,,,,,,,,
+lineup,oe:team:9874244e1d55d280cb0bad2070d9a13,Cream Real Betis,CRB,2019,Unknown,,,,lineup-4b6841230a2e8531,CRB-01,1,13,oe:player:33f3974dc527251f8f8297fdca3ff90,oe:player:73fac438d3c20a0bf023d3b4c8b26b2,oe:player:6078377b92dbf76a7e7aae35fe9f6c7,oe:player:c92846465f8656d027f9148726b2b5c,oe:player:980ec552cadeaca681fcac098452eca,Porky,LiquidDiego,Icytower,Gavotto,NerzhuL
+player,oe:team:3401055de8e987e2b873385429123bc,ESTORM,EST,2019,Unknown,oe:player:a742f95d821539baf568851576ca921,Pillo,top,,,,,,,,,,,,,,
+player,oe:team:3401055de8e987e2b873385429123bc,ESTORM,EST,2019,Unknown,oe:player:37b931d03bc9dc6a51d04199c9c8e0a,Ponito,jng,,,,,,,,,,,,,,
+player,oe:team:3401055de8e987e2b873385429123bc,ESTORM,EST,2019,Unknown,oe:player:cc2f7bb55ee44b45a2ec73dcbed0a01,Samy,mid,,,,,,,,,,,,,,
+player,oe:team:3401055de8e987e2b873385429123bc,ESTORM,EST,2019,Unknown,oe:player:4a867124044ab3fd40ddfb8676e65e7,VirusFx,bot,,,,,,,,,,,,,,
+player,oe:team:3401055de8e987e2b873385429123bc,ESTORM,EST,2019,Unknown,oe:player:0d4820eb20f2b494ab522bfccb72fff,MacCuin,sup,,,,,,,,,,,,,,
+lineup,oe:team:3401055de8e987e2b873385429123bc,ESTORM,EST,2019,Unknown,,,,lineup-7732265481ee1641,EST-01,1,1,oe:player:a742f95d821539baf568851576ca921,oe:player:37b931d03bc9dc6a51d04199c9c8e0a,oe:player:cc2f7bb55ee44b45a2ec73dcbed0a01,oe:player:4a867124044ab3fd40ddfb8676e65e7,oe:player:0d4820eb20f2b494ab522bfccb72fff,Pillo,Ponito,Samy,VirusFx,MacCuin
+player,oe:team:1c81857b6ce6a3c1cd9220fd97e077f,Estral Esports,EE,2019,Unknown,oe:player:ba2b37f19ba735f23ce71cb133ea4e5,Putin,top,,,,,,,,,,,,,,
+player,oe:team:1c81857b6ce6a3c1cd9220fd97e077f,Estral Esports,EE,2019,Unknown,oe:player:4d10f9a1263936ae396ac674a6ed8e9,Feng,jng,,,,,,,,,,,,,,
+player,oe:team:1c81857b6ce6a3c1cd9220fd97e077f,Estral Esports,EE,2019,Unknown,oe:player:39c532cecb979acba3c261f7f924de1,Zerkxz,mid,,,,,,,,,,,,,,
+player,oe:team:1c81857b6ce6a3c1cd9220fd97e077f,Estral Esports,EE,2019,Unknown,oe:player:dac3ebed07ccecf0b97a0cfb027f1e3,Demy,bot,,,,,,,,,,,,,,
+player,oe:team:1c81857b6ce6a3c1cd9220fd97e077f,Estral Esports,EE,2019,Unknown,oe:player:c2a90baf58e14e224415293a8ad34ff,BetaTwinz,sup,,,,,,,,,,,,,,
+lineup,oe:team:1c81857b6ce6a3c1cd9220fd97e077f,Estral Esports,EE,2019,Unknown,,,,lineup-8feaab4a8b8ad99d,EE-01,1,1,oe:player:ba2b37f19ba735f23ce71cb133ea4e5,oe:player:4d10f9a1263936ae396ac674a6ed8e9,oe:player:39c532cecb979acba3c261f7f924de1,oe:player:dac3ebed07ccecf0b97a0cfb027f1e3,oe:player:c2a90baf58e14e224415293a8ad34ff,Putin,Feng,Zerkxz,Demy,BetaTwinz
+player,oe:team:5b3bde865666acea6504cdeae90120f,MAD Lions E.C. Mexico,MLEM,2019,Unknown,oe:player:a2bc15a0a3749d65c09d28e4e5b1ffe,Mayhem,top,,,,,,,,,,,,,,
+player,oe:team:5b3bde865666acea6504cdeae90120f,MAD Lions E.C. Mexico,MLEM,2019,Unknown,oe:player:fa41f0e745119bde94b1cdcc8d10434,Mataz,jng,,,,,,,,,,,,,,
+player,oe:team:5b3bde865666acea6504cdeae90120f,MAD Lions E.C. Mexico,MLEM,2019,Unknown,oe:player:067ac2da14b4c0e443db4a7e167200e,Fas the Magi,mid,,,,,,,,,,,,,,
+player,oe:team:5b3bde865666acea6504cdeae90120f,MAD Lions E.C. Mexico,MLEM,2019,Unknown,oe:player:691ccf5181565eaecf8fe5604bfe303,Gobely,bot,,,,,,,,,,,,,,
+player,oe:team:5b3bde865666acea6504cdeae90120f,MAD Lions E.C. Mexico,MLEM,2019,Unknown,oe:player:db4ac958be32c137638130a19711ba9,Tyr,sup,,,,,,,,,,,,,,
+lineup,oe:team:5b3bde865666acea6504cdeae90120f,MAD Lions E.C. Mexico,MLEM,2019,Unknown,,,,lineup-65af3f131cde04f2,MLEM-01,1,1,oe:player:a2bc15a0a3749d65c09d28e4e5b1ffe,oe:player:fa41f0e745119bde94b1cdcc8d10434,oe:player:067ac2da14b4c0e443db4a7e167200e,oe:player:691ccf5181565eaecf8fe5604bfe303,oe:player:db4ac958be32c137638130a19711ba9,Mayhem,Mataz,Fas the Magi,Gobely,Tyr
+player,oe:team:afa32967cbfd11cd4684a90c675346d,XTEN Mexico,XM,2019,Unknown,oe:player:befc79fadb9c25236470f5717ed91f7,Guardián,top,,,,,,,,,,,,,,
+player,oe:team:afa32967cbfd11cd4684a90c675346d,XTEN Mexico,XM,2019,Unknown,oe:player:6f70816b7b27359c7e3389fdcf3d987,ARRRmando,jng,,,,,,,,,,,,,,
+player,oe:team:afa32967cbfd11cd4684a90c675346d,XTEN Mexico,XM,2019,Unknown,oe:player:bf8fdb0995bc7db74f365551ffe9cf2,Monsieur,mid,,,,,,,,,,,,,,
+player,oe:team:afa32967cbfd11cd4684a90c675346d,XTEN Mexico,XM,2019,Unknown,oe:player:907a884efd3bf9b26882811c53bcf18,Bola,bot,,,,,,,,,,,,,,
+player,oe:team:afa32967cbfd11cd4684a90c675346d,XTEN Mexico,XM,2019,Unknown,oe:player:84e640911c6d6f172d4cf1c7cc78a67,Crecre,sup,,,,,,,,,,,,,,
+lineup,oe:team:afa32967cbfd11cd4684a90c675346d,XTEN Mexico,XM,2019,Unknown,,,,lineup-a1e76e13532efc20,XM-01,1,4,oe:player:befc79fadb9c25236470f5717ed91f7,oe:player:6f70816b7b27359c7e3389fdcf3d987,oe:player:bf8fdb0995bc7db74f365551ffe9cf2,oe:player:907a884efd3bf9b26882811c53bcf18,oe:player:84e640911c6d6f172d4cf1c7cc78a67,Guardián,ARRRmando,Monsieur,Bola,Crecre
+player,oe:team:97a0a823fda2047f7ce43ecf0e5f12e,x6tence México,XM,2019,Unknown,oe:player:728e0fd14bdfc32a96a3c8ffd1a33a4,JeiiZe,top,,,,,,,,,,,,,,
+player,oe:team:97a0a823fda2047f7ce43ecf0e5f12e,x6tence México,XM,2019,Unknown,oe:player:c569ed8a7809cff7b9d7f3f910e7aac,Chente,jng,,,,,,,,,,,,,,
+player,oe:team:97a0a823fda2047f7ce43ecf0e5f12e,x6tence México,XM,2019,Unknown,oe:player:a4e534dbaf4c40ad5586032bcacf200,EdiWeasley,mid,,,,,,,,,,,,,,
+player,oe:team:97a0a823fda2047f7ce43ecf0e5f12e,x6tence México,XM,2019,Unknown,oe:player:dac3ebed07ccecf0b97a0cfb027f1e3,Demy,bot,,,,,,,,,,,,,,
+player,oe:team:97a0a823fda2047f7ce43ecf0e5f12e,x6tence México,XM,2019,Unknown,oe:player:c2a90baf58e14e224415293a8ad34ff,BetaTwinz,sup,,,,,,,,,,,,,,
+lineup,oe:team:97a0a823fda2047f7ce43ecf0e5f12e,x6tence México,XM,2019,Unknown,,,,lineup-ee961c29d1a407a6,XM-01,1,1,oe:player:728e0fd14bdfc32a96a3c8ffd1a33a4,oe:player:c569ed8a7809cff7b9d7f3f910e7aac,oe:player:a4e534dbaf4c40ad5586032bcacf200,oe:player:dac3ebed07ccecf0b97a0cfb027f1e3,oe:player:c2a90baf58e14e224415293a8ad34ff,JeiiZe,Chente,EdiWeasley,Demy,BetaTwinz

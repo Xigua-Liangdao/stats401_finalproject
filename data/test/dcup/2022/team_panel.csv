@@ -1,0 +1,55 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2022,Unknown,oe:player:fb66ef5885b4be9323905b821dc3a42,Bin,top,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2022,Unknown,oe:player:fbdc4428b2d095c83aebeed5da4e4b2,Xun,jng,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2022,Unknown,oe:player:4860d1660ce45bd15a600953309135c,Yagao,mid,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2022,Unknown,oe:player:a58a0d41103cdc5b58cbb547eeaca2d,Elk,bot,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2022,Unknown,oe:player:dfe5b204f04f40a84019af080662259,Jwei,sup,,,,,,,,,,,,,,
+lineup,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2022,Unknown,,,,lineup-7d2d3510e5a85de0,BLG-01,1,3,oe:player:fb66ef5885b4be9323905b821dc3a42,oe:player:fbdc4428b2d095c83aebeed5da4e4b2,oe:player:4860d1660ce45bd15a600953309135c,oe:player:a58a0d41103cdc5b58cbb547eeaca2d,oe:player:dfe5b204f04f40a84019af080662259,Bin,Xun,Yagao,Elk,Jwei
+player,name-team-e0c44432736c3fdd,Douyu DHM,DD,2022,Unknown,oe:player:77c658a4a2e9f4096755a823847c19e,Lies,top,,,,,,,,,,,,,,
+player,name-team-e0c44432736c3fdd,Douyu DHM,DD,2022,Unknown,oe:player:4c8fd134d16dbffd046e5bcf1d2e20a,JYP,jng,,,,,,,,,,,,,,
+player,name-team-e0c44432736c3fdd,Douyu DHM,DD,2022,Unknown,name-player-d1e66d896875f88c,DHMPokeman,mid,,,,,,,,,,,,,,
+player,name-team-e0c44432736c3fdd,Douyu DHM,DD,2022,Unknown,name-player-2880de525c31f547,DHMjiazhu,bot,,,,,,,,,,,,,,
+player,name-team-e0c44432736c3fdd,Douyu DHM,DD,2022,Unknown,name-player-dd5c193c8ac286a7,DHMXiaojin,sup,,,,,,,,,,,,,,
+lineup,name-team-e0c44432736c3fdd,Douyu DHM,DD,2022,Unknown,,,,lineup-de6fbf700c41cef0,DD-01,1,1,oe:player:77c658a4a2e9f4096755a823847c19e,oe:player:4c8fd134d16dbffd046e5bcf1d2e20a,name-player-d1e66d896875f88c,name-player-2880de525c31f547,name-player-dd5c193c8ac286a7,Lies,JYP,DHMPokeman,DHMjiazhu,DHMXiaojin
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2022,Unknown,oe:player:f79775d6741febf8f922876d2f5b127,Xiaoxiang,top,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2022,Unknown,oe:player:a22a6d1fe8786cf83675e2d932fbffe,JunJia,jng,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2022,Unknown,oe:player:effd5b04b5d98b779f0a6162c40735a,Fisher,mid,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2022,Unknown,oe:player:a52945dbe283de2f7e9d63ca3417f36,Leave,bot,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2022,Unknown,oe:player:03b50ebd9393dbcdcd26fe529b40803,Xiamu,sup,,,,,,,,,,,,,,
+lineup,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2022,Unknown,,,,lineup-31b48839c71f8e04,EDG-01,1,4,oe:player:f79775d6741febf8f922876d2f5b127,oe:player:a22a6d1fe8786cf83675e2d932fbffe,oe:player:effd5b04b5d98b779f0a6162c40735a,oe:player:a52945dbe283de2f7e9d63ca3417f36,oe:player:03b50ebd9393dbcdcd26fe529b40803,Xiaoxiang,JunJia,Fisher,Leave,Xiamu
+player,oe:team:7f470540da8b0e7f3731c8273f8489e,EQX,EQX,2022,Unknown,name-player-5e28a09495a757f2,DHMLies,top,,,,,,,,,,,,,,
+player,oe:team:7f470540da8b0e7f3731c8273f8489e,EQX,EQX,2022,Unknown,name-player-d587be5a1a0a28e6,EQXQ9shimmer,jng,,,,,,,,,,,,,,
+player,oe:team:7f470540da8b0e7f3731c8273f8489e,EQX,EQX,2022,Unknown,name-player-41814832719401ca,EQXEDGYouth,mid,,,,,,,,,,,,,,
+player,oe:team:7f470540da8b0e7f3731c8273f8489e,EQX,EQX,2022,Unknown,name-player-5ff14d80d36df1e3,EQXRNGnety,bot,,,,,,,,,,,,,,
+player,oe:team:7f470540da8b0e7f3731c8273f8489e,EQX,EQX,2022,Unknown,oe:player:40049df6e0e1ee46b338c602dd9e1a7,Wunai3,sup,,,,,,,,,,,,,,
+lineup,oe:team:7f470540da8b0e7f3731c8273f8489e,EQX,EQX,2022,Unknown,,,,lineup-a3cc0d6b1896db8c,EQX-01,1,1,name-player-5e28a09495a757f2,name-player-d587be5a1a0a28e6,name-player-41814832719401ca,name-player-5ff14d80d36df1e3,oe:player:40049df6e0e1ee46b338c602dd9e1a7,DHMLies,EQXQ9shimmer,EQXEDGYouth,EQXRNGnety,Wunai3
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2022,Unknown,oe:player:d0136a95961717beb952f57e3d737f1,redwall,top,,,,,,,,,,,,,,
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2022,Unknown,oe:player:c881919ba4cc48fd96ee6556af2e99c,zzx,jng,,,,,,,,,,,,,,
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2022,Unknown,oe:player:8fab2727ffe79f1114c85812b78171f,Lzq,mid,,,,,,,,,,,,,,
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2022,Unknown,oe:player:d2b317a92a71a850ae3da1e0d83e883,1xn,bot,,,,,,,,,,,,,,
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2022,Unknown,oe:player:5000a68e43f946c726a17e1008e230a,Feather,sup,,,,,,,,,,,,,,
+lineup,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2022,Unknown,,,,lineup-23406462d3ec358e,JDG-01,1,3,oe:player:d0136a95961717beb952f57e3d737f1,oe:player:c881919ba4cc48fd96ee6556af2e99c,oe:player:8fab2727ffe79f1114c85812b78171f,oe:player:d2b317a92a71a850ae3da1e0d83e883,oe:player:5000a68e43f946c726a17e1008e230a,redwall,zzx,Lzq,1xn,Feather
+player,name-team-a5bd43c787f9530f,LYA,LYA,2022,Unknown,name-player-e8de3561a604a826,LYAFPXTheNiu,top,,,,,,,,,,,,,,
+player,name-team-a5bd43c787f9530f,LYA,LYA,2022,Unknown,name-player-0143a390eb55663d,LYAEDGcoward,jng,,,,,,,,,,,,,,
+player,name-team-a5bd43c787f9530f,LYA,LYA,2022,Unknown,name-player-18e4a71e5502da56,LYAFPXAshes,mid,,,,,,,,,,,,,,
+player,name-team-a5bd43c787f9530f,LYA,LYA,2022,Unknown,name-player-5d1e67d796b36e20,LYARNGYfang,bot,,,,,,,,,,,,,,
+player,name-team-a5bd43c787f9530f,LYA,LYA,2022,Unknown,name-player-caaa1f8bf87e3bae,LYAEDGXbear,sup,,,,,,,,,,,,,,
+lineup,name-team-a5bd43c787f9530f,LYA,LYA,2022,Unknown,,,,lineup-0956bdead7d287a2,LYA-01,1,1,name-player-e8de3561a604a826,name-player-0143a390eb55663d,name-player-18e4a71e5502da56,name-player-5d1e67d796b36e20,name-player-caaa1f8bf87e3bae,LYAFPXTheNiu,LYAEDGcoward,LYAFPXAshes,LYARNGYfang,LYAEDGXbear
+player,oe:team:f5ae665c5b772f9c081b30593177b9d,Team Pinnacle,TP,2022,Unknown,oe:player:021bbc7ee20b71134d53e20206bd6fe,1024,top,,,,,,,,,,,,,,
+player,oe:team:f5ae665c5b772f9c081b30593177b9d,Team Pinnacle,TP,2022,Unknown,oe:player:e7416c49e8ecaa9edaca2dd9e046ef3,Wxm,jng,,,,,,,,,,,,,,
+player,oe:team:f5ae665c5b772f9c081b30593177b9d,Team Pinnacle,TP,2022,Unknown,oe:player:c812093d157b87eea0dac8beb4a1946,Capp1r,mid,,,,,,,,,,,,,,
+player,oe:team:f5ae665c5b772f9c081b30593177b9d,Team Pinnacle,TP,2022,Unknown,oe:player:1274c067194385880d84b6164fd12a9,ea7,bot,,,,,,,,,,,,,,
+player,oe:team:f5ae665c5b772f9c081b30593177b9d,Team Pinnacle,TP,2022,Unknown,oe:player:c0b62ef14214480ba246f30851a5653,Loco,sup,,,,,,,,,,,,,,
+lineup,oe:team:f5ae665c5b772f9c081b30593177b9d,Team Pinnacle,TP,2022,Unknown,,,,lineup-0ce04557b2be9144,TP-01,1,1,oe:player:021bbc7ee20b71134d53e20206bd6fe,oe:player:e7416c49e8ecaa9edaca2dd9e046ef3,oe:player:c812093d157b87eea0dac8beb4a1946,oe:player:1274c067194385880d84b6164fd12a9,oe:player:c0b62ef14214480ba246f30851a5653,1024,Wxm,Capp1r,ea7,Loco
+player,oe:team:df80f468a3f9a722df056fe9104f052,ThunderTalk Gaming,TT,2022,Unknown,oe:player:57ac9f77eae511aeee1e854434f73f2,HOYA,top,,,,,,,,,,,,,,
+player,oe:team:df80f468a3f9a722df056fe9104f052,ThunderTalk Gaming,TT,2022,Unknown,oe:player:05326a1c42e9c27a1067768c88955e7,Beichuan,jng,,,,,,,,,,,,,,
+player,oe:team:df80f468a3f9a722df056fe9104f052,ThunderTalk Gaming,TT,2022,Unknown,oe:player:bd6a2e6aaeb993fd29f43790265297f,Ucal,mid,,,,,,,,,,,,,,
+player,oe:team:df80f468a3f9a722df056fe9104f052,ThunderTalk Gaming,TT,2022,Unknown,oe:player:6d664d1402cd16be08e335feacf73b0,huanfeng,bot,,,,,,,,,,,,,,
+player,oe:team:df80f468a3f9a722df056fe9104f052,ThunderTalk Gaming,TT,2022,Unknown,oe:player:10fd0a3dc5a68b102a157eb6b0fd4ed,XinLiu,sup,,,,,,,,,,,,,,
+lineup,oe:team:df80f468a3f9a722df056fe9104f052,ThunderTalk Gaming,TT,2022,Unknown,,,,lineup-f1664a2aefbc13dd,TT-01,1,13,oe:player:57ac9f77eae511aeee1e854434f73f2,oe:player:05326a1c42e9c27a1067768c88955e7,oe:player:bd6a2e6aaeb993fd29f43790265297f,oe:player:6d664d1402cd16be08e335feacf73b0,oe:player:10fd0a3dc5a68b102a157eb6b0fd4ed,HOYA,Beichuan,Ucal,huanfeng,XinLiu
+player,oe:team:b5454c08654c7f6175d1d887f80c769,Victory Five,VF,2022,Unknown,oe:player:284a8e6b9dbbc68d6bfc8e1e87d42a4,Invincible,top,,,,,,,,,,,,,,
+player,oe:team:b5454c08654c7f6175d1d887f80c769,Victory Five,VF,2022,Unknown,oe:player:89216834aae8b891cbd6dbad9087f65,XLB,jng,,,,,,,,,,,,,,
+player,oe:team:b5454c08654c7f6175d1d887f80c769,Victory Five,VF,2022,Unknown,oe:player:f19c6710765da99fcc0d9ee3175d5ef,Dream,mid,,,,,,,,,,,,,,
+player,oe:team:b5454c08654c7f6175d1d887f80c769,Victory Five,VF,2022,Unknown,oe:player:1c42d9266c8b391c7870b7a39f25a12,Photic,bot,,,,,,,,,,,,,,
+player,oe:team:b5454c08654c7f6175d1d887f80c769,Victory Five,VF,2022,Unknown,oe:player:e78da55d6db43d982f841204a8e51ac,Zhuo,sup,,,,,,,,,,,,,,
+lineup,oe:team:b5454c08654c7f6175d1d887f80c769,Victory Five,VF,2022,Unknown,,,,lineup-b4945cc740888257,VF-01,1,3,oe:player:284a8e6b9dbbc68d6bfc8e1e87d42a4,oe:player:89216834aae8b891cbd6dbad9087f65,oe:player:f19c6710765da99fcc0d9ee3175d5ef,oe:player:1c42d9266c8b391c7870b7a39f25a12,oe:player:e78da55d6db43d982f841204a8e51ac,Invincible,XLB,Dream,Photic,Zhuo
