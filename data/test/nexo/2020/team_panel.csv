@@ -1,0 +1,69 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:5a65820ae9d6b52452d469d0b4ffc29,Arena Quesito,AQ,2020,Unknown,oe:player:1e20b16bcea2de1001556e3e917813a,Shole,top,,,,,,,,,,,,,,
+player,oe:team:5a65820ae9d6b52452d469d0b4ffc29,Arena Quesito,AQ,2020,Unknown,oe:player:2b0c84fdb14a35a7d36ca191b848dd2,Palens,jng,,,,,,,,,,,,,,
+player,oe:team:5a65820ae9d6b52452d469d0b4ffc29,Arena Quesito,AQ,2020,Unknown,oe:player:ab02fceb9689114b1cd1844e456c069,Javier,mid,,,,,,,,,,,,,,
+player,oe:team:5a65820ae9d6b52452d469d0b4ffc29,Arena Quesito,AQ,2020,Unknown,oe:player:432dc458337f63fbcdf3c73488a3cdf,Aaron,bot,,,,,,,,,,,,,,
+player,oe:team:5a65820ae9d6b52452d469d0b4ffc29,Arena Quesito,AQ,2020,Unknown,oe:player:34d0805e1ddfc892491927f07c0f3f3,Darko,sup,,,,,,,,,,,,,,
+player,oe:team:5a65820ae9d6b52452d469d0b4ffc29,Arena Quesito,AQ,2020,Unknown,oe:player:d59bf32feb1f152fe3a18d9a8ea127c,Yonna,sup,,,,,,,,,,,,,,
+lineup,oe:team:5a65820ae9d6b52452d469d0b4ffc29,Arena Quesito,AQ,2020,Unknown,,,,lineup-5ed5f690c480891f,AQ-01,1,5,oe:player:1e20b16bcea2de1001556e3e917813a,oe:player:2b0c84fdb14a35a7d36ca191b848dd2,oe:player:ab02fceb9689114b1cd1844e456c069,oe:player:432dc458337f63fbcdf3c73488a3cdf,oe:player:d59bf32feb1f152fe3a18d9a8ea127c,Shole,Palens,Javier,Aaron,Yonna
+lineup,oe:team:5a65820ae9d6b52452d469d0b4ffc29,Arena Quesito,AQ,2020,Unknown,,,,lineup-691835641bb88fbd,AQ-02,2,1,oe:player:1e20b16bcea2de1001556e3e917813a,oe:player:2b0c84fdb14a35a7d36ca191b848dd2,oe:player:ab02fceb9689114b1cd1844e456c069,oe:player:432dc458337f63fbcdf3c73488a3cdf,oe:player:34d0805e1ddfc892491927f07c0f3f3,Shole,Palens,Javier,Aaron,Darko
+player,oe:team:90a3fe0ae48ef2bfe82b20711646096,Astralis SB,AS,2020,Split 1,oe:player:ede24d5e0911d7a4f6ec514a67802ff,Myrwn,top,,,,,,,,,,,,,,
+player,oe:team:90a3fe0ae48ef2bfe82b20711646096,Astralis SB,AS,2020,Split 1,oe:player:5b91639213b0f7791c49ba852e4bee5,CRoNiiK,jng,,,,,,,,,,,,,,
+player,oe:team:90a3fe0ae48ef2bfe82b20711646096,Astralis SB,AS,2020,Split 1,oe:player:f81150487534a6523e42bf0baacaeb2,Kamikaze,mid,,,,,,,,,,,,,,
+player,oe:team:90a3fe0ae48ef2bfe82b20711646096,Astralis SB,AS,2020,Split 1,oe:player:f450305c2529dbc8e80459867fb701d,Zherathor,mid,,,,,,,,,,,,,,
+player,oe:team:90a3fe0ae48ef2bfe82b20711646096,Astralis SB,AS,2020,Split 1,oe:player:bff0c2de0b05bbd9bf9c4a8fcbe4753,Corvo,bot,,,,,,,,,,,,,,
+player,oe:team:90a3fe0ae48ef2bfe82b20711646096,Astralis SB,AS,2020,Split 1,oe:player:f77c2becc8145352a637a382dd53fce,Bolyy1,sup,,,,,,,,,,,,,,
+lineup,oe:team:90a3fe0ae48ef2bfe82b20711646096,Astralis SB,AS,2020,Split 1,,,,lineup-2480c2f7ef35ee2b,AS-01,1,1,oe:player:ede24d5e0911d7a4f6ec514a67802ff,oe:player:5b91639213b0f7791c49ba852e4bee5,oe:player:f81150487534a6523e42bf0baacaeb2,oe:player:bff0c2de0b05bbd9bf9c4a8fcbe4753,oe:player:f77c2becc8145352a637a382dd53fce,Myrwn,CRoNiiK,Kamikaze,Corvo,Bolyy1
+lineup,oe:team:90a3fe0ae48ef2bfe82b20711646096,Astralis SB,AS,2020,Split 1,,,,lineup-4e2dca612858b2fb,AS-02,2,1,oe:player:ede24d5e0911d7a4f6ec514a67802ff,oe:player:5b91639213b0f7791c49ba852e4bee5,oe:player:f450305c2529dbc8e80459867fb701d,oe:player:bff0c2de0b05bbd9bf9c4a8fcbe4753,oe:player:f77c2becc8145352a637a382dd53fce,Myrwn,CRoNiiK,Zherathor,Corvo,Bolyy1
+player,oe:team:c64792e95cc00718fdba07a0682c134,Europe Saviors Anonymous,ESA,2020,Split 1,oe:player:814606bfdec1050121d78a4a8458dba,Audax,top,,,,,,,,,,,,,,
+player,oe:team:c64792e95cc00718fdba07a0682c134,Europe Saviors Anonymous,ESA,2020,Split 1,oe:player:3d6d55d133ca9bf5b4ee78fb974bfbb,Bogu,jng,,,,,,,,,,,,,,
+player,oe:team:c64792e95cc00718fdba07a0682c134,Europe Saviors Anonymous,ESA,2020,Split 1,oe:player:03ffe21df4d5449600c9de7e8ca0614,Mrbotellin,mid,,,,,,,,,,,,,,
+player,oe:team:c64792e95cc00718fdba07a0682c134,Europe Saviors Anonymous,ESA,2020,Split 1,oe:player:42551ca4228fc1ac1591d38aae96854,Kou,bot,,,,,,,,,,,,,,
+player,oe:team:c64792e95cc00718fdba07a0682c134,Europe Saviors Anonymous,ESA,2020,Split 1,oe:player:9579292f38f0d38250707574036f281,ThreaM,sup,,,,,,,,,,,,,,
+lineup,oe:team:c64792e95cc00718fdba07a0682c134,Europe Saviors Anonymous,ESA,2020,Split 1,,,,lineup-eb69438b791133d1,ESA-01,1,1,oe:player:814606bfdec1050121d78a4a8458dba,oe:player:3d6d55d133ca9bf5b4ee78fb974bfbb,oe:player:03ffe21df4d5449600c9de7e8ca0614,oe:player:42551ca4228fc1ac1591d38aae96854,oe:player:9579292f38f0d38250707574036f281,Audax,Bogu,Mrbotellin,Kou,ThreaM
+player,oe:team:b350e8583018688fb4cea844b7f9806,G2 Arctic,GA,2020,Unknown,oe:player:be9758f87345bcce47970a8f17b3c07,Oscarinin,top,,,,,,,,,,,,,,
+player,oe:team:b350e8583018688fb4cea844b7f9806,G2 Arctic,GA,2020,Unknown,oe:player:064499cc8ab359fa4293b76349969c1,Nasser,jng,,,,,,,,,,,,,,
+player,oe:team:b350e8583018688fb4cea844b7f9806,G2 Arctic,GA,2020,Unknown,oe:player:2ce40d4fbbf0ead33ca1614540f4479,FeeNiixZ,mid,,,,,,,,,,,,,,
+player,oe:team:b350e8583018688fb4cea844b7f9806,G2 Arctic,GA,2020,Unknown,oe:player:1223a0ed2bfab9b714c72d965df8133,Supa,bot,,,,,,,,,,,,,,
+player,oe:team:b350e8583018688fb4cea844b7f9806,G2 Arctic,GA,2020,Unknown,oe:player:48dcc42a868c5b2493c7a4eb1131332,Aesenar,sup,,,,,,,,,,,,,,
+lineup,oe:team:b350e8583018688fb4cea844b7f9806,G2 Arctic,GA,2020,Unknown,,,,lineup-14a1d1a1dd15b455,GA-01,1,1,oe:player:be9758f87345bcce47970a8f17b3c07,oe:player:064499cc8ab359fa4293b76349969c1,oe:player:2ce40d4fbbf0ead33ca1614540f4479,oe:player:1223a0ed2bfab9b714c72d965df8133,oe:player:48dcc42a868c5b2493c7a4eb1131332,Oscarinin,Nasser,FeeNiixZ,Supa,Aesenar
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2020,Split 1,oe:player:4c25a950eb10c73fe6bd4f8688ab273,Imba,top,,,,,,,,,,,,,,
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2020,Split 1,oe:player:c3299c961a35ead84df135c4cc0c3cc,Huido,jng,,,,,,,,,,,,,,
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2020,Split 1,oe:player:f12595a359b40eabc8b33af37b2ca73,Daniur,mid,,,,,,,,,,,,,,
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2020,Split 1,oe:player:73933848061d300bbe7293d9b38a2d4,Ace,bot,,,,,,,,,,,,,,
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2020,Split 1,oe:player:09c53f3c08d109b0a5fec86dfff0f4e,Napo,sup,,,,,,,,,,,,,,
+lineup,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2020,Split 1,,,,lineup-804b9215d002828c,KK-01,1,3,oe:player:4c25a950eb10c73fe6bd4f8688ab273,oe:player:c3299c961a35ead84df135c4cc0c3cc,oe:player:f12595a359b40eabc8b33af37b2ca73,oe:player:73933848061d300bbe7293d9b38a2d4,oe:player:09c53f3c08d109b0a5fec86dfff0f4e,Imba,Huido,Daniur,Ace,Napo
+player,oe:team:4e5fe936e690fb945932add515ea1ea,Killabeez,KIL,2020,Split 1,oe:player:e3d9e95e31027019d241a231be08e33,ItGox,top,,,,,,,,,,,,,,
+player,oe:team:4e5fe936e690fb945932add515ea1ea,Killabeez,KIL,2020,Split 1,oe:player:09d224980ebf7c5f2bec0fff502c247,Shyelander,jng,,,,,,,,,,,,,,
+player,oe:team:4e5fe936e690fb945932add515ea1ea,Killabeez,KIL,2020,Split 1,oe:player:0b0e38709277788dc3166a3a99d95bb,xMata,mid,,,,,,,,,,,,,,
+player,oe:team:4e5fe936e690fb945932add515ea1ea,Killabeez,KIL,2020,Split 1,oe:player:5cfc41b7eccda649db08ead84343554,Legolas,bot,,,,,,,,,,,,,,
+player,oe:team:4e5fe936e690fb945932add515ea1ea,Killabeez,KIL,2020,Split 1,oe:player:40e6cb2d687f7574315c068128c33c3,ImAntizero,sup,,,,,,,,,,,,,,
+lineup,oe:team:4e5fe936e690fb945932add515ea1ea,Killabeez,KIL,2020,Split 1,,,,lineup-e10482afb0df7a1f,KIL-01,1,1,oe:player:e3d9e95e31027019d241a231be08e33,oe:player:09d224980ebf7c5f2bec0fff502c247,oe:player:0b0e38709277788dc3166a3a99d95bb,oe:player:5cfc41b7eccda649db08ead84343554,oe:player:40e6cb2d687f7574315c068128c33c3,ItGox,Shyelander,xMata,Legolas,ImAntizero
+player,oe:team:f3c533aeb87ace93284514faf321076,Movistar Riders Academy,MRA,2020,Split 1,oe:player:197e012fb5163375e24dbbfdae34911,Marky,top,,,,,,,,,,,,,,
+player,oe:team:f3c533aeb87ace93284514faf321076,Movistar Riders Academy,MRA,2020,Split 1,oe:player:43d302b1e552ad75d90dbc920b2aefa,WidowMaker,jng,,,,,,,,,,,,,,
+player,oe:team:f3c533aeb87ace93284514faf321076,Movistar Riders Academy,MRA,2020,Split 1,oe:player:f2387df2cb9eeb367b59f0bce4a9637,Hydra,mid,,,,,,,,,,,,,,
+player,oe:team:f3c533aeb87ace93284514faf321076,Movistar Riders Academy,MRA,2020,Split 1,oe:player:e6f6bb5eb5f8f3fe88fd5fd3c822380,Niño Palo,bot,,,,,,,,,,,,,,
+player,oe:team:f3c533aeb87ace93284514faf321076,Movistar Riders Academy,MRA,2020,Split 1,oe:player:529a05ca6c1263aab080ec4f2075441,Make,sup,,,,,,,,,,,,,,
+lineup,oe:team:f3c533aeb87ace93284514faf321076,Movistar Riders Academy,MRA,2020,Split 1,,,,lineup-4ad2e5535b45f0d0,MRA-01,1,15,oe:player:197e012fb5163375e24dbbfdae34911,oe:player:43d302b1e552ad75d90dbc920b2aefa,oe:player:f2387df2cb9eeb367b59f0bce4a9637,oe:player:e6f6bb5eb5f8f3fe88fd5fd3c822380,oe:player:529a05ca6c1263aab080ec4f2075441,Marky,WidowMaker,Hydra,Niño Palo,Make
+player,oe:team:6347114f975f4949f9b43fd62f45301,OKGG White,OW,2020,Unknown,oe:player:6accf65e8e7af7f8bc77bbd817a00c2,LightFall,top,,,,,,,,,,,,,,
+player,oe:team:6347114f975f4949f9b43fd62f45301,OKGG White,OW,2020,Unknown,oe:player:c25d1ae54cba96e93c1a4bb25ced064,Sulkirito,jng,,,,,,,,,,,,,,
+player,oe:team:6347114f975f4949f9b43fd62f45301,OKGG White,OW,2020,Unknown,oe:player:ed0c1f77bbb19261fc9260bcf22bc65,Serch,mid,,,,,,,,,,,,,,
+player,oe:team:6347114f975f4949f9b43fd62f45301,OKGG White,OW,2020,Unknown,oe:player:0518bbba376575a9bd5ff4440b88fa9,Wodex,bot,,,,,,,,,,,,,,
+player,oe:team:6347114f975f4949f9b43fd62f45301,OKGG White,OW,2020,Unknown,oe:player:c7cf4ea7a9e730ed71ef34046dd5767,Fosky,sup,,,,,,,,,,,,,,
+lineup,oe:team:6347114f975f4949f9b43fd62f45301,OKGG White,OW,2020,Unknown,,,,lineup-3bf540d42b98ffc3,OW-01,1,1,oe:player:6accf65e8e7af7f8bc77bbd817a00c2,oe:player:c25d1ae54cba96e93c1a4bb25ced064,oe:player:ed0c1f77bbb19261fc9260bcf22bc65,oe:player:0518bbba376575a9bd5ff4440b88fa9,oe:player:c7cf4ea7a9e730ed71ef34046dd5767,LightFall,Sulkirito,Serch,Wodex,Fosky
+player,oe:team:c14015eb860f145768d4368ba5c6349,S2V Esports Academy,SEA,2020,Split 1,oe:player:62b460edf2c607646b83b5d4a5e16fc,Hernan,top,,,,,,,,,,,,,,
+player,oe:team:c14015eb860f145768d4368ba5c6349,S2V Esports Academy,SEA,2020,Split 1,oe:player:5ca5e58d993386c805206ed637a9b7b,Dudu,jng,,,,,,,,,,,,,,
+player,oe:team:c14015eb860f145768d4368ba5c6349,S2V Esports Academy,SEA,2020,Split 1,oe:player:6c7966185eb9b1242650d2f6359f917,ReNKlar,jng,,,,,,,,,,,,,,
+player,oe:team:c14015eb860f145768d4368ba5c6349,S2V Esports Academy,SEA,2020,Split 1,oe:player:f964ec386676ab3b4bae194d3fb7fd6,Alvaro,mid,,,,,,,,,,,,,,
+player,oe:team:c14015eb860f145768d4368ba5c6349,S2V Esports Academy,SEA,2020,Split 1,oe:player:820897abcdbca1e49ffb8c6aff577ea,Rata,bot,,,,,,,,,,,,,,
+player,oe:team:c14015eb860f145768d4368ba5c6349,S2V Esports Academy,SEA,2020,Split 1,oe:player:6f3b3972dde8d4cf188b7558bb66576,WachonBB,sup,,,,,,,,,,,,,,
+lineup,oe:team:c14015eb860f145768d4368ba5c6349,S2V Esports Academy,SEA,2020,Split 1,,,,lineup-1c3584a644216d66,SEA-01,1,1,oe:player:62b460edf2c607646b83b5d4a5e16fc,oe:player:5ca5e58d993386c805206ed637a9b7b,oe:player:f964ec386676ab3b4bae194d3fb7fd6,oe:player:820897abcdbca1e49ffb8c6aff577ea,oe:player:6f3b3972dde8d4cf188b7558bb66576,Hernan,Dudu,Alvaro,Rata,WachonBB
+lineup,oe:team:c14015eb860f145768d4368ba5c6349,S2V Esports Academy,SEA,2020,Split 1,,,,lineup-889c2f0a3158b3d1,SEA-02,2,1,oe:player:62b460edf2c607646b83b5d4a5e16fc,oe:player:6c7966185eb9b1242650d2f6359f917,oe:player:f964ec386676ab3b4bae194d3fb7fd6,oe:player:820897abcdbca1e49ffb8c6aff577ea,oe:player:6f3b3972dde8d4cf188b7558bb66576,Hernan,ReNKlar,Alvaro,Rata,WachonBB
+player,oe:team:eb2c3286d3f7ae58bb118bbc87bab2c,Vodafone Giants Academy,VGA,2020,Split 1,oe:player:0caae5fa6946eff21e2cdd19bc231d8,Manolete,top,,,,,,,,,,,,,,
+player,oe:team:eb2c3286d3f7ae58bb118bbc87bab2c,Vodafone Giants Academy,VGA,2020,Split 1,oe:player:ebe3b61735fe15f980ed232bb4e779b,Cedeiix,jng,,,,,,,,,,,,,,
+player,oe:team:eb2c3286d3f7ae58bb118bbc87bab2c,Vodafone Giants Academy,VGA,2020,Split 1,oe:player:352528484ad653d3ac9c1fd56c17845,Fénec,jng,,,,,,,,,,,,,,
+player,oe:team:eb2c3286d3f7ae58bb118bbc87bab2c,Vodafone Giants Academy,VGA,2020,Split 1,oe:player:d3fa8e30e87ab83eabf270c0ef2e277,Zeling,mid,,,,,,,,,,,,,,
+player,oe:team:eb2c3286d3f7ae58bb118bbc87bab2c,Vodafone Giants Academy,VGA,2020,Split 1,oe:player:fce564d68742383c002368129b41528,Jesskiu,bot,,,,,,,,,,,,,,
+player,oe:team:eb2c3286d3f7ae58bb118bbc87bab2c,Vodafone Giants Academy,VGA,2020,Split 1,oe:player:aeac0d7899b83263b7831f55b91c60a,Karakal Jr,sup,,,,,,,,,,,,,,
+lineup,oe:team:eb2c3286d3f7ae58bb118bbc87bab2c,Vodafone Giants Academy,VGA,2020,Split 1,,,,lineup-2182c772542e376c,VGA-01,1,1,oe:player:0caae5fa6946eff21e2cdd19bc231d8,oe:player:ebe3b61735fe15f980ed232bb4e779b,oe:player:d3fa8e30e87ab83eabf270c0ef2e277,oe:player:fce564d68742383c002368129b41528,oe:player:aeac0d7899b83263b7831f55b91c60a,Manolete,Cedeiix,Zeling,Jesskiu,Karakal Jr
+lineup,oe:team:eb2c3286d3f7ae58bb118bbc87bab2c,Vodafone Giants Academy,VGA,2020,Split 1,,,,lineup-c6c9f325c1be3380,VGA-02,2,1,oe:player:0caae5fa6946eff21e2cdd19bc231d8,oe:player:352528484ad653d3ac9c1fd56c17845,oe:player:d3fa8e30e87ab83eabf270c0ef2e277,oe:player:fce564d68742383c002368129b41528,oe:player:aeac0d7899b83263b7831f55b91c60a,Manolete,Fénec,Zeling,Jesskiu,Karakal Jr

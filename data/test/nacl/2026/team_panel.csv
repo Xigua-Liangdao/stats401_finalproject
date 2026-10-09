@@ -1,0 +1,67 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:fa12fb801e77d60b9fde291b93c5d3f,Apex Mission Impossible,AMI,2026,Unknown,oe:player:8d610fc7ab92a4e6f7c1136bc98282f,Dec0y,top,,,,,,,,,,,,,,
+player,oe:team:fa12fb801e77d60b9fde291b93c5d3f,Apex Mission Impossible,AMI,2026,Unknown,oe:player:f5cacc1f783c996318411f595272c71,Lojaz,jng,,,,,,,,,,,,,,
+player,oe:team:fa12fb801e77d60b9fde291b93c5d3f,Apex Mission Impossible,AMI,2026,Unknown,oe:player:a072ed6a69c1a506c6c0eaa385ba039,Retrozing,mid,,,,,,,,,,,,,,
+player,oe:team:fa12fb801e77d60b9fde291b93c5d3f,Apex Mission Impossible,AMI,2026,Unknown,oe:player:466ce26370ebf51e9899522b7ebeea7,Bazz,bot,,,,,,,,,,,,,,
+player,oe:team:fa12fb801e77d60b9fde291b93c5d3f,Apex Mission Impossible,AMI,2026,Unknown,oe:player:2d57548e17edd21f589d538e2214515,Protos,sup,,,,,,,,,,,,,,
+lineup,oe:team:fa12fb801e77d60b9fde291b93c5d3f,Apex Mission Impossible,AMI,2026,Unknown,,,,lineup-0296140f1a3e0eb5,AMI-01,1,1,oe:player:8d610fc7ab92a4e6f7c1136bc98282f,oe:player:f5cacc1f783c996318411f595272c71,oe:player:a072ed6a69c1a506c6c0eaa385ba039,oe:player:466ce26370ebf51e9899522b7ebeea7,oe:player:2d57548e17edd21f589d538e2214515,Dec0y,Lojaz,Retrozing,Bazz,Protos
+player,oe:team:009345cfebfe411229f8fad11210219,Blue Otter,BO,2026,Spring,oe:player:20a8e429d58dfe01327b4e6f0a1cf05,Ariana,top,,,,,,,,,,,,,,
+player,oe:team:009345cfebfe411229f8fad11210219,Blue Otter,BO,2026,Spring,oe:player:33ec03adce2bef14f100376bc7770b2,Munchy,jng,,,,,,,,,,,,,,
+player,oe:team:009345cfebfe411229f8fad11210219,Blue Otter,BO,2026,Spring,oe:player:c5dac98c1a0cbe23f6bc0262e77a0bd,Samikin,mid,,,,,,,,,,,,,,
+player,oe:team:009345cfebfe411229f8fad11210219,Blue Otter,BO,2026,Spring,oe:player:3f96b0d5494895f5e964dc16ea8f27b,Spawn,bot,,,,,,,,,,,,,,
+player,oe:team:009345cfebfe411229f8fad11210219,Blue Otter,BO,2026,Spring,oe:player:57bb48fd65bff2e2660a13e58f2fcb2,Rovex,sup,,,,,,,,,,,,,,
+lineup,oe:team:009345cfebfe411229f8fad11210219,Blue Otter,BO,2026,Spring,,,,lineup-3507f694420320e4,BO-01,1,2,oe:player:20a8e429d58dfe01327b4e6f0a1cf05,oe:player:33ec03adce2bef14f100376bc7770b2,oe:player:c5dac98c1a0cbe23f6bc0262e77a0bd,oe:player:3f96b0d5494895f5e964dc16ea8f27b,oe:player:57bb48fd65bff2e2660a13e58f2fcb2,Ariana,Munchy,Samikin,Spawn,Rovex
+player,oe:team:e87c7d57b92c16e76f7e040342a4bc3,Citadel Gaming,CG,2026,Spring,oe:player:18fb9695f004925012bf3ae5826b780,Stray,top,,,,,,,,,,,,,,
+player,oe:team:e87c7d57b92c16e76f7e040342a4bc3,Citadel Gaming,CG,2026,Spring,oe:player:30bccf285c11c18d7698c98ca52d87d,Griffin,jng,,,,,,,,,,,,,,
+player,oe:team:e87c7d57b92c16e76f7e040342a4bc3,Citadel Gaming,CG,2026,Spring,oe:player:5257e05cde806e07b405ddcce85114d,Bradley,mid,,,,,,,,,,,,,,
+player,oe:team:e87c7d57b92c16e76f7e040342a4bc3,Citadel Gaming,CG,2026,Spring,oe:player:4410ec34d9e6c1a68100ca0ce033fb1,Array,bot,,,,,,,,,,,,,,
+player,oe:team:e87c7d57b92c16e76f7e040342a4bc3,Citadel Gaming,CG,2026,Spring,oe:player:4ef00a200b9361cd76bb7e612b171c4,Keel,sup,,,,,,,,,,,,,,
+lineup,oe:team:e87c7d57b92c16e76f7e040342a4bc3,Citadel Gaming,CG,2026,Spring,,,,lineup-b603a01377b36a2a,CG-01,1,2,oe:player:18fb9695f004925012bf3ae5826b780,oe:player:30bccf285c11c18d7698c98ca52d87d,oe:player:5257e05cde806e07b405ddcce85114d,oe:player:4410ec34d9e6c1a68100ca0ce033fb1,oe:player:4ef00a200b9361cd76bb7e612b171c4,Stray,Griffin,Bradley,Array,Keel
+player,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Spring,oe:player:007be3acd5669d100711b13d79e2336,Sniper,top,,,,,,,,,,,,,,
+player,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Spring,oe:player:6ebdf3a3b56c113137109c45c2abc8f,Tomio,jng,,,,,,,,,,,,,,
+player,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Spring,oe:player:ef97df9d746d0e65ed18786ab30031c,Insanity,mid,,,,,,,,,,,,,,
+player,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Spring,oe:player:4db47d64e2721bf7a93ebf42e488852,Meech,bot,,,,,,,,,,,,,,
+player,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Spring,oe:player:647116a60606bd44fb11a860da72776,Breezy,sup,,,,,,,,,,,,,,
+lineup,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Spring,,,,lineup-98cfa5a888f5550c,CON-01,1,2,oe:player:007be3acd5669d100711b13d79e2336,oe:player:6ebdf3a3b56c113137109c45c2abc8f,oe:player:ef97df9d746d0e65ed18786ab30031c,oe:player:4db47d64e2721bf7a93ebf42e488852,oe:player:647116a60606bd44fb11a860da72776,Sniper,Tomio,Insanity,Meech,Breezy
+player,oe:team:d522e8753c50018adbb82305997c211,Cupid Esports,CE,2026,Unknown,oe:player:3a20dadc4114d05ac4f44696c3c71ec,DrCalculus,top,,,,,,,,,,,,,,
+player,oe:team:d522e8753c50018adbb82305997c211,Cupid Esports,CE,2026,Unknown,oe:player:713a01ab419f96cb320352765e8791d,Bio,jng,,,,,,,,,,,,,,
+player,oe:team:d522e8753c50018adbb82305997c211,Cupid Esports,CE,2026,Unknown,oe:player:04c02a2547f738a051c8a3cf1717f2c,aadurrr,mid,,,,,,,,,,,,,,
+player,oe:team:d522e8753c50018adbb82305997c211,Cupid Esports,CE,2026,Unknown,oe:player:8ec0aa43c13bd012a37baf5f85ea5bf,Hub,bot,,,,,,,,,,,,,,
+player,oe:team:d522e8753c50018adbb82305997c211,Cupid Esports,CE,2026,Unknown,oe:player:56a52cb1cd0c4f5c07a1582cf640687,Bruhruto,sup,,,,,,,,,,,,,,
+lineup,oe:team:d522e8753c50018adbb82305997c211,Cupid Esports,CE,2026,Unknown,,,,lineup-78211460ab6940f5,CE-01,1,1,oe:player:3a20dadc4114d05ac4f44696c3c71ec,oe:player:713a01ab419f96cb320352765e8791d,oe:player:04c02a2547f738a051c8a3cf1717f2c,oe:player:8ec0aa43c13bd012a37baf5f85ea5bf,oe:player:56a52cb1cd0c4f5c07a1582cf640687,DrCalculus,Bio,aadurrr,Hub,Bruhruto
+player,oe:team:37bd385fc057edaaa06e0aa102f6d74,Dorado Gaming,DG,2026,Spring,oe:player:8d610fc7ab92a4e6f7c1136bc98282f,Dec0y,top,,,,,,,,,,,,,,
+player,oe:team:37bd385fc057edaaa06e0aa102f6d74,Dorado Gaming,DG,2026,Spring,oe:player:f5cacc1f783c996318411f595272c71,Lojaz,jng,,,,,,,,,,,,,,
+player,oe:team:37bd385fc057edaaa06e0aa102f6d74,Dorado Gaming,DG,2026,Spring,oe:player:6cda5ac78f292ffeac6d2c599c007ca,aadam,mid,,,,,,,,,,,,,,
+player,oe:team:37bd385fc057edaaa06e0aa102f6d74,Dorado Gaming,DG,2026,Spring,oe:player:8ec0aa43c13bd012a37baf5f85ea5bf,Hub,bot,,,,,,,,,,,,,,
+player,oe:team:37bd385fc057edaaa06e0aa102f6d74,Dorado Gaming,DG,2026,Spring,oe:player:22a9015823529dee34486453b7d9907,Redemption,sup,,,,,,,,,,,,,,
+lineup,oe:team:37bd385fc057edaaa06e0aa102f6d74,Dorado Gaming,DG,2026,Spring,,,,lineup-d2ea8f2021198f82,DG-01,1,2,oe:player:8d610fc7ab92a4e6f7c1136bc98282f,oe:player:f5cacc1f783c996318411f595272c71,oe:player:6cda5ac78f292ffeac6d2c599c007ca,oe:player:8ec0aa43c13bd012a37baf5f85ea5bf,oe:player:22a9015823529dee34486453b7d9907,Dec0y,Lojaz,aadam,Hub,Redemption
+player,oe:team:068598211100000c050b32c63748313,Lotus,LOT,2026,Unknown,oe:player:98507570b7ae6c8019192bc1b5412c1,Porsche,top,,,,,,,,,,,,,,
+player,oe:team:068598211100000c050b32c63748313,Lotus,LOT,2026,Unknown,oe:player:e03653dedd6f4e142f4aca131995964,Chad,jng,,,,,,,,,,,,,,
+player,oe:team:068598211100000c050b32c63748313,Lotus,LOT,2026,Unknown,oe:player:1c275bedd474301abb6a402792d0731,RobbyBob,mid,,,,,,,,,,,,,,
+player,oe:team:068598211100000c050b32c63748313,Lotus,LOT,2026,Unknown,oe:player:f6afb3ca3ac4cb969cc0c36330d8ee8,Airren,bot,,,,,,,,,,,,,,
+player,oe:team:068598211100000c050b32c63748313,Lotus,LOT,2026,Unknown,oe:player:85aabb2082e3d345156996cc6d61808,Clareetz,sup,,,,,,,,,,,,,,
+lineup,oe:team:068598211100000c050b32c63748313,Lotus,LOT,2026,Unknown,,,,lineup-26bd883f62c20576,LOT-01,1,1,oe:player:98507570b7ae6c8019192bc1b5412c1,oe:player:e03653dedd6f4e142f4aca131995964,oe:player:1c275bedd474301abb6a402792d0731,oe:player:f6afb3ca3ac4cb969cc0c36330d8ee8,oe:player:85aabb2082e3d345156996cc6d61808,Porsche,Chad,RobbyBob,Airren,Clareetz
+player,oe:team:9336ce46babf314b50e3a103506ae0a,Maryville University,MU,2026,Spring,oe:player:c70b6e57e597809a8561caa79c5db8f,Keii,top,,,,,,,,,,,,,,
+player,oe:team:9336ce46babf314b50e3a103506ae0a,Maryville University,MU,2026,Spring,oe:player:f9e804c44aa43f18576783a067e99ab,Yuuji,jng,,,,,,,,,,,,,,
+player,oe:team:9336ce46babf314b50e3a103506ae0a,Maryville University,MU,2026,Spring,oe:player:b415fb792209708ad6921cca2e73aff,Spirax,mid,,,,,,,,,,,,,,
+player,oe:team:9336ce46babf314b50e3a103506ae0a,Maryville University,MU,2026,Spring,oe:player:265b58ce8b2f418df94006bf24e296c,ScaryJerry,bot,,,,,,,,,,,,,,
+player,oe:team:9336ce46babf314b50e3a103506ae0a,Maryville University,MU,2026,Spring,oe:player:5143731d10e0edf3a81ee7d55d8b961,Obstinatus,sup,,,,,,,,,,,,,,
+lineup,oe:team:9336ce46babf314b50e3a103506ae0a,Maryville University,MU,2026,Spring,,,,lineup-986b935d6f73612c,MU-01,1,2,oe:player:c70b6e57e597809a8561caa79c5db8f,oe:player:f9e804c44aa43f18576783a067e99ab,oe:player:b415fb792209708ad6921cca2e73aff,oe:player:265b58ce8b2f418df94006bf24e296c,oe:player:5143731d10e0edf3a81ee7d55d8b961,Keii,Yuuji,Spirax,ScaryJerry,Obstinatus
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2026,Spring,oe:player:4e8d825698068a189023c34c67fe2cb,Horder,top,,,,,,,,,,,,,,
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2026,Spring,oe:player:7bcd2e0ffb1e417c2aa64d08675ed2b,Music,jng,,,,,,,,,,,,,,
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2026,Spring,oe:player:8a26fb905636bc0bec1a65212c3c863,shochi,mid,,,,,,,,,,,,,,
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2026,Spring,oe:player:b51220a382d45959479685fa1a1c9a7,Levitate,bot,,,,,,,,,,,,,,
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2026,Spring,oe:player:42ad24fb9a58f115637ed14ee70677a,Zyko,sup,,,,,,,,,,,,,,
+lineup,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2026,Spring,,,,lineup-fd727f621f59a48d,SUP-01,1,2,oe:player:4e8d825698068a189023c34c67fe2cb,oe:player:7bcd2e0ffb1e417c2aa64d08675ed2b,oe:player:8a26fb905636bc0bec1a65212c3c863,oe:player:b51220a382d45959479685fa1a1c9a7,oe:player:42ad24fb9a58f115637ed14ee70677a,Horder,Music,shochi,Levitate,Zyko
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2026,Spring,oe:player:3bb028a43aff78070d15c646450aa0d,Denathor,top,,,,,,,,,,,,,,
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2026,Spring,oe:player:398074139a206bc8bbab0be766c6ffa,Wilson,jng,,,,,,,,,,,,,,
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2026,Spring,oe:player:c61db0cdc60db4445d07ee5ae79941a,Zach,mid,,,,,,,,,,,,,,
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2026,Spring,oe:player:340a76e3aef8e862f5fd79411261b29,Mobility,bot,,,,,,,,,,,,,,
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2026,Spring,oe:player:2a8f9050a8f7c5dd91f2332dc3bb2f5,Kim Down,sup,,,,,,,,,,,,,,
+lineup,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2026,Spring,,,,lineup-813d5f913ce5785d,WU-01,1,12,oe:player:3bb028a43aff78070d15c646450aa0d,oe:player:398074139a206bc8bbab0be766c6ffa,oe:player:c61db0cdc60db4445d07ee5ae79941a,oe:player:340a76e3aef8e862f5fd79411261b29,oe:player:2a8f9050a8f7c5dd91f2332dc3bb2f5,Denathor,Wilson,Zach,Mobility,Kim Down
+player,oe:team:a1964e03a2f3d36aecdeccc14a2c89a,Zenshi Gaming,ZG,2026,Unknown,oe:player:86ee7da72c5b4e5cbead61108633617,Berik,top,,,,,,,,,,,,,,
+player,oe:team:a1964e03a2f3d36aecdeccc14a2c89a,Zenshi Gaming,ZG,2026,Unknown,oe:player:cc7d2fcc0750626772a0d7cf65cbbc2,Nxi,jng,,,,,,,,,,,,,,
+player,oe:team:a1964e03a2f3d36aecdeccc14a2c89a,Zenshi Gaming,ZG,2026,Unknown,oe:player:0f904d3681f72962dfedf3f52c1411b,Cupic,mid,,,,,,,,,,,,,,
+player,oe:team:a1964e03a2f3d36aecdeccc14a2c89a,Zenshi Gaming,ZG,2026,Unknown,oe:player:1763315d2b245c5490d69313fbe1c83,Globby,bot,,,,,,,,,,,,,,
+player,oe:team:a1964e03a2f3d36aecdeccc14a2c89a,Zenshi Gaming,ZG,2026,Unknown,oe:player:2a8f9050a8f7c5dd91f2332dc3bb2f5,Kim Down,sup,,,,,,,,,,,,,,
+lineup,oe:team:a1964e03a2f3d36aecdeccc14a2c89a,Zenshi Gaming,ZG,2026,Unknown,,,,lineup-8c09496f3ca28df8,ZG-01,1,1,oe:player:86ee7da72c5b4e5cbead61108633617,oe:player:cc7d2fcc0750626772a0d7cf65cbbc2,oe:player:0f904d3681f72962dfedf3f52c1411b,oe:player:1763315d2b245c5490d69313fbe1c83,oe:player:2a8f9050a8f7c5dd91f2332dc3bb2f5,Berik,Nxi,Cupic,Globby,Kim Down

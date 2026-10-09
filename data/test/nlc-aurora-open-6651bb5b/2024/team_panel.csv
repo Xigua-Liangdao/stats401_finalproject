@@ -1,0 +1,49 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:f4342581cac266ae8ef96736fa371ee,Bitfix Gaming,BG,2024,Unknown,oe:player:d8cc74359f5b59e1c64e281dfb94c21,BrannMolvik,top,,,,,,,,,,,,,,
+player,oe:team:f4342581cac266ae8ef96736fa371ee,Bitfix Gaming,BG,2024,Unknown,oe:player:861565831545afb68057b15adeaa304,Urban,jng,,,,,,,,,,,,,,
+player,oe:team:f4342581cac266ae8ef96736fa371ee,Bitfix Gaming,BG,2024,Unknown,oe:player:a0c87894f0e56ae5f63b8d22f450532,FENZ1,mid,,,,,,,,,,,,,,
+player,oe:team:f4342581cac266ae8ef96736fa371ee,Bitfix Gaming,BG,2024,Unknown,oe:player:5bf1b803771e3a118a9db1fdfcbaa58,Chrisberg,bot,,,,,,,,,,,,,,
+player,oe:team:f4342581cac266ae8ef96736fa371ee,Bitfix Gaming,BG,2024,Unknown,oe:player:c5938bf5bdab7fa83e248750b4479d0,Matthieu,sup,,,,,,,,,,,,,,
+lineup,oe:team:f4342581cac266ae8ef96736fa371ee,Bitfix Gaming,BG,2024,Unknown,,,,lineup-e333321800556a5d,BG-01,1,3,oe:player:d8cc74359f5b59e1c64e281dfb94c21,oe:player:861565831545afb68057b15adeaa304,oe:player:a0c87894f0e56ae5f63b8d22f450532,oe:player:5bf1b803771e3a118a9db1fdfcbaa58,oe:player:c5938bf5bdab7fa83e248750b4479d0,BrannMolvik,Urban,FENZ1,Chrisberg,Matthieu
+player,oe:team:997d9733dcd8c9d22df400b39800ff7,Brod and Friends,BAF,2024,Unknown,oe:player:2b3304094ff4e0d52c949a893b64b56,Akkers,top,,,,,,,,,,,,,,
+player,oe:team:997d9733dcd8c9d22df400b39800ff7,Brod and Friends,BAF,2024,Unknown,oe:player:f46684e3ae43b3cf8cae5fb79d27c79,Krisyss,jng,,,,,,,,,,,,,,
+player,oe:team:997d9733dcd8c9d22df400b39800ff7,Brod and Friends,BAF,2024,Unknown,oe:player:da36e5cf72c5a1bbff37ea174b8138d,Ketsuo,mid,,,,,,,,,,,,,,
+player,oe:team:997d9733dcd8c9d22df400b39800ff7,Brod and Friends,BAF,2024,Unknown,oe:player:02f6ffdf4bd4b275598106ebe404502,Spark,bot,,,,,,,,,,,,,,
+player,oe:team:997d9733dcd8c9d22df400b39800ff7,Brod and Friends,BAF,2024,Unknown,oe:player:3a9ef94b7e6b38efae7dc169d89cbe1,Jamsu,sup,,,,,,,,,,,,,,
+lineup,oe:team:997d9733dcd8c9d22df400b39800ff7,Brod and Friends,BAF,2024,Unknown,,,,lineup-403a61a22a8f5c46,BAF-01,1,1,oe:player:2b3304094ff4e0d52c949a893b64b56,oe:player:f46684e3ae43b3cf8cae5fb79d27c79,oe:player:da36e5cf72c5a1bbff37ea174b8138d,oe:player:02f6ffdf4bd4b275598106ebe404502,oe:player:3a9ef94b7e6b38efae7dc169d89cbe1,Akkers,Krisyss,Ketsuo,Spark,Jamsu
+player,oe:team:6ef01b22224b92f917d70dd9f33568b,NORD Esports,NE,2024,Unknown,oe:player:e1519339eeb4bd05023ee71a5eacce6,Hespo,top,,,,,,,,,,,,,,
+player,oe:team:6ef01b22224b92f917d70dd9f33568b,NORD Esports,NE,2024,Unknown,oe:player:00558cb3daa73e60ba4af7e7060e6e2,Skude,jng,,,,,,,,,,,,,,
+player,oe:team:6ef01b22224b92f917d70dd9f33568b,NORD Esports,NE,2024,Unknown,oe:player:f683aadb1720a4a1766fcfc3b6d3ef5,Hunt,mid,,,,,,,,,,,,,,
+player,oe:team:6ef01b22224b92f917d70dd9f33568b,NORD Esports,NE,2024,Unknown,oe:player:e7be24324b2d08ca8b3bca92bb28e06,Aklass,bot,,,,,,,,,,,,,,
+player,oe:team:6ef01b22224b92f917d70dd9f33568b,NORD Esports,NE,2024,Unknown,oe:player:88156d46910a2d733443c339a9231d1,Velocity,sup,,,,,,,,,,,,,,
+lineup,oe:team:6ef01b22224b92f917d70dd9f33568b,NORD Esports,NE,2024,Unknown,,,,lineup-3a546ca36c1c85a0,NE-01,1,1,oe:player:e1519339eeb4bd05023ee71a5eacce6,oe:player:00558cb3daa73e60ba4af7e7060e6e2,oe:player:f683aadb1720a4a1766fcfc3b6d3ef5,oe:player:e7be24324b2d08ca8b3bca92bb28e06,oe:player:88156d46910a2d733443c339a9231d1,Hespo,Skude,Hunt,Aklass,Velocity
+player,oe:team:a73a242584df96b35d6e606d93608f8,Nativz,NAT,2024,Unknown,oe:player:1ed985bf5e092b7db1264cd79db60ea,Archfiend,top,,,,,,,,,,,,,,
+player,oe:team:a73a242584df96b35d6e606d93608f8,Nativz,NAT,2024,Unknown,oe:player:9e239ff6abacdf305118af883b83db8,hybradge,jng,,,,,,,,,,,,,,
+player,oe:team:a73a242584df96b35d6e606d93608f8,Nativz,NAT,2024,Unknown,oe:player:e6d07e10777c4dbc47857a3ac2c66fe,D1verse,mid,,,,,,,,,,,,,,
+player,oe:team:a73a242584df96b35d6e606d93608f8,Nativz,NAT,2024,Unknown,oe:player:c1353b4e2353fa3dc4e590d580ed9e5,MKR,bot,,,,,,,,,,,,,,
+player,oe:team:a73a242584df96b35d6e606d93608f8,Nativz,NAT,2024,Unknown,oe:player:f6f8d33e55497cb40269be33f894ab6,LeoLeCargo,sup,,,,,,,,,,,,,,
+lineup,oe:team:a73a242584df96b35d6e606d93608f8,Nativz,NAT,2024,Unknown,,,,lineup-70d129fc467b9933,NAT-01,1,1,oe:player:1ed985bf5e092b7db1264cd79db60ea,oe:player:9e239ff6abacdf305118af883b83db8,oe:player:e6d07e10777c4dbc47857a3ac2c66fe,oe:player:c1353b4e2353fa3dc4e590d580ed9e5,oe:player:f6f8d33e55497cb40269be33f894ab6,Archfiend,hybradge,D1verse,MKR,LeoLeCargo
+player,name-team-ff801fb9d1ce3e9e,Regem,REG,2024,Unknown,oe:player:53ee1f6d941b631ed8148da49785378,Raider,top,,,,,,,,,,,,,,
+player,name-team-ff801fb9d1ce3e9e,Regem,REG,2024,Unknown,oe:player:5ce2ea92f949e2b50f4944d5d8f5693,Scofield,jng,,,,,,,,,,,,,,
+player,name-team-ff801fb9d1ce3e9e,Regem,REG,2024,Unknown,oe:player:df72759c8339d15228c11df5bdc62bb,FIERCE,mid,,,,,,,,,,,,,,
+player,name-team-ff801fb9d1ce3e9e,Regem,REG,2024,Unknown,oe:player:371dfc158ccca5d527f0b5b11743e20,Lindgarde,bot,,,,,,,,,,,,,,
+player,name-team-ff801fb9d1ce3e9e,Regem,REG,2024,Unknown,oe:player:c5f3e376c7e4fc8febf4e84a3946487,Simpy,sup,,,,,,,,,,,,,,
+lineup,name-team-ff801fb9d1ce3e9e,Regem,REG,2024,Unknown,,,,lineup-382876792c23b2c2,REG-01,1,1,oe:player:53ee1f6d941b631ed8148da49785378,oe:player:5ce2ea92f949e2b50f4944d5d8f5693,oe:player:df72759c8339d15228c11df5bdc62bb,oe:player:371dfc158ccca5d527f0b5b11743e20,oe:player:c5f3e376c7e4fc8febf4e84a3946487,Raider,Scofield,FIERCE,Lindgarde,Simpy
+player,oe:team:b1db6fe70c0141676d7a2e2660bd869,Ruddy Corporation,RC,2024,Unknown,oe:player:2d9f7fa495972ca9d3c905d6546a2a2,Built,top,,,,,,,,,,,,,,
+player,oe:team:b1db6fe70c0141676d7a2e2660bd869,Ruddy Corporation,RC,2024,Unknown,oe:player:d22aa92e1e9482e79e8a58fb42b5b7b,Malice,jng,,,,,,,,,,,,,,
+player,oe:team:b1db6fe70c0141676d7a2e2660bd869,Ruddy Corporation,RC,2024,Unknown,oe:player:ef92b55a48eb2b383af92eef0c0e738,Raqo,mid,,,,,,,,,,,,,,
+player,oe:team:b1db6fe70c0141676d7a2e2660bd869,Ruddy Corporation,RC,2024,Unknown,oe:player:adb887df0adf1894f8af5073a5c6bc3,Nata,bot,,,,,,,,,,,,,,
+player,oe:team:b1db6fe70c0141676d7a2e2660bd869,Ruddy Corporation,RC,2024,Unknown,oe:player:89a5825cdba97b34f7325e38a5e1ff5,Alaric,sup,,,,,,,,,,,,,,
+lineup,oe:team:b1db6fe70c0141676d7a2e2660bd869,Ruddy Corporation,RC,2024,Unknown,,,,lineup-5a804e9754ddeae7,RC-01,1,5,oe:player:2d9f7fa495972ca9d3c905d6546a2a2,oe:player:d22aa92e1e9482e79e8a58fb42b5b7b,oe:player:ef92b55a48eb2b383af92eef0c0e738,oe:player:adb887df0adf1894f8af5073a5c6bc3,oe:player:89a5825cdba97b34f7325e38a5e1ff5,Built,Malice,Raqo,Nata,Alaric
+player,oe:team:db052729079b7bbe03274df413b2d1b,Venomcrest Esports,VE,2024,Unknown,oe:player:691e0ad4afc3da3e472014cd65abcad,Buchi,top,,,,,,,,,,,,,,
+player,oe:team:db052729079b7bbe03274df413b2d1b,Venomcrest Esports,VE,2024,Unknown,oe:player:d9ac06cccf6e4f573474b5195218e60,Oleg,jng,,,,,,,,,,,,,,
+player,oe:team:db052729079b7bbe03274df413b2d1b,Venomcrest Esports,VE,2024,Unknown,oe:player:6b857fe1d3971aebd9f35f421d56806,Painful,mid,,,,,,,,,,,,,,
+player,oe:team:db052729079b7bbe03274df413b2d1b,Venomcrest Esports,VE,2024,Unknown,oe:player:5d772fc3cefe6fec269411b8ca18d9d,RustySniper,bot,,,,,,,,,,,,,,
+player,oe:team:db052729079b7bbe03274df413b2d1b,Venomcrest Esports,VE,2024,Unknown,oe:player:1087aa8f482518a2b02334270f5607c,Gordinho,sup,,,,,,,,,,,,,,
+lineup,oe:team:db052729079b7bbe03274df413b2d1b,Venomcrest Esports,VE,2024,Unknown,,,,lineup-1822d2ea55592399,VE-01,1,12,oe:player:691e0ad4afc3da3e472014cd65abcad,oe:player:d9ac06cccf6e4f573474b5195218e60,oe:player:6b857fe1d3971aebd9f35f421d56806,oe:player:5d772fc3cefe6fec269411b8ca18d9d,oe:player:1087aa8f482518a2b02334270f5607c,Buchi,Oleg,Painful,RustySniper,Gordinho
+player,oe:team:b33646d7b7b14dd6da17a88f6ddb592,Verdant,VER,2024,Unknown,oe:player:f3f1edfba7200c65b417d359a6f9c82,pr1me,top,,,,,,,,,,,,,,
+player,oe:team:b33646d7b7b14dd6da17a88f6ddb592,Verdant,VER,2024,Unknown,oe:player:15101ae59f2cc7c8836b7e67352b598,Noodle,jng,,,,,,,,,,,,,,
+player,oe:team:b33646d7b7b14dd6da17a88f6ddb592,Verdant,VER,2024,Unknown,oe:player:1428134d4ece3f00321b6b870ca2152,Roison,mid,,,,,,,,,,,,,,
+player,oe:team:b33646d7b7b14dd6da17a88f6ddb592,Verdant,VER,2024,Unknown,oe:player:c032df73970ffb2f2b585d912f6b20d,Neramin,bot,,,,,,,,,,,,,,
+player,oe:team:b33646d7b7b14dd6da17a88f6ddb592,Verdant,VER,2024,Unknown,oe:player:dcd93cc48ba71890cc0580de524f536,FGG,sup,,,,,,,,,,,,,,
+lineup,oe:team:b33646d7b7b14dd6da17a88f6ddb592,Verdant,VER,2024,Unknown,,,,lineup-f3d5930e97030386,VER-01,1,4,oe:player:f3f1edfba7200c65b417d359a6f9c82,oe:player:15101ae59f2cc7c8836b7e67352b598,oe:player:1428134d4ece3f00321b6b870ca2152,oe:player:c032df73970ffb2f2b585d912f6b20d,oe:player:dcd93cc48ba71890cc0580de524f536,pr1me,Noodle,Roison,Neramin,FGG

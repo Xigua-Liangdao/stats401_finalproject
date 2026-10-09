@@ -1,0 +1,68 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:588c0f09975443cbfbbe71a9ac1d75c,Bis Esports,BE,2023,Split 2,oe:player:d9993db0d276065093b77b8e86996fc,Parlita,top,,,,,,,,,,,,,,
+player,oe:team:588c0f09975443cbfbbe71a9ac1d75c,Bis Esports,BE,2023,Split 2,oe:player:14775c5f3aa804d18189fde40649c5d,Emvipi,jng,,,,,,,,,,,,,,
+player,oe:team:588c0f09975443cbfbbe71a9ac1d75c,Bis Esports,BE,2023,Split 2,oe:player:e5841c7215d35ed0c9522450e7fb57a,Tikyl,jng,,,,,,,,,,,,,,
+player,oe:team:588c0f09975443cbfbbe71a9ac1d75c,Bis Esports,BE,2023,Split 2,oe:player:da3438a69ff65c06a8a4a432b518d24,Ishi,mid,,,,,,,,,,,,,,
+player,oe:team:588c0f09975443cbfbbe71a9ac1d75c,Bis Esports,BE,2023,Split 2,oe:player:7773e8883f4bf85d29f4e7a0b2d9709,Nox,mid,,,,,,,,,,,,,,
+player,oe:team:588c0f09975443cbfbbe71a9ac1d75c,Bis Esports,BE,2023,Split 2,oe:player:0b0e38709277788dc3166a3a99d95bb,xMata,mid,,,,,,,,,,,,,,
+player,oe:team:588c0f09975443cbfbbe71a9ac1d75c,Bis Esports,BE,2023,Split 2,oe:player:0998a1e9d55bcf3eb5ee3ea3eba9250,ALNSHT,bot,,,,,,,,,,,,,,
+player,oe:team:588c0f09975443cbfbbe71a9ac1d75c,Bis Esports,BE,2023,Split 2,oe:player:77c10036edafc6b267a710e0525bf7a,Yoangi,bot,,,,,,,,,,,,,,
+player,oe:team:588c0f09975443cbfbbe71a9ac1d75c,Bis Esports,BE,2023,Split 2,oe:player:ba0555049bc1c041839c65f6b0af6dc,Gilito,sup,,,,,,,,,,,,,,
+player,oe:team:588c0f09975443cbfbbe71a9ac1d75c,Bis Esports,BE,2023,Split 2,oe:player:f987efb3da0d056699079e5f6755ef2,Pinkmin,sup,,,,,,,,,,,,,,
+lineup,oe:team:588c0f09975443cbfbbe71a9ac1d75c,Bis Esports,BE,2023,Split 2,,,,lineup-63094b5526ba437e,BE-01,1,3,oe:player:d9993db0d276065093b77b8e86996fc,oe:player:e5841c7215d35ed0c9522450e7fb57a,oe:player:7773e8883f4bf85d29f4e7a0b2d9709,oe:player:77c10036edafc6b267a710e0525bf7a,oe:player:f987efb3da0d056699079e5f6755ef2,Parlita,Tikyl,Nox,Yoangi,Pinkmin
+lineup,oe:team:588c0f09975443cbfbbe71a9ac1d75c,Bis Esports,BE,2023,Split 2,,,,lineup-3dfaa2936d04d8b4,BE-02,2,1,oe:player:d9993db0d276065093b77b8e86996fc,oe:player:14775c5f3aa804d18189fde40649c5d,oe:player:0b0e38709277788dc3166a3a99d95bb,oe:player:0998a1e9d55bcf3eb5ee3ea3eba9250,oe:player:ba0555049bc1c041839c65f6b0af6dc,Parlita,Emvipi,xMata,ALNSHT,Gilito
+lineup,oe:team:588c0f09975443cbfbbe71a9ac1d75c,Bis Esports,BE,2023,Split 2,,,,lineup-57450d9cb3cf9ba9,BE-03,3,1,oe:player:d9993db0d276065093b77b8e86996fc,oe:player:e5841c7215d35ed0c9522450e7fb57a,oe:player:da3438a69ff65c06a8a4a432b518d24,oe:player:77c10036edafc6b267a710e0525bf7a,oe:player:f987efb3da0d056699079e5f6755ef2,Parlita,Tikyl,Ishi,Yoangi,Pinkmin
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2023,Split 2,oe:player:d18a2aec1fa9649ae9a48bded2f4ccf,selenex,top,,,,,,,,,,,,,,
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2023,Split 2,oe:player:8a0883855988aadb0c22117c2c96da7,Infinity,jng,,,,,,,,,,,,,,
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2023,Split 2,oe:player:4f6d6b2c4c29033ff5437cee2a7587e,Macaquinho,mid,,,,,,,,,,,,,,
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2023,Split 2,oe:player:32021f59c40539f27ff6300bb840ca2,Kaii,bot,,,,,,,,,,,,,,
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2023,Split 2,oe:player:22d4497301dd0fefcac2d838ad2d1b4,Rito,sup,,,,,,,,,,,,,,
+lineup,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2023,Split 2,,,,lineup-3762352204897e81,KK-01,1,13,oe:player:d18a2aec1fa9649ae9a48bded2f4ccf,oe:player:8a0883855988aadb0c22117c2c96da7,oe:player:4f6d6b2c4c29033ff5437cee2a7587e,oe:player:32021f59c40539f27ff6300bb840ca2,oe:player:22d4497301dd0fefcac2d838ad2d1b4,selenex,Infinity,Macaquinho,Kaii,Rito
+player,oe:team:586486168f510b191d23bd992a82501,Magna Esports,ME,2023,Split 2,oe:player:9eafb487786de5cfb66bf3ba10806d8,Tempah,top,,,,,,,,,,,,,,
+player,oe:team:586486168f510b191d23bd992a82501,Magna Esports,ME,2023,Split 2,oe:player:5e929920f89440a9e4bd39d2395a71a,Stargazer,jng,,,,,,,,,,,,,,
+player,oe:team:586486168f510b191d23bd992a82501,Magna Esports,ME,2023,Split 2,oe:player:1deca82b63be6273f62317a32e73aa0,YoOlek,mid,,,,,,,,,,,,,,
+player,oe:team:586486168f510b191d23bd992a82501,Magna Esports,ME,2023,Split 2,oe:player:07246543c68cf361f00921dbea24efe,Marcv1,bot,,,,,,,,,,,,,,
+player,oe:team:586486168f510b191d23bd992a82501,Magna Esports,ME,2023,Split 2,oe:player:5ea6fd9fa3f00dae43db3c4464c978f,Fede,sup,,,,,,,,,,,,,,
+lineup,oe:team:586486168f510b191d23bd992a82501,Magna Esports,ME,2023,Split 2,,,,lineup-bc79450fdeadadc2,ME-01,1,1,oe:player:9eafb487786de5cfb66bf3ba10806d8,oe:player:5e929920f89440a9e4bd39d2395a71a,oe:player:1deca82b63be6273f62317a32e73aa0,oe:player:07246543c68cf361f00921dbea24efe,oe:player:5ea6fd9fa3f00dae43db3c4464c978f,Tempah,Stargazer,YoOlek,Marcv1,Fede
+player,oe:team:51e312fb2c4611c0466764797df079f,Oxygen Valiants,OV,2023,Split 2,oe:player:1f413ce184963e0298415f42859551c,Ethe,top,,,,,,,,,,,,,,
+player,oe:team:51e312fb2c4611c0466764797df079f,Oxygen Valiants,OV,2023,Split 2,oe:player:58ee2554b3f0e3a755be6030dfa0ac0,Jiahao,jng,,,,,,,,,,,,,,
+player,oe:team:51e312fb2c4611c0466764797df079f,Oxygen Valiants,OV,2023,Split 2,oe:player:5b4e0b182ea5c781e5a2f61628adcc4,Clover7,mid,,,,,,,,,,,,,,
+player,oe:team:51e312fb2c4611c0466764797df079f,Oxygen Valiants,OV,2023,Split 2,oe:player:432dc458337f63fbcdf3c73488a3cdf,Aaron,bot,,,,,,,,,,,,,,
+player,oe:team:51e312fb2c4611c0466764797df079f,Oxygen Valiants,OV,2023,Split 2,oe:player:8ce650fdb50030d031e6bc414cbbee5,Eskiper,sup,,,,,,,,,,,,,,
+lineup,oe:team:51e312fb2c4611c0466764797df079f,Oxygen Valiants,OV,2023,Split 2,,,,lineup-271d07abed5b0619,OV-01,1,1,oe:player:1f413ce184963e0298415f42859551c,oe:player:58ee2554b3f0e3a755be6030dfa0ac0,oe:player:5b4e0b182ea5c781e5a2f61628adcc4,oe:player:432dc458337f63fbcdf3c73488a3cdf,oe:player:8ce650fdb50030d031e6bc414cbbee5,Ethe,Jiahao,Clover7,Aaron,Eskiper
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2023,Split 1,oe:player:2516e918f5bb54f00bc46bd45c72d76,VascoDC,top,,,,,,,,,,,,,,
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2023,Split 1,oe:player:5e929920f89440a9e4bd39d2395a71a,Stargazer,jng,,,,,,,,,,,,,,
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2023,Split 1,oe:player:d1abf60b73ebffc520bc33915ff22e0,Quetz,mid,,,,,,,,,,,,,,
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2023,Split 1,oe:player:9bc6f23d0cb954b0fd8208b469b5433,Kodo,bot,,,,,,,,,,,,,,
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2023,Split 1,oe:player:51a63017f7addea75f5813d34871247,PauFerran,sup,,,,,,,,,,,,,,
+lineup,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2023,Split 1,,,,lineup-6cc0b76a59360640,PG-01,1,1,oe:player:2516e918f5bb54f00bc46bd45c72d76,oe:player:5e929920f89440a9e4bd39d2395a71a,oe:player:d1abf60b73ebffc520bc33915ff22e0,oe:player:9bc6f23d0cb954b0fd8208b469b5433,oe:player:51a63017f7addea75f5813d34871247,VascoDC,Stargazer,Quetz,Kodo,PauFerran
+player,oe:team:22e85b1589714de8f4aa211025bf1fb,QLASH Spain,QS,2023,Split 1,oe:player:fc9e4a43f88797e445c35d23fc43f79,Jervo,top,,,,,,,,,,,,,,
+player,oe:team:22e85b1589714de8f4aa211025bf1fb,QLASH Spain,QS,2023,Split 1,oe:player:e4b472bba2e8d4a800e88753051983f,Oda,jng,,,,,,,,,,,,,,
+player,oe:team:22e85b1589714de8f4aa211025bf1fb,QLASH Spain,QS,2023,Split 1,oe:player:55b9ef62724d0ff3f1bf9eb6f08f738,Sadaz,mid,,,,,,,,,,,,,,
+player,oe:team:22e85b1589714de8f4aa211025bf1fb,QLASH Spain,QS,2023,Split 1,oe:player:e0a43168d41258cae77aed2b6126541,Sh3ry,bot,,,,,,,,,,,,,,
+player,oe:team:22e85b1589714de8f4aa211025bf1fb,QLASH Spain,QS,2023,Split 1,oe:player:28d24f9c86d24b84313485a5a07d238,Tochas,sup,,,,,,,,,,,,,,
+lineup,oe:team:22e85b1589714de8f4aa211025bf1fb,QLASH Spain,QS,2023,Split 1,,,,lineup-47783cb8b8d480e3,QS-01,1,1,oe:player:fc9e4a43f88797e445c35d23fc43f79,oe:player:e4b472bba2e8d4a800e88753051983f,oe:player:55b9ef62724d0ff3f1bf9eb6f08f738,oe:player:e0a43168d41258cae77aed2b6126541,oe:player:28d24f9c86d24b84313485a5a07d238,Jervo,Oda,Sadaz,Sh3ry,Tochas
+player,oe:team:b469fd5f0912d223dd70c3bbb5ddcb9,Stormbringers,STO,2023,Split 2,oe:player:a5fa1f73622193d305647f381121f87,Rubenxico,top,,,,,,,,,,,,,,
+player,oe:team:b469fd5f0912d223dd70c3bbb5ddcb9,Stormbringers,STO,2023,Split 2,oe:player:c5b083387829f1f02dd659d4d2d2056,Indr4,jng,,,,,,,,,,,,,,
+player,oe:team:b469fd5f0912d223dd70c3bbb5ddcb9,Stormbringers,STO,2023,Split 2,oe:player:583b37153ab396f8cc5fc54391ece79,Valans,mid,,,,,,,,,,,,,,
+player,oe:team:b469fd5f0912d223dd70c3bbb5ddcb9,Stormbringers,STO,2023,Split 2,oe:player:e6f6bb5eb5f8f3fe88fd5fd3c822380,Niño Palo,bot,,,,,,,,,,,,,,
+player,oe:team:b469fd5f0912d223dd70c3bbb5ddcb9,Stormbringers,STO,2023,Split 2,oe:player:529a05ca6c1263aab080ec4f2075441,Make,sup,,,,,,,,,,,,,,
+lineup,oe:team:b469fd5f0912d223dd70c3bbb5ddcb9,Stormbringers,STO,2023,Split 2,,,,lineup-98aae8859c448869,STO-01,1,5,oe:player:a5fa1f73622193d305647f381121f87,oe:player:c5b083387829f1f02dd659d4d2d2056,oe:player:583b37153ab396f8cc5fc54391ece79,oe:player:e6f6bb5eb5f8f3fe88fd5fd3c822380,oe:player:529a05ca6c1263aab080ec4f2075441,Rubenxico,Indr4,Valans,Niño Palo,Make
+player,oe:team:f44643241cfd17320bf6320016fd4dc,TDC Esports,TE,2023,Split 2,oe:player:51800de2ae6a9d1e1f2ce76402dafbb,King,top,,,,,,,,,,,,,,
+player,oe:team:f44643241cfd17320bf6320016fd4dc,TDC Esports,TE,2023,Split 2,oe:player:11aefb66454791d4b36106af3fc2214,Ivama,jng,,,,,,,,,,,,,,
+player,oe:team:f44643241cfd17320bf6320016fd4dc,TDC Esports,TE,2023,Split 2,oe:player:f78f66e08b7ca79334e168f1abf594c,Nillo,mid,,,,,,,,,,,,,,
+player,oe:team:f44643241cfd17320bf6320016fd4dc,TDC Esports,TE,2023,Split 2,oe:player:6a6d3cbe7476ec08ee9b2a176de3b9b,Hatty,bot,,,,,,,,,,,,,,
+player,oe:team:f44643241cfd17320bf6320016fd4dc,TDC Esports,TE,2023,Split 2,oe:player:13872064ee8958d1a04b08d7c01dafb,Vini,sup,,,,,,,,,,,,,,
+lineup,oe:team:f44643241cfd17320bf6320016fd4dc,TDC Esports,TE,2023,Split 2,,,,lineup-dbfdd7f608887c52,TE-01,1,1,oe:player:51800de2ae6a9d1e1f2ce76402dafbb,oe:player:11aefb66454791d4b36106af3fc2214,oe:player:f78f66e08b7ca79334e168f1abf594c,oe:player:6a6d3cbe7476ec08ee9b2a176de3b9b,oe:player:13872064ee8958d1a04b08d7c01dafb,King,Ivama,Nillo,Hatty,Vini
+player,oe:team:f36bb11834ba1d730a49d7b3a2c2db5,UCAM Esports Academy,UEA,2023,Split 2,oe:player:e14b65515c985c335b42e3fe349d735,Zaiiche,top,,,,,,,,,,,,,,
+player,oe:team:f36bb11834ba1d730a49d7b3a2c2db5,UCAM Esports Academy,UEA,2023,Split 2,oe:player:3d3ad0a473d6a608c1b19515459ccdf,Rewound,jng,,,,,,,,,,,,,,
+player,oe:team:f36bb11834ba1d730a49d7b3a2c2db5,UCAM Esports Academy,UEA,2023,Split 2,oe:player:e6a797ed3a7b3cc2d77da14986473ec,Ruxal,mid,,,,,,,,,,,,,,
+player,oe:team:f36bb11834ba1d730a49d7b3a2c2db5,UCAM Esports Academy,UEA,2023,Split 2,oe:player:33dd06f5f98326254b0d95d38d9c666,Lisbd,bot,,,,,,,,,,,,,,
+player,oe:team:f36bb11834ba1d730a49d7b3a2c2db5,UCAM Esports Academy,UEA,2023,Split 2,oe:player:b2db813b8929031200a4a85b26a1726,Mega,sup,,,,,,,,,,,,,,
+lineup,oe:team:f36bb11834ba1d730a49d7b3a2c2db5,UCAM Esports Academy,UEA,2023,Split 2,,,,lineup-6ccbda06dd46dd92,UEA-01,1,1,oe:player:e14b65515c985c335b42e3fe349d735,oe:player:3d3ad0a473d6a608c1b19515459ccdf,oe:player:e6a797ed3a7b3cc2d77da14986473ec,oe:player:33dd06f5f98326254b0d95d38d9c666,oe:player:b2db813b8929031200a4a85b26a1726,Zaiiche,Rewound,Ruxal,Lisbd,Mega
+player,oe:team:6ac25692553cc34c6f3fd717b12fe61,seQura ZEST,SZ,2023,Split 1,oe:player:375cf33184adb62be76483cc45f5485,Urgaleex,top,,,,,,,,,,,,,,
+player,oe:team:6ac25692553cc34c6f3fd717b12fe61,seQura ZEST,SZ,2023,Split 1,oe:player:74f2a5bee4f0c5e380729a5e63ecc42,Truncapochas,jng,,,,,,,,,,,,,,
+player,oe:team:6ac25692553cc34c6f3fd717b12fe61,seQura ZEST,SZ,2023,Split 1,oe:player:d72248ffd848fc4247dc24954c90427,Torak,mid,,,,,,,,,,,,,,
+player,oe:team:6ac25692553cc34c6f3fd717b12fe61,seQura ZEST,SZ,2023,Split 1,oe:player:3d7d052a031e864ee9c1b04b5a4d0f1,MyKey,bot,,,,,,,,,,,,,,
+player,oe:team:6ac25692553cc34c6f3fd717b12fe61,seQura ZEST,SZ,2023,Split 1,oe:player:22d4497301dd0fefcac2d838ad2d1b4,Rito,sup,,,,,,,,,,,,,,
+lineup,oe:team:6ac25692553cc34c6f3fd717b12fe61,seQura ZEST,SZ,2023,Split 1,,,,lineup-f450ac0a28e580f1,SZ-01,1,1,oe:player:375cf33184adb62be76483cc45f5485,oe:player:74f2a5bee4f0c5e380729a5e63ecc42,oe:player:d72248ffd848fc4247dc24954c90427,oe:player:3d7d052a031e864ee9c1b04b5a4d0f1,oe:player:22d4497301dd0fefcac2d838ad2d1b4,Urgaleex,Truncapochas,Torak,MyKey,Rito
