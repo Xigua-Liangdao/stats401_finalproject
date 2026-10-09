@@ -8,7 +8,9 @@ import { getSelectedDataset } from '../../utils/season.js';
 import { RANKING_ROLES, RANKING_MIN_GAMES, RANKING_MIN_DAYS, rankPlayersByRole, rankTeamsByDamage } from './home-ranking.js';
 
 function reportUi(event) {
-  import('../../utils/track.js').then(({ trackUi }) => trackUi(event)).catch(() => {});
+  import('../../utils/track.js')
+    .then(({ trackUi }) => trackUi(event))
+    .catch((error) => console.error('[Analytics] trackEvent failed:', error));
 }
 
 const TOP_TEAM_COUNT = 6;
@@ -206,7 +208,9 @@ function createTeamCard(team, index) {
 }
 
 export async function renderHomePage(target) {
-  import('../../../analytics/index.js').then(({ initAnalytics }) => initAnalytics()).catch(() => {});
+  import('../../../analytics/index.js')
+    .then(({ initAnalytics }) => initAnalytics())
+    .catch((error) => console.error('[Analytics] init failed:', error));
   const catalog = await dataSource.loadCatalog();
   const dataset = catalog.dataset ?? getSelectedDataset();
   const season = dataset?.year ?? catalog.season;

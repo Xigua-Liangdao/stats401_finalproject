@@ -8,7 +8,7 @@ function reportPage(targetType, id) {
       target_type: targetType,
       target_id: id,
     }))
-    .catch(() => {});
+    .catch((error) => console.error('[Analytics] trackEvent failed:', error));
 }
 
 export const GAME_PAGE_SIZE = 10;

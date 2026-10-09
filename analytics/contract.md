@@ -73,6 +73,12 @@ The developer mode state is persisted in `localStorage`.
 
 `is_test` is an analytics classification field, **not a security mechanism**.
 
+### Failure isolation
+
+Analytics must not stop the rest of the interface. If the Supabase client cannot be loaded, an insert is rejected, or any other analytics step throws, navigation and the visualizations continue.
+
+The failure is written to the browser console as `[Analytics] trackEvent failed`. That log is not limited to developer mode. `is_test` does not control whether the error is shown.
+
 ---
 
 # 4. Event Model

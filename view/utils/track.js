@@ -1,5 +1,3 @@
-import { isDeveloperMode } from '../../analytics/developerMode.js';
-import { trackEvent } from '../../analytics/index.js';
 import { parseHash } from './navigation.js';
 
 const PAGE_BY_ROUTE = {
@@ -59,6 +57,10 @@ export function createTooltipWatch(targetType) {
   };
 }
 
+function reportFailure(error) {
+  console.error('[Analytics] trackEvent failed:', error);
+}
+
 export function trackUi(event) {
   try {
     const payload = {
@@ -68,12 +70,10 @@ export function trackUi(event) {
     if (event?.target_type) payload.target_type = event.target_type;
     if (event?.target_id != null && event.target_id !== '') payload.target_id = String(event.target_id);
     if (event?.metadata != null) payload.metadata = event.metadata;
-    return trackEvent(payload);
+    import('../../analytics/index.js')
+      .then(({ trackEvent }) => trackEvent(payload))
+      .catch(reportFailure);
   } catch (error) {
-    if (isDeveloperMode()) {
-      const message = error?.message || 'unknown analytics error';
-      console.error(`[Analytics] trackEvent failed: ${message}`);
-    }
-    return undefined;
+    reportFailure(error);
   }
 }

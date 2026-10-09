@@ -2,7 +2,7 @@ import { currentDevice, watchDevice } from './device.js';
 import { isDeveloperMode } from './developerMode.js';
 import { getAnonymousId } from './identity.js';
 import { getSessionId } from './session.js';
-import { supabase } from './supabase.js';
+import { loadSupabase } from './supabase.js';
 
 const EVENT_NAMES = new Set([
   'click',
@@ -13,9 +13,7 @@ const EVENT_NAMES = new Set([
 ]);
 
 function reportFailure(error) {
-  if (!isDeveloperMode()) return;
-  const message = error?.message || 'unknown analytics error';
-  console.error(`[Analytics] trackEvent failed: ${message}`);
+  console.error('[Analytics] trackEvent failed:', error);
 }
 
 async function sendEvent(event) {
@@ -25,6 +23,7 @@ async function sendEvent(event) {
     reportFailure(new Error(`Unknown event_name: ${event_name}`));
     return;
   }
+  const supabase = await loadSupabase();
   const { error } = await supabase.from('events').insert({
     anonymous_id: getAnonymousId(),
     session_id: getSessionId(),
