@@ -1,0 +1,55 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:5bef6688c36d00642436d00a83d9c14,Avant Gaming,AG,2019,Split 1,oe:player:d11c67c4c3a40031d66d32ecb806d53,Chippys,top,,,,,,,,,,,,,,
+player,oe:team:5bef6688c36d00642436d00a83d9c14,Avant Gaming,AG,2019,Split 1,oe:player:b0a4ae62486ca215c199e72698738b7,Pabu,top,,,,,,,,,,,,,,
+player,oe:team:5bef6688c36d00642436d00a83d9c14,Avant Gaming,AG,2019,Split 1,oe:player:80cbc5cdf5283b4fad7b7d993405448,Praelus,jng,,,,,,,,,,,,,,
+player,oe:team:5bef6688c36d00642436d00a83d9c14,Avant Gaming,AG,2019,Split 1,oe:player:ba4fc2df8488e1ede6e154ab1fe9d35,Swathe,jng,,,,,,,,,,,,,,
+player,oe:team:5bef6688c36d00642436d00a83d9c14,Avant Gaming,AG,2019,Split 1,oe:player:9dabcc8d4efff43d97013585fa450aa,Frae,mid,,,,,,,,,,,,,,
+player,oe:team:5bef6688c36d00642436d00a83d9c14,Avant Gaming,AG,2019,Split 1,oe:player:77ed4d7ce3461d5976ad2e15713f6b7,Shok,mid,,,,,,,,,,,,,,
+player,oe:team:5bef6688c36d00642436d00a83d9c14,Avant Gaming,AG,2019,Split 1,oe:player:ac1278ab7b024712b7c0a27cadfbb85,Pluto,bot,,,,,,,,,,,,,,
+player,oe:team:5bef6688c36d00642436d00a83d9c14,Avant Gaming,AG,2019,Split 1,oe:player:87c66f16f11e3f4955675a146e4bd6d,gunkrab,bot,,,,,,,,,,,,,,
+player,oe:team:5bef6688c36d00642436d00a83d9c14,Avant Gaming,AG,2019,Split 1,oe:player:eaaf2e20683cde8408d05159c05528c,Aladoric,sup,,,,,,,,,,,,,,
+player,oe:team:5bef6688c36d00642436d00a83d9c14,Avant Gaming,AG,2019,Split 1,oe:player:70e46e5150b473c0280af7ce6ea8f32,Jayke,sup,,,,,,,,,,,,,,
+lineup,oe:team:5bef6688c36d00642436d00a83d9c14,Avant Gaming,AG,2019,Split 1,,,,lineup-285b439ab81d0ded,AG-01,1,2,oe:player:b0a4ae62486ca215c199e72698738b7,oe:player:80cbc5cdf5283b4fad7b7d993405448,oe:player:9dabcc8d4efff43d97013585fa450aa,oe:player:ac1278ab7b024712b7c0a27cadfbb85,oe:player:70e46e5150b473c0280af7ce6ea8f32,Pabu,Praelus,Frae,Pluto,Jayke
+lineup,oe:team:5bef6688c36d00642436d00a83d9c14,Avant Gaming,AG,2019,Split 1,,,,lineup-ab79fa8127c1272b,AG-02,2,2,oe:player:d11c67c4c3a40031d66d32ecb806d53,oe:player:ba4fc2df8488e1ede6e154ab1fe9d35,oe:player:77ed4d7ce3461d5976ad2e15713f6b7,oe:player:87c66f16f11e3f4955675a146e4bd6d,oe:player:eaaf2e20683cde8408d05159c05528c,Chippys,Swathe,Shok,gunkrab,Aladoric
+player,oe:team:8de081afe2ce8b05dff41610b880b5a,Bombers,BOM,2019,Split 1,oe:player:6ad0677a42b54ef3053116a878b3240,Mimic,top,,,,,,,,,,,,,,
+player,oe:team:8de081afe2ce8b05dff41610b880b5a,Bombers,BOM,2019,Split 1,oe:player:f74d94ced4f3bcd6a9e9089f9caf41f,BalKhan,jng,,,,,,,,,,,,,,
+player,oe:team:8de081afe2ce8b05dff41610b880b5a,Bombers,BOM,2019,Split 1,oe:player:5b4a9ba6121c6d0e37076f8f3523000,Ryoma,mid,,,,,,,,,,,,,,
+player,oe:team:8de081afe2ce8b05dff41610b880b5a,Bombers,BOM,2019,Split 1,oe:player:73d2b65353d7b00e0f198ffdc085edc,FBI,bot,,,,,,,,,,,,,,
+player,oe:team:8de081afe2ce8b05dff41610b880b5a,Bombers,BOM,2019,Split 1,oe:player:771a4be9e474d6ed0f40cd9a9862a00,Rogue,sup,,,,,,,,,,,,,,
+lineup,oe:team:8de081afe2ce8b05dff41610b880b5a,Bombers,BOM,2019,Split 1,,,,lineup-30eee753bc91a764,BOM-01,1,2,oe:player:6ad0677a42b54ef3053116a878b3240,oe:player:f74d94ced4f3bcd6a9e9089f9caf41f,oe:player:5b4a9ba6121c6d0e37076f8f3523000,oe:player:73d2b65353d7b00e0f198ffdc085edc,oe:player:771a4be9e474d6ed0f40cd9a9862a00,Mimic,BalKhan,Ryoma,FBI,Rogue
+player,oe:team:692bccdba8ec7050f5aeb916815439e,Chiefs Esports Club,CEC,2019,Split 1,oe:player:b168931509a558db4b062201d259c45,Swip3rR,top,,,,,,,,,,,,,,
+player,oe:team:692bccdba8ec7050f5aeb916815439e,Chiefs Esports Club,CEC,2019,Split 1,oe:player:8392461cf759088854e16710b9b75d1,Only,jng,,,,,,,,,,,,,,
+player,oe:team:692bccdba8ec7050f5aeb916815439e,Chiefs Esports Club,CEC,2019,Split 1,oe:player:2e442d9bae67dbe9b4e4eb0ce93c002,Claire,mid,,,,,,,,,,,,,,
+player,oe:team:692bccdba8ec7050f5aeb916815439e,Chiefs Esports Club,CEC,2019,Split 1,oe:player:c2c140b8d1f76f3f79b1aba6bb08c37,Raes,bot,,,,,,,,,,,,,,
+player,oe:team:692bccdba8ec7050f5aeb916815439e,Chiefs Esports Club,CEC,2019,Split 1,oe:player:dbe844fcbbc7f54654e54242e79acac,Eyla,sup,,,,,,,,,,,,,,
+lineup,oe:team:692bccdba8ec7050f5aeb916815439e,Chiefs Esports Club,CEC,2019,Split 1,,,,lineup-ceb596d03572c977,CEC-01,1,2,oe:player:b168931509a558db4b062201d259c45,oe:player:8392461cf759088854e16710b9b75d1,oe:player:2e442d9bae67dbe9b4e4eb0ce93c002,oe:player:c2c140b8d1f76f3f79b1aba6bb08c37,oe:player:dbe844fcbbc7f54654e54242e79acac,Swip3rR,Only,Claire,Raes,Eyla
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2019,Split 1,oe:player:c1ddab75d1d921ffed44398c4188d60,BioPanther,top,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2019,Split 1,oe:player:3799f225857837e1b078d2dbb115aee,Udysof,jng,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2019,Split 1,oe:player:4b50dfafb5a1a98a316122ca9208d7a,Getback,mid,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2019,Split 1,oe:player:07c4bccfc35938290de1e6b4495b0af,Anderu,bot,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2019,Split 1,oe:player:73e82c479af3a7c2da939e8200e60f8,Corporal,sup,,,,,,,,,,,,,,
+lineup,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2019,Split 1,,,,lineup-4f7dbfa4c20a2572,DW-01,1,2,oe:player:c1ddab75d1d921ffed44398c4188d60,oe:player:3799f225857837e1b078d2dbb115aee,oe:player:4b50dfafb5a1a98a316122ca9208d7a,oe:player:07c4bccfc35938290de1e6b4495b0af,oe:player:73e82c479af3a7c2da939e8200e60f8,BioPanther,Udysof,Getback,Anderu,Corporal
+player,oe:team:4f5a0b869cd5960c307d1c45e9399a3,Legacy Esports,LE,2019,Split 1,oe:player:0755e070207b813862da99928b88003,papryze,top,,,,,,,,,,,,,,
+player,oe:team:4f5a0b869cd5960c307d1c45e9399a3,Legacy Esports,LE,2019,Split 1,oe:player:83103fdae7836eee9895610a5ede0ff,Guts,jng,,,,,,,,,,,,,,
+player,oe:team:4f5a0b869cd5960c307d1c45e9399a3,Legacy Esports,LE,2019,Split 1,oe:player:6aa036de3fa6c6f1115df7c22a89617,Chazz,mid,,,,,,,,,,,,,,
+player,oe:team:4f5a0b869cd5960c307d1c45e9399a3,Legacy Esports,LE,2019,Split 1,oe:player:9a754e5ccd044dd74ff3a9d184350ab,Praedyth,bot,,,,,,,,,,,,,,
+player,oe:team:4f5a0b869cd5960c307d1c45e9399a3,Legacy Esports,LE,2019,Split 1,oe:player:8dc437974ecdfd4db3539268c48a751,Crayzee,sup,,,,,,,,,,,,,,
+lineup,oe:team:4f5a0b869cd5960c307d1c45e9399a3,Legacy Esports,LE,2019,Split 1,,,,lineup-177fe57cdd97c989,LE-01,1,2,oe:player:0755e070207b813862da99928b88003,oe:player:83103fdae7836eee9895610a5ede0ff,oe:player:6aa036de3fa6c6f1115df7c22a89617,oe:player:9a754e5ccd044dd74ff3a9d184350ab,oe:player:8dc437974ecdfd4db3539268c48a751,papryze,Guts,Chazz,Praedyth,Crayzee
+player,oe:team:7bd8d762a338118fce3df129202eaed,MAMMOTH,MAM,2019,Split 1,oe:player:859fc288cfea096e3b7312053853f9b,Topoon,top,,,,,,,,,,,,,,
+player,oe:team:7bd8d762a338118fce3df129202eaed,MAMMOTH,MAM,2019,Split 1,oe:player:cc75d3f9b862e7e5d667d1ce2430fbd,Babip,jng,,,,,,,,,,,,,,
+player,oe:team:7bd8d762a338118fce3df129202eaed,MAMMOTH,MAM,2019,Split 1,oe:player:3b973d4da6ce40c0eb65394fb622297,Triple,mid,,,,,,,,,,,,,,
+player,oe:team:7bd8d762a338118fce3df129202eaed,MAMMOTH,MAM,2019,Split 1,oe:player:fb18ab6bf6bef08402a580d2a96c106,k1ng,bot,,,,,,,,,,,,,,
+player,oe:team:7bd8d762a338118fce3df129202eaed,MAMMOTH,MAM,2019,Split 1,oe:player:6b2acf5555e281f3e64f9a338da6a66,destiny,sup,,,,,,,,,,,,,,
+lineup,oe:team:7bd8d762a338118fce3df129202eaed,MAMMOTH,MAM,2019,Split 1,,,,lineup-43fc3b58874b2628,MAM-01,1,2,oe:player:859fc288cfea096e3b7312053853f9b,oe:player:cc75d3f9b862e7e5d667d1ce2430fbd,oe:player:3b973d4da6ce40c0eb65394fb622297,oe:player:fb18ab6bf6bef08402a580d2a96c106,oe:player:6b2acf5555e281f3e64f9a338da6a66,Topoon,Babip,Triple,k1ng,destiny
+player,oe:team:6575d9a58f0b41a108f2d6a565a0650,ORDER,ORD,2019,Split 1,oe:player:56045764051a2e5cf313ee3dd5a61cc,Tally,top,,,,,,,,,,,,,,
+player,oe:team:6575d9a58f0b41a108f2d6a565a0650,ORDER,ORD,2019,Split 1,oe:player:e1a40cd48a61080eedd106131598013,Spookz,jng,,,,,,,,,,,,,,
+player,oe:team:6575d9a58f0b41a108f2d6a565a0650,ORDER,ORD,2019,Split 1,oe:player:2c14d0f52bf1772e3353ce799537ad5,Swiffer,mid,,,,,,,,,,,,,,
+player,oe:team:6575d9a58f0b41a108f2d6a565a0650,ORDER,ORD,2019,Split 1,oe:player:23f5249382ade4216547b5e109c5414,jinjo,bot,,,,,,,,,,,,,,
+player,oe:team:6575d9a58f0b41a108f2d6a565a0650,ORDER,ORD,2019,Split 1,oe:player:70e46e5150b473c0280af7ce6ea8f32,Jayke,sup,,,,,,,,,,,,,,
+lineup,oe:team:6575d9a58f0b41a108f2d6a565a0650,ORDER,ORD,2019,Split 1,,,,lineup-ebbf26859ee61b85,ORD-01,1,12,oe:player:56045764051a2e5cf313ee3dd5a61cc,oe:player:e1a40cd48a61080eedd106131598013,oe:player:2c14d0f52bf1772e3353ce799537ad5,oe:player:23f5249382ade4216547b5e109c5414,oe:player:70e46e5150b473c0280af7ce6ea8f32,Tally,Spookz,Swiffer,jinjo,Jayke
+player,oe:team:ee45aec8db48a3adec16589f944e577,Tectonic,TEC,2019,Unknown,oe:player:9a754e5ccd044dd74ff3a9d184350ab,Praedyth,top,,,,,,,,,,,,,,
+player,oe:team:ee45aec8db48a3adec16589f944e577,Tectonic,TEC,2019,Unknown,oe:player:3799f225857837e1b078d2dbb115aee,Udysof,jng,,,,,,,,,,,,,,
+player,oe:team:ee45aec8db48a3adec16589f944e577,Tectonic,TEC,2019,Unknown,oe:player:77ed4d7ce3461d5976ad2e15713f6b7,Shok,mid,,,,,,,,,,,,,,
+player,oe:team:ee45aec8db48a3adec16589f944e577,Tectonic,TEC,2019,Unknown,oe:player:689202409e48743b914713f96d93947,Value,bot,,,,,,,,,,,,,,
+player,oe:team:ee45aec8db48a3adec16589f944e577,Tectonic,TEC,2019,Unknown,oe:player:344524bad7a7a38c153db00433d0905,Trance,sup,,,,,,,,,,,,,,
+lineup,oe:team:ee45aec8db48a3adec16589f944e577,Tectonic,TEC,2019,Unknown,,,,lineup-8104530a00cb1193,TEC-01,1,2,oe:player:9a754e5ccd044dd74ff3a9d184350ab,oe:player:3799f225857837e1b078d2dbb115aee,oe:player:77ed4d7ce3461d5976ad2e15713f6b7,oe:player:689202409e48743b914713f96d93947,oe:player:344524bad7a7a38c153db00433d0905,Praedyth,Udysof,Shok,Value,Trance

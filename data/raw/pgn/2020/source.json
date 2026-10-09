@@ -1,0 +1,35 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2020.csv.gz",
+  "source_kind": "pinned_github_mirror",
+  "source_revision": "834ce914f0c79289881697084227fa2933ad344a",
+  "annual_sources": [
+    {
+      "year": 2020,
+      "url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2020.csv.gz",
+      "sha256": "c66ddf35d21d1597da13786b52c0190cebd09dab31f73ea4914bdb6b88cea7d9",
+      "revision": "834ce914f0c79289881697084227fa2933ad344a",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:10.715260+00:00",
+      "size_bytes": 88486469,
+      "listed_size_bytes": 88486469,
+      "rows": 117552,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "download_sha256": "397ccaac13ea7793acf749680e61f5513b8401d87b01d1883be34ff15cc33366",
+      "filename": "2020_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 1992
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:35:22.810514+00:00",
+  "annual_csv_sha256": "c66ddf35d21d1597da13786b52c0190cebd09dab31f73ea4914bdb6b88cea7d9",
+  "annual_rows": 117552,
+  "league": "PGN",
+  "year": 2020,
+  "filter": "league == 'PGN' and year == '2020'; all positions and columns preserved",
+  "raw_rows": 1992,
+  "raw_columns": 161,
+  "raw_games": 166,
+  "raw_csv_gz_sha256": "20ad6a4434c00ff0cf429069284b3bb607f4f796006fed39976512a7f2cb6113"
+}
