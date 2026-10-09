@@ -1,0 +1,59 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:6371a5f480097c75c5ba4ac5fe2cfad,Also Known As,AKA,2015,Summer,oe:player:06ddb1ce4c3f4952ae6973d4c7ca345,Saskio,top,,,,,,,,,,,,,,
+player,oe:team:6371a5f480097c75c5ba4ac5fe2cfad,Also Known As,AKA,2015,Summer,oe:player:d96a91bf70713837f580b5f218b825b,beibei,jng,,,,,,,,,,,,,,
+player,oe:team:6371a5f480097c75c5ba4ac5fe2cfad,Also Known As,AKA,2015,Summer,oe:player:5c2646ebad55c52a2526563ad81741c,Pekin Woof,mid,,,,,,,,,,,,,,
+player,oe:team:6371a5f480097c75c5ba4ac5fe2cfad,Also Known As,AKA,2015,Summer,oe:player:44215d06fe046b79366e8b0d44e82d5,Ethil,bot,,,,,,,,,,,,,,
+player,oe:team:6371a5f480097c75c5ba4ac5fe2cfad,Also Known As,AKA,2015,Summer,oe:player:3f2938b06420d4dd60b3fc8a2e81403,JJayel,sup,,,,,,,,,,,,,,
+lineup,oe:team:6371a5f480097c75c5ba4ac5fe2cfad,Also Known As,AKA,2015,Summer,,,,lineup-c99659fcc8006775,AKA-01,1,2,oe:player:06ddb1ce4c3f4952ae6973d4c7ca345,oe:player:d96a91bf70713837f580b5f218b825b,oe:player:5c2646ebad55c52a2526563ad81741c,oe:player:44215d06fe046b79366e8b0d44e82d5,oe:player:3f2938b06420d4dd60b3fc8a2e81403,Saskio,beibei,Pekin Woof,Ethil,JJayel
+player,oe:team:b6f7d01c820a8b970b531b01ea10e06,BrawL.NA,BRA,2015,Spring,oe:player:2c1047c61ef1b21a80728eff2cb7cb1,Brandini,top,,,,,,,,,,,,,,
+player,oe:team:b6f7d01c820a8b970b531b01ea10e06,BrawL.NA,BRA,2015,Spring,oe:player:e57ef5f8ab42a0364a11b50f2a86b81,ShorterACE,jng,,,,,,,,,,,,,,
+player,oe:team:b6f7d01c820a8b970b531b01ea10e06,BrawL.NA,BRA,2015,Spring,oe:player:ca3b26753ac18e2996ee60fe378c87a,Altrum,mid,,,,,,,,,,,,,,
+player,oe:team:b6f7d01c820a8b970b531b01ea10e06,BrawL.NA,BRA,2015,Spring,oe:player:11300914ba48adfacf5f1241be26f8b,Lattman,bot,,,,,,,,,,,,,,
+player,oe:team:b6f7d01c820a8b970b531b01ea10e06,BrawL.NA,BRA,2015,Spring,oe:player:b2b511b189e9ba7fd6ce514fa529df6,Lohpally,sup,,,,,,,,,,,,,,
+lineup,oe:team:b6f7d01c820a8b970b531b01ea10e06,BrawL.NA,BRA,2015,Spring,,,,lineup-b9f32c555fcc0e5d,BRA-01,1,2,oe:player:2c1047c61ef1b21a80728eff2cb7cb1,oe:player:e57ef5f8ab42a0364a11b50f2a86b81,oe:player:ca3b26753ac18e2996ee60fe378c87a,oe:player:11300914ba48adfacf5f1241be26f8b,oe:player:b2b511b189e9ba7fd6ce514fa529df6,Brandini,ShorterACE,Altrum,Lattman,Lohpally
+player,oe:team:83c568e535f5a821e452a9a6cf2e267,Cloud9 Tempest,CT,2015,Summer,oe:player:43e2c87dea1fbecd5a5f29ded6c4faf,Solo,top,,,,,,,,,,,,,,
+player,oe:team:83c568e535f5a821e452a9a6cf2e267,Cloud9 Tempest,CT,2015,Summer,oe:player:3656183169810334a96b91129dc9d88,Hard,jng,,,,,,,,,,,,,,
+player,oe:team:83c568e535f5a821e452a9a6cf2e267,Cloud9 Tempest,CT,2015,Summer,oe:player:f100e32e9f98563f8a54b854121fc69,ktsmurf,mid,,,,,,,,,,,,,,
+player,oe:team:83c568e535f5a821e452a9a6cf2e267,Cloud9 Tempest,CT,2015,Summer,oe:player:aa1b4609f6ebaf813380ecb5ead393b,B3nji,bot,,,,,,,,,,,,,,
+player,oe:team:83c568e535f5a821e452a9a6cf2e267,Cloud9 Tempest,CT,2015,Summer,oe:player:572b2541c97aec9d07ca45dad125559,Sheep,sup,,,,,,,,,,,,,,
+lineup,oe:team:83c568e535f5a821e452a9a6cf2e267,Cloud9 Tempest,CT,2015,Summer,,,,lineup-a07021ea96782ca9,CT-01,1,2,oe:player:43e2c87dea1fbecd5a5f29ded6c4faf,oe:player:3656183169810334a96b91129dc9d88,oe:player:f100e32e9f98563f8a54b854121fc69,oe:player:aa1b4609f6ebaf813380ecb5ead393b,oe:player:572b2541c97aec9d07ca45dad125559,Solo,Hard,ktsmurf,B3nji,Sheep
+player,oe:team:7fc9f6b6b4b32b25ac385379af32647,Renegades,REN,2015,Summer,oe:player:0bcf2ba97f48ac4f00048d5d632d28d,RF Legendary,top,,,,,,,,,,,,,,
+player,oe:team:7fc9f6b6b4b32b25ac385379af32647,Renegades,REN,2015,Summer,oe:player:233ebb5283b4aa8c4a60b07348949fc,Crumbz,jng,,,,,,,,,,,,,,
+player,oe:team:7fc9f6b6b4b32b25ac385379af32647,Renegades,REN,2015,Summer,oe:player:70f2e5e51d358b04a8485db5a382f1a,Alex Ich,mid,,,,,,,,,,,,,,
+player,oe:team:7fc9f6b6b4b32b25ac385379af32647,Renegades,REN,2015,Summer,oe:player:bc8bc420cc1fb6bc66937c749e44906,Maplestreet,bot,,,,,,,,,,,,,,
+player,oe:team:7fc9f6b6b4b32b25ac385379af32647,Renegades,REN,2015,Summer,oe:player:7bd21f72a1ec9031592f3151fa2f664,Remilia,sup,,,,,,,,,,,,,,
+lineup,oe:team:7fc9f6b6b4b32b25ac385379af32647,Renegades,REN,2015,Summer,,,,lineup-34c357e49c78913b,REN-01,1,14,oe:player:0bcf2ba97f48ac4f00048d5d632d28d,oe:player:233ebb5283b4aa8c4a60b07348949fc,oe:player:70f2e5e51d358b04a8485db5a382f1a,oe:player:bc8bc420cc1fb6bc66937c749e44906,oe:player:7bd21f72a1ec9031592f3151fa2f664,RF Legendary,Crumbz,Alex Ich,Maplestreet,Remilia
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Summer,oe:player:994087d6cf1967213b8ea8c11e4f131,Cris,top,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Summer,oe:player:2f2e1847f0dbddd2a94ddf9b8823390,Shrimp,jng,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Summer,oe:player:5c2646ebad55c52a2526563ad81741c,Pekin Woof,mid,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Summer,oe:player:6151bcec0a8bb9f8ab93d71878de3c9,Mash,bot,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Summer,oe:player:0f0c4ebc1c228d5417ca6089a9e23b4,Kwon,sup,,,,,,,,,,,,,,
+lineup,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Summer,,,,lineup-a5831f6b13d97e30,TC-01,1,2,oe:player:994087d6cf1967213b8ea8c11e4f131,oe:player:2f2e1847f0dbddd2a94ddf9b8823390,oe:player:5c2646ebad55c52a2526563ad81741c,oe:player:6151bcec0a8bb9f8ab93d71878de3c9,oe:player:0f0c4ebc1c228d5417ca6089a9e23b4,Cris,Shrimp,Pekin Woof,Mash,Kwon
+player,oe:team:5f36249c69462031e423df16122dd0d,Team Imagine,TI,2015,Summer,oe:player:db96779ff4df6c76854f2e224d2014f,Chunkyfresh,top,,,,,,,,,,,,,,
+player,oe:team:5f36249c69462031e423df16122dd0d,Team Imagine,TI,2015,Summer,oe:player:c297455c41f2193cfb3b281ec04277f,Ron,top,,,,,,,,,,,,,,
+player,oe:team:5f36249c69462031e423df16122dd0d,Team Imagine,TI,2015,Summer,oe:player:99572d5361ac4c1fc99c9d82b4eb080,Galen,jng,,,,,,,,,,,,,,
+player,oe:team:5f36249c69462031e423df16122dd0d,Team Imagine,TI,2015,Summer,oe:player:c2a8708f564e73952cd76b8476cab09,xSojin,jng,,,,,,,,,,,,,,
+player,oe:team:5f36249c69462031e423df16122dd0d,Team Imagine,TI,2015,Summer,oe:player:0b68ac457a26959211f0f624459a328,Wolfe,mid,,,,,,,,,,,,,,
+player,oe:team:5f36249c69462031e423df16122dd0d,Team Imagine,TI,2015,Summer,oe:player:5f6f0c43c645aff997d15bf12f7c640,mancloud,mid,,,,,,,,,,,,,,
+player,oe:team:5f36249c69462031e423df16122dd0d,Team Imagine,TI,2015,Summer,oe:player:9a877004ae6373d34cd9ba93decbbd9,Cody Sun,bot,,,,,,,,,,,,,,
+player,oe:team:5f36249c69462031e423df16122dd0d,Team Imagine,TI,2015,Summer,oe:player:40399988dc3f678053ddb5a046de621,Intense,bot,,,,,,,,,,,,,,
+player,oe:team:5f36249c69462031e423df16122dd0d,Team Imagine,TI,2015,Summer,oe:player:bea6c089fd517fff3bc020290ae48f7,Steeelback,bot,,,,,,,,,,,,,,
+player,oe:team:5f36249c69462031e423df16122dd0d,Team Imagine,TI,2015,Summer,oe:player:d491538da818a2ba11a3195ba035cfd,Big,sup,,,,,,,,,,,,,,
+player,oe:team:5f36249c69462031e423df16122dd0d,Team Imagine,TI,2015,Summer,oe:player:ba911a72eaeb049331bbfae3cd0c5fd,Indivisible,sup,,,,,,,,,,,,,,
+lineup,oe:team:5f36249c69462031e423df16122dd0d,Team Imagine,TI,2015,Summer,,,,lineup-55447280074441d5,TI-01,1,3,oe:player:db96779ff4df6c76854f2e224d2014f,oe:player:99572d5361ac4c1fc99c9d82b4eb080,oe:player:5f6f0c43c645aff997d15bf12f7c640,oe:player:bea6c089fd517fff3bc020290ae48f7,oe:player:d491538da818a2ba11a3195ba035cfd,Chunkyfresh,Galen,mancloud,Steeelback,Big
+lineup,oe:team:5f36249c69462031e423df16122dd0d,Team Imagine,TI,2015,Summer,,,,lineup-555ae705e20f103c,TI-02,2,2,oe:player:c297455c41f2193cfb3b281ec04277f,oe:player:c2a8708f564e73952cd76b8476cab09,oe:player:0b68ac457a26959211f0f624459a328,oe:player:9a877004ae6373d34cd9ba93decbbd9,oe:player:ba911a72eaeb049331bbfae3cd0c5fd,Ron,xSojin,Wolfe,Cody Sun,Indivisible
+lineup,oe:team:5f36249c69462031e423df16122dd0d,Team Imagine,TI,2015,Summer,,,,lineup-1fa5e4f421e55fd3,TI-03,3,1,oe:player:db96779ff4df6c76854f2e224d2014f,oe:player:99572d5361ac4c1fc99c9d82b4eb080,oe:player:5f6f0c43c645aff997d15bf12f7c640,oe:player:40399988dc3f678053ddb5a046de621,oe:player:d491538da818a2ba11a3195ba035cfd,Chunkyfresh,Galen,mancloud,Intense,Big
+player,oe:team:f3df621cead66dce37cc5c5525f14a7,Winterfox,WIN,2015,Summer,oe:player:76dbe559f557d065613840d49fd0c7a,Avalon,top,,,,,,,,,,,,,,
+player,oe:team:f3df621cead66dce37cc5c5525f14a7,Winterfox,WIN,2015,Summer,oe:player:99572d5361ac4c1fc99c9d82b4eb080,Galen,jng,,,,,,,,,,,,,,
+player,oe:team:f3df621cead66dce37cc5c5525f14a7,Winterfox,WIN,2015,Summer,oe:player:e57ef5f8ab42a0364a11b50f2a86b81,ShorterACE,jng,,,,,,,,,,,,,,
+player,oe:team:f3df621cead66dce37cc5c5525f14a7,Winterfox,WIN,2015,Summer,oe:player:7839ceecae19481f2e21e0ce3e11d3a,Arcsecond,mid,,,,,,,,,,,,,,
+player,oe:team:f3df621cead66dce37cc5c5525f14a7,Winterfox,WIN,2015,Summer,oe:player:1f3a07a8570bf5dfcf071c6072d6e9a,P1noy,bot,,,,,,,,,,,,,,
+player,oe:team:f3df621cead66dce37cc5c5525f14a7,Winterfox,WIN,2015,Summer,oe:player:b2b511b189e9ba7fd6ce514fa529df6,Lohpally,sup,,,,,,,,,,,,,,
+lineup,oe:team:f3df621cead66dce37cc5c5525f14a7,Winterfox,WIN,2015,Summer,,,,lineup-0722d9fbf37b56c6,WIN-01,1,1,oe:player:76dbe559f557d065613840d49fd0c7a,oe:player:99572d5361ac4c1fc99c9d82b4eb080,oe:player:7839ceecae19481f2e21e0ce3e11d3a,oe:player:1f3a07a8570bf5dfcf071c6072d6e9a,oe:player:b2b511b189e9ba7fd6ce514fa529df6,Avalon,Galen,Arcsecond,P1noy,Lohpally
+lineup,oe:team:f3df621cead66dce37cc5c5525f14a7,Winterfox,WIN,2015,Summer,,,,lineup-15b4bf44c3f3d1fd,WIN-02,2,1,oe:player:76dbe559f557d065613840d49fd0c7a,oe:player:e57ef5f8ab42a0364a11b50f2a86b81,oe:player:7839ceecae19481f2e21e0ce3e11d3a,oe:player:1f3a07a8570bf5dfcf071c6072d6e9a,oe:player:b2b511b189e9ba7fd6ce514fa529df6,Avalon,ShorterACE,Arcsecond,P1noy,Lohpally
+player,name-team-bbf4d270ed871a83,unknown team,UT,2015,Spring,name-player-d72bd85e71031dbd,unknown player,top,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2015,Spring,oe:player:48692f9e170d7c7a3f1bfdb7c548402,Chau,jng,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2015,Spring,oe:player:2886f27ac71f07aa5e4c87cd09a22e7,Wahoolahoola,mid,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2015,Spring,oe:player:546ba6c8cebd89a223367bddd54b63a,Tails,bot,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2015,Spring,oe:player:1ed28fd4c930dec838338aafe2531db,Minibestia,sup,,,,,,,,,,,,,,
+lineup,name-team-bbf4d270ed871a83,unknown team,UT,2015,Spring,,,,lineup-44966a7c0249067d,UT-01,1,2,name-player-d72bd85e71031dbd,oe:player:48692f9e170d7c7a3f1bfdb7c548402,oe:player:2886f27ac71f07aa5e4c87cd09a22e7,oe:player:546ba6c8cebd89a223367bddd54b63a,oe:player:1ed28fd4c930dec838338aafe2531db,unknown player,Chau,Wahoolahoola,Tails,Minibestia

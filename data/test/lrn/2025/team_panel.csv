@@ -1,0 +1,43 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:0f0f407ca567fc73cc83d541ef45731,Fuego,FUE,2025,Split 1,oe:player:fd108dd07ee510bb9462127d183e1c5,Devost,top,,,,,,,,,,,,,,
+player,oe:team:0f0f407ca567fc73cc83d541ef45731,Fuego,FUE,2025,Split 1,oe:player:bc5b7cd82bc9e26b3bbdeddeb73c7d8,Booki,jng,,,,,,,,,,,,,,
+player,oe:team:0f0f407ca567fc73cc83d541ef45731,Fuego,FUE,2025,Split 1,oe:player:288d8e1e6e78a857421f10ee40d3fba,Zelt,mid,,,,,,,,,,,,,,
+player,oe:team:0f0f407ca567fc73cc83d541ef45731,Fuego,FUE,2025,Split 1,oe:player:c92846465f8656d027f9148726b2b5c,Gavotto,bot,,,,,,,,,,,,,,
+player,oe:team:0f0f407ca567fc73cc83d541ef45731,Fuego,FUE,2025,Split 1,oe:player:5a63f3e7e2b4282f07785cdc895d624,Shiku,sup,,,,,,,,,,,,,,
+lineup,oe:team:0f0f407ca567fc73cc83d541ef45731,Fuego,FUE,2025,Split 1,,,,lineup-52152e84c1a87f45,FUE-01,1,15,oe:player:fd108dd07ee510bb9462127d183e1c5,oe:player:bc5b7cd82bc9e26b3bbdeddeb73c7d8,oe:player:288d8e1e6e78a857421f10ee40d3fba,oe:player:c92846465f8656d027f9148726b2b5c,oe:player:5a63f3e7e2b4282f07785cdc895d624,Devost,Booki,Zelt,Gavotto,Shiku
+player,oe:team:6a7a3de886a10bd30d57577290fb45e,LYON Academy,LA,2025,Split 1,oe:player:5ceca96ff1bf52b5c77de78c0bdea0b,Shavo,top,,,,,,,,,,,,,,
+player,oe:team:6a7a3de886a10bd30d57577290fb45e,LYON Academy,LA,2025,Split 1,oe:player:e6228f265b92269d2655a05a4824bfc,Daiky,jng,,,,,,,,,,,,,,
+player,oe:team:6a7a3de886a10bd30d57577290fb45e,LYON Academy,LA,2025,Split 1,oe:player:7378a82177ee6bee2015ac5d134abe3,Seiya,mid,,,,,,,,,,,,,,
+player,oe:team:6a7a3de886a10bd30d57577290fb45e,LYON Academy,LA,2025,Split 1,oe:player:e427c5e627936477e7b83048bf11092,Intio,bot,,,,,,,,,,,,,,
+player,oe:team:6a7a3de886a10bd30d57577290fb45e,LYON Academy,LA,2025,Split 1,oe:player:263b44be104b940a116d9d64e6db7c1,L1,sup,,,,,,,,,,,,,,
+lineup,oe:team:6a7a3de886a10bd30d57577290fb45e,LYON Academy,LA,2025,Split 1,,,,lineup-e8e6a1162e58eeda,LA-01,1,3,oe:player:5ceca96ff1bf52b5c77de78c0bdea0b,oe:player:e6228f265b92269d2655a05a4824bfc,oe:player:7378a82177ee6bee2015ac5d134abe3,oe:player:e427c5e627936477e7b83048bf11092,oe:player:263b44be104b940a116d9d64e6db7c1,Shavo,Daiky,Seiya,Intio,L1
+player,oe:team:02f03b46fec3f3a0066dc511ba2fc68,Pirates IDV,PI,2025,Unknown,oe:player:10fa3713ec3069f39f6e0da537c297a,Pinky,top,,,,,,,,,,,,,,
+player,oe:team:02f03b46fec3f3a0066dc511ba2fc68,Pirates IDV,PI,2025,Unknown,oe:player:e6228f265b92269d2655a05a4824bfc,Daiky,jng,,,,,,,,,,,,,,
+player,oe:team:02f03b46fec3f3a0066dc511ba2fc68,Pirates IDV,PI,2025,Unknown,oe:player:54c7fafa62a6b38cb0eaec1dd6638db,Loers,mid,,,,,,,,,,,,,,
+player,oe:team:02f03b46fec3f3a0066dc511ba2fc68,Pirates IDV,PI,2025,Unknown,oe:player:c19ead1d5535efa0ba754ce9e55c2e2,Fiant,bot,,,,,,,,,,,,,,
+player,oe:team:02f03b46fec3f3a0066dc511ba2fc68,Pirates IDV,PI,2025,Unknown,oe:player:6b2a078e5309cea2643da6b8b628c05,Zzzofia,sup,,,,,,,,,,,,,,
+lineup,oe:team:02f03b46fec3f3a0066dc511ba2fc68,Pirates IDV,PI,2025,Unknown,,,,lineup-55d7d182649333a3,PI-01,1,2,oe:player:10fa3713ec3069f39f6e0da537c297a,oe:player:e6228f265b92269d2655a05a4824bfc,oe:player:54c7fafa62a6b38cb0eaec1dd6638db,oe:player:c19ead1d5535efa0ba754ce9e55c2e2,oe:player:6b2a078e5309cea2643da6b8b628c05,Pinky,Daiky,Loers,Fiant,Zzzofia
+player,oe:team:db4e98d03fec12b08cb7a80b739c446,PÊEK Gaming,PG,2025,Split 1,oe:player:ba2b37f19ba735f23ce71cb133ea4e5,Putin,top,,,,,,,,,,,,,,
+player,oe:team:db4e98d03fec12b08cb7a80b739c446,PÊEK Gaming,PG,2025,Split 1,oe:player:906c6cdbfce615131dafcbeb1bbe7e8,Blind Walker,jng,,,,,,,,,,,,,,
+player,oe:team:db4e98d03fec12b08cb7a80b739c446,PÊEK Gaming,PG,2025,Split 1,oe:player:54c7fafa62a6b38cb0eaec1dd6638db,Loers,mid,,,,,,,,,,,,,,
+player,oe:team:db4e98d03fec12b08cb7a80b739c446,PÊEK Gaming,PG,2025,Split 1,oe:player:f7d8c1fd03b11c456966e4f1ee056f1,Skyy,mid,,,,,,,,,,,,,,
+player,oe:team:db4e98d03fec12b08cb7a80b739c446,PÊEK Gaming,PG,2025,Split 1,oe:player:907a884efd3bf9b26882811c53bcf18,Bola,bot,,,,,,,,,,,,,,
+player,oe:team:db4e98d03fec12b08cb7a80b739c446,PÊEK Gaming,PG,2025,Split 1,oe:player:c39abe593063a27305754918408d3a1,Mun,sup,,,,,,,,,,,,,,
+player,oe:team:db4e98d03fec12b08cb7a80b739c446,PÊEK Gaming,PG,2025,Split 1,oe:player:7f74c1fc50f80a06152c610c4a3b034,Yerikan,sup,,,,,,,,,,,,,,
+lineup,oe:team:db4e98d03fec12b08cb7a80b739c446,PÊEK Gaming,PG,2025,Split 1,,,,lineup-e7439e42bb846fb0,PG-01,1,4,oe:player:ba2b37f19ba735f23ce71cb133ea4e5,oe:player:906c6cdbfce615131dafcbeb1bbe7e8,oe:player:54c7fafa62a6b38cb0eaec1dd6638db,oe:player:907a884efd3bf9b26882811c53bcf18,oe:player:7f74c1fc50f80a06152c610c4a3b034,Putin,Blind Walker,Loers,Bola,Yerikan
+lineup,oe:team:db4e98d03fec12b08cb7a80b739c446,PÊEK Gaming,PG,2025,Split 1,,,,lineup-b9048428d8c4a6de,PG-02,2,2,oe:player:ba2b37f19ba735f23ce71cb133ea4e5,oe:player:906c6cdbfce615131dafcbeb1bbe7e8,oe:player:f7d8c1fd03b11c456966e4f1ee056f1,oe:player:907a884efd3bf9b26882811c53bcf18,oe:player:c39abe593063a27305754918408d3a1,Putin,Blind Walker,Skyy,Bola,Mun
+player,oe:team:419bc1080bea0fa43f9923125b79103,Team Anomaly Breaker,TAB,2025,Unknown,oe:player:920ce0a623916ab3eb57790f9cd3049,Escanor,top,,,,,,,,,,,,,,
+player,oe:team:419bc1080bea0fa43f9923125b79103,Team Anomaly Breaker,TAB,2025,Unknown,oe:player:ca8e7a1bd79ed4c9aff537414574502,Miang,jng,,,,,,,,,,,,,,
+player,oe:team:419bc1080bea0fa43f9923125b79103,Team Anomaly Breaker,TAB,2025,Unknown,oe:player:6d87f412f271789f6840e970f34f5aa,Keptt,mid,,,,,,,,,,,,,,
+player,oe:team:419bc1080bea0fa43f9923125b79103,Team Anomaly Breaker,TAB,2025,Unknown,oe:player:63c1c50379c9d78cfb0aec3ce7868b4,Hades,bot,,,,,,,,,,,,,,
+player,oe:team:419bc1080bea0fa43f9923125b79103,Team Anomaly Breaker,TAB,2025,Unknown,oe:player:6fa994228e169896341959199530c06,EpicReaper,sup,,,,,,,,,,,,,,
+lineup,oe:team:419bc1080bea0fa43f9923125b79103,Team Anomaly Breaker,TAB,2025,Unknown,,,,lineup-a36246472674b5cc,TAB-01,1,2,oe:player:920ce0a623916ab3eb57790f9cd3049,oe:player:ca8e7a1bd79ed4c9aff537414574502,oe:player:6d87f412f271789f6840e970f34f5aa,oe:player:63c1c50379c9d78cfb0aec3ce7868b4,oe:player:6fa994228e169896341959199530c06,Escanor,Miang,Keptt,Hades,EpicReaper
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2025,Split 1,oe:player:0597ac632095e480098c6cb5c1ae596,ZOEN,top,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2025,Split 1,oe:player:6fcbbff49badbddafbda79a49abba07,STEPZ,jng,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2025,Split 1,oe:player:5a4bcb095f3936badc27e5d580dedd8,Gus,mid,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2025,Split 1,oe:player:f7d8c1fd03b11c456966e4f1ee056f1,Skyy,mid,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2025,Split 1,oe:player:4f7a70e4a2d3a81289bd3efad09b915,Fatorix,bot,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2025,Split 1,oe:player:4a867124044ab3fd40ddfb8676e65e7,VirusFx,bot,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2025,Split 1,oe:player:9d8b079deedcc90dda4617fb4ffac40,TopLop,sup,,,,,,,,,,,,,,
+lineup,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2025,Split 1,,,,lineup-4269b668bfe5d8a0,INF-01,1,3,oe:player:0597ac632095e480098c6cb5c1ae596,oe:player:6fcbbff49badbddafbda79a49abba07,oe:player:5a4bcb095f3936badc27e5d580dedd8,oe:player:4f7a70e4a2d3a81289bd3efad09b915,oe:player:9d8b079deedcc90dda4617fb4ffac40,ZOEN,STEPZ,Gus,Fatorix,TopLop
+lineup,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2025,Split 1,,,,lineup-dc121c5d353f5648,INF-02,2,3,oe:player:0597ac632095e480098c6cb5c1ae596,oe:player:6fcbbff49badbddafbda79a49abba07,oe:player:f7d8c1fd03b11c456966e4f1ee056f1,oe:player:4a867124044ab3fd40ddfb8676e65e7,oe:player:9d8b079deedcc90dda4617fb4ffac40,ZOEN,STEPZ,Skyy,VirusFx,TopLop

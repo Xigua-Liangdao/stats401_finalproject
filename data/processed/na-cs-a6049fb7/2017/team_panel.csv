@@ -1,0 +1,98 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:9feb8ebfa423e419320a66a09cfa3d2,Big Gods Jackals,BGJ,2017,Summer,oe:player:994087d6cf1967213b8ea8c11e4f131,Cris,top,,,,,,,,,,,,,,
+player,oe:team:9feb8ebfa423e419320a66a09cfa3d2,Big Gods Jackals,BGJ,2017,Summer,oe:player:0bcf2ba97f48ac4f00048d5d632d28d,RF Legendary,top,,,,,,,,,,,,,,
+player,oe:team:9feb8ebfa423e419320a66a09cfa3d2,Big Gods Jackals,BGJ,2017,Summer,oe:player:30bccf285c11c18d7698c98ca52d87d,Griffin,jng,,,,,,,,,,,,,,
+player,oe:team:9feb8ebfa423e419320a66a09cfa3d2,Big Gods Jackals,BGJ,2017,Summer,oe:player:1c347deb44214ff5e726bffd9d97abc,Sirt,jng,,,,,,,,,,,,,,
+player,oe:team:9feb8ebfa423e419320a66a09cfa3d2,Big Gods Jackals,BGJ,2017,Summer,oe:player:5c2646ebad55c52a2526563ad81741c,Pekin Woof,mid,,,,,,,,,,,,,,
+player,oe:team:9feb8ebfa423e419320a66a09cfa3d2,Big Gods Jackals,BGJ,2017,Summer,oe:player:546ba6c8cebd89a223367bddd54b63a,Tails,bot,,,,,,,,,,,,,,
+player,oe:team:9feb8ebfa423e419320a66a09cfa3d2,Big Gods Jackals,BGJ,2017,Summer,oe:player:67a78ddef9beb8b6316dfb488a42521,fabbbyyy,bot,,,,,,,,,,,,,,
+player,oe:team:9feb8ebfa423e419320a66a09cfa3d2,Big Gods Jackals,BGJ,2017,Summer,oe:player:034bca92482d77ec99d54370c13c5ca,Baiano,sup,,,,,,,,,,,,,,
+player,oe:team:9feb8ebfa423e419320a66a09cfa3d2,Big Gods Jackals,BGJ,2017,Summer,oe:player:0f0c4ebc1c228d5417ca6089a9e23b4,Kwon,sup,,,,,,,,,,,,,,
+lineup,oe:team:9feb8ebfa423e419320a66a09cfa3d2,Big Gods Jackals,BGJ,2017,Summer,,,,lineup-a9e1fa8c32b035b5,BGJ-01,1,22,oe:player:994087d6cf1967213b8ea8c11e4f131,oe:player:1c347deb44214ff5e726bffd9d97abc,oe:player:5c2646ebad55c52a2526563ad81741c,oe:player:67a78ddef9beb8b6316dfb488a42521,oe:player:034bca92482d77ec99d54370c13c5ca,Cris,Sirt,Pekin Woof,fabbbyyy,Baiano
+lineup,oe:team:9feb8ebfa423e419320a66a09cfa3d2,Big Gods Jackals,BGJ,2017,Summer,,,,lineup-9d513076ddde26bd,BGJ-02,2,11,oe:player:0bcf2ba97f48ac4f00048d5d632d28d,oe:player:30bccf285c11c18d7698c98ca52d87d,oe:player:5c2646ebad55c52a2526563ad81741c,oe:player:67a78ddef9beb8b6316dfb488a42521,oe:player:034bca92482d77ec99d54370c13c5ca,RF Legendary,Griffin,Pekin Woof,fabbbyyy,Baiano
+lineup,oe:team:9feb8ebfa423e419320a66a09cfa3d2,Big Gods Jackals,BGJ,2017,Summer,,,,lineup-81029cfddc4a682d,BGJ-03,3,3,oe:player:0bcf2ba97f48ac4f00048d5d632d28d,oe:player:30bccf285c11c18d7698c98ca52d87d,oe:player:5c2646ebad55c52a2526563ad81741c,oe:player:546ba6c8cebd89a223367bddd54b63a,oe:player:0f0c4ebc1c228d5417ca6089a9e23b4,RF Legendary,Griffin,Pekin Woof,Tails,Kwon
+lineup,oe:team:9feb8ebfa423e419320a66a09cfa3d2,Big Gods Jackals,BGJ,2017,Summer,,,,lineup-365ef91591acdede,BGJ-04,4,2,oe:player:994087d6cf1967213b8ea8c11e4f131,oe:player:30bccf285c11c18d7698c98ca52d87d,oe:player:5c2646ebad55c52a2526563ad81741c,oe:player:67a78ddef9beb8b6316dfb488a42521,oe:player:034bca92482d77ec99d54370c13c5ca,Cris,Griffin,Pekin Woof,fabbbyyy,Baiano
+lineup,oe:team:9feb8ebfa423e419320a66a09cfa3d2,Big Gods Jackals,BGJ,2017,Summer,,,,lineup-929a1ba616455a06,BGJ-05,5,2,oe:player:0bcf2ba97f48ac4f00048d5d632d28d,oe:player:1c347deb44214ff5e726bffd9d97abc,oe:player:5c2646ebad55c52a2526563ad81741c,oe:player:67a78ddef9beb8b6316dfb488a42521,oe:player:034bca92482d77ec99d54370c13c5ca,RF Legendary,Sirt,Pekin Woof,fabbbyyy,Baiano
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2017,Summer,oe:player:a62c9e65a78ee4eb32866252a8245d5,FallenBandit,top,,,,,,,,,,,,,,
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2017,Summer,oe:player:39c12007219c68c69ae923b2edc4e0c,Im Jonny,jng,,,,,,,,,,,,,,
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2017,Summer,oe:player:1d3d258d62ce15583b78ddafd13b1c3,OmarGod,jng,,,,,,,,,,,,,,
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2017,Summer,oe:player:fc693fd945644fbc7a52157fb6ec407,Linsanity,mid,,,,,,,,,,,,,,
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2017,Summer,oe:player:cc3a241d9b6a251a9038c7d47131df0,Tuesday,mid,,,,,,,,,,,,,,
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2017,Summer,oe:player:06b9281e396db002010bde1de57262e,Auto,bot,,,,,,,,,,,,,,
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2017,Summer,oe:player:db3e3f51c9107e26c9bccf9a188ce2e,Fill,sup,,,,,,,,,,,,,,
+lineup,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2017,Summer,,,,lineup-5b0adbf2f6a27034,CA-01,1,17,oe:player:a62c9e65a78ee4eb32866252a8245d5,oe:player:1d3d258d62ce15583b78ddafd13b1c3,oe:player:cc3a241d9b6a251a9038c7d47131df0,oe:player:06b9281e396db002010bde1de57262e,oe:player:db3e3f51c9107e26c9bccf9a188ce2e,FallenBandit,OmarGod,Tuesday,Auto,Fill
+lineup,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2017,Summer,,,,lineup-6318ec49afb2064e,CA-02,2,4,oe:player:a62c9e65a78ee4eb32866252a8245d5,oe:player:39c12007219c68c69ae923b2edc4e0c,oe:player:cc3a241d9b6a251a9038c7d47131df0,oe:player:06b9281e396db002010bde1de57262e,oe:player:db3e3f51c9107e26c9bccf9a188ce2e,FallenBandit,Im Jonny,Tuesday,Auto,Fill
+lineup,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2017,Summer,,,,lineup-8ea0df2bf29be5c5,CA-03,3,1,oe:player:a62c9e65a78ee4eb32866252a8245d5,oe:player:1d3d258d62ce15583b78ddafd13b1c3,oe:player:fc693fd945644fbc7a52157fb6ec407,oe:player:06b9281e396db002010bde1de57262e,oe:player:db3e3f51c9107e26c9bccf9a188ce2e,FallenBandit,OmarGod,Linsanity,Auto,Fill
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:fa816783145a625c4b502446b18ad93,Allorim,top,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:2c1047c61ef1b21a80728eff2cb7cb1,Brandini,top,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:b2519d0e84a4cbe1ddb3d71bc6d96ea,Dyrus,top,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:88686b3ef4857bb0c6e3b036f039fc0,scarra,top,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:a04a853a0f540f156d08711204fe252,Armao,jng,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:b2519d0e84a4cbe1ddb3d71bc6d96ea,Dyrus,jng,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:639abc229c3dc66917bf3a01d46ae65,Shiphtur,jng,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:88686b3ef4857bb0c6e3b036f039fc0,scarra,jng,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:b38e8427233eea81494ca1b3ec13f0a,Damonte,mid,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:edc27e3b6773f74a8227fd7c97ee232,Voyboy,mid,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:990c7488c45edb10fe0cff940f04ac5,Imaqtpie,bot,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:790368786f1127fbefac1f17e3c69bf,Shynon,bot,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:52e2cc8569e7b51696a34a7b42132a0,1onz,sup,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:d491538da818a2ba11a3195ba035cfd,Big,sup,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:639abc229c3dc66917bf3a01d46ae65,Shiphtur,sup,,,,,,,,,,,,,,
+player,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,oe:player:88686b3ef4857bb0c6e3b036f039fc0,scarra,sup,,,,,,,,,,,,,,
+lineup,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,,,,lineup-626a3597641355d8,DF-01,1,20,oe:player:b2519d0e84a4cbe1ddb3d71bc6d96ea,oe:player:88686b3ef4857bb0c6e3b036f039fc0,oe:player:edc27e3b6773f74a8227fd7c97ee232,oe:player:990c7488c45edb10fe0cff940f04ac5,oe:player:639abc229c3dc66917bf3a01d46ae65,Dyrus,scarra,Voyboy,Imaqtpie,Shiphtur
+lineup,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,,,,lineup-08a64f9938e5992d,DF-02,2,10,oe:player:2c1047c61ef1b21a80728eff2cb7cb1,oe:player:a04a853a0f540f156d08711204fe252,oe:player:b38e8427233eea81494ca1b3ec13f0a,oe:player:790368786f1127fbefac1f17e3c69bf,oe:player:d491538da818a2ba11a3195ba035cfd,Brandini,Armao,Damonte,Shynon,Big
+lineup,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,,,,lineup-b5a716c90e10c6b9,DF-03,3,3,oe:player:fa816783145a625c4b502446b18ad93,oe:player:a04a853a0f540f156d08711204fe252,oe:player:b38e8427233eea81494ca1b3ec13f0a,oe:player:790368786f1127fbefac1f17e3c69bf,oe:player:52e2cc8569e7b51696a34a7b42132a0,Allorim,Armao,Damonte,Shynon,1onz
+lineup,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,,,,lineup-e26b57b741c07f62,DF-04,4,2,oe:player:b2519d0e84a4cbe1ddb3d71bc6d96ea,oe:player:639abc229c3dc66917bf3a01d46ae65,oe:player:edc27e3b6773f74a8227fd7c97ee232,oe:player:990c7488c45edb10fe0cff940f04ac5,oe:player:88686b3ef4857bb0c6e3b036f039fc0,Dyrus,Shiphtur,Voyboy,Imaqtpie,scarra
+lineup,oe:team:8d10db7607957d1126c63c3192d4930,Delta Fox,DF,2017,Summer,,,,lineup-c30ef537355a8031,DF-05,5,1,oe:player:88686b3ef4857bb0c6e3b036f039fc0,oe:player:b2519d0e84a4cbe1ddb3d71bc6d96ea,oe:player:edc27e3b6773f74a8227fd7c97ee232,oe:player:990c7488c45edb10fe0cff940f04ac5,oe:player:639abc229c3dc66917bf3a01d46ae65,scarra,Dyrus,Voyboy,Imaqtpie,Shiphtur
+player,oe:team:6ea50016f0954ae510c85438906534c,Gold Coin United,GCU,2017,Summer,oe:player:43e2c87dea1fbecd5a5f29ded6c4faf,Solo,top,,,,,,,,,,,,,,
+player,oe:team:6ea50016f0954ae510c85438906534c,Gold Coin United,GCU,2017,Summer,oe:player:9772f394c5e44d54e76aae1647217d0,Santorin,jng,,,,,,,,,,,,,,
+player,oe:team:6ea50016f0954ae510c85438906534c,Gold Coin United,GCU,2017,Summer,oe:player:7796fc7fdbef88620e2a9fd1df026a7,Fenix,mid,,,,,,,,,,,,,,
+player,oe:team:6ea50016f0954ae510c85438906534c,Gold Coin United,GCU,2017,Summer,oe:player:6c1fa8d6ae91f559b9d317477dad3ea,Fly,mid,,,,,,,,,,,,,,
+player,oe:team:6ea50016f0954ae510c85438906534c,Gold Coin United,GCU,2017,Summer,oe:player:023b976c0fc6ba4d350f2c06d333f62,RJS,mid,,,,,,,,,,,,,,
+player,oe:team:6ea50016f0954ae510c85438906534c,Gold Coin United,GCU,2017,Summer,oe:player:6151bcec0a8bb9f8ab93d71878de3c9,Mash,bot,,,,,,,,,,,,,,
+player,oe:team:6ea50016f0954ae510c85438906534c,Gold Coin United,GCU,2017,Summer,oe:player:8b51c3fec81308adfbff3781fd0aadd,Rikara,bot,,,,,,,,,,,,,,
+player,oe:team:6ea50016f0954ae510c85438906534c,Gold Coin United,GCU,2017,Summer,oe:player:7b44aaf471c10739b7122fb17676d3c,MadLife,sup,,,,,,,,,,,,,,
+player,oe:team:6ea50016f0954ae510c85438906534c,Gold Coin United,GCU,2017,Summer,oe:player:a14d3bf2654aceba192e1afb8e2b5ea,Whyin,sup,,,,,,,,,,,,,,
+lineup,oe:team:6ea50016f0954ae510c85438906534c,Gold Coin United,GCU,2017,Summer,,,,lineup-2f125c70dd0e824c,GCU-01,1,33,oe:player:43e2c87dea1fbecd5a5f29ded6c4faf,oe:player:9772f394c5e44d54e76aae1647217d0,oe:player:6c1fa8d6ae91f559b9d317477dad3ea,oe:player:8b51c3fec81308adfbff3781fd0aadd,oe:player:7b44aaf471c10739b7122fb17676d3c,Solo,Santorin,Fly,Rikara,MadLife
+lineup,oe:team:6ea50016f0954ae510c85438906534c,Gold Coin United,GCU,2017,Summer,,,,lineup-93cf4384b05bbf92,GCU-02,2,14,oe:player:43e2c87dea1fbecd5a5f29ded6c4faf,oe:player:9772f394c5e44d54e76aae1647217d0,oe:player:7796fc7fdbef88620e2a9fd1df026a7,oe:player:6151bcec0a8bb9f8ab93d71878de3c9,oe:player:7b44aaf471c10739b7122fb17676d3c,Solo,Santorin,Fenix,Mash,MadLife
+lineup,oe:team:6ea50016f0954ae510c85438906534c,Gold Coin United,GCU,2017,Summer,,,,lineup-3805c43a1a46d662,GCU-03,3,2,oe:player:43e2c87dea1fbecd5a5f29ded6c4faf,oe:player:9772f394c5e44d54e76aae1647217d0,oe:player:7796fc7fdbef88620e2a9fd1df026a7,oe:player:8b51c3fec81308adfbff3781fd0aadd,oe:player:a14d3bf2654aceba192e1afb8e2b5ea,Solo,Santorin,Fenix,Rikara,Whyin
+lineup,oe:team:6ea50016f0954ae510c85438906534c,Gold Coin United,GCU,2017,Summer,,,,lineup-c62d1d2b3aa8a593,GCU-04,4,2,oe:player:43e2c87dea1fbecd5a5f29ded6c4faf,oe:player:9772f394c5e44d54e76aae1647217d0,oe:player:7796fc7fdbef88620e2a9fd1df026a7,oe:player:8b51c3fec81308adfbff3781fd0aadd,oe:player:7b44aaf471c10739b7122fb17676d3c,Solo,Santorin,Fenix,Rikara,MadLife
+lineup,oe:team:6ea50016f0954ae510c85438906534c,Gold Coin United,GCU,2017,Summer,,,,lineup-163a76e33e190e4f,GCU-05,5,1,oe:player:43e2c87dea1fbecd5a5f29ded6c4faf,oe:player:9772f394c5e44d54e76aae1647217d0,oe:player:023b976c0fc6ba4d350f2c06d333f62,oe:player:8b51c3fec81308adfbff3781fd0aadd,oe:player:7b44aaf471c10739b7122fb17676d3c,Solo,Santorin,RJS,Rikara,MadLife
+player,oe:team:144fd27a5b974d216d3e2dd26283bb5,Team Gates,TG,2017,Spring,oe:player:fa816783145a625c4b502446b18ad93,Allorim,top,,,,,,,,,,,,,,
+player,oe:team:144fd27a5b974d216d3e2dd26283bb5,Team Gates,TG,2017,Spring,oe:player:74c97a5b51b2f1900328154b5a58a44,OddOrange,jng,,,,,,,,,,,,,,
+player,oe:team:144fd27a5b974d216d3e2dd26283bb5,Team Gates,TG,2017,Spring,oe:player:9e4cab8a6c3041527f605caf9913072,Strompest,mid,,,,,,,,,,,,,,
+player,oe:team:144fd27a5b974d216d3e2dd26283bb5,Team Gates,TG,2017,Spring,oe:player:4775428eef9b4fee90c7c56781352e9,Vex,bot,,,,,,,,,,,,,,
+player,oe:team:144fd27a5b974d216d3e2dd26283bb5,Team Gates,TG,2017,Spring,oe:player:e5e6734b1e3b4484db6c38d5419d0fc,Vincent,sup,,,,,,,,,,,,,,
+lineup,oe:team:144fd27a5b974d216d3e2dd26283bb5,Team Gates,TG,2017,Spring,,,,lineup-b2a40d14e6c4a43a,TG-01,1,10,oe:player:fa816783145a625c4b502446b18ad93,oe:player:74c97a5b51b2f1900328154b5a58a44,oe:player:9e4cab8a6c3041527f605caf9913072,oe:player:4775428eef9b4fee90c7c56781352e9,oe:player:e5e6734b1e3b4484db6c38d5419d0fc,Allorim,OddOrange,Strompest,Vex,Vincent
+player,oe:team:69aa914c3c6ec71f1c8aa4fc03abc4d,Tempo Storm,TS,2017,Summer,oe:player:feee48d6e5d34aed05441b8f436d729,Quas,top,,,,,,,,,,,,,,
+player,oe:team:69aa914c3c6ec71f1c8aa4fc03abc4d,Tempo Storm,TS,2017,Summer,oe:player:30bccf285c11c18d7698c98ca52d87d,Griffin,jng,,,,,,,,,,,,,,
+player,oe:team:69aa914c3c6ec71f1c8aa4fc03abc4d,Tempo Storm,TS,2017,Summer,oe:player:10797a933608197e6527eab72bffb7b,Zentinel,jng,,,,,,,,,,,,,,
+player,oe:team:69aa914c3c6ec71f1c8aa4fc03abc4d,Tempo Storm,TS,2017,Summer,oe:player:d284c886209920a7c477e95581cd099,Hatrixx,mid,,,,,,,,,,,,,,
+player,oe:team:69aa914c3c6ec71f1c8aa4fc03abc4d,Tempo Storm,TS,2017,Summer,oe:player:276d05b1111531b04f5945dd776fed6,Nulu,mid,,,,,,,,,,,,,,
+player,oe:team:69aa914c3c6ec71f1c8aa4fc03abc4d,Tempo Storm,TS,2017,Summer,oe:player:65467087a19145f43129bba42781aea,Freeze,bot,,,,,,,,,,,,,,
+player,oe:team:69aa914c3c6ec71f1c8aa4fc03abc4d,Tempo Storm,TS,2017,Summer,oe:player:2d9b663a702f071e8c7d62dc34ab999,Reven,bot,,,,,,,,,,,,,,
+player,oe:team:69aa914c3c6ec71f1c8aa4fc03abc4d,Tempo Storm,TS,2017,Summer,oe:player:572b2541c97aec9d07ca45dad125559,Sheep,sup,,,,,,,,,,,,,,
+lineup,oe:team:69aa914c3c6ec71f1c8aa4fc03abc4d,Tempo Storm,TS,2017,Summer,,,,lineup-459631ddf49ca168,TS-01,1,19,oe:player:feee48d6e5d34aed05441b8f436d729,oe:player:30bccf285c11c18d7698c98ca52d87d,oe:player:276d05b1111531b04f5945dd776fed6,oe:player:2d9b663a702f071e8c7d62dc34ab999,oe:player:572b2541c97aec9d07ca45dad125559,Quas,Griffin,Nulu,Reven,Sheep
+lineup,oe:team:69aa914c3c6ec71f1c8aa4fc03abc4d,Tempo Storm,TS,2017,Summer,,,,lineup-dbae0dc8271711c2,TS-02,2,14,oe:player:feee48d6e5d34aed05441b8f436d729,oe:player:10797a933608197e6527eab72bffb7b,oe:player:d284c886209920a7c477e95581cd099,oe:player:65467087a19145f43129bba42781aea,oe:player:572b2541c97aec9d07ca45dad125559,Quas,Zentinel,Hatrixx,Freeze,Sheep
+lineup,oe:team:69aa914c3c6ec71f1c8aa4fc03abc4d,Tempo Storm,TS,2017,Summer,,,,lineup-9256336b345a984f,TS-03,3,11,oe:player:feee48d6e5d34aed05441b8f436d729,oe:player:30bccf285c11c18d7698c98ca52d87d,oe:player:276d05b1111531b04f5945dd776fed6,oe:player:65467087a19145f43129bba42781aea,oe:player:572b2541c97aec9d07ca45dad125559,Quas,Griffin,Nulu,Freeze,Sheep
+player,oe:team:e7bb15e9b5c8dbb32b34d8dc5b08d99,University of Toronto,UOT,2017,Spring,oe:player:3f87e25690ea3bdeb998259fb45445c,Engo,top,,,,,,,,,,,,,,
+player,oe:team:e7bb15e9b5c8dbb32b34d8dc5b08d99,University of Toronto,UOT,2017,Spring,oe:player:d729268e3ecae46dcb024047dbbdd1d,YummiBananas,jng,,,,,,,,,,,,,,
+player,oe:team:e7bb15e9b5c8dbb32b34d8dc5b08d99,University of Toronto,UOT,2017,Spring,oe:player:c83b1bc5eff6ddaa48b76728e24f88d,jhEEsh,mid,,,,,,,,,,,,,,
+player,oe:team:e7bb15e9b5c8dbb32b34d8dc5b08d99,University of Toronto,UOT,2017,Spring,oe:player:4d37c966e565a988f405b6bb4291d20,Erry,bot,,,,,,,,,,,,,,
+player,oe:team:e7bb15e9b5c8dbb32b34d8dc5b08d99,University of Toronto,UOT,2017,Spring,oe:player:650f5da2c2068fff2937c3530393c97,JayJ,sup,,,,,,,,,,,,,,
+lineup,oe:team:e7bb15e9b5c8dbb32b34d8dc5b08d99,University of Toronto,UOT,2017,Spring,,,,lineup-faade2c99b44de1c,UOT-01,1,3,oe:player:3f87e25690ea3bdeb998259fb45445c,oe:player:d729268e3ecae46dcb024047dbbdd1d,oe:player:c83b1bc5eff6ddaa48b76728e24f88d,oe:player:4d37c966e565a988f405b6bb4291d20,oe:player:650f5da2c2068fff2937c3530393c97,Engo,YummiBananas,jhEEsh,Erry,JayJ
+player,oe:team:2261bbacd055e64d38e4c43a2bfcbd9,eUnited,EUN,2017,Summer,oe:player:e03d0722b6dce835cde3268c08c4f54,Licorice,top,,,,,,,,,,,,,,
+player,oe:team:2261bbacd055e64d38e4c43a2bfcbd9,eUnited,EUN,2017,Summer,oe:player:e08beccbf2fac1f9ba8883db151e66b,DanDy,jng,,,,,,,,,,,,,,
+player,oe:team:2261bbacd055e64d38e4c43a2bfcbd9,eUnited,EUN,2017,Summer,oe:player:f926d5dcf4dca16c457e64fc9ef6c87,Gilius,jng,,,,,,,,,,,,,,
+player,oe:team:2261bbacd055e64d38e4c43a2bfcbd9,eUnited,EUN,2017,Summer,oe:player:1e848c5f01f7e93591d918f73337835,Fox,mid,,,,,,,,,,,,,,
+player,oe:team:2261bbacd055e64d38e4c43a2bfcbd9,eUnited,EUN,2017,Summer,oe:player:f75ea237475cbf72461f5532b955aaf,GBM,mid,,,,,,,,,,,,,,
+player,oe:team:2261bbacd055e64d38e4c43a2bfcbd9,eUnited,EUN,2017,Summer,oe:player:e8fc48ebd917c59ea149c4792c464bd,Deftly,bot,,,,,,,,,,,,,,
+player,oe:team:2261bbacd055e64d38e4c43a2bfcbd9,eUnited,EUN,2017,Summer,oe:player:6841f2d68619d53bdd1cdbf30b5be2c,Zeyzal,sup,,,,,,,,,,,,,,
+lineup,oe:team:2261bbacd055e64d38e4c43a2bfcbd9,eUnited,EUN,2017,Summer,,,,lineup-4c088f7602f82fae,EUN-01,1,31,oe:player:e03d0722b6dce835cde3268c08c4f54,oe:player:e08beccbf2fac1f9ba8883db151e66b,oe:player:f75ea237475cbf72461f5532b955aaf,oe:player:e8fc48ebd917c59ea149c4792c464bd,oe:player:6841f2d68619d53bdd1cdbf30b5be2c,Licorice,DanDy,GBM,Deftly,Zeyzal
+lineup,oe:team:2261bbacd055e64d38e4c43a2bfcbd9,eUnited,EUN,2017,Summer,,,,lineup-fe607bdf24ad5762,EUN-02,2,17,oe:player:e03d0722b6dce835cde3268c08c4f54,oe:player:f926d5dcf4dca16c457e64fc9ef6c87,oe:player:1e848c5f01f7e93591d918f73337835,oe:player:e8fc48ebd917c59ea149c4792c464bd,oe:player:6841f2d68619d53bdd1cdbf30b5be2c,Licorice,Gilius,Fox,Deftly,Zeyzal
+player,name-team-bbf4d270ed871a83,unknown team,UT,2017,Spring,oe:player:6dd6c65f233361c424b431921d60ff6,Revenge,top,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2017,Spring,oe:player:1e9edd867eafb54151138230c57a2a1,Metaphor,jng,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2017,Spring,oe:player:ef97df9d746d0e65ed18786ab30031c,Insanity,mid,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2017,Spring,oe:player:8e9af7e7d9ba2083eca11de86c43e96,Flamboozle,bot,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2017,Spring,oe:player:6fbe74bc32e0f74e6324b8288ae0c19,Duoking1,sup,,,,,,,,,,,,,,
+lineup,name-team-bbf4d270ed871a83,unknown team,UT,2017,Spring,,,,lineup-89bf4f63c4b44791,UT-01,1,3,oe:player:6dd6c65f233361c424b431921d60ff6,oe:player:1e9edd867eafb54151138230c57a2a1,oe:player:ef97df9d746d0e65ed18786ab30031c,oe:player:8e9af7e7d9ba2083eca11de86c43e96,oe:player:6fbe74bc32e0f74e6324b8288ae0c19,Revenge,Metaphor,Insanity,Flamboozle,Duoking1

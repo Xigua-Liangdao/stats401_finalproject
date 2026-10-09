@@ -1,0 +1,55 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2017,Unknown,oe:player:d11c67c4c3a40031d66d32ecb806d53,Chippys,top,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2017,Unknown,oe:player:5cc4071294a16477e992b3c8a2b7715,Shernfire,jng,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2017,Unknown,oe:player:c51c8bbd9e8c8bc49042ccd5d3e9864,Richard,mid,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2017,Unknown,oe:player:fb18ab6bf6bef08402a580d2a96c106,k1ng,bot,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2017,Unknown,oe:player:6b2acf5555e281f3e64f9a338da6a66,destiny,sup,,,,,,,,,,,,,,
+lineup,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2017,Unknown,,,,lineup-427c2dabe0ae9f21,DW-01,1,1,oe:player:d11c67c4c3a40031d66d32ecb806d53,oe:player:5cc4071294a16477e992b3c8a2b7715,oe:player:c51c8bbd9e8c8bc49042ccd5d3e9864,oe:player:fb18ab6bf6bef08402a580d2a96c106,oe:player:6b2acf5555e281f3e64f9a338da6a66,Chippys,Shernfire,Richard,k1ng,destiny
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2017,Unknown,oe:player:d026936df1996241d1cda58970b2a24,MMD,top,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2017,Unknown,oe:player:f3322656ae1facbf4763677fe2506a3,Karsa,jng,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2017,Unknown,oe:player:e3aa452243a476669824e52c1b7fc6b,Maple,mid,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2017,Unknown,oe:player:7e754adda86a60e0a39d7204ba60424,Betty,bot,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2017,Unknown,oe:player:0908c66a5c361f682282599e75b334f,SwordArt,sup,,,,,,,,,,,,,,
+lineup,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2017,Unknown,,,,lineup-b29f20f624f66020,FW-01,1,1,oe:player:d026936df1996241d1cda58970b2a24,oe:player:f3322656ae1facbf4763677fe2506a3,oe:player:e3aa452243a476669824e52c1b7fc6b,oe:player:7e754adda86a60e0a39d7204ba60424,oe:player:0908c66a5c361f682282599e75b334f,MMD,Karsa,Maple,Betty,SwordArt
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2017,Unknown,oe:player:7f036407d75c774176a7effbe959366,Expect,top,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2017,Unknown,oe:player:59c9428d4e21d63aefeb230c919dcfe,Trick,jng,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2017,Unknown,oe:player:0634d9e86284da2fae4e1438d564eee,Perkz,mid,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2017,Unknown,oe:player:10fcffece0ac7be85f09c4b51a75762,Zven,bot,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2017,Unknown,oe:player:0602036a87550a3c7c8aa049ddaef49,Mithy,sup,,,,,,,,,,,,,,
+lineup,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2017,Unknown,,,,lineup-5d7a14660ae9a2e0,GE-01,1,1,oe:player:7f036407d75c774176a7effbe959366,oe:player:59c9428d4e21d63aefeb230c919dcfe,oe:player:0634d9e86284da2fae4e1438d564eee,oe:player:10fcffece0ac7be85f09c4b51a75762,oe:player:0602036a87550a3c7c8aa049ddaef49,Expect,Trick,Perkz,Zven,Mithy
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2017,Unknown,oe:player:9bb04da960f8172639be9ffe8a41a53,Stark,top,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2017,Unknown,oe:player:145f64f1760a3fc2eac89c8f29c3083,Levi,jng,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2017,Unknown,oe:player:6b2993d61ed08c13eb8bb8bcfe30182,C7N,mid,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2017,Unknown,oe:player:c18599c8ef5f2c266c02f16622254cd,Slay,bot,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2017,Unknown,oe:player:260ef7a8740746fa10d9b4fcf9114e8,Archie,sup,,,,,,,,,,,,,,
+lineup,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2017,Unknown,,,,lineup-31838d94b0f6f1bb,GE-01,1,13,oe:player:9bb04da960f8172639be9ffe8a41a53,oe:player:145f64f1760a3fc2eac89c8f29c3083,oe:player:6b2993d61ed08c13eb8bb8bcfe30182,oe:player:c18599c8ef5f2c266c02f16622254cd,oe:player:260ef7a8740746fa10d9b4fcf9114e8,Stark,Levi,C7N,Slay,Archie
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2017,Unknown,oe:player:d12be4fd740afa31c400833bee2cba4,fabFabulous,top,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2017,Unknown,oe:player:b287539666d56b6bf8155d3e4a8541d,Stomaged,jng,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2017,Unknown,oe:player:3993eecbf3e9f7e9c94db6bb2fb616d,Naru,mid,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2017,Unknown,oe:player:01cbcf0e395124de3b78817b75b878c,Zeitnot,bot,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2017,Unknown,oe:player:7bd16068637ca7bbbed9db44008bda8,Dumbledoge,sup,,,,,,,,,,,,,,
+lineup,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2017,Unknown,,,,lineup-73ba98c12bf784ed,PS-01,1,5,oe:player:d12be4fd740afa31c400833bee2cba4,oe:player:b287539666d56b6bf8155d3e4a8541d,oe:player:3993eecbf3e9f7e9c94db6bb2fb616d,oe:player:01cbcf0e395124de3b78817b75b878c,oe:player:7bd16068637ca7bbbed9db44008bda8,fabFabulous,Stomaged,Naru,Zeitnot,Dumbledoge
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2017,Unknown,oe:player:3085815ef497539cb1d93b3c9a16624,Robo,top,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2017,Unknown,oe:player:8d7dfafe52c0a56acd811d06297729c,Nappon,jng,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2017,Unknown,oe:player:913fab4d1d3caa861cfbbdd60b2a3fd,tockers,mid,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2017,Unknown,oe:player:8949aee3a35b0a789d1090f412d8d61,brTT,bot,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2017,Unknown,oe:player:bd35a9f3403e38f0b7d203cf42401e7,Dioud,sup,,,,,,,,,,,,,,
+lineup,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2017,Unknown,,,,lineup-c2a9de983bc26bd4,RC-01,1,1,oe:player:3085815ef497539cb1d93b3c9a16624,oe:player:8d7dfafe52c0a56acd811d06297729c,oe:player:913fab4d1d3caa861cfbbdd60b2a3fd,oe:player:8949aee3a35b0a789d1090f412d8d61,oe:player:bd35a9f3403e38f0b7d203cf42401e7,Robo,Nappon,tockers,brTT,Dioud
+player,oe:team:a9744fc5b0ca952b17ef07c0aa99602,Rampage,RAM,2017,Unknown,oe:player:376d5e3b1257e6972228d458943f74c,Evi,top,,,,,,,,,,,,,,
+player,oe:team:a9744fc5b0ca952b17ef07c0aa99602,Rampage,RAM,2017,Unknown,oe:player:5d266fd637d68e37c6025215ab74757,Tussle,jng,,,,,,,,,,,,,,
+player,oe:team:a9744fc5b0ca952b17ef07c0aa99602,Rampage,RAM,2017,Unknown,oe:player:a4e9e9157f2a7f62d2166124824166e,Ramune,mid,,,,,,,,,,,,,,
+player,oe:team:a9744fc5b0ca952b17ef07c0aa99602,Rampage,RAM,2017,Unknown,oe:player:785c0d3b9969e1cf711dcd09ee4bffb,Moyashi,bot,,,,,,,,,,,,,,
+player,oe:team:a9744fc5b0ca952b17ef07c0aa99602,Rampage,RAM,2017,Unknown,oe:player:3c20ade1447676f0d3667e668d92a69,Dara,sup,,,,,,,,,,,,,,
+lineup,oe:team:a9744fc5b0ca952b17ef07c0aa99602,Rampage,RAM,2017,Unknown,,,,lineup-f880817366c40d55,RAM-01,1,1,oe:player:376d5e3b1257e6972228d458943f74c,oe:player:5d266fd637d68e37c6025215ab74757,oe:player:a4e9e9157f2a7f62d2166124824166e,oe:player:785c0d3b9969e1cf711dcd09ee4bffb,oe:player:3c20ade1447676f0d3667e668d92a69,Evi,Tussle,Ramune,Moyashi,Dara
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2017,Unknown,oe:player:bcb79ac1654e9a40600fba1eb3e53af,Huni,top,,,,,,,,,,,,,,
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2017,Unknown,oe:player:dda4a873265dfd06df50a0d8a294908,Peanut,jng,,,,,,,,,,,,,,
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2017,Unknown,oe:player:e1edfc5cea461399a63cb813cf795cc,Faker,mid,,,,,,,,,,,,,,
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2017,Unknown,oe:player:526e67744f0b90739ec17c191c62d24,Bang,bot,,,,,,,,,,,,,,
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2017,Unknown,oe:player:f4e74388bb8ff2f8d88bfc579f7fb61,Wolf,sup,,,,,,,,,,,,,,
+lineup,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2017,Unknown,,,,lineup-3e48881e038be002,STT-01,1,1,oe:player:bcb79ac1654e9a40600fba1eb3e53af,oe:player:dda4a873265dfd06df50a0d8a294908,oe:player:e1edfc5cea461399a63cb813cf795cc,oe:player:526e67744f0b90739ec17c191c62d24,oe:player:f4e74388bb8ff2f8d88bfc579f7fb61,Huni,Peanut,Faker,Bang,Wolf
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Unknown,oe:player:20aba59cf47a04a6cf10436ce1946ac,Hauntzer,top,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Unknown,oe:player:c271341160441d375411fef9bf2f9ef,Svenskeren,jng,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Unknown,oe:player:63ba5c5e5bb73ace706183b5e05a27e,Bjergsen,mid,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Unknown,oe:player:91a74fa03f163055a19da5b16363fc8,WildTurtle,bot,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Unknown,oe:player:88b780b9f178fd2e50a458ae282cd7c,Biofrost,sup,,,,,,,,,,,,,,
+lineup,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Unknown,,,,lineup-a178e324ed710a4b,TSM-01,1,6,oe:player:20aba59cf47a04a6cf10436ce1946ac,oe:player:c271341160441d375411fef9bf2f9ef,oe:player:63ba5c5e5bb73ace706183b5e05a27e,oe:player:91a74fa03f163055a19da5b16363fc8,oe:player:88b780b9f178fd2e50a458ae282cd7c,Hauntzer,Svenskeren,Bjergsen,WildTurtle,Biofrost

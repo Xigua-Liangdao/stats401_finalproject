@@ -1,0 +1,60 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:6c8bf5b93fd189943d784b55bb71b61,IN Gaming,IG,2017,Spring,oe:player:fb08dc231cf112007ff4dc3c4fff6a6,hashiqi,top,,,,,,,,,,,,,,
+player,oe:team:6c8bf5b93fd189943d784b55bb71b61,IN Gaming,IG,2017,Spring,oe:player:834e9c779ea93625da0dfc53df5f228,tbq,jng,,,,,,,,,,,,,,
+player,oe:team:6c8bf5b93fd189943d784b55bb71b61,IN Gaming,IG,2017,Spring,oe:player:7eaba623487d46d2c22fe07755332c9,BaeMe,mid,,,,,,,,,,,,,,
+player,oe:team:6c8bf5b93fd189943d784b55bb71b61,IN Gaming,IG,2017,Spring,oe:player:ffb5e09af5fe51d3ce2a10206f5d7a9,Gao,bot,,,,,,,,,,,,,,
+player,oe:team:6c8bf5b93fd189943d784b55bb71b61,IN Gaming,IG,2017,Spring,oe:player:22263a33de4ca6c1ca6c08de3de913e,Xfq,sup,,,,,,,,,,,,,,
+lineup,oe:team:6c8bf5b93fd189943d784b55bb71b61,IN Gaming,IG,2017,Spring,,,,lineup-17f09e12f1486f97,IG-01,1,2,oe:player:fb08dc231cf112007ff4dc3c4fff6a6,oe:player:834e9c779ea93625da0dfc53df5f228,oe:player:7eaba623487d46d2c22fe07755332c9,oe:player:ffb5e09af5fe51d3ce2a10206f5d7a9,oe:player:22263a33de4ca6c1ca6c08de3de913e,hashiqi,tbq,BaeMe,Gao,Xfq
+player,oe:team:ae2a2737a8d8d2b8e396dabae0e149b,Joy Dream,JD,2017,Summer,oe:player:fb08dc231cf112007ff4dc3c4fff6a6,hashiqi,top,,,,,,,,,,,,,,
+player,oe:team:ae2a2737a8d8d2b8e396dabae0e149b,Joy Dream,JD,2017,Summer,oe:player:7d8b6707950dad47da00aa2984b6289,Ori,jng,,,,,,,,,,,,,,
+player,oe:team:ae2a2737a8d8d2b8e396dabae0e149b,Joy Dream,JD,2017,Summer,oe:player:7eaba623487d46d2c22fe07755332c9,BaeMe,mid,,,,,,,,,,,,,,
+player,oe:team:ae2a2737a8d8d2b8e396dabae0e149b,Joy Dream,JD,2017,Summer,oe:player:de4f13489037978e8fa92e888eeaad0,clx,mid,,,,,,,,,,,,,,
+player,oe:team:ae2a2737a8d8d2b8e396dabae0e149b,Joy Dream,JD,2017,Summer,oe:player:4ab993b0ba183ffd0cd84d2b4b26750,Quiet,bot,,,,,,,,,,,,,,
+player,oe:team:ae2a2737a8d8d2b8e396dabae0e149b,Joy Dream,JD,2017,Summer,oe:player:a713229c85ac0832945cb6c22702540,Deceit,sup,,,,,,,,,,,,,,
+lineup,oe:team:ae2a2737a8d8d2b8e396dabae0e149b,Joy Dream,JD,2017,Summer,,,,lineup-0bc7f7062f19f994,JD-01,1,1,oe:player:fb08dc231cf112007ff4dc3c4fff6a6,oe:player:7d8b6707950dad47da00aa2984b6289,oe:player:7eaba623487d46d2c22fe07755332c9,oe:player:4ab993b0ba183ffd0cd84d2b4b26750,oe:player:a713229c85ac0832945cb6c22702540,hashiqi,Ori,BaeMe,Quiet,Deceit
+lineup,oe:team:ae2a2737a8d8d2b8e396dabae0e149b,Joy Dream,JD,2017,Summer,,,,lineup-fad39b6b89eb5ba0,JD-02,2,1,oe:player:fb08dc231cf112007ff4dc3c4fff6a6,oe:player:7d8b6707950dad47da00aa2984b6289,oe:player:de4f13489037978e8fa92e888eeaad0,oe:player:4ab993b0ba183ffd0cd84d2b4b26750,oe:player:a713229c85ac0832945cb6c22702540,hashiqi,Ori,clx,Quiet,Deceit
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2017,Summer,oe:player:173b7d2ec66da8ceb34cd12311024ce,JS,top,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2017,Summer,oe:player:38ce58be5c699a610d00162af5fec39,catjug,jng,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2017,Summer,oe:player:955fed1c8e21e36b1ea553df0d8b07f,Viod,mid,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2017,Summer,oe:player:53f1445a9f28799a32ea55f046319fc,Asura,bot,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2017,Summer,oe:player:ccf749dcf7aa6920edb4f9dac925f0a,Luci,sup,,,,,,,,,,,,,,
+lineup,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2017,Summer,,,,lineup-d0e86bf2cc0ba9d3,OMGA-01,1,2,oe:player:173b7d2ec66da8ceb34cd12311024ce,oe:player:38ce58be5c699a610d00162af5fec39,oe:player:955fed1c8e21e36b1ea553df0d8b07f,oe:player:53f1445a9f28799a32ea55f046319fc,oe:player:ccf749dcf7aa6920edb4f9dac925f0a,JS,catjug,Viod,Asura,Luci
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2017,Summer,oe:player:d7a920ad9c1b5c3d23cbf211d9f4b85,AK,top,,,,,,,,,,,,,,
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2017,Summer,oe:player:608c82ab2789c2111892adf8c5733f1,baybay,jng,,,,,,,,,,,,,,
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2017,Summer,oe:player:25b04f17b5013a5372b76a12c9be1d7,Sask,mid,,,,,,,,,,,,,,
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2017,Summer,oe:player:0f4317a0c9d88aa9948683815c2ba14,Rain,bot,,,,,,,,,,,,,,
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2017,Summer,oe:player:75fc28cbd1bf055e25e7fea0b5d7b48,Despa1r,sup,,,,,,,,,,,,,,
+lineup,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2017,Summer,,,,lineup-cfe706e06d67f823,RC-01,1,2,oe:player:d7a920ad9c1b5c3d23cbf211d9f4b85,oe:player:608c82ab2789c2111892adf8c5733f1,oe:player:25b04f17b5013a5372b76a12c9be1d7,oe:player:0f4317a0c9d88aa9948683815c2ba14,oe:player:75fc28cbd1bf055e25e7fea0b5d7b48,AK,baybay,Sask,Rain,Despa1r
+player,oe:team:8ae3b1b7a8c9ef4336dc391318a2c6b,Saint Gaming,SG,2017,Spring,oe:player:e006defde268ffa01dca662907900ee,chimin,top,,,,,,,,,,,,,,
+player,oe:team:8ae3b1b7a8c9ef4336dc391318a2c6b,Saint Gaming,SG,2017,Spring,oe:player:916e632a36540a4df986390c486d02b,Deemo,jng,,,,,,,,,,,,,,
+player,oe:team:8ae3b1b7a8c9ef4336dc391318a2c6b,Saint Gaming,SG,2017,Spring,oe:player:30200cc3f33280c01b343e56cf206fb,Bing,mid,,,,,,,,,,,,,,
+player,oe:team:8ae3b1b7a8c9ef4336dc391318a2c6b,Saint Gaming,SG,2017,Spring,oe:player:3d77d2911980b4f06d3bad76981c70f,xQ,bot,,,,,,,,,,,,,,
+player,oe:team:8ae3b1b7a8c9ef4336dc391318a2c6b,Saint Gaming,SG,2017,Spring,oe:player:58133b0905e700f3a1d63f92a7556f1,x1u,sup,,,,,,,,,,,,,,
+lineup,oe:team:8ae3b1b7a8c9ef4336dc391318a2c6b,Saint Gaming,SG,2017,Spring,,,,lineup-4ab7a5131a6ed5be,SG-01,1,2,oe:player:e006defde268ffa01dca662907900ee,oe:player:916e632a36540a4df986390c486d02b,oe:player:30200cc3f33280c01b343e56cf206fb,oe:player:3d77d2911980b4f06d3bad76981c70f,oe:player:58133b0905e700f3a1d63f92a7556f1,chimin,Deemo,Bing,xQ,x1u
+player,oe:team:a7bae5ae93d535e22b517b6b53d2006,Team Hurricane,TH,2017,Summer,oe:player:03c9d5b89f35e4497eb6b04cb176c0f,Sundae,top,,,,,,,,,,,,,,
+player,oe:team:a7bae5ae93d535e22b517b6b53d2006,Team Hurricane,TH,2017,Summer,oe:player:c5a0d5d34cdf519614d45a60cb300dd,Kumamon,jng,,,,,,,,,,,,,,
+player,oe:team:a7bae5ae93d535e22b517b6b53d2006,Team Hurricane,TH,2017,Summer,oe:player:25cabb1442cddb2ce008c57eb2be1a7,Crank,mid,,,,,,,,,,,,,,
+player,oe:team:a7bae5ae93d535e22b517b6b53d2006,Team Hurricane,TH,2017,Summer,oe:player:72130c3eb5e111889dac87f4333da1a,Cerasus,bot,,,,,,,,,,,,,,
+player,oe:team:a7bae5ae93d535e22b517b6b53d2006,Team Hurricane,TH,2017,Summer,oe:player:3895c059762370cf34b10e69640167f,XinMo,sup,,,,,,,,,,,,,,
+lineup,oe:team:a7bae5ae93d535e22b517b6b53d2006,Team Hurricane,TH,2017,Summer,,,,lineup-82e3aa311c7c001d,TH-01,1,2,oe:player:03c9d5b89f35e4497eb6b04cb176c0f,oe:player:c5a0d5d34cdf519614d45a60cb300dd,oe:player:25cabb1442cddb2ce008c57eb2be1a7,oe:player:72130c3eb5e111889dac87f4333da1a,oe:player:3895c059762370cf34b10e69640167f,Sundae,Kumamon,Crank,Cerasus,XinMo
+player,oe:team:5627e3ef0b2477289b218ddeb6a151a,Vici Gaming,VG,2017,Summer,oe:player:b5e77cbbde6e6a5b9a6bce02d7e6383,Loong,top,,,,,,,,,,,,,,
+player,oe:team:5627e3ef0b2477289b218ddeb6a151a,Vici Gaming,VG,2017,Summer,oe:player:275c74140224026380b29b2412d2512,Crash,jng,,,,,,,,,,,,,,
+player,oe:team:5627e3ef0b2477289b218ddeb6a151a,Vici Gaming,VG,2017,Summer,oe:player:cafee7267cccef814a0dd4c05afd254,Easyhoon,mid,,,,,,,,,,,,,,
+player,oe:team:5627e3ef0b2477289b218ddeb6a151a,Vici Gaming,VG,2017,Summer,oe:player:4d615befe98372628838afbcb4ec769,Martin,bot,,,,,,,,,,,,,,
+player,oe:team:5627e3ef0b2477289b218ddeb6a151a,Vici Gaming,VG,2017,Summer,oe:player:5961b9c45e8cd870020433a870618cd,Duan,sup,,,,,,,,,,,,,,
+lineup,oe:team:5627e3ef0b2477289b218ddeb6a151a,Vici Gaming,VG,2017,Summer,,,,lineup-8cb831171b1a20f4,VG-01,1,13,oe:player:b5e77cbbde6e6a5b9a6bce02d7e6383,oe:player:275c74140224026380b29b2412d2512,oe:player:cafee7267cccef814a0dd4c05afd254,oe:player:4d615befe98372628838afbcb4ec769,oe:player:5961b9c45e8cd870020433a870618cd,Loong,Crash,Easyhoon,Martin,Duan
+player,oe:team:3383aee09cbbd027fc9ebb11859de19,Young Glory,YG,2017,Summer,oe:player:5345fffed75e27e229cb09782502834,Tangwa,top,,,,,,,,,,,,,,
+player,oe:team:3383aee09cbbd027fc9ebb11859de19,Young Glory,YG,2017,Summer,oe:player:42efecb4a1fa65304effba059ef85be,luguo,top,,,,,,,,,,,,,,
+player,oe:team:3383aee09cbbd027fc9ebb11859de19,Young Glory,YG,2017,Summer,oe:player:6153664a376e0f05f13eea5b80013ff,1ntruder,jng,,,,,,,,,,,,,,
+player,oe:team:3383aee09cbbd027fc9ebb11859de19,Young Glory,YG,2017,Summer,oe:player:ae4e4363d4138a6775f793c502e96fb,Hunter,jng,,,,,,,,,,,,,,
+player,oe:team:3383aee09cbbd027fc9ebb11859de19,Young Glory,YG,2017,Summer,oe:player:e4419464d570c4b497ba1979e790b10,Tank,mid,,,,,,,,,,,,,,
+player,oe:team:3383aee09cbbd027fc9ebb11859de19,Young Glory,YG,2017,Summer,oe:player:61dddfe82dcb836daf55132bc47a10f,Alone,bot,,,,,,,,,,,,,,
+player,oe:team:3383aee09cbbd027fc9ebb11859de19,Young Glory,YG,2017,Summer,oe:player:9c35db96635c38fb23420367fcaa64f,Destiny,sup,,,,,,,,,,,,,,
+lineup,oe:team:3383aee09cbbd027fc9ebb11859de19,Young Glory,YG,2017,Summer,,,,lineup-48c4538e478acab0,YG-01,1,1,oe:player:5345fffed75e27e229cb09782502834,oe:player:ae4e4363d4138a6775f793c502e96fb,oe:player:e4419464d570c4b497ba1979e790b10,oe:player:61dddfe82dcb836daf55132bc47a10f,oe:player:9c35db96635c38fb23420367fcaa64f,Tangwa,Hunter,Tank,Alone,Destiny
+lineup,oe:team:3383aee09cbbd027fc9ebb11859de19,Young Glory,YG,2017,Summer,,,,lineup-d65989011ecd786f,YG-02,2,1,oe:player:42efecb4a1fa65304effba059ef85be,oe:player:6153664a376e0f05f13eea5b80013ff,oe:player:e4419464d570c4b497ba1979e790b10,oe:player:61dddfe82dcb836daf55132bc47a10f,oe:player:9c35db96635c38fb23420367fcaa64f,luguo,1ntruder,Tank,Alone,Destiny
+player,oe:team:1486bbe432b1153d9a83ff6e75d6c90,Young Miracles,YM,2017,Summer,oe:player:ffa517265932cce4cb23a0a9100b52b,Clowz,top,,,,,,,,,,,,,,
+player,oe:team:1486bbe432b1153d9a83ff6e75d6c90,Young Miracles,YM,2017,Summer,oe:player:0da0eeb199e8fa3ab773cf84f9de9ab,Tian,jng,,,,,,,,,,,,,,
+player,oe:team:1486bbe432b1153d9a83ff6e75d6c90,Young Miracles,YM,2017,Summer,oe:player:ed29043422e3c515e1cb292464b990b,knight,mid,,,,,,,,,,,,,,
+player,oe:team:1486bbe432b1153d9a83ff6e75d6c90,Young Miracles,YM,2017,Summer,oe:player:494fc60dffbb5da1caa2226baef0ec7,Bvoy,bot,,,,,,,,,,,,,,
+player,oe:team:1486bbe432b1153d9a83ff6e75d6c90,Young Miracles,YM,2017,Summer,oe:player:15b314a12fd4565bc9129fdc95fa842,Viper,sup,,,,,,,,,,,,,,
+lineup,oe:team:1486bbe432b1153d9a83ff6e75d6c90,Young Miracles,YM,2017,Summer,,,,lineup-d18b3c2e0b2d444a,YM-01,1,3,oe:player:ffa517265932cce4cb23a0a9100b52b,oe:player:0da0eeb199e8fa3ab773cf84f9de9ab,oe:player:ed29043422e3c515e1cb292464b990b,oe:player:494fc60dffbb5da1caa2226baef0ec7,oe:player:15b314a12fd4565bc9129fdc95fa842,Clowz,Tian,knight,Bvoy,Viper

@@ -1,0 +1,39 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Unknown,oe:player:6ba5b5ef1de6876e74ca64908f72762,TF Blade,top,,,,,,,,,,,,,,
+player,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Unknown,oe:player:803305691092adbf1de29f27a98d2a6,V1per,top,,,,,,,,,,,,,,
+player,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Unknown,oe:player:622d4de9392e60c0e92b4333486df08,Perry,jng,,,,,,,,,,,,,,
+player,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Unknown,oe:player:9a877004ae6373d34cd9ba93decbbd9,Cody Sun,mid,,,,,,,,,,,,,,
+player,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Unknown,oe:player:6ba5b5ef1de6876e74ca64908f72762,TF Blade,mid,,,,,,,,,,,,,,
+player,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Unknown,oe:player:803305691092adbf1de29f27a98d2a6,V1per,mid,,,,,,,,,,,,,,
+player,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Unknown,oe:player:9a877004ae6373d34cd9ba93decbbd9,Cody Sun,bot,,,,,,,,,,,,,,
+player,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Unknown,oe:player:803305691092adbf1de29f27a98d2a6,V1per,bot,,,,,,,,,,,,,,
+player,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Unknown,oe:player:4d38e91e966ad67aead69648253640e,Stunt,sup,,,,,,,,,,,,,,
+lineup,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Unknown,,,,lineup-8defed59b04fa9a6,CON-01,1,3,oe:player:6ba5b5ef1de6876e74ca64908f72762,oe:player:622d4de9392e60c0e92b4333486df08,oe:player:803305691092adbf1de29f27a98d2a6,oe:player:9a877004ae6373d34cd9ba93decbbd9,oe:player:4d38e91e966ad67aead69648253640e,TF Blade,Perry,V1per,Cody Sun,Stunt
+lineup,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Unknown,,,,lineup-5ec0a9b936af82bb,CON-02,2,1,oe:player:803305691092adbf1de29f27a98d2a6,oe:player:622d4de9392e60c0e92b4333486df08,oe:player:6ba5b5ef1de6876e74ca64908f72762,oe:player:9a877004ae6373d34cd9ba93decbbd9,oe:player:4d38e91e966ad67aead69648253640e,V1per,Perry,TF Blade,Cody Sun,Stunt
+lineup,oe:team:ed026f019f5d0091c44014578ed7a8f,Conviction,CON,2026,Unknown,,,,lineup-efde553c8ca6acf6,CON-03,3,1,oe:player:6ba5b5ef1de6876e74ca64908f72762,oe:player:622d4de9392e60c0e92b4333486df08,oe:player:9a877004ae6373d34cd9ba93decbbd9,oe:player:803305691092adbf1de29f27a98d2a6,oe:player:4d38e91e966ad67aead69648253640e,TF Blade,Perry,Cody Sun,V1per,Stunt
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2026,Unknown,oe:player:80fea0848c57b8e07a79675d41f582c,Castle,top,,,,,,,,,,,,,,
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2026,Unknown,oe:player:08936c56ab5a6453c58974a619651c3,eXyu,jng,,,,,,,,,,,,,,
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2026,Unknown,oe:player:05a73863e113f3cb6b472a76da2ea52,DARKWINGS,mid,,,,,,,,,,,,,,
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2026,Unknown,oe:player:e2c655411d8d95ef73d8026704f5e7a,Rahel,bot,,,,,,,,,,,,,,
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2026,Unknown,oe:player:9191e392e93a6ef011ef76b5b83ee6c,huhi,sup,,,,,,,,,,,,,,
+lineup,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2026,Unknown,,,,lineup-b708a3275325d695,DIS-01,1,6,oe:player:80fea0848c57b8e07a79675d41f582c,oe:player:08936c56ab5a6453c58974a619651c3,oe:player:05a73863e113f3cb6b472a76da2ea52,oe:player:e2c655411d8d95ef73d8026704f5e7a,oe:player:9191e392e93a6ef011ef76b5b83ee6c,Castle,eXyu,DARKWINGS,Rahel,huhi
+player,oe:team:1c81857b6ce6a3c1cd9220fd97e077f,Estral Esports,EE,2026,Unknown,oe:player:14c1b70ac189178a6fe30ee3788fcea,Shintalx,top,,,,,,,,,,,,,,
+player,oe:team:1c81857b6ce6a3c1cd9220fd97e077f,Estral Esports,EE,2026,Unknown,oe:player:99ce2ea4de279c28bb0315848da8a48,Summit,top,,,,,,,,,,,,,,
+player,oe:team:1c81857b6ce6a3c1cd9220fd97e077f,Estral Esports,EE,2026,Unknown,oe:player:5df80e26e27620b567db59e8567a061,Solid,jng,,,,,,,,,,,,,,
+player,oe:team:1c81857b6ce6a3c1cd9220fd97e077f,Estral Esports,EE,2026,Unknown,oe:player:a66db93c9f417a2500c24e689ba0ccc,cody,mid,,,,,,,,,,,,,,
+player,oe:team:1c81857b6ce6a3c1cd9220fd97e077f,Estral Esports,EE,2026,Unknown,oe:player:78081d0b3c01f1f295d52d53744261a,Ghost,bot,,,,,,,,,,,,,,
+player,oe:team:1c81857b6ce6a3c1cd9220fd97e077f,Estral Esports,EE,2026,Unknown,oe:player:f7ead1102c4739cf2a094369019fff5,Winsome,sup,,,,,,,,,,,,,,
+lineup,oe:team:1c81857b6ce6a3c1cd9220fd97e077f,Estral Esports,EE,2026,Unknown,,,,lineup-98ee8669c7847b81,EE-01,1,8,oe:player:99ce2ea4de279c28bb0315848da8a48,oe:player:5df80e26e27620b567db59e8567a061,oe:player:a66db93c9f417a2500c24e689ba0ccc,oe:player:78081d0b3c01f1f295d52d53744261a,oe:player:f7ead1102c4739cf2a094369019fff5,Summit,Solid,cody,Ghost,Winsome
+lineup,oe:team:1c81857b6ce6a3c1cd9220fd97e077f,Estral Esports,EE,2026,Unknown,,,,lineup-45526ad8379dddb5,EE-02,2,2,oe:player:14c1b70ac189178a6fe30ee3788fcea,oe:player:5df80e26e27620b567db59e8567a061,oe:player:a66db93c9f417a2500c24e689ba0ccc,oe:player:78081d0b3c01f1f295d52d53744261a,oe:player:f7ead1102c4739cf2a094369019fff5,Shintalx,Solid,cody,Ghost,Winsome
+player,oe:team:f59945d4b3a3148637047638acb88b7,Luminosity Gaming,LG,2026,Unknown,oe:player:dc760d6884ce21614b2389ac1c05ec2,FakeGod,top,,,,,,,,,,,,,,
+player,oe:team:f59945d4b3a3148637047638acb88b7,Luminosity Gaming,LG,2026,Unknown,oe:player:6ebdf3a3b56c113137109c45c2abc8f,Tomio,jng,,,,,,,,,,,,,,
+player,oe:team:f59945d4b3a3148637047638acb88b7,Luminosity Gaming,LG,2026,Unknown,oe:player:ef97df9d746d0e65ed18786ab30031c,Insanity,mid,,,,,,,,,,,,,,
+player,oe:team:f59945d4b3a3148637047638acb88b7,Luminosity Gaming,LG,2026,Unknown,oe:player:4e0619e57cb50c4ab1230c2dd72df1b,Tactical,bot,,,,,,,,,,,,,,
+player,oe:team:f59945d4b3a3148637047638acb88b7,Luminosity Gaming,LG,2026,Unknown,oe:player:6841f2d68619d53bdd1cdbf30b5be2c,Zeyzal,sup,,,,,,,,,,,,,,
+lineup,oe:team:f59945d4b3a3148637047638acb88b7,Luminosity Gaming,LG,2026,Unknown,,,,lineup-49856d954dd1ef8b,LG-01,1,6,oe:player:dc760d6884ce21614b2389ac1c05ec2,oe:player:6ebdf3a3b56c113137109c45c2abc8f,oe:player:ef97df9d746d0e65ed18786ab30031c,oe:player:4e0619e57cb50c4ab1230c2dd72df1b,oe:player:6841f2d68619d53bdd1cdbf30b5be2c,FakeGod,Tomio,Insanity,Tactical,Zeyzal
+player,oe:team:804b7284c54110d826f11a5a521ab69,SDM Tigres,ST,2026,Unknown,oe:player:d258f8c326e3532981a60d2393f129a,Jauny,top,,,,,,,,,,,,,,
+player,oe:team:804b7284c54110d826f11a5a521ab69,SDM Tigres,ST,2026,Unknown,oe:player:fa41f0e745119bde94b1cdcc8d10434,Mataz,jng,,,,,,,,,,,,,,
+player,oe:team:804b7284c54110d826f11a5a521ab69,SDM Tigres,ST,2026,Unknown,oe:player:f7d8c1fd03b11c456966e4f1ee056f1,Skyy,mid,,,,,,,,,,,,,,
+player,oe:team:804b7284c54110d826f11a5a521ab69,SDM Tigres,ST,2026,Unknown,oe:player:4a867124044ab3fd40ddfb8676e65e7,VirusFx,bot,,,,,,,,,,,,,,
+player,oe:team:804b7284c54110d826f11a5a521ab69,SDM Tigres,ST,2026,Unknown,oe:player:4d8833619c7d2128cd31d6098e7e4f3,Ichiwin,sup,,,,,,,,,,,,,,
+lineup,oe:team:804b7284c54110d826f11a5a521ab69,SDM Tigres,ST,2026,Unknown,,,,lineup-4788aff263e86e30,ST-01,1,5,oe:player:d258f8c326e3532981a60d2393f129a,oe:player:fa41f0e745119bde94b1cdcc8d10434,oe:player:f7d8c1fd03b11c456966e4f1ee056f1,oe:player:4a867124044ab3fd40ddfb8676e65e7,oe:player:4d8833619c7d2128cd31d6098e7e4f3,Jauny,Mataz,Skyy,VirusFx,Ichiwin
