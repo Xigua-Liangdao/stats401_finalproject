@@ -1,0 +1,50 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2015.csv.gz",
+  "source_kind": "pinned_github_mirror",
+  "source_revision": "834ce914f0c79289881697084227fa2933ad344a",
+  "annual_sources": [
+    {
+      "year": 2015,
+      "url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2015.csv.gz",
+      "sha256": "1988bf08c931f5b137ab3c7724632279edbeb2b1ecc0594291b066a1c6e0a7d8",
+      "revision": "834ce914f0c79289881697084227fa2933ad344a",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:00.532630+00:00",
+      "size_bytes": 15990413,
+      "listed_size_bytes": 15990413,
+      "rows": 21792,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "download_sha256": "dabf6e516bdb346c174412da847ffa8313664404b2cdff0e1256bf055bdbf815",
+      "filename": "2015_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 96
+    },
+    {
+      "year": 2016,
+      "url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2016.csv.gz",
+      "sha256": "6671510999b8ce5854fba80ec5220df3ab35a5f1610c2444746894b418c01968",
+      "revision": "834ce914f0c79289881697084227fa2933ad344a",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:04.791445+00:00",
+      "size_bytes": 35026775,
+      "listed_size_bytes": 35026775,
+      "rows": 50568,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "download_sha256": "43ee7e9ef32f28f52df5505a600ea287c3091b23e2a5c7d30b015a0120d7426a",
+      "filename": "2016_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 4068
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:34:39.096502+00:00",
+  "annual_csv_sha256": "e09222621590eb0f2ff3e15318aab64d0992294101f5bc867a2fd9c4a2409041",
+  "annual_rows": 72360,
+  "league": "EU LCS",
+  "year": 2016,
+  "filter": "league == 'EU LCS' and year == '2016'; all positions and columns preserved",
+  "raw_rows": 4164,
+  "raw_columns": 161,
+  "raw_games": 347,
+  "raw_csv_gz_sha256": "2637ca67099e62eb8eb21cbee6a4dc83a203bd73bb39be501b74ffe5ca4c9358"
+}

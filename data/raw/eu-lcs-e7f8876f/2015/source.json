@@ -1,0 +1,48 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://drive.google.com/uc?export=download&id=12syQsRH2QnKrQZTQQ6G5zyVeTG2pAYvu",
+  "source_kind": "official_google_drive",
+  "source_revision": "google-drive:12syQsRH2QnKrQZTQQ6G5zyVeTG2pAYvu:modified:2026-06-08T22:53:27.879000+00:00",
+  "annual_sources": [
+    {
+      "year": 2014,
+      "url": "https://drive.google.com/uc?export=download&id=12syQsRH2QnKrQZTQQ6G5zyVeTG2pAYvu",
+      "sha256": "d72e733ce890f95b2ff58eba7470827e6806ee9773f13341b559e403f290bea0",
+      "revision": "google-drive:12syQsRH2QnKrQZTQQ6G5zyVeTG2pAYvu:modified:2026-06-08T22:53:27.879000+00:00",
+      "source_kind": "official_google_drive",
+      "retrieved_at_utc": "2026-10-09T05:28:13.014210+00:00",
+      "size_bytes": 8178893,
+      "listed_size_bytes": 8178893,
+      "rows": 11016,
+      "filename": "2014_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 600
+    },
+    {
+      "year": 2015,
+      "url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2015.csv.gz",
+      "sha256": "1988bf08c931f5b137ab3c7724632279edbeb2b1ecc0594291b066a1c6e0a7d8",
+      "revision": "834ce914f0c79289881697084227fa2933ad344a",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:00.532630+00:00",
+      "size_bytes": 15990413,
+      "listed_size_bytes": 15990413,
+      "rows": 21792,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "download_sha256": "dabf6e516bdb346c174412da847ffa8313664404b2cdff0e1256bf055bdbf815",
+      "filename": "2015_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 2868
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:34:38.847047+00:00",
+  "annual_csv_sha256": "6f4dae6b3b3a7cf4847410b8bc160617561ba9d388bc536bfee97ae12a2192a3",
+  "annual_rows": 32808,
+  "league": "EU LCS",
+  "year": 2015,
+  "filter": "league == 'EU LCS' and year == '2015'; all positions and columns preserved",
+  "raw_rows": 3468,
+  "raw_columns": 165,
+  "raw_games": 289,
+  "raw_csv_gz_sha256": "6250987b537f9f17bbe22d81f76f5878ffb5cee8bd18e1dff3dfc0cc7ef0b1fe"
+}

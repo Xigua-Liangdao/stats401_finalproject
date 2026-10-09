@@ -1,0 +1,61 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,oe:player:2925560e555046ad9b0066ff181fe21,Melonik,top,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,oe:player:589e5a1530e21f585bc59294429dfb9,Akabane,jng,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,Reeker,mid,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,oe:player:44189e6dc3089dbf9520de800fa705a,Keduii,bot,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,oe:player:ca5b2a166b112de94b9e0847afb2f21,seaz,sup,,,,,,,,,,,,,,
+lineup,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,,,,lineup-e095ab031a143a51,BIG-01,1,1,oe:player:2925560e555046ad9b0066ff181fe21,oe:player:589e5a1530e21f585bc59294429dfb9,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,oe:player:44189e6dc3089dbf9520de800fa705a,oe:player:ca5b2a166b112de94b9e0847afb2f21,Melonik,Akabane,Reeker,Keduii,seaz
+player,oe:team:eaa2452a5e851bc274666f41623143b,Fnatic Rising,FR,2021,Summer,oe:player:e5b3b161ff096a1dc71d9ea67c55897,Pride,top,,,,,,,,,,,,,,
+player,oe:team:eaa2452a5e851bc274666f41623143b,Fnatic Rising,FR,2021,Summer,oe:player:09df7e1c00d361f40c47542ae02f736,MAXI,jng,,,,,,,,,,,,,,
+player,oe:team:eaa2452a5e851bc274666f41623143b,Fnatic Rising,FR,2021,Summer,oe:player:e1e74fbe59bd77110d7a7412b400878,Dajor,mid,,,,,,,,,,,,,,
+player,oe:team:eaa2452a5e851bc274666f41623143b,Fnatic Rising,FR,2021,Summer,oe:player:0b5dc9aff404617f6c944e248062c4a,BEAN,bot,,,,,,,,,,,,,,
+player,oe:team:eaa2452a5e851bc274666f41623143b,Fnatic Rising,FR,2021,Summer,oe:player:7cc60efc7908ef535a0488a811996a4,Rhuckz,sup,,,,,,,,,,,,,,
+lineup,oe:team:eaa2452a5e851bc274666f41623143b,Fnatic Rising,FR,2021,Summer,,,,lineup-f130d96dce079717,FR-01,1,14,oe:player:e5b3b161ff096a1dc71d9ea67c55897,oe:player:09df7e1c00d361f40c47542ae02f736,oe:player:e1e74fbe59bd77110d7a7412b400878,oe:player:0b5dc9aff404617f6c944e248062c4a,oe:player:7cc60efc7908ef535a0488a811996a4,Pride,MAXI,Dajor,BEAN,Rhuckz
+player,oe:team:7c0d6ddccf3c0de76d3760c5d1e685d,GOEXANIMO,GOE,2021,Summer,oe:player:6461927b1f01be56b385f7438bdeba7,Godux,top,,,,,,,,,,,,,,
+player,oe:team:7c0d6ddccf3c0de76d3760c5d1e685d,GOEXANIMO,GOE,2021,Summer,oe:player:01fc0520770d413ac765d5395027386,Ruf,jng,,,,,,,,,,,,,,
+player,oe:team:7c0d6ddccf3c0de76d3760c5d1e685d,GOEXANIMO,GOE,2021,Summer,oe:player:2ee6153c72896b2ff9517456f79ec33,Facen,mid,,,,,,,,,,,,,,
+player,oe:team:7c0d6ddccf3c0de76d3760c5d1e685d,GOEXANIMO,GOE,2021,Summer,oe:player:3163d2a183951f061cc2c1bee62e45f,Klydex,bot,,,,,,,,,,,,,,
+player,oe:team:7c0d6ddccf3c0de76d3760c5d1e685d,GOEXANIMO,GOE,2021,Summer,oe:player:9974ead3a4ce228d5eb01fc8340d6df,bAZZILISKS,sup,,,,,,,,,,,,,,
+lineup,oe:team:7c0d6ddccf3c0de76d3760c5d1e685d,GOEXANIMO,GOE,2021,Summer,,,,lineup-e72e782a67501f4b,GOE-01,1,1,oe:player:6461927b1f01be56b385f7438bdeba7,oe:player:01fc0520770d413ac765d5395027386,oe:player:2ee6153c72896b2ff9517456f79ec33,oe:player:3163d2a183951f061cc2c1bee62e45f,oe:player:9974ead3a4ce228d5eb01fc8340d6df,Godux,Ruf,Facen,Klydex,bAZZILISKS
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2021,Summer,oe:player:298b3a3324ca8d42c20518481cab844,LEQINHO6,top,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2021,Summer,oe:player:243afb63fb97e1791ffee0cec41ecdf,Krysia,jng,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2021,Summer,oe:player:7e33124e33721ef8f70d2dd843b57da,ESCIK,mid,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2021,Summer,oe:player:694ee794a9d3a8c3fbd658becb89769,Zamulek,bot,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2021,Summer,oe:player:e0357bd3e9e044c623fbc77cc985cd7,xCharm,sup,,,,,,,,,,,,,,
+lineup,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2021,Summer,,,,lineup-3c3e1664e86dfbcc,IG-01,1,2,oe:player:298b3a3324ca8d42c20518481cab844,oe:player:243afb63fb97e1791ffee0cec41ecdf,oe:player:7e33124e33721ef8f70d2dd843b57da,oe:player:694ee794a9d3a8c3fbd658becb89769,oe:player:e0357bd3e9e044c623fbc77cc985cd7,LEQINHO6,Krysia,ESCIK,Zamulek,xCharm
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Summer,oe:player:422d7cc4063f8801a9427860bfd855b,Satorius,top,,,,,,,,,,,,,,
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Summer,oe:player:99594a251af944b3571fe7f37363303,Pridestalkr,jng,,,,,,,,,,,,,,
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Summer,oe:player:6606138426fa9bbef349c96b4afbc77,Czekolad,mid,,,,,,,,,,,,,,
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Summer,oe:player:71a0da2a0d53879bffd88b072d4c593,Gadget,bot,,,,,,,,,,,,,,
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Summer,oe:player:7aa0aebd379414d25f1fcdc396407f1,kamilius,sup,,,,,,,,,,,,,,
+lineup,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Summer,,,,lineup-a1a97ca26cba53db,MN-01,1,1,oe:player:422d7cc4063f8801a9427860bfd855b,oe:player:99594a251af944b3571fe7f37363303,oe:player:6606138426fa9bbef349c96b4afbc77,oe:player:71a0da2a0d53879bffd88b072d4c593,oe:player:7aa0aebd379414d25f1fcdc396407f1,Satorius,Pridestalkr,Czekolad,Gadget,kamilius
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2021,Summer,oe:player:5be118a1aa52664e1dff15ff96c1e67,Agresivoo,top,,,,,,,,,,,,,,
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2021,Summer,oe:player:e041923a70bcde3b24d608958f8edc8,Shlatan,jng,,,,,,,,,,,,,,
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2021,Summer,oe:player:17a3d1accbb8bbdaaabfd34e1d69c18,Sertuss,mid,,,,,,,,,,,,,,
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2021,Summer,oe:player:40fa7615556f33971d67c95a702fbcc,Woolite,bot,,,,,,,,,,,,,,
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2021,Summer,oe:player:088a8dda4109f6904aa917153b5db18,Jactroll,sup,,,,,,,,,,,,,,
+lineup,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2021,Summer,,,,lineup-b68936114a78be97,MP-01,1,5,oe:player:5be118a1aa52664e1dff15ff96c1e67,oe:player:e041923a70bcde3b24d608958f8edc8,oe:player:17a3d1accbb8bbdaaabfd34e1d69c18,oe:player:40fa7615556f33971d67c95a702fbcc,oe:player:088a8dda4109f6904aa917153b5db18,Agresivoo,Shlatan,Sertuss,Woolite,Jactroll
+player,oe:team:4acc40654379b4da680be1bd3129dfa,Movistar KOI,MK,2021,Summer,oe:player:197e012fb5163375e24dbbfdae34911,Marky,top,,,,,,,,,,,,,,
+player,oe:team:4acc40654379b4da680be1bd3129dfa,Movistar KOI,MK,2021,Summer,oe:player:d4f3cf480c9676887d4f83f6d96d7c2,Maxlore,jng,,,,,,,,,,,,,,
+player,oe:team:4acc40654379b4da680be1bd3129dfa,Movistar KOI,MK,2021,Summer,oe:player:5f76f198cbbf171d85c94220ba63eaf,xKenzuke,mid,,,,,,,,,,,,,,
+player,oe:team:4acc40654379b4da680be1bd3129dfa,Movistar KOI,MK,2021,Summer,oe:player:dd4e48d56d876e846579c9e5c64d965,Venzer,bot,,,,,,,,,,,,,,
+player,oe:team:4acc40654379b4da680be1bd3129dfa,Movistar KOI,MK,2021,Summer,oe:player:bca44d9264f7f9b3de7b913a66371e7,DuaLL,sup,,,,,,,,,,,,,,
+lineup,oe:team:4acc40654379b4da680be1bd3129dfa,Movistar KOI,MK,2021,Summer,,,,lineup-7a4909b8ef0235e5,MK-01,1,4,oe:player:197e012fb5163375e24dbbfdae34911,oe:player:d4f3cf480c9676887d4f83f6d96d7c2,oe:player:5f76f198cbbf171d85c94220ba63eaf,oe:player:dd4e48d56d876e846579c9e5c64d965,oe:player:bca44d9264f7f9b3de7b913a66371e7,Marky,Maxlore,xKenzuke,Venzer,DuaLL
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2021,Summer,oe:player:c71563c4ae48cc1bbd2e7913366cdf7,SLT,top,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2021,Summer,oe:player:682275c2ba204d32b67f5fa94b928e4,Skeanz,jng,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2021,Summer,oe:player:1b20b8ba37a25e699096e74abba1664,Diplex,mid,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2021,Summer,oe:player:147a53ba717927e418ef4c86d4c9c18,Smiley,bot,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2021,Summer,oe:player:566e0849f6b96ad25981ba1c79ce1a7,Hustlin,sup,,,,,,,,,,,,,,
+lineup,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2021,Summer,,,,lineup-6a387c9ea8d0ee1a,VIT-01,1,1,oe:player:c71563c4ae48cc1bbd2e7913366cdf7,oe:player:682275c2ba204d32b67f5fa94b928e4,oe:player:1b20b8ba37a25e699096e74abba1664,oe:player:147a53ba717927e418ef4c86d4c9c18,oe:player:566e0849f6b96ad25981ba1c79ce1a7,SLT,Skeanz,Diplex,Smiley,Hustlin
+player,oe:team:6468029fb605bd6fdf1cf866e890739,White Dragons,WD,2021,Summer,oe:player:922ba451a5475f400af26015cfc91eb,Aziado,top,,,,,,,,,,,,,,
+player,oe:team:6468029fb605bd6fdf1cf866e890739,White Dragons,WD,2021,Summer,oe:player:7e6b84ebbeb51436143fa10089e07a7,LeChase,jng,,,,,,,,,,,,,,
+player,oe:team:6468029fb605bd6fdf1cf866e890739,White Dragons,WD,2021,Summer,oe:player:afb7dcf3c4fa584007cb4bc62e85886,Xaky,mid,,,,,,,,,,,,,,
+player,oe:team:6468029fb605bd6fdf1cf866e890739,White Dragons,WD,2021,Summer,oe:player:a84d05159672cf1971a2923f3579bbe,Alternative,bot,,,,,,,,,,,,,,
+player,oe:team:6468029fb605bd6fdf1cf866e890739,White Dragons,WD,2021,Summer,oe:player:e8e5b580e1e99bb89bf3a8a34b6da03,Slayer,sup,,,,,,,,,,,,,,
+lineup,oe:team:6468029fb605bd6fdf1cf866e890739,White Dragons,WD,2021,Summer,,,,lineup-167348deb31e08f6,WD-01,1,1,oe:player:922ba451a5475f400af26015cfc91eb,oe:player:7e6b84ebbeb51436143fa10089e07a7,oe:player:afb7dcf3c4fa584007cb4bc62e85886,oe:player:a84d05159672cf1971a2923f3579bbe,oe:player:e8e5b580e1e99bb89bf3a8a34b6da03,Aziado,LeChase,Xaky,Alternative,Slayer
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2021,Summer,oe:player:d6d80c43cbc198c8af0407cea242709,mumus100,top,,,,,,,,,,,,,,
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2021,Summer,oe:player:9312bfc44c1e0686971d076d1364713,Ryuzaki,jng,,,,,,,,,,,,,,
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2021,Summer,oe:player:0e4da4a5123c69b8850aa204601c597,meight,mid,,,,,,,,,,,,,,
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2021,Summer,oe:player:501007c5ed71f0153348a2352ed154f,Mihai,bot,,,,,,,,,,,,,,
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2021,Summer,oe:player:a93e0326b85f0312cf1b451e175a7a0,Wojtus,sup,,,,,,,,,,,,,,
+lineup,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2021,Summer,,,,lineup-1e598c09f81e243b,ZT-01,1,2,oe:player:d6d80c43cbc198c8af0407cea242709,oe:player:9312bfc44c1e0686971d076d1364713,oe:player:0e4da4a5123c69b8850aa204601c597,oe:player:501007c5ed71f0153348a2352ed154f,oe:player:a93e0326b85f0312cf1b451e175a7a0,mumus100,Ryuzaki,meight,Mihai,Wojtus
