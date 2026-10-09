@@ -1,0 +1,58 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2021,Winter,oe:player:3e975a8f561bfafd8a63d3bb1b5a8f0,Oncan,top,,,,,,,,,,,,,,
+player,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2021,Winter,oe:player:2c77d3e2362b94af54ee039dd42eb28,Skewer,top,,,,,,,,,,,,,,
+player,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2021,Winter,oe:player:be26898a3600cb5e9898c0ab68d9139,BroCColi,jng,,,,,,,,,,,,,,
+player,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2021,Winter,oe:player:ecb29676899ee7344ee0f7db0278ae3,Umut,mid,,,,,,,,,,,,,,
+player,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2021,Winter,oe:player:3d7afc086e8aba0545ceba473fa1e9e,ANDARIEL,bot,,,,,,,,,,,,,,
+player,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2021,Winter,oe:player:ebec939da49d80219030b8441845ef9,Pilot,bot,,,,,,,,,,,,,,
+player,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2021,Winter,oe:player:8c29150a35520726e52c049db9c53d3,Brolia,sup,,,,,,,,,,,,,,
+lineup,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2021,Winter,,,,lineup-f4550062a990664c,5R-01,1,1,oe:player:3e975a8f561bfafd8a63d3bb1b5a8f0,oe:player:be26898a3600cb5e9898c0ab68d9139,oe:player:ecb29676899ee7344ee0f7db0278ae3,oe:player:ebec939da49d80219030b8441845ef9,oe:player:8c29150a35520726e52c049db9c53d3,Oncan,BroCColi,Umut,Pilot,Brolia
+lineup,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2021,Winter,,,,lineup-fe85305d8399fcd1,5R-02,2,1,oe:player:2c77d3e2362b94af54ee039dd42eb28,oe:player:be26898a3600cb5e9898c0ab68d9139,oe:player:ecb29676899ee7344ee0f7db0278ae3,oe:player:3d7afc086e8aba0545ceba473fa1e9e,oe:player:8c29150a35520726e52c049db9c53d3,Skewer,BroCColi,Umut,ANDARIEL,Brolia
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2021,Winter,oe:player:a61da83af5e3738845fa6dd56e1d41a,Juzu,top,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2021,Winter,oe:player:22d5d814d801d8b3e1a1c3fc36796de,Robin,jng,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2021,Winter,oe:player:eb4a97ac9936caf7fad8c8eaa1b0eed,WaenA,mid,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2021,Winter,oe:player:bd9f7c5d6ab4201b138a3e51dab7056,Alive,bot,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2021,Winter,oe:player:20cbf3318192b3d953e11d6cced699b,Mocha,sup,,,,,,,,,,,,,,
+lineup,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2021,Winter,,,,lineup-59f4f9575943dd96,BE-01,1,2,oe:player:a61da83af5e3738845fa6dd56e1d41a,oe:player:22d5d814d801d8b3e1a1c3fc36796de,oe:player:eb4a97ac9936caf7fad8c8eaa1b0eed,oe:player:bd9f7c5d6ab4201b138a3e51dab7056,oe:player:20cbf3318192b3d953e11d6cced699b,Juzu,Robin,WaenA,Alive,Mocha
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2021,Winter,oe:player:d12be4fd740afa31c400833bee2cba4,fabFabulous,top,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2021,Winter,oe:player:8a729e3599082e74fcca776b295d0e1,Typhoon,jng,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2021,Winter,oe:player:db0cbdc72184ad44ab905be61fc0756,Kofte,mid,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2021,Winter,oe:player:bf95f0a99dd7be89d7867d0d9f961ce,Coldraa,bot,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2021,Winter,oe:player:090ad4635f32bf67bcfcef5c6591395,Pbd,sup,,,,,,,,,,,,,,
+lineup,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2021,Winter,,,,lineup-52d5d8551c9e860e,DP-01,1,2,oe:player:d12be4fd740afa31c400833bee2cba4,oe:player:8a729e3599082e74fcca776b295d0e1,oe:player:db0cbdc72184ad44ab905be61fc0756,oe:player:bf95f0a99dd7be89d7867d0d9f961ce,oe:player:090ad4635f32bf67bcfcef5c6591395,fabFabulous,Typhoon,Kofte,Coldraa,Pbd
+player,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2021,Winter,oe:player:3e975a8f561bfafd8a63d3bb1b5a8f0,Oncan,top,,,,,,,,,,,,,,
+player,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2021,Winter,oe:player:de442faff7b7cdc0fba7d6d5caff5e1,Elramir,jng,,,,,,,,,,,,,,
+player,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2021,Winter,oe:player:e37058bf2305c3a61e0e69681803f95,stillnumb,mid,,,,,,,,,,,,,,
+player,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2021,Winter,oe:player:c032df73970ffb2f2b585d912f6b20d,Neramin,bot,,,,,,,,,,,,,,
+player,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2021,Winter,oe:player:f216690ac90e0a1c2097a616cb4453e,Sparz,sup,,,,,,,,,,,,,,
+lineup,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2021,Winter,,,,lineup-32cc3843eb8f80dc,FE-01,1,1,oe:player:3e975a8f561bfafd8a63d3bb1b5a8f0,oe:player:de442faff7b7cdc0fba7d6d5caff5e1,oe:player:e37058bf2305c3a61e0e69681803f95,oe:player:c032df73970ffb2f2b585d912f6b20d,oe:player:f216690ac90e0a1c2097a616cb4453e,Oncan,Elramir,stillnumb,Neramin,Sparz
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2021,Winter,oe:player:a9eb1a93c73c55b9db59388be44206b,Luana,top,,,,,,,,,,,,,,
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2021,Winter,oe:player:d92b0904aa4f08f128aa8c6d2775056,Mojito,jng,,,,,,,,,,,,,,
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2021,Winter,oe:player:fbced201ed9c0e35008d88cd92397dd,Bolulu,mid,,,,,,,,,,,,,,
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2021,Winter,oe:player:63fb46cfa2f3ee4110bd7489cf18c02,Ruvelius,bot,,,,,,,,,,,,,,
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2021,Winter,oe:player:db38739eda4ad887b7d852545212528,Zergsting,sup,,,,,,,,,,,,,,
+lineup,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2021,Winter,,,,lineup-d2625b6fb77c2c32,GE-01,1,6,oe:player:a9eb1a93c73c55b9db59388be44206b,oe:player:d92b0904aa4f08f128aa8c6d2775056,oe:player:fbced201ed9c0e35008d88cd92397dd,oe:player:63fb46cfa2f3ee4110bd7489cf18c02,oe:player:db38739eda4ad887b7d852545212528,Luana,Mojito,Bolulu,Ruvelius,Zergsting
+player,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2021,Winter,oe:player:d55b30607c2a9a2616347d6edb789f6,Last,top,,,,,,,,,,,,,,
+player,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2021,Winter,oe:player:6d3ae00b3064c51b2f1d2a2922fdd68,Kituruken,jng,,,,,,,,,,,,,,
+player,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2021,Winter,oe:player:e6f5a7e37185c25a363d031ef5eafa9,Giyuu,mid,,,,,,,,,,,,,,
+player,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2021,Winter,oe:player:e24ee2487879116dcab772c0ac4fe34,Focus,bot,,,,,,,,,,,,,,
+player,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2021,Winter,oe:player:71f5302abea604062e810161d7922b8,Japone,sup,,,,,,,,,,,,,,
+lineup,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2021,Winter,,,,lineup-373b9ad479bfb3f2,NET-01,1,1,oe:player:d55b30607c2a9a2616347d6edb789f6,oe:player:6d3ae00b3064c51b2f1d2a2922fdd68,oe:player:e6f5a7e37185c25a363d031ef5eafa9,oe:player:e24ee2487879116dcab772c0ac4fe34,oe:player:71f5302abea604062e810161d7922b8,Last,Kituruken,Giyuu,Focus,Japone
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2021,Winter,oe:player:c0f78343a2ad4ba1463245d53a3b440,Ragner,top,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2021,Winter,oe:player:f0d9ba082555d7aac872bc9e43226c2,Kireas,jng,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2021,Winter,oe:player:4fadb7e6e30c736d1c3f976f89dd0c0,KSAEZ,mid,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2021,Winter,oe:player:c63c7e0755b31f1effbdf2e1f831e7d,Kaori,bot,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2021,Winter,oe:player:03f78345e4181384977f21872ca866c,Absolute,sup,,,,,,,,,,,,,,
+lineup,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2021,Winter,,,,lineup-eddfb4f285f026fc,PS-01,1,2,oe:player:c0f78343a2ad4ba1463245d53a3b440,oe:player:f0d9ba082555d7aac872bc9e43226c2,oe:player:4fadb7e6e30c736d1c3f976f89dd0c0,oe:player:c63c7e0755b31f1effbdf2e1f831e7d,oe:player:03f78345e4181384977f21872ca866c,Ragner,Kireas,KSAEZ,Kaori,Absolute
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2021,Winter,oe:player:863bc07b2e6e05aaf84d4fee7672f02,KTSR,top,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2021,Winter,oe:player:e09382aa01bf31935a9f2f9cf28fe2f,Anduril,jng,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2021,Winter,oe:player:b397fe519526faaf878e1f99fbdf8a1,Fleck,mid,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2021,Winter,oe:player:9109c20b2999000c86e60f0c8808091,Rhioni,bot,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2021,Winter,oe:player:a0cadee9fe05b06377a2f23feb8c9ec,Dellal,sup,,,,,,,,,,,,,,
+lineup,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2021,Winter,,,,lineup-5444605ed9a72676,TA-01,1,1,oe:player:863bc07b2e6e05aaf84d4fee7672f02,oe:player:e09382aa01bf31935a9f2f9cf28fe2f,oe:player:b397fe519526faaf878e1f99fbdf8a1,oe:player:9109c20b2999000c86e60f0c8808091,oe:player:a0cadee9fe05b06377a2f23feb8c9ec,KTSR,Anduril,Fleck,Rhioni,Dellal
+player,oe:team:a65adb2808377018a2a7832eb2bd7f4,İstanbul Wildcats,İW,2021,Winter,oe:player:1bc0756ba9102abb5a7cd13d2b618aa,StarScreen,top,,,,,,,,,,,,,,
+player,oe:team:a65adb2808377018a2a7832eb2bd7f4,İstanbul Wildcats,İW,2021,Winter,oe:player:92b76c3a9967d6322741aa6d2ba4a2b,Ferret,jng,,,,,,,,,,,,,,
+player,oe:team:a65adb2808377018a2a7832eb2bd7f4,İstanbul Wildcats,İW,2021,Winter,oe:player:e3b8d5a9290fe0c7458dc01db4dc9dc,Serin,mid,,,,,,,,,,,,,,
+player,oe:team:a65adb2808377018a2a7832eb2bd7f4,İstanbul Wildcats,İW,2021,Winter,oe:player:d129eb71d537fdbb2cd4c52703f51f4,HolyPhoenix,bot,,,,,,,,,,,,,,
+player,oe:team:a65adb2808377018a2a7832eb2bd7f4,İstanbul Wildcats,İW,2021,Winter,oe:player:496ca7c65dbd4beffa678e62d9d4e8d,Farfetch,sup,,,,,,,,,,,,,,
+lineup,oe:team:a65adb2808377018a2a7832eb2bd7f4,İstanbul Wildcats,İW,2021,Winter,,,,lineup-31991832a92970ad,İW-01,1,13,oe:player:1bc0756ba9102abb5a7cd13d2b618aa,oe:player:92b76c3a9967d6322741aa6d2ba4a2b,oe:player:e3b8d5a9290fe0c7458dc01db4dc9dc,oe:player:d129eb71d537fdbb2cd4c52703f51f4,oe:player:496ca7c65dbd4beffa678e62d9d4e8d,StarScreen,Ferret,Serin,HolyPhoenix,Farfetch

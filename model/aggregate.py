@@ -6,7 +6,7 @@ from itertools import combinations
 import numpy as np
 import pandas as pd
 
-from prepare import ROLES, stable_id
+from prepare import ROLES, stable_id, validate_scope
 from player_baseline import season_role_baselines
 from lineup_affinity import encode_heatmap
 
@@ -36,6 +36,7 @@ def score_summary(group, column, seed=401):
 
 
 def aggregate(p, baseline_reference=None):
+    validate_scope(p)
     # Test fixtures use the complete parent season for their comparison profile.
     references = (season_role_baselines(p, SHRINKAGE_GAMES)
                   if baseline_reference is None else baseline_reference)
@@ -51,7 +52,7 @@ def aggregate(p, baseline_reference=None):
                         **references.loc[(season, role)].to_dict()})
     pair_games, lineup_games = [], []
     for (game_id, tid), group in p.groupby(["game_id", "team_id"], sort=True):
-        context = {"game_id": game_id, "day": group.day.iloc[0], "season": 2025,
+        context = {"game_id": game_id, "day": group.day.iloc[0], "season": int(group.season.iloc[0]),
                    "split": group.split.iloc[0], "patch": group.patch.iloc[0], "team_id": tid,
                    "team": group.team.iloc[0], "lineup_id": group.lineup_id.iloc[0], "result": group.result.iloc[0]}
         for a, b in combinations(sorted(group.to_dict("records"), key=lambda row: row["player_id"]), 2):
@@ -90,7 +91,7 @@ def aggregate(p, baseline_reference=None):
     teams = []
     for tid, group in lg.groupby("team_id", sort=True):
         scored = group.dropna(subset=["lineup_impact"])
-        teams.append({"team_id": tid, "team": group.team.iloc[-1], "season": 2025, "n_games_total": len(group),
+        teams.append({"team_id": tid, "team": group.team.iloc[-1], "season": int(group.season.iloc[0]), "n_games_total": len(group),
                       **score_summary(group, "lineup_impact"), "win_rate": scored.result.mean()})
     timeline = p[p.adjusted_impact.notna()].groupby(["player_id", "player", "team_id", "team", "role", "day"], as_index=False).agg(
         n_games=("game_id", "size"), actual_dpm=("dpm", "mean"), expected_dpm=("expected_dpm", "mean"), adjusted_impact=("adjusted_impact", "mean"))

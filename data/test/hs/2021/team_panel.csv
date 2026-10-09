@@ -1,0 +1,63 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:30f66b82471e9e35ce3b40e1794cf23,FROM ZERO TO HERO,FZTH,2021,Unknown,oe:player:e6ce7283fdcbb1efe1b120228a44fd3,ManoloGap,top,,,,,,,,,,,,,,
+player,oe:team:30f66b82471e9e35ce3b40e1794cf23,FROM ZERO TO HERO,FZTH,2021,Unknown,oe:player:47ef66e075f0a6bea04fef347bb2999,Tostado,jng,,,,,,,,,,,,,,
+player,oe:team:30f66b82471e9e35ce3b40e1794cf23,FROM ZERO TO HERO,FZTH,2021,Unknown,oe:player:9f6c306fb79fae6fbf0ff676c0db0df,Arven,mid,,,,,,,,,,,,,,
+player,oe:team:30f66b82471e9e35ce3b40e1794cf23,FROM ZERO TO HERO,FZTH,2021,Unknown,name-player-d72bd85e71031dbd,unknown player,bot,,,,,,,,,,,,,,
+player,oe:team:30f66b82471e9e35ce3b40e1794cf23,FROM ZERO TO HERO,FZTH,2021,Unknown,oe:player:cc7ac0910351fd879777d99935a6ba6,Ninten,sup,,,,,,,,,,,,,,
+lineup,oe:team:30f66b82471e9e35ce3b40e1794cf23,FROM ZERO TO HERO,FZTH,2021,Unknown,,,,lineup-e087bd3f0e68434b,FZTH-01,1,1,oe:player:e6ce7283fdcbb1efe1b120228a44fd3,oe:player:47ef66e075f0a6bea04fef347bb2999,oe:player:9f6c306fb79fae6fbf0ff676c0db0df,name-player-d72bd85e71031dbd,oe:player:cc7ac0910351fd879777d99935a6ba6,ManoloGap,Tostado,Arven,unknown player,Ninten
+player,oe:team:f550ae2e836d5c94219533f03917afe,LK Gaming,LG,2021,Unknown,oe:player:137daadb3bab4f0b992eb08a3939e72,Poweh,top,,,,,,,,,,,,,,
+player,oe:team:f550ae2e836d5c94219533f03917afe,LK Gaming,LG,2021,Unknown,oe:player:1a6233f0f66fbf0cec2eff415d77f69,El Bakanito,jng,,,,,,,,,,,,,,
+player,oe:team:f550ae2e836d5c94219533f03917afe,LK Gaming,LG,2021,Unknown,oe:player:7043efeaf710e61a6d7e68f32b1b13e,Piku,mid,,,,,,,,,,,,,,
+player,oe:team:f550ae2e836d5c94219533f03917afe,LK Gaming,LG,2021,Unknown,oe:player:bff0c2de0b05bbd9bf9c4a8fcbe4753,Corvo,bot,,,,,,,,,,,,,,
+player,oe:team:f550ae2e836d5c94219533f03917afe,LK Gaming,LG,2021,Unknown,oe:player:34e2006c70cd1f48884af0b183c0c29,Kandar,sup,,,,,,,,,,,,,,
+lineup,oe:team:f550ae2e836d5c94219533f03917afe,LK Gaming,LG,2021,Unknown,,,,lineup-289b8ed70acfbb0b,LG-01,1,1,oe:player:137daadb3bab4f0b992eb08a3939e72,oe:player:1a6233f0f66fbf0cec2eff415d77f69,oe:player:7043efeaf710e61a6d7e68f32b1b13e,oe:player:bff0c2de0b05bbd9bf9c4a8fcbe4753,oe:player:34e2006c70cd1f48884af0b183c0c29,Poweh,El Bakanito,Piku,Corvo,Kandar
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2021,Unknown,oe:player:6cabf81e5c06086e754c2b4b30c1860,Ancu,top,,,,,,,,,,,,,,
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2021,Unknown,oe:player:4949beb69d1169f0853a83cf373f2d2,Ushuala,top,,,,,,,,,,,,,,
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2021,Unknown,oe:player:f1bf3336d6fd120b3eee3952c39c067,Carbono,jng,,,,,,,,,,,,,,
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2021,Unknown,oe:player:5ca5e58d993386c805206ed637a9b7b,Dudu,jng,,,,,,,,,,,,,,
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2021,Unknown,oe:player:5f9e17fb0ee0d2b2f2514b6457c9a68,Rip DFG,mid,,,,,,,,,,,,,,
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2021,Unknown,oe:player:d5f499b7b71268039cdb607963f5ba8,bbmuffin,mid,,,,,,,,,,,,,,
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2021,Unknown,oe:player:432dc458337f63fbcdf3c73488a3cdf,Aaron,bot,,,,,,,,,,,,,,
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2021,Unknown,oe:player:42551ca4228fc1ac1591d38aae96854,Kou,bot,,,,,,,,,,,,,,
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2021,Unknown,oe:player:b810e09b68d5ff70b3ba0e0e4bfde39,Aizhon,sup,,,,,,,,,,,,,,
+player,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2021,Unknown,oe:player:ce1ce78e81b594c3ce77978f1ef8ccb,Dark,sup,,,,,,,,,,,,,,
+lineup,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2021,Unknown,,,,lineup-7dc9fc40dd8ea305,PG-01,1,1,oe:player:4949beb69d1169f0853a83cf373f2d2,oe:player:f1bf3336d6fd120b3eee3952c39c067,oe:player:5f9e17fb0ee0d2b2f2514b6457c9a68,oe:player:42551ca4228fc1ac1591d38aae96854,oe:player:ce1ce78e81b594c3ce77978f1ef8ccb,Ushuala,Carbono,Rip DFG,Kou,Dark
+lineup,oe:team:c20f8549c29d0dd0bb92d7aa8028547,Phlox Gaming,PG,2021,Unknown,,,,lineup-7e756edaea34cf19,PG-02,2,1,oe:player:6cabf81e5c06086e754c2b4b30c1860,oe:player:5ca5e58d993386c805206ed637a9b7b,oe:player:d5f499b7b71268039cdb607963f5ba8,oe:player:432dc458337f63fbcdf3c73488a3cdf,oe:player:b810e09b68d5ff70b3ba0e0e4bfde39,Ancu,Dudu,bbmuffin,Aaron,Aizhon
+player,oe:team:da434e49a9c0160f58d6801620c3559,Pushing Gaming,PG,2021,Unknown,oe:player:137daadb3bab4f0b992eb08a3939e72,Poweh,top,,,,,,,,,,,,,,
+player,oe:team:da434e49a9c0160f58d6801620c3559,Pushing Gaming,PG,2021,Unknown,oe:player:1a6233f0f66fbf0cec2eff415d77f69,El Bakanito,jng,,,,,,,,,,,,,,
+player,oe:team:da434e49a9c0160f58d6801620c3559,Pushing Gaming,PG,2021,Unknown,oe:player:7043efeaf710e61a6d7e68f32b1b13e,Piku,mid,,,,,,,,,,,,,,
+player,oe:team:da434e49a9c0160f58d6801620c3559,Pushing Gaming,PG,2021,Unknown,oe:player:9d04b6572e137eb28b2c444c1c7d3fa,Fede,bot,,,,,,,,,,,,,,
+player,oe:team:da434e49a9c0160f58d6801620c3559,Pushing Gaming,PG,2021,Unknown,oe:player:34e2006c70cd1f48884af0b183c0c29,Kandar,sup,,,,,,,,,,,,,,
+lineup,oe:team:da434e49a9c0160f58d6801620c3559,Pushing Gaming,PG,2021,Unknown,,,,lineup-ff835c29d5ea7af8,PG-01,1,1,oe:player:137daadb3bab4f0b992eb08a3939e72,oe:player:1a6233f0f66fbf0cec2eff415d77f69,oe:player:7043efeaf710e61a6d7e68f32b1b13e,oe:player:9d04b6572e137eb28b2c444c1c7d3fa,oe:player:34e2006c70cd1f48884af0b183c0c29,Poweh,El Bakanito,Piku,Fede,Kandar
+player,oe:team:eec28291806422c00c2cbe3a75f7de2,TOOOLS esports,TE,2021,Unknown,oe:player:a5fa1f73622193d305647f381121f87,Rubenxico,top,,,,,,,,,,,,,,
+player,oe:team:eec28291806422c00c2cbe3a75f7de2,TOOOLS esports,TE,2021,Unknown,oe:player:2d8d532cbcd9a4122f3aa4f5c231661,Jorx,jng,,,,,,,,,,,,,,
+player,oe:team:eec28291806422c00c2cbe3a75f7de2,TOOOLS esports,TE,2021,Unknown,oe:player:2ce40d4fbbf0ead33ca1614540f4479,FeeNiixZ,mid,,,,,,,,,,,,,,
+player,oe:team:eec28291806422c00c2cbe3a75f7de2,TOOOLS esports,TE,2021,Unknown,oe:player:01f571b643ba34b610d3c562051e396,Nash1c,bot,,,,,,,,,,,,,,
+player,oe:team:eec28291806422c00c2cbe3a75f7de2,TOOOLS esports,TE,2021,Unknown,oe:player:f2233b954e1371055b9af6a755479d9,RTeks,sup,,,,,,,,,,,,,,
+lineup,oe:team:eec28291806422c00c2cbe3a75f7de2,TOOOLS esports,TE,2021,Unknown,,,,lineup-a7a1d91f9f1f63dd,TE-01,1,6,oe:player:a5fa1f73622193d305647f381121f87,oe:player:2d8d532cbcd9a4122f3aa4f5c231661,oe:player:2ce40d4fbbf0ead33ca1614540f4479,oe:player:01f571b643ba34b610d3c562051e396,oe:player:f2233b954e1371055b9af6a755479d9,Rubenxico,Jorx,FeeNiixZ,Nash1c,RTeks
+player,oe:team:f36bb11834ba1d730a49d7b3a2c2db5,UCAM Esports Academy,UEA,2021,Unknown,oe:player:48386132af27e43a232bada68b102b8,topo,top,,,,,,,,,,,,,,
+player,oe:team:f36bb11834ba1d730a49d7b3a2c2db5,UCAM Esports Academy,UEA,2021,Unknown,oe:player:09d224980ebf7c5f2bec0fff502c247,Shyelander,jng,,,,,,,,,,,,,,
+player,oe:team:f36bb11834ba1d730a49d7b3a2c2db5,UCAM Esports Academy,UEA,2021,Unknown,oe:player:0d5006f22fac8518abf748573730738,Nestor,mid,,,,,,,,,,,,,,
+player,oe:team:f36bb11834ba1d730a49d7b3a2c2db5,UCAM Esports Academy,UEA,2021,Unknown,oe:player:0518bbba376575a9bd5ff4440b88fa9,Wodex,bot,,,,,,,,,,,,,,
+player,oe:team:f36bb11834ba1d730a49d7b3a2c2db5,UCAM Esports Academy,UEA,2021,Unknown,oe:player:d0e2a334135a535dc3a02eccd0010cf,aleykxar,bot,,,,,,,,,,,,,,
+player,oe:team:f36bb11834ba1d730a49d7b3a2c2db5,UCAM Esports Academy,UEA,2021,Unknown,oe:player:7410b034f275bed79f9d54d8b5eb739,Wannabe,sup,,,,,,,,,,,,,,
+lineup,oe:team:f36bb11834ba1d730a49d7b3a2c2db5,UCAM Esports Academy,UEA,2021,Unknown,,,,lineup-940c480c1f7d0524,UEA-01,1,1,oe:player:48386132af27e43a232bada68b102b8,oe:player:09d224980ebf7c5f2bec0fff502c247,oe:player:0d5006f22fac8518abf748573730738,oe:player:0518bbba376575a9bd5ff4440b88fa9,oe:player:7410b034f275bed79f9d54d8b5eb739,topo,Shyelander,Nestor,Wodex,Wannabe
+lineup,oe:team:f36bb11834ba1d730a49d7b3a2c2db5,UCAM Esports Academy,UEA,2021,Unknown,,,,lineup-ca93f5eb57fcda3d,UEA-02,2,1,oe:player:48386132af27e43a232bada68b102b8,oe:player:09d224980ebf7c5f2bec0fff502c247,oe:player:0d5006f22fac8518abf748573730738,oe:player:d0e2a334135a535dc3a02eccd0010cf,oe:player:7410b034f275bed79f9d54d8b5eb739,topo,Shyelander,Nestor,aleykxar,Wannabe
+player,oe:team:50c26816bdd3bb2a02def8e11a5cd5a,ZETA,ZET,2021,Unknown,oe:player:e6ce7283fdcbb1efe1b120228a44fd3,ManoloGap,top,,,,,,,,,,,,,,
+player,oe:team:50c26816bdd3bb2a02def8e11a5cd5a,ZETA,ZET,2021,Unknown,oe:player:94b835c6aac4707e5527fd2b15a8da8,Yolo,jng,,,,,,,,,,,,,,
+player,oe:team:50c26816bdd3bb2a02def8e11a5cd5a,ZETA,ZET,2021,Unknown,oe:player:755903eb824a99ac5a7beea4dfd77d8,Carris,mid,,,,,,,,,,,,,,
+player,oe:team:50c26816bdd3bb2a02def8e11a5cd5a,ZETA,ZET,2021,Unknown,oe:player:73933848061d300bbe7293d9b38a2d4,Ace,bot,,,,,,,,,,,,,,
+player,oe:team:50c26816bdd3bb2a02def8e11a5cd5a,ZETA,ZET,2021,Unknown,oe:player:271cc8797701a2339a456d2c3ca25cb,Cartamenio,sup,,,,,,,,,,,,,,
+lineup,oe:team:50c26816bdd3bb2a02def8e11a5cd5a,ZETA,ZET,2021,Unknown,,,,lineup-1cdd3b4ac0eba674,ZET-01,1,1,oe:player:e6ce7283fdcbb1efe1b120228a44fd3,oe:player:94b835c6aac4707e5527fd2b15a8da8,oe:player:755903eb824a99ac5a7beea4dfd77d8,oe:player:73933848061d300bbe7293d9b38a2d4,oe:player:271cc8797701a2339a456d2c3ca25cb,ManoloGap,Yolo,Carris,Ace,Cartamenio
+player,name-team-bbf4d270ed871a83,unknown team,UT,2021,Unknown,oe:player:b70546af050c6dc68402812a5cf17f8,ImTheTitan,top,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2021,Unknown,oe:player:e6ce7283fdcbb1efe1b120228a44fd3,ManoloGap,top,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2021,Unknown,oe:player:5e79bd79f62c933168cad37cc69dd1a,Akalos,jng,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2021,Unknown,oe:player:a44ae9bfcb722ad18088def7d750319,Balyy,jng,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2021,Unknown,oe:player:2503bad94c2f814df466219d15436a4,Alex Taylør,mid,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2021,Unknown,oe:player:deba352004f731237c2c257ba3534a6,Raulitoh,mid,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2021,Unknown,oe:player:528a9ca954292d162e3a44989d00342,Daviidh,bot,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2021,Unknown,oe:player:68f7e67c274b92eeee363498f96c92a,JimsY,bot,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2021,Unknown,oe:player:5faa414ced131f848e893a5e2c44e49,eRelevant,sup,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2021,Unknown,name-player-d72bd85e71031dbd,unknown player,sup,,,,,,,,,,,,,,
+lineup,name-team-bbf4d270ed871a83,unknown team,UT,2021,Unknown,,,,lineup-32354d0e5180668c,UT-01,1,1,oe:player:e6ce7283fdcbb1efe1b120228a44fd3,oe:player:a44ae9bfcb722ad18088def7d750319,oe:player:2503bad94c2f814df466219d15436a4,oe:player:528a9ca954292d162e3a44989d00342,name-player-d72bd85e71031dbd,ManoloGap,Balyy,Alex Taylør,Daviidh,unknown player
+lineup,name-team-bbf4d270ed871a83,unknown team,UT,2021,Unknown,,,,lineup-3bdc99d4d71667c4,UT-02,2,1,oe:player:b70546af050c6dc68402812a5cf17f8,oe:player:5e79bd79f62c933168cad37cc69dd1a,oe:player:deba352004f731237c2c257ba3534a6,oe:player:68f7e67c274b92eeee363498f96c92a,oe:player:5faa414ced131f848e893a5e2c44e49,ImTheTitan,Akalos,Raulitoh,JimsY,eRelevant

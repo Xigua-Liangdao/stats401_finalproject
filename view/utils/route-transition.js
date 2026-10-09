@@ -19,7 +19,7 @@ function wait(ms) {
 export function createRouteTransition(app, wipe) {
   let generation = 0;
 
-  return async function runTransition(renderInto, { cinematic = false } = {}) {
+  return async function runTransition(renderInto, { cinematic = false, isCurrent = () => true } = {}) {
     const id = ++generation;
     const firstPaint = app.childElementCount === 0;
     const instant = reducedMotion() || firstPaint || !cinematic;
@@ -30,17 +30,23 @@ export function createRouteTransition(app, wipe) {
       wipe.classList.remove('is-clearing');
       wipe.classList.add('is-covering');
       await wait(COVER_MS);
-      if (id !== generation) return;
+      if (id !== generation || !isCurrent()) return;
     }
 
     app.classList.remove('is-entering');
-    app.replaceChildren();
     window.scrollTo(0, 0);
+    const staging = document.createElement('div');
+    staging.style.display = 'contents';
+    // Give each render its own connected host so chart mount hooks can run.
+    // A newer route removes this host; late appends then stay off-screen.
+    app.replaceChildren(staging);
 
     try {
-      await renderInto(app);
+      await renderInto(staging);
+      if (id !== generation || !isCurrent()) return;
+      app.replaceChildren(...staging.childNodes);
     } finally {
-      if (id !== generation) return;
+      if (id !== generation || !isCurrent()) return;
 
       if (instant) {
         wipe.classList.remove('is-covering', 'is-clearing');

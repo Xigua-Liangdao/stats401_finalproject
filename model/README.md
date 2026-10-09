@@ -1,5 +1,47 @@
 # Baseline model and reproducible demo
 
+## League/year datasets
+
+The pipeline now builds each league and **source season-year** independently.
+The publisher's `year` field defines the season; a season can contain dates in
+the previous calendar year. The model does not mix populations across leagues
+or years, and its standardized scores are not estimates of cross-league strength.
+
+```bash
+python model/run.py --league LCK --year 2024
+python model/build_test_data.py --league LCK --year 2024
+```
+
+The runner reads `data/raw/<league-slug>/<year>/matches.csv.gz` and the adjacent
+`source.json`, verifies its checksum, and writes the usual 11-file contract to
+`data/processed/<league-slug>/<year>/` and `data/test/<league-slug>/<year>/`.
+Reports and figures are isolated under `model/reports/<league-slug>/<year>/`
+and `model/figures/<league-slug>/<year>/`. Slugs for labels containing punctuation
+or spaces include a stable hash suffix. `dataset_paths.league_slug` is shared by
+acquisition and processing. `--slug` and `--raw` are available for explicit paths;
+`--skip-plots` omits static image generation. With no arguments, the runner retains
+the original LPL 2025 paths for compatibility.
+
+For batch orchestration, `run.run_dataset(league, year, slug=None, raw_path=None,
+legacy=False, make_plots=True, root=ROOT)` returns a JSON-serializable registry
+entry plus coverage and output paths after a successful build. It does not write
+the frontend registry. Failed source validation writes a dataset-specific audit
+and raises, so a caller cannot publish the combination as ready.
+
+Fewer than ten distinct observed match days yields `model_status:
+insufficient_history`. Every observation stays warmup, model predictions and
+scores stay null, and no fitted model is claimed. The small frontend fixture still
+preserves complete real games and available season-role resource references.
+Unavailable examples are null and static figures are skipped when no eligible
+players exist. Other optional missing source metrics also remain null.
+
+Schema **2.1.0** retains all CSV columns and the version-1 affinity JSON payload.
+It fixes field types across datasets and permits a missing `playoffs` value,
+instead of deriving different declarations from each source's missingness.
+League and dataset identity live in dashboard metadata and the frontend registry;
+CSV identities are scoped to the selected directory. The legacy committed 2.0
+exports remain readable. The historical LPL 2025 demo description follows.
+
 This directory implements the backend for **Measuring Lineup Synergy in the LPL**. The demo narrows "performance" to **damage to champions per minute (DPM)**. It supplies a context baseline and descriptive co-performance measures. It does not yet estimate a distinct teammate interaction effect.
 
 ## Reproduce

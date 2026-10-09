@@ -1,0 +1,25 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Unknown,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,Impact,top,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Unknown,oe:player:8a5dbe19794784cfd0553556844f045,Contractz,jng,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Unknown,oe:player:7e0e7ac2a199e8e2ecb30499a3b2153,Jensen,mid,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Unknown,oe:player:267b730dd2e2dcb97182a2795935491,Sneaky,bot,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Unknown,oe:player:4d2f4b9fa48af3a3618b2cbac02fa9b,Smoothie,sup,,,,,,,,,,,,,,
+lineup,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Unknown,,,,lineup-ed8207315c8b2e5f,CLO-01,1,4,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,oe:player:8a5dbe19794784cfd0553556844f045,oe:player:7e0e7ac2a199e8e2ecb30499a3b2153,oe:player:267b730dd2e2dcb97182a2795935491,oe:player:4d2f4b9fa48af3a3618b2cbac02fa9b,Impact,Contractz,Jensen,Sneaky,Smoothie
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2017,Unknown,oe:player:5e79b66b78498aa1aec126b0b4ca1a1,Darshan,top,,,,,,,,,,,,,,
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2017,Unknown,oe:player:1d3d258d62ce15583b78ddafd13b1c3,OmarGod,jng,,,,,,,,,,,,,,
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2017,Unknown,oe:player:9191e392e93a6ef011ef76b5b83ee6c,huhi,mid,,,,,,,,,,,,,,
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2017,Unknown,oe:player:51d421a31ce72460198ef946995fb11,Stixxay,bot,,,,,,,,,,,,,,
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2017,Unknown,oe:player:f48c70640770b42b5d7dd72aa21e005,aphromoo,sup,,,,,,,,,,,,,,
+lineup,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2017,Unknown,,,,lineup-b47976b733a64d37,CLG-01,1,8,oe:player:5e79b66b78498aa1aec126b0b4ca1a1,oe:player:1d3d258d62ce15583b78ddafd13b1c3,oe:player:9191e392e93a6ef011ef76b5b83ee6c,oe:player:51d421a31ce72460198ef946995fb11,oe:player:f48c70640770b42b5d7dd72aa21e005,Darshan,OmarGod,huhi,Stixxay,aphromoo
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2017,Unknown,oe:player:f35d122e169ccf24593a4d06927a3e2,Ssumday,top,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2017,Unknown,oe:player:2f2e1847f0dbddd2a94ddf9b8823390,Shrimp,jng,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2017,Unknown,oe:player:a7a579083434329c905df3b17716417,Keane,mid,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2017,Unknown,oe:player:4046e5819c6e57ec8fa00b56834d8aa,Altec,bot,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2017,Unknown,oe:player:c1937b687795ce80be0ecf20e181144,Adrian,sup,,,,,,,,,,,,,,
+lineup,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2017,Unknown,,,,lineup-b67e58285ea328b0,DIG-01,1,3,oe:player:f35d122e169ccf24593a4d06927a3e2,oe:player:2f2e1847f0dbddd2a94ddf9b8823390,oe:player:a7a579083434329c905df3b17716417,oe:player:4046e5819c6e57ec8fa00b56834d8aa,oe:player:c1937b687795ce80be0ecf20e181144,Ssumday,Shrimp,Keane,Altec,Adrian
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2017,Unknown,oe:player:3136a9f696493782b8b07c895377f81,BalIs,top,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2017,Unknown,oe:player:99572d5361ac4c1fc99c9d82b4eb080,Galen,jng,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2017,Unknown,oe:player:486a694eed702562985d71457d55481,Hai,mid,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2017,Unknown,oe:player:91a74fa03f163055a19da5b16363fc8,WildTurtle,bot,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2017,Unknown,oe:player:0108d7db35e786901358382563a9e47,LemonNation,sup,,,,,,,,,,,,,,
+lineup,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2017,Unknown,,,,lineup-41b03fe3dfa9c64f,FLY-01,1,7,oe:player:3136a9f696493782b8b07c895377f81,oe:player:99572d5361ac4c1fc99c9d82b4eb080,oe:player:486a694eed702562985d71457d55481,oe:player:91a74fa03f163055a19da5b16363fc8,oe:player:0108d7db35e786901358382563a9e47,BalIs,Galen,Hai,WildTurtle,LemonNation

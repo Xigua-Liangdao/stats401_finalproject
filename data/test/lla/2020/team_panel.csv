@@ -1,0 +1,57 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:ac644a006bcf1a44682d666df19864c,All Knights,AK,2020,Opening,oe:player:ed7abaae0ee6899cafc612e0fdc5579,Jisu,top,,,,,,,,,,,,,,
+player,oe:team:ac644a006bcf1a44682d666df19864c,All Knights,AK,2020,Opening,oe:player:c6b0f5adc051b4f9e86c3ce8b92455d,Pancake,jng,,,,,,,,,,,,,,
+player,oe:team:ac644a006bcf1a44682d666df19864c,All Knights,AK,2020,Opening,oe:player:ea27a3ffe33c2ddd9363d29152363a7,Plugo,mid,,,,,,,,,,,,,,
+player,oe:team:ac644a006bcf1a44682d666df19864c,All Knights,AK,2020,Opening,oe:player:bd9f7c5d6ab4201b138a3e51dab7056,Alive,bot,,,,,,,,,,,,,,
+player,oe:team:ac644a006bcf1a44682d666df19864c,All Knights,AK,2020,Opening,oe:player:27aa6f7581052e7ff48e1bca901313f,Newbie,sup,,,,,,,,,,,,,,
+lineup,oe:team:ac644a006bcf1a44682d666df19864c,All Knights,AK,2020,Opening,,,,lineup-27286cf74e16b646,AK-01,1,2,oe:player:ed7abaae0ee6899cafc612e0fdc5579,oe:player:c6b0f5adc051b4f9e86c3ce8b92455d,oe:player:ea27a3ffe33c2ddd9363d29152363a7,oe:player:bd9f7c5d6ab4201b138a3e51dab7056,oe:player:27aa6f7581052e7ff48e1bca901313f,Jisu,Pancake,Plugo,Alive,Newbie
+player,oe:team:44990d61d2b6817c830634b1f652af2,Azules Esports,AE,2020,Opening,oe:player:9c0352da86d3a60c812dee858642792,IceBox,top,,,,,,,,,,,,,,
+player,oe:team:44990d61d2b6817c830634b1f652af2,Azules Esports,AE,2020,Opening,oe:player:9a2f5597c8acf766dfcee23a4a4d71e,koughi,jng,,,,,,,,,,,,,,
+player,oe:team:44990d61d2b6817c830634b1f652af2,Azules Esports,AE,2020,Opening,oe:player:a66db93c9f417a2500c24e689ba0ccc,cody,mid,,,,,,,,,,,,,,
+player,oe:team:44990d61d2b6817c830634b1f652af2,Azules Esports,AE,2020,Opening,oe:player:4ae382e5cc3e063f06c8e0f3fa41afd,KreshtDoo,bot,,,,,,,,,,,,,,
+player,oe:team:44990d61d2b6817c830634b1f652af2,Azules Esports,AE,2020,Opening,oe:player:affea2faa664cb5130a7569ac4b74b3,Feitan,sup,,,,,,,,,,,,,,
+lineup,oe:team:44990d61d2b6817c830634b1f652af2,Azules Esports,AE,2020,Opening,,,,lineup-e3761c25a4f31731,AE-01,1,3,oe:player:9c0352da86d3a60c812dee858642792,oe:player:9a2f5597c8acf766dfcee23a4a4d71e,oe:player:a66db93c9f417a2500c24e689ba0ccc,oe:player:4ae382e5cc3e063f06c8e0f3fa41afd,oe:player:affea2faa664cb5130a7569ac4b74b3,IceBox,koughi,cody,KreshtDoo,Feitan
+player,oe:team:6414602bd3443e9f8c3aae5c73bbc5a,Furious Gaming,FG,2020,Opening,oe:player:288d8e1e6e78a857421f10ee40d3fba,Zelt,top,,,,,,,,,,,,,,
+player,oe:team:6414602bd3443e9f8c3aae5c73bbc5a,Furious Gaming,FG,2020,Opening,oe:player:4dc315d81b795cd55c41c10c10507e3,Zerito,top,,,,,,,,,,,,,,
+player,oe:team:6414602bd3443e9f8c3aae5c73bbc5a,Furious Gaming,FG,2020,Opening,oe:player:717f498b8689227790e34cddbf1215c,Xypherz,jng,,,,,,,,,,,,,,
+player,oe:team:6414602bd3443e9f8c3aae5c73bbc5a,Furious Gaming,FG,2020,Opening,oe:player:30fda405a39a1754550e87835c669fb,Emp,mid,,,,,,,,,,,,,,
+player,oe:team:6414602bd3443e9f8c3aae5c73bbc5a,Furious Gaming,FG,2020,Opening,oe:player:51f3aa27af393f856e9f2fc334f465e,Nobody,bot,,,,,,,,,,,,,,
+player,oe:team:6414602bd3443e9f8c3aae5c73bbc5a,Furious Gaming,FG,2020,Opening,oe:player:9543a90d85dc2083fdfcd1e615abebf,Baula,sup,,,,,,,,,,,,,,
+lineup,oe:team:6414602bd3443e9f8c3aae5c73bbc5a,Furious Gaming,FG,2020,Opening,,,,lineup-214cf11dac26a916,FG-01,1,1,oe:player:288d8e1e6e78a857421f10ee40d3fba,oe:player:717f498b8689227790e34cddbf1215c,oe:player:30fda405a39a1754550e87835c669fb,oe:player:51f3aa27af393f856e9f2fc334f465e,oe:player:9543a90d85dc2083fdfcd1e615abebf,Zelt,Xypherz,Emp,Nobody,Baula
+lineup,oe:team:6414602bd3443e9f8c3aae5c73bbc5a,Furious Gaming,FG,2020,Opening,,,,lineup-4b525663d421b187,FG-02,2,1,oe:player:4dc315d81b795cd55c41c10c10507e3,oe:player:717f498b8689227790e34cddbf1215c,oe:player:30fda405a39a1754550e87835c669fb,oe:player:51f3aa27af393f856e9f2fc334f465e,oe:player:9543a90d85dc2083fdfcd1e615abebf,Zerito,Xypherz,Emp,Nobody,Baula
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2020,Opening,oe:player:18fb9695f004925012bf3ae5826b780,Stray,top,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2020,Opening,oe:player:5df80e26e27620b567db59e8567a061,Solid,jng,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2020,Opening,oe:player:6252fe71513f9bc796f40f41cfeb74e,Cotopaco,mid,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2020,Opening,oe:player:0c5ad5df75cf72ddf6263f311440242,WhiteLotus,bot,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2020,Opening,oe:player:45299b6d8ad2fe721f4eb3c5d804fec,Genthix,sup,,,,,,,,,,,,,,
+lineup,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2020,Opening,,,,lineup-1a97e632f3c7288b,INF-01,1,2,oe:player:18fb9695f004925012bf3ae5826b780,oe:player:5df80e26e27620b567db59e8567a061,oe:player:6252fe71513f9bc796f40f41cfeb74e,oe:player:0c5ad5df75cf72ddf6263f311440242,oe:player:45299b6d8ad2fe721f4eb3c5d804fec,Stray,Solid,Cotopaco,WhiteLotus,Genthix
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2020,Opening,oe:player:ff1c2739dbfa8f1dfeccb61919cb9ab,Jirall,top,,,,,,,,,,,,,,
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2020,Opening,oe:player:de23ee5a66222e1e02da354414f2971,Oddie,jng,,,,,,,,,,,,,,
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2020,Opening,oe:player:7378a82177ee6bee2015ac5d134abe3,Seiya,mid,,,,,,,,,,,,,,
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2020,Opening,oe:player:c06e32c1b9d774a347e81455f6eeaf4,WARANGELUS,bot,,,,,,,,,,,,,,
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2020,Opening,oe:player:efa5397985b8609a5dbeb430a4bcadd,Slow,sup,,,,,,,,,,,,,,
+lineup,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2020,Opening,,,,lineup-fe2c3c85752a7426,ISU-01,1,13,oe:player:ff1c2739dbfa8f1dfeccb61919cb9ab,oe:player:de23ee5a66222e1e02da354414f2971,oe:player:7378a82177ee6bee2015ac5d134abe3,oe:player:c06e32c1b9d774a347e81455f6eeaf4,oe:player:efa5397985b8609a5dbeb430a4bcadd,Jirall,Oddie,Seiya,WARANGELUS,Slow
+player,oe:team:c5b7f439779b465529ff283c53f41c0,Kaos Latin Gamers,KLG,2020,Opening,oe:player:046cc082e82c608b087457f59598674,Nipphu,top,,,,,,,,,,,,,,
+player,oe:team:c5b7f439779b465529ff283c53f41c0,Kaos Latin Gamers,KLG,2020,Opening,oe:player:570eaa3075db16ee639a57153937152,Coma,jng,,,,,,,,,,,,,,
+player,oe:team:c5b7f439779b465529ff283c53f41c0,Kaos Latin Gamers,KLG,2020,Opening,oe:player:288d8e1e6e78a857421f10ee40d3fba,Zelt,mid,,,,,,,,,,,,,,
+player,oe:team:c5b7f439779b465529ff283c53f41c0,Kaos Latin Gamers,KLG,2020,Opening,oe:player:ebc8d71056b04067e8a67dd228a034e,Limitationss,bot,,,,,,,,,,,,,,
+player,oe:team:c5b7f439779b465529ff283c53f41c0,Kaos Latin Gamers,KLG,2020,Opening,oe:player:d26ad5138469c6c081d0ace05529638,Troy,sup,,,,,,,,,,,,,,
+lineup,oe:team:c5b7f439779b465529ff283c53f41c0,Kaos Latin Gamers,KLG,2020,Opening,,,,lineup-5b0646099b88472c,KLG-01,1,2,oe:player:046cc082e82c608b087457f59598674,oe:player:570eaa3075db16ee639a57153937152,oe:player:288d8e1e6e78a857421f10ee40d3fba,oe:player:ebc8d71056b04067e8a67dd228a034e,oe:player:d26ad5138469c6c081d0ace05529638,Nipphu,Coma,Zelt,Limitationss,Troy
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2020,Opening,oe:player:405ba4c6b60f0e22b850cb164a931d9,Acce,top,,,,,,,,,,,,,,
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2020,Opening,oe:player:52b4f060a577ff87c99118d97fa75f4,Josedeodo,jng,,,,,,,,,,,,,,
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2020,Opening,oe:player:15cf38bf8a684a1b5895ad3daa0e379,Leza,mid,,,,,,,,,,,,,,
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2020,Opening,oe:player:a5e24abc881e8801425e90fb62325e8,Renyu,bot,,,,,,,,,,,,,,
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2020,Opening,oe:player:115cbb13ff7ef811c05d6e95bf224c2,Shadow,sup,,,,,,,,,,,,,,
+lineup,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2020,Opening,,,,lineup-d2c00303ac8c2997,MR-01,1,2,oe:player:405ba4c6b60f0e22b850cb164a931d9,oe:player:52b4f060a577ff87c99118d97fa75f4,oe:player:15cf38bf8a684a1b5895ad3daa0e379,oe:player:a5e24abc881e8801425e90fb62325e8,oe:player:115cbb13ff7ef811c05d6e95bf224c2,Acce,Josedeodo,Leza,Renyu,Shadow
+player,oe:team:c6d5aa661b7fc79404111ac75fbdcd4,Pixel Esports Club,PEC,2020,Opening,oe:player:d258f8c326e3532981a60d2393f129a,Jauny,top,,,,,,,,,,,,,,
+player,oe:team:c6d5aa661b7fc79404111ac75fbdcd4,Pixel Esports Club,PEC,2020,Opening,oe:player:81eed41b598a207697930065353ba1c,QQMore,jng,,,,,,,,,,,,,,
+player,oe:team:c6d5aa661b7fc79404111ac75fbdcd4,Pixel Esports Club,PEC,2020,Opening,oe:player:9d8b079deedcc90dda4617fb4ffac40,TopLop,mid,,,,,,,,,,,,,,
+player,oe:team:c6d5aa661b7fc79404111ac75fbdcd4,Pixel Esports Club,PEC,2020,Opening,oe:player:14daa026ba4c748b8fb3dcc8dfe4cb7,Kz,bot,,,,,,,,,,,,,,
+player,oe:team:c6d5aa661b7fc79404111ac75fbdcd4,Pixel Esports Club,PEC,2020,Opening,oe:player:c2a90baf58e14e224415293a8ad34ff,BetaTwinz,sup,,,,,,,,,,,,,,
+lineup,oe:team:c6d5aa661b7fc79404111ac75fbdcd4,Pixel Esports Club,PEC,2020,Opening,,,,lineup-a7b036eb9f3a186b,PEC-01,1,1,oe:player:d258f8c326e3532981a60d2393f129a,oe:player:81eed41b598a207697930065353ba1c,oe:player:9d8b079deedcc90dda4617fb4ffac40,oe:player:14daa026ba4c748b8fb3dcc8dfe4cb7,oe:player:c2a90baf58e14e224415293a8ad34ff,Jauny,QQMore,TopLop,Kz,BetaTwinz
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2020,Opening,oe:player:fa25750001a01658a6fc79611d41de6,Aquasonic,top,,,,,,,,,,,,,,
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2020,Opening,oe:player:77283a0e12a2101886de76dda030375,Unforgiven,jng,,,,,,,,,,,,,,
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2020,Opening,oe:player:e6044507491a7471342098b2fa21ce8,Frozen,mid,,,,,,,,,,,,,,
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2020,Opening,oe:player:e24ee2487879116dcab772c0ac4fe34,Focus,bot,,,,,,,,,,,,,,
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2020,Opening,oe:player:5d19b31b19f362f152fd879942be56c,Shu Hari,sup,,,,,,,,,,,,,,
+lineup,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2020,Opening,,,,lineup-fcc478a687b136d8,XE-01,1,3,oe:player:fa25750001a01658a6fc79611d41de6,oe:player:77283a0e12a2101886de76dda030375,oe:player:e6044507491a7471342098b2fa21ce8,oe:player:e24ee2487879116dcab772c0ac4fe34,oe:player:5d19b31b19f362f152fd879942be56c,Aquasonic,Unforgiven,Frozen,Focus,Shu Hari

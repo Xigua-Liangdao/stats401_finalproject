@@ -1,0 +1,50 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:f8c3923ecbc5de1edc4eaea53407c6f,CJ Entus,CE,2018,Spring,oe:player:42fef294fa0272cfcfbc122002d6958,Soul,top,,,,,,,,,,,,,,
+player,oe:team:f8c3923ecbc5de1edc4eaea53407c6f,CJ Entus,CE,2018,Spring,oe:player:6506cea9e37ae93383637c8737cbf34,Winged,jng,,,,,,,,,,,,,,
+player,oe:team:f8c3923ecbc5de1edc4eaea53407c6f,CJ Entus,CE,2018,Spring,oe:player:fd964f4b80922071fac5c1485aa284e,Candy,mid,,,,,,,,,,,,,,
+player,oe:team:f8c3923ecbc5de1edc4eaea53407c6f,CJ Entus,CE,2018,Spring,oe:player:27467eebfd85deae554fa659c40d5f5,Veritas,bot,,,,,,,,,,,,,,
+player,oe:team:f8c3923ecbc5de1edc4eaea53407c6f,CJ Entus,CE,2018,Spring,oe:player:d30973809f2e4238b7eb2bac9241674,Pure,sup,,,,,,,,,,,,,,
+lineup,oe:team:f8c3923ecbc5de1edc4eaea53407c6f,CJ Entus,CE,2018,Spring,,,,lineup-89197abf375bddb4,CE-01,1,2,oe:player:42fef294fa0272cfcfbc122002d6958,oe:player:6506cea9e37ae93383637c8737cbf34,oe:player:fd964f4b80922071fac5c1485aa284e,oe:player:27467eebfd85deae554fa659c40d5f5,oe:player:d30973809f2e4238b7eb2bac9241674,Soul,Winged,Candy,Veritas,Pure
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2018,Spring,oe:player:110de1170a2c2ac8bbc0dc557061b69,SoHwan,top,,,,,,,,,,,,,,
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2018,Spring,oe:player:1970fcb701acce66e0771946bbb3105,UmTi,jng,,,,,,,,,,,,,,
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2018,Spring,oe:player:942180f580887b12bcb04219e0dde84,Yaharong,mid,,,,,,,,,,,,,,
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2018,Spring,oe:player:2b5fa564a1259b97bc238fbfa719b07,Teddy,bot,,,,,,,,,,,,,,
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2018,Spring,oe:player:db6e29b702f4106c84038b6c7de54a6,Wraith,sup,,,,,,,,,,,,,,
+lineup,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2018,Spring,,,,lineup-000e7c678db1f598,JAGW-01,1,3,oe:player:110de1170a2c2ac8bbc0dc557061b69,oe:player:1970fcb701acce66e0771946bbb3105,oe:player:942180f580887b12bcb04219e0dde84,oe:player:2b5fa564a1259b97bc238fbfa719b07,oe:player:db6e29b702f4106c84038b6c7de54a6,SoHwan,UmTi,Yaharong,Teddy,Wraith
+player,oe:team:40588fea8e54db0dd6c86ed78262a13,KSV eSports,KE,2018,Spring,oe:player:d3a36b831bf6dfc749f79a1d3a71fad,CuVee,top,,,,,,,,,,,,,,
+player,oe:team:40588fea8e54db0dd6c86ed78262a13,KSV eSports,KE,2018,Spring,oe:player:ae0ffd5e0b0ffddb69aa8c59eace1a4,Ambition,jng,,,,,,,,,,,,,,
+player,oe:team:40588fea8e54db0dd6c86ed78262a13,KSV eSports,KE,2018,Spring,oe:player:2736a0eb19c2525920f8ff4af5086c0,Haru,jng,,,,,,,,,,,,,,
+player,oe:team:40588fea8e54db0dd6c86ed78262a13,KSV eSports,KE,2018,Spring,oe:player:e95a34ce4e7feb3a2939c52ddac5d17,Crown,mid,,,,,,,,,,,,,,
+player,oe:team:40588fea8e54db0dd6c86ed78262a13,KSV eSports,KE,2018,Spring,oe:player:eada4723af6f51cf2391d85b5fde49b,Ruler,bot,,,,,,,,,,,,,,
+player,oe:team:40588fea8e54db0dd6c86ed78262a13,KSV eSports,KE,2018,Spring,oe:player:05fafeaf23dc3285558a4e968970b9f,CoreJJ,sup,,,,,,,,,,,,,,
+lineup,oe:team:40588fea8e54db0dd6c86ed78262a13,KSV eSports,KE,2018,Spring,,,,lineup-1b91a08b29ccd539,KE-01,1,2,oe:player:d3a36b831bf6dfc749f79a1d3a71fad,oe:player:2736a0eb19c2525920f8ff4af5086c0,oe:player:e95a34ce4e7feb3a2939c52ddac5d17,oe:player:eada4723af6f51cf2391d85b5fde49b,oe:player:05fafeaf23dc3285558a4e968970b9f,CuVee,Haru,Crown,Ruler,CoreJJ
+lineup,oe:team:40588fea8e54db0dd6c86ed78262a13,KSV eSports,KE,2018,Spring,,,,lineup-f5129eb086752f53,KE-02,2,1,oe:player:d3a36b831bf6dfc749f79a1d3a71fad,oe:player:ae0ffd5e0b0ffddb69aa8c59eace1a4,oe:player:e95a34ce4e7feb3a2939c52ddac5d17,oe:player:eada4723af6f51cf2391d85b5fde49b,oe:player:05fafeaf23dc3285558a4e968970b9f,CuVee,Ambition,Crown,Ruler,CoreJJ
+player,oe:team:fce0c469080578fffd7034b5f2ff57d,Kingzone DragonX,KD,2018,Spring,oe:player:b9972f46c1e52797d66236b118d2970,Khan,top,,,,,,,,,,,,,,
+player,oe:team:fce0c469080578fffd7034b5f2ff57d,Kingzone DragonX,KD,2018,Spring,oe:player:dda4a873265dfd06df50a0d8a294908,Peanut,jng,,,,,,,,,,,,,,
+player,oe:team:fce0c469080578fffd7034b5f2ff57d,Kingzone DragonX,KD,2018,Spring,oe:player:30361653a485a9609fb2d3aa073282c,Bdd,mid,,,,,,,,,,,,,,
+player,oe:team:fce0c469080578fffd7034b5f2ff57d,Kingzone DragonX,KD,2018,Spring,oe:player:c4ac0dd2691aab14fd56ce3c7702023,PraY,bot,,,,,,,,,,,,,,
+player,oe:team:fce0c469080578fffd7034b5f2ff57d,Kingzone DragonX,KD,2018,Spring,oe:player:a9fdc6a800e800eb897d38b389f96f0,GorillA,sup,,,,,,,,,,,,,,
+lineup,oe:team:fce0c469080578fffd7034b5f2ff57d,Kingzone DragonX,KD,2018,Spring,,,,lineup-21570b025dbf8639,KD-01,1,2,oe:player:b9972f46c1e52797d66236b118d2970,oe:player:dda4a873265dfd06df50a0d8a294908,oe:player:30361653a485a9609fb2d3aa073282c,oe:player:c4ac0dd2691aab14fd56ce3c7702023,oe:player:a9fdc6a800e800eb897d38b389f96f0,Khan,Peanut,Bdd,PraY,GorillA
+player,oe:team:21d5096acdfc62efed68418399ca291,MVP,MVP,2018,Spring,oe:player:9eeb52badb613229884838847294b90,ADD,top,,,,,,,,,,,,,,
+player,oe:team:21d5096acdfc62efed68418399ca291,MVP,MVP,2018,Spring,oe:player:c65e22a7eaa6de4391b7af6d56e6e82,Beyond,jng,,,,,,,,,,,,,,
+player,oe:team:21d5096acdfc62efed68418399ca291,MVP,MVP,2018,Spring,oe:player:245a58a5dc42397caf57bc06c2c0afd,Ian,mid,,,,,,,,,,,,,,
+player,oe:team:21d5096acdfc62efed68418399ca291,MVP,MVP,2018,Spring,oe:player:ebec939da49d80219030b8441845ef9,Pilot,bot,,,,,,,,,,,,,,
+player,oe:team:21d5096acdfc62efed68418399ca291,MVP,MVP,2018,Spring,oe:player:30dbac3f4cd3def7f7641368b602ea9,Max,sup,,,,,,,,,,,,,,
+lineup,oe:team:21d5096acdfc62efed68418399ca291,MVP,MVP,2018,Spring,,,,lineup-e2dff6f238fb150a,MVP-01,1,14,oe:player:9eeb52badb613229884838847294b90,oe:player:c65e22a7eaa6de4391b7af6d56e6e82,oe:player:245a58a5dc42397caf57bc06c2c0afd,oe:player:ebec939da49d80219030b8441845ef9,oe:player:30dbac3f4cd3def7f7641368b602ea9,ADD,Beyond,Ian,Pilot,Max
+player,oe:team:93c730021ff69abdfccc4911a2f666f,ROX Tigers,RT,2018,Spring,oe:player:310e4ace014984819dd016f4bd7e763,Lindarang,top,,,,,,,,,,,,,,
+player,oe:team:93c730021ff69abdfccc4911a2f666f,ROX Tigers,RT,2018,Spring,oe:player:689bf66ba4ae2467665460278722319,SeongHwan,jng,,,,,,,,,,,,,,
+player,oe:team:93c730021ff69abdfccc4911a2f666f,ROX Tigers,RT,2018,Spring,oe:player:1d18fe2cdd43a72d46421ecfe81b599,Lava,mid,,,,,,,,,,,,,,
+player,oe:team:93c730021ff69abdfccc4911a2f666f,ROX Tigers,RT,2018,Spring,oe:player:887b308d89aa7ff0f3ff21a1c29f588,Sangyoon,bot,,,,,,,,,,,,,,
+player,oe:team:93c730021ff69abdfccc4911a2f666f,ROX Tigers,RT,2018,Spring,oe:player:897356954c2cd3d41b221e3f24f99bb,Key,sup,,,,,,,,,,,,,,
+lineup,oe:team:93c730021ff69abdfccc4911a2f666f,ROX Tigers,RT,2018,Spring,,,,lineup-2b471a74fa20c14b,RT-01,1,2,oe:player:310e4ace014984819dd016f4bd7e763,oe:player:689bf66ba4ae2467665460278722319,oe:player:1d18fe2cdd43a72d46421ecfe81b599,oe:player:887b308d89aa7ff0f3ff21a1c29f588,oe:player:897356954c2cd3d41b221e3f24f99bb,Lindarang,SeongHwan,Lava,Sangyoon,Key
+player,oe:team:c6a4f426b85f581ff9b009d1e8bfae5,bbq Olivers,BO,2018,Spring,oe:player:d7c528ab090b1cda9854e13aaf94505,Crazy,top,,,,,,,,,,,,,,
+player,oe:team:c6a4f426b85f581ff9b009d1e8bfae5,bbq Olivers,BO,2018,Spring,oe:player:071cc5ed513803b5715ffea53019a9a,Bless,jng,,,,,,,,,,,,,,
+player,oe:team:c6a4f426b85f581ff9b009d1e8bfae5,bbq Olivers,BO,2018,Spring,oe:player:59c9428d4e21d63aefeb230c919dcfe,Trick,jng,,,,,,,,,,,,,,
+player,oe:team:c6a4f426b85f581ff9b009d1e8bfae5,bbq Olivers,BO,2018,Spring,oe:player:37a18aea52f7509729362a4b97a6ce7,bonO,jng,,,,,,,,,,,,,,
+player,oe:team:c6a4f426b85f581ff9b009d1e8bfae5,bbq Olivers,BO,2018,Spring,oe:player:2861898294dd867b05fd28dca284e57,Tempt,mid,,,,,,,,,,,,,,
+player,oe:team:c6a4f426b85f581ff9b009d1e8bfae5,bbq Olivers,BO,2018,Spring,oe:player:78081d0b3c01f1f295d52d53744261a,Ghost,bot,,,,,,,,,,,,,,
+player,oe:team:c6a4f426b85f581ff9b009d1e8bfae5,bbq Olivers,BO,2018,Spring,oe:player:e22cffb92554f5dde312609feccc6f8,IgNar,sup,,,,,,,,,,,,,,
+player,oe:team:c6a4f426b85f581ff9b009d1e8bfae5,bbq Olivers,BO,2018,Spring,oe:player:f54058131e5da1ba900c8401de4aafb,Totoro,sup,,,,,,,,,,,,,,
+lineup,oe:team:c6a4f426b85f581ff9b009d1e8bfae5,bbq Olivers,BO,2018,Spring,,,,lineup-5dedd4a97eabb4f4,BO-01,1,2,oe:player:d7c528ab090b1cda9854e13aaf94505,oe:player:59c9428d4e21d63aefeb230c919dcfe,oe:player:2861898294dd867b05fd28dca284e57,oe:player:78081d0b3c01f1f295d52d53744261a,oe:player:e22cffb92554f5dde312609feccc6f8,Crazy,Trick,Tempt,Ghost,IgNar
+lineup,oe:team:c6a4f426b85f581ff9b009d1e8bfae5,bbq Olivers,BO,2018,Spring,,,,lineup-708eb02a28097e28,BO-02,2,2,oe:player:d7c528ab090b1cda9854e13aaf94505,oe:player:071cc5ed513803b5715ffea53019a9a,oe:player:2861898294dd867b05fd28dca284e57,oe:player:78081d0b3c01f1f295d52d53744261a,oe:player:f54058131e5da1ba900c8401de4aafb,Crazy,Bless,Tempt,Ghost,Totoro
+lineup,oe:team:c6a4f426b85f581ff9b009d1e8bfae5,bbq Olivers,BO,2018,Spring,,,,lineup-ba689b2939d8916d,BO-03,3,2,oe:player:d7c528ab090b1cda9854e13aaf94505,oe:player:37a18aea52f7509729362a4b97a6ce7,oe:player:2861898294dd867b05fd28dca284e57,oe:player:78081d0b3c01f1f295d52d53744261a,oe:player:e22cffb92554f5dde312609feccc6f8,Crazy,bonO,Tempt,Ghost,IgNar

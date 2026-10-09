@@ -1,0 +1,111 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,name-team-8b1b5d09027186bd,Bad Day,BD,2024,Unknown,oe:player:0cc82b01b0a67e71e849242c2d14962,Branca,top,,,,,,,,,,,,,,
+player,name-team-8b1b5d09027186bd,Bad Day,BD,2024,Unknown,oe:player:e86e4104e3b9d29da206f223f62b60c,Rikki,jng,,,,,,,,,,,,,,
+player,name-team-8b1b5d09027186bd,Bad Day,BD,2024,Unknown,oe:player:368c916eac5dec8cb6a75620da16f88,Stasia,mid,,,,,,,,,,,,,,
+player,name-team-8b1b5d09027186bd,Bad Day,BD,2024,Unknown,oe:player:1ea0d8f2ebe09d809b40f7ae1d5795c,Raph,bot,,,,,,,,,,,,,,
+player,name-team-8b1b5d09027186bd,Bad Day,BD,2024,Unknown,oe:player:9f51e2401bdf89557375d47cef8cf7e,Victoria,sup,,,,,,,,,,,,,,
+lineup,name-team-8b1b5d09027186bd,Bad Day,BD,2024,Unknown,,,,lineup-189290794fa082e1,BD-01,1,2,oe:player:0cc82b01b0a67e71e849242c2d14962,oe:player:e86e4104e3b9d29da206f223f62b60c,oe:player:368c916eac5dec8cb6a75620da16f88,oe:player:1ea0d8f2ebe09d809b40f7ae1d5795c,oe:player:9f51e2401bdf89557375d47cef8cf7e,Branca,Rikki,Stasia,Raph,Victoria
+player,name-team-359a12b36d0ce04e,Banshee,BAN,2024,Unknown,oe:player:338d1f8007f0c84287d9963d5ea36ae,Flower,top,,,,,,,,,,,,,,
+player,name-team-359a12b36d0ce04e,Banshee,BAN,2024,Unknown,oe:player:a31ca891c2d361750093e0fc0e8b507,Lawl,jng,,,,,,,,,,,,,,
+player,name-team-359a12b36d0ce04e,Banshee,BAN,2024,Unknown,oe:player:0cbd0e0262f26061ac54dab42a37372,Cablui,mid,,,,,,,,,,,,,,
+player,name-team-359a12b36d0ce04e,Banshee,BAN,2024,Unknown,oe:player:d767656330d9b59ece33d716397a792,Tata,bot,,,,,,,,,,,,,,
+player,name-team-359a12b36d0ce04e,Banshee,BAN,2024,Unknown,oe:player:32ddc96e8baa332428f5dc5f8b36059,Gwenix,sup,,,,,,,,,,,,,,
+lineup,name-team-359a12b36d0ce04e,Banshee,BAN,2024,Unknown,,,,lineup-bb9ca174a2c4dbef,BAN-01,1,5,oe:player:338d1f8007f0c84287d9963d5ea36ae,oe:player:a31ca891c2d361750093e0fc0e8b507,oe:player:0cbd0e0262f26061ac54dab42a37372,oe:player:d767656330d9b59ece33d716397a792,oe:player:32ddc96e8baa332428f5dc5f8b36059,Flower,Lawl,Cablui,Tata,Gwenix
+player,oe:team:676672c934fc8d49a87f3de987a0e5c,Coven,COV,2024,Unknown,oe:player:f8ef3335d9b514094895f13d76f2e40,Claptrap,top,,,,,,,,,,,,,,
+player,oe:team:676672c934fc8d49a87f3de987a0e5c,Coven,COV,2024,Unknown,oe:player:d280c7b9629246077f20d210f0a2185,Joy,jng,,,,,,,,,,,,,,
+player,oe:team:676672c934fc8d49a87f3de987a0e5c,Coven,COV,2024,Unknown,oe:player:acfd2d06a485cc0358bbbeb85ae243d,procuro,jng,,,,,,,,,,,,,,
+player,oe:team:676672c934fc8d49a87f3de987a0e5c,Coven,COV,2024,Unknown,oe:player:72224071d797d555cb4201e31baa0e1,Ajin,mid,,,,,,,,,,,,,,
+player,oe:team:676672c934fc8d49a87f3de987a0e5c,Coven,COV,2024,Unknown,oe:player:d767656330d9b59ece33d716397a792,Tata,bot,,,,,,,,,,,,,,
+player,oe:team:676672c934fc8d49a87f3de987a0e5c,Coven,COV,2024,Unknown,oe:player:32ddc96e8baa332428f5dc5f8b36059,Gwenix,sup,,,,,,,,,,,,,,
+player,oe:team:676672c934fc8d49a87f3de987a0e5c,Coven,COV,2024,Unknown,oe:player:78386ec8f2845742c324a3d7d3e800f,People,sup,,,,,,,,,,,,,,
+lineup,oe:team:676672c934fc8d49a87f3de987a0e5c,Coven,COV,2024,Unknown,,,,lineup-87d2835586459188,COV-01,1,5,oe:player:f8ef3335d9b514094895f13d76f2e40,oe:player:d280c7b9629246077f20d210f0a2185,oe:player:72224071d797d555cb4201e31baa0e1,oe:player:d767656330d9b59ece33d716397a792,oe:player:78386ec8f2845742c324a3d7d3e800f,Claptrap,Joy,Ajin,Tata,People
+lineup,oe:team:676672c934fc8d49a87f3de987a0e5c,Coven,COV,2024,Unknown,,,,lineup-895e0e5eb1b74d1f,COV-02,2,5,oe:player:f8ef3335d9b514094895f13d76f2e40,oe:player:acfd2d06a485cc0358bbbeb85ae243d,oe:player:72224071d797d555cb4201e31baa0e1,oe:player:d767656330d9b59ece33d716397a792,oe:player:32ddc96e8baa332428f5dc5f8b36059,Claptrap,procuro,Ajin,Tata,Gwenix
+player,oe:team:e57714ba6424bd674f7aaa8d2f67695,Geração Estrutura,GE,2024,Unknown,oe:player:8c745839f8eccb2083bfef1cd24a0ce,Seiju,top,,,,,,,,,,,,,,
+player,oe:team:e57714ba6424bd674f7aaa8d2f67695,Geração Estrutura,GE,2024,Unknown,oe:player:e86e4104e3b9d29da206f223f62b60c,Rikki,jng,,,,,,,,,,,,,,
+player,oe:team:e57714ba6424bd674f7aaa8d2f67695,Geração Estrutura,GE,2024,Unknown,oe:player:88257178ab424440f6aa4615048c340,VicSakra,mid,,,,,,,,,,,,,,
+player,oe:team:e57714ba6424bd674f7aaa8d2f67695,Geração Estrutura,GE,2024,Unknown,oe:player:0afd1a1704c902d32770476b774e546,yumin,bot,,,,,,,,,,,,,,
+player,oe:team:e57714ba6424bd674f7aaa8d2f67695,Geração Estrutura,GE,2024,Unknown,oe:player:d175233017d6d52ea3a3b2ccfc8ef55,Felpina,sup,,,,,,,,,,,,,,
+lineup,oe:team:e57714ba6424bd674f7aaa8d2f67695,Geração Estrutura,GE,2024,Unknown,,,,lineup-f6017185e5e0c550,GE-01,1,5,oe:player:8c745839f8eccb2083bfef1cd24a0ce,oe:player:e86e4104e3b9d29da206f223f62b60c,oe:player:88257178ab424440f6aa4615048c340,oe:player:0afd1a1704c902d32770476b774e546,oe:player:d175233017d6d52ea3a3b2ccfc8ef55,Seiju,Rikki,VicSakra,yumin,Felpina
+player,oe:team:5da32456c86f1fef9fede107131e769,IME Wolves,IW,2024,Unknown,oe:player:7dfc13cc5f69f05e63a733bf7fb19f7,l0cked,top,,,,,,,,,,,,,,
+player,oe:team:5da32456c86f1fef9fede107131e769,IME Wolves,IW,2024,Unknown,oe:player:8480229a6159a074a11817a88316adf,Nokoira,jng,,,,,,,,,,,,,,
+player,oe:team:5da32456c86f1fef9fede107131e769,IME Wolves,IW,2024,Unknown,oe:player:04d81067adca7dfd95cee42a61b5bad,SubmissEve,jng,,,,,,,,,,,,,,
+player,oe:team:5da32456c86f1fef9fede107131e769,IME Wolves,IW,2024,Unknown,oe:player:dce22f61d766aa8f8948de2d6e9272f,Dusa,mid,,,,,,,,,,,,,,
+player,oe:team:5da32456c86f1fef9fede107131e769,IME Wolves,IW,2024,Unknown,oe:player:48d629e440ff08dc8ad11ba7c1ba60e,saichuu,bot,,,,,,,,,,,,,,
+player,oe:team:5da32456c86f1fef9fede107131e769,IME Wolves,IW,2024,Unknown,oe:player:e990665411a9873ac3ce8980d9b498c,Shirayurin,sup,,,,,,,,,,,,,,
+lineup,oe:team:5da32456c86f1fef9fede107131e769,IME Wolves,IW,2024,Unknown,,,,lineup-08f872d21c7b58e5,IW-01,1,3,oe:player:7dfc13cc5f69f05e63a733bf7fb19f7,oe:player:8480229a6159a074a11817a88316adf,oe:player:dce22f61d766aa8f8948de2d6e9272f,oe:player:48d629e440ff08dc8ad11ba7c1ba60e,oe:player:e990665411a9873ac3ce8980d9b498c,l0cked,Nokoira,Dusa,saichuu,Shirayurin
+lineup,oe:team:5da32456c86f1fef9fede107131e769,IME Wolves,IW,2024,Unknown,,,,lineup-999853184f569a06,IW-02,2,1,oe:player:7dfc13cc5f69f05e63a733bf7fb19f7,oe:player:04d81067adca7dfd95cee42a61b5bad,oe:player:dce22f61d766aa8f8948de2d6e9272f,oe:player:48d629e440ff08dc8ad11ba7c1ba60e,oe:player:e990665411a9873ac3ce8980d9b498c,l0cked,SubmissEve,Dusa,saichuu,Shirayurin
+player,oe:team:6a1d38823bbf62daf83a3281d26ef81,Izanagi Ignis,II,2024,Unknown,oe:player:9d57172f16bd80c04145741ee12a6e3,Phantasia,top,,,,,,,,,,,,,,
+player,oe:team:6a1d38823bbf62daf83a3281d26ef81,Izanagi Ignis,II,2024,Unknown,oe:player:db7f954b009402a63702b1ce1219116,Weiss,top,,,,,,,,,,,,,,
+player,oe:team:6a1d38823bbf62daf83a3281d26ef81,Izanagi Ignis,II,2024,Unknown,oe:player:a983b01c55b6b044101cb20f3ac7394,Frígi,jng,,,,,,,,,,,,,,
+player,oe:team:6a1d38823bbf62daf83a3281d26ef81,Izanagi Ignis,II,2024,Unknown,oe:player:acfd2d06a485cc0358bbbeb85ae243d,procuro,jng,,,,,,,,,,,,,,
+player,oe:team:6a1d38823bbf62daf83a3281d26ef81,Izanagi Ignis,II,2024,Unknown,oe:player:6faf649d53532d867662f5e14332100,Louris,mid,,,,,,,,,,,,,,
+player,oe:team:6a1d38823bbf62daf83a3281d26ef81,Izanagi Ignis,II,2024,Unknown,oe:player:9d57172f16bd80c04145741ee12a6e3,Phantasia,mid,,,,,,,,,,,,,,
+player,oe:team:6a1d38823bbf62daf83a3281d26ef81,Izanagi Ignis,II,2024,Unknown,oe:player:e5723f23142f5cc85ecd9ec77157127,Turu,mid,,,,,,,,,,,,,,
+player,oe:team:6a1d38823bbf62daf83a3281d26ef81,Izanagi Ignis,II,2024,Unknown,oe:player:8cea44f48df49182a68520bb7926308,Julls,bot,,,,,,,,,,,,,,
+player,oe:team:6a1d38823bbf62daf83a3281d26ef81,Izanagi Ignis,II,2024,Unknown,oe:player:43282f16f3c7ad3bd601620d4d1f621,Naryzinho,bot,,,,,,,,,,,,,,
+player,oe:team:6a1d38823bbf62daf83a3281d26ef81,Izanagi Ignis,II,2024,Unknown,oe:player:b45c8fcaf537e634c9d97a4d13f2560,Addicted,sup,,,,,,,,,,,,,,
+player,oe:team:6a1d38823bbf62daf83a3281d26ef81,Izanagi Ignis,II,2024,Unknown,oe:player:a99da97ed57a49b2efadac73e2c4f61,Silence,sup,,,,,,,,,,,,,,
+lineup,oe:team:6a1d38823bbf62daf83a3281d26ef81,Izanagi Ignis,II,2024,Unknown,,,,lineup-4aa6bf2e85c974dc,II-01,1,2,oe:player:9d57172f16bd80c04145741ee12a6e3,oe:player:acfd2d06a485cc0358bbbeb85ae243d,oe:player:6faf649d53532d867662f5e14332100,oe:player:43282f16f3c7ad3bd601620d4d1f621,oe:player:b45c8fcaf537e634c9d97a4d13f2560,Phantasia,procuro,Louris,Naryzinho,Addicted
+lineup,oe:team:6a1d38823bbf62daf83a3281d26ef81,Izanagi Ignis,II,2024,Unknown,,,,lineup-841a5c6a29546ab3,II-02,2,2,oe:player:db7f954b009402a63702b1ce1219116,oe:player:a983b01c55b6b044101cb20f3ac7394,oe:player:9d57172f16bd80c04145741ee12a6e3,oe:player:8cea44f48df49182a68520bb7926308,oe:player:a99da97ed57a49b2efadac73e2c4f61,Weiss,Frígi,Phantasia,Julls,Silence
+lineup,oe:team:6a1d38823bbf62daf83a3281d26ef81,Izanagi Ignis,II,2024,Unknown,,,,lineup-db81c19a14e48e9a,II-03,3,2,oe:player:db7f954b009402a63702b1ce1219116,oe:player:a983b01c55b6b044101cb20f3ac7394,oe:player:e5723f23142f5cc85ecd9ec77157127,oe:player:8cea44f48df49182a68520bb7926308,oe:player:a99da97ed57a49b2efadac73e2c4f61,Weiss,Frígi,Turu,Julls,Silence
+player,oe:team:117f005eb1a2ed7a76379270629c831,Laranja Mecânica Ignis,LMI,2024,Unknown,oe:player:3aabfea78eee6a51243dfc6869b3940,Hylia,top,,,,,,,,,,,,,,
+player,oe:team:117f005eb1a2ed7a76379270629c831,Laranja Mecânica Ignis,LMI,2024,Unknown,oe:player:fb1001997b2acbfbc3b184af365c341,Millicent,top,,,,,,,,,,,,,,
+player,oe:team:117f005eb1a2ed7a76379270629c831,Laranja Mecânica Ignis,LMI,2024,Unknown,oe:player:4c0095e171f699efefbe5b481b43d35,Lisashow,jng,,,,,,,,,,,,,,
+player,oe:team:117f005eb1a2ed7a76379270629c831,Laranja Mecânica Ignis,LMI,2024,Unknown,oe:player:f887c3179bf1baa57a58c9af1696b7a,Monalisa,jng,,,,,,,,,,,,,,
+player,oe:team:117f005eb1a2ed7a76379270629c831,Laranja Mecânica Ignis,LMI,2024,Unknown,oe:player:0cbd0e0262f26061ac54dab42a37372,Cablui,mid,,,,,,,,,,,,,,
+player,oe:team:117f005eb1a2ed7a76379270629c831,Laranja Mecânica Ignis,LMI,2024,Unknown,oe:player:b11d2fab82f04451d4300a4347bd141,MeniinaMá,bot,,,,,,,,,,,,,,
+player,oe:team:117f005eb1a2ed7a76379270629c831,Laranja Mecânica Ignis,LMI,2024,Unknown,oe:player:0afd1a1704c902d32770476b774e546,yumin,bot,,,,,,,,,,,,,,
+player,oe:team:117f005eb1a2ed7a76379270629c831,Laranja Mecânica Ignis,LMI,2024,Unknown,oe:player:d175233017d6d52ea3a3b2ccfc8ef55,Felpina,sup,,,,,,,,,,,,,,
+player,oe:team:117f005eb1a2ed7a76379270629c831,Laranja Mecânica Ignis,LMI,2024,Unknown,oe:player:32ddc96e8baa332428f5dc5f8b36059,Gwenix,sup,,,,,,,,,,,,,,
+lineup,oe:team:117f005eb1a2ed7a76379270629c831,Laranja Mecânica Ignis,LMI,2024,Unknown,,,,lineup-23cee98601aaa27a,LMI-01,1,2,oe:player:3aabfea78eee6a51243dfc6869b3940,oe:player:4c0095e171f699efefbe5b481b43d35,oe:player:0cbd0e0262f26061ac54dab42a37372,oe:player:0afd1a1704c902d32770476b774e546,oe:player:d175233017d6d52ea3a3b2ccfc8ef55,Hylia,Lisashow,Cablui,yumin,Felpina
+lineup,oe:team:117f005eb1a2ed7a76379270629c831,Laranja Mecânica Ignis,LMI,2024,Unknown,,,,lineup-e5b79c2e4201a29c,LMI-02,2,2,oe:player:fb1001997b2acbfbc3b184af365c341,oe:player:f887c3179bf1baa57a58c9af1696b7a,oe:player:0cbd0e0262f26061ac54dab42a37372,oe:player:b11d2fab82f04451d4300a4347bd141,oe:player:32ddc96e8baa332428f5dc5f8b36059,Millicent,Monalisa,Cablui,MeniinaMá,Gwenix
+player,oe:team:d480fbbd7d17c53d88e53ce1b74cb1d,MIBR,MIB,2024,Unknown,oe:player:678a740a663d327c9c3e48603bd12b1,Miyahara,top,,,,,,,,,,,,,,
+player,oe:team:d480fbbd7d17c53d88e53ce1b74cb1d,MIBR,MIB,2024,Unknown,oe:player:adc7ecd5948eab320fe8339a2a10c4a,Vidal,jng,,,,,,,,,,,,,,
+player,oe:team:d480fbbd7d17c53d88e53ce1b74cb1d,MIBR,MIB,2024,Unknown,oe:player:9fb4a2abd9a2d4d2504380e0b0d5de0,Cuteness,mid,,,,,,,,,,,,,,
+player,oe:team:d480fbbd7d17c53d88e53ce1b74cb1d,MIBR,MIB,2024,Unknown,oe:player:7f6c14f4e48ba9f242658ca48d9e29e,yatsu,bot,,,,,,,,,,,,,,
+player,oe:team:d480fbbd7d17c53d88e53ce1b74cb1d,MIBR,MIB,2024,Unknown,oe:player:507f3f78d808f42e9865f15d9624066,Miss,sup,,,,,,,,,,,,,,
+lineup,oe:team:d480fbbd7d17c53d88e53ce1b74cb1d,MIBR,MIB,2024,Unknown,,,,lineup-ce98282ce23ab393,MIB-01,1,11,oe:player:678a740a663d327c9c3e48603bd12b1,oe:player:adc7ecd5948eab320fe8339a2a10c4a,oe:player:9fb4a2abd9a2d4d2504380e0b0d5de0,oe:player:7f6c14f4e48ba9f242658ca48d9e29e,oe:player:507f3f78d808f42e9865f15d9624066,Miyahara,Vidal,Cuteness,yatsu,Miss
+player,oe:team:89bdbcbd299d3b431c393a3904d23f8,PaiN Gaming Ignis,PGI,2024,Unknown,oe:player:adc7ecd5948eab320fe8339a2a10c4a,Vidal,top,,,,,,,,,,,,,,
+player,oe:team:89bdbcbd299d3b431c393a3904d23f8,PaiN Gaming Ignis,PGI,2024,Unknown,oe:player:8bab5585791b1bd4661e9a9a3e56f5b,juny,jng,,,,,,,,,,,,,,
+player,oe:team:89bdbcbd299d3b431c393a3904d23f8,PaiN Gaming Ignis,PGI,2024,Unknown,oe:player:1633cab484bbe68583c5540011e1df5,Nallari,mid,,,,,,,,,,,,,,
+player,oe:team:89bdbcbd299d3b431c393a3904d23f8,PaiN Gaming Ignis,PGI,2024,Unknown,oe:player:e90d9acb7e456c89df6e8f2bb885deb,Rahkys,bot,,,,,,,,,,,,,,
+player,oe:team:89bdbcbd299d3b431c393a3904d23f8,PaiN Gaming Ignis,PGI,2024,Unknown,oe:player:bf5ac50c9efe06a26a99fc216ce91db,Luna,sup,,,,,,,,,,,,,,
+lineup,oe:team:89bdbcbd299d3b431c393a3904d23f8,PaiN Gaming Ignis,PGI,2024,Unknown,,,,lineup-64deedcc4ff8213e,PGI-01,1,9,oe:player:adc7ecd5948eab320fe8339a2a10c4a,oe:player:8bab5585791b1bd4661e9a9a3e56f5b,oe:player:1633cab484bbe68583c5540011e1df5,oe:player:e90d9acb7e456c89df6e8f2bb885deb,oe:player:bf5ac50c9efe06a26a99fc216ce91db,Vidal,juny,Nallari,Rahkys,Luna
+player,oe:team:9cc94323ab0c26101a9c37dd37c2862,Rise Gaming Ignis,RGI,2024,Unknown,oe:player:b50387a1ea8587ce52710e7a34e4a25,Arima,top,,,,,,,,,,,,,,
+player,oe:team:9cc94323ab0c26101a9c37dd37c2862,Rise Gaming Ignis,RGI,2024,Unknown,oe:player:f8ef3335d9b514094895f13d76f2e40,Claptrap,top,,,,,,,,,,,,,,
+player,oe:team:9cc94323ab0c26101a9c37dd37c2862,Rise Gaming Ignis,RGI,2024,Unknown,oe:player:fb1001997b2acbfbc3b184af365c341,Millicent,top,,,,,,,,,,,,,,
+player,oe:team:9cc94323ab0c26101a9c37dd37c2862,Rise Gaming Ignis,RGI,2024,Unknown,oe:player:a31ca891c2d361750093e0fc0e8b507,Lawl,jng,,,,,,,,,,,,,,
+player,oe:team:9cc94323ab0c26101a9c37dd37c2862,Rise Gaming Ignis,RGI,2024,Unknown,oe:player:526c8c040f4c522ff87f22047814bb9,juny,jng,,,,,,,,,,,,,,
+player,oe:team:9cc94323ab0c26101a9c37dd37c2862,Rise Gaming Ignis,RGI,2024,Unknown,oe:player:8bab5585791b1bd4661e9a9a3e56f5b,juny,jng,,,,,,,,,,,,,,
+player,oe:team:9cc94323ab0c26101a9c37dd37c2862,Rise Gaming Ignis,RGI,2024,Unknown,oe:player:6e927cdd1b942a0f916cb821bb7b8bd,strangers,mid,,,,,,,,,,,,,,
+player,oe:team:9cc94323ab0c26101a9c37dd37c2862,Rise Gaming Ignis,RGI,2024,Unknown,oe:player:7c2e8882d8e14728b381341c6f7d9a1,yato,bot,,,,,,,,,,,,,,
+player,oe:team:9cc94323ab0c26101a9c37dd37c2862,Rise Gaming Ignis,RGI,2024,Unknown,oe:player:ff80d8d9723416bb203b6b8476649e5,Winzi,sup,,,,,,,,,,,,,,
+lineup,oe:team:9cc94323ab0c26101a9c37dd37c2862,Rise Gaming Ignis,RGI,2024,Unknown,,,,lineup-8ef83be388ab4097,RGI-01,1,11,oe:player:fb1001997b2acbfbc3b184af365c341,oe:player:8bab5585791b1bd4661e9a9a3e56f5b,oe:player:6e927cdd1b942a0f916cb821bb7b8bd,oe:player:7c2e8882d8e14728b381341c6f7d9a1,oe:player:ff80d8d9723416bb203b6b8476649e5,Millicent,juny,strangers,yato,Winzi
+lineup,oe:team:9cc94323ab0c26101a9c37dd37c2862,Rise Gaming Ignis,RGI,2024,Unknown,,,,lineup-0b188f792426b13f,RGI-02,2,9,oe:player:b50387a1ea8587ce52710e7a34e4a25,oe:player:a31ca891c2d361750093e0fc0e8b507,oe:player:6e927cdd1b942a0f916cb821bb7b8bd,oe:player:7c2e8882d8e14728b381341c6f7d9a1,oe:player:ff80d8d9723416bb203b6b8476649e5,Arima,Lawl,strangers,yato,Winzi
+lineup,oe:team:9cc94323ab0c26101a9c37dd37c2862,Rise Gaming Ignis,RGI,2024,Unknown,,,,lineup-06a9f32d554883ee,RGI-03,3,5,oe:player:f8ef3335d9b514094895f13d76f2e40,oe:player:526c8c040f4c522ff87f22047814bb9,oe:player:6e927cdd1b942a0f916cb821bb7b8bd,oe:player:7c2e8882d8e14728b381341c6f7d9a1,oe:player:ff80d8d9723416bb203b6b8476649e5,Claptrap,juny,strangers,yato,Winzi
+lineup,oe:team:9cc94323ab0c26101a9c37dd37c2862,Rise Gaming Ignis,RGI,2024,Unknown,,,,lineup-610f4044bf062573,RGI-04,4,3,oe:player:f8ef3335d9b514094895f13d76f2e40,oe:player:8bab5585791b1bd4661e9a9a3e56f5b,oe:player:6e927cdd1b942a0f916cb821bb7b8bd,oe:player:7c2e8882d8e14728b381341c6f7d9a1,oe:player:ff80d8d9723416bb203b6b8476649e5,Claptrap,juny,strangers,yato,Winzi
+player,oe:team:fe07f07518f9957e12ab859e26baa90,Vivo Keyd Stars Ignis,VKSI,2024,Unknown,oe:player:ecd0d237e4cd0ddfc4838c1667f3c39,Exiladissima,top,,,,,,,,,,,,,,
+player,oe:team:fe07f07518f9957e12ab859e26baa90,Vivo Keyd Stars Ignis,VKSI,2024,Unknown,oe:player:8c745839f8eccb2083bfef1cd24a0ce,Seiju,top,,,,,,,,,,,,,,
+player,oe:team:fe07f07518f9957e12ab859e26baa90,Vivo Keyd Stars Ignis,VKSI,2024,Unknown,oe:player:1d8e6ad53056c022bad5faeb9fdaa01,Azura,jng,,,,,,,,,,,,,,
+player,oe:team:fe07f07518f9957e12ab859e26baa90,Vivo Keyd Stars Ignis,VKSI,2024,Unknown,oe:player:2d92a68ec95f5ac7ffb8b38c6030f19,Cristal,mid,,,,,,,,,,,,,,
+player,oe:team:fe07f07518f9957e12ab859e26baa90,Vivo Keyd Stars Ignis,VKSI,2024,Unknown,oe:player:0d745c51448c3797fec6dc59ca402e3,Kaiserin,mid,,,,,,,,,,,,,,
+player,oe:team:fe07f07518f9957e12ab859e26baa90,Vivo Keyd Stars Ignis,VKSI,2024,Unknown,oe:player:626401bbbb1354c1838e0d2af8d507f,Ryujiyz,bot,,,,,,,,,,,,,,
+player,oe:team:fe07f07518f9957e12ab859e26baa90,Vivo Keyd Stars Ignis,VKSI,2024,Unknown,oe:player:7ac15f042a0e8cd3788fefaeb87ef9f,Ayla,sup,,,,,,,,,,,,,,
+lineup,oe:team:fe07f07518f9957e12ab859e26baa90,Vivo Keyd Stars Ignis,VKSI,2024,Unknown,,,,lineup-a91ad087cba6f8fb,VKSI-01,1,10,oe:player:ecd0d237e4cd0ddfc4838c1667f3c39,oe:player:1d8e6ad53056c022bad5faeb9fdaa01,oe:player:2d92a68ec95f5ac7ffb8b38c6030f19,oe:player:626401bbbb1354c1838e0d2af8d507f,oe:player:7ac15f042a0e8cd3788fefaeb87ef9f,Exiladissima,Azura,Cristal,Ryujiyz,Ayla
+lineup,oe:team:fe07f07518f9957e12ab859e26baa90,Vivo Keyd Stars Ignis,VKSI,2024,Unknown,,,,lineup-58cedf31ecf1d9f3,VKSI-02,2,8,oe:player:8c745839f8eccb2083bfef1cd24a0ce,oe:player:1d8e6ad53056c022bad5faeb9fdaa01,oe:player:2d92a68ec95f5ac7ffb8b38c6030f19,oe:player:626401bbbb1354c1838e0d2af8d507f,oe:player:7ac15f042a0e8cd3788fefaeb87ef9f,Seiju,Azura,Cristal,Ryujiyz,Ayla
+lineup,oe:team:fe07f07518f9957e12ab859e26baa90,Vivo Keyd Stars Ignis,VKSI,2024,Unknown,,,,lineup-1d7cb3e71cc01364,VKSI-03,3,2,oe:player:ecd0d237e4cd0ddfc4838c1667f3c39,oe:player:1d8e6ad53056c022bad5faeb9fdaa01,oe:player:0d745c51448c3797fec6dc59ca402e3,oe:player:626401bbbb1354c1838e0d2af8d507f,oe:player:7ac15f042a0e8cd3788fefaeb87ef9f,Exiladissima,Azura,Kaiserin,Ryujiyz,Ayla
+player,name-team-608d1c57dac50d11,Winter (Brazilian Team),W(T,2024,Unknown,oe:player:b50387a1ea8587ce52710e7a34e4a25,Arima,top,,,,,,,,,,,,,,
+player,name-team-608d1c57dac50d11,Winter (Brazilian Team),W(T,2024,Unknown,oe:player:88257178ab424440f6aa4615048c340,VicSakra,jng,,,,,,,,,,,,,,
+player,name-team-608d1c57dac50d11,Winter (Brazilian Team),W(T,2024,Unknown,oe:player:6faf649d53532d867662f5e14332100,Louris,mid,,,,,,,,,,,,,,
+player,name-team-608d1c57dac50d11,Winter (Brazilian Team),W(T,2024,Unknown,oe:player:3f364c4a0e11df79bcf62f295c9a4de,Rosa,bot,,,,,,,,,,,,,,
+player,name-team-608d1c57dac50d11,Winter (Brazilian Team),W(T,2024,Unknown,oe:player:acfd2d06a485cc0358bbbeb85ae243d,procuro,sup,,,,,,,,,,,,,,
+lineup,name-team-608d1c57dac50d11,Winter (Brazilian Team),W(T,2024,Unknown,,,,lineup-3898c1f28aefcc87,W(T-01,1,2,oe:player:b50387a1ea8587ce52710e7a34e4a25,oe:player:88257178ab424440f6aa4615048c340,oe:player:6faf649d53532d867662f5e14332100,oe:player:3f364c4a0e11df79bcf62f295c9a4de,oe:player:acfd2d06a485cc0358bbbeb85ae243d,Arima,VicSakra,Louris,Rosa,procuro
+player,oe:team:45f175c1c5709f73fb646454cfd36d3,eWolves Ignis,EI,2024,Unknown,oe:player:500b5759441ffe2ea3311c3e5d54c37,Miara,top,,,,,,,,,,,,,,
+player,oe:team:45f175c1c5709f73fb646454cfd36d3,eWolves Ignis,EI,2024,Unknown,oe:player:e7fa0c77eb2ceb97210785032b45887,Nielle,top,,,,,,,,,,,,,,
+player,oe:team:45f175c1c5709f73fb646454cfd36d3,eWolves Ignis,EI,2024,Unknown,oe:player:f887c3179bf1baa57a58c9af1696b7a,Monalisa,jng,,,,,,,,,,,,,,
+player,oe:team:45f175c1c5709f73fb646454cfd36d3,eWolves Ignis,EI,2024,Unknown,oe:player:b45c8fcaf537e634c9d97a4d13f2560,Addicted,mid,,,,,,,,,,,,,,
+player,oe:team:45f175c1c5709f73fb646454cfd36d3,eWolves Ignis,EI,2024,Unknown,oe:player:43282f16f3c7ad3bd601620d4d1f621,Naryzinho,bot,,,,,,,,,,,,,,
+player,oe:team:45f175c1c5709f73fb646454cfd36d3,eWolves Ignis,EI,2024,Unknown,oe:player:d175233017d6d52ea3a3b2ccfc8ef55,Felpina,sup,,,,,,,,,,,,,,
+player,oe:team:45f175c1c5709f73fb646454cfd36d3,eWolves Ignis,EI,2024,Unknown,oe:player:98903dff77d633d9c24e0f4454d9494,Mizu,sup,,,,,,,,,,,,,,
+lineup,oe:team:45f175c1c5709f73fb646454cfd36d3,eWolves Ignis,EI,2024,Unknown,,,,lineup-22208307b49d815c,EI-01,1,2,oe:player:500b5759441ffe2ea3311c3e5d54c37,oe:player:f887c3179bf1baa57a58c9af1696b7a,oe:player:b45c8fcaf537e634c9d97a4d13f2560,oe:player:43282f16f3c7ad3bd601620d4d1f621,oe:player:98903dff77d633d9c24e0f4454d9494,Miara,Monalisa,Addicted,Naryzinho,Mizu
+lineup,oe:team:45f175c1c5709f73fb646454cfd36d3,eWolves Ignis,EI,2024,Unknown,,,,lineup-716efc3c7df4f13a,EI-02,2,2,oe:player:e7fa0c77eb2ceb97210785032b45887,oe:player:f887c3179bf1baa57a58c9af1696b7a,oe:player:b45c8fcaf537e634c9d97a4d13f2560,oe:player:43282f16f3c7ad3bd601620d4d1f621,oe:player:d175233017d6d52ea3a3b2ccfc8ef55,Nielle,Monalisa,Addicted,Naryzinho,Felpina

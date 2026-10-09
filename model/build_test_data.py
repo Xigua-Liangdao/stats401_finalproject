@@ -1,5 +1,6 @@
 """Build data/test with the same filenames and contract as data/processed."""
 from copy import deepcopy
+import argparse
 import json
 from pathlib import Path
 
@@ -8,6 +9,7 @@ import pandas as pd
 from aggregate import aggregate
 from export_data import dataset_info, export_dataset, make_schema
 from scripts.build_team_panel import build_team_panel, write_team_panel
+from dataset_paths import dataset_paths
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -16,6 +18,9 @@ def select_sample(p):
     # A stable lineup gives the frontend enough actual evaluated games for
     # eligible player/pair rows. Preserve both complete sides of every game.
     scored = p[p.prediction_status == "out_of_time"]
+    if scored.empty:
+        selected = p.game_id.drop_duplicates().head(16)
+        return p[p.game_id.isin(selected)].copy()
     counts = scored.groupby("lineup_id").game_id.nunique().sort_index().sort_values(ascending=False, kind="stable")
     focus = scored[scored.lineup_id == counts.index[0]]
     selected = set()
@@ -42,7 +47,7 @@ def build_test_data(tables, metadata, destination=ROOT / "data/test", schema=Non
     # Column order and declared types belong to one shared production contract.
     test_tables = {name: generated[name][table.columns] for name, table in tables.items()}
     meta = deepcopy(metadata)
-    meta["dataset"] = dataset_info(test_tables, "test")
+    meta["dataset"] = {**metadata.get("dataset", {}), **dataset_info(test_tables, "test")}
     meta["scope"] = ("Frontend integration fixture, sampled from complete processed games. "
                      "Player/pair/lineup statistics are recomputed for this subset; season-role player baselines "
                      "and predictions are retained from the full parent season. "
@@ -50,12 +55,11 @@ def build_test_data(tables, metadata, destination=ROOT / "data/test", schema=Non
                      "This fixture is not an independent statistical test set. Cleaning decisions remain provisional.")
     players = test_tables["players"].query("eligible").sort_values(
         ["n_games", "player_id", "team_id", "role"], ascending=[False, True, True, True])
-    if players.empty:
-        raise ValueError("Sample has no eligible players; adjust sampling for this source.")
-    player = players.iloc[0]
+    player = players.iloc[0] if not players.empty else None
     team = test_tables["teams"].sort_values(["n_games", "team_id"], ascending=[False, True]).iloc[0]
-    meta["examples"] = {"timeline_player_id": player.player_id, "timeline_team_id": player.team_id,
-                        "timeline_role": player.role, "heatmap_team_id": team.team_id,
+    meta["examples"] = {"timeline_player_id": player.player_id if player is not None else None,
+                        "timeline_team_id": player.team_id if player is not None else None,
+                        "timeline_role": player.role if player is not None else None, "heatmap_team_id": team.team_id,
                         "selection_rule": "largest evaluated sample inside this test fixture; stable ID breaks ties"}
     export_dataset(destination, test_tables, meta, schema or make_schema(tables))
     write_team_panel(destination, build_team_panel(destination))
@@ -64,16 +68,24 @@ def build_test_data(tables, metadata, destination=ROOT / "data/test", schema=Non
 
 def read_tables(source, schema):
     return {name: pd.read_csv(source / spec["file"], dtype={
-        c: field["dtype"] for c, field in spec["fields"].items()})
+        c: field["dtype"] for c, field in spec["fields"].items()}, keep_default_na=False, na_values=[""])
         for name, spec in schema["tables"].items()}
 
 
 def main():
-    source = ROOT / "data/processed"
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--league")
+    parser.add_argument("--year", type=int)
+    parser.add_argument("--slug")
+    args = parser.parse_args()
+    if (args.league is None) != (args.year is None):
+        parser.error("--league and --year must be supplied together")
+    paths = dataset_paths(args.league or "LPL", args.year or 2025, args.slug, legacy=args.league is None)
+    source = paths["processed"]
     schema = json.loads((source / "schema.json").read_text())
     tables = read_tables(source, schema)
     metadata = json.loads((source / "dashboard.json").read_text())["metadata"]
-    test = build_test_data(tables, metadata, schema=schema)
+    test = build_test_data(tables, metadata, destination=paths["test"], schema=schema)
     print(json.dumps(dataset_info(test, "test"), indent=2))
 
 

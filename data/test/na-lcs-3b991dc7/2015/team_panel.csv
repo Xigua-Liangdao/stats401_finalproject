@@ -1,0 +1,73 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2015,Spring,oe:player:3136a9f696493782b8b07c895377f81,BalIs,top,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2015,Spring,oe:player:b728b4a88e70fe2d0f10aae80e56ee1,Meteos,jng,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2015,Spring,oe:player:486a694eed702562985d71457d55481,Hai,mid,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2015,Spring,oe:player:267b730dd2e2dcb97182a2795935491,Sneaky,bot,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2015,Spring,oe:player:0108d7db35e786901358382563a9e47,LemonNation,sup,,,,,,,,,,,,,,
+lineup,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2015,Spring,,,,lineup-79c230a55b4e832f,CLO-01,1,2,oe:player:3136a9f696493782b8b07c895377f81,oe:player:b728b4a88e70fe2d0f10aae80e56ee1,oe:player:486a694eed702562985d71457d55481,oe:player:267b730dd2e2dcb97182a2795935491,oe:player:0108d7db35e786901358382563a9e47,BalIs,Meteos,Hai,Sneaky,LemonNation
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2015,Spring,oe:player:08ec6092cd4acbe739d7b111a0a3336,SERAPH,top,,,,,,,,,,,,,,
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2015,Spring,oe:player:6abe55491bf68a3873106a1945ad631,Dexter,jng,,,,,,,,,,,,,,
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2015,Spring,oe:player:97e7c9a7d06eac006a28bf05467fcc8,Link,mid,,,,,,,,,,,,,,
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2015,Spring,oe:player:f25df399390d86b9a1e83216dae597b,Doublelift,bot,,,,,,,,,,,,,,
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2015,Spring,oe:player:f48c70640770b42b5d7dd72aa21e005,aphromoo,sup,,,,,,,,,,,,,,
+lineup,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2015,Spring,,,,lineup-802906fe2c0c6b0d,CLG-01,1,2,oe:player:08ec6092cd4acbe739d7b111a0a3336,oe:player:6abe55491bf68a3873106a1945ad631,oe:player:97e7c9a7d06eac006a28bf05467fcc8,oe:player:f25df399390d86b9a1e83216dae597b,oe:player:f48c70640770b42b5d7dd72aa21e005,SERAPH,Dexter,Link,Doublelift,aphromoo
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2015,Spring,oe:player:994087d6cf1967213b8ea8c11e4f131,Cris,top,,,,,,,,,,,,,,
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2015,Spring,oe:player:3dcf8ad8e4d5d49dea3cfddeaebfa71,Saintvicious,jng,,,,,,,,,,,,,,
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2015,Spring,oe:player:a7a579083434329c905df3b17716417,Keane,mid,,,,,,,,,,,,,,
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2015,Spring,oe:player:f3b06de41d67cad14c2fa83a4eb79c1,Mabrey,bot,,,,,,,,,,,,,,
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2015,Spring,oe:player:19276b73dd23a9eb9c9f08183233a92,Bunny FuFuu,sup,,,,,,,,,,,,,,
+lineup,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2015,Spring,,,,lineup-65a9501e7403c0fc,CA-01,1,2,oe:player:994087d6cf1967213b8ea8c11e4f131,oe:player:3dcf8ad8e4d5d49dea3cfddeaebfa71,oe:player:a7a579083434329c905df3b17716417,oe:player:f3b06de41d67cad14c2fa83a4eb79c1,oe:player:19276b73dd23a9eb9c9f08183233a92,Cris,Saintvicious,Keane,Mabrey,Bunny FuFuu
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2015,Spring,oe:player:4362ee79808719e8ae22aa171ca852b,Gamsu,top,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2015,Spring,oe:player:e75de59adcb9f21dc6c0a39474049bb,Azingy,jng,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2015,Spring,oe:player:6474cffd46702efde788eba091356a5,CloudNguyen,jng,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2015,Spring,oe:player:639abc229c3dc66917bf3a01d46ae65,Shiphtur,mid,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2015,Spring,oe:player:05fafeaf23dc3285558a4e968970b9f,CoreJJ,bot,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2015,Spring,oe:player:5765a751672acc221c541551f36e16f,KiWiKiD,sup,,,,,,,,,,,,,,
+lineup,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2015,Spring,,,,lineup-50e8971de6af92a4,DIG-01,1,1,oe:player:4362ee79808719e8ae22aa171ca852b,oe:player:6474cffd46702efde788eba091356a5,oe:player:639abc229c3dc66917bf3a01d46ae65,oe:player:05fafeaf23dc3285558a4e968970b9f,oe:player:5765a751672acc221c541551f36e16f,Gamsu,CloudNguyen,Shiphtur,CoreJJ,KiWiKiD
+lineup,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2015,Spring,,,,lineup-95ce5f5ea9222d96,DIG-02,2,1,oe:player:4362ee79808719e8ae22aa171ca852b,oe:player:e75de59adcb9f21dc6c0a39474049bb,oe:player:639abc229c3dc66917bf3a01d46ae65,oe:player:05fafeaf23dc3285558a4e968970b9f,oe:player:5765a751672acc221c541551f36e16f,Gamsu,Azingy,Shiphtur,CoreJJ,KiWiKiD
+player,oe:team:4d2d64aa97a6a4aaa1a538b90b2b8aa,Gravity,GRA,2015,Spring,oe:player:20aba59cf47a04a6cf10436ce1946ac,Hauntzer,top,,,,,,,,,,,,,,
+player,oe:team:4d2d64aa97a6a4aaa1a538b90b2b8aa,Gravity,GRA,2015,Spring,oe:player:3dcf8ad8e4d5d49dea3cfddeaebfa71,Saintvicious,jng,,,,,,,,,,,,,,
+player,oe:team:4d2d64aa97a6a4aaa1a538b90b2b8aa,Gravity,GRA,2015,Spring,oe:player:a7a579083434329c905df3b17716417,Keane,mid,,,,,,,,,,,,,,
+player,oe:team:4d2d64aa97a6a4aaa1a538b90b2b8aa,Gravity,GRA,2015,Spring,oe:player:f56bbf14cdddf83cf869d1cadb84c9d,Cop,bot,,,,,,,,,,,,,,
+player,oe:team:4d2d64aa97a6a4aaa1a538b90b2b8aa,Gravity,GRA,2015,Spring,oe:player:19276b73dd23a9eb9c9f08183233a92,Bunny FuFuu,sup,,,,,,,,,,,,,,
+lineup,oe:team:4d2d64aa97a6a4aaa1a538b90b2b8aa,Gravity,GRA,2015,Spring,,,,lineup-ca1bce573c921686,GRA-01,1,1,oe:player:20aba59cf47a04a6cf10436ce1946ac,oe:player:3dcf8ad8e4d5d49dea3cfddeaebfa71,oe:player:a7a579083434329c905df3b17716417,oe:player:f56bbf14cdddf83cf869d1cadb84c9d,oe:player:19276b73dd23a9eb9c9f08183233a92,Hauntzer,Saintvicious,Keane,Cop,Bunny FuFuu
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2015,Spring,oe:player:b2519d0e84a4cbe1ddb3d71bc6d96ea,Dyrus,top,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2015,Spring,oe:player:9772f394c5e44d54e76aae1647217d0,Santorin,jng,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2015,Spring,oe:player:63ba5c5e5bb73ace706183b5e05a27e,Bjergsen,mid,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2015,Spring,oe:player:91a74fa03f163055a19da5b16363fc8,WildTurtle,bot,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2015,Spring,oe:player:afd18302f731b604299b7048d48be95,Lustboy,sup,,,,,,,,,,,,,,
+lineup,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2015,Spring,,,,lineup-726f1df4d1b646f9,TSM-01,1,1,oe:player:b2519d0e84a4cbe1ddb3d71bc6d96ea,oe:player:9772f394c5e44d54e76aae1647217d0,oe:player:63ba5c5e5bb73ace706183b5e05a27e,oe:player:91a74fa03f163055a19da5b16363fc8,oe:player:afd18302f731b604299b7048d48be95,Dyrus,Santorin,Bjergsen,WildTurtle,Lustboy
+player,oe:team:5aa4e9a1fbe6708fd21f323148779d4,Team 8,T8,2015,Spring,oe:player:ebb29c9b98b32425f4b6e06ce71cd99,CaliTrlolz,top,,,,,,,,,,,,,,
+player,oe:team:5aa4e9a1fbe6708fd21f323148779d4,Team 8,T8,2015,Spring,oe:player:f868d14b56215557a3b7c41d0a354a7,Porpoise,jng,,,,,,,,,,,,,,
+player,oe:team:5aa4e9a1fbe6708fd21f323148779d4,Team 8,T8,2015,Spring,oe:player:ee3d0223a21cf79bff3b9576ce36e7f,Slooshi,mid,,,,,,,,,,,,,,
+player,oe:team:5aa4e9a1fbe6708fd21f323148779d4,Team 8,T8,2015,Spring,oe:player:bc8bc420cc1fb6bc66937c749e44906,Maplestreet,bot,,,,,,,,,,,,,,
+player,oe:team:5aa4e9a1fbe6708fd21f323148779d4,Team 8,T8,2015,Spring,oe:player:8310b21b43f46a8a2715fa6402271ca,Dodo,sup,,,,,,,,,,,,,,
+lineup,oe:team:5aa4e9a1fbe6708fd21f323148779d4,Team 8,T8,2015,Spring,,,,lineup-bdf1ad0d3fe7e80b,T8-01,1,2,oe:player:ebb29c9b98b32425f4b6e06ce71cd99,oe:player:f868d14b56215557a3b7c41d0a354a7,oe:player:ee3d0223a21cf79bff3b9576ce36e7f,oe:player:bc8bc420cc1fb6bc66937c749e44906,oe:player:8310b21b43f46a8a2715fa6402271ca,CaliTrlolz,Porpoise,Slooshi,Maplestreet,Dodo
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Spring,oe:player:994087d6cf1967213b8ea8c11e4f131,Cris,top,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Spring,oe:player:ea8f53a1f2266ac5f950ed24e642774,Impaler,jng,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Spring,oe:player:8bc92ef4dbf0c00cac8d2cc8b001b4f,WTHeaven,jng,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Spring,oe:player:c22cb6fc65a653f1ad1dc271187ede9,Jesiz,mid,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Spring,oe:player:5f6f0c43c645aff997d15bf12f7c640,mancloud,mid,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Spring,oe:player:6151bcec0a8bb9f8ab93d71878de3c9,Mash,bot,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Spring,oe:player:0f0c4ebc1c228d5417ca6089a9e23b4,Kwon,sup,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Spring,oe:player:572b2541c97aec9d07ca45dad125559,Sheep,sup,,,,,,,,,,,,,,
+lineup,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Spring,,,,lineup-75af93a962707e1a,TC-01,1,1,oe:player:994087d6cf1967213b8ea8c11e4f131,oe:player:ea8f53a1f2266ac5f950ed24e642774,oe:player:c22cb6fc65a653f1ad1dc271187ede9,oe:player:6151bcec0a8bb9f8ab93d71878de3c9,oe:player:572b2541c97aec9d07ca45dad125559,Cris,Impaler,Jesiz,Mash,Sheep
+lineup,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2015,Spring,,,,lineup-d3884c8450d0848a,TC-02,2,1,oe:player:994087d6cf1967213b8ea8c11e4f131,oe:player:8bc92ef4dbf0c00cac8d2cc8b001b4f,oe:player:5f6f0c43c645aff997d15bf12f7c640,oe:player:6151bcec0a8bb9f8ab93d71878de3c9,oe:player:0f0c4ebc1c228d5417ca6089a9e23b4,Cris,WTHeaven,mancloud,Mash,Kwon
+player,oe:team:ae0cec6dc617eba9801ec9939d1c18c,Team Impulse,TI,2015,Spring,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,Impact,top,,,,,,,,,,,,,,
+player,oe:team:ae0cec6dc617eba9801ec9939d1c18c,Team Impulse,TI,2015,Spring,oe:player:954601796c16fa224b98f54b380855c,Rush,jng,,,,,,,,,,,,,,
+player,oe:team:ae0cec6dc617eba9801ec9939d1c18c,Team Impulse,TI,2015,Spring,oe:player:f10ee72cd3a63925dae8845beaf90cd,xiaoweixiao,mid,,,,,,,,,,,,,,
+player,oe:team:ae0cec6dc617eba9801ec9939d1c18c,Team Impulse,TI,2015,Spring,oe:player:3caf8d2f2d789c0f073a824f8a71d59,Apollo,bot,,,,,,,,,,,,,,
+player,oe:team:ae0cec6dc617eba9801ec9939d1c18c,Team Impulse,TI,2015,Spring,oe:player:c1937b687795ce80be0ecf20e181144,Adrian,sup,,,,,,,,,,,,,,
+lineup,oe:team:ae0cec6dc617eba9801ec9939d1c18c,Team Impulse,TI,2015,Spring,,,,lineup-e451c080cbd8fdbc,TI-01,1,1,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,oe:player:954601796c16fa224b98f54b380855c,oe:player:f10ee72cd3a63925dae8845beaf90cd,oe:player:3caf8d2f2d789c0f073a824f8a71d59,oe:player:c1937b687795ce80be0ecf20e181144,Impact,Rush,xiaoweixiao,Apollo,Adrian
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2015,Spring,oe:player:feee48d6e5d34aed05441b8f436d729,Quas,top,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2015,Spring,oe:player:614fdab9ca37d9e09310671aae27525,IWDominate,jng,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2015,Spring,oe:player:7796fc7fdbef88620e2a9fd1df026a7,Fenix,mid,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2015,Spring,oe:player:8c09ee8e1496710919dcbd718ff285d,Piglet,bot,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2015,Spring,oe:player:de502f5aaf4b17f9e8a0f4899d596b4,Xpecial,sup,,,,,,,,,,,,,,
+lineup,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2015,Spring,,,,lineup-0a9789f711f6b5b5,TL-01,1,12,oe:player:feee48d6e5d34aed05441b8f436d729,oe:player:614fdab9ca37d9e09310671aae27525,oe:player:7796fc7fdbef88620e2a9fd1df026a7,oe:player:8c09ee8e1496710919dcbd718ff285d,oe:player:de502f5aaf4b17f9e8a0f4899d596b4,Quas,IWDominate,Fenix,Piglet,Xpecial
+player,oe:team:f3df621cead66dce37cc5c5525f14a7,Winterfox,WIN,2015,Spring,oe:player:76dbe559f557d065613840d49fd0c7a,Avalon,top,,,,,,,,,,,,,,
+player,oe:team:f3df621cead66dce37cc5c5525f14a7,Winterfox,WIN,2015,Spring,oe:player:69165551b790d40076608799ad1a5a0,Helios,jng,,,,,,,,,,,,,,
+player,oe:team:f3df621cead66dce37cc5c5525f14a7,Winterfox,WIN,2015,Spring,oe:player:af31ae99fe8c1f86d1098e9dac671e8,Pobelter,mid,,,,,,,,,,,,,,
+player,oe:team:f3df621cead66dce37cc5c5525f14a7,Winterfox,WIN,2015,Spring,oe:player:4046e5819c6e57ec8fa00b56834d8aa,Altec,bot,,,,,,,,,,,,,,
+player,oe:team:f3df621cead66dce37cc5c5525f14a7,Winterfox,WIN,2015,Spring,oe:player:55f34f04d081791209353b573e85f84,Gleeb,sup,,,,,,,,,,,,,,
+lineup,oe:team:f3df621cead66dce37cc5c5525f14a7,Winterfox,WIN,2015,Spring,,,,lineup-01c8173969d40623,WIN-01,1,1,oe:player:76dbe559f557d065613840d49fd0c7a,oe:player:69165551b790d40076608799ad1a5a0,oe:player:af31ae99fe8c1f86d1098e9dac671e8,oe:player:4046e5819c6e57ec8fa00b56834d8aa,oe:player:55f34f04d081791209353b573e85f84,Avalon,Helios,Pobelter,Altec,Gleeb

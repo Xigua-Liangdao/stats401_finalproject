@@ -1,0 +1,46 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:2b308998f2c7033f864caf1d5cc9dc0,AXIZ CREST,AC,2024,Summer,oe:player:a728cf8e12a5217d49b3f9903e02c38,Washidai,top,,,,,,,,,,,,,,
+player,oe:team:2b308998f2c7033f864caf1d5cc9dc0,AXIZ CREST,AC,2024,Summer,oe:player:825a7f24dc90caf0c67efbd95a0355f,Cassin,jng,,,,,,,,,,,,,,
+player,oe:team:2b308998f2c7033f864caf1d5cc9dc0,AXIZ CREST,AC,2024,Summer,oe:player:29de9c9016ef68693b02dea19357c78,Van1,jng,,,,,,,,,,,,,,
+player,oe:team:2b308998f2c7033f864caf1d5cc9dc0,AXIZ CREST,AC,2024,Summer,oe:player:20708c138c041b5f23fdb42c2e01184,Eugeo,mid,,,,,,,,,,,,,,
+player,oe:team:2b308998f2c7033f864caf1d5cc9dc0,AXIZ CREST,AC,2024,Summer,oe:player:c512fd0489043fe22857696467766fd,Ssol,bot,,,,,,,,,,,,,,
+player,oe:team:2b308998f2c7033f864caf1d5cc9dc0,AXIZ CREST,AC,2024,Summer,oe:player:0e90f941b97381231fc8b199be190c3,Ino,sup,,,,,,,,,,,,,,
+lineup,oe:team:2b308998f2c7033f864caf1d5cc9dc0,AXIZ CREST,AC,2024,Summer,,,,lineup-5edeb7bb5477afe1,AC-01,1,22,oe:player:a728cf8e12a5217d49b3f9903e02c38,oe:player:29de9c9016ef68693b02dea19357c78,oe:player:20708c138c041b5f23fdb42c2e01184,oe:player:c512fd0489043fe22857696467766fd,oe:player:0e90f941b97381231fc8b199be190c3,Washidai,Van1,Eugeo,Ssol,Ino
+lineup,oe:team:2b308998f2c7033f864caf1d5cc9dc0,AXIZ CREST,AC,2024,Summer,,,,lineup-343be58c327a6cd4,AC-02,2,20,oe:player:a728cf8e12a5217d49b3f9903e02c38,oe:player:825a7f24dc90caf0c67efbd95a0355f,oe:player:20708c138c041b5f23fdb42c2e01184,oe:player:c512fd0489043fe22857696467766fd,oe:player:0e90f941b97381231fc8b199be190c3,Washidai,Cassin,Eugeo,Ssol,Ino
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2024,Spring,oe:player:37868ce320afa69d0c0387124e61968,tol2,top,,,,,,,,,,,,,,
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2024,Spring,oe:player:b94e8760d00efd6eea4ec2597e1f46f,EL,jng,,,,,,,,,,,,,,
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2024,Spring,oe:player:990de650e44c3b85ec90451de02db04,Jool,mid,,,,,,,,,,,,,,
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2024,Spring,oe:player:5507d93614d7299eae429bc890d23bc,HowLa,bot,,,,,,,,,,,,,,
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2024,Spring,oe:player:3095d8f7f9a0e5a05330f99a6530fa7,Charley,sup,,,,,,,,,,,,,,
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2024,Spring,oe:player:ca18f3cf2fd9adb391d4770c33286f0,Raina,sup,,,,,,,,,,,,,,
+lineup,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2024,Spring,,,,lineup-1b20e169236be97d,BCT-01,1,28,oe:player:37868ce320afa69d0c0387124e61968,oe:player:b94e8760d00efd6eea4ec2597e1f46f,oe:player:990de650e44c3b85ec90451de02db04,oe:player:5507d93614d7299eae429bc890d23bc,oe:player:3095d8f7f9a0e5a05330f99a6530fa7,tol2,EL,Jool,HowLa,Charley
+lineup,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2024,Spring,,,,lineup-51f17216655f80b8,BCT-02,2,12,oe:player:37868ce320afa69d0c0387124e61968,oe:player:b94e8760d00efd6eea4ec2597e1f46f,oe:player:990de650e44c3b85ec90451de02db04,oe:player:5507d93614d7299eae429bc890d23bc,oe:player:ca18f3cf2fd9adb391d4770c33286f0,tol2,EL,Jool,HowLa,Raina
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2024,Summer,oe:player:fdc16c7495d2f61f9f116432b4a1f1a,RayFarky,top,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2024,Summer,oe:player:47f1917849906027f365eff06d45c27,Steal,jng,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2024,Summer,oe:player:2e82913920d8a6d0efa480bc35f1ba8,Aria,mid,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2024,Summer,oe:player:0d798f24869b290bfcdf6427d958118,Yutapon,bot,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2024,Summer,oe:player:0015d99e65183977a9e65547b37f1cb,Harp,sup,,,,,,,,,,,,,,
+lineup,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2024,Summer,,,,lineup-f6c71a26c5152778,DF-01,1,57,oe:player:fdc16c7495d2f61f9f116432b4a1f1a,oe:player:47f1917849906027f365eff06d45c27,oe:player:2e82913920d8a6d0efa480bc35f1ba8,oe:player:0d798f24869b290bfcdf6427d958118,oe:player:0015d99e65183977a9e65547b37f1cb,RayFarky,Steal,Aria,Yutapon,Harp
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2024,Spring,oe:player:376d5e3b1257e6972228d458943f74c,Evi,top,,,,,,,,,,,,,,
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2024,Spring,oe:player:9170917b7452bef889def6c113af150,Forest,jng,,,,,,,,,,,,,,
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2024,Spring,oe:player:4fbce651fccdd73409ea9246d0ee1d6,DasheR,mid,,,,,,,,,,,,,,
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2024,Spring,oe:player:7fb26875c639817a59912a87be6f738,Marble,bot,,,,,,,,,,,,,,
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2024,Spring,oe:player:16c1637b4b44b008b4d6627f68ae30a,Vsta,sup,,,,,,,,,,,,,,
+lineup,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2024,Spring,,,,lineup-fa721c4dd383a3a7,FSHG-01,1,52,oe:player:376d5e3b1257e6972228d458943f74c,oe:player:9170917b7452bef889def6c113af150,oe:player:4fbce651fccdd73409ea9246d0ee1d6,oe:player:7fb26875c639817a59912a87be6f738,oe:player:16c1637b4b44b008b4d6627f68ae30a,Evi,Forest,DasheR,Marble,Vsta
+player,oe:team:984c3ce601b35d7617ad0bc8570946c,QT DIG∞,QD,2024,Spring,oe:player:652b15e8a821f5f825693df9ae62a80,Kinatu,top,,,,,,,,,,,,,,
+player,oe:team:984c3ce601b35d7617ad0bc8570946c,QT DIG∞,QD,2024,Spring,oe:player:bc6c09548f555712ab0eed5c2f94e82,Paz,top,,,,,,,,,,,,,,
+player,oe:team:984c3ce601b35d7617ad0bc8570946c,QT DIG∞,QD,2024,Spring,oe:player:579ae2e0addc18db74179b2a3d33294,Ellim,jng,,,,,,,,,,,,,,
+player,oe:team:984c3ce601b35d7617ad0bc8570946c,QT DIG∞,QD,2024,Spring,oe:player:82a08dfbbc2a9515bc6962cd307507c,Jett,mid,,,,,,,,,,,,,,
+player,oe:team:984c3ce601b35d7617ad0bc8570946c,QT DIG∞,QD,2024,Spring,oe:player:2caa05c21e7e142214c20319ff97d09,Kakkun,mid,,,,,,,,,,,,,,
+player,oe:team:984c3ce601b35d7617ad0bc8570946c,QT DIG∞,QD,2024,Spring,oe:player:785c0d3b9969e1cf711dcd09ee4bffb,Moyashi,bot,,,,,,,,,,,,,,
+player,oe:team:984c3ce601b35d7617ad0bc8570946c,QT DIG∞,QD,2024,Spring,oe:player:36a55a7a73f82b7ca788e2db7760dbb,Yuhi,bot,,,,,,,,,,,,,,
+player,oe:team:984c3ce601b35d7617ad0bc8570946c,QT DIG∞,QD,2024,Spring,oe:player:28210a578227a57de61f42f4bd0d2b4,Gaeng,sup,,,,,,,,,,,,,,
+lineup,oe:team:984c3ce601b35d7617ad0bc8570946c,QT DIG∞,QD,2024,Spring,,,,lineup-68e1073f93926cdd,QD-01,1,27,oe:player:652b15e8a821f5f825693df9ae62a80,oe:player:579ae2e0addc18db74179b2a3d33294,oe:player:2caa05c21e7e142214c20319ff97d09,oe:player:36a55a7a73f82b7ca788e2db7760dbb,oe:player:28210a578227a57de61f42f4bd0d2b4,Kinatu,Ellim,Kakkun,Yuhi,Gaeng
+lineup,oe:team:984c3ce601b35d7617ad0bc8570946c,QT DIG∞,QD,2024,Spring,,,,lineup-257f40297033d23c,QD-02,2,23,oe:player:652b15e8a821f5f825693df9ae62a80,oe:player:579ae2e0addc18db74179b2a3d33294,oe:player:82a08dfbbc2a9515bc6962cd307507c,oe:player:36a55a7a73f82b7ca788e2db7760dbb,oe:player:28210a578227a57de61f42f4bd0d2b4,Kinatu,Ellim,Jett,Yuhi,Gaeng
+lineup,oe:team:984c3ce601b35d7617ad0bc8570946c,QT DIG∞,QD,2024,Spring,,,,lineup-56d8be4039f3b662,QD-03,3,4,oe:player:bc6c09548f555712ab0eed5c2f94e82,oe:player:579ae2e0addc18db74179b2a3d33294,oe:player:82a08dfbbc2a9515bc6962cd307507c,oe:player:785c0d3b9969e1cf711dcd09ee4bffb,oe:player:28210a578227a57de61f42f4bd0d2b4,Paz,Ellim,Jett,Moyashi,Gaeng
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2024,Spring,oe:player:4d79b9a430199b71e47a4a9e908fe76,TaNa,top,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2024,Spring,oe:player:c11a22bb557caefe8a0f3535dbf6d20,HRK,jng,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2024,Spring,oe:player:f97ecbe7f4f778302e893532b26279e,Acee,mid,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2024,Spring,oe:player:0f2119d086ee35f18b407615e430fa8,Bini,bot,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2024,Spring,oe:player:6c7466a45762357bff1b48cbc6a49ab,Hetel,sup,,,,,,,,,,,,,,
+lineup,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2024,Spring,,,,lineup-a8e0db2215cf0726,VE-01,1,51,oe:player:4d79b9a430199b71e47a4a9e908fe76,oe:player:c11a22bb557caefe8a0f3535dbf6d20,oe:player:f97ecbe7f4f778302e893532b26279e,oe:player:0f2119d086ee35f18b407615e430fa8,oe:player:6c7466a45762357bff1b48cbc6a49ab,TaNa,HRK,Acee,Bini,Hetel

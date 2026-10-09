@@ -1,0 +1,49 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:969667ee6e31f83d6da935558895498,Cincinnati Fear,CF,2024,Spring,oe:player:e8aba5fbfc41b0621226b08a87e3ded,Philip,top,,,,,,,,,,,,,,
+player,oe:team:969667ee6e31f83d6da935558895498,Cincinnati Fear,CF,2024,Spring,oe:player:e03653dedd6f4e142f4aca131995964,Chad,jng,,,,,,,,,,,,,,
+player,oe:team:969667ee6e31f83d6da935558895498,Cincinnati Fear,CF,2024,Spring,oe:player:0b980d0c6f947f01b59e62ec06b5d75,Toasty,mid,,,,,,,,,,,,,,
+player,oe:team:969667ee6e31f83d6da935558895498,Cincinnati Fear,CF,2024,Spring,oe:player:443b8e6205a0c76a3e6a2eed788215e,Lens,bot,,,,,,,,,,,,,,
+player,oe:team:969667ee6e31f83d6da935558895498,Cincinnati Fear,CF,2024,Spring,oe:player:d045ce8a0de5eb77d740e62fb9e2d7f,Daption,sup,,,,,,,,,,,,,,
+lineup,oe:team:969667ee6e31f83d6da935558895498,Cincinnati Fear,CF,2024,Spring,,,,lineup-6d5d79d366ede217,CF-01,1,3,oe:player:e8aba5fbfc41b0621226b08a87e3ded,oe:player:e03653dedd6f4e142f4aca131995964,oe:player:0b980d0c6f947f01b59e62ec06b5d75,oe:player:443b8e6205a0c76a3e6a2eed788215e,oe:player:d045ce8a0de5eb77d740e62fb9e2d7f,Philip,Chad,Toasty,Lens,Daption
+player,oe:team:7109f52153fb32f851ab4af575c272c,LiT Esports,LE,2024,Spring,oe:player:184d97e1a8e8130dfb0a41329b780c6,Dragoon,top,,,,,,,,,,,,,,
+player,oe:team:7109f52153fb32f851ab4af575c272c,LiT Esports,LE,2024,Spring,oe:player:67007ffa5eb4f53d82366f6685a8303,Kisno,jng,,,,,,,,,,,,,,
+player,oe:team:7109f52153fb32f851ab4af575c272c,LiT Esports,LE,2024,Spring,oe:player:41de6d6cfb8953c021bbe4ba0701c8a,Messages,mid,,,,,,,,,,,,,,
+player,oe:team:7109f52153fb32f851ab4af575c272c,LiT Esports,LE,2024,Spring,oe:player:29d40afb74d5e1fe5e513bd53080cae,ROCKBOOM,bot,,,,,,,,,,,,,,
+player,oe:team:7109f52153fb32f851ab4af575c272c,LiT Esports,LE,2024,Spring,oe:player:860b53367b46048f876924b3eda90ed,Plux,sup,,,,,,,,,,,,,,
+lineup,oe:team:7109f52153fb32f851ab4af575c272c,LiT Esports,LE,2024,Spring,,,,lineup-cd82e318262c3580,LE-01,1,2,oe:player:184d97e1a8e8130dfb0a41329b780c6,oe:player:67007ffa5eb4f53d82366f6685a8303,oe:player:41de6d6cfb8953c021bbe4ba0701c8a,oe:player:29d40afb74d5e1fe5e513bd53080cae,oe:player:860b53367b46048f876924b3eda90ed,Dragoon,Kisno,Messages,ROCKBOOM,Plux
+player,oe:team:9336ce46babf314b50e3a103506ae0a,Maryville University,MU,2024,Spring,oe:player:c49aafa1ffe9c24aa459e5cf851ddfc,Niles,top,,,,,,,,,,,,,,
+player,oe:team:9336ce46babf314b50e3a103506ae0a,Maryville University,MU,2024,Spring,oe:player:f9e804c44aa43f18576783a067e99ab,Yuuji,jng,,,,,,,,,,,,,,
+player,oe:team:9336ce46babf314b50e3a103506ae0a,Maryville University,MU,2024,Spring,oe:player:b415fb792209708ad6921cca2e73aff,Spirax,mid,,,,,,,,,,,,,,
+player,oe:team:9336ce46babf314b50e3a103506ae0a,Maryville University,MU,2024,Spring,oe:player:265b58ce8b2f418df94006bf24e296c,ScaryJerry,bot,,,,,,,,,,,,,,
+player,oe:team:9336ce46babf314b50e3a103506ae0a,Maryville University,MU,2024,Spring,oe:player:42ad24fb9a58f115637ed14ee70677a,Zyko,sup,,,,,,,,,,,,,,
+lineup,oe:team:9336ce46babf314b50e3a103506ae0a,Maryville University,MU,2024,Spring,,,,lineup-9bc5b20a0176c20c,MU-01,1,2,oe:player:c49aafa1ffe9c24aa459e5cf851ddfc,oe:player:f9e804c44aa43f18576783a067e99ab,oe:player:b415fb792209708ad6921cca2e73aff,oe:player:265b58ce8b2f418df94006bf24e296c,oe:player:42ad24fb9a58f115637ed14ee70677a,Niles,Yuuji,Spirax,ScaryJerry,Zyko
+player,oe:team:1d1d0b0c76290957c7c9aa69a3ae4e7,Mirage Alliance,MA,2024,Spring,oe:player:fa816783145a625c4b502446b18ad93,Allorim,top,,,,,,,,,,,,,,
+player,oe:team:1d1d0b0c76290957c7c9aa69a3ae4e7,Mirage Alliance,MA,2024,Spring,oe:player:fcaf8d61b00af32b04b32144a418b99,Will,jng,,,,,,,,,,,,,,
+player,oe:team:1d1d0b0c76290957c7c9aa69a3ae4e7,Mirage Alliance,MA,2024,Spring,oe:player:023b976c0fc6ba4d350f2c06d333f62,RJS,mid,,,,,,,,,,,,,,
+player,oe:team:1d1d0b0c76290957c7c9aa69a3ae4e7,Mirage Alliance,MA,2024,Spring,oe:player:416ea631f3b7a0d79f4263e00736f02,Prismal,bot,,,,,,,,,,,,,,
+player,oe:team:1d1d0b0c76290957c7c9aa69a3ae4e7,Mirage Alliance,MA,2024,Spring,oe:player:a2de87eae98d0ab3b85567026561a51,Dardoch,sup,,,,,,,,,,,,,,
+lineup,oe:team:1d1d0b0c76290957c7c9aa69a3ae4e7,Mirage Alliance,MA,2024,Spring,,,,lineup-fd0c24cdbc0c2c09,MA-01,1,3,oe:player:fa816783145a625c4b502446b18ad93,oe:player:fcaf8d61b00af32b04b32144a418b99,oe:player:023b976c0fc6ba4d350f2c06d333f62,oe:player:416ea631f3b7a0d79f4263e00736f02,oe:player:a2de87eae98d0ab3b85567026561a51,Allorim,Will,RJS,Prismal,Dardoch
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2024,Spring,oe:player:f440eb72ee199663cdf171f579985e4,Faisal,top,,,,,,,,,,,,,,
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2024,Spring,oe:player:c691200f8d12ee61ae01047c4629c62,Kenvi,jng,,,,,,,,,,,,,,
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2024,Spring,oe:player:8a26fb905636bc0bec1a65212c3c863,shochi,mid,,,,,,,,,,,,,,
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2024,Spring,oe:player:4410ec34d9e6c1a68100ca0ce033fb1,Array,bot,,,,,,,,,,,,,,
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2024,Spring,oe:player:5a4ed34a7baf1d14942def4ab49ce38,Diamond,sup,,,,,,,,,,,,,,
+lineup,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2024,Spring,,,,lineup-b5a1945e9bf1237b,SUP-01,1,3,oe:player:f440eb72ee199663cdf171f579985e4,oe:player:c691200f8d12ee61ae01047c4629c62,oe:player:8a26fb905636bc0bec1a65212c3c863,oe:player:4410ec34d9e6c1a68100ca0ce033fb1,oe:player:5a4ed34a7baf1d14942def4ab49ce38,Faisal,Kenvi,shochi,Array,Diamond
+player,oe:team:51eb4ab719043c7abdfca6fdddd1c5c,Team Ambition,TA,2024,Unknown,oe:player:98507570b7ae6c8019192bc1b5412c1,Porsche,top,,,,,,,,,,,,,,
+player,oe:team:51eb4ab719043c7abdfca6fdddd1c5c,Team Ambition,TA,2024,Unknown,oe:player:c102b42aadbbf6d2b63927aa38fecea,Leemo,jng,,,,,,,,,,,,,,
+player,oe:team:51eb4ab719043c7abdfca6fdddd1c5c,Team Ambition,TA,2024,Unknown,oe:player:50ded5d6efafa044a3ca8c0e016aed4,Kachu,mid,,,,,,,,,,,,,,
+player,oe:team:51eb4ab719043c7abdfca6fdddd1c5c,Team Ambition,TA,2024,Unknown,oe:player:b51220a382d45959479685fa1a1c9a7,Levitate,bot,,,,,,,,,,,,,,
+player,oe:team:51eb4ab719043c7abdfca6fdddd1c5c,Team Ambition,TA,2024,Unknown,oe:player:f9f899e93ef0653842807754e17fc57,Snow2,sup,,,,,,,,,,,,,,
+lineup,oe:team:51eb4ab719043c7abdfca6fdddd1c5c,Team Ambition,TA,2024,Unknown,,,,lineup-52b0bdd952eca8b3,TA-01,1,2,oe:player:98507570b7ae6c8019192bc1b5412c1,oe:player:c102b42aadbbf6d2b63927aa38fecea,oe:player:50ded5d6efafa044a3ca8c0e016aed4,oe:player:b51220a382d45959479685fa1a1c9a7,oe:player:f9f899e93ef0653842807754e17fc57,Porsche,Leemo,Kachu,Levitate,Snow2
+player,oe:team:aeb3be196652186472d8f244ee9ef0a,Team Liquid Challengers,TLC,2024,Spring,oe:player:2e54334c0a5ce2e3e5a5845df3ab3ad,Jenkins,top,,,,,,,,,,,,,,
+player,oe:team:aeb3be196652186472d8f244ee9ef0a,Team Liquid Challengers,TLC,2024,Spring,oe:player:4ef00a200b9361cd76bb7e612b171c4,Keel,jng,,,,,,,,,,,,,,
+player,oe:team:aeb3be196652186472d8f244ee9ef0a,Team Liquid Challengers,TLC,2024,Spring,oe:player:ea58943d300b14d684bb05b3975fe15,Roamer,mid,,,,,,,,,,,,,,
+player,oe:team:aeb3be196652186472d8f244ee9ef0a,Team Liquid Challengers,TLC,2024,Spring,oe:player:3f96b0d5494895f5e964dc16ea8f27b,Spawn,bot,,,,,,,,,,,,,,
+player,oe:team:aeb3be196652186472d8f244ee9ef0a,Team Liquid Challengers,TLC,2024,Spring,oe:player:2a8f9050a8f7c5dd91f2332dc3bb2f5,Kim Down,sup,,,,,,,,,,,,,,
+lineup,oe:team:aeb3be196652186472d8f244ee9ef0a,Team Liquid Challengers,TLC,2024,Spring,,,,lineup-78fb7be424fbe10f,TLC-01,1,13,oe:player:2e54334c0a5ce2e3e5a5845df3ab3ad,oe:player:4ef00a200b9361cd76bb7e612b171c4,oe:player:ea58943d300b14d684bb05b3975fe15,oe:player:3f96b0d5494895f5e964dc16ea8f27b,oe:player:2a8f9050a8f7c5dd91f2332dc3bb2f5,Jenkins,Keel,Roamer,Spawn,Kim Down
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2024,Unknown,oe:player:3bb028a43aff78070d15c646450aa0d,Denathor,top,,,,,,,,,,,,,,
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2024,Unknown,oe:player:398074139a206bc8bbab0be766c6ffa,Wilson,jng,,,,,,,,,,,,,,
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2024,Unknown,oe:player:3009272a4d20a33543f3490a7233a48,Sword,mid,,,,,,,,,,,,,,
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2024,Unknown,oe:player:340a76e3aef8e862f5fd79411261b29,Mobility,bot,,,,,,,,,,,,,,
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2024,Unknown,oe:player:d778769103b62e1222414cd182c4e25,Chookies,sup,,,,,,,,,,,,,,
+lineup,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2024,Unknown,,,,lineup-a7bb4c98dbdee298,WU-01,1,2,oe:player:3bb028a43aff78070d15c646450aa0d,oe:player:398074139a206bc8bbab0be766c6ffa,oe:player:3009272a4d20a33543f3490a7233a48,oe:player:340a76e3aef8e862f5fd79411261b29,oe:player:d778769103b62e1222414cd182c4e25,Denathor,Wilson,Sword,Mobility,Chookies

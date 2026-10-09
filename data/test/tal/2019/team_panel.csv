@@ -1,0 +1,57 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2019,Unknown,oe:player:b006c667ce96baeef47b5313b47b6d4,Mayhem,top,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2019,Unknown,oe:player:f0d9ba082555d7aac872bc9e43226c2,Kireas,jng,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2019,Unknown,oe:player:ecb29676899ee7344ee0f7db0278ae3,Umut,mid,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2019,Unknown,oe:player:5baab788f9f96f4be0d028e8b833ba8,Neos,bot,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2019,Unknown,oe:player:a7dfb2a9d77e269b2b22052211a7154,Vale,sup,,,,,,,,,,,,,,
+lineup,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2019,Unknown,,,,lineup-03d764ad1403e0c9,BA-01,1,6,oe:player:b006c667ce96baeef47b5313b47b6d4,oe:player:f0d9ba082555d7aac872bc9e43226c2,oe:player:ecb29676899ee7344ee0f7db0278ae3,oe:player:5baab788f9f96f4be0d028e8b833ba8,oe:player:a7dfb2a9d77e269b2b22052211a7154,Mayhem,Kireas,Umut,Neos,Vale
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2019,Winter,oe:player:5f2546210134c9a9b47d1ec1322e00c,Aligan,top,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2019,Winter,oe:player:67d5168b4f2b5424a3d118ea9ef9937,Creation,top,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2019,Winter,oe:player:e372da1f5ac9266e3b324b8876d33d0,Djarva,jng,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2019,Winter,oe:player:ad5c6f4e778c914cd60e2ca5c8f1378,Goliath,jng,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2019,Winter,oe:player:f4e5484adfac6cea59e3d0acf7a766a,berbero,mid,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2019,Winter,oe:player:c63c7e0755b31f1effbdf2e1f831e7d,Kaori,bot,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2019,Winter,oe:player:f216690ac90e0a1c2097a616cb4453e,Sparz,sup,,,,,,,,,,,,,,
+lineup,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2019,Winter,,,,lineup-447b9b6489e7af36,DPA-01,1,1,oe:player:5f2546210134c9a9b47d1ec1322e00c,oe:player:ad5c6f4e778c914cd60e2ca5c8f1378,oe:player:f4e5484adfac6cea59e3d0acf7a766a,oe:player:c63c7e0755b31f1effbdf2e1f831e7d,oe:player:f216690ac90e0a1c2097a616cb4453e,Aligan,Goliath,berbero,Kaori,Sparz
+lineup,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2019,Winter,,,,lineup-46182a8a96f75030,DPA-02,2,1,oe:player:67d5168b4f2b5424a3d118ea9ef9937,oe:player:e372da1f5ac9266e3b324b8876d33d0,oe:player:f4e5484adfac6cea59e3d0acf7a766a,oe:player:c63c7e0755b31f1effbdf2e1f831e7d,oe:player:f216690ac90e0a1c2097a616cb4453e,Creation,Djarva,berbero,Kaori,Sparz
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2019,Winter,oe:player:323a2b335964720883f1ed231e4b16b,Cuce,top,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2019,Winter,oe:player:22d5d814d801d8b3e1a1c3fc36796de,Robin,jng,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2019,Winter,oe:player:2a4f745da387ba8d9546e89e19ff74d,Blue,mid,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2019,Winter,oe:player:148110af33a2d568c20f766bb6c6806,Murmel,bot,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2019,Winter,oe:player:eca327ff4d6ae42715b64e9beae4813,Only35,sup,,,,,,,,,,,,,,
+lineup,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2019,Winter,,,,lineup-4771a32735540ee3,FA-01,1,12,oe:player:323a2b335964720883f1ed231e4b16b,oe:player:22d5d814d801d8b3e1a1c3fc36796de,oe:player:2a4f745da387ba8d9546e89e19ff74d,oe:player:148110af33a2d568c20f766bb6c6806,oe:player:eca327ff4d6ae42715b64e9beae4813,Cuce,Robin,Blue,Murmel,Only35
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2019,Winter,oe:player:85431f7d097d1ddf0908830f49f98e6,Thane Krios,top,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2019,Winter,oe:player:8f4f91f165af7b1cf045ff6c744400b,Soren,jng,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2019,Winter,oe:player:89bc7b3d84838556e2fe89348d694cd,T1SO,mid,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2019,Winter,oe:player:75e38cc9a852733b546c92168305cb1,Husky Rider,bot,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2019,Winter,oe:player:c26cc8c327e4ec4499ee1694aec1622,Sugarfree,sup,,,,,,,,,,,,,,
+lineup,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2019,Winter,,,,lineup-ba3d98ff1f906d1d,GA-01,1,1,oe:player:85431f7d097d1ddf0908830f49f98e6,oe:player:8f4f91f165af7b1cf045ff6c744400b,oe:player:89bc7b3d84838556e2fe89348d694cd,oe:player:75e38cc9a852733b546c92168305cb1,oe:player:c26cc8c327e4ec4499ee1694aec1622,Thane Krios,Soren,T1SO,Husky Rider,Sugarfree
+player,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2019,Winter,oe:player:bc93fd0fa19ed26b6adf8293ada5540,Smoke,top,,,,,,,,,,,,,,
+player,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2019,Winter,oe:player:1dee298f210ea86c6bd811f50df0bfc,The Vigilante,jng,,,,,,,,,,,,,,
+player,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2019,Winter,oe:player:368563689c6f00cacf9b1384a04ff44,kumru,jng,,,,,,,,,,,,,,
+player,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2019,Winter,oe:player:b9b86ae0a307d8b5e501e7048f92be4,MGX,mid,,,,,,,,,,,,,,
+player,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2019,Winter,oe:player:8780e4492631a9f46ebfd603a4325f6,Noac,bot,,,,,,,,,,,,,,
+player,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2019,Winter,oe:player:9b3ac7c864c23fbd21664d12b4cec0f,unmngeable,bot,,,,,,,,,,,,,,
+player,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2019,Winter,oe:player:d3baf1a516c251c538fe1c4ba6fcaed,Bafu,sup,,,,,,,,,,,,,,
+lineup,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2019,Winter,,,,lineup-5b477b8cacc10596,GA-01,1,1,oe:player:bc93fd0fa19ed26b6adf8293ada5540,oe:player:368563689c6f00cacf9b1384a04ff44,oe:player:b9b86ae0a307d8b5e501e7048f92be4,oe:player:8780e4492631a9f46ebfd603a4325f6,oe:player:d3baf1a516c251c538fe1c4ba6fcaed,Smoke,kumru,MGX,Noac,Bafu
+lineup,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2019,Winter,,,,lineup-6aafc105a5da2366,GA-02,2,1,oe:player:bc93fd0fa19ed26b6adf8293ada5540,oe:player:1dee298f210ea86c6bd811f50df0bfc,oe:player:b9b86ae0a307d8b5e501e7048f92be4,oe:player:9b3ac7c864c23fbd21664d12b4cec0f,oe:player:d3baf1a516c251c538fe1c4ba6fcaed,Smoke,The Vigilante,MGX,unmngeable,Bafu
+player,oe:team:25b0751ae06b76d14830ecef0a11715,HWA Academy,HA,2019,Winter,oe:player:1bc0756ba9102abb5a7cd13d2b618aa,StarScreen,top,,,,,,,,,,,,,,
+player,oe:team:25b0751ae06b76d14830ecef0a11715,HWA Academy,HA,2019,Winter,oe:player:3cf6443ea2d1c4501478ed2dcb431ef,Roulette,jng,,,,,,,,,,,,,,
+player,oe:team:25b0751ae06b76d14830ecef0a11715,HWA Academy,HA,2019,Winter,oe:player:db0cbdc72184ad44ab905be61fc0756,Kofte,mid,,,,,,,,,,,,,,
+player,oe:team:25b0751ae06b76d14830ecef0a11715,HWA Academy,HA,2019,Winter,oe:player:e37058bf2305c3a61e0e69681803f95,stillnumb,bot,,,,,,,,,,,,,,
+player,oe:team:25b0751ae06b76d14830ecef0a11715,HWA Academy,HA,2019,Winter,oe:player:31875a5f463ab30169d2fde95ed8003,EliWood,sup,,,,,,,,,,,,,,
+lineup,oe:team:25b0751ae06b76d14830ecef0a11715,HWA Academy,HA,2019,Winter,,,,lineup-84c3762b6aeb18a6,HA-01,1,1,oe:player:1bc0756ba9102abb5a7cd13d2b618aa,oe:player:3cf6443ea2d1c4501478ed2dcb431ef,oe:player:db0cbdc72184ad44ab905be61fc0756,oe:player:e37058bf2305c3a61e0e69681803f95,oe:player:31875a5f463ab30169d2fde95ed8003,StarScreen,Roulette,Kofte,stillnumb,EliWood
+player,oe:team:e16e08020a1c1f4b5e15b794a4e7ea3,Royal Youth Academy,RYA,2019,Winter,oe:player:f3c0ff4acee8f5b9aa2165d00d789e5,Matilda,top,,,,,,,,,,,,,,
+player,oe:team:e16e08020a1c1f4b5e15b794a4e7ea3,Royal Youth Academy,RYA,2019,Winter,oe:player:ec4693d7437c8771080c41aefa52c3d,Chosen,jng,,,,,,,,,,,,,,
+player,oe:team:e16e08020a1c1f4b5e15b794a4e7ea3,Royal Youth Academy,RYA,2019,Winter,oe:player:4fadb7e6e30c736d1c3f976f89dd0c0,KSAEZ,mid,,,,,,,,,,,,,,
+player,oe:team:e16e08020a1c1f4b5e15b794a4e7ea3,Royal Youth Academy,RYA,2019,Winter,oe:player:3d6c9ac08ada31c184094bbc67afe00,Mean,bot,,,,,,,,,,,,,,
+player,oe:team:e16e08020a1c1f4b5e15b794a4e7ea3,Royal Youth Academy,RYA,2019,Winter,oe:player:496ca7c65dbd4beffa678e62d9d4e8d,Farfetch,sup,,,,,,,,,,,,,,
+player,oe:team:e16e08020a1c1f4b5e15b794a4e7ea3,Royal Youth Academy,RYA,2019,Winter,oe:player:9fb2347e9f04bd843247305e889d898,madlifeonur,sup,,,,,,,,,,,,,,
+lineup,oe:team:e16e08020a1c1f4b5e15b794a4e7ea3,Royal Youth Academy,RYA,2019,Winter,,,,lineup-6c47dffdf6d61b66,RYA-01,1,1,oe:player:f3c0ff4acee8f5b9aa2165d00d789e5,oe:player:ec4693d7437c8771080c41aefa52c3d,oe:player:4fadb7e6e30c736d1c3f976f89dd0c0,oe:player:3d6c9ac08ada31c184094bbc67afe00,oe:player:496ca7c65dbd4beffa678e62d9d4e8d,Matilda,Chosen,KSAEZ,Mean,Farfetch
+lineup,oe:team:e16e08020a1c1f4b5e15b794a4e7ea3,Royal Youth Academy,RYA,2019,Winter,,,,lineup-9e953d2bb3a61ed1,RYA-02,2,1,oe:player:f3c0ff4acee8f5b9aa2165d00d789e5,oe:player:ec4693d7437c8771080c41aefa52c3d,oe:player:4fadb7e6e30c736d1c3f976f89dd0c0,oe:player:3d6c9ac08ada31c184094bbc67afe00,oe:player:9fb2347e9f04bd843247305e889d898,Matilda,Chosen,KSAEZ,Mean,madlifeonur
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2019,Winter,oe:player:a9eb1a93c73c55b9db59388be44206b,Luana,top,,,,,,,,,,,,,,
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2019,Winter,oe:player:de442faff7b7cdc0fba7d6d5caff5e1,Elramir,jng,,,,,,,,,,,,,,
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2019,Winter,oe:player:eb4a97ac9936caf7fad8c8eaa1b0eed,WaenA,mid,,,,,,,,,,,,,,
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2019,Winter,oe:player:d12b043b44563dd9443919f8637de22,Peco,bot,,,,,,,,,,,,,,
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2019,Winter,oe:player:03f78345e4181384977f21872ca866c,Absolute,sup,,,,,,,,,,,,,,
+lineup,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2019,Winter,,,,lineup-524b40c9dbad3669,SA-01,1,2,oe:player:a9eb1a93c73c55b9db59388be44206b,oe:player:de442faff7b7cdc0fba7d6d5caff5e1,oe:player:eb4a97ac9936caf7fad8c8eaa1b0eed,oe:player:d12b043b44563dd9443919f8637de22,oe:player:03f78345e4181384977f21872ca866c,Luana,Elramir,WaenA,Peco,Absolute

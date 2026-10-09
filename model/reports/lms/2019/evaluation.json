@@ -1,0 +1,184 @@
+{
+  "status": "evaluated",
+  "target": "damage to champions per minute (DPM)",
+  "features": [
+    "role",
+    "role_champion",
+    "opponent_champion",
+    "patch",
+    "side",
+    "team_id",
+    "opponent_team_id"
+  ],
+  "alpha": 20.0,
+  "hyperparameter_selection": "fixed before evaluation; no tuning on these folds",
+  "protocol": "5 contiguous blocks of unique match days; block 1 warmup; expanding training for blocks 2-5",
+  "warmup_rows": 610,
+  "evaluated_rows": 2180,
+  "context_ridge": {
+    "mae_dpm": 106.6495573731795,
+    "rmse_dpm": 140.79943186718202,
+    "r2_dpm": 0.49650450912028365,
+    "rows": 2180
+  },
+  "role_mean": {
+    "mae_dpm": 113.99300767493828,
+    "rmse_dpm": 151.314079172789,
+    "r2_dpm": 0.41849633099614214,
+    "rows": 2180
+  },
+  "folds": [
+    {
+      "fold": 1,
+      "train_start": "2018-09-05",
+      "train_end": "2019-02-22",
+      "test_start": "2019-02-23",
+      "test_end": "2019-03-22",
+      "train_games": 61,
+      "test_games": 57,
+      "context_ridge": {
+        "mae_dpm": 108.01112506983912,
+        "rmse_dpm": 141.52859356445197,
+        "r2_dpm": 0.5056510648382095,
+        "rows": 570
+      },
+      "role_mean": {
+        "mae_dpm": 109.19365879984099,
+        "rmse_dpm": 147.27599400886697,
+        "r2_dpm": 0.4646853284499779,
+        "rows": 570
+      },
+      "unseen_category_fraction": {
+        "role": 0.0,
+        "role_champion": 0.06666666666666667,
+        "opponent_champion": 0.06140350877192982,
+        "patch": 0.6666666666666666,
+        "side": 0.0,
+        "team_id": 0.0,
+        "opponent_team_id": 0.0
+      }
+    },
+    {
+      "fold": 2,
+      "train_start": "2018-09-05",
+      "train_end": "2019-03-22",
+      "test_start": "2019-03-23",
+      "test_end": "2019-06-15",
+      "train_games": 118,
+      "test_games": 51,
+      "context_ridge": {
+        "mae_dpm": 107.56988043494242,
+        "rmse_dpm": 141.65534702842334,
+        "r2_dpm": 0.45876097952833905,
+        "rows": 510
+      },
+      "role_mean": {
+        "mae_dpm": 114.05072984136339,
+        "rmse_dpm": 149.75137584829798,
+        "r2_dpm": 0.3951261672862214,
+        "rows": 510
+      },
+      "unseen_category_fraction": {
+        "role": 0.0,
+        "role_champion": 0.10980392156862745,
+        "opponent_champion": 0.07058823529411765,
+        "patch": 0.8823529411764706,
+        "side": 0.0,
+        "team_id": 0.0,
+        "opponent_team_id": 0.0
+      }
+    },
+    {
+      "fold": 3,
+      "train_start": "2018-09-05",
+      "train_end": "2019-06-15",
+      "test_start": "2019-06-21",
+      "test_end": "2019-07-21",
+      "train_games": 169,
+      "test_games": 59,
+      "context_ridge": {
+        "mae_dpm": 109.78520150962258,
+        "rmse_dpm": 141.0816052879189,
+        "r2_dpm": 0.48121018221615797,
+        "rows": 590
+      },
+      "role_mean": {
+        "mae_dpm": 117.39540423220534,
+        "rmse_dpm": 153.09986714795562,
+        "r2_dpm": 0.3890575726127149,
+        "rows": 590
+      },
+      "unseen_category_fraction": {
+        "role": 0.0,
+        "role_champion": 0.07288135593220339,
+        "opponent_champion": 0.04745762711864407,
+        "patch": 1.0,
+        "side": 0.0,
+        "team_id": 0.0,
+        "opponent_team_id": 0.0
+      }
+    },
+    {
+      "fold": 4,
+      "train_start": "2018-09-05",
+      "train_end": "2019-07-21",
+      "test_start": "2019-07-26",
+      "test_end": "2019-09-08",
+      "train_games": 228,
+      "test_games": 51,
+      "context_ridge": {
+        "mae_dpm": 100.57997229651968,
+        "rmse_dpm": 138.78265258410258,
+        "r2_dpm": 0.5305385354669367,
+        "rows": 510
+      },
+      "role_mean": {
+        "mae_dpm": 115.36315784188157,
+        "rmse_dpm": 155.19380539172153,
+        "r2_dpm": 0.412945602244137,
+        "rows": 510
+      },
+      "unseen_category_fraction": {
+        "role": 0.0,
+        "role_champion": 0.041176470588235294,
+        "opponent_champion": 0.0058823529411764705,
+        "patch": 1.0,
+        "side": 0.0,
+        "team_id": 0.0,
+        "opponent_team_id": 0.0
+      }
+    }
+  ],
+  "by_role": {
+    "bot": {
+      "mae_dpm": 148.79263922977043,
+      "rmse_dpm": 184.61127397669273,
+      "r2_dpm": 0.12645272264918328,
+      "rows": 436
+    },
+    "jng": {
+      "mae_dpm": 93.78899218675438,
+      "rmse_dpm": 115.06856688104783,
+      "r2_dpm": 0.02315099839116208,
+      "rows": 436
+    },
+    "mid": {
+      "mae_dpm": 125.98804105631052,
+      "rmse_dpm": 163.8023573361665,
+      "r2_dpm": 0.08543495150641112,
+      "rows": 436
+    },
+    "sup": {
+      "mae_dpm": 56.292306884154826,
+      "rmse_dpm": 78.19594696360984,
+      "r2_dpm": 0.16768873192020883,
+      "rows": 436
+    },
+    "top": {
+      "mae_dpm": 108.38580750890733,
+      "rmse_dpm": 137.3116313967233,
+      "r2_dpm": 0.1340225468744296,
+      "rows": 436
+    }
+  }
+}

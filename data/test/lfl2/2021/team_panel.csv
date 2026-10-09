@@ -1,0 +1,31 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:e0ec1fed6e0949a0aef5f506ccb76ce,Atletec,ATL,2021,Unknown,oe:player:ade06decf6a36427e564af1f48f0cf3,Lingwi,top,,,,,,,,,,,,,,
+player,oe:team:e0ec1fed6e0949a0aef5f506ccb76ce,Atletec,ATL,2021,Unknown,oe:player:e8ff461b567776b254963373be94961,Toni,jng,,,,,,,,,,,,,,
+player,oe:team:e0ec1fed6e0949a0aef5f506ccb76ce,Atletec,ATL,2021,Unknown,oe:player:0bd4c36c88d63f30cbd156b50464590,Moutarde,mid,,,,,,,,,,,,,,
+player,oe:team:e0ec1fed6e0949a0aef5f506ccb76ce,Atletec,ATL,2021,Unknown,oe:player:fcde380e70501a72fdaf35a8b2b2986,Jujutw0,bot,,,,,,,,,,,,,,
+player,oe:team:e0ec1fed6e0949a0aef5f506ccb76ce,Atletec,ATL,2021,Unknown,oe:player:371572c71e802c9eefa062240d816e9,Saviour,sup,,,,,,,,,,,,,,
+lineup,oe:team:e0ec1fed6e0949a0aef5f506ccb76ce,Atletec,ATL,2021,Unknown,,,,lineup-79c5da00d4565559,ATL-01,1,5,oe:player:ade06decf6a36427e564af1f48f0cf3,oe:player:e8ff461b567776b254963373be94961,oe:player:0bd4c36c88d63f30cbd156b50464590,oe:player:fcde380e70501a72fdaf35a8b2b2986,oe:player:371572c71e802c9eefa062240d816e9,Lingwi,Toni,Moutarde,Jujutw0,Saviour
+player,oe:team:783df43f5fac1f660a576bcc8e9c270,FC Nantes Esports,FNE,2021,Unknown,oe:player:60aff1184bec1d2b2efdae84f5b6e3e,Wylenz,top,,,,,,,,,,,,,,
+player,oe:team:783df43f5fac1f660a576bcc8e9c270,FC Nantes Esports,FNE,2021,Unknown,oe:player:5450c7731de19c131ce20ea74933cc2,ISMA,jng,,,,,,,,,,,,,,
+player,oe:team:783df43f5fac1f660a576bcc8e9c270,FC Nantes Esports,FNE,2021,Unknown,oe:player:f6fcb6f1d244cc5d15ab8096d941d7a,Peng,mid,,,,,,,,,,,,,,
+player,oe:team:783df43f5fac1f660a576bcc8e9c270,FC Nantes Esports,FNE,2021,Unknown,oe:player:48bef668b5cb10ddc6c3865d460e327,TakeSet,bot,,,,,,,,,,,,,,
+player,oe:team:783df43f5fac1f660a576bcc8e9c270,FC Nantes Esports,FNE,2021,Unknown,oe:player:234362ebb257e00906a24abde3d14ae,Helaz,sup,,,,,,,,,,,,,,
+lineup,oe:team:783df43f5fac1f660a576bcc8e9c270,FC Nantes Esports,FNE,2021,Unknown,,,,lineup-37852399af46c24d,FNE-01,1,4,oe:player:60aff1184bec1d2b2efdae84f5b6e3e,oe:player:5450c7731de19c131ce20ea74933cc2,oe:player:f6fcb6f1d244cc5d15ab8096d941d7a,oe:player:48bef668b5cb10ddc6c3865d460e327,oe:player:234362ebb257e00906a24abde3d14ae,Wylenz,ISMA,Peng,TakeSet,Helaz
+player,oe:team:9ce92bf0f1f33f7fa5be025f6d47ac8,Team EYA,TE,2021,Unknown,oe:player:c722408a339132fbd6c940cf10325fd,Deimos,top,,,,,,,,,,,,,,
+player,oe:team:9ce92bf0f1f33f7fa5be025f6d47ac8,Team EYA,TE,2021,Unknown,oe:player:1506ea935288289a3e2c712b55f280f,Habubu,jng,,,,,,,,,,,,,,
+player,oe:team:9ce92bf0f1f33f7fa5be025f6d47ac8,Team EYA,TE,2021,Unknown,oe:player:36aee4ea75f352a3912338eb34a5b57,Evaan,mid,,,,,,,,,,,,,,
+player,oe:team:9ce92bf0f1f33f7fa5be025f6d47ac8,Team EYA,TE,2021,Unknown,oe:player:756b6065e2d8d0f03f59a9ed0ff56f6,Blackrog,bot,,,,,,,,,,,,,,
+player,oe:team:9ce92bf0f1f33f7fa5be025f6d47ac8,Team EYA,TE,2021,Unknown,oe:player:d090cd8c2462e31136c02dbebdbcc2d,Aku,sup,,,,,,,,,,,,,,
+lineup,oe:team:9ce92bf0f1f33f7fa5be025f6d47ac8,Team EYA,TE,2021,Unknown,,,,lineup-b659a320981b6ac8,TE-01,1,7,oe:player:c722408a339132fbd6c940cf10325fd,oe:player:1506ea935288289a3e2c712b55f280f,oe:player:36aee4ea75f352a3912338eb34a5b57,oe:player:756b6065e2d8d0f03f59a9ed0ff56f6,oe:player:d090cd8c2462e31136c02dbebdbcc2d,Deimos,Habubu,Evaan,Blackrog,Aku
+player,oe:team:a17419c119598748edfc4c00e060572,Team Oplon,TO,2021,Unknown,oe:player:d643ea22dc6fe5b0009d1dd5b2ca9aa,Darlik,top,,,,,,,,,,,,,,
+player,oe:team:a17419c119598748edfc4c00e060572,Team Oplon,TO,2021,Unknown,oe:player:4203fc46c4c6333e9bfa9d0a8618677,Yike,jng,,,,,,,,,,,,,,
+player,oe:team:a17419c119598748edfc4c00e060572,Team Oplon,TO,2021,Unknown,oe:player:ae20b1872a922cdc5b8707fbe66c4f0,Twiizt,mid,,,,,,,,,,,,,,
+player,oe:team:a17419c119598748edfc4c00e060572,Team Oplon,TO,2021,Unknown,oe:player:9db46406fc52d8ca7365f131f37523a,LaFleur,bot,,,,,,,,,,,,,,
+player,oe:team:a17419c119598748edfc4c00e060572,Team Oplon,TO,2021,Unknown,oe:player:e52cd39655258ab5bd6cff89b32ea07,Benaset,sup,,,,,,,,,,,,,,
+lineup,oe:team:a17419c119598748edfc4c00e060572,Team Oplon,TO,2021,Unknown,,,,lineup-ee4109b25d9de6f8,TO-01,1,4,oe:player:d643ea22dc6fe5b0009d1dd5b2ca9aa,oe:player:4203fc46c4c6333e9bfa9d0a8618677,oe:player:ae20b1872a922cdc5b8707fbe66c4f0,oe:player:9db46406fc52d8ca7365f131f37523a,oe:player:e52cd39655258ab5bd6cff89b32ea07,Darlik,Yike,Twiizt,LaFleur,Benaset
+player,oe:team:e637bfca874f6d165f545eeb58e8360,Tony Parker Adequat Academy,TPAA,2021,Unknown,oe:player:d2010fdb54cd1bf93cf46b84f654fb7,Gaëthan,top,,,,,,,,,,,,,,
+player,oe:team:e637bfca874f6d165f545eeb58e8360,Tony Parker Adequat Academy,TPAA,2021,Unknown,oe:player:404079b4e478ea2a8b57904c640311b,Sheo,jng,,,,,,,,,,,,,,
+player,oe:team:e637bfca874f6d165f545eeb58e8360,Tony Parker Adequat Academy,TPAA,2021,Unknown,oe:player:0e8c4f841298e3b93e6712d8ed3c1fc,Eyhro,mid,,,,,,,,,,,,,,
+player,oe:team:e637bfca874f6d165f545eeb58e8360,Tony Parker Adequat Academy,TPAA,2021,Unknown,oe:player:14ed0ddbd06beb8c9dd3706fba55747,NoTiixX,bot,,,,,,,,,,,,,,
+player,oe:team:e637bfca874f6d165f545eeb58e8360,Tony Parker Adequat Academy,TPAA,2021,Unknown,oe:player:41672e17bc1f86dc5d93955c031d2a9,Stend,sup,,,,,,,,,,,,,,
+lineup,oe:team:e637bfca874f6d165f545eeb58e8360,Tony Parker Adequat Academy,TPAA,2021,Unknown,,,,lineup-5d316c737d94a336,TPAA-01,1,12,oe:player:d2010fdb54cd1bf93cf46b84f654fb7,oe:player:404079b4e478ea2a8b57904c640311b,oe:player:0e8c4f841298e3b93e6712d8ed3c1fc,oe:player:14ed0ddbd06beb8c9dd3706fba55747,oe:player:41672e17bc1f86dc5d93955c031d2a9,Gaëthan,Sheo,Eyhro,NoTiixX,Stend

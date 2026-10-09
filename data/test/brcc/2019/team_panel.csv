@@ -1,0 +1,63 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:07e855b80cb18bda1a6c46470f0ca20,Falkol,FAL,2019,Unknown,oe:player:ce5fa3b9c8624d541eb1715f6d27a88,VVvert,top,,,,,,,,,,,,,,
+player,oe:team:07e855b80cb18bda1a6c46470f0ca20,Falkol,FAL,2019,Unknown,oe:player:5ad1a4f25deb2bb2e8a89dc1beb70ac,ReAt1vo,jng,,,,,,,,,,,,,,
+player,oe:team:07e855b80cb18bda1a6c46470f0ca20,Falkol,FAL,2019,Unknown,oe:player:1c347deb44214ff5e726bffd9d97abc,Sirt,jng,,,,,,,,,,,,,,
+player,oe:team:07e855b80cb18bda1a6c46470f0ca20,Falkol,FAL,2019,Unknown,oe:player:b10346cf5cb42e86bb81b3ec776ffa0,Evrot,mid,,,,,,,,,,,,,,
+player,oe:team:07e855b80cb18bda1a6c46470f0ca20,Falkol,FAL,2019,Unknown,oe:player:9de02faac72e2da7bc95bac015c4242,Road,bot,,,,,,,,,,,,,,
+player,oe:team:07e855b80cb18bda1a6c46470f0ca20,Falkol,FAL,2019,Unknown,oe:player:5f5a5776c154fb16db6ff32866416dd,Vitin,bot,,,,,,,,,,,,,,
+player,oe:team:07e855b80cb18bda1a6c46470f0ca20,Falkol,FAL,2019,Unknown,oe:player:331d9c928188b8b132c13c143d070bb,Riyev,sup,,,,,,,,,,,,,,
+player,oe:team:07e855b80cb18bda1a6c46470f0ca20,Falkol,FAL,2019,Unknown,oe:player:73124aed8e061dafd713df6285a137a,Vahvel,sup,,,,,,,,,,,,,,
+lineup,oe:team:07e855b80cb18bda1a6c46470f0ca20,Falkol,FAL,2019,Unknown,,,,lineup-5c68512333b2d889,FAL-01,1,2,oe:player:ce5fa3b9c8624d541eb1715f6d27a88,oe:player:5ad1a4f25deb2bb2e8a89dc1beb70ac,oe:player:b10346cf5cb42e86bb81b3ec776ffa0,oe:player:5f5a5776c154fb16db6ff32866416dd,oe:player:331d9c928188b8b132c13c143d070bb,VVvert,ReAt1vo,Evrot,Vitin,Riyev
+lineup,oe:team:07e855b80cb18bda1a6c46470f0ca20,Falkol,FAL,2019,Unknown,,,,lineup-00fe5da64b38f8db,FAL-02,2,1,oe:player:ce5fa3b9c8624d541eb1715f6d27a88,oe:player:1c347deb44214ff5e726bffd9d97abc,oe:player:b10346cf5cb42e86bb81b3ec776ffa0,oe:player:5f5a5776c154fb16db6ff32866416dd,oe:player:331d9c928188b8b132c13c143d070bb,VVvert,Sirt,Evrot,Vitin,Riyev
+lineup,oe:team:07e855b80cb18bda1a6c46470f0ca20,Falkol,FAL,2019,Unknown,,,,lineup-ee9d78f599364486,FAL-03,3,1,oe:player:ce5fa3b9c8624d541eb1715f6d27a88,oe:player:1c347deb44214ff5e726bffd9d97abc,oe:player:b10346cf5cb42e86bb81b3ec776ffa0,oe:player:9de02faac72e2da7bc95bac015c4242,oe:player:73124aed8e061dafd713df6285a137a,VVvert,Sirt,Evrot,Road,Vahvel
+player,oe:team:a8760a8e23903488198e84618546202,Havan Liberty,HL,2019,Unknown,oe:player:ad3b41b0663f51490d31a84c75c9330,Zantins,top,,,,,,,,,,,,,,
+player,oe:team:a8760a8e23903488198e84618546202,Havan Liberty,HL,2019,Unknown,oe:player:27dddda4733563bfee89fd220fc6717,CarioK,jng,,,,,,,,,,,,,,
+player,oe:team:a8760a8e23903488198e84618546202,Havan Liberty,HL,2019,Unknown,oe:player:913fab4d1d3caa861cfbbdd60b2a3fd,tockers,mid,,,,,,,,,,,,,,
+player,oe:team:a8760a8e23903488198e84618546202,Havan Liberty,HL,2019,Unknown,oe:player:0cfa7da07f11bd954137ab359972515,Flare,bot,,,,,,,,,,,,,,
+player,oe:team:a8760a8e23903488198e84618546202,Havan Liberty,HL,2019,Unknown,oe:player:1bb1fef0555e06fc6247a154536cccc,Sarkis,bot,,,,,,,,,,,,,,
+player,oe:team:a8760a8e23903488198e84618546202,Havan Liberty,HL,2019,Unknown,oe:player:e8e5b580e1e99bb89bf3a8a34b6da03,Slayer,sup,,,,,,,,,,,,,,
+player,oe:team:a8760a8e23903488198e84618546202,Havan Liberty,HL,2019,Unknown,oe:player:2dc71ce0687143e261f8b5cd3381200,Zirigui,sup,,,,,,,,,,,,,,
+lineup,oe:team:a8760a8e23903488198e84618546202,Havan Liberty,HL,2019,Unknown,,,,lineup-3f49fc6e6b16ce44,HL-01,1,1,oe:player:ad3b41b0663f51490d31a84c75c9330,oe:player:27dddda4733563bfee89fd220fc6717,oe:player:913fab4d1d3caa861cfbbdd60b2a3fd,oe:player:0cfa7da07f11bd954137ab359972515,oe:player:2dc71ce0687143e261f8b5cd3381200,Zantins,CarioK,tockers,Flare,Zirigui
+lineup,oe:team:a8760a8e23903488198e84618546202,Havan Liberty,HL,2019,Unknown,,,,lineup-4cae19d339533851,HL-02,2,1,oe:player:ad3b41b0663f51490d31a84c75c9330,oe:player:27dddda4733563bfee89fd220fc6717,oe:player:913fab4d1d3caa861cfbbdd60b2a3fd,oe:player:1bb1fef0555e06fc6247a154536cccc,oe:player:e8e5b580e1e99bb89bf3a8a34b6da03,Zantins,CarioK,tockers,Sarkis,Slayer
+lineup,oe:team:a8760a8e23903488198e84618546202,Havan Liberty,HL,2019,Unknown,,,,lineup-ea583995613ea61c,HL-03,3,1,oe:player:ad3b41b0663f51490d31a84c75c9330,oe:player:27dddda4733563bfee89fd220fc6717,oe:player:913fab4d1d3caa861cfbbdd60b2a3fd,oe:player:0cfa7da07f11bd954137ab359972515,oe:player:e8e5b580e1e99bb89bf3a8a34b6da03,Zantins,CarioK,tockers,Flare,Slayer
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2019,Unknown,oe:player:6a0b8e2b54eea101489db57c50dcdde,Near,top,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2019,Unknown,oe:player:2b4eed32f31db963edaafd9bd7a1e7f,Erasus,jng,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2019,Unknown,oe:player:6aff04000a3032154606825dbb26529,Fear,mid,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2019,Unknown,oe:player:c732cc226501cc21178b9f413cdf3eb,Trigo,bot,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2019,Unknown,oe:player:3036c9dc351263c9b94722c7764305d,Devo,sup,,,,,,,,,,,,,,
+lineup,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2019,Unknown,,,,lineup-10df6d3923561e71,OKE-01,1,1,oe:player:6a0b8e2b54eea101489db57c50dcdde,oe:player:2b4eed32f31db963edaafd9bd7a1e7f,oe:player:6aff04000a3032154606825dbb26529,oe:player:c732cc226501cc21178b9f413cdf3eb,oe:player:3036c9dc351263c9b94722c7764305d,Near,Erasus,Fear,Trigo,Devo
+player,oe:team:aa2a535ded3bc45217af1684a4451c4,ProGaming Esports,PE,2019,Unknown,oe:player:61ea9de879a9b27bb8eddcba7f32f4a,fNb,top,,,,,,,,,,,,,,
+player,oe:team:aa2a535ded3bc45217af1684a4451c4,ProGaming Esports,PE,2019,Unknown,oe:player:65d1e475734633e28d4523d92a90837,Yampi,jng,,,,,,,,,,,,,,
+player,oe:team:aa2a535ded3bc45217af1684a4451c4,ProGaming Esports,PE,2019,Unknown,oe:player:979d7cbbe1e2a8b55d503047f5c72a0,Hauz,mid,,,,,,,,,,,,,,
+player,oe:team:aa2a535ded3bc45217af1684a4451c4,ProGaming Esports,PE,2019,Unknown,oe:player:409f6a5ffb18597f1ad5d0cc46861b7,Garo,bot,,,,,,,,,,,,,,
+player,oe:team:aa2a535ded3bc45217af1684a4451c4,ProGaming Esports,PE,2019,Unknown,oe:player:e0ca016e696d77b1ee0467e5825b5ed,Wos,sup,,,,,,,,,,,,,,
+lineup,oe:team:aa2a535ded3bc45217af1684a4451c4,ProGaming Esports,PE,2019,Unknown,,,,lineup-b7d9a78e46a7e7ae,PE-01,1,12,oe:player:61ea9de879a9b27bb8eddcba7f32f4a,oe:player:65d1e475734633e28d4523d92a90837,oe:player:979d7cbbe1e2a8b55d503047f5c72a0,oe:player:409f6a5ffb18597f1ad5d0cc46861b7,oe:player:e0ca016e696d77b1ee0467e5825b5ed,fNb,Yampi,Hauz,Garo,Wos
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2019,Unknown,oe:player:a814de9b535755e3f2298901561783f,Lep,top,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2019,Unknown,oe:player:37b570d988e1cdf1e30b1e5a598a6d0,Revolta,jng,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2019,Unknown,oe:player:8beab49e4e9623ac0c8908b5836dfaa,YoDa,mid,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2019,Unknown,oe:player:0d1d2b72c9149c407a2dba38cbeda9e,aveng3r,mid,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2019,Unknown,oe:player:d4ada34b219d1b4abf67a3cea03d7c7,Sacy,bot,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2019,Unknown,oe:player:1c010180887360e5d6ab967fd93693d,TitaN,bot,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2019,Unknown,oe:player:aaccc90be11661a390912157ca1cbce,Cabu,sup,,,,,,,,,,,,,,
+lineup,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2019,Unknown,,,,lineup-efe5974b1e9cdd57,RC-01,1,2,oe:player:a814de9b535755e3f2298901561783f,oe:player:37b570d988e1cdf1e30b1e5a598a6d0,oe:player:8beab49e4e9623ac0c8908b5836dfaa,oe:player:1c010180887360e5d6ab967fd93693d,oe:player:aaccc90be11661a390912157ca1cbce,Lep,Revolta,YoDa,TitaN,Cabu
+lineup,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2019,Unknown,,,,lineup-8e4c56e4ebee5035,RC-02,2,1,oe:player:a814de9b535755e3f2298901561783f,oe:player:37b570d988e1cdf1e30b1e5a598a6d0,oe:player:0d1d2b72c9149c407a2dba38cbeda9e,oe:player:d4ada34b219d1b4abf67a3cea03d7c7,oe:player:aaccc90be11661a390912157ca1cbce,Lep,Revolta,aveng3r,Sacy,Cabu
+player,oe:team:92ede2510f2ad0234b1dd75f03108ae,Rensga eSports,RE,2019,Unknown,oe:player:0b83d5e7c5024ae1e1eacc406d10eba,Deoxys,top,,,,,,,,,,,,,,
+player,oe:team:92ede2510f2ad0234b1dd75f03108ae,Rensga eSports,RE,2019,Unknown,oe:player:c24be326f13a269341be0c7e4afa237,Kaiba,jng,,,,,,,,,,,,,,
+player,oe:team:92ede2510f2ad0234b1dd75f03108ae,Rensga eSports,RE,2019,Unknown,oe:player:ceb0ad6412d4d358277ac71762b071f,Pilot,mid,,,,,,,,,,,,,,
+player,oe:team:92ede2510f2ad0234b1dd75f03108ae,Rensga eSports,RE,2019,Unknown,oe:player:bcc9d0b5c8ad6af66f25a9d3c39d1f1,Davi,bot,,,,,,,,,,,,,,
+player,oe:team:92ede2510f2ad0234b1dd75f03108ae,Rensga eSports,RE,2019,Unknown,oe:player:0ce31aef5072bf6874237a41232ca3b,Blury,sup,,,,,,,,,,,,,,
+player,oe:team:92ede2510f2ad0234b1dd75f03108ae,Rensga eSports,RE,2019,Unknown,oe:player:88ddd288d239783ce136decd29c8554,walZa,sup,,,,,,,,,,,,,,
+lineup,oe:team:92ede2510f2ad0234b1dd75f03108ae,Rensga eSports,RE,2019,Unknown,,,,lineup-60a924f460745d9d,RE-01,1,1,oe:player:0b83d5e7c5024ae1e1eacc406d10eba,oe:player:c24be326f13a269341be0c7e4afa237,oe:player:ceb0ad6412d4d358277ac71762b071f,oe:player:bcc9d0b5c8ad6af66f25a9d3c39d1f1,oe:player:88ddd288d239783ce136decd29c8554,Deoxys,Kaiba,Pilot,Davi,walZa
+lineup,oe:team:92ede2510f2ad0234b1dd75f03108ae,Rensga eSports,RE,2019,Unknown,,,,lineup-cf571f108af0814e,RE-02,2,1,oe:player:0b83d5e7c5024ae1e1eacc406d10eba,oe:player:c24be326f13a269341be0c7e4afa237,oe:player:ceb0ad6412d4d358277ac71762b071f,oe:player:bcc9d0b5c8ad6af66f25a9d3c39d1f1,oe:player:0ce31aef5072bf6874237a41232ca3b,Deoxys,Kaiba,Pilot,Davi,Blury
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2019,Unknown,oe:player:d6d80c43cbc198c8af0407cea242709,mumus100,top,,,,,,,,,,,,,,
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2019,Unknown,oe:player:5aa99e88083b40b8070e90f314e92ca,Grell,jng,,,,,,,,,,,,,,
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2019,Unknown,oe:player:7e6e34b1f0efa66f0630192e136f6a8,NOsFerus,mid,,,,,,,,,,,,,,
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2019,Unknown,oe:player:ea7ff69e21758673765d2b05b0bd933,Klaus,bot,,,,,,,,,,,,,,
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2019,Unknown,oe:player:322cb471bec2cd13585deb9fd868fcc,Professor,sup,,,,,,,,,,,,,,
+lineup,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2019,Unknown,,,,lineup-b6ed7e48721ee22e,VK-01,1,2,oe:player:d6d80c43cbc198c8af0407cea242709,oe:player:5aa99e88083b40b8070e90f314e92ca,oe:player:7e6e34b1f0efa66f0630192e136f6a8,oe:player:ea7ff69e21758673765d2b05b0bd933,oe:player:322cb471bec2cd13585deb9fd868fcc,mumus100,Grell,NOsFerus,Klaus,Professor
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2019,Unknown,oe:player:325d05dad5fd291cbb49cd50c038ce3,Ayel,top,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2019,Unknown,oe:player:931603f10a47a4241c9c2afbd69107a,Minerva,jng,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2019,Unknown,oe:player:ae770d2c942cee6dbcfbd1832015231,tinowns,mid,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2019,Unknown,oe:player:0c0d42e4a3273c1a137e83b490b8513,Matsukaze,bot,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2019,Unknown,oe:player:bd7992c3a0b0398d2833e69f231d5e3,esA,sup,,,,,,,,,,,,,,
+lineup,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2019,Unknown,,,,lineup-a7c1f368518d381f,PG-01,1,1,oe:player:325d05dad5fd291cbb49cd50c038ce3,oe:player:931603f10a47a4241c9c2afbd69107a,oe:player:ae770d2c942cee6dbcfbd1832015231,oe:player:0c0d42e4a3273c1a137e83b490b8513,oe:player:bd7992c3a0b0398d2833e69f231d5e3,Ayel,Minerva,tinowns,Matsukaze,esA

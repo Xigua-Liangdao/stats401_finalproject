@@ -1,0 +1,50 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:2895c70302bd198ff8327ba552cafdb,AS Trenčín esports,ATE,2019,Season 12,oe:player:0062ca11b75b1744fe7964bc617c916,Vlk,top,,,,,,,,,,,,,,
+player,oe:team:2895c70302bd198ff8327ba552cafdb,AS Trenčín esports,ATE,2019,Season 12,oe:player:6425cdfcdd02de2de34b914e20c41a7,SeMike,jng,,,,,,,,,,,,,,
+player,oe:team:2895c70302bd198ff8327ba552cafdb,AS Trenčín esports,ATE,2019,Season 12,oe:player:2ab17cd2aab88452f06e1e8a6fe71f1,Ruso,mid,,,,,,,,,,,,,,
+player,oe:team:2895c70302bd198ff8327ba552cafdb,AS Trenčín esports,ATE,2019,Season 12,oe:player:46e86a24ceec3ca0379fe76182d51b3,Kadaver,bot,,,,,,,,,,,,,,
+player,oe:team:2895c70302bd198ff8327ba552cafdb,AS Trenčín esports,ATE,2019,Season 12,oe:player:08dcd10d7a44216f5c306414828ad51,Noxie,sup,,,,,,,,,,,,,,
+lineup,oe:team:2895c70302bd198ff8327ba552cafdb,AS Trenčín esports,ATE,2019,Season 12,,,,lineup-b5325ae8c36ebdb2,ATE-01,1,3,oe:player:0062ca11b75b1744fe7964bc617c916,oe:player:6425cdfcdd02de2de34b914e20c41a7,oe:player:2ab17cd2aab88452f06e1e8a6fe71f1,oe:player:46e86a24ceec3ca0379fe76182d51b3,oe:player:08dcd10d7a44216f5c306414828ad51,Vlk,SeMike,Ruso,Kadaver,Noxie
+player,oe:team:ddb6aa775eebeffd5cc41ba5c35c6a1,BRUTE,BRU,2019,Season 12,oe:player:50ccd6f91a563cb37a74224dd60a3b5,Mortsche,top,,,,,,,,,,,,,,
+player,oe:team:ddb6aa775eebeffd5cc41ba5c35c6a1,BRUTE,BRU,2019,Season 12,oe:player:ac15b188c446c6f3b071c500a186889,Kenapil,jng,,,,,,,,,,,,,,
+player,oe:team:ddb6aa775eebeffd5cc41ba5c35c6a1,BRUTE,BRU,2019,Season 12,oe:player:9308cdd10f24bb8f380c02c76665b32,Shiage,mid,,,,,,,,,,,,,,
+player,oe:team:ddb6aa775eebeffd5cc41ba5c35c6a1,BRUTE,BRU,2019,Season 12,oe:player:7a27b91a1ea41f157f4b3df8889621f,Sirinox,bot,,,,,,,,,,,,,,
+player,oe:team:ddb6aa775eebeffd5cc41ba5c35c6a1,BRUTE,BRU,2019,Season 12,oe:player:68cb770a20693e73a8e2c4188735f48,Zeussak,sup,,,,,,,,,,,,,,
+lineup,oe:team:ddb6aa775eebeffd5cc41ba5c35c6a1,BRUTE,BRU,2019,Season 12,,,,lineup-3a12a4f06e3267c8,BRU-01,1,13,oe:player:50ccd6f91a563cb37a74224dd60a3b5,oe:player:ac15b188c446c6f3b071c500a186889,oe:player:9308cdd10f24bb8f380c02c76665b32,oe:player:7a27b91a1ea41f157f4b3df8889621f,oe:player:68cb770a20693e73a8e2c4188735f48,Mortsche,Kenapil,Shiage,Sirinox,Zeussak
+player,oe:team:c2bd1dd17a070dbbb8df9aefb634a41,Inside Games,IG,2019,Season 11,oe:player:18ffe87eed5b767f4fe9a1a41fe0d2e,Fux,top,,,,,,,,,,,,,,
+player,oe:team:c2bd1dd17a070dbbb8df9aefb634a41,Inside Games,IG,2019,Season 11,oe:player:8411b6e2a788ed8c0e57a25b61bab62,Haklbery,top,,,,,,,,,,,,,,
+player,oe:team:c2bd1dd17a070dbbb8df9aefb634a41,Inside Games,IG,2019,Season 11,oe:player:460ead0df841fd240bf48ab988c50e6,DyBer,jng,,,,,,,,,,,,,,
+player,oe:team:c2bd1dd17a070dbbb8df9aefb634a41,Inside Games,IG,2019,Season 11,oe:player:8b94525f25b441bd6788b6604034321,Patosh,mid,,,,,,,,,,,,,,
+player,oe:team:c2bd1dd17a070dbbb8df9aefb634a41,Inside Games,IG,2019,Season 11,oe:player:da13539e133132113df109837a6ee08,Nora,bot,,,,,,,,,,,,,,
+player,oe:team:c2bd1dd17a070dbbb8df9aefb634a41,Inside Games,IG,2019,Season 11,oe:player:7a9cd9270896ea9c8ae4255d852a9cb,Domec,sup,,,,,,,,,,,,,,
+lineup,oe:team:c2bd1dd17a070dbbb8df9aefb634a41,Inside Games,IG,2019,Season 11,,,,lineup-64a755fb4cfd242a,IG-01,1,1,oe:player:18ffe87eed5b767f4fe9a1a41fe0d2e,oe:player:460ead0df841fd240bf48ab988c50e6,oe:player:8b94525f25b441bd6788b6604034321,oe:player:da13539e133132113df109837a6ee08,oe:player:7a9cd9270896ea9c8ae4255d852a9cb,Fux,DyBer,Patosh,Nora,Domec
+lineup,oe:team:c2bd1dd17a070dbbb8df9aefb634a41,Inside Games,IG,2019,Season 11,,,,lineup-85c3ed178da25394,IG-02,2,1,oe:player:8411b6e2a788ed8c0e57a25b61bab62,oe:player:460ead0df841fd240bf48ab988c50e6,oe:player:8b94525f25b441bd6788b6604034321,oe:player:da13539e133132113df109837a6ee08,oe:player:7a9cd9270896ea9c8ae4255d852a9cb,Haklbery,DyBer,Patosh,Nora,Domec
+player,oe:team:551f75a0b41dd5e9c9d068562434a86,Team Moops,TM,2019,Season 12,oe:player:66c37b5ad5a083ddd7e1034cb76e089,Garp,top,,,,,,,,,,,,,,
+player,oe:team:551f75a0b41dd5e9c9d068562434a86,Team Moops,TM,2019,Season 12,oe:player:3ed3bfb2206688225d2c909c809f35c,Vinxen,jng,,,,,,,,,,,,,,
+player,oe:team:551f75a0b41dd5e9c9d068562434a86,Team Moops,TM,2019,Season 12,oe:player:d42b4e2c67711e2fea589bde3f3277b,Awakër,mid,,,,,,,,,,,,,,
+player,oe:team:551f75a0b41dd5e9c9d068562434a86,Team Moops,TM,2019,Season 12,oe:player:ffc7be970454e6871321d2385be5a22,Creon,bot,,,,,,,,,,,,,,
+player,oe:team:551f75a0b41dd5e9c9d068562434a86,Team Moops,TM,2019,Season 12,oe:player:a291e13e72870a901a7a03a59d9c6be,Lilipp,sup,,,,,,,,,,,,,,
+lineup,oe:team:551f75a0b41dd5e9c9d068562434a86,Team Moops,TM,2019,Season 12,,,,lineup-94e57cc32dfd6b5c,TM-01,1,2,oe:player:66c37b5ad5a083ddd7e1034cb76e089,oe:player:3ed3bfb2206688225d2c909c809f35c,oe:player:d42b4e2c67711e2fea589bde3f3277b,oe:player:ffc7be970454e6871321d2385be5a22,oe:player:a291e13e72870a901a7a03a59d9c6be,Garp,Vinxen,Awakër,Creon,Lilipp
+player,oe:team:1c1e5c3fdd3090ed2162e9a17bcd4ab,Vikingekrig Esports,VE,2019,Season 12,oe:player:d0c52a9400db78779e0baae662a3fc2,Adiss,top,,,,,,,,,,,,,,
+player,oe:team:1c1e5c3fdd3090ed2162e9a17bcd4ab,Vikingekrig Esports,VE,2019,Season 12,oe:player:0f500956f995b17f0e573e313abc616,Hardy,jng,,,,,,,,,,,,,,
+player,oe:team:1c1e5c3fdd3090ed2162e9a17bcd4ab,Vikingekrig Esports,VE,2019,Season 12,oe:player:5d3e96fb0bac0c1073583eeb8598e68,Trenérský Mág,mid,,,,,,,,,,,,,,
+player,oe:team:1c1e5c3fdd3090ed2162e9a17bcd4ab,Vikingekrig Esports,VE,2019,Season 12,oe:player:d97c5a1d90fecec6cdab5c554734e7f,Kesav,bot,,,,,,,,,,,,,,
+player,oe:team:1c1e5c3fdd3090ed2162e9a17bcd4ab,Vikingekrig Esports,VE,2019,Season 12,oe:player:5d065a575c548f8ccbe8b276f5fb411,Sufon,sup,,,,,,,,,,,,,,
+lineup,oe:team:1c1e5c3fdd3090ed2162e9a17bcd4ab,Vikingekrig Esports,VE,2019,Season 12,,,,lineup-3a8a182503110a31,VE-01,1,2,oe:player:d0c52a9400db78779e0baae662a3fc2,oe:player:0f500956f995b17f0e573e313abc616,oe:player:5d3e96fb0bac0c1073583eeb8598e68,oe:player:d97c5a1d90fecec6cdab5c554734e7f,oe:player:5d065a575c548f8ccbe8b276f5fb411,Adiss,Hardy,Trenérský Mág,Kesav,Sufon
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2019,Season 12,oe:player:bf0fcdb863d11c4f6e7802f434de734,Robocop,top,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2019,Season 12,oe:player:0cbadb757e6cd6a2bb77f0748cfe398,Wondro,top,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2019,Season 12,oe:player:97e2124319af5f96331d38fc07ad71b,Jejky,jng,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2019,Season 12,oe:player:6aec0ace4133efdcd6a8ac81eb48f47,Sawyor,jng,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2019,Season 12,oe:player:64663f4646781c9c0110838b905daa2,Random,mid,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2019,Season 12,oe:player:df7fb677687a886fb22f75da316b949,Saulius,mid,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2019,Season 12,oe:player:956b4d2f499b1d362f693f82b8e652b,PiOk,bot,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2019,Season 12,oe:player:8fa8e03368dfcf76757e547fb75ae3f,Tarky,sup,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2019,Season 12,oe:player:a39d2bfa964a33bd2781fd469425c3f,VaSKED,sup,,,,,,,,,,,,,,
+lineup,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2019,Season 12,,,,lineup-69da66e0bf35352f,ESU-01,1,3,oe:player:0cbadb757e6cd6a2bb77f0748cfe398,oe:player:97e2124319af5f96331d38fc07ad71b,oe:player:64663f4646781c9c0110838b905daa2,oe:player:956b4d2f499b1d362f693f82b8e652b,oe:player:a39d2bfa964a33bd2781fd469425c3f,Wondro,Jejky,Random,PiOk,VaSKED
+lineup,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2019,Season 12,,,,lineup-f28c2d2fc5704b21,ESU-02,2,2,oe:player:bf0fcdb863d11c4f6e7802f434de734,oe:player:6aec0ace4133efdcd6a8ac81eb48f47,oe:player:df7fb677687a886fb22f75da316b949,oe:player:956b4d2f499b1d362f693f82b8e652b,oe:player:8fa8e03368dfcf76757e547fb75ae3f,Robocop,Sawyor,Saulius,PiOk,Tarky
+player,oe:team:6d67a82053d3c1cdd25fb9c5a9e64b0,eXtatus,EXT,2019,Season 12,oe:player:8486d94ef23b38c67c76b647613d881,bobista,top,,,,,,,,,,,,,,
+player,oe:team:6d67a82053d3c1cdd25fb9c5a9e64b0,eXtatus,EXT,2019,Season 12,oe:player:013f680f2d7950a0a8c2bf24078815a,Jellou,jng,,,,,,,,,,,,,,
+player,oe:team:6d67a82053d3c1cdd25fb9c5a9e64b0,eXtatus,EXT,2019,Season 12,oe:player:e42fd90dea956c3986b69209b56ce16,OMON,mid,,,,,,,,,,,,,,
+player,oe:team:6d67a82053d3c1cdd25fb9c5a9e64b0,eXtatus,EXT,2019,Season 12,oe:player:2b87ed60b8956615a42d7f3e9840e8c,Shine,bot,,,,,,,,,,,,,,
+player,oe:team:6d67a82053d3c1cdd25fb9c5a9e64b0,eXtatus,EXT,2019,Season 12,oe:player:634c7c3da211188b6585d3626d774a7,Ovčák,sup,,,,,,,,,,,,,,
+lineup,oe:team:6d67a82053d3c1cdd25fb9c5a9e64b0,eXtatus,EXT,2019,Season 12,,,,lineup-63e26a31a5de2182,EXT-01,1,3,oe:player:8486d94ef23b38c67c76b647613d881,oe:player:013f680f2d7950a0a8c2bf24078815a,oe:player:e42fd90dea956c3986b69209b56ce16,oe:player:2b87ed60b8956615a42d7f3e9840e8c,oe:player:634c7c3da211188b6585d3626d774a7,bobista,Jellou,OMON,Shine,Ovčák

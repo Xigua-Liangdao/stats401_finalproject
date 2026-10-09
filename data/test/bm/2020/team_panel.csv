@@ -1,0 +1,61 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:eb2b87e339ba7ff3299c01abfe6013b,Eesti Rästikud,ER,2020,Split 2,oe:player:c3d3ef9db62ceaabf7edd6657d9481c,Kristus,top,,,,,,,,,,,,,,
+player,oe:team:eb2b87e339ba7ff3299c01abfe6013b,Eesti Rästikud,ER,2020,Split 2,oe:player:1acdcb10f04342ef0aba553c2a59ff7,yOFT,jng,,,,,,,,,,,,,,
+player,oe:team:eb2b87e339ba7ff3299c01abfe6013b,Eesti Rästikud,ER,2020,Split 2,oe:player:8a58fbf4bd2f3116d830ccab0740530,Jabuticaba,mid,,,,,,,,,,,,,,
+player,oe:team:eb2b87e339ba7ff3299c01abfe6013b,Eesti Rästikud,ER,2020,Split 2,oe:player:01fc0520770d413ac765d5395027386,Ruf,bot,,,,,,,,,,,,,,
+player,oe:team:eb2b87e339ba7ff3299c01abfe6013b,Eesti Rästikud,ER,2020,Split 2,oe:player:05d15ff961284890b84ab2c96dfdfba,Sufleks,sup,,,,,,,,,,,,,,
+lineup,oe:team:eb2b87e339ba7ff3299c01abfe6013b,Eesti Rästikud,ER,2020,Split 2,,,,lineup-0bd5bb87e4e64f50,ER-01,1,1,oe:player:c3d3ef9db62ceaabf7edd6657d9481c,oe:player:1acdcb10f04342ef0aba553c2a59ff7,oe:player:8a58fbf4bd2f3116d830ccab0740530,oe:player:01fc0520770d413ac765d5395027386,oe:player:05d15ff961284890b84ab2c96dfdfba,Kristus,yOFT,Jabuticaba,Ruf,Sufleks
+player,oe:team:96d4e03f36d8b7e463892e5ece175de,Five Kings,FK,2020,Unknown,oe:player:ef9d05e11a95fa7624b76477d9b9965,Dethron,top,,,,,,,,,,,,,,
+player,oe:team:96d4e03f36d8b7e463892e5ece175de,Five Kings,FK,2020,Unknown,oe:player:3146138c3cb7f288eeb27fbf7355fbe,Onyoz,top,,,,,,,,,,,,,,
+player,oe:team:96d4e03f36d8b7e463892e5ece175de,Five Kings,FK,2020,Unknown,oe:player:0f64dad1002d4e3b1480345e53373a8,Fokkus,jng,,,,,,,,,,,,,,
+player,oe:team:96d4e03f36d8b7e463892e5ece175de,Five Kings,FK,2020,Unknown,oe:player:3f8f47eca182947e0240aa9436d1c3f,Lukeliz,jng,,,,,,,,,,,,,,
+player,oe:team:96d4e03f36d8b7e463892e5ece175de,Five Kings,FK,2020,Unknown,oe:player:bfdf9216572ebf67ddaa4703c32ddcc,Teogen,jng,,,,,,,,,,,,,,
+player,oe:team:96d4e03f36d8b7e463892e5ece175de,Five Kings,FK,2020,Unknown,oe:player:eaee5a7ad7c9bc645114d51d039f2fb,tibor,mid,,,,,,,,,,,,,,
+player,oe:team:96d4e03f36d8b7e463892e5ece175de,Five Kings,FK,2020,Unknown,oe:player:c74307223346c807cae4f6233d99791,Lakinther,bot,,,,,,,,,,,,,,
+player,oe:team:96d4e03f36d8b7e463892e5ece175de,Five Kings,FK,2020,Unknown,oe:player:0076912d1fa3f00533aaeaeb1a3bc7e,Noragano,bot,,,,,,,,,,,,,,
+player,oe:team:96d4e03f36d8b7e463892e5ece175de,Five Kings,FK,2020,Unknown,oe:player:44f9f55cd0bdd1b4c0fe5e43164bde7,Pattarek,sup,,,,,,,,,,,,,,
+lineup,oe:team:96d4e03f36d8b7e463892e5ece175de,Five Kings,FK,2020,Unknown,,,,lineup-bc618dd7cc9f3ac0,FK-01,1,5,oe:player:3146138c3cb7f288eeb27fbf7355fbe,oe:player:bfdf9216572ebf67ddaa4703c32ddcc,oe:player:eaee5a7ad7c9bc645114d51d039f2fb,oe:player:c74307223346c807cae4f6233d99791,oe:player:44f9f55cd0bdd1b4c0fe5e43164bde7,Onyoz,Teogen,tibor,Lakinther,Pattarek
+lineup,oe:team:96d4e03f36d8b7e463892e5ece175de,Five Kings,FK,2020,Unknown,,,,lineup-1fa1e9ab40146db3,FK-02,2,1,oe:player:3146138c3cb7f288eeb27fbf7355fbe,oe:player:0f64dad1002d4e3b1480345e53373a8,oe:player:eaee5a7ad7c9bc645114d51d039f2fb,oe:player:c74307223346c807cae4f6233d99791,oe:player:44f9f55cd0bdd1b4c0fe5e43164bde7,Onyoz,Fokkus,tibor,Lakinther,Pattarek
+lineup,oe:team:96d4e03f36d8b7e463892e5ece175de,Five Kings,FK,2020,Unknown,,,,lineup-a33bdcb9b4fa4d20,FK-03,3,1,oe:player:ef9d05e11a95fa7624b76477d9b9965,oe:player:3f8f47eca182947e0240aa9436d1c3f,oe:player:eaee5a7ad7c9bc645114d51d039f2fb,oe:player:0076912d1fa3f00533aaeaeb1a3bc7e,oe:player:44f9f55cd0bdd1b4c0fe5e43164bde7,Dethron,Lukeliz,tibor,Noragano,Pattarek
+player,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2020,Unknown,oe:player:ef9d05e11a95fa7624b76477d9b9965,Dethron,top,,,,,,,,,,,,,,
+player,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2020,Unknown,oe:player:019c9f92e1340ccaf0c625b0065deb2,AGENTAS,jng,,,,,,,,,,,,,,
+player,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2020,Unknown,oe:player:df7fb677687a886fb22f75da316b949,Saulius,mid,,,,,,,,,,,,,,
+player,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2020,Unknown,oe:player:50cce5a33514ebe62201a0a45314eca,Yashiro,bot,,,,,,,,,,,,,,
+player,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2020,Unknown,oe:player:50083ed74954c533c6c8cac9c553ff9,Xavieles,sup,,,,,,,,,,,,,,
+lineup,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2020,Unknown,,,,lineup-209298e684da49b4,IW-01,1,14,oe:player:ef9d05e11a95fa7624b76477d9b9965,oe:player:019c9f92e1340ccaf0c625b0065deb2,oe:player:df7fb677687a886fb22f75da316b949,oe:player:50cce5a33514ebe62201a0a45314eca,oe:player:50083ed74954c533c6c8cac9c553ff9,Dethron,AGENTAS,Saulius,Yashiro,Xavieles
+player,oe:team:7d972ad90215f34c0b41ffd5734c0d4,Kenty,KEN,2020,Split 2,oe:player:5c668dd8da95bbbdf28209422a22245,Smacl3r,top,,,,,,,,,,,,,,
+player,oe:team:7d972ad90215f34c0b41ffd5734c0d4,Kenty,KEN,2020,Split 2,oe:player:b3d747d889d0f471985c61ce5d02f90,ReaL,jng,,,,,,,,,,,,,,
+player,oe:team:7d972ad90215f34c0b41ffd5734c0d4,Kenty,KEN,2020,Split 2,oe:player:32683ba26957ddec510782ca7b4d9fc,Rimtuolis,mid,,,,,,,,,,,,,,
+player,oe:team:7d972ad90215f34c0b41ffd5734c0d4,Kenty,KEN,2020,Split 2,oe:player:a97ac35f5cf14775ec91e39b6dadc9e,Eonis,bot,,,,,,,,,,,,,,
+player,oe:team:7d972ad90215f34c0b41ffd5734c0d4,Kenty,KEN,2020,Split 2,oe:player:3a97b187a212f756902fe8601a66956,1roNN,sup,,,,,,,,,,,,,,
+lineup,oe:team:7d972ad90215f34c0b41ffd5734c0d4,Kenty,KEN,2020,Split 2,,,,lineup-dc65af0b5bce4119,KEN-01,1,1,oe:player:5c668dd8da95bbbdf28209422a22245,oe:player:b3d747d889d0f471985c61ce5d02f90,oe:player:32683ba26957ddec510782ca7b4d9fc,oe:player:a97ac35f5cf14775ec91e39b6dadc9e,oe:player:3a97b187a212f756902fe8601a66956,Smacl3r,ReaL,Rimtuolis,Eonis,1roNN
+player,oe:team:622459d5680faa3d82144c4d49a0294,Leviathans,LEV,2020,Split 1,oe:player:83a9b4ddab1103db0152c447d43392c,Omena,top,,,,,,,,,,,,,,
+player,oe:team:622459d5680faa3d82144c4d49a0294,Leviathans,LEV,2020,Split 1,oe:player:6dc7ae729c87dd9b26169b0fbaf04e7,Jenxas,jng,,,,,,,,,,,,,,
+player,oe:team:622459d5680faa3d82144c4d49a0294,Leviathans,LEV,2020,Split 1,oe:player:b637bb7d24b90803d4ddd54275f3afc,Spozhais,mid,,,,,,,,,,,,,,
+player,oe:team:622459d5680faa3d82144c4d49a0294,Leviathans,LEV,2020,Split 1,oe:player:8f0f54eb9813fa98e0d6e7bd481b5b7,Helvis,bot,,,,,,,,,,,,,,
+player,oe:team:622459d5680faa3d82144c4d49a0294,Leviathans,LEV,2020,Split 1,oe:player:354bf030a34ba9d84ca05f5361c5aa2,Buzzy,sup,,,,,,,,,,,,,,
+lineup,oe:team:622459d5680faa3d82144c4d49a0294,Leviathans,LEV,2020,Split 1,,,,lineup-1bb930860d678b58,LEV-01,1,1,oe:player:83a9b4ddab1103db0152c447d43392c,oe:player:6dc7ae729c87dd9b26169b0fbaf04e7,oe:player:b637bb7d24b90803d4ddd54275f3afc,oe:player:8f0f54eb9813fa98e0d6e7bd481b5b7,oe:player:354bf030a34ba9d84ca05f5361c5aa2,Omena,Jenxas,Spozhais,Helvis,Buzzy
+player,oe:team:816fd66f05f2069179b4c7f6a32fcdb,Split Raiders,SR,2020,Split 1,oe:player:b45662988170cf4cfe5fd2f6398a7ac,Karisas,top,,,,,,,,,,,,,,
+player,oe:team:816fd66f05f2069179b4c7f6a32fcdb,Split Raiders,SR,2020,Split 1,oe:player:0b86165c05c887717356385698f19fa,Jaunutis1,jng,,,,,,,,,,,,,,
+player,oe:team:816fd66f05f2069179b4c7f6a32fcdb,Split Raiders,SR,2020,Split 1,oe:player:83e8cd90b8f749d97144c0bb4fed90c,Arnax,mid,,,,,,,,,,,,,,
+player,oe:team:816fd66f05f2069179b4c7f6a32fcdb,Split Raiders,SR,2020,Split 1,oe:player:c74307223346c807cae4f6233d99791,Lakinther,bot,,,,,,,,,,,,,,
+player,oe:team:816fd66f05f2069179b4c7f6a32fcdb,Split Raiders,SR,2020,Split 1,oe:player:1fd967a816834982761258785b9d0b5,Gnome,sup,,,,,,,,,,,,,,
+lineup,oe:team:816fd66f05f2069179b4c7f6a32fcdb,Split Raiders,SR,2020,Split 1,,,,lineup-dbd0fe7134a2f739,SR-01,1,1,oe:player:b45662988170cf4cfe5fd2f6398a7ac,oe:player:0b86165c05c887717356385698f19fa,oe:player:83e8cd90b8f749d97144c0bb4fed90c,oe:player:c74307223346c807cae4f6233d99791,oe:player:1fd967a816834982761258785b9d0b5,Karisas,Jaunutis1,Arnax,Lakinther,Gnome
+player,oe:team:d06e44d315e9885e416867447358542,Team Infamous,TI,2020,Split 2,oe:player:ac75fe35a9b7bbb0d3b826e252b6258,Dingo,top,,,,,,,,,,,,,,
+player,oe:team:d06e44d315e9885e416867447358542,Team Infamous,TI,2020,Split 2,oe:player:61683ec175a445b4d280d8636879f23,theblindboy,top,,,,,,,,,,,,,,
+player,oe:team:d06e44d315e9885e416867447358542,Team Infamous,TI,2020,Split 2,oe:player:055dd39d06ffb69e8d27ee151113927,Chuffylol,jng,,,,,,,,,,,,,,
+player,oe:team:d06e44d315e9885e416867447358542,Team Infamous,TI,2020,Split 2,oe:player:673d5ba360415137ea304ecd3868b07,M6msu,jng,,,,,,,,,,,,,,
+player,oe:team:d06e44d315e9885e416867447358542,Team Infamous,TI,2020,Split 2,oe:player:65acc51a405a4e873f45323f597a92e,Slowla,mid,,,,,,,,,,,,,,
+player,oe:team:d06e44d315e9885e416867447358542,Team Infamous,TI,2020,Split 2,oe:player:792eabe7cbadb11c006085d20585bf6,MrFreezed,bot,,,,,,,,,,,,,,
+player,oe:team:d06e44d315e9885e416867447358542,Team Infamous,TI,2020,Split 2,oe:player:ac75fe35a9b7bbb0d3b826e252b6258,Dingo,sup,,,,,,,,,,,,,,
+player,oe:team:d06e44d315e9885e416867447358542,Team Infamous,TI,2020,Split 2,oe:player:b5f3b31a832a74098d4ae3d2571ddee,Fäpä,sup,,,,,,,,,,,,,,
+player,oe:team:d06e44d315e9885e416867447358542,Team Infamous,TI,2020,Split 2,oe:player:efd15d1c779a63bb1b99926dfee2b18,Warizar,sup,,,,,,,,,,,,,,
+lineup,oe:team:d06e44d315e9885e416867447358542,Team Infamous,TI,2020,Split 2,,,,lineup-15811011a5e548d3,TI-01,1,1,oe:player:ac75fe35a9b7bbb0d3b826e252b6258,oe:player:673d5ba360415137ea304ecd3868b07,oe:player:65acc51a405a4e873f45323f597a92e,oe:player:792eabe7cbadb11c006085d20585bf6,oe:player:efd15d1c779a63bb1b99926dfee2b18,Dingo,M6msu,Slowla,MrFreezed,Warizar
+lineup,oe:team:d06e44d315e9885e416867447358542,Team Infamous,TI,2020,Split 2,,,,lineup-2367ac2275ccdf4b,TI-02,2,1,oe:player:61683ec175a445b4d280d8636879f23,oe:player:055dd39d06ffb69e8d27ee151113927,oe:player:65acc51a405a4e873f45323f597a92e,oe:player:792eabe7cbadb11c006085d20585bf6,oe:player:b5f3b31a832a74098d4ae3d2571ddee,theblindboy,Chuffylol,Slowla,MrFreezed,Fäpä
+lineup,oe:team:d06e44d315e9885e416867447358542,Team Infamous,TI,2020,Split 2,,,,lineup-478fd6a3ea03ee5c,TI-03,3,1,oe:player:61683ec175a445b4d280d8636879f23,oe:player:055dd39d06ffb69e8d27ee151113927,oe:player:65acc51a405a4e873f45323f597a92e,oe:player:792eabe7cbadb11c006085d20585bf6,oe:player:ac75fe35a9b7bbb0d3b826e252b6258,theblindboy,Chuffylol,Slowla,MrFreezed,Dingo
+player,oe:team:89bd16bac1dcdbb669bf9ff28aec00f,justforfun,JUS,2020,Unknown,oe:player:a62e7e1e4dfd211e99796aebb24dd87,welcom,top,,,,,,,,,,,,,,
+player,oe:team:89bd16bac1dcdbb669bf9ff28aec00f,justforfun,JUS,2020,Unknown,oe:player:6dc7ae729c87dd9b26169b0fbaf04e7,Jenxas,jng,,,,,,,,,,,,,,
+player,oe:team:89bd16bac1dcdbb669bf9ff28aec00f,justforfun,JUS,2020,Unknown,oe:player:35b5dc29a02b62b577ed0c652af69dd,Domas,mid,,,,,,,,,,,,,,
+player,oe:team:89bd16bac1dcdbb669bf9ff28aec00f,justforfun,JUS,2020,Unknown,oe:player:4cd290e394e585e40deb94f1a4e613b,cyraXx,bot,,,,,,,,,,,,,,
+player,oe:team:89bd16bac1dcdbb669bf9ff28aec00f,justforfun,JUS,2020,Unknown,oe:player:c31a034a992485076246638bccd0c3d,Mercenary,sup,,,,,,,,,,,,,,
+lineup,oe:team:89bd16bac1dcdbb669bf9ff28aec00f,justforfun,JUS,2020,Unknown,,,,lineup-c2bd21688f6e8329,JUS-01,1,4,oe:player:a62e7e1e4dfd211e99796aebb24dd87,oe:player:6dc7ae729c87dd9b26169b0fbaf04e7,oe:player:35b5dc29a02b62b577ed0c652af69dd,oe:player:4cd290e394e585e40deb94f1a4e613b,oe:player:c31a034a992485076246638bccd0c3d,welcom,Jenxas,Domas,cyraXx,Mercenary

@@ -64,17 +64,17 @@ export function setLanguage(id) {
 
 export function applyDocumentCopy() {
   document.documentElement.lang = textLocale();
-  document.title = t('home.title');
+  document.title = t('app.title');
   const skip = document.querySelector('.skip-link');
   if (skip) skip.textContent = t('app.skip');
   const footer = document.querySelector('.site-footer span');
   if (footer) {
-    footer.textContent = ['STATS 401', t('home.title'), t('app.authorTu'), t('app.authorChen')].join(' · ');
+    footer.textContent = ['STATS 401', t('app.name'), t('app.authorTu'), t('app.authorChen')].join(' · ');
   }
   const startup = document.querySelector('#startup');
   if (startup) startup.setAttribute('aria-label', t('app.loading'));
   const startupId = document.querySelector('.startup__id');
-  if (startupId) startupId.textContent = t('home.title');
+  if (startupId) startupId.textContent = t('app.name');
   const startupNote = document.querySelector('.startup__note');
   if (startupNote) startupNote.textContent = t('app.tagline');
   const wipe = document.querySelector('.route-wipe__mark');

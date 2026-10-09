@@ -1,0 +1,43 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2025,Unknown,oe:player:fb66ef5885b4be9323905b821dc3a42,Bin,top,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2025,Unknown,oe:player:fbdc4428b2d095c83aebeed5da4e4b2,Xun,jng,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2025,Unknown,oe:player:c047390b97913db5db515101aea5b88,Yxl,mid,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2025,Unknown,oe:player:9573154ad8bc9459b4c0d940315054f,Viper,bot,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2025,Unknown,oe:player:90651ebea9a35ec4e018c8157492e17,ON,sup,,,,,,,,,,,,,,
+lineup,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2025,Unknown,,,,lineup-3b164f6ba41617f1,BLG-01,1,2,oe:player:fb66ef5885b4be9323905b821dc3a42,oe:player:fbdc4428b2d095c83aebeed5da4e4b2,oe:player:c047390b97913db5db515101aea5b88,oe:player:9573154ad8bc9459b4c0d940315054f,oe:player:90651ebea9a35ec4e018c8157492e17,Bin,Xun,Yxl,Viper,ON
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2025,Unknown,oe:player:8007ba25dee37ac1e4445a6e9f8d252,Xiaoxu,top,,,,,,,,,,,,,,
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2025,Unknown,oe:player:a22a6d1fe8786cf83675e2d932fbffe,JunJia,jng,,,,,,,,,,,,,,
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2025,Unknown,oe:player:a179853ac2a0832657b9de8b9ba0020,HongQ,mid,,,,,,,,,,,,,,
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2025,Unknown,oe:player:867e8957fae1cb59f0808dbcc3aada2,GALA,bot,,,,,,,,,,,,,,
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2025,Unknown,oe:player:41ad87cfc159526f62529db61162a2a,Vampire,sup,,,,,,,,,,,,,,
+lineup,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2025,Unknown,,,,lineup-c7e78a0247735940,JDG-01,1,2,oe:player:8007ba25dee37ac1e4445a6e9f8d252,oe:player:a22a6d1fe8786cf83675e2d932fbffe,oe:player:a179853ac2a0832657b9de8b9ba0020,oe:player:867e8957fae1cb59f0808dbcc3aada2,oe:player:41ad87cfc159526f62529db61162a2a,Xiaoxu,JunJia,HongQ,GALA,Vampire
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2025,Unknown,oe:player:e85e46c5f3d3fcce55af9ca6a4cb45c,sasi,top,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2025,Unknown,oe:player:92f0831b560a15d8be3be25275adb08,Heng,jng,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2025,Unknown,oe:player:3c93fcbfb525315f6412904e5b9abbd,Tangyuan,mid,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2025,Unknown,oe:player:6d734e1e86b978852d95cfd63d6a643,Shaoye,bot,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2025,Unknown,oe:player:397bcf46311de3cf780469b2a842b67,Ycx,sup,,,,,,,,,,,,,,
+lineup,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2025,Unknown,,,,lineup-81a7da13df0ab6fd,LGD-01,1,2,oe:player:e85e46c5f3d3fcce55af9ca6a4cb45c,oe:player:92f0831b560a15d8be3be25275adb08,oe:player:3c93fcbfb525315f6412904e5b9abbd,oe:player:6d734e1e86b978852d95cfd63d6a643,oe:player:397bcf46311de3cf780469b2a842b67,sasi,Heng,Tangyuan,Shaoye,Ycx
+player,oe:team:a9145b7711873f53e610fbba0493484,LNG Esports,LNG,2025,Unknown,oe:player:3ce68cf813bc34243279fd7fe3cecbb,sheer,top,,,,,,,,,,,,,,
+player,oe:team:a9145b7711873f53e610fbba0493484,LNG Esports,LNG,2025,Unknown,oe:player:5c6f901a83ec448d51703aebba0ca64,Croco,jng,,,,,,,,,,,,,,
+player,oe:team:a9145b7711873f53e610fbba0493484,LNG Esports,LNG,2025,Unknown,oe:player:317aeb74a6dd16bea711bbad361ca44,BuLLDoG,mid,,,,,,,,,,,,,,
+player,oe:team:a9145b7711873f53e610fbba0493484,LNG Esports,LNG,2025,Unknown,oe:player:d2b317a92a71a850ae3da1e0d83e883,1xn,bot,,,,,,,,,,,,,,
+player,oe:team:a9145b7711873f53e610fbba0493484,LNG Esports,LNG,2025,Unknown,oe:player:10d1208b485425756fcc932229386b0,MISSING,sup,,,,,,,,,,,,,,
+lineup,oe:team:a9145b7711873f53e610fbba0493484,LNG Esports,LNG,2025,Unknown,,,,lineup-08d25c80a9915dd9,LNG-01,1,14,oe:player:3ce68cf813bc34243279fd7fe3cecbb,oe:player:5c6f901a83ec448d51703aebba0ca64,oe:player:317aeb74a6dd16bea711bbad361ca44,oe:player:d2b317a92a71a850ae3da1e0d83e883,oe:player:10d1208b485425756fcc932229386b0,sheer,Croco,BuLLDoG,1xn,MISSING
+player,oe:team:f4c4528c6981e104a11ea7548630c23,Oh My God,OMG,2025,Unknown,oe:player:407b2b8fcb2fd977fc766d5df3f4dff,Hery,top,,,,,,,,,,,,,,
+player,oe:team:f4c4528c6981e104a11ea7548630c23,Oh My God,OMG,2025,Unknown,oe:player:3ee0c18b85e7bb8eaad86d58498e27d,Juhan,jng,,,,,,,,,,,,,,
+player,oe:team:f4c4528c6981e104a11ea7548630c23,Oh My God,OMG,2025,Unknown,oe:player:f886838ee1808c2f217208267a829ce,haichao,mid,,,,,,,,,,,,,,
+player,oe:team:f4c4528c6981e104a11ea7548630c23,Oh My God,OMG,2025,Unknown,oe:player:0be01924125adebc1a95bbb09d0c4d1,Starry,bot,,,,,,,,,,,,,,
+player,oe:team:f4c4528c6981e104a11ea7548630c23,Oh My God,OMG,2025,Unknown,oe:player:dfc279de8d7bd571aa8edfd7eb89c03,Moham,sup,,,,,,,,,,,,,,
+lineup,oe:team:f4c4528c6981e104a11ea7548630c23,Oh My God,OMG,2025,Unknown,,,,lineup-5e998b63ad2823d3,OMG-01,1,8,oe:player:407b2b8fcb2fd977fc766d5df3f4dff,oe:player:3ee0c18b85e7bb8eaad86d58498e27d,oe:player:f886838ee1808c2f217208267a829ce,oe:player:0be01924125adebc1a95bbb09d0c4d1,oe:player:dfc279de8d7bd571aa8edfd7eb89c03,Hery,Juhan,haichao,Starry,Moham
+player,oe:team:df80f468a3f9a722df056fe9104f052,ThunderTalk Gaming,TT,2025,Unknown,oe:player:9d8737d57b1048a8b571856a296b624,Keshi,top,,,,,,,,,,,,,,
+player,oe:team:df80f468a3f9a722df056fe9104f052,ThunderTalk Gaming,TT,2025,Unknown,oe:player:211333df928f872c063bce4ef25ea63,Junhao,jng,,,,,,,,,,,,,,
+player,oe:team:df80f468a3f9a722df056fe9104f052,ThunderTalk Gaming,TT,2025,Unknown,oe:player:9fbfcaef69533c0545859880e974572,Heru,mid,,,,,,,,,,,,,,
+player,oe:team:df80f468a3f9a722df056fe9104f052,ThunderTalk Gaming,TT,2025,Unknown,oe:player:11d4eea204ec17c89fd957a648c2e6d,Ryan3,bot,,,,,,,,,,,,,,
+player,oe:team:df80f468a3f9a722df056fe9104f052,ThunderTalk Gaming,TT,2025,Unknown,oe:player:5000a68e43f946c726a17e1008e230a,Feather,sup,,,,,,,,,,,,,,
+lineup,oe:team:df80f468a3f9a722df056fe9104f052,ThunderTalk Gaming,TT,2025,Unknown,,,,lineup-a717b1be01a12f3e,TT-01,1,2,oe:player:9d8737d57b1048a8b571856a296b624,oe:player:211333df928f872c063bce4ef25ea63,oe:player:9fbfcaef69533c0545859880e974572,oe:player:11d4eea204ec17c89fd957a648c2e6d,oe:player:5000a68e43f946c726a17e1008e230a,Keshi,Junhao,Heru,Ryan3,Feather
+player,oe:team:606c6ac695907af3823ee6405c58ff1,Weibo Gaming,WBG,2025,Unknown,oe:player:65ed20b21e2993fb00dbd21a2fd991b,Zika,top,,,,,,,,,,,,,,
+player,oe:team:606c6ac695907af3823ee6405c58ff1,Weibo Gaming,WBG,2025,Unknown,oe:player:88bba3108e62145a9780becd3eb553d,Jiejie,jng,,,,,,,,,,,,,,
+player,oe:team:606c6ac695907af3823ee6405c58ff1,Weibo Gaming,WBG,2025,Unknown,oe:player:beea9fe15bff6a7ab0b3913d3d5fde6,Xiaohu,mid,,,,,,,,,,,,,,
+player,oe:team:606c6ac695907af3823ee6405c58ff1,Weibo Gaming,WBG,2025,Unknown,oe:player:a58a0d41103cdc5b58cbb547eeaca2d,Elk,bot,,,,,,,,,,,,,,
+player,oe:team:606c6ac695907af3823ee6405c58ff1,Weibo Gaming,WBG,2025,Unknown,oe:player:a7128975a782c11d8c34525be8e1b6c,Erha,sup,,,,,,,,,,,,,,
+lineup,oe:team:606c6ac695907af3823ee6405c58ff1,Weibo Gaming,WBG,2025,Unknown,,,,lineup-3d05d1aa91736d4b,WBG-01,1,2,oe:player:65ed20b21e2993fb00dbd21a2fd991b,oe:player:88bba3108e62145a9780becd3eb553d,oe:player:beea9fe15bff6a7ab0b3913d3d5fde6,oe:player:a58a0d41103cdc5b58cbb547eeaca2d,oe:player:a7128975a782c11d8c34525be8e1b6c,Zika,Jiejie,Xiaohu,Elk,Erha

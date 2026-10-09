@@ -1,0 +1,63 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2016,Unknown,oe:player:3136a9f696493782b8b07c895377f81,BalIs,top,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2016,Unknown,oe:player:954601796c16fa224b98f54b380855c,Rush,jng,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2016,Unknown,oe:player:7e0e7ac2a199e8e2ecb30499a3b2153,Jensen,mid,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2016,Unknown,oe:player:267b730dd2e2dcb97182a2795935491,Sneaky,bot,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2016,Unknown,oe:player:486a694eed702562985d71457d55481,Hai,sup,,,,,,,,,,,,,,
+lineup,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2016,Unknown,,,,lineup-b8367f8885dcf487,CLO-01,1,2,oe:player:3136a9f696493782b8b07c895377f81,oe:player:954601796c16fa224b98f54b380855c,oe:player:7e0e7ac2a199e8e2ecb30499a3b2153,oe:player:267b730dd2e2dcb97182a2795935491,oe:player:486a694eed702562985d71457d55481,BalIs,Rush,Jensen,Sneaky,Hai
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2016,Unknown,oe:player:5e79b66b78498aa1aec126b0b4ca1a1,Darshan,top,,,,,,,,,,,,,,
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2016,Unknown,oe:player:419bc348a61e7433593ea741189d833,Xmithie,jng,,,,,,,,,,,,,,
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2016,Unknown,oe:player:9191e392e93a6ef011ef76b5b83ee6c,huhi,mid,,,,,,,,,,,,,,
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2016,Unknown,oe:player:51d421a31ce72460198ef946995fb11,Stixxay,bot,,,,,,,,,,,,,,
+player,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2016,Unknown,oe:player:f48c70640770b42b5d7dd72aa21e005,aphromoo,sup,,,,,,,,,,,,,,
+lineup,oe:team:cbfaf0ca2181f0903d2fcceb6c28f3b,Counter Logic Gaming,CLG,2016,Unknown,,,,lineup-a34cf5df45c9b739,CLG-01,1,7,oe:player:5e79b66b78498aa1aec126b0b4ca1a1,oe:player:419bc348a61e7433593ea741189d833,oe:player:9191e392e93a6ef011ef76b5b83ee6c,oe:player:51d421a31ce72460198ef946995fb11,oe:player:f48c70640770b42b5d7dd72aa21e005,Darshan,Xmithie,huhi,Stixxay,aphromoo
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2016,Unknown,oe:player:a688eba372e5b7f4f1a3e15341e369c,Jaeger,top,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2016,Unknown,oe:player:d730e6017b42d1784032e728fcd4eef,Kirei,jng,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2016,Unknown,oe:player:639abc229c3dc66917bf3a01d46ae65,Shiphtur,mid,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2016,Unknown,oe:player:3caf8d2f2d789c0f073a824f8a71d59,Apollo,bot,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2016,Unknown,oe:player:c22cb6fc65a653f1ad1dc271187ede9,Jesiz,sup,,,,,,,,,,,,,,
+lineup,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2016,Unknown,,,,lineup-072c7fc4ce857b67,DIG-01,1,3,oe:player:a688eba372e5b7f4f1a3e15341e369c,oe:player:d730e6017b42d1784032e728fcd4eef,oe:player:639abc229c3dc66917bf3a01d46ae65,oe:player:3caf8d2f2d789c0f073a824f8a71d59,oe:player:c22cb6fc65a653f1ad1dc271187ede9,Jaeger,Kirei,Shiphtur,Apollo,Jesiz
+player,oe:team:5b90b1fda6971ccdccf9eb32286aa50,H2k-Gaming,H2K,2016,Unknown,oe:player:2b819506567c258f6fffdd4ec78ca0c,Odoamne,top,,,,,,,,,,,,,,
+player,oe:team:5b90b1fda6971ccdccf9eb32286aa50,H2k-Gaming,H2K,2016,Unknown,oe:player:a2f6e754fc2b358f7786f52decb4274,Jankos,jng,,,,,,,,,,,,,,
+player,oe:team:5b90b1fda6971ccdccf9eb32286aa50,H2k-Gaming,H2K,2016,Unknown,oe:player:d67c1e27e0d8409bec2b32c592172b2,Ryu,mid,,,,,,,,,,,,,,
+player,oe:team:5b90b1fda6971ccdccf9eb32286aa50,H2k-Gaming,H2K,2016,Unknown,oe:player:493eb5b2f5f99058abd9ed5b995572b,FORG1VEN,bot,,,,,,,,,,,,,,
+player,oe:team:5b90b1fda6971ccdccf9eb32286aa50,H2k-Gaming,H2K,2016,Unknown,oe:player:280a58c350eef8f164e753447b2a306,Vander,sup,,,,,,,,,,,,,,
+lineup,oe:team:5b90b1fda6971ccdccf9eb32286aa50,H2k-Gaming,H2K,2016,Unknown,,,,lineup-ca1142b879bac7c8,H2K-01,1,2,oe:player:2b819506567c258f6fffdd4ec78ca0c,oe:player:a2f6e754fc2b358f7786f52decb4274,oe:player:d67c1e27e0d8409bec2b32c592172b2,oe:player:493eb5b2f5f99058abd9ed5b995572b,oe:player:280a58c350eef8f164e753447b2a306,Odoamne,Jankos,Ryu,FORG1VEN,Vander
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2016,Unknown,oe:player:110de1170a2c2ac8bbc0dc557061b69,SoHwan,top,,,,,,,,,,,,,,
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2016,Unknown,oe:player:6506cea9e37ae93383637c8737cbf34,Winged,jng,,,,,,,,,,,,,,
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2016,Unknown,oe:player:c12513153fca703d809f0eafa5fccbe,Kuzan,mid,,,,,,,,,,,,,,
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2016,Unknown,oe:player:ebec939da49d80219030b8441845ef9,Pilot,bot,,,,,,,,,,,,,,
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2016,Unknown,oe:player:edfacb40d6409e2d9860254c723799c,Chei,sup,,,,,,,,,,,,,,
+lineup,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2016,Unknown,,,,lineup-ced26a77929732db,JAGW-01,1,2,oe:player:110de1170a2c2ac8bbc0dc557061b69,oe:player:6506cea9e37ae93383637c8737cbf34,oe:player:c12513153fca703d809f0eafa5fccbe,oe:player:ebec939da49d80219030b8441845ef9,oe:player:edfacb40d6409e2d9860254c723799c,SoHwan,Winged,Kuzan,Pilot,Chei
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Unknown,oe:player:4dc81fef774e0bb63830b7ad287f1bf,Acorn,top,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Unknown,oe:player:46ae976ee45d2eb4b5bcc44dfc223b3,Flame,top,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Unknown,oe:player:834e9c779ea93625da0dfc53df5f228,tbq,jng,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Unknown,oe:player:a20cb2b91531d5425abb8f38ebb6c99,GodV,mid,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Unknown,oe:player:5d859973609e453b2c48448851e4bfb,imp,bot,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Unknown,oe:player:707db7bba13f08e124e564143ff4aa3,pyl,sup,,,,,,,,,,,,,,
+lineup,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Unknown,,,,lineup-520cb8e06bb16f6e,LGD-01,1,1,oe:player:46ae976ee45d2eb4b5bcc44dfc223b3,oe:player:834e9c779ea93625da0dfc53df5f228,oe:player:a20cb2b91531d5425abb8f38ebb6c99,oe:player:5d859973609e453b2c48448851e4bfb,oe:player:707db7bba13f08e124e564143ff4aa3,Flame,tbq,GodV,imp,pyl
+lineup,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Unknown,,,,lineup-53b3a19eba05f4a7,LGD-02,2,1,oe:player:4dc81fef774e0bb63830b7ad287f1bf,oe:player:834e9c779ea93625da0dfc53df5f228,oe:player:a20cb2b91531d5425abb8f38ebb6c99,oe:player:5d859973609e453b2c48448851e4bfb,oe:player:707db7bba13f08e124e564143ff4aa3,Acorn,tbq,GodV,imp,pyl
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2016,Unknown,oe:player:e4e943fa882367a96fb2a365de4e28c,sOAZ,top,,,,,,,,,,,,,,
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2016,Unknown,oe:player:0c8025702d201f7f99b0495c459c069,Amazing,jng,,,,,,,,,,,,,,
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2016,Unknown,oe:player:b6ebe3c8487ddc3a23c586e650c4528,PowerOfEvil,mid,,,,,,,,,,,,,,
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2016,Unknown,oe:player:10fcffece0ac7be85f09c4b51a75762,Zven,bot,,,,,,,,,,,,,,
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2016,Unknown,oe:player:0602036a87550a3c7c8aa049ddaef49,Mithy,sup,,,,,,,,,,,,,,
+lineup,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2016,Unknown,,,,lineup-a38f2112cf03210c,ORI-01,1,5,oe:player:e4e943fa882367a96fb2a365de4e28c,oe:player:0c8025702d201f7f99b0495c459c069,oe:player:b6ebe3c8487ddc3a23c586e650c4528,oe:player:10fcffece0ac7be85f09c4b51a75762,oe:player:0602036a87550a3c7c8aa049ddaef49,sOAZ,Amazing,PowerOfEvil,Zven,Mithy
+player,oe:team:1664f819c4a19a12d748a78a1ca0d7d,Qiao Gu Reapers,QGR,2016,Unknown,oe:player:5206560a306a2e085a437fd258eb57c,V,top,,,,,,,,,,,,,,
+player,oe:team:1664f819c4a19a12d748a78a1ca0d7d,Qiao Gu Reapers,QGR,2016,Unknown,oe:player:ae832e9b5bda2699db45f3fa6aa8c55,Swift,jng,,,,,,,,,,,,,,
+player,oe:team:1664f819c4a19a12d748a78a1ca0d7d,Qiao Gu Reapers,QGR,2016,Unknown,oe:player:9b73925063fe3714ebb4e8c10f551c0,Doinb,mid,,,,,,,,,,,,,,
+player,oe:team:1664f819c4a19a12d748a78a1ca0d7d,Qiao Gu Reapers,QGR,2016,Unknown,oe:player:ef97b40b2245d3690c745cd6e8c663d,Happy,bot,,,,,,,,,,,,,,
+player,oe:team:1664f819c4a19a12d748a78a1ca0d7d,Qiao Gu Reapers,QGR,2016,Unknown,oe:player:3a51d2dae2a4c583a3f70ceed2e17ff,Mor,sup,,,,,,,,,,,,,,
+lineup,oe:team:1664f819c4a19a12d748a78a1ca0d7d,Qiao Gu Reapers,QGR,2016,Unknown,,,,lineup-d1128d8a3aea0683,QGR-01,1,3,oe:player:5206560a306a2e085a437fd258eb57c,oe:player:ae832e9b5bda2699db45f3fa6aa8c55,oe:player:9b73925063fe3714ebb4e8c10f551c0,oe:player:ef97b40b2245d3690c745cd6e8c663d,oe:player:3a51d2dae2a4c583a3f70ceed2e17ff,V,Swift,Doinb,Happy,Mor
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2016,Unknown,oe:player:20aba59cf47a04a6cf10436ce1946ac,Hauntzer,top,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2016,Unknown,oe:player:c271341160441d375411fef9bf2f9ef,Svenskeren,jng,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2016,Unknown,oe:player:63ba5c5e5bb73ace706183b5e05a27e,Bjergsen,mid,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2016,Unknown,oe:player:f25df399390d86b9a1e83216dae597b,Doublelift,bot,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2016,Unknown,oe:player:cfcad7b09bed919fa42cc1dd83b6b63,Kasing,sup,,,,,,,,,,,,,,
+lineup,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2016,Unknown,,,,lineup-46486698b47eb1bc,TSM-01,1,4,oe:player:20aba59cf47a04a6cf10436ce1946ac,oe:player:c271341160441d375411fef9bf2f9ef,oe:player:63ba5c5e5bb73ace706183b5e05a27e,oe:player:f25df399390d86b9a1e83216dae597b,oe:player:cfcad7b09bed919fa42cc1dd83b6b63,Hauntzer,Svenskeren,Bjergsen,Doublelift,Kasing
+player,oe:team:142fd4ee188f60dc0549cdca7610e55,Unicorns of Love,UOL,2016,Unknown,oe:player:e0b008815ab05c5cdaf4d46ab61ff63,Vizicsacsi,top,,,,,,,,,,,,,,
+player,oe:team:142fd4ee188f60dc0549cdca7610e55,Unicorns of Love,UOL,2016,Unknown,oe:player:f926d5dcf4dca16c457e64fc9ef6c87,Gilius,jng,,,,,,,,,,,,,,
+player,oe:team:142fd4ee188f60dc0549cdca7610e55,Unicorns of Love,UOL,2016,Unknown,oe:player:1e848c5f01f7e93591d918f73337835,Fox,mid,,,,,,,,,,,,,,
+player,oe:team:142fd4ee188f60dc0549cdca7610e55,Unicorns of Love,UOL,2016,Unknown,oe:player:bea6c089fd517fff3bc020290ae48f7,Steeelback,bot,,,,,,,,,,,,,,
+player,oe:team:142fd4ee188f60dc0549cdca7610e55,Unicorns of Love,UOL,2016,Unknown,oe:player:3c784fdd6a025028ad063525c14027a,Hylissang,sup,,,,,,,,,,,,,,
+lineup,oe:team:142fd4ee188f60dc0549cdca7610e55,Unicorns of Love,UOL,2016,Unknown,,,,lineup-f61f5faedd8b4d1b,UOL-01,1,2,oe:player:e0b008815ab05c5cdaf4d46ab61ff63,oe:player:f926d5dcf4dca16c457e64fc9ef6c87,oe:player:1e848c5f01f7e93591d918f73337835,oe:player:bea6c089fd517fff3bc020290ae48f7,oe:player:3c784fdd6a025028ad063525c14027a,Vizicsacsi,Gilius,Fox,Steeelback,Hylissang

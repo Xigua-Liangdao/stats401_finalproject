@@ -1,0 +1,76 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2020,Spring,oe:player:dc760d6884ce21614b2389ac1c05ec2,FakeGod,top,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2020,Spring,oe:player:8a5dbe19794784cfd0553556844f045,Contractz,jng,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2020,Spring,oe:player:d3b78a30a7132a543fe9f14a5a25918,Soligo,mid,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2020,Spring,oe:player:416ea631f3b7a0d79f4263e00736f02,Prismal,bot,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2020,Spring,oe:player:647116a60606bd44fb11a860da72776,Breezy,sup,,,,,,,,,,,,,,
+lineup,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2020,Spring,,,,lineup-185605711d9ddf5c,1TA-01,1,1,oe:player:dc760d6884ce21614b2389ac1c05ec2,oe:player:8a5dbe19794784cfd0553556844f045,oe:player:d3b78a30a7132a543fe9f14a5a25918,oe:player:416ea631f3b7a0d79f4263e00736f02,oe:player:647116a60606bd44fb11a860da72776,FakeGod,Contractz,Soligo,Prismal,Breezy
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2020,Spring,oe:player:023b976c0fc6ba4d350f2c06d333f62,RJS,top,,,,,,,,,,,,,,
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2020,Spring,oe:player:f50a30fd2f6e559220dd417b0ce2dd8,Fragas,jng,,,,,,,,,,,,,,
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2020,Spring,oe:player:cc3a241d9b6a251a9038c7d47131df0,Tuesday,mid,,,,,,,,,,,,,,
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2020,Spring,oe:player:3e1e4e89a38f2a1a33ce0884a78a090,Wind,bot,,,,,,,,,,,,,,
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2020,Spring,oe:player:db3e3f51c9107e26c9bccf9a188ce2e,Fill,sup,,,,,,,,,,,,,,
+lineup,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2020,Spring,,,,lineup-f198d6d1bfcb4d0f,CA-01,1,12,oe:player:023b976c0fc6ba4d350f2c06d333f62,oe:player:f50a30fd2f6e559220dd417b0ce2dd8,oe:player:cc3a241d9b6a251a9038c7d47131df0,oe:player:3e1e4e89a38f2a1a33ce0884a78a090,oe:player:db3e3f51c9107e26c9bccf9a188ce2e,RJS,Fragas,Tuesday,Wind,Fill
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2020,Spring,oe:player:f02f1c8275084050765b4b6414bdfda,Fudge,top,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2020,Spring,oe:player:a9cdfd1c803a0c395fa90d0042c1e60,Inori,jng,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2020,Spring,oe:player:fddde6d256bee26713f64ad9b2a9394,Palafox,mid,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2020,Spring,oe:player:fb18ab6bf6bef08402a580d2a96c106,k1ng,bot,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2020,Spring,oe:player:5a4ed34a7baf1d14942def4ab49ce38,Diamond,sup,,,,,,,,,,,,,,
+lineup,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2020,Spring,,,,lineup-19bd858fbad8d394,CA-01,1,3,oe:player:f02f1c8275084050765b4b6414bdfda,oe:player:a9cdfd1c803a0c395fa90d0042c1e60,oe:player:fddde6d256bee26713f64ad9b2a9394,oe:player:fb18ab6bf6bef08402a580d2a96c106,oe:player:5a4ed34a7baf1d14942def4ab49ce38,Fudge,Inori,Palafox,k1ng,Diamond
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2020,Spring,oe:player:43b4189712f5ac66bbef0414a8ed2db,Lourlo,top,,,,,,,,,,,,,,
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2020,Spring,oe:player:f42847a8ed944443fbdcef8cfa7087d,Akaadian,jng,,,,,,,,,,,,,,
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2020,Spring,oe:player:a04a853a0f540f156d08711204fe252,Armao,jng,,,,,,,,,,,,,,
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2020,Spring,oe:player:b38e8427233eea81494ca1b3ec13f0a,Damonte,mid,,,,,,,,,,,,,,
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2020,Spring,oe:player:7796fc7fdbef88620e2a9fd1df026a7,Fenix,bot,,,,,,,,,,,,,,
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2020,Spring,oe:player:9ce0043331f3999cc2ee205ab7c2d73,Olleh,sup,,,,,,,,,,,,,,
+lineup,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2020,Spring,,,,lineup-7753f68605da8b5f,DA-01,1,1,oe:player:43b4189712f5ac66bbef0414a8ed2db,oe:player:f42847a8ed944443fbdcef8cfa7087d,oe:player:b38e8427233eea81494ca1b3ec13f0a,oe:player:7796fc7fdbef88620e2a9fd1df026a7,oe:player:9ce0043331f3999cc2ee205ab7c2d73,Lourlo,Akaadian,Damonte,Fenix,Olleh
+lineup,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2020,Spring,,,,lineup-d6d32e90b79c1a42,DA-02,2,1,oe:player:43b4189712f5ac66bbef0414a8ed2db,oe:player:a04a853a0f540f156d08711204fe252,oe:player:b38e8427233eea81494ca1b3ec13f0a,oe:player:7796fc7fdbef88620e2a9fd1df026a7,oe:player:9ce0043331f3999cc2ee205ab7c2d73,Lourlo,Armao,Damonte,Fenix,Olleh
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2020,Spring,oe:player:2c1047c61ef1b21a80728eff2cb7cb1,Brandini,top,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2020,Spring,oe:player:bcb79ac1654e9a40600fba1eb3e53af,Huni,top,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2020,Spring,oe:player:412aae1eae0c18dcb27ed6efc369f3c,AnDa,jng,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2020,Spring,oe:player:c271341160441d375411fef9bf2f9ef,Svenskeren,jng,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2020,Spring,oe:player:e6f5a7e37185c25a363d031ef5eafa9,Giyuu,mid,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2020,Spring,oe:player:61f2c08eb43e1b4fc0bdd988013ee49,Kumo,mid,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2020,Spring,oe:player:e8fc48ebd917c59ea149c4792c464bd,Deftly,bot,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2020,Spring,oe:player:d405d30cc615b2947aa5af369ad9fba,Matt Elento,sup,,,,,,,,,,,,,,
+lineup,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2020,Spring,,,,lineup-94ee4fd668f0dba6,EGA-01,1,1,oe:player:2c1047c61ef1b21a80728eff2cb7cb1,oe:player:c271341160441d375411fef9bf2f9ef,oe:player:61f2c08eb43e1b4fc0bdd988013ee49,oe:player:e8fc48ebd917c59ea149c4792c464bd,oe:player:d405d30cc615b2947aa5af369ad9fba,Brandini,Svenskeren,Kumo,Deftly,Matt Elento
+lineup,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2020,Spring,,,,lineup-e8d3aa1bc90013ae,EGA-02,2,1,oe:player:bcb79ac1654e9a40600fba1eb3e53af,oe:player:412aae1eae0c18dcb27ed6efc369f3c,oe:player:e6f5a7e37185c25a363d031ef5eafa9,oe:player:e8fc48ebd917c59ea149c4792c464bd,oe:player:d405d30cc615b2947aa5af369ad9fba,Huni,AnDa,Giyuu,Deftly,Matt Elento
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2020,Spring,oe:player:6dd6c65f233361c424b431921d60ff6,Revenge,top,,,,,,,,,,,,,,
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2020,Spring,oe:player:c6c67e6161209c24759f6a71ad6ac9b,Fanatiik,jng,,,,,,,,,,,,,,
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2020,Spring,oe:player:3b973d4da6ce40c0eb65394fb622297,Triple,mid,,,,,,,,,,,,,,
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2020,Spring,oe:player:6151bcec0a8bb9f8ab93d71878de3c9,Mash,bot,,,,,,,,,,,,,,
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2020,Spring,oe:player:650f5da2c2068fff2937c3530393c97,JayJ,sup,,,,,,,,,,,,,,
+lineup,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2020,Spring,,,,lineup-5207409d9236c5e7,FA-01,1,1,oe:player:6dd6c65f233361c424b431921d60ff6,oe:player:c6c67e6161209c24759f6a71ad6ac9b,oe:player:3b973d4da6ce40c0eb65394fb622297,oe:player:6151bcec0a8bb9f8ab93d71878de3c9,oe:player:650f5da2c2068fff2937c3530393c97,Revenge,Fanatiik,Triple,Mash,JayJ
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2020,Spring,oe:player:5e79b66b78498aa1aec126b0b4ca1a1,Darshan,top,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2020,Spring,oe:player:3656183169810334a96b91129dc9d88,Hard,jng,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2020,Spring,oe:player:e181a641eac63b45915802512997360,Ablazeolive,mid,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2020,Spring,oe:player:2dda74ba3799fbc4822498ac6a82293,Gorica,bot,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2020,Spring,oe:player:e6e30c037d0b75caa94827ead86b4ed,Keith,bot,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2020,Spring,oe:player:6c7c8b16d921fbf3394e228f1554ef5,Chime,sup,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2020,Spring,oe:player:e6e30c037d0b75caa94827ead86b4ed,Keith,sup,,,,,,,,,,,,,,
+lineup,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2020,Spring,,,,lineup-14d90f98928726a0,GGA-01,1,1,oe:player:5e79b66b78498aa1aec126b0b4ca1a1,oe:player:3656183169810334a96b91129dc9d88,oe:player:e181a641eac63b45915802512997360,oe:player:e6e30c037d0b75caa94827ead86b4ed,oe:player:6c7c8b16d921fbf3394e228f1554ef5,Darshan,Hard,Ablazeolive,Keith,Chime
+lineup,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2020,Spring,,,,lineup-f9e04fee211881ca,GGA-02,2,1,oe:player:5e79b66b78498aa1aec126b0b4ca1a1,oe:player:3656183169810334a96b91129dc9d88,oe:player:e181a641eac63b45915802512997360,oe:player:2dda74ba3799fbc4822498ac6a82293,oe:player:e6e30c037d0b75caa94827ead86b4ed,Darshan,Hard,Ablazeolive,Gorica,Keith
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2020,Spring,oe:player:fa816783145a625c4b502446b18ad93,Allorim,top,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2020,Spring,oe:player:b2386f35c6c208bded007d8e755b2e7,Potluck,jng,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2020,Spring,oe:player:419bc348a61e7433593ea741189d833,Xmithie,jng,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2020,Spring,oe:player:ef97df9d746d0e65ed18786ab30031c,Insanity,mid,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2020,Spring,oe:player:4046e5819c6e57ec8fa00b56834d8aa,Altec,bot,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2020,Spring,oe:player:3caf8d2f2d789c0f073a824f8a71d59,Apollo,bot,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2020,Spring,oe:player:d25b4bd4c72aa2c07ee87adb10b59f1,Gate,sup,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2020,Spring,oe:player:cbfc4c587ee049e419eefd386c1acd3,Hakuho,sup,,,,,,,,,,,,,,
+lineup,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2020,Spring,,,,lineup-5b9e9d42296d9439,IA-01,1,1,oe:player:fa816783145a625c4b502446b18ad93,oe:player:b2386f35c6c208bded007d8e755b2e7,oe:player:ef97df9d746d0e65ed18786ab30031c,oe:player:4046e5819c6e57ec8fa00b56834d8aa,oe:player:d25b4bd4c72aa2c07ee87adb10b59f1,Allorim,Potluck,Insanity,Altec,Gate
+lineup,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2020,Spring,,,,lineup-bc4335fd151b2ae5,IA-02,2,1,oe:player:fa816783145a625c4b502446b18ad93,oe:player:419bc348a61e7433593ea741189d833,oe:player:ef97df9d746d0e65ed18786ab30031c,oe:player:3caf8d2f2d789c0f073a824f8a71d59,oe:player:cbfc4c587ee049e419eefd386c1acd3,Allorim,Xmithie,Insanity,Apollo,Hakuho
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2020,Spring,oe:player:5385f74da3e5deb5b66d9a1ee56cf97,Dhokla,top,,,,,,,,,,,,,,
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2020,Spring,oe:player:fbadcf84fcfb01a251de88055f631cb,Spica,jng,,,,,,,,,,,,,,
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2020,Spring,oe:player:fb61f3956c07d3b8ab2f574ab8aafc4,Evolved,mid,,,,,,,,,,,,,,
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2020,Spring,oe:player:b578b733cbb788fc6ad208314d2c4c2,Lost,bot,,,,,,,,,,,,,,
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2020,Spring,oe:player:8f7b1c81a23c62a54a6b663cf6badaa,Treatz,sup,,,,,,,,,,,,,,
+lineup,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2020,Spring,,,,lineup-d5040e08740f6948,TA-01,1,1,oe:player:5385f74da3e5deb5b66d9a1ee56cf97,oe:player:fbadcf84fcfb01a251de88055f631cb,oe:player:fb61f3956c07d3b8ab2f574ab8aafc4,oe:player:b578b733cbb788fc6ad208314d2c4c2,oe:player:8f7b1c81a23c62a54a6b663cf6badaa,Dhokla,Spica,Evolved,Lost,Treatz
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2020,Spring,oe:player:2e54334c0a5ce2e3e5a5845df3ab3ad,Jenkins,top,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2020,Spring,oe:player:d9c7d53c5d367ca3d5e760ba0355d9e,MikeYeung,jng,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2020,Spring,oe:player:5cc4071294a16477e992b3c8a2b7715,Shernfire,jng,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2020,Spring,oe:player:ce280cfcaa8d028bf7400e597eb666c,Yusui,mid,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2020,Spring,oe:player:4e0619e57cb50c4ab1230c2dd72df1b,Tactical,bot,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2020,Spring,oe:player:580f08754dbf1bc64145f212ed0170b,Cao,sup,,,,,,,,,,,,,,
+lineup,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2020,Spring,,,,lineup-69510e8b9aec7070,TLA-01,1,1,oe:player:2e54334c0a5ce2e3e5a5845df3ab3ad,oe:player:5cc4071294a16477e992b3c8a2b7715,oe:player:ce280cfcaa8d028bf7400e597eb666c,oe:player:4e0619e57cb50c4ab1230c2dd72df1b,oe:player:580f08754dbf1bc64145f212ed0170b,Jenkins,Shernfire,Yusui,Tactical,Cao
+lineup,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2020,Spring,,,,lineup-d21d752f223466dc,TLA-02,2,1,oe:player:2e54334c0a5ce2e3e5a5845df3ab3ad,oe:player:d9c7d53c5d367ca3d5e760ba0355d9e,oe:player:ce280cfcaa8d028bf7400e597eb666c,oe:player:4e0619e57cb50c4ab1230c2dd72df1b,oe:player:580f08754dbf1bc64145f212ed0170b,Jenkins,MikeYeung,Yusui,Tactical,Cao

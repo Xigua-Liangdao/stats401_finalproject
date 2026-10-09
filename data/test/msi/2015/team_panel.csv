@@ -1,0 +1,39 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2015,Unknown,oe:player:c540f8b01a25b43ec34c8d517c81195,Thaldrin,top,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2015,Unknown,oe:player:4dd47f86a9f1dcf16525c288c568385,Theokoles,jng,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2015,Unknown,oe:player:5cc28f31113ec7cd7e546b836ccae2b,Energy,mid,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2015,Unknown,oe:player:4b07f45394dd0d8878da79de41e8bf3,Nardeus,bot,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2015,Unknown,oe:player:7bd16068637ca7bbbed9db44008bda8,Dumbledoge,sup,,,,,,,,,,,,,,
+lineup,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2015,Unknown,,,,lineup-39b685ba68220121,BE-01,1,5,oe:player:c540f8b01a25b43ec34c8d517c81195,oe:player:4dd47f86a9f1dcf16525c288c568385,oe:player:5cc28f31113ec7cd7e546b836ccae2b,oe:player:4b07f45394dd0d8878da79de41e8bf3,oe:player:7bd16068637ca7bbbed9db44008bda8,Thaldrin,Theokoles,Energy,Nardeus,Dumbledoge
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2015,Unknown,oe:player:eae234330021a52c3ec6c9fd6fdc753,Korol,top,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2015,Unknown,oe:player:9148a2e81dfb2432807b6738829a1b2,Clearlove,jng,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2015,Unknown,oe:player:a442058c6da103458f122260082b7bc,PawN,mid,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2015,Unknown,oe:player:c588a2d07b69ca4ba61c96aebd3f793,Deft,bot,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2015,Unknown,oe:player:bda7cc061d7a1576f1dcad33dd505cd,Meiko,sup,,,,,,,,,,,,,,
+lineup,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2015,Unknown,,,,lineup-8ec563bf5564b85e,EDG-01,1,5,oe:player:eae234330021a52c3ec6c9fd6fdc753,oe:player:9148a2e81dfb2432807b6738829a1b2,oe:player:a442058c6da103458f122260082b7bc,oe:player:c588a2d07b69ca4ba61c96aebd3f793,oe:player:bda7cc061d7a1576f1dcad33dd505cd,Korol,Clearlove,PawN,Deft,Meiko
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2015,Unknown,oe:player:bcb79ac1654e9a40600fba1eb3e53af,Huni,top,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2015,Unknown,oe:player:0c4a9660e318dbab19f9648088d1387,Reignover,jng,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2015,Unknown,oe:player:d62421836c8b27dc3ffaffa058b8098,FEBIVEN,mid,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2015,Unknown,oe:player:bea6c089fd517fff3bc020290ae48f7,Steeelback,bot,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2015,Unknown,oe:player:5ebcf3b41dc66e5839da4c5f58bd907,YellOwStaR,sup,,,,,,,,,,,,,,
+lineup,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2015,Unknown,,,,lineup-511b7aba3f666707,FNA-01,1,6,oe:player:bcb79ac1654e9a40600fba1eb3e53af,oe:player:0c4a9660e318dbab19f9648088d1387,oe:player:d62421836c8b27dc3ffaffa058b8098,oe:player:bea6c089fd517fff3bc020290ae48f7,oe:player:5ebcf3b41dc66e5839da4c5f58bd907,Huni,Reignover,FEBIVEN,Steeelback,YellOwStaR
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2015,Unknown,oe:player:80a0409a4c898bd100c41af1cca5da1,MaRin,top,,,,,,,,,,,,,,
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2015,Unknown,oe:player:b7a96528935de93953af4738b9bd8e0,Bengi,jng,,,,,,,,,,,,,,
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2015,Unknown,oe:player:cafee7267cccef814a0dd4c05afd254,Easyhoon,mid,,,,,,,,,,,,,,
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2015,Unknown,oe:player:e1edfc5cea461399a63cb813cf795cc,Faker,mid,,,,,,,,,,,,,,
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2015,Unknown,oe:player:526e67744f0b90739ec17c191c62d24,Bang,bot,,,,,,,,,,,,,,
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2015,Unknown,oe:player:f4e74388bb8ff2f8d88bfc579f7fb61,Wolf,sup,,,,,,,,,,,,,,
+lineup,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2015,Unknown,,,,lineup-0f41f442ef344f03,STT-01,1,4,oe:player:80a0409a4c898bd100c41af1cca5da1,oe:player:b7a96528935de93953af4738b9bd8e0,oe:player:e1edfc5cea461399a63cb813cf795cc,oe:player:526e67744f0b90739ec17c191c62d24,oe:player:f4e74388bb8ff2f8d88bfc579f7fb61,MaRin,Bengi,Faker,Bang,Wolf
+lineup,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2015,Unknown,,,,lineup-3e73814309482e23,STT-02,2,2,oe:player:80a0409a4c898bd100c41af1cca5da1,oe:player:b7a96528935de93953af4738b9bd8e0,oe:player:cafee7267cccef814a0dd4c05afd254,oe:player:526e67744f0b90739ec17c191c62d24,oe:player:f4e74388bb8ff2f8d88bfc579f7fb61,MaRin,Bengi,Easyhoon,Bang,Wolf
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2015,Unknown,oe:player:b2519d0e84a4cbe1ddb3d71bc6d96ea,Dyrus,top,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2015,Unknown,oe:player:9772f394c5e44d54e76aae1647217d0,Santorin,jng,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2015,Unknown,oe:player:63ba5c5e5bb73ace706183b5e05a27e,Bjergsen,mid,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2015,Unknown,oe:player:91a74fa03f163055a19da5b16363fc8,WildTurtle,bot,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2015,Unknown,oe:player:afd18302f731b604299b7048d48be95,Lustboy,sup,,,,,,,,,,,,,,
+lineup,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2015,Unknown,,,,lineup-726f1df4d1b646f9,TSM-01,1,5,oe:player:b2519d0e84a4cbe1ddb3d71bc6d96ea,oe:player:9772f394c5e44d54e76aae1647217d0,oe:player:63ba5c5e5bb73ace706183b5e05a27e,oe:player:91a74fa03f163055a19da5b16363fc8,oe:player:afd18302f731b604299b7048d48be95,Dyrus,Santorin,Bjergsen,WildTurtle,Lustboy
+player,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Unknown,oe:player:eaa7919421a94315db4b9a09902695c,Ziv,top,,,,,,,,,,,,,,
+player,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Unknown,oe:player:b1fae887c1a63cf24d7852eac268d5e,Mountain,jng,,,,,,,,,,,,,,
+player,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Unknown,oe:player:162b96e90e71d9d3c768f451fb0ce59,Westdoor,mid,,,,,,,,,,,,,,
+player,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Unknown,oe:player:978b697963cfc5abfced8a4b611977c,An,bot,,,,,,,,,,,,,,
+player,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Unknown,oe:player:2807decf1b7a6545e949e8715316c12,Albis,sup,,,,,,,,,,,,,,
+lineup,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Unknown,,,,lineup-cae13fc43615e7e5,AEC-01,1,5,oe:player:eaa7919421a94315db4b9a09902695c,oe:player:b1fae887c1a63cf24d7852eac268d5e,oe:player:162b96e90e71d9d3c768f451fb0ce59,oe:player:978b697963cfc5abfced8a4b611977c,oe:player:2807decf1b7a6545e949e8715316c12,Ziv,Mountain,Westdoor,An,Albis

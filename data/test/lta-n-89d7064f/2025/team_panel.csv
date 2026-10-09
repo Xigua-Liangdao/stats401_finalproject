@@ -1,0 +1,43 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2025,Split 2,oe:player:1efc4e5732e91520d03385900b903f9,Thanatos,top,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2025,Split 2,oe:player:ed455f823b6586e9e3621dfb5aeb42e,Blaber,jng,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2025,Split 2,oe:player:0a53c1102dafce61e89decc517b3175,Loki,mid,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2025,Split 2,oe:player:10fcffece0ac7be85f09c4b51a75762,Zven,bot,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2025,Split 2,oe:player:81acc6bcde5c927c78e0990e9887f84,Vulcan,sup,,,,,,,,,,,,,,
+lineup,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2025,Split 2,,,,lineup-39f33566df8d59b5,CLO-01,1,13,oe:player:1efc4e5732e91520d03385900b903f9,oe:player:ed455f823b6586e9e3621dfb5aeb42e,oe:player:0a53c1102dafce61e89decc517b3175,oe:player:10fcffece0ac7be85f09c4b51a75762,oe:player:81acc6bcde5c927c78e0990e9887f84,Thanatos,Blaber,Loki,Zven,Vulcan
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2025,Split 2,oe:player:4d0ec5fa505ee341aff8b2309356afc,Srtty,top,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2025,Split 2,oe:player:5f048688474a6eacfefd74bd53d8715,Sheiden,jng,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2025,Split 2,oe:player:1b26a8bba6e841f1c375b283db5c1c6,Keine,mid,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2025,Split 2,oe:player:6378658dafc3eeb902fa2e52f909172,Tomo,bot,,,,,,,,,,,,,,
+player,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2025,Split 2,oe:player:40704dfd2d966862568d29770de57bd,Isles,sup,,,,,,,,,,,,,,
+lineup,oe:team:0dbb780176ecad18f17292d1f5653af,Dignitas,DIG,2025,Split 2,,,,lineup-5b9e81aecddf0e18,DIG-01,1,1,oe:player:4d0ec5fa505ee341aff8b2309356afc,oe:player:5f048688474a6eacfefd74bd53d8715,oe:player:1b26a8bba6e841f1c375b283db5c1c6,oe:player:6378658dafc3eeb902fa2e52f909172,oe:player:40704dfd2d966862568d29770de57bd,Srtty,Sheiden,Keine,Tomo,Isles
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2025,Split 2,oe:player:80fea0848c57b8e07a79675d41f582c,Castle,top,,,,,,,,,,,,,,
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2025,Split 2,oe:player:08936c56ab5a6453c58974a619651c3,eXyu,jng,,,,,,,,,,,,,,
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2025,Split 2,oe:player:da87886941820cfc2eee112d0143e90,Abbedagge,mid,,,,,,,,,,,,,,
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2025,Split 2,oe:player:265b58ce8b2f418df94006bf24e296c,ScaryJerry,bot,,,,,,,,,,,,,,
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2025,Split 2,oe:player:9191e392e93a6ef011ef76b5b83ee6c,huhi,sup,,,,,,,,,,,,,,
+lineup,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2025,Split 2,,,,lineup-53c60a4ab51c96da,DIS-01,1,2,oe:player:80fea0848c57b8e07a79675d41f582c,oe:player:08936c56ab5a6453c58974a619651c3,oe:player:da87886941820cfc2eee112d0143e90,oe:player:265b58ce8b2f418df94006bf24e296c,oe:player:9191e392e93a6ef011ef76b5b83ee6c,Castle,eXyu,Abbedagge,ScaryJerry,huhi
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2025,Split 2,oe:player:7e2505960c12cc54c96a0a6efb2e055,Bwipo,top,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2025,Split 2,oe:player:a8307167f3a1c933295bb9e3d43700e,Inspired,jng,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2025,Split 2,oe:player:e9017664588010860a92ceb5f8fcb82,Quad,mid,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2025,Split 2,oe:player:c145139d26813639b8fe6f4d0b28228,Massu,bot,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2025,Split 2,oe:player:3e722c8ede909c83af9342c41805a16,Busio,sup,,,,,,,,,,,,,,
+lineup,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2025,Split 2,,,,lineup-7aee2de81637e078,FLY-01,1,5,oe:player:7e2505960c12cc54c96a0a6efb2e055,oe:player:a8307167f3a1c933295bb9e3d43700e,oe:player:e9017664588010860a92ceb5f8fcb82,oe:player:c145139d26813639b8fe6f4d0b28228,oe:player:3e722c8ede909c83af9342c41805a16,Bwipo,Inspired,Quad,Massu,Busio
+player,oe:team:da1143bf9a245b78a8dc86417de85b3,LYON,LYO,2025,Split 2,oe:player:e03d0722b6dce835cde3268c08c4f54,Licorice,top,,,,,,,,,,,,,,
+player,oe:team:da1143bf9a245b78a8dc86417de85b3,LYON,LYO,2025,Split 2,oe:player:2288a342c01ee930cc535f4cfcf49d8,Oddielan,jng,,,,,,,,,,,,,,
+player,oe:team:da1143bf9a245b78a8dc86417de85b3,LYON,LYO,2025,Split 2,oe:player:f45792335d83b10581da2f0cbdd6e8e,Saint,mid,,,,,,,,,,,,,,
+player,oe:team:da1143bf9a245b78a8dc86417de85b3,LYON,LYO,2025,Split 2,oe:player:9712524dc88851032bd53054f8b49b4,Hena,bot,,,,,,,,,,,,,,
+player,oe:team:da1143bf9a245b78a8dc86417de85b3,LYON,LYO,2025,Split 2,oe:player:a2d7b8856032bf106783621b9afeb41,Lyonz,sup,,,,,,,,,,,,,,
+lineup,oe:team:da1143bf9a245b78a8dc86417de85b3,LYON,LYO,2025,Split 2,,,,lineup-174cad2e6366e594,LYO-01,1,4,oe:player:e03d0722b6dce835cde3268c08c4f54,oe:player:2288a342c01ee930cc535f4cfcf49d8,oe:player:f45792335d83b10581da2f0cbdd6e8e,oe:player:9712524dc88851032bd53054f8b49b4,oe:player:a2d7b8856032bf106783621b9afeb41,Licorice,Oddielan,Saint,Hena,Lyonz
+player,oe:team:b360f1d729b0a8e0f29a5243c4200fa,Shopify Rebellion,SR,2025,Split 1,oe:player:f02f1c8275084050765b4b6414bdfda,Fudge,top,,,,,,,,,,,,,,
+player,oe:team:b360f1d729b0a8e0f29a5243c4200fa,Shopify Rebellion,SR,2025,Split 1,oe:player:8a5dbe19794784cfd0553556844f045,Contractz,jng,,,,,,,,,,,,,,
+player,oe:team:b360f1d729b0a8e0f29a5243c4200fa,Shopify Rebellion,SR,2025,Split 1,oe:player:fddde6d256bee26713f64ad9b2a9394,Palafox,mid,,,,,,,,,,,,,,
+player,oe:team:b360f1d729b0a8e0f29a5243c4200fa,Shopify Rebellion,SR,2025,Split 1,oe:player:494fc60dffbb5da1caa2226baef0ec7,Bvoy,bot,,,,,,,,,,,,,,
+player,oe:team:b360f1d729b0a8e0f29a5243c4200fa,Shopify Rebellion,SR,2025,Split 1,oe:player:6841f2d68619d53bdd1cdbf30b5be2c,Zeyzal,sup,,,,,,,,,,,,,,
+lineup,oe:team:b360f1d729b0a8e0f29a5243c4200fa,Shopify Rebellion,SR,2025,Split 1,,,,lineup-98c5dcf43e0ae010,SR-01,1,2,oe:player:f02f1c8275084050765b4b6414bdfda,oe:player:8a5dbe19794784cfd0553556844f045,oe:player:fddde6d256bee26713f64ad9b2a9394,oe:player:494fc60dffbb5da1caa2226baef0ec7,oe:player:6841f2d68619d53bdd1cdbf30b5be2c,Fudge,Contractz,Palafox,Bvoy,Zeyzal
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2025,Split 2,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,Impact,top,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2025,Split 2,oe:player:1970fcb701acce66e0771946bbb3105,UmTi,jng,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2025,Split 2,oe:player:ea9ed09584feecae0991089f087d2ce,APA,mid,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2025,Split 2,oe:player:f6b8af05a5af22004a67a78f3046b92,Yeon,bot,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2025,Split 2,oe:player:05fafeaf23dc3285558a4e968970b9f,CoreJJ,sup,,,,,,,,,,,,,,
+lineup,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2025,Split 2,,,,lineup-d110519228415592,TL-01,1,3,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,oe:player:1970fcb701acce66e0771946bbb3105,oe:player:ea9ed09584feecae0991089f087d2ce,oe:player:f6b8af05a5af22004a67a78f3046b92,oe:player:05fafeaf23dc3285558a4e968970b9f,Impact,UmTi,APA,Yeon,CoreJJ

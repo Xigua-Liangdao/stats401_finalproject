@@ -1,0 +1,47 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:32f5dedea90b1ec28566a3b0c278cc3,7th heaven,7H,2017,Spring,oe:player:0f23946ea5bfbca373ff2b4c07b1fee,Rokenia,top,,,,,,,,,,,,,,
+player,oe:team:32f5dedea90b1ec28566a3b0c278cc3,7th heaven,7H,2017,Spring,oe:player:086679b3c84cdfd7f8ba684971737ed,SatoRy,top,,,,,,,,,,,,,,
+player,oe:team:32f5dedea90b1ec28566a3b0c278cc3,7th heaven,7H,2017,Spring,oe:player:eefa702ca5baafd60311d1233abfe14,Savage,jng,,,,,,,,,,,,,,
+player,oe:team:32f5dedea90b1ec28566a3b0c278cc3,7th heaven,7H,2017,Spring,oe:player:58128ac008e8c0c3c4cfa75002e5621,Estelim,mid,,,,,,,,,,,,,,
+player,oe:team:32f5dedea90b1ec28566a3b0c278cc3,7th heaven,7H,2017,Spring,oe:player:e010f94b8288ee2b14720c4295d354c,Shinmori,mid,,,,,,,,,,,,,,
+player,oe:team:32f5dedea90b1ec28566a3b0c278cc3,7th heaven,7H,2017,Spring,oe:player:ba8c39a6277f8ffc04f85f8cc69e1bc,NaeMisa,bot,,,,,,,,,,,,,,
+player,oe:team:32f5dedea90b1ec28566a3b0c278cc3,7th heaven,7H,2017,Spring,oe:player:0f23946ea5bfbca373ff2b4c07b1fee,Rokenia,bot,,,,,,,,,,,,,,
+player,oe:team:32f5dedea90b1ec28566a3b0c278cc3,7th heaven,7H,2017,Spring,oe:player:2d1bc2cd289a595a5f63a86926073bc,ThintoN,sup,,,,,,,,,,,,,,
+lineup,oe:team:32f5dedea90b1ec28566a3b0c278cc3,7th heaven,7H,2017,Spring,,,,lineup-047ab5d3faa8e3b1,7H-01,1,2,oe:player:086679b3c84cdfd7f8ba684971737ed,oe:player:eefa702ca5baafd60311d1233abfe14,oe:player:e010f94b8288ee2b14720c4295d354c,oe:player:0f23946ea5bfbca373ff2b4c07b1fee,oe:player:2d1bc2cd289a595a5f63a86926073bc,SatoRy,Savage,Shinmori,Rokenia,ThintoN
+lineup,oe:team:32f5dedea90b1ec28566a3b0c278cc3,7th heaven,7H,2017,Spring,,,,lineup-6e72a06ef476c336,7H-02,2,2,oe:player:0f23946ea5bfbca373ff2b4c07b1fee,oe:player:eefa702ca5baafd60311d1233abfe14,oe:player:e010f94b8288ee2b14720c4295d354c,oe:player:ba8c39a6277f8ffc04f85f8cc69e1bc,oe:player:2d1bc2cd289a595a5f63a86926073bc,Rokenia,Savage,Shinmori,NaeMisa,ThintoN
+lineup,oe:team:32f5dedea90b1ec28566a3b0c278cc3,7th heaven,7H,2017,Spring,,,,lineup-5b897fd8097a1be2,7H-03,3,1,oe:player:086679b3c84cdfd7f8ba684971737ed,oe:player:eefa702ca5baafd60311d1233abfe14,oe:player:58128ac008e8c0c3c4cfa75002e5621,oe:player:0f23946ea5bfbca373ff2b4c07b1fee,oe:player:2d1bc2cd289a595a5f63a86926073bc,SatoRy,Savage,Estelim,Rokenia,ThintoN
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2017,Spring,oe:player:0d798f24869b290bfcdf6427d958118,Yutapon,top,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2017,Spring,oe:player:bc6c09548f555712ab0eed5c2f94e82,Paz,jng,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2017,Spring,oe:player:dd4660dccac3ba0b8f35cb319a686a4,Ceros,mid,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2017,Spring,oe:player:dd27b53f28c8402993c90a32304b45a,Zerost,bot,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2017,Spring,oe:player:9fb8dff220cd2b92ff67b9055ebb94e,viviD,sup,,,,,,,,,,,,,,
+lineup,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2017,Spring,,,,lineup-97380936c1305612,DF-01,1,3,oe:player:0d798f24869b290bfcdf6427d958118,oe:player:bc6c09548f555712ab0eed5c2f94e82,oe:player:dd4660dccac3ba0b8f35cb319a686a4,oe:player:dd27b53f28c8402993c90a32304b45a,oe:player:9fb8dff220cd2b92ff67b9055ebb94e,Yutapon,Paz,Ceros,Zerost,viviD
+player,oe:team:a9744fc5b0ca952b17ef07c0aa99602,Rampage,RAM,2017,Spring,oe:player:376d5e3b1257e6972228d458943f74c,Evi,top,,,,,,,,,,,,,,
+player,oe:team:a9744fc5b0ca952b17ef07c0aa99602,Rampage,RAM,2017,Spring,oe:player:5d266fd637d68e37c6025215ab74757,Tussle,jng,,,,,,,,,,,,,,
+player,oe:team:a9744fc5b0ca952b17ef07c0aa99602,Rampage,RAM,2017,Spring,oe:player:a4e9e9157f2a7f62d2166124824166e,Ramune,mid,,,,,,,,,,,,,,
+player,oe:team:a9744fc5b0ca952b17ef07c0aa99602,Rampage,RAM,2017,Spring,oe:player:785c0d3b9969e1cf711dcd09ee4bffb,Moyashi,bot,,,,,,,,,,,,,,
+player,oe:team:a9744fc5b0ca952b17ef07c0aa99602,Rampage,RAM,2017,Spring,oe:player:3c20ade1447676f0d3667e668d92a69,Dara,sup,,,,,,,,,,,,,,
+lineup,oe:team:a9744fc5b0ca952b17ef07c0aa99602,Rampage,RAM,2017,Spring,,,,lineup-f880817366c40d55,RAM-01,1,13,oe:player:376d5e3b1257e6972228d458943f74c,oe:player:5d266fd637d68e37c6025215ab74757,oe:player:a4e9e9157f2a7f62d2166124824166e,oe:player:785c0d3b9969e1cf711dcd09ee4bffb,oe:player:3c20ade1447676f0d3667e668d92a69,Evi,Tussle,Ramune,Moyashi,Dara
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2017,Spring,oe:player:b0637349ccc6fc672bb1d6916c11253,Nap,top,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2017,Spring,oe:player:bb53ed324c39b36058708bcd0f9c3d9,atyamomo,top,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2017,Spring,oe:player:36337f6d3f47f8e059ae0df500286d4,Wyvern,jng,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2017,Spring,oe:player:04e2de37299dd6886b08b6b055dabe3,Alleycat,mid,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2017,Spring,oe:player:6fe6ba7988145531740ca48c6449e73,HW4NG,mid,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2017,Spring,oe:player:25c317737ca292685946f930ea99e11,NoA,bot,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2017,Spring,oe:player:be74dd7e3d8fac54f80064c353643a3,Yuki,bot,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2017,Spring,oe:player:25c317737ca292685946f930ea99e11,NoA,sup,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2017,Spring,oe:player:be74dd7e3d8fac54f80064c353643a3,Yuki,sup,,,,,,,,,,,,,,
+lineup,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2017,Spring,,,,lineup-64d37b041c68c5a9,RJ-01,1,2,oe:player:b0637349ccc6fc672bb1d6916c11253,oe:player:36337f6d3f47f8e059ae0df500286d4,oe:player:6fe6ba7988145531740ca48c6449e73,oe:player:be74dd7e3d8fac54f80064c353643a3,oe:player:25c317737ca292685946f930ea99e11,Nap,Wyvern,HW4NG,Yuki,NoA
+lineup,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2017,Spring,,,,lineup-f4f8d60874cf744e,RJ-02,2,2,oe:player:bb53ed324c39b36058708bcd0f9c3d9,oe:player:36337f6d3f47f8e059ae0df500286d4,oe:player:04e2de37299dd6886b08b6b055dabe3,oe:player:25c317737ca292685946f930ea99e11,oe:player:be74dd7e3d8fac54f80064c353643a3,atyamomo,Wyvern,Alleycat,NoA,Yuki
+player,oe:team:c1b5d2c3a85ded7cc01056828f1ce89,Team BlackEye,TB,2017,Spring,oe:player:9d37dd12a4d094e2fa7cf253e2078a0,Cogcog,top,,,,,,,,,,,,,,
+player,oe:team:c1b5d2c3a85ded7cc01056828f1ce89,Team BlackEye,TB,2017,Spring,oe:player:5bc39bc31e88b9b93d74106fe933598,CarilRui,jng,,,,,,,,,,,,,,
+player,oe:team:c1b5d2c3a85ded7cc01056828f1ce89,Team BlackEye,TB,2017,Spring,oe:player:ddbeed25921badd8e71ceb845f5890b,Mueki,mid,,,,,,,,,,,,,,
+player,oe:team:c1b5d2c3a85ded7cc01056828f1ce89,Team BlackEye,TB,2017,Spring,oe:player:dd27b53f28c8402993c90a32304b45a,Zerost,bot,,,,,,,,,,,,,,
+player,oe:team:c1b5d2c3a85ded7cc01056828f1ce89,Team BlackEye,TB,2017,Spring,oe:player:5b321dfbf75e885746c87906a3e26c6,Yoshiaki,sup,,,,,,,,,,,,,,
+lineup,oe:team:c1b5d2c3a85ded7cc01056828f1ce89,Team BlackEye,TB,2017,Spring,,,,lineup-e6744cc71a33dda7,TB-01,1,2,oe:player:9d37dd12a4d094e2fa7cf253e2078a0,oe:player:5bc39bc31e88b9b93d74106fe933598,oe:player:ddbeed25921badd8e71ceb845f5890b,oe:player:dd27b53f28c8402993c90a32304b45a,oe:player:5b321dfbf75e885746c87906a3e26c6,Cogcog,CarilRui,Mueki,Zerost,Yoshiaki
+player,oe:team:d071b2912dea2b3debbf837afb9f8de,Unsold Stuff Gaming,USG,2017,Spring,oe:player:61113c79bb5a88e9320744e0f675f1e,apaMEN,top,,,,,,,,,,,,,,
+player,oe:team:d071b2912dea2b3debbf837afb9f8de,Unsold Stuff Gaming,USG,2017,Spring,oe:player:6727998371a7bdf51844b1c7ee51cb8,Neo,jng,,,,,,,,,,,,,,
+player,oe:team:d071b2912dea2b3debbf837afb9f8de,Unsold Stuff Gaming,USG,2017,Spring,oe:player:791ad6dd8697623a4456580bf3eec76,Remind,mid,,,,,,,,,,,,,,
+player,oe:team:d071b2912dea2b3debbf837afb9f8de,Unsold Stuff Gaming,USG,2017,Spring,oe:player:9ec96e69aa58d3be9b09ae457dfd7c9,Haretti,bot,,,,,,,,,,,,,,
+player,oe:team:d071b2912dea2b3debbf837afb9f8de,Unsold Stuff Gaming,USG,2017,Spring,oe:player:293f0d0e03a4b786400eb00d3f859a8,Enty,sup,,,,,,,,,,,,,,
+lineup,oe:team:d071b2912dea2b3debbf837afb9f8de,Unsold Stuff Gaming,USG,2017,Spring,,,,lineup-6b690783e53a2759,USG-01,1,3,oe:player:61113c79bb5a88e9320744e0f675f1e,oe:player:6727998371a7bdf51844b1c7ee51cb8,oe:player:791ad6dd8697623a4456580bf3eec76,oe:player:9ec96e69aa58d3be9b09ae457dfd7c9,oe:player:293f0d0e03a4b786400eb00d3f859a8,apaMEN,Neo,Remind,Haretti,Enty

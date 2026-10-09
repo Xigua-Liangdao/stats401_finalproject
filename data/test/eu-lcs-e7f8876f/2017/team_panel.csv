@@ -1,0 +1,48 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2017,Spring,oe:player:e4e943fa882367a96fb2a365de4e28c,sOAZ,top,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2017,Spring,oe:player:8da47fdedd43dae92ab1715b81cdda1,Broxah,jng,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2017,Spring,oe:player:55dd587cdc4a278be6a5c37f9e539de,Caps,mid,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2017,Spring,oe:player:d8362fe0d38ca0e70953ed957deaa00,Rekkles,bot,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2017,Spring,oe:player:c22cb6fc65a653f1ad1dc271187ede9,Jesiz,sup,,,,,,,,,,,,,,
+lineup,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2017,Spring,,,,lineup-0b3752259e93d027,FNA-01,1,13,oe:player:e4e943fa882367a96fb2a365de4e28c,oe:player:8da47fdedd43dae92ab1715b81cdda1,oe:player:55dd587cdc4a278be6a5c37f9e539de,oe:player:d8362fe0d38ca0e70953ed957deaa00,oe:player:c22cb6fc65a653f1ad1dc271187ede9,sOAZ,Broxah,Caps,Rekkles,Jesiz
+player,oe:team:5b90b1fda6971ccdccf9eb32286aa50,H2k-Gaming,H2K,2017,Spring,oe:player:2b819506567c258f6fffdd4ec78ca0c,Odoamne,top,,,,,,,,,,,,,,
+player,oe:team:5b90b1fda6971ccdccf9eb32286aa50,H2k-Gaming,H2K,2017,Spring,oe:player:a2f6e754fc2b358f7786f52decb4274,Jankos,jng,,,,,,,,,,,,,,
+player,oe:team:5b90b1fda6971ccdccf9eb32286aa50,H2k-Gaming,H2K,2017,Spring,oe:player:d62421836c8b27dc3ffaffa058b8098,FEBIVEN,mid,,,,,,,,,,,,,,
+player,oe:team:5b90b1fda6971ccdccf9eb32286aa50,H2k-Gaming,H2K,2017,Spring,oe:player:c49e6d739a7a7356e88aa84503666ee,Nuclear,bot,,,,,,,,,,,,,,
+player,oe:team:5b90b1fda6971ccdccf9eb32286aa50,H2k-Gaming,H2K,2017,Spring,oe:player:edfacb40d6409e2d9860254c723799c,Chei,sup,,,,,,,,,,,,,,
+lineup,oe:team:5b90b1fda6971ccdccf9eb32286aa50,H2k-Gaming,H2K,2017,Spring,,,,lineup-c2f5e6200b55c883,H2K-01,1,2,oe:player:2b819506567c258f6fffdd4ec78ca0c,oe:player:a2f6e754fc2b358f7786f52decb4274,oe:player:d62421836c8b27dc3ffaffa058b8098,oe:player:c49e6d739a7a7356e88aa84503666ee,oe:player:edfacb40d6409e2d9860254c723799c,Odoamne,Jankos,FEBIVEN,Nuclear,Chei
+player,oe:team:d946eb399b263986b81fad7203186fa,Millenium,MIL,2017,Spring,oe:player:1e0c4218cf022adc238b940a6d10ee6,Kaze,top,,,,,,,,,,,,,,
+player,oe:team:d946eb399b263986b81fad7203186fa,Millenium,MIL,2017,Spring,oe:player:12765429362ae7ef85ed6fdd04d2ad7,Djoko,jng,,,,,,,,,,,,,,
+player,oe:team:d946eb399b263986b81fad7203186fa,Millenium,MIL,2017,Spring,oe:player:ce833e045ae1fdf546c867198b80566,PrettyGRE,mid,,,,,,,,,,,,,,
+player,oe:team:d946eb399b263986b81fad7203186fa,Millenium,MIL,2017,Spring,oe:player:6103edad37374607d4bc310c432dc8b,Tabzz,bot,,,,,,,,,,,,,,
+player,oe:team:d946eb399b263986b81fad7203186fa,Millenium,MIL,2017,Spring,oe:player:67499a2d057b1c7d139db3c621e63a5,masterwork,sup,,,,,,,,,,,,,,
+lineup,oe:team:d946eb399b263986b81fad7203186fa,Millenium,MIL,2017,Spring,,,,lineup-11564ac733aab6f4,MIL-01,1,2,oe:player:1e0c4218cf022adc238b940a6d10ee6,oe:player:12765429362ae7ef85ed6fdd04d2ad7,oe:player:ce833e045ae1fdf546c867198b80566,oe:player:6103edad37374607d4bc310c432dc8b,oe:player:67499a2d057b1c7d139db3c621e63a5,Kaze,Djoko,PrettyGRE,Tabzz,masterwork
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2017,Spring,oe:player:422d7cc4063f8801a9427860bfd855b,Satorius,top,,,,,,,,,,,,,,
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2017,Spring,oe:player:646f0a01b685558b975b5cd3f5b3624,Wisdom,jng,,,,,,,,,,,,,,
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2017,Spring,oe:player:a2a0d7ab33e23da9a23c463f697f82c,Naehyun,mid,,,,,,,,,,,,,,
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2017,Spring,oe:player:6103edad37374607d4bc310c432dc8b,Tabzz,bot,,,,,,,,,,,,,,
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2017,Spring,oe:player:730e8aec49895064b62dc0c9b5b0ddc,Hiiva,sup,,,,,,,,,,,,,,
+lineup,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2017,Spring,,,,lineup-2a071a4e7166e150,ORI-01,1,2,oe:player:422d7cc4063f8801a9427860bfd855b,oe:player:646f0a01b685558b975b5cd3f5b3624,oe:player:a2a0d7ab33e23da9a23c463f697f82c,oe:player:6103edad37374607d4bc310c432dc8b,oe:player:730e8aec49895064b62dc0c9b5b0ddc,Satorius,Wisdom,Naehyun,Tabzz,Hiiva
+player,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2017,Spring,oe:player:47a2fd48766f50394a3110fd124de77,Parang,top,,,,,,,,,,,,,,
+player,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2017,Spring,oe:player:f56e93a0a29a8de2f3e016cd9b094f5,Phaxi,top,,,,,,,,,,,,,,
+player,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2017,Spring,oe:player:d4f3cf480c9676887d4f83f6d96d7c2,Maxlore,jng,,,,,,,,,,,,,,
+player,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2017,Spring,oe:player:13d60b1925f413337824ed6278bcc93,Memento,jng,,,,,,,,,,,,,,
+player,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2017,Spring,oe:player:e21ff8ebe6db1bc3d148d9d5895be7b,Betsy,mid,,,,,,,,,,,,,,
+player,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2017,Spring,oe:player:e77cdf08626bdd7c16cd6b21c29d435,Hjarnan,bot,,,,,,,,,,,,,,
+player,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2017,Spring,oe:player:bea6c089fd517fff3bc020290ae48f7,Steeelback,bot,,,,,,,,,,,,,,
+player,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2017,Spring,oe:player:36ec8dc76bf55896199b1276242944a,Raise,sup,,,,,,,,,,,,,,
+player,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2017,Spring,oe:player:49311bd7f1e5550f578fbd1c2a1d21b,Wadid,sup,,,,,,,,,,,,,,
+lineup,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2017,Spring,,,,lineup-8b9bf5e38e9451fc,TR-01,1,3,oe:player:f56e93a0a29a8de2f3e016cd9b094f5,oe:player:d4f3cf480c9676887d4f83f6d96d7c2,oe:player:e21ff8ebe6db1bc3d148d9d5895be7b,oe:player:e77cdf08626bdd7c16cd6b21c29d435,oe:player:49311bd7f1e5550f578fbd1c2a1d21b,Phaxi,Maxlore,Betsy,Hjarnan,Wadid
+lineup,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2017,Spring,,,,lineup-8ad4a7ce359c781e,TR-02,2,2,oe:player:47a2fd48766f50394a3110fd124de77,oe:player:13d60b1925f413337824ed6278bcc93,oe:player:e21ff8ebe6db1bc3d148d9d5895be7b,oe:player:bea6c089fd517fff3bc020290ae48f7,oe:player:36ec8dc76bf55896199b1276242944a,Parang,Memento,Betsy,Steeelback,Raise
+player,oe:team:142fd4ee188f60dc0549cdca7610e55,Unicorns of Love,UOL,2017,Spring,oe:player:e0b008815ab05c5cdaf4d46ab61ff63,Vizicsacsi,top,,,,,,,,,,,,,,
+player,oe:team:142fd4ee188f60dc0549cdca7610e55,Unicorns of Love,UOL,2017,Spring,oe:player:ab7f28ca18446cb18274a884b1525f7,Xerxe,jng,,,,,,,,,,,,,,
+player,oe:team:142fd4ee188f60dc0549cdca7610e55,Unicorns of Love,UOL,2017,Spring,oe:player:d53a93a2bd6be9a5ba55119b970dbfb,Exile,mid,,,,,,,,,,,,,,
+player,oe:team:142fd4ee188f60dc0549cdca7610e55,Unicorns of Love,UOL,2017,Spring,oe:player:1cad2b59949890253f1c39d7f9358cb,Samux,bot,,,,,,,,,,,,,,
+player,oe:team:142fd4ee188f60dc0549cdca7610e55,Unicorns of Love,UOL,2017,Spring,oe:player:3c784fdd6a025028ad063525c14027a,Hylissang,sup,,,,,,,,,,,,,,
+lineup,oe:team:142fd4ee188f60dc0549cdca7610e55,Unicorns of Love,UOL,2017,Spring,,,,lineup-0709f198950aabc4,UOL-01,1,3,oe:player:e0b008815ab05c5cdaf4d46ab61ff63,oe:player:ab7f28ca18446cb18274a884b1525f7,oe:player:d53a93a2bd6be9a5ba55119b970dbfb,oe:player:1cad2b59949890253f1c39d7f9358cb,oe:player:3c784fdd6a025028ad063525c14027a,Vizicsacsi,Xerxe,Exile,Samux,Hylissang
+player,name-team-bbf4d270ed871a83,unknown team,UT,2017,Spring,oe:player:2a23f18ca3f53c7f8aa467c4a25e1a9,fjoompbun,top,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2017,Spring,oe:player:13d60b1925f413337824ed6278bcc93,Memento,jng,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2017,Spring,oe:player:e9ea12c16e93d8f41c474b6082a0656,NighT,mid,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2017,Spring,oe:player:1ae36f8dab72157bd28127054e3fc81,HeaQ,bot,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2017,Spring,oe:player:566e0849f6b96ad25981ba1c79ce1a7,Hustlin,sup,,,,,,,,,,,,,,
+lineup,name-team-bbf4d270ed871a83,unknown team,UT,2017,Spring,,,,lineup-d29c869b077a67e2,UT-01,1,3,oe:player:2a23f18ca3f53c7f8aa467c4a25e1a9,oe:player:13d60b1925f413337824ed6278bcc93,oe:player:e9ea12c16e93d8f41c474b6082a0656,oe:player:1ae36f8dab72157bd28127054e3fc81,oe:player:566e0849f6b96ad25981ba1c79ce1a7,fjoompbun,Memento,NighT,HeaQ,Hustlin

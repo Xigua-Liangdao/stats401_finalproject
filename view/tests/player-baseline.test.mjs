@@ -39,39 +39,41 @@ test('missing season statistics remain missing and warmup-only players can use t
   assert.equal(radiusFor(axes[2], null), null);
 });
 
-test('full scales include season role means and nonzero impact even beyond all actual values', () => {
-  const axes = createRadarAxes([{ stats: {
-    ...stats, mean_baseline_dpm: 950, mean_baseline_vision_per_minute: 4, mean_baseline_impact: 0.7,
-  } }]);
-  assert.equal(axes[2].max, 950);
-  assert.equal(axes[3].max, 4);
-  assert.equal(axes[4].min, 0);
-  assert.equal(axes[4].max, 0.7);
-  assert.equal(radiusFor(axes[2], 950), 1);
-  const negativeImpact = createRadarAxes([{ stats: { ...stats, shrunk_impact: -0.4 } }])[4];
-  assert.equal(negativeImpact.min, -0.4);
-  assert.equal(negativeImpact.max, 0.07);
-  assert.equal(radiusFor(negativeImpact, baselineValue(stats, 'shrunk_impact')), 1);
+test('radar windows use deviations from the role baseline, including model-expected DPM', () => {
+  const values = { ...stats, mean_baseline_dpm: 950, mean_baseline_vision_per_minute: 4,
+    mean_baseline_impact: 0.7 };
+  const axes = createRadarAxes([{ stats: values }]);
+  assert.ok(Math.abs(axes[2].half - (950 - 680) * 1.1) < 1e-10);
+  assert.ok(Math.abs(axes[3].half - (4 - 1.2) * 1.1) < 1e-10);
+  for (const axis of axes) {
+    const baseline = baselineValue(values, axis.key);
+    assert.equal(radiusFor(axis, baseline, baseline), 0.5, 'baseline is the middle ring');
+    assert.ok(Math.abs(radiusFor(axis, baseline + axis.half, baseline) - 1) < 1e-10);
+    assert.ok(Math.abs(radiusFor(axis, baseline - axis.half, baseline)) < 1e-10);
+    assert.equal(radiusFor(axis, baseline + 2 * axis.half, baseline), 1, 'outliers clip at rim');
+    assert.equal(radiusFor(axis, baseline - 2 * axis.half, baseline), 0, 'negative outliers clip at center');
+    assert.equal(radiusFor(axis, values[axis.key], null), null, 'no invented missing baseline');
+  }
+  const all = Array.from({ length: 11 }, (_, i) => ({ stats: {
+    ...stats, mean_dpm: 600 + (i === 10 ? 10000 : i * 10), mean_expected_dpm: null,
+  } }));
+  assert.ok(Math.abs(createRadarAxes(all)[2].half - 99) < 1e-10, '90th percentile resists an extreme outlier');
 });
 
-test('zoom bound includes each visible baseline axis without changing the actual profile', () => {
-  const fieldPairs = [
-    ['mean_gold_share', 'mean_baseline_gold_share'],
-    ['mean_damage_share', 'mean_baseline_damage_share'],
-    ['mean_dpm', 'mean_baseline_dpm'],
-    ['mean_vision_per_minute', 'mean_baseline_vision_per_minute'],
-    ['shrunk_impact', 'mean_baseline_impact'],
-  ];
-  for (const [key, field] of fieldPairs) {
-    const axes = [{ key, min: 0, max: 1 }];
-    const values = { [key]: 0.2, [field]: 0.75 };
-    assert.equal(minimumRadarSpan(values, axes, false), 0.25);
-    assert.equal(minimumRadarSpan(values, axes, true), 0.8);
-    assert.ok(radiusFor(axes[0], values[field], minimumRadarSpan(values, axes, true)) < 1);
-  }
-  const axes = [{ key: 'shrunk_impact', min: -1, max: 1 }];
-  assert.equal(minimumRadarSpan({ shrunk_impact: -0.8, n_games: 1 }, axes, false), 0.25);
-  assert.equal(minimumRadarSpan({ shrunk_impact: -0.8, mean_baseline_impact: 0.2 }, axes, true), 0.65);
+test('radar zoom bounds protect baseline-relative observations and optionally predicted DPM', () => {
+  const axis = { key: 'mean_dpm', half: 100 };
+  const values = { mean_dpm: 620, mean_baseline_dpm: 600, mean_expected_dpm: 675 };
+  assert.equal(minimumRadarSpan(values, [axis], false), 0.25);
+  assert.equal(minimumRadarSpan(values, [axis], true), 0.8);
+  assert.ok(radiusFor(axis, values.mean_expected_dpm, 600, 0.8) < 1);
+  assert.equal(radiusFor(axis, values.mean_expected_dpm, 600, 0.25), 1);
+  assert.equal(radiusFor(axis, 600, 600, 0.25), 0.5, 'baseline stays fixed while zooming');
+  assert.equal(minimumRadarSpan({ ...values, mean_dpm: 530 }, [axis], false), 0.75,
+    'below-baseline observations constrain zoom as well');
+  const impact = { key: 'shrunk_impact', half: 1 };
+  assert.equal(minimumRadarSpan({ shrunk_impact: -0.4, mean_baseline_impact: 0.2 }, [impact]), 0.65);
+  assert.equal(radiusFor({ key: 'mean_dpm', half: 0 }, 600, 600), 0.5);
+  assert.equal(radiusFor({ key: 'mean_dpm', half: 0 }, 620, 600), null);
 });
 
 test('timeline uses the fixed season role DPM across transfers and warmup without changing model training means', () => {
@@ -127,9 +129,10 @@ test('real catalog loader preserves baseline fields in both generated datasets',
       globalThis.fetch = async (url) => new Response(await readFile(
         new URL(String(url).replace(/\/data\/(?:test|processed)\//, `/data/${dataset}/`)),
       ));
-      const csvRows = parseCsv(await readFile(new URL(`../../data/${dataset}/players.csv`, import.meta.url), 'utf8'));
+      const csvRows = parseCsv(await readFile(new URL(`../../data/${dataset}/lpl/2025/players.csv`, import.meta.url), 'utf8'));
       const byPlayer = new Map(csvRows.map((row) => [`${row.season}|${row.player_id}|${row.team_id}|${row.role}`, row]));
-      const { dataSource } = await import(`../utils/data-source.js?baseline-test=${dataset}`);
+      const { createDataSource } = await import('../utils/data-source.js');
+      const dataSource = createDataSource({ league: 'LPL', year: 2025, path: 'lpl/2025', status: 'ready' });
       const catalog = await dataSource.loadCatalog();
       const fields = [
         'mean_baseline_gold_share', 'mean_baseline_damage_share',
@@ -162,7 +165,7 @@ test('real catalog loader preserves baseline fields in both generated datasets',
         assert.ok(profileValues(player.stats, createRadarAxes(), true).every(Number.isFinite));
       }
       const selected = catalog.players[0];
-      const rawGames = parseCsv(await readFile(new URL(`../../data/${dataset}/player_games.csv`, import.meta.url), 'utf8'));
+      const rawGames = parseCsv(await readFile(new URL(`../../data/${dataset}/lpl/2025/player_games.csv`, import.meta.url), 'utf8'));
       const gamesById = new Map(rawGames.map((row) => [row.record_id, row]));
       const games = await dataSource.loadPlayerGames(selected.id);
       for (const game of games) assert.equal(game.role, gamesById.get(game.id).role);

@@ -1,0 +1,40 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2021,Spring,oe:player:fdc16c7495d2f61f9f116432b4a1f1a,RayFarky,top,,,,,,,,,,,,,,
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2021,Spring,oe:player:e1a9dc9f23534e63de9df0d540ac161,Once,jng,,,,,,,,,,,,,,
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2021,Spring,oe:player:c6b497a4ce22932b70f06b255827c6e,Gariaru,mid,,,,,,,,,,,,,,
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2021,Spring,oe:player:36a55a7a73f82b7ca788e2db7760dbb,Yuhi,bot,,,,,,,,,,,,,,
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2021,Spring,oe:player:f926aabe99f9b4c9c7269f3a45ba50a,Proud,sup,,,,,,,,,,,,,,
+lineup,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2021,Spring,,,,lineup-f61206ee43eea8e3,BCT-01,1,1,oe:player:fdc16c7495d2f61f9f116432b4a1f1a,oe:player:e1a9dc9f23534e63de9df0d540ac161,oe:player:c6b497a4ce22932b70f06b255827c6e,oe:player:36a55a7a73f82b7ca788e2db7760dbb,oe:player:f926aabe99f9b4c9c7269f3a45ba50a,RayFarky,Once,Gariaru,Yuhi,Proud
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2021,Spring,oe:player:376d5e3b1257e6972228d458943f74c,Evi,top,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2021,Spring,oe:player:47f1917849906027f365eff06d45c27,Steal,jng,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2021,Spring,oe:player:2e82913920d8a6d0efa480bc35f1ba8,Aria,mid,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2021,Spring,oe:player:dd4660dccac3ba0b8f35cb319a686a4,Ceros,mid,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2021,Spring,oe:player:0d798f24869b290bfcdf6427d958118,Yutapon,bot,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2021,Spring,oe:player:28210a578227a57de61f42f4bd0d2b4,Gaeng,sup,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2021,Spring,oe:player:a1204185a0ce0e29cff43cd484f3f5c,Kazu,sup,,,,,,,,,,,,,,
+lineup,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2021,Spring,,,,lineup-97e6517f14868854,DF-01,1,2,oe:player:376d5e3b1257e6972228d458943f74c,oe:player:47f1917849906027f365eff06d45c27,oe:player:2e82913920d8a6d0efa480bc35f1ba8,oe:player:0d798f24869b290bfcdf6427d958118,oe:player:a1204185a0ce0e29cff43cd484f3f5c,Evi,Steal,Aria,Yutapon,Kazu
+lineup,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2021,Spring,,,,lineup-741fb63b248c71bb,DF-02,2,1,oe:player:376d5e3b1257e6972228d458943f74c,oe:player:47f1917849906027f365eff06d45c27,oe:player:dd4660dccac3ba0b8f35cb319a686a4,oe:player:0d798f24869b290bfcdf6427d958118,oe:player:28210a578227a57de61f42f4bd0d2b4,Evi,Steal,Ceros,Yutapon,Gaeng
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2021,Unknown,oe:player:61113c79bb5a88e9320744e0f675f1e,apaMEN,top,,,,,,,,,,,,,,
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2021,Unknown,oe:player:5d266fd637d68e37c6025215ab74757,Tussle,jng,,,,,,,,,,,,,,
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2021,Unknown,oe:player:4fbce651fccdd73409ea9246d0ee1d6,DasheR,mid,,,,,,,,,,,,,,
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2021,Unknown,oe:player:479bf0803cf7122f9d77ebf7bfb7576,Zenit,bot,,,,,,,,,,,,,,
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2021,Unknown,oe:player:73e82c479af3a7c2da939e8200e60f8,Corporal,sup,,,,,,,,,,,,,,
+lineup,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2021,Unknown,,,,lineup-430cb3ddd2f2f242,FSHG-01,1,5,oe:player:61113c79bb5a88e9320744e0f675f1e,oe:player:5d266fd637d68e37c6025215ab74757,oe:player:4fbce651fccdd73409ea9246d0ee1d6,oe:player:479bf0803cf7122f9d77ebf7bfb7576,oe:player:73e82c479af3a7c2da939e8200e60f8,apaMEN,Tussle,DasheR,Zenit,Corporal
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2021,Spring,oe:player:652b15e8a821f5f825693df9ae62a80,Kinatu,top,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2021,Spring,oe:player:cd2a9194c2d998264f7632728c6d8c6,hachamecha,jng,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2021,Spring,oe:player:8912c5512db9003e5c8ce07b7ff36a8,Recap,mid,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2021,Spring,oe:player:c512fd0489043fe22857696467766fd,Ssol,bot,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2021,Spring,oe:player:1e6947ac7fb3a9529a9726eb692c8cc,Secret,sup,,,,,,,,,,,,,,
+lineup,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2021,Spring,,,,lineup-cd1551516324de52,RJ-01,1,1,oe:player:652b15e8a821f5f825693df9ae62a80,oe:player:cd2a9194c2d998264f7632728c6d8c6,oe:player:8912c5512db9003e5c8ce07b7ff36a8,oe:player:c512fd0489043fe22857696467766fd,oe:player:1e6947ac7fb3a9529a9726eb692c8cc,Kinatu,hachamecha,Recap,Ssol,Secret
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2021,Unknown,oe:player:bc6c09548f555712ab0eed5c2f94e82,Paz,top,,,,,,,,,,,,,,
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2021,Unknown,oe:player:275c74140224026380b29b2412d2512,Crash,jng,,,,,,,,,,,,,,
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2021,Unknown,oe:player:a4e9e9157f2a7f62d2166124824166e,Ramune,mid,,,,,,,,,,,,,,
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2021,Unknown,oe:player:69abfbec6354b4d570ded67d2d59585,Gango,bot,,,,,,,,,,,,,,
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2021,Unknown,oe:player:293f0d0e03a4b786400eb00d3f859a8,Enty,sup,,,,,,,,,,,,,,
+lineup,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2021,Unknown,,,,lineup-c0fb30dedf6dcfac,SG-01,1,6,oe:player:bc6c09548f555712ab0eed5c2f94e82,oe:player:275c74140224026380b29b2412d2512,oe:player:a4e9e9157f2a7f62d2166124824166e,oe:player:69abfbec6354b4d570ded67d2d59585,oe:player:293f0d0e03a4b786400eb00d3f859a8,Paz,Crash,Ramune,Gango,Enty
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2021,Unknown,oe:player:9d37dd12a4d094e2fa7cf253e2078a0,Cogcog,top,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2021,Unknown,oe:player:8f6c93859e6292511f9b87edfa9a847,MooJin,jng,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2021,Unknown,oe:player:f97ecbe7f4f778302e893532b26279e,Acee,mid,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2021,Unknown,oe:player:450cbae633304212e5e2cdf32ac1711,Hollow,bot,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2021,Unknown,oe:player:ca18f3cf2fd9adb391d4770c33286f0,Raina,sup,,,,,,,,,,,,,,
+lineup,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2021,Unknown,,,,lineup-6fb9f124e7e2ac58,VE-01,1,14,oe:player:9d37dd12a4d094e2fa7cf253e2078a0,oe:player:8f6c93859e6292511f9b87edfa9a847,oe:player:f97ecbe7f4f778302e893532b26279e,oe:player:450cbae633304212e5e2cdf32ac1711,oe:player:ca18f3cf2fd9adb391d4770c33286f0,Cogcog,MooJin,Acee,Hollow,Raina

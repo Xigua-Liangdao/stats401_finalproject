@@ -1,0 +1,48 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://raw.githubusercontent.com/weiyuanoh/Worlds-LOL/3c363cbce4a9dec5c164e85d2ae95fd88b45139c/data/raw/2024_LoL_esports_match_data_from_OraclesElixir.csv",
+  "source_kind": "pinned_github_mirror",
+  "source_revision": "3c363cbce4a9dec5c164e85d2ae95fd88b45139c",
+  "annual_sources": [
+    {
+      "year": 2024,
+      "url": "https://raw.githubusercontent.com/weiyuanoh/Worlds-LOL/3c363cbce4a9dec5c164e85d2ae95fd88b45139c/data/raw/2024_LoL_esports_match_data_from_OraclesElixir.csv",
+      "sha256": "75c32a02dd817ad717a890b4c8aeac6262b2f20b9f4be9fd44791b75b48d06c9",
+      "revision": "3c363cbce4a9dec5c164e85d2ae95fd88b45139c",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:19.127176+00:00",
+      "size_bytes": 79108768,
+      "listed_size_bytes": 79108768,
+      "rows": 122304,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "filename": "2024_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 144
+    },
+    {
+      "year": 2025,
+      "url": "https://raw.githubusercontent.com/cbplexiglass/LoL-Esports-Regional-Analyses/ff34a9f935070b7a9c9610cff423eac1fd6deddc/2025_LoL_esports_match_data_from_OraclesElixir.csv",
+      "sha256": "1adfa81d8ea54cd62b332d18f8a4089cb64331da448b11f0ff7084fac55ed406",
+      "revision": "ff34a9f935070b7a9c9610cff423eac1fd6deddc",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:29:11.483370+00:00",
+      "size_bytes": 79130187,
+      "listed_size_bytes": 79130187,
+      "rows": 120636,
+      "snapshot_note": "Pinned public mirror snapshot; official Drive download was quota-limited. Snapshot may lag official file; compare recorded date coverage.",
+      "filename": "2025_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 3360
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:34:29.869346+00:00",
+  "annual_csv_sha256": "3147b23b369b1d30e652f854404d8af30f39e2b421d19f903699e6b51857ef5c",
+  "annual_rows": 242940,
+  "league": "AL",
+  "year": 2025,
+  "filter": "league == 'AL' and year == '2025'; all positions and columns preserved",
+  "raw_rows": 3504,
+  "raw_columns": 165,
+  "raw_games": 292,
+  "raw_csv_gz_sha256": "18f4d7c94503713db3be69e37b57f1574c9211523fab0fe1bd0b15080c21a762"
+}

@@ -1,0 +1,55 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:2c5866dddf12420590b19eb49ffb082,Crew e-Sports Club,CEC,2017,Summer,oe:player:2b8fa1915cf8454ce61d28e19d4c8e9,Elwind,top,,,,,,,,,,,,,,
+player,oe:team:2c5866dddf12420590b19eb49ffb082,Crew e-Sports Club,CEC,2017,Summer,oe:player:d92b0904aa4f08f128aa8c6d2775056,Mojito,jng,,,,,,,,,,,,,,
+player,oe:team:2c5866dddf12420590b19eb49ffb082,Crew e-Sports Club,CEC,2017,Summer,oe:player:a2a0d7ab33e23da9a23c463f697f82c,Naehyun,mid,,,,,,,,,,,,,,
+player,oe:team:2c5866dddf12420590b19eb49ffb082,Crew e-Sports Club,CEC,2017,Summer,oe:player:4c7ab66383de9b1ba06b7841682d547,Madness,bot,,,,,,,,,,,,,,
+player,oe:team:2c5866dddf12420590b19eb49ffb082,Crew e-Sports Club,CEC,2017,Summer,oe:player:20cbf3318192b3d953e11d6cced699b,Mocha,sup,,,,,,,,,,,,,,
+lineup,oe:team:2c5866dddf12420590b19eb49ffb082,Crew e-Sports Club,CEC,2017,Summer,,,,lineup-ee1955a200315685,CEC-01,1,12,oe:player:2b8fa1915cf8454ce61d28e19d4c8e9,oe:player:d92b0904aa4f08f128aa8c6d2775056,oe:player:a2a0d7ab33e23da9a23c463f697f82c,oe:player:4c7ab66383de9b1ba06b7841682d547,oe:player:20cbf3318192b3d953e11d6cced699b,Elwind,Mojito,Naehyun,Madness,Mocha
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2017,Summer,oe:player:84bff3a326833c7c9181c698f676878,BrokenBlade,top,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2017,Summer,oe:player:6b3481654facc1e7fe3e312883ea8f3,Cinkrof,jng,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2017,Summer,oe:player:78236c2d15825ec9350acf45161e6b5,Immortoru,mid,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2017,Summer,oe:player:d129eb71d537fdbb2cd4c52703f51f4,HolyPhoenix,bot,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2017,Summer,oe:player:566e0849f6b96ad25981ba1c79ce1a7,Hustlin,sup,,,,,,,,,,,,,,
+lineup,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2017,Summer,,,,lineup-b984f4f93de512a6,DP-01,1,2,oe:player:84bff3a326833c7c9181c698f676878,oe:player:6b3481654facc1e7fe3e312883ea8f3,oe:player:78236c2d15825ec9350acf45161e6b5,oe:player:d129eb71d537fdbb2cd4c52703f51f4,oe:player:566e0849f6b96ad25981ba1c79ce1a7,BrokenBlade,Cinkrof,Immortoru,HolyPhoenix,Hustlin
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2017,Summer,oe:player:7f1b3a3cd866a23e17542c63254d2c1,existence,top,,,,,,,,,,,,,,
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2017,Summer,oe:player:85a7eef68b9eae2a88aaaf4aec3d559,k0u,jng,,,,,,,,,,,,,,
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2017,Summer,oe:player:9b6c45664250f753143f3f75024c0a9,SozPurefect,mid,,,,,,,,,,,,,,
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2017,Summer,oe:player:3d6c9ac08ada31c184094bbc67afe00,Mean,bot,,,,,,,,,,,,,,
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2017,Summer,oe:player:e2bda16ec6a37701a59f5528913b505,Rogu,sup,,,,,,,,,,,,,,
+lineup,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2017,Summer,,,,lineup-5a7240a7c8ec6cc9,GAL-01,1,2,oe:player:7f1b3a3cd866a23e17542c63254d2c1,oe:player:85a7eef68b9eae2a88aaaf4aec3d559,oe:player:9b6c45664250f753143f3f75024c0a9,oe:player:3d6c9ac08ada31c184094bbc67afe00,oe:player:e2bda16ec6a37701a59f5528913b505,existence,k0u,SozPurefect,Mean,Rogu
+player,oe:team:ebb55385af1c848dba72b6a8dad6159,P3P eSports,PE,2017,Summer,oe:player:56725baa4909848cfa93d24e8f7f16a,Hioss,top,,,,,,,,,,,,,,
+player,oe:team:ebb55385af1c848dba72b6a8dad6159,P3P eSports,PE,2017,Summer,oe:player:b021d02e17045078576b0bb66fae869,Rawbin IV,jng,,,,,,,,,,,,,,
+player,oe:team:ebb55385af1c848dba72b6a8dad6159,P3P eSports,PE,2017,Summer,oe:player:f8949d8574a2ab17f48e85b13640315,midali,mid,,,,,,,,,,,,,,
+player,oe:team:ebb55385af1c848dba72b6a8dad6159,P3P eSports,PE,2017,Summer,oe:player:c135a46f227a7c89f4fdc46fdeb0484,Amades,bot,,,,,,,,,,,,,,
+player,oe:team:ebb55385af1c848dba72b6a8dad6159,P3P eSports,PE,2017,Summer,oe:player:e301d4839154bbf266d3362c898a3e4,Cognac,sup,,,,,,,,,,,,,,
+lineup,oe:team:ebb55385af1c848dba72b6a8dad6159,P3P eSports,PE,2017,Summer,,,,lineup-98766aab47a1e35e,PE-01,1,2,oe:player:56725baa4909848cfa93d24e8f7f16a,oe:player:b021d02e17045078576b0bb66fae869,oe:player:f8949d8574a2ab17f48e85b13640315,oe:player:c135a46f227a7c89f4fdc46fdeb0484,oe:player:e301d4839154bbf266d3362c898a3e4,Hioss,Rawbin IV,midali,Amades,Cognac
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2017,Summer,oe:player:d12be4fd740afa31c400833bee2cba4,fabFabulous,top,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2017,Summer,oe:player:b287539666d56b6bf8155d3e4a8541d,Stomaged,jng,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2017,Summer,oe:player:3993eecbf3e9f7e9c94db6bb2fb616d,Naru,mid,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2017,Summer,oe:player:01cbcf0e395124de3b78817b75b878c,Zeitnot,bot,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2017,Summer,oe:player:3cd2f0511ee257ee836157168840d95,Tolerant,sup,,,,,,,,,,,,,,
+lineup,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2017,Summer,,,,lineup-9f0e091f0876aa62,PS-01,1,2,oe:player:d12be4fd740afa31c400833bee2cba4,oe:player:b287539666d56b6bf8155d3e4a8541d,oe:player:3993eecbf3e9f7e9c94db6bb2fb616d,oe:player:01cbcf0e395124de3b78817b75b878c,oe:player:3cd2f0511ee257ee836157168840d95,fabFabulous,Stomaged,Naru,Zeitnot,Tolerant
+player,oe:team:b867a40fb93da6e032034f570785949,SuperMassive TNG,ST,2017,Unknown,oe:player:f5ea6213c328518f2840a59bf48acec,Kektz,top,,,,,,,,,,,,,,
+player,oe:team:b867a40fb93da6e032034f570785949,SuperMassive TNG,ST,2017,Unknown,oe:player:d92b0904aa4f08f128aa8c6d2775056,Mojito,jng,,,,,,,,,,,,,,
+player,oe:team:b867a40fb93da6e032034f570785949,SuperMassive TNG,ST,2017,Unknown,oe:player:5801cdd376f4163689b7ff72c618fae,Crossman,mid,,,,,,,,,,,,,,
+player,oe:team:b867a40fb93da6e032034f570785949,SuperMassive TNG,ST,2017,Unknown,oe:player:1ae36f8dab72157bd28127054e3fc81,HeaQ,bot,,,,,,,,,,,,,,
+player,oe:team:b867a40fb93da6e032034f570785949,SuperMassive TNG,ST,2017,Unknown,oe:player:71f5302abea604062e810161d7922b8,Japone,sup,,,,,,,,,,,,,,
+lineup,oe:team:b867a40fb93da6e032034f570785949,SuperMassive TNG,ST,2017,Unknown,,,,lineup-f72d9a758f9c7b86,ST-01,1,2,oe:player:f5ea6213c328518f2840a59bf48acec,oe:player:d92b0904aa4f08f128aa8c6d2775056,oe:player:5801cdd376f4163689b7ff72c618fae,oe:player:1ae36f8dab72157bd28127054e3fc81,oe:player:71f5302abea604062e810161d7922b8,Kektz,Mojito,Crossman,HeaQ,Japone
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2017,Summer,oe:player:7c752bff9cb38f08618fe71cdf47075,Panky,top,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2017,Summer,oe:player:646f0a01b685558b975b5cd3f5b3624,Wisdom,jng,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2017,Summer,oe:player:6247b7dcf33210822e5a3f4f6368590,Godbro,mid,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2017,Summer,oe:player:63fb46cfa2f3ee4110bd7489cf18c02,Ruvelius,bot,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2017,Summer,oe:player:db38739eda4ad887b7d852545212528,Zergsting,sup,,,,,,,,,,,,,,
+lineup,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2017,Summer,,,,lineup-2125fea4727eda48,TA-01,1,2,oe:player:7c752bff9cb38f08618fe71cdf47075,oe:player:646f0a01b685558b975b5cd3f5b3624,oe:player:6247b7dcf33210822e5a3f4f6368590,oe:player:63fb46cfa2f3ee4110bd7489cf18c02,oe:player:db38739eda4ad887b7d852545212528,Panky,Wisdom,Godbro,Ruvelius,Zergsting
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2017,Summer,oe:player:7c752bff9cb38f08618fe71cdf47075,Panky,top,,,,,,,,,,,,,,
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2017,Summer,oe:player:bc93fd0fa19ed26b6adf8293ada5540,Smoke,top,,,,,,,,,,,,,,
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2017,Summer,oe:player:a48296ad11ed041e4db9991af1057fb,Crystal,jng,,,,,,,,,,,,,,
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2017,Summer,oe:player:8a1c30199bac9efaa2161b14565595c,KonDziSan,jng,,,,,,,,,,,,,,
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2017,Summer,oe:player:cdcb26731b01eb862d6e0ba8fec6deb,Lukezy,mid,,,,,,,,,,,,,,
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2017,Summer,oe:player:ecb29676899ee7344ee0f7db0278ae3,Umut,mid,,,,,,,,,,,,,,
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2017,Summer,oe:player:ae47062e8906d12c9f92a2ec49fce87,Endz,bot,,,,,,,,,,,,,,
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2017,Summer,oe:player:4c7ab66383de9b1ba06b7841682d547,Madness,bot,,,,,,,,,,,,,,
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2017,Summer,oe:player:e301d4839154bbf266d3362c898a3e4,Cognac,sup,,,,,,,,,,,,,,
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2017,Summer,oe:player:a7dfb2a9d77e269b2b22052211a7154,Vale,sup,,,,,,,,,,,,,,
+lineup,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2017,Summer,,,,lineup-0801530259a4e7a9,ÇİL-01,1,2,oe:player:7c752bff9cb38f08618fe71cdf47075,oe:player:a48296ad11ed041e4db9991af1057fb,oe:player:cdcb26731b01eb862d6e0ba8fec6deb,oe:player:4c7ab66383de9b1ba06b7841682d547,oe:player:e301d4839154bbf266d3362c898a3e4,Panky,Crystal,Lukezy,Madness,Cognac
+lineup,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2017,Summer,,,,lineup-a0bd09755bd2833a,ÇİL-02,2,2,oe:player:bc93fd0fa19ed26b6adf8293ada5540,oe:player:8a1c30199bac9efaa2161b14565595c,oe:player:ecb29676899ee7344ee0f7db0278ae3,oe:player:ae47062e8906d12c9f92a2ec49fce87,oe:player:a7dfb2a9d77e269b2b22052211a7154,Smoke,KonDziSan,Umut,Endz,Vale

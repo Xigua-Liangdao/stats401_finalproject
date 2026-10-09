@@ -1,0 +1,35 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2015.csv.gz",
+  "source_kind": "pinned_github_mirror",
+  "source_revision": "834ce914f0c79289881697084227fa2933ad344a",
+  "annual_sources": [
+    {
+      "year": 2015,
+      "url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2015.csv.gz",
+      "sha256": "1988bf08c931f5b137ab3c7724632279edbeb2b1ecc0594291b066a1c6e0a7d8",
+      "revision": "834ce914f0c79289881697084227fa2933ad344a",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:00.532630+00:00",
+      "size_bytes": 15990413,
+      "listed_size_bytes": 15990413,
+      "rows": 21792,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "download_sha256": "dabf6e516bdb346c174412da847ffa8313664404b2cdff0e1256bf055bdbf815",
+      "filename": "2015_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 1620
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:35:14.230116+00:00",
+  "annual_csv_sha256": "1988bf08c931f5b137ab3c7724632279edbeb2b1ecc0594291b066a1c6e0a7d8",
+  "annual_rows": 21792,
+  "league": "NA CS",
+  "year": 2015,
+  "filter": "league == 'NA CS' and year == '2015'; all positions and columns preserved",
+  "raw_rows": 1620,
+  "raw_columns": 161,
+  "raw_games": 135,
+  "raw_csv_gz_sha256": "9941d9de647e0400571b2f8a5e69e6348db2c9101d1a05148f63aead6c2b7ace"
+}

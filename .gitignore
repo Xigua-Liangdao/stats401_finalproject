@@ -4,3 +4,7 @@
 __pycache__/
 *.pyc
 .pytest_cache/
+
+# Per-machine batch receipts and execution logs; analytical reports stay tracked.
+model/reports/*/*/build.json
+model/reports/*/*/build.log

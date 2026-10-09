@@ -1,0 +1,43 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:ccf3ac6ecc7f9a46f87a052deebe32e,AliorBank Team,AT,2023,Unknown,oe:player:89bee56a2a53bdf22737c6d43eedb9c,Matixx,top,,,,,,,,,,,,,,
+player,oe:team:ccf3ac6ecc7f9a46f87a052deebe32e,AliorBank Team,AT,2023,Unknown,oe:player:6b7ca7e0fcad1f113f17bc2d30adbf5,adi1,jng,,,,,,,,,,,,,,
+player,oe:team:ccf3ac6ecc7f9a46f87a052deebe32e,AliorBank Team,AT,2023,Unknown,oe:player:efde1a9fe9e6f1059c3fce2ec296fae,many,mid,,,,,,,,,,,,,,
+player,oe:team:ccf3ac6ecc7f9a46f87a052deebe32e,AliorBank Team,AT,2023,Unknown,oe:player:1ecc2cf8dc5f05719ca235f6d0be5e2,svns,bot,,,,,,,,,,,,,,
+player,oe:team:ccf3ac6ecc7f9a46f87a052deebe32e,AliorBank Team,AT,2023,Unknown,oe:player:1f892f04e94e144dadcc8be197d4f5b,minemaciek,sup,,,,,,,,,,,,,,
+lineup,oe:team:ccf3ac6ecc7f9a46f87a052deebe32e,AliorBank Team,AT,2023,Unknown,,,,lineup-aa6fd41f554ecbc9,AT-01,1,3,oe:player:89bee56a2a53bdf22737c6d43eedb9c,oe:player:6b7ca7e0fcad1f113f17bc2d30adbf5,oe:player:efde1a9fe9e6f1059c3fce2ec296fae,oe:player:1ecc2cf8dc5f05719ca235f6d0be5e2,oe:player:1f892f04e94e144dadcc8be197d4f5b,Matixx,adi1,many,svns,minemaciek
+player,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2023,Unknown,oe:player:4b20700639bada36a5a58cc4a8e7135,Eyliph,top,,,,,,,,,,,,,,
+player,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2023,Unknown,oe:player:11389d6d8a29729807c3cf528a98050,SPOOKY,jng,,,,,,,,,,,,,,
+player,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2023,Unknown,oe:player:ae06413dcf80aa496ab8448d8ea586f,HAWHAW,mid,,,,,,,,,,,,,,
+player,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2023,Unknown,oe:player:5c58c2e986e8aec0ee6f2465823349a,GOLDENTO4ST,bot,,,,,,,,,,,,,,
+player,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2023,Unknown,oe:player:b226880189cb11f7da7a0c86544b556,iLEVI,sup,,,,,,,,,,,,,,
+lineup,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2023,Unknown,,,,lineup-76e716b99ce845c3,AFE-01,1,2,oe:player:4b20700639bada36a5a58cc4a8e7135,oe:player:11389d6d8a29729807c3cf528a98050,oe:player:ae06413dcf80aa496ab8448d8ea586f,oe:player:5c58c2e986e8aec0ee6f2465823349a,oe:player:b226880189cb11f7da7a0c86544b556,Eyliph,SPOOKY,HAWHAW,GOLDENTO4ST,iLEVI
+player,oe:team:fb1fd138f4e0b99eacbe4da8395e94d,Cyber Wolves,CW,2023,Unknown,oe:player:dfbb32609398e07a30933a617d2d9b7,KLOWNY,top,,,,,,,,,,,,,,
+player,oe:team:fb1fd138f4e0b99eacbe4da8395e94d,Cyber Wolves,CW,2023,Unknown,oe:player:a68581f40d30119bad63673b157e660,Velja,jng,,,,,,,,,,,,,,
+player,oe:team:fb1fd138f4e0b99eacbe4da8395e94d,Cyber Wolves,CW,2023,Unknown,oe:player:8a391c2d095a4e0b79ed197436af6c7,Peppe,mid,,,,,,,,,,,,,,
+player,oe:team:fb1fd138f4e0b99eacbe4da8395e94d,Cyber Wolves,CW,2023,Unknown,oe:player:e54bbd7c6dd5290a1cd0f70ad2653c5,Vaynedeta,bot,,,,,,,,,,,,,,
+player,oe:team:fb1fd138f4e0b99eacbe4da8395e94d,Cyber Wolves,CW,2023,Unknown,oe:player:69fcf7c5f68e79cd22831a85aa98f60,Tasteless,sup,,,,,,,,,,,,,,
+lineup,oe:team:fb1fd138f4e0b99eacbe4da8395e94d,Cyber Wolves,CW,2023,Unknown,,,,lineup-ec4e06af7da4352f,CW-01,1,2,oe:player:dfbb32609398e07a30933a617d2d9b7,oe:player:a68581f40d30119bad63673b157e660,oe:player:8a391c2d095a4e0b79ed197436af6c7,oe:player:e54bbd7c6dd5290a1cd0f70ad2653c5,oe:player:69fcf7c5f68e79cd22831a85aa98f60,KLOWNY,Velja,Peppe,Vaynedeta,Tasteless
+player,oe:team:06554c70cfe8a6be14b004b3c18abe6,Entropiq,ENT,2023,Unknown,oe:player:bf0fcdb863d11c4f6e7802f434de734,Robocop,top,,,,,,,,,,,,,,
+player,oe:team:06554c70cfe8a6be14b004b3c18abe6,Entropiq,ENT,2023,Unknown,oe:player:060e16e1c91434827c294bac52e8b47,Zicssi,jng,,,,,,,,,,,,,,
+player,oe:team:06554c70cfe8a6be14b004b3c18abe6,Entropiq,ENT,2023,Unknown,oe:player:204746c853a12888ad72d8035cdf8c7,Jackies,mid,,,,,,,,,,,,,,
+player,oe:team:06554c70cfe8a6be14b004b3c18abe6,Entropiq,ENT,2023,Unknown,oe:player:58cff57941b3605087bb9208b3d76d0,Khantos,bot,,,,,,,,,,,,,,
+player,oe:team:06554c70cfe8a6be14b004b3c18abe6,Entropiq,ENT,2023,Unknown,oe:player:9adc23fff49c05d7b22cfd79ca1841d,denyk,sup,,,,,,,,,,,,,,
+lineup,oe:team:06554c70cfe8a6be14b004b3c18abe6,Entropiq,ENT,2023,Unknown,,,,lineup-1e78aa280ffb15d5,ENT-01,1,2,oe:player:bf0fcdb863d11c4f6e7802f434de734,oe:player:060e16e1c91434827c294bac52e8b47,oe:player:204746c853a12888ad72d8035cdf8c7,oe:player:58cff57941b3605087bb9208b3d76d0,oe:player:9adc23fff49c05d7b22cfd79ca1841d,Robocop,Zicssi,Jackies,Khantos,denyk
+player,oe:team:9a3327bd6c9a07e61350e24d97419fa,SINNERS Esports,SE,2023,Unknown,oe:player:d0c52a9400db78779e0baae662a3fc2,Adiss,top,,,,,,,,,,,,,,
+player,oe:team:9a3327bd6c9a07e61350e24d97419fa,SINNERS Esports,SE,2023,Unknown,oe:player:c142368a9f94d6334133932a7e5ce0d,Speedy,jng,,,,,,,,,,,,,,
+player,oe:team:9a3327bd6c9a07e61350e24d97419fa,SINNERS Esports,SE,2023,Unknown,oe:player:4b3d62fcaf8a016880db6ec13754042,ordno,mid,,,,,,,,,,,,,,
+player,oe:team:9a3327bd6c9a07e61350e24d97419fa,SINNERS Esports,SE,2023,Unknown,oe:player:cf009e2ce4392b47be19c983b6a7064,Strode,bot,,,,,,,,,,,,,,
+player,oe:team:9a3327bd6c9a07e61350e24d97419fa,SINNERS Esports,SE,2023,Unknown,oe:player:4d855d5ac0497a11941e8948568db74,Rufus,sup,,,,,,,,,,,,,,
+lineup,oe:team:9a3327bd6c9a07e61350e24d97419fa,SINNERS Esports,SE,2023,Unknown,,,,lineup-44b85836bda18471,SE-01,1,2,oe:player:d0c52a9400db78779e0baae662a3fc2,oe:player:c142368a9f94d6334133932a7e5ce0d,oe:player:4b3d62fcaf8a016880db6ec13754042,oe:player:cf009e2ce4392b47be19c983b6a7064,oe:player:4d855d5ac0497a11941e8948568db74,Adiss,Speedy,ordno,Strode,Rufus
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2023,Unknown,oe:player:57abe5a8958c15444e9103873f8565a,Banderas,top,,,,,,,,,,,,,,
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2023,Unknown,oe:player:7471c21aed615dae3e49140eca8ce89,Bruness,jng,,,,,,,,,,,,,,
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2023,Unknown,oe:player:7e33124e33721ef8f70d2dd843b57da,ESCIK,mid,,,,,,,,,,,,,,
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2023,Unknown,oe:player:40fa7615556f33971d67c95a702fbcc,Woolite,bot,,,,,,,,,,,,,,
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2023,Unknown,oe:player:148e116847c069d852ad0696d4180fe,Bananitoo,sup,,,,,,,,,,,,,,
+lineup,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2023,Unknown,,,,lineup-46df00603e0b7469,WE-01,1,14,oe:player:57abe5a8958c15444e9103873f8565a,oe:player:7471c21aed615dae3e49140eca8ce89,oe:player:7e33124e33721ef8f70d2dd843b57da,oe:player:40fa7615556f33971d67c95a702fbcc,oe:player:148e116847c069d852ad0696d4180fe,Banderas,Bruness,ESCIK,Woolite,Bananitoo
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2023,Unknown,oe:player:cb5feb1b7314637725a2e73bdc9f729,Color,top,,,,,,,,,,,,,,
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2023,Unknown,oe:player:9312bfc44c1e0686971d076d1364713,Ryuzaki,jng,,,,,,,,,,,,,,
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2023,Unknown,oe:player:613a571a4b0b674547093130f2e4093,SlowQ,mid,,,,,,,,,,,,,,
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2023,Unknown,oe:player:8bac58409e91b96ecd05f6d8f053e07,Ice,bot,,,,,,,,,,,,,,
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2023,Unknown,oe:player:750126a9b77f68942d7f412ad74b67d,sanghyeon,sup,,,,,,,,,,,,,,
+lineup,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2023,Unknown,,,,lineup-76f96f859a41746c,ZT-01,1,3,oe:player:cb5feb1b7314637725a2e73bdc9f729,oe:player:9312bfc44c1e0686971d076d1364713,oe:player:613a571a4b0b674547093130f2e4093,oe:player:8bac58409e91b96ecd05f6d8f053e07,oe:player:750126a9b77f68942d7f412ad74b67d,Color,Ryuzaki,SlowQ,Ice,sanghyeon

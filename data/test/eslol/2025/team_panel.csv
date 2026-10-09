@@ -1,0 +1,25 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:9d360cb53ceabaf46a078820f7370b5,Aurora,AUR,2025,Unknown,oe:player:61b7d25591ab558425b9a2cee041a20,WNTR,top,,,,,,,,,,,,,,
+player,oe:team:9d360cb53ceabaf46a078820f7370b5,Aurora,AUR,2025,Unknown,oe:player:d5198fc6b3812a25b5310a6d8f10a79,Zefta,jng,,,,,,,,,,,,,,
+player,oe:team:9d360cb53ceabaf46a078820f7370b5,Aurora,AUR,2025,Unknown,oe:player:adc97301d81b89144963c38cb54245b,Thunder Yordle,mid,,,,,,,,,,,,,,
+player,oe:team:9d360cb53ceabaf46a078820f7370b5,Aurora,AUR,2025,Unknown,oe:player:ffcc3efb18816a2c442bbcd1e759d96,Khaydarin,bot,,,,,,,,,,,,,,
+player,oe:team:9d360cb53ceabaf46a078820f7370b5,Aurora,AUR,2025,Unknown,oe:player:b0b961783b2f5d73c30a6ea288462d8,Ipecacuhana,sup,,,,,,,,,,,,,,
+lineup,oe:team:9d360cb53ceabaf46a078820f7370b5,Aurora,AUR,2025,Unknown,,,,lineup-97bbf2949afa96e0,AUR-01,1,8,oe:player:61b7d25591ab558425b9a2cee041a20,oe:player:d5198fc6b3812a25b5310a6d8f10a79,oe:player:adc97301d81b89144963c38cb54245b,oe:player:ffcc3efb18816a2c442bbcd1e759d96,oe:player:b0b961783b2f5d73c30a6ea288462d8,WNTR,Zefta,Thunder Yordle,Khaydarin,Ipecacuhana
+player,oe:team:7095511f957b70cdefc430c4c177457,Dutch Community Team,DCT,2025,Unknown,oe:player:820473874f50f5651469ca856523857,Luuuk,top,,,,,,,,,,,,,,
+player,oe:team:7095511f957b70cdefc430c4c177457,Dutch Community Team,DCT,2025,Unknown,oe:player:c2ef06d8de4d2b221828e8ffa8bb041,Spiderlair,jng,,,,,,,,,,,,,,
+player,oe:team:7095511f957b70cdefc430c4c177457,Dutch Community Team,DCT,2025,Unknown,oe:player:d38c22f001ead90aab3d71d27c9227b,Unicow,mid,,,,,,,,,,,,,,
+player,oe:team:7095511f957b70cdefc430c4c177457,Dutch Community Team,DCT,2025,Unknown,oe:player:b4d561f0f10da2755773613cdd2ad7a,Pretexion,bot,,,,,,,,,,,,,,
+player,oe:team:7095511f957b70cdefc430c4c177457,Dutch Community Team,DCT,2025,Unknown,oe:player:ceab0df15872e1477dc71ef84b29cb0,Socrates,sup,,,,,,,,,,,,,,
+lineup,oe:team:7095511f957b70cdefc430c4c177457,Dutch Community Team,DCT,2025,Unknown,,,,lineup-bb8cf1cd02c654f6,DCT-01,1,3,oe:player:820473874f50f5651469ca856523857,oe:player:c2ef06d8de4d2b221828e8ffa8bb041,oe:player:d38c22f001ead90aab3d71d27c9227b,oe:player:b4d561f0f10da2755773613cdd2ad7a,oe:player:ceab0df15872e1477dc71ef84b29cb0,Luuuk,Spiderlair,Unicow,Pretexion,Socrates
+player,oe:team:13697a0e9b7df2bbb787cca7b9fd140,Jörmungang,JÖR,2025,Unknown,oe:player:ecca34ba11a3cf3965e48591835d8a1,Axo,top,,,,,,,,,,,,,,
+player,oe:team:13697a0e9b7df2bbb787cca7b9fd140,Jörmungang,JÖR,2025,Unknown,oe:player:e505e92bac11605766c0d7703300ffa,MaxouTigrou,jng,,,,,,,,,,,,,,
+player,oe:team:13697a0e9b7df2bbb787cca7b9fd140,Jörmungang,JÖR,2025,Unknown,oe:player:6c5488da88047ddfa7d6f8c68e58d16,Druust,mid,,,,,,,,,,,,,,
+player,oe:team:13697a0e9b7df2bbb787cca7b9fd140,Jörmungang,JÖR,2025,Unknown,oe:player:31c5497620ea4aea37a0b5a5cb0518c,Dan,bot,,,,,,,,,,,,,,
+player,oe:team:13697a0e9b7df2bbb787cca7b9fd140,Jörmungang,JÖR,2025,Unknown,oe:player:dc7ebef6711d92bfeb5377bfc72bb82,Polychiki,sup,,,,,,,,,,,,,,
+lineup,oe:team:13697a0e9b7df2bbb787cca7b9fd140,Jörmungang,JÖR,2025,Unknown,,,,lineup-9dee197113ad4f72,JÖR-01,1,6,oe:player:ecca34ba11a3cf3965e48591835d8a1,oe:player:e505e92bac11605766c0d7703300ffa,oe:player:6c5488da88047ddfa7d6f8c68e58d16,oe:player:31c5497620ea4aea37a0b5a5cb0518c,oe:player:dc7ebef6711d92bfeb5377bfc72bb82,Axo,MaxouTigrou,Druust,Dan,Polychiki
+player,oe:team:178e4603342985e4154647761633799,Pertinax Esports,PE,2025,Unknown,oe:player:e9ebf0a45c8695e31714bc8ff096745,sheol,top,,,,,,,,,,,,,,
+player,oe:team:178e4603342985e4154647761633799,Pertinax Esports,PE,2025,Unknown,oe:player:d202f9189eaf0e139228adbc77660f9,ScienTrist,jng,,,,,,,,,,,,,,
+player,oe:team:178e4603342985e4154647761633799,Pertinax Esports,PE,2025,Unknown,oe:player:5ab137577a18956e9688137c178fe20,Franky,mid,,,,,,,,,,,,,,
+player,oe:team:178e4603342985e4154647761633799,Pertinax Esports,PE,2025,Unknown,oe:player:23b8dd9ca6016d7432f3e39ffc20cc7,MrHB,bot,,,,,,,,,,,,,,
+player,oe:team:178e4603342985e4154647761633799,Pertinax Esports,PE,2025,Unknown,oe:player:df3940e59ad91e2b53bbf77cc90b65d,Leolas,sup,,,,,,,,,,,,,,
+lineup,oe:team:178e4603342985e4154647761633799,Pertinax Esports,PE,2025,Unknown,,,,lineup-8363dd0c93d0ee8c,PE-01,1,11,oe:player:e9ebf0a45c8695e31714bc8ff096745,oe:player:d202f9189eaf0e139228adbc77660f9,oe:player:5ab137577a18956e9688137c178fe20,oe:player:23b8dd9ca6016d7432f3e39ffc20cc7,oe:player:df3940e59ad91e2b53bbf77cc90b65d,sheol,ScienTrist,Franky,MrHB,Leolas

@@ -1,0 +1,25 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:f6fd2177acca4512dc0b8abbe67351a,Team Cloud Drake,TCD,2018,Unknown,oe:player:2e54334c0a5ce2e3e5a5845df3ab3ad,Jenkins,top,,,,,,,,,,,,,,
+player,oe:team:f6fd2177acca4512dc0b8abbe67351a,Team Cloud Drake,TCD,2018,Unknown,oe:player:265de6a19ea25898ad88c82167c0251,Panda,jng,,,,,,,,,,,,,,
+player,oe:team:f6fd2177acca4512dc0b8abbe67351a,Team Cloud Drake,TCD,2018,Unknown,oe:player:e0574962bdc329861a8d0e8c17c0025,5fire,mid,,,,,,,,,,,,,,
+player,oe:team:f6fd2177acca4512dc0b8abbe67351a,Team Cloud Drake,TCD,2018,Unknown,oe:player:c319bc097532edb1f798ce483e186e7,SophistSage,bot,,,,,,,,,,,,,,
+player,oe:team:f6fd2177acca4512dc0b8abbe67351a,Team Cloud Drake,TCD,2018,Unknown,oe:player:4db9382d7c962f8153c60cce7f919a0,winter,sup,,,,,,,,,,,,,,
+lineup,oe:team:f6fd2177acca4512dc0b8abbe67351a,Team Cloud Drake,TCD,2018,Unknown,,,,lineup-3276ad49859a9be4,TCD-01,1,16,oe:player:2e54334c0a5ce2e3e5a5845df3ab3ad,oe:player:265de6a19ea25898ad88c82167c0251,oe:player:e0574962bdc329861a8d0e8c17c0025,oe:player:c319bc097532edb1f798ce483e186e7,oe:player:4db9382d7c962f8153c60cce7f919a0,Jenkins,Panda,5fire,SophistSage,winter
+player,oe:team:858117e8241051433bcfacf5fdac547,Team Infernal Drake,TID,2018,Unknown,oe:player:a414b47debeb8baa45038707a9aa4cd,MistyStumpey,top,,,,,,,,,,,,,,
+player,oe:team:858117e8241051433bcfacf5fdac547,Team Infernal Drake,TID,2018,Unknown,oe:player:41c5f02f8439b36ea5d0d37c7b4a2c4,Kenji,jng,,,,,,,,,,,,,,
+player,oe:team:858117e8241051433bcfacf5fdac547,Team Infernal Drake,TID,2018,Unknown,oe:player:9e4cab8a6c3041527f605caf9913072,Strompest,mid,,,,,,,,,,,,,,
+player,oe:team:858117e8241051433bcfacf5fdac547,Team Infernal Drake,TID,2018,Unknown,oe:player:4e0619e57cb50c4ab1230c2dd72df1b,Tactical,bot,,,,,,,,,,,,,,
+player,oe:team:858117e8241051433bcfacf5fdac547,Team Infernal Drake,TID,2018,Unknown,oe:player:6fbe74bc32e0f74e6324b8288ae0c19,Duoking1,sup,,,,,,,,,,,,,,
+lineup,oe:team:858117e8241051433bcfacf5fdac547,Team Infernal Drake,TID,2018,Unknown,,,,lineup-080f731912288d43,TID-01,1,19,oe:player:a414b47debeb8baa45038707a9aa4cd,oe:player:41c5f02f8439b36ea5d0d37c7b4a2c4,oe:player:9e4cab8a6c3041527f605caf9913072,oe:player:4e0619e57cb50c4ab1230c2dd72df1b,oe:player:6fbe74bc32e0f74e6324b8288ae0c19,MistyStumpey,Kenji,Strompest,Tactical,Duoking1
+player,oe:team:ea7f5b6d73556e1148c7bb8ae123d4d,Team Mountain Drake,TMD,2018,Unknown,oe:player:dc760d6884ce21614b2389ac1c05ec2,FakeGod,top,,,,,,,,,,,,,,
+player,oe:team:ea7f5b6d73556e1148c7bb8ae123d4d,Team Mountain Drake,TMD,2018,Unknown,oe:player:f50a30fd2f6e559220dd417b0ce2dd8,Fragas,jng,,,,,,,,,,,,,,
+player,oe:team:ea7f5b6d73556e1148c7bb8ae123d4d,Team Mountain Drake,TMD,2018,Unknown,oe:player:d3b78a30a7132a543fe9f14a5a25918,Soligo,mid,,,,,,,,,,,,,,
+player,oe:team:ea7f5b6d73556e1148c7bb8ae123d4d,Team Mountain Drake,TMD,2018,Unknown,oe:player:416ea631f3b7a0d79f4263e00736f02,Prismal,bot,,,,,,,,,,,,,,
+player,oe:team:ea7f5b6d73556e1148c7bb8ae123d4d,Team Mountain Drake,TMD,2018,Unknown,oe:player:0c0b2dc5720566f5cceb972011221cf,Call Lin,sup,,,,,,,,,,,,,,
+lineup,oe:team:ea7f5b6d73556e1148c7bb8ae123d4d,Team Mountain Drake,TMD,2018,Unknown,,,,lineup-51d095d34d5fbd94,TMD-01,1,18,oe:player:dc760d6884ce21614b2389ac1c05ec2,oe:player:f50a30fd2f6e559220dd417b0ce2dd8,oe:player:d3b78a30a7132a543fe9f14a5a25918,oe:player:416ea631f3b7a0d79f4263e00736f02,oe:player:0c0b2dc5720566f5cceb972011221cf,FakeGod,Fragas,Soligo,Prismal,Call Lin
+player,oe:team:9f837e0b7d5a822babf09cc081b7622,Team Ocean Drake,TOD,2018,Unknown,oe:player:33daef70f45123c10a232b800d930a0,Flaresz,top,,,,,,,,,,,,,,
+player,oe:team:9f837e0b7d5a822babf09cc081b7622,Team Ocean Drake,TOD,2018,Unknown,oe:player:1e9edd867eafb54151138230c57a2a1,Metaphor,jng,,,,,,,,,,,,,,
+player,oe:team:9f837e0b7d5a822babf09cc081b7622,Team Ocean Drake,TOD,2018,Unknown,oe:player:6ca0cf01bc942179eb37f9863ea16cc,Menace,mid,,,,,,,,,,,,,,
+player,oe:team:9f837e0b7d5a822babf09cc081b7622,Team Ocean Drake,TOD,2018,Unknown,oe:player:3a38734da939611941c8e1e49e68733,Jurassiq,bot,,,,,,,,,,,,,,
+player,oe:team:9f837e0b7d5a822babf09cc081b7622,Team Ocean Drake,TOD,2018,Unknown,oe:player:5a4ed34a7baf1d14942def4ab49ce38,Diamond,sup,,,,,,,,,,,,,,
+lineup,oe:team:9f837e0b7d5a822babf09cc081b7622,Team Ocean Drake,TOD,2018,Unknown,,,,lineup-5444c9a4e997741d,TOD-01,1,17,oe:player:33daef70f45123c10a232b800d930a0,oe:player:1e9edd867eafb54151138230c57a2a1,oe:player:6ca0cf01bc942179eb37f9863ea16cc,oe:player:3a38734da939611941c8e1e49e68733,oe:player:5a4ed34a7baf1d14942def4ab49ce38,Flaresz,Metaphor,Menace,Jurassiq,Diamond

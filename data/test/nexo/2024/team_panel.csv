@@ -1,0 +1,78 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:01b5dd4629769111733c78dd9a011b7,BGA eQuizers,BE,2024,Split 3,oe:player:9e20a98c6ed15b9cf2623001733017b,Alvke,top,,,,,,,,,,,,,,
+player,oe:team:01b5dd4629769111733c78dd9a011b7,BGA eQuizers,BE,2024,Split 3,oe:player:6cc4434e99e046ed7a78c636b08275c,ItsCoto,jng,,,,,,,,,,,,,,
+player,oe:team:01b5dd4629769111733c78dd9a011b7,BGA eQuizers,BE,2024,Split 3,oe:player:2d8c46d60e8b608291959bf5330347c,Prominence,jng,,,,,,,,,,,,,,
+player,oe:team:01b5dd4629769111733c78dd9a011b7,BGA eQuizers,BE,2024,Split 3,oe:player:9b1268aac9753ab8012e3e77aa18ac3,PepiineroJr,mid,,,,,,,,,,,,,,
+player,oe:team:01b5dd4629769111733c78dd9a011b7,BGA eQuizers,BE,2024,Split 3,oe:player:279098a689da81239efb9f53664dc4f,Ryoh,mid,,,,,,,,,,,,,,
+player,oe:team:01b5dd4629769111733c78dd9a011b7,BGA eQuizers,BE,2024,Split 3,oe:player:d359b69188f00e7d004d586807352cb,Chama,bot,,,,,,,,,,,,,,
+player,oe:team:01b5dd4629769111733c78dd9a011b7,BGA eQuizers,BE,2024,Split 3,oe:player:e0a43168d41258cae77aed2b6126541,Sh3ry,bot,,,,,,,,,,,,,,
+player,oe:team:01b5dd4629769111733c78dd9a011b7,BGA eQuizers,BE,2024,Split 3,oe:player:1cc36506b9fa3f1bb373108f7266450,Archacutor,sup,,,,,,,,,,,,,,
+player,oe:team:01b5dd4629769111733c78dd9a011b7,BGA eQuizers,BE,2024,Split 3,oe:player:8ce650fdb50030d031e6bc414cbbee5,Eskiper,sup,,,,,,,,,,,,,,
+lineup,oe:team:01b5dd4629769111733c78dd9a011b7,BGA eQuizers,BE,2024,Split 3,,,,lineup-548f8a02d5774998,BE-01,1,1,oe:player:9e20a98c6ed15b9cf2623001733017b,oe:player:6cc4434e99e046ed7a78c636b08275c,oe:player:9b1268aac9753ab8012e3e77aa18ac3,oe:player:d359b69188f00e7d004d586807352cb,oe:player:1cc36506b9fa3f1bb373108f7266450,Alvke,ItsCoto,PepiineroJr,Chama,Archacutor
+lineup,oe:team:01b5dd4629769111733c78dd9a011b7,BGA eQuizers,BE,2024,Split 3,,,,lineup-549a05c6be822653,BE-02,2,1,oe:player:9e20a98c6ed15b9cf2623001733017b,oe:player:2d8c46d60e8b608291959bf5330347c,oe:player:279098a689da81239efb9f53664dc4f,oe:player:e0a43168d41258cae77aed2b6126541,oe:player:8ce650fdb50030d031e6bc414cbbee5,Alvke,Prominence,Ryoh,Sh3ry,Eskiper
+player,oe:team:6da30cd905c797eaea30aeb18bc091a,Dango SB,DS,2024,Split 1,oe:player:fc9e4a43f88797e445c35d23fc43f79,Jervo,top,,,,,,,,,,,,,,
+player,oe:team:6da30cd905c797eaea30aeb18bc091a,Dango SB,DS,2024,Split 1,oe:player:064499cc8ab359fa4293b76349969c1,Nasser,jng,,,,,,,,,,,,,,
+player,oe:team:6da30cd905c797eaea30aeb18bc091a,Dango SB,DS,2024,Split 1,oe:player:f450305c2529dbc8e80459867fb701d,Zherathor,mid,,,,,,,,,,,,,,
+player,oe:team:6da30cd905c797eaea30aeb18bc091a,Dango SB,DS,2024,Split 1,oe:player:432dc458337f63fbcdf3c73488a3cdf,Aaron,bot,,,,,,,,,,,,,,
+player,oe:team:6da30cd905c797eaea30aeb18bc091a,Dango SB,DS,2024,Split 1,oe:player:b810e09b68d5ff70b3ba0e0e4bfde39,Aizhon,sup,,,,,,,,,,,,,,
+lineup,oe:team:6da30cd905c797eaea30aeb18bc091a,Dango SB,DS,2024,Split 1,,,,lineup-5bbc6efc8f541b86,DS-01,1,1,oe:player:fc9e4a43f88797e445c35d23fc43f79,oe:player:064499cc8ab359fa4293b76349969c1,oe:player:f450305c2529dbc8e80459867fb701d,oe:player:432dc458337f63fbcdf3c73488a3cdf,oe:player:b810e09b68d5ff70b3ba0e0e4bfde39,Jervo,Nasser,Zherathor,Aaron,Aizhon
+player,oe:team:f33930460c641ba8c7ffe11342c08ef,Dream Makers,DM,2024,Split 3,oe:player:79ae410bf0a72194d0b38df4c3d946e,Johnarnau,top,,,,,,,,,,,,,,
+player,oe:team:f33930460c641ba8c7ffe11342c08ef,Dream Makers,DM,2024,Split 3,oe:player:5b0bb5a3e4506983ff3121b975f7478,PatxiPirata,top,,,,,,,,,,,,,,
+player,oe:team:f33930460c641ba8c7ffe11342c08ef,Dream Makers,DM,2024,Split 3,oe:player:68281be87e30666d478db3fb79b8c6f,Deceller,jng,,,,,,,,,,,,,,
+player,oe:team:f33930460c641ba8c7ffe11342c08ef,Dream Makers,DM,2024,Split 3,oe:player:3d3ad0a473d6a608c1b19515459ccdf,Rewound,jng,,,,,,,,,,,,,,
+player,oe:team:f33930460c641ba8c7ffe11342c08ef,Dream Makers,DM,2024,Split 3,oe:player:84d6155d7d4cc886fc5f82031858fdd,Enigma,mid,,,,,,,,,,,,,,
+player,oe:team:f33930460c641ba8c7ffe11342c08ef,Dream Makers,DM,2024,Split 3,oe:player:335a1c64fb1fcd51fef976d73a69d08,Lvsyan,mid,,,,,,,,,,,,,,
+player,oe:team:f33930460c641ba8c7ffe11342c08ef,Dream Makers,DM,2024,Split 3,oe:player:fdde756c37f499c36df183d987b3c6d,Ibai,bot,,,,,,,,,,,,,,
+player,oe:team:f33930460c641ba8c7ffe11342c08ef,Dream Makers,DM,2024,Split 3,oe:player:44a8e576ca4fe7b07b52154cf113328,Yaavi,bot,,,,,,,,,,,,,,
+player,oe:team:f33930460c641ba8c7ffe11342c08ef,Dream Makers,DM,2024,Split 3,oe:player:8ce650fdb50030d031e6bc414cbbee5,Eskiper,sup,,,,,,,,,,,,,,
+player,oe:team:f33930460c641ba8c7ffe11342c08ef,Dream Makers,DM,2024,Split 3,oe:player:1d6cd255124f73442571e8ceef2e479,Kellie,sup,,,,,,,,,,,,,,
+lineup,oe:team:f33930460c641ba8c7ffe11342c08ef,Dream Makers,DM,2024,Split 3,,,,lineup-ae5ded1124a9d058,DM-01,1,3,oe:player:5b0bb5a3e4506983ff3121b975f7478,oe:player:68281be87e30666d478db3fb79b8c6f,oe:player:335a1c64fb1fcd51fef976d73a69d08,oe:player:44a8e576ca4fe7b07b52154cf113328,oe:player:1d6cd255124f73442571e8ceef2e479,PatxiPirata,Deceller,Lvsyan,Yaavi,Kellie
+lineup,oe:team:f33930460c641ba8c7ffe11342c08ef,Dream Makers,DM,2024,Split 3,,,,lineup-5ba8066d545c016c,DM-02,2,1,oe:player:79ae410bf0a72194d0b38df4c3d946e,oe:player:3d3ad0a473d6a608c1b19515459ccdf,oe:player:84d6155d7d4cc886fc5f82031858fdd,oe:player:fdde756c37f499c36df183d987b3c6d,oe:player:8ce650fdb50030d031e6bc414cbbee5,Johnarnau,Rewound,Enigma,Ibai,Eskiper
+player,oe:team:4103ef051074f24e9566d1b7443c3fb,Erfolg Esports,EE,2024,Split 3,oe:player:3bdb84c8cfa498f617f1f0ffe8a1f41,xGenesis,top,,,,,,,,,,,,,,
+player,oe:team:4103ef051074f24e9566d1b7443c3fb,Erfolg Esports,EE,2024,Split 3,oe:player:e1527d59587e61eda36a86f3d858c54,Zenoken,jng,,,,,,,,,,,,,,
+player,oe:team:4103ef051074f24e9566d1b7443c3fb,Erfolg Esports,EE,2024,Split 3,oe:player:b729b265039293728d50aebd6477b13,Magico,mid,,,,,,,,,,,,,,
+player,oe:team:4103ef051074f24e9566d1b7443c3fb,Erfolg Esports,EE,2024,Split 3,oe:player:77c10036edafc6b267a710e0525bf7a,Yoangi,bot,,,,,,,,,,,,,,
+player,oe:team:4103ef051074f24e9566d1b7443c3fb,Erfolg Esports,EE,2024,Split 3,oe:player:9fe371276988506395efee589dd7bca,escoX,sup,,,,,,,,,,,,,,
+lineup,oe:team:4103ef051074f24e9566d1b7443c3fb,Erfolg Esports,EE,2024,Split 3,,,,lineup-59363d315f877208,EE-01,1,2,oe:player:3bdb84c8cfa498f617f1f0ffe8a1f41,oe:player:e1527d59587e61eda36a86f3d858c54,oe:player:b729b265039293728d50aebd6477b13,oe:player:77c10036edafc6b267a710e0525bf7a,oe:player:9fe371276988506395efee589dd7bca,xGenesis,Zenoken,Magico,Yoangi,escoX
+player,oe:team:a599bf4fe20c6be57044f7319b04e3d,Guinea Pink,GP,2024,Split 3,oe:player:d9993db0d276065093b77b8e86996fc,Parlita,top,,,,,,,,,,,,,,
+player,oe:team:a599bf4fe20c6be57044f7319b04e3d,Guinea Pink,GP,2024,Split 3,oe:player:eac7b4dc96985c510418e2a88f19af0,Taba,jng,,,,,,,,,,,,,,
+player,oe:team:a599bf4fe20c6be57044f7319b04e3d,Guinea Pink,GP,2024,Split 3,oe:player:9f6c306fb79fae6fbf0ff676c0db0df,Arven,mid,,,,,,,,,,,,,,
+player,oe:team:a599bf4fe20c6be57044f7319b04e3d,Guinea Pink,GP,2024,Split 3,oe:player:e45341b36448fbd115941562ec07aec,Opeduy,mid,,,,,,,,,,,,,,
+player,oe:team:a599bf4fe20c6be57044f7319b04e3d,Guinea Pink,GP,2024,Split 3,oe:player:fe6073bf4ff6dd9b57e7b39918badf9,JSaito,bot,,,,,,,,,,,,,,
+player,oe:team:a599bf4fe20c6be57044f7319b04e3d,Guinea Pink,GP,2024,Split 3,oe:player:34e2006c70cd1f48884af0b183c0c29,Kandar,sup,,,,,,,,,,,,,,
+lineup,oe:team:a599bf4fe20c6be57044f7319b04e3d,Guinea Pink,GP,2024,Split 3,,,,lineup-5c58909c9b89c762,GP-01,1,1,oe:player:d9993db0d276065093b77b8e86996fc,oe:player:eac7b4dc96985c510418e2a88f19af0,oe:player:9f6c306fb79fae6fbf0ff676c0db0df,oe:player:fe6073bf4ff6dd9b57e7b39918badf9,oe:player:34e2006c70cd1f48884af0b183c0c29,Parlita,Taba,Arven,JSaito,Kandar
+lineup,oe:team:a599bf4fe20c6be57044f7319b04e3d,Guinea Pink,GP,2024,Split 3,,,,lineup-da5df724b4dd05fa,GP-02,2,1,oe:player:d9993db0d276065093b77b8e86996fc,oe:player:eac7b4dc96985c510418e2a88f19af0,oe:player:e45341b36448fbd115941562ec07aec,oe:player:fe6073bf4ff6dd9b57e7b39918badf9,oe:player:34e2006c70cd1f48884af0b183c0c29,Parlita,Taba,Opeduy,JSaito,Kandar
+player,oe:team:9c11dcc627ab2baf49d113ce6aba078,Heracles Gaming,HG,2024,Split 1,oe:player:137daadb3bab4f0b992eb08a3939e72,Poweh,top,,,,,,,,,,,,,,
+player,oe:team:9c11dcc627ab2baf49d113ce6aba078,Heracles Gaming,HG,2024,Split 1,oe:player:2d8c46d60e8b608291959bf5330347c,Prominence,jng,,,,,,,,,,,,,,
+player,oe:team:9c11dcc627ab2baf49d113ce6aba078,Heracles Gaming,HG,2024,Split 1,oe:player:e45341b36448fbd115941562ec07aec,Opeduy,mid,,,,,,,,,,,,,,
+player,oe:team:9c11dcc627ab2baf49d113ce6aba078,Heracles Gaming,HG,2024,Split 1,oe:player:d0e2a334135a535dc3a02eccd0010cf,aleykxar,bot,,,,,,,,,,,,,,
+player,oe:team:9c11dcc627ab2baf49d113ce6aba078,Heracles Gaming,HG,2024,Split 1,oe:player:d59bf32feb1f152fe3a18d9a8ea127c,Yonna,sup,,,,,,,,,,,,,,
+lineup,oe:team:9c11dcc627ab2baf49d113ce6aba078,Heracles Gaming,HG,2024,Split 1,,,,lineup-24e571b1f56ffd6a,HG-01,1,1,oe:player:137daadb3bab4f0b992eb08a3939e72,oe:player:2d8c46d60e8b608291959bf5330347c,oe:player:e45341b36448fbd115941562ec07aec,oe:player:d0e2a334135a535dc3a02eccd0010cf,oe:player:d59bf32feb1f152fe3a18d9a8ea127c,Poweh,Prominence,Opeduy,aleykxar,Yonna
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2024,Split 3,oe:player:0d3f526e6a6449b958baaaf403015f6,Dani,top,,,,,,,,,,,,,,
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2024,Split 3,oe:player:14775c5f3aa804d18189fde40649c5d,Emvipi,jng,,,,,,,,,,,,,,
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2024,Split 3,oe:player:48f30334a4a3aec6b19383eda333bfd,Dyenn,mid,,,,,,,,,,,,,,
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2024,Split 3,oe:player:ed6b2c95feaa4fd78f2ed6cd24dedf4,Kurilius,bot,,,,,,,,,,,,,,
+player,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2024,Split 3,oe:player:680aa9cda80deeabca952358ccfe95f,Ardo,sup,,,,,,,,,,,,,,
+lineup,oe:team:8eb9a212591f919a353abfac0c0a52a,Kawaii Kiwis,KK,2024,Split 3,,,,lineup-a2f00dcef3bdebf3,KK-01,1,13,oe:player:0d3f526e6a6449b958baaaf403015f6,oe:player:14775c5f3aa804d18189fde40649c5d,oe:player:48f30334a4a3aec6b19383eda333bfd,oe:player:ed6b2c95feaa4fd78f2ed6cd24dedf4,oe:player:680aa9cda80deeabca952358ccfe95f,Dani,Emvipi,Dyenn,Kurilius,Ardo
+player,oe:team:8c3a7c804b6606ebd0684ca41204759,Tan'i eSports,TE,2024,Split 3,oe:player:5b0bb5a3e4506983ff3121b975f7478,PatxiPirata,top,,,,,,,,,,,,,,
+player,oe:team:8c3a7c804b6606ebd0684ca41204759,Tan'i eSports,TE,2024,Split 3,oe:player:c0580075908308b78ad377d3b124098,Efot,jng,,,,,,,,,,,,,,
+player,oe:team:8c3a7c804b6606ebd0684ca41204759,Tan'i eSports,TE,2024,Split 3,oe:player:84d6155d7d4cc886fc5f82031858fdd,Enigma,mid,,,,,,,,,,,,,,
+player,oe:team:8c3a7c804b6606ebd0684ca41204759,Tan'i eSports,TE,2024,Split 3,oe:player:a62efacc631e1cfcb4ec950bfda2f17,Momo,bot,,,,,,,,,,,,,,
+player,oe:team:8c3a7c804b6606ebd0684ca41204759,Tan'i eSports,TE,2024,Split 3,oe:player:1d6cd255124f73442571e8ceef2e479,Kellie,sup,,,,,,,,,,,,,,
+lineup,oe:team:8c3a7c804b6606ebd0684ca41204759,Tan'i eSports,TE,2024,Split 3,,,,lineup-0928a331be24b6c3,TE-01,1,1,oe:player:5b0bb5a3e4506983ff3121b975f7478,oe:player:c0580075908308b78ad377d3b124098,oe:player:84d6155d7d4cc886fc5f82031858fdd,oe:player:a62efacc631e1cfcb4ec950bfda2f17,oe:player:1d6cd255124f73442571e8ceef2e479,PatxiPirata,Efot,Enigma,Momo,Kellie
+player,oe:team:2d02ba0b874367692a25110f0e321f6,Universae Instituto FP,UIF,2024,Split 3,oe:player:48386132af27e43a232bada68b102b8,topo,top,,,,,,,,,,,,,,
+player,oe:team:2d02ba0b874367692a25110f0e321f6,Universae Instituto FP,UIF,2024,Split 3,oe:player:cbfd820d32cddf7238a742a9ee65add,Waide,jng,,,,,,,,,,,,,,
+player,oe:team:2d02ba0b874367692a25110f0e321f6,Universae Instituto FP,UIF,2024,Split 3,oe:player:f1684f5b0a693ce1fd324942f7ddfaf,oRisko,jng,,,,,,,,,,,,,,
+player,oe:team:2d02ba0b874367692a25110f0e321f6,Universae Instituto FP,UIF,2024,Split 3,oe:player:ae97b9649e39ad901b680f74c3f56b3,Tirex,mid,,,,,,,,,,,,,,
+player,oe:team:2d02ba0b874367692a25110f0e321f6,Universae Instituto FP,UIF,2024,Split 3,oe:player:0998a1e9d55bcf3eb5ee3ea3eba9250,ALNSHT,bot,,,,,,,,,,,,,,
+player,oe:team:2d02ba0b874367692a25110f0e321f6,Universae Instituto FP,UIF,2024,Split 3,oe:player:1f05b5fb18e8b6376f8781cc1b517b2,Black,bot,,,,,,,,,,,,,,
+player,oe:team:2d02ba0b874367692a25110f0e321f6,Universae Instituto FP,UIF,2024,Split 3,oe:player:38408cb0943e6f27ccd6272bdc1f09b,Boohis,sup,,,,,,,,,,,,,,
+lineup,oe:team:2d02ba0b874367692a25110f0e321f6,Universae Instituto FP,UIF,2024,Split 3,,,,lineup-99d40049a0d94e7f,UIF-01,1,1,oe:player:48386132af27e43a232bada68b102b8,oe:player:f1684f5b0a693ce1fd324942f7ddfaf,oe:player:ae97b9649e39ad901b680f74c3f56b3,oe:player:0998a1e9d55bcf3eb5ee3ea3eba9250,oe:player:38408cb0943e6f27ccd6272bdc1f09b,topo,oRisko,Tirex,ALNSHT,Boohis
+lineup,oe:team:2d02ba0b874367692a25110f0e321f6,Universae Instituto FP,UIF,2024,Split 3,,,,lineup-ae9443ada98e7cc6,UIF-02,2,1,oe:player:48386132af27e43a232bada68b102b8,oe:player:f1684f5b0a693ce1fd324942f7ddfaf,oe:player:ae97b9649e39ad901b680f74c3f56b3,oe:player:1f05b5fb18e8b6376f8781cc1b517b2,oe:player:38408cb0943e6f27ccd6272bdc1f09b,topo,oRisko,Tirex,Black,Boohis
+lineup,oe:team:2d02ba0b874367692a25110f0e321f6,Universae Instituto FP,UIF,2024,Split 3,,,,lineup-c66e524b6ad8f81d,UIF-03,3,1,oe:player:48386132af27e43a232bada68b102b8,oe:player:cbfd820d32cddf7238a742a9ee65add,oe:player:ae97b9649e39ad901b680f74c3f56b3,oe:player:0998a1e9d55bcf3eb5ee3ea3eba9250,oe:player:38408cb0943e6f27ccd6272bdc1f09b,topo,Waide,Tirex,ALNSHT,Boohis
+player,oe:team:bae5c5b458ee21472c7f6f270990bfe,Veni Vidi Vici,VVV,2024,Split 3,oe:player:a5fa1f73622193d305647f381121f87,Rubenxico,top,,,,,,,,,,,,,,
+player,oe:team:bae5c5b458ee21472c7f6f270990bfe,Veni Vidi Vici,VVV,2024,Split 3,oe:player:49c7c1551c39a74808c58a4b70fb6ff,Favorito,jng,,,,,,,,,,,,,,
+player,oe:team:bae5c5b458ee21472c7f6f270990bfe,Veni Vidi Vici,VVV,2024,Split 3,oe:player:9f6c306fb79fae6fbf0ff676c0db0df,Arven,mid,,,,,,,,,,,,,,
+player,oe:team:bae5c5b458ee21472c7f6f270990bfe,Veni Vidi Vici,VVV,2024,Split 3,oe:player:b1f24dee644d5e76deb2b3806d64d9d,Daksider,bot,,,,,,,,,,,,,,
+player,oe:team:bae5c5b458ee21472c7f6f270990bfe,Veni Vidi Vici,VVV,2024,Split 3,oe:player:cc7ac0910351fd879777d99935a6ba6,Ninten,sup,,,,,,,,,,,,,,
+lineup,oe:team:bae5c5b458ee21472c7f6f270990bfe,Veni Vidi Vici,VVV,2024,Split 3,,,,lineup-48b2d1a57b1277f6,VVV-01,1,1,oe:player:a5fa1f73622193d305647f381121f87,oe:player:49c7c1551c39a74808c58a4b70fb6ff,oe:player:9f6c306fb79fae6fbf0ff676c0db0df,oe:player:b1f24dee644d5e76deb2b3806d64d9d,oe:player:cc7ac0910351fd879777d99935a6ba6,Rubenxico,Favorito,Arven,Daksider,Ninten

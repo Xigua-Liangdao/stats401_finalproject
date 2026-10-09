@@ -1,0 +1,63 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2024,Champ 1,oe:player:d9ef4217ba6212bce750345eacf8043,Chan,top,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2024,Champ 1,oe:player:4e84f7ae16782f78f739c63aaea6170,Equinox,top,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2024,Champ 1,oe:player:8ddd8d88391896aa4d9e751dee81770,Listo,jng,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2024,Champ 1,oe:player:f2747aafb3bed220e4c68c7649265d7,walker,jng,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2024,Champ 1,oe:player:d451ac8d8f70e6d10d3b768fb534052,Aru,mid,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2024,Champ 1,oe:player:002f51f6c04f2ab4cb9c3e70d23bd23,Johnsmith,mid,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2024,Champ 1,oe:player:a582d1e76f63cb24fe5ecec0409c137,Lucifer,bot,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2024,Champ 1,oe:player:958eb9ed914a4b987237b117c8cb6f4,Aegis,sup,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2024,Champ 1,oe:player:9a952a4e99b134382d638f10fa2d620,Junwon,sup,,,,,,,,,,,,,,
+lineup,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2024,Champ 1,,,,lineup-e16285c9ba11adb2,BFA-01,1,2,oe:player:d9ef4217ba6212bce750345eacf8043,oe:player:8ddd8d88391896aa4d9e751dee81770,oe:player:002f51f6c04f2ab4cb9c3e70d23bd23,oe:player:a582d1e76f63cb24fe5ecec0409c137,oe:player:958eb9ed914a4b987237b117c8cb6f4,Chan,Listo,Johnsmith,Lucifer,Aegis
+lineup,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2024,Champ 1,,,,lineup-26f06f884eb60593,BFA-02,2,1,oe:player:4e84f7ae16782f78f739c63aaea6170,oe:player:f2747aafb3bed220e4c68c7649265d7,oe:player:d451ac8d8f70e6d10d3b768fb534052,oe:player:a582d1e76f63cb24fe5ecec0409c137,oe:player:9a952a4e99b134382d638f10fa2d620,Equinox,walker,Aru,Lucifer,Junwon
+player,oe:team:00ae39840233a9dc8db235166c32ba7,DN SOOPers Academy,DSA,2024,Champ 1,oe:player:97918c1c927127c4865c5cbd5f1dd08,Uknow,top,,,,,,,,,,,,,,
+player,oe:team:00ae39840233a9dc8db235166c32ba7,DN SOOPers Academy,DSA,2024,Champ 1,oe:player:307b6fb75c459e5d0f628aa8e9e438c,Solid,jng,,,,,,,,,,,,,,
+player,oe:team:00ae39840233a9dc8db235166c32ba7,DN SOOPers Academy,DSA,2024,Champ 1,oe:player:17ae4f247f5fc521bff004a97f4df72,Flip,mid,,,,,,,,,,,,,,
+player,oe:team:00ae39840233a9dc8db235166c32ba7,DN SOOPers Academy,DSA,2024,Champ 1,oe:player:fc6003dc87eeb21cbf6f41ad2dfd4bb,Wooper,bot,,,,,,,,,,,,,,
+player,oe:team:00ae39840233a9dc8db235166c32ba7,DN SOOPers Academy,DSA,2024,Champ 1,oe:player:1f3d8591f96bc0fda1bde2764178b83,Neo,sup,,,,,,,,,,,,,,
+lineup,oe:team:00ae39840233a9dc8db235166c32ba7,DN SOOPers Academy,DSA,2024,Champ 1,,,,lineup-7ae4500a02515362,DSA-01,1,16,oe:player:97918c1c927127c4865c5cbd5f1dd08,oe:player:307b6fb75c459e5d0f628aa8e9e438c,oe:player:17ae4f247f5fc521bff004a97f4df72,oe:player:fc6003dc87eeb21cbf6f41ad2dfd4bb,oe:player:1f3d8591f96bc0fda1bde2764178b83,Uknow,Solid,Flip,Wooper,Neo
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2024,Champ 1,oe:player:ca35c7a46da8bbe8a6bade7293d6abf,Hansung,top,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2024,Champ 1,oe:player:4d08cbf857994dc42e1b09205158e15,Painter,jng,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2024,Champ 1,oe:player:c4d64ae9f01ee43ec2367d28eeadbea,Chika,mid,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2024,Champ 1,oe:player:aa07cee593e6c3caeba21b4ee4c6075,AKaJe,bot,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2024,Champ 1,oe:player:6b28fcee6b9d1ddf7c2e481e7fc1c0e,Lumos,sup,,,,,,,,,,,,,,
+lineup,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2024,Champ 1,,,,lineup-60552b29c7b6bc93,DA-01,1,3,oe:player:ca35c7a46da8bbe8a6bade7293d6abf,oe:player:4d08cbf857994dc42e1b09205158e15,oe:player:c4d64ae9f01ee43ec2367d28eeadbea,oe:player:aa07cee593e6c3caeba21b4ee4c6075,oe:player:6b28fcee6b9d1ddf7c2e481e7fc1c0e,Hansung,Painter,Chika,AKaJe,Lumos
+player,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Academy,DKA,2024,Champ 1,oe:player:686e3385a39e937956485d742b689e5,Jaehyuk,top,,,,,,,,,,,,,,
+player,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Academy,DKA,2024,Champ 1,oe:player:90753d709041bd0dcf21e2f22d781a3,Prever,jng,,,,,,,,,,,,,,
+player,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Academy,DKA,2024,Champ 1,oe:player:26626eb3322fd706f5ca63fca2bb022,Garden,mid,,,,,,,,,,,,,,
+player,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Academy,DKA,2024,Champ 1,oe:player:655ff5d5e29058249fdf0ab0e1389f8,FenRir,bot,,,,,,,,,,,,,,
+player,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Academy,DKA,2024,Champ 1,oe:player:4438e6de86f317adec821c223d661c8,Jinbeom,bot,,,,,,,,,,,,,,
+player,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Academy,DKA,2024,Champ 1,oe:player:a878546de507670f5e83d7763c4c70b,AKIRA,sup,,,,,,,,,,,,,,
+player,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Academy,DKA,2024,Champ 1,oe:player:8807c97721e343cdc1fa2444cc00415,Thumb,sup,,,,,,,,,,,,,,
+lineup,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Academy,DKA,2024,Champ 1,,,,lineup-b0ed64048446dd65,DKA-01,1,2,oe:player:686e3385a39e937956485d742b689e5,oe:player:90753d709041bd0dcf21e2f22d781a3,oe:player:26626eb3322fd706f5ca63fca2bb022,oe:player:655ff5d5e29058249fdf0ab0e1389f8,oe:player:8807c97721e343cdc1fa2444cc00415,Jaehyuk,Prever,Garden,FenRir,Thumb
+lineup,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Academy,DKA,2024,Champ 1,,,,lineup-76dcb9b5f6075056,DKA-02,2,1,oe:player:686e3385a39e937956485d742b689e5,oe:player:90753d709041bd0dcf21e2f22d781a3,oe:player:26626eb3322fd706f5ca63fca2bb022,oe:player:4438e6de86f317adec821c223d661c8,oe:player:a878546de507670f5e83d7763c4c70b,Jaehyuk,Prever,Garden,Jinbeom,AKIRA
+player,oe:team:cea8093762c0842e5bb4a1c2a4f7d66,HANJIN BRION Academy,HBA,2024,Champ 1,oe:player:c48615a1bc4197056d522af276aa5a8,Half,top,,,,,,,,,,,,,,
+player,oe:team:cea8093762c0842e5bb4a1c2a4f7d66,HANJIN BRION Academy,HBA,2024,Champ 1,oe:player:ab8a2f130a36f7aa619168c53d055d1,Vincenzo,jng,,,,,,,,,,,,,,
+player,oe:team:cea8093762c0842e5bb4a1c2a4f7d66,HANJIN BRION Academy,HBA,2024,Champ 1,oe:player:7d03f933eeb73db3e1b0cb8d74bc7fa,R0se,mid,,,,,,,,,,,,,,
+player,oe:team:cea8093762c0842e5bb4a1c2a4f7d66,HANJIN BRION Academy,HBA,2024,Champ 1,oe:player:de30719c9123426d9db5f1aab86dd3f,Levy,bot,,,,,,,,,,,,,,
+player,oe:team:cea8093762c0842e5bb4a1c2a4f7d66,HANJIN BRION Academy,HBA,2024,Champ 1,oe:player:84d7626c130404807d2b16de06bcfa4,Pooh,sup,,,,,,,,,,,,,,
+lineup,oe:team:cea8093762c0842e5bb4a1c2a4f7d66,HANJIN BRION Academy,HBA,2024,Champ 1,,,,lineup-4e0a4fb79d142b8d,HBA-01,1,3,oe:player:c48615a1bc4197056d522af276aa5a8,oe:player:ab8a2f130a36f7aa619168c53d055d1,oe:player:7d03f933eeb73db3e1b0cb8d74bc7fa,oe:player:de30719c9123426d9db5f1aab86dd3f,oe:player:84d7626c130404807d2b16de06bcfa4,Half,Vincenzo,R0se,Levy,Pooh
+player,oe:team:2acbd6362cc5096e13641bd088a72a6,Hanwha Life Esports Academy,HLEA,2024,Champ 1,oe:player:9fefcdafef82ae8de67c1187546d622,Haetae,top,,,,,,,,,,,,,,
+player,oe:team:2acbd6362cc5096e13641bd088a72a6,Hanwha Life Esports Academy,HLEA,2024,Champ 1,oe:player:c5297b90d38a4be4c290d17de208d7a,Jackal,jng,,,,,,,,,,,,,,
+player,oe:team:2acbd6362cc5096e13641bd088a72a6,Hanwha Life Esports Academy,HLEA,2024,Champ 1,oe:player:e6d554ea9906d8f2fc26d076d2d4a4c,Cracker,mid,,,,,,,,,,,,,,
+player,oe:team:2acbd6362cc5096e13641bd088a72a6,Hanwha Life Esports Academy,HLEA,2024,Champ 1,oe:player:951959a620881940ca08f98e0226cf3,Pyeonsik,bot,,,,,,,,,,,,,,
+player,oe:team:2acbd6362cc5096e13641bd088a72a6,Hanwha Life Esports Academy,HLEA,2024,Champ 1,oe:player:51e528aaaafe5451e0a14c0da847dc4,Bluffing,sup,,,,,,,,,,,,,,
+lineup,oe:team:2acbd6362cc5096e13641bd088a72a6,Hanwha Life Esports Academy,HLEA,2024,Champ 1,,,,lineup-df1f2cff8f421811,HLEA-01,1,2,oe:player:9fefcdafef82ae8de67c1187546d622,oe:player:c5297b90d38a4be4c290d17de208d7a,oe:player:e6d554ea9906d8f2fc26d076d2d4a4c,oe:player:951959a620881940ca08f98e0226cf3,oe:player:51e528aaaafe5451e0a14c0da847dc4,Haetae,Jackal,Cracker,Pyeonsik,Bluffing
+player,oe:team:14ef7370c4cbc9bc08a771e3f7cbb4d,KT Rolster Academy,KRA,2024,Champ 1,oe:player:4c7da67b008cd8858cd0539c860c73a,Sero,top,,,,,,,,,,,,,,
+player,oe:team:14ef7370c4cbc9bc08a771e3f7cbb4d,KT Rolster Academy,KRA,2024,Champ 1,oe:player:b7253194da688a72744ff1c032b6cea,Soft,jng,,,,,,,,,,,,,,
+player,oe:team:14ef7370c4cbc9bc08a771e3f7cbb4d,KT Rolster Academy,KRA,2024,Champ 1,oe:player:6daf41888dd68feba301fd3157ce738,i kid,mid,,,,,,,,,,,,,,
+player,oe:team:14ef7370c4cbc9bc08a771e3f7cbb4d,KT Rolster Academy,KRA,2024,Champ 1,oe:player:345f339aba92a3a68cb9a96f5ac6b99,Merit,bot,,,,,,,,,,,,,,
+player,oe:team:14ef7370c4cbc9bc08a771e3f7cbb4d,KT Rolster Academy,KRA,2024,Champ 1,oe:player:76bd2822e32f7b1d3b0c4cf7f390d38,Chrissy,sup,,,,,,,,,,,,,,
+lineup,oe:team:14ef7370c4cbc9bc08a771e3f7cbb4d,KT Rolster Academy,KRA,2024,Champ 1,,,,lineup-4bcfa47f1c6e891f,KRA-01,1,2,oe:player:4c7da67b008cd8858cd0539c860c73a,oe:player:b7253194da688a72744ff1c032b6cea,oe:player:6daf41888dd68feba301fd3157ce738,oe:player:345f339aba92a3a68cb9a96f5ac6b99,oe:player:76bd2822e32f7b1d3b0c4cf7f390d38,Sero,Soft,i kid,Merit,Chrissy
+player,oe:team:ff07fcf769a41fa17ded4746368d6c7,Nongshim RedForce Academy,NRA,2024,Champ 1,oe:player:7b0143c0788257bc3e415e83f74cc8b,Midir,top,,,,,,,,,,,,,,
+player,oe:team:ff07fcf769a41fa17ded4746368d6c7,Nongshim RedForce Academy,NRA,2024,Champ 1,oe:player:14f5ba672bc5fd0b3f28a6b0eb3043b,Mihawk,jng,,,,,,,,,,,,,,
+player,oe:team:ff07fcf769a41fa17ded4746368d6c7,Nongshim RedForce Academy,NRA,2024,Champ 1,oe:player:dd0f5d144c04bfaf1c1a6153e2786b3,beast,mid,,,,,,,,,,,,,,
+player,oe:team:ff07fcf769a41fa17ded4746368d6c7,Nongshim RedForce Academy,NRA,2024,Champ 1,oe:player:dda950e6954035ff3f38b14ef7acc26,Lucy,bot,,,,,,,,,,,,,,
+player,oe:team:ff07fcf769a41fa17ded4746368d6c7,Nongshim RedForce Academy,NRA,2024,Champ 1,oe:player:91f7c48a0242414e0b520af3f4bea52,FLOW,sup,,,,,,,,,,,,,,
+lineup,oe:team:ff07fcf769a41fa17ded4746368d6c7,Nongshim RedForce Academy,NRA,2024,Champ 1,,,,lineup-2ff073b108cfcde4,NRA-01,1,2,oe:player:7b0143c0788257bc3e415e83f74cc8b,oe:player:14f5ba672bc5fd0b3f28a6b0eb3043b,oe:player:dd0f5d144c04bfaf1c1a6153e2786b3,oe:player:dda950e6954035ff3f38b14ef7acc26,oe:player:91f7c48a0242414e0b520af3f4bea52,Midir,Mihawk,beast,Lucy,FLOW
+player,oe:team:32cd49a197bd08d99b16fe354e1f758,T1 Esports Academy Rookies,TEAR,2024,Champ 1,oe:player:2b9d6ab0bed9779d2f24817387bf91b,Quokka,top,,,,,,,,,,,,,,
+player,oe:team:32cd49a197bd08d99b16fe354e1f758,T1 Esports Academy Rookies,TEAR,2024,Champ 1,oe:player:2cbf592923f34b2e6acc4b747385c8a,Gryffinn,jng,,,,,,,,,,,,,,
+player,oe:team:32cd49a197bd08d99b16fe354e1f758,T1 Esports Academy Rookies,TEAR,2024,Champ 1,oe:player:9c2752c1d6bb4dc3a7c3365c68271e3,Hwichan,mid,,,,,,,,,,,,,,
+player,oe:team:32cd49a197bd08d99b16fe354e1f758,T1 Esports Academy Rookies,TEAR,2024,Champ 1,oe:player:31edd1e8359d849e250b854826b8c38,Cypher,bot,,,,,,,,,,,,,,
+player,oe:team:32cd49a197bd08d99b16fe354e1f758,T1 Esports Academy Rookies,TEAR,2024,Champ 1,oe:player:c8fe7c65a2ae0ab6ff62674ade6847d,Cloud,sup,,,,,,,,,,,,,,
+lineup,oe:team:32cd49a197bd08d99b16fe354e1f758,T1 Esports Academy Rookies,TEAR,2024,Champ 1,,,,lineup-1402180a0cdb9e33,TEAR-01,1,2,oe:player:2b9d6ab0bed9779d2f24817387bf91b,oe:player:2cbf592923f34b2e6acc4b747385c8a,oe:player:9c2752c1d6bb4dc3a7c3365c68271e3,oe:player:31edd1e8359d849e250b854826b8c38,oe:player:c8fe7c65a2ae0ab6ff62674ade6847d,Quokka,Gryffinn,Hwichan,Cypher,Cloud

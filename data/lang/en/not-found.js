@@ -1,5 +1,5 @@
 export default {
   "notFound.kicker": "File missing",
-  "notFound.title": "No matching entity in the mock catalog",
+  "notFound.title": "No matching record in this league/year",
   "notFound.crumb": "Not found",
 };

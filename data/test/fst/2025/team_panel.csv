@@ -1,0 +1,33 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Unknown,oe:player:48cf24486d9a8e65a142b25682f1994,Driver,top,,,,,,,,,,,,,,
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Unknown,oe:player:55276c10d84e1df7713b441e76e141f,Rest,top,,,,,,,,,,,,,,
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Unknown,oe:player:a22a6d1fe8786cf83675e2d932fbffe,JunJia,jng,,,,,,,,,,,,,,
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Unknown,oe:player:a179853ac2a0832657b9de8b9ba0020,HongQ,mid,,,,,,,,,,,,,,
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Unknown,oe:player:95082306f78780da5686f118c993366,Doggo,bot,,,,,,,,,,,,,,
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Unknown,oe:player:0103d21d116b61eb55fa351242208cf,Kaiwing,sup,,,,,,,,,,,,,,
+lineup,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Unknown,,,,lineup-40f34495e342f66c,CFO-01,1,3,oe:player:55276c10d84e1df7713b441e76e141f,oe:player:a22a6d1fe8786cf83675e2d932fbffe,oe:player:a179853ac2a0832657b9de8b9ba0020,oe:player:95082306f78780da5686f118c993366,oe:player:0103d21d116b61eb55fa351242208cf,Rest,JunJia,HongQ,Doggo,Kaiwing
+lineup,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Unknown,,,,lineup-da44791c95704e83,CFO-02,2,3,oe:player:48cf24486d9a8e65a142b25682f1994,oe:player:a22a6d1fe8786cf83675e2d932fbffe,oe:player:a179853ac2a0832657b9de8b9ba0020,oe:player:95082306f78780da5686f118c993366,oe:player:0103d21d116b61eb55fa351242208cf,Driver,JunJia,HongQ,Doggo,Kaiwing
+player,oe:team:3a1d18f46bcb3716ebcfcf4ef068934,Hanwha Life Esports,HLE,2025,Unknown,oe:player:98dd15c330fb5abb4508347265a7f76,Zeus,top,,,,,,,,,,,,,,
+player,oe:team:3a1d18f46bcb3716ebcfcf4ef068934,Hanwha Life Esports,HLE,2025,Unknown,oe:player:dda4a873265dfd06df50a0d8a294908,Peanut,jng,,,,,,,,,,,,,,
+player,oe:team:3a1d18f46bcb3716ebcfcf4ef068934,Hanwha Life Esports,HLE,2025,Unknown,oe:player:f9cd2ef9afea5cda0eb3263a025cec1,Zeka,mid,,,,,,,,,,,,,,
+player,oe:team:3a1d18f46bcb3716ebcfcf4ef068934,Hanwha Life Esports,HLE,2025,Unknown,oe:player:9573154ad8bc9459b4c0d940315054f,Viper,bot,,,,,,,,,,,,,,
+player,oe:team:3a1d18f46bcb3716ebcfcf4ef068934,Hanwha Life Esports,HLE,2025,Unknown,oe:player:051ca2e31ba25123961b3df95fdef4c,Delight,sup,,,,,,,,,,,,,,
+lineup,oe:team:3a1d18f46bcb3716ebcfcf4ef068934,Hanwha Life Esports,HLE,2025,Unknown,,,,lineup-39dcd2ed8d93374d,HLE-01,1,5,oe:player:98dd15c330fb5abb4508347265a7f76,oe:player:dda4a873265dfd06df50a0d8a294908,oe:player:f9cd2ef9afea5cda0eb3263a025cec1,oe:player:9573154ad8bc9459b4c0d940315054f,oe:player:051ca2e31ba25123961b3df95fdef4c,Zeus,Peanut,Zeka,Viper,Delight
+player,oe:team:f3aa9bbd924ce3af42ac53f8326bc7c,Karmine Corp,KC,2025,Unknown,oe:player:7577c239c73fa5f3011cd7b5503e75e,Canna,top,,,,,,,,,,,,,,
+player,oe:team:f3aa9bbd924ce3af42ac53f8326bc7c,Karmine Corp,KC,2025,Unknown,oe:player:4203fc46c4c6333e9bfa9d0a8618677,Yike,jng,,,,,,,,,,,,,,
+player,oe:team:f3aa9bbd924ce3af42ac53f8326bc7c,Karmine Corp,KC,2025,Unknown,oe:player:367fecc4cb53a8234abbd9f283b7997,Vladi,mid,,,,,,,,,,,,,,
+player,oe:team:f3aa9bbd924ce3af42ac53f8326bc7c,Karmine Corp,KC,2025,Unknown,oe:player:e2af2b779499aa25ab9a9c10c9a5ffd,Caliste,bot,,,,,,,,,,,,,,
+player,oe:team:f3aa9bbd924ce3af42ac53f8326bc7c,Karmine Corp,KC,2025,Unknown,oe:player:eaf899c6268995f9b1e40d1932c6888,Targamas,sup,,,,,,,,,,,,,,
+lineup,oe:team:f3aa9bbd924ce3af42ac53f8326bc7c,Karmine Corp,KC,2025,Unknown,,,,lineup-ac43a2adc38ad3f2,KC-01,1,8,oe:player:7577c239c73fa5f3011cd7b5503e75e,oe:player:4203fc46c4c6333e9bfa9d0a8618677,oe:player:367fecc4cb53a8234abbd9f283b7997,oe:player:e2af2b779499aa25ab9a9c10c9a5ffd,oe:player:eaf899c6268995f9b1e40d1932c6888,Canna,Yike,Vladi,Caliste,Targamas
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2025,Unknown,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,Impact,top,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2025,Unknown,oe:player:1970fcb701acce66e0771946bbb3105,UmTi,jng,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2025,Unknown,oe:player:ea9ed09584feecae0991089f087d2ce,APA,mid,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2025,Unknown,oe:player:f6b8af05a5af22004a67a78f3046b92,Yeon,bot,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2025,Unknown,oe:player:05fafeaf23dc3285558a4e968970b9f,CoreJJ,sup,,,,,,,,,,,,,,
+lineup,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2025,Unknown,,,,lineup-d110519228415592,TL-01,1,7,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,oe:player:1970fcb701acce66e0771946bbb3105,oe:player:ea9ed09584feecae0991089f087d2ce,oe:player:f6b8af05a5af22004a67a78f3046b92,oe:player:05fafeaf23dc3285558a4e968970b9f,Impact,UmTi,APA,Yeon,CoreJJ
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2025,Unknown,oe:player:0c74b7f78409a4022a2c4c5a5ca3ee1,369,top,,,,,,,,,,,,,,
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2025,Unknown,oe:player:41deab55354f57a94135989133f9968,Kanavi,jng,,,,,,,,,,,,,,
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2025,Unknown,oe:player:6e7908512cb309a43388bb464a312a2,Creme,mid,,,,,,,,,,,,,,
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2025,Unknown,oe:player:c54e1090ef1faa736b12493051c4855,JackeyLove,bot,,,,,,,,,,,,,,
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2025,Unknown,oe:player:6059545b206c4b230b97fd3651b473a,Crisp,sup,,,,,,,,,,,,,,
+lineup,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2025,Unknown,,,,lineup-7f1d0dbd58fc8f40,TES-01,1,6,oe:player:0c74b7f78409a4022a2c4c5a5ca3ee1,oe:player:41deab55354f57a94135989133f9968,oe:player:6e7908512cb309a43388bb464a312a2,oe:player:c54e1090ef1faa736b12493051c4855,oe:player:6059545b206c4b230b97fd3651b473a,369,Kanavi,Creme,JackeyLove,Crisp

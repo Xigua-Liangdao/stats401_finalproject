@@ -1,0 +1,55 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2019,Spring,oe:player:a688eba372e5b7f4f1a3e15341e369c,Jaeger,top,,,,,,,,,,,,,,
+player,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2019,Spring,oe:player:99594a251af944b3571fe7f37363303,Pridestalkr,jng,,,,,,,,,,,,,,
+player,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2019,Spring,oe:player:0973ddfd8ce96a62e85badbe503d163,bluerzor,jng,,,,,,,,,,,,,,
+player,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2019,Spring,oe:player:9b6c45664250f753143f3f75024c0a9,SozPurefect,mid,,,,,,,,,,,,,,
+player,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2019,Spring,oe:player:e3c9e8502497e64cee54730fbcb10a9,Tonerre,mid,,,,,,,,,,,,,,
+player,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2019,Spring,oe:player:147a53ba717927e418ef4c86d4c9c18,Smiley,bot,,,,,,,,,,,,,,
+player,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2019,Spring,oe:player:372172c97c0fea4e4a73d2186fc3dab,Toaster,bot,,,,,,,,,,,,,,
+player,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2019,Spring,oe:player:566e0849f6b96ad25981ba1c79ce1a7,Hustlin,sup,,,,,,,,,,,,,,
+lineup,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2019,Spring,,,,lineup-56a6eb06f47df3aa,GAM-01,1,1,oe:player:a688eba372e5b7f4f1a3e15341e369c,oe:player:0973ddfd8ce96a62e85badbe503d163,oe:player:9b6c45664250f753143f3f75024c0a9,oe:player:147a53ba717927e418ef4c86d4c9c18,oe:player:566e0849f6b96ad25981ba1c79ce1a7,Jaeger,bluerzor,SozPurefect,Smiley,Hustlin
+lineup,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2019,Spring,,,,lineup-d64ca664ea59e95a,GAM-02,2,1,oe:player:a688eba372e5b7f4f1a3e15341e369c,oe:player:99594a251af944b3571fe7f37363303,oe:player:e3c9e8502497e64cee54730fbcb10a9,oe:player:372172c97c0fea4e4a73d2186fc3dab,oe:player:566e0849f6b96ad25981ba1c79ce1a7,Jaeger,Pridestalkr,Tonerre,Toaster,Hustlin
+player,oe:team:e31c6dcc465e0b94500ef023f42cdc1,LDLC OL,LO,2019,Spring,oe:player:33bc6e326f1ae1c2b594a985be3e67f,Bando,top,,,,,,,,,,,,,,
+player,oe:team:e31c6dcc465e0b94500ef023f42cdc1,LDLC OL,LO,2019,Spring,oe:player:be081b7482f9ea1ae2f0d13aafcf17f,HiRit,top,,,,,,,,,,,,,,
+player,oe:team:e31c6dcc465e0b94500ef023f42cdc1,LDLC OL,LO,2019,Spring,oe:player:12765429362ae7ef85ed6fdd04d2ad7,Djoko,jng,,,,,,,,,,,,,,
+player,oe:team:e31c6dcc465e0b94500ef023f42cdc1,LDLC OL,LO,2019,Spring,oe:player:adfab52b74587bc5acc4201c140451a,Eika,mid,,,,,,,,,,,,,,
+player,oe:team:e31c6dcc465e0b94500ef023f42cdc1,LDLC OL,LO,2019,Spring,oe:player:5d531a4cf817202fc25eda63906e797,Comp,bot,,,,,,,,,,,,,,
+player,oe:team:e31c6dcc465e0b94500ef023f42cdc1,LDLC OL,LO,2019,Spring,oe:player:bea6c089fd517fff3bc020290ae48f7,Steeelback,sup,,,,,,,,,,,,,,
+lineup,oe:team:e31c6dcc465e0b94500ef023f42cdc1,LDLC OL,LO,2019,Spring,,,,lineup-26ef7fbb4da67199,LO-01,1,1,oe:player:33bc6e326f1ae1c2b594a985be3e67f,oe:player:12765429362ae7ef85ed6fdd04d2ad7,oe:player:adfab52b74587bc5acc4201c140451a,oe:player:5d531a4cf817202fc25eda63906e797,oe:player:bea6c089fd517fff3bc020290ae48f7,Bando,Djoko,Eika,Comp,Steeelback
+lineup,oe:team:e31c6dcc465e0b94500ef023f42cdc1,LDLC OL,LO,2019,Spring,,,,lineup-b3141babda494ae3,LO-02,2,1,oe:player:be081b7482f9ea1ae2f0d13aafcf17f,oe:player:12765429362ae7ef85ed6fdd04d2ad7,oe:player:adfab52b74587bc5acc4201c140451a,oe:player:5d531a4cf817202fc25eda63906e797,oe:player:bea6c089fd517fff3bc020290ae48f7,HiRit,Djoko,Eika,Comp,Steeelback
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2019,Spring,oe:player:753b4404968cabe86d655195131ab93,Dan Dan,top,,,,,,,,,,,,,,
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2019,Spring,oe:player:d730e6017b42d1784032e728fcd4eef,Kirei,jng,,,,,,,,,,,,,,
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2019,Spring,oe:player:27a9c63188ab92f603ab1fd42cb889a,Obsess,jng,,,,,,,,,,,,,,
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2019,Spring,oe:player:4491b20edc9ceb1d782095e341051d9,LIDER,mid,,,,,,,,,,,,,,
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2019,Spring,oe:player:af07c10f5578a1df16f311eeda3d0d8,Neon,bot,,,,,,,,,,,,,,
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2019,Spring,oe:player:730e8aec49895064b62dc0c9b5b0ddc,Hiiva,sup,,,,,,,,,,,,,,
+lineup,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2019,Spring,,,,lineup-be971531e4427e32,MP-01,1,5,oe:player:753b4404968cabe86d655195131ab93,oe:player:27a9c63188ab92f603ab1fd42cb889a,oe:player:4491b20edc9ceb1d782095e341051d9,oe:player:af07c10f5578a1df16f311eeda3d0d8,oe:player:730e8aec49895064b62dc0c9b5b0ddc,Dan Dan,Obsess,LIDER,Neon,Hiiva
+lineup,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2019,Spring,,,,lineup-234fd9010d0fd48b,MP-02,2,1,oe:player:753b4404968cabe86d655195131ab93,oe:player:d730e6017b42d1784032e728fcd4eef,oe:player:4491b20edc9ceb1d782095e341051d9,oe:player:af07c10f5578a1df16f311eeda3d0d8,oe:player:730e8aec49895064b62dc0c9b5b0ddc,Dan Dan,Kirei,LIDER,Neon,Hiiva
+player,oe:team:6fa5a72fecb65f4271496fa35ca73be,ROG Esport,RE,2019,Summer,oe:player:d643ea22dc6fe5b0009d1dd5b2ca9aa,Darlik,top,,,,,,,,,,,,,,
+player,oe:team:6fa5a72fecb65f4271496fa35ca73be,ROG Esport,RE,2019,Summer,oe:player:36607221f848a15f6a1f11961027d7c,TynX,jng,,,,,,,,,,,,,,
+player,oe:team:6fa5a72fecb65f4271496fa35ca73be,ROG Esport,RE,2019,Summer,oe:player:e0acbd6d08021f96c1b90647140f551,Zeph,mid,,,,,,,,,,,,,,
+player,oe:team:6fa5a72fecb65f4271496fa35ca73be,ROG Esport,RE,2019,Summer,oe:player:1f3a07a8570bf5dfcf071c6072d6e9a,P1noy,bot,,,,,,,,,,,,,,
+player,oe:team:6fa5a72fecb65f4271496fa35ca73be,ROG Esport,RE,2019,Summer,oe:player:b5d46805ff0a618dc4c33f3d2f43102,Enjawve,sup,,,,,,,,,,,,,,
+lineup,oe:team:6fa5a72fecb65f4271496fa35ca73be,ROG Esport,RE,2019,Summer,,,,lineup-846189e876abd220,RE-01,1,1,oe:player:d643ea22dc6fe5b0009d1dd5b2ca9aa,oe:player:36607221f848a15f6a1f11961027d7c,oe:player:e0acbd6d08021f96c1b90647140f551,oe:player:1f3a07a8570bf5dfcf071c6072d6e9a,oe:player:b5d46805ff0a618dc4c33f3d2f43102,Darlik,TynX,Zeph,P1noy,Enjawve
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2019,Spring,oe:player:eec4b8988cbdbc6ba19055261f926e7,Katare,top,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2019,Spring,oe:player:48214ce48e2b8ba2391244084ddd226,Manaty,jng,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2019,Spring,oe:player:958f7ec401e086653c254f5cc1695b1,Tioo,mid,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2019,Spring,oe:player:e3c9e8502497e64cee54730fbcb10a9,Tonerre,mid,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2019,Spring,oe:player:fbf3b6f00248487b0938436093c4ef7,Wakz,bot,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2019,Spring,oe:player:de1fb222dafded7d06b10df578fdd0e,Hantera,sup,,,,,,,,,,,,,,
+lineup,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2019,Spring,,,,lineup-4aed296c7dff478c,SOL-01,1,2,oe:player:eec4b8988cbdbc6ba19055261f926e7,oe:player:48214ce48e2b8ba2391244084ddd226,oe:player:958f7ec401e086653c254f5cc1695b1,oe:player:fbf3b6f00248487b0938436093c4ef7,oe:player:de1fb222dafded7d06b10df578fdd0e,Katare,Manaty,Tioo,Wakz,Hantera
+lineup,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2019,Spring,,,,lineup-835708828e34add3,SOL-02,2,1,oe:player:eec4b8988cbdbc6ba19055261f926e7,oe:player:48214ce48e2b8ba2391244084ddd226,oe:player:e3c9e8502497e64cee54730fbcb10a9,oe:player:fbf3b6f00248487b0938436093c4ef7,oe:player:de1fb222dafded7d06b10df578fdd0e,Katare,Manaty,Tonerre,Wakz,Hantera
+player,oe:team:6e14f9bf67e6e4000df4d600ad43bfa,Team MCES,TM,2019,Spring,oe:player:1e0c4218cf022adc238b940a6d10ee6,Kaze,top,,,,,,,,,,,,,,
+player,oe:team:6e14f9bf67e6e4000df4d600ad43bfa,Team MCES,TM,2019,Spring,oe:player:8436b1fdaaada7512986f17239ba1da,Aesthetic,jng,,,,,,,,,,,,,,
+player,oe:team:6e14f9bf67e6e4000df4d600ad43bfa,Team MCES,TM,2019,Spring,oe:player:335a1c64fb1fcd51fef976d73a69d08,Lvsyan,mid,,,,,,,,,,,,,,
+player,oe:team:6e14f9bf67e6e4000df4d600ad43bfa,Team MCES,TM,2019,Spring,oe:player:caca9c60843ce855690b629ec67ab3d,Myw,bot,,,,,,,,,,,,,,
+player,oe:team:6e14f9bf67e6e4000df4d600ad43bfa,Team MCES,TM,2019,Spring,oe:player:d555f70f3eba72804bbe4baa1b834e6,Moopz,sup,,,,,,,,,,,,,,
+lineup,oe:team:6e14f9bf67e6e4000df4d600ad43bfa,Team MCES,TM,2019,Spring,,,,lineup-9b41abc9cea2cd21,TM-01,1,1,oe:player:1e0c4218cf022adc238b940a6d10ee6,oe:player:8436b1fdaaada7512986f17239ba1da,oe:player:335a1c64fb1fcd51fef976d73a69d08,oe:player:caca9c60843ce855690b629ec67ab3d,oe:player:d555f70f3eba72804bbe4baa1b834e6,Kaze,Aesthetic,Lvsyan,Myw,Moopz
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2019,Spring,oe:player:54afd815f1c81e50c822ea16b607ecf,Shemek,top,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2019,Spring,oe:player:682275c2ba204d32b67f5fa94b928e4,Skeanz,jng,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2019,Spring,oe:player:1d43b8dc600eba61cd7dd2cd8d6baf6,SAKEN,mid,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2019,Spring,oe:player:b95a54398126b7f72e3a8bb0e37e7a7,Cookie,bot,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2019,Spring,oe:player:372172c97c0fea4e4a73d2186fc3dab,Toaster,bot,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2019,Spring,oe:player:a65750c8565d8428d25d9b9ba51cac9,Trayton,sup,,,,,,,,,,,,,,
+lineup,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2019,Spring,,,,lineup-288105b60037d0a7,VIT-01,1,12,oe:player:54afd815f1c81e50c822ea16b607ecf,oe:player:682275c2ba204d32b67f5fa94b928e4,oe:player:1d43b8dc600eba61cd7dd2cd8d6baf6,oe:player:372172c97c0fea4e4a73d2186fc3dab,oe:player:a65750c8565d8428d25d9b9ba51cac9,Shemek,Skeanz,SAKEN,Toaster,Trayton
+lineup,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2019,Spring,,,,lineup-1cfaf4de29fcf967,VIT-02,2,1,oe:player:54afd815f1c81e50c822ea16b607ecf,oe:player:682275c2ba204d32b67f5fa94b928e4,oe:player:1d43b8dc600eba61cd7dd2cd8d6baf6,oe:player:b95a54398126b7f72e3a8bb0e37e7a7,oe:player:a65750c8565d8428d25d9b9ba51cac9,Shemek,Skeanz,SAKEN,Cookie,Trayton

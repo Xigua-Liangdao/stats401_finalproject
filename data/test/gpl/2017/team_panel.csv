@@ -1,0 +1,60 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:6db10eb2b230fe5af5947ce5d46bc9a,Ascension Gaming,AG,2017,Summer,oe:player:ed7abaae0ee6899cafc612e0fdc5579,Jisu,top,,,,,,,,,,,,,,
+player,oe:team:6db10eb2b230fe5af5947ce5d46bc9a,Ascension Gaming,AG,2017,Summer,oe:player:c0db428e99d23043cf6c124a61c7540,Rich,jng,,,,,,,,,,,,,,
+player,oe:team:6db10eb2b230fe5af5947ce5d46bc9a,Ascension Gaming,AG,2017,Summer,oe:player:a0190496ceaf3dc7c2ae9373dd7317b,G4,mid,,,,,,,,,,,,,,
+player,oe:team:6db10eb2b230fe5af5947ce5d46bc9a,Ascension Gaming,AG,2017,Summer,oe:player:5cb8d6b6c6d88582c1dd77bf6b6f616,Lloyd,bot,,,,,,,,,,,,,,
+player,oe:team:6db10eb2b230fe5af5947ce5d46bc9a,Ascension Gaming,AG,2017,Summer,oe:player:5aeeb015518be46db90b2eafeb48cca,WarL0cK,sup,,,,,,,,,,,,,,
+lineup,oe:team:6db10eb2b230fe5af5947ce5d46bc9a,Ascension Gaming,AG,2017,Summer,,,,lineup-02b55aeb7d109e29,AG-01,1,5,oe:player:ed7abaae0ee6899cafc612e0fdc5579,oe:player:c0db428e99d23043cf6c124a61c7540,oe:player:a0190496ceaf3dc7c2ae9373dd7317b,oe:player:5cb8d6b6c6d88582c1dd77bf6b6f616,oe:player:5aeeb015518be46db90b2eafeb48cca,Jisu,Rich,G4,Lloyd,WarL0cK
+player,oe:team:c83640239b15363ef7c6374fe1497b1,Fortius,FOR,2017,Spring,oe:player:ceb46ca115d05c51aa5a16a8867c330,Square,top,,,,,,,,,,,,,,
+player,oe:team:c83640239b15363ef7c6374fe1497b1,Fortius,FOR,2017,Spring,oe:player:7885830f9d3a8722f628e2985cd26da,Eagle,jng,,,,,,,,,,,,,,
+player,oe:team:c83640239b15363ef7c6374fe1497b1,Fortius,FOR,2017,Spring,oe:player:ee5f9c84b11a8fe20347a9096c42107,Beyond,mid,,,,,,,,,,,,,,
+player,oe:team:c83640239b15363ef7c6374fe1497b1,Fortius,FOR,2017,Spring,oe:player:c90f27240da8d7a3709db3cb74c81f0,Chupper,bot,,,,,,,,,,,,,,
+player,oe:team:c83640239b15363ef7c6374fe1497b1,Fortius,FOR,2017,Spring,oe:player:25c2e42c931be66a95d60fc5496b31b,Rofens,sup,,,,,,,,,,,,,,
+lineup,oe:team:c83640239b15363ef7c6374fe1497b1,Fortius,FOR,2017,Spring,,,,lineup-4ebe9ccaa1b6b7e8,FOR-01,1,1,oe:player:ceb46ca115d05c51aa5a16a8867c330,oe:player:7885830f9d3a8722f628e2985cd26da,oe:player:ee5f9c84b11a8fe20347a9096c42107,oe:player:c90f27240da8d7a3709db3cb74c81f0,oe:player:25c2e42c931be66a95d60fc5496b31b,Square,Eagle,Beyond,Chupper,Rofens
+player,oe:team:a5da55d495c7c86da763c939ece69b5,Headhunters,HEA,2017,Summer,oe:player:017466755c98137e14a969f60cae522,Porrabox,top,,,,,,,,,,,,,,
+player,oe:team:a5da55d495c7c86da763c939ece69b5,Headhunters,HEA,2017,Summer,oe:player:004af59ee3532beabee5d0f677a3acd,Kriss,jng,,,,,,,,,,,,,,
+player,oe:team:a5da55d495c7c86da763c939ece69b5,Headhunters,HEA,2017,Summer,oe:player:c3eeb600ca8b2227deb43927500a43c,Save,mid,,,,,,,,,,,,,,
+player,oe:team:a5da55d495c7c86da763c939ece69b5,Headhunters,HEA,2017,Summer,oe:player:47a4ab6463d6a7fff78c61ad73a7125,Cruzher,bot,,,,,,,,,,,,,,
+player,oe:team:a5da55d495c7c86da763c939ece69b5,Headhunters,HEA,2017,Summer,oe:player:ebc57292abdae05636e3639f1d74411,rubeN,bot,,,,,,,,,,,,,,
+player,oe:team:a5da55d495c7c86da763c939ece69b5,Headhunters,HEA,2017,Summer,oe:player:47a4ab6463d6a7fff78c61ad73a7125,Cruzher,sup,,,,,,,,,,,,,,
+player,oe:team:a5da55d495c7c86da763c939ece69b5,Headhunters,HEA,2017,Summer,oe:player:ebc57292abdae05636e3639f1d74411,rubeN,sup,,,,,,,,,,,,,,
+lineup,oe:team:a5da55d495c7c86da763c939ece69b5,Headhunters,HEA,2017,Summer,,,,lineup-bab058d760a500d2,HEA-01,1,1,oe:player:017466755c98137e14a969f60cae522,oe:player:004af59ee3532beabee5d0f677a3acd,oe:player:c3eeb600ca8b2227deb43927500a43c,oe:player:47a4ab6463d6a7fff78c61ad73a7125,oe:player:ebc57292abdae05636e3639f1d74411,Porrabox,Kriss,Save,Cruzher,rubeN
+lineup,oe:team:a5da55d495c7c86da763c939ece69b5,Headhunters,HEA,2017,Summer,,,,lineup-d41added9f907050,HEA-02,2,1,oe:player:017466755c98137e14a969f60cae522,oe:player:004af59ee3532beabee5d0f677a3acd,oe:player:c3eeb600ca8b2227deb43927500a43c,oe:player:ebc57292abdae05636e3639f1d74411,oe:player:47a4ab6463d6a7fff78c61ad73a7125,Porrabox,Kriss,Save,rubeN,Cruzher
+player,oe:team:ad9fce8cc6928691a352c901c980942,Kuala Lumpur Hunters,KLH,2017,Spring,oe:player:f33b1815b6c16f0f5398bba4d616261,Shiromine,top,,,,,,,,,,,,,,
+player,oe:team:ad9fce8cc6928691a352c901c980942,Kuala Lumpur Hunters,KLH,2017,Spring,oe:player:3f7902cf7a41c8a9ba116a2695b70c8,QaspieL,jng,,,,,,,,,,,,,,
+player,oe:team:ad9fce8cc6928691a352c901c980942,Kuala Lumpur Hunters,KLH,2017,Spring,oe:player:d7c1162c3746ac4d42c2e2b441c41ef,ArrHedge,mid,,,,,,,,,,,,,,
+player,oe:team:ad9fce8cc6928691a352c901c980942,Kuala Lumpur Hunters,KLH,2017,Spring,oe:player:cac988f834eb33270fdb673b0e6cd9d,CO4,bot,,,,,,,,,,,,,,
+player,oe:team:ad9fce8cc6928691a352c901c980942,Kuala Lumpur Hunters,KLH,2017,Spring,oe:player:3f63eff00e527fb3640ff3326985b2f,OzoraVeki,bot,,,,,,,,,,,,,,
+player,oe:team:ad9fce8cc6928691a352c901c980942,Kuala Lumpur Hunters,KLH,2017,Spring,oe:player:f0ae7e31b94062dbc375e39d7d21246,Bipolar,sup,,,,,,,,,,,,,,
+lineup,oe:team:ad9fce8cc6928691a352c901c980942,Kuala Lumpur Hunters,KLH,2017,Spring,,,,lineup-5ce814f3fd10b600,KLH-01,1,1,oe:player:f33b1815b6c16f0f5398bba4d616261,oe:player:3f7902cf7a41c8a9ba116a2695b70c8,oe:player:d7c1162c3746ac4d42c2e2b441c41ef,oe:player:3f63eff00e527fb3640ff3326985b2f,oe:player:f0ae7e31b94062dbc375e39d7d21246,Shiromine,QaspieL,ArrHedge,OzoraVeki,Bipolar
+lineup,oe:team:ad9fce8cc6928691a352c901c980942,Kuala Lumpur Hunters,KLH,2017,Spring,,,,lineup-ff2880766041081e,KLH-02,2,1,oe:player:f33b1815b6c16f0f5398bba4d616261,oe:player:3f7902cf7a41c8a9ba116a2695b70c8,oe:player:d7c1162c3746ac4d42c2e2b441c41ef,oe:player:cac988f834eb33270fdb673b0e6cd9d,oe:player:f0ae7e31b94062dbc375e39d7d21246,Shiromine,QaspieL,ArrHedge,CO4,Bipolar
+player,oe:team:66e08436a077c287777406c045d7b27,Mineski,MIN,2017,Spring,oe:player:82ef4adc4d0d654b0a4bb2a0985607a,Kaigu,top,,,,,,,,,,,,,,
+player,oe:team:66e08436a077c287777406c045d7b27,Mineski,MIN,2017,Spring,oe:player:bf978105c128bb5a6e324e572fc5db2,Hamezz,jng,,,,,,,,,,,,,,
+player,oe:team:66e08436a077c287777406c045d7b27,Mineski,MIN,2017,Spring,oe:player:bbdc4be0012b454628c884e6bcb0e56,Exosen,mid,,,,,,,,,,,,,,
+player,oe:team:66e08436a077c287777406c045d7b27,Mineski,MIN,2017,Spring,oe:player:9b706d998242f3057ed0257f19452ec,Zensho,bot,,,,,,,,,,,,,,
+player,oe:team:66e08436a077c287777406c045d7b27,Mineski,MIN,2017,Spring,oe:player:bd7f78fbd466ab95ba1d5cc8b09e9f2,Tgee,sup,,,,,,,,,,,,,,
+lineup,oe:team:66e08436a077c287777406c045d7b27,Mineski,MIN,2017,Spring,,,,lineup-0588a1c9dba458d2,MIN-01,1,1,oe:player:82ef4adc4d0d654b0a4bb2a0985607a,oe:player:bf978105c128bb5a6e324e572fc5db2,oe:player:bbdc4be0012b454628c884e6bcb0e56,oe:player:9b706d998242f3057ed0257f19452ec,oe:player:bd7f78fbd466ab95ba1d5cc8b09e9f2,Kaigu,Hamezz,Exosen,Zensho,Tgee
+player,oe:team:e2a65fbaf1e4dc9f539e9c7dfa195ad,Resurgence,RES,2017,Summer,oe:player:65c85601263ce748f4a21c19f53182c,Rockky,top,,,,,,,,,,,,,,
+player,oe:team:e2a65fbaf1e4dc9f539e9c7dfa195ad,Resurgence,RES,2017,Summer,oe:player:59684a8779b0f048fda8cac6ab16596,CYH,jng,,,,,,,,,,,,,,
+player,oe:team:e2a65fbaf1e4dc9f539e9c7dfa195ad,Resurgence,RES,2017,Summer,oe:player:24170a477d0c0a03dbd47063724af07,InTreso,mid,,,,,,,,,,,,,,
+player,oe:team:e2a65fbaf1e4dc9f539e9c7dfa195ad,Resurgence,RES,2017,Summer,oe:player:662e95f4ba2e5c23e961513cd3aa43b,Ciela,bot,,,,,,,,,,,,,,
+player,oe:team:e2a65fbaf1e4dc9f539e9c7dfa195ad,Resurgence,RES,2017,Summer,oe:player:0d490d1dc33c291d2d767b9ad13a2c6,Ares,sup,,,,,,,,,,,,,,
+lineup,oe:team:e2a65fbaf1e4dc9f539e9c7dfa195ad,Resurgence,RES,2017,Summer,,,,lineup-28d5258306ead918,RES-01,1,2,oe:player:65c85601263ce748f4a21c19f53182c,oe:player:59684a8779b0f048fda8cac6ab16596,oe:player:24170a477d0c0a03dbd47063724af07,oe:player:662e95f4ba2e5c23e961513cd3aa43b,oe:player:0d490d1dc33c291d2d767b9ad13a2c6,Rockky,CYH,InTreso,Ciela,Ares
+player,oe:team:197be2494181ca61af31737a390e397,Team Manila Eagles,TME,2017,Summer,oe:player:a25aa587b94ed3a5f42db60092d6af1,JLC,top,,,,,,,,,,,,,,
+player,oe:team:197be2494181ca61af31737a390e397,Team Manila Eagles,TME,2017,Summer,oe:player:5f18d489e63c02088ca0c18a3a283a7,Kupz,jng,,,,,,,,,,,,,,
+player,oe:team:197be2494181ca61af31737a390e397,Team Manila Eagles,TME,2017,Summer,oe:player:31c9d25e41b0b3bf8d338a6fd916510,Trebor,mid,,,,,,,,,,,,,,
+player,oe:team:197be2494181ca61af31737a390e397,Team Manila Eagles,TME,2017,Summer,oe:player:cfd90eae32e90d8457ecbe913b902d6,Marky,bot,,,,,,,,,,,,,,
+player,oe:team:197be2494181ca61af31737a390e397,Team Manila Eagles,TME,2017,Summer,oe:player:01fb4a1d79c8382323dc603ed5d1084,Raux,sup,,,,,,,,,,,,,,
+lineup,oe:team:197be2494181ca61af31737a390e397,Team Manila Eagles,TME,2017,Summer,,,,lineup-cd313eb78e247c5f,TME-01,1,2,oe:player:a25aa587b94ed3a5f42db60092d6af1,oe:player:5f18d489e63c02088ca0c18a3a283a7,oe:player:31c9d25e41b0b3bf8d338a6fd916510,oe:player:cfd90eae32e90d8457ecbe913b902d6,oe:player:01fb4a1d79c8382323dc603ed5d1084,JLC,Kupz,Trebor,Marky,Raux
+player,oe:team:95786f2a93617fcde81ed16ee15f5bb,Team Rigel,TR,2017,Spring,oe:player:a263ff189e0de0ff524d5fdc9dee809,Revive,top,,,,,,,,,,,,,,
+player,oe:team:95786f2a93617fcde81ed16ee15f5bb,Team Rigel,TR,2017,Spring,oe:player:59684a8779b0f048fda8cac6ab16596,CYH,jng,,,,,,,,,,,,,,
+player,oe:team:95786f2a93617fcde81ed16ee15f5bb,Team Rigel,TR,2017,Spring,oe:player:4bac3fcc87e531a6881873f4c8aa5c5,CraliX,mid,,,,,,,,,,,,,,
+player,oe:team:95786f2a93617fcde81ed16ee15f5bb,Team Rigel,TR,2017,Spring,oe:player:662e95f4ba2e5c23e961513cd3aa43b,Ciela,bot,,,,,,,,,,,,,,
+player,oe:team:95786f2a93617fcde81ed16ee15f5bb,Team Rigel,TR,2017,Spring,oe:player:9b59b40ceb8e288ec0b2e082bbdb0db,Arkane,sup,,,,,,,,,,,,,,
+lineup,oe:team:95786f2a93617fcde81ed16ee15f5bb,Team Rigel,TR,2017,Spring,,,,lineup-6e248476db1be953,TR-01,1,1,oe:player:a263ff189e0de0ff524d5fdc9dee809,oe:player:59684a8779b0f048fda8cac6ab16596,oe:player:4bac3fcc87e531a6881873f4c8aa5c5,oe:player:662e95f4ba2e5c23e961513cd3aa43b,oe:player:9b59b40ceb8e288ec0b2e082bbdb0db,Revive,CYH,CraliX,Ciela,Arkane
+player,oe:team:6c951ee7222ac9acd244aa88c9e8330,Young Generation,YG,2017,Summer,oe:player:c960163b90d3348c2d10aa3dc204093,Ren,top,,,,,,,,,,,,,,
+player,oe:team:6c951ee7222ac9acd244aa88c9e8330,Young Generation,YG,2017,Summer,oe:player:0bdc508a17811a3a860d32749ad44e4,Venus,jng,,,,,,,,,,,,,,
+player,oe:team:6c951ee7222ac9acd244aa88c9e8330,Young Generation,YG,2017,Summer,oe:player:40c0863db40a68f9732b23e541a37ec,Naul,mid,,,,,,,,,,,,,,
+player,oe:team:6c951ee7222ac9acd244aa88c9e8330,Young Generation,YG,2017,Summer,oe:player:7d5920ddca78bb9228495209bbc2d4d,Bigkoro,bot,,,,,,,,,,,,,,
+player,oe:team:6c951ee7222ac9acd244aa88c9e8330,Young Generation,YG,2017,Summer,oe:player:278f9a3d3077c522e71022e302b9e0e,Palette,sup,,,,,,,,,,,,,,
+lineup,oe:team:6c951ee7222ac9acd244aa88c9e8330,Young Generation,YG,2017,Summer,,,,lineup-b33e2892165565fa,YG-01,1,12,oe:player:c960163b90d3348c2d10aa3dc204093,oe:player:0bdc508a17811a3a860d32749ad44e4,oe:player:40c0863db40a68f9732b23e541a37ec,oe:player:7d5920ddca78bb9228495209bbc2d4d,oe:player:278f9a3d3077c522e71022e302b9e0e,Ren,Venus,Naul,Bigkoro,Palette

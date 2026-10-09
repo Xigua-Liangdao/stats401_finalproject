@@ -1,0 +1,43 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2016,Split 1,oe:player:12d4aaf1584f2d9c40545ddc1309ae5,Aoshi,top,,,,,,,,,,,,,,
+player,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2016,Split 1,oe:player:8d7dfafe52c0a56acd811d06297729c,Nappon,jng,,,,,,,,,,,,,,
+player,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2016,Split 1,oe:player:57cf10b386f8b1ff90be50aa2357eb7,Vash,mid,,,,,,,,,,,,,,
+player,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2016,Split 1,oe:player:8aa7b466b9769f4644c1366eb44ce03,pbO,bot,,,,,,,,,,,,,,
+player,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2016,Split 1,oe:player:e0ca016e696d77b1ee0467e5825b5ed,Wos,sup,,,,,,,,,,,,,,
+lineup,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2016,Split 1,,,,lineup-e54cf07cecff0c79,CEC-01,1,2,oe:player:12d4aaf1584f2d9c40545ddc1309ae5,oe:player:8d7dfafe52c0a56acd811d06297729c,oe:player:57cf10b386f8b1ff90be50aa2357eb7,oe:player:8aa7b466b9769f4644c1366eb44ce03,oe:player:e0ca016e696d77b1ee0467e5825b5ed,Aoshi,Nappon,Vash,pbO,Wos
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2016,Split 1,oe:player:d19c5f4e8987e0de7bf1993961148f0,Yang,top,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2016,Split 1,oe:player:37b570d988e1cdf1e30b1e5a598a6d0,Revolta,jng,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2016,Split 1,oe:player:913fab4d1d3caa861cfbbdd60b2a3fd,tockers,mid,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2016,Split 1,oe:player:0ce788d020173e8e2e683515c31efda,micaO,bot,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2016,Split 1,oe:player:442544182ae779fd792f1f509e80866,Jockster,sup,,,,,,,,,,,,,,
+lineup,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2016,Split 1,,,,lineup-fa407dcde0d1be55,INT-01,1,12,oe:player:d19c5f4e8987e0de7bf1993961148f0,oe:player:37b570d988e1cdf1e30b1e5a598a6d0,oe:player:913fab4d1d3caa861cfbbdd60b2a3fd,oe:player:0ce788d020173e8e2e683515c31efda,oe:player:442544182ae779fd792f1f509e80866,Yang,Revolta,tockers,micaO,Jockster
+player,oe:team:9981ed8d509feb1b77d43af088fd0b1,INTZ Red,IR,2016,Unknown,oe:player:3085815ef497539cb1d93b3c9a16624,Robo,top,,,,,,,,,,,,,,
+player,oe:team:9981ed8d509feb1b77d43af088fd0b1,INTZ Red,IR,2016,Unknown,oe:player:3e8fa787a56b99cf930dda0c98d2d28,Caos,jng,,,,,,,,,,,,,,
+player,oe:team:9981ed8d509feb1b77d43af088fd0b1,INTZ Red,IR,2016,Unknown,oe:player:88f05991e7e4a8ed9c837be13c91133,Brucer,mid,,,,,,,,,,,,,,
+player,oe:team:9981ed8d509feb1b77d43af088fd0b1,INTZ Red,IR,2016,Unknown,oe:player:d4ada34b219d1b4abf67a3cea03d7c7,Sacy,bot,,,,,,,,,,,,,,
+player,oe:team:9981ed8d509feb1b77d43af088fd0b1,INTZ Red,IR,2016,Unknown,oe:player:371cd535e2ab975c310924b3b38e5ec,Eryon,sup,,,,,,,,,,,,,,
+lineup,oe:team:9981ed8d509feb1b77d43af088fd0b1,INTZ Red,IR,2016,Unknown,,,,lineup-4316f4e22547a8f9,IR-01,1,2,oe:player:3085815ef497539cb1d93b3c9a16624,oe:player:3e8fa787a56b99cf930dda0c98d2d28,oe:player:88f05991e7e4a8ed9c837be13c91133,oe:player:d4ada34b219d1b4abf67a3cea03d7c7,oe:player:371cd535e2ab975c310924b3b38e5ec,Robo,Caos,Brucer,Sacy,Eryon
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2016,Split 1,oe:player:a814de9b535755e3f2298901561783f,Lep,top,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2016,Split 1,oe:player:931603f10a47a4241c9c2afbd69107a,Minerva,jng,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2016,Split 1,oe:player:ae770d2c942cee6dbcfbd1832015231,tinowns,mid,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2016,Split 1,oe:player:0c0d42e4a3273c1a137e83b490b8513,Matsukaze,bot,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2016,Split 1,oe:player:2dc71ce0687143e261f8b5cd3381200,Zirigui,sup,,,,,,,,,,,,,,
+lineup,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2016,Split 1,,,,lineup-fb77425ec71e25b5,KE-01,1,2,oe:player:a814de9b535755e3f2298901561783f,oe:player:931603f10a47a4241c9c2afbd69107a,oe:player:ae770d2c942cee6dbcfbd1832015231,oe:player:0c0d42e4a3273c1a137e83b490b8513,oe:player:2dc71ce0687143e261f8b5cd3381200,Lep,Minerva,tinowns,Matsukaze,Zirigui
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2016,Unknown,oe:player:c760fc1c8c70fadaa2c376f7acae877,ouroboy,top,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2016,Unknown,oe:player:38650fd135db39772bc157f764eb8ea,Zuao,jng,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2016,Unknown,oe:player:db388b1b18abbdc620de33627c0ef05,Goku,mid,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2016,Unknown,oe:player:beaa50cbbea52e2ff5619a50fe03f4c,EzPrince,bot,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2016,Unknown,oe:player:322cb471bec2cd13585deb9fd868fcc,Professor,sup,,,,,,,,,,,,,,
+lineup,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2016,Unknown,,,,lineup-bb8aa5da1b31aba0,OKE-01,1,6,oe:player:c760fc1c8c70fadaa2c376f7acae877,oe:player:38650fd135db39772bc157f764eb8ea,oe:player:db388b1b18abbdc620de33627c0ef05,oe:player:beaa50cbbea52e2ff5619a50fe03f4c,oe:player:322cb471bec2cd13585deb9fd868fcc,ouroboy,Zuao,Goku,EzPrince,Professor
+player,oe:team:a5b345b357701f1ae4ca1cef4c8fe52,Santos Dexterity,SD,2016,Unknown,oe:player:140f241b60b0fd9224ef6bf7fd9a56e,Pizzayolo,top,,,,,,,,,,,,,,
+player,oe:team:a5b345b357701f1ae4ca1cef4c8fe52,Santos Dexterity,SD,2016,Unknown,oe:player:38650fd135db39772bc157f764eb8ea,Zuao,jng,,,,,,,,,,,,,,
+player,oe:team:a5b345b357701f1ae4ca1cef4c8fe52,Santos Dexterity,SD,2016,Unknown,oe:player:ee4990d57e6b777da2bbb3a6f387d6a,prZo,mid,,,,,,,,,,,,,,
+player,oe:team:a5b345b357701f1ae4ca1cef4c8fe52,Santos Dexterity,SD,2016,Unknown,oe:player:8dbcf5c726f24c363c07f70e62ac715,Theusma,bot,,,,,,,,,,,,,,
+player,oe:team:a5b345b357701f1ae4ca1cef4c8fe52,Santos Dexterity,SD,2016,Unknown,oe:player:1841851213a0e93b9383420afa7679e,Anjinho,sup,,,,,,,,,,,,,,
+lineup,oe:team:a5b345b357701f1ae4ca1cef4c8fe52,Santos Dexterity,SD,2016,Unknown,,,,lineup-53f243f76dce13b7,SD-01,1,2,oe:player:140f241b60b0fd9224ef6bf7fd9a56e,oe:player:38650fd135db39772bc157f764eb8ea,oe:player:ee4990d57e6b777da2bbb3a6f387d6a,oe:player:8dbcf5c726f24c363c07f70e62ac715,oe:player:1841851213a0e93b9383420afa7679e,Pizzayolo,Zuao,prZo,Theusma,Anjinho
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2016,Split 1,oe:player:3085815ef497539cb1d93b3c9a16624,Robo,top,,,,,,,,,,,,,,
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2016,Split 1,oe:player:06deba5908b007eb6f32d8d95f3f61b,Turtle,jng,,,,,,,,,,,,,,
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2016,Split 1,oe:player:7e76d237af4844406d36a27ddb255dd,takeshi,mid,,,,,,,,,,,,,,
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2016,Split 1,oe:player:bd7992c3a0b0398d2833e69f231d5e3,esA,bot,,,,,,,,,,,,,,
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2016,Split 1,oe:player:9bc4ea473f8ee1a607e124de4f3b00e,Verfix,sup,,,,,,,,,,,,,,
+lineup,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2016,Split 1,,,,lineup-b5bb50eafaa06735,VK-01,1,2,oe:player:3085815ef497539cb1d93b3c9a16624,oe:player:06deba5908b007eb6f32d8d95f3f61b,oe:player:7e76d237af4844406d36a27ddb255dd,oe:player:bd7992c3a0b0398d2833e69f231d5e3,oe:player:9bc4ea473f8ee1a607e124de4f3b00e,Robo,Turtle,takeshi,esA,Verfix

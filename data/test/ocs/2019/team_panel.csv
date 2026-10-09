@@ -1,0 +1,79 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:fae75f985d8c1509fa55ea782737bf6,Bombers Academy,BA,2019,Unknown,oe:player:800fab82ef451afd57432a8c001dc27,Shore,top,,,,,,,,,,,,,,
+player,oe:team:fae75f985d8c1509fa55ea782737bf6,Bombers Academy,BA,2019,Unknown,oe:player:22af3ab9b53ccf0d41e3c4fa7ad1497,Seb,jng,,,,,,,,,,,,,,
+player,oe:team:fae75f985d8c1509fa55ea782737bf6,Bombers Academy,BA,2019,Unknown,oe:player:30d7b20c0f87b90e9bca53621e9f667,Zenk,mid,,,,,,,,,,,,,,
+player,oe:team:fae75f985d8c1509fa55ea782737bf6,Bombers Academy,BA,2019,Unknown,oe:player:dace1b204023297c9eb38f876796968,Looch,bot,,,,,,,,,,,,,,
+player,oe:team:fae75f985d8c1509fa55ea782737bf6,Bombers Academy,BA,2019,Unknown,oe:player:3dba4686043082f7d827848780ad459,BushyBooBoo,sup,,,,,,,,,,,,,,
+lineup,oe:team:fae75f985d8c1509fa55ea782737bf6,Bombers Academy,BA,2019,Unknown,,,,lineup-86a1dde20374daec,BA-01,1,1,oe:player:800fab82ef451afd57432a8c001dc27,oe:player:22af3ab9b53ccf0d41e3c4fa7ad1497,oe:player:30d7b20c0f87b90e9bca53621e9f667,oe:player:dace1b204023297c9eb38f876796968,oe:player:3dba4686043082f7d827848780ad459,Shore,Seb,Zenk,Looch,BushyBooBoo
+player,oe:team:42efab15102679bcf44aa18df95363e,Chiefs Academy,CA,2019,Unknown,oe:player:1310ed05860c0d0089fc2a6b78ae3d9,Pope,top,,,,,,,,,,,,,,
+player,oe:team:42efab15102679bcf44aa18df95363e,Chiefs Academy,CA,2019,Unknown,oe:player:4ed4d787ce13f8c524d0b2e6fa50c50,Alani,jng,,,,,,,,,,,,,,
+player,oe:team:42efab15102679bcf44aa18df95363e,Chiefs Academy,CA,2019,Unknown,oe:player:47acf620062218fa3d0cf65f34904ad,Beats,mid,,,,,,,,,,,,,,
+player,oe:team:42efab15102679bcf44aa18df95363e,Chiefs Academy,CA,2019,Unknown,oe:player:6ab9a295c00f945cf4881fd7667a033,Spacer,bot,,,,,,,,,,,,,,
+player,oe:team:42efab15102679bcf44aa18df95363e,Chiefs Academy,CA,2019,Unknown,oe:player:f15a9d60645218fde074c42d24e54df,Nausicaa,sup,,,,,,,,,,,,,,
+lineup,oe:team:42efab15102679bcf44aa18df95363e,Chiefs Academy,CA,2019,Unknown,,,,lineup-eaca81c7a84c812c,CA-01,1,1,oe:player:1310ed05860c0d0089fc2a6b78ae3d9,oe:player:4ed4d787ce13f8c524d0b2e6fa50c50,oe:player:47acf620062218fa3d0cf65f34904ad,oe:player:6ab9a295c00f945cf4881fd7667a033,oe:player:f15a9d60645218fde074c42d24e54df,Pope,Alani,Beats,Spacer,Nausicaa
+player,oe:team:0d9f89772c3f008ae34e4f597253242,Dire Cubs,DC,2019,Unknown,oe:player:ca38694b78ea467cb0eefc93f5d6761,Dragku,top,,,,,,,,,,,,,,
+player,oe:team:0d9f89772c3f008ae34e4f597253242,Dire Cubs,DC,2019,Unknown,oe:player:b7190c54682fad7a6ea20d2f284e7c0,Kweku,top,,,,,,,,,,,,,,
+player,oe:team:0d9f89772c3f008ae34e4f597253242,Dire Cubs,DC,2019,Unknown,oe:player:3799f225857837e1b078d2dbb115aee,Udysof,jng,,,,,,,,,,,,,,
+player,oe:team:0d9f89772c3f008ae34e4f597253242,Dire Cubs,DC,2019,Unknown,oe:player:4b50dfafb5a1a98a316122ca9208d7a,Getback,mid,,,,,,,,,,,,,,
+player,oe:team:0d9f89772c3f008ae34e4f597253242,Dire Cubs,DC,2019,Unknown,oe:player:9a15aa35edb26ce8b555e094907e505,Siuman,mid,,,,,,,,,,,,,,
+player,oe:team:0d9f89772c3f008ae34e4f597253242,Dire Cubs,DC,2019,Unknown,oe:player:07c4bccfc35938290de1e6b4495b0af,Anderu,bot,,,,,,,,,,,,,,
+player,oe:team:0d9f89772c3f008ae34e4f597253242,Dire Cubs,DC,2019,Unknown,oe:player:73e82c479af3a7c2da939e8200e60f8,Corporal,sup,,,,,,,,,,,,,,
+player,oe:team:0d9f89772c3f008ae34e4f597253242,Dire Cubs,DC,2019,Unknown,oe:player:c5a7f95c1a224da16f9926a72d4e28a,Curtis,sup,,,,,,,,,,,,,,
+lineup,oe:team:0d9f89772c3f008ae34e4f597253242,Dire Cubs,DC,2019,Unknown,,,,lineup-21795877b9def25a,DC-01,1,1,oe:player:ca38694b78ea467cb0eefc93f5d6761,oe:player:3799f225857837e1b078d2dbb115aee,oe:player:9a15aa35edb26ce8b555e094907e505,oe:player:07c4bccfc35938290de1e6b4495b0af,oe:player:c5a7f95c1a224da16f9926a72d4e28a,Dragku,Udysof,Siuman,Anderu,Curtis
+lineup,oe:team:0d9f89772c3f008ae34e4f597253242,Dire Cubs,DC,2019,Unknown,,,,lineup-db1d2492078aa9b7,DC-02,2,1,oe:player:b7190c54682fad7a6ea20d2f284e7c0,oe:player:3799f225857837e1b078d2dbb115aee,oe:player:4b50dfafb5a1a98a316122ca9208d7a,oe:player:07c4bccfc35938290de1e6b4495b0af,oe:player:73e82c479af3a7c2da939e8200e60f8,Kweku,Udysof,Getback,Anderu,Corporal
+player,oe:team:85fcd014fb0b98c94dcbf3f7f1f207d,Emprox,EMP,2019,Unknown,oe:player:79fa5b84e0a8e644a0ea3751a2ed8f1,Berserker,top,,,,,,,,,,,,,,
+player,oe:team:85fcd014fb0b98c94dcbf3f7f1f207d,Emprox,EMP,2019,Unknown,oe:player:65dfcaac279a0c161650ded4956976e,Paladin,jng,,,,,,,,,,,,,,
+player,oe:team:85fcd014fb0b98c94dcbf3f7f1f207d,Emprox,EMP,2019,Unknown,oe:player:0579842ca3ad16b00b58a1c432faa1c,Lived,mid,,,,,,,,,,,,,,
+player,oe:team:85fcd014fb0b98c94dcbf3f7f1f207d,Emprox,EMP,2019,Unknown,oe:player:7761ed3cf0fa8202b8db185d57ad9be,Lionel,bot,,,,,,,,,,,,,,
+player,oe:team:85fcd014fb0b98c94dcbf3f7f1f207d,Emprox,EMP,2019,Unknown,oe:player:931d6bea7b157a3cd3bf89892d84654,Artek,sup,,,,,,,,,,,,,,
+lineup,oe:team:85fcd014fb0b98c94dcbf3f7f1f207d,Emprox,EMP,2019,Unknown,,,,lineup-f5ea60d1644ec373,EMP-01,1,13,oe:player:79fa5b84e0a8e644a0ea3751a2ed8f1,oe:player:65dfcaac279a0c161650ded4956976e,oe:player:0579842ca3ad16b00b58a1c432faa1c,oe:player:7761ed3cf0fa8202b8db185d57ad9be,oe:player:931d6bea7b157a3cd3bf89892d84654,Berserker,Paladin,Lived,Lionel,Artek
+player,oe:team:72c433e58f2ffff50fb11ccb1b9dbfb,Gravitas Academy,GA,2019,Unknown,oe:player:cb9c5c9d5a05213ed240fb879d871c5,Guapi,top,,,,,,,,,,,,,,
+player,oe:team:72c433e58f2ffff50fb11ccb1b9dbfb,Gravitas Academy,GA,2019,Unknown,oe:player:e35edef8a2cb6212af8fe231b48ea5e,Whynot,jng,,,,,,,,,,,,,,
+player,oe:team:72c433e58f2ffff50fb11ccb1b9dbfb,Gravitas Academy,GA,2019,Unknown,oe:player:57f2c6d32c78ea9351cb81b09000bab,Hotchelli,mid,,,,,,,,,,,,,,
+player,oe:team:72c433e58f2ffff50fb11ccb1b9dbfb,Gravitas Academy,GA,2019,Unknown,oe:player:ee2711e319ed3ace09e2a4d38ae89f3,retribution,bot,,,,,,,,,,,,,,
+player,oe:team:72c433e58f2ffff50fb11ccb1b9dbfb,Gravitas Academy,GA,2019,Unknown,oe:player:ada42c4ea0ef600487a44a8013d3945,emelg,sup,,,,,,,,,,,,,,
+lineup,oe:team:72c433e58f2ffff50fb11ccb1b9dbfb,Gravitas Academy,GA,2019,Unknown,,,,lineup-d5044388b7dfdc35,GA-01,1,1,oe:player:cb9c5c9d5a05213ed240fb879d871c5,oe:player:e35edef8a2cb6212af8fe231b48ea5e,oe:player:57f2c6d32c78ea9351cb81b09000bab,oe:player:ee2711e319ed3ace09e2a4d38ae89f3,oe:player:ada42c4ea0ef600487a44a8013d3945,Guapi,Whynot,Hotchelli,retribution,emelg
+player,oe:team:638506106b833cf5649e0490244eed4,Legacy Genesis,LG,2019,Unknown,oe:player:35427c8d09f57bbb4e29cae70af0dbe,Chungy,top,,,,,,,,,,,,,,
+player,oe:team:638506106b833cf5649e0490244eed4,Legacy Genesis,LG,2019,Unknown,oe:player:298ebd779e6e67cccf581d69096f8ce,LeeSA,jng,,,,,,,,,,,,,,
+player,oe:team:638506106b833cf5649e0490244eed4,Legacy Genesis,LG,2019,Unknown,oe:player:0543601680b90a14217b80b4f771635,Apii,mid,,,,,,,,,,,,,,
+player,oe:team:638506106b833cf5649e0490244eed4,Legacy Genesis,LG,2019,Unknown,oe:player:a9cc86106617ab2ef191034909dfa15,Draqon,bot,,,,,,,,,,,,,,
+player,oe:team:638506106b833cf5649e0490244eed4,Legacy Genesis,LG,2019,Unknown,oe:player:5cfd2266b5c1394090f29498fe0576e,Kpop,sup,,,,,,,,,,,,,,
+lineup,oe:team:638506106b833cf5649e0490244eed4,Legacy Genesis,LG,2019,Unknown,,,,lineup-dade8b05c608480f,LG-01,1,1,oe:player:35427c8d09f57bbb4e29cae70af0dbe,oe:player:298ebd779e6e67cccf581d69096f8ce,oe:player:0543601680b90a14217b80b4f771635,oe:player:a9cc86106617ab2ef191034909dfa15,oe:player:5cfd2266b5c1394090f29498fe0576e,Chungy,LeeSA,Apii,Draqon,Kpop
+player,oe:team:4a8c0af26c3e3abad2cf15711001855,Mammoth Academy,MA,2019,Unknown,oe:player:3526fc9b692a75b6d8dc4943450f46c,Redempts,top,,,,,,,,,,,,,,
+player,oe:team:4a8c0af26c3e3abad2cf15711001855,Mammoth Academy,MA,2019,Unknown,oe:player:dd83595fada79ef88d594b2518b6a8c,Kevy,jng,,,,,,,,,,,,,,
+player,oe:team:4a8c0af26c3e3abad2cf15711001855,Mammoth Academy,MA,2019,Unknown,oe:player:aa6df57fb6fe377d80b4a257b4a92cb,Halo,mid,,,,,,,,,,,,,,
+player,oe:team:4a8c0af26c3e3abad2cf15711001855,Mammoth Academy,MA,2019,Unknown,oe:player:023a5f9690649584b01f6476ecca815,Miazma,bot,,,,,,,,,,,,,,
+player,oe:team:4a8c0af26c3e3abad2cf15711001855,Mammoth Academy,MA,2019,Unknown,oe:player:40704dfd2d966862568d29770de57bd,Isles,sup,,,,,,,,,,,,,,
+lineup,oe:team:4a8c0af26c3e3abad2cf15711001855,Mammoth Academy,MA,2019,Unknown,,,,lineup-8b943d8f4d28e442,MA-01,1,2,oe:player:3526fc9b692a75b6d8dc4943450f46c,oe:player:dd83595fada79ef88d594b2518b6a8c,oe:player:aa6df57fb6fe377d80b4a257b4a92cb,oe:player:023a5f9690649584b01f6476ecca815,oe:player:40704dfd2d966862568d29770de57bd,Redempts,Kevy,Halo,Miazma,Isles
+player,oe:team:15cd04e605d88070159951f2801fa82,ORDER Academy,OA,2019,Unknown,oe:player:ae72e09a91c56e77a7228e4ecb0fc2e,Morg,top,,,,,,,,,,,,,,
+player,oe:team:15cd04e605d88070159951f2801fa82,ORDER Academy,OA,2019,Unknown,oe:player:4947ccbab20a26458a23e626d6da326,Harri,jng,,,,,,,,,,,,,,
+player,oe:team:15cd04e605d88070159951f2801fa82,ORDER Academy,OA,2019,Unknown,oe:player:36e6e3a1d48dd5dda87b8f74ce5f209,Yueni,jng,,,,,,,,,,,,,,
+player,oe:team:15cd04e605d88070159951f2801fa82,ORDER Academy,OA,2019,Unknown,oe:player:d43e9ff55624238e69a03f016656af7,JLKC,mid,,,,,,,,,,,,,,
+player,oe:team:15cd04e605d88070159951f2801fa82,ORDER Academy,OA,2019,Unknown,oe:player:e39d9ffcf08b637ebf7ace59509ef5d,Ceres,bot,,,,,,,,,,,,,,
+player,oe:team:15cd04e605d88070159951f2801fa82,ORDER Academy,OA,2019,Unknown,name-player-d72bd85e71031dbd,unknown player,bot,,,,,,,,,,,,,,
+player,oe:team:15cd04e605d88070159951f2801fa82,ORDER Academy,OA,2019,Unknown,oe:player:4947ccbab20a26458a23e626d6da326,Harri,sup,,,,,,,,,,,,,,
+player,oe:team:15cd04e605d88070159951f2801fa82,ORDER Academy,OA,2019,Unknown,oe:player:f43d6f61a162493a2444880464b4a0c,Mog,sup,,,,,,,,,,,,,,
+lineup,oe:team:15cd04e605d88070159951f2801fa82,ORDER Academy,OA,2019,Unknown,,,,lineup-05efd4ea6d96473d,OA-01,1,2,oe:player:ae72e09a91c56e77a7228e4ecb0fc2e,oe:player:36e6e3a1d48dd5dda87b8f74ce5f209,oe:player:d43e9ff55624238e69a03f016656af7,name-player-d72bd85e71031dbd,oe:player:4947ccbab20a26458a23e626d6da326,Morg,Yueni,JLKC,unknown player,Harri
+lineup,oe:team:15cd04e605d88070159951f2801fa82,ORDER Academy,OA,2019,Unknown,,,,lineup-da5d0c1f2aae7448,OA-02,2,1,oe:player:ae72e09a91c56e77a7228e4ecb0fc2e,oe:player:4947ccbab20a26458a23e626d6da326,oe:player:d43e9ff55624238e69a03f016656af7,oe:player:e39d9ffcf08b637ebf7ace59509ef5d,oe:player:f43d6f61a162493a2444880464b4a0c,Morg,Harri,JLKC,Ceres,Mog
+player,oe:team:c4193e1de4cbb3a64553aa2e1d31b57,QUT Tigers,QT,2019,Unknown,oe:player:e79c23b4614cdec99e3b239aee9a714,Frogadog,top,,,,,,,,,,,,,,
+player,oe:team:c4193e1de4cbb3a64553aa2e1d31b57,QUT Tigers,QT,2019,Unknown,oe:player:159c85d3e87105d5975e207b5c38f6c,Gooby,jng,,,,,,,,,,,,,,
+player,oe:team:c4193e1de4cbb3a64553aa2e1d31b57,QUT Tigers,QT,2019,Unknown,oe:player:2451bae14400bf552263092c46826dd,Unspecialize,mid,,,,,,,,,,,,,,
+player,oe:team:c4193e1de4cbb3a64553aa2e1d31b57,QUT Tigers,QT,2019,Unknown,oe:player:aa91fee9512cd43e75ac9495a77d85e,Feint,bot,,,,,,,,,,,,,,
+player,oe:team:c4193e1de4cbb3a64553aa2e1d31b57,QUT Tigers,QT,2019,Unknown,oe:player:2bff3c8519c8d1ddb202745b8bcdd09,Spoil,sup,,,,,,,,,,,,,,
+lineup,oe:team:c4193e1de4cbb3a64553aa2e1d31b57,QUT Tigers,QT,2019,Unknown,,,,lineup-b897b889a1031989,QT-01,1,1,oe:player:e79c23b4614cdec99e3b239aee9a714,oe:player:159c85d3e87105d5975e207b5c38f6c,oe:player:2451bae14400bf552263092c46826dd,oe:player:aa91fee9512cd43e75ac9495a77d85e,oe:player:2bff3c8519c8d1ddb202745b8bcdd09,Frogadog,Gooby,Unspecialize,Feint,Spoil
+player,oe:team:c89864253bfbc47feae7aebf4013806,UQ Union,UU,2019,Unknown,oe:player:94e115291231fdf12b0faab8c6cd6d5,Nightfaller,top,,,,,,,,,,,,,,
+player,oe:team:c89864253bfbc47feae7aebf4013806,UQ Union,UU,2019,Unknown,name-player-d72bd85e71031dbd,unknown player,jng,,,,,,,,,,,,,,
+player,oe:team:c89864253bfbc47feae7aebf4013806,UQ Union,UU,2019,Unknown,oe:player:d51674883fd227c219c9a1fc7da7db4,Kisee,mid,,,,,,,,,,,,,,
+player,oe:team:c89864253bfbc47feae7aebf4013806,UQ Union,UU,2019,Unknown,oe:player:cfd45b57f3fb856e290ed4afcf4b6bb,Farmer,bot,,,,,,,,,,,,,,
+player,oe:team:c89864253bfbc47feae7aebf4013806,UQ Union,UU,2019,Unknown,oe:player:b3f545dd31645fbd5392d1f8a788e59,Kimchiii,sup,,,,,,,,,,,,,,
+lineup,oe:team:c89864253bfbc47feae7aebf4013806,UQ Union,UU,2019,Unknown,,,,lineup-05a8957ea71bcd61,UU-01,1,1,oe:player:94e115291231fdf12b0faab8c6cd6d5,name-player-d72bd85e71031dbd,oe:player:d51674883fd227c219c9a1fc7da7db4,oe:player:cfd45b57f3fb856e290ed4afcf4b6bb,oe:player:b3f545dd31645fbd5392d1f8a788e59,Nightfaller,unknown player,Kisee,Farmer,Kimchiii
+player,oe:team:3b41580aaafc8fae0130f6868cb8a84,UTS Esports,UE,2019,Unknown,oe:player:f5761ffeb6f3338eef641604969c6f7,Hyper,top,,,,,,,,,,,,,,
+player,oe:team:3b41580aaafc8fae0130f6868cb8a84,UTS Esports,UE,2019,Unknown,oe:player:04d9e25d541649e94fa8bbc05d25f53,Midas,top,,,,,,,,,,,,,,
+player,oe:team:3b41580aaafc8fae0130f6868cb8a84,UTS Esports,UE,2019,Unknown,oe:player:01e3a933906494de42d7a1d6a09bbb3,Buggy,jng,,,,,,,,,,,,,,
+player,oe:team:3b41580aaafc8fae0130f6868cb8a84,UTS Esports,UE,2019,Unknown,oe:player:ef70f9866faf96288713dcbd4ca6d3d,Yaelay,jng,,,,,,,,,,,,,,
+player,oe:team:3b41580aaafc8fae0130f6868cb8a84,UTS Esports,UE,2019,Unknown,oe:player:9f76456db5408982a30e3bf395e35bc,Pica Boo,mid,,,,,,,,,,,,,,
+player,oe:team:3b41580aaafc8fae0130f6868cb8a84,UTS Esports,UE,2019,Unknown,name-player-d72bd85e71031dbd,unknown player,mid,,,,,,,,,,,,,,
+player,oe:team:3b41580aaafc8fae0130f6868cb8a84,UTS Esports,UE,2019,Unknown,oe:player:bce431d01a4df1bf31ba7787331ad1d,Cadence,bot,,,,,,,,,,,,,,
+player,oe:team:3b41580aaafc8fae0130f6868cb8a84,UTS Esports,UE,2019,Unknown,oe:player:c3a035d00eb2a793c85ea9c4b37c3e6,Frolloc,sup,,,,,,,,,,,,,,
+lineup,oe:team:3b41580aaafc8fae0130f6868cb8a84,UTS Esports,UE,2019,Unknown,,,,lineup-5c51439aa664c0af,UE-01,1,1,oe:player:f5761ffeb6f3338eef641604969c6f7,oe:player:01e3a933906494de42d7a1d6a09bbb3,name-player-d72bd85e71031dbd,oe:player:bce431d01a4df1bf31ba7787331ad1d,oe:player:c3a035d00eb2a793c85ea9c4b37c3e6,Hyper,Buggy,unknown player,Cadence,Frolloc
+lineup,oe:team:3b41580aaafc8fae0130f6868cb8a84,UTS Esports,UE,2019,Unknown,,,,lineup-764f66b9db5b2dbc,UE-02,2,1,oe:player:04d9e25d541649e94fa8bbc05d25f53,oe:player:ef70f9866faf96288713dcbd4ca6d3d,oe:player:9f76456db5408982a30e3bf395e35bc,oe:player:bce431d01a4df1bf31ba7787331ad1d,oe:player:c3a035d00eb2a793c85ea9c4b37c3e6,Midas,Yaelay,Pica Boo,Cadence,Frolloc
