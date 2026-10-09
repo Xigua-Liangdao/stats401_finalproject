@@ -1,0 +1,845 @@
+{
+  "schema_version": "2.1.0",
+  "tables": {
+    "player_games": {
+      "file": "player_games.csv",
+      "rows": 160,
+      "fields": {
+        "record_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "game_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "date": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "day": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "season": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "split": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "playoffs": {
+          "dtype": "Int64",
+          "nullable": true
+        },
+        "patch": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "side": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "opponent_team_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "opponent_team": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "player_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "player": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "role": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "champion": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "opponent_player_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "opponent_champion": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "role_champion": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "lineup_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "result": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "game_seconds": {
+          "dtype": "float64",
+          "nullable": false
+        },
+        "game_minutes": {
+          "dtype": "float64",
+          "nullable": false
+        },
+        "kills": {
+          "dtype": "Int64",
+          "nullable": true
+        },
+        "deaths": {
+          "dtype": "Int64",
+          "nullable": true
+        },
+        "assists": {
+          "dtype": "Int64",
+          "nullable": true
+        },
+        "kda": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "total_gold": {
+          "dtype": "float64",
+          "nullable": false
+        },
+        "damage": {
+          "dtype": "float64",
+          "nullable": false
+        },
+        "total_cs": {
+          "dtype": "Int64",
+          "nullable": true
+        },
+        "dpm": {
+          "dtype": "float64",
+          "nullable": false
+        },
+        "gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "vision_score": {
+          "dtype": "Int64",
+          "nullable": true
+        },
+        "vision_per_minute": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "kill_participation": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "gold_diff_at_15": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "xp_diff_at_15": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "cs_diff_at_15": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "fold": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "prediction_status": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "expected_dpm": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "baseline_dpm": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "training_role_sd": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "adjusted_impact": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "train_end_day": {
+          "dtype": "string",
+          "nullable": true
+        }
+      }
+    },
+    "players": {
+      "file": "players.csv",
+      "rows": 120,
+      "fields": {
+        "player_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "player": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "role": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "season": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "n_games_total": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "n_games": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "n_days": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "mean_impact": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "shrunk_impact": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "ci_low": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "ci_high": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "eligible": {
+          "dtype": "bool",
+          "nullable": false
+        },
+        "mean_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_dpm": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_expected_dpm": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "win_rate": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_vision_per_minute": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_baseline_dpm": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_baseline_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_baseline_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_baseline_vision_per_minute": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_baseline_impact": {
+          "dtype": "float64",
+          "nullable": true
+        }
+      }
+    },
+    "pairs": {
+      "file": "pairs.csv",
+      "rows": 240,
+      "fields": {
+        "pair_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "player_a_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "player_b_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "player_a": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "player_b": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "season": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "n_games_total": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "n_games": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "n_days": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "mean_impact": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "shrunk_impact": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "ci_low": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "ci_high": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "eligible": {
+          "dtype": "bool",
+          "nullable": false
+        },
+        "win_rate": {
+          "dtype": "float64",
+          "nullable": true
+        }
+      }
+    },
+    "lineups": {
+      "file": "lineups.csv",
+      "rows": 24,
+      "fields": {
+        "lineup_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "season": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "top_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "top_player": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "jng_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "jng_player": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "mid_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "mid_player": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "bot_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "bot_player": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "sup_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "sup_player": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "n_games_total": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "n_games": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "n_days": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "mean_impact": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "shrunk_impact": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "ci_low": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "ci_high": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "eligible": {
+          "dtype": "bool",
+          "nullable": false
+        },
+        "win_rate": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_dpm": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_vision_per_minute": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "gold_concentration": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "damage_concentration": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "top_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "top_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "jng_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "jng_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mid_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mid_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "bot_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "bot_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "sup_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "sup_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "affinity_score": {
+          "dtype": "string",
+          "nullable": false
+        }
+      }
+    },
+    "teams": {
+      "file": "teams.csv",
+      "rows": 23,
+      "fields": {
+        "team_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "season": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "n_games_total": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "n_games": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "n_days": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "mean_impact": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "shrunk_impact": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "ci_low": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "ci_high": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "eligible": {
+          "dtype": "bool",
+          "nullable": false
+        },
+        "win_rate": {
+          "dtype": "float64",
+          "nullable": true
+        }
+      }
+    },
+    "timeline": {
+      "file": "timeline.csv",
+      "rows": 0,
+      "fields": {
+        "player_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "player": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "role": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "day": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "n_games": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "actual_dpm": {
+          "dtype": "float64",
+          "nullable": false
+        },
+        "expected_dpm": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "adjusted_impact": {
+          "dtype": "float64",
+          "nullable": true
+        }
+      }
+    },
+    "pair_games": {
+      "file": "pair_games.csv",
+      "rows": 320,
+      "fields": {
+        "game_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "day": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "season": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "split": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "patch": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "lineup_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "result": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "pair_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "player_a_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "player_b_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "player_a": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "player_b": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "pair_impact": {
+          "dtype": "float64",
+          "nullable": true
+        }
+      }
+    },
+    "lineup_games": {
+      "file": "lineup_games.csv",
+      "rows": 32,
+      "fields": {
+        "game_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "day": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "season": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "split": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "patch": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "team": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "lineup_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "result": {
+          "dtype": "int64",
+          "nullable": false
+        },
+        "lineup_impact": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_dpm": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mean_vision_per_minute": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "gold_concentration": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "damage_concentration": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "top_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "top_player": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "top_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "top_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "jng_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "jng_player": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "jng_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "jng_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mid_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "mid_player": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "mid_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "mid_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "bot_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "bot_player": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "bot_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "bot_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "sup_id": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "sup_player": {
+          "dtype": "string",
+          "nullable": false
+        },
+        "sup_gold_share": {
+          "dtype": "float64",
+          "nullable": true
+        },
+        "sup_damage_share": {
+          "dtype": "float64",
+          "nullable": true
+        }
+      }
+    }
+  }
+}

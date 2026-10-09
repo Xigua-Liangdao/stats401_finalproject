@@ -1,0 +1,61 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:87e3e1e75839f75a10bbc66e894d806,FURIA,FUR,2023,Split 1,oe:player:61ea9de879a9b27bb8eddcba7f32f4a,fNb,top,,,,,,,,,,,,,,
+player,oe:team:87e3e1e75839f75a10bbc66e894d806,FURIA,FUR,2023,Split 1,oe:player:14858d85726545ce65dc2e7ea8042c9,Goot,jng,,,,,,,,,,,,,,
+player,oe:team:87e3e1e75839f75a10bbc66e894d806,FURIA,FUR,2023,Split 1,oe:player:a672b5bc1c212a6922418fad18734c1,Envy,mid,,,,,,,,,,,,,,
+player,oe:team:87e3e1e75839f75a10bbc66e894d806,FURIA,FUR,2023,Split 1,oe:player:c732cc226501cc21178b9f413cdf3eb,Trigo,bot,,,,,,,,,,,,,,
+player,oe:team:87e3e1e75839f75a10bbc66e894d806,FURIA,FUR,2023,Split 1,oe:player:d7a904873d10637ef44afa9c1de83b3,Ayu,sup,,,,,,,,,,,,,,
+lineup,oe:team:87e3e1e75839f75a10bbc66e894d806,FURIA,FUR,2023,Split 1,,,,lineup-de27c023fbea2c52,FUR-01,1,1,oe:player:61ea9de879a9b27bb8eddcba7f32f4a,oe:player:14858d85726545ce65dc2e7ea8042c9,oe:player:a672b5bc1c212a6922418fad18734c1,oe:player:c732cc226501cc21178b9f413cdf3eb,oe:player:d7a904873d10637ef44afa9c1de83b3,fNb,Goot,Envy,Trigo,Ayu
+player,oe:team:ca3882dbcefa68eac0892e3218080db,Fluxo,FLU,2023,Split 1,oe:player:b04655f0821a30125d72a3442647875,Tay,top,,,,,,,,,,,,,,
+player,oe:team:ca3882dbcefa68eac0892e3218080db,Fluxo,FLU,2023,Split 1,oe:player:946b74bfc34e861b344ae03700af039,Disamis,jng,,,,,,,,,,,,,,
+player,oe:team:ca3882dbcefa68eac0892e3218080db,Fluxo,FLU,2023,Split 1,oe:player:979d7cbbe1e2a8b55d503047f5c72a0,Hauz,mid,,,,,,,,,,,,,,
+player,oe:team:ca3882dbcefa68eac0892e3218080db,Fluxo,FLU,2023,Split 1,oe:player:166969943c4ca12527dd5449aab5e8e,Brance,bot,,,,,,,,,,,,,,
+player,oe:team:ca3882dbcefa68eac0892e3218080db,Fluxo,FLU,2023,Split 1,oe:player:cb4cd2fd258d5961d2f1c4815b04123,JoJo,sup,,,,,,,,,,,,,,
+lineup,oe:team:ca3882dbcefa68eac0892e3218080db,Fluxo,FLU,2023,Split 1,,,,lineup-79061c81aa1ac147,FLU-01,1,1,oe:player:b04655f0821a30125d72a3442647875,oe:player:946b74bfc34e861b344ae03700af039,oe:player:979d7cbbe1e2a8b55d503047f5c72a0,oe:player:166969943c4ca12527dd5449aab5e8e,oe:player:cb4cd2fd258d5961d2f1c4815b04123,Tay,Disamis,Hauz,Brance,JoJo
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2023,Split 1,oe:player:51f53c8440c1a028258a04543743016,Zzk,top,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2023,Split 1,oe:player:65d1e475734633e28d4523d92a90837,Yampi,jng,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2023,Split 1,oe:player:7e6e34b1f0efa66f0630192e136f6a8,NOsFerus,mid,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2023,Split 1,oe:player:559c0cab98dab7824357ff1af6615ea,NinjaKiwi,bot,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2023,Split 1,oe:player:07e556728e29ff6dc6bf0042aaead2c,Nia,sup,,,,,,,,,,,,,,
+lineup,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2023,Split 1,,,,lineup-6920b32eafe5d094,INT-01,1,1,oe:player:51f53c8440c1a028258a04543743016,oe:player:65d1e475734633e28d4523d92a90837,oe:player:7e6e34b1f0efa66f0630192e136f6a8,oe:player:559c0cab98dab7824357ff1af6615ea,oe:player:07e556728e29ff6dc6bf0042aaead2c,Zzk,Yampi,NOsFerus,NinjaKiwi,Nia
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2023,Split 1,oe:player:39b7c8fcabea217972326ec1f441b0a,Lonely,top,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2023,Split 1,oe:player:6cb75f242bca4309e2f942a4895805f,SCARY,jng,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2023,Split 1,oe:player:ef19fe6f71c35fce19fb88a0e732e9b,Yuri,mid,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2023,Split 1,oe:player:952f90bd1805db865fdb728cd1f2d92,DudsTheBoy,bot,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2023,Split 1,oe:player:70d516fd78bcce28e19f4b422bb9f02,scuro,sup,,,,,,,,,,,,,,
+lineup,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2023,Split 1,,,,lineup-c7a2c96b1b43e7cf,KE-01,1,1,oe:player:39b7c8fcabea217972326ec1f441b0a,oe:player:6cb75f242bca4309e2f942a4895805f,oe:player:ef19fe6f71c35fce19fb88a0e732e9b,oe:player:952f90bd1805db865fdb728cd1f2d92,oe:player:70d516fd78bcce28e19f4b422bb9f02,Lonely,SCARY,Yuri,DudsTheBoy,scuro
+player,oe:team:658a021a796aa5501503220adb38cf4,LOUD,LOU,2023,Split 1,oe:player:3085815ef497539cb1d93b3c9a16624,Robo,top,,,,,,,,,,,,,,
+player,oe:team:658a021a796aa5501503220adb38cf4,LOUD,LOU,2023,Split 1,oe:player:76cd75b6b8f0def9bc45032dcc32a61,Croc,jng,,,,,,,,,,,,,,
+player,oe:team:658a021a796aa5501503220adb38cf4,LOUD,LOU,2023,Split 1,oe:player:ae770d2c942cee6dbcfbd1832015231,tinowns,mid,,,,,,,,,,,,,,
+player,oe:team:658a021a796aa5501503220adb38cf4,LOUD,LOU,2023,Split 1,oe:player:9405c3aff9112c3c60d03b94792877d,Route,bot,,,,,,,,,,,,,,
+player,oe:team:658a021a796aa5501503220adb38cf4,LOUD,LOU,2023,Split 1,oe:player:c88cada1696defe81464925789aa6d8,Ceos,sup,,,,,,,,,,,,,,
+lineup,oe:team:658a021a796aa5501503220adb38cf4,LOUD,LOU,2023,Split 1,,,,lineup-ee99fd20cef4c44d,LOU-01,1,16,oe:player:3085815ef497539cb1d93b3c9a16624,oe:player:76cd75b6b8f0def9bc45032dcc32a61,oe:player:ae770d2c942cee6dbcfbd1832015231,oe:player:9405c3aff9112c3c60d03b94792877d,oe:player:c88cada1696defe81464925789aa6d8,Robo,Croc,tinowns,Route,Ceos
+player,oe:team:84e1da9e55480128662cfdfe79cb892,Liberty,LIB,2023,Split 1,oe:player:63dc9ebe6cd781c9c9cecb54a6d7317,Kiari,top,,,,,,,,,,,,,,
+player,oe:team:84e1da9e55480128662cfdfe79cb892,Liberty,LIB,2023,Split 1,oe:player:3301849bddc2a457469a9af14302972,Accez,jng,,,,,,,,,,,,,,
+player,oe:team:84e1da9e55480128662cfdfe79cb892,Liberty,LIB,2023,Split 1,oe:player:751b4e6d134b3c4559459c7921fee5f,Pilot,mid,,,,,,,,,,,,,,
+player,oe:team:84e1da9e55480128662cfdfe79cb892,Liberty,LIB,2023,Split 1,oe:player:bfcefaea6ffa0c9cdb2667f79b63750,Juliera,bot,,,,,,,,,,,,,,
+player,oe:team:84e1da9e55480128662cfdfe79cb892,Liberty,LIB,2023,Split 1,oe:player:343b2b8ed97512673e3e1ef2705b0de,Cavalo,sup,,,,,,,,,,,,,,
+lineup,oe:team:84e1da9e55480128662cfdfe79cb892,Liberty,LIB,2023,Split 1,,,,lineup-1b5eebd64deed8dc,LIB-01,1,2,oe:player:63dc9ebe6cd781c9c9cecb54a6d7317,oe:player:3301849bddc2a457469a9af14302972,oe:player:751b4e6d134b3c4559459c7921fee5f,oe:player:bfcefaea6ffa0c9cdb2667f79b63750,oe:player:343b2b8ed97512673e3e1ef2705b0de,Kiari,Accez,Pilot,Juliera,Cavalo
+player,oe:team:ea65e6cc48a9be50fc5334369a5fca5,LØS,LØS,2023,Split 1,oe:player:be081b7482f9ea1ae2f0d13aafcf17f,HiRit,top,,,,,,,,,,,,,,
+player,oe:team:ea65e6cc48a9be50fc5334369a5fca5,LØS,LØS,2023,Split 1,oe:player:b23f665210a1914cab61bc8eba4c9ae,Ranger,jng,,,,,,,,,,,,,,
+player,oe:team:ea65e6cc48a9be50fc5334369a5fca5,LØS,LØS,2023,Split 1,oe:player:1d18fe2cdd43a72d46421ecfe81b599,Lava,mid,,,,,,,,,,,,,,
+player,oe:team:ea65e6cc48a9be50fc5334369a5fca5,LØS,LØS,2023,Split 1,oe:player:85c460fea615911b6075e0968b63db1,Netuno,bot,,,,,,,,,,,,,,
+player,oe:team:ea65e6cc48a9be50fc5334369a5fca5,LØS,LØS,2023,Split 1,oe:player:bea7bb8065c436ca956c978e30eb441,zay,sup,,,,,,,,,,,,,,
+lineup,oe:team:ea65e6cc48a9be50fc5334369a5fca5,LØS,LØS,2023,Split 1,,,,lineup-cc7378cb3d5d5400,LØS-01,1,5,oe:player:be081b7482f9ea1ae2f0d13aafcf17f,oe:player:b23f665210a1914cab61bc8eba4c9ae,oe:player:1d18fe2cdd43a72d46421ecfe81b599,oe:player:85c460fea615911b6075e0968b63db1,oe:player:bea7bb8065c436ca956c978e30eb441,HiRit,Ranger,Lava,Netuno,zay
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2023,Split 1,oe:player:6daafc30b010acda4ebc20b6785cbc0,Boal,top,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2023,Split 1,oe:player:778c6c3733d919a3b64885912be15a9,Aegis,jng,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2023,Split 1,oe:player:96ceea94211d7a4a5db83d378b16b86,Avenger,mid,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2023,Split 1,oe:player:1c010180887360e5d6ab967fd93693d,TitaN,bot,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2023,Split 1,oe:player:1d1600d15a68ab1a80348ee748ea1e3,scamber,sup,,,,,,,,,,,,,,
+lineup,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2023,Split 1,,,,lineup-444f7cac3e66d5c6,RC-01,1,1,oe:player:6daafc30b010acda4ebc20b6785cbc0,oe:player:778c6c3733d919a3b64885912be15a9,oe:player:96ceea94211d7a4a5db83d378b16b86,oe:player:1c010180887360e5d6ab967fd93693d,oe:player:1d1600d15a68ab1a80348ee748ea1e3,Boal,Aegis,Avenger,TitaN,scamber
+player,oe:team:b9e44c69c1a70fb35df9be96f9eafea,Vivo Keyd Stars,VKS,2023,Split 1,oe:player:d61d8a0b25028f787123bfff542d305,Guigo,top,,,,,,,,,,,,,,
+player,oe:team:b9e44c69c1a70fb35df9be96f9eafea,Vivo Keyd Stars,VKS,2023,Split 1,oe:player:5aa99e88083b40b8070e90f314e92ca,Grell,jng,,,,,,,,,,,,,,
+player,oe:team:b9e44c69c1a70fb35df9be96f9eafea,Vivo Keyd Stars,VKS,2023,Split 1,oe:player:dda07addeb137c860725f0c964dcbbf,Grevthar,mid,,,,,,,,,,,,,,
+player,oe:team:b9e44c69c1a70fb35df9be96f9eafea,Vivo Keyd Stars,VKS,2023,Split 1,oe:player:052ad9427bad4cf3f5b46c0cc5552bf,ST3PZ,bot,,,,,,,,,,,,,,
+player,oe:team:b9e44c69c1a70fb35df9be96f9eafea,Vivo Keyd Stars,VKS,2023,Split 1,oe:player:0a0e15e8e14edd7e4039cbf6f4fbfa4,Krastyel,sup,,,,,,,,,,,,,,
+lineup,oe:team:b9e44c69c1a70fb35df9be96f9eafea,Vivo Keyd Stars,VKS,2023,Split 1,,,,lineup-2ec73099c1c81d4b,VKS-01,1,1,oe:player:d61d8a0b25028f787123bfff542d305,oe:player:5aa99e88083b40b8070e90f314e92ca,oe:player:dda07addeb137c860725f0c964dcbbf,oe:player:052ad9427bad4cf3f5b46c0cc5552bf,oe:player:0a0e15e8e14edd7e4039cbf6f4fbfa4,Guigo,Grell,Grevthar,ST3PZ,Krastyel
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2023,Split 1,oe:player:840d0b77e71408d3da84e4f0cae4b73,Wizer,top,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2023,Split 1,oe:player:5e07433d52dbc7bbc4faaf9492dbd2c,CarioK,jng,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2023,Split 1,oe:player:127d6ec83484da3c8b39b70c70f1226,dyNquedo,mid,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2023,Split 1,oe:player:494fc60dffbb5da1caa2226baef0ec7,Bvoy,bot,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2023,Split 1,oe:player:b9f24e83531326204197015b2f43a93,Damage,sup,,,,,,,,,,,,,,
+lineup,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2023,Split 1,,,,lineup-163fe56b9871e8c5,PG-01,1,5,oe:player:840d0b77e71408d3da84e4f0cae4b73,oe:player:5e07433d52dbc7bbc4faaf9492dbd2c,oe:player:127d6ec83484da3c8b39b70c70f1226,oe:player:494fc60dffbb5da1caa2226baef0ec7,oe:player:b9f24e83531326204197015b2f43a93,Wizer,CarioK,dyNquedo,Bvoy,Damage
