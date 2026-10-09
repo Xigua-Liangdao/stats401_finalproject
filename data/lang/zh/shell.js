@@ -1,4 +1,6 @@
 export default {
+  "app.name": "峡谷天机",
+  "app.title": "峡谷天机 · Lineup Synergy",
   "nav.league": "赛区 / 赛事",
   "dataset.coverage": "数据覆盖：{start} 至 {end}",
   "dataset.unavailable": "暂不可用",

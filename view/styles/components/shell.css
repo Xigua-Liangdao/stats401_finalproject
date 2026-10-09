@@ -116,11 +116,20 @@
 }
 
 .site-header__brand-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
   font-family: var(--font-display);
   font-size: 1.28rem;
   letter-spacing: 0.14em;
   line-height: var(--display-leading);
   text-transform: uppercase;
+}
+
+.site-header__brand-mark {
+  width: 24px;
+  height: 24px;
+  flex: 0 0 24px;
 }
 
 .site-header__menu {

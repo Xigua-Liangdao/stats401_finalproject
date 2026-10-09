@@ -1,4 +1,6 @@
 export default {
+  "app.name": "Lineup Synergy",
+  "app.title": "Lineup Synergy · 峡谷天机",
   "nav.league": "League / event",
   "dataset.coverage": "Data coverage: {start} – {end}",
   "dataset.unavailable": "Unavailable",

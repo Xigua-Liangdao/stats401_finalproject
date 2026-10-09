@@ -87,7 +87,7 @@ Open `http://localhost:8769/view/`. The artifact uses processed mode and package
 
 The builder regenerates the release version for the copied registry, records hashes and sizes, and checks the resulting artifact against the [GitHub Pages 1 GB published-site limit](https://docs.github.com/en/pages/getting-started-with-github-pages/github-pages-limits). Building the artifact does not deploy it. See [site build details](../model/scripts/SITE_BUILD.md).
 
-The verified 509-combination artifact contains 3,563 compressed CSVs and 3,820 files overall, totaling **170,215,714 bytes (162.33 MiB)**. Its build report records each published file's SHA-256 and size. The current automated checks pass **61 Python tests and 34 frontend tests**; the legacy LPL 2025 CSV values are unchanged.
+The verified 509-combination artifact contains 3,563 compressed CSVs and 3,823 files overall, totaling **170,166,508 bytes (162.28 MiB)**. Its build report records each published file's SHA-256 and size. The current automated checks pass **62 Python tests and 42 frontend tests**; the legacy LPL 2025 CSV values are unchanged.
 
 HTTP smoke checks cover LPL 2025, LEC 2025/2026 and DCup 2016, including all seven compressed tables, detail data, pair/affinity values and isolated caches. Chrome checks confirm league/year switching, the player timeline, and the insufficient-history notice with null model values. All local runtime resources and referenced media files resolve in the artifact.
 

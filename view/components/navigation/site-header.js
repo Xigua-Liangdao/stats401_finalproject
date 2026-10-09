@@ -4,6 +4,9 @@ import { currentLanguage, languageChoices, t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
 import { createStatusChip } from '../layout/status-chip.js';
 
+const BRAND_MARK = new URL('../../../data/img/site/favicon.svg', import.meta.url);
+BRAND_MARK.search = new URL(import.meta.url).search;
+
 const LINKS = [
   { get href() { return href.home; }, key: 'nav.home', names: ['home'] },
   { get href() { return href.players; }, key: 'nav.catalogue', names: ['players', 'player', 'team', 'lineup'] },
@@ -101,7 +104,10 @@ export function renderSiteHeader(target, routeName, { leagues = [], datasets = [
     h('div', { class: 'site-header__brand' }, [
       h('span', { class: 'coord' }, [t('app.kicker', { league: selection?.league, year: selection?.year })]),
       h('div', { class: 'site-header__title-row' }, [
-        h('a', { class: 'site-header__brand-name', href: href.home }, [t('home.title')]),
+        h('a', { class: 'site-header__brand-name', href: href.home, 'aria-label': t('app.title') }, [
+          h('img', { class: 'site-header__brand-mark', src: BRAND_MARK.href, width: 24, height: 24, alt: '', 'aria-hidden': 'true' }),
+          h('span', {}, [t('app.name')]),
+        ]),
         menu,
       ]),
     ]),

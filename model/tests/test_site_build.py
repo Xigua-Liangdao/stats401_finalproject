@@ -81,6 +81,30 @@ class SiteBuildTests(unittest.TestCase):
             self.assertEqual(gzip.decompress((output / 'data/processed/lpl/2025/players.csv.gz').read_bytes()),
                              b'player_id,score\np1,0.2\n')
 
+    def test_changed_icon_invalidates_its_url_and_the_copied_release(self):
+        with tempfile.TemporaryDirectory() as temp:
+            base = Path(temp)
+            root = self.fixture(base)
+            icon = root / 'data/img/site/favicon.svg'
+            icon.parent.mkdir(parents=True)
+            icon.write_text('<svg><path d="M0 0H1"/></svg>')
+            index = root / 'view/index.html'
+            index.write_text(index.read_text().replace('  </head>',
+                '    <link rel="icon" href="../data/img/site/favicon.svg" type="image/svg+xml" />\n  </head>'))
+            first = version_frontend.build(root)
+            self.assertIn(f'favicon.svg?v={first["version"]}', index.read_text())
+            icon.write_text('<svg><path d="M0 0H2"/></svg>')
+            with self.assertRaisesRegex(SystemExit, 'Stale browser release'):
+                version_frontend.build(root, check=True)
+            second = version_frontend.build(root)
+            self.assertNotEqual(first['version'], second['version'])
+            self.assertIn(f'favicon.svg?v={second["version"]}', index.read_text())
+            output = base / 'site'
+            built = build_site.build(root, output)
+            self.assertEqual(icon.read_bytes(), (output / 'data/img/site/favicon.svg').read_bytes())
+            self.assertIn(f'favicon.svg?v={built["browser_release"]["version"]}',
+                          (output / 'view/index.html').read_text())
+
     def test_missing_csv_preserves_previous_complete_output(self):
         with tempfile.TemporaryDirectory() as temp:
             base = Path(temp)

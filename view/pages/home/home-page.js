@@ -5,6 +5,7 @@ import { t } from '../../utils/i18n.js';
 import { formatCount, formatFixed, formatImpact, formatPercent, formatRole } from '../../utils/formatting.js';
 import { href } from '../../utils/navigation.js';
 import { getSelectedDataset } from '../../utils/season.js';
+import { RANKING_ROLES, RANKING_MIN_GAMES, RANKING_MIN_DAYS, rankPlayersByRole, rankTeamsByDamage } from './home-ranking.js';
 
 const TOP_TEAM_COUNT = 6;
 
@@ -26,28 +27,6 @@ function forSeason(catalog, season) {
     players: catalog.players.filter((player) => String(player.season) === String(season) && teamIds.has(player.teamId)),
     lineups: catalog.lineups.filter((lineup) => teamIds.has(lineup.teamId)),
   };
-}
-
-function topPlayer(players) {
-  return [...players]
-    .filter((player) => player.stats?.eligible && player.stats.win_rate != null)
-    .sort((a, b) => {
-      const win = (b.stats.win_rate ?? -1) - (a.stats.win_rate ?? -1);
-      if (win) return win;
-      const games = (b.stats.n_games ?? -1) - (a.stats.n_games ?? -1);
-      if (games) return games;
-      return a.name.localeCompare(b.name);
-    })[0] ?? null;
-}
-
-function rankedTeams(teams) {
-  return [...teams].sort((a, b) => {
-    const win = (b.stats?.win_rate ?? -1) - (a.stats?.win_rate ?? -1);
-    if (win) return win;
-    const games = (b.stats?.n_games ?? -1) - (a.stats?.n_games ?? -1);
-    if (games) return games;
-    return a.name.localeCompare(b.name);
-  });
 }
 
 function shareText(part, whole, suffix) {
@@ -92,7 +71,9 @@ export function championTeam(teams, dataset) {
   if (!champion) return null;
   const id = typeof champion === 'object' ? champion.team_id : null;
   const name = typeof champion === 'string' ? champion : champion.name;
-  return teams.find((team) => (id && team.id === id) || (name && team.sourceName === name)) ?? null;
+  // If authoritative metadata supplies an ID, a mismatched name cannot
+  // silently select another team. No model score or win rate infers a title.
+  return teams.find((team) => id ? team.id === id : name && team.sourceName === name) ?? null;
 }
 
 function createChampion(team) {
@@ -116,34 +97,58 @@ function createChampion(team) {
 function playerFacts(player) {
   const stats = player.stats ?? {};
   return [
-    [t('common.winRate'), formatPercent(stats.win_rate)],
+    [t('home.damageScore'), formatImpact(stats.shrunk_impact)],
     [t('home.evaluated'), formatCount(stats.n_games)],
+    [t('home.matchDays'), formatCount(stats.n_days)],
     [t('common.dpm'), formatFixed(stats.mean_dpm, 0)],
-    [t('common.goldShare'), formatPercent(stats.mean_gold_share)],
-    [t('common.shrunkImpact'), formatImpact(stats.shrunk_impact)],
+    [t('common.winRate'), formatPercent(stats.win_rate)],
   ];
 }
 
-function createTopPlayer(player) {
-  if (!player) return null;
+function createPlayerLeaderCard(player) {
   const playerHref = href.player(player.id, player.teamId, player.season);
   const teamName = player.team?.name;
-  return h('section', { class: 'home-player' }, [
-    h('h2', { class: 'section-block__title' }, [t('home.topPlayer')]),
-    h('article', { class: 'home-player__card' }, [
-      h('a', { class: 'home-player__photo', href: playerHref }, [
-        createPlayerPortrait(player),
-      ]),
-      h('div', { class: 'home-player__copy' }, [
-        h('a', { class: 'home-player__name display', href: playerHref }, [player.name]),
-        h('p', { class: 'home-player__team' }, [
-          [teamName, formatRole(player.role)].filter(Boolean).join(' · '),
-        ]),
-      ]),
-      h('dl', { class: 'home-player__facts' }, playerFacts(player).map(([label, value]) => (
-        h('div', {}, [h('dd', {}, [value]), h('dt', {}, [label])])
-      ))),
+  return h('article', { class: 'home-player__card' }, [
+    h('a', { class: 'home-player__photo', href: playerHref }, [
+      createPlayerPortrait(player),
     ]),
+    h('div', { class: 'home-player__copy' }, [
+      h('a', { class: 'home-player__name display', href: playerHref }, [player.name]),
+      h('p', { class: 'home-player__team' }, [
+        [teamName, formatRole(player.role)].filter(Boolean).join(' · '),
+      ]),
+    ]),
+    h('dl', { class: 'home-player__facts' }, playerFacts(player).map(([label, value]) => (
+      h('div', {}, [h('dd', {}, [value]), h('dt', {}, [label])])
+    ))),
+  ]);
+}
+
+export function createRoleLeaders(players) {
+  const rankings = new Map(RANKING_ROLES.map((role) => [role, rankPlayersByRole(players, role)]));
+  const role = RANKING_ROLES.find((key) => rankings.get(key).length) ?? RANKING_ROLES[0];
+  const content = h('div', { 'aria-live': 'polite', 'aria-atomic': 'true' });
+  const select = h('select', { class: 'chart-select', 'aria-label': t('home.rankingRole') },
+    RANKING_ROLES.map((key) => h('option', { value: key }, [formatRole(key)])));
+  select.value = role;
+  function update() {
+    const leader = rankings.get(select.value)?.[0];
+    content.replaceChildren(leader ? createPlayerLeaderCard(leader)
+      : h('p', { class: 'empty-state' }, [t('home.noRoleRanking', {
+        role: formatRole(select.value), games: RANKING_MIN_GAMES, days: RANKING_MIN_DAYS,
+      })]));
+  }
+  select.addEventListener('change', update);
+  update();
+  return h('section', { class: 'home-player' }, [
+    h('div', { class: 'home-teams__head' }, [
+      h('h2', { class: 'section-block__title' }, [t('home.topPlayer')]),
+      h('label', { class: 'chart-control' }, [t('home.rankingRole'), select]),
+    ]),
+    h('p', { class: 'home-sub' }, [t('home.playerRankingNote', {
+      games: RANKING_MIN_GAMES, days: RANKING_MIN_DAYS,
+    })]),
+    content,
   ]);
 }
 
@@ -154,8 +159,9 @@ function createTeamCard(team, index) {
     h('span', { class: 'home-team__name' }, [team.name]),
     h('span', { class: 'home-team__meta' }, [
       t('home.teamMeta', {
-        rate: formatPercent(team.stats?.win_rate),
+        score: formatImpact(team.stats?.shrunk_impact),
         count: formatCount(team.stats?.n_games),
+        days: formatCount(team.stats?.n_days),
       }),
     ]),
   ]);
@@ -166,7 +172,7 @@ export async function renderHomePage(target) {
   const dataset = catalog.dataset ?? getSelectedDataset();
   const season = dataset?.year ?? catalog.season;
   const view = forSeason(catalog, season);
-  const ranked = rankedTeams(view.teams);
+  const ranked = rankTeamsByDamage(view.teams);
 
   target.append(
     h('div', { class: 'home' }, [
@@ -194,12 +200,18 @@ export async function renderHomePage(target) {
           ])
         ))),
       ]),
-      createTopPlayer(topPlayer(view.players)),
+      createRoleLeaders(view.players),
       h('section', { class: 'home-teams' }, [
         h('div', { class: 'home-teams__head' }, [
           h('h2', { class: 'section-block__title' }, [t('home.topTeams')]),
         ]),
-        h('div', { class: 'home-teams__row' }, ranked.slice(0, TOP_TEAM_COUNT).map(createTeamCard)),
+        h('p', { class: 'home-sub' }, [t('home.teamRankingNote', {
+          games: RANKING_MIN_GAMES, days: RANKING_MIN_DAYS,
+        })]),
+        ranked.length
+          ? h('div', { class: 'home-teams__row' }, ranked.slice(0, TOP_TEAM_COUNT).map(createTeamCard))
+          : h('p', { class: 'empty-state' }, [t('home.noTeamRanking')]),
+        h('p', { class: 'home-overview__note' }, [t('home.rankingInterpretation')]),
         h('a', { class: 'home-more', href: href.players }, [t('nav.seeMore')]),
       ]),
     ]),

@@ -115,6 +115,8 @@ def build_html(root=ROOT):
     view, lang = root / "view", root / "data/lang"
     modules = frontend_modules(root)
     data_inputs = [root / 'data/img/media.json', root / 'data/datasets.json']
+    data_inputs.extend(path for path in (root / 'data/img/site').glob('*')
+                       if path.suffix.lower() in {'.png', '.svg', '.ico', '.webp'})
     inputs = sorted(modules + list((view / "styles").rglob("*.css")) + [path for path in data_inputs if path.is_file()])
     digest = hashlib.sha256()
     for path in inputs:
@@ -144,6 +146,8 @@ def build_html(root=ROOT):
     html = re.sub(r'(href="\./styles/[^"?]+\.css)(?:\?[^"\s]*)?("\s*/>)',
                   lambda match: f'{match[1]}?v={version}{match[2]}', html)
     html = re.sub(r'(src="\./app\.js)(?:\?[^"\s]*)?(")',
+                  lambda match: f'{match[1]}?v={version}{match[2]}', html)
+    html = re.sub(r'(href="\.\./data/img/site/[^"?]+\.(?:png|svg|ico|webp))(?:\?[^"\s]*)?(")',
                   lambda match: f'{match[1]}?v={version}{match[2]}', html)
     return html, version, len(modules)
 

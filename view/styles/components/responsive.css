@@ -1,4 +1,15 @@
 @media (max-width: 980px) {
+  .league-select,
+  .season-select,
+  .language-select,
+  .chart-select,
+  .search-select__trigger,
+  .search-select__option,
+  .search-select__input,
+  .compare-mode .radar-zoom-btn {
+    min-height: 44px;
+  }
+
   .stat-grid {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
@@ -114,8 +125,24 @@
   }
 
   .site-header__status {
-    flex-wrap: wrap;
-    row-gap: 0.35rem;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(4rem, auto) minmax(5rem, auto);
+    gap: 0.35rem 0.55rem;
+  }
+
+  .site-header__status .league-select,
+  .site-header__status .season-select,
+  .site-header__status .language-select {
+    width: 100%;
+  }
+
+  .site-header__status .status-chip {
+    justify-self: start;
+  }
+
+  .site-header__status .dataset-coverage {
+    grid-column: 1 / -1;
+    overflow-wrap: anywhere;
   }
 
   .league-select,
@@ -222,6 +249,11 @@
   .home,
   .page {
     padding-top: 0.85rem;
+  }
+
+  .home-player > .home-teams__head {
+    flex-direction: column;
+    align-items: stretch;
   }
 
   .team-block__header {

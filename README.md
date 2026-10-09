@@ -1,6 +1,8 @@
-# League of Legends Lineup Analysis
+# 峡谷天机 · Lineup Synergy
 
 The current application supports registry-driven **league / event × season-year** selection. Python builds independent data bundles from pinned Oracle’s Elixir annual sources; the native JavaScript/D3 site switches the catalogue, profiles, charts and comparison view together.
+
+Homepage rankings describe shrunk, context-adjusted damage: players are compared within their role and teams must satisfy the same 10 evaluated games / 3 match days threshold. The ranking is not a measure of overall strength or a way to infer a champion. The bilingual interface, original five-node site mark and touch-friendly controls work across desktop, tablet and phone layouts.
 
 See [dataset expansion and reproduction](docs/datasets.md) for source coverage, directory structure, generation commands and integration with `xuye_ua`. The 2014–2026 source inventory is pinned in [`data/source_inventory.json`](data/source_inventory.json); actual ready/unavailable combinations and date coverage are recorded in [`data/datasets.json`](data/datasets.json). The retrieved 2026 snapshot currently ends on **July 28, 2026**.
 
