@@ -1,0 +1,49 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:68d9c4b067b3b6d5f3d5e4b1adc9f6e,FunPlus Phoenix Blaze,FPB,2019,Spring,oe:player:0a729115d81802a89227fef9ad4b5f5,xiao7,top,,,,,,,,,,,,,,
+player,oe:team:68d9c4b067b3b6d5f3d5e4b1adc9f6e,FunPlus Phoenix Blaze,FPB,2019,Spring,oe:player:4284047941a7e9479e80242c7e3d627,Mingren,jng,,,,,,,,,,,,,,
+player,oe:team:68d9c4b067b3b6d5f3d5e4b1adc9f6e,FunPlus Phoenix Blaze,FPB,2019,Spring,oe:player:832cfc3b2f16046218e4f35fe512281,Cepted,mid,,,,,,,,,,,,,,
+player,oe:team:68d9c4b067b3b6d5f3d5e4b1adc9f6e,FunPlus Phoenix Blaze,FPB,2019,Spring,oe:player:18b20be1fb68627c2144394361a8e2b,Savior,bot,,,,,,,,,,,,,,
+player,oe:team:68d9c4b067b3b6d5f3d5e4b1adc9f6e,FunPlus Phoenix Blaze,FPB,2019,Spring,oe:player:615b1f347cdf6bc6df1883ed9e18496,ppgod,sup,,,,,,,,,,,,,,
+lineup,oe:team:68d9c4b067b3b6d5f3d5e4b1adc9f6e,FunPlus Phoenix Blaze,FPB,2019,Spring,,,,lineup-d692800d73080ccf,FPB-01,1,2,oe:player:0a729115d81802a89227fef9ad4b5f5,oe:player:4284047941a7e9479e80242c7e3d627,oe:player:832cfc3b2f16046218e4f35fe512281,oe:player:18b20be1fb68627c2144394361a8e2b,oe:player:615b1f347cdf6bc6df1883ed9e18496,xiao7,Mingren,Cepted,Savior,ppgod
+player,oe:team:ae2a2737a8d8d2b8e396dabae0e149b,Joy Dream,JD,2019,Spring,oe:player:e5fd1bcc37759cfc7097edd442e811a,Recall,top,,,,,,,,,,,,,,
+player,oe:team:ae2a2737a8d8d2b8e396dabae0e149b,Joy Dream,JD,2019,Spring,oe:player:82fc00b9091ece48d14b2c42dfd541e,xiaohan,jng,,,,,,,,,,,,,,
+player,oe:team:ae2a2737a8d8d2b8e396dabae0e149b,Joy Dream,JD,2019,Spring,oe:player:de4f13489037978e8fa92e888eeaad0,clx,mid,,,,,,,,,,,,,,
+player,oe:team:ae2a2737a8d8d2b8e396dabae0e149b,Joy Dream,JD,2019,Spring,oe:player:c60cc87173e9097f5bb8c407e787fd9,Mine,bot,,,,,,,,,,,,,,
+player,oe:team:ae2a2737a8d8d2b8e396dabae0e149b,Joy Dream,JD,2019,Spring,oe:player:03b50ebd9393dbcdcd26fe529b40803,Xiamu,sup,,,,,,,,,,,,,,
+lineup,oe:team:ae2a2737a8d8d2b8e396dabae0e149b,Joy Dream,JD,2019,Spring,,,,lineup-6e3d65bd6e329d7e,JD-01,1,3,oe:player:e5fd1bcc37759cfc7097edd442e811a,oe:player:82fc00b9091ece48d14b2c42dfd541e,oe:player:de4f13489037978e8fa92e888eeaad0,oe:player:c60cc87173e9097f5bb8c407e787fd9,oe:player:03b50ebd9393dbcdcd26fe529b40803,Recall,xiaohan,clx,Mine,Xiamu
+player,oe:team:c2cbbea762044e35a5915b171125398,King of Future,KOF,2019,Spring,oe:player:d7a920ad9c1b5c3d23cbf211d9f4b85,AK,top,,,,,,,,,,,,,,
+player,oe:team:c2cbbea762044e35a5915b171125398,King of Future,KOF,2019,Spring,oe:player:3faae62fb907ad7cbcf2167beb8b2c7,Aki,jng,,,,,,,,,,,,,,
+player,oe:team:c2cbbea762044e35a5915b171125398,King of Future,KOF,2019,Spring,oe:player:e276ad34ca0a1e7bb6230f32f5d1eb6,mantouz,mid,,,,,,,,,,,,,,
+player,oe:team:c2cbbea762044e35a5915b171125398,King of Future,KOF,2019,Spring,oe:player:1c42d9266c8b391c7870b7a39f25a12,Photic,bot,,,,,,,,,,,,,,
+player,oe:team:c2cbbea762044e35a5915b171125398,King of Future,KOF,2019,Spring,oe:player:ffd9bb08aa5f682fc46f59c6f89df6e,yuyanjia,sup,,,,,,,,,,,,,,
+lineup,oe:team:c2cbbea762044e35a5915b171125398,King of Future,KOF,2019,Spring,,,,lineup-b545d14a95b79673,KOF-01,1,2,oe:player:d7a920ad9c1b5c3d23cbf211d9f4b85,oe:player:3faae62fb907ad7cbcf2167beb8b2c7,oe:player:e276ad34ca0a1e7bb6230f32f5d1eb6,oe:player:1c42d9266c8b391c7870b7a39f25a12,oe:player:ffd9bb08aa5f682fc46f59c6f89df6e,AK,Aki,mantouz,Photic,yuyanjia
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2019,Spring,oe:player:0d9b0a3b3a93a8f759c9d8ac8eef97c,Breathe,top,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2019,Spring,oe:player:6a94923a8035b5fdaa453a0b3900b37,Beichen,jng,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2019,Spring,oe:player:9f36c3a637fc706ed21cd6ed903fe67,Guoguo,mid,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2019,Spring,oe:player:0d332239515c0d89c555a719bf86b50,Eric,bot,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2019,Spring,oe:player:7974ca541c1c0eb484ddbee884c2563,Bafang,sup,,,,,,,,,,,,,,
+lineup,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2019,Spring,,,,lineup-13d9eea87e6165ba,OMGA-01,1,5,oe:player:0d9b0a3b3a93a8f759c9d8ac8eef97c,oe:player:6a94923a8035b5fdaa453a0b3900b37,oe:player:9f36c3a637fc706ed21cd6ed903fe67,oe:player:0d332239515c0d89c555a719bf86b50,oe:player:7974ca541c1c0eb484ddbee884c2563,Breathe,Beichen,Guoguo,Eric,Bafang
+player,oe:team:9eb54fd65f627fbe91f9452fee87632,Snake WuDu,SW,2019,Spring,oe:player:cc5d90569e1c8313c2b1c2aab140117,September,top,,,,,,,,,,,,,,
+player,oe:team:9eb54fd65f627fbe91f9452fee87632,Snake WuDu,SW,2019,Spring,name-player-d72bd85e71031dbd,unknown player,jng,,,,,,,,,,,,,,
+player,oe:team:9eb54fd65f627fbe91f9452fee87632,Snake WuDu,SW,2019,Spring,oe:player:42dfec2dd289efa7e86d9373f323834,GYX,mid,,,,,,,,,,,,,,
+player,oe:team:9eb54fd65f627fbe91f9452fee87632,Snake WuDu,SW,2019,Spring,oe:player:3c4d21c7addb20fea3fec30418ac3d3,Light,bot,,,,,,,,,,,,,,
+player,oe:team:9eb54fd65f627fbe91f9452fee87632,Snake WuDu,SW,2019,Spring,oe:player:060faefaa7099fc34fe4456326a92a9,Ke,sup,,,,,,,,,,,,,,
+lineup,oe:team:9eb54fd65f627fbe91f9452fee87632,Snake WuDu,SW,2019,Spring,,,,lineup-c4dbf6562b7bd892,SW-01,1,3,oe:player:cc5d90569e1c8313c2b1c2aab140117,name-player-d72bd85e71031dbd,oe:player:42dfec2dd289efa7e86d9373f323834,oe:player:3c4d21c7addb20fea3fec30418ac3d3,oe:player:060faefaa7099fc34fe4456326a92a9,September,unknown player,GYX,Light,Ke
+player,oe:team:31b35dcae7e5d01be2e407b0abe6a23,Suning-S,SUN,2019,Spring,oe:player:fb66ef5885b4be9323905b821dc3a42,Bin,top,,,,,,,,,,,,,,
+player,oe:team:31b35dcae7e5d01be2e407b0abe6a23,Suning-S,SUN,2019,Spring,oe:player:4351cfebe4b61d8aa5efa1d02071000,View,jng,,,,,,,,,,,,,,
+player,oe:team:31b35dcae7e5d01be2e407b0abe6a23,Suning-S,SUN,2019,Spring,oe:player:c2bfa1217119b469ffc2c102c603190,lilac,mid,,,,,,,,,,,,,,
+player,oe:team:31b35dcae7e5d01be2e407b0abe6a23,Suning-S,SUN,2019,Spring,oe:player:9085f886f20abbf9e30b4ddcdb7de2a,Shark,bot,,,,,,,,,,,,,,
+player,oe:team:31b35dcae7e5d01be2e407b0abe6a23,Suning-S,SUN,2019,Spring,oe:player:0386e53be08831a5b700e563ae05ee6,Cruel,sup,,,,,,,,,,,,,,
+lineup,oe:team:31b35dcae7e5d01be2e407b0abe6a23,Suning-S,SUN,2019,Spring,,,,lineup-4a43bfad8d16b099,SUN-01,1,2,oe:player:fb66ef5885b4be9323905b821dc3a42,oe:player:4351cfebe4b61d8aa5efa1d02071000,oe:player:c2bfa1217119b469ffc2c102c603190,oe:player:9085f886f20abbf9e30b4ddcdb7de2a,oe:player:0386e53be08831a5b700e563ae05ee6,Bin,View,lilac,Shark,Cruel
+player,oe:team:d133a1d79e3a76fd1db258c7c06bb7b,Triumphant Song Gaming,TSG,2019,Spring,oe:player:03c2e7e41ffc181a4e84080b4710e81,New,top,,,,,,,,,,,,,,
+player,oe:team:d133a1d79e3a76fd1db258c7c06bb7b,Triumphant Song Gaming,TSG,2019,Spring,oe:player:10dadfb1012851c9bc9bce1410c054e,Sixsix9,jng,,,,,,,,,,,,,,
+player,oe:team:d133a1d79e3a76fd1db258c7c06bb7b,Triumphant Song Gaming,TSG,2019,Spring,oe:player:4477c824d4c87127542210854d912a1,irma,mid,,,,,,,,,,,,,,
+player,oe:team:d133a1d79e3a76fd1db258c7c06bb7b,Triumphant Song Gaming,TSG,2019,Spring,oe:player:5dc4c7def089c1fb4d6adb1fc5137bf,XuanLv,bot,,,,,,,,,,,,,,
+player,oe:team:d133a1d79e3a76fd1db258c7c06bb7b,Triumphant Song Gaming,TSG,2019,Spring,oe:player:958adb57686c2fdec5796398de5f317,1874,sup,,,,,,,,,,,,,,
+lineup,oe:team:d133a1d79e3a76fd1db258c7c06bb7b,Triumphant Song Gaming,TSG,2019,Spring,,,,lineup-d2e9eebf1d9bc255,TSG-01,1,3,oe:player:03c2e7e41ffc181a4e84080b4710e81,oe:player:10dadfb1012851c9bc9bce1410c054e,oe:player:4477c824d4c87127542210854d912a1,oe:player:5dc4c7def089c1fb4d6adb1fc5137bf,oe:player:958adb57686c2fdec5796398de5f317,New,Sixsix9,irma,XuanLv,1874
+player,oe:team:1486bbe432b1153d9a83ff6e75d6c90,Young Miracles,YM,2019,Spring,oe:player:36b366bf0f6e2477cc89b02adb05309,CJJ,top,,,,,,,,,,,,,,
+player,oe:team:1486bbe432b1153d9a83ff6e75d6c90,Young Miracles,YM,2019,Spring,oe:player:89216834aae8b891cbd6dbad9087f65,XLB,jng,,,,,,,,,,,,,,
+player,oe:team:1486bbe432b1153d9a83ff6e75d6c90,Young Miracles,YM,2019,Spring,oe:player:839baadfb724e06eac3b12a431dd835,zhuang,mid,,,,,,,,,,,,,,
+player,oe:team:1486bbe432b1153d9a83ff6e75d6c90,Young Miracles,YM,2019,Spring,oe:player:97760e37e9897cb8f89ade45060ae78,pqy,bot,,,,,,,,,,,,,,
+player,oe:team:1486bbe432b1153d9a83ff6e75d6c90,Young Miracles,YM,2019,Spring,oe:player:a8c9c13bba986f37048123eb1f40539,Alu,sup,,,,,,,,,,,,,,
+lineup,oe:team:1486bbe432b1153d9a83ff6e75d6c90,Young Miracles,YM,2019,Spring,,,,lineup-f9b134652ea4e758,YM-01,1,16,oe:player:36b366bf0f6e2477cc89b02adb05309,oe:player:89216834aae8b891cbd6dbad9087f65,oe:player:839baadfb724e06eac3b12a431dd835,oe:player:97760e37e9897cb8f89ade45060ae78,oe:player:a8c9c13bba986f37048123eb1f40539,CJJ,XLB,zhuang,pqy,Alu

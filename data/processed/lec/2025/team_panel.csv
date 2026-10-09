@@ -1,0 +1,88 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2025,Spring,oe:player:be9758f87345bcce47970a8f17b3c07,Oscarinin,top,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2025,Spring,oe:player:390ca7b6b38d552363eba1b5b54ff18,Razork,jng,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2025,Spring,oe:player:edf8b064c096691e539b7e2a3e28179,Humanoid,mid,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2025,Spring,oe:player:4e0ee55680fa265c49e158f85e26650,Poby,mid,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2025,Spring,oe:player:fe4329cec43193c425eb28a4a4b304a,Upset,bot,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2025,Spring,oe:player:9d5052e9f9f4a63835f738441a3b1f6,Mikyx,sup,,,,,,,,,,,,,,
+lineup,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2025,Spring,,,,lineup-ca7c7c06b81ff6d5,FNA-01,1,57,oe:player:be9758f87345bcce47970a8f17b3c07,oe:player:390ca7b6b38d552363eba1b5b54ff18,oe:player:edf8b064c096691e539b7e2a3e28179,oe:player:fe4329cec43193c425eb28a4a4b304a,oe:player:9d5052e9f9f4a63835f738441a3b1f6,Oscarinin,Razork,Humanoid,Upset,Mikyx
+lineup,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2025,Spring,,,,lineup-234c1b3564a3340a,FNA-02,2,23,oe:player:be9758f87345bcce47970a8f17b3c07,oe:player:390ca7b6b38d552363eba1b5b54ff18,oe:player:4e0ee55680fa265c49e158f85e26650,oe:player:fe4329cec43193c425eb28a4a4b304a,oe:player:9d5052e9f9f4a63835f738441a3b1f6,Oscarinin,Razork,Poby,Upset,Mikyx
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2025,Spring,oe:player:84bff3a326833c7c9181c698f676878,BrokenBlade,top,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2025,Spring,oe:player:ab15060e5225b51592cd04b3aed1e09,SkewMond,jng,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2025,Spring,oe:player:55dd587cdc4a278be6a5c37f9e539de,Caps,mid,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2025,Spring,oe:player:c62a5235ad6bc113a1e64eb0e9aa8c8,Hans Sama,bot,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2025,Spring,oe:player:bb6ac5763c6576e104a7a2f59eb4ddf,Labrov,sup,,,,,,,,,,,,,,
+lineup,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2025,Spring,,,,lineup-8cd3a51883d737cf,GE-01,1,73,oe:player:84bff3a326833c7c9181c698f676878,oe:player:ab15060e5225b51592cd04b3aed1e09,oe:player:55dd587cdc4a278be6a5c37f9e539de,oe:player:c62a5235ad6bc113a1e64eb0e9aa8c8,oe:player:bb6ac5763c6576e104a7a2f59eb4ddf,BrokenBlade,SkewMond,Caps,Hans Sama,Labrov
+player,oe:team:6cd05f0ac20bfb965a59dc8bcc4f184,GiantX,GIA,2025,Spring,oe:player:eeec6c7a9d2b475c23650b202208b89,Lot,top,,,,,,,,,,,,,,
+player,oe:team:6cd05f0ac20bfb965a59dc8bcc4f184,GiantX,GIA,2025,Spring,oe:player:96da046ebab4cac9bcba2c9afd85999,Closer,jng,,,,,,,,,,,,,,
+player,oe:team:6cd05f0ac20bfb965a59dc8bcc4f184,GiantX,GIA,2025,Spring,oe:player:5450c7731de19c131ce20ea74933cc2,ISMA,jng,,,,,,,,,,,,,,
+player,oe:team:6cd05f0ac20bfb965a59dc8bcc4f184,GiantX,GIA,2025,Spring,oe:player:204746c853a12888ad72d8035cdf8c7,Jackies,mid,,,,,,,,,,,,,,
+player,oe:team:6cd05f0ac20bfb965a59dc8bcc4f184,GiantX,GIA,2025,Spring,oe:player:95d286ec0a5d750d09e848a4e630c56,Noah,bot,,,,,,,,,,,,,,
+player,oe:team:6cd05f0ac20bfb965a59dc8bcc4f184,GiantX,GIA,2025,Spring,oe:player:054e5f8aeb885db6713f4a3e7328efc,Jun,sup,,,,,,,,,,,,,,
+lineup,oe:team:6cd05f0ac20bfb965a59dc8bcc4f184,GiantX,GIA,2025,Spring,,,,lineup-9e7f07fc8966455d,GIA-01,1,41,oe:player:eeec6c7a9d2b475c23650b202208b89,oe:player:5450c7731de19c131ce20ea74933cc2,oe:player:204746c853a12888ad72d8035cdf8c7,oe:player:95d286ec0a5d750d09e848a4e630c56,oe:player:054e5f8aeb885db6713f4a3e7328efc,Lot,ISMA,Jackies,Noah,Jun
+lineup,oe:team:6cd05f0ac20bfb965a59dc8bcc4f184,GiantX,GIA,2025,Spring,,,,lineup-93006dd0e34b0415,GIA-02,2,16,oe:player:eeec6c7a9d2b475c23650b202208b89,oe:player:96da046ebab4cac9bcba2c9afd85999,oe:player:204746c853a12888ad72d8035cdf8c7,oe:player:95d286ec0a5d750d09e848a4e630c56,oe:player:054e5f8aeb885db6713f4a3e7328efc,Lot,Closer,Jackies,Noah,Jun
+player,oe:team:f3aa9bbd924ce3af42ac53f8326bc7c,Karmine Corp,KC,2025,Spring,oe:player:7577c239c73fa5f3011cd7b5503e75e,Canna,top,,,,,,,,,,,,,,
+player,oe:team:f3aa9bbd924ce3af42ac53f8326bc7c,Karmine Corp,KC,2025,Spring,oe:player:4203fc46c4c6333e9bfa9d0a8618677,Yike,jng,,,,,,,,,,,,,,
+player,oe:team:f3aa9bbd924ce3af42ac53f8326bc7c,Karmine Corp,KC,2025,Spring,oe:player:367fecc4cb53a8234abbd9f283b7997,Vladi,mid,,,,,,,,,,,,,,
+player,oe:team:f3aa9bbd924ce3af42ac53f8326bc7c,Karmine Corp,KC,2025,Spring,oe:player:e2af2b779499aa25ab9a9c10c9a5ffd,Caliste,bot,,,,,,,,,,,,,,
+player,oe:team:f3aa9bbd924ce3af42ac53f8326bc7c,Karmine Corp,KC,2025,Spring,oe:player:eaf899c6268995f9b1e40d1932c6888,Targamas,sup,,,,,,,,,,,,,,
+lineup,oe:team:f3aa9bbd924ce3af42ac53f8326bc7c,Karmine Corp,KC,2025,Spring,,,,lineup-ac43a2adc38ad3f2,KC-01,1,87,oe:player:7577c239c73fa5f3011cd7b5503e75e,oe:player:4203fc46c4c6333e9bfa9d0a8618677,oe:player:367fecc4cb53a8234abbd9f283b7997,oe:player:e2af2b779499aa25ab9a9c10c9a5ffd,oe:player:eaf899c6268995f9b1e40d1932c6888,Canna,Yike,Vladi,Caliste,Targamas
+player,oe:team:4acc40654379b4da680be1bd3129dfa,Movistar KOI,MK,2025,Spring,oe:player:ede24d5e0911d7a4f6ec514a67802ff,Myrwn,top,,,,,,,,,,,,,,
+player,oe:team:4acc40654379b4da680be1bd3129dfa,Movistar KOI,MK,2025,Spring,oe:player:8a8f18e4b7d0f30c19c5fb99a526951,Elyoya,jng,,,,,,,,,,,,,,
+player,oe:team:4acc40654379b4da680be1bd3129dfa,Movistar KOI,MK,2025,Spring,oe:player:83eb62484689106807fcf5ad55b5479,Jojopyun,mid,,,,,,,,,,,,,,
+player,oe:team:4acc40654379b4da680be1bd3129dfa,Movistar KOI,MK,2025,Spring,oe:player:1223a0ed2bfab9b714c72d965df8133,Supa,bot,,,,,,,,,,,,,,
+player,oe:team:4acc40654379b4da680be1bd3129dfa,Movistar KOI,MK,2025,Spring,oe:player:f5bf9bd732b85e4dcab5121e4769ae4,Alvaro,sup,,,,,,,,,,,,,,
+lineup,oe:team:4acc40654379b4da680be1bd3129dfa,Movistar KOI,MK,2025,Spring,,,,lineup-ebb742e01e535b8f,MK-01,1,85,oe:player:ede24d5e0911d7a4f6ec514a67802ff,oe:player:8a8f18e4b7d0f30c19c5fb99a526951,oe:player:83eb62484689106807fcf5ad55b5479,oe:player:1223a0ed2bfab9b714c72d965df8133,oe:player:f5bf9bd732b85e4dcab5121e4769ae4,Myrwn,Elyoya,Jojopyun,Supa,Alvaro
+player,oe:team:d2ba9f92d85cff67d60aaad88e61048,Natus Vincere,NV,2025,Summer,oe:player:6a9abcfebed9c636ca90560b7f49855,Adam,top,,,,,,,,,,,,,,
+player,oe:team:d2ba9f92d85cff67d60aaad88e61048,Natus Vincere,NV,2025,Summer,oe:player:d6a41c1166922d1ff489fdb2fa06289,Thayger,jng,,,,,,,,,,,,,,
+player,oe:team:d2ba9f92d85cff67d60aaad88e61048,Natus Vincere,NV,2025,Summer,oe:player:d3f8c554a302aebd5d2bae668ae197e,Larssen,mid,,,,,,,,,,,,,,
+player,oe:team:d2ba9f92d85cff67d60aaad88e61048,Natus Vincere,NV,2025,Summer,oe:player:bc4f68ea698f26bb1e2f6d34f900f57,SamD,bot,,,,,,,,,,,,,,
+player,oe:team:d2ba9f92d85cff67d60aaad88e61048,Natus Vincere,NV,2025,Summer,oe:player:b06f165ee2371a61d3be74d413e1e21,Malrang,sup,,,,,,,,,,,,,,
+lineup,oe:team:d2ba9f92d85cff67d60aaad88e61048,Natus Vincere,NV,2025,Summer,,,,lineup-c612c8d3065004bb,NV-01,1,8,oe:player:6a9abcfebed9c636ca90560b7f49855,oe:player:d6a41c1166922d1ff489fdb2fa06289,oe:player:d3f8c554a302aebd5d2bae668ae197e,oe:player:bc4f68ea698f26bb1e2f6d34f900f57,oe:player:b06f165ee2371a61d3be74d413e1e21,Adam,Thayger,Larssen,SamD,Malrang
+player,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2025,Spring,oe:player:6a9abcfebed9c636ca90560b7f49855,Adam,top,,,,,,,,,,,,,,
+player,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2025,Spring,oe:player:b06f165ee2371a61d3be74d413e1e21,Malrang,jng,,,,,,,,,,,,,,
+player,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2025,Spring,oe:player:59c9428d4e21d63aefeb230c919dcfe,Trick,jng,,,,,,,,,,,,,,
+player,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2025,Spring,oe:player:d3f8c554a302aebd5d2bae668ae197e,Larssen,mid,,,,,,,,,,,,,,
+player,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2025,Spring,oe:player:1dad889ff236635dc1e03d02312e79c,Patrik,bot,,,,,,,,,,,,,,
+player,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2025,Spring,oe:player:40cd014b7b6251e3a22e6a45a73a64e,Execute,sup,,,,,,,,,,,,,,
+player,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2025,Spring,oe:player:b06f165ee2371a61d3be74d413e1e21,Malrang,sup,,,,,,,,,,,,,,
+lineup,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2025,Spring,,,,lineup-195be2076a658566,ROG-01,1,27,oe:player:6a9abcfebed9c636ca90560b7f49855,oe:player:b06f165ee2371a61d3be74d413e1e21,oe:player:d3f8c554a302aebd5d2bae668ae197e,oe:player:1dad889ff236635dc1e03d02312e79c,oe:player:40cd014b7b6251e3a22e6a45a73a64e,Adam,Malrang,Larssen,Patrik,Execute
+lineup,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2025,Spring,,,,lineup-b1f05fad96da3229,ROG-02,2,2,oe:player:6a9abcfebed9c636ca90560b7f49855,oe:player:59c9428d4e21d63aefeb230c919dcfe,oe:player:d3f8c554a302aebd5d2bae668ae197e,oe:player:1dad889ff236635dc1e03d02312e79c,oe:player:b06f165ee2371a61d3be74d413e1e21,Adam,Trick,Larssen,Patrik,Malrang
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2025,Spring,oe:player:341e10748bb6d388250fd1f013e45a4,DnDn,top,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2025,Spring,oe:player:4bb53c6fa9f5d75901136feb8bdf817,JNX,top,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2025,Spring,oe:player:b137ce57a15794ffac86eaeff085326,Boukada,jng,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2025,Spring,oe:player:5450c7731de19c131ce20ea74933cc2,ISMA,jng,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2025,Spring,oe:player:682275c2ba204d32b67f5fa94b928e4,Skeanz,jng,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2025,Spring,oe:player:da87886941820cfc2eee112d0143e90,Abbedagge,mid,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2025,Spring,oe:player:9f774115a82f2e07c861e50b9c022a7,RKR,mid,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2025,Spring,oe:player:44189e6dc3089dbf9520de800fa705a,Keduii,bot,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2025,Spring,oe:player:e2c655411d8d95ef73d8026704f5e7a,Rahel,bot,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2025,Spring,oe:player:e9741b3a238723ea6380ef2113fae63,Loopy,sup,,,,,,,,,,,,,,
+lineup,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2025,Spring,,,,lineup-b05f0dcefca30467,SG-01,1,19,oe:player:4bb53c6fa9f5d75901136feb8bdf817,oe:player:b137ce57a15794ffac86eaeff085326,oe:player:9f774115a82f2e07c861e50b9c022a7,oe:player:44189e6dc3089dbf9520de800fa705a,oe:player:e9741b3a238723ea6380ef2113fae63,JNX,Boukada,RKR,Keduii,Loopy
+lineup,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2025,Spring,,,,lineup-6218683bb60ade9b,SG-02,2,9,oe:player:4bb53c6fa9f5d75901136feb8bdf817,oe:player:5450c7731de19c131ce20ea74933cc2,oe:player:9f774115a82f2e07c861e50b9c022a7,oe:player:e2c655411d8d95ef73d8026704f5e7a,oe:player:e9741b3a238723ea6380ef2113fae63,JNX,ISMA,RKR,Rahel,Loopy
+lineup,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2025,Spring,,,,lineup-b5d92322cceecbe4,SG-03,3,9,oe:player:341e10748bb6d388250fd1f013e45a4,oe:player:682275c2ba204d32b67f5fa94b928e4,oe:player:da87886941820cfc2eee112d0143e90,oe:player:44189e6dc3089dbf9520de800fa705a,oe:player:e9741b3a238723ea6380ef2113fae63,DnDn,Skeanz,Abbedagge,Keduii,Loopy
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2025,Spring,oe:player:027a5217b659e8bedb70978dea494d6,Irrelevant,top,,,,,,,,,,,,,,
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2025,Spring,oe:player:285954244fdc2bcce532fb88a1e0ddb,Rooster,top,,,,,,,,,,,,,,
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2025,Spring,oe:player:73278a4a86960eeb576a8fd4c9ec699,113,jng,,,,,,,,,,,,,,
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2025,Spring,oe:player:b137ce57a15794ffac86eaeff085326,Boukada,jng,,,,,,,,,,,,,,
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2025,Spring,oe:player:8f862245fbdb4d065e46c83630b9495,nuc,mid,,,,,,,,,,,,,,
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2025,Spring,oe:player:8bac58409e91b96ecd05f6d8f053e07,Ice,bot,,,,,,,,,,,,,,
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2025,Spring,oe:player:a9cfbc13e22eefdd22af7b346ce2af4,Parus,sup,,,,,,,,,,,,,,
+lineup,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2025,Spring,,,,lineup-eb6681e27cc28af9,TB-01,1,38,oe:player:027a5217b659e8bedb70978dea494d6,oe:player:73278a4a86960eeb576a8fd4c9ec699,oe:player:8f862245fbdb4d065e46c83630b9495,oe:player:8bac58409e91b96ecd05f6d8f053e07,oe:player:a9cfbc13e22eefdd22af7b346ce2af4,Irrelevant,113,nuc,Ice,Parus
+lineup,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2025,Spring,,,,lineup-655ac5a7d407c7d9,TB-02,2,12,oe:player:285954244fdc2bcce532fb88a1e0ddb,oe:player:b137ce57a15794ffac86eaeff085326,oe:player:8f862245fbdb4d065e46c83630b9495,oe:player:8bac58409e91b96ecd05f6d8f053e07,oe:player:a9cfbc13e22eefdd22af7b346ce2af4,Rooster,Boukada,nuc,Ice,Parus
+player,oe:team:1285e1c04d54de96502f12da4d49458,Team Heretics,TH,2025,Spring,oe:player:5fa6eac8bedeed60a83f154d9538ee1,Carlsen,top,,,,,,,,,,,,,,
+player,oe:team:1285e1c04d54de96502f12da4d49458,Team Heretics,TH,2025,Spring,oe:player:404079b4e478ea2a8b57904c640311b,Sheo,jng,,,,,,,,,,,,,,
+player,oe:team:1285e1c04d54de96502f12da4d49458,Team Heretics,TH,2025,Spring,oe:player:728ce343a6718cfdd5d223c971cc2fd,Kamiloo,mid,,,,,,,,,,,,,,
+player,oe:team:1285e1c04d54de96502f12da4d49458,Team Heretics,TH,2025,Spring,oe:player:717bb4d71a2dab54e7020b1a8fde420,Flakked,bot,,,,,,,,,,,,,,
+player,oe:team:1285e1c04d54de96502f12da4d49458,Team Heretics,TH,2025,Spring,oe:player:41672e17bc1f86dc5d93955c031d2a9,Stend,sup,,,,,,,,,,,,,,
+lineup,oe:team:1285e1c04d54de96502f12da4d49458,Team Heretics,TH,2025,Spring,,,,lineup-479d1492d5984525,TH-01,1,54,oe:player:5fa6eac8bedeed60a83f154d9538ee1,oe:player:404079b4e478ea2a8b57904c640311b,oe:player:728ce343a6718cfdd5d223c971cc2fd,oe:player:717bb4d71a2dab54e7020b1a8fde420,oe:player:41672e17bc1f86dc5d93955c031d2a9,Carlsen,Sheo,Kamiloo,Flakked,Stend
+player,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2025,Spring,oe:player:370f639a8b838f1933c7232d8adae72,Naak Nako,top,,,,,,,,,,,,,,
+player,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2025,Spring,oe:player:ca9701f085966dfca32e31b1b1e9d55,Lyncas,jng,,,,,,,,,,,,,,
+player,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2025,Spring,oe:player:73ac73edf51a3acdfa494e271c6ee29,Czajek,mid,,,,,,,,,,,,,,
+player,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2025,Spring,oe:player:ec0c2b8d7630efba391c288765d4d7e,Carzzy,bot,,,,,,,,,,,,,,
+player,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2025,Spring,oe:player:10be1f35d8b5ea6babf916a6e7dd8a4,Fleshy,sup,,,,,,,,,,,,,,
+player,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2025,Spring,oe:player:3c784fdd6a025028ad063525c14027a,Hylissang,sup,,,,,,,,,,,,,,
+player,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2025,Spring,oe:player:7adc518d589f32912c06de8dae7848e,Nisqy,sup,,,,,,,,,,,,,,
+lineup,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2025,Spring,,,,lineup-c2b76c8333032139,TV-01,1,21,oe:player:370f639a8b838f1933c7232d8adae72,oe:player:ca9701f085966dfca32e31b1b1e9d55,oe:player:73ac73edf51a3acdfa494e271c6ee29,oe:player:ec0c2b8d7630efba391c288765d4d7e,oe:player:7adc518d589f32912c06de8dae7848e,Naak Nako,Lyncas,Czajek,Carzzy,Nisqy
+lineup,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2025,Spring,,,,lineup-d7768fbebd5bee97,TV-02,2,17,oe:player:370f639a8b838f1933c7232d8adae72,oe:player:ca9701f085966dfca32e31b1b1e9d55,oe:player:73ac73edf51a3acdfa494e271c6ee29,oe:player:ec0c2b8d7630efba391c288765d4d7e,oe:player:10be1f35d8b5ea6babf916a6e7dd8a4,Naak Nako,Lyncas,Czajek,Carzzy,Fleshy
+lineup,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2025,Spring,,,,lineup-ca5b33bd80e692e0,TV-03,3,14,oe:player:370f639a8b838f1933c7232d8adae72,oe:player:ca9701f085966dfca32e31b1b1e9d55,oe:player:73ac73edf51a3acdfa494e271c6ee29,oe:player:ec0c2b8d7630efba391c288765d4d7e,oe:player:3c784fdd6a025028ad063525c14027a,Naak Nako,Lyncas,Czajek,Carzzy,Hylissang

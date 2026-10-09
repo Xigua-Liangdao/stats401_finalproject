@@ -1,0 +1,43 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:128d0cec08b877912eb91f94a1f3295,Astralis,AST,2023,Winter,oe:player:5ae7a60e2b2349c8bae7dbb67a394c9,Finn,top,,,,,,,,,,,,,,
+player,oe:team:128d0cec08b877912eb91f94a1f3295,Astralis,AST,2023,Winter,oe:player:73278a4a86960eeb576a8fd4c9ec699,113,jng,,,,,,,,,,,,,,
+player,oe:team:128d0cec08b877912eb91f94a1f3295,Astralis,AST,2023,Winter,oe:player:e1e74fbe59bd77110d7a7412b400878,Dajor,mid,,,,,,,,,,,,,,
+player,oe:team:128d0cec08b877912eb91f94a1f3295,Astralis,AST,2023,Winter,oe:player:bdb90de1ad7c2b7c38ce6f1177c1f62,Kobbe,bot,,,,,,,,,,,,,,
+player,oe:team:128d0cec08b877912eb91f94a1f3295,Astralis,AST,2023,Winter,oe:player:40cd014b7b6251e3a22e6a45a73a64e,Execute,sup,,,,,,,,,,,,,,
+lineup,oe:team:128d0cec08b877912eb91f94a1f3295,Astralis,AST,2023,Winter,,,,lineup-843fc2dcc108ebeb,AST-01,1,2,oe:player:5ae7a60e2b2349c8bae7dbb67a394c9,oe:player:73278a4a86960eeb576a8fd4c9ec699,oe:player:e1e74fbe59bd77110d7a7412b400878,oe:player:bdb90de1ad7c2b7c38ce6f1177c1f62,oe:player:40cd014b7b6251e3a22e6a45a73a64e,Finn,113,Dajor,Kobbe,Execute
+player,oe:team:8f995652631df209ff11c4542abdcaf,Excel Esports,EE,2023,Winter,oe:player:2b819506567c258f6fffdd4ec78ca0c,Odoamne,top,,,,,,,,,,,,,,
+player,oe:team:8f995652631df209ff11c4542abdcaf,Excel Esports,EE,2023,Winter,oe:player:ab7f28ca18446cb18274a884b1525f7,Xerxe,jng,,,,,,,,,,,,,,
+player,oe:team:8f995652631df209ff11c4542abdcaf,Excel Esports,EE,2023,Winter,oe:player:5eb466e63c91a4ccf328f21715e51ae,Vetheo,mid,,,,,,,,,,,,,,
+player,oe:team:8f995652631df209ff11c4542abdcaf,Excel Esports,EE,2023,Winter,oe:player:1dad889ff236635dc1e03d02312e79c,Patrik,bot,,,,,,,,,,,,,,
+player,oe:team:8f995652631df209ff11c4542abdcaf,Excel Esports,EE,2023,Winter,oe:player:eaf899c6268995f9b1e40d1932c6888,Targamas,sup,,,,,,,,,,,,,,
+lineup,oe:team:8f995652631df209ff11c4542abdcaf,Excel Esports,EE,2023,Winter,,,,lineup-6ab618d075816b9b,EE-01,1,1,oe:player:2b819506567c258f6fffdd4ec78ca0c,oe:player:ab7f28ca18446cb18274a884b1525f7,oe:player:5eb466e63c91a4ccf328f21715e51ae,oe:player:1dad889ff236635dc1e03d02312e79c,oe:player:eaf899c6268995f9b1e40d1932c6888,Odoamne,Xerxe,Vetheo,Patrik,Targamas
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2023,Winter,oe:player:84bff3a326833c7c9181c698f676878,BrokenBlade,top,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2023,Winter,oe:player:4203fc46c4c6333e9bfa9d0a8618677,Yike,jng,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2023,Winter,oe:player:55dd587cdc4a278be6a5c37f9e539de,Caps,mid,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2023,Winter,oe:player:c62a5235ad6bc113a1e64eb0e9aa8c8,Hans Sama,bot,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2023,Winter,oe:player:9d5052e9f9f4a63835f738441a3b1f6,Mikyx,sup,,,,,,,,,,,,,,
+lineup,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2023,Winter,,,,lineup-95832685698b0882,GE-01,1,4,oe:player:84bff3a326833c7c9181c698f676878,oe:player:4203fc46c4c6333e9bfa9d0a8618677,oe:player:55dd587cdc4a278be6a5c37f9e539de,oe:player:c62a5235ad6bc113a1e64eb0e9aa8c8,oe:player:9d5052e9f9f4a63835f738441a3b1f6,BrokenBlade,Yike,Caps,Hans Sama,Mikyx
+player,oe:team:5aef7c486046c4885a0baad37b027e8,KOI,KOI,2023,Winter,oe:player:57a976f165d89afb00fc029cd7c36a7,Szygenda,top,,,,,,,,,,,,,,
+player,oe:team:5aef7c486046c4885a0baad37b027e8,KOI,KOI,2023,Winter,oe:player:b06f165ee2371a61d3be74d413e1e21,Malrang,jng,,,,,,,,,,,,,,
+player,oe:team:5aef7c486046c4885a0baad37b027e8,KOI,KOI,2023,Winter,oe:player:d3f8c554a302aebd5d2bae668ae197e,Larssen,mid,,,,,,,,,,,,,,
+player,oe:team:5aef7c486046c4885a0baad37b027e8,KOI,KOI,2023,Winter,oe:player:5d531a4cf817202fc25eda63906e797,Comp,bot,,,,,,,,,,,,,,
+player,oe:team:5aef7c486046c4885a0baad37b027e8,KOI,KOI,2023,Winter,oe:player:8b73af38e98bccab6f86930c75a9450,Trymbi,sup,,,,,,,,,,,,,,
+lineup,oe:team:5aef7c486046c4885a0baad37b027e8,KOI,KOI,2023,Winter,,,,lineup-20fb6e83228c300c,KOI-01,1,5,oe:player:57a976f165d89afb00fc029cd7c36a7,oe:player:b06f165ee2371a61d3be74d413e1e21,oe:player:d3f8c554a302aebd5d2bae668ae197e,oe:player:5d531a4cf817202fc25eda63906e797,oe:player:8b73af38e98bccab6f86930c75a9450,Szygenda,Malrang,Larssen,Comp,Trymbi
+player,oe:team:6a0084dacefb228be863fbb64cefe11,MAD Lions KOI,MLK,2023,Winter,oe:player:ba2664f94e92e7e9e06fe8582b1f4ec,Chasy,top,,,,,,,,,,,,,,
+player,oe:team:6a0084dacefb228be863fbb64cefe11,MAD Lions KOI,MLK,2023,Winter,oe:player:8a8f18e4b7d0f30c19c5fb99a526951,Elyoya,jng,,,,,,,,,,,,,,
+player,oe:team:6a0084dacefb228be863fbb64cefe11,MAD Lions KOI,MLK,2023,Winter,oe:player:7adc518d589f32912c06de8dae7848e,Nisqy,mid,,,,,,,,,,,,,,
+player,oe:team:6a0084dacefb228be863fbb64cefe11,MAD Lions KOI,MLK,2023,Winter,oe:player:ec0c2b8d7630efba391c288765d4d7e,Carzzy,bot,,,,,,,,,,,,,,
+player,oe:team:6a0084dacefb228be863fbb64cefe11,MAD Lions KOI,MLK,2023,Winter,oe:player:3c784fdd6a025028ad063525c14027a,Hylissang,sup,,,,,,,,,,,,,,
+lineup,oe:team:6a0084dacefb228be863fbb64cefe11,MAD Lions KOI,MLK,2023,Winter,,,,lineup-51aac927f0f04701,MLK-01,1,14,oe:player:ba2664f94e92e7e9e06fe8582b1f4ec,oe:player:8a8f18e4b7d0f30c19c5fb99a526951,oe:player:7adc518d589f32912c06de8dae7848e,oe:player:ec0c2b8d7630efba391c288765d4d7e,oe:player:3c784fdd6a025028ad063525c14027a,Chasy,Elyoya,Nisqy,Carzzy,Hylissang
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2023,Winter,oe:player:027a5217b659e8bedb70978dea494d6,Irrelevant,top,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2023,Winter,oe:player:6c2d19f781192a84726e07f68a531b6,Markoon,jng,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2023,Winter,oe:player:17a3d1accbb8bbdaaabfd34e1d69c18,Sertuss,mid,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2023,Winter,oe:player:eff6236e2369eaeccf4c9434031d20c,3XA,bot,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2023,Winter,oe:player:f2264caa34a27d8f01634f39f307c85,Doss,sup,,,,,,,,,,,,,,
+lineup,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2023,Winter,,,,lineup-f864b2e2cb960c72,SG-01,1,5,oe:player:027a5217b659e8bedb70978dea494d6,oe:player:6c2d19f781192a84726e07f68a531b6,oe:player:17a3d1accbb8bbdaaabfd34e1d69c18,oe:player:eff6236e2369eaeccf4c9434031d20c,oe:player:f2264caa34a27d8f01634f39f307c85,Irrelevant,Markoon,Sertuss,3XA,Doss
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2023,Winter,oe:player:6a9abcfebed9c636ca90560b7f49855,Adam,top,,,,,,,,,,,,,,
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2023,Winter,oe:player:404079b4e478ea2a8b57904c640311b,Sheo,jng,,,,,,,,,,,,,,
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2023,Winter,oe:player:8f862245fbdb4d065e46c83630b9495,nuc,mid,,,,,,,,,,,,,,
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2023,Winter,oe:player:1c51707d8fd9873c9fd184e2cd01b33,Crownie,bot,,,,,,,,,,,,,,
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2023,Winter,oe:player:bb6ac5763c6576e104a7a2f59eb4ddf,Labrov,sup,,,,,,,,,,,,,,
+lineup,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2023,Winter,,,,lineup-1db18bcc54792ada,TB-01,1,1,oe:player:6a9abcfebed9c636ca90560b7f49855,oe:player:404079b4e478ea2a8b57904c640311b,oe:player:8f862245fbdb4d065e46c83630b9495,oe:player:1c51707d8fd9873c9fd184e2cd01b33,oe:player:bb6ac5763c6576e104a7a2f59eb4ddf,Adam,Sheo,nuc,Crownie,Labrov

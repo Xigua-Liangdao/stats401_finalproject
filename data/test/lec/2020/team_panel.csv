@@ -1,0 +1,63 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:8f995652631df209ff11c4542abdcaf,Excel Esports,EE,2020,Spring,oe:player:7f036407d75c774176a7effbe959366,Expect,top,,,,,,,,,,,,,,
+player,oe:team:8f995652631df209ff11c4542abdcaf,Excel Esports,EE,2020,Spring,oe:player:18b6fc2262049e76c661d5efbdd39cd,Caedrel,jng,,,,,,,,,,,,,,
+player,oe:team:8f995652631df209ff11c4542abdcaf,Excel Esports,EE,2020,Spring,oe:player:0ba4bf5acd16f4d72e7cefa20774769,Mickey,mid,,,,,,,,,,,,,,
+player,oe:team:8f995652631df209ff11c4542abdcaf,Excel Esports,EE,2020,Spring,oe:player:1dad889ff236635dc1e03d02312e79c,Patrik,bot,,,,,,,,,,,,,,
+player,oe:team:8f995652631df209ff11c4542abdcaf,Excel Esports,EE,2020,Spring,oe:player:64ecd619b953ca23acb0546a472c483,Tore,sup,,,,,,,,,,,,,,
+lineup,oe:team:8f995652631df209ff11c4542abdcaf,Excel Esports,EE,2020,Spring,,,,lineup-418e259834cfce79,EE-01,1,1,oe:player:7f036407d75c774176a7effbe959366,oe:player:18b6fc2262049e76c661d5efbdd39cd,oe:player:0ba4bf5acd16f4d72e7cefa20774769,oe:player:1dad889ff236635dc1e03d02312e79c,oe:player:64ecd619b953ca23acb0546a472c483,Expect,Caedrel,Mickey,Patrik,Tore
+player,oe:team:1d0f5e58f39613aff1a3dd4ed85933e,FC Schalke 04 Esports,FS0E,2020,Spring,oe:player:2b819506567c258f6fffdd4ec78ca0c,Odoamne,top,,,,,,,,,,,,,,
+player,oe:team:1d0f5e58f39613aff1a3dd4ed85933e,FC Schalke 04 Esports,FS0E,2020,Spring,oe:player:6fc5fe723eed4ba4c230292be365c66,Lurox,jng,,,,,,,,,,,,,,
+player,oe:team:1d0f5e58f39613aff1a3dd4ed85933e,FC Schalke 04 Esports,FS0E,2020,Spring,oe:player:da87886941820cfc2eee112d0143e90,Abbedagge,mid,,,,,,,,,,,,,,
+player,oe:team:1d0f5e58f39613aff1a3dd4ed85933e,FC Schalke 04 Esports,FS0E,2020,Spring,oe:player:e7e423ad06282e35abf80c69486374b,Innaxe,bot,,,,,,,,,,,,,,
+player,oe:team:1d0f5e58f39613aff1a3dd4ed85933e,FC Schalke 04 Esports,FS0E,2020,Spring,oe:player:b50386112df639912475f7eca25d472,Dreams,sup,,,,,,,,,,,,,,
+lineup,oe:team:1d0f5e58f39613aff1a3dd4ed85933e,FC Schalke 04 Esports,FS0E,2020,Spring,,,,lineup-1fb6b48e55eab846,FS0E-01,1,1,oe:player:2b819506567c258f6fffdd4ec78ca0c,oe:player:6fc5fe723eed4ba4c230292be365c66,oe:player:da87886941820cfc2eee112d0143e90,oe:player:e7e423ad06282e35abf80c69486374b,oe:player:b50386112df639912475f7eca25d472,Odoamne,Lurox,Abbedagge,Innaxe,Dreams
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2020,Spring,oe:player:7e2505960c12cc54c96a0a6efb2e055,Bwipo,top,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2020,Spring,oe:player:96436efa39788172b8b2f90fc97e842,Selfmade,jng,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2020,Spring,oe:player:456d479c879155333c0624219803ec4,Nemesis,mid,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2020,Spring,oe:player:d8362fe0d38ca0e70953ed957deaa00,Rekkles,bot,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2020,Spring,oe:player:3c784fdd6a025028ad063525c14027a,Hylissang,sup,,,,,,,,,,,,,,
+lineup,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2020,Spring,,,,lineup-20a10585ba213e93,FNA-01,1,1,oe:player:7e2505960c12cc54c96a0a6efb2e055,oe:player:96436efa39788172b8b2f90fc97e842,oe:player:456d479c879155333c0624219803ec4,oe:player:d8362fe0d38ca0e70953ed957deaa00,oe:player:3c784fdd6a025028ad063525c14027a,Bwipo,Selfmade,Nemesis,Rekkles,Hylissang
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2020,Spring,oe:player:d11068c782573b34be81beb5a4eeb12,Wunder,top,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2020,Spring,oe:player:a2f6e754fc2b358f7786f52decb4274,Jankos,jng,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2020,Spring,oe:player:0634d9e86284da2fae4e1438d564eee,Perkz,mid,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2020,Spring,oe:player:55dd587cdc4a278be6a5c37f9e539de,Caps,bot,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2020,Spring,oe:player:9d5052e9f9f4a63835f738441a3b1f6,Mikyx,sup,,,,,,,,,,,,,,
+lineup,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2020,Spring,,,,lineup-6c2ee3887abf28ce,GE-01,1,6,oe:player:d11068c782573b34be81beb5a4eeb12,oe:player:a2f6e754fc2b358f7786f52decb4274,oe:player:0634d9e86284da2fae4e1438d564eee,oe:player:55dd587cdc4a278be6a5c37f9e539de,oe:player:9d5052e9f9f4a63835f738441a3b1f6,Wunder,Jankos,Perkz,Caps,Mikyx
+player,oe:team:6a0084dacefb228be863fbb64cefe11,MAD Lions KOI,MLK,2020,Spring,oe:player:c96f08769340eec7fdf7ee5c193a81a,Orome,top,,,,,,,,,,,,,,
+player,oe:team:6a0084dacefb228be863fbb64cefe11,MAD Lions KOI,MLK,2020,Spring,oe:player:c332dc879e14f1feb266190c7f396fd,Shad0w,jng,,,,,,,,,,,,,,
+player,oe:team:6a0084dacefb228be863fbb64cefe11,MAD Lions KOI,MLK,2020,Spring,oe:player:edf8b064c096691e539b7e2a3e28179,Humanoid,mid,,,,,,,,,,,,,,
+player,oe:team:6a0084dacefb228be863fbb64cefe11,MAD Lions KOI,MLK,2020,Spring,oe:player:ec0c2b8d7630efba391c288765d4d7e,Carzzy,bot,,,,,,,,,,,,,,
+player,oe:team:6a0084dacefb228be863fbb64cefe11,MAD Lions KOI,MLK,2020,Spring,oe:player:ec0971fb900874b1c59179d9cd33687,Kaiser,sup,,,,,,,,,,,,,,
+lineup,oe:team:6a0084dacefb228be863fbb64cefe11,MAD Lions KOI,MLK,2020,Spring,,,,lineup-30ed5457ce328fb5,MLK-01,1,13,oe:player:c96f08769340eec7fdf7ee5c193a81a,oe:player:c332dc879e14f1feb266190c7f396fd,oe:player:edf8b064c096691e539b7e2a3e28179,oe:player:ec0c2b8d7630efba391c288765d4d7e,oe:player:ec0971fb900874b1c59179d9cd33687,Orome,Shad0w,Humanoid,Carzzy,Kaiser
+player,oe:team:594b183f8fb081ef64820f31ab8d641,Misfits Gaming,MG,2020,Spring,oe:player:753b4404968cabe86d655195131ab93,Dan Dan,top,,,,,,,,,,,,,,
+player,oe:team:594b183f8fb081ef64820f31ab8d641,Misfits Gaming,MG,2020,Spring,oe:player:390ca7b6b38d552363eba1b5b54ff18,Razork,jng,,,,,,,,,,,,,,
+player,oe:team:594b183f8fb081ef64820f31ab8d641,Misfits Gaming,MG,2020,Spring,oe:player:d62421836c8b27dc3ffaffa058b8098,FEBIVEN,mid,,,,,,,,,,,,,,
+player,oe:team:594b183f8fb081ef64820f31ab8d641,Misfits Gaming,MG,2020,Spring,oe:player:494fc60dffbb5da1caa2226baef0ec7,Bvoy,bot,,,,,,,,,,,,,,
+player,oe:team:594b183f8fb081ef64820f31ab8d641,Misfits Gaming,MG,2020,Spring,oe:player:9adc23fff49c05d7b22cfd79ca1841d,denyk,sup,,,,,,,,,,,,,,
+lineup,oe:team:594b183f8fb081ef64820f31ab8d641,Misfits Gaming,MG,2020,Spring,,,,lineup-5b895eee5abcade6,MG-01,1,1,oe:player:753b4404968cabe86d655195131ab93,oe:player:390ca7b6b38d552363eba1b5b54ff18,oe:player:d62421836c8b27dc3ffaffa058b8098,oe:player:494fc60dffbb5da1caa2226baef0ec7,oe:player:9adc23fff49c05d7b22cfd79ca1841d,Dan Dan,Razork,FEBIVEN,Bvoy,denyk
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2020,Spring,oe:player:9492b0cfd4d97adce92527c34db72ee,Alphari,top,,,,,,,,,,,,,,
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2020,Spring,oe:player:ab7f28ca18446cb18274a884b1525f7,Xerxe,jng,,,,,,,,,,,,,,
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2020,Spring,oe:player:65859b9ee65cbbf96fe589d8ec8abbc,Nukeduck,mid,,,,,,,,,,,,,,
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2020,Spring,oe:player:fe4329cec43193c425eb28a4a4b304a,Upset,bot,,,,,,,,,,,,,,
+player,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2020,Spring,oe:player:6b2acf5555e281f3e64f9a338da6a66,destiny,sup,,,,,,,,,,,,,,
+lineup,oe:team:ac6cb6091eb27e5332f2926f44a7067,Origen,ORI,2020,Spring,,,,lineup-8240ed0f9dbd6320,ORI-01,1,1,oe:player:9492b0cfd4d97adce92527c34db72ee,oe:player:ab7f28ca18446cb18274a884b1525f7,oe:player:65859b9ee65cbbf96fe589d8ec8abbc,oe:player:fe4329cec43193c425eb28a4a4b304a,oe:player:6b2acf5555e281f3e64f9a338da6a66,Alphari,Xerxe,Nukeduck,Upset,destiny
+player,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2020,Spring,oe:player:5ae7a60e2b2349c8bae7dbb67a394c9,Finn,top,,,,,,,,,,,,,,
+player,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2020,Spring,oe:player:a8307167f3a1c933295bb9e3d43700e,Inspired,jng,,,,,,,,,,,,,,
+player,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2020,Spring,oe:player:d3f8c554a302aebd5d2bae668ae197e,Larssen,mid,,,,,,,,,,,,,,
+player,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2020,Spring,oe:player:c62a5235ad6bc113a1e64eb0e9aa8c8,Hans Sama,bot,,,,,,,,,,,,,,
+player,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2020,Spring,oe:player:280a58c350eef8f164e753447b2a306,Vander,sup,,,,,,,,,,,,,,
+lineup,oe:team:cd62e47544f14f1d239afa659b9d243,Rogue,ROG,2020,Spring,,,,lineup-9c67ba3ed091cd76,ROG-01,1,1,oe:player:5ae7a60e2b2349c8bae7dbb67a394c9,oe:player:a8307167f3a1c933295bb9e3d43700e,oe:player:d3f8c554a302aebd5d2bae668ae197e,oe:player:c62a5235ad6bc113a1e64eb0e9aa8c8,oe:player:280a58c350eef8f164e753447b2a306,Finn,Inspired,Larssen,Hans Sama,Vander
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2020,Spring,oe:player:1f8b2df4c6ee43a1c1dc29817c0a201,Sacre,top,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2020,Spring,oe:player:bd2fbc5fe3052285f35f643726b511b,Ventair,top,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2020,Spring,oe:player:59c9428d4e21d63aefeb230c919dcfe,Trick,jng,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2020,Spring,oe:player:4bb53c6fa9f5d75901136feb8bdf817,JNX,mid,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2020,Spring,oe:player:1c51707d8fd9873c9fd184e2cd01b33,Crownie,bot,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2020,Spring,oe:player:86dbd2fb95030a3ed1efee6808eb125,LIMIT,sup,,,,,,,,,,,,,,
+lineup,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2020,Spring,,,,lineup-284b6d67ba34658d,SG-01,1,1,oe:player:1f8b2df4c6ee43a1c1dc29817c0a201,oe:player:59c9428d4e21d63aefeb230c919dcfe,oe:player:4bb53c6fa9f5d75901136feb8bdf817,oe:player:1c51707d8fd9873c9fd184e2cd01b33,oe:player:86dbd2fb95030a3ed1efee6808eb125,Sacre,Trick,JNX,Crownie,LIMIT
+lineup,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2020,Spring,,,,lineup-5a497ac074de51ca,SG-02,2,1,oe:player:bd2fbc5fe3052285f35f643726b511b,oe:player:59c9428d4e21d63aefeb230c919dcfe,oe:player:4bb53c6fa9f5d75901136feb8bdf817,oe:player:1c51707d8fd9873c9fd184e2cd01b33,oe:player:86dbd2fb95030a3ed1efee6808eb125,Ventair,Trick,JNX,Crownie,LIMIT
+player,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2020,Spring,oe:player:010c1b0d37c2b7459b215dae7ffeeac,Cabochard,top,,,,,,,,,,,,,,
+player,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2020,Spring,oe:player:682275c2ba204d32b67f5fa94b928e4,Skeanz,jng,,,,,,,,,,,,,,
+player,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2020,Spring,oe:player:1d43b8dc600eba61cd7dd2cd8d6baf6,SAKEN,mid,,,,,,,,,,,,,,
+player,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2020,Spring,oe:player:5d531a4cf817202fc25eda63906e797,Comp,bot,,,,,,,,,,,,,,
+player,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2020,Spring,oe:player:088a8dda4109f6904aa917153b5db18,Jactroll,sup,,,,,,,,,,,,,,
+lineup,oe:team:e8d8ae992fe72acb7adc7bfcee31dbb,Team Vitality,TV,2020,Spring,,,,lineup-03e1282ba1d45310,TV-01,1,1,oe:player:010c1b0d37c2b7459b215dae7ffeeac,oe:player:682275c2ba204d32b67f5fa94b928e4,oe:player:1d43b8dc600eba61cd7dd2cd8d6baf6,oe:player:5d531a4cf817202fc25eda63906e797,oe:player:088a8dda4109f6904aa917153b5db18,Cabochard,Skeanz,SAKEN,Comp,Jactroll
