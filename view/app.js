@@ -20,7 +20,7 @@ applyDocumentCopy();
 const header = document.querySelector('#site-header');
 const app = document.querySelector('#app');
 const wipe = document.querySelector('#route-wipe');
-const transition = createRouteTransition(app, wipe);
+const transition = createRouteTransition(app, wipe, document.querySelector('#route-loading'));
 const startup = createStartupScreen(document.querySelector('#startup'));
 let currentRoute = { name: 'home' };
 let startupFinished = false;
