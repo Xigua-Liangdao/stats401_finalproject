@@ -1,0 +1,74 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:ddb6aa775eebeffd5cc41ba5c35c6a1,BRUTE,BRU,2020,Season 14,oe:player:ac2a86d18aba806eca10fde8ab879e2,Fulis,top,,,,,,,,,,,,,,
+player,oe:team:ddb6aa775eebeffd5cc41ba5c35c6a1,BRUTE,BRU,2020,Season 14,oe:player:0f500956f995b17f0e573e313abc616,Hardy,jng,,,,,,,,,,,,,,
+player,oe:team:ddb6aa775eebeffd5cc41ba5c35c6a1,BRUTE,BRU,2020,Season 14,oe:player:30c993e4293992b0138964ce0cf0243,Annyeong,mid,,,,,,,,,,,,,,
+player,oe:team:ddb6aa775eebeffd5cc41ba5c35c6a1,BRUTE,BRU,2020,Season 14,oe:player:d97c5a1d90fecec6cdab5c554734e7f,Kesav,bot,,,,,,,,,,,,,,
+player,oe:team:ddb6aa775eebeffd5cc41ba5c35c6a1,BRUTE,BRU,2020,Season 14,oe:player:0ecb42885be23bb12afbeaa3a6353ba,Marma,sup,,,,,,,,,,,,,,
+lineup,oe:team:ddb6aa775eebeffd5cc41ba5c35c6a1,BRUTE,BRU,2020,Season 14,,,,lineup-dcf6276eb8c4ec05,BRU-01,1,2,oe:player:ac2a86d18aba806eca10fde8ab879e2,oe:player:0f500956f995b17f0e573e313abc616,oe:player:30c993e4293992b0138964ce0cf0243,oe:player:d97c5a1d90fecec6cdab5c554734e7f,oe:player:0ecb42885be23bb12afbeaa3a6353ba,Fulis,Hardy,Annyeong,Kesav,Marma
+player,oe:team:25829f8f0cea05880678526dc19a8df,Cyber Gaming,CG,2020,Season 14,oe:player:d2a8b5d2001445b14661ec7debdeb63,Odstranovac,top,,,,,,,,,,,,,,
+player,oe:team:25829f8f0cea05880678526dc19a8df,Cyber Gaming,CG,2020,Season 14,oe:player:ac15b188c446c6f3b071c500a186889,Kenapil,jng,,,,,,,,,,,,,,
+player,oe:team:25829f8f0cea05880678526dc19a8df,Cyber Gaming,CG,2020,Season 14,oe:player:6425cdfcdd02de2de34b914e20c41a7,SeMike,jng,,,,,,,,,,,,,,
+player,oe:team:25829f8f0cea05880678526dc19a8df,Cyber Gaming,CG,2020,Season 14,oe:player:5d3e96fb0bac0c1073583eeb8598e68,Trenérský Mág,mid,,,,,,,,,,,,,,
+player,oe:team:25829f8f0cea05880678526dc19a8df,Cyber Gaming,CG,2020,Season 14,oe:player:ac15b188c446c6f3b071c500a186889,Kenapil,bot,,,,,,,,,,,,,,
+player,oe:team:25829f8f0cea05880678526dc19a8df,Cyber Gaming,CG,2020,Season 14,oe:player:31e2b03c9a11ca9cbe3b9a1350b1216,WorstADC,bot,,,,,,,,,,,,,,
+player,oe:team:25829f8f0cea05880678526dc19a8df,Cyber Gaming,CG,2020,Season 14,oe:player:68cb770a20693e73a8e2c4188735f48,Zeussak,sup,,,,,,,,,,,,,,
+lineup,oe:team:25829f8f0cea05880678526dc19a8df,Cyber Gaming,CG,2020,Season 14,,,,lineup-8a516e245e2e7481,CG-01,1,1,oe:player:d2a8b5d2001445b14661ec7debdeb63,oe:player:6425cdfcdd02de2de34b914e20c41a7,oe:player:5d3e96fb0bac0c1073583eeb8598e68,oe:player:ac15b188c446c6f3b071c500a186889,oe:player:68cb770a20693e73a8e2c4188735f48,Odstranovac,SeMike,Trenérský Mág,Kenapil,Zeussak
+lineup,oe:team:25829f8f0cea05880678526dc19a8df,Cyber Gaming,CG,2020,Season 14,,,,lineup-c7f809dd8faf89b7,CG-02,2,1,oe:player:d2a8b5d2001445b14661ec7debdeb63,oe:player:ac15b188c446c6f3b071c500a186889,oe:player:5d3e96fb0bac0c1073583eeb8598e68,oe:player:31e2b03c9a11ca9cbe3b9a1350b1216,oe:player:68cb770a20693e73a8e2c4188735f48,Odstranovac,Kenapil,Trenérský Mág,WorstADC,Zeussak
+player,oe:team:124467d9a6d8086151a0b4cac721066,Flayn eSports CZSK Edition,FECE,2020,Season 13,oe:player:0062ca11b75b1744fe7964bc617c916,Vlk,top,,,,,,,,,,,,,,
+player,oe:team:124467d9a6d8086151a0b4cac721066,Flayn eSports CZSK Edition,FECE,2020,Season 13,oe:player:11df686b7585a7f6a850ccee3144c17,Dalijes,jng,,,,,,,,,,,,,,
+player,oe:team:124467d9a6d8086151a0b4cac721066,Flayn eSports CZSK Edition,FECE,2020,Season 13,oe:player:38f9dbf317a2743dbdb417bbc6ccb37,Shy,mid,,,,,,,,,,,,,,
+player,oe:team:124467d9a6d8086151a0b4cac721066,Flayn eSports CZSK Edition,FECE,2020,Season 13,oe:player:3df85a43ca65208e842c46acfa3c5a5,wilq,bot,,,,,,,,,,,,,,
+player,oe:team:124467d9a6d8086151a0b4cac721066,Flayn eSports CZSK Edition,FECE,2020,Season 13,oe:player:fd976f550f84430dc88941effcf786a,HONOR,sup,,,,,,,,,,,,,,
+lineup,oe:team:124467d9a6d8086151a0b4cac721066,Flayn eSports CZSK Edition,FECE,2020,Season 13,,,,lineup-e7d77f3927197f2b,FECE-01,1,1,oe:player:0062ca11b75b1744fe7964bc617c916,oe:player:11df686b7585a7f6a850ccee3144c17,oe:player:38f9dbf317a2743dbdb417bbc6ccb37,oe:player:3df85a43ca65208e842c46acfa3c5a5,oe:player:fd976f550f84430dc88941effcf786a,Vlk,Dalijes,Shy,wilq,HONOR
+player,oe:team:5c99ca932b8499e126991aa8f90e67d,Gunrunners,GUN,2020,Season 14,oe:player:53072f2d22ee31936a25f17bd547d57,Tenus,top,,,,,,,,,,,,,,
+player,oe:team:5c99ca932b8499e126991aa8f90e67d,Gunrunners,GUN,2020,Season 14,oe:player:9d6488594f3b57d54e5610fd5c085e5,Xanfii,jng,,,,,,,,,,,,,,
+player,oe:team:5c99ca932b8499e126991aa8f90e67d,Gunrunners,GUN,2020,Season 14,oe:player:1b1748eabf32b50dd65e569590914c8,Nyken,mid,,,,,,,,,,,,,,
+player,oe:team:5c99ca932b8499e126991aa8f90e67d,Gunrunners,GUN,2020,Season 14,oe:player:a3bc729554c4c0ff7d126ea64f4a75e,Only,bot,,,,,,,,,,,,,,
+player,oe:team:5c99ca932b8499e126991aa8f90e67d,Gunrunners,GUN,2020,Season 14,oe:player:083d9a270e6e16b2fbb08d35067aae5,Dave,sup,,,,,,,,,,,,,,
+lineup,oe:team:5c99ca932b8499e126991aa8f90e67d,Gunrunners,GUN,2020,Season 14,,,,lineup-d0e3f87be78c7cf8,GUN-01,1,2,oe:player:53072f2d22ee31936a25f17bd547d57,oe:player:9d6488594f3b57d54e5610fd5c085e5,oe:player:1b1748eabf32b50dd65e569590914c8,oe:player:a3bc729554c4c0ff7d126ea64f4a75e,oe:player:083d9a270e6e16b2fbb08d35067aae5,Tenus,Xanfii,Nyken,Only,Dave
+player,oe:team:c2bd1dd17a070dbbb8df9aefb634a41,Inside Games,IG,2020,Season 14,oe:player:85117df5924af087900b300fe0f3ec3,Kulvas,top,,,,,,,,,,,,,,
+player,oe:team:c2bd1dd17a070dbbb8df9aefb634a41,Inside Games,IG,2020,Season 14,oe:player:736a2896b5b7f960305f3b106303e8a,Kocourek,jng,,,,,,,,,,,,,,
+player,oe:team:c2bd1dd17a070dbbb8df9aefb634a41,Inside Games,IG,2020,Season 14,oe:player:beae421a14a34f831c113f61323d1ab,Final,mid,,,,,,,,,,,,,,
+player,oe:team:c2bd1dd17a070dbbb8df9aefb634a41,Inside Games,IG,2020,Season 14,oe:player:28c288f70870e8d85a0db92518206aa,CHECKFIDER,bot,,,,,,,,,,,,,,
+player,oe:team:c2bd1dd17a070dbbb8df9aefb634a41,Inside Games,IG,2020,Season 14,oe:player:d090cd8c2462e31136c02dbebdbcc2d,Aku,sup,,,,,,,,,,,,,,
+lineup,oe:team:c2bd1dd17a070dbbb8df9aefb634a41,Inside Games,IG,2020,Season 14,,,,lineup-21e85df0511c5831,IG-01,1,2,oe:player:85117df5924af087900b300fe0f3ec3,oe:player:736a2896b5b7f960305f3b106303e8a,oe:player:beae421a14a34f831c113f61323d1ab,oe:player:28c288f70870e8d85a0db92518206aa,oe:player:d090cd8c2462e31136c02dbebdbcc2d,Kulvas,Kocourek,Final,CHECKFIDER,Aku
+player,oe:team:8cdcd791dbcd3d0cb8fc18d9f9d0a01,RAMS,RAM,2020,Season 13,oe:player:8486d94ef23b38c67c76b647613d881,bobista,top,,,,,,,,,,,,,,
+player,oe:team:8cdcd791dbcd3d0cb8fc18d9f9d0a01,RAMS,RAM,2020,Season 13,oe:player:013f680f2d7950a0a8c2bf24078815a,Jellou,jng,,,,,,,,,,,,,,
+player,oe:team:8cdcd791dbcd3d0cb8fc18d9f9d0a01,RAMS,RAM,2020,Season 13,oe:player:e42fd90dea956c3986b69209b56ce16,OMON,mid,,,,,,,,,,,,,,
+player,oe:team:8cdcd791dbcd3d0cb8fc18d9f9d0a01,RAMS,RAM,2020,Season 13,oe:player:294728275f5e17a0dbd93d28bde1cc0,Mauss,bot,,,,,,,,,,,,,,
+player,oe:team:8cdcd791dbcd3d0cb8fc18d9f9d0a01,RAMS,RAM,2020,Season 13,oe:player:30c993e4293992b0138964ce0cf0243,Annyeong,sup,,,,,,,,,,,,,,
+lineup,oe:team:8cdcd791dbcd3d0cb8fc18d9f9d0a01,RAMS,RAM,2020,Season 13,,,,lineup-0e90af0390e32d84,RAM-01,1,1,oe:player:8486d94ef23b38c67c76b647613d881,oe:player:013f680f2d7950a0a8c2bf24078815a,oe:player:e42fd90dea956c3986b69209b56ce16,oe:player:294728275f5e17a0dbd93d28bde1cc0,oe:player:30c993e4293992b0138964ce0cf0243,bobista,Jellou,OMON,Mauss,Annyeong
+player,oe:team:9a3327bd6c9a07e61350e24d97419fa,SINNERS Esports,SE,2020,Season 14,oe:player:d0c52a9400db78779e0baae662a3fc2,Adiss,top,,,,,,,,,,,,,,
+player,oe:team:9a3327bd6c9a07e61350e24d97419fa,SINNERS Esports,SE,2020,Season 14,oe:player:4a9683365dbc0dd4b92d296fb2a1042,Aprobata,jng,,,,,,,,,,,,,,
+player,oe:team:9a3327bd6c9a07e61350e24d97419fa,SINNERS Esports,SE,2020,Season 14,oe:player:4b3d62fcaf8a016880db6ec13754042,ordno,mid,,,,,,,,,,,,,,
+player,oe:team:9a3327bd6c9a07e61350e24d97419fa,SINNERS Esports,SE,2020,Season 14,oe:player:956b4d2f499b1d362f693f82b8e652b,PiOk,bot,,,,,,,,,,,,,,
+player,oe:team:9a3327bd6c9a07e61350e24d97419fa,SINNERS Esports,SE,2020,Season 14,oe:player:a39d2bfa964a33bd2781fd469425c3f,VaSKED,sup,,,,,,,,,,,,,,
+lineup,oe:team:9a3327bd6c9a07e61350e24d97419fa,SINNERS Esports,SE,2020,Season 14,,,,lineup-02869cff1f4598a7,SE-01,1,13,oe:player:d0c52a9400db78779e0baae662a3fc2,oe:player:4a9683365dbc0dd4b92d296fb2a1042,oe:player:4b3d62fcaf8a016880db6ec13754042,oe:player:956b4d2f499b1d362f693f82b8e652b,oe:player:a39d2bfa964a33bd2781fd469425c3f,Adiss,Aprobata,ordno,PiOk,VaSKED
+player,oe:team:c9c57deef5fcd4cd734181f121c9ee8,Team Sampi,TS,2020,Season 14,oe:player:9c22f358ca4e0542f6205d7bec93433,Dreedy,top,,,,,,,,,,,,,,
+player,oe:team:c9c57deef5fcd4cd734181f121c9ee8,Team Sampi,TS,2020,Season 14,oe:player:8486d94ef23b38c67c76b647613d881,bobista,top,,,,,,,,,,,,,,
+player,oe:team:c9c57deef5fcd4cd734181f121c9ee8,Team Sampi,TS,2020,Season 14,oe:player:ac15b188c446c6f3b071c500a186889,Kenapil,jng,,,,,,,,,,,,,,
+player,oe:team:c9c57deef5fcd4cd734181f121c9ee8,Team Sampi,TS,2020,Season 14,oe:player:6aec0ace4133efdcd6a8ac81eb48f47,Sawyor,jng,,,,,,,,,,,,,,
+player,oe:team:c9c57deef5fcd4cd734181f121c9ee8,Team Sampi,TS,2020,Season 14,oe:player:5f4898a107d2948045588584562be3f,Dehaste,mid,,,,,,,,,,,,,,
+player,oe:team:c9c57deef5fcd4cd734181f121c9ee8,Team Sampi,TS,2020,Season 14,oe:player:5d3e96fb0bac0c1073583eeb8598e68,Trenérský Mág,mid,,,,,,,,,,,,,,
+player,oe:team:c9c57deef5fcd4cd734181f121c9ee8,Team Sampi,TS,2020,Season 14,oe:player:f72af12f47362bdec4b0ca91070cf43,DANY,bot,,,,,,,,,,,,,,
+player,oe:team:c9c57deef5fcd4cd734181f121c9ee8,Team Sampi,TS,2020,Season 14,oe:player:4b3d62fcaf8a016880db6ec13754042,ordno,bot,,,,,,,,,,,,,,
+player,oe:team:c9c57deef5fcd4cd734181f121c9ee8,Team Sampi,TS,2020,Season 14,oe:player:2fc47d506de431ba77f2af233f558e4,Panj,sup,,,,,,,,,,,,,,
+player,oe:team:c9c57deef5fcd4cd734181f121c9ee8,Team Sampi,TS,2020,Season 14,oe:player:4d855d5ac0497a11941e8948568db74,Rufus,sup,,,,,,,,,,,,,,
+lineup,oe:team:c9c57deef5fcd4cd734181f121c9ee8,Team Sampi,TS,2020,Season 14,,,,lineup-53847bc9e5af0708,TS-01,1,2,oe:player:8486d94ef23b38c67c76b647613d881,oe:player:6aec0ace4133efdcd6a8ac81eb48f47,oe:player:5f4898a107d2948045588584562be3f,oe:player:f72af12f47362bdec4b0ca91070cf43,oe:player:2fc47d506de431ba77f2af233f558e4,bobista,Sawyor,Dehaste,DANY,Panj
+lineup,oe:team:c9c57deef5fcd4cd734181f121c9ee8,Team Sampi,TS,2020,Season 14,,,,lineup-97ce97b4d0736a8c,TS-02,2,1,oe:player:9c22f358ca4e0542f6205d7bec93433,oe:player:ac15b188c446c6f3b071c500a186889,oe:player:5d3e96fb0bac0c1073583eeb8598e68,oe:player:4b3d62fcaf8a016880db6ec13754042,oe:player:4d855d5ac0497a11941e8948568db74,Dreedy,Kenapil,Trenérský Mág,ordno,Rufus
+player,oe:team:1c1e5c3fdd3090ed2162e9a17bcd4ab,Vikingekrig Esports,VE,2020,Season 14,oe:player:8411b6e2a788ed8c0e57a25b61bab62,Haklbery,top,,,,,,,,,,,,,,
+player,oe:team:1c1e5c3fdd3090ed2162e9a17bcd4ab,Vikingekrig Esports,VE,2020,Season 14,oe:player:47a291a4aeb2a3854eb7edf3817b63a,Gorny,jng,,,,,,,,,,,,,,
+player,oe:team:1c1e5c3fdd3090ed2162e9a17bcd4ab,Vikingekrig Esports,VE,2020,Season 14,oe:player:da13539e133132113df109837a6ee08,Nora,mid,,,,,,,,,,,,,,
+player,oe:team:1c1e5c3fdd3090ed2162e9a17bcd4ab,Vikingekrig Esports,VE,2020,Season 14,oe:player:d03db9eb6f9a2ff695d192301a0cdc8,Jekyll,bot,,,,,,,,,,,,,,
+player,oe:team:1c1e5c3fdd3090ed2162e9a17bcd4ab,Vikingekrig Esports,VE,2020,Season 14,oe:player:562190640a6632a79e8d3a946cc2931,xKyra,sup,,,,,,,,,,,,,,
+lineup,oe:team:1c1e5c3fdd3090ed2162e9a17bcd4ab,Vikingekrig Esports,VE,2020,Season 14,,,,lineup-b6eb400b2ff9e890,VE-01,1,1,oe:player:8411b6e2a788ed8c0e57a25b61bab62,oe:player:47a291a4aeb2a3854eb7edf3817b63a,oe:player:da13539e133132113df109837a6ee08,oe:player:d03db9eb6f9a2ff695d192301a0cdc8,oe:player:562190640a6632a79e8d3a946cc2931,Haklbery,Gorny,Nora,Jekyll,xKyra
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2020,Season 14,oe:player:bf0fcdb863d11c4f6e7802f434de734,Robocop,top,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2020,Season 14,oe:player:0cbadb757e6cd6a2bb77f0748cfe398,Wondro,top,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2020,Season 14,oe:player:97e2124319af5f96331d38fc07ad71b,Jejky,jng,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2020,Season 14,oe:player:64663f4646781c9c0110838b905daa2,Random,mid,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2020,Season 14,oe:player:3f31f8d5ed8cbae5977cfd3451ebe79,Hiro,bot,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2020,Season 14,oe:player:7a27b91a1ea41f157f4b3df8889621f,Sirinox,bot,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2020,Season 14,oe:player:4d855d5ac0497a11941e8948568db74,Rufus,sup,,,,,,,,,,,,,,
+player,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2020,Season 14,oe:player:a39d2bfa964a33bd2781fd469425c3f,VaSKED,sup,,,,,,,,,,,,,,
+lineup,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2020,Season 14,,,,lineup-1eddd9147d51d4c2,ESU-01,1,2,oe:player:0cbadb757e6cd6a2bb77f0748cfe398,oe:player:97e2124319af5f96331d38fc07ad71b,oe:player:64663f4646781c9c0110838b905daa2,oe:player:3f31f8d5ed8cbae5977cfd3451ebe79,oe:player:4d855d5ac0497a11941e8948568db74,Wondro,Jejky,Random,Hiro,Rufus
+lineup,oe:team:3faefd9245a4ef6ba347fbcf2a51515,eSuba,ESU,2020,Season 14,,,,lineup-b2e2d4f438ff6f5a,ESU-02,2,1,oe:player:bf0fcdb863d11c4f6e7802f434de734,oe:player:97e2124319af5f96331d38fc07ad71b,oe:player:64663f4646781c9c0110838b905daa2,oe:player:7a27b91a1ea41f157f4b3df8889621f,oe:player:a39d2bfa964a33bd2781fd469425c3f,Robocop,Jejky,Random,Sirinox,VaSKED

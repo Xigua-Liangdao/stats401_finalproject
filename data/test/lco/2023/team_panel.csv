@@ -1,0 +1,31 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:692bccdba8ec7050f5aeb916815439e,Chiefs Esports Club,CEC,2023,Split 1,oe:player:c1ddab75d1d921ffed44398c4188d60,BioPanther,top,,,,,,,,,,,,,,
+player,oe:team:692bccdba8ec7050f5aeb916815439e,Chiefs Esports Club,CEC,2023,Split 1,oe:player:cc75d3f9b862e7e5d667d1ce2430fbd,Babip,jng,,,,,,,,,,,,,,
+player,oe:team:692bccdba8ec7050f5aeb916815439e,Chiefs Esports Club,CEC,2023,Split 1,oe:player:d51674883fd227c219c9a1fc7da7db4,Kisee,mid,,,,,,,,,,,,,,
+player,oe:team:692bccdba8ec7050f5aeb916815439e,Chiefs Esports Club,CEC,2023,Split 1,oe:player:c2c140b8d1f76f3f79b1aba6bb08c37,Raes,bot,,,,,,,,,,,,,,
+player,oe:team:692bccdba8ec7050f5aeb916815439e,Chiefs Esports Club,CEC,2023,Split 1,oe:player:eaaf2e20683cde8408d05159c05528c,Aladoric,sup,,,,,,,,,,,,,,
+lineup,oe:team:692bccdba8ec7050f5aeb916815439e,Chiefs Esports Club,CEC,2023,Split 1,,,,lineup-d29f6e73b8a4c585,CEC-01,1,15,oe:player:c1ddab75d1d921ffed44398c4188d60,oe:player:cc75d3f9b862e7e5d667d1ce2430fbd,oe:player:d51674883fd227c219c9a1fc7da7db4,oe:player:c2c140b8d1f76f3f79b1aba6bb08c37,oe:player:eaaf2e20683cde8408d05159c05528c,BioPanther,Babip,Kisee,Raes,Aladoric
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2023,Split 1,oe:player:14ab5f52ef3268bfc818e12fda4e226,zorenous,top,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2023,Split 1,oe:player:f14ab14b4bf705b9b408d84a36b4a43,Poltron,jng,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2023,Split 1,oe:player:6aa036de3fa6c6f1115df7c22a89617,Chazz,mid,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2023,Split 1,oe:player:9a754e5ccd044dd74ff3a9d184350ab,Praedyth,bot,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2023,Split 1,oe:player:82a42c3ebfd83735f1aaf93cf8adf7e,Decoy,sup,,,,,,,,,,,,,,
+lineup,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2023,Split 1,,,,lineup-1ecd554bd9d869dc,DW-01,1,2,oe:player:14ab5f52ef3268bfc818e12fda4e226,oe:player:f14ab14b4bf705b9b408d84a36b4a43,oe:player:6aa036de3fa6c6f1115df7c22a89617,oe:player:9a754e5ccd044dd74ff3a9d184350ab,oe:player:82a42c3ebfd83735f1aaf93cf8adf7e,zorenous,Poltron,Chazz,Praedyth,Decoy
+player,oe:team:788115a84f68bc65fa6d3a4e0f67a3e,Ground Zero Gaming,GZG,2023,Split 1,oe:player:8f60c9900e3f8ac422104c5414e4ec8,Tron,top,,,,,,,,,,,,,,
+player,oe:team:788115a84f68bc65fa6d3a4e0f67a3e,Ground Zero Gaming,GZG,2023,Split 1,oe:player:159c85d3e87105d5975e207b5c38f6c,Gooby,jng,,,,,,,,,,,,,,
+player,oe:team:788115a84f68bc65fa6d3a4e0f67a3e,Ground Zero Gaming,GZG,2023,Split 1,oe:player:e49006e7853430a925c71dd940afca1,mfis,mid,,,,,,,,,,,,,,
+player,oe:team:788115a84f68bc65fa6d3a4e0f67a3e,Ground Zero Gaming,GZG,2023,Split 1,oe:player:7641b164c535ca4d6685ac77cacc54c,Danteh,bot,,,,,,,,,,,,,,
+player,oe:team:788115a84f68bc65fa6d3a4e0f67a3e,Ground Zero Gaming,GZG,2023,Split 1,oe:player:4d42944851ab83df6e313c8ec66d704,Bulldawg,sup,,,,,,,,,,,,,,
+lineup,oe:team:788115a84f68bc65fa6d3a4e0f67a3e,Ground Zero Gaming,GZG,2023,Split 1,,,,lineup-7d0a68b59f12cbcc,GZG-01,1,3,oe:player:8f60c9900e3f8ac422104c5414e4ec8,oe:player:159c85d3e87105d5975e207b5c38f6c,oe:player:e49006e7853430a925c71dd940afca1,oe:player:7641b164c535ca4d6685ac77cacc54c,oe:player:4d42944851ab83df6e313c8ec66d704,Tron,Gooby,mfis,Danteh,Bulldawg
+player,oe:team:9b4a7228059e863c153b3e196ac85b2,Pentanet.GG,PEN,2023,Split 1,oe:player:d11c67c4c3a40031d66d32ecb806d53,Chippys,top,,,,,,,,,,,,,,
+player,oe:team:9b4a7228059e863c153b3e196ac85b2,Pentanet.GG,PEN,2023,Split 1,oe:player:5cc4071294a16477e992b3c8a2b7715,Shernfire,jng,,,,,,,,,,,,,,
+player,oe:team:9b4a7228059e863c153b3e196ac85b2,Pentanet.GG,PEN,2023,Split 1,oe:player:d6e5b7a94e59dca541f76445d39226f,DONGGY,mid,,,,,,,,,,,,,,
+player,oe:team:9b4a7228059e863c153b3e196ac85b2,Pentanet.GG,PEN,2023,Split 1,oe:player:5a804d07122e4fee39975c8097146f4,Violet,bot,,,,,,,,,,,,,,
+player,oe:team:9b4a7228059e863c153b3e196ac85b2,Pentanet.GG,PEN,2023,Split 1,oe:player:0543601680b90a14217b80b4f771635,Apii,sup,,,,,,,,,,,,,,
+lineup,oe:team:9b4a7228059e863c153b3e196ac85b2,Pentanet.GG,PEN,2023,Split 1,,,,lineup-7621eee31ba889b6,PEN-01,1,1,oe:player:d11c67c4c3a40031d66d32ecb806d53,oe:player:5cc4071294a16477e992b3c8a2b7715,oe:player:d6e5b7a94e59dca541f76445d39226f,oe:player:5a804d07122e4fee39975c8097146f4,oe:player:0543601680b90a14217b80b4f771635,Chippys,Shernfire,DONGGY,Violet,Apii
+player,oe:team:0b27fc98592297c4441bce44760a642,Team Bliss,TB,2023,Split 1,oe:player:0579842ca3ad16b00b58a1c432faa1c,Lived,top,,,,,,,,,,,,,,
+player,oe:team:0b27fc98592297c4441bce44760a642,Team Bliss,TB,2023,Split 1,oe:player:e35edef8a2cb6212af8fe231b48ea5e,Whynot,jng,,,,,,,,,,,,,,
+player,oe:team:0b27fc98592297c4441bce44760a642,Team Bliss,TB,2023,Split 1,oe:player:e68cc4b2bef76a96aae344b49a81579,Daystar,mid,,,,,,,,,,,,,,
+player,oe:team:0b27fc98592297c4441bce44760a642,Team Bliss,TB,2023,Split 1,oe:player:de6a79c709c8f1a5538dff9c2bf0ed3,Leemas,bot,,,,,,,,,,,,,,
+player,oe:team:0b27fc98592297c4441bce44760a642,Team Bliss,TB,2023,Split 1,oe:player:994882ce341b5949034f3975746ff32,Benvi,sup,,,,,,,,,,,,,,
+lineup,oe:team:0b27fc98592297c4441bce44760a642,Team Bliss,TB,2023,Split 1,,,,lineup-721b6d317c6d104c,TB-01,1,11,oe:player:0579842ca3ad16b00b58a1c432faa1c,oe:player:e35edef8a2cb6212af8fe231b48ea5e,oe:player:e68cc4b2bef76a96aae344b49a81579,oe:player:de6a79c709c8f1a5538dff9c2bf0ed3,oe:player:994882ce341b5949034f3975746ff32,Lived,Whynot,Daystar,Leemas,Benvi

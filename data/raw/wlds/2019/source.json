@@ -1,0 +1,35 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2019.csv.gz",
+  "source_kind": "pinned_github_mirror",
+  "source_revision": "834ce914f0c79289881697084227fa2933ad344a",
+  "annual_sources": [
+    {
+      "year": 2019,
+      "url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2019.csv.gz",
+      "sha256": "65f631865771bfce1dbff8f6eee2efde72c13ff231fc0f3e6b43365206bdd99a",
+      "revision": "834ce914f0c79289881697084227fa2933ad344a",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:18.069592+00:00",
+      "size_bytes": 72335665,
+      "listed_size_bytes": 72335665,
+      "rows": 97524,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "download_sha256": "e181cb491f1a01755a1e8e6f9b040a9771dfdaa838fc43960ccde1ee4113cc6e",
+      "filename": "2019_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 1440
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:35:33.519836+00:00",
+  "annual_csv_sha256": "65f631865771bfce1dbff8f6eee2efde72c13ff231fc0f3e6b43365206bdd99a",
+  "annual_rows": 97524,
+  "league": "WLDs",
+  "year": 2019,
+  "filter": "league == 'WLDs' and year == '2019'; all positions and columns preserved",
+  "raw_rows": 1440,
+  "raw_columns": 161,
+  "raw_games": 120,
+  "raw_csv_gz_sha256": "f3666d87982e03896e643e339bad66ac90e0b01a4e9f0131b02f524eb3c87f83"
+}

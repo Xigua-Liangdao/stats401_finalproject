@@ -1,0 +1,49 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2023,Unknown,oe:player:55276c10d84e1df7713b441e76e141f,Rest,top,,,,,,,,,,,,,,
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2023,Unknown,oe:player:766cc4dd4d5005652e8514e3513683f,Gemini,jng,,,,,,,,,,,,,,
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2023,Unknown,oe:player:70e6d96860b77bb3e87663215b42a1f,JimieN,mid,,,,,,,,,,,,,,
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2023,Unknown,oe:player:56cf99d5b59755569fa366c07c18f38,Shunn,bot,,,,,,,,,,,,,,
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2023,Unknown,oe:player:5d7f415cbf04b549c235a8a3d83a763,ShiauC,sup,,,,,,,,,,,,,,
+lineup,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2023,Unknown,,,,lineup-05d6ed2459f2b2b2,CFO-01,1,2,oe:player:55276c10d84e1df7713b441e76e141f,oe:player:766cc4dd4d5005652e8514e3513683f,oe:player:70e6d96860b77bb3e87663215b42a1f,oe:player:56cf99d5b59755569fa366c07c18f38,oe:player:5d7f415cbf04b549c235a8a3d83a763,Rest,Gemini,JimieN,Shunn,ShiauC
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2023,Unknown,oe:player:61113c79bb5a88e9320744e0f675f1e,apaMEN,top,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2023,Unknown,oe:player:47f1917849906027f365eff06d45c27,Steal,jng,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2023,Unknown,oe:player:2e82913920d8a6d0efa480bc35f1ba8,Aria,mid,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2023,Unknown,oe:player:0d798f24869b290bfcdf6427d958118,Yutapon,bot,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2023,Unknown,oe:player:0015d99e65183977a9e65547b37f1cb,Harp,sup,,,,,,,,,,,,,,
+lineup,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2023,Unknown,,,,lineup-02edd68414c51bc5,DF-01,1,2,oe:player:61113c79bb5a88e9320744e0f675f1e,oe:player:47f1917849906027f365eff06d45c27,oe:player:2e82913920d8a6d0efa480bc35f1ba8,oe:player:0d798f24869b290bfcdf6427d958118,oe:player:0015d99e65183977a9e65547b37f1cb,apaMEN,Steal,Aria,Yutapon,Harp
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2023,Unknown,oe:player:f40f1b0923c35568f417aef1e01ca6b,Ale,top,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2023,Unknown,oe:player:88bba3108e62145a9780becd3eb553d,Jiejie,jng,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2023,Unknown,oe:player:568fe19f3078824aeca0056e28081bb,FoFo,mid,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2023,Unknown,oe:player:52e418c848e0f05f1ae3d63fb2f806a,Uzi,bot,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2023,Unknown,oe:player:bda7cc061d7a1576f1dcad33dd505cd,Meiko,sup,,,,,,,,,,,,,,
+lineup,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2023,Unknown,,,,lineup-b204dd4c95385e4b,EDG-01,1,2,oe:player:f40f1b0923c35568f417aef1e01ca6b,oe:player:88bba3108e62145a9780becd3eb553d,oe:player:568fe19f3078824aeca0056e28081bb,oe:player:52e418c848e0f05f1ae3d63fb2f806a,oe:player:bda7cc061d7a1576f1dcad33dd505cd,Ale,Jiejie,FoFo,Uzi,Meiko
+player,oe:team:87ee02298073abc2d55060f097d4041,Golden Guardians,GG,2023,Unknown,oe:player:e03d0722b6dce835cde3268c08c4f54,Licorice,top,,,,,,,,,,,,,,
+player,oe:team:87ee02298073abc2d55060f097d4041,Golden Guardians,GG,2023,Unknown,oe:player:7c3395efccd48fe73592001501bef83,River,jng,,,,,,,,,,,,,,
+player,oe:team:87ee02298073abc2d55060f097d4041,Golden Guardians,GG,2023,Unknown,oe:player:94e552221e552e3ebaaeefff76fd6ea,Gori,mid,,,,,,,,,,,,,,
+player,oe:team:87ee02298073abc2d55060f097d4041,Golden Guardians,GG,2023,Unknown,oe:player:51d421a31ce72460198ef946995fb11,Stixxay,bot,,,,,,,,,,,,,,
+player,oe:team:87ee02298073abc2d55060f097d4041,Golden Guardians,GG,2023,Unknown,oe:player:9191e392e93a6ef011ef76b5b83ee6c,huhi,sup,,,,,,,,,,,,,,
+lineup,oe:team:87ee02298073abc2d55060f097d4041,Golden Guardians,GG,2023,Unknown,,,,lineup-6fb73c8ce4fbeca8,GG-01,1,3,oe:player:e03d0722b6dce835cde3268c08c4f54,oe:player:7c3395efccd48fe73592001501bef83,oe:player:94e552221e552e3ebaaeefff76fd6ea,oe:player:51d421a31ce72460198ef946995fb11,oe:player:9191e392e93a6ef011ef76b5b83ee6c,Licorice,River,Gori,Stixxay,huhi
+player,oe:team:a9145b7711873f53e610fbba0493484,LNG Esports,LNG,2023,Unknown,oe:player:65ed20b21e2993fb00dbd21a2fd991b,Zika,top,,,,,,,,,,,,,,
+player,oe:team:a9145b7711873f53e610fbba0493484,LNG Esports,LNG,2023,Unknown,oe:player:62922f2b370657a966de4d84f5586bf,Tarzan,jng,,,,,,,,,,,,,,
+player,oe:team:a9145b7711873f53e610fbba0493484,LNG Esports,LNG,2023,Unknown,oe:player:71e79ef80600d398d90cfebe3b0b758,Scout,mid,,,,,,,,,,,,,,
+player,oe:team:a9145b7711873f53e610fbba0493484,LNG Esports,LNG,2023,Unknown,oe:player:867e8957fae1cb59f0808dbcc3aada2,GALA,bot,,,,,,,,,,,,,,
+player,oe:team:a9145b7711873f53e610fbba0493484,LNG Esports,LNG,2023,Unknown,oe:player:ab2455e33b8ddb6a9d2d41107a2ed4f,Hang,sup,,,,,,,,,,,,,,
+lineup,oe:team:a9145b7711873f53e610fbba0493484,LNG Esports,LNG,2023,Unknown,,,,lineup-cd1cbe04d11ea9a7,LNG-01,1,2,oe:player:65ed20b21e2993fb00dbd21a2fd991b,oe:player:62922f2b370657a966de4d84f5586bf,oe:player:71e79ef80600d398d90cfebe3b0b758,oe:player:867e8957fae1cb59f0808dbcc3aada2,oe:player:ab2455e33b8ddb6a9d2d41107a2ed4f,Zika,Tarzan,Scout,GALA,Hang
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2023,Unknown,oe:player:72bd7f020390328891f8595b5a2136f,Azhi,top,,,,,,,,,,,,,,
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2023,Unknown,oe:player:a22a6d1fe8786cf83675e2d932fbffe,JunJia,jng,,,,,,,,,,,,,,
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2023,Unknown,oe:player:e3aa452243a476669824e52c1b7fc6b,Maple,mid,,,,,,,,,,,,,,
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2023,Unknown,oe:player:64ff4f1dd75a5654ab87c0bbee89c1e,Wako,bot,,,,,,,,,,,,,,
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2023,Unknown,oe:player:31b5f1d49f55acb4ee7624813bda6b2,Woody,sup,,,,,,,,,,,,,,
+lineup,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2023,Unknown,,,,lineup-c91b2393c4720388,PT-01,1,5,oe:player:72bd7f020390328891f8595b5a2136f,oe:player:a22a6d1fe8786cf83675e2d932fbffe,oe:player:e3aa452243a476669824e52c1b7fc6b,oe:player:64ff4f1dd75a5654ab87c0bbee89c1e,oe:player:31b5f1d49f55acb4ee7624813bda6b2,Azhi,JunJia,Maple,Wako,Woody
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2023,Unknown,oe:player:6a9abcfebed9c636ca90560b7f49855,Adam,top,,,,,,,,,,,,,,
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2023,Unknown,oe:player:404079b4e478ea2a8b57904c640311b,Sheo,jng,,,,,,,,,,,,,,
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2023,Unknown,oe:player:8f862245fbdb4d065e46c83630b9495,nuc,mid,,,,,,,,,,,,,,
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2023,Unknown,oe:player:1c51707d8fd9873c9fd184e2cd01b33,Crownie,bot,,,,,,,,,,,,,,
+player,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2023,Unknown,oe:player:bb6ac5763c6576e104a7a2f59eb4ddf,Labrov,sup,,,,,,,,,,,,,,
+lineup,oe:team:7338408a0fe0217451d2c9a567db999,Team BDS,TB,2023,Unknown,,,,lineup-1db18bcc54792ada,TB-01,1,15,oe:player:6a9abcfebed9c636ca90560b7f49855,oe:player:404079b4e478ea2a8b57904c640311b,oe:player:8f862245fbdb4d065e46c83630b9495,oe:player:1c51707d8fd9873c9fd184e2cd01b33,oe:player:bb6ac5763c6576e104a7a2f59eb4ddf,Adam,Sheo,nuc,Crownie,Labrov
+player,oe:team:407a64574852482edb8c1560eab637c,Team Whales,TW,2023,Unknown,oe:player:895b81748441d4b3c8faa7c1b8452dc,Sparda,top,,,,,,,,,,,,,,
+player,oe:team:407a64574852482edb8c1560eab637c,Team Whales,TW,2023,Unknown,oe:player:0ad6b88ff1affb81ce31248a4fe73d0,BeanJ,jng,,,,,,,,,,,,,,
+player,oe:team:407a64574852482edb8c1560eab637c,Team Whales,TW,2023,Unknown,oe:player:97703d326201ee5bfa4694c7a73a2b4,Gloryy,mid,,,,,,,,,,,,,,
+player,oe:team:407a64574852482edb8c1560eab637c,Team Whales,TW,2023,Unknown,oe:player:9d2474b953a3a0be93880409ccceb4e,Artemis,bot,,,,,,,,,,,,,,
+player,oe:team:407a64574852482edb8c1560eab637c,Team Whales,TW,2023,Unknown,oe:player:1f7d70f56b608b3137df2493949fdd0,Bie,sup,,,,,,,,,,,,,,
+lineup,oe:team:407a64574852482edb8c1560eab637c,Team Whales,TW,2023,Unknown,,,,lineup-c5e65ed59485a6a9,TW-01,1,3,oe:player:895b81748441d4b3c8faa7c1b8452dc,oe:player:0ad6b88ff1affb81ce31248a4fe73d0,oe:player:97703d326201ee5bfa4694c7a73a2b4,oe:player:9d2474b953a3a0be93880409ccceb4e,oe:player:1f7d70f56b608b3137df2493949fdd0,Sparda,BeanJ,Gloryy,Artemis,Bie

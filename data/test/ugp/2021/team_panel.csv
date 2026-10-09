@@ -1,0 +1,55 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:820a182de738908d69fb74a7745c677,Barrage.NA,BAR,2021,Unknown,oe:player:f57280c82d3a38f8bf412a520e33f7f,PCL,top,,,,,,,,,,,,,,
+player,oe:team:820a182de738908d69fb74a7745c677,Barrage.NA,BAR,2021,Unknown,oe:player:c6c67e6161209c24759f6a71ad6ac9b,Fanatiik,jng,,,,,,,,,,,,,,
+player,oe:team:820a182de738908d69fb74a7745c677,Barrage.NA,BAR,2021,Unknown,oe:player:ea9ed09584feecae0991089f087d2ce,APA,mid,,,,,,,,,,,,,,
+player,oe:team:820a182de738908d69fb74a7745c677,Barrage.NA,BAR,2021,Unknown,oe:player:2dda74ba3799fbc4822498ac6a82293,Gorica,bot,,,,,,,,,,,,,,
+player,oe:team:820a182de738908d69fb74a7745c677,Barrage.NA,BAR,2021,Unknown,oe:player:4db9382d7c962f8153c60cce7f919a0,winter,sup,,,,,,,,,,,,,,
+lineup,oe:team:820a182de738908d69fb74a7745c677,Barrage.NA,BAR,2021,Unknown,,,,lineup-9407373ea3c46df5,BAR-01,1,1,oe:player:f57280c82d3a38f8bf412a520e33f7f,oe:player:c6c67e6161209c24759f6a71ad6ac9b,oe:player:ea9ed09584feecae0991089f087d2ce,oe:player:2dda74ba3799fbc4822498ac6a82293,oe:player:4db9382d7c962f8153c60cce7f919a0,PCL,Fanatiik,APA,Gorica,winter
+player,oe:team:0ceefa1371cd26b24911fa299937e9e,Cloud9 Amateur,CA,2021,Unknown,oe:player:27adb0b3f92d9b8f7fa4cb55b60114c,Lawrence,top,,,,,,,,,,,,,,
+player,oe:team:0ceefa1371cd26b24911fa299937e9e,Cloud9 Amateur,CA,2021,Unknown,oe:player:08936c56ab5a6453c58974a619651c3,eXyu,jng,,,,,,,,,,,,,,
+player,oe:team:0ceefa1371cd26b24911fa299937e9e,Cloud9 Amateur,CA,2021,Unknown,oe:player:df4f91120caa080682bf595c5f7f2d3,CptShrimps,mid,,,,,,,,,,,,,,
+player,oe:team:0ceefa1371cd26b24911fa299937e9e,Cloud9 Amateur,CA,2021,Unknown,oe:player:713fae3c1b605df4ee976c6188182a1,Wixxi,bot,,,,,,,,,,,,,,
+player,oe:team:0ceefa1371cd26b24911fa299937e9e,Cloud9 Amateur,CA,2021,Unknown,oe:player:647116a60606bd44fb11a860da72776,Breezy,sup,,,,,,,,,,,,,,
+lineup,oe:team:0ceefa1371cd26b24911fa299937e9e,Cloud9 Amateur,CA,2021,Unknown,,,,lineup-ea30ffff4c7d3cd0,CA-01,1,1,oe:player:27adb0b3f92d9b8f7fa4cb55b60114c,oe:player:08936c56ab5a6453c58974a619651c3,oe:player:df4f91120caa080682bf595c5f7f2d3,oe:player:713fae3c1b605df4ee976c6188182a1,oe:player:647116a60606bd44fb11a860da72776,Lawrence,eXyu,CptShrimps,Wixxi,Breezy
+player,oe:team:cbb2efe86e074f5a81490dceb681a4b,ConViction,CON,2021,Unknown,oe:player:3ba252f70eb44294a96ae1514cc93cf,Apdo,top,,,,,,,,,,,,,,
+player,oe:team:cbb2efe86e074f5a81490dceb681a4b,ConViction,CON,2021,Unknown,oe:player:e16307d77b2e7859144f9ac2859f999,Ivan,jng,,,,,,,,,,,,,,
+player,oe:team:cbb2efe86e074f5a81490dceb681a4b,ConViction,CON,2021,Unknown,oe:player:3041d9d5764e4405f6108cc6c064ff6,omly,mid,,,,,,,,,,,,,,
+player,oe:team:cbb2efe86e074f5a81490dceb681a4b,ConViction,CON,2021,Unknown,oe:player:ac6c8ea090678bb181b8004e3efd830,Nightstar,bot,,,,,,,,,,,,,,
+player,oe:team:cbb2efe86e074f5a81490dceb681a4b,ConViction,CON,2021,Unknown,oe:player:012116b7bb13afdfdedb0a99f637e02,Danasaur,sup,,,,,,,,,,,,,,
+lineup,oe:team:cbb2efe86e074f5a81490dceb681a4b,ConViction,CON,2021,Unknown,,,,lineup-a95ed2d4cd57da18,CON-01,1,2,oe:player:3ba252f70eb44294a96ae1514cc93cf,oe:player:e16307d77b2e7859144f9ac2859f999,oe:player:3041d9d5764e4405f6108cc6c064ff6,oe:player:ac6c8ea090678bb181b8004e3efd830,oe:player:012116b7bb13afdfdedb0a99f637e02,Apdo,Ivan,omly,Nightstar,Danasaur
+player,oe:team:47b7394e386b2ab9bb97100fe136098,Dignitas Mirage,DM,2021,Unknown,oe:player:184d97e1a8e8130dfb0a41329b780c6,Dragoon,top,,,,,,,,,,,,,,
+player,oe:team:47b7394e386b2ab9bb97100fe136098,Dignitas Mirage,DM,2021,Unknown,oe:player:ec49ee309f41de6026b88d00ac081c4,Sybr,jng,,,,,,,,,,,,,,
+player,oe:team:47b7394e386b2ab9bb97100fe136098,Dignitas Mirage,DM,2021,Unknown,oe:player:396c983d4290901e4060ffe25e7c0eb,DNA,mid,,,,,,,,,,,,,,
+player,oe:team:47b7394e386b2ab9bb97100fe136098,Dignitas Mirage,DM,2021,Unknown,oe:player:580f08754dbf1bc64145f212ed0170b,Cao,bot,,,,,,,,,,,,,,
+player,oe:team:47b7394e386b2ab9bb97100fe136098,Dignitas Mirage,DM,2021,Unknown,oe:player:f6aa5d1aa13c4ab0a23a23bccbfe243,Lightpulse,sup,,,,,,,,,,,,,,
+lineup,oe:team:47b7394e386b2ab9bb97100fe136098,Dignitas Mirage,DM,2021,Unknown,,,,lineup-c6f3fc3a175f6f19,DM-01,1,3,oe:player:184d97e1a8e8130dfb0a41329b780c6,oe:player:ec49ee309f41de6026b88d00ac081c4,oe:player:396c983d4290901e4060ffe25e7c0eb,oe:player:580f08754dbf1bc64145f212ed0170b,oe:player:f6aa5d1aa13c4ab0a23a23bccbfe243,Dragoon,Sybr,DNA,Cao,Lightpulse
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Unknown,oe:player:c49aafa1ffe9c24aa459e5cf851ddfc,Niles,top,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Unknown,oe:player:b1608dc23a218a150a431be676f3fe4,RoseThorn,jng,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Unknown,oe:player:760f71918dbe25e76081e22adb97a74,Yunbee,mid,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Unknown,oe:player:416ea631f3b7a0d79f4263e00736f02,Prismal,bot,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Unknown,oe:player:27aa6f7581052e7ff48e1bca901313f,Newbie,sup,,,,,,,,,,,,,,
+lineup,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Unknown,,,,lineup-0cbcc8bcd40a8b0e,GGA-01,1,12,oe:player:c49aafa1ffe9c24aa459e5cf851ddfc,oe:player:b1608dc23a218a150a431be676f3fe4,oe:player:760f71918dbe25e76081e22adb97a74,oe:player:416ea631f3b7a0d79f4263e00736f02,oe:player:27aa6f7581052e7ff48e1bca901313f,Niles,RoseThorn,Yunbee,Prismal,Newbie
+player,oe:team:1c282536c5574499989be3aa8ae0600,OQ,OQ,2021,Unknown,oe:player:a77a85a73859594b2474b05588a2f7c,Distelfinks,top,,,,,,,,,,,,,,
+player,oe:team:1c282536c5574499989be3aa8ae0600,OQ,OQ,2021,Unknown,oe:player:265de6a19ea25898ad88c82167c0251,Panda,jng,,,,,,,,,,,,,,
+player,oe:team:1c282536c5574499989be3aa8ae0600,OQ,OQ,2021,Unknown,oe:player:11c1567e14826d940601073412059ef,Ariendel,mid,,,,,,,,,,,,,,
+player,oe:team:1c282536c5574499989be3aa8ae0600,OQ,OQ,2021,Unknown,oe:player:bc890d965b40a02008da114b4b37122,Kacha,bot,,,,,,,,,,,,,,
+player,oe:team:1c282536c5574499989be3aa8ae0600,OQ,OQ,2021,Unknown,oe:player:0c0b2dc5720566f5cceb972011221cf,Call Lin,sup,,,,,,,,,,,,,,
+lineup,oe:team:1c282536c5574499989be3aa8ae0600,OQ,OQ,2021,Unknown,,,,lineup-c866ec35d72743c8,OQ-01,1,2,oe:player:a77a85a73859594b2474b05588a2f7c,oe:player:265de6a19ea25898ad88c82167c0251,oe:player:11c1567e14826d940601073412059ef,oe:player:bc890d965b40a02008da114b4b37122,oe:player:0c0b2dc5720566f5cceb972011221cf,Distelfinks,Panda,Ariendel,Kacha,Call Lin
+player,oe:team:9548eb0ae58f318888c036712da329b,Resolve NA,RN,2021,Unknown,oe:player:f57280c82d3a38f8bf412a520e33f7f,PCL,top,,,,,,,,,,,,,,
+player,oe:team:9548eb0ae58f318888c036712da329b,Resolve NA,RN,2021,Unknown,oe:player:c6c67e6161209c24759f6a71ad6ac9b,Fanatiik,jng,,,,,,,,,,,,,,
+player,oe:team:9548eb0ae58f318888c036712da329b,Resolve NA,RN,2021,Unknown,oe:player:ea9ed09584feecae0991089f087d2ce,APA,mid,,,,,,,,,,,,,,
+player,oe:team:9548eb0ae58f318888c036712da329b,Resolve NA,RN,2021,Unknown,oe:player:4410ec34d9e6c1a68100ca0ce033fb1,Array,bot,,,,,,,,,,,,,,
+player,oe:team:9548eb0ae58f318888c036712da329b,Resolve NA,RN,2021,Unknown,oe:player:4db9382d7c962f8153c60cce7f919a0,winter,sup,,,,,,,,,,,,,,
+lineup,oe:team:9548eb0ae58f318888c036712da329b,Resolve NA,RN,2021,Unknown,,,,lineup-22d99d2a7a5d3399,RN-01,1,5,oe:player:f57280c82d3a38f8bf412a520e33f7f,oe:player:c6c67e6161209c24759f6a71ad6ac9b,oe:player:ea9ed09584feecae0991089f087d2ce,oe:player:4410ec34d9e6c1a68100ca0ce033fb1,oe:player:4db9382d7c962f8153c60cce7f919a0,PCL,Fanatiik,APA,Array,winter
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2021,Unknown,oe:player:6415f599dff5f306a727626661cf583,Cavele,top,,,,,,,,,,,,,,
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2021,Unknown,oe:player:ec41c69e802a3c1cc4b81a7c25d021e,Matty,jng,,,,,,,,,,,,,,
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2021,Unknown,oe:player:9e4cab8a6c3041527f605caf9913072,Strompest,mid,,,,,,,,,,,,,,
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2021,Unknown,oe:player:4410ec34d9e6c1a68100ca0ce033fb1,Array,bot,,,,,,,,,,,,,,
+player,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2021,Unknown,oe:player:2f8d775625d7bc8069ae313c9b2efbe,Gbunny,sup,,,,,,,,,,,,,,
+lineup,oe:team:8776b7033f1bc10634e50d90f861c1d,Supernova,SUP,2021,Unknown,,,,lineup-bb13dcc8bf3649a7,SUP-01,1,1,oe:player:6415f599dff5f306a727626661cf583,oe:player:ec41c69e802a3c1cc4b81a7c25d021e,oe:player:9e4cab8a6c3041527f605caf9913072,oe:player:4410ec34d9e6c1a68100ca0ce033fb1,oe:player:2f8d775625d7bc8069ae313c9b2efbe,Cavele,Matty,Strompest,Array,Gbunny
+player,oe:team:d3a84f44a4b85b09d6443097285f7c7,Zoos Gaming,ZG,2021,Unknown,oe:player:fa816783145a625c4b502446b18ad93,Allorim,top,,,,,,,,,,,,,,
+player,oe:team:d3a84f44a4b85b09d6443097285f7c7,Zoos Gaming,ZG,2021,Unknown,oe:player:4d3b8fa6b13ab0ee02a46dbd100e075,RBM,jng,,,,,,,,,,,,,,
+player,oe:team:d3a84f44a4b85b09d6443097285f7c7,Zoos Gaming,ZG,2021,Unknown,oe:player:05a73863e113f3cb6b472a76da2ea52,DARKWINGS,mid,,,,,,,,,,,,,,
+player,oe:team:d3a84f44a4b85b09d6443097285f7c7,Zoos Gaming,ZG,2021,Unknown,oe:player:086e614735cb35b26688d0a62c42b27,Raheen,bot,,,,,,,,,,,,,,
+player,oe:team:d3a84f44a4b85b09d6443097285f7c7,Zoos Gaming,ZG,2021,Unknown,oe:player:ee069f0c3ccbcd367d3db57c0945cc4,Rhino,sup,,,,,,,,,,,,,,
+lineup,oe:team:d3a84f44a4b85b09d6443097285f7c7,Zoos Gaming,ZG,2021,Unknown,,,,lineup-e16be60cbbf63ef5,ZG-01,1,1,oe:player:fa816783145a625c4b502446b18ad93,oe:player:4d3b8fa6b13ab0ee02a46dbd100e075,oe:player:05a73863e113f3cb6b472a76da2ea52,oe:player:086e614735cb35b26688d0a62c42b27,oe:player:ee069f0c3ccbcd367d3db57c0945cc4,Allorim,RBM,DARKWINGS,Raheen,Rhino

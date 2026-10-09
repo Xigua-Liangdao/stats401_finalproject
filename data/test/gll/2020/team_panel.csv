@@ -1,0 +1,84 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2020,Summer,oe:player:6d58388e4a22a0e2924686b96184ca3,Prove,top,,,,,,,,,,,,,,
+player,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2020,Summer,oe:player:756ceb3b868b796285286ceab78ae04,Totyz,top,,,,,,,,,,,,,,
+player,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2020,Summer,oe:player:f7fff43600c6e3c667395c8192368eb,DEV1L,jng,,,,,,,,,,,,,,
+player,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2020,Summer,oe:player:ec2315b986c17353bc2aa53308de384,Homeless,jng,,,,,,,,,,,,,,
+player,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2020,Summer,oe:player:ca1d2c5fad57c608d5d654bf3dedde1,Sveronis,mid,,,,,,,,,,,,,,
+player,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2020,Summer,oe:player:14f4e1379ecee0740dc549a0bf595e7,Tranquil,mid,,,,,,,,,,,,,,
+player,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2020,Summer,oe:player:ed52d8e29a5b50b4624b5ec4e5b8fc7,Gagai,bot,,,,,,,,,,,,,,
+player,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2020,Summer,oe:player:fc2f901050e822b97a11696ddb2e67f,Leo D Aras,sup,,,,,,,,,,,,,,
+player,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2020,Summer,oe:player:ad34a9d5d87691c743dc42cbc5e8b78,Sanity,sup,,,,,,,,,,,,,,
+lineup,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2020,Summer,,,,lineup-55552abde25472d1,AFE-01,1,1,oe:player:6d58388e4a22a0e2924686b96184ca3,oe:player:ec2315b986c17353bc2aa53308de384,oe:player:14f4e1379ecee0740dc549a0bf595e7,oe:player:ed52d8e29a5b50b4624b5ec4e5b8fc7,oe:player:ad34a9d5d87691c743dc42cbc5e8b78,Prove,Homeless,Tranquil,Gagai,Sanity
+lineup,oe:team:5f1bc4a914b49c7b7ff4c2f1b8d8df9,Anorthosis Famagusta Esports,AFE,2020,Summer,,,,lineup-c84b6af67a7a7c99,AFE-02,2,1,oe:player:756ceb3b868b796285286ceab78ae04,oe:player:f7fff43600c6e3c667395c8192368eb,oe:player:ca1d2c5fad57c608d5d654bf3dedde1,oe:player:ed52d8e29a5b50b4624b5ec4e5b8fc7,oe:player:fc2f901050e822b97a11696ddb2e67f,Totyz,DEV1L,Sveronis,Gagai,Leo D Aras
+player,oe:team:4a76af3ced11eaed0ca7c6e4a20b826,Game Changers,GC,2020,Summer,oe:player:6e074d3f89abdbbffcc7c7c67b8c795,Psclly,top,,,,,,,,,,,,,,
+player,oe:team:4a76af3ced11eaed0ca7c6e4a20b826,Game Changers,GC,2020,Summer,oe:player:d7f3cfa48a52dda4354774a809402b2,Nikolex,jng,,,,,,,,,,,,,,
+player,oe:team:4a76af3ced11eaed0ca7c6e4a20b826,Game Changers,GC,2020,Summer,oe:player:8a391c2d095a4e0b79ed197436af6c7,Peppe,mid,,,,,,,,,,,,,,
+player,oe:team:4a76af3ced11eaed0ca7c6e4a20b826,Game Changers,GC,2020,Summer,oe:player:7a27b91a1ea41f157f4b3df8889621f,Sirinox,bot,,,,,,,,,,,,,,
+player,oe:team:4a76af3ced11eaed0ca7c6e4a20b826,Game Changers,GC,2020,Summer,oe:player:ba73f456355e560078c181866b96637,GreeN Lant3rN,sup,,,,,,,,,,,,,,
+lineup,oe:team:4a76af3ced11eaed0ca7c6e4a20b826,Game Changers,GC,2020,Summer,,,,lineup-6a2b612bf069fbcd,GC-01,1,12,oe:player:6e074d3f89abdbbffcc7c7c67b8c795,oe:player:d7f3cfa48a52dda4354774a809402b2,oe:player:8a391c2d095a4e0b79ed197436af6c7,oe:player:7a27b91a1ea41f157f4b3df8889621f,oe:player:ba73f456355e560078c181866b96637,Psclly,Nikolex,Peppe,Sirinox,GreeN Lant3rN
+player,oe:team:4410ecf1b88f1316b6e6c110120c896,Gamespace Mediterranean College Esports,GMCE,2020,Spring 1,oe:player:4ca6b38456b5a0efe5bf1a7f9c29a2e,KingMagnus,top,,,,,,,,,,,,,,
+player,oe:team:4410ecf1b88f1316b6e6c110120c896,Gamespace Mediterranean College Esports,GMCE,2020,Spring 1,oe:player:6a62e6e462c23394c916f2b0f86496d,WouLou,top,,,,,,,,,,,,,,
+player,oe:team:4410ecf1b88f1316b6e6c110120c896,Gamespace Mediterranean College Esports,GMCE,2020,Spring 1,oe:player:d7f3cfa48a52dda4354774a809402b2,Nikolex,jng,,,,,,,,,,,,,,
+player,oe:team:4410ecf1b88f1316b6e6c110120c896,Gamespace Mediterranean College Esports,GMCE,2020,Spring 1,oe:player:4c5f56d5326de4411d4858628981045,Pavkyn,jng,,,,,,,,,,,,,,
+player,oe:team:4410ecf1b88f1316b6e6c110120c896,Gamespace Mediterranean College Esports,GMCE,2020,Spring 1,oe:player:ac3dc02f5d3f2ec0c396cfa95de986e,J0J0C,mid,,,,,,,,,,,,,,
+player,oe:team:4410ecf1b88f1316b6e6c110120c896,Gamespace Mediterranean College Esports,GMCE,2020,Spring 1,oe:player:61f615a6488549f1aef0fd1a47a3826,Rogue,mid,,,,,,,,,,,,,,
+player,oe:team:4410ecf1b88f1316b6e6c110120c896,Gamespace Mediterranean College Esports,GMCE,2020,Spring 1,oe:player:644ecc3de90ac8266448de590d5c6fa,AxeL,bot,,,,,,,,,,,,,,
+player,oe:team:4410ecf1b88f1316b6e6c110120c896,Gamespace Mediterranean College Esports,GMCE,2020,Spring 1,oe:player:718653d2b99b584067bbd93a5cbbad4,LowNley,sup,,,,,,,,,,,,,,
+player,oe:team:4410ecf1b88f1316b6e6c110120c896,Gamespace Mediterranean College Esports,GMCE,2020,Spring 1,oe:player:b0a5ef80cf0f4e68ff52e8306da3396,Mafra,sup,,,,,,,,,,,,,,
+lineup,oe:team:4410ecf1b88f1316b6e6c110120c896,Gamespace Mediterranean College Esports,GMCE,2020,Spring 1,,,,lineup-0b52989e8900e303,GMCE-01,1,1,oe:player:6a62e6e462c23394c916f2b0f86496d,oe:player:4c5f56d5326de4411d4858628981045,oe:player:ac3dc02f5d3f2ec0c396cfa95de986e,oe:player:644ecc3de90ac8266448de590d5c6fa,oe:player:718653d2b99b584067bbd93a5cbbad4,WouLou,Pavkyn,J0J0C,AxeL,LowNley
+lineup,oe:team:4410ecf1b88f1316b6e6c110120c896,Gamespace Mediterranean College Esports,GMCE,2020,Spring 1,,,,lineup-aee1f2397449284d,GMCE-02,2,1,oe:player:4ca6b38456b5a0efe5bf1a7f9c29a2e,oe:player:d7f3cfa48a52dda4354774a809402b2,oe:player:61f615a6488549f1aef0fd1a47a3826,oe:player:644ecc3de90ac8266448de590d5c6fa,oe:player:b0a5ef80cf0f4e68ff52e8306da3396,KingMagnus,Nikolex,Rogue,AxeL,Mafra
+player,oe:team:d6a33a844865a46a3a046be02d6837b,Greek Regenesis eSports,GRE,2020,Spring 1,oe:player:8e2d32454cd700510f4ba4533638ad6,Tanacce,top,,,,,,,,,,,,,,
+player,oe:team:d6a33a844865a46a3a046be02d6837b,Greek Regenesis eSports,GRE,2020,Spring 1,oe:player:ecb10a3e37769b528956cc93d3c7756,DahVys,jng,,,,,,,,,,,,,,
+player,oe:team:d6a33a844865a46a3a046be02d6837b,Greek Regenesis eSports,GRE,2020,Spring 1,oe:player:1088cd31175ca69bc2f4e15277a079c,Siler,mid,,,,,,,,,,,,,,
+player,oe:team:d6a33a844865a46a3a046be02d6837b,Greek Regenesis eSports,GRE,2020,Spring 1,oe:player:148e116847c069d852ad0696d4180fe,Bananitoo,bot,,,,,,,,,,,,,,
+player,oe:team:d6a33a844865a46a3a046be02d6837b,Greek Regenesis eSports,GRE,2020,Spring 1,oe:player:f9657c5a481662ab773f3ecc8305a48,WildPanda,sup,,,,,,,,,,,,,,
+lineup,oe:team:d6a33a844865a46a3a046be02d6837b,Greek Regenesis eSports,GRE,2020,Spring 1,,,,lineup-e48442b7ba8dc814,GRE-01,1,1,oe:player:8e2d32454cd700510f4ba4533638ad6,oe:player:ecb10a3e37769b528956cc93d3c7756,oe:player:1088cd31175ca69bc2f4e15277a079c,oe:player:148e116847c069d852ad0696d4180fe,oe:player:f9657c5a481662ab773f3ecc8305a48,Tanacce,DahVys,Siler,Bananitoo,WildPanda
+player,oe:team:a98857d2543af198af5ca1b1532d5c7,Intrepid Fox Gaming,IFG,2020,Summer,oe:player:5d072a942f5886a2b2f818a39ef455b,Bako,top,,,,,,,,,,,,,,
+player,oe:team:a98857d2543af198af5ca1b1532d5c7,Intrepid Fox Gaming,IFG,2020,Summer,oe:player:9612cba9ff460009874c95fa05ecca8,LeBron,jng,,,,,,,,,,,,,,
+player,oe:team:a98857d2543af198af5ca1b1532d5c7,Intrepid Fox Gaming,IFG,2020,Summer,oe:player:1d92347c8535963a79d8ad5bfc8c86d,Pun1sher,mid,,,,,,,,,,,,,,
+player,oe:team:a98857d2543af198af5ca1b1532d5c7,Intrepid Fox Gaming,IFG,2020,Summer,oe:player:a4c0ac4f426f602636fd746882e515c,Kaba,bot,,,,,,,,,,,,,,
+player,oe:team:a98857d2543af198af5ca1b1532d5c7,Intrepid Fox Gaming,IFG,2020,Summer,oe:player:672363060974696ca18f9dc1707968a,Hadow,sup,,,,,,,,,,,,,,
+lineup,oe:team:a98857d2543af198af5ca1b1532d5c7,Intrepid Fox Gaming,IFG,2020,Summer,,,,lineup-4085ba360cfa3574,IFG-01,1,2,oe:player:5d072a942f5886a2b2f818a39ef455b,oe:player:9612cba9ff460009874c95fa05ecca8,oe:player:1d92347c8535963a79d8ad5bfc8c86d,oe:player:a4c0ac4f426f602636fd746882e515c,oe:player:672363060974696ca18f9dc1707968a,Bako,LeBron,Pun1sher,Kaba,Hadow
+player,oe:team:9589babfa44eff55bd391b13a9074b9,LUL Esports,LE,2020,Spring 1,oe:player:48386132af27e43a232bada68b102b8,topo,top,,,,,,,,,,,,,,
+player,oe:team:9589babfa44eff55bd391b13a9074b9,LUL Esports,LE,2020,Spring 1,oe:player:695619e8ed9fb479dec43daab6268f1,Lunny,jng,,,,,,,,,,,,,,
+player,oe:team:9589babfa44eff55bd391b13a9074b9,LUL Esports,LE,2020,Spring 1,oe:player:a4789b372c90f205df8abe782ea8c51,Jimsnop,mid,,,,,,,,,,,,,,
+player,oe:team:9589babfa44eff55bd391b13a9074b9,LUL Esports,LE,2020,Spring 1,oe:player:4cb941dcee4bc46e579626a2e5d0f44,L0ckie,bot,,,,,,,,,,,,,,
+player,oe:team:9589babfa44eff55bd391b13a9074b9,LUL Esports,LE,2020,Spring 1,oe:player:14f4e1379ecee0740dc549a0bf595e7,Tranquil,sup,,,,,,,,,,,,,,
+lineup,oe:team:9589babfa44eff55bd391b13a9074b9,LUL Esports,LE,2020,Spring 1,,,,lineup-4a69479fa4610a1e,LE-01,1,1,oe:player:48386132af27e43a232bada68b102b8,oe:player:695619e8ed9fb479dec43daab6268f1,oe:player:a4789b372c90f205df8abe782ea8c51,oe:player:4cb941dcee4bc46e579626a2e5d0f44,oe:player:14f4e1379ecee0740dc549a0bf595e7,topo,Lunny,Jimsnop,L0ckie,Tranquil
+player,oe:team:7f558ae3ef0742800bf509957e7a3d8,Pyrsos Esports,PE,2020,Summer,oe:player:9db3f170213f562a9613fe4f99d7dfa,Empyros,top,,,,,,,,,,,,,,
+player,oe:team:7f558ae3ef0742800bf509957e7a3d8,Pyrsos Esports,PE,2020,Summer,oe:player:3a28b3be26d24cd2de6c61a80eb42b1,J1m,jng,,,,,,,,,,,,,,
+player,oe:team:7f558ae3ef0742800bf509957e7a3d8,Pyrsos Esports,PE,2020,Summer,oe:player:a4789b372c90f205df8abe782ea8c51,Jimsnop,mid,,,,,,,,,,,,,,
+player,oe:team:7f558ae3ef0742800bf509957e7a3d8,Pyrsos Esports,PE,2020,Summer,oe:player:32c86900dc3778c47c38c974b7fd106,RektLess,bot,,,,,,,,,,,,,,
+player,oe:team:7f558ae3ef0742800bf509957e7a3d8,Pyrsos Esports,PE,2020,Summer,oe:player:2b8e361b8e4a1cfb297f767544c5bf3,Soap,sup,,,,,,,,,,,,,,
+lineup,oe:team:7f558ae3ef0742800bf509957e7a3d8,Pyrsos Esports,PE,2020,Summer,,,,lineup-4bbe8f5074a64621,PE-01,1,2,oe:player:9db3f170213f562a9613fe4f99d7dfa,oe:player:3a28b3be26d24cd2de6c61a80eb42b1,oe:player:a4789b372c90f205df8abe782ea8c51,oe:player:32c86900dc3778c47c38c974b7fd106,oe:player:2b8e361b8e4a1cfb297f767544c5bf3,Empyros,J1m,Jimsnop,RektLess,Soap
+player,oe:team:b136827bb6e2aa53e85960a66f6f6d4,Rejects Gaming,RG,2020,Summer,oe:player:28ed2ac6c29f64a3692c956004b8ff7,Difference,top,,,,,,,,,,,,,,
+player,oe:team:b136827bb6e2aa53e85960a66f6f6d4,Rejects Gaming,RG,2020,Summer,oe:player:3c3623af83f5bdcdc827656f608d586,Noxus,jng,,,,,,,,,,,,,,
+player,oe:team:b136827bb6e2aa53e85960a66f6f6d4,Rejects Gaming,RG,2020,Summer,oe:player:b721478ba0a0f17e7a60eb30b9d3440,Woops,jng,,,,,,,,,,,,,,
+player,oe:team:b136827bb6e2aa53e85960a66f6f6d4,Rejects Gaming,RG,2020,Summer,oe:player:4817eee6e21d12824c37bfbdaf2c325,Kaymin,mid,,,,,,,,,,,,,,
+player,oe:team:b136827bb6e2aa53e85960a66f6f6d4,Rejects Gaming,RG,2020,Summer,oe:player:9c7e382c090ab2e9658c35ac407e552,Satanico,mid,,,,,,,,,,,,,,
+player,oe:team:b136827bb6e2aa53e85960a66f6f6d4,Rejects Gaming,RG,2020,Summer,oe:player:4cb941dcee4bc46e579626a2e5d0f44,L0ckie,bot,,,,,,,,,,,,,,
+player,oe:team:b136827bb6e2aa53e85960a66f6f6d4,Rejects Gaming,RG,2020,Summer,oe:player:63e54ba20c24707a38ecc9cbca3ba33,Steelyoung,bot,,,,,,,,,,,,,,
+player,oe:team:b136827bb6e2aa53e85960a66f6f6d4,Rejects Gaming,RG,2020,Summer,oe:player:094b98875e020d82cdbe4bc6920293e,Stef,sup,,,,,,,,,,,,,,
+player,oe:team:b136827bb6e2aa53e85960a66f6f6d4,Rejects Gaming,RG,2020,Summer,oe:player:ccd47b3ec9b7a034b2b71e8516427e3,ZaFiR,sup,,,,,,,,,,,,,,
+lineup,oe:team:b136827bb6e2aa53e85960a66f6f6d4,Rejects Gaming,RG,2020,Summer,,,,lineup-8178badc524719d3,RG-01,1,1,oe:player:28ed2ac6c29f64a3692c956004b8ff7,oe:player:b721478ba0a0f17e7a60eb30b9d3440,oe:player:9c7e382c090ab2e9658c35ac407e552,oe:player:63e54ba20c24707a38ecc9cbca3ba33,oe:player:094b98875e020d82cdbe4bc6920293e,Difference,Woops,Satanico,Steelyoung,Stef
+lineup,oe:team:b136827bb6e2aa53e85960a66f6f6d4,Rejects Gaming,RG,2020,Summer,,,,lineup-f182a21cfe57d9f4,RG-02,2,1,oe:player:28ed2ac6c29f64a3692c956004b8ff7,oe:player:3c3623af83f5bdcdc827656f608d586,oe:player:4817eee6e21d12824c37bfbdaf2c325,oe:player:4cb941dcee4bc46e579626a2e5d0f44,oe:player:ccd47b3ec9b7a034b2b71e8516427e3,Difference,Noxus,Kaymin,L0ckie,ZaFiR
+player,oe:team:d932b52fb3a9d5fad174728a969ee14,Team Refuse,TR,2020,Summer,oe:player:6b36748e817c00694ac8f05d3ad1ab5,Compultion,top,,,,,,,,,,,,,,
+player,oe:team:d932b52fb3a9d5fad174728a969ee14,Team Refuse,TR,2020,Summer,oe:player:657e73d55c0adcfeefe2c8beb11fa64,NorthnLghts,top,,,,,,,,,,,,,,
+player,oe:team:d932b52fb3a9d5fad174728a969ee14,Team Refuse,TR,2020,Summer,oe:player:3c3623af83f5bdcdc827656f608d586,Noxus,jng,,,,,,,,,,,,,,
+player,oe:team:d932b52fb3a9d5fad174728a969ee14,Team Refuse,TR,2020,Summer,oe:player:803d2520bb02263bb5aa0d33365739f,Tunaraz,jng,,,,,,,,,,,,,,
+player,oe:team:d932b52fb3a9d5fad174728a969ee14,Team Refuse,TR,2020,Summer,oe:player:5f2dbfdcd0481499dcdbcbd0431c6db,YaphetS,jng,,,,,,,,,,,,,,
+player,oe:team:d932b52fb3a9d5fad174728a969ee14,Team Refuse,TR,2020,Summer,oe:player:43e21a17cd993cd43771f7c828b8853,Deluxe,mid,,,,,,,,,,,,,,
+player,oe:team:d932b52fb3a9d5fad174728a969ee14,Team Refuse,TR,2020,Summer,oe:player:1a8c5af93324a560e91a054146e652d,Tsiperakos,mid,,,,,,,,,,,,,,
+player,oe:team:d932b52fb3a9d5fad174728a969ee14,Team Refuse,TR,2020,Summer,oe:player:2525e6c01a22fb7c32820cefd8616c1,Ardenein,bot,,,,,,,,,,,,,,
+player,oe:team:d932b52fb3a9d5fad174728a969ee14,Team Refuse,TR,2020,Summer,oe:player:e54bbd7c6dd5290a1cd0f70ad2653c5,Vaynedeta,bot,,,,,,,,,,,,,,
+player,oe:team:d932b52fb3a9d5fad174728a969ee14,Team Refuse,TR,2020,Summer,oe:player:f6773eb58d4c898e2dc43fe022103ff,Lowzy,sup,,,,,,,,,,,,,,
+player,oe:team:d932b52fb3a9d5fad174728a969ee14,Team Refuse,TR,2020,Summer,oe:player:276a74e4409e2bdf5556afadf29f7de,Uloper,sup,,,,,,,,,,,,,,
+lineup,oe:team:d932b52fb3a9d5fad174728a969ee14,Team Refuse,TR,2020,Summer,,,,lineup-749ac5664f279b07,TR-01,1,1,oe:player:657e73d55c0adcfeefe2c8beb11fa64,oe:player:803d2520bb02263bb5aa0d33365739f,oe:player:1a8c5af93324a560e91a054146e652d,oe:player:e54bbd7c6dd5290a1cd0f70ad2653c5,oe:player:276a74e4409e2bdf5556afadf29f7de,NorthnLghts,Tunaraz,Tsiperakos,Vaynedeta,Uloper
+lineup,oe:team:d932b52fb3a9d5fad174728a969ee14,Team Refuse,TR,2020,Summer,,,,lineup-97da882806357800,TR-02,2,1,oe:player:6b36748e817c00694ac8f05d3ad1ab5,oe:player:5f2dbfdcd0481499dcdbcbd0431c6db,oe:player:43e21a17cd993cd43771f7c828b8853,oe:player:2525e6c01a22fb7c32820cefd8616c1,oe:player:f6773eb58d4c898e2dc43fe022103ff,Compultion,YaphetS,Deluxe,Ardenein,Lowzy
+lineup,oe:team:d932b52fb3a9d5fad174728a969ee14,Team Refuse,TR,2020,Summer,,,,lineup-f90a16a68a6674e8,TR-03,3,1,oe:player:657e73d55c0adcfeefe2c8beb11fa64,oe:player:3c3623af83f5bdcdc827656f608d586,oe:player:43e21a17cd993cd43771f7c828b8853,oe:player:e54bbd7c6dd5290a1cd0f70ad2653c5,oe:player:276a74e4409e2bdf5556afadf29f7de,NorthnLghts,Noxus,Deluxe,Vaynedeta,Uloper
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2020,Summer,oe:player:310b0b6b9208c01085e034b3a61015c,IceBreaker,top,,,,,,,,,,,,,,
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2020,Summer,oe:player:3abd71f80f2049f65dc4444a9df0cce,Appen,jng,,,,,,,,,,,,,,
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2020,Summer,oe:player:e20d37a5d7fcc4c35be6fc18a8e71bf,Paris,mid,,,,,,,,,,,,,,
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2020,Summer,oe:player:148e116847c069d852ad0696d4180fe,Bananitoo,bot,,,,,,,,,,,,,,
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2020,Summer,oe:player:330649b30536a93ea9363a7dd17e7dd,Cospect,sup,,,,,,,,,,,,,,
+lineup,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2020,Summer,,,,lineup-11cd4781b7c8b867,WE-01,1,1,oe:player:310b0b6b9208c01085e034b3a61015c,oe:player:3abd71f80f2049f65dc4444a9df0cce,oe:player:e20d37a5d7fcc4c35be6fc18a8e71bf,oe:player:148e116847c069d852ad0696d4180fe,oe:player:330649b30536a93ea9363a7dd17e7dd,IceBreaker,Appen,Paris,Bananitoo,Cospect

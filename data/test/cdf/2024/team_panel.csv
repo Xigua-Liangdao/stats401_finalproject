@@ -1,0 +1,68 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:e3a29387c70230d76837b86c2aefd14,Aegis,AEG,2024,Unknown,oe:player:099ef5da25e9e7b76e69776eee28f35,Badlulu,top,,,,,,,,,,,,,,
+player,oe:team:e3a29387c70230d76837b86c2aefd14,Aegis,AEG,2024,Unknown,oe:player:183bae2f35280bc8e0705ef0799bb5f,Apatheia,jng,,,,,,,,,,,,,,
+player,oe:team:e3a29387c70230d76837b86c2aefd14,Aegis,AEG,2024,Unknown,oe:player:7b0aeb1bb297b0d44629e94186bcb6a,Nafkelah,mid,,,,,,,,,,,,,,
+player,oe:team:e3a29387c70230d76837b86c2aefd14,Aegis,AEG,2024,Unknown,oe:player:5b826f287e199129019810487d2ce61,Bean,bot,,,,,,,,,,,,,,
+player,oe:team:e3a29387c70230d76837b86c2aefd14,Aegis,AEG,2024,Unknown,oe:player:e1dbe2b979510dba78b229327292a10,Veignorem,sup,,,,,,,,,,,,,,
+lineup,oe:team:e3a29387c70230d76837b86c2aefd14,Aegis,AEG,2024,Unknown,,,,lineup-642e4f66a5d1e0c9,AEG-01,1,1,oe:player:099ef5da25e9e7b76e69776eee28f35,oe:player:183bae2f35280bc8e0705ef0799bb5f,oe:player:7b0aeb1bb297b0d44629e94186bcb6a,oe:player:5b826f287e199129019810487d2ce61,oe:player:e1dbe2b979510dba78b229327292a10,Badlulu,Apatheia,Nafkelah,Bean,Veignorem
+player,oe:team:c40f6d0d20a7a718c60342e48c144a2,BK ROG Esports,BRE,2024,Unknown,oe:player:4f6302984cea43e6384d488973fe1d2,Howling,top,,,,,,,,,,,,,,
+player,oe:team:c40f6d0d20a7a718c60342e48c144a2,BK ROG Esports,BRE,2024,Unknown,oe:player:cbe20c64274a87a21e5bdac1ccc3e77,Rhilech,jng,,,,,,,,,,,,,,
+player,oe:team:c40f6d0d20a7a718c60342e48c144a2,BK ROG Esports,BRE,2024,Unknown,oe:player:6606138426fa9bbef349c96b4afbc77,Czekolad,mid,,,,,,,,,,,,,,
+player,oe:team:c40f6d0d20a7a718c60342e48c144a2,BK ROG Esports,BRE,2024,Unknown,oe:player:bc4f68ea698f26bb1e2f6d34f900f57,SamD,bot,,,,,,,,,,,,,,
+player,oe:team:c40f6d0d20a7a718c60342e48c144a2,BK ROG Esports,BRE,2024,Unknown,oe:player:de1fb222dafded7d06b10df578fdd0e,Hantera,sup,,,,,,,,,,,,,,
+lineup,oe:team:c40f6d0d20a7a718c60342e48c144a2,BK ROG Esports,BRE,2024,Unknown,,,,lineup-57621aa51963bbf5,BRE-01,1,3,oe:player:4f6302984cea43e6384d488973fe1d2,oe:player:cbe20c64274a87a21e5bdac1ccc3e77,oe:player:6606138426fa9bbef349c96b4afbc77,oe:player:bc4f68ea698f26bb1e2f6d34f900f57,oe:player:de1fb222dafded7d06b10df578fdd0e,Howling,Rhilech,Czekolad,SamD,Hantera
+player,name-team-221f9d3c07721b0e,Kafard Academie,KA,2024,Unknown,oe:player:6a52e8fc387411c38ae76e77ffe6b15,Hiro,top,,,,,,,,,,,,,,
+player,name-team-221f9d3c07721b0e,Kafard Academie,KA,2024,Unknown,oe:player:208bf3db5d9673c8c1df1f81f9621d1,Theocacs,jng,,,,,,,,,,,,,,
+player,name-team-221f9d3c07721b0e,Kafard Academie,KA,2024,Unknown,oe:player:54684f3a4141390141f0f9c28f2693c,Chreak,mid,,,,,,,,,,,,,,
+player,name-team-221f9d3c07721b0e,Kafard Academie,KA,2024,Unknown,oe:player:46ce91a03ba1ed7fea4e271c5f1721d,Bibou,bot,,,,,,,,,,,,,,
+player,name-team-221f9d3c07721b0e,Kafard Academie,KA,2024,Unknown,oe:player:6b35468bd45059f6a8450083fc379a9,Nsurr,sup,,,,,,,,,,,,,,
+lineup,name-team-221f9d3c07721b0e,Kafard Academie,KA,2024,Unknown,,,,lineup-ebc187ec6ea1f431,KA-01,1,1,oe:player:6a52e8fc387411c38ae76e77ffe6b15,oe:player:208bf3db5d9673c8c1df1f81f9621d1,oe:player:54684f3a4141390141f0f9c28f2693c,oe:player:46ce91a03ba1ed7fea4e271c5f1721d,oe:player:6b35468bd45059f6a8450083fc379a9,Hiro,Theocacs,Chreak,Bibou,Nsurr
+player,oe:team:0ade5e44c23039bca133eee58ec1b83,Klanik Esport,KE,2024,Unknown,oe:player:13eab8b40da9787760282cfd4b13ed5,SwiT,top,,,,,,,,,,,,,,
+player,oe:team:0ade5e44c23039bca133eee58ec1b83,Klanik Esport,KE,2024,Unknown,oe:player:b360f781c01b75694d44ea07f986837,GTI,jng,,,,,,,,,,,,,,
+player,oe:team:0ade5e44c23039bca133eee58ec1b83,Klanik Esport,KE,2024,Unknown,oe:player:7671e31fd945378972f6247eb70038f,fantomisto,mid,,,,,,,,,,,,,,
+player,oe:team:0ade5e44c23039bca133eee58ec1b83,Klanik Esport,KE,2024,Unknown,oe:player:e01477fd207fef2d6474585a75fbcbd,Goldenpenny,bot,,,,,,,,,,,,,,
+player,oe:team:0ade5e44c23039bca133eee58ec1b83,Klanik Esport,KE,2024,Unknown,oe:player:a7eeda89dab95c659a987fdb3952792,Kolios,sup,,,,,,,,,,,,,,
+lineup,oe:team:0ade5e44c23039bca133eee58ec1b83,Klanik Esport,KE,2024,Unknown,,,,lineup-e9a7d9e9e088b8d9,KE-01,1,1,oe:player:13eab8b40da9787760282cfd4b13ed5,oe:player:b360f781c01b75694d44ea07f986837,oe:player:7671e31fd945378972f6247eb70038f,oe:player:e01477fd207fef2d6474585a75fbcbd,oe:player:a7eeda89dab95c659a987fdb3952792,SwiT,GTI,fantomisto,Goldenpenny,Kolios
+player,name-team-59633a0253293aab,Le Pouvoir de l'Amitié,LPDL,2024,Unknown,oe:player:acfdf3b694c6ffc32396b64edb82bd8,Leny,top,,,,,,,,,,,,,,
+player,name-team-59633a0253293aab,Le Pouvoir de l'Amitié,LPDL,2024,Unknown,oe:player:a44ae9bfcb722ad18088def7d750319,Balyy,jng,,,,,,,,,,,,,,
+player,name-team-59633a0253293aab,Le Pouvoir de l'Amitié,LPDL,2024,Unknown,oe:player:694d028e62f4ea668b206ab752b6f94,Sayn,mid,,,,,,,,,,,,,,
+player,name-team-59633a0253293aab,Le Pouvoir de l'Amitié,LPDL,2024,Unknown,oe:player:de75f2eb439368d9b39281bd0c4bdab,Soldier,bot,,,,,,,,,,,,,,
+player,name-team-59633a0253293aab,Le Pouvoir de l'Amitié,LPDL,2024,Unknown,oe:player:87e7c1c53cb8af484ecd1b4bc20281d,Romeo,sup,,,,,,,,,,,,,,
+lineup,name-team-59633a0253293aab,Le Pouvoir de l'Amitié,LPDL,2024,Unknown,,,,lineup-f527952a9c8a3907,LPDL-01,1,3,oe:player:acfdf3b694c6ffc32396b64edb82bd8,oe:player:a44ae9bfcb722ad18088def7d750319,oe:player:694d028e62f4ea668b206ab752b6f94,oe:player:de75f2eb439368d9b39281bd0c4bdab,oe:player:87e7c1c53cb8af484ecd1b4bc20281d,Leny,Balyy,Sayn,Soldier,Romeo
+player,oe:team:91b2523df100990f9ca59be20dc3244,MHSC Esport,ME,2024,Unknown,oe:player:bb0b65400dfa98b18cc4287b86bd6de,Shourdy,top,,,,,,,,,,,,,,
+player,oe:team:91b2523df100990f9ca59be20dc3244,MHSC Esport,ME,2024,Unknown,oe:player:a85e95c1dcc81da84247a00c5e9e1de,Alex234,jng,,,,,,,,,,,,,,
+player,oe:team:91b2523df100990f9ca59be20dc3244,MHSC Esport,ME,2024,Unknown,oe:player:ae43b7e4426d4b0b62ba6ede03b367b,Melon,mid,,,,,,,,,,,,,,
+player,oe:team:91b2523df100990f9ca59be20dc3244,MHSC Esport,ME,2024,Unknown,oe:player:78c62f6478339db7cd755197d695857,Marcelzgeg,bot,,,,,,,,,,,,,,
+player,oe:team:91b2523df100990f9ca59be20dc3244,MHSC Esport,ME,2024,Unknown,oe:player:26ce16524a43afd3f2ab906d774e5da,Swishee,sup,,,,,,,,,,,,,,
+lineup,oe:team:91b2523df100990f9ca59be20dc3244,MHSC Esport,ME,2024,Unknown,,,,lineup-2578c3e1353549aa,ME-01,1,1,oe:player:bb0b65400dfa98b18cc4287b86bd6de,oe:player:a85e95c1dcc81da84247a00c5e9e1de,oe:player:ae43b7e4426d4b0b62ba6ede03b367b,oe:player:78c62f6478339db7cd755197d695857,oe:player:26ce16524a43afd3f2ab906d774e5da,Shourdy,Alex234,Melon,Marcelzgeg,Swishee
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2024,Unknown,oe:player:75414f3b4f03bf449c319eb75f3dd5b,Kryze,top,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2024,Unknown,oe:player:247cede38bc224fc82ea98ca18ddacf,Eckas,jng,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2024,Unknown,oe:player:657f1228bb53523274ae58bcd123ae8,Decay,mid,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2024,Unknown,oe:player:48bef668b5cb10ddc6c3865d460e327,TakeSet,bot,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2024,Unknown,oe:player:17c5e8bd59f3ea8c9d902da8d9f52b5,Myrtus,sup,,,,,,,,,,,,,,
+lineup,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2024,Unknown,,,,lineup-e7628d99d554513f,SOL-01,1,15,oe:player:75414f3b4f03bf449c319eb75f3dd5b,oe:player:247cede38bc224fc82ea98ca18ddacf,oe:player:657f1228bb53523274ae58bcd123ae8,oe:player:48bef668b5cb10ddc6c3865d460e327,oe:player:17c5e8bd59f3ea8c9d902da8d9f52b5,Kryze,Eckas,Decay,TakeSet,Myrtus
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:44189e6dc3089dbf9520de800fa705a,Keduii,top,,,,,,,,,,,,,,
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,Reeker,top,,,,,,,,,,,,,,
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:ab15060e5225b51592cd04b3aed1e09,SkewMond,top,,,,,,,,,,,,,,
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:4bb53c6fa9f5d75901136feb8bdf817,JNX,jng,,,,,,,,,,,,,,
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,Reeker,jng,,,,,,,,,,,,,,
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:ab15060e5225b51592cd04b3aed1e09,SkewMond,jng,,,,,,,,,,,,,,
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:4bb53c6fa9f5d75901136feb8bdf817,JNX,mid,,,,,,,,,,,,,,
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:44189e6dc3089dbf9520de800fa705a,Keduii,mid,,,,,,,,,,,,,,
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:ab15060e5225b51592cd04b3aed1e09,SkewMond,mid,,,,,,,,,,,,,,
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:4bb53c6fa9f5d75901136feb8bdf817,JNX,bot,,,,,,,,,,,,,,
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:44189e6dc3089dbf9520de800fa705a,Keduii,bot,,,,,,,,,,,,,,
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:a9cfbc13e22eefdd22af7b346ce2af4,Parus,bot,,,,,,,,,,,,,,
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,Reeker,bot,,,,,,,,,,,,,,
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:a9cfbc13e22eefdd22af7b346ce2af4,Parus,sup,,,,,,,,,,,,,,
+player,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,Reeker,sup,,,,,,,,,,,,,,
+lineup,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,,,,lineup-90a4269c9f7062ae,TBA-01,1,2,oe:player:44189e6dc3089dbf9520de800fa705a,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,oe:player:ab15060e5225b51592cd04b3aed1e09,oe:player:4bb53c6fa9f5d75901136feb8bdf817,oe:player:a9cfbc13e22eefdd22af7b346ce2af4,Keduii,Reeker,SkewMond,JNX,Parus
+lineup,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,,,,lineup-32d6450bdd9de45d,TBA-02,2,1,oe:player:ab15060e5225b51592cd04b3aed1e09,oe:player:4bb53c6fa9f5d75901136feb8bdf817,oe:player:44189e6dc3089dbf9520de800fa705a,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,oe:player:a9cfbc13e22eefdd22af7b346ce2af4,SkewMond,JNX,Keduii,Reeker,Parus
+lineup,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,,,,lineup-34a59d8344885806,TBA-03,3,1,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,oe:player:ab15060e5225b51592cd04b3aed1e09,oe:player:4bb53c6fa9f5d75901136feb8bdf817,oe:player:44189e6dc3089dbf9520de800fa705a,oe:player:a9cfbc13e22eefdd22af7b346ce2af4,Reeker,SkewMond,JNX,Keduii,Parus
+lineup,oe:team:9adc852fe2e027c5e4abd53ae8915ff,Team BDS Academy,TBA,2024,Unknown,,,,lineup-6a77a58cfb126c56,TBA-04,4,1,oe:player:ab15060e5225b51592cd04b3aed1e09,oe:player:4bb53c6fa9f5d75901136feb8bdf817,oe:player:44189e6dc3089dbf9520de800fa705a,oe:player:a9cfbc13e22eefdd22af7b346ce2af4,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,SkewMond,JNX,Keduii,Parus,Reeker
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2024,Unknown,oe:player:370f639a8b838f1933c7232d8adae72,Naak Nako,top,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2024,Unknown,oe:player:b49867477e266c5da8e995074e18f80,Daglas,jng,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2024,Unknown,oe:player:73ac73edf51a3acdfa494e271c6ee29,Czajek,mid,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2024,Unknown,oe:player:e214e8e906f16ec13e9a88de30dc181,Jopa,bot,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2024,Unknown,oe:player:41672e17bc1f86dc5d93955c031d2a9,Stend,sup,,,,,,,,,,,,,,
+lineup,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2024,Unknown,,,,lineup-e3778308eefed940,VIT-01,1,4,oe:player:370f639a8b838f1933c7232d8adae72,oe:player:b49867477e266c5da8e995074e18f80,oe:player:73ac73edf51a3acdfa494e271c6ee29,oe:player:e214e8e906f16ec13e9a88de30dc181,oe:player:41672e17bc1f86dc5d93955c031d2a9,Naak Nako,Daglas,Czajek,Jopa,Stend

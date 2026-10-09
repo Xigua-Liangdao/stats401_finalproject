@@ -1,0 +1,53 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2021,Summer,oe:player:5a727a99621f9e7f1d95f26fb6e5c52,Tenacity,top,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2021,Summer,oe:player:c691200f8d12ee61ae01047c4629c62,Kenvi,jng,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2021,Summer,oe:player:5b4a9ba6121c6d0e37076f8f3523000,Ryoma,mid,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2021,Summer,oe:player:09d60b7619558098c8be8459e6061b9,Luger,bot,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2021,Summer,oe:player:bb20d273a22a0d558c8853822631f60,Poome,sup,,,,,,,,,,,,,,
+lineup,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2021,Summer,,,,lineup-11de5958666f6461,1TA-01,1,2,oe:player:5a727a99621f9e7f1d95f26fb6e5c52,oe:player:c691200f8d12ee61ae01047c4629c62,oe:player:5b4a9ba6121c6d0e37076f8f3523000,oe:player:09d60b7619558098c8be8459e6061b9,oe:player:bb20d273a22a0d558c8853822631f60,Tenacity,Kenvi,Ryoma,Luger,Poome
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2021,Summer,oe:player:5e79b66b78498aa1aec126b0b4ca1a1,Darshan,top,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2021,Summer,oe:player:5cc4071294a16477e992b3c8a2b7715,Shernfire,jng,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2021,Summer,oe:player:42db31f0aa88a0167fb7651422efbcf,Copy,mid,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2021,Summer,oe:player:10fcffece0ac7be85f09c4b51a75762,Zven,bot,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2021,Summer,oe:player:40704dfd2d966862568d29770de57bd,Isles,sup,,,,,,,,,,,,,,
+lineup,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2021,Summer,,,,lineup-d7e24d6b980fa739,CA-01,1,2,oe:player:5e79b66b78498aa1aec126b0b4ca1a1,oe:player:5cc4071294a16477e992b3c8a2b7715,oe:player:42db31f0aa88a0167fb7651422efbcf,oe:player:10fcffece0ac7be85f09c4b51a75762,oe:player:40704dfd2d966862568d29770de57bd,Darshan,Shernfire,Copy,Zven,Isles
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2021,Summer,oe:player:43b4189712f5ac66bbef0414a8ed2db,Lourlo,top,,,,,,,,,,,,,,
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2021,Summer,oe:player:f42847a8ed944443fbdcef8cfa7087d,Akaadian,jng,,,,,,,,,,,,,,
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2021,Summer,oe:player:d3b78a30a7132a543fe9f14a5a25918,Soligo,mid,,,,,,,,,,,,,,
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2021,Summer,oe:player:ce280cfcaa8d028bf7400e597eb666c,Yusui,mid,,,,,,,,,,,,,,
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2021,Summer,oe:player:3f96b0d5494895f5e964dc16ea8f27b,Spawn,bot,,,,,,,,,,,,,,
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2021,Summer,oe:player:650f5da2c2068fff2937c3530393c97,JayJ,sup,,,,,,,,,,,,,,
+lineup,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2021,Summer,,,,lineup-b6eee54df335030d,DA-01,1,2,oe:player:43b4189712f5ac66bbef0414a8ed2db,oe:player:f42847a8ed944443fbdcef8cfa7087d,oe:player:d3b78a30a7132a543fe9f14a5a25918,oe:player:3f96b0d5494895f5e964dc16ea8f27b,oe:player:650f5da2c2068fff2937c3530393c97,Lourlo,Akaadian,Soligo,Spawn,JayJ
+lineup,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2021,Summer,,,,lineup-2957633afbbcd783,DA-02,2,1,oe:player:43b4189712f5ac66bbef0414a8ed2db,oe:player:f42847a8ed944443fbdcef8cfa7087d,oe:player:ce280cfcaa8d028bf7400e597eb666c,oe:player:3f96b0d5494895f5e964dc16ea8f27b,oe:player:650f5da2c2068fff2937c3530393c97,Lourlo,Akaadian,Yusui,Spawn,JayJ
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2021,Summer,oe:player:89a68bddd0541e0f26fc044c711eb92,Tony Top,top,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2021,Summer,oe:player:8a5dbe19794784cfd0553556844f045,Contractz,jng,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2021,Summer,oe:player:83eb62484689106807fcf5ad55b5479,Jojopyun,mid,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2021,Summer,oe:player:1df1089d24af6301ea7565ff5e49935,TeamLuke,bot,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2021,Summer,oe:player:0114600fd7028a75f762bb772a5f6f1,Mystiques,sup,,,,,,,,,,,,,,
+lineup,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2021,Summer,,,,lineup-11df8644fdb6639d,EGA-01,1,2,oe:player:89a68bddd0541e0f26fc044c711eb92,oe:player:8a5dbe19794784cfd0553556844f045,oe:player:83eb62484689106807fcf5ad55b5479,oe:player:1df1089d24af6301ea7565ff5e49935,oe:player:0114600fd7028a75f762bb772a5f6f1,Tony Top,Contractz,Jojopyun,TeamLuke,Mystiques
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Summer,oe:player:c49aafa1ffe9c24aa459e5cf851ddfc,Niles,top,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Summer,oe:player:56045764051a2e5cf313ee3dd5a61cc,Tally,top,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Summer,oe:player:b1608dc23a218a150a431be676f3fe4,RoseThorn,jng,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Summer,oe:player:760f71918dbe25e76081e22adb97a74,Yunbee,mid,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Summer,oe:player:416ea631f3b7a0d79f4263e00736f02,Prismal,bot,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Summer,oe:player:6c7c8b16d921fbf3394e228f1554ef5,Chime,sup,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Summer,oe:player:27aa6f7581052e7ff48e1bca901313f,Newbie,sup,,,,,,,,,,,,,,
+lineup,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Summer,,,,lineup-0cbcc8bcd40a8b0e,GGA-01,1,12,oe:player:c49aafa1ffe9c24aa459e5cf851ddfc,oe:player:b1608dc23a218a150a431be676f3fe4,oe:player:760f71918dbe25e76081e22adb97a74,oe:player:416ea631f3b7a0d79f4263e00736f02,oe:player:27aa6f7581052e7ff48e1bca901313f,Niles,RoseThorn,Yunbee,Prismal,Newbie
+lineup,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2021,Summer,,,,lineup-59ae3e93e70e5047,GGA-02,2,1,oe:player:56045764051a2e5cf313ee3dd5a61cc,oe:player:b1608dc23a218a150a431be676f3fe4,oe:player:760f71918dbe25e76081e22adb97a74,oe:player:416ea631f3b7a0d79f4263e00736f02,oe:player:6c7c8b16d921fbf3394e228f1554ef5,Tally,RoseThorn,Yunbee,Prismal,Chime
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2021,Summer,oe:player:859fc288cfea096e3b7312053853f9b,Topoon,top,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2021,Summer,oe:player:803305691092adbf1de29f27a98d2a6,V1per,top,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2021,Summer,oe:player:412aae1eae0c18dcb27ed6efc369f3c,AnDa,jng,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2021,Summer,oe:player:b2386f35c6c208bded007d8e755b2e7,Potluck,jng,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2021,Summer,oe:player:ce833e045ae1fdf546c867198b80566,PrettyGRE,mid,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2021,Summer,oe:player:e6e30c037d0b75caa94827ead86b4ed,Keith,bot,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2021,Summer,oe:player:f8d623a78c27641412debac4080ece7,Joey,sup,,,,,,,,,,,,,,
+lineup,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2021,Summer,,,,lineup-b84dd2c12492ce93,IA-01,1,2,oe:player:803305691092adbf1de29f27a98d2a6,oe:player:412aae1eae0c18dcb27ed6efc369f3c,oe:player:ce833e045ae1fdf546c867198b80566,oe:player:e6e30c037d0b75caa94827ead86b4ed,oe:player:f8d623a78c27641412debac4080ece7,V1per,AnDa,PrettyGRE,Keith,Joey
+lineup,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2021,Summer,,,,lineup-597baf57f4a5d85b,IA-02,2,1,oe:player:859fc288cfea096e3b7312053853f9b,oe:player:b2386f35c6c208bded007d8e755b2e7,oe:player:ce833e045ae1fdf546c867198b80566,oe:player:e6e30c037d0b75caa94827ead86b4ed,oe:player:f8d623a78c27641412debac4080ece7,Topoon,Potluck,PrettyGRE,Keith,Joey
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2021,Summer,oe:player:5385f74da3e5deb5b66d9a1ee56cf97,Dhokla,top,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2021,Summer,oe:player:2e54334c0a5ce2e3e5a5845df3ab3ad,Jenkins,top,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2021,Summer,oe:player:a04a853a0f540f156d08711204fe252,Armao,jng,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2021,Summer,oe:player:20c094acbddf3fbdfd91293511b4472,Haeri,mid,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2021,Summer,oe:player:f6b8af05a5af22004a67a78f3046b92,Yeon,bot,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2021,Summer,oe:player:dbe844fcbbc7f54654e54242e79acac,Eyla,sup,,,,,,,,,,,,,,
+lineup,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2021,Summer,,,,lineup-ac7a54ff8dac87e5,TLA-01,1,2,oe:player:5385f74da3e5deb5b66d9a1ee56cf97,oe:player:a04a853a0f540f156d08711204fe252,oe:player:20c094acbddf3fbdfd91293511b4472,oe:player:f6b8af05a5af22004a67a78f3046b92,oe:player:dbe844fcbbc7f54654e54242e79acac,Dhokla,Armao,Haeri,Yeon,Eyla
+lineup,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2021,Summer,,,,lineup-169f398c5ef1b5a2,TLA-02,2,1,oe:player:2e54334c0a5ce2e3e5a5845df3ab3ad,oe:player:a04a853a0f540f156d08711204fe252,oe:player:20c094acbddf3fbdfd91293511b4472,oe:player:f6b8af05a5af22004a67a78f3046b92,oe:player:dbe844fcbbc7f54654e54242e79acac,Jenkins,Armao,Haeri,Yeon,Eyla

@@ -1,0 +1,32 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://drive.google.com/uc?export=download&id=12syQsRH2QnKrQZTQQ6G5zyVeTG2pAYvu",
+  "source_kind": "official_google_drive",
+  "source_revision": "google-drive:12syQsRH2QnKrQZTQQ6G5zyVeTG2pAYvu:modified:2026-06-08T22:53:27.879000+00:00",
+  "annual_sources": [
+    {
+      "year": 2014,
+      "url": "https://drive.google.com/uc?export=download&id=12syQsRH2QnKrQZTQQ6G5zyVeTG2pAYvu",
+      "sha256": "d72e733ce890f95b2ff58eba7470827e6806ee9773f13341b559e403f290bea0",
+      "revision": "google-drive:12syQsRH2QnKrQZTQQ6G5zyVeTG2pAYvu:modified:2026-06-08T22:53:27.879000+00:00",
+      "source_kind": "official_google_drive",
+      "retrieved_at_utc": "2026-10-09T05:28:13.014210+00:00",
+      "size_bytes": 8178893,
+      "listed_size_bytes": 8178893,
+      "rows": 11016,
+      "selected_rows": 3384
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:30:34.072806+00:00",
+  "annual_csv_sha256": "d72e733ce890f95b2ff58eba7470827e6806ee9773f13341b559e403f290bea0",
+  "annual_rows": 11016,
+  "league": "NA LCS",
+  "year": 2014,
+  "filter": "league == 'NA LCS' and year == '2014'; all positions and columns preserved",
+  "raw_rows": 3384,
+  "raw_columns": 165,
+  "raw_games": 282,
+  "raw_csv_gz_sha256": "e548a8bcfda7f9d7fe216e40550ee9d0becdc7877b05c45a1fe6e83409e46ea8"
+}

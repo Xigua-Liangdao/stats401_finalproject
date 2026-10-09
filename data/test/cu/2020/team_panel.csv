@@ -1,0 +1,13 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:9a05c2942353d2f3d466d6bcb640459,FrostFire,FRO,2020,Unknown,oe:player:feee48d6e5d34aed05441b8f436d729,Quas,top,,,,,,,,,,,,,,
+player,oe:team:9a05c2942353d2f3d466d6bcb640459,FrostFire,FRO,2020,Unknown,oe:player:6ea5eed9d404c86d3bc9d8f597869eb,Kitzuo,jng,,,,,,,,,,,,,,
+player,oe:team:9a05c2942353d2f3d466d6bcb640459,FrostFire,FRO,2020,Unknown,oe:player:63c69dda59be1b98c0a5c88416c7481,Savage,mid,,,,,,,,,,,,,,
+player,oe:team:9a05c2942353d2f3d466d6bcb640459,FrostFire,FRO,2020,Unknown,oe:player:fba26591b2a75a8e370c2d51bc9eb90,Azog,bot,,,,,,,,,,,,,,
+player,oe:team:9a05c2942353d2f3d466d6bcb640459,FrostFire,FRO,2020,Unknown,oe:player:9aa495e3b9f80194639a3941cca4d77,Dean,sup,,,,,,,,,,,,,,
+lineup,oe:team:9a05c2942353d2f3d466d6bcb640459,FrostFire,FRO,2020,Unknown,,,,lineup-fe66accff0e1921c,FRO-01,1,5,oe:player:feee48d6e5d34aed05441b8f436d729,oe:player:6ea5eed9d404c86d3bc9d8f597869eb,oe:player:63c69dda59be1b98c0a5c88416c7481,oe:player:fba26591b2a75a8e370c2d51bc9eb90,oe:player:9aa495e3b9f80194639a3941cca4d77,Quas,Kitzuo,Savage,Azog,Dean
+player,oe:team:7df78a658a1ca10f6d413c775cf35cd,Polar Ace,PA,2020,Unknown,oe:player:33daef70f45123c10a232b800d930a0,Flaresz,top,,,,,,,,,,,,,,
+player,oe:team:7df78a658a1ca10f6d413c775cf35cd,Polar Ace,PA,2020,Unknown,oe:player:55f7df3016af1c9620b0c426e243d0a,Frost4,jng,,,,,,,,,,,,,,
+player,oe:team:7df78a658a1ca10f6d413c775cf35cd,Polar Ace,PA,2020,Unknown,oe:player:3e722c8ede909c83af9342c41805a16,Busio,mid,,,,,,,,,,,,,,
+player,oe:team:7df78a658a1ca10f6d413c775cf35cd,Polar Ace,PA,2020,Unknown,oe:player:3f96b0d5494895f5e964dc16ea8f27b,Spawn,bot,,,,,,,,,,,,,,
+player,oe:team:7df78a658a1ca10f6d413c775cf35cd,Polar Ace,PA,2020,Unknown,oe:player:6ca0cf01bc942179eb37f9863ea16cc,Menace,sup,,,,,,,,,,,,,,
+lineup,oe:team:7df78a658a1ca10f6d413c775cf35cd,Polar Ace,PA,2020,Unknown,,,,lineup-321f3fcdb6e1ba70,PA-01,1,5,oe:player:33daef70f45123c10a232b800d930a0,oe:player:55f7df3016af1c9620b0c426e243d0a,oe:player:3e722c8ede909c83af9342c41805a16,oe:player:3f96b0d5494895f5e964dc16ea8f27b,oe:player:6ca0cf01bc942179eb37f9863ea16cc,Flaresz,Frost4,Busio,Spawn,Menace

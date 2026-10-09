@@ -1,0 +1,29 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:2d2d70decb08dfb9bd23327e33e4198,CTBC Flying Oyster Academy,CFOA,2025,Split 1,oe:player:a9264b1add014881c8d91609de2b7d6,Zkai,top,,,,,,,,,,,,,,
+player,oe:team:2d2d70decb08dfb9bd23327e33e4198,CTBC Flying Oyster Academy,CFOA,2025,Split 1,oe:player:ab63f23cb70efb21206f0006e23659f,Xin,jng,,,,,,,,,,,,,,
+player,oe:team:2d2d70decb08dfb9bd23327e33e4198,CTBC Flying Oyster Academy,CFOA,2025,Split 1,oe:player:5d13a2128cef29f0905b93f72480cd9,Ka1ser,mid,,,,,,,,,,,,,,
+player,oe:team:2d2d70decb08dfb9bd23327e33e4198,CTBC Flying Oyster Academy,CFOA,2025,Split 1,oe:player:3899a4b5c52f9d1cff05e226891213b,Cuicuixi,bot,,,,,,,,,,,,,,
+player,oe:team:2d2d70decb08dfb9bd23327e33e4198,CTBC Flying Oyster Academy,CFOA,2025,Split 1,oe:player:95f8d9901ca8878e291552f001f6769,2274,sup,,,,,,,,,,,,,,
+lineup,oe:team:2d2d70decb08dfb9bd23327e33e4198,CTBC Flying Oyster Academy,CFOA,2025,Split 1,,,,lineup-7b8d9fb3109b6790,CFOA-01,1,2,oe:player:a9264b1add014881c8d91609de2b7d6,oe:player:ab63f23cb70efb21206f0006e23659f,oe:player:5d13a2128cef29f0905b93f72480cd9,oe:player:3899a4b5c52f9d1cff05e226891213b,oe:player:95f8d9901ca8878e291552f001f6769,Zkai,Xin,Ka1ser,Cuicuixi,2274
+player,oe:team:7e56e9367c023df96cc8257ff4e16c0,Deep Cross Gaming,DCG,2025,Split 1,oe:player:8debac77f7c6101af768dc729323a67,Flauren,top,,,,,,,,,,,,,,
+player,oe:team:7e56e9367c023df96cc8257ff4e16c0,Deep Cross Gaming,DCG,2025,Split 1,oe:player:84668a76e72149d9006cdb9580def31,POP9,jng,,,,,,,,,,,,,,
+player,oe:team:7e56e9367c023df96cc8257ff4e16c0,Deep Cross Gaming,DCG,2025,Split 1,oe:player:32ddd24ac02f57871c631c66265d2f6,HongSuo,mid,,,,,,,,,,,,,,
+player,oe:team:7e56e9367c023df96cc8257ff4e16c0,Deep Cross Gaming,DCG,2025,Split 1,oe:player:e9a0da5ca2d009aeedf5afcfccffde5,Feng,bot,,,,,,,,,,,,,,
+player,oe:team:7e56e9367c023df96cc8257ff4e16c0,Deep Cross Gaming,DCG,2025,Split 1,oe:player:5d7f415cbf04b549c235a8a3d83a763,ShiauC,sup,,,,,,,,,,,,,,
+lineup,oe:team:7e56e9367c023df96cc8257ff4e16c0,Deep Cross Gaming,DCG,2025,Split 1,,,,lineup-cbb75a296bf3f6ff,DCG-01,1,12,oe:player:8debac77f7c6101af768dc729323a67,oe:player:84668a76e72149d9006cdb9580def31,oe:player:32ddd24ac02f57871c631c66265d2f6,oe:player:e9a0da5ca2d009aeedf5afcfccffde5,oe:player:5d7f415cbf04b549c235a8a3d83a763,Flauren,POP9,HongSuo,Feng,ShiauC
+player,oe:team:957a0b20bb6ce6491d39eb82e5fcb17,Frank Esports,FE,2025,Split 1,oe:player:7deb8d68aef0757c10381b599f855de,YSKM,top,,,,,,,,,,,,,,
+player,oe:team:957a0b20bb6ce6491d39eb82e5fcb17,Frank Esports,FE,2025,Split 1,oe:player:766cc4dd4d5005652e8514e3513683f,Gemini,jng,,,,,,,,,,,,,,
+player,oe:team:957a0b20bb6ce6491d39eb82e5fcb17,Frank Esports,FE,2025,Split 1,oe:player:0d47af84bee7ca00a76beb860c3d6ff,Pretender,mid,,,,,,,,,,,,,,
+player,oe:team:957a0b20bb6ce6491d39eb82e5fcb17,Frank Esports,FE,2025,Split 1,oe:player:56cf99d5b59755569fa366c07c18f38,Shunn,bot,,,,,,,,,,,,,,
+player,oe:team:957a0b20bb6ce6491d39eb82e5fcb17,Frank Esports,FE,2025,Split 1,oe:player:de6b46438c8c6889b6dbf0684b1effa,Koala,sup,,,,,,,,,,,,,,
+player,oe:team:957a0b20bb6ce6491d39eb82e5fcb17,Frank Esports,FE,2025,Split 1,oe:player:9a78213b3bc77c76369c2aca27257b9,MnM,sup,,,,,,,,,,,,,,
+lineup,oe:team:957a0b20bb6ce6491d39eb82e5fcb17,Frank Esports,FE,2025,Split 1,,,,lineup-70226b0bfbf88a77,FE-01,1,7,oe:player:7deb8d68aef0757c10381b599f855de,oe:player:766cc4dd4d5005652e8514e3513683f,oe:player:0d47af84bee7ca00a76beb860c3d6ff,oe:player:56cf99d5b59755569fa366c07c18f38,oe:player:9a78213b3bc77c76369c2aca27257b9,YSKM,Gemini,Pretender,Shunn,MnM
+lineup,oe:team:957a0b20bb6ce6491d39eb82e5fcb17,Frank Esports,FE,2025,Split 1,,,,lineup-485853d071e22a03,FE-02,2,1,oe:player:7deb8d68aef0757c10381b599f855de,oe:player:766cc4dd4d5005652e8514e3513683f,oe:player:0d47af84bee7ca00a76beb860c3d6ff,oe:player:56cf99d5b59755569fa366c07c18f38,oe:player:de6b46438c8c6889b6dbf0684b1effa,YSKM,Gemini,Pretender,Shunn,Koala
+player,oe:team:0092987a7da75e9fd0cbf8110d10b76,West Point Esports,WPE,2025,Split 1,oe:player:ee240e952b7fac76ef76014c85f1b66,RYue,top,,,,,,,,,,,,,,
+player,oe:team:0092987a7da75e9fd0cbf8110d10b76,West Point Esports,WPE,2025,Split 1,oe:player:d6a3183c42c5887246375b272c9fedf,Killer2,jng,,,,,,,,,,,,,,
+player,oe:team:0092987a7da75e9fd0cbf8110d10b76,West Point Esports,WPE,2025,Split 1,oe:player:1408a3cdf492161329cf78c167369ec,Liweier,jng,,,,,,,,,,,,,,
+player,oe:team:0092987a7da75e9fd0cbf8110d10b76,West Point Esports,WPE,2025,Split 1,oe:player:dd77279f7d325eec933f05b1672f6a1,1116,mid,,,,,,,,,,,,,,
+player,oe:team:0092987a7da75e9fd0cbf8110d10b76,West Point Esports,WPE,2025,Split 1,oe:player:e3ac8e6e256fe87edbf80c21beeb6d2,Herma,bot,,,,,,,,,,,,,,
+player,oe:team:0092987a7da75e9fd0cbf8110d10b76,West Point Esports,WPE,2025,Split 1,oe:player:acb3a05894b7c57412b2d7e911e17dd,Kino,sup,,,,,,,,,,,,,,
+lineup,oe:team:0092987a7da75e9fd0cbf8110d10b76,West Point Esports,WPE,2025,Split 1,,,,lineup-57672bf20a626b64,WPE-01,1,3,oe:player:ee240e952b7fac76ef76014c85f1b66,oe:player:1408a3cdf492161329cf78c167369ec,oe:player:dd77279f7d325eec933f05b1672f6a1,oe:player:e3ac8e6e256fe87edbf80c21beeb6d2,oe:player:acb3a05894b7c57412b2d7e911e17dd,RYue,Liweier,1116,Herma,Kino
+lineup,oe:team:0092987a7da75e9fd0cbf8110d10b76,West Point Esports,WPE,2025,Split 1,,,,lineup-8090eb61bc55288d,WPE-02,2,3,oe:player:ee240e952b7fac76ef76014c85f1b66,oe:player:d6a3183c42c5887246375b272c9fedf,oe:player:dd77279f7d325eec933f05b1672f6a1,oe:player:e3ac8e6e256fe87edbf80c21beeb6d2,oe:player:acb3a05894b7c57412b2d7e911e17dd,RYue,Killer2,1116,Herma,Kino

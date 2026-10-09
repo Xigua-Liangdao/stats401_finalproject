@@ -1,0 +1,69 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2019,Spring,oe:player:8be30b5f9d11e6fa65a82e2a82543d1,Spoice,top,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2019,Spring,oe:player:550fa477eff3885416f22c0b3f2fc88,Time,jng,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2019,Spring,oe:player:6cc45dfb611a15b04e88b2fc19fd7b8,prttt,jng,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2019,Spring,oe:player:4567c1b46e2b715a37167c6a8a90bd4,Burnie,mid,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2019,Spring,oe:player:d9624e50756219785f9e44b27189524,Rev3nge,bot,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2019,Spring,oe:player:ed795a0b5ff0968fccd05781b9b13c8,Tragao,bot,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2019,Spring,oe:player:ac9be3f72046aca1f6f14ffaeb4c8b8,Feedarias,sup,,,,,,,,,,,,,,
+lineup,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2019,Spring,,,,lineup-8017df9b3599afa6,BF-01,1,1,oe:player:8be30b5f9d11e6fa65a82e2a82543d1,oe:player:6cc45dfb611a15b04e88b2fc19fd7b8,oe:player:4567c1b46e2b715a37167c6a8a90bd4,oe:player:d9624e50756219785f9e44b27189524,oe:player:ac9be3f72046aca1f6f14ffaeb4c8b8,Spoice,prttt,Burnie,Rev3nge,Feedarias
+lineup,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2019,Spring,,,,lineup-835c94f9cf018dc5,BF-02,2,1,oe:player:8be30b5f9d11e6fa65a82e2a82543d1,oe:player:550fa477eff3885416f22c0b3f2fc88,oe:player:4567c1b46e2b715a37167c6a8a90bd4,oe:player:ed795a0b5ff0968fccd05781b9b13c8,oe:player:ac9be3f72046aca1f6f14ffaeb4c8b8,Spoice,Time,Burnie,Tragao,Feedarias
+player,oe:team:724389b7ca1e2ed397ccb7bec52fb3d,Doxa Gaming,DG,2019,Spring,oe:player:c52fefdcdfe6e83ed8c4a8e64417d82,Flash,top,,,,,,,,,,,,,,
+player,oe:team:724389b7ca1e2ed397ccb7bec52fb3d,Doxa Gaming,DG,2019,Spring,name-player-d72bd85e71031dbd,unknown player,top,,,,,,,,,,,,,,
+player,oe:team:724389b7ca1e2ed397ccb7bec52fb3d,Doxa Gaming,DG,2019,Spring,oe:player:c9659f1a360f72928989a65418cf1b3,Inceneratus,jng,,,,,,,,,,,,,,
+player,oe:team:724389b7ca1e2ed397ccb7bec52fb3d,Doxa Gaming,DG,2019,Spring,oe:player:3f3b7c16793cdc2fa498a014801d3ab,Comeback,mid,,,,,,,,,,,,,,
+player,oe:team:724389b7ca1e2ed397ccb7bec52fb3d,Doxa Gaming,DG,2019,Spring,oe:player:9b6977a2e77a5b607d5e5d72ce41bce,LemonHead,mid,,,,,,,,,,,,,,
+player,oe:team:724389b7ca1e2ed397ccb7bec52fb3d,Doxa Gaming,DG,2019,Spring,oe:player:4be0175c97068b674a9dc27d89f505b,Dizzy,bot,,,,,,,,,,,,,,
+player,oe:team:724389b7ca1e2ed397ccb7bec52fb3d,Doxa Gaming,DG,2019,Spring,oe:player:4e30c12338b467697d0fde8e5b142f5,Kiddo,sup,,,,,,,,,,,,,,
+player,oe:team:724389b7ca1e2ed397ccb7bec52fb3d,Doxa Gaming,DG,2019,Spring,oe:player:06f27b4f79dffe59cfb096968c4ebe6,Sacred,sup,,,,,,,,,,,,,,
+lineup,oe:team:724389b7ca1e2ed397ccb7bec52fb3d,Doxa Gaming,DG,2019,Spring,,,,lineup-21480f648da586d2,DG-01,1,1,name-player-d72bd85e71031dbd,oe:player:c9659f1a360f72928989a65418cf1b3,oe:player:3f3b7c16793cdc2fa498a014801d3ab,oe:player:4be0175c97068b674a9dc27d89f505b,oe:player:4e30c12338b467697d0fde8e5b142f5,unknown player,Inceneratus,Comeback,Dizzy,Kiddo
+lineup,oe:team:724389b7ca1e2ed397ccb7bec52fb3d,Doxa Gaming,DG,2019,Spring,,,,lineup-d15f27e203c42421,DG-02,2,1,oe:player:c52fefdcdfe6e83ed8c4a8e64417d82,oe:player:c9659f1a360f72928989a65418cf1b3,oe:player:9b6977a2e77a5b607d5e5d72ce41bce,oe:player:4be0175c97068b674a9dc27d89f505b,oe:player:06f27b4f79dffe59cfb096968c4ebe6,Flash,Inceneratus,LemonHead,Dizzy,Sacred
+player,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2019,Spring,oe:player:b13082ea3fe2642f1fd1fb76de03058,Elite,top,,,,,,,,,,,,,,
+player,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2019,Spring,oe:player:0b9a7d2da8988391751f16d0e6c6c64,Novais,top,,,,,,,,,,,,,,
+player,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2019,Spring,oe:player:550fa477eff3885416f22c0b3f2fc88,Time,jng,,,,,,,,,,,,,,
+player,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2019,Spring,oe:player:803d2520bb02263bb5aa0d33365739f,Tunaraz,jng,,,,,,,,,,,,,,
+player,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2019,Spring,oe:player:9eed14c71aeb7615a82ba63c1a55289,Blizz,mid,,,,,,,,,,,,,,
+player,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2019,Spring,oe:player:9f33a476918b35d7000f693b2d9b53f,Narttaker,mid,,,,,,,,,,,,,,
+player,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2019,Spring,oe:player:8c00837b46fc2035c3d8fcc3f3ccd03,Nuance,bot,,,,,,,,,,,,,,
+player,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2019,Spring,oe:player:4f4e71938a105fe72bd18788fe53d40,Worst,bot,,,,,,,,,,,,,,
+player,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2019,Spring,oe:player:396429d414a5e7021dd461a9f48d8a2,Mantorras,sup,,,,,,,,,,,,,,
+lineup,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2019,Spring,,,,lineup-3b5fa27d501d2117,EE-01,1,1,oe:player:0b9a7d2da8988391751f16d0e6c6c64,oe:player:550fa477eff3885416f22c0b3f2fc88,oe:player:9f33a476918b35d7000f693b2d9b53f,oe:player:4f4e71938a105fe72bd18788fe53d40,oe:player:396429d414a5e7021dd461a9f48d8a2,Novais,Time,Narttaker,Worst,Mantorras
+lineup,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2019,Spring,,,,lineup-3cc8e11b8aa0a1e2,EE-02,2,1,oe:player:b13082ea3fe2642f1fd1fb76de03058,oe:player:803d2520bb02263bb5aa0d33365739f,oe:player:9eed14c71aeb7615a82ba63c1a55289,oe:player:8c00837b46fc2035c3d8fcc3f3ccd03,oe:player:396429d414a5e7021dd461a9f48d8a2,Elite,Tunaraz,Blizz,Nuance,Mantorras
+player,oe:team:ecaf2adae2ff7f9511c9f662f18ffe7,For The Win Esports,FTWE,2019,Spring,oe:player:61202f4c81d676dd59cadefaede329d,Frozen,top,,,,,,,,,,,,,,
+player,oe:team:ecaf2adae2ff7f9511c9f662f18ffe7,For The Win Esports,FTWE,2019,Spring,oe:player:c52d1f6b94c909ec3b822acff420409,Own3r,jng,,,,,,,,,,,,,,
+player,oe:team:ecaf2adae2ff7f9511c9f662f18ffe7,For The Win Esports,FTWE,2019,Spring,oe:player:afb7dcf3c4fa584007cb4bc62e85886,Xaky,mid,,,,,,,,,,,,,,
+player,oe:team:ecaf2adae2ff7f9511c9f662f18ffe7,For The Win Esports,FTWE,2019,Spring,oe:player:c85554f6483e4aab17cfad9b6f3229d,Afm,bot,,,,,,,,,,,,,,
+player,oe:team:ecaf2adae2ff7f9511c9f662f18ffe7,For The Win Esports,FTWE,2019,Spring,oe:player:b20a4217acaf4316739c6a5f6679ef6,Plasma,sup,,,,,,,,,,,,,,
+lineup,oe:team:ecaf2adae2ff7f9511c9f662f18ffe7,For The Win Esports,FTWE,2019,Spring,,,,lineup-1ab7b352df1a5b4f,FTWE-01,1,13,oe:player:61202f4c81d676dd59cadefaede329d,oe:player:c52d1f6b94c909ec3b822acff420409,oe:player:afb7dcf3c4fa584007cb4bc62e85886,oe:player:c85554f6483e4aab17cfad9b6f3229d,oe:player:b20a4217acaf4316739c6a5f6679ef6,Frozen,Own3r,Xaky,Afm,Plasma
+player,oe:team:92bc5b008ab5b69917c98fe85e50594,GeekCase eSports,GE,2019,Summer,oe:player:c52fefdcdfe6e83ed8c4a8e64417d82,Flash,top,,,,,,,,,,,,,,
+player,oe:team:92bc5b008ab5b69917c98fe85e50594,GeekCase eSports,GE,2019,Summer,oe:player:8b41ffda9f8b20f4248f6ffa8897bfe,Daiblo,jng,,,,,,,,,,,,,,
+player,oe:team:92bc5b008ab5b69917c98fe85e50594,GeekCase eSports,GE,2019,Summer,oe:player:cf7802e8082b1d34610dc2eb8356877,Kaxe,mid,,,,,,,,,,,,,,
+player,oe:team:92bc5b008ab5b69917c98fe85e50594,GeekCase eSports,GE,2019,Summer,oe:player:7c796b8884eddd6e4c30e74ee8fe698,Cyber,bot,,,,,,,,,,,,,,
+player,oe:team:92bc5b008ab5b69917c98fe85e50594,GeekCase eSports,GE,2019,Summer,oe:player:b356f835dc44536e42f04707796ae31,Jumbo,sup,,,,,,,,,,,,,,
+lineup,oe:team:92bc5b008ab5b69917c98fe85e50594,GeekCase eSports,GE,2019,Summer,,,,lineup-38241561f617c376,GE-01,1,1,oe:player:c52fefdcdfe6e83ed8c4a8e64417d82,oe:player:8b41ffda9f8b20f4248f6ffa8897bfe,oe:player:cf7802e8082b1d34610dc2eb8356877,oe:player:7c796b8884eddd6e4c30e74ee8fe698,oe:player:b356f835dc44536e42f04707796ae31,Flash,Daiblo,Kaxe,Cyber,Jumbo
+player,oe:team:622a2f5dc9620cda6c9155119741546,Grow uP eSports,GUE,2019,Summer,oe:player:186a57afea0350de6ae16ede4b142e1,Ryd,top,,,,,,,,,,,,,,
+player,oe:team:622a2f5dc9620cda6c9155119741546,Grow uP eSports,GUE,2019,Summer,oe:player:402c0ac375c909512650c512f5096d7,Mart,jng,,,,,,,,,,,,,,
+player,oe:team:622a2f5dc9620cda6c9155119741546,Grow uP eSports,GUE,2019,Summer,oe:player:643e865a69b74aac65ec052c8fffdd5,BANKAI,mid,,,,,,,,,,,,,,
+player,oe:team:622a2f5dc9620cda6c9155119741546,Grow uP eSports,GUE,2019,Summer,oe:player:85e2e2408b4c2396fd9e46d7d6483fa,Gaio,bot,,,,,,,,,,,,,,
+player,oe:team:622a2f5dc9620cda6c9155119741546,Grow uP eSports,GUE,2019,Summer,oe:player:18b2a77397dae1d96b3b504cab5df7d,ISherlock,sup,,,,,,,,,,,,,,
+lineup,oe:team:622a2f5dc9620cda6c9155119741546,Grow uP eSports,GUE,2019,Summer,,,,lineup-5f154e101caa98c4,GUE-01,1,1,oe:player:186a57afea0350de6ae16ede4b142e1,oe:player:402c0ac375c909512650c512f5096d7,oe:player:643e865a69b74aac65ec052c8fffdd5,oe:player:85e2e2408b4c2396fd9e46d7d6483fa,oe:player:18b2a77397dae1d96b3b504cab5df7d,Ryd,Mart,BANKAI,Gaio,ISherlock
+player,oe:team:5e9b632a0a9d6901c33e980b637a50e,Hexagone Esports,HE,2019,Spring,oe:player:22b1061eed29c38e7acfdd13075bf7d,Hivito,top,,,,,,,,,,,,,,
+player,oe:team:5e9b632a0a9d6901c33e980b637a50e,Hexagone Esports,HE,2019,Spring,oe:player:205f456adac22b2b8cb732651167215,Lulas,jng,,,,,,,,,,,,,,
+player,oe:team:5e9b632a0a9d6901c33e980b637a50e,Hexagone Esports,HE,2019,Spring,oe:player:f0b6f18cb5222e618327f75f3c31ceb,RapMonsters,mid,,,,,,,,,,,,,,
+player,oe:team:5e9b632a0a9d6901c33e980b637a50e,Hexagone Esports,HE,2019,Spring,oe:player:7436fcbebba393585b3d82723d6dd4e,Aeon,bot,,,,,,,,,,,,,,
+player,oe:team:5e9b632a0a9d6901c33e980b637a50e,Hexagone Esports,HE,2019,Spring,oe:player:63dfeedfceca9bf8f88c5f278a641ef,Nuokii,bot,,,,,,,,,,,,,,
+player,oe:team:5e9b632a0a9d6901c33e980b637a50e,Hexagone Esports,HE,2019,Spring,oe:player:f32776bb3b0bfb1cd3261868df4dfce,Calmsky,sup,,,,,,,,,,,,,,
+lineup,oe:team:5e9b632a0a9d6901c33e980b637a50e,Hexagone Esports,HE,2019,Spring,,,,lineup-da8e2221d4ede2f9,HE-01,1,1,oe:player:22b1061eed29c38e7acfdd13075bf7d,oe:player:205f456adac22b2b8cb732651167215,oe:player:f0b6f18cb5222e618327f75f3c31ceb,oe:player:63dfeedfceca9bf8f88c5f278a641ef,oe:player:f32776bb3b0bfb1cd3261868df4dfce,Hivito,Lulas,RapMonsters,Nuokii,Calmsky
+lineup,oe:team:5e9b632a0a9d6901c33e980b637a50e,Hexagone Esports,HE,2019,Spring,,,,lineup-f824e466a4e18f1a,HE-02,2,1,oe:player:22b1061eed29c38e7acfdd13075bf7d,oe:player:205f456adac22b2b8cb732651167215,oe:player:f0b6f18cb5222e618327f75f3c31ceb,oe:player:7436fcbebba393585b3d82723d6dd4e,oe:player:f32776bb3b0bfb1cd3261868df4dfce,Hivito,Lulas,RapMonsters,Aeon,Calmsky
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2019,Spring,oe:player:0081ef99a37093cf879c110a7c3b692,Gods,top,,,,,,,,,,,,,,
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2019,Spring,oe:player:7bc02f9918e368fd6e77cb968bdab5d,Truklax,top,,,,,,,,,,,,,,
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2019,Spring,oe:player:bb88861750e92034ee005ccfa1791d6,InKos,jng,,,,,,,,,,,,,,
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2019,Spring,oe:player:c9659f1a360f72928989a65418cf1b3,Inceneratus,jng,,,,,,,,,,,,,,
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2019,Spring,oe:player:9eed14c71aeb7615a82ba63c1a55289,Blizz,mid,,,,,,,,,,,,,,
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2019,Spring,oe:player:014c50a8bcb2f8965db2fa367330876,Furuy,mid,,,,,,,,,,,,,,
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2019,Spring,oe:player:7436fcbebba393585b3d82723d6dd4e,Aeon,bot,,,,,,,,,,,,,,
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2019,Spring,oe:player:9bee80f47c76e838d277da0db734542,Lastwolf,bot,,,,,,,,,,,,,,
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2019,Spring,oe:player:5b6fc610f134cc0913d21f131bf4432,Joo,sup,,,,,,,,,,,,,,
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2019,Spring,oe:player:4e30c12338b467697d0fde8e5b142f5,Kiddo,sup,,,,,,,,,,,,,,
+lineup,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2019,Spring,,,,lineup-fa9123668303032f,K1C-01,1,4,oe:player:7bc02f9918e368fd6e77cb968bdab5d,oe:player:bb88861750e92034ee005ccfa1791d6,oe:player:014c50a8bcb2f8965db2fa367330876,oe:player:9bee80f47c76e838d277da0db734542,oe:player:5b6fc610f134cc0913d21f131bf4432,Truklax,InKos,Furuy,Lastwolf,Joo
+lineup,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2019,Spring,,,,lineup-983b0de10799c717,K1C-02,2,1,oe:player:0081ef99a37093cf879c110a7c3b692,oe:player:c9659f1a360f72928989a65418cf1b3,oe:player:9eed14c71aeb7615a82ba63c1a55289,oe:player:7436fcbebba393585b3d82723d6dd4e,oe:player:4e30c12338b467697d0fde8e5b142f5,Gods,Inceneratus,Blizz,Aeon,Kiddo

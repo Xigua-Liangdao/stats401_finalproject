@@ -1,0 +1,115 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:6aa90245ef05420f45275eaf822049a,Baby Whales,BW,2023,Unknown,oe:player:536552ceb97d005af192cf156412a7e,Rigel,top,,,,,,,,,,,,,,
+player,oe:team:6aa90245ef05420f45275eaf822049a,Baby Whales,BW,2023,Unknown,oe:player:043e89cd3b06bc1a0555024d475c9d2,Hizto,jng,,,,,,,,,,,,,,
+player,oe:team:6aa90245ef05420f45275eaf822049a,Baby Whales,BW,2023,Unknown,oe:player:b7a3b6176406a92dd089fe2f82a1d3f,Dire,mid,,,,,,,,,,,,,,
+player,oe:team:6aa90245ef05420f45275eaf822049a,Baby Whales,BW,2023,Unknown,oe:player:4830e7becfcf3539978e3a69cc1c27c,Seany,mid,,,,,,,,,,,,,,
+player,oe:team:6aa90245ef05420f45275eaf822049a,Baby Whales,BW,2023,Unknown,oe:player:28a1925f6c4df972a5ae722c07bb4c4,Harky,bot,,,,,,,,,,,,,,
+player,oe:team:6aa90245ef05420f45275eaf822049a,Baby Whales,BW,2023,Unknown,oe:player:397fee5de074b10600707b618fb1f29,SiuLoong,sup,,,,,,,,,,,,,,
+lineup,oe:team:6aa90245ef05420f45275eaf822049a,Baby Whales,BW,2023,Unknown,,,,lineup-4e7c8d248265a463,BW-01,1,3,oe:player:536552ceb97d005af192cf156412a7e,oe:player:043e89cd3b06bc1a0555024d475c9d2,oe:player:b7a3b6176406a92dd089fe2f82a1d3f,oe:player:28a1925f6c4df972a5ae722c07bb4c4,oe:player:397fee5de074b10600707b618fb1f29,Rigel,Hizto,Dire,Harky,SiuLoong
+lineup,oe:team:6aa90245ef05420f45275eaf822049a,Baby Whales,BW,2023,Unknown,,,,lineup-bc68e2bbd781ed76,BW-02,2,3,oe:player:536552ceb97d005af192cf156412a7e,oe:player:043e89cd3b06bc1a0555024d475c9d2,oe:player:4830e7becfcf3539978e3a69cc1c27c,oe:player:28a1925f6c4df972a5ae722c07bb4c4,oe:player:397fee5de074b10600707b618fb1f29,Rigel,Hizto,Seany,Harky,SiuLoong
+player,oe:team:2d2d70decb08dfb9bd23327e33e4198,CTBC Flying Oyster Academy,CFOA,2023,Unknown,oe:player:51d1b92c739875316e83a99bb9838af,Hasu7,top,,,,,,,,,,,,,,
+player,oe:team:2d2d70decb08dfb9bd23327e33e4198,CTBC Flying Oyster Academy,CFOA,2023,Unknown,oe:player:841a978d22c2c8dcd749d2f815ba823,BiIIy,jng,,,,,,,,,,,,,,
+player,oe:team:2d2d70decb08dfb9bd23327e33e4198,CTBC Flying Oyster Academy,CFOA,2023,Unknown,name-player-e6d4ad90ee756926,CFOARay,mid,,,,,,,,,,,,,,
+player,oe:team:2d2d70decb08dfb9bd23327e33e4198,CTBC Flying Oyster Academy,CFOA,2023,Unknown,oe:player:e8a31970ca00025d7de8d3ef23126c5,JokerHan,mid,,,,,,,,,,,,,,
+player,oe:team:2d2d70decb08dfb9bd23327e33e4198,CTBC Flying Oyster Academy,CFOA,2023,Unknown,oe:player:bbc74d89ea9541a8c079edb2bbdf8ad,Hermes,bot,,,,,,,,,,,,,,
+player,oe:team:2d2d70decb08dfb9bd23327e33e4198,CTBC Flying Oyster Academy,CFOA,2023,Unknown,oe:player:a214c0e659e36eb1194137976cab361,Kerry,sup,,,,,,,,,,,,,,
+lineup,oe:team:2d2d70decb08dfb9bd23327e33e4198,CTBC Flying Oyster Academy,CFOA,2023,Unknown,,,,lineup-5a61b506dda402a8,CFOA-01,1,4,oe:player:51d1b92c739875316e83a99bb9838af,oe:player:841a978d22c2c8dcd749d2f815ba823,oe:player:e8a31970ca00025d7de8d3ef23126c5,oe:player:bbc74d89ea9541a8c079edb2bbdf8ad,oe:player:a214c0e659e36eb1194137976cab361,Hasu7,BiIIy,JokerHan,Hermes,Kerry
+lineup,oe:team:2d2d70decb08dfb9bd23327e33e4198,CTBC Flying Oyster Academy,CFOA,2023,Unknown,,,,lineup-85c7086587b481c2,CFOA-02,2,2,oe:player:51d1b92c739875316e83a99bb9838af,oe:player:841a978d22c2c8dcd749d2f815ba823,name-player-e6d4ad90ee756926,oe:player:bbc74d89ea9541a8c079edb2bbdf8ad,oe:player:a214c0e659e36eb1194137976cab361,Hasu7,BiIIy,CFOARay,Hermes,Kerry
+player,oe:team:64f78960f955a6b659025e38b4f0a18,Dplus Kia Challengers,DKC,2023,Unknown,oe:player:1efc4e5732e91520d03385900b903f9,Thanatos,top,,,,,,,,,,,,,,
+player,oe:team:64f78960f955a6b659025e38b4f0a18,Dplus Kia Challengers,DKC,2023,Unknown,oe:player:10b86429ce8048aba673d802632e358,Lucid,jng,,,,,,,,,,,,,,
+player,oe:team:64f78960f955a6b659025e38b4f0a18,Dplus Kia Challengers,DKC,2023,Unknown,oe:player:559813e734d182e8896481003507b1f,Pullbae,mid,,,,,,,,,,,,,,
+player,oe:team:64f78960f955a6b659025e38b4f0a18,Dplus Kia Challengers,DKC,2023,Unknown,oe:player:e2c655411d8d95ef73d8026704f5e7a,Rahel,bot,,,,,,,,,,,,,,
+player,oe:team:64f78960f955a6b659025e38b4f0a18,Dplus Kia Challengers,DKC,2023,Unknown,oe:player:8807c97721e343cdc1fa2444cc00415,Thumb,sup,,,,,,,,,,,,,,
+lineup,oe:team:64f78960f955a6b659025e38b4f0a18,Dplus Kia Challengers,DKC,2023,Unknown,,,,lineup-99083a1e07a52b79,DKC-01,1,10,oe:player:1efc4e5732e91520d03385900b903f9,oe:player:10b86429ce8048aba673d802632e358,oe:player:559813e734d182e8896481003507b1f,oe:player:e2c655411d8d95ef73d8026704f5e7a,oe:player:8807c97721e343cdc1fa2444cc00415,Thanatos,Lucid,Pullbae,Rahel,Thumb
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2023,Unknown,oe:player:784c615bc4ca91029377523e15b8c82,YellowYoshi,top,,,,,,,,,,,,,,
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2023,Unknown,oe:player:af84f1c98815a4084ab217947ecd721,ankochan,jng,,,,,,,,,,,,,,
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2023,Unknown,oe:player:840740728493a3b1a074503ed967f5d,Kaito,mid,,,,,,,,,,,,,,
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2023,Unknown,oe:player:5507d93614d7299eae429bc890d23bc,HowLa,bot,,,,,,,,,,,,,,
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2023,Unknown,oe:player:3095d8f7f9a0e5a05330f99a6530fa7,Charley,sup,,,,,,,,,,,,,,
+lineup,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2023,Unknown,,,,lineup-d1c7939c738f9808,FSHGA-01,1,6,oe:player:784c615bc4ca91029377523e15b8c82,oe:player:af84f1c98815a4084ab217947ecd721,oe:player:840740728493a3b1a074503ed967f5d,oe:player:5507d93614d7299eae429bc890d23bc,oe:player:3095d8f7f9a0e5a05330f99a6530fa7,YellowYoshi,ankochan,Kaito,HowLa,Charley
+player,oe:team:68d9c4b067b3b6d5f3d5e4b1adc9f6e,FunPlus Phoenix Blaze,FPB,2023,Unknown,oe:player:26687a348e007e140691f4fb2a5c7b7,Longmao,top,,,,,,,,,,,,,,
+player,oe:team:68d9c4b067b3b6d5f3d5e4b1adc9f6e,FunPlus Phoenix Blaze,FPB,2023,Unknown,oe:player:1e9df7dacc21aca9011a58eac5abae5,Haoye,jng,,,,,,,,,,,,,,
+player,oe:team:68d9c4b067b3b6d5f3d5e4b1adc9f6e,FunPlus Phoenix Blaze,FPB,2023,Unknown,oe:player:4aa496a041ce3b1febfc4887d057f11,sorrow,jng,,,,,,,,,,,,,,
+player,oe:team:68d9c4b067b3b6d5f3d5e4b1adc9f6e,FunPlus Phoenix Blaze,FPB,2023,Unknown,oe:player:a03108f3d1ff62138464d28409291c0,Qing,mid,,,,,,,,,,,,,,
+player,oe:team:68d9c4b067b3b6d5f3d5e4b1adc9f6e,FunPlus Phoenix Blaze,FPB,2023,Unknown,oe:player:7227e6c3afb5136d10e3594fa503f6a,Xingye,bot,,,,,,,,,,,,,,
+player,oe:team:68d9c4b067b3b6d5f3d5e4b1adc9f6e,FunPlus Phoenix Blaze,FPB,2023,Unknown,oe:player:8b2808669196b5396e6724e50c91399,Fahai,sup,,,,,,,,,,,,,,
+lineup,oe:team:68d9c4b067b3b6d5f3d5e4b1adc9f6e,FunPlus Phoenix Blaze,FPB,2023,Unknown,,,,lineup-1ccbc93cae0c568a,FPB-01,1,9,oe:player:26687a348e007e140691f4fb2a5c7b7,oe:player:4aa496a041ce3b1febfc4887d057f11,oe:player:a03108f3d1ff62138464d28409291c0,oe:player:7227e6c3afb5136d10e3594fa503f6a,oe:player:8b2808669196b5396e6724e50c91399,Longmao,sorrow,Qing,Xingye,Fahai
+lineup,oe:team:68d9c4b067b3b6d5f3d5e4b1adc9f6e,FunPlus Phoenix Blaze,FPB,2023,Unknown,,,,lineup-c82d99af8470c2f2,FPB-02,2,2,oe:player:26687a348e007e140691f4fb2a5c7b7,oe:player:1e9df7dacc21aca9011a58eac5abae5,oe:player:a03108f3d1ff62138464d28409291c0,oe:player:7227e6c3afb5136d10e3594fa503f6a,oe:player:8b2808669196b5396e6724e50c91399,Longmao,Haoye,Qing,Xingye,Fahai
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2023,Unknown,oe:player:285954244fdc2bcce532fb88a1e0ddb,Rooster,top,,,,,,,,,,,,,,
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2023,Unknown,oe:player:6427b0c5a7c3106e92a7c11257a08c6,Guwon,jng,,,,,,,,,,,,,,
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2023,Unknown,oe:player:0a53c1102dafce61e89decc517b3175,Loki,mid,,,,,,,,,,,,,,
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2023,Unknown,oe:player:4367b1100c2577e20e13ae9e3afd835,Lure,bot,,,,,,,,,,,,,,
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2023,Unknown,oe:player:605821ebcf6a2e53f03ec6e8e463d1b,Duro,sup,,,,,,,,,,,,,,
+lineup,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2023,Unknown,,,,lineup-a898932c68ac9990,HLEC-01,1,14,oe:player:285954244fdc2bcce532fb88a1e0ddb,oe:player:6427b0c5a7c3106e92a7c11257a08c6,oe:player:0a53c1102dafce61e89decc517b3175,oe:player:4367b1100c2577e20e13ae9e3afd835,oe:player:605821ebcf6a2e53f03ec6e8e463d1b,Rooster,Guwon,Loki,Lure,Duro
+player,oe:team:01c9a45038d103935dc69490914f530,Invictus Gaming Young,IGY,2023,Unknown,oe:player:65ddecdc623b47abd4e6aa4ecf4b4a8,Wen,top,,,,,,,,,,,,,,
+player,oe:team:01c9a45038d103935dc69490914f530,Invictus Gaming Young,IGY,2023,Unknown,oe:player:1408a3cdf492161329cf78c167369ec,Liweier,jng,,,,,,,,,,,,,,
+player,oe:team:01c9a45038d103935dc69490914f530,Invictus Gaming Young,IGY,2023,Unknown,oe:player:25830b0a74895498c16de08b74478c2,M G,mid,,,,,,,,,,,,,,
+player,oe:team:01c9a45038d103935dc69490914f530,Invictus Gaming Young,IGY,2023,Unknown,oe:player:ca92256255888fece42963bfc1d918a,Hoshisora,bot,,,,,,,,,,,,,,
+player,oe:team:01c9a45038d103935dc69490914f530,Invictus Gaming Young,IGY,2023,Unknown,oe:player:6d734e1e86b978852d95cfd63d6a643,Shaoye,bot,,,,,,,,,,,,,,
+player,oe:team:01c9a45038d103935dc69490914f530,Invictus Gaming Young,IGY,2023,Unknown,oe:player:40049df6e0e1ee46b338c602dd9e1a7,Wunai3,sup,,,,,,,,,,,,,,
+lineup,oe:team:01c9a45038d103935dc69490914f530,Invictus Gaming Young,IGY,2023,Unknown,,,,lineup-8f402e48d068cd44,IGY-01,1,12,oe:player:65ddecdc623b47abd4e6aa4ecf4b4a8,oe:player:1408a3cdf492161329cf78c167369ec,oe:player:25830b0a74895498c16de08b74478c2,oe:player:6d734e1e86b978852d95cfd63d6a643,oe:player:40049df6e0e1ee46b338c602dd9e1a7,Wen,Liweier,M G,Shaoye,Wunai3
+lineup,oe:team:01c9a45038d103935dc69490914f530,Invictus Gaming Young,IGY,2023,Unknown,,,,lineup-b685e8be8e0869e6,IGY-02,2,1,oe:player:65ddecdc623b47abd4e6aa4ecf4b4a8,oe:player:1408a3cdf492161329cf78c167369ec,oe:player:25830b0a74895498c16de08b74478c2,oe:player:ca92256255888fece42963bfc1d918a,oe:player:40049df6e0e1ee46b338c602dd9e1a7,Wen,Liweier,M G,Hoshisora,Wunai3
+player,oe:team:d2e8948728f7e4aeb9ee27e753315bc,Kiwoom DRX Challengers,KDC,2023,Unknown,oe:player:c942f21cd85aaf8d7892aa712e3e2ce,Frog,top,,,,,,,,,,,,,,
+player,oe:team:d2e8948728f7e4aeb9ee27e753315bc,Kiwoom DRX Challengers,KDC,2023,Unknown,oe:player:3f4027dc08a489bd4d5390913f5dc71,Sponge,jng,,,,,,,,,,,,,,
+player,oe:team:d2e8948728f7e4aeb9ee27e753315bc,Kiwoom DRX Challengers,KDC,2023,Unknown,oe:player:4ff7b91bbc9492e9f96d28dda496653,SeTab,mid,,,,,,,,,,,,,,
+player,oe:team:d2e8948728f7e4aeb9ee27e753315bc,Kiwoom DRX Challengers,KDC,2023,Unknown,oe:player:18bdb3898e7fecb3bb0be7ff075d509,deokdam,bot,,,,,,,,,,,,,,
+player,oe:team:d2e8948728f7e4aeb9ee27e753315bc,Kiwoom DRX Challengers,KDC,2023,Unknown,oe:player:99e732def3601275db892c84fb85a0c,Career,sup,,,,,,,,,,,,,,
+player,oe:team:d2e8948728f7e4aeb9ee27e753315bc,Kiwoom DRX Challengers,KDC,2023,Unknown,oe:player:7fdedd3126915607d5c8f42f8239253,Pleata,sup,,,,,,,,,,,,,,
+lineup,oe:team:d2e8948728f7e4aeb9ee27e753315bc,Kiwoom DRX Challengers,KDC,2023,Unknown,,,,lineup-c341d7a0379cccac,KDC-01,1,17,oe:player:c942f21cd85aaf8d7892aa712e3e2ce,oe:player:3f4027dc08a489bd4d5390913f5dc71,oe:player:4ff7b91bbc9492e9f96d28dda496653,oe:player:18bdb3898e7fecb3bb0be7ff075d509,oe:player:7fdedd3126915607d5c8f42f8239253,Frog,Sponge,SeTab,deokdam,Pleata
+lineup,oe:team:d2e8948728f7e4aeb9ee27e753315bc,Kiwoom DRX Challengers,KDC,2023,Unknown,,,,lineup-cf11a8751eec09d4,KDC-02,2,1,oe:player:c942f21cd85aaf8d7892aa712e3e2ce,oe:player:3f4027dc08a489bd4d5390913f5dc71,oe:player:4ff7b91bbc9492e9f96d28dda496653,oe:player:18bdb3898e7fecb3bb0be7ff075d509,oe:player:99e732def3601275db892c84fb85a0c,Frog,Sponge,SeTab,deokdam,Career
+player,oe:team:91c9cf14d344ea993274f77fd9fa508,MAX,MAX,2023,Unknown,oe:player:4df49be401a66d4bb04a14c55c0cd40,Garvey,top,,,,,,,,,,,,,,
+player,oe:team:91c9cf14d344ea993274f77fd9fa508,MAX,MAX,2023,Unknown,oe:player:2192ace6703f0af48b4b5dcb033128e,Moyan,jng,,,,,,,,,,,,,,
+player,oe:team:91c9cf14d344ea993274f77fd9fa508,MAX,MAX,2023,Unknown,oe:player:4125acaf3be80df04d6211609b2a227,Medzz,mid,,,,,,,,,,,,,,
+player,oe:team:91c9cf14d344ea993274f77fd9fa508,MAX,MAX,2023,Unknown,oe:player:6b3af7af333c1b60d099d7c212cbbf9,Such,bot,,,,,,,,,,,,,,
+player,oe:team:91c9cf14d344ea993274f77fd9fa508,MAX,MAX,2023,Unknown,oe:player:bdff898770186da749cb63755cb1db0,Vinay,sup,,,,,,,,,,,,,,
+lineup,oe:team:91c9cf14d344ea993274f77fd9fa508,MAX,MAX,2023,Unknown,,,,lineup-0ac68a8ea0415875,MAX-01,1,19,oe:player:4df49be401a66d4bb04a14c55c0cd40,oe:player:2192ace6703f0af48b4b5dcb033128e,oe:player:4125acaf3be80df04d6211609b2a227,oe:player:6b3af7af333c1b60d099d7c212cbbf9,oe:player:bdff898770186da749cb63755cb1db0,Garvey,Moyan,Medzz,Such,Vinay
+player,oe:team:f120b297d22778c31d145387ae3a372,MGN Blue Esports,MBE,2023,Unknown,oe:player:2b259c388da76fffb569a45a736676c,Ryuk,top,,,,,,,,,,,,,,
+player,oe:team:f120b297d22778c31d145387ae3a372,MGN Blue Esports,MBE,2023,Unknown,oe:player:d561f47c907915ece4273f4f9218194,Sorn,jng,,,,,,,,,,,,,,
+player,oe:team:f120b297d22778c31d145387ae3a372,MGN Blue Esports,MBE,2023,Unknown,oe:player:3335a55ba853c9cd5a724876fd305a4,Emo,mid,,,,,,,,,,,,,,
+player,oe:team:f120b297d22778c31d145387ae3a372,MGN Blue Esports,MBE,2023,Unknown,oe:player:7d21767bc5bb1567a3dd92bf82a5a8e,zzeta,mid,,,,,,,,,,,,,,
+player,oe:team:f120b297d22778c31d145387ae3a372,MGN Blue Esports,MBE,2023,Unknown,oe:player:e28bed4fc154ef5fd8aabcc0334a464,Slowz,bot,,,,,,,,,,,,,,
+player,oe:team:f120b297d22778c31d145387ae3a372,MGN Blue Esports,MBE,2023,Unknown,oe:player:deaccc41a952e269107cc9a507dfa13,Zodiac,sup,,,,,,,,,,,,,,
+lineup,oe:team:f120b297d22778c31d145387ae3a372,MGN Blue Esports,MBE,2023,Unknown,,,,lineup-6711588d5e490353,MBE-01,1,3,oe:player:2b259c388da76fffb569a45a736676c,oe:player:d561f47c907915ece4273f4f9218194,oe:player:3335a55ba853c9cd5a724876fd305a4,oe:player:e28bed4fc154ef5fd8aabcc0334a464,oe:player:deaccc41a952e269107cc9a507dfa13,Ryuk,Sorn,Emo,Slowz,Zodiac
+lineup,oe:team:f120b297d22778c31d145387ae3a372,MGN Blue Esports,MBE,2023,Unknown,,,,lineup-ff054e8e861d32be,MBE-02,2,3,oe:player:2b259c388da76fffb569a45a736676c,oe:player:d561f47c907915ece4273f4f9218194,oe:player:7d21767bc5bb1567a3dd92bf82a5a8e,oe:player:e28bed4fc154ef5fd8aabcc0334a464,oe:player:deaccc41a952e269107cc9a507dfa13,Ryuk,Sorn,zzeta,Slowz,Zodiac
+player,oe:team:3fbe14cabc2c91b41d58e14930276fd,MiaoJing (妙竞),M(,2023,Unknown,oe:player:0a729115d81802a89227fef9ad4b5f5,xiao7,top,,,,,,,,,,,,,,
+player,oe:team:3fbe14cabc2c91b41d58e14930276fd,MiaoJing (妙竞),M(,2023,Unknown,oe:player:5ffcd7884584d2e9579d73ea7a7feaa,Starfire,jng,,,,,,,,,,,,,,
+player,oe:team:3fbe14cabc2c91b41d58e14930276fd,MiaoJing (妙竞),M(,2023,Unknown,oe:player:b1fc6d6133c055d760936f4c752aa28,xiaocaobao,mid,,,,,,,,,,,,,,
+player,oe:team:3fbe14cabc2c91b41d58e14930276fd,MiaoJing (妙竞),M(,2023,Unknown,oe:player:37b0ff747a3bc11f577c0a05f0dedd1,Samver,bot,,,,,,,,,,,,,,
+player,oe:team:3fbe14cabc2c91b41d58e14930276fd,MiaoJing (妙竞),M(,2023,Unknown,oe:player:412b8c9df04a282450b2d9347c9d4ae,Crack,sup,,,,,,,,,,,,,,
+lineup,oe:team:3fbe14cabc2c91b41d58e14930276fd,MiaoJing (妙竞),M(,2023,Unknown,,,,lineup-3e14b991f0dae200,M(-01,1,10,oe:player:0a729115d81802a89227fef9ad4b5f5,oe:player:5ffcd7884584d2e9579d73ea7a7feaa,oe:player:b1fc6d6133c055d760936f4c752aa28,oe:player:37b0ff747a3bc11f577c0a05f0dedd1,oe:player:412b8c9df04a282450b2d9347c9d4ae,xiao7,Starfire,xiaocaobao,Samver,Crack
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2023,Unknown,oe:player:c25ed32694e455959de4abe0c535ecc,Mihile,top,,,,,,,,,,,,,,
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2023,Unknown,oe:player:7287b0a4cd5548a002e49dfdfbbc2e9,Sounda,jng,,,,,,,,,,,,,,
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2023,Unknown,oe:player:c9441d0e78cf438ef0b372dc74010e3,Calix,mid,,,,,,,,,,,,,,
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2023,Unknown,oe:player:87f7503a6cdacffa612aeee7f04cc7c,Callme,mid,,,,,,,,,,,,,,
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2023,Unknown,oe:player:252de481e83ab0bc87aada93aeb424c,vital,bot,,,,,,,,,,,,,,
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2023,Unknown,oe:player:c60da5e574122ce50763b8bddb93ab9,Luon,sup,,,,,,,,,,,,,,
+lineup,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2023,Unknown,,,,lineup-8d8170e086c8928a,NEA-01,1,5,oe:player:c25ed32694e455959de4abe0c535ecc,oe:player:7287b0a4cd5548a002e49dfdfbbc2e9,oe:player:87f7503a6cdacffa612aeee7f04cc7c,oe:player:252de481e83ab0bc87aada93aeb424c,oe:player:c60da5e574122ce50763b8bddb93ab9,Mihile,Sounda,Callme,vital,Luon
+lineup,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2023,Unknown,,,,lineup-e16f0ed19f1b95ed,NEA-02,2,4,oe:player:c25ed32694e455959de4abe0c535ecc,oe:player:7287b0a4cd5548a002e49dfdfbbc2e9,oe:player:c9441d0e78cf438ef0b372dc74010e3,oe:player:252de481e83ab0bc87aada93aeb424c,oe:player:c60da5e574122ce50763b8bddb93ab9,Mihile,Sounda,Calix,vital,Luon
+player,oe:team:7c1df37eb66c8c498b823787634c4bc,PSG Talon Academy,PTA,2023,Unknown,oe:player:a9264b1add014881c8d91609de2b7d6,Zkai,top,,,,,,,,,,,,,,
+player,oe:team:7c1df37eb66c8c498b823787634c4bc,PSG Talon Academy,PTA,2023,Unknown,oe:player:b0932095fbb68ab281f153ffd31e523,Xin,jng,,,,,,,,,,,,,,
+player,oe:team:7c1df37eb66c8c498b823787634c4bc,PSG Talon Academy,PTA,2023,Unknown,oe:player:b72512d8552258392503ee400e7bd2b,Wen,mid,,,,,,,,,,,,,,
+player,oe:team:7c1df37eb66c8c498b823787634c4bc,PSG Talon Academy,PTA,2023,Unknown,oe:player:922947616039031e1d3e40d6176930c,ChiCh1,bot,,,,,,,,,,,,,,
+player,oe:team:7c1df37eb66c8c498b823787634c4bc,PSG Talon Academy,PTA,2023,Unknown,oe:player:e30f555e5a24f076a5d5be70a462527,TNS,sup,,,,,,,,,,,,,,
+lineup,oe:team:7c1df37eb66c8c498b823787634c4bc,PSG Talon Academy,PTA,2023,Unknown,,,,lineup-ed2d816c66145859,PTA-01,1,6,oe:player:a9264b1add014881c8d91609de2b7d6,oe:player:b0932095fbb68ab281f153ffd31e523,oe:player:b72512d8552258392503ee400e7bd2b,oe:player:922947616039031e1d3e40d6176930c,oe:player:e30f555e5a24f076a5d5be70a462527,Zkai,Xin,Wen,ChiCh1,TNS
+player,oe:team:8e382814490769ecbef51dc2e824773,Taipei Bravo,TB,2023,Unknown,oe:player:50fc9b91746bb8d34fa385d9324741e,Cause,top,,,,,,,,,,,,,,
+player,oe:team:8e382814490769ecbef51dc2e824773,Taipei Bravo,TB,2023,Unknown,oe:player:f8bd62a488bbee0cb064ed7593c290d,Yuuto,jng,,,,,,,,,,,,,,
+player,oe:team:8e382814490769ecbef51dc2e824773,Taipei Bravo,TB,2023,Unknown,oe:player:d6ad0e887a07d8b8f19af9dda9133b9,fung1028,jng,,,,,,,,,,,,,,
+player,oe:team:8e382814490769ecbef51dc2e824773,Taipei Bravo,TB,2023,Unknown,oe:player:20eb7ce62d7a601d3e1771393d762e7,Zhifeig,mid,,,,,,,,,,,,,,
+player,oe:team:8e382814490769ecbef51dc2e824773,Taipei Bravo,TB,2023,Unknown,oe:player:3acbc0615d8073a495640e96b329971,Mob,bot,,,,,,,,,,,,,,
+player,oe:team:8e382814490769ecbef51dc2e824773,Taipei Bravo,TB,2023,Unknown,oe:player:7d785095e784490bec30acf836548e9,pinvvei,sup,,,,,,,,,,,,,,
+lineup,oe:team:8e382814490769ecbef51dc2e824773,Taipei Bravo,TB,2023,Unknown,,,,lineup-31a98c358f6e5e47,TB-01,1,3,oe:player:50fc9b91746bb8d34fa385d9324741e,oe:player:d6ad0e887a07d8b8f19af9dda9133b9,oe:player:20eb7ce62d7a601d3e1771393d762e7,oe:player:3acbc0615d8073a495640e96b329971,oe:player:7d785095e784490bec30acf836548e9,Cause,fung1028,Zhifeig,Mob,pinvvei
+lineup,oe:team:8e382814490769ecbef51dc2e824773,Taipei Bravo,TB,2023,Unknown,,,,lineup-72538ffd8eb4cdbd,TB-02,2,3,oe:player:50fc9b91746bb8d34fa385d9324741e,oe:player:f8bd62a488bbee0cb064ed7593c290d,oe:player:20eb7ce62d7a601d3e1771393d762e7,oe:player:3acbc0615d8073a495640e96b329971,oe:player:7d785095e784490bec30acf836548e9,Cause,Yuuto,Zhifeig,Mob,pinvvei
+player,oe:team:a6339afa00dc3a4377341abaab42c8a,Team Secret Academy,TSA,2023,Unknown,oe:player:fa6ab005227d25bf19d02ca58f00cab,Kratos,top,,,,,,,,,,,,,,
+player,oe:team:a6339afa00dc3a4377341abaab42c8a,Team Secret Academy,TSA,2023,Unknown,oe:player:831ced1d191a551fe60cd51c9023b58,Yuki,top,,,,,,,,,,,,,,
+player,oe:team:a6339afa00dc3a4377341abaab42c8a,Team Secret Academy,TSA,2023,Unknown,oe:player:6d3df1749d69c8ab474137acf675058,Ribell,jng,,,,,,,,,,,,,,
+player,oe:team:a6339afa00dc3a4377341abaab42c8a,Team Secret Academy,TSA,2023,Unknown,oe:player:f6d8ec0afe458e19c057c1407d7da27,Aress,mid,,,,,,,,,,,,,,
+player,oe:team:a6339afa00dc3a4377341abaab42c8a,Team Secret Academy,TSA,2023,Unknown,oe:player:239b323b3536b17b419bdce9cc8d467,Kwhite,bot,,,,,,,,,,,,,,
+player,oe:team:a6339afa00dc3a4377341abaab42c8a,Team Secret Academy,TSA,2023,Unknown,oe:player:9bed6fad163eaf7e90b58334c8339ab,kairi,sup,,,,,,,,,,,,,,
+lineup,oe:team:a6339afa00dc3a4377341abaab42c8a,Team Secret Academy,TSA,2023,Unknown,,,,lineup-716913464dc4f1a8,TSA-01,1,4,oe:player:fa6ab005227d25bf19d02ca58f00cab,oe:player:6d3df1749d69c8ab474137acf675058,oe:player:f6d8ec0afe458e19c057c1407d7da27,oe:player:239b323b3536b17b419bdce9cc8d467,oe:player:9bed6fad163eaf7e90b58334c8339ab,Kratos,Ribell,Aress,Kwhite,kairi
+lineup,oe:team:a6339afa00dc3a4377341abaab42c8a,Team Secret Academy,TSA,2023,Unknown,,,,lineup-31bd147a44bf73b1,TSA-02,2,2,oe:player:831ced1d191a551fe60cd51c9023b58,oe:player:6d3df1749d69c8ab474137acf675058,oe:player:f6d8ec0afe458e19c057c1407d7da27,oe:player:239b323b3536b17b419bdce9cc8d467,oe:player:9bed6fad163eaf7e90b58334c8339ab,Yuki,Ribell,Aress,Kwhite,kairi
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2023,Unknown,oe:player:feb29d48f9133d43a2a5faad1d92253,Pinnnk,top,,,,,,,,,,,,,,
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2023,Unknown,oe:player:841a33657841e55eb6b68b86de53af9,Bruce,jng,,,,,,,,,,,,,,
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2023,Unknown,oe:player:f6d396ec0d1bfac782d5389da59df76,Enapon,mid,,,,,,,,,,,,,,
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2023,Unknown,oe:player:523b1440a5811bd9b4730c2a63545b7,ezman,bot,,,,,,,,,,,,,,
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2023,Unknown,oe:player:29012ae868f0b8231247f3ce25f2d0c,L0SER,sup,,,,,,,,,,,,,,
+lineup,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2023,Unknown,,,,lineup-97f3db7a9cd67809,VEA-01,1,6,oe:player:feb29d48f9133d43a2a5faad1d92253,oe:player:841a33657841e55eb6b68b86de53af9,oe:player:f6d396ec0d1bfac782d5389da59df76,oe:player:523b1440a5811bd9b4730c2a63545b7,oe:player:29012ae868f0b8231247f3ce25f2d0c,Pinnnk,Bruce,Enapon,ezman,L0SER

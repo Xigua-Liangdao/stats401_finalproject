@@ -1,0 +1,29 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:4bd1751425ef6a9bc9d4d8e9385b4a6,100 Thieves,1T,2025,Unknown,oe:player:5385f74da3e5deb5b66d9a1ee56cf97,Dhokla,top,,,,,,,,,,,,,,
+player,oe:team:4bd1751425ef6a9bc9d4d8e9385b4a6,100 Thieves,1T,2025,Unknown,oe:player:007be3acd5669d100711b13d79e2336,Sniper,top,,,,,,,,,,,,,,
+player,oe:team:4bd1751425ef6a9bc9d4d8e9385b4a6,100 Thieves,1T,2025,Unknown,oe:player:7c3395efccd48fe73592001501bef83,River,jng,,,,,,,,,,,,,,
+player,oe:team:4bd1751425ef6a9bc9d4d8e9385b4a6,100 Thieves,1T,2025,Unknown,oe:player:8f8eaac8e99c203ee76e57c5c81c91f,Quid,mid,,,,,,,,,,,,,,
+player,oe:team:4bd1751425ef6a9bc9d4d8e9385b4a6,100 Thieves,1T,2025,Unknown,oe:player:73d2b65353d7b00e0f198ffdc085edc,FBI,bot,,,,,,,,,,,,,,
+player,oe:team:4bd1751425ef6a9bc9d4d8e9385b4a6,100 Thieves,1T,2025,Unknown,oe:player:dbe844fcbbc7f54654e54242e79acac,Eyla,sup,,,,,,,,,,,,,,
+lineup,oe:team:4bd1751425ef6a9bc9d4d8e9385b4a6,100 Thieves,1T,2025,Unknown,,,,lineup-d325be88df310491,1T-01,1,4,oe:player:5385f74da3e5deb5b66d9a1ee56cf97,oe:player:7c3395efccd48fe73592001501bef83,oe:player:8f8eaac8e99c203ee76e57c5c81c91f,oe:player:73d2b65353d7b00e0f198ffdc085edc,oe:player:dbe844fcbbc7f54654e54242e79acac,Dhokla,River,Quid,FBI,Eyla
+lineup,oe:team:4bd1751425ef6a9bc9d4d8e9385b4a6,100 Thieves,1T,2025,Unknown,,,,lineup-695994e7bb36af61,1T-02,2,2,oe:player:007be3acd5669d100711b13d79e2336,oe:player:7c3395efccd48fe73592001501bef83,oe:player:8f8eaac8e99c203ee76e57c5c81c91f,oe:player:73d2b65353d7b00e0f198ffdc085edc,oe:player:dbe844fcbbc7f54654e54242e79acac,Sniper,River,Quid,FBI,Eyla
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2025,Unknown,oe:player:7e2505960c12cc54c96a0a6efb2e055,Bwipo,top,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2025,Unknown,oe:player:d617210b92fa03e78554883250d432c,Gakgos,top,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2025,Unknown,oe:player:a8307167f3a1c933295bb9e3d43700e,Inspired,jng,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2025,Unknown,oe:player:e9017664588010860a92ceb5f8fcb82,Quad,mid,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2025,Unknown,oe:player:c145139d26813639b8fe6f4d0b28228,Massu,bot,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2025,Unknown,oe:player:3e722c8ede909c83af9342c41805a16,Busio,sup,,,,,,,,,,,,,,
+lineup,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2025,Unknown,,,,lineup-7aee2de81637e078,FLY-01,1,4,oe:player:7e2505960c12cc54c96a0a6efb2e055,oe:player:a8307167f3a1c933295bb9e3d43700e,oe:player:e9017664588010860a92ceb5f8fcb82,oe:player:c145139d26813639b8fe6f4d0b28228,oe:player:3e722c8ede909c83af9342c41805a16,Bwipo,Inspired,Quad,Massu,Busio
+lineup,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2025,Unknown,,,,lineup-9708b19b5cf44816,FLY-02,2,3,oe:player:d617210b92fa03e78554883250d432c,oe:player:a8307167f3a1c933295bb9e3d43700e,oe:player:e9017664588010860a92ceb5f8fcb82,oe:player:c145139d26813639b8fe6f4d0b28228,oe:player:3e722c8ede909c83af9342c41805a16,Gakgos,Inspired,Quad,Massu,Busio
+player,oe:team:b9e44c69c1a70fb35df9be96f9eafea,Vivo Keyd Stars,VKS,2025,Unknown,oe:player:6daafc30b010acda4ebc20b6785cbc0,Boal,top,,,,,,,,,,,,,,
+player,oe:team:b9e44c69c1a70fb35df9be96f9eafea,Vivo Keyd Stars,VKS,2025,Unknown,oe:player:946b74bfc34e861b344ae03700af039,Disamis,jng,,,,,,,,,,,,,,
+player,oe:team:b9e44c69c1a70fb35df9be96f9eafea,Vivo Keyd Stars,VKS,2025,Unknown,oe:player:5b86bafc34d79c84a8847d29b64ca29,Mireu,mid,,,,,,,,,,,,,,
+player,oe:team:b9e44c69c1a70fb35df9be96f9eafea,Vivo Keyd Stars,VKS,2025,Unknown,oe:player:1999dbe32608051613a2d3ed9c1b0d4,Morttheus,bot,,,,,,,,,,,,,,
+player,oe:team:b9e44c69c1a70fb35df9be96f9eafea,Vivo Keyd Stars,VKS,2025,Unknown,oe:player:8b73af38e98bccab6f86930c75a9450,Trymbi,sup,,,,,,,,,,,,,,
+lineup,oe:team:b9e44c69c1a70fb35df9be96f9eafea,Vivo Keyd Stars,VKS,2025,Unknown,,,,lineup-c3db5b4da2f40f4d,VKS-01,1,11,oe:player:6daafc30b010acda4ebc20b6785cbc0,oe:player:946b74bfc34e861b344ae03700af039,oe:player:5b86bafc34d79c84a8847d29b64ca29,oe:player:1999dbe32608051613a2d3ed9c1b0d4,oe:player:8b73af38e98bccab6f86930c75a9450,Boal,Disamis,Mireu,Morttheus,Trymbi
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2025,Unknown,oe:player:840d0b77e71408d3da84e4f0cae4b73,Wizer,top,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2025,Unknown,oe:player:5e07433d52dbc7bbc4faaf9492dbd2c,CarioK,jng,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2025,Unknown,oe:player:127d6ec83484da3c8b39b70c70f1226,dyNquedo,mid,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2025,Unknown,oe:player:1c010180887360e5d6ab967fd93693d,TitaN,bot,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2025,Unknown,oe:player:87b0ff8e56b0ce96bc0a82ea5dc9a7e,Kuri,sup,,,,,,,,,,,,,,
+lineup,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2025,Unknown,,,,lineup-9929ec325180d9f1,PG-01,1,2,oe:player:840d0b77e71408d3da84e4f0cae4b73,oe:player:5e07433d52dbc7bbc4faaf9492dbd2c,oe:player:127d6ec83484da3c8b39b70c70f1226,oe:player:1c010180887360e5d6ab967fd93693d,oe:player:87b0ff8e56b0ce96bc0a82ea5dc9a7e,Wizer,CarioK,dyNquedo,TitaN,Kuri

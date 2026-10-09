@@ -1,0 +1,51 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2018,Summer,oe:player:f17b90d1dd0f1814bb1f82f77c2f861,Nuguri,top,,,,,,,,,,,,,,
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2018,Summer,oe:player:140685b8f5c6b18ddb68c087c31ea97,Punch,jng,,,,,,,,,,,,,,
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2018,Summer,oe:player:5f8ff49cd56eae61d635966b183a451,ShowMaker,mid,,,,,,,,,,,,,,
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2018,Summer,oe:player:c49e6d739a7a7356e88aa84503666ee,Nuclear,bot,,,,,,,,,,,,,,
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2018,Summer,oe:player:ed4b59fdd87aa318a52777affd42d00,Hoit,sup,,,,,,,,,,,,,,
+lineup,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2018,Summer,,,,lineup-4908331cad532910,DK-01,1,2,oe:player:f17b90d1dd0f1814bb1f82f77c2f861,oe:player:140685b8f5c6b18ddb68c087c31ea97,oe:player:5f8ff49cd56eae61d635966b183a451,oe:player:c49e6d739a7a7356e88aa84503666ee,oe:player:ed4b59fdd87aa318a52777affd42d00,Nuguri,Punch,ShowMaker,Nuclear,Hoit
+player,oe:team:2844099587c35cb0e600ebb009c291a,ES Sharks,ES,2018,Summer,oe:player:47a2fd48766f50394a3110fd124de77,Parang,top,,,,,,,,,,,,,,
+player,oe:team:2844099587c35cb0e600ebb009c291a,ES Sharks,ES,2018,Summer,oe:player:071cc5ed513803b5715ffea53019a9a,Bless,jng,,,,,,,,,,,,,,
+player,oe:team:2844099587c35cb0e600ebb009c291a,ES Sharks,ES,2018,Summer,oe:player:4fbce651fccdd73409ea9246d0ee1d6,DasheR,mid,,,,,,,,,,,,,,
+player,oe:team:2844099587c35cb0e600ebb009c291a,ES Sharks,ES,2018,Summer,oe:player:91306951bc13eb9ddf738836c895f9a,Hades,bot,,,,,,,,,,,,,,
+player,oe:team:2844099587c35cb0e600ebb009c291a,ES Sharks,ES,2018,Summer,oe:player:87b0ff8e56b0ce96bc0a82ea5dc9a7e,Kuri,sup,,,,,,,,,,,,,,
+lineup,oe:team:2844099587c35cb0e600ebb009c291a,ES Sharks,ES,2018,Summer,,,,lineup-c6d1c52b0d084def,ES-01,1,3,oe:player:47a2fd48766f50394a3110fd124de77,oe:player:071cc5ed513803b5715ffea53019a9a,oe:player:4fbce651fccdd73409ea9246d0ee1d6,oe:player:91306951bc13eb9ddf738836c895f9a,oe:player:87b0ff8e56b0ce96bc0a82ea5dc9a7e,Parang,Bless,DasheR,Hades,Kuri
+player,oe:team:1a9887b52c7cb6550d325ede8244a12,HOU GAMING,HG,2018,Spring,oe:player:4d79b9a430199b71e47a4a9e908fe76,TaNa,top,,,,,,,,,,,,,,
+player,oe:team:1a9887b52c7cb6550d325ede8244a12,HOU GAMING,HG,2018,Spring,oe:player:df853b20f73d96a898319bc5ee7b72d,Leash,jng,,,,,,,,,,,,,,
+player,oe:team:1a9887b52c7cb6550d325ede8244a12,HOU GAMING,HG,2018,Spring,oe:player:68d1ed095fc63087455916a5636c894,lupset,mid,,,,,,,,,,,,,,
+player,oe:team:1a9887b52c7cb6550d325ede8244a12,HOU GAMING,HG,2018,Spring,oe:player:3e549582750d917491e02553815a8f9,JuNi,bot,,,,,,,,,,,,,,
+player,oe:team:1a9887b52c7cb6550d325ede8244a12,HOU GAMING,HG,2018,Spring,oe:player:16c1637b4b44b008b4d6627f68ae30a,Vsta,sup,,,,,,,,,,,,,,
+lineup,oe:team:1a9887b52c7cb6550d325ede8244a12,HOU GAMING,HG,2018,Spring,,,,lineup-eaeb1acdb49e113b,HG-01,1,2,oe:player:4d79b9a430199b71e47a4a9e908fe76,oe:player:df853b20f73d96a898319bc5ee7b72d,oe:player:68d1ed095fc63087455916a5636c894,oe:player:3e549582750d917491e02553815a8f9,oe:player:16c1637b4b44b008b4d6627f68ae30a,TaNa,Leash,lupset,JuNi,Vsta
+player,oe:team:46c474825b4767ff6113d344264f60f,Kongdoo Monster,KM,2018,Summer,oe:player:c2a081a2acc5642bb16930d4868aff1,Roach,top,,,,,,,,,,,,,,
+player,oe:team:46c474825b4767ff6113d344264f60f,Kongdoo Monster,KM,2018,Summer,oe:player:3d6241a697bf77c402bad659fb172ab,Wiz,jng,,,,,,,,,,,,,,
+player,oe:team:46c474825b4767ff6113d344264f60f,Kongdoo Monster,KM,2018,Summer,oe:player:e4a297a0f76119a442c2595ac040673,Edge,mid,,,,,,,,,,,,,,
+player,oe:team:46c474825b4767ff6113d344264f60f,Kongdoo Monster,KM,2018,Summer,oe:player:c512fd0489043fe22857696467766fd,Ssol,bot,,,,,,,,,,,,,,
+player,oe:team:46c474825b4767ff6113d344264f60f,Kongdoo Monster,KM,2018,Summer,oe:player:1e6947ac7fb3a9529a9726eb692c8cc,Secret,sup,,,,,,,,,,,,,,
+lineup,oe:team:46c474825b4767ff6113d344264f60f,Kongdoo Monster,KM,2018,Summer,,,,lineup-1f3a33ef8010757b,KM-01,1,13,oe:player:c2a081a2acc5642bb16930d4868aff1,oe:player:3d6241a697bf77c402bad659fb172ab,oe:player:e4a297a0f76119a442c2595ac040673,oe:player:c512fd0489043fe22857696467766fd,oe:player:1e6947ac7fb3a9529a9726eb692c8cc,Roach,Wiz,Edge,Ssol,Secret
+player,oe:team:779aaefb139c447bdc6950d89221014,RGA,RGA,2018,Summer,oe:player:e21feb9c0f4c2692c78ebf3c05df19a,Poss,top,,,,,,,,,,,,,,
+player,oe:team:779aaefb139c447bdc6950d89221014,RGA,RGA,2018,Summer,oe:player:df853b20f73d96a898319bc5ee7b72d,Leash,jng,,,,,,,,,,,,,,
+player,oe:team:779aaefb139c447bdc6950d89221014,RGA,RGA,2018,Summer,oe:player:8717c30fc91279cbeb8dc3283f07910,DanChung,mid,,,,,,,,,,,,,,
+player,oe:team:779aaefb139c447bdc6950d89221014,RGA,RGA,2018,Summer,oe:player:7d0e1f09612aac81efa9634cfe82927,Syu,bot,,,,,,,,,,,,,,
+player,oe:team:779aaefb139c447bdc6950d89221014,RGA,RGA,2018,Summer,oe:player:a3a0fb13fc1781da4741a65e0d39fa2,Nugget,sup,,,,,,,,,,,,,,
+lineup,oe:team:779aaefb139c447bdc6950d89221014,RGA,RGA,2018,Summer,,,,lineup-79f680907e8f8299,RGA-01,1,3,oe:player:e21feb9c0f4c2692c78ebf3c05df19a,oe:player:df853b20f73d96a898319bc5ee7b72d,oe:player:8717c30fc91279cbeb8dc3283f07910,oe:player:7d0e1f09612aac81efa9634cfe82927,oe:player:a3a0fb13fc1781da4741a65e0d39fa2,Poss,Leash,DanChung,Syu,Nugget
+player,oe:team:3f907847a2567328254a7c414ed90d8,Rising SuperStar Gaming,RSG,2018,Spring,oe:player:c174f328e24f8282d1347583d87fa53,KronG,top,,,,,,,,,,,,,,
+player,oe:team:3f907847a2567328254a7c414ed90d8,Rising SuperStar Gaming,RSG,2018,Spring,oe:player:2a7b3cd3627e66d18e5fa1f58528a08,Foy,jng,,,,,,,,,,,,,,
+player,oe:team:3f907847a2567328254a7c414ed90d8,Rising SuperStar Gaming,RSG,2018,Spring,oe:player:12f51fc5d876a7dd330eff44bca8291,reM,mid,,,,,,,,,,,,,,
+player,oe:team:3f907847a2567328254a7c414ed90d8,Rising SuperStar Gaming,RSG,2018,Spring,oe:player:105cea7a0855da61017594aefd3fac7,Mephi,bot,,,,,,,,,,,,,,
+player,oe:team:3f907847a2567328254a7c414ed90d8,Rising SuperStar Gaming,RSG,2018,Spring,oe:player:86047a3fc7dc9f0371c969d613a57f2,Neulbo,sup,,,,,,,,,,,,,,
+lineup,oe:team:3f907847a2567328254a7c414ed90d8,Rising SuperStar Gaming,RSG,2018,Spring,,,,lineup-b09ee9178a62f308,RSG-01,1,2,oe:player:c174f328e24f8282d1347583d87fa53,oe:player:2a7b3cd3627e66d18e5fa1f58528a08,oe:player:12f51fc5d876a7dd330eff44bca8291,oe:player:105cea7a0855da61017594aefd3fac7,oe:player:86047a3fc7dc9f0371c969d613a57f2,KronG,Foy,reM,Mephi,Neulbo
+player,oe:team:c228d8939c704a1d5ac0e3d49477cc4,SeolHaeOne Prince,SP,2018,Summer,oe:player:a35433f38dc16447956fd11fe0363ab,Paladin,top,,,,,,,,,,,,,,
+player,oe:team:c228d8939c704a1d5ac0e3d49477cc4,SeolHaeOne Prince,SP,2018,Summer,oe:player:bcfc7977da4eb0a1eef512bc9619e88,BINS,jng,,,,,,,,,,,,,,
+player,oe:team:c228d8939c704a1d5ac0e3d49477cc4,SeolHaeOne Prince,SP,2018,Summer,oe:player:c795dfff10a7c952f4c5438951e9ece,Cover,mid,,,,,,,,,,,,,,
+player,oe:team:c228d8939c704a1d5ac0e3d49477cc4,SeolHaeOne Prince,SP,2018,Summer,oe:player:2a1e5c65cb500f5c96bc5d24d4ebd25,DalKa,bot,,,,,,,,,,,,,,
+player,oe:team:c228d8939c704a1d5ac0e3d49477cc4,SeolHaeOne Prince,SP,2018,Summer,oe:player:abbfc619c36335e64be561d520a5951,HighDin,sup,,,,,,,,,,,,,,
+lineup,oe:team:c228d8939c704a1d5ac0e3d49477cc4,SeolHaeOne Prince,SP,2018,Summer,,,,lineup-3ab4c044c069979e,SP-01,1,2,oe:player:a35433f38dc16447956fd11fe0363ab,oe:player:bcfc7977da4eb0a1eef512bc9619e88,oe:player:c795dfff10a7c952f4c5438951e9ece,oe:player:2a1e5c65cb500f5c96bc5d24d4ebd25,oe:player:abbfc619c36335e64be561d520a5951,Paladin,BINS,Cover,DalKa,HighDin
+player,oe:team:e5762a12b1dca7458bf1e6cdba8457e,Winners,WIN,2018,Summer,oe:player:14c45c5561a4c2bfb5d04cd7f06da43,WooFe,top,,,,,,,,,,,,,,
+player,oe:team:e5762a12b1dca7458bf1e6cdba8457e,Winners,WIN,2018,Summer,oe:player:b06f165ee2371a61d3be74d413e1e21,Malrang,jng,,,,,,,,,,,,,,
+player,oe:team:e5762a12b1dca7458bf1e6cdba8457e,Winners,WIN,2018,Summer,oe:player:24cd6812f523cf30c3502344539be6f,FATE,mid,,,,,,,,,,,,,,
+player,oe:team:e5762a12b1dca7458bf1e6cdba8457e,Winners,WIN,2018,Summer,oe:player:e9ea12c16e93d8f41c474b6082a0656,NighT,mid,,,,,,,,,,,,,,
+player,oe:team:e5762a12b1dca7458bf1e6cdba8457e,Winners,WIN,2018,Summer,oe:player:d4236a5c6d033d0388ab042acd884f1,HyBriD,bot,,,,,,,,,,,,,,
+player,oe:team:e5762a12b1dca7458bf1e6cdba8457e,Winners,WIN,2018,Summer,oe:player:ccf749dcf7aa6920edb4f9dac925f0a,Luci,sup,,,,,,,,,,,,,,
+lineup,oe:team:e5762a12b1dca7458bf1e6cdba8457e,Winners,WIN,2018,Summer,,,,lineup-8f06c0cc56cc854b,WIN-01,1,2,oe:player:14c45c5561a4c2bfb5d04cd7f06da43,oe:player:b06f165ee2371a61d3be74d413e1e21,oe:player:e9ea12c16e93d8f41c474b6082a0656,oe:player:d4236a5c6d033d0388ab042acd884f1,oe:player:ccf749dcf7aa6920edb4f9dac925f0a,WooFe,Malrang,NighT,HyBriD,Luci
+lineup,oe:team:e5762a12b1dca7458bf1e6cdba8457e,Winners,WIN,2018,Summer,,,,lineup-d6c729bd971cef66,WIN-02,2,1,oe:player:14c45c5561a4c2bfb5d04cd7f06da43,oe:player:b06f165ee2371a61d3be74d413e1e21,oe:player:24cd6812f523cf30c3502344539be6f,oe:player:d4236a5c6d033d0388ab042acd884f1,oe:player:ccf749dcf7aa6920edb4f9dac925f0a,WooFe,Malrang,FATE,HyBriD,Luci

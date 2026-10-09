@@ -1,0 +1,61 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2022,Winter,oe:player:1f0f5ce849abab00c4283182c04efd0,Hoon,top,,,,,,,,,,,,,,
+player,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2022,Winter,oe:player:f0d9ba082555d7aac872bc9e43226c2,Kireas,jng,,,,,,,,,,,,,,
+player,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2022,Winter,oe:player:24c8e8fdd203338d06e4330c28c90d1,Luka,mid,,,,,,,,,,,,,,
+player,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2022,Winter,oe:player:3d7afc086e8aba0545ceba473fa1e9e,ANDARIEL,bot,,,,,,,,,,,,,,
+player,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2022,Winter,oe:player:b1f76954fca7a3f0fa67409385edaba,Sloth,sup,,,,,,,,,,,,,,
+lineup,oe:team:6a87540e0a690bc1aa918c3c31b21e7,5 Ronin,5R,2022,Winter,,,,lineup-d4a29a6b264ef227,5R-01,1,1,oe:player:1f0f5ce849abab00c4283182c04efd0,oe:player:f0d9ba082555d7aac872bc9e43226c2,oe:player:24c8e8fdd203338d06e4330c28c90d1,oe:player:3d7afc086e8aba0545ceba473fa1e9e,oe:player:b1f76954fca7a3f0fa67409385edaba,Hoon,Kireas,Luka,ANDARIEL,Sloth
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2022,Winter,oe:player:eeec6c7a9d2b475c23650b202208b89,Lot,top,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2022,Winter,oe:player:be26898a3600cb5e9898c0ab68d9139,BroCColi,jng,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2022,Winter,oe:player:b9b86ae0a307d8b5e501e7048f92be4,MGX,mid,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2022,Winter,oe:player:c5050bf5abf900c6beaed313da57213,Jeyrus,bot,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2022,Winter,oe:player:eca327ff4d6ae42715b64e9beae4813,Only35,sup,,,,,,,,,,,,,,
+lineup,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2022,Winter,,,,lineup-52ba2f9f472c6d59,BE-01,1,1,oe:player:eeec6c7a9d2b475c23650b202208b89,oe:player:be26898a3600cb5e9898c0ab68d9139,oe:player:b9b86ae0a307d8b5e501e7048f92be4,oe:player:c5050bf5abf900c6beaed313da57213,oe:player:eca327ff4d6ae42715b64e9beae4813,Lot,BroCColi,MGX,Jeyrus,Only35
+player,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2022,Winter,oe:player:ec596621f8c01e1b79c177346b4a158,NuQ,top,,,,,,,,,,,,,,
+player,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2022,Winter,oe:player:9406e3c325bfc9873426e5eda4ba6e1,Ray,top,,,,,,,,,,,,,,
+player,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2022,Winter,oe:player:275c74140224026380b29b2412d2512,Crash,jng,,,,,,,,,,,,,,
+player,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2022,Winter,oe:player:ee8d313390db21907037cef1c8d6f81,FireRain,mid,,,,,,,,,,,,,,
+player,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2022,Winter,oe:player:e37058bf2305c3a61e0e69681803f95,stillnumb,mid,,,,,,,,,,,,,,
+player,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2022,Winter,oe:player:6a9dedd375fda0d451a45fa9809875e,Ellam,bot,,,,,,,,,,,,,,
+player,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2022,Winter,oe:player:f216690ac90e0a1c2097a616cb4453e,Sparz,sup,,,,,,,,,,,,,,
+lineup,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2022,Winter,,,,lineup-7a44dce37c93ec28,FE-01,1,1,oe:player:9406e3c325bfc9873426e5eda4ba6e1,oe:player:275c74140224026380b29b2412d2512,oe:player:e37058bf2305c3a61e0e69681803f95,oe:player:6a9dedd375fda0d451a45fa9809875e,oe:player:f216690ac90e0a1c2097a616cb4453e,Ray,Crash,stillnumb,Ellam,Sparz
+lineup,oe:team:418c28593a78b57ef74e47d0c18640a,Fenerbahçe Esports,FE,2022,Winter,,,,lineup-7d245c81e8e82bbd,FE-02,2,1,oe:player:ec596621f8c01e1b79c177346b4a158,oe:player:275c74140224026380b29b2412d2512,oe:player:ee8d313390db21907037cef1c8d6f81,oe:player:6a9dedd375fda0d451a45fa9809875e,oe:player:f216690ac90e0a1c2097a616cb4453e,NuQ,Crash,FireRain,Ellam,Sparz
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2022,Winter,oe:player:2c77d3e2362b94af54ee039dd42eb28,Skewer,top,,,,,,,,,,,,,,
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2022,Winter,oe:player:b94e8760d00efd6eea4ec2597e1f46f,EL,jng,,,,,,,,,,,,,,
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2022,Winter,oe:player:832721fb26d1dac9f30414cb100358f,SPARKLE,mid,,,,,,,,,,,,,,
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2022,Winter,oe:player:c676ee28224ac6cd058eadb3c00f701,Hypnos,bot,,,,,,,,,,,,,,
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2022,Winter,oe:player:c1dc4cf13dc03cfd70b7c1f9ba0421b,Shawi,sup,,,,,,,,,,,,,,
+lineup,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2022,Winter,,,,lineup-48580196984f485e,GAL-01,1,1,oe:player:2c77d3e2362b94af54ee039dd42eb28,oe:player:b94e8760d00efd6eea4ec2597e1f46f,oe:player:832721fb26d1dac9f30414cb100358f,oe:player:c676ee28224ac6cd058eadb3c00f701,oe:player:c1dc4cf13dc03cfd70b7c1f9ba0421b,Skewer,EL,SPARKLE,Hypnos,Shawi
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2022,Winter,oe:player:d7c528ab090b1cda9854e13aaf94505,Crazy,top,,,,,,,,,,,,,,
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2022,Winter,oe:player:d92b0904aa4f08f128aa8c6d2775056,Mojito,jng,,,,,,,,,,,,,,
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2022,Winter,oe:player:db0cbdc72184ad44ab905be61fc0756,Kofte,mid,,,,,,,,,,,,,,
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2022,Winter,oe:player:e24ee2487879116dcab772c0ac4fe34,Focus,bot,,,,,,,,,,,,,,
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2022,Winter,oe:player:db38739eda4ad887b7d852545212528,Zergsting,sup,,,,,,,,,,,,,,
+lineup,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2022,Winter,,,,lineup-836fa70c5b1a5323,GE-01,1,5,oe:player:d7c528ab090b1cda9854e13aaf94505,oe:player:d92b0904aa4f08f128aa8c6d2775056,oe:player:db0cbdc72184ad44ab905be61fc0756,oe:player:e24ee2487879116dcab772c0ac4fe34,oe:player:db38739eda4ad887b7d852545212528,Crazy,Mojito,Kofte,Focus,Zergsting
+player,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2022,Winter,oe:player:574ca24646bea0e378813db54092903,Ruin,top,,,,,,,,,,,,,,
+player,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2022,Winter,oe:player:d730e6017b42d1784032e728fcd4eef,Kirei,jng,,,,,,,,,,,,,,
+player,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2022,Winter,oe:player:fbced201ed9c0e35008d88cd92397dd,Bolulu,mid,,,,,,,,,,,,,,
+player,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2022,Winter,oe:player:dbc932ea3d30b98a49d66e17c6c4d62,Black,bot,,,,,,,,,,,,,,
+player,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2022,Winter,oe:player:ed24ff8971b1fa43a1efbb386618ce3,Grave,bot,,,,,,,,,,,,,,
+player,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2022,Winter,oe:player:10be1f35d8b5ea6babf916a6e7dd8a4,Fleshy,sup,,,,,,,,,,,,,,
+player,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2022,Winter,oe:player:71f5302abea604062e810161d7922b8,Japone,sup,,,,,,,,,,,,,,
+lineup,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2022,Winter,,,,lineup-1361715fe7f81b93,NET-01,1,1,oe:player:574ca24646bea0e378813db54092903,oe:player:d730e6017b42d1784032e728fcd4eef,oe:player:fbced201ed9c0e35008d88cd92397dd,oe:player:ed24ff8971b1fa43a1efbb386618ce3,oe:player:10be1f35d8b5ea6babf916a6e7dd8a4,Ruin,Kirei,Bolulu,Grave,Fleshy
+lineup,oe:team:1bcba9d314932379a955b3de9e8654d,NASR eSports Turkey,NET,2022,Winter,,,,lineup-c50c56aba6c608ba,NET-02,2,1,oe:player:574ca24646bea0e378813db54092903,oe:player:d730e6017b42d1784032e728fcd4eef,oe:player:fbced201ed9c0e35008d88cd92397dd,oe:player:dbc932ea3d30b98a49d66e17c6c4d62,oe:player:71f5302abea604062e810161d7922b8,Ruin,Kirei,Bolulu,Black,Japone
+player,oe:team:0f1c217161a1486fff3abf544df2986,SuperMassive Blaze,SB,2022,Winter,oe:player:a61da83af5e3738845fa6dd56e1d41a,Juzu,top,,,,,,,,,,,,,,
+player,oe:team:0f1c217161a1486fff3abf544df2986,SuperMassive Blaze,SB,2022,Winter,oe:player:ec4693d7437c8771080c41aefa52c3d,Chosen,jng,,,,,,,,,,,,,,
+player,oe:team:0f1c217161a1486fff3abf544df2986,SuperMassive Blaze,SB,2022,Winter,oe:player:4fadb7e6e30c736d1c3f976f89dd0c0,KSAEZ,mid,,,,,,,,,,,,,,
+player,oe:team:0f1c217161a1486fff3abf544df2986,SuperMassive Blaze,SB,2022,Winter,oe:player:c032df73970ffb2f2b585d912f6b20d,Neramin,bot,,,,,,,,,,,,,,
+player,oe:team:0f1c217161a1486fff3abf544df2986,SuperMassive Blaze,SB,2022,Winter,oe:player:a9cfbc13e22eefdd22af7b346ce2af4,Parus,sup,,,,,,,,,,,,,,
+lineup,oe:team:0f1c217161a1486fff3abf544df2986,SuperMassive Blaze,SB,2022,Winter,,,,lineup-a7bc17e6adf43f62,SB-01,1,1,oe:player:a61da83af5e3738845fa6dd56e1d41a,oe:player:ec4693d7437c8771080c41aefa52c3d,oe:player:4fadb7e6e30c736d1c3f976f89dd0c0,oe:player:c032df73970ffb2f2b585d912f6b20d,oe:player:a9cfbc13e22eefdd22af7b346ce2af4,Juzu,Chosen,KSAEZ,Neramin,Parus
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2022,Winter,oe:player:c3d0fe66f45a2105676f3f846711be7,Madly,top,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2022,Winter,oe:player:de442faff7b7cdc0fba7d6d5caff5e1,Elramir,jng,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2022,Winter,oe:player:990de650e44c3b85ec90451de02db04,Jool,mid,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2022,Winter,oe:player:9109c20b2999000c86e60f0c8808091,Rhioni,bot,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2022,Winter,oe:player:0ae61bd0474e04c9f1195d4baa0213a,Pop,sup,,,,,,,,,,,,,,
+lineup,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2022,Winter,,,,lineup-7f8f2177e01307e9,TA-01,1,5,oe:player:c3d0fe66f45a2105676f3f846711be7,oe:player:de442faff7b7cdc0fba7d6d5caff5e1,oe:player:990de650e44c3b85ec90451de02db04,oe:player:9109c20b2999000c86e60f0c8808091,oe:player:0ae61bd0474e04c9f1195d4baa0213a,Madly,Elramir,Jool,Rhioni,Pop
+player,oe:team:a65adb2808377018a2a7832eb2bd7f4,İstanbul Wildcats,İW,2022,Winter,oe:player:1bc0756ba9102abb5a7cd13d2b618aa,StarScreen,top,,,,,,,,,,,,,,
+player,oe:team:a65adb2808377018a2a7832eb2bd7f4,İstanbul Wildcats,İW,2022,Winter,oe:player:92b76c3a9967d6322741aa6d2ba4a2b,Ferret,jng,,,,,,,,,,,,,,
+player,oe:team:a65adb2808377018a2a7832eb2bd7f4,İstanbul Wildcats,İW,2022,Winter,oe:player:e3b8d5a9290fe0c7458dc01db4dc9dc,Serin,mid,,,,,,,,,,,,,,
+player,oe:team:a65adb2808377018a2a7832eb2bd7f4,İstanbul Wildcats,İW,2022,Winter,oe:player:d129eb71d537fdbb2cd4c52703f51f4,HolyPhoenix,bot,,,,,,,,,,,,,,
+player,oe:team:a65adb2808377018a2a7832eb2bd7f4,İstanbul Wildcats,İW,2022,Winter,oe:player:496ca7c65dbd4beffa678e62d9d4e8d,Farfetch,sup,,,,,,,,,,,,,,
+lineup,oe:team:a65adb2808377018a2a7832eb2bd7f4,İstanbul Wildcats,İW,2022,Winter,,,,lineup-31991832a92970ad,İW-01,1,14,oe:player:1bc0756ba9102abb5a7cd13d2b618aa,oe:player:92b76c3a9967d6322741aa6d2ba4a2b,oe:player:e3b8d5a9290fe0c7458dc01db4dc9dc,oe:player:d129eb71d537fdbb2cd4c52703f51f4,oe:player:496ca7c65dbd4beffa678e62d9d4e8d,StarScreen,Ferret,Serin,HolyPhoenix,Farfetch

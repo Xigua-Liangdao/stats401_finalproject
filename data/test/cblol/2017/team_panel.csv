@@ -1,0 +1,62 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2017,Split 2,oe:player:a814de9b535755e3f2298901561783f,Lep,top,,,,,,,,,,,,,,
+player,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2017,Split 2,oe:player:931603f10a47a4241c9c2afbd69107a,Minerva,jng,,,,,,,,,,,,,,
+player,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2017,Split 2,oe:player:e0ca016e696d77b1ee0467e5825b5ed,Wos,jng,,,,,,,,,,,,,,
+player,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2017,Split 2,oe:player:57cf10b386f8b1ff90be50aa2357eb7,Vash,mid,,,,,,,,,,,,,,
+player,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2017,Split 2,oe:player:8aa7b466b9769f4644c1366eb44ce03,pbO,bot,,,,,,,,,,,,,,
+player,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2017,Split 2,oe:player:931603f10a47a4241c9c2afbd69107a,Minerva,sup,,,,,,,,,,,,,,
+player,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2017,Split 2,oe:player:e0ca016e696d77b1ee0467e5825b5ed,Wos,sup,,,,,,,,,,,,,,
+lineup,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2017,Split 2,,,,lineup-9e4621e31f127550,CEC-01,1,1,oe:player:a814de9b535755e3f2298901561783f,oe:player:931603f10a47a4241c9c2afbd69107a,oe:player:57cf10b386f8b1ff90be50aa2357eb7,oe:player:8aa7b466b9769f4644c1366eb44ce03,oe:player:e0ca016e696d77b1ee0467e5825b5ed,Lep,Minerva,Vash,pbO,Wos
+lineup,oe:team:4df410b2df000c4b430debfe467a76f,CNB e-Sports Club,CEC,2017,Split 2,,,,lineup-e203efa361bd48a8,CEC-02,2,1,oe:player:a814de9b535755e3f2298901561783f,oe:player:e0ca016e696d77b1ee0467e5825b5ed,oe:player:57cf10b386f8b1ff90be50aa2357eb7,oe:player:8aa7b466b9769f4644c1366eb44ce03,oe:player:931603f10a47a4241c9c2afbd69107a,Lep,Wos,Vash,pbO,Minerva
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2017,Split 2,oe:player:325d05dad5fd291cbb49cd50c038ce3,Ayel,top,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2017,Split 2,oe:player:06deba5908b007eb6f32d8d95f3f61b,Turtle,jng,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2017,Split 2,oe:player:a672b5bc1c212a6922418fad18734c1,Envy,mid,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2017,Split 2,oe:player:0ce788d020173e8e2e683515c31efda,micaO,bot,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2017,Split 2,oe:player:442544182ae779fd792f1f509e80866,Jockster,sup,,,,,,,,,,,,,,
+lineup,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2017,Split 2,,,,lineup-e5b43157c8cdc808,INT-01,1,2,oe:player:325d05dad5fd291cbb49cd50c038ce3,oe:player:06deba5908b007eb6f32d8d95f3f61b,oe:player:a672b5bc1c212a6922418fad18734c1,oe:player:0ce788d020173e8e2e683515c31efda,oe:player:442544182ae779fd792f1f509e80866,Ayel,Turtle,Envy,micaO,Jockster
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2017,Unknown,oe:player:c760fc1c8c70fadaa2c376f7acae877,ouroboy,top,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2017,Unknown,oe:player:06deba5908b007eb6f32d8d95f3f61b,Turtle,jng,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2017,Unknown,oe:player:db388b1b18abbdc620de33627c0ef05,Goku,mid,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2017,Unknown,oe:player:588c3dcd7bd3194adbf1f4893ab1105,Skyer,bot,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2017,Unknown,oe:player:322cb471bec2cd13585deb9fd868fcc,Professor,sup,,,,,,,,,,,,,,
+lineup,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2017,Unknown,,,,lineup-f88f294ead9aef7e,OKE-01,1,2,oe:player:c760fc1c8c70fadaa2c376f7acae877,oe:player:06deba5908b007eb6f32d8d95f3f61b,oe:player:db388b1b18abbdc620de33627c0ef05,oe:player:588c3dcd7bd3194adbf1f4893ab1105,oe:player:322cb471bec2cd13585deb9fd868fcc,ouroboy,Turtle,Goku,Skyer,Professor
+player,oe:team:aa2a535ded3bc45217af1684a4451c4,ProGaming Esports,PE,2017,Split 2,oe:player:c760fc1c8c70fadaa2c376f7acae877,ouroboy,top,,,,,,,,,,,,,,
+player,oe:team:aa2a535ded3bc45217af1684a4451c4,ProGaming Esports,PE,2017,Split 2,oe:player:b23f665210a1914cab61bc8eba4c9ae,Ranger,jng,,,,,,,,,,,,,,
+player,oe:team:aa2a535ded3bc45217af1684a4451c4,ProGaming Esports,PE,2017,Split 2,oe:player:38650fd135db39772bc157f764eb8ea,Zuao,jng,,,,,,,,,,,,,,
+player,oe:team:aa2a535ded3bc45217af1684a4451c4,ProGaming Esports,PE,2017,Split 2,oe:player:db388b1b18abbdc620de33627c0ef05,Goku,mid,,,,,,,,,,,,,,
+player,oe:team:aa2a535ded3bc45217af1684a4451c4,ProGaming Esports,PE,2017,Split 2,oe:player:b3134448fed47386347d2829c38f8b3,Luskka,bot,,,,,,,,,,,,,,
+player,oe:team:aa2a535ded3bc45217af1684a4451c4,ProGaming Esports,PE,2017,Split 2,oe:player:322cb471bec2cd13585deb9fd868fcc,Professor,sup,,,,,,,,,,,,,,
+lineup,oe:team:aa2a535ded3bc45217af1684a4451c4,ProGaming Esports,PE,2017,Split 2,,,,lineup-1de0d4960ac6ad39,PE-01,1,1,oe:player:c760fc1c8c70fadaa2c376f7acae877,oe:player:38650fd135db39772bc157f764eb8ea,oe:player:db388b1b18abbdc620de33627c0ef05,oe:player:b3134448fed47386347d2829c38f8b3,oe:player:322cb471bec2cd13585deb9fd868fcc,ouroboy,Zuao,Goku,Luskka,Professor
+lineup,oe:team:aa2a535ded3bc45217af1684a4451c4,ProGaming Esports,PE,2017,Split 2,,,,lineup-61ef18992bd93e1d,PE-02,2,1,oe:player:c760fc1c8c70fadaa2c376f7acae877,oe:player:b23f665210a1914cab61bc8eba4c9ae,oe:player:db388b1b18abbdc620de33627c0ef05,oe:player:b3134448fed47386347d2829c38f8b3,oe:player:322cb471bec2cd13585deb9fd868fcc,ouroboy,Ranger,Goku,Luskka,Professor
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2017,Split 2,oe:player:3085815ef497539cb1d93b3c9a16624,Robo,top,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2017,Split 2,oe:player:8d7dfafe52c0a56acd811d06297729c,Nappon,jng,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2017,Split 2,oe:player:913fab4d1d3caa861cfbbdd60b2a3fd,tockers,mid,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2017,Split 2,oe:player:d4ada34b219d1b4abf67a3cea03d7c7,Sacy,bot,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2017,Split 2,oe:player:8949aee3a35b0a789d1090f412d8d61,brTT,bot,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2017,Split 2,oe:player:bd35a9f3403e38f0b7d203cf42401e7,Dioud,sup,,,,,,,,,,,,,,
+lineup,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2017,Split 2,,,,lineup-78851cc91fab3f51,RC-01,1,1,oe:player:3085815ef497539cb1d93b3c9a16624,oe:player:8d7dfafe52c0a56acd811d06297729c,oe:player:913fab4d1d3caa861cfbbdd60b2a3fd,oe:player:d4ada34b219d1b4abf67a3cea03d7c7,oe:player:bd35a9f3403e38f0b7d203cf42401e7,Robo,Nappon,tockers,Sacy,Dioud
+lineup,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2017,Split 2,,,,lineup-c2a9de983bc26bd4,RC-02,2,1,oe:player:3085815ef497539cb1d93b3c9a16624,oe:player:8d7dfafe52c0a56acd811d06297729c,oe:player:913fab4d1d3caa861cfbbdd60b2a3fd,oe:player:8949aee3a35b0a789d1090f412d8d61,oe:player:bd35a9f3403e38f0b7d203cf42401e7,Robo,Nappon,tockers,brTT,Dioud
+player,oe:team:5984d6ffbed283b363cf996cacff642,T Show,TS,2017,Split 2,oe:player:c20c31fce53987d1ef137cc00511a59,b4dd,top,,,,,,,,,,,,,,
+player,oe:team:5984d6ffbed283b363cf996cacff642,T Show,TS,2017,Split 2,oe:player:fe4ecad66fbf9135d6e1e3adeaf00fe,Ferchu,jng,,,,,,,,,,,,,,
+player,oe:team:5984d6ffbed283b363cf996cacff642,T Show,TS,2017,Split 2,oe:player:0a0e15e8e14edd7e4039cbf6f4fbfa4,Krastyel,mid,,,,,,,,,,,,,,
+player,oe:team:5984d6ffbed283b363cf996cacff642,T Show,TS,2017,Split 2,oe:player:8dbcf5c726f24c363c07f70e62ac715,Theusma,bot,,,,,,,,,,,,,,
+player,oe:team:5984d6ffbed283b363cf996cacff642,T Show,TS,2017,Split 2,oe:player:c88cada1696defe81464925789aa6d8,Ceos,sup,,,,,,,,,,,,,,
+lineup,oe:team:5984d6ffbed283b363cf996cacff642,T Show,TS,2017,Split 2,,,,lineup-3bd44706eedc1784,TS-01,1,2,oe:player:c20c31fce53987d1ef137cc00511a59,oe:player:fe4ecad66fbf9135d6e1e3adeaf00fe,oe:player:0a0e15e8e14edd7e4039cbf6f4fbfa4,oe:player:8dbcf5c726f24c363c07f70e62ac715,oe:player:c88cada1696defe81464925789aa6d8,b4dd,Ferchu,Krastyel,Theusma,Ceos
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2017,Split 2,oe:player:d19c5f4e8987e0de7bf1993961148f0,Yang,top,,,,,,,,,,,,,,
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2017,Split 2,oe:player:37b570d988e1cdf1e30b1e5a598a6d0,Revolta,jng,,,,,,,,,,,,,,
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2017,Split 2,oe:player:7e76d237af4844406d36a27ddb255dd,takeshi,mid,,,,,,,,,,,,,,
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2017,Split 2,oe:player:af668e38dba2d6d215e578563583f23,Juzo,bot,,,,,,,,,,,,,,
+player,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2017,Split 2,oe:player:bd7992c3a0b0398d2833e69f231d5e3,esA,sup,,,,,,,,,,,,,,
+lineup,oe:team:2ac91e85ddcfa4e5c6ec6c9b5d3f3f0,Vivo Keyd,VK,2017,Split 2,,,,lineup-04b7d4952dafdbfe,VK-01,1,2,oe:player:d19c5f4e8987e0de7bf1993961148f0,oe:player:37b570d988e1cdf1e30b1e5a598a6d0,oe:player:7e76d237af4844406d36a27ddb255dd,oe:player:af668e38dba2d6d215e578563583f23,oe:player:bd7992c3a0b0398d2833e69f231d5e3,Yang,Revolta,takeshi,Juzo,esA
+player,oe:team:b75eada98b0b044c59e748c5a2e59be,e-Champ Gaming,EG,2017,Unknown,oe:player:f80c58155be0a2e9ecb2a6891aaba9f,Matheushn,top,,,,,,,,,,,,,,
+player,oe:team:b75eada98b0b044c59e748c5a2e59be,e-Champ Gaming,EG,2017,Unknown,oe:player:e81559780effefee74a3c057177f027,Freire,jng,,,,,,,,,,,,,,
+player,oe:team:b75eada98b0b044c59e748c5a2e59be,e-Champ Gaming,EG,2017,Unknown,oe:player:0a0e15e8e14edd7e4039cbf6f4fbfa4,Krastyel,mid,,,,,,,,,,,,,,
+player,oe:team:b75eada98b0b044c59e748c5a2e59be,e-Champ Gaming,EG,2017,Unknown,oe:player:952f90bd1805db865fdb728cd1f2d92,DudsTheBoy,bot,,,,,,,,,,,,,,
+player,oe:team:b75eada98b0b044c59e748c5a2e59be,e-Champ Gaming,EG,2017,Unknown,oe:player:5e21b76eba058de996ec086620bba18,k0ga,sup,,,,,,,,,,,,,,
+lineup,oe:team:b75eada98b0b044c59e748c5a2e59be,e-Champ Gaming,EG,2017,Unknown,,,,lineup-626d03364c0e6bb6,EG-01,1,2,oe:player:f80c58155be0a2e9ecb2a6891aaba9f,oe:player:e81559780effefee74a3c057177f027,oe:player:0a0e15e8e14edd7e4039cbf6f4fbfa4,oe:player:952f90bd1805db865fdb728cd1f2d92,oe:player:5e21b76eba058de996ec086620bba18,Matheushn,Freire,Krastyel,DudsTheBoy,k0ga
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2017,Split 2,oe:player:ba00c9423725b15821994539f9f50df,Mylon,top,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2017,Split 2,oe:player:b04655f0821a30125d72a3442647875,Tay,jng,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2017,Split 2,oe:player:b950121d211964f8a9e4a5ee48487e5,Kami,mid,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2017,Split 2,oe:player:0c0d42e4a3273c1a137e83b490b8513,Matsukaze,bot,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2017,Split 2,oe:player:b208ed1b4583e11e7b2e277fb45a8f6,Loop,sup,,,,,,,,,,,,,,
+lineup,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2017,Split 2,,,,lineup-2489a1363be841d9,PG-01,1,12,oe:player:ba00c9423725b15821994539f9f50df,oe:player:b04655f0821a30125d72a3442647875,oe:player:b950121d211964f8a9e4a5ee48487e5,oe:player:0c0d42e4a3273c1a137e83b490b8513,oe:player:b208ed1b4583e11e7b2e277fb45a8f6,Mylon,Tay,Kami,Matsukaze,Loop

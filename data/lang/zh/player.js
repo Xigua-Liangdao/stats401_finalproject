@@ -10,7 +10,7 @@ export default {
   "player.actualVsExpected": "实际对比预期",
   "player.overall": "总计",
   "player.totalGames": "总场次",
-  "player.totalHint": "数据集中全部可用赛季",
+  "player.totalHint": "所选赛区及年份中的全部可用比赛",
   "player.currentSeason": "当前赛季 · {season}",
   "player.pairImpact": "查看配对影响",
   "player.portrait": "选手肖像",

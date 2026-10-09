@@ -24,18 +24,31 @@ NUMERIC = ["result", "gamelength", "damagetochampions", "totalgold", "kills",
            "xpdiffat15", "csdiffat15"]
 
 
+class DataPreparationError(ValueError):
+    """An unusable source retains its cleaning audit for the batch report."""
+    def __init__(self, message, quality, rejected=None):
+        super().__init__(message)
+        self.quality = quality
+        self.rejected = pd.DataFrame(rejected or [], columns=["game_id", "reason"])
+
+
 def stable_id(prefix, parts):
     key = json.dumps(list(parts), ensure_ascii=False, separators=(",", ":"))
     return prefix + hashlib.sha256(key.encode()).hexdigest()[:16]
 
 
-def prepare(raw: pd.DataFrame):
+def prepare(raw: pd.DataFrame, *, league="LPL", year=2025):
+    year = int(year)
+    league = str(league).strip()
+    report = {"raw_rows": len(raw), "raw_columns": len(raw.columns), "league": league, "season": year}
     missing = set(REQUIRED + ["league", "year"]) - set(raw.columns)
     if missing:
-        raise ValueError(f"Missing required source columns: {sorted(missing)}")
-    report = {"raw_rows": len(raw), "raw_columns": len(raw.columns)}
-    scope = raw[(raw.league == "LPL") & (raw.year.astype(str) == "2025")].copy()
+        raise DataPreparationError(f"Missing required source columns: {sorted(missing)}", report)
+    scope = raw[(raw.league.astype("string").str.strip() == league)
+                & (pd.to_numeric(raw.year, errors="coerce") == year)].copy()
     report["scope_rows"] = len(scope)
+    if scope.empty:
+        raise DataPreparationError(f"Source contains no rows for {league} {year}.", report)
     p = scope[scope.position.isin(ROLES)].copy()
     report["player_rows_before_cleaning"] = len(p)
     report["team_rows_not_used_as_player_observations"] = int((scope.position == "team").sum())
@@ -83,10 +96,12 @@ def prepare(raw: pd.DataFrame):
             rejected.append({"game_id": str(game_id), "reason": "invalid_roster_or_conflicting_game_metadata"})
     p = p[p.game_id.isin(accepted)].copy()
     if p.empty:
-        raise ValueError("No complete valid games remain.")
+        report.update({"processed_player_rows": 0, "games": 0, "rejected_games": len(rejected),
+                       "excluded_player_rows": report["player_rows_before_cleaning"]})
+        raise DataPreparationError(f"No complete valid games remain for {league} {year}.", report, rejected)
     p["date"] = p.date.dt.strftime("%Y-%m-%dT%H:%M:%S")
     p["day"] = p.date.str[:10]
-    p["season"] = 2025
+    p["season"] = year
     p["split"] = p["split"].fillna("Unknown") if "split" in p else "Unknown"
     p["playoffs"] = pd.to_numeric(p["playoffs"], errors="coerce") if "playoffs" in p else np.nan
     p["game_minutes"] = p.game_seconds / 60
@@ -121,11 +136,20 @@ def prepare(raw: pd.DataFrame):
                "total_gold", "damage", "total_cs", "dpm", "gold_share", "damage_share",
                "vision_score", "vision_per_minute", "kill_participation", "gold_diff_at_15", "xp_diff_at_15", "cs_diff_at_15"]
     p = p[columns].sort_values(["date", "game_id", "side", "role"]).reset_index(drop=True)
+    p.attrs["league"] = league
     report.update({"processed_player_rows": len(p), "games": p.game_id.nunique(),
                    "players": p.player_id.nunique(), "teams": p.team_id.nunique(),
                    "lineups": p.lineup_id.nunique(), "date_start": p.day.min(), "date_end": p.day.max(),
                    "rejected_games": len(rejected), "excluded_player_rows": report["player_rows_before_cleaning"] - len(p)})
     return p, report, pd.DataFrame(rejected, columns=["game_id", "reason"])
+
+
+def validate_scope(frame):
+    """One model/summary population is exactly one league and one year."""
+    if frame.empty or frame.season.isna().any() or frame.season.nunique() != 1:
+        raise ValueError("A dataset must contain exactly one nonempty season.")
+    if "league" in frame and (frame.league.isna().any() or frame.league.nunique() != 1):
+        raise ValueError("A dataset must contain exactly one league.")
 
 
 def read_raw(path: Path):

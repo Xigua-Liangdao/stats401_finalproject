@@ -1,0 +1,61 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:b5ac2d78f427d88ed9666c8d1c9e1d2,7more7 Pompa Team,7PT,2020,Split 2,oe:player:a7b756e008bfcb7148cdb51f886c3fa,Sinmivak,top,,,,,,,,,,,,,,
+player,oe:team:b5ac2d78f427d88ed9666c8d1c9e1d2,7more7 Pompa Team,7PT,2020,Split 2,oe:player:7471c21aed615dae3e49140eca8ce89,Bruness,jng,,,,,,,,,,,,,,
+player,oe:team:b5ac2d78f427d88ed9666c8d1c9e1d2,7more7 Pompa Team,7PT,2020,Split 2,oe:player:73ac73edf51a3acdfa494e271c6ee29,Czajek,mid,,,,,,,,,,,,,,
+player,oe:team:b5ac2d78f427d88ed9666c8d1c9e1d2,7more7 Pompa Team,7PT,2020,Split 2,oe:player:7533f96ec01fd81438833f71539c7d4,Bullet,bot,,,,,,,,,,,,,,
+player,oe:team:b5ac2d78f427d88ed9666c8d1c9e1d2,7more7 Pompa Team,7PT,2020,Split 2,oe:player:3e68fd564e4e518b8aed89b9a0bf855,Pyrka,sup,,,,,,,,,,,,,,
+lineup,oe:team:b5ac2d78f427d88ed9666c8d1c9e1d2,7more7 Pompa Team,7PT,2020,Split 2,,,,lineup-5d24020b0aff98e5,7PT-01,1,2,oe:player:a7b756e008bfcb7148cdb51f886c3fa,oe:player:7471c21aed615dae3e49140eca8ce89,oe:player:73ac73edf51a3acdfa494e271c6ee29,oe:player:7533f96ec01fd81438833f71539c7d4,oe:player:3e68fd564e4e518b8aed89b9a0bf855,Sinmivak,Bruness,Czajek,Bullet,Pyrka
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2020,Split 2,oe:player:57a976f165d89afb00fc029cd7c36a7,Szygenda,top,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2020,Split 2,oe:player:25372337c424d854728ed2a7775efb6,Zanzarah,jng,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2020,Split 2,oe:player:6606138426fa9bbef349c96b4afbc77,Czekolad,mid,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2020,Split 2,oe:player:40fa7615556f33971d67c95a702fbcc,Woolite,bot,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2020,Split 2,oe:player:8b73af38e98bccab6f86930c75a9450,Trymbi,sup,,,,,,,,,,,,,,
+lineup,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2020,Split 2,,,,lineup-91a42c80a5c47f48,AR-01,1,1,oe:player:57a976f165d89afb00fc029cd7c36a7,oe:player:25372337c424d854728ed2a7775efb6,oe:player:6606138426fa9bbef349c96b4afbc77,oe:player:40fa7615556f33971d67c95a702fbcc,oe:player:8b73af38e98bccab6f86930c75a9450,Szygenda,Zanzarah,Czekolad,Woolite,Trymbi
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2020,Split 2,oe:player:298b3a3324ca8d42c20518481cab844,LEQINHO6,top,,,,,,,,,,,,,,
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2020,Split 2,oe:player:2d1fca25321f6983dc3e1da11039a80,Diagu,jng,,,,,,,,,,,,,,
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2020,Split 2,oe:player:62ead8b1e25dbc7197a2007bcc4dbe0,Chosii,mid,,,,,,,,,,,,,,
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2020,Split 2,oe:player:9e0d36678131df9bde116a964c542ef,choego,bot,,,,,,,,,,,,,,
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2020,Split 2,oe:player:180d2472124a39343d6471d2d72c1c2,Zaremba,sup,,,,,,,,,,,,,,
+lineup,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2020,Split 2,,,,lineup-f161ee4c9aa8ddde,GG-01,1,2,oe:player:298b3a3324ca8d42c20518481cab844,oe:player:2d1fca25321f6983dc3e1da11039a80,oe:player:62ead8b1e25dbc7197a2007bcc4dbe0,oe:player:9e0d36678131df9bde116a964c542ef,oe:player:180d2472124a39343d6471d2d72c1c2,LEQINHO6,Diagu,Chosii,choego,Zaremba
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2020,Split 2,oe:player:2925560e555046ad9b0066ff181fe21,Melonik,top,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2020,Split 2,oe:player:df3e7f4eef306da0e300b26a7c92b00,Tabasko,jng,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2020,Split 2,oe:player:5a23766ce46653d2b63ac4a40cd61c1,Warszi,mid,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2020,Split 2,oe:player:7705566e63eedc7bd6c4c72d43c9104,odi11,bot,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2020,Split 2,oe:player:df5866d3078c786ce03084b78b1f5d9,Czypsy,sup,,,,,,,,,,,,,,
+lineup,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2020,Split 2,,,,lineup-24bd73a550fd1aff,IG-01,1,2,oe:player:2925560e555046ad9b0066ff181fe21,oe:player:df3e7f4eef306da0e300b26a7c92b00,oe:player:5a23766ce46653d2b63ac4a40cd61c1,oe:player:7705566e63eedc7bd6c4c72d43c9104,oe:player:df5866d3078c786ce03084b78b1f5d9,Melonik,Tabasko,Warszi,odi11,Czypsy
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2020,Split 2,oe:player:4bdb80c84e25651b3d62742c0b61f6d,iBo,top,,,,,,,,,,,,,,
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2020,Split 2,oe:player:e041923a70bcde3b24d608958f8edc8,Shlatan,jng,,,,,,,,,,,,,,
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2020,Split 2,oe:player:be4ce50af0cd0d8574aa3820c37d1ae,Matislaw,mid,,,,,,,,,,,,,,
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2020,Split 2,oe:player:b4a352b2b8782a2bb21bce1a2f47645,Puki Style,bot,,,,,,,,,,,,,,
+player,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2020,Split 2,oe:player:0114600fd7028a75f762bb772a5f6f1,Mystiques,sup,,,,,,,,,,,,,,
+lineup,oe:team:73f3cc4e54620b1454530648442e066,K1CK,K1C,2020,Split 2,,,,lineup-2a6921c6011cb4f3,K1C-01,1,12,oe:player:4bdb80c84e25651b3d62742c0b61f6d,oe:player:e041923a70bcde3b24d608958f8edc8,oe:player:be4ce50af0cd0d8574aa3820c37d1ae,oe:player:b4a352b2b8782a2bb21bce1a2f47645,oe:player:0114600fd7028a75f762bb772a5f6f1,iBo,Shlatan,Matislaw,Puki Style,Mystiques
+player,oe:team:df909168cd1adaab72084399480a8e4,Komputronik H34T,KH,2020,Split 2,oe:player:79135c0efdcb9f2b2e3b8c5f80833d5,Glebo,top,,,,,,,,,,,,,,
+player,oe:team:df909168cd1adaab72084399480a8e4,Komputronik H34T,KH,2020,Split 2,oe:player:243afb63fb97e1791ffee0cec41ecdf,Krysia,jng,,,,,,,,,,,,,,
+player,oe:team:df909168cd1adaab72084399480a8e4,Komputronik H34T,KH,2020,Split 2,oe:player:d76cb4dd926111e0b5a4c101f1218a1,bucu,mid,,,,,,,,,,,,,,
+player,oe:team:df909168cd1adaab72084399480a8e4,Komputronik H34T,KH,2020,Split 2,oe:player:694ee794a9d3a8c3fbd658becb89769,Zamulek,bot,,,,,,,,,,,,,,
+player,oe:team:df909168cd1adaab72084399480a8e4,Komputronik H34T,KH,2020,Split 2,oe:player:e0357bd3e9e044c623fbc77cc985cd7,xCharm,sup,,,,,,,,,,,,,,
+lineup,oe:team:df909168cd1adaab72084399480a8e4,Komputronik H34T,KH,2020,Split 2,,,,lineup-672c6d9897871585,KH-01,1,1,oe:player:79135c0efdcb9f2b2e3b8c5f80833d5,oe:player:243afb63fb97e1791ffee0cec41ecdf,oe:player:d76cb4dd926111e0b5a4c101f1218a1,oe:player:694ee794a9d3a8c3fbd658becb89769,oe:player:e0357bd3e9e044c623fbc77cc985cd7,Glebo,Krysia,bucu,Zamulek,xCharm
+player,oe:team:4bf1cdb1d7d084e66dbc3e32ba54236,PRIDE,PRI,2020,Split 2,oe:player:66c37b5ad5a083ddd7e1034cb76e089,Garp,top,,,,,,,,,,,,,,
+player,oe:team:4bf1cdb1d7d084e66dbc3e32ba54236,PRIDE,PRI,2020,Split 2,oe:player:5dfd291ca7aeebbe24fc1da06e28357,Kanna,jng,,,,,,,,,,,,,,
+player,oe:team:4bf1cdb1d7d084e66dbc3e32ba54236,PRIDE,PRI,2020,Split 2,oe:player:fe1640e9c1d32d534239e34707ee144,Proker,mid,,,,,,,,,,,,,,
+player,oe:team:4bf1cdb1d7d084e66dbc3e32ba54236,PRIDE,PRI,2020,Split 2,oe:player:941d97df2e8706a2cdf71fd71a971ef,itzRenifer,bot,,,,,,,,,,,,,,
+player,oe:team:4bf1cdb1d7d084e66dbc3e32ba54236,PRIDE,PRI,2020,Split 2,oe:player:6c11403241de4ed54ad453a5d0dd8ef,Syrpy,sup,,,,,,,,,,,,,,
+lineup,oe:team:4bf1cdb1d7d084e66dbc3e32ba54236,PRIDE,PRI,2020,Split 2,,,,lineup-f2ad7c327418db9f,PRI-01,1,2,oe:player:66c37b5ad5a083ddd7e1034cb76e089,oe:player:5dfd291ca7aeebbe24fc1da06e28357,oe:player:fe1640e9c1d32d534239e34707ee144,oe:player:941d97df2e8706a2cdf71fd71a971ef,oe:player:6c11403241de4ed54ad453a5d0dd8ef,Garp,Kanna,Proker,itzRenifer,Syrpy
+player,oe:team:a10cab12e1a47303e3ec014e09d51c8,Together Esports,TE,2020,Unknown,oe:player:339465b68bee4f43c5a86cd37a978a7,Sater,top,,,,,,,,,,,,,,
+player,oe:team:a10cab12e1a47303e3ec014e09d51c8,Together Esports,TE,2020,Unknown,oe:player:1a107e0f2e26bc59310beac6e065919,Kermys,jng,,,,,,,,,,,,,,
+player,oe:team:a10cab12e1a47303e3ec014e09d51c8,Together Esports,TE,2020,Unknown,oe:player:c5a61f5cc0ea603e75137c689841c9a,Rektiv,mid,,,,,,,,,,,,,,
+player,oe:team:a10cab12e1a47303e3ec014e09d51c8,Together Esports,TE,2020,Unknown,oe:player:370bb6894f1b6aa085dd05ffa6af29b,Krykiet,bot,,,,,,,,,,,,,,
+player,oe:team:a10cab12e1a47303e3ec014e09d51c8,Together Esports,TE,2020,Unknown,oe:player:1f111e88abd984a347713f070de73e3,kubYD,sup,,,,,,,,,,,,,,
+lineup,oe:team:a10cab12e1a47303e3ec014e09d51c8,Together Esports,TE,2020,Unknown,,,,lineup-917ac3d8030a8f85,TE-01,1,2,oe:player:339465b68bee4f43c5a86cd37a978a7,oe:player:1a107e0f2e26bc59310beac6e065919,oe:player:c5a61f5cc0ea603e75137c689841c9a,oe:player:370bb6894f1b6aa085dd05ffa6af29b,oe:player:1f111e88abd984a347713f070de73e3,Sater,Kermys,Rektiv,Krykiet,kubYD
+player,oe:team:cff4c4759805907c870737415c8d4fd,Wisła Płock eSports,WPE,2020,Unknown,oe:player:197e4cb08cbde82a150fe0d28f0ea18,Gricek,top,,,,,,,,,,,,,,
+player,oe:team:cff4c4759805907c870737415c8d4fd,Wisła Płock eSports,WPE,2020,Unknown,oe:player:24807d9986c4fda13d994791032cde1,Ben3k,jng,,,,,,,,,,,,,,
+player,oe:team:cff4c4759805907c870737415c8d4fd,Wisła Płock eSports,WPE,2020,Unknown,oe:player:1806cb4175771800d1d1ace2817103c,Zwyroo,mid,,,,,,,,,,,,,,
+player,oe:team:cff4c4759805907c870737415c8d4fd,Wisła Płock eSports,WPE,2020,Unknown,oe:player:941d97df2e8706a2cdf71fd71a971ef,itzRenifer,bot,,,,,,,,,,,,,,
+player,oe:team:cff4c4759805907c870737415c8d4fd,Wisła Płock eSports,WPE,2020,Unknown,oe:player:3e68fd564e4e518b8aed89b9a0bf855,Pyrka,sup,,,,,,,,,,,,,,
+lineup,oe:team:cff4c4759805907c870737415c8d4fd,Wisła Płock eSports,WPE,2020,Unknown,,,,lineup-3dd50308096db08b,WPE-01,1,2,oe:player:197e4cb08cbde82a150fe0d28f0ea18,oe:player:24807d9986c4fda13d994791032cde1,oe:player:1806cb4175771800d1d1ace2817103c,oe:player:941d97df2e8706a2cdf71fd71a971ef,oe:player:3e68fd564e4e518b8aed89b9a0bf855,Gricek,Ben3k,Zwyroo,itzRenifer,Pyrka
+player,oe:team:c4360b2f59028db18a7d5b19ec74bcb,piratesports,PIR,2020,Split 2,oe:player:e93fad90f312c1f10c64b60e5ba17c7,sheru,top,,,,,,,,,,,,,,
+player,oe:team:c4360b2f59028db18a7d5b19ec74bcb,piratesports,PIR,2020,Split 2,oe:player:6b7ca7e0fcad1f113f17bc2d30adbf5,adi1,jng,,,,,,,,,,,,,,
+player,oe:team:c4360b2f59028db18a7d5b19ec74bcb,piratesports,PIR,2020,Split 2,oe:player:efde1a9fe9e6f1059c3fce2ec296fae,many,mid,,,,,,,,,,,,,,
+player,oe:team:c4360b2f59028db18a7d5b19ec74bcb,piratesports,PIR,2020,Split 2,oe:player:6a3d4c9bc2f9b89b21dfbbb2212c865,Mis,bot,,,,,,,,,,,,,,
+player,oe:team:c4360b2f59028db18a7d5b19ec74bcb,piratesports,PIR,2020,Split 2,oe:player:e9bee56fd3bd016baf8da8219cdb0ea,GEPARDINHO5,sup,,,,,,,,,,,,,,
+lineup,oe:team:c4360b2f59028db18a7d5b19ec74bcb,piratesports,PIR,2020,Split 2,,,,lineup-9e6e318aa1052479,PIR-01,1,2,oe:player:e93fad90f312c1f10c64b60e5ba17c7,oe:player:6b7ca7e0fcad1f113f17bc2d30adbf5,oe:player:efde1a9fe9e6f1059c3fce2ec296fae,oe:player:6a3d4c9bc2f9b89b21dfbbb2212c865,oe:player:e9bee56fd3bd016baf8da8219cdb0ea,sheru,adi1,many,Mis,GEPARDINHO5

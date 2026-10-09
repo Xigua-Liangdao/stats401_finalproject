@@ -1,7 +1,6 @@
 import { t } from './i18n.js';
 
 export const DATASET = 'processed';
-export const DATA_ROOT = `../data/${DATASET}`;
 export const DATASET_MODE = DATASET;
 
 export const ROLE_ORDER = ['top', 'jng', 'mid', 'bot', 'sup'];

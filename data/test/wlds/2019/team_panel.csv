@@ -1,0 +1,65 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2019,Unknown,oe:player:e03d0722b6dce835cde3268c08c4f54,Licorice,top,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2019,Unknown,oe:player:ed455f823b6586e9e3621dfb5aeb42e,Blaber,jng,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2019,Unknown,oe:player:c271341160441d375411fef9bf2f9ef,Svenskeren,jng,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2019,Unknown,oe:player:7adc518d589f32912c06de8dae7848e,Nisqy,mid,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2019,Unknown,oe:player:267b730dd2e2dcb97182a2795935491,Sneaky,bot,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2019,Unknown,oe:player:6841f2d68619d53bdd1cdbf30b5be2c,Zeyzal,sup,,,,,,,,,,,,,,
+lineup,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2019,Unknown,,,,lineup-614b2c86aa0b9872,CLO-01,1,1,oe:player:e03d0722b6dce835cde3268c08c4f54,oe:player:c271341160441d375411fef9bf2f9ef,oe:player:7adc518d589f32912c06de8dae7848e,oe:player:267b730dd2e2dcb97182a2795935491,oe:player:6841f2d68619d53bdd1cdbf30b5be2c,Licorice,Svenskeren,Nisqy,Sneaky,Zeyzal
+lineup,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2019,Unknown,,,,lineup-af3ad2a6b4e5d438,CLO-02,2,1,oe:player:e03d0722b6dce835cde3268c08c4f54,oe:player:ed455f823b6586e9e3621dfb5aeb42e,oe:player:7adc518d589f32912c06de8dae7848e,oe:player:267b730dd2e2dcb97182a2795935491,oe:player:6841f2d68619d53bdd1cdbf30b5be2c,Licorice,Blaber,Nisqy,Sneaky,Zeyzal
+player,oe:team:7b13b2cc48c457832262d00d5ffa6d6,Clutch Gaming,CG,2019,Unknown,oe:player:bcb79ac1654e9a40600fba1eb3e53af,Huni,top,,,,,,,,,,,,,,
+player,oe:team:7b13b2cc48c457832262d00d5ffa6d6,Clutch Gaming,CG,2019,Unknown,oe:player:0091a3bf5771fe6bbe6d4a37de32c6f,Lira,jng,,,,,,,,,,,,,,
+player,oe:team:7b13b2cc48c457832262d00d5ffa6d6,Clutch Gaming,CG,2019,Unknown,oe:player:b38e8427233eea81494ca1b3ec13f0a,Damonte,mid,,,,,,,,,,,,,,
+player,oe:team:7b13b2cc48c457832262d00d5ffa6d6,Clutch Gaming,CG,2019,Unknown,oe:player:9a877004ae6373d34cd9ba93decbbd9,Cody Sun,bot,,,,,,,,,,,,,,
+player,oe:team:7b13b2cc48c457832262d00d5ffa6d6,Clutch Gaming,CG,2019,Unknown,oe:player:7400bcccc0bab9a6573346cd6b65bbe,VULCAN,sup,,,,,,,,,,,,,,
+lineup,oe:team:7b13b2cc48c457832262d00d5ffa6d6,Clutch Gaming,CG,2019,Unknown,,,,lineup-2a6175daa3194c46,CG-01,1,1,oe:player:bcb79ac1654e9a40600fba1eb3e53af,oe:player:0091a3bf5771fe6bbe6d4a37de32c6f,oe:player:b38e8427233eea81494ca1b3ec13f0a,oe:player:9a877004ae6373d34cd9ba93decbbd9,oe:player:7400bcccc0bab9a6573346cd6b65bbe,Huni,Lira,Damonte,Cody Sun,VULCAN
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2019,Unknown,oe:player:376d5e3b1257e6972228d458943f74c,Evi,top,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2019,Unknown,oe:player:47f1917849906027f365eff06d45c27,Steal,jng,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2019,Unknown,oe:player:dd4660dccac3ba0b8f35cb319a686a4,Ceros,mid,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2019,Unknown,oe:player:0d798f24869b290bfcdf6427d958118,Yutapon,bot,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2019,Unknown,oe:player:28210a578227a57de61f42f4bd0d2b4,Gaeng,sup,,,,,,,,,,,,,,
+lineup,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2019,Unknown,,,,lineup-741fb63b248c71bb,DF-01,1,1,oe:player:376d5e3b1257e6972228d458943f74c,oe:player:47f1917849906027f365eff06d45c27,oe:player:dd4660dccac3ba0b8f35cb319a686a4,oe:player:0d798f24869b290bfcdf6427d958118,oe:player:28210a578227a57de61f42f4bd0d2b4,Evi,Steal,Ceros,Yutapon,Gaeng
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2019,Unknown,oe:player:f17b90d1dd0f1814bb1f82f77c2f861,Nuguri,top,,,,,,,,,,,,,,
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2019,Unknown,oe:player:92544d7a994bd6841cccd9f6e42e3de,Canyon,jng,,,,,,,,,,,,,,
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2019,Unknown,oe:player:5f8ff49cd56eae61d635966b183a451,ShowMaker,mid,,,,,,,,,,,,,,
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2019,Unknown,oe:player:c49e6d739a7a7356e88aa84503666ee,Nuclear,bot,,,,,,,,,,,,,,
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2019,Unknown,oe:player:dee54127bb56d2e2540ba71cc416f1c,BeryL,sup,,,,,,,,,,,,,,
+lineup,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2019,Unknown,,,,lineup-80d6630a975fa2d1,DK-01,1,4,oe:player:f17b90d1dd0f1814bb1f82f77c2f861,oe:player:92544d7a994bd6841cccd9f6e42e3de,oe:player:5f8ff49cd56eae61d635966b183a451,oe:player:c49e6d739a7a7356e88aa84503666ee,oe:player:dee54127bb56d2e2540ba71cc416f1c,Nuguri,Canyon,ShowMaker,Nuclear,BeryL
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2019,Unknown,oe:player:d11068c782573b34be81beb5a4eeb12,Wunder,top,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2019,Unknown,oe:player:a2f6e754fc2b358f7786f52decb4274,Jankos,jng,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2019,Unknown,oe:player:55dd587cdc4a278be6a5c37f9e539de,Caps,mid,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2019,Unknown,oe:player:0634d9e86284da2fae4e1438d564eee,Perkz,bot,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2019,Unknown,oe:player:9d5052e9f9f4a63835f738441a3b1f6,Mikyx,sup,,,,,,,,,,,,,,
+lineup,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2019,Unknown,,,,lineup-1e3cccd3102471bf,GE-01,1,15,oe:player:d11068c782573b34be81beb5a4eeb12,oe:player:a2f6e754fc2b358f7786f52decb4274,oe:player:55dd587cdc4a278be6a5c37f9e539de,oe:player:0634d9e86284da2fae4e1438d564eee,oe:player:9d5052e9f9f4a63835f738441a3b1f6,Wunder,Jankos,Caps,Perkz,Mikyx
+player,oe:team:76b516358ee227ba806ba5d955b6314,Griffin,GRI,2019,Unknown,oe:player:b3dae530a02238b0628518ef886e505,Sw0rd,top,,,,,,,,,,,,,,
+player,oe:team:76b516358ee227ba806ba5d955b6314,Griffin,GRI,2019,Unknown,oe:player:62922f2b370657a966de4d84f5586bf,Tarzan,jng,,,,,,,,,,,,,,
+player,oe:team:76b516358ee227ba806ba5d955b6314,Griffin,GRI,2019,Unknown,oe:player:fb6e61b8acb05df17b7e5ad4ae7c800,Chovy,mid,,,,,,,,,,,,,,
+player,oe:team:76b516358ee227ba806ba5d955b6314,Griffin,GRI,2019,Unknown,oe:player:9573154ad8bc9459b4c0d940315054f,Viper,bot,,,,,,,,,,,,,,
+player,oe:team:76b516358ee227ba806ba5d955b6314,Griffin,GRI,2019,Unknown,oe:player:e4e24b8656e4e6a74b939af730b0148,Lehends,sup,,,,,,,,,,,,,,
+lineup,oe:team:76b516358ee227ba806ba5d955b6314,Griffin,GRI,2019,Unknown,,,,lineup-2451826248c37511,GRI-01,1,3,oe:player:b3dae530a02238b0628518ef886e505,oe:player:62922f2b370657a966de4d84f5586bf,oe:player:fb6e61b8acb05df17b7e5ad4ae7c800,oe:player:9573154ad8bc9459b4c0d940315054f,oe:player:e4e24b8656e4e6a74b939af730b0148,Sw0rd,Tarzan,Chovy,Viper,Lehends
+player,oe:team:6f0162b86d2a0d206ba9a08a1da14be,Hong Kong Attitude,HKA,2019,Unknown,oe:player:e6cdbdf8135f776cbc6f962f20056c7,3z,top,,,,,,,,,,,,,,
+player,oe:team:6f0162b86d2a0d206ba9a08a1da14be,Hong Kong Attitude,HKA,2019,Unknown,oe:player:275c74140224026380b29b2412d2512,Crash,jng,,,,,,,,,,,,,,
+player,oe:team:6f0162b86d2a0d206ba9a08a1da14be,Hong Kong Attitude,HKA,2019,Unknown,oe:player:70d529695c253d17e992cb9265abc57,Mission,mid,,,,,,,,,,,,,,
+player,oe:team:6f0162b86d2a0d206ba9a08a1da14be,Hong Kong Attitude,HKA,2019,Unknown,oe:player:1dbd464eef96e9cc4151734185a50c7,Unified,bot,,,,,,,,,,,,,,
+player,oe:team:6f0162b86d2a0d206ba9a08a1da14be,Hong Kong Attitude,HKA,2019,Unknown,oe:player:0103d21d116b61eb55fa351242208cf,Kaiwing,sup,,,,,,,,,,,,,,
+lineup,oe:team:6f0162b86d2a0d206ba9a08a1da14be,Hong Kong Attitude,HKA,2019,Unknown,,,,lineup-e62e6d38a22cac7a,HKA-01,1,2,oe:player:e6cdbdf8135f776cbc6f962f20056c7,oe:player:275c74140224026380b29b2412d2512,oe:player:70d529695c253d17e992cb9265abc57,oe:player:1dbd464eef96e9cc4151734185a50c7,oe:player:0103d21d116b61eb55fa351242208cf,3z,Crash,Mission,Unified,Kaiwing
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2019,Unknown,oe:player:b9972f46c1e52797d66236b118d2970,Khan,top,,,,,,,,,,,,,,
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2019,Unknown,oe:player:d3abb04a273ed8615be5f54a391818e,Clid,jng,,,,,,,,,,,,,,
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2019,Unknown,oe:player:e1edfc5cea461399a63cb813cf795cc,Faker,mid,,,,,,,,,,,,,,
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2019,Unknown,oe:player:2b5fa564a1259b97bc238fbfa719b07,Teddy,bot,,,,,,,,,,,,,,
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2019,Unknown,oe:player:035b9ae578574cdf728d8760483d804,Effort,sup,,,,,,,,,,,,,,
+player,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2019,Unknown,oe:player:357742da3f7a2fcec0fcffa840db38c,Mata,sup,,,,,,,,,,,,,,
+lineup,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2019,Unknown,,,,lineup-ec3274862d65dc47,STT-01,1,3,oe:player:b9972f46c1e52797d66236b118d2970,oe:player:d3abb04a273ed8615be5f54a391818e,oe:player:e1edfc5cea461399a63cb813cf795cc,oe:player:2b5fa564a1259b97bc238fbfa719b07,oe:player:035b9ae578574cdf728d8760483d804,Khan,Clid,Faker,Teddy,Effort
+lineup,oe:team:3354e252e33ed55fd8fa14595ca1564,SK Telecom T1,STT,2019,Unknown,,,,lineup-10cb49bd836815e5,STT-02,2,1,oe:player:b9972f46c1e52797d66236b118d2970,oe:player:d3abb04a273ed8615be5f54a391818e,oe:player:e1edfc5cea461399a63cb813cf795cc,oe:player:2b5fa564a1259b97bc238fbfa719b07,oe:player:357742da3f7a2fcec0fcffa840db38c,Khan,Clid,Faker,Teddy,Mata
+player,oe:team:3413ca4510110b5181f3e4b24d52719,Splyce,SPL,2019,Unknown,oe:player:e0b008815ab05c5cdaf4d46ab61ff63,Vizicsacsi,top,,,,,,,,,,,,,,
+player,oe:team:3413ca4510110b5181f3e4b24d52719,Splyce,SPL,2019,Unknown,oe:player:ab7f28ca18446cb18274a884b1525f7,Xerxe,jng,,,,,,,,,,,,,,
+player,oe:team:3413ca4510110b5181f3e4b24d52719,Splyce,SPL,2019,Unknown,oe:player:edf8b064c096691e539b7e2a3e28179,Humanoid,mid,,,,,,,,,,,,,,
+player,oe:team:3413ca4510110b5181f3e4b24d52719,Splyce,SPL,2019,Unknown,oe:player:bdb90de1ad7c2b7c38ce6f1177c1f62,Kobbe,bot,,,,,,,,,,,,,,
+player,oe:team:3413ca4510110b5181f3e4b24d52719,Splyce,SPL,2019,Unknown,oe:player:64ecd619b953ca23acb0546a472c483,Tore,sup,,,,,,,,,,,,,,
+lineup,oe:team:3413ca4510110b5181f3e4b24d52719,Splyce,SPL,2019,Unknown,,,,lineup-37793a5b8da51fa2,SPL-01,1,1,oe:player:e0b008815ab05c5cdaf4d46ab61ff63,oe:player:ab7f28ca18446cb18274a884b1525f7,oe:player:edf8b064c096691e539b7e2a3e28179,oe:player:bdb90de1ad7c2b7c38ce6f1177c1f62,oe:player:64ecd619b953ca23acb0546a472c483,Vizicsacsi,Xerxe,Humanoid,Kobbe,Tore
+player,oe:team:e84133caa1e561518201cc7d33f14ed,Unicorns of Love.CIS,UOL,2019,Unknown,oe:player:2c8efc1ed4a1fd3a51dbd7e29d8ea6c,BOSS,top,,,,,,,,,,,,,,
+player,oe:team:e84133caa1e561518201cc7d33f14ed,Unicorns of Love.CIS,UOL,2019,Unknown,oe:player:63d4c2d98c6654867a62dbaa41d3379,AHaHaCiK,jng,,,,,,,,,,,,,,
+player,oe:team:e84133caa1e561518201cc7d33f14ed,Unicorns of Love.CIS,UOL,2019,Unknown,oe:player:3587454d4910f0665e2fda36ad2e91c,Nomanz,mid,,,,,,,,,,,,,,
+player,oe:team:e84133caa1e561518201cc7d33f14ed,Unicorns of Love.CIS,UOL,2019,Unknown,oe:player:e7e423ad06282e35abf80c69486374b,Innaxe,bot,,,,,,,,,,,,,,
+player,oe:team:e84133caa1e561518201cc7d33f14ed,Unicorns of Love.CIS,UOL,2019,Unknown,oe:player:243f63354f4c1cc25d50f6269b84436,Edward,sup,,,,,,,,,,,,,,
+lineup,oe:team:e84133caa1e561518201cc7d33f14ed,Unicorns of Love.CIS,UOL,2019,Unknown,,,,lineup-1820522bfb12f3d4,UOL-01,1,1,oe:player:2c8efc1ed4a1fd3a51dbd7e29d8ea6c,oe:player:63d4c2d98c6654867a62dbaa41d3379,oe:player:3587454d4910f0665e2fda36ad2e91c,oe:player:e7e423ad06282e35abf80c69486374b,oe:player:243f63354f4c1cc25d50f6269b84436,BOSS,AHaHaCiK,Nomanz,Innaxe,Edward

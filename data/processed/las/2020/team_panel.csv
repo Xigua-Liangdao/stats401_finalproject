@@ -1,0 +1,45 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:11316fd322539b98a9a695912841fac,Awesome Spear Academy,ASA,2020,Champ,oe:player:dad881b7a0e636bbaa5178c73389fbe,YunWAY,top,,,,,,,,,,,,,,
+player,oe:team:11316fd322539b98a9a695912841fac,Awesome Spear Academy,ASA,2020,Champ,oe:player:c7ea2a48bd76ae11f62b6b9eddc9009,Natu,jng,,,,,,,,,,,,,,
+player,oe:team:11316fd322539b98a9a695912841fac,Awesome Spear Academy,ASA,2020,Champ,oe:player:53f93baa3057821107c750323892fa9,INT,mid,,,,,,,,,,,,,,
+player,oe:team:11316fd322539b98a9a695912841fac,Awesome Spear Academy,ASA,2020,Champ,oe:player:33892e331281fb9949b4b65f8e985e5,SikHye,bot,,,,,,,,,,,,,,
+player,oe:team:11316fd322539b98a9a695912841fac,Awesome Spear Academy,ASA,2020,Champ,oe:player:d296908001bc19d5158c3e8b475db78,Serenity,sup,,,,,,,,,,,,,,
+lineup,oe:team:11316fd322539b98a9a695912841fac,Awesome Spear Academy,ASA,2020,Champ,,,,lineup-423ae2edae94bf6b,ASA-01,1,20,oe:player:dad881b7a0e636bbaa5178c73389fbe,oe:player:c7ea2a48bd76ae11f62b6b9eddc9009,oe:player:53f93baa3057821107c750323892fa9,oe:player:33892e331281fb9949b4b65f8e985e5,oe:player:d296908001bc19d5158c3e8b475db78,YunWAY,Natu,INT,SikHye,Serenity
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2020,Champ,oe:player:f23c7426104cc4df2b49b3be2c6d024,IlllIma,top,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2020,Champ,oe:player:f7407edad1ded2d8d1e634ed49a9698,Lancer,top,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2020,Champ,oe:player:6427b0c5a7c3106e92a7c11257a08c6,Guwon,jng,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2020,Champ,oe:player:53841c6e42a6ce77b6f3b80133c9342,Peach,jng,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2020,Champ,oe:player:ddc402ad721402c0426763c945d7a38,Eign,mid,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2020,Champ,oe:player:5ae3956466de06f862d8bef523acdb9,Fear,mid,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2020,Champ,oe:player:18d4209b9d105241addcd59ecfb2d8f,Fl4sh,bot,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2020,Champ,oe:player:952237fce714ed1eca8ded17523bee9,Taeyoon,bot,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2020,Champ,oe:player:9f80edbc5030ac495358c47c74da99f,Jun,sup,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2020,Champ,oe:player:dae194f607229009de5bb1bb5caa499,통행자,sup,,,,,,,,,,,,,,
+lineup,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2020,Champ,,,,lineup-9d6ff3f8c6ede77f,DA-01,1,26,oe:player:f23c7426104cc4df2b49b3be2c6d024,oe:player:53841c6e42a6ce77b6f3b80133c9342,oe:player:ddc402ad721402c0426763c945d7a38,oe:player:952237fce714ed1eca8ded17523bee9,oe:player:9f80edbc5030ac495358c47c74da99f,IlllIma,Peach,Eign,Taeyoon,Jun
+lineup,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2020,Champ,,,,lineup-ddc4ce15563532fb,DA-02,2,16,oe:player:f7407edad1ded2d8d1e634ed49a9698,oe:player:6427b0c5a7c3106e92a7c11257a08c6,oe:player:5ae3956466de06f862d8bef523acdb9,oe:player:18d4209b9d105241addcd59ecfb2d8f,oe:player:dae194f607229009de5bb1bb5caa499,Lancer,Guwon,Fear,Fl4sh,통행자
+player,oe:team:e7265d3acfda2f8644115d32eeb1fcb,Kwangdong Freecs Academy,KFA,2020,Champ,oe:player:9e3641005a1d5ee5c17edcb985f909b,Trap,top,,,,,,,,,,,,,,
+player,oe:team:e7265d3acfda2f8644115d32eeb1fcb,Kwangdong Freecs Academy,KFA,2020,Champ,oe:player:00c317154dbf0680ec0858c185df592,Burry,jng,,,,,,,,,,,,,,
+player,oe:team:e7265d3acfda2f8644115d32eeb1fcb,Kwangdong Freecs Academy,KFA,2020,Champ,oe:player:5aa71815c9f4f8431f3a5a935b08d33,Nino,mid,,,,,,,,,,,,,,
+player,oe:team:e7265d3acfda2f8644115d32eeb1fcb,Kwangdong Freecs Academy,KFA,2020,Champ,oe:player:4325f82f9e7cf59da59b011bdb7dde8,BaeKHo,bot,,,,,,,,,,,,,,
+player,oe:team:e7265d3acfda2f8644115d32eeb1fcb,Kwangdong Freecs Academy,KFA,2020,Champ,oe:player:86b0550c5cc1246b84ba702371b785d,BaeKHo,bot,,,,,,,,,,,,,,
+player,oe:team:e7265d3acfda2f8644115d32eeb1fcb,Kwangdong Freecs Academy,KFA,2020,Champ,oe:player:41207d9e26609714711a822e6c4ba10,MapSSi,sup,,,,,,,,,,,,,,
+lineup,oe:team:e7265d3acfda2f8644115d32eeb1fcb,Kwangdong Freecs Academy,KFA,2020,Champ,,,,lineup-60e7ed2b15acade4,KFA-01,1,20,oe:player:9e3641005a1d5ee5c17edcb985f909b,oe:player:00c317154dbf0680ec0858c185df592,oe:player:5aa71815c9f4f8431f3a5a935b08d33,oe:player:86b0550c5cc1246b84ba702371b785d,oe:player:41207d9e26609714711a822e6c4ba10,Trap,Burry,Nino,BaeKHo,MapSSi
+lineup,oe:team:e7265d3acfda2f8644115d32eeb1fcb,Kwangdong Freecs Academy,KFA,2020,Champ,,,,lineup-c8685401fbc25417,KFA-02,2,4,oe:player:9e3641005a1d5ee5c17edcb985f909b,oe:player:00c317154dbf0680ec0858c185df592,oe:player:5aa71815c9f4f8431f3a5a935b08d33,oe:player:4325f82f9e7cf59da59b011bdb7dde8,oe:player:41207d9e26609714711a822e6c4ba10,Trap,Burry,Nino,BaeKHo,MapSSi
+player,oe:team:f028b03d55190de2e3db0332acb61c3,Liiv SANDBOX Academy,LSA,2020,Champ,oe:player:4f6302984cea43e6384d488973fe1d2,Howling,top,,,,,,,,,,,,,,
+player,oe:team:f028b03d55190de2e3db0332acb61c3,Liiv SANDBOX Academy,LSA,2020,Champ,oe:player:866af4d53437462e22c67c763b9f661,Geum go,jng,,,,,,,,,,,,,,
+player,oe:team:f028b03d55190de2e3db0332acb61c3,Liiv SANDBOX Academy,LSA,2020,Champ,oe:player:157108ff2b64591e5703c64dbae3a2e,TolanD,mid,,,,,,,,,,,,,,
+player,oe:team:f028b03d55190de2e3db0332acb61c3,Liiv SANDBOX Academy,LSA,2020,Champ,oe:player:8bac58409e91b96ecd05f6d8f053e07,Ice,bot,,,,,,,,,,,,,,
+player,oe:team:f028b03d55190de2e3db0332acb61c3,Liiv SANDBOX Academy,LSA,2020,Champ,oe:player:8484fddc2b2b38d15cb8ca424d1d442,Prove,sup,,,,,,,,,,,,,,
+lineup,oe:team:f028b03d55190de2e3db0332acb61c3,Liiv SANDBOX Academy,LSA,2020,Champ,,,,lineup-6a4945a1b88b1ccd,LSA-01,1,25,oe:player:4f6302984cea43e6384d488973fe1d2,oe:player:866af4d53437462e22c67c763b9f661,oe:player:157108ff2b64591e5703c64dbae3a2e,oe:player:8bac58409e91b96ecd05f6d8f053e07,oe:player:8484fddc2b2b38d15cb8ca424d1d442,Howling,Geum go,TolanD,Ice,Prove
+player,oe:team:ff07fcf769a41fa17ded4746368d6c7,Nongshim RedForce Academy,NRA,2020,Champ,oe:player:341e10748bb6d388250fd1f013e45a4,DnDn,top,,,,,,,,,,,,,,
+player,oe:team:ff07fcf769a41fa17ded4746368d6c7,Nongshim RedForce Academy,NRA,2020,Champ,oe:player:1a75a7cf8c98442be881fed562346f5,Sylvie,jng,,,,,,,,,,,,,,
+player,oe:team:ff07fcf769a41fa17ded4746368d6c7,Nongshim RedForce Academy,NRA,2020,Champ,oe:player:5ee64eb3feb02e60832a2265db54f71,FIESTA,mid,,,,,,,,,,,,,,
+player,oe:team:ff07fcf769a41fa17ded4746368d6c7,Nongshim RedForce Academy,NRA,2020,Champ,oe:player:92c21511d7b383b2f8ba5b00c3c9a47,Bull,bot,,,,,,,,,,,,,,
+player,oe:team:ff07fcf769a41fa17ded4746368d6c7,Nongshim RedForce Academy,NRA,2020,Champ,oe:player:ee051912ad5f9a97aa9ce4980cbb481,Peter,sup,,,,,,,,,,,,,,
+lineup,oe:team:ff07fcf769a41fa17ded4746368d6c7,Nongshim RedForce Academy,NRA,2020,Champ,,,,lineup-7ac3c63dacc85b80,NRA-01,1,5,oe:player:341e10748bb6d388250fd1f013e45a4,oe:player:1a75a7cf8c98442be881fed562346f5,oe:player:5ee64eb3feb02e60832a2265db54f71,oe:player:92c21511d7b383b2f8ba5b00c3c9a47,oe:player:ee051912ad5f9a97aa9ce4980cbb481,DnDn,Sylvie,FIESTA,Bull,Peter
+player,oe:team:adefd7d85fbbac120d5a3d411dbae3c,Team Dynamics Academy,TDA,2020,Champ,oe:player:341e10748bb6d388250fd1f013e45a4,DnDn,top,,,,,,,,,,,,,,
+player,oe:team:adefd7d85fbbac120d5a3d411dbae3c,Team Dynamics Academy,TDA,2020,Champ,oe:player:1a75a7cf8c98442be881fed562346f5,Sylvie,jng,,,,,,,,,,,,,,
+player,oe:team:adefd7d85fbbac120d5a3d411dbae3c,Team Dynamics Academy,TDA,2020,Champ,oe:player:5ee64eb3feb02e60832a2265db54f71,FIESTA,mid,,,,,,,,,,,,,,
+player,oe:team:adefd7d85fbbac120d5a3d411dbae3c,Team Dynamics Academy,TDA,2020,Champ,oe:player:92c21511d7b383b2f8ba5b00c3c9a47,Bull,bot,,,,,,,,,,,,,,
+player,oe:team:adefd7d85fbbac120d5a3d411dbae3c,Team Dynamics Academy,TDA,2020,Champ,oe:player:ee051912ad5f9a97aa9ce4980cbb481,Peter,sup,,,,,,,,,,,,,,
+lineup,oe:team:adefd7d85fbbac120d5a3d411dbae3c,Team Dynamics Academy,TDA,2020,Champ,,,,lineup-27c7cdfa875b96e1,TDA-01,1,24,oe:player:341e10748bb6d388250fd1f013e45a4,oe:player:1a75a7cf8c98442be881fed562346f5,oe:player:5ee64eb3feb02e60832a2265db54f71,oe:player:92c21511d7b383b2f8ba5b00c3c9a47,oe:player:ee051912ad5f9a97aa9ce4980cbb481,DnDn,Sylvie,FIESTA,Bull,Peter

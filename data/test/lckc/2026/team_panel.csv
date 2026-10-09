@@ -1,0 +1,31 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:f78d56f289804906a627706f330ee06,DN SOOPers Challengers,DSC,2026,Kickoff,oe:player:f7407edad1ded2d8d1e634ed49a9698,Lancer,top,,,,,,,,,,,,,,
+player,oe:team:f78d56f289804906a627706f330ee06,DN SOOPers Challengers,DSC,2026,Kickoff,oe:player:67447707ec7cbde9ab25bfa2ed69877,DDoiV,jng,,,,,,,,,,,,,,
+player,oe:team:f78d56f289804906a627706f330ee06,DN SOOPers Challengers,DSC,2026,Kickoff,oe:player:17ae4f247f5fc521bff004a97f4df72,Flip,mid,,,,,,,,,,,,,,
+player,oe:team:f78d56f289804906a627706f330ee06,DN SOOPers Challengers,DSC,2026,Kickoff,oe:player:5836a085b5ebaa7662fbba55341703c,Enosh,bot,,,,,,,,,,,,,,
+player,oe:team:f78d56f289804906a627706f330ee06,DN SOOPers Challengers,DSC,2026,Kickoff,oe:player:c78788a736a0c7e5a77890144fd2986,Quantum,sup,,,,,,,,,,,,,,
+lineup,oe:team:f78d56f289804906a627706f330ee06,DN SOOPers Challengers,DSC,2026,Kickoff,,,,lineup-682ff2299799e546,DSC-01,1,7,oe:player:f7407edad1ded2d8d1e634ed49a9698,oe:player:67447707ec7cbde9ab25bfa2ed69877,oe:player:17ae4f247f5fc521bff004a97f4df72,oe:player:5836a085b5ebaa7662fbba55341703c,oe:player:c78788a736a0c7e5a77890144fd2986,Lancer,DDoiV,Flip,Enosh,Quantum
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2026,Kickoff,oe:player:d22a9f456619f24133f9d0ddff50051,Panther,top,,,,,,,,,,,,,,
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2026,Kickoff,oe:player:c5297b90d38a4be4c290d17de208d7a,Jackal,jng,,,,,,,,,,,,,,
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2026,Kickoff,oe:player:e6d554ea9906d8f2fc26d076d2d4a4c,Cracker,mid,,,,,,,,,,,,,,
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2026,Kickoff,oe:player:951959a620881940ca08f98e0226cf3,Pyeonsik,bot,,,,,,,,,,,,,,
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2026,Kickoff,oe:player:51e528aaaafe5451e0a14c0da847dc4,Bluffing,sup,,,,,,,,,,,,,,
+lineup,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2026,Kickoff,,,,lineup-db3e903fe7feba50,HLEC-01,1,5,oe:player:d22a9f456619f24133f9d0ddff50051,oe:player:c5297b90d38a4be4c290d17de208d7a,oe:player:e6d554ea9906d8f2fc26d076d2d4a4c,oe:player:951959a620881940ca08f98e0226cf3,oe:player:51e528aaaafe5451e0a14c0da847dc4,Panther,Jackal,Cracker,Pyeonsik,Bluffing
+player,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2026,Kickoff,oe:player:4c7da67b008cd8858cd0539c860c73a,Sero,top,,,,,,,,,,,,,,
+player,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2026,Kickoff,oe:player:1a75a7cf8c98442be881fed562346f5,Sylvie,jng,,,,,,,,,,,,,,
+player,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2026,Kickoff,oe:player:9c2752c1d6bb4dc3a7c3365c68271e3,Hwichan,mid,,,,,,,,,,,,,,
+player,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2026,Kickoff,oe:player:655ff5d5e29058249fdf0ab0e1389f8,FenRir,bot,,,,,,,,,,,,,,
+player,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2026,Kickoff,oe:player:035b9ae578574cdf728d8760483d804,Effort,sup,,,,,,,,,,,,,,
+lineup,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2026,Kickoff,,,,lineup-1c882a1b450f9854,KRC-01,1,3,oe:player:4c7da67b008cd8858cd0539c860c73a,oe:player:1a75a7cf8c98442be881fed562346f5,oe:player:9c2752c1d6bb4dc3a7c3365c68271e3,oe:player:655ff5d5e29058249fdf0ab0e1389f8,oe:player:035b9ae578574cdf728d8760483d804,Sero,Sylvie,Hwichan,FenRir,Effort
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2026,Kickoff,oe:player:b8441a3fc649ee4789bc3ded34f46d6,Janus,top,,,,,,,,,,,,,,
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2026,Kickoff,oe:player:3be8d1a116788e4cd4853801a2e9a3d,MihawK,jng,,,,,,,,,,,,,,
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2026,Kickoff,oe:player:4ff7b91bbc9492e9f96d28dda496653,SeTab,mid,,,,,,,,,,,,,,
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2026,Kickoff,oe:player:dda950e6954035ff3f38b14ef7acc26,Lucy,bot,,,,,,,,,,,,,,
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2026,Kickoff,oe:player:7fdedd3126915607d5c8f42f8239253,Pleata,sup,,,,,,,,,,,,,,
+lineup,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2026,Kickoff,,,,lineup-ddf75fc88cddcd73,NEA-01,1,18,oe:player:b8441a3fc649ee4789bc3ded34f46d6,oe:player:3be8d1a116788e4cd4853801a2e9a3d,oe:player:4ff7b91bbc9492e9f96d28dda496653,oe:player:dda950e6954035ff3f38b14ef7acc26,oe:player:7fdedd3126915607d5c8f42f8239253,Janus,MihawK,SeTab,Lucy,Pleata
+player,oe:team:731b7a9fd004cdbe2bcb3da795bce47,T1 Esports Academy,TEA,2026,Kickoff,oe:player:9fefcdafef82ae8de67c1187546d622,Haetae,top,,,,,,,,,,,,,,
+player,oe:team:731b7a9fd004cdbe2bcb3da795bce47,T1 Esports Academy,TEA,2026,Kickoff,oe:player:4d08cbf857994dc42e1b09205158e15,Painter,jng,,,,,,,,,,,,,,
+player,oe:team:731b7a9fd004cdbe2bcb3da795bce47,T1 Esports Academy,TEA,2026,Kickoff,oe:player:3950b27e47e381e26f4678ced12bc45,Guti,mid,,,,,,,,,,,,,,
+player,oe:team:731b7a9fd004cdbe2bcb3da795bce47,T1 Esports Academy,TEA,2026,Kickoff,oe:player:31edd1e8359d849e250b854826b8c38,Cypher,bot,,,,,,,,,,,,,,
+player,oe:team:731b7a9fd004cdbe2bcb3da795bce47,T1 Esports Academy,TEA,2026,Kickoff,oe:player:c8fe7c65a2ae0ab6ff62674ade6847d,Cloud,sup,,,,,,,,,,,,,,
+lineup,oe:team:731b7a9fd004cdbe2bcb3da795bce47,T1 Esports Academy,TEA,2026,Kickoff,,,,lineup-3171e1b22fd30b17,TEA-01,1,3,oe:player:9fefcdafef82ae8de67c1187546d622,oe:player:4d08cbf857994dc42e1b09205158e15,oe:player:3950b27e47e381e26f4678ced12bc45,oe:player:31edd1e8359d849e250b854826b8c38,oe:player:c8fe7c65a2ae0ab6ff62674ade6847d,Haetae,Painter,Guti,Cypher,Cloud

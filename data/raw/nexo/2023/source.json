@@ -1,0 +1,48 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://raw.githubusercontent.com/weiyuanoh/Worlds-LOL/3c363cbce4a9dec5c164e85d2ae95fd88b45139c/data/raw/2022_LoL_esports_match_data_from_OraclesElixir.csv",
+  "source_kind": "pinned_github_mirror",
+  "source_revision": "3c363cbce4a9dec5c164e85d2ae95fd88b45139c",
+  "annual_sources": [
+    {
+      "year": 2022,
+      "url": "https://raw.githubusercontent.com/weiyuanoh/Worlds-LOL/3c363cbce4a9dec5c164e85d2ae95fd88b45139c/data/raw/2022_LoL_esports_match_data_from_OraclesElixir.csv",
+      "sha256": "4c4229e5fc76587ceb02531c6c522c6f690465b74e069451357604286854a1f1",
+      "revision": "3c363cbce4a9dec5c164e85d2ae95fd88b45139c",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:07.183942+00:00",
+      "size_bytes": 97621487,
+      "listed_size_bytes": 97621487,
+      "rows": 150312,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "filename": "2022_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 924
+    },
+    {
+      "year": 2023,
+      "url": "https://raw.githubusercontent.com/weiyuanoh/Worlds-LOL/3c363cbce4a9dec5c164e85d2ae95fd88b45139c/data/raw/2023_LoL_esports_match_data_from_OraclesElixir.csv",
+      "sha256": "c2d78a95931dbdc162b989dc05f0293072cf8be646122a548889c140985e2837",
+      "revision": "3c363cbce4a9dec5c164e85d2ae95fd88b45139c",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:12.104425+00:00",
+      "size_bytes": 85894248,
+      "listed_size_bytes": 85894248,
+      "rows": 133272,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "filename": "2023_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 1788
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:35:17.450082+00:00",
+  "annual_csv_sha256": "0c070ee0a4ff697467de8bcd9c33aae21e9a29de5e83f881ee2f2e92fabee4bd",
+  "annual_rows": 283584,
+  "league": "NEXO",
+  "year": 2023,
+  "filter": "league == 'NEXO' and year == '2023'; all positions and columns preserved",
+  "raw_rows": 2712,
+  "raw_columns": 165,
+  "raw_games": 226,
+  "raw_csv_gz_sha256": "ecd6047202fb5314f4bd0cd215ca803a0b0486395e0fc3d0e8a857159a557213"
+}

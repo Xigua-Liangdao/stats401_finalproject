@@ -1,0 +1,51 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2014,Summer,oe:player:994087d6cf1967213b8ea8c11e4f131,Cris,top,,,,,,,,,,,,,,
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2014,Summer,oe:player:40a8589d3f5b8d993f02c0fe8203623,Rhux,top,,,,,,,,,,,,,,
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2014,Summer,oe:player:c21db1652772a83dffb92824fc6b079,Pat,jng,,,,,,,,,,,,,,
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2014,Summer,oe:player:3dcf8ad8e4d5d49dea3cfddeaebfa71,Saintvicious,jng,,,,,,,,,,,,,,
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2014,Summer,oe:player:f14b16509e9ccda6b36b93eca92d96e,Duocek,mid,,,,,,,,,,,,,,
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2014,Summer,oe:player:5f6f0c43c645aff997d15bf12f7c640,mancloud,mid,,,,,,,,,,,,,,
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2014,Summer,oe:player:f3b06de41d67cad14c2fa83a4eb79c1,Mabrey,bot,,,,,,,,,,,,,,
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2014,Summer,oe:player:6151bcec0a8bb9f8ab93d71878de3c9,Mash,bot,,,,,,,,,,,,,,
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2014,Summer,oe:player:19276b73dd23a9eb9c9f08183233a92,Bunny FuFuu,sup,,,,,,,,,,,,,,
+player,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2014,Summer,oe:player:5a4ed34a7baf1d14942def4ab49ce38,Diamond,sup,,,,,,,,,,,,,,
+lineup,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2014,Summer,,,,lineup-1d2315da35e440a6,CA-01,1,5,oe:player:994087d6cf1967213b8ea8c11e4f131,oe:player:3dcf8ad8e4d5d49dea3cfddeaebfa71,oe:player:5f6f0c43c645aff997d15bf12f7c640,oe:player:f3b06de41d67cad14c2fa83a4eb79c1,oe:player:19276b73dd23a9eb9c9f08183233a92,Cris,Saintvicious,mancloud,Mabrey,Bunny FuFuu
+lineup,oe:team:49ff3cea05a67e6d79112a5470f7f6d,Curse Academy,CA,2014,Summer,,,,lineup-352643c1eeef3418,CA-02,2,1,oe:player:40a8589d3f5b8d993f02c0fe8203623,oe:player:c21db1652772a83dffb92824fc6b079,oe:player:f14b16509e9ccda6b36b93eca92d96e,oe:player:6151bcec0a8bb9f8ab93d71878de3c9,oe:player:5a4ed34a7baf1d14942def4ab49ce38,Rhux,Pat,Duocek,Mash,Diamond
+player,oe:team:7609bcb79367941bb00fcd2cd7a8a1e,Denial eSports,DE,2014,Summer,oe:player:412aae1eae0c18dcb27ed6efc369f3c,AnDa,top,,,,,,,,,,,,,,
+player,oe:team:7609bcb79367941bb00fcd2cd7a8a1e,Denial eSports,DE,2014,Summer,oe:player:a9cdfd1c803a0c395fa90d0042c1e60,Inori,jng,,,,,,,,,,,,,,
+player,oe:team:7609bcb79367941bb00fcd2cd7a8a1e,Denial eSports,DE,2014,Summer,oe:player:1af9df45e283464b4b6903961f0d4cf,nubbypoohbear,mid,,,,,,,,,,,,,,
+player,oe:team:7609bcb79367941bb00fcd2cd7a8a1e,Denial eSports,DE,2014,Summer,oe:player:51d421a31ce72460198ef946995fb11,Stixxay,bot,,,,,,,,,,,,,,
+player,oe:team:7609bcb79367941bb00fcd2cd7a8a1e,Denial eSports,DE,2014,Summer,oe:player:b93c778b97358ddfbcd8ab16928733b,Nisker,sup,,,,,,,,,,,,,,
+lineup,oe:team:7609bcb79367941bb00fcd2cd7a8a1e,Denial eSports,DE,2014,Summer,,,,lineup-d1d8b8b9715a9e63,DE-01,1,2,oe:player:412aae1eae0c18dcb27ed6efc369f3c,oe:player:a9cdfd1c803a0c395fa90d0042c1e60,oe:player:1af9df45e283464b4b6903961f0d4cf,oe:player:51d421a31ce72460198ef946995fb11,oe:player:b93c778b97358ddfbcd8ab16928733b,AnDa,Inori,nubbypoohbear,Stixxay,Nisker
+player,oe:team:044fc7121d8197a6da31b7e743ca6f8,LMQ,LMQ,2014,Spring,oe:player:45611484ec1b8fadfd1c93693200025,GodLike,top,,,,,,,,,,,,,,
+player,oe:team:044fc7121d8197a6da31b7e743ca6f8,LMQ,LMQ,2014,Spring,oe:player:494ba014b645d5f5b3bd7ea3be10144,NONAME,jng,,,,,,,,,,,,,,
+player,oe:team:044fc7121d8197a6da31b7e743ca6f8,LMQ,LMQ,2014,Spring,oe:player:f10ee72cd3a63925dae8845beaf90cd,xiaoweixiao,mid,,,,,,,,,,,,,,
+player,oe:team:044fc7121d8197a6da31b7e743ca6f8,LMQ,LMQ,2014,Spring,oe:player:9bdeef884fa1c407520eb9929018009,Vas1lii,bot,,,,,,,,,,,,,,
+player,oe:team:044fc7121d8197a6da31b7e743ca6f8,LMQ,LMQ,2014,Spring,oe:player:3a51d2dae2a4c583a3f70ceed2e17ff,Mor,sup,,,,,,,,,,,,,,
+lineup,oe:team:044fc7121d8197a6da31b7e743ca6f8,LMQ,LMQ,2014,Spring,,,,lineup-5b6820112b28f21d,LMQ-01,1,1,oe:player:45611484ec1b8fadfd1c93693200025,oe:player:494ba014b645d5f5b3bd7ea3be10144,oe:player:f10ee72cd3a63925dae8845beaf90cd,oe:player:9bdeef884fa1c407520eb9929018009,oe:player:3a51d2dae2a4c583a3f70ceed2e17ff,GodLike,NONAME,xiaoweixiao,Vas1lii,Mor
+player,oe:team:5aa4e9a1fbe6708fd21f323148779d4,Team 8,T8,2014,Summer,oe:player:ebb29c9b98b32425f4b6e06ce71cd99,CaliTrlolz,top,,,,,,,,,,,,,,
+player,oe:team:5aa4e9a1fbe6708fd21f323148779d4,Team 8,T8,2014,Summer,oe:player:f868d14b56215557a3b7c41d0a354a7,Porpoise,jng,,,,,,,,,,,,,,
+player,oe:team:5aa4e9a1fbe6708fd21f323148779d4,Team 8,T8,2014,Summer,oe:player:ee3d0223a21cf79bff3b9576ce36e7f,Slooshi,mid,,,,,,,,,,,,,,
+player,oe:team:5aa4e9a1fbe6708fd21f323148779d4,Team 8,T8,2014,Summer,oe:player:bc8bc420cc1fb6bc66937c749e44906,Maplestreet,bot,,,,,,,,,,,,,,
+player,oe:team:5aa4e9a1fbe6708fd21f323148779d4,Team 8,T8,2014,Summer,oe:player:8310b21b43f46a8a2715fa6402271ca,Dodo,sup,,,,,,,,,,,,,,
+lineup,oe:team:5aa4e9a1fbe6708fd21f323148779d4,Team 8,T8,2014,Summer,,,,lineup-bdf1ad0d3fe7e80b,T8-01,1,4,oe:player:ebb29c9b98b32425f4b6e06ce71cd99,oe:player:f868d14b56215557a3b7c41d0a354a7,oe:player:ee3d0223a21cf79bff3b9576ce36e7f,oe:player:bc8bc420cc1fb6bc66937c749e44906,oe:player:8310b21b43f46a8a2715fa6402271ca,CaliTrlolz,Porpoise,Slooshi,Maplestreet,Dodo
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2014,Summer,oe:player:40a8589d3f5b8d993f02c0fe8203623,Rhux,top,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2014,Summer,oe:player:9772f394c5e44d54e76aae1647217d0,Santorin,jng,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2014,Summer,oe:player:88b2fc44169f986bdffd0ffdb0b534a,Goldenglue,mid,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2014,Summer,oe:player:6151bcec0a8bb9f8ab93d71878de3c9,Mash,bot,,,,,,,,,,,,,,
+player,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2014,Summer,oe:player:572b2541c97aec9d07ca45dad125559,Sheep,sup,,,,,,,,,,,,,,
+lineup,oe:team:d7771bc633792f9efe65e49ce8cd7dd,Team Coast,TC,2014,Summer,,,,lineup-5025a1b7490c97db,TC-01,1,15,oe:player:40a8589d3f5b8d993f02c0fe8203623,oe:player:9772f394c5e44d54e76aae1647217d0,oe:player:88b2fc44169f986bdffd0ffdb0b534a,oe:player:6151bcec0a8bb9f8ab93d71878de3c9,oe:player:572b2541c97aec9d07ca45dad125559,Rhux,Santorin,Goldenglue,Mash,Sheep
+player,oe:team:81b87e5a9643fc160041020ace83cae,Team LoLPro,TL,2014,Summer,oe:player:20aba59cf47a04a6cf10436ce1946ac,Hauntzer,top,,,,,,,,,,,,,,
+player,oe:team:81b87e5a9643fc160041020ace83cae,Team LoLPro,TL,2014,Summer,oe:player:3ced361d598f895779f4c61877b307e,heavenTime,jng,,,,,,,,,,,,,,
+player,oe:team:81b87e5a9643fc160041020ace83cae,Team LoLPro,TL,2014,Summer,oe:player:aa1b4609f6ebaf813380ecb5ead393b,B3nji,mid,,,,,,,,,,,,,,
+player,oe:team:81b87e5a9643fc160041020ace83cae,Team LoLPro,TL,2014,Summer,oe:player:68cc2f153c9e91dcf24c6a18d1120c5,dshao,bot,,,,,,,,,,,,,,
+player,oe:team:81b87e5a9643fc160041020ace83cae,Team LoLPro,TL,2014,Summer,oe:player:59cbe5da5439c00a1fe529c2f9a58d4,Patoy,sup,,,,,,,,,,,,,,
+lineup,oe:team:81b87e5a9643fc160041020ace83cae,Team LoLPro,TL,2014,Summer,,,,lineup-d60abd83444e22fb,TL-01,1,4,oe:player:20aba59cf47a04a6cf10436ce1946ac,oe:player:3ced361d598f895779f4c61877b307e,oe:player:aa1b4609f6ebaf813380ecb5ead393b,oe:player:68cc2f153c9e91dcf24c6a18d1120c5,oe:player:59cbe5da5439c00a1fe529c2f9a58d4,Hauntzer,heavenTime,B3nji,dshao,Patoy
+player,oe:team:5107627a345e1239ad184df8cfa0695,vVv Gaming,VG,2014,Spring,oe:player:994087d6cf1967213b8ea8c11e4f131,Cris,top,,,,,,,,,,,,,,
+player,oe:team:5107627a345e1239ad184df8cfa0695,vVv Gaming,VG,2014,Spring,oe:player:a4f73058462e5903a65b073c86b8271,Get Snuggled,jng,,,,,,,,,,,,,,
+player,oe:team:5107627a345e1239ad184df8cfa0695,vVv Gaming,VG,2014,Spring,oe:player:5c2646ebad55c52a2526563ad81741c,Pekin Woof,mid,,,,,,,,,,,,,,
+player,oe:team:5107627a345e1239ad184df8cfa0695,vVv Gaming,VG,2014,Spring,oe:player:546ba6c8cebd89a223367bddd54b63a,Tails,bot,,,,,,,,,,,,,,
+player,oe:team:5107627a345e1239ad184df8cfa0695,vVv Gaming,VG,2014,Spring,oe:player:e320dc46db3bcd70c487b9f965e6391,GauNty,sup,,,,,,,,,,,,,,
+player,oe:team:5107627a345e1239ad184df8cfa0695,vVv Gaming,VG,2014,Spring,oe:player:dba7b2473a2110c7097e64881e1cfe7,Normalize,sup,,,,,,,,,,,,,,
+lineup,oe:team:5107627a345e1239ad184df8cfa0695,vVv Gaming,VG,2014,Spring,,,,lineup-63141dc9543c9705,VG-01,1,1,oe:player:994087d6cf1967213b8ea8c11e4f131,oe:player:a4f73058462e5903a65b073c86b8271,oe:player:5c2646ebad55c52a2526563ad81741c,oe:player:546ba6c8cebd89a223367bddd54b63a,oe:player:dba7b2473a2110c7097e64881e1cfe7,Cris,Get Snuggled,Pekin Woof,Tails,Normalize
+lineup,oe:team:5107627a345e1239ad184df8cfa0695,vVv Gaming,VG,2014,Spring,,,,lineup-c196d515578c197d,VG-02,2,1,oe:player:994087d6cf1967213b8ea8c11e4f131,oe:player:a4f73058462e5903a65b073c86b8271,oe:player:5c2646ebad55c52a2526563ad81741c,oe:player:546ba6c8cebd89a223367bddd54b63a,oe:player:e320dc46db3bcd70c487b9f965e6391,Cris,Get Snuggled,Pekin Woof,Tails,GauNty

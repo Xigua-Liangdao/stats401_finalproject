@@ -1,0 +1,49 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2021.csv.gz",
+  "source_kind": "pinned_github_mirror",
+  "source_revision": "834ce914f0c79289881697084227fa2933ad344a",
+  "annual_sources": [
+    {
+      "year": 2021,
+      "url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2021.csv.gz",
+      "sha256": "571f716747826a61ab761723d70e0921c3113c6e469ca17895b64769d20127bc",
+      "revision": "834ce914f0c79289881697084227fa2933ad344a",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:37.208836+00:00",
+      "size_bytes": 109059575,
+      "listed_size_bytes": 109059575,
+      "rows": 148296,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "download_sha256": "b46c99c2a92984f96aa84e0f9f869540c6f2e092df021b6351a2c73baf66200d",
+      "filename": "2021_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 216
+    },
+    {
+      "year": 2022,
+      "url": "https://raw.githubusercontent.com/weiyuanoh/Worlds-LOL/3c363cbce4a9dec5c164e85d2ae95fd88b45139c/data/raw/2022_LoL_esports_match_data_from_OraclesElixir.csv",
+      "sha256": "4c4229e5fc76587ceb02531c6c522c6f690465b74e069451357604286854a1f1",
+      "revision": "3c363cbce4a9dec5c164e85d2ae95fd88b45139c",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:07.183942+00:00",
+      "size_bytes": 97621487,
+      "listed_size_bytes": 97621487,
+      "rows": 150312,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "filename": "2022_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 2736
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:34:59.731933+00:00",
+  "annual_csv_sha256": "39349a2f09dfadcc037af8328d2a72f0c623065d6fce981369322548f6f5b093",
+  "annual_rows": 298608,
+  "league": "LFL",
+  "year": 2022,
+  "filter": "league == 'LFL' and year == '2022'; all positions and columns preserved",
+  "raw_rows": 2952,
+  "raw_columns": 165,
+  "raw_games": 246,
+  "raw_csv_gz_sha256": "e55dc1cfe359c274731a3a2766e2ce14aea78308a5a0f26b4bcd569a857a00ec"
+}

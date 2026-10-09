@@ -1,0 +1,81 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2021,Winter,oe:player:2c77d3e2362b94af54ee039dd42eb28,Skewer,top,,,,,,,,,,,,,,
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2021,Winter,oe:player:6176c9db778b74650c3549f44547075,thatsick,top,,,,,,,,,,,,,,
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2021,Winter,oe:player:38c8201af2d71215dda2ca7bd21e481,Awful,jng,,,,,,,,,,,,,,
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2021,Winter,oe:player:24c8e8fdd203338d06e4330c28c90d1,Luka,mid,,,,,,,,,,,,,,
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2021,Winter,oe:player:3d7afc086e8aba0545ceba473fa1e9e,ANDARIEL,bot,,,,,,,,,,,,,,
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2021,Winter,oe:player:d47955c8bc06bf316f24ee15d45407b,Aetinoth,bot,,,,,,,,,,,,,,
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2021,Winter,oe:player:cf31cad88081e431e9f138e00b4f645,Algos,sup,,,,,,,,,,,,,,
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2021,Winter,oe:player:a0cadee9fe05b06377a2f23feb8c9ec,Dellal,sup,,,,,,,,,,,,,,
+lineup,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2021,Winter,,,,lineup-4805224d279b35d6,5RA-01,1,1,oe:player:2c77d3e2362b94af54ee039dd42eb28,oe:player:38c8201af2d71215dda2ca7bd21e481,oe:player:24c8e8fdd203338d06e4330c28c90d1,oe:player:3d7afc086e8aba0545ceba473fa1e9e,oe:player:a0cadee9fe05b06377a2f23feb8c9ec,Skewer,Awful,Luka,ANDARIEL,Dellal
+lineup,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2021,Winter,,,,lineup-c7a2390510579d6c,5RA-02,2,1,oe:player:6176c9db778b74650c3549f44547075,oe:player:38c8201af2d71215dda2ca7bd21e481,oe:player:24c8e8fdd203338d06e4330c28c90d1,oe:player:d47955c8bc06bf316f24ee15d45407b,oe:player:cf31cad88081e431e9f138e00b4f645,thatsick,Awful,Luka,Aetinoth,Algos
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2021,Winter,oe:player:7bf3c00aa34e8bfd212a5ae503d54ec,Asteroid,top,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2021,Winter,oe:player:d6f01ce14e8a580fcf94ae556736fd8,Sangrod,top,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2021,Winter,oe:player:5ce2ea92f949e2b50f4944d5d8f5693,Scofield,jng,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2021,Winter,oe:player:a03770e1cc2a8f65de4a4e3ddd9ad49,Phenomenal,mid,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2021,Winter,oe:player:5cd540b4904b9ac5580405a32d205ff,Pulse,mid,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2021,Winter,oe:player:26863621074942009aa8c797c827ec1,Meshade,bot,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2021,Winter,oe:player:22fd8af01e2a6596223168a266de5fc,Beplush,sup,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2021,Winter,oe:player:35df3d8905573e7e8e3af533f05d01b,Furkoazki,sup,,,,,,,,,,,,,,
+lineup,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2021,Winter,,,,lineup-37793c4f87b399a9,BA-01,1,1,oe:player:7bf3c00aa34e8bfd212a5ae503d54ec,oe:player:5ce2ea92f949e2b50f4944d5d8f5693,oe:player:5cd540b4904b9ac5580405a32d205ff,oe:player:26863621074942009aa8c797c827ec1,oe:player:22fd8af01e2a6596223168a266de5fc,Asteroid,Scofield,Pulse,Meshade,Beplush
+lineup,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2021,Winter,,,,lineup-a5208467c353f843,BA-02,2,1,oe:player:d6f01ce14e8a580fcf94ae556736fd8,oe:player:5ce2ea92f949e2b50f4944d5d8f5693,oe:player:a03770e1cc2a8f65de4a4e3ddd9ad49,oe:player:26863621074942009aa8c797c827ec1,oe:player:35df3d8905573e7e8e3af533f05d01b,Sangrod,Scofield,Phenomenal,Meshade,Furkoazki
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2021,Winter,oe:player:77853c4a71c55061b69cd9335ec2e8c,Libra,top,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2021,Winter,oe:player:e09382aa01bf31935a9f2f9cf28fe2f,Anduril,jng,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2021,Winter,oe:player:2b861f76ccb190eaf8e67f0bb8e484a,Aras,jng,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2021,Winter,oe:player:483afde31226000e22acc078efb70ea,Howl,mid,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2021,Winter,oe:player:3bb65cb142ccc8906952c5099df7f41,Yuros,mid,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2021,Winter,oe:player:a177d116efe77552eb3068675c777f2,Scorth,bot,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2021,Winter,oe:player:ee14d783c6bc1ce855d5fdf2c7f349f,Mxe,sup,,,,,,,,,,,,,,
+lineup,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2021,Winter,,,,lineup-7010bea804cd26b3,DPA-01,1,1,oe:player:77853c4a71c55061b69cd9335ec2e8c,oe:player:2b861f76ccb190eaf8e67f0bb8e484a,oe:player:483afde31226000e22acc078efb70ea,oe:player:a177d116efe77552eb3068675c777f2,oe:player:ee14d783c6bc1ce855d5fdf2c7f349f,Libra,Aras,Howl,Scorth,Mxe
+lineup,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2021,Winter,,,,lineup-ce0fcde5633a4317,DPA-02,2,1,oe:player:77853c4a71c55061b69cd9335ec2e8c,oe:player:e09382aa01bf31935a9f2f9cf28fe2f,oe:player:3bb65cb142ccc8906952c5099df7f41,oe:player:a177d116efe77552eb3068675c777f2,oe:player:ee14d783c6bc1ce855d5fdf2c7f349f,Libra,Anduril,Yuros,Scorth,Mxe
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2021,Summer,oe:player:39e08d2d04f275e3e90ccf59d29e60e,Ersin,top,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2021,Summer,oe:player:e9b43cf8367b0cbc41e36813d82d9c9,Lenom,top,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2021,Summer,oe:player:b4ffa462f5ff9a575b10868565e7941,361efe,jng,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2021,Summer,oe:player:cd10adc72e8cba2b0e799643e45fd01,Kunduz,mid,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2021,Summer,oe:player:1ff1de774005f8da13f42943881c655,24,bot,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2021,Summer,oe:player:8784bcdcfb37672c12481c037ad8db4,Ruep,bot,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2021,Summer,oe:player:850efffff5f8b53dd69547423c68443,Arshavin,sup,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2021,Summer,oe:player:a02a243c98fb6794c2a303c5014567f,Carry,sup,,,,,,,,,,,,,,
+lineup,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2021,Summer,,,,lineup-af8f05ce3c03673c,FA-01,1,1,oe:player:e9b43cf8367b0cbc41e36813d82d9c9,oe:player:b4ffa462f5ff9a575b10868565e7941,oe:player:cd10adc72e8cba2b0e799643e45fd01,oe:player:8784bcdcfb37672c12481c037ad8db4,oe:player:a02a243c98fb6794c2a303c5014567f,Lenom,361efe,Kunduz,Ruep,Carry
+lineup,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2021,Summer,,,,lineup-b609070a76b763c6,FA-02,2,1,oe:player:39e08d2d04f275e3e90ccf59d29e60e,oe:player:b4ffa462f5ff9a575b10868565e7941,oe:player:cd10adc72e8cba2b0e799643e45fd01,oe:player:1ff1de774005f8da13f42943881c655,oe:player:850efffff5f8b53dd69547423c68443,Ersin,361efe,Kunduz,24,Arshavin
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2021,Summer,oe:player:39e08d2d04f275e3e90ccf59d29e60e,Ersin,top,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2021,Summer,oe:player:f3f1edfba7200c65b417d359a6f9c82,pr1me,top,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2021,Summer,oe:player:730c5303ed20f4a0786016e34184b25,Tumay,jng,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2021,Summer,oe:player:c19eea7d22846c98a5b49132d5ea9ee,Blake,mid,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2021,Summer,oe:player:4a0486c6f74edddc042dd9e4ae2a341,Reber,mid,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2021,Summer,oe:player:d47955c8bc06bf316f24ee15d45407b,Aetinoth,bot,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2021,Summer,oe:player:b4b98082fd3e3a35446a7f50ebf3060,Ozgur,bot,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2021,Summer,oe:player:c122119764a5b11a762eceffb2da2eb,Joexy,sup,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2021,Summer,oe:player:c6ef8428df1e9a5fcb03330436e0236,ShawiKatami,sup,,,,,,,,,,,,,,
+lineup,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2021,Summer,,,,lineup-974ba3ff9c5ebb12,GA-01,1,1,oe:player:39e08d2d04f275e3e90ccf59d29e60e,oe:player:730c5303ed20f4a0786016e34184b25,oe:player:4a0486c6f74edddc042dd9e4ae2a341,oe:player:d47955c8bc06bf316f24ee15d45407b,oe:player:c122119764a5b11a762eceffb2da2eb,Ersin,Tumay,Reber,Aetinoth,Joexy
+lineup,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2021,Summer,,,,lineup-cc0b9b617d9319cf,GA-02,2,1,oe:player:f3f1edfba7200c65b417d359a6f9c82,oe:player:730c5303ed20f4a0786016e34184b25,oe:player:c19eea7d22846c98a5b49132d5ea9ee,oe:player:b4b98082fd3e3a35446a7f50ebf3060,oe:player:c6ef8428df1e9a5fcb03330436e0236,pr1me,Tumay,Blake,Ozgur,ShawiKatami
+player,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2021,Winter,oe:player:ec596621f8c01e1b79c177346b4a158,NuQ,top,,,,,,,,,,,,,,
+player,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2021,Winter,oe:player:87e40b7c555a6fc67b899be632d037f,RAMES,jng,,,,,,,,,,,,,,
+player,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2021,Winter,oe:player:8f84b3e1ea431d26d9ad272eba9ba8c,Camana,mid,,,,,,,,,,,,,,
+player,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2021,Winter,oe:player:8784bcdcfb37672c12481c037ad8db4,Ruep,bot,,,,,,,,,,,,,,
+player,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2021,Winter,oe:player:a02a243c98fb6794c2a303c5014567f,Carry,sup,,,,,,,,,,,,,,
+lineup,oe:team:ee71b2a517ae4fb13ab8cf4704183d8,Galatasaray Academy,GA,2021,Winter,,,,lineup-77cfce9803b8ae90,GA-01,1,1,oe:player:ec596621f8c01e1b79c177346b4a158,oe:player:87e40b7c555a6fc67b899be632d037f,oe:player:8f84b3e1ea431d26d9ad272eba9ba8c,oe:player:8784bcdcfb37672c12481c037ad8db4,oe:player:a02a243c98fb6794c2a303c5014567f,NuQ,RAMES,Camana,Ruep,Carry
+player,oe:team:7306bbcc9ca5d0b66f56d62d1d1c243,NASR eSports Turkey Academy,NETA,2021,Winter,oe:player:8467493b46be04be16fc1e956800b45,Ravenous,top,,,,,,,,,,,,,,
+player,oe:team:7306bbcc9ca5d0b66f56d62d1d1c243,NASR eSports Turkey Academy,NETA,2021,Winter,oe:player:737b20edcd7def8833b52248b986fb4,CrawL,jng,,,,,,,,,,,,,,
+player,oe:team:7306bbcc9ca5d0b66f56d62d1d1c243,NASR eSports Turkey Academy,NETA,2021,Winter,oe:player:6520964cefa9d79079bf664b7453cfc,Mercy9,mid,,,,,,,,,,,,,,
+player,oe:team:7306bbcc9ca5d0b66f56d62d1d1c243,NASR eSports Turkey Academy,NETA,2021,Winter,oe:player:e2c2e135e63fbad42a637b7c4e8a190,Crasia,bot,,,,,,,,,,,,,,
+player,oe:team:7306bbcc9ca5d0b66f56d62d1d1c243,NASR eSports Turkey Academy,NETA,2021,Winter,oe:player:8c4f1b30f9e68d941f7c01414873817,Secondate,sup,,,,,,,,,,,,,,
+lineup,oe:team:7306bbcc9ca5d0b66f56d62d1d1c243,NASR eSports Turkey Academy,NETA,2021,Winter,,,,lineup-3157bca2f55bd11f,NETA-01,1,1,oe:player:8467493b46be04be16fc1e956800b45,oe:player:737b20edcd7def8833b52248b986fb4,oe:player:6520964cefa9d79079bf664b7453cfc,oe:player:e2c2e135e63fbad42a637b7c4e8a190,oe:player:8c4f1b30f9e68d941f7c01414873817,Ravenous,CrawL,Mercy9,Crasia,Secondate
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2021,Winter,oe:player:eb2f72ebea03c2a5faf6ddf8e54639d,Kebap,top,,,,,,,,,,,,,,
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2021,Winter,oe:player:73278a4a86960eeb576a8fd4c9ec699,113,jng,,,,,,,,,,,,,,
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2021,Winter,oe:player:b608239f986cb75a902ea9bbc764cd0,Rhemio,mid,,,,,,,,,,,,,,
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2021,Winter,oe:player:dcb66ff6e4a2517ade22183779939c9,Rate,bot,,,,,,,,,,,,,,
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2021,Winter,oe:player:a9cfbc13e22eefdd22af7b346ce2af4,Parus,sup,,,,,,,,,,,,,,
+lineup,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2021,Winter,,,,lineup-db7b0911033357aa,SA-01,1,2,oe:player:eb2f72ebea03c2a5faf6ddf8e54639d,oe:player:73278a4a86960eeb576a8fd4c9ec699,oe:player:b608239f986cb75a902ea9bbc764cd0,oe:player:dcb66ff6e4a2517ade22183779939c9,oe:player:a9cfbc13e22eefdd22af7b346ce2af4,Kebap,113,Rhemio,Rate,Parus
+player,oe:team:ec79d991a7dd0150a5f4b447c0ab1f4,Team AURORA Academy,TAA,2021,Winter,oe:player:863bc07b2e6e05aaf84d4fee7672f02,KTSR,top,,,,,,,,,,,,,,
+player,oe:team:ec79d991a7dd0150a5f4b447c0ab1f4,Team AURORA Academy,TAA,2021,Winter,oe:player:cbe20c64274a87a21e5bdac1ccc3e77,Rhilech,jng,,,,,,,,,,,,,,
+player,oe:team:ec79d991a7dd0150a5f4b447c0ab1f4,Team AURORA Academy,TAA,2021,Winter,oe:player:b397fe519526faaf878e1f99fbdf8a1,Fleck,mid,,,,,,,,,,,,,,
+player,oe:team:ec79d991a7dd0150a5f4b447c0ab1f4,Team AURORA Academy,TAA,2021,Winter,oe:player:9109c20b2999000c86e60f0c8808091,Rhioni,bot,,,,,,,,,,,,,,
+player,oe:team:ec79d991a7dd0150a5f4b447c0ab1f4,Team AURORA Academy,TAA,2021,Winter,oe:player:a0cadee9fe05b06377a2f23feb8c9ec,Dellal,sup,,,,,,,,,,,,,,
+lineup,oe:team:ec79d991a7dd0150a5f4b447c0ab1f4,Team AURORA Academy,TAA,2021,Winter,,,,lineup-2d70bc095c4e9b79,TAA-01,1,2,oe:player:863bc07b2e6e05aaf84d4fee7672f02,oe:player:cbe20c64274a87a21e5bdac1ccc3e77,oe:player:b397fe519526faaf878e1f99fbdf8a1,oe:player:9109c20b2999000c86e60f0c8808091,oe:player:a0cadee9fe05b06377a2f23feb8c9ec,KTSR,Rhilech,Fleck,Rhioni,Dellal
+player,oe:team:637d0a65124780ff6ecca6ec06e67c2,İstanbul Wildcats Academy,İWA,2021,Winter,oe:player:eeec6c7a9d2b475c23650b202208b89,Lot,top,,,,,,,,,,,,,,
+player,oe:team:637d0a65124780ff6ecca6ec06e67c2,İstanbul Wildcats Academy,İWA,2021,Winter,oe:player:996a6f7b84dac5ef2f92cee17f6be2d,Oguzkhan,jng,,,,,,,,,,,,,,
+player,oe:team:637d0a65124780ff6ecca6ec06e67c2,İstanbul Wildcats Academy,İWA,2021,Winter,oe:player:18a59f5baf54951b3cb98f9dc59a2c7,Midkid,mid,,,,,,,,,,,,,,
+player,oe:team:637d0a65124780ff6ecca6ec06e67c2,İstanbul Wildcats Academy,İWA,2021,Winter,oe:player:4a8a150d1497b3daa66c2bdaffe2c43,Fatihcan,bot,,,,,,,,,,,,,,
+player,oe:team:637d0a65124780ff6ecca6ec06e67c2,İstanbul Wildcats Academy,İWA,2021,Winter,oe:player:31875a5f463ab30169d2fde95ed8003,EliWood,sup,,,,,,,,,,,,,,
+lineup,oe:team:637d0a65124780ff6ecca6ec06e67c2,İstanbul Wildcats Academy,İWA,2021,Winter,,,,lineup-b8716d102807e7b5,İWA-01,1,12,oe:player:eeec6c7a9d2b475c23650b202208b89,oe:player:996a6f7b84dac5ef2f92cee17f6be2d,oe:player:18a59f5baf54951b3cb98f9dc59a2c7,oe:player:4a8a150d1497b3daa66c2bdaffe2c43,oe:player:31875a5f463ab30169d2fde95ed8003,Lot,Oguzkhan,Midkid,Fatihcan,EliWood

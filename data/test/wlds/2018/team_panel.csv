@@ -1,0 +1,63 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2018,Unknown,oe:player:e03d0722b6dce835cde3268c08c4f54,Licorice,top,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2018,Unknown,oe:player:ed455f823b6586e9e3621dfb5aeb42e,Blaber,jng,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2018,Unknown,oe:player:7e0e7ac2a199e8e2ecb30499a3b2153,Jensen,mid,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2018,Unknown,oe:player:267b730dd2e2dcb97182a2795935491,Sneaky,bot,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2018,Unknown,oe:player:6841f2d68619d53bdd1cdbf30b5be2c,Zeyzal,sup,,,,,,,,,,,,,,
+lineup,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2018,Unknown,,,,lineup-d7799d04496b1f27,CLO-01,1,1,oe:player:e03d0722b6dce835cde3268c08c4f54,oe:player:ed455f823b6586e9e3621dfb5aeb42e,oe:player:7e0e7ac2a199e8e2ecb30499a3b2153,oe:player:267b730dd2e2dcb97182a2795935491,oe:player:6841f2d68619d53bdd1cdbf30b5be2c,Licorice,Blaber,Jensen,Sneaky,Zeyzal
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2018,Unknown,oe:player:68128d6a24caee5f69e1d31123cf149,Hanabi,top,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2018,Unknown,oe:player:8f6c93859e6292511f9b87edfa9a847,MooJin,jng,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2018,Unknown,oe:player:e3aa452243a476669824e52c1b7fc6b,Maple,mid,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2018,Unknown,oe:player:7e754adda86a60e0a39d7204ba60424,Betty,bot,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2018,Unknown,oe:player:0908c66a5c361f682282599e75b334f,SwordArt,sup,,,,,,,,,,,,,,
+lineup,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2018,Unknown,,,,lineup-a84fc2c444d23821,FW-01,1,3,oe:player:68128d6a24caee5f69e1d31123cf149,oe:player:8f6c93859e6292511f9b87edfa9a847,oe:player:e3aa452243a476669824e52c1b7fc6b,oe:player:7e754adda86a60e0a39d7204ba60424,oe:player:0908c66a5c361f682282599e75b334f,Hanabi,MooJin,Maple,Betty,SwordArt
+player,oe:team:0b63f14fd7de22a26869bb1c76f87fc,G-Rex,G-R,2018,Unknown,oe:player:d71bdd22c8bb93b8d287dce6f46aed2,PK,top,,,,,,,,,,,,,,
+player,oe:team:0b63f14fd7de22a26869bb1c76f87fc,G-Rex,G-R,2018,Unknown,oe:player:cf17e0a96c6d49182b12cefda2848e6,Empt2y,jng,,,,,,,,,,,,,,
+player,oe:team:0b63f14fd7de22a26869bb1c76f87fc,G-Rex,G-R,2018,Unknown,oe:player:fd964f4b80922071fac5c1485aa284e,Candy,mid,,,,,,,,,,,,,,
+player,oe:team:0b63f14fd7de22a26869bb1c76f87fc,G-Rex,G-R,2018,Unknown,oe:player:a7f8ce07e216556a999d52ab7f06594,Stitch,bot,,,,,,,,,,,,,,
+player,oe:team:0b63f14fd7de22a26869bb1c76f87fc,G-Rex,G-R,2018,Unknown,oe:player:de6b46438c8c6889b6dbf0684b1effa,Koala,sup,,,,,,,,,,,,,,
+lineup,oe:team:0b63f14fd7de22a26869bb1c76f87fc,G-Rex,G-R,2018,Unknown,,,,lineup-8c6c7d48f4e2fbdc,G-R-01,1,1,oe:player:d71bdd22c8bb93b8d287dce6f46aed2,oe:player:cf17e0a96c6d49182b12cefda2848e6,oe:player:fd964f4b80922071fac5c1485aa284e,oe:player:a7f8ce07e216556a999d52ab7f06594,oe:player:de6b46438c8c6889b6dbf0684b1effa,PK,Empt2y,Candy,Stitch,Koala
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2018,Unknown,oe:player:d11068c782573b34be81beb5a4eeb12,Wunder,top,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2018,Unknown,oe:player:a2f6e754fc2b358f7786f52decb4274,Jankos,jng,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2018,Unknown,oe:player:0634d9e86284da2fae4e1438d564eee,Perkz,mid,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2018,Unknown,oe:player:e77cdf08626bdd7c16cd6b21c29d435,Hjarnan,bot,,,,,,,,,,,,,,
+player,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2018,Unknown,oe:player:49311bd7f1e5550f578fbd1c2a1d21b,Wadid,sup,,,,,,,,,,,,,,
+lineup,oe:team:7d6673d3a9d00363c6bebc1a630da6e,G2 Esports,GE,2018,Unknown,,,,lineup-9958dd336c04344d,GE-01,1,16,oe:player:d11068c782573b34be81beb5a4eeb12,oe:player:a2f6e754fc2b358f7786f52decb4274,oe:player:0634d9e86284da2fae4e1438d564eee,oe:player:e77cdf08626bdd7c16cd6b21c29d435,oe:player:49311bd7f1e5550f578fbd1c2a1d21b,Wunder,Jankos,Perkz,Hjarnan,Wadid
+player,oe:team:418bd4b8f699d70c4509d7f9c768a3a,Gambit Esports,GE,2018,Unknown,oe:player:7f628897d2f6dc2703a52586c671574,PvPStejos,top,,,,,,,,,,,,,,
+player,oe:team:418bd4b8f699d70c4509d7f9c768a3a,Gambit Esports,GE,2018,Unknown,oe:player:1c7db660fc268b1d2747939129d6101,Diamondprox,jng,,,,,,,,,,,,,,
+player,oe:team:418bd4b8f699d70c4509d7f9c768a3a,Gambit Esports,GE,2018,Unknown,oe:player:24abb8f1ed61411f16f17091cf3683d,Kira,mid,,,,,,,,,,,,,,
+player,oe:team:418bd4b8f699d70c4509d7f9c768a3a,Gambit Esports,GE,2018,Unknown,oe:player:887bf3ec60709542db51245b16e2081,Lodik,bot,,,,,,,,,,,,,,
+player,oe:team:418bd4b8f699d70c4509d7f9c768a3a,Gambit Esports,GE,2018,Unknown,oe:player:243f63354f4c1cc25d50f6269b84436,Edward,sup,,,,,,,,,,,,,,
+lineup,oe:team:418bd4b8f699d70c4509d7f9c768a3a,Gambit Esports,GE,2018,Unknown,,,,lineup-94cd548812c96e38,GE-01,1,1,oe:player:7f628897d2f6dc2703a52586c671574,oe:player:1c7db660fc268b1d2747939129d6101,oe:player:24abb8f1ed61411f16f17091cf3683d,oe:player:887bf3ec60709542db51245b16e2081,oe:player:243f63354f4c1cc25d50f6269b84436,PvPStejos,Diamondprox,Kira,Lodik,Edward
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2018,Unknown,oe:player:95bacd099548cd6ef0c33642a7a43cc,Relic,top,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2018,Unknown,oe:player:5df80e26e27620b567db59e8567a061,Solid,jng,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2018,Unknown,oe:player:6252fe71513f9bc796f40f41cfeb74e,Cotopaco,mid,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2018,Unknown,oe:player:a5e24abc881e8801425e90fb62325e8,Renyu,bot,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2018,Unknown,oe:player:f8973e628fba305c55004351b4f7e34,Arce,sup,,,,,,,,,,,,,,
+lineup,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2018,Unknown,,,,lineup-89b38f8927b490bd,INF-01,1,4,oe:player:95bacd099548cd6ef0c33642a7a43cc,oe:player:5df80e26e27620b567db59e8567a061,oe:player:6252fe71513f9bc796f40f41cfeb74e,oe:player:a5e24abc881e8801425e90fb62325e8,oe:player:f8973e628fba305c55004351b4f7e34,Relic,Solid,Cotopaco,Renyu,Arce
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2018,Unknown,oe:player:ad3b41b0663f51490d31a84c75c9330,Zantins,top,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2018,Unknown,oe:player:b23f665210a1914cab61bc8eba4c9ae,Ranger,jng,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2018,Unknown,oe:player:127d6ec83484da3c8b39b70c70f1226,dyNquedo,mid,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2018,Unknown,oe:player:1c010180887360e5d6ab967fd93693d,TitaN,bot,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2018,Unknown,oe:player:331d9c928188b8b132c13c143d070bb,Riyev,sup,,,,,,,,,,,,,,
+lineup,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2018,Unknown,,,,lineup-a89c621927fb8649,KE-01,1,1,oe:player:ad3b41b0663f51490d31a84c75c9330,oe:player:b23f665210a1914cab61bc8eba4c9ae,oe:player:127d6ec83484da3c8b39b70c70f1226,oe:player:1c010180887360e5d6ab967fd93693d,oe:player:331d9c928188b8b132c13c143d070bb,Zantins,Ranger,dyNquedo,TitaN,Riyev
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2018,Unknown,oe:player:03daae1844b9ad257324c3eedf41e28,Kiin,top,,,,,,,,,,,,,,
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2018,Unknown,oe:player:ae4cccea87290717523772f7472e7f5,Spirit,jng,,,,,,,,,,,,,,
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2018,Unknown,oe:player:d06ddbf2ef1a12432c3fe5f7544e5d5,Kuro,mid,,,,,,,,,,,,,,
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2018,Unknown,oe:player:0e6eee16975896d5191d8fe7f372ced,Kramer,bot,,,,,,,,,,,,,,
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2018,Unknown,oe:player:45fa65486c55c031328f189912bbe4b,TusiN,sup,,,,,,,,,,,,,,
+lineup,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2018,Unknown,,,,lineup-acce10c9ee17561f,KF-01,1,2,oe:player:03daae1844b9ad257324c3eedf41e28,oe:player:ae4cccea87290717523772f7472e7f5,oe:player:d06ddbf2ef1a12432c3fe5f7544e5d5,oe:player:0e6eee16975896d5191d8fe7f372ced,oe:player:45fa65486c55c031328f189912bbe4b,Kiin,Spirit,Kuro,Kramer,TusiN
+player,oe:team:b24f151e143d152c7cf8be9f13ec015,Phong Vũ Buffalo,PVB,2018,Unknown,oe:player:8b7a61a6e9bd5b8977b7b3f02a425ad,Zeros,top,,,,,,,,,,,,,,
+player,oe:team:b24f151e143d152c7cf8be9f13ec015,Phong Vũ Buffalo,PVB,2018,Unknown,oe:player:845714908647baec4b684cc02dae0e4,Meliodas,jng,,,,,,,,,,,,,,
+player,oe:team:b24f151e143d152c7cf8be9f13ec015,Phong Vũ Buffalo,PVB,2018,Unknown,oe:player:40c0863db40a68f9732b23e541a37ec,Naul,mid,,,,,,,,,,,,,,
+player,oe:team:b24f151e143d152c7cf8be9f13ec015,Phong Vũ Buffalo,PVB,2018,Unknown,oe:player:7d5920ddca78bb9228495209bbc2d4d,Bigkoro,bot,,,,,,,,,,,,,,
+player,oe:team:b24f151e143d152c7cf8be9f13ec015,Phong Vũ Buffalo,PVB,2018,Unknown,oe:player:278f9a3d3077c522e71022e302b9e0e,Palette,sup,,,,,,,,,,,,,,
+lineup,oe:team:b24f151e143d152c7cf8be9f13ec015,Phong Vũ Buffalo,PVB,2018,Unknown,,,,lineup-bce326a679e17d94,PVB-01,1,2,oe:player:8b7a61a6e9bd5b8977b7b3f02a425ad,oe:player:845714908647baec4b684cc02dae0e4,oe:player:40c0863db40a68f9732b23e541a37ec,oe:player:7d5920ddca78bb9228495209bbc2d4d,oe:player:278f9a3d3077c522e71022e302b9e0e,Zeros,Meliodas,Naul,Bigkoro,Palette
+player,oe:team:73f3126d91d35faa5d5ce34abadb865,Royal Never Give Up,RNG,2018,Unknown,oe:player:ed551dce192327346be794c8b312186,Letme,top,,,,,,,,,,,,,,
+player,oe:team:73f3126d91d35faa5d5ce34abadb865,Royal Never Give Up,RNG,2018,Unknown,oe:player:f3322656ae1facbf4763677fe2506a3,Karsa,jng,,,,,,,,,,,,,,
+player,oe:team:73f3126d91d35faa5d5ce34abadb865,Royal Never Give Up,RNG,2018,Unknown,oe:player:71fb72e750329576210775b19d912e6,Mlxg,jng,,,,,,,,,,,,,,
+player,oe:team:73f3126d91d35faa5d5ce34abadb865,Royal Never Give Up,RNG,2018,Unknown,oe:player:beea9fe15bff6a7ab0b3913d3d5fde6,Xiaohu,mid,,,,,,,,,,,,,,
+player,oe:team:73f3126d91d35faa5d5ce34abadb865,Royal Never Give Up,RNG,2018,Unknown,oe:player:52e418c848e0f05f1ae3d63fb2f806a,Uzi,bot,,,,,,,,,,,,,,
+player,oe:team:73f3126d91d35faa5d5ce34abadb865,Royal Never Give Up,RNG,2018,Unknown,oe:player:4e09acc2529add19ff0686b1341e3d0,Ming,sup,,,,,,,,,,,,,,
+lineup,oe:team:73f3126d91d35faa5d5ce34abadb865,Royal Never Give Up,RNG,2018,Unknown,,,,lineup-83017a2b6676a54e,RNG-01,1,4,oe:player:ed551dce192327346be794c8b312186,oe:player:f3322656ae1facbf4763677fe2506a3,oe:player:beea9fe15bff6a7ab0b3913d3d5fde6,oe:player:52e418c848e0f05f1ae3d63fb2f806a,oe:player:4e09acc2529add19ff0686b1341e3d0,Letme,Karsa,Xiaohu,Uzi,Ming
+lineup,oe:team:73f3126d91d35faa5d5ce34abadb865,Royal Never Give Up,RNG,2018,Unknown,,,,lineup-66dcc86173038276,RNG-02,2,1,oe:player:ed551dce192327346be794c8b312186,oe:player:71fb72e750329576210775b19d912e6,oe:player:beea9fe15bff6a7ab0b3913d3d5fde6,oe:player:52e418c848e0f05f1ae3d63fb2f806a,oe:player:4e09acc2529add19ff0686b1341e3d0,Letme,Mlxg,Xiaohu,Uzi,Ming

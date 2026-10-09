@@ -1,0 +1,51 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:05bd29b524f0851d42e7902d6af59bf,Alliance,ALL,2014,Spring,oe:player:5f54026dd3c997ac09017e35339039a,Wickd,top,,,,,,,,,,,,,,
+player,oe:team:05bd29b524f0851d42e7902d6af59bf,Alliance,ALL,2014,Spring,oe:player:3ce5fd1ad8f63cfc7eddf0234260db4,Shook,jng,,,,,,,,,,,,,,
+player,oe:team:05bd29b524f0851d42e7902d6af59bf,Alliance,ALL,2014,Spring,oe:player:a3d74b52c8b1367c7044f417b743d75,Froggen,mid,,,,,,,,,,,,,,
+player,oe:team:05bd29b524f0851d42e7902d6af59bf,Alliance,ALL,2014,Spring,oe:player:6103edad37374607d4bc310c432dc8b,Tabzz,bot,,,,,,,,,,,,,,
+player,oe:team:05bd29b524f0851d42e7902d6af59bf,Alliance,ALL,2014,Spring,oe:player:529492966fba4f3a546074269bc91eb,Nyph,sup,,,,,,,,,,,,,,
+lineup,oe:team:05bd29b524f0851d42e7902d6af59bf,Alliance,ALL,2014,Spring,,,,lineup-13fb372ee85ba33d,ALL-01,1,3,oe:player:5f54026dd3c997ac09017e35339039a,oe:player:3ce5fd1ad8f63cfc7eddf0234260db4,oe:player:a3d74b52c8b1367c7044f417b743d75,oe:player:6103edad37374607d4bc310c432dc8b,oe:player:529492966fba4f3a546074269bc91eb,Wickd,Shook,Froggen,Tabzz,Nyph
+player,oe:team:6d92c120d5550d72128830b0a4df0f8,Copenhagen Wolves,CW,2014,Spring,oe:player:479114a9f0c81a84f7abfc01e650fd2,YoungBuck,top,,,,,,,,,,,,,,
+player,oe:team:6d92c120d5550d72128830b0a4df0f8,Copenhagen Wolves,CW,2014,Spring,oe:player:0c8025702d201f7f99b0495c459c069,Amazing,jng,,,,,,,,,,,,,,
+player,oe:team:6d92c120d5550d72128830b0a4df0f8,Copenhagen Wolves,CW,2014,Spring,oe:player:97151865acc6012ade69a5c079a4743,cowTard,mid,,,,,,,,,,,,,,
+player,oe:team:6d92c120d5550d72128830b0a4df0f8,Copenhagen Wolves,CW,2014,Spring,oe:player:493eb5b2f5f99058abd9ed5b995572b,FORG1VEN,bot,,,,,,,,,,,,,,
+player,oe:team:6d92c120d5550d72128830b0a4df0f8,Copenhagen Wolves,CW,2014,Spring,oe:player:859f90d063a0f425ae317c9ddd363bd,Unlimited,sup,,,,,,,,,,,,,,
+lineup,oe:team:6d92c120d5550d72128830b0a4df0f8,Copenhagen Wolves,CW,2014,Spring,,,,lineup-895e18def0cf233d,CW-01,1,1,oe:player:479114a9f0c81a84f7abfc01e650fd2,oe:player:0c8025702d201f7f99b0495c459c069,oe:player:97151865acc6012ade69a5c079a4743,oe:player:493eb5b2f5f99058abd9ed5b995572b,oe:player:859f90d063a0f425ae317c9ddd363bd,YoungBuck,Amazing,cowTard,FORG1VEN,Unlimited
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2014,Spring,oe:player:e4e943fa882367a96fb2a365de4e28c,sOAZ,top,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2014,Spring,oe:player:e4cd1e7b68ee6b595a6e4c7cd2c56d8,Cyanide,jng,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2014,Spring,oe:player:5d69aabb447fa09188638716fe549b6,xPeke,mid,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2014,Spring,oe:player:d8362fe0d38ca0e70953ed957deaa00,Rekkles,bot,,,,,,,,,,,,,,
+player,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2014,Spring,oe:player:5ebcf3b41dc66e5839da4c5f58bd907,YellOwStaR,sup,,,,,,,,,,,,,,
+lineup,oe:team:78f183fa5a7d8ecb22b9ad272c3abd7,Fnatic,FNA,2014,Spring,,,,lineup-328b3d3ca85942e3,FNA-01,1,2,oe:player:e4e943fa882367a96fb2a365de4e28c,oe:player:e4cd1e7b68ee6b595a6e4c7cd2c56d8,oe:player:5d69aabb447fa09188638716fe549b6,oe:player:d8362fe0d38ca0e70953ed957deaa00,oe:player:5ebcf3b41dc66e5839da4c5f58bd907,sOAZ,Cyanide,xPeke,Rekkles,YellOwStaR
+player,oe:team:3e18c32708da93cf6bdbd1d20b76731,Gambit Gaming,GG,2014,Spring,oe:player:c248a757d55f7ba42f3ffa39f716687,Darien,top,,,,,,,,,,,,,,
+player,oe:team:3e18c32708da93cf6bdbd1d20b76731,Gambit Gaming,GG,2014,Spring,oe:player:1c7db660fc268b1d2747939129d6101,Diamondprox,jng,,,,,,,,,,,,,,
+player,oe:team:3e18c32708da93cf6bdbd1d20b76731,Gambit Gaming,GG,2014,Spring,oe:player:70f2e5e51d358b04a8485db5a382f1a,Alex Ich,mid,,,,,,,,,,,,,,
+player,oe:team:3e18c32708da93cf6bdbd1d20b76731,Gambit Gaming,GG,2014,Spring,oe:player:0898caa28dac1d90666f2ac14691d55,niQ,mid,,,,,,,,,,,,,,
+player,oe:team:3e18c32708da93cf6bdbd1d20b76731,Gambit Gaming,GG,2014,Spring,oe:player:0cd6ba51204139f1e54c05c7c07e154,Genja,bot,,,,,,,,,,,,,,
+player,oe:team:3e18c32708da93cf6bdbd1d20b76731,Gambit Gaming,GG,2014,Spring,oe:player:243f63354f4c1cc25d50f6269b84436,Edward,sup,,,,,,,,,,,,,,
+lineup,oe:team:3e18c32708da93cf6bdbd1d20b76731,Gambit Gaming,GG,2014,Spring,,,,lineup-7c440388060e1596,GG-01,1,3,oe:player:c248a757d55f7ba42f3ffa39f716687,oe:player:1c7db660fc268b1d2747939129d6101,oe:player:70f2e5e51d358b04a8485db5a382f1a,oe:player:0cd6ba51204139f1e54c05c7c07e154,oe:player:243f63354f4c1cc25d50f6269b84436,Darien,Diamondprox,Alex Ich,Genja,Edward
+lineup,oe:team:3e18c32708da93cf6bdbd1d20b76731,Gambit Gaming,GG,2014,Spring,,,,lineup-5f7f3103958243ca,GG-02,2,1,oe:player:c248a757d55f7ba42f3ffa39f716687,oe:player:1c7db660fc268b1d2747939129d6101,oe:player:0898caa28dac1d90666f2ac14691d55,oe:player:0cd6ba51204139f1e54c05c7c07e154,oe:player:243f63354f4c1cc25d50f6269b84436,Darien,Diamondprox,niQ,Genja,Edward
+player,oe:team:d946eb399b263986b81fad7203186fa,Millenium,MIL,2014,Summer,oe:player:5ae37b1081b95f7862716e922302165,Kev1n,top,,,,,,,,,,,,,,
+player,oe:team:d946eb399b263986b81fad7203186fa,Millenium,MIL,2014,Summer,oe:player:3bc50082ee44077a2680af1d46f9e7c,Kottenx,jng,,,,,,,,,,,,,,
+player,oe:team:d946eb399b263986b81fad7203186fa,Millenium,MIL,2014,Summer,oe:player:31b12ee4990ae206246a4440b6e2910,Kerp,mid,,,,,,,,,,,,,,
+player,oe:team:d946eb399b263986b81fad7203186fa,Millenium,MIL,2014,Summer,oe:player:00588436b50465ea88beda888c4102b,Creaton,bot,,,,,,,,,,,,,,
+player,oe:team:d946eb399b263986b81fad7203186fa,Millenium,MIL,2014,Summer,oe:player:1e89052ba12c2e69dfa28e6fe50c5c1,Jree,sup,,,,,,,,,,,,,,
+lineup,oe:team:d946eb399b263986b81fad7203186fa,Millenium,MIL,2014,Summer,,,,lineup-fff387d9738fca50,MIL-01,1,1,oe:player:5ae37b1081b95f7862716e922302165,oe:player:3bc50082ee44077a2680af1d46f9e7c,oe:player:31b12ee4990ae206246a4440b6e2910,oe:player:00588436b50465ea88beda888c4102b,oe:player:1e89052ba12c2e69dfa28e6fe50c5c1,Kev1n,Kottenx,Kerp,Creaton,Jree
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2014,Spring,oe:player:5d7f940d736b945ea1b2e6e6a187e0c,fredy122,top,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2014,Spring,oe:player:c271341160441d375411fef9bf2f9ef,Svenskeren,jng,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2014,Spring,oe:player:c22cb6fc65a653f1ad1dc271187ede9,Jesiz,mid,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2014,Spring,oe:player:6c195f96c995d7d4cbfa99bca643c90,CandyPanda,bot,,,,,,,,,,,,,,
+player,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2014,Spring,oe:player:b9f06b4128669e181187b4a622020cb,nRated,sup,,,,,,,,,,,,,,
+lineup,oe:team:75760dca486d4682426196b76bd1a54,SK Gaming,SG,2014,Spring,,,,lineup-56597620d6af07a9,SG-01,1,4,oe:player:5d7f940d736b945ea1b2e6e6a187e0c,oe:player:c271341160441d375411fef9bf2f9ef,oe:player:c22cb6fc65a653f1ad1dc271187ede9,oe:player:6c195f96c995d7d4cbfa99bca643c90,oe:player:b9f06b4128669e181187b4a622020cb,fredy122,Svenskeren,Jesiz,CandyPanda,nRated
+player,oe:team:3de6f8727f5d53282e39da4f859931d,SUPA HOT CREW,SHC,2014,Summer,oe:player:cacb8a64312305ab70efe4673cbb0aa,Mimer,top,,,,,,,,,,,,,,
+player,oe:team:3de6f8727f5d53282e39da4f859931d,SUPA HOT CREW,SHC,2014,Summer,oe:player:ea8f53a1f2266ac5f950ed24e642774,Impaler,jng,,,,,,,,,,,,,,
+player,oe:team:3de6f8727f5d53282e39da4f859931d,SUPA HOT CREW,SHC,2014,Summer,oe:player:276d05b1111531b04f5945dd776fed6,Nulu,mid,,,,,,,,,,,,,,
+player,oe:team:3de6f8727f5d53282e39da4f859931d,SUPA HOT CREW,SHC,2014,Summer,oe:player:1c5fd207e41109fa094c08d541ca849,MrRallez,bot,,,,,,,,,,,,,,
+player,oe:team:3de6f8727f5d53282e39da4f859931d,SUPA HOT CREW,SHC,2014,Summer,oe:player:6cdc836c6838c6ccbd0346bb58cd49c,wewillfailer,sup,,,,,,,,,,,,,,
+lineup,oe:team:3de6f8727f5d53282e39da4f859931d,SUPA HOT CREW,SHC,2014,Summer,,,,lineup-2e7ad1d8496942d3,SHC-01,1,1,oe:player:cacb8a64312305ab70efe4673cbb0aa,oe:player:ea8f53a1f2266ac5f950ed24e642774,oe:player:276d05b1111531b04f5945dd776fed6,oe:player:1c5fd207e41109fa094c08d541ca849,oe:player:6cdc836c6838c6ccbd0346bb58cd49c,Mimer,Impaler,Nulu,MrRallez,wewillfailer
+player,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2014,Spring,oe:player:b9c7ab38cf80307711c316fd8c5a1b9,Xaxus,top,,,,,,,,,,,,,,
+player,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2014,Spring,oe:player:a2f6e754fc2b358f7786f52decb4274,Jankos,jng,,,,,,,,,,,,,,
+player,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2014,Spring,oe:player:1d938960ffa77b8629a3107d2486c93,Overpow,mid,,,,,,,,,,,,,,
+player,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2014,Spring,oe:player:7bfd1825cedc539262b5ddc59a928d5,Celaver,bot,,,,,,,,,,,,,,
+player,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2014,Spring,oe:player:280a58c350eef8f164e753447b2a306,Vander,sup,,,,,,,,,,,,,,
+lineup,oe:team:907351811cc0343ae5746cd2c75549d,Team ROCCAT,TR,2014,Spring,,,,lineup-cc56021087cca9fa,TR-01,1,12,oe:player:b9c7ab38cf80307711c316fd8c5a1b9,oe:player:a2f6e754fc2b358f7786f52decb4274,oe:player:1d938960ffa77b8629a3107d2486c93,oe:player:7bfd1825cedc539262b5ddc59a928d5,oe:player:280a58c350eef8f164e753447b2a306,Xaxus,Jankos,Overpow,Celaver,Vander

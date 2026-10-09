@@ -1,0 +1,43 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Spring,oe:player:fb66ef5885b4be9323905b821dc3a42,Bin,top,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Spring,oe:player:fbdc4428b2d095c83aebeed5da4e4b2,Xun,jng,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Spring,oe:player:ed29043422e3c515e1cb292464b990b,Knight,mid,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Spring,oe:player:a58a0d41103cdc5b58cbb547eeaca2d,Elk,bot,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Spring,oe:player:90651ebea9a35ec4e018c8157492e17,ON,sup,,,,,,,,,,,,,,
+lineup,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Spring,,,,lineup-0367033f55941805,BLG-01,1,2,oe:player:fb66ef5885b4be9323905b821dc3a42,oe:player:fbdc4428b2d095c83aebeed5da4e4b2,oe:player:ed29043422e3c515e1cb292464b990b,oe:player:a58a0d41103cdc5b58cbb547eeaca2d,oe:player:90651ebea9a35ec4e018c8157492e17,Bin,Xun,Knight,Elk,ON
+player,oe:team:53a258f289c26d94431c0496a54e151,Invictus Gaming,IG,2024,Spring,oe:player:7deb8d68aef0757c10381b599f855de,YSKM,top,,,,,,,,,,,,,,
+player,oe:team:53a258f289c26d94431c0496a54e151,Invictus Gaming,IG,2024,Spring,oe:player:84e02b3ad83040a2b876001dd6c5192,Leyan,jng,,,,,,,,,,,,,,
+player,oe:team:53a258f289c26d94431c0496a54e151,Invictus Gaming,IG,2024,Spring,oe:player:78f78a8aa2c5d6bae8a64d6950bbb0f,Cryin,mid,,,,,,,,,,,,,,
+player,oe:team:53a258f289c26d94431c0496a54e151,Invictus Gaming,IG,2024,Spring,oe:player:66d0ff0f8f9b5296770c1dbda549950,Ahn,bot,,,,,,,,,,,,,,
+player,oe:team:53a258f289c26d94431c0496a54e151,Invictus Gaming,IG,2024,Spring,oe:player:39d7885ab4602a7f8d202883d253f5e,Wink,sup,,,,,,,,,,,,,,
+lineup,oe:team:53a258f289c26d94431c0496a54e151,Invictus Gaming,IG,2024,Spring,,,,lineup-0d17d560225f568e,IG-01,1,3,oe:player:7deb8d68aef0757c10381b599f855de,oe:player:84e02b3ad83040a2b876001dd6c5192,oe:player:78f78a8aa2c5d6bae8a64d6950bbb0f,oe:player:66d0ff0f8f9b5296770c1dbda549950,oe:player:39d7885ab4602a7f8d202883d253f5e,YSKM,Leyan,Cryin,Ahn,Wink
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2024,Spring,oe:player:3ce68cf813bc34243279fd7fe3cecbb,sheer,top,,,,,,,,,,,,,,
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2024,Spring,oe:player:41deab55354f57a94135989133f9968,Kanavi,jng,,,,,,,,,,,,,,
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2024,Spring,oe:player:4860d1660ce45bd15a600953309135c,Yagao,mid,,,,,,,,,,,,,,
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2024,Spring,oe:player:eada4723af6f51cf2391d85b5fde49b,Ruler,bot,,,,,,,,,,,,,,
+player,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2024,Spring,oe:player:10d1208b485425756fcc932229386b0,MISSING,sup,,,,,,,,,,,,,,
+lineup,oe:team:b42d0f31f2727621b963042276817c4,JD Gaming,JDG,2024,Spring,,,,lineup-b3211f923f1d06a5,JDG-01,1,3,oe:player:3ce68cf813bc34243279fd7fe3cecbb,oe:player:41deab55354f57a94135989133f9968,oe:player:4860d1660ce45bd15a600953309135c,oe:player:eada4723af6f51cf2391d85b5fde49b,oe:player:10d1208b485425756fcc932229386b0,sheer,Kanavi,Yagao,Ruler,MISSING
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2024,Spring,oe:player:566586ef99b39b57e9c85c59f021da5,Burdol,top,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2024,Spring,oe:player:26cf32679ec486e40032e24fa39d15c,Meteor,jng,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2024,Spring,oe:player:f886838ee1808c2f217208267a829ce,haichao,mid,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2024,Spring,oe:player:6d734e1e86b978852d95cfd63d6a643,Shaoye,bot,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2024,Spring,oe:player:efced9552c6030d0beaf318ee62926a,Jinjiao,sup,,,,,,,,,,,,,,
+lineup,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2024,Spring,,,,lineup-41555f3741e88abe,LGD-01,1,2,oe:player:566586ef99b39b57e9c85c59f021da5,oe:player:26cf32679ec486e40032e24fa39d15c,oe:player:f886838ee1808c2f217208267a829ce,oe:player:6d734e1e86b978852d95cfd63d6a643,oe:player:efced9552c6030d0beaf318ee62926a,Burdol,Meteor,haichao,Shaoye,Jinjiao
+player,oe:team:f4c4528c6981e104a11ea7548630c23,Oh My God,OMG,2024,Spring,oe:player:b6603b64c5cabad210826735469838b,Cube,top,,,,,,,,,,,,,,
+player,oe:team:f4c4528c6981e104a11ea7548630c23,Oh My God,OMG,2024,Spring,oe:player:863519e5df81ff9b308c90f6a59495b,xiaofang,jng,,,,,,,,,,,,,,
+player,oe:team:f4c4528c6981e104a11ea7548630c23,Oh My God,OMG,2024,Spring,oe:player:542b1268b090a5fc82442efbd8d8165,Angel,mid,,,,,,,,,,,,,,
+player,oe:team:f4c4528c6981e104a11ea7548630c23,Oh My God,OMG,2024,Spring,oe:player:3205348b11b8cf2b6663318b143928f,Able,bot,,,,,,,,,,,,,,
+player,oe:team:f4c4528c6981e104a11ea7548630c23,Oh My God,OMG,2024,Spring,oe:player:615b1f347cdf6bc6df1883ed9e18496,ppgod,sup,,,,,,,,,,,,,,
+lineup,oe:team:f4c4528c6981e104a11ea7548630c23,Oh My God,OMG,2024,Spring,,,,lineup-cba978deaa88abd3,OMG-01,1,2,oe:player:b6603b64c5cabad210826735469838b,oe:player:863519e5df81ff9b308c90f6a59495b,oe:player:542b1268b090a5fc82442efbd8d8165,oe:player:3205348b11b8cf2b6663318b143928f,oe:player:615b1f347cdf6bc6df1883ed9e18496,Cube,xiaofang,Angel,Able,ppgod
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2024,Spring,oe:player:0c74b7f78409a4022a2c4c5a5ca3ee1,369,top,,,,,,,,,,,,,,
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2024,Spring,oe:player:0da0eeb199e8fa3ab773cf84f9de9ab,Tian,jng,,,,,,,,,,,,,,
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2024,Spring,oe:player:6e7908512cb309a43388bb464a312a2,Creme,mid,,,,,,,,,,,,,,
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2024,Spring,oe:player:c54e1090ef1faa736b12493051c4855,JackeyLove,bot,,,,,,,,,,,,,,
+player,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2024,Spring,oe:player:bda7cc061d7a1576f1dcad33dd505cd,Meiko,sup,,,,,,,,,,,,,,
+lineup,oe:team:fcec508e780bbd1ad493852640f5b36,Top Esports,TES,2024,Spring,,,,lineup-e707aa0a209f6049,TES-01,1,14,oe:player:0c74b7f78409a4022a2c4c5a5ca3ee1,oe:player:0da0eeb199e8fa3ab773cf84f9de9ab,oe:player:6e7908512cb309a43388bb464a312a2,oe:player:c54e1090ef1faa736b12493051c4855,oe:player:bda7cc061d7a1576f1dcad33dd505cd,369,Tian,Creme,JackeyLove,Meiko
+player,oe:team:8d09428f093dfbf3c488bce350af0b1,Ultra Prime,UP,2024,Spring,oe:player:ad3bf81f37b9dddba943b53f7670c57,Decade,top,,,,,,,,,,,,,,
+player,oe:team:8d09428f093dfbf3c488bce350af0b1,Ultra Prime,UP,2024,Spring,oe:player:5d11b64cb0cf93ea4a5e5c6977aff59,H4cker,jng,,,,,,,,,,,,,,
+player,oe:team:8d09428f093dfbf3c488bce350af0b1,Ultra Prime,UP,2024,Spring,oe:player:d937c56d0e6fc8da601cb7a51baa3ab,Yuekai,mid,,,,,,,,,,,,,,
+player,oe:team:8d09428f093dfbf3c488bce350af0b1,Ultra Prime,UP,2024,Spring,oe:player:95082306f78780da5686f118c993366,Doggo,bot,,,,,,,,,,,,,,
+player,oe:team:8d09428f093dfbf3c488bce350af0b1,Ultra Prime,UP,2024,Spring,oe:player:dfe5b204f04f40a84019af080662259,Jwei,sup,,,,,,,,,,,,,,
+lineup,oe:team:8d09428f093dfbf3c488bce350af0b1,Ultra Prime,UP,2024,Spring,,,,lineup-64d9b85ec3e28c4a,UP-01,1,2,oe:player:ad3bf81f37b9dddba943b53f7670c57,oe:player:5d11b64cb0cf93ea4a5e5c6977aff59,oe:player:d937c56d0e6fc8da601cb7a51baa3ab,oe:player:95082306f78780da5686f118c993366,oe:player:dfe5b204f04f40a84019af080662259,Decade,H4cker,Yuekai,Doggo,Jwei

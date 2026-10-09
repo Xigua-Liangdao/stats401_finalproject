@@ -11,7 +11,7 @@ import pandas as pd
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 from aggregate import aggregate
-from export_data import export_dataset, make_schema
+from export_data import SCHEMA_VERSION, export_dataset, make_schema
 from lineup_affinity import heatmap_payload
 from prepare import ROLES
 
@@ -139,8 +139,8 @@ class LineupAffinityTests(unittest.TestCase):
         schema = make_schema(self.tables)
         fields = schema["tables"]["lineups"]["fields"]
         self.assertEqual(list(fields)[-1], "affinity_score")
-        self.assertEqual(fields["affinity_score"], {"dtype": "object", "nullable": False})
-        self.assertEqual(schema["schema_version"], "2.0.0")
+        self.assertEqual(fields["affinity_score"], {"dtype": "string", "nullable": False})
+        self.assertEqual(schema["schema_version"], SCHEMA_VERSION)
         with TemporaryDirectory() as directory:
             path = Path(directory)
             export_dataset(path, self.tables, {})

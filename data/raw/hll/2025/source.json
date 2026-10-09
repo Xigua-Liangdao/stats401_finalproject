@@ -1,0 +1,32 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://raw.githubusercontent.com/cbplexiglass/LoL-Esports-Regional-Analyses/ff34a9f935070b7a9c9610cff423eac1fd6deddc/2025_LoL_esports_match_data_from_OraclesElixir.csv",
+  "source_kind": "pinned_github_mirror",
+  "source_revision": "ff34a9f935070b7a9c9610cff423eac1fd6deddc",
+  "annual_sources": [
+    {
+      "year": 2025,
+      "url": "https://raw.githubusercontent.com/cbplexiglass/LoL-Esports-Regional-Analyses/ff34a9f935070b7a9c9610cff423eac1fd6deddc/2025_LoL_esports_match_data_from_OraclesElixir.csv",
+      "sha256": "1adfa81d8ea54cd62b332d18f8a4089cb64331da448b11f0ff7084fac55ed406",
+      "revision": "ff34a9f935070b7a9c9610cff423eac1fd6deddc",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:29:11.483370+00:00",
+      "size_bytes": 79130187,
+      "listed_size_bytes": 79130187,
+      "rows": 120636,
+      "selected_rows": 2556
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:30:27.564487+00:00",
+  "annual_csv_sha256": "1adfa81d8ea54cd62b332d18f8a4089cb64331da448b11f0ff7084fac55ed406",
+  "annual_rows": 120636,
+  "league": "HLL",
+  "year": 2025,
+  "filter": "league == 'HLL' and year == '2025'; all positions and columns preserved",
+  "raw_rows": 2556,
+  "raw_columns": 165,
+  "raw_games": 213,
+  "raw_csv_gz_sha256": "4ae109489a16f3ffaecda6b0e5ef92b1153717eca8f1f2a6b969f0540b036470"
+}

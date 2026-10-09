@@ -1,0 +1,31 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Unknown,oe:player:fb66ef5885b4be9323905b821dc3a42,Bin,top,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Unknown,oe:player:fbdc4428b2d095c83aebeed5da4e4b2,Xun,jng,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Unknown,oe:player:ed29043422e3c515e1cb292464b990b,Knight,mid,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Unknown,oe:player:a58a0d41103cdc5b58cbb547eeaca2d,Elk,bot,,,,,,,,,,,,,,
+player,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Unknown,oe:player:90651ebea9a35ec4e018c8157492e17,ON,sup,,,,,,,,,,,,,,
+lineup,oe:team:d356a144644879dabb5f34cd99c886d,Bilibili Gaming,BLG,2024,Unknown,,,,lineup-0367033f55941805,BLG-01,1,18,oe:player:fb66ef5885b4be9323905b821dc3a42,oe:player:fbdc4428b2d095c83aebeed5da4e4b2,oe:player:ed29043422e3c515e1cb292464b990b,oe:player:a58a0d41103cdc5b58cbb547eeaca2d,oe:player:90651ebea9a35ec4e018c8157492e17,Bin,Xun,Knight,Elk,ON
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2024,Unknown,oe:player:7e2505960c12cc54c96a0a6efb2e055,Bwipo,top,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2024,Unknown,oe:player:a8307167f3a1c933295bb9e3d43700e,Inspired,jng,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2024,Unknown,oe:player:7e0e7ac2a199e8e2ecb30499a3b2153,Jensen,mid,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2024,Unknown,oe:player:c145139d26813639b8fe6f4d0b28228,Massu,bot,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2024,Unknown,oe:player:3e722c8ede909c83af9342c41805a16,Busio,sup,,,,,,,,,,,,,,
+lineup,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2024,Unknown,,,,lineup-1addbe1b92277c3c,FLY-01,1,2,oe:player:7e2505960c12cc54c96a0a6efb2e055,oe:player:a8307167f3a1c933295bb9e3d43700e,oe:player:7e0e7ac2a199e8e2ecb30499a3b2153,oe:player:c145139d26813639b8fe6f4d0b28228,oe:player:3e722c8ede909c83af9342c41805a16,Bwipo,Inspired,Jensen,Massu,Busio
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2024,Unknown,oe:player:03daae1844b9ad257324c3eedf41e28,Kiin,top,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2024,Unknown,oe:player:92544d7a994bd6841cccd9f6e42e3de,Canyon,jng,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2024,Unknown,oe:player:fb6e61b8acb05df17b7e5ad4ae7c800,Chovy,mid,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2024,Unknown,oe:player:5bbc2b92348d930ebd500cb9ce71bb7,Peyz,bot,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2024,Unknown,oe:player:e4e24b8656e4e6a74b939af730b0148,Lehends,sup,,,,,,,,,,,,,,
+lineup,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2024,Unknown,,,,lineup-b6168d385e479660,GEN-01,1,4,oe:player:03daae1844b9ad257324c3eedf41e28,oe:player:92544d7a994bd6841cccd9f6e42e3de,oe:player:fb6e61b8acb05df17b7e5ad4ae7c800,oe:player:5bbc2b92348d930ebd500cb9ce71bb7,oe:player:e4e24b8656e4e6a74b939af730b0148,Kiin,Canyon,Chovy,Peyz,Lehends
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2024,Unknown,oe:player:72bd7f020390328891f8595b5a2136f,Azhi,top,,,,,,,,,,,,,,
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2024,Unknown,oe:player:a22a6d1fe8786cf83675e2d932fbffe,JunJia,jng,,,,,,,,,,,,,,
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2024,Unknown,oe:player:e3aa452243a476669824e52c1b7fc6b,Maple,mid,,,,,,,,,,,,,,
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2024,Unknown,oe:player:7e754adda86a60e0a39d7204ba60424,Betty,bot,,,,,,,,,,,,,,
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2024,Unknown,oe:player:31b5f1d49f55acb4ee7624813bda6b2,Woody,sup,,,,,,,,,,,,,,
+lineup,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2024,Unknown,,,,lineup-20f9d4eea72d6c24,PT-01,1,7,oe:player:72bd7f020390328891f8595b5a2136f,oe:player:a22a6d1fe8786cf83675e2d932fbffe,oe:player:e3aa452243a476669824e52c1b7fc6b,oe:player:7e754adda86a60e0a39d7204ba60424,oe:player:31b5f1d49f55acb4ee7624813bda6b2,Azhi,JunJia,Maple,Betty,Woody
+player,oe:team:ce499dea30cfce118f4fe85da0227e8,T1,T1,2024,Unknown,oe:player:98dd15c330fb5abb4508347265a7f76,Zeus,top,,,,,,,,,,,,,,
+player,oe:team:ce499dea30cfce118f4fe85da0227e8,T1,T1,2024,Unknown,oe:player:f8b68f268106124fc4bc1c946adc9b0,Oner,jng,,,,,,,,,,,,,,
+player,oe:team:ce499dea30cfce118f4fe85da0227e8,T1,T1,2024,Unknown,oe:player:e1edfc5cea461399a63cb813cf795cc,Faker,mid,,,,,,,,,,,,,,
+player,oe:team:ce499dea30cfce118f4fe85da0227e8,T1,T1,2024,Unknown,oe:player:c7319736816efe935787b4381c6f321,Gumayusi,bot,,,,,,,,,,,,,,
+player,oe:team:ce499dea30cfce118f4fe85da0227e8,T1,T1,2024,Unknown,oe:player:db79ce6ad35451c938fbe2995dabd37,Keria,sup,,,,,,,,,,,,,,
+lineup,oe:team:ce499dea30cfce118f4fe85da0227e8,T1,T1,2024,Unknown,,,,lineup-b877c44ec2c6f3ca,T1-01,1,9,oe:player:98dd15c330fb5abb4508347265a7f76,oe:player:f8b68f268106124fc4bc1c946adc9b0,oe:player:e1edfc5cea461399a63cb813cf795cc,oe:player:c7319736816efe935787b4381c6f321,oe:player:db79ce6ad35451c938fbe2995dabd37,Zeus,Oner,Faker,Gumayusi,Keria

@@ -1,0 +1,37 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2021,Spring,oe:player:57ac9f77eae511aeee1e854434f73f2,HOYA,top,,,,,,,,,,,,,,
+player,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2021,Spring,oe:player:1970fcb701acce66e0771946bbb3105,UmTi,jng,,,,,,,,,,,,,,
+player,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2021,Spring,oe:player:1d18fe2cdd43a72d46421ecfe81b599,Lava,mid,,,,,,,,,,,,,,
+player,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2021,Spring,oe:player:9712524dc88851032bd53054f8b49b4,Hena,bot,,,,,,,,,,,,,,
+player,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2021,Spring,oe:player:051ca2e31ba25123961b3df95fdef4c,Delight,sup,,,,,,,,,,,,,,
+lineup,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2021,Spring,,,,lineup-eb366d2629fb7182,BRI-01,1,3,oe:player:57ac9f77eae511aeee1e854434f73f2,oe:player:1970fcb701acce66e0771946bbb3105,oe:player:1d18fe2cdd43a72d46421ecfe81b599,oe:player:9712524dc88851032bd53054f8b49b4,oe:player:051ca2e31ba25123961b3df95fdef4c,HOYA,UmTi,Lava,Hena,Delight
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2021,Spring,oe:player:9daf04bfd9c8815cc827414f59f45af,Rascal,top,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2021,Spring,oe:player:d3abb04a273ed8615be5f54a391818e,Clid,jng,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2021,Spring,oe:player:30361653a485a9609fb2d3aa073282c,Bdd,mid,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2021,Spring,oe:player:eada4723af6f51cf2391d85b5fde49b,Ruler,bot,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2021,Spring,oe:player:dea5251e486aed942e1bc06e1d5c116,Life,sup,,,,,,,,,,,,,,
+lineup,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2021,Spring,,,,lineup-5ec338a3ffe4ddde,GEN-01,1,14,oe:player:9daf04bfd9c8815cc827414f59f45af,oe:player:d3abb04a273ed8615be5f54a391818e,oe:player:30361653a485a9609fb2d3aa073282c,oe:player:eada4723af6f51cf2391d85b5fde49b,oe:player:dea5251e486aed942e1bc06e1d5c116,Rascal,Clid,Bdd,Ruler,Life
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2021,Spring,oe:player:a1f3b2bb3f36e5113237f92d76dc4c8,Doran,top,,,,,,,,,,,,,,
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2021,Spring,oe:player:8139e3b2070343b1729402f9bf20205,Bonnie,jng,,,,,,,,,,,,,,
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2021,Spring,oe:player:bd6a2e6aaeb993fd29f43790265297f,ucal,mid,,,,,,,,,,,,,,
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2021,Spring,oe:player:d4236a5c6d033d0388ab042acd884f1,HyBriD,bot,,,,,,,,,,,,,,
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2021,Spring,oe:player:2df72e2c6d92a7c074a408f7bda4a0b,Zzus,sup,,,,,,,,,,,,,,
+lineup,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2021,Spring,,,,lineup-fff586c52cb37fc1,KR-01,1,2,oe:player:a1f3b2bb3f36e5113237f92d76dc4c8,oe:player:8139e3b2070343b1729402f9bf20205,oe:player:bd6a2e6aaeb993fd29f43790265297f,oe:player:d4236a5c6d033d0388ab042acd884f1,oe:player:2df72e2c6d92a7c074a408f7bda4a0b,Doran,Bonnie,ucal,HyBriD,Zzus
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2021,Spring,oe:player:03daae1844b9ad257324c3eedf41e28,Kiin,top,,,,,,,,,,,,,,
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2021,Spring,oe:player:5fac949d3a1a7631ddaef68ea4cbe1e,Dread,jng,,,,,,,,,,,,,,
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2021,Spring,oe:player:6c1fa8d6ae91f559b9d317477dad3ea,Fly,mid,,,,,,,,,,,,,,
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2021,Spring,oe:player:526e67744f0b90739ec17c191c62d24,Bang,bot,,,,,,,,,,,,,,
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2021,Spring,oe:player:e4e24b8656e4e6a74b939af730b0148,Lehends,sup,,,,,,,,,,,,,,
+lineup,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2021,Spring,,,,lineup-1ed77a9f5f1d8c64,KF-01,1,5,oe:player:03daae1844b9ad257324c3eedf41e28,oe:player:5fac949d3a1a7631ddaef68ea4cbe1e,oe:player:6c1fa8d6ae91f559b9d317477dad3ea,oe:player:526e67744f0b90739ec17c191c62d24,oe:player:e4e24b8656e4e6a74b939af730b0148,Kiin,Dread,Fly,Bang,Lehends
+player,oe:team:c75f1f337fc5867914749d438a4871d,Liiv SANDBOX,LS,2021,Spring,oe:player:99ce2ea4de279c28bb0315848da8a48,Summit,top,,,,,,,,,,,,,,
+player,oe:team:c75f1f337fc5867914749d438a4871d,Liiv SANDBOX,LS,2021,Spring,oe:player:5c6f901a83ec448d51703aebba0ca64,Croco,jng,,,,,,,,,,,,,,
+player,oe:team:c75f1f337fc5867914749d438a4871d,Liiv SANDBOX,LS,2021,Spring,oe:player:24cd6812f523cf30c3502344539be6f,FATE,mid,,,,,,,,,,,,,,
+player,oe:team:c75f1f337fc5867914749d438a4871d,Liiv SANDBOX,LS,2021,Spring,oe:player:030a726de315d9ad86989bf360809e9,Prince,bot,,,,,,,,,,,,,,
+player,oe:team:c75f1f337fc5867914749d438a4871d,Liiv SANDBOX,LS,2021,Spring,oe:player:035b9ae578574cdf728d8760483d804,Effort,sup,,,,,,,,,,,,,,
+lineup,oe:team:c75f1f337fc5867914749d438a4871d,Liiv SANDBOX,LS,2021,Spring,,,,lineup-a2e10841265ae4c8,LS-01,1,2,oe:player:99ce2ea4de279c28bb0315848da8a48,oe:player:5c6f901a83ec448d51703aebba0ca64,oe:player:24cd6812f523cf30c3502344539be6f,oe:player:030a726de315d9ad86989bf360809e9,oe:player:035b9ae578574cdf728d8760483d804,Summit,Croco,FATE,Prince,Effort
+player,oe:team:5cd2cd09ec94296f605dd13a2924d6c,Nongshim RedForce,NR,2021,Spring,oe:player:6fbf57b984dbf130701e09ea4110bb8,Rich,top,,,,,,,,,,,,,,
+player,oe:team:5cd2cd09ec94296f605dd13a2924d6c,Nongshim RedForce,NR,2021,Spring,oe:player:dda4a873265dfd06df50a0d8a294908,Peanut,jng,,,,,,,,,,,,,,
+player,oe:team:5cd2cd09ec94296f605dd13a2924d6c,Nongshim RedForce,NR,2021,Spring,oe:player:0582fabc486c42d0db3bf52f56c6fc3,Bay,mid,,,,,,,,,,,,,,
+player,oe:team:5cd2cd09ec94296f605dd13a2924d6c,Nongshim RedForce,NR,2021,Spring,oe:player:18bdb3898e7fecb3bb0be7ff075d509,Deokdam,bot,,,,,,,,,,,,,,
+player,oe:team:5cd2cd09ec94296f605dd13a2924d6c,Nongshim RedForce,NR,2021,Spring,oe:player:b0ec3df39d61f953e7af0afd8eb8c4a,Kellin,sup,,,,,,,,,,,,,,
+lineup,oe:team:5cd2cd09ec94296f605dd13a2924d6c,Nongshim RedForce,NR,2021,Spring,,,,lineup-c0ba6b6a4e59d2bc,NR-01,1,2,oe:player:6fbf57b984dbf130701e09ea4110bb8,oe:player:dda4a873265dfd06df50a0d8a294908,oe:player:0582fabc486c42d0db3bf52f56c6fc3,oe:player:18bdb3898e7fecb3bb0be7ff075d509,oe:player:b0ec3df39d61f953e7af0afd8eb8c4a,Rich,Peanut,Bay,Deokdam,Kellin

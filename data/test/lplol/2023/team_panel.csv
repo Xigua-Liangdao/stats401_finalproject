@@ -1,0 +1,61 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:82e3504486eabe3575dc4b5ff507451,BWE Esports,BE,2023,Spring,oe:player:e908f4abece717b37eea4ace7cc5f92,Misaki,top,,,,,,,,,,,,,,
+player,oe:team:82e3504486eabe3575dc4b5ff507451,BWE Esports,BE,2023,Spring,oe:player:72cf194e05e421633bc0940e9983186,yanjee,jng,,,,,,,,,,,,,,
+player,oe:team:82e3504486eabe3575dc4b5ff507451,BWE Esports,BE,2023,Spring,oe:player:0bd219d702907f2d922e53668a14fc6,Henra,mid,,,,,,,,,,,,,,
+player,oe:team:82e3504486eabe3575dc4b5ff507451,BWE Esports,BE,2023,Spring,oe:player:bce8b899b5a93c48a047efc86cff825,MetroArcher,bot,,,,,,,,,,,,,,
+player,oe:team:82e3504486eabe3575dc4b5ff507451,BWE Esports,BE,2023,Spring,oe:player:3e506ceaced4619ee1fba72c57cac54,Kamyta,sup,,,,,,,,,,,,,,
+lineup,oe:team:82e3504486eabe3575dc4b5ff507451,BWE Esports,BE,2023,Spring,,,,lineup-cf20ef218cf58cb8,BE-01,1,1,oe:player:e908f4abece717b37eea4ace7cc5f92,oe:player:72cf194e05e421633bc0940e9983186,oe:player:0bd219d702907f2d922e53668a14fc6,oe:player:bce8b899b5a93c48a047efc86cff825,oe:player:3e506ceaced4619ee1fba72c57cac54,Misaki,yanjee,Henra,MetroArcher,Kamyta
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2023,Spring,oe:player:17fcda838e97e5be4458220c8bf3c92,Campello,top,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2023,Spring,oe:player:72109b143302c76a5c132e9b92ccac6,HUGOD,top,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2023,Spring,oe:player:5ad1a4f25deb2bb2e8a89dc1beb70ac,ReAt1vo,jng,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2023,Spring,oe:player:2ea9aa24dcd00069fe95014e72c9eb1,rnz,jng,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2023,Spring,oe:player:557b8fc6abd8c0a9a697986a2abcfc5,Phoxie,mid,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2023,Spring,oe:player:f0b6f18cb5222e618327f75f3c31ceb,RapMonsters,mid,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2023,Spring,oe:player:8aa7b18c0c169273ae32b9f1f888ed5,Feitann,bot,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2023,Spring,oe:player:0edda17722d0907aeeb64c60424f02a,Rezso,bot,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2023,Spring,oe:player:b90c2dd213c992095237a3ef79f1cfa,Beat,sup,,,,,,,,,,,,,,
+player,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2023,Spring,oe:player:50ff6b8f8aba1281b1fb7327b2b60fb,Gajo,sup,,,,,,,,,,,,,,
+lineup,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2023,Spring,,,,lineup-82dac7043bf138df,BF-01,1,2,oe:player:17fcda838e97e5be4458220c8bf3c92,oe:player:2ea9aa24dcd00069fe95014e72c9eb1,oe:player:f0b6f18cb5222e618327f75f3c31ceb,oe:player:0edda17722d0907aeeb64c60424f02a,oe:player:50ff6b8f8aba1281b1fb7327b2b60fb,Campello,rnz,RapMonsters,Rezso,Gajo
+lineup,oe:team:07837648624136cfa442f4d3bf29de0,Boavista FC,BF,2023,Spring,,,,lineup-d0b5c8d97edcb5fb,BF-02,2,2,oe:player:72109b143302c76a5c132e9b92ccac6,oe:player:5ad1a4f25deb2bb2e8a89dc1beb70ac,oe:player:557b8fc6abd8c0a9a697986a2abcfc5,oe:player:8aa7b18c0c169273ae32b9f1f888ed5,oe:player:b90c2dd213c992095237a3ef79f1cfa,HUGOD,ReAt1vo,Phoxie,Feitann,Beat
+player,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2023,Spring,oe:player:8ada0880863e88a50f39ab949c508ec,Vortum,top,,,,,,,,,,,,,,
+player,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2023,Spring,oe:player:205f456adac22b2b8cb732651167215,Lulas,jng,,,,,,,,,,,,,,
+player,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2023,Spring,oe:player:488c6226cadbbeab0eb61b007a0454f,Fred,mid,,,,,,,,,,,,,,
+player,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2023,Spring,oe:player:7436fcbebba393585b3d82723d6dd4e,Aeon,bot,,,,,,,,,,,,,,
+player,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2023,Spring,oe:player:28d24f9c86d24b84313485a5a07d238,Tochas,sup,,,,,,,,,,,,,,
+lineup,oe:team:8d48390319b4f7c25c13dd410b3a0bf,EGN Esports,EE,2023,Spring,,,,lineup-7e5a31ae1428d00c,EE-01,1,1,oe:player:8ada0880863e88a50f39ab949c508ec,oe:player:205f456adac22b2b8cb732651167215,oe:player:488c6226cadbbeab0eb61b007a0454f,oe:player:7436fcbebba393585b3d82723d6dd4e,oe:player:28d24f9c86d24b84313485a5a07d238,Vortum,Lulas,Fred,Aeon,Tochas
+player,oe:team:ecaf2adae2ff7f9511c9f662f18ffe7,For The Win Esports,FTWE,2023,Spring,oe:player:96364ac5ea373bf7cbdbd814cceea24,F4rg,top,,,,,,,,,,,,,,
+player,oe:team:ecaf2adae2ff7f9511c9f662f18ffe7,For The Win Esports,FTWE,2023,Spring,oe:player:c52d1f6b94c909ec3b822acff420409,Own3r,jng,,,,,,,,,,,,,,
+player,oe:team:ecaf2adae2ff7f9511c9f662f18ffe7,For The Win Esports,FTWE,2023,Spring,oe:player:0fd3953a7b66913cf3a505c20471563,Galaxy,mid,,,,,,,,,,,,,,
+player,oe:team:ecaf2adae2ff7f9511c9f662f18ffe7,For The Win Esports,FTWE,2023,Spring,oe:player:c85554f6483e4aab17cfad9b6f3229d,Afm,bot,,,,,,,,,,,,,,
+player,oe:team:ecaf2adae2ff7f9511c9f662f18ffe7,For The Win Esports,FTWE,2023,Spring,oe:player:ac9be3f72046aca1f6f14ffaeb4c8b8,Feedarias,sup,,,,,,,,,,,,,,
+lineup,oe:team:ecaf2adae2ff7f9511c9f662f18ffe7,For The Win Esports,FTWE,2023,Spring,,,,lineup-0724b9e9d4b64254,FTWE-01,1,1,oe:player:96364ac5ea373bf7cbdbd814cceea24,oe:player:c52d1f6b94c909ec3b822acff420409,oe:player:0fd3953a7b66913cf3a505c20471563,oe:player:c85554f6483e4aab17cfad9b6f3229d,oe:player:ac9be3f72046aca1f6f14ffaeb4c8b8,F4rg,Own3r,Galaxy,Afm,Feedarias
+player,oe:team:3659b5cb3434354530c31ce71461fc1,GTZ Esports,GE,2023,Spring,oe:player:61eec59806c0beb33d2ffa40fcda3f5,Sl4shD,top,,,,,,,,,,,,,,
+player,oe:team:3659b5cb3434354530c31ce71461fc1,GTZ Esports,GE,2023,Spring,oe:player:550fa477eff3885416f22c0b3f2fc88,Time,jng,,,,,,,,,,,,,,
+player,oe:team:3659b5cb3434354530c31ce71461fc1,GTZ Esports,GE,2023,Spring,oe:player:c71b4244f70372f8be07a3e83c58490,Heroic,mid,,,,,,,,,,,,,,
+player,oe:team:3659b5cb3434354530c31ce71461fc1,GTZ Esports,GE,2023,Spring,oe:player:e134b2791879ae44a24cf5fc966a4b7,Notiko,bot,,,,,,,,,,,,,,
+player,oe:team:3659b5cb3434354530c31ce71461fc1,GTZ Esports,GE,2023,Spring,oe:player:6b35468bd45059f6a8450083fc379a9,Nsurr,sup,,,,,,,,,,,,,,
+lineup,oe:team:3659b5cb3434354530c31ce71461fc1,GTZ Esports,GE,2023,Spring,,,,lineup-727a6f260b1c0566,GE-01,1,4,oe:player:61eec59806c0beb33d2ffa40fcda3f5,oe:player:550fa477eff3885416f22c0b3f2fc88,oe:player:c71b4244f70372f8be07a3e83c58490,oe:player:e134b2791879ae44a24cf5fc966a4b7,oe:player:6b35468bd45059f6a8450083fc379a9,Sl4shD,Time,Heroic,Notiko,Nsurr
+player,oe:team:fca935f82fd01de843aa2799eb575ea,Odivelas Sports Club,OSC,2023,Spring,oe:player:2eee04126191d031776009f73ba1eca,Dumbao,top,,,,,,,,,,,,,,
+player,oe:team:fca935f82fd01de843aa2799eb575ea,Odivelas Sports Club,OSC,2023,Spring,oe:player:3b8914e862fc0b2502e33b15b21b36c,bicas,jng,,,,,,,,,,,,,,
+player,oe:team:fca935f82fd01de843aa2799eb575ea,Odivelas Sports Club,OSC,2023,Spring,oe:player:5f1fa8a478e38410780e672d5c85da6,Lagolinas,mid,,,,,,,,,,,,,,
+player,oe:team:fca935f82fd01de843aa2799eb575ea,Odivelas Sports Club,OSC,2023,Spring,oe:player:b642776de2d1a12ea284de857564e63,Buzgej,bot,,,,,,,,,,,,,,
+player,oe:team:fca935f82fd01de843aa2799eb575ea,Odivelas Sports Club,OSC,2023,Spring,oe:player:0d3429db74bda2740a0c85c8861713d,HondaTolec,sup,,,,,,,,,,,,,,
+lineup,oe:team:fca935f82fd01de843aa2799eb575ea,Odivelas Sports Club,OSC,2023,Spring,,,,lineup-062eceb947e83baa,OSC-01,1,1,oe:player:2eee04126191d031776009f73ba1eca,oe:player:3b8914e862fc0b2502e33b15b21b36c,oe:player:5f1fa8a478e38410780e672d5c85da6,oe:player:b642776de2d1a12ea284de857564e63,oe:player:0d3429db74bda2740a0c85c8861713d,Dumbao,bicas,Lagolinas,Buzgej,HondaTolec
+player,oe:team:108d8dd5293715c077fd7e33643028c,Varona Esports,VE,2023,Spring,oe:player:e908f4abece717b37eea4ace7cc5f92,Misaki,top,,,,,,,,,,,,,,
+player,oe:team:108d8dd5293715c077fd7e33643028c,Varona Esports,VE,2023,Spring,oe:player:89d753dfec46b8fc94b471485b0b0d2,Synapse,top,,,,,,,,,,,,,,
+player,oe:team:108d8dd5293715c077fd7e33643028c,Varona Esports,VE,2023,Spring,oe:player:f832b456e684c50ffd92268cc1d0c55,BAKAKO,jng,,,,,,,,,,,,,,
+player,oe:team:108d8dd5293715c077fd7e33643028c,Varona Esports,VE,2023,Spring,oe:player:cce27db25adc3f2de97fcc710957b7b,Raffi,jng,,,,,,,,,,,,,,
+player,oe:team:108d8dd5293715c077fd7e33643028c,Varona Esports,VE,2023,Spring,oe:player:02fc88b226fc050a37514183118345c,Reiska,mid,,,,,,,,,,,,,,
+player,oe:team:108d8dd5293715c077fd7e33643028c,Varona Esports,VE,2023,Spring,oe:player:2801ee44bcfd4db8df5f295a335f297,Sekkonds,mid,,,,,,,,,,,,,,
+player,oe:team:108d8dd5293715c077fd7e33643028c,Varona Esports,VE,2023,Spring,oe:player:74cac558072300385f7ab4dff7465e3,Did,bot,,,,,,,,,,,,,,
+player,oe:team:108d8dd5293715c077fd7e33643028c,Varona Esports,VE,2023,Spring,oe:player:cc63ab93da81fd89a4d5bb1f9b32d2f,SickN1ck,bot,,,,,,,,,,,,,,
+player,oe:team:108d8dd5293715c077fd7e33643028c,Varona Esports,VE,2023,Spring,oe:player:50ff6b8f8aba1281b1fb7327b2b60fb,Gajo,sup,,,,,,,,,,,,,,
+player,oe:team:108d8dd5293715c077fd7e33643028c,Varona Esports,VE,2023,Spring,oe:player:c6574edb0e33fabe2391a266d6f7a94,Shoyo,sup,,,,,,,,,,,,,,
+lineup,oe:team:108d8dd5293715c077fd7e33643028c,Varona Esports,VE,2023,Spring,,,,lineup-61ebe7e7c60336f1,VE-01,1,2,oe:player:e908f4abece717b37eea4ace7cc5f92,oe:player:cce27db25adc3f2de97fcc710957b7b,oe:player:2801ee44bcfd4db8df5f295a335f297,oe:player:cc63ab93da81fd89a4d5bb1f9b32d2f,oe:player:50ff6b8f8aba1281b1fb7327b2b60fb,Misaki,Raffi,Sekkonds,SickN1ck,Gajo
+lineup,oe:team:108d8dd5293715c077fd7e33643028c,Varona Esports,VE,2023,Spring,,,,lineup-dc32c7940de1d922,VE-02,2,2,oe:player:89d753dfec46b8fc94b471485b0b0d2,oe:player:f832b456e684c50ffd92268cc1d0c55,oe:player:02fc88b226fc050a37514183118345c,oe:player:74cac558072300385f7ab4dff7465e3,oe:player:c6574edb0e33fabe2391a266d6f7a94,Synapse,BAKAKO,Reiska,Did,Shoyo
+player,oe:team:6468029fb605bd6fdf1cf866e890739,White Dragons,WD,2023,Spring,oe:player:190d3ffa9c4734a633e2103dbbdb815,Caucha,top,,,,,,,,,,,,,,
+player,oe:team:6468029fb605bd6fdf1cf866e890739,White Dragons,WD,2023,Spring,oe:player:b665b9fa5f821ff73a873d0cecb0682,D4SH,jng,,,,,,,,,,,,,,
+player,oe:team:6468029fb605bd6fdf1cf866e890739,White Dragons,WD,2023,Spring,oe:player:a0768d89dec26206b95179ad9a1c08d,NOMA,mid,,,,,,,,,,,,,,
+player,oe:team:6468029fb605bd6fdf1cf866e890739,White Dragons,WD,2023,Spring,oe:player:4f4e71938a105fe72bd18788fe53d40,Worst,bot,,,,,,,,,,,,,,
+player,oe:team:6468029fb605bd6fdf1cf866e890739,White Dragons,WD,2023,Spring,oe:player:f32776bb3b0bfb1cd3261868df4dfce,Calmsky,sup,,,,,,,,,,,,,,
+lineup,oe:team:6468029fb605bd6fdf1cf866e890739,White Dragons,WD,2023,Spring,,,,lineup-2cf2702d16076973,WD-01,1,12,oe:player:190d3ffa9c4734a633e2103dbbdb815,oe:player:b665b9fa5f821ff73a873d0cecb0682,oe:player:a0768d89dec26206b95179ad9a1c08d,oe:player:4f4e71938a105fe72bd18788fe53d40,oe:player:f32776bb3b0bfb1cd3261868df4dfce,Caucha,D4SH,NOMA,Worst,Calmsky

@@ -1,0 +1,57 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:01c9a45038d103935dc69490914f530,Invictus Gaming Young,IGY,2021,Spring,oe:player:7a8be380f1f059a62c13e9969628588,neny,top,,,,,,,,,,,,,,
+player,oe:team:01c9a45038d103935dc69490914f530,Invictus Gaming Young,IGY,2021,Spring,oe:player:d31ef811301c6b4111380dda959d612,Echo,jng,,,,,,,,,,,,,,
+player,oe:team:01c9a45038d103935dc69490914f530,Invictus Gaming Young,IGY,2021,Spring,oe:player:b3323183eb51a00e2777d997b6f72bb,Xzz,mid,,,,,,,,,,,,,,
+player,oe:team:01c9a45038d103935dc69490914f530,Invictus Gaming Young,IGY,2021,Spring,oe:player:01e34275fcdf9ccb290e4ede897697a,xiaoyueji,bot,,,,,,,,,,,,,,
+player,oe:team:01c9a45038d103935dc69490914f530,Invictus Gaming Young,IGY,2021,Spring,oe:player:5345fffed75e27e229cb09782502834,Tangwa,sup,,,,,,,,,,,,,,
+lineup,oe:team:01c9a45038d103935dc69490914f530,Invictus Gaming Young,IGY,2021,Spring,,,,lineup-a86a77662d0bec9c,IGY-01,1,2,oe:player:7a8be380f1f059a62c13e9969628588,oe:player:d31ef811301c6b4111380dda959d612,oe:player:b3323183eb51a00e2777d997b6f72bb,oe:player:01e34275fcdf9ccb290e4ede897697a,oe:player:5345fffed75e27e229cb09782502834,neny,Echo,Xzz,xiaoyueji,Tangwa
+player,oe:team:6100f2588a65a71921d4f8ee206d94e,LGD Gaming Young Team,LGYT,2021,Spring,oe:player:993261ea242a10a672e0e0ebe22a118,QingZhi,top,,,,,,,,,,,,,,
+player,oe:team:6100f2588a65a71921d4f8ee206d94e,LGD Gaming Young Team,LGYT,2021,Spring,oe:player:326153903eaf78fc45479934c952d7c,xiaoty,jng,,,,,,,,,,,,,,
+player,oe:team:6100f2588a65a71921d4f8ee206d94e,LGD Gaming Young Team,LGYT,2021,Spring,oe:player:f886838ee1808c2f217208267a829ce,haichao,mid,,,,,,,,,,,,,,
+player,oe:team:6100f2588a65a71921d4f8ee206d94e,LGD Gaming Young Team,LGYT,2021,Spring,oe:player:f9806c97646d43e2e8eb6f09d9e01f6,TTH,bot,,,,,,,,,,,,,,
+player,oe:team:6100f2588a65a71921d4f8ee206d94e,LGD Gaming Young Team,LGYT,2021,Spring,oe:player:60bcb8bf9545cff6ef45614c135ab00,wind,sup,,,,,,,,,,,,,,
+lineup,oe:team:6100f2588a65a71921d4f8ee206d94e,LGD Gaming Young Team,LGYT,2021,Spring,,,,lineup-1c2b6b26a0d22803,LGYT-01,1,2,oe:player:993261ea242a10a672e0e0ebe22a118,oe:player:326153903eaf78fc45479934c952d7c,oe:player:f886838ee1808c2f217208267a829ce,oe:player:f9806c97646d43e2e8eb6f09d9e01f6,oe:player:60bcb8bf9545cff6ef45614c135ab00,QingZhi,xiaoty,haichao,TTH,wind
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2021,Spring,oe:player:bb7e6166b6f9f16e4bedfb33e3ed534,Munian,top,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2021,Spring,oe:player:d677b410373bc790d9a8ec2e6809083,can,jng,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2021,Spring,oe:player:6e7908512cb309a43388bb464a312a2,Creme,mid,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2021,Spring,oe:player:c72f286657bfa883bd6f0b87b5915a9,2y1,bot,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2021,Spring,oe:player:c2aa432f19484c246c25c5eb1d8653c,Sora,sup,,,,,,,,,,,,,,
+lineup,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2021,Spring,,,,lineup-87b3c8381f4a8ee4,OMGA-01,1,2,oe:player:bb7e6166b6f9f16e4bedfb33e3ed534,oe:player:d677b410373bc790d9a8ec2e6809083,oe:player:6e7908512cb309a43388bb464a312a2,oe:player:c72f286657bfa883bd6f0b87b5915a9,oe:player:c2aa432f19484c246c25c5eb1d8653c,Munian,can,Creme,2y1,Sora
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2021,Spring,oe:player:8007ba25dee37ac1e4445a6e9f8d252,Xiaoxu,top,,,,,,,,,,,,,,
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2021,Spring,oe:player:31da6b857714e71bdbdcc40bbc220bf,lovely,jng,,,,,,,,,,,,,,
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2021,Spring,oe:player:fde9aafe055c7a65cb1073b0602d0f7,Lover11,mid,,,,,,,,,,,,,,
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2021,Spring,oe:player:53f1445a9f28799a32ea55f046319fc,Asura,bot,,,,,,,,,,,,,,
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2021,Spring,oe:player:39c5e84d7380e098bdce5e08cd28b7d,Bunny,sup,,,,,,,,,,,,,,
+lineup,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2021,Spring,,,,lineup-c2fa405675088fe1,RC-01,1,2,oe:player:8007ba25dee37ac1e4445a6e9f8d252,oe:player:31da6b857714e71bdbdcc40bbc220bf,oe:player:fde9aafe055c7a65cb1073b0602d0f7,oe:player:53f1445a9f28799a32ea55f046319fc,oe:player:39c5e84d7380e098bdce5e08cd28b7d,Xiaoxu,lovely,Lover11,Asura,Bunny
+player,oe:team:7f60009d2aa9ce24f05deec2010a33f,Shu Dai Xiong Gaming,SDXG,2021,Spring,oe:player:65ed20b21e2993fb00dbd21a2fd991b,Zika,top,,,,,,,,,,,,,,
+player,oe:team:7f60009d2aa9ce24f05deec2010a33f,Shu Dai Xiong Gaming,SDXG,2021,Spring,oe:player:32cab682c95fbe9ec1b4b6be61f235e,Yanxiang,jng,,,,,,,,,,,,,,
+player,oe:team:7f60009d2aa9ce24f05deec2010a33f,Shu Dai Xiong Gaming,SDXG,2021,Spring,oe:player:c6ad8b5c4df40d2f69ee833a8a56681,Harder,mid,,,,,,,,,,,,,,
+player,oe:team:7f60009d2aa9ce24f05deec2010a33f,Shu Dai Xiong Gaming,SDXG,2021,Spring,oe:player:690b0e230ff417c12603841195f6d42,Kepler,bot,,,,,,,,,,,,,,
+player,oe:team:7f60009d2aa9ce24f05deec2010a33f,Shu Dai Xiong Gaming,SDXG,2021,Spring,oe:player:e010e064126e4cbe417f1ac433b3495,Konodio,sup,,,,,,,,,,,,,,
+lineup,oe:team:7f60009d2aa9ce24f05deec2010a33f,Shu Dai Xiong Gaming,SDXG,2021,Spring,,,,lineup-ff80ca4e8c22897b,SDXG-01,1,2,oe:player:65ed20b21e2993fb00dbd21a2fd991b,oe:player:32cab682c95fbe9ec1b4b6be61f235e,oe:player:c6ad8b5c4df40d2f69ee833a8a56681,oe:player:690b0e230ff417c12603841195f6d42,oe:player:e010e064126e4cbe417f1ac433b3495,Zika,Yanxiang,Harder,Kepler,Konodio
+player,oe:team:31b35dcae7e5d01be2e407b0abe6a23,Suning-S,SUN,2021,Spring,oe:player:5a2ee980df4f7335900f1eb613b3cf3,Luuuck,top,,,,,,,,,,,,,,
+player,oe:team:31b35dcae7e5d01be2e407b0abe6a23,Suning-S,SUN,2021,Spring,oe:player:eb76fd566cce52ed0afc58856186491,Maggie,jng,,,,,,,,,,,,,,
+player,oe:team:31b35dcae7e5d01be2e407b0abe6a23,Suning-S,SUN,2021,Spring,oe:player:b9809cf5afe1af211033b450ee20ae0,forse,mid,,,,,,,,,,,,,,
+player,oe:team:31b35dcae7e5d01be2e407b0abe6a23,Suning-S,SUN,2021,Spring,oe:player:9085f886f20abbf9e30b4ddcdb7de2a,Shark,bot,,,,,,,,,,,,,,
+player,oe:team:31b35dcae7e5d01be2e407b0abe6a23,Suning-S,SUN,2021,Spring,oe:player:4fe4116d4fb3277a95ba0fc4152dcf9,Wuy,sup,,,,,,,,,,,,,,
+lineup,oe:team:31b35dcae7e5d01be2e407b0abe6a23,Suning-S,SUN,2021,Spring,,,,lineup-f05209930ea03fde,SUN-01,1,2,oe:player:5a2ee980df4f7335900f1eb613b3cf3,oe:player:eb76fd566cce52ed0afc58856186491,oe:player:b9809cf5afe1af211033b450ee20ae0,oe:player:9085f886f20abbf9e30b4ddcdb7de2a,oe:player:4fe4116d4fb3277a95ba0fc4152dcf9,Luuuck,Maggie,forse,Shark,Wuy
+player,oe:team:518298125ac66f7525bb09ec1b5eb9a,V5 87,V8,2021,Spring,oe:player:c85294fb986e64b273ff9314949bee2,Aliez,top,,,,,,,,,,,,,,
+player,oe:team:518298125ac66f7525bb09ec1b5eb9a,V5 87,V8,2021,Spring,oe:player:9a9c6ac7ee763d233cc2f7f34460083,Joy1,jng,,,,,,,,,,,,,,
+player,oe:team:518298125ac66f7525bb09ec1b5eb9a,V5 87,V8,2021,Spring,oe:player:f19c6710765da99fcc0d9ee3175d5ef,Dream,mid,,,,,,,,,,,,,,
+player,oe:team:518298125ac66f7525bb09ec1b5eb9a,V5 87,V8,2021,Spring,oe:player:1dd1c5fb7f25cd41b291d43a89e3aef,Today,bot,,,,,,,,,,,,,,
+player,oe:team:518298125ac66f7525bb09ec1b5eb9a,V5 87,V8,2021,Spring,oe:player:8d4d616f59ec7a9c4c5e6b023e776af,ZJJ,bot,,,,,,,,,,,,,,
+player,oe:team:518298125ac66f7525bb09ec1b5eb9a,V5 87,V8,2021,Spring,oe:player:ca8339af379497a71355ba65d65b786,Jerry,sup,,,,,,,,,,,,,,
+lineup,oe:team:518298125ac66f7525bb09ec1b5eb9a,V5 87,V8,2021,Spring,,,,lineup-6adee118f0985c57,V8-01,1,1,oe:player:c85294fb986e64b273ff9314949bee2,oe:player:9a9c6ac7ee763d233cc2f7f34460083,oe:player:f19c6710765da99fcc0d9ee3175d5ef,oe:player:8d4d616f59ec7a9c4c5e6b023e776af,oe:player:ca8339af379497a71355ba65d65b786,Aliez,Joy1,Dream,ZJJ,Jerry
+lineup,oe:team:518298125ac66f7525bb09ec1b5eb9a,V5 87,V8,2021,Spring,,,,lineup-6b53689ea1f70308,V8-02,2,1,oe:player:c85294fb986e64b273ff9314949bee2,oe:player:9a9c6ac7ee763d233cc2f7f34460083,oe:player:f19c6710765da99fcc0d9ee3175d5ef,oe:player:1dd1c5fb7f25cd41b291d43a89e3aef,oe:player:ca8339af379497a71355ba65d65b786,Aliez,Joy1,Dream,Today,Jerry
+player,oe:team:f11c9eace9c9f61931b6e0269d80102,WanZhen Esports Club,WEC,2021,Spring,oe:player:b42e757e6ed7f3eb263f69eb034f092,Solokill,top,,,,,,,,,,,,,,
+player,oe:team:f11c9eace9c9f61931b6e0269d80102,WanZhen Esports Club,WEC,2021,Spring,oe:player:b35d704ececabd77cd31410907f64f5,yyy,jng,,,,,,,,,,,,,,
+player,oe:team:f11c9eace9c9f61931b6e0269d80102,WanZhen Esports Club,WEC,2021,Spring,oe:player:bc9189406be84ec297464a514221406,XXX,mid,,,,,,,,,,,,,,
+player,oe:team:f11c9eace9c9f61931b6e0269d80102,WanZhen Esports Club,WEC,2021,Spring,oe:player:06949098a2429144926399c68837b22,Thesnake,bot,,,,,,,,,,,,,,
+player,oe:team:f11c9eace9c9f61931b6e0269d80102,WanZhen Esports Club,WEC,2021,Spring,oe:player:0472286ef07e643b0a368a8ff351f8b,JKJK,sup,,,,,,,,,,,,,,
+lineup,oe:team:f11c9eace9c9f61931b6e0269d80102,WanZhen Esports Club,WEC,2021,Spring,,,,lineup-ca681808f1b62726,WEC-01,1,13,oe:player:b42e757e6ed7f3eb263f69eb034f092,oe:player:b35d704ececabd77cd31410907f64f5,oe:player:bc9189406be84ec297464a514221406,oe:player:06949098a2429144926399c68837b22,oe:player:0472286ef07e643b0a368a8ff351f8b,Solokill,yyy,XXX,Thesnake,JKJK
+player,oe:team:014165c3a9a1dc9e63e248ce83ca576,eStar Young,EY,2021,Spring,oe:player:73b52fb4de3bf291788e00a0d742dc5,Jotaro,top,,,,,,,,,,,,,,
+player,oe:team:014165c3a9a1dc9e63e248ce83ca576,eStar Young,EY,2021,Spring,oe:player:3d088ce78abd195ba1e43aa4d95bb1f,Yuan,jng,,,,,,,,,,,,,,
+player,oe:team:014165c3a9a1dc9e63e248ce83ca576,eStar Young,EY,2021,Spring,oe:player:42dfec2dd289efa7e86d9373f323834,GYX,mid,,,,,,,,,,,,,,
+player,oe:team:014165c3a9a1dc9e63e248ce83ca576,eStar Young,EY,2021,Spring,oe:player:88e54d0bb4a68cf7210c3ecb523c8d1,ratel,bot,,,,,,,,,,,,,,
+player,oe:team:014165c3a9a1dc9e63e248ce83ca576,eStar Young,EY,2021,Spring,oe:player:9687d75a39d7ab745c9903bc8513167,iiann,sup,,,,,,,,,,,,,,
+lineup,oe:team:014165c3a9a1dc9e63e248ce83ca576,eStar Young,EY,2021,Spring,,,,lineup-7c7f9e419cbb391b,EY-01,1,3,oe:player:73b52fb4de3bf291788e00a0d742dc5,oe:player:3d088ce78abd195ba1e43aa4d95bb1f,oe:player:42dfec2dd289efa7e86d9373f323834,oe:player:88e54d0bb4a68cf7210c3ecb523c8d1,oe:player:9687d75a39d7ab745c9903bc8513167,Jotaro,Yuan,GYX,ratel,iiann

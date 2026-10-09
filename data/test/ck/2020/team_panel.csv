@@ -1,0 +1,47 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:fcfdb4e291df2ed5206d241f59fd902,Awesome Spear,AS,2020,Summer,oe:player:ba2664f94e92e7e9e06fe8582b1f4ec,Chasy,top,,,,,,,,,,,,,,
+player,oe:team:fcfdb4e291df2ed5206d241f59fd902,Awesome Spear,AS,2020,Summer,oe:player:acc9e045e4b8f5172d0ac72a8ef4947,Crush,jng,,,,,,,,,,,,,,
+player,oe:team:fcfdb4e291df2ed5206d241f59fd902,Awesome Spear,AS,2020,Summer,oe:player:6ab544dc2ce7184b3e07597f78cda21,Crow,mid,,,,,,,,,,,,,,
+player,oe:team:fcfdb4e291df2ed5206d241f59fd902,Awesome Spear,AS,2020,Summer,oe:player:030a726de315d9ad86989bf360809e9,Prince,bot,,,,,,,,,,,,,,
+player,oe:team:fcfdb4e291df2ed5206d241f59fd902,Awesome Spear,AS,2020,Summer,oe:player:2df72e2c6d92a7c074a408f7bda4a0b,Zzus,sup,,,,,,,,,,,,,,
+lineup,oe:team:fcfdb4e291df2ed5206d241f59fd902,Awesome Spear,AS,2020,Summer,,,,lineup-4b7db03afc929909,AS-01,1,2,oe:player:ba2664f94e92e7e9e06fe8582b1f4ec,oe:player:acc9e045e4b8f5172d0ac72a8ef4947,oe:player:6ab544dc2ce7184b3e07597f78cda21,oe:player:030a726de315d9ad86989bf360809e9,oe:player:2df72e2c6d92a7c074a408f7bda4a0b,Chasy,Crush,Crow,Prince,Zzus
+player,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2020,Spring,oe:player:840d0b77e71408d3da84e4f0cae4b73,Wizer,top,,,,,,,,,,,,,,
+player,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2020,Spring,oe:player:5c6f901a83ec448d51703aebba0ca64,Croco,jng,,,,,,,,,,,,,,
+player,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2020,Spring,oe:player:a7106e2dbec7483fb265d4b72abb291,Doil,jng,,,,,,,,,,,,,,
+player,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2020,Spring,oe:player:ee8d313390db21907037cef1c8d6f81,FireRain,mid,,,,,,,,,,,,,,
+player,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2020,Spring,oe:player:8ec77bab39c59d63aa771bd8b8033d0,Jiin,mid,,,,,,,,,,,,,,
+player,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2020,Spring,oe:player:9712524dc88851032bd53054f8b49b4,Hena,bot,,,,,,,,,,,,,,
+player,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2020,Spring,oe:player:450cbae633304212e5e2cdf32ac1711,Hollow,bot,,,,,,,,,,,,,,
+player,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2020,Spring,oe:player:cf1fc00c5f362d9b4988cbb260cbc95,Minit,sup,,,,,,,,,,,,,,
+lineup,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2020,Spring,,,,lineup-c2c14a68207a1e26,BRI-01,1,2,oe:player:840d0b77e71408d3da84e4f0cae4b73,oe:player:a7106e2dbec7483fb265d4b72abb291,oe:player:8ec77bab39c59d63aa771bd8b8033d0,oe:player:9712524dc88851032bd53054f8b49b4,oe:player:cf1fc00c5f362d9b4988cbb260cbc95,Wizer,Doil,Jiin,Hena,Minit
+lineup,oe:team:f73cbd69433514d61cf7c9cd0f5123a,BRION,BRI,2020,Spring,,,,lineup-ecd0fcdcbf6052cd,BRI-02,2,2,oe:player:840d0b77e71408d3da84e4f0cae4b73,oe:player:5c6f901a83ec448d51703aebba0ca64,oe:player:ee8d313390db21907037cef1c8d6f81,oe:player:450cbae633304212e5e2cdf32ac1711,oe:player:cf1fc00c5f362d9b4988cbb260cbc95,Wizer,Croco,FireRain,Hollow,Minit
+player,oe:team:85f9c508d56b7ed3db09d9c7a933513,ELaB x EXP,EXE,2020,Summer,oe:player:d55b30607c2a9a2616347d6edb789f6,Last,top,,,,,,,,,,,,,,
+player,oe:team:85f9c508d56b7ed3db09d9c7a933513,ELaB x EXP,EXE,2020,Summer,oe:player:965def9468a8afb7d92de182e22189d,PREP,jng,,,,,,,,,,,,,,
+player,oe:team:85f9c508d56b7ed3db09d9c7a933513,ELaB x EXP,EXE,2020,Summer,oe:player:ddd21101f9006425f2e42037b76fedf,Shine,mid,,,,,,,,,,,,,,
+player,oe:team:85f9c508d56b7ed3db09d9c7a933513,ELaB x EXP,EXE,2020,Summer,oe:player:cc63ec4c2bb54c343f226bbc1430b65,Bulago,bot,,,,,,,,,,,,,,
+player,oe:team:85f9c508d56b7ed3db09d9c7a933513,ELaB x EXP,EXE,2020,Summer,oe:player:4cfd6bb3697bd9fe1b01cfea9b3d95e,Conus,sup,,,,,,,,,,,,,,
+lineup,oe:team:85f9c508d56b7ed3db09d9c7a933513,ELaB x EXP,EXE,2020,Summer,,,,lineup-d210767e194d8c1e,EXE-01,1,3,oe:player:d55b30607c2a9a2616347d6edb789f6,oe:player:965def9468a8afb7d92de182e22189d,oe:player:ddd21101f9006425f2e42037b76fedf,oe:player:cc63ec4c2bb54c343f226bbc1430b65,oe:player:4cfd6bb3697bd9fe1b01cfea9b3d95e,Last,PREP,Shine,Bulago,Conus
+player,oe:team:76f7672e031bd51b67dcacb01731e10,Element Mystic,EM,2020,Summer,oe:player:a6f06ee4a5c237b417374dc038f2be2,Slugger,top,,,,,,,,,,,,,,
+player,oe:team:76f7672e031bd51b67dcacb01731e10,Element Mystic,EM,2020,Summer,oe:player:b0a8e9b139a0e467fdc91acced3c24d,Flare,jng,,,,,,,,,,,,,,
+player,oe:team:76f7672e031bd51b67dcacb01731e10,Element Mystic,EM,2020,Summer,oe:player:ef19fe6f71c35fce19fb88a0e732e9b,Yuri,mid,,,,,,,,,,,,,,
+player,oe:team:76f7672e031bd51b67dcacb01731e10,Element Mystic,EM,2020,Summer,oe:player:b0e54ad49a5ce7a200bcb877eee7ed9,Envyy,bot,,,,,,,,,,,,,,
+player,oe:team:76f7672e031bd51b67dcacb01731e10,Element Mystic,EM,2020,Summer,oe:player:40cd014b7b6251e3a22e6a45a73a64e,Execute,sup,,,,,,,,,,,,,,
+lineup,oe:team:76f7672e031bd51b67dcacb01731e10,Element Mystic,EM,2020,Summer,,,,lineup-22bf370a9c83d200,EM-01,1,3,oe:player:a6f06ee4a5c237b417374dc038f2be2,oe:player:b0a8e9b139a0e467fdc91acced3c24d,oe:player:ef19fe6f71c35fce19fb88a0e732e9b,oe:player:b0e54ad49a5ce7a200bcb877eee7ed9,oe:player:40cd014b7b6251e3a22e6a45a73a64e,Slugger,Flare,Yuri,Envyy,Execute
+player,oe:team:76b516358ee227ba806ba5d955b6314,Griffin,GRI,2020,Summer,oe:player:57ac9f77eae511aeee1e854434f73f2,HOYA,top,,,,,,,,,,,,,,
+player,oe:team:76b516358ee227ba806ba5d955b6314,Griffin,GRI,2020,Summer,oe:player:ad173d59265cf2cbe796b2af2554da3,Citrus,jng,,,,,,,,,,,,,,
+player,oe:team:76b516358ee227ba806ba5d955b6314,Griffin,GRI,2020,Summer,oe:player:a2a0d7ab33e23da9a23c463f697f82c,Naehyun,mid,,,,,,,,,,,,,,
+player,oe:team:76b516358ee227ba806ba5d955b6314,Griffin,GRI,2020,Summer,oe:player:bbd0c34fcf8166e45f1161815fefccf,Wayne,bot,,,,,,,,,,,,,,
+player,oe:team:76b516358ee227ba806ba5d955b6314,Griffin,GRI,2020,Summer,oe:player:5c6aca6247f4e280ca8624b22e3620b,Yusin,sup,,,,,,,,,,,,,,
+lineup,oe:team:76b516358ee227ba806ba5d955b6314,Griffin,GRI,2020,Summer,,,,lineup-5a6395dfca31e24f,GRI-01,1,3,oe:player:57ac9f77eae511aeee1e854434f73f2,oe:player:ad173d59265cf2cbe796b2af2554da3,oe:player:a2a0d7ab33e23da9a23c463f697f82c,oe:player:bbd0c34fcf8166e45f1161815fefccf,oe:player:5c6aca6247f4e280ca8624b22e3620b,HOYA,Citrus,Naehyun,Wayne,Yusin
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2020,Summer,oe:player:4d79b9a430199b71e47a4a9e908fe76,TaNa,top,,,,,,,,,,,,,,
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2020,Summer,oe:player:1970fcb701acce66e0771946bbb3105,UmTi,jng,,,,,,,,,,,,,,
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2020,Summer,oe:player:942180f580887b12bcb04219e0dde84,Yaharong,mid,,,,,,,,,,,,,,
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2020,Summer,oe:player:bb44cd8ee037367fa257945abd4cff5,Light,bot,,,,,,,,,,,,,,
+player,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2020,Summer,oe:player:966eee3894707e51bffb173951362ed,Senan,sup,,,,,,,,,,,,,,
+lineup,oe:team:5e29baf115bdaaeeb3bafa7f288b298,Jin Air Green Wings,JAGW,2020,Summer,,,,lineup-880c45502955ee6a,JAGW-01,1,13,oe:player:4d79b9a430199b71e47a4a9e908fe76,oe:player:1970fcb701acce66e0771946bbb3105,oe:player:942180f580887b12bcb04219e0dde84,oe:player:bb44cd8ee037367fa257945abd4cff5,oe:player:966eee3894707e51bffb173951362ed,TaNa,UmTi,Yaharong,Light,Senan
+player,oe:team:73ebe8c6bb0621f090da33008832d1d,Seorabeol Gaming,SG,2020,Spring,oe:player:06f871352444da0cbc5769be21a42fb,Thal,top,,,,,,,,,,,,,,
+player,oe:team:73ebe8c6bb0621f090da33008832d1d,Seorabeol Gaming,SG,2020,Spring,oe:player:3f7e5fe2a3074da1a836da8a63e8b49,KaKAO,jng,,,,,,,,,,,,,,
+player,oe:team:73ebe8c6bb0621f090da33008832d1d,Seorabeol Gaming,SG,2020,Spring,oe:player:8717c30fc91279cbeb8dc3283f07910,DanChung,mid,,,,,,,,,,,,,,
+player,oe:team:73ebe8c6bb0621f090da33008832d1d,Seorabeol Gaming,SG,2020,Spring,oe:player:887b308d89aa7ff0f3ff21a1c29f588,Sangyoon,bot,,,,,,,,,,,,,,
+player,oe:team:73ebe8c6bb0621f090da33008832d1d,Seorabeol Gaming,SG,2020,Spring,oe:player:c4a5196a4f7e430cf448a76adadb028,Nova,sup,,,,,,,,,,,,,,
+lineup,oe:team:73ebe8c6bb0621f090da33008832d1d,Seorabeol Gaming,SG,2020,Spring,,,,lineup-a2eae32d97b8b28f,SG-01,1,2,oe:player:06f871352444da0cbc5769be21a42fb,oe:player:3f7e5fe2a3074da1a836da8a63e8b49,oe:player:8717c30fc91279cbeb8dc3283f07910,oe:player:887b308d89aa7ff0f3ff21a1c29f588,oe:player:c4a5196a4f7e430cf448a76adadb028,Thal,KaKAO,DanChung,Sangyoon,Nova

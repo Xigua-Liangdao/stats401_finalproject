@@ -1,0 +1,37 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2026,Lock-In,oe:player:1efc4e5732e91520d03385900b903f9,Thanatos,top,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2026,Lock-In,oe:player:ed455f823b6586e9e3621dfb5aeb42e,Blaber,jng,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2026,Lock-In,oe:player:ea9ed09584feecae0991089f087d2ce,APA,mid,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2026,Lock-In,oe:player:10fcffece0ac7be85f09c4b51a75762,Zven,bot,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2026,Lock-In,oe:player:81acc6bcde5c927c78e0990e9887f84,Vulcan,sup,,,,,,,,,,,,,,
+lineup,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2026,Lock-In,,,,lineup-3a7df2b16871a825,CLO-01,1,2,oe:player:1efc4e5732e91520d03385900b903f9,oe:player:ed455f823b6586e9e3621dfb5aeb42e,oe:player:ea9ed09584feecae0991089f087d2ce,oe:player:10fcffece0ac7be85f09c4b51a75762,oe:player:81acc6bcde5c927c78e0990e9887f84,Thanatos,Blaber,APA,Zven,Vulcan
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2026,Lock-In,oe:player:80fea0848c57b8e07a79675d41f582c,Castle,top,,,,,,,,,,,,,,
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2026,Lock-In,oe:player:85ab9a415e1cf1f63000f7f6f1c183a,KryRa,jng,,,,,,,,,,,,,,
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2026,Lock-In,oe:player:87f7503a6cdacffa612aeee7f04cc7c,Callme,mid,,,,,,,,,,,,,,
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2026,Lock-In,oe:player:3b63ea0de80cfb191f952872b392da9,sajed,bot,,,,,,,,,,,,,,
+player,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2026,Lock-In,oe:player:a2d7b8856032bf106783621b9afeb41,Lyonz,sup,,,,,,,,,,,,,,
+lineup,oe:team:289284911fb6f41c0ccaecc3a0c2891,Disguised,DIS,2026,Lock-In,,,,lineup-608dda8333c81fba,DIS-01,1,3,oe:player:80fea0848c57b8e07a79675d41f582c,oe:player:85ab9a415e1cf1f63000f7f6f1c183a,oe:player:87f7503a6cdacffa612aeee7f04cc7c,oe:player:3b63ea0de80cfb191f952872b392da9,oe:player:a2d7b8856032bf106783621b9afeb41,Castle,KryRa,Callme,sajed,Lyonz
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2026,Spring,oe:player:d617210b92fa03e78554883250d432c,Gakgos,top,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2026,Spring,oe:player:2cbf592923f34b2e6acc4b747385c8a,Gryffinn,jng,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2026,Spring,oe:player:e9017664588010860a92ceb5f8fcb82,Quad,mid,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2026,Spring,oe:player:c145139d26813639b8fe6f4d0b28228,Massu,bot,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2026,Spring,oe:player:4f27911a3702f671c3d21286356a6df,Cryogen,sup,,,,,,,,,,,,,,
+lineup,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2026,Spring,,,,lineup-ea276d4cdf180c9e,FLY-01,1,3,oe:player:d617210b92fa03e78554883250d432c,oe:player:2cbf592923f34b2e6acc4b747385c8a,oe:player:e9017664588010860a92ceb5f8fcb82,oe:player:c145139d26813639b8fe6f4d0b28228,oe:player:4f27911a3702f671c3d21286356a6df,Gakgos,Gryffinn,Quad,Massu,Cryogen
+player,oe:team:da1143bf9a245b78a8dc86417de85b3,LYON,LYO,2026,Lock-In,oe:player:5385f74da3e5deb5b66d9a1ee56cf97,Dhokla,top,,,,,,,,,,,,,,
+player,oe:team:da1143bf9a245b78a8dc86417de85b3,LYON,LYO,2026,Lock-In,oe:player:a8307167f3a1c933295bb9e3d43700e,Inspired,jng,,,,,,,,,,,,,,
+player,oe:team:da1143bf9a245b78a8dc86417de85b3,LYON,LYO,2026,Lock-In,oe:player:f45792335d83b10581da2f0cbdd6e8e,Saint,mid,,,,,,,,,,,,,,
+player,oe:team:da1143bf9a245b78a8dc86417de85b3,LYON,LYO,2026,Lock-In,oe:player:460ae5a7af8d68f7831b70307210ab3,Berserker,bot,,,,,,,,,,,,,,
+player,oe:team:da1143bf9a245b78a8dc86417de85b3,LYON,LYO,2026,Lock-In,oe:player:40704dfd2d966862568d29770de57bd,Isles,sup,,,,,,,,,,,,,,
+lineup,oe:team:da1143bf9a245b78a8dc86417de85b3,LYON,LYO,2026,Lock-In,,,,lineup-6f696da01b96bdfc,LYO-01,1,4,oe:player:5385f74da3e5deb5b66d9a1ee56cf97,oe:player:a8307167f3a1c933295bb9e3d43700e,oe:player:f45792335d83b10581da2f0cbdd6e8e,oe:player:460ae5a7af8d68f7831b70307210ab3,oe:player:40704dfd2d966862568d29770de57bd,Dhokla,Inspired,Saint,Berserker,Isles
+player,oe:team:b360f1d729b0a8e0f29a5243c4200fa,Shopify Rebellion,SR,2026,Spring,oe:player:f02f1c8275084050765b4b6414bdfda,Fudge,top,,,,,,,,,,,,,,
+player,oe:team:b360f1d729b0a8e0f29a5243c4200fa,Shopify Rebellion,SR,2026,Spring,oe:player:8a5dbe19794784cfd0553556844f045,Contractz,jng,,,,,,,,,,,,,,
+player,oe:team:b360f1d729b0a8e0f29a5243c4200fa,Shopify Rebellion,SR,2026,Spring,oe:player:3648451fd5b8a8ab01e4bedf780c1d6,Zinie,mid,,,,,,,,,,,,,,
+player,oe:team:b360f1d729b0a8e0f29a5243c4200fa,Shopify Rebellion,SR,2026,Spring,oe:player:494fc60dffbb5da1caa2226baef0ec7,Bvoy,bot,,,,,,,,,,,,,,
+player,oe:team:b360f1d729b0a8e0f29a5243c4200fa,Shopify Rebellion,SR,2026,Spring,oe:player:c88cada1696defe81464925789aa6d8,Ceos,sup,,,,,,,,,,,,,,
+lineup,oe:team:b360f1d729b0a8e0f29a5243c4200fa,Shopify Rebellion,SR,2026,Spring,,,,lineup-0432647385cc371c,SR-01,1,2,oe:player:f02f1c8275084050765b4b6414bdfda,oe:player:8a5dbe19794784cfd0553556844f045,oe:player:3648451fd5b8a8ab01e4bedf780c1d6,oe:player:494fc60dffbb5da1caa2226baef0ec7,oe:player:c88cada1696defe81464925789aa6d8,Fudge,Contractz,Zinie,Bvoy,Ceos
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2026,Lock-In,oe:player:f73dde2d8c7879ae8d1fcdc03c4ffeb,Morgan,top,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2026,Lock-In,oe:player:52b4f060a577ff87c99118d97fa75f4,Josedeodo,jng,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2026,Lock-In,oe:player:8f8eaac8e99c203ee76e57c5c81c91f,Quid,mid,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2026,Lock-In,oe:player:f6b8af05a5af22004a67a78f3046b92,Yeon,bot,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2026,Lock-In,oe:player:05fafeaf23dc3285558a4e968970b9f,CoreJJ,sup,,,,,,,,,,,,,,
+lineup,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2026,Lock-In,,,,lineup-e7cd1e591895dedf,TL-01,1,14,oe:player:f73dde2d8c7879ae8d1fcdc03c4ffeb,oe:player:52b4f060a577ff87c99118d97fa75f4,oe:player:8f8eaac8e99c203ee76e57c5c81c91f,oe:player:f6b8af05a5af22004a67a78f3046b92,oe:player:05fafeaf23dc3285558a4e968970b9f,Morgan,Josedeodo,Quid,Yeon,CoreJJ

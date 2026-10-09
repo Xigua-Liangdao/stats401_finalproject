@@ -1,0 +1,46 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:c525a336b58cf2df7c961b52a7af5ce,Burst The Sky Esports,BTSE,2022,Spring,oe:player:2b259c388da76fffb569a45a736676c,Ryuk,top,,,,,,,,,,,,,,
+player,oe:team:c525a336b58cf2df7c961b52a7af5ce,Burst The Sky Esports,BTSE,2022,Spring,oe:player:df6940da41ba9a3df7055e75f3daac9,Draktharr,jng,,,,,,,,,,,,,,
+player,oe:team:c525a336b58cf2df7c961b52a7af5ce,Burst The Sky Esports,BTSE,2022,Spring,oe:player:97703d326201ee5bfa4694c7a73a2b4,Gloryy,mid,,,,,,,,,,,,,,
+player,oe:team:c525a336b58cf2df7c961b52a7af5ce,Burst The Sky Esports,BTSE,2022,Spring,oe:player:7676c3dbf9486cb34da6e1c94d09b70,Aomine,bot,,,,,,,,,,,,,,
+player,oe:team:c525a336b58cf2df7c961b52a7af5ce,Burst The Sky Esports,BTSE,2022,Spring,oe:player:21d0c093d9553e0074a98c5b5880b4c,Elio,sup,,,,,,,,,,,,,,
+lineup,oe:team:c525a336b58cf2df7c961b52a7af5ce,Burst The Sky Esports,BTSE,2022,Spring,,,,lineup-2d83cbfe1d17cafb,BTSE-01,1,2,oe:player:2b259c388da76fffb569a45a736676c,oe:player:df6940da41ba9a3df7055e75f3daac9,oe:player:97703d326201ee5bfa4694c7a73a2b4,oe:player:7676c3dbf9486cb34da6e1c94d09b70,oe:player:21d0c093d9553e0074a98c5b5880b4c,Ryuk,Draktharr,Gloryy,Aomine,Elio
+player,oe:team:05825167aedac3dc1e6f72133f52604,CERBERUS Esports,CE,2022,Spring,oe:player:6644a7352d32c9c4443017798130b61,Pun,top,,,,,,,,,,,,,,
+player,oe:team:05825167aedac3dc1e6f72133f52604,CERBERUS Esports,CE,2022,Spring,oe:player:6201e2266991ddc5ba122f699a842a9,Phuc1,jng,,,,,,,,,,,,,,
+player,oe:team:05825167aedac3dc1e6f72133f52604,CERBERUS Esports,CE,2022,Spring,oe:player:93f78fdd1ebc411ab800dd57b518bce,Yado,mid,,,,,,,,,,,,,,
+player,oe:team:05825167aedac3dc1e6f72133f52604,CERBERUS Esports,CE,2022,Spring,oe:player:9d2474b953a3a0be93880409ccceb4e,Artemis,bot,,,,,,,,,,,,,,
+player,oe:team:05825167aedac3dc1e6f72133f52604,CERBERUS Esports,CE,2022,Spring,oe:player:2142ac69d054acf4d708ee97ab217b3,Puddin,bot,,,,,,,,,,,,,,
+player,oe:team:05825167aedac3dc1e6f72133f52604,CERBERUS Esports,CE,2022,Spring,oe:player:a8e26f0750651e61584c8fd99328752,Hieu3,sup,,,,,,,,,,,,,,
+player,oe:team:05825167aedac3dc1e6f72133f52604,CERBERUS Esports,CE,2022,Spring,oe:player:c93a9785f9ee0a798a2f1252c33ef1d,RonOP,sup,,,,,,,,,,,,,,
+lineup,oe:team:05825167aedac3dc1e6f72133f52604,CERBERUS Esports,CE,2022,Spring,,,,lineup-6720b46140f3ed78,CE-01,1,2,oe:player:6644a7352d32c9c4443017798130b61,oe:player:6201e2266991ddc5ba122f699a842a9,oe:player:93f78fdd1ebc411ab800dd57b518bce,oe:player:2142ac69d054acf4d708ee97ab217b3,oe:player:a8e26f0750651e61584c8fd99328752,Pun,Phuc1,Yado,Puddin,Hieu3
+lineup,oe:team:05825167aedac3dc1e6f72133f52604,CERBERUS Esports,CE,2022,Spring,,,,lineup-1942c74190d40428,CE-02,2,1,oe:player:6644a7352d32c9c4443017798130b61,oe:player:6201e2266991ddc5ba122f699a842a9,oe:player:93f78fdd1ebc411ab800dd57b518bce,oe:player:9d2474b953a3a0be93880409ccceb4e,oe:player:c93a9785f9ee0a798a2f1252c33ef1d,Pun,Phuc1,Yado,Artemis,RonOP
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2022,Spring,oe:player:73e08f7701a4316284cbe884b5d7e56,Kiaya,top,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2022,Spring,oe:player:145f64f1760a3fc2eac89c8f29c3083,Levi,jng,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2022,Spring,oe:player:2e7d6bbb048c7e1ff0eb4d8e3bbad9a,Kati,mid,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2022,Spring,oe:player:00ff83174dc14ce3f7b17e427b75e7f,Sty1e,bot,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2022,Spring,oe:player:1f7d70f56b608b3137df2493949fdd0,Bie,sup,,,,,,,,,,,,,,
+lineup,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2022,Spring,,,,lineup-01a77d497790fdec,GE-01,1,2,oe:player:73e08f7701a4316284cbe884b5d7e56,oe:player:145f64f1760a3fc2eac89c8f29c3083,oe:player:2e7d6bbb048c7e1ff0eb4d8e3bbad9a,oe:player:00ff83174dc14ce3f7b17e427b75e7f,oe:player:1f7d70f56b608b3137df2493949fdd0,Kiaya,Levi,Kati,Sty1e,Bie
+player,oe:team:d35b98d330df0acb88e2b27027b7e74,Luxury Esports,LE,2022,Spring,oe:player:37a3e2ad72e4b680c6e8b1d97ffd265,Coated,top,,,,,,,,,,,,,,
+player,oe:team:d35b98d330df0acb88e2b27027b7e74,Luxury Esports,LE,2022,Spring,oe:player:f56f157e28c9165cb0cd39ca9db3898,Killerqueen,jng,,,,,,,,,,,,,,
+player,oe:team:d35b98d330df0acb88e2b27027b7e74,Luxury Esports,LE,2022,Spring,oe:player:1bb23a583cf7b04cd0774c727465cec,Himmel,mid,,,,,,,,,,,,,,
+player,oe:team:d35b98d330df0acb88e2b27027b7e74,Luxury Esports,LE,2022,Spring,oe:player:6920f59a94eca05b963351f7dbbae98,Vit,bot,,,,,,,,,,,,,,
+player,oe:team:d35b98d330df0acb88e2b27027b7e74,Luxury Esports,LE,2022,Spring,oe:player:b85d82a85b2f24d5e4e02a6506d061a,CBL,sup,,,,,,,,,,,,,,
+lineup,oe:team:d35b98d330df0acb88e2b27027b7e74,Luxury Esports,LE,2022,Spring,,,,lineup-c7d431387105cd7c,LE-01,1,6,oe:player:37a3e2ad72e4b680c6e8b1d97ffd265,oe:player:f56f157e28c9165cb0cd39ca9db3898,oe:player:1bb23a583cf7b04cd0774c727465cec,oe:player:6920f59a94eca05b963351f7dbbae98,oe:player:b85d82a85b2f24d5e4e02a6506d061a,Coated,Killerqueen,Himmel,Vit,CBL
+player,oe:team:31df330ccc0f1b3b521959a24288ac4,SBTC Esports,SE,2022,Spring,oe:player:47989f4933f1564d68c05bbd2857a67,Nper,top,,,,,,,,,,,,,,
+player,oe:team:31df330ccc0f1b3b521959a24288ac4,SBTC Esports,SE,2022,Spring,oe:player:cfed8a47c7de28fc7c2832f1e6ebbb3,DNK,jng,,,,,,,,,,,,,,
+player,oe:team:31df330ccc0f1b3b521959a24288ac4,SBTC Esports,SE,2022,Spring,oe:player:b3cbe00bded6d903ce22576f701df12,2T,mid,,,,,,,,,,,,,,
+player,oe:team:31df330ccc0f1b3b521959a24288ac4,SBTC Esports,SE,2022,Spring,oe:player:0867a39381398f90adff27ad461d616,Celebrity,bot,,,,,,,,,,,,,,
+player,oe:team:31df330ccc0f1b3b521959a24288ac4,SBTC Esports,SE,2022,Spring,oe:player:278f9a3d3077c522e71022e302b9e0e,Palette,sup,,,,,,,,,,,,,,
+lineup,oe:team:31df330ccc0f1b3b521959a24288ac4,SBTC Esports,SE,2022,Spring,,,,lineup-52f08ca41ea08f74,SE-01,1,2,oe:player:47989f4933f1564d68c05bbd2857a67,oe:player:cfed8a47c7de28fc7c2832f1e6ebbb3,oe:player:b3cbe00bded6d903ce22576f701df12,oe:player:0867a39381398f90adff27ad461d616,oe:player:278f9a3d3077c522e71022e302b9e0e,Nper,DNK,2T,Celebrity,Palette
+player,oe:team:8e27b674a472ab529e758f13f0bace0,Saigon Buffalo,SB,2022,Spring,oe:player:4d433d67abfab3b3fea642fbcab80e0,Hasmed,top,,,,,,,,,,,,,,
+player,oe:team:8e27b674a472ab529e758f13f0bace0,Saigon Buffalo,SB,2022,Spring,oe:player:0ad6b88ff1affb81ce31248a4fe73d0,BeanJ,jng,,,,,,,,,,,,,,
+player,oe:team:8e27b674a472ab529e758f13f0bace0,Saigon Buffalo,SB,2022,Spring,oe:player:3d910bafad3c588153646f30a098192,Froggy,mid,,,,,,,,,,,,,,
+player,oe:team:8e27b674a472ab529e758f13f0bace0,Saigon Buffalo,SB,2022,Spring,oe:player:60d1428b9206634f3feb66e4b8ebd59,Shogun,bot,,,,,,,,,,,,,,
+player,oe:team:8e27b674a472ab529e758f13f0bace0,Saigon Buffalo,SB,2022,Spring,oe:player:1b90b5086aa57992143a92a2899b8e0,Taki,sup,,,,,,,,,,,,,,
+lineup,oe:team:8e27b674a472ab529e758f13f0bace0,Saigon Buffalo,SB,2022,Spring,,,,lineup-b1fa6be787e840aa,SB-01,1,13,oe:player:4d433d67abfab3b3fea642fbcab80e0,oe:player:0ad6b88ff1affb81ce31248a4fe73d0,oe:player:3d910bafad3c588153646f30a098192,oe:player:60d1428b9206634f3feb66e4b8ebd59,oe:player:1b90b5086aa57992143a92a2899b8e0,Hasmed,BeanJ,Froggy,Shogun,Taki
+player,oe:team:ee140e8e9d6abd0bfd2b7bc94639d43,Team Secret,TS,2022,Spring,oe:player:9d5e3b1fd70d1652fc3f5f1a978cd9b,Hiro02,top,,,,,,,,,,,,,,
+player,oe:team:ee140e8e9d6abd0bfd2b7bc94639d43,Team Secret,TS,2022,Spring,oe:player:9ee5489405358433e757e9c4fd44480,Penguin,jng,,,,,,,,,,,,,,
+player,oe:team:ee140e8e9d6abd0bfd2b7bc94639d43,Team Secret,TS,2022,Spring,oe:player:b96919a088e508abfbb1aa9c4cbb8f0,Artifact,mid,,,,,,,,,,,,,,
+player,oe:team:ee140e8e9d6abd0bfd2b7bc94639d43,Team Secret,TS,2022,Spring,oe:player:e5f6c83e6e97c74fc9e9760fc8972ae,Eddie,bot,,,,,,,,,,,,,,
+player,oe:team:ee140e8e9d6abd0bfd2b7bc94639d43,Team Secret,TS,2022,Spring,oe:player:ebe87161fff38c40d0bf84a35cba734,XuHao,sup,,,,,,,,,,,,,,
+lineup,oe:team:ee140e8e9d6abd0bfd2b7bc94639d43,Team Secret,TS,2022,Spring,,,,lineup-61460358cdf01565,TS-01,1,2,oe:player:9d5e3b1fd70d1652fc3f5f1a978cd9b,oe:player:9ee5489405358433e757e9c4fd44480,oe:player:b96919a088e508abfbb1aa9c4cbb8f0,oe:player:e5f6c83e6e97c74fc9e9760fc8972ae,oe:player:ebe87161fff38c40d0bf84a35cba734,Hiro02,Penguin,Artifact,Eddie,XuHao

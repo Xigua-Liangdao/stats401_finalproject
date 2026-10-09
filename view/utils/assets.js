@@ -10,16 +10,17 @@ let teams = new Map();
 let players = new Map();
 let mediaPromise;
 
-const teamKey = (season, teamId) => `${season}|${teamId}`;
-const playerKey = (season, teamId, playerId) => `${season}|${teamId}|${playerId}`;
+const teamKey = (league, season, teamId) => `${league}|${season}|${teamId}`;
+const playerKey = (league, season, teamId, playerId) => `${league}|${season}|${teamId}|${playerId}`;
 const splitNumber = (split) => Number(/^Split ([1-3])(?: Placements)?$/.exec(split)?.[1]) || null;
 
 export function setMedia(media) {
   if (media.schema_version !== 1) throw new Error('Unsupported media.json version');
-  teams = new Map(media.teams.map((item) => [teamKey(item.season, item.team_id), item]));
+  // The existing v1 archive is LPL-only; newer media can specify its league.
+  teams = new Map(media.teams.map((item) => [teamKey(item.league ?? 'LPL', item.season, item.team_id), item]));
   players = new Map();
   for (const item of media.players) {
-    const key = playerKey(item.season, item.team_id, item.player_id);
+    const key = playerKey(item.league ?? 'LPL', item.season, item.team_id, item.player_id);
     if (!players.has(key)) players.set(key, []);
     players.get(key).push(item);
   }
@@ -38,13 +39,14 @@ export function loadMedia() {
 }
 
 export function teamLogoAsset(team) {
-  return teams.get(teamKey(team?.season, team?.id)) ?? null;
+  return teams.get(teamKey(team?.league ?? 'LPL', team?.season, team?.id)) ?? null;
 }
 
 export function playerImageAsset(player) {
   const season = player?.season ?? player?.team?.season;
   const teamId = player?.teamId ?? player?.team?.id;
-  const candidates = players.get(playerKey(season, teamId, player?.id)) ?? [];
+  const league = player?.league ?? player?.team?.league ?? 'LPL';
+  const candidates = players.get(playerKey(league, season, teamId, player?.id)) ?? [];
   // Catalogues summarize the year. Only an explicit player.split represents a
   // split filter; team.split in team_panel.csv is the team's most common split.
   const split = splitNumber(player?.split);

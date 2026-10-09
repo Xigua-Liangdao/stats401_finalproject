@@ -1,0 +1,58 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:733ebb9dbf22a401c0127a0c80193ca,BRION Challengers,BC,2021,Spring,oe:player:ec04e0f43e44816d11fcce23ea77433,LukaLux,top,,,,,,,,,,,,,,
+player,oe:team:733ebb9dbf22a401c0127a0c80193ca,BRION Challengers,BC,2021,Spring,oe:player:7f37edf33ba2e672b6995a7e4907283,Jin0,jng,,,,,,,,,,,,,,
+player,oe:team:733ebb9dbf22a401c0127a0c80193ca,BRION Challengers,BC,2021,Spring,oe:player:ea58943d300b14d684bb05b3975fe15,Roamer,mid,,,,,,,,,,,,,,
+player,oe:team:733ebb9dbf22a401c0127a0c80193ca,BRION Challengers,BC,2021,Spring,oe:player:0f2119d086ee35f18b407615e430fa8,Bini,bot,,,,,,,,,,,,,,
+player,oe:team:733ebb9dbf22a401c0127a0c80193ca,BRION Challengers,BC,2021,Spring,oe:player:40cd014b7b6251e3a22e6a45a73a64e,Execute,sup,,,,,,,,,,,,,,
+lineup,oe:team:733ebb9dbf22a401c0127a0c80193ca,BRION Challengers,BC,2021,Spring,,,,lineup-f4fcbc955d6e948a,BC-01,1,1,oe:player:ec04e0f43e44816d11fcce23ea77433,oe:player:7f37edf33ba2e672b6995a7e4907283,oe:player:ea58943d300b14d684bb05b3975fe15,oe:player:0f2119d086ee35f18b407615e430fa8,oe:player:40cd014b7b6251e3a22e6a45a73a64e,LukaLux,Jin0,Roamer,Bini,Execute
+player,oe:team:55b3d6b2c940afa4e24978c55dfea27,DRX Challengers,DC,2021,Spring,oe:player:d87853a5c1c5463889d70a62cdbcffc,Clear,top,,,,,,,,,,,,,,
+player,oe:team:55b3d6b2c940afa4e24978c55dfea27,DRX Challengers,DC,2021,Spring,oe:player:53841c6e42a6ce77b6f3b80133c9342,Peach,jng,,,,,,,,,,,,,,
+player,oe:team:55b3d6b2c940afa4e24978c55dfea27,DRX Challengers,DC,2021,Spring,oe:player:ddc402ad721402c0426763c945d7a38,Eign,mid,,,,,,,,,,,,,,
+player,oe:team:55b3d6b2c940afa4e24978c55dfea27,DRX Challengers,DC,2021,Spring,oe:player:952237fce714ed1eca8ded17523bee9,Taeyoon,bot,,,,,,,,,,,,,,
+player,oe:team:55b3d6b2c940afa4e24978c55dfea27,DRX Challengers,DC,2021,Spring,oe:player:9f80edbc5030ac495358c47c74da99f,Jun,sup,,,,,,,,,,,,,,
+lineup,oe:team:55b3d6b2c940afa4e24978c55dfea27,DRX Challengers,DC,2021,Spring,,,,lineup-d670e41323518231,DC-01,1,5,oe:player:d87853a5c1c5463889d70a62cdbcffc,oe:player:53841c6e42a6ce77b6f3b80133c9342,oe:player:ddc402ad721402c0426763c945d7a38,oe:player:952237fce714ed1eca8ded17523bee9,oe:player:9f80edbc5030ac495358c47c74da99f,Clear,Peach,Eign,Taeyoon,Jun
+player,oe:team:2d26f8190f9d5cd2e0cb2232d9b7481,Dplus KIA Challengers,DKC,2021,Spring,oe:player:ba2664f94e92e7e9e06fe8582b1f4ec,Chasy,top,,,,,,,,,,,,,,
+player,oe:team:2d26f8190f9d5cd2e0cb2232d9b7481,Dplus KIA Challengers,DKC,2021,Spring,oe:player:b06f165ee2371a61d3be74d413e1e21,Malrang,jng,,,,,,,,,,,,,,
+player,oe:team:2d26f8190f9d5cd2e0cb2232d9b7481,Dplus KIA Challengers,DKC,2021,Spring,oe:player:990de650e44c3b85ec90451de02db04,Jool,mid,,,,,,,,,,,,,,
+player,oe:team:2d26f8190f9d5cd2e0cb2232d9b7481,Dplus KIA Challengers,DKC,2021,Spring,oe:player:96fb1177f02c90fec52fc86fadc21b7,Spike,bot,,,,,,,,,,,,,,
+player,oe:team:2d26f8190f9d5cd2e0cb2232d9b7481,Dplus KIA Challengers,DKC,2021,Spring,oe:player:fe0707cc476fa27a17508867b2b95d1,Cow,sup,,,,,,,,,,,,,,
+lineup,oe:team:2d26f8190f9d5cd2e0cb2232d9b7481,Dplus KIA Challengers,DKC,2021,Spring,,,,lineup-1bb1f8357618dae9,DKC-01,1,1,oe:player:ba2664f94e92e7e9e06fe8582b1f4ec,oe:player:b06f165ee2371a61d3be74d413e1e21,oe:player:990de650e44c3b85ec90451de02db04,oe:player:96fb1177f02c90fec52fc86fadc21b7,oe:player:fe0707cc476fa27a17508867b2b95d1,Chasy,Malrang,Jool,Spike,Cow
+player,oe:team:4c9dd0212552afe76315b616b7891f5,Gen.G Global Academy,GGA,2021,Spring,oe:player:39b7c8fcabea217972326ec1f441b0a,Lonely,top,,,,,,,,,,,,,,
+player,oe:team:4c9dd0212552afe76315b616b7891f5,Gen.G Global Academy,GGA,2021,Spring,oe:player:e5feef89d633a666eeaaf6392ca2fa9,YoungJae,jng,,,,,,,,,,,,,,
+player,oe:team:4c9dd0212552afe76315b616b7891f5,Gen.G Global Academy,GGA,2021,Spring,oe:player:285107bcc7ed3fdef0a479f78bc211c,DICE,mid,,,,,,,,,,,,,,
+player,oe:team:4c9dd0212552afe76315b616b7891f5,Gen.G Global Academy,GGA,2021,Spring,oe:player:b0e54ad49a5ce7a200bcb877eee7ed9,Envyy,bot,,,,,,,,,,,,,,
+player,oe:team:4c9dd0212552afe76315b616b7891f5,Gen.G Global Academy,GGA,2021,Spring,oe:player:d24f38ec30ce6f7577066f80e43e4bf,Kael,sup,,,,,,,,,,,,,,
+lineup,oe:team:4c9dd0212552afe76315b616b7891f5,Gen.G Global Academy,GGA,2021,Spring,,,,lineup-89681f7ae6c52cd2,GGA-01,1,2,oe:player:39b7c8fcabea217972326ec1f441b0a,oe:player:e5feef89d633a666eeaaf6392ca2fa9,oe:player:285107bcc7ed3fdef0a479f78bc211c,oe:player:b0e54ad49a5ce7a200bcb877eee7ed9,oe:player:d24f38ec30ce6f7577066f80e43e4bf,Lonely,YoungJae,DICE,Envyy,Kael
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2021,Spring,oe:player:aecf58fd11187be276b7be1bf1838d7,Riss,top,,,,,,,,,,,,,,
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2021,Spring,oe:player:7d306cd72ad7ffa40115a6b36f8a07b,CaD,jng,,,,,,,,,,,,,,
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2021,Spring,oe:player:4a18312b5b75f549d5551e5912ad6eb,Mask,mid,,,,,,,,,,,,,,
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2021,Spring,oe:player:cada0080d5951aaafd67134bcbd7760,Cheoni,bot,,,,,,,,,,,,,,
+player,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2021,Spring,oe:player:3dbe8ecf9c97fc12b28ad199bdb5f82,Baut,sup,,,,,,,,,,,,,,
+lineup,oe:team:2a5e5fceaa40b335ebc6b49359abf62,Hanwha Life Esports Challengers,HLEC,2021,Spring,,,,lineup-9402df22d0d7b3bc,HLEC-01,1,5,oe:player:aecf58fd11187be276b7be1bf1838d7,oe:player:7d306cd72ad7ffa40115a6b36f8a07b,oe:player:4a18312b5b75f549d5551e5912ad6eb,oe:player:cada0080d5951aaafd67134bcbd7760,oe:player:3dbe8ecf9c97fc12b28ad199bdb5f82,Riss,CaD,Mask,Cheoni,Baut
+player,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2021,Spring,oe:player:80fea0848c57b8e07a79675d41f582c,Castle,top,,,,,,,,,,,,,,
+player,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2021,Spring,oe:player:8139e3b2070343b1729402f9bf20205,Bonnie,jng,,,,,,,,,,,,,,
+player,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2021,Spring,oe:player:60b1614a632775c97a37a57bda799f2,GIDEON,jng,,,,,,,,,,,,,,
+player,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2021,Spring,oe:player:d709285b163a94af9d819e568c592ba,VicLa,mid,,,,,,,,,,,,,,
+player,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2021,Spring,oe:player:49dea036f5b15e39632aaaf1666a28b,5kid,bot,,,,,,,,,,,,,,
+player,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2021,Spring,oe:player:95d286ec0a5d750d09e848a4e630c56,Noah,bot,,,,,,,,,,,,,,
+player,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2021,Spring,oe:player:0015d99e65183977a9e65547b37f1cb,Harp,sup,,,,,,,,,,,,,,
+lineup,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2021,Spring,,,,lineup-9bb41df6ba6c31e4,KRC-01,1,1,oe:player:80fea0848c57b8e07a79675d41f582c,oe:player:8139e3b2070343b1729402f9bf20205,oe:player:d709285b163a94af9d819e568c592ba,oe:player:49dea036f5b15e39632aaaf1666a28b,oe:player:0015d99e65183977a9e65547b37f1cb,Castle,Bonnie,VicLa,5kid,Harp
+lineup,oe:team:b9733b8e8aa341319bbaf1035198a28,KT Rolster Challengers,KRC,2021,Spring,,,,lineup-f1b98c8d4d74d8a4,KRC-02,2,1,oe:player:80fea0848c57b8e07a79675d41f582c,oe:player:60b1614a632775c97a37a57bda799f2,oe:player:d709285b163a94af9d819e568c592ba,oe:player:95d286ec0a5d750d09e848a4e630c56,oe:player:0015d99e65183977a9e65547b37f1cb,Castle,GIDEON,VicLa,Noah,Harp
+player,oe:team:ce666ec5e91131390b04ed14a858cb1,Kwangdong Freecs Challengers,KFC,2021,Spring,oe:player:9e3641005a1d5ee5c17edcb985f909b,Trap,top,,,,,,,,,,,,,,
+player,oe:team:ce666ec5e91131390b04ed14a858cb1,Kwangdong Freecs Challengers,KFC,2021,Spring,oe:player:00c317154dbf0680ec0858c185df592,Burry,jng,,,,,,,,,,,,,,
+player,oe:team:ce666ec5e91131390b04ed14a858cb1,Kwangdong Freecs Challengers,KFC,2021,Spring,oe:player:1b26a8bba6e841f1c375b283db5c1c6,Keine,mid,,,,,,,,,,,,,,
+player,oe:team:ce666ec5e91131390b04ed14a858cb1,Kwangdong Freecs Challengers,KFC,2021,Spring,oe:player:2f4e392b28239f7751efa2308caf725,Valkyrie,bot,,,,,,,,,,,,,,
+player,oe:team:ce666ec5e91131390b04ed14a858cb1,Kwangdong Freecs Challengers,KFC,2021,Spring,oe:player:cf1fc00c5f362d9b4988cbb260cbc95,Minit,sup,,,,,,,,,,,,,,
+lineup,oe:team:ce666ec5e91131390b04ed14a858cb1,Kwangdong Freecs Challengers,KFC,2021,Spring,,,,lineup-93791275b1a8943c,KFC-01,1,1,oe:player:9e3641005a1d5ee5c17edcb985f909b,oe:player:00c317154dbf0680ec0858c185df592,oe:player:1b26a8bba6e841f1c375b283db5c1c6,oe:player:2f4e392b28239f7751efa2308caf725,oe:player:cf1fc00c5f362d9b4988cbb260cbc95,Trap,Burry,Keine,Valkyrie,Minit
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2021,Spring,oe:player:341e10748bb6d388250fd1f013e45a4,DnDn,top,,,,,,,,,,,,,,
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2021,Spring,oe:player:1a75a7cf8c98442be881fed562346f5,Sylvie,jng,,,,,,,,,,,,,,
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2021,Spring,oe:player:5ee64eb3feb02e60832a2265db54f71,FIESTA,mid,,,,,,,,,,,,,,
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2021,Spring,oe:player:92c21511d7b383b2f8ba5b00c3c9a47,Bull,bot,,,,,,,,,,,,,,
+player,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2021,Spring,oe:player:5c6aca6247f4e280ca8624b22e3620b,Yusin,sup,,,,,,,,,,,,,,
+lineup,oe:team:7c64febcd5ccff13dcd035dc6867a00,Nongshim Esports Academy,NEA,2021,Spring,,,,lineup-88fae2c318b4f4cc,NEA-01,1,1,oe:player:341e10748bb6d388250fd1f013e45a4,oe:player:1a75a7cf8c98442be881fed562346f5,oe:player:5ee64eb3feb02e60832a2265db54f71,oe:player:92c21511d7b383b2f8ba5b00c3c9a47,oe:player:5c6aca6247f4e280ca8624b22e3620b,DnDn,Sylvie,FIESTA,Bull,Yusin
+player,oe:team:731b7a9fd004cdbe2bcb3da795bce47,T1 Esports Academy,TEA,2021,Spring,oe:player:c2a081a2acc5642bb16930d4868aff1,Roach,top,,,,,,,,,,,,,,
+player,oe:team:731b7a9fd004cdbe2bcb3da795bce47,T1 Esports Academy,TEA,2021,Spring,oe:player:d20cf1e4531aa8b980214f8b3f7dc61,Mowgli,jng,,,,,,,,,,,,,,
+player,oe:team:731b7a9fd004cdbe2bcb3da795bce47,T1 Esports Academy,TEA,2021,Spring,oe:player:5b86bafc34d79c84a8847d29b64ca29,Mireu,mid,,,,,,,,,,,,,,
+player,oe:team:731b7a9fd004cdbe2bcb3da795bce47,T1 Esports Academy,TEA,2021,Spring,oe:player:460ae5a7af8d68f7831b70307210ab3,Berserker,bot,,,,,,,,,,,,,,
+player,oe:team:731b7a9fd004cdbe2bcb3da795bce47,T1 Esports Academy,TEA,2021,Spring,oe:player:29e873916dcb14c9feb6b85d253cb87,Asper,sup,,,,,,,,,,,,,,
+lineup,oe:team:731b7a9fd004cdbe2bcb3da795bce47,T1 Esports Academy,TEA,2021,Spring,,,,lineup-39229663cdbfb291,TEA-01,1,14,oe:player:c2a081a2acc5642bb16930d4868aff1,oe:player:d20cf1e4531aa8b980214f8b3f7dc61,oe:player:5b86bafc34d79c84a8847d29b64ca29,oe:player:460ae5a7af8d68f7831b70307210ab3,oe:player:29e873916dcb14c9feb6b85d253cb87,Roach,Mowgli,Mireu,Berserker,Asper

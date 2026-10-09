@@ -1,0 +1,29 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Split 1,oe:player:48cf24486d9a8e65a142b25682f1994,Driver,top,,,,,,,,,,,,,,
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Split 1,oe:player:55276c10d84e1df7713b441e76e141f,Rest,top,,,,,,,,,,,,,,
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Split 1,oe:player:a22a6d1fe8786cf83675e2d932fbffe,JunJia,jng,,,,,,,,,,,,,,
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Split 1,oe:player:a179853ac2a0832657b9de8b9ba0020,HongQ,mid,,,,,,,,,,,,,,
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Split 1,oe:player:95082306f78780da5686f118c993366,Doggo,bot,,,,,,,,,,,,,,
+player,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Split 1,oe:player:0103d21d116b61eb55fa351242208cf,Kaiwing,sup,,,,,,,,,,,,,,
+lineup,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Split 1,,,,lineup-40f34495e342f66c,CFO-01,1,1,oe:player:55276c10d84e1df7713b441e76e141f,oe:player:a22a6d1fe8786cf83675e2d932fbffe,oe:player:a179853ac2a0832657b9de8b9ba0020,oe:player:95082306f78780da5686f118c993366,oe:player:0103d21d116b61eb55fa351242208cf,Rest,JunJia,HongQ,Doggo,Kaiwing
+lineup,oe:team:0916b3c324c8577b0c6344f3e067f62,CTBC Flying Oyster,CFO,2025,Split 1,,,,lineup-da44791c95704e83,CFO-02,2,1,oe:player:48cf24486d9a8e65a142b25682f1994,oe:player:a22a6d1fe8786cf83675e2d932fbffe,oe:player:a179853ac2a0832657b9de8b9ba0020,oe:player:95082306f78780da5686f118c993366,oe:player:0103d21d116b61eb55fa351242208cf,Driver,JunJia,HongQ,Doggo,Kaiwing
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2025,Split 1,oe:player:73e08f7701a4316284cbe884b5d7e56,Kiaya,top,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2025,Split 1,oe:player:145f64f1760a3fc2eac89c8f29c3083,Levi,jng,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2025,Split 1,oe:player:f6d8ec0afe458e19c057c1407d7da27,Aress,mid,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2025,Split 1,oe:player:3335a55ba853c9cd5a724876fd305a4,Emo,mid,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2025,Split 1,oe:player:9d2474b953a3a0be93880409ccceb4e,Artemis,bot,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2025,Split 1,oe:player:21d0c093d9553e0074a98c5b5880b4c,Elio,sup,,,,,,,,,,,,,,
+lineup,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2025,Split 1,,,,lineup-415d36c233c897ed,GE-01,1,2,oe:player:73e08f7701a4316284cbe884b5d7e56,oe:player:145f64f1760a3fc2eac89c8f29c3083,oe:player:3335a55ba853c9cd5a724876fd305a4,oe:player:9d2474b953a3a0be93880409ccceb4e,oe:player:21d0c093d9553e0074a98c5b5880b4c,Kiaya,Levi,Emo,Artemis,Elio
+lineup,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2025,Split 1,,,,lineup-c6fb670ff8016db4,GE-02,2,1,oe:player:73e08f7701a4316284cbe884b5d7e56,oe:player:145f64f1760a3fc2eac89c8f29c3083,oe:player:f6d8ec0afe458e19c057c1407d7da27,oe:player:9d2474b953a3a0be93880409ccceb4e,oe:player:21d0c093d9553e0074a98c5b5880b4c,Kiaya,Levi,Aress,Artemis,Elio
+player,oe:team:fe099196385a285d6d6edde504dc1f6,MGN Vikings Esports,MVE,2025,Split 1,oe:player:fa6ab005227d25bf19d02ca58f00cab,Kratos,top,,,,,,,,,,,,,,
+player,oe:team:fe099196385a285d6d6edde504dc1f6,MGN Vikings Esports,MVE,2025,Split 1,oe:player:0101bf828e44b2630d500590c4ad461,Gury,jng,,,,,,,,,,,,,,
+player,oe:team:fe099196385a285d6d6edde504dc1f6,MGN Vikings Esports,MVE,2025,Split 1,oe:player:2e7d6bbb048c7e1ff0eb4d8e3bbad9a,Kati,mid,,,,,,,,,,,,,,
+player,oe:team:fe099196385a285d6d6edde504dc1f6,MGN Vikings Esports,MVE,2025,Split 1,oe:player:60d1428b9206634f3feb66e4b8ebd59,Shogun,bot,,,,,,,,,,,,,,
+player,oe:team:fe099196385a285d6d6edde504dc1f6,MGN Vikings Esports,MVE,2025,Split 1,oe:player:397fee5de074b10600707b618fb1f29,SiuLoong,sup,,,,,,,,,,,,,,
+lineup,oe:team:fe099196385a285d6d6edde504dc1f6,MGN Vikings Esports,MVE,2025,Split 1,,,,lineup-b35f1bfae112e3a7,MVE-01,1,13,oe:player:fa6ab005227d25bf19d02ca58f00cab,oe:player:0101bf828e44b2630d500590c4ad461,oe:player:2e7d6bbb048c7e1ff0eb4d8e3bbad9a,oe:player:60d1428b9206634f3feb66e4b8ebd59,oe:player:397fee5de074b10600707b618fb1f29,Kratos,Gury,Kati,Shogun,SiuLoong
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2025,Split 1,oe:player:72bd7f020390328891f8595b5a2136f,Azhi,top,,,,,,,,,,,,,,
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2025,Split 1,oe:player:f3322656ae1facbf4763677fe2506a3,Karsa,jng,,,,,,,,,,,,,,
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2025,Split 1,oe:player:568fe19f3078824aeca0056e28081bb,FoFo,mid,,,,,,,,,,,,,,
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2025,Split 1,oe:player:7e754adda86a60e0a39d7204ba60424,Betty,bot,,,,,,,,,,,,,,
+player,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2025,Split 1,oe:player:31b5f1d49f55acb4ee7624813bda6b2,Woody,sup,,,,,,,,,,,,,,
+lineup,oe:team:4880b157399745e82e26e229d8bbf48,PSG Talon,PT,2025,Split 1,,,,lineup-032ee0d056035b33,PT-01,1,14,oe:player:72bd7f020390328891f8595b5a2136f,oe:player:f3322656ae1facbf4763677fe2506a3,oe:player:568fe19f3078824aeca0056e28081bb,oe:player:7e754adda86a60e0a39d7204ba60424,oe:player:31b5f1d49f55acb4ee7624813bda6b2,Azhi,Karsa,FoFo,Betty,Woody

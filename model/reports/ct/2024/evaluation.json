@@ -1,0 +1,31 @@
+{
+  "status": "insufficient_history",
+  "reason": "Fewer than 10 distinct match days; out-of-time evaluation is unavailable.",
+  "target": "damage to champions per minute (DPM)",
+  "features": [
+    "role",
+    "role_champion",
+    "opponent_champion",
+    "patch",
+    "side",
+    "team_id",
+    "opponent_team_id"
+  ],
+  "alpha": 20.0,
+  "warmup_rows": 390,
+  "evaluated_rows": 0,
+  "context_ridge": {
+    "mae_dpm": null,
+    "rmse_dpm": null,
+    "r2_dpm": null,
+    "rows": 0
+  },
+  "role_mean": {
+    "mae_dpm": null,
+    "rmse_dpm": null,
+    "r2_dpm": null,
+    "rows": 0
+  },
+  "folds": [],
+  "by_role": {}
+}

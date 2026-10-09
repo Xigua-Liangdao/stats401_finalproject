@@ -1,19 +1,60 @@
 import { t } from './i18n.js';
+import { datasetKey, getSelectedDataset } from './season.js';
+
+export function withDataset(hash, selection = getSelectedDataset()) {
+  const [path, query] = hash.split('?');
+  const params = new URLSearchParams(query);
+  if (selection) {
+    params.set('league', selection.league);
+    params.set('year', String(selection.year));
+    params.delete('season');
+  }
+  return `${path}${params.size ? `?${params}` : ''}`;
+}
 
 export const href = {
-  home: '#/',
-  players: '#/players',
-  compare: '#/compare',
+  get home() { return withDataset('#/'); },
+  get players() { return withDataset('#/players'); },
+  get compare() { return withDataset('#/compare'); },
   playersAt: (page) => catalogueHref('players', page),
   player: (id, teamId, season) => {
     const params = new URLSearchParams();
     if (teamId) params.set('team', teamId);
-    if (season) params.set('season', String(season));
-    return `#/player/${encodeURIComponent(id)}${params.size ? `?${params}` : ''}`;
+    if (season) params.set('year', String(season));
+    return withDataset(`#/player/${encodeURIComponent(id)}${params.size ? `?${params}` : ''}`);
   },
-  lineup: (id) => `#/lineup/${encodeURIComponent(id)}`,
-  team: (id) => `#/team/${encodeURIComponent(id)}`,
+  lineup: (id) => withDataset(`#/lineup/${encodeURIComponent(id)}`),
+  team: (id) => withDataset(`#/team/${encodeURIComponent(id)}`),
 };
+
+export function routeHref(route, selection = getSelectedDataset()) {
+  let path = '#/';
+  const params = new URLSearchParams();
+  if (route.name === 'players') path = route.page > 1 ? `#/players/${route.page}` : '#/players';
+  else if (route.name === 'compare') path = '#/compare';
+  else if (['player', 'team', 'lineup'].includes(route.name)) {
+    path = `#/${route.name}/${encodeURIComponent(route.id)}`;
+    if (route.teamId) params.set('team', route.teamId);
+  } else if (route.name === 'not-found') path = '#/not-found';
+  return withDataset(`${path}${params.size ? `?${params}` : ''}`, selection);
+}
+
+export function routeAfterDatasetChange(route) {
+  return ['player', 'team', 'lineup', 'not-found'].includes(route.name)
+    ? { name: 'players', page: 1 }
+    : { name: route.name, ...(route.name === 'players' ? { page: 1 } : {}) };
+}
+
+export function datasetRequestForRoute(route, defaults) {
+  defaults ??= {};
+  // Legacy detail links came from the original single LPL dataset. A browser's
+  // saved new selection must not reinterpret their IDs in another league/year.
+  if (!route.league && ['player', 'team', 'lineup'].includes(route.name)) {
+    return { ...route, league: defaults.league, year: route.year ?? route.season ?? defaults.year };
+  }
+  if (route.year && !route.league) return { ...route, league: defaults.league };
+  return route;
+}
 
 const CATALOGUE_PAGE_KEYS = {
   players: 'catalogue-page-players',
@@ -26,12 +67,16 @@ function clampPage(value) {
 
 export function catalogueHref(kind, page) {
   const n = clampPage(page);
-  return n > 1 ? `#/players/${n}` : '#/players';
+  return withDataset(n > 1 ? `#/players/${n}` : '#/players');
+}
+
+function catalogueKey(kind) {
+  return `${CATALOGUE_PAGE_KEYS[kind]}:${datasetKey(getSelectedDataset())}`;
 }
 
 export function readCataloguePage(kind) {
   try {
-    return clampPage(sessionStorage.getItem(CATALOGUE_PAGE_KEYS[kind]));
+    return clampPage(sessionStorage.getItem(catalogueKey(kind)));
   } catch {
     return 1;
   }
@@ -39,7 +84,7 @@ export function readCataloguePage(kind) {
 
 export function writeCataloguePage(kind, page) {
   try {
-    sessionStorage.setItem(CATALOGUE_PAGE_KEYS[kind], String(clampPage(page)));
+    sessionStorage.setItem(catalogueKey(kind), String(clampPage(page)));
   } catch {
     /* ignore quota / private mode */
   }
@@ -55,7 +100,7 @@ export function rememberCataloguePage(kind, page) {
   };
 }
 
-const BACK_STACK_KEY = 'nav-back-stack';
+const backStackKey = () => `nav-back-stack:${datasetKey(getSelectedDataset())}`;
 const BACK_STACK_MAX = 8;
 const BACK_ROOTS = new Set(['home', 'players', 'compare']);
 
@@ -66,7 +111,7 @@ function normalizeHash(hash) {
 
 function readBackStack() {
   try {
-    const parsed = JSON.parse(sessionStorage.getItem(BACK_STACK_KEY) || '[]');
+    const parsed = JSON.parse(sessionStorage.getItem(backStackKey()) || '[]');
     return Array.isArray(parsed) ? parsed.filter((item) => typeof item === 'string') : [];
   } catch {
     return [];
@@ -75,7 +120,7 @@ function readBackStack() {
 
 function writeBackStack(stack) {
   try {
-    sessionStorage.setItem(BACK_STACK_KEY, JSON.stringify(stack.slice(-BACK_STACK_MAX)));
+    sessionStorage.setItem(backStackKey(), JSON.stringify(stack.slice(-BACK_STACK_MAX)));
   } catch {
     /* ignore quota / private mode */
   }
@@ -87,7 +132,8 @@ function recordNavigation(fromHash, toHash) {
   if (from === to) return;
 
   const toRoute = parseHash(to);
-  if (BACK_ROOTS.has(toRoute.name)) {
+  const fromRoute = parseHash(from);
+  if (BACK_ROOTS.has(toRoute.name) || fromRoute.league !== toRoute.league || fromRoute.year !== toRoute.year) {
     writeBackStack([]);
     return;
   }
@@ -130,24 +176,31 @@ export function parseHash(hash = window.location.hash) {
   const [path, query] = ((hash || '#/').replace(/^#/, '') || '/').split('?');
   const params = new URLSearchParams(query);
   const parts = path.split('/').filter(Boolean);
+  const context = {};
+  if (params.has('league')) context.league = params.get('league');
+  if (params.has('year') || params.has('season')) context.year = params.get('year') ?? params.get('season');
+  const route = (record) => ({ ...record, ...context });
 
-  if (parts.length === 0) return { name: 'home' };
-  if (parts[0] === 'compare' && parts.length === 1) return { name: 'compare' };
+  if (parts.length === 0) return route({ name: 'home' });
+  if (parts[0] === 'compare' && parts.length === 1) return route({ name: 'compare' });
   if (parts[0] === 'players') {
     if (parts[1] && !/^\d+$/.test(parts[1])) return { name: 'not-found' };
-    return { name: 'players', page: parseCataloguePage(parts[1]) };
+    return route({ name: 'players', page: parseCataloguePage(parts[1]) });
   }
-  if (parts[0] === 'player' && parts[1]) return {
-    name: 'player', id: decodeURIComponent(parts[1]),
-    teamId: params.get('team'), season: params.get('season'),
-  };
+  let id;
+  try { id = parts[1] ? decodeURIComponent(parts[1]) : null; }
+  catch { return route({ name: 'not-found' }); }
+  if (parts[0] === 'player' && id) return route({
+    name: 'player', id,
+    teamId: params.get('team'), season: context.year ?? null,
+  });
   if (parts[0] === 'lineups') {
     if (parts[1] && !/^\d+$/.test(parts[1])) return { name: 'not-found' };
-    return { name: 'players', page: parseCataloguePage(parts[1]) };
+    return route({ name: 'players', page: parseCataloguePage(parts[1]) });
   }
-  if (parts[0] === 'lineup' && parts[1]) return { name: 'lineup', id: decodeURIComponent(parts[1]) };
-  if (parts[0] === 'team' && parts[1]) return { name: 'team', id: decodeURIComponent(parts[1]) };
-  return { name: 'not-found' };
+  if (parts[0] === 'lineup' && id) return route({ name: 'lineup', id });
+  if (parts[0] === 'team' && id) return route({ name: 'team', id });
+  return route({ name: 'not-found' });
 }
 
 export function navigate(to) {

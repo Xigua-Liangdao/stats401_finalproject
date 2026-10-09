@@ -1,0 +1,64 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,oe:player:173a8a174541207f4801c3050c19cf5,Natsume,top,,,,,,,,,,,,,,
+player,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,oe:player:9d740e6925ca1017a4630fb4ebfc402,uinyan,top,,,,,,,,,,,,,,
+player,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,oe:player:9913a58fbfe2e8e359666adfe057dac,Hoglet,jng,,,,,,,,,,,,,,
+player,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,oe:player:c6b497a4ce22932b70f06b255827c6e,Gariaru,mid,,,,,,,,,,,,,,
+player,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,oe:player:5ae20c3fcf8655482861c0c1977a7f2,Day1,bot,,,,,,,,,,,,,,
+player,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,oe:player:1dc15f85f51cc23d21b67245d847991,Hide,bot,,,,,,,,,,,,,,
+player,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,oe:player:9d740e6925ca1017a4630fb4ebfc402,uinyan,bot,,,,,,,,,,,,,,
+player,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,oe:player:73e82c479af3a7c2da939e8200e60f8,Corporal,sup,,,,,,,,,,,,,,
+lineup,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,,,,lineup-9611900fa3edbd0c,AXI-01,1,17,oe:player:9d740e6925ca1017a4630fb4ebfc402,oe:player:9913a58fbfe2e8e359666adfe057dac,oe:player:c6b497a4ce22932b70f06b255827c6e,oe:player:1dc15f85f51cc23d21b67245d847991,oe:player:73e82c479af3a7c2da939e8200e60f8,uinyan,Hoglet,Gariaru,Hide,Corporal
+lineup,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,,,,lineup-6214949925f16ca5,AXI-02,2,8,oe:player:173a8a174541207f4801c3050c19cf5,oe:player:9913a58fbfe2e8e359666adfe057dac,oe:player:c6b497a4ce22932b70f06b255827c6e,oe:player:9d740e6925ca1017a4630fb4ebfc402,oe:player:73e82c479af3a7c2da939e8200e60f8,Natsume,Hoglet,Gariaru,uinyan,Corporal
+lineup,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,,,,lineup-2acca23f120741be,AXI-03,3,6,oe:player:9d740e6925ca1017a4630fb4ebfc402,oe:player:9913a58fbfe2e8e359666adfe057dac,oe:player:c6b497a4ce22932b70f06b255827c6e,oe:player:5ae20c3fcf8655482861c0c1977a7f2,oe:player:73e82c479af3a7c2da939e8200e60f8,uinyan,Hoglet,Gariaru,Day1,Corporal
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2020,Summer,oe:player:fdc16c7495d2f61f9f116432b4a1f1a,RayFarky,top,,,,,,,,,,,,,,
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2020,Summer,oe:player:e1a9dc9f23534e63de9df0d540ac161,Once,jng,,,,,,,,,,,,,,
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2020,Summer,oe:player:20708c138c041b5f23fdb42c2e01184,Eugeo,mid,,,,,,,,,,,,,,
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2020,Summer,oe:player:683195c99a23dc1cfc99db06f62590f,Roki,mid,,,,,,,,,,,,,,
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2020,Summer,oe:player:36a55a7a73f82b7ca788e2db7760dbb,Yuhi,bot,,,,,,,,,,,,,,
+player,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2020,Summer,oe:player:f926aabe99f9b4c9c7269f3a45ba50a,Proud,sup,,,,,,,,,,,,,,
+lineup,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2020,Summer,,,,lineup-5a23b2bc2dd40e46,BCT-01,1,19,oe:player:fdc16c7495d2f61f9f116432b4a1f1a,oe:player:e1a9dc9f23534e63de9df0d540ac161,oe:player:20708c138c041b5f23fdb42c2e01184,oe:player:36a55a7a73f82b7ca788e2db7760dbb,oe:player:f926aabe99f9b4c9c7269f3a45ba50a,RayFarky,Once,Eugeo,Yuhi,Proud
+lineup,oe:team:73c73a123b43e071470729f74ef2022,Burning Core Toyama,BCT,2020,Summer,,,,lineup-4149bd7ab1117523,BCT-02,2,15,oe:player:fdc16c7495d2f61f9f116432b4a1f1a,oe:player:e1a9dc9f23534e63de9df0d540ac161,oe:player:683195c99a23dc1cfc99db06f62590f,oe:player:36a55a7a73f82b7ca788e2db7760dbb,oe:player:f926aabe99f9b4c9c7269f3a45ba50a,RayFarky,Once,Roki,Yuhi,Proud
+player,oe:team:6d17eb4ba840f83bf65c9a19c656a53,Crest Gaming Act,CGA,2020,Spring,oe:player:b0637349ccc6fc672bb1d6916c11253,Nap,top,,,,,,,,,,,,,,
+player,oe:team:6d17eb4ba840f83bf65c9a19c656a53,Crest Gaming Act,CGA,2020,Spring,oe:player:ece4ca093e58fe5f538db865bedaabd,Yoshi,jng,,,,,,,,,,,,,,
+player,oe:team:6d17eb4ba840f83bf65c9a19c656a53,Crest Gaming Act,CGA,2020,Spring,oe:player:6fd447726eaeb00dd3dbf3e3802d31f,Yunika,jng,,,,,,,,,,,,,,
+player,oe:team:6d17eb4ba840f83bf65c9a19c656a53,Crest Gaming Act,CGA,2020,Spring,oe:player:2e82913920d8a6d0efa480bc35f1ba8,Aria,mid,,,,,,,,,,,,,,
+player,oe:team:6d17eb4ba840f83bf65c9a19c656a53,Crest Gaming Act,CGA,2020,Spring,oe:player:69abfbec6354b4d570ded67d2d59585,Gango,bot,,,,,,,,,,,,,,
+player,oe:team:6d17eb4ba840f83bf65c9a19c656a53,Crest Gaming Act,CGA,2020,Spring,oe:player:8722f0c2535bfbf5c7678824e2287f4,Alchemy,sup,,,,,,,,,,,,,,
+lineup,oe:team:6d17eb4ba840f83bf65c9a19c656a53,Crest Gaming Act,CGA,2020,Spring,,,,lineup-946e0a32cd5b936b,CGA-01,1,25,oe:player:b0637349ccc6fc672bb1d6916c11253,oe:player:ece4ca093e58fe5f538db865bedaabd,oe:player:2e82913920d8a6d0efa480bc35f1ba8,oe:player:69abfbec6354b4d570ded67d2d59585,oe:player:8722f0c2535bfbf5c7678824e2287f4,Nap,Yoshi,Aria,Gango,Alchemy
+lineup,oe:team:6d17eb4ba840f83bf65c9a19c656a53,Crest Gaming Act,CGA,2020,Spring,,,,lineup-e7d5611ecd3bc4ee,CGA-02,2,22,oe:player:b0637349ccc6fc672bb1d6916c11253,oe:player:6fd447726eaeb00dd3dbf3e3802d31f,oe:player:2e82913920d8a6d0efa480bc35f1ba8,oe:player:69abfbec6354b4d570ded67d2d59585,oe:player:8722f0c2535bfbf5c7678824e2287f4,Nap,Yunika,Aria,Gango,Alchemy
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2020,Summer,oe:player:376d5e3b1257e6972228d458943f74c,Evi,top,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2020,Summer,oe:player:47f1917849906027f365eff06d45c27,Steal,jng,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2020,Summer,oe:player:dd4660dccac3ba0b8f35cb319a686a4,Ceros,mid,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2020,Summer,oe:player:0d798f24869b290bfcdf6427d958118,Yutapon,bot,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2020,Summer,oe:player:28210a578227a57de61f42f4bd0d2b4,Gaeng,sup,,,,,,,,,,,,,,
+lineup,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2020,Summer,,,,lineup-741fb63b248c71bb,DF-01,1,59,oe:player:376d5e3b1257e6972228d458943f74c,oe:player:47f1917849906027f365eff06d45c27,oe:player:dd4660dccac3ba0b8f35cb319a686a4,oe:player:0d798f24869b290bfcdf6427d958118,oe:player:28210a578227a57de61f42f4bd0d2b4,Evi,Steal,Ceros,Yutapon,Gaeng
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2020,Summer,oe:player:fb28a34a1a1e375331268ce4d7ba52e,Arumik,top,,,,,,,,,,,,,,
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2020,Summer,oe:player:4fbce651fccdd73409ea9246d0ee1d6,DasheR,top,,,,,,,,,,,,,,
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2020,Summer,oe:player:5d266fd637d68e37c6025215ab74757,Tussle,jng,,,,,,,,,,,,,,
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2020,Summer,oe:player:4fbce651fccdd73409ea9246d0ee1d6,DasheR,mid,,,,,,,,,,,,,,
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2020,Summer,oe:player:a4e9e9157f2a7f62d2166124824166e,Ramune,mid,,,,,,,,,,,,,,
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2020,Summer,oe:player:3b529b4d304d90d28e91ddddc903729,Honey,bot,,,,,,,,,,,,,,
+player,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2020,Summer,oe:player:1169c0f592ca7cd256ba9a5492d41c1,Pooh,sup,,,,,,,,,,,,,,
+lineup,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2020,Summer,,,,lineup-57107d6f2a387aea,FSHG-01,1,19,oe:player:fb28a34a1a1e375331268ce4d7ba52e,oe:player:5d266fd637d68e37c6025215ab74757,oe:player:4fbce651fccdd73409ea9246d0ee1d6,oe:player:3b529b4d304d90d28e91ddddc903729,oe:player:1169c0f592ca7cd256ba9a5492d41c1,Arumik,Tussle,DasheR,Honey,Pooh
+lineup,oe:team:d8ca3fc1f0827ec76369af7b70d43e3,Fukuoka SoftBank HAWKS gaming,FSHG,2020,Summer,,,,lineup-8414d93e504260ff,FSHG-02,2,14,oe:player:4fbce651fccdd73409ea9246d0ee1d6,oe:player:5d266fd637d68e37c6025215ab74757,oe:player:a4e9e9157f2a7f62d2166124824166e,oe:player:3b529b4d304d90d28e91ddddc903729,oe:player:1169c0f592ca7cd256ba9a5492d41c1,DasheR,Tussle,Ramune,Honey,Pooh
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2020,Spring,oe:player:9d37dd12a4d094e2fa7cf253e2078a0,Cogcog,top,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2020,Spring,oe:player:cd2a9194c2d998264f7632728c6d8c6,hachamecha,jng,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2020,Spring,oe:player:afb87b393d9c759e8a218b56d0f895e,Ninja,mid,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2020,Spring,oe:player:feb29d48f9133d43a2a5faad1d92253,Pinnnk,mid,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2020,Spring,oe:player:978d7d6bde930f0fa9615627a15b2fc,Art,bot,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2020,Spring,oe:player:7d08cf40dd705d7081fccce601d9ea9,Nagi,sup,,,,,,,,,,,,,,
+player,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2020,Spring,oe:player:9fb8dff220cd2b92ff67b9055ebb94e,viviD,sup,,,,,,,,,,,,,,
+lineup,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2020,Spring,,,,lineup-ec65c8fccee761fb,RJ-01,1,19,oe:player:9d37dd12a4d094e2fa7cf253e2078a0,oe:player:cd2a9194c2d998264f7632728c6d8c6,oe:player:afb87b393d9c759e8a218b56d0f895e,oe:player:978d7d6bde930f0fa9615627a15b2fc,oe:player:9fb8dff220cd2b92ff67b9055ebb94e,Cogcog,hachamecha,Ninja,Art,viviD
+lineup,oe:team:16fbfa0b9d8a6aaa7ea303ac6d70669,Rascal Jester,RJ,2020,Spring,,,,lineup-64115457a1d42907,RJ-02,2,14,oe:player:9d37dd12a4d094e2fa7cf253e2078a0,oe:player:cd2a9194c2d998264f7632728c6d8c6,oe:player:feb29d48f9133d43a2a5faad1d92253,oe:player:978d7d6bde930f0fa9615627a15b2fc,oe:player:7d08cf40dd705d7081fccce601d9ea9,Cogcog,hachamecha,Pinnnk,Art,Nagi
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2020,Spring,oe:player:61113c79bb5a88e9320744e0f675f1e,apaMEN,top,,,,,,,,,,,,,,
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2020,Spring,oe:player:e4ef81cce7e4e10033ebb10962dfdd5,Blank,jng,,,,,,,,,,,,,,
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2020,Spring,oe:player:8a60ce4b25f019ef349c4ed568efeb4,Pirean,mid,,,,,,,,,,,,,,
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2020,Spring,oe:player:785c0d3b9969e1cf711dcd09ee4bffb,Moyashi,bot,,,,,,,,,,,,,,
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2020,Spring,oe:player:293f0d0e03a4b786400eb00d3f859a8,Enty,sup,,,,,,,,,,,,,,
+lineup,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2020,Spring,,,,lineup-117117125970f22e,SG-01,1,44,oe:player:61113c79bb5a88e9320744e0f675f1e,oe:player:e4ef81cce7e4e10033ebb10962dfdd5,oe:player:8a60ce4b25f019ef349c4ed568efeb4,oe:player:785c0d3b9969e1cf711dcd09ee4bffb,oe:player:293f0d0e03a4b786400eb00d3f859a8,apaMEN,Blank,Pirean,Moyashi,Enty
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2020,Spring,oe:player:bc6c09548f555712ab0eed5c2f94e82,Paz,top,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2020,Spring,oe:player:a7f0b16a54f4bd0dcb6fb7bb625b3cb,Bugi,jng,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2020,Spring,oe:player:f97ecbe7f4f778302e893532b26279e,Acee,mid,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2020,Spring,oe:player:5a607b1f01f155eae1bd6e2a78763f5,Archer,bot,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2020,Spring,oe:player:ca18f3cf2fd9adb391d4770c33286f0,Raina,sup,,,,,,,,,,,,,,
+lineup,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2020,Spring,,,,lineup-1c9ecd01a57455dc,VE-01,1,49,oe:player:bc6c09548f555712ab0eed5c2f94e82,oe:player:a7f0b16a54f4bd0dcb6fb7bb625b3cb,oe:player:f97ecbe7f4f778302e893532b26279e,oe:player:5a607b1f01f155eae1bd6e2a78763f5,oe:player:ca18f3cf2fd9adb391d4770c33286f0,Paz,Bugi,Acee,Archer,Raina

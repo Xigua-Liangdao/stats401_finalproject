@@ -1,0 +1,57 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:16f72e69fc7d2d27c151024912a6497,APOLLO GAMING,AG,2024,Unknown,oe:player:831ced1d191a551fe60cd51c9023b58,Yuki,top,,,,,,,,,,,,,,
+player,oe:team:16f72e69fc7d2d27c151024912a6497,APOLLO GAMING,AG,2024,Unknown,oe:player:cab8dce409a60ef6ae3ee40213127ec,NtNt,jng,,,,,,,,,,,,,,
+player,oe:team:16f72e69fc7d2d27c151024912a6497,APOLLO GAMING,AG,2024,Unknown,oe:player:3b7bd1331d5adaaedf5a228b02fa077,Vin,mid,,,,,,,,,,,,,,
+player,oe:team:16f72e69fc7d2d27c151024912a6497,APOLLO GAMING,AG,2024,Unknown,oe:player:72988c6600adbb46551a7b0aa75994d,Tomrio,bot,,,,,,,,,,,,,,
+player,oe:team:16f72e69fc7d2d27c151024912a6497,APOLLO GAMING,AG,2024,Unknown,oe:player:8465a13b8dbdbacbc22c8fdc0707465,Seebulabu,sup,,,,,,,,,,,,,,
+lineup,oe:team:16f72e69fc7d2d27c151024912a6497,APOLLO GAMING,AG,2024,Unknown,,,,lineup-f87ca9aa070d528d,AG-01,1,1,oe:player:831ced1d191a551fe60cd51c9023b58,oe:player:cab8dce409a60ef6ae3ee40213127ec,oe:player:3b7bd1331d5adaaedf5a228b02fa077,oe:player:72988c6600adbb46551a7b0aa75994d,oe:player:8465a13b8dbdbacbc22c8fdc0707465,Yuki,NtNt,Vin,Tomrio,Seebulabu
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2024,Summer,oe:player:73e08f7701a4316284cbe884b5d7e56,Kiaya,top,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2024,Summer,oe:player:145f64f1760a3fc2eac89c8f29c3083,Levi,jng,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2024,Summer,oe:player:3335a55ba853c9cd5a724876fd305a4,Emo,mid,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2024,Summer,oe:player:c79ce9ec47a91226340af0e57afa782,Neo,bot,,,,,,,,,,,,,,
+player,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2024,Summer,oe:player:21d0c093d9553e0074a98c5b5880b4c,Elio,sup,,,,,,,,,,,,,,
+lineup,oe:team:9cae7677cd0dbcc1cd86653870b73c2,GAM Esports,GE,2024,Summer,,,,lineup-21bdf471cf3c3969,GE-01,1,3,oe:player:73e08f7701a4316284cbe884b5d7e56,oe:player:145f64f1760a3fc2eac89c8f29c3083,oe:player:3335a55ba853c9cd5a724876fd305a4,oe:player:c79ce9ec47a91226340af0e57afa782,oe:player:21d0c093d9553e0074a98c5b5880b4c,Kiaya,Levi,Emo,Neo,Elio
+player,oe:team:f120b297d22778c31d145387ae3a372,MGN Blue Esports,MBE,2024,Unknown,oe:player:2b259c388da76fffb569a45a736676c,Ryuk,top,,,,,,,,,,,,,,
+player,oe:team:f120b297d22778c31d145387ae3a372,MGN Blue Esports,MBE,2024,Unknown,oe:player:d561f47c907915ece4273f4f9218194,Sorn,jng,,,,,,,,,,,,,,
+player,oe:team:f120b297d22778c31d145387ae3a372,MGN Blue Esports,MBE,2024,Unknown,oe:player:7d21767bc5bb1567a3dd92bf82a5a8e,zzeta,mid,,,,,,,,,,,,,,
+player,oe:team:f120b297d22778c31d145387ae3a372,MGN Blue Esports,MBE,2024,Unknown,oe:player:00ff83174dc14ce3f7b17e427b75e7f,Sty1e,bot,,,,,,,,,,,,,,
+player,oe:team:f120b297d22778c31d145387ae3a372,MGN Blue Esports,MBE,2024,Unknown,oe:player:deaccc41a952e269107cc9a507dfa13,Zodiac,sup,,,,,,,,,,,,,,
+lineup,oe:team:f120b297d22778c31d145387ae3a372,MGN Blue Esports,MBE,2024,Unknown,,,,lineup-3e7c408b38bd912d,MBE-01,1,1,oe:player:2b259c388da76fffb569a45a736676c,oe:player:d561f47c907915ece4273f4f9218194,oe:player:7d21767bc5bb1567a3dd92bf82a5a8e,oe:player:00ff83174dc14ce3f7b17e427b75e7f,oe:player:deaccc41a952e269107cc9a507dfa13,Ryuk,Sorn,zzeta,Sty1e,Zodiac
+player,oe:team:fe099196385a285d6d6edde504dc1f6,MGN Vikings Esports,MVE,2024,Summer,oe:player:5399ceb619dbb13525a0d52c97acea5,Nanaue,top,,,,,,,,,,,,,,
+player,oe:team:fe099196385a285d6d6edde504dc1f6,MGN Vikings Esports,MVE,2024,Summer,oe:player:0101bf828e44b2630d500590c4ad461,Gury,jng,,,,,,,,,,,,,,
+player,oe:team:fe099196385a285d6d6edde504dc1f6,MGN Vikings Esports,MVE,2024,Summer,oe:player:2e7d6bbb048c7e1ff0eb4d8e3bbad9a,Kati,mid,,,,,,,,,,,,,,
+player,oe:team:fe099196385a285d6d6edde504dc1f6,MGN Vikings Esports,MVE,2024,Summer,oe:player:60d1428b9206634f3feb66e4b8ebd59,Shogun,bot,,,,,,,,,,,,,,
+player,oe:team:fe099196385a285d6d6edde504dc1f6,MGN Vikings Esports,MVE,2024,Summer,oe:player:1f7d70f56b608b3137df2493949fdd0,Bie,sup,,,,,,,,,,,,,,
+lineup,oe:team:fe099196385a285d6d6edde504dc1f6,MGN Vikings Esports,MVE,2024,Summer,,,,lineup-721df92993a762af,MVE-01,1,12,oe:player:5399ceb619dbb13525a0d52c97acea5,oe:player:0101bf828e44b2630d500590c4ad461,oe:player:2e7d6bbb048c7e1ff0eb4d8e3bbad9a,oe:player:60d1428b9206634f3feb66e4b8ebd59,oe:player:1f7d70f56b608b3137df2493949fdd0,Nanaue,Gury,Kati,Shogun,Bie
+player,oe:team:03625f7331ee82f52b8c79c576e23cd,Original Gaming,OG,2024,Unknown,oe:player:7bb2400a593b2b754dfc548fa2447a8,Robin,top,,,,,,,,,,,,,,
+player,oe:team:03625f7331ee82f52b8c79c576e23cd,Original Gaming,OG,2024,Unknown,oe:player:644f9209a9eeb052245b37445e389f3,Chopper,jng,,,,,,,,,,,,,,
+player,oe:team:03625f7331ee82f52b8c79c576e23cd,Original Gaming,OG,2024,Unknown,oe:player:b65bd04664666a76c2e888b5f9d94ba,Nami,mid,,,,,,,,,,,,,,
+player,oe:team:03625f7331ee82f52b8c79c576e23cd,Original Gaming,OG,2024,Unknown,oe:player:0d78567a7c35ae7379256233bd4e7c5,Tomoe,bot,,,,,,,,,,,,,,
+player,oe:team:03625f7331ee82f52b8c79c576e23cd,Original Gaming,OG,2024,Unknown,oe:player:a5365d3af6f3ead85c2f5ee53f99db7,Mingi,sup,,,,,,,,,,,,,,
+lineup,oe:team:03625f7331ee82f52b8c79c576e23cd,Original Gaming,OG,2024,Unknown,,,,lineup-b7ddd9096e6d1f82,OG-01,1,1,oe:player:7bb2400a593b2b754dfc548fa2447a8,oe:player:644f9209a9eeb052245b37445e389f3,oe:player:b65bd04664666a76c2e888b5f9d94ba,oe:player:0d78567a7c35ae7379256233bd4e7c5,oe:player:a5365d3af6f3ead85c2f5ee53f99db7,Robin,Chopper,Nami,Tomoe,Mingi
+player,oe:team:b5e47225b5e13f4d8fc673c8ade41fb,Saigon Dino,SD,2024,Unknown,oe:player:40a946720e10a025ea02ea768edd09b,zhang kun,top,,,,,,,,,,,,,,
+player,oe:team:b5e47225b5e13f4d8fc673c8ade41fb,Saigon Dino,SD,2024,Unknown,oe:player:004af59ee3532beabee5d0f677a3acd,Kriss,jng,,,,,,,,,,,,,,
+player,oe:team:b5e47225b5e13f4d8fc673c8ade41fb,Saigon Dino,SD,2024,Unknown,oe:player:5126020841cd066e866e21a8050b173,Rudeus,mid,,,,,,,,,,,,,,
+player,oe:team:b5e47225b5e13f4d8fc673c8ade41fb,Saigon Dino,SD,2024,Unknown,oe:player:dad0fb9d3b584f3ba29ffb04e500fa7,Yuyin,bot,,,,,,,,,,,,,,
+player,oe:team:b5e47225b5e13f4d8fc673c8ade41fb,Saigon Dino,SD,2024,Unknown,oe:player:2184e9b7b0fc1dcdce418f237edc87e,TQK,sup,,,,,,,,,,,,,,
+lineup,oe:team:b5e47225b5e13f4d8fc673c8ade41fb,Saigon Dino,SD,2024,Unknown,,,,lineup-f7080a0ac76f4762,SD-01,1,1,oe:player:40a946720e10a025ea02ea768edd09b,oe:player:004af59ee3532beabee5d0f677a3acd,oe:player:5126020841cd066e866e21a8050b173,oe:player:dad0fb9d3b584f3ba29ffb04e500fa7,oe:player:2184e9b7b0fc1dcdce418f237edc87e,zhang kun,Kriss,Rudeus,Yuyin,TQK
+player,oe:team:9bcc3882a74d7ec2b66f7067ba31bc3,Team Flash,TF,2024,Summer,oe:player:7fe18b8802138d0ad145db7cd9ac134,Yoshino,top,,,,,,,,,,,,,,
+player,oe:team:9bcc3882a74d7ec2b66f7067ba31bc3,Team Flash,TF,2024,Summer,oe:player:df6940da41ba9a3df7055e75f3daac9,Draktharr,jng,,,,,,,,,,,,,,
+player,oe:team:9bcc3882a74d7ec2b66f7067ba31bc3,Team Flash,TF,2024,Summer,oe:player:4b5def886a056605b16953622be994a,playcool,mid,,,,,,,,,,,,,,
+player,oe:team:9bcc3882a74d7ec2b66f7067ba31bc3,Team Flash,TF,2024,Summer,oe:player:33f394489e9b66e36e12159893301ad,Balder,bot,,,,,,,,,,,,,,
+player,oe:team:9bcc3882a74d7ec2b66f7067ba31bc3,Team Flash,TF,2024,Summer,oe:player:91339b2ef99dce238735c03bae031d1,Soraaa,sup,,,,,,,,,,,,,,
+lineup,oe:team:9bcc3882a74d7ec2b66f7067ba31bc3,Team Flash,TF,2024,Summer,,,,lineup-8af3bd24455c724b,TF-01,1,2,oe:player:7fe18b8802138d0ad145db7cd9ac134,oe:player:df6940da41ba9a3df7055e75f3daac9,oe:player:4b5def886a056605b16953622be994a,oe:player:33f394489e9b66e36e12159893301ad,oe:player:91339b2ef99dce238735c03bae031d1,Yoshino,Draktharr,playcool,Balder,Soraaa
+player,oe:team:ee140e8e9d6abd0bfd2b7bc94639d43,Team Secret,TS,2024,Summer,oe:player:9d5e3b1fd70d1652fc3f5f1a978cd9b,Hiro02,top,,,,,,,,,,,,,,
+player,oe:team:ee140e8e9d6abd0bfd2b7bc94639d43,Team Secret,TS,2024,Summer,oe:player:3760ca2476e54dceef5926aa4d8430e,Yusah,jng,,,,,,,,,,,,,,
+player,oe:team:ee140e8e9d6abd0bfd2b7bc94639d43,Team Secret,TS,2024,Summer,oe:player:f6d8ec0afe458e19c057c1407d7da27,Aress,mid,,,,,,,,,,,,,,
+player,oe:team:ee140e8e9d6abd0bfd2b7bc94639d43,Team Secret,TS,2024,Summer,oe:player:7676c3dbf9486cb34da6e1c94d09b70,Aomine,bot,,,,,,,,,,,,,,
+player,oe:team:ee140e8e9d6abd0bfd2b7bc94639d43,Team Secret,TS,2024,Summer,oe:player:1b90b5086aa57992143a92a2899b8e0,Taki,sup,,,,,,,,,,,,,,
+lineup,oe:team:ee140e8e9d6abd0bfd2b7bc94639d43,Team Secret,TS,2024,Summer,,,,lineup-1eb26f4daac88a72,TS-01,1,2,oe:player:9d5e3b1fd70d1652fc3f5f1a978cd9b,oe:player:3760ca2476e54dceef5926aa4d8430e,oe:player:f6d8ec0afe458e19c057c1407d7da27,oe:player:7676c3dbf9486cb34da6e1c94d09b70,oe:player:1b90b5086aa57992143a92a2899b8e0,Hiro02,Yusah,Aress,Aomine,Taki
+player,oe:team:407a64574852482edb8c1560eab637c,Team Whales,TW,2024,Summer,oe:player:4d433d67abfab3b3fea642fbcab80e0,Hasmed,top,,,,,,,,,,,,,,
+player,oe:team:407a64574852482edb8c1560eab637c,Team Whales,TW,2024,Summer,oe:player:5a8a1154f338b2f316dd4cb5931c796,Kzt,jng,,,,,,,,,,,,,,
+player,oe:team:407a64574852482edb8c1560eab637c,Team Whales,TW,2024,Summer,oe:player:6b2993d61ed08c13eb8bb8bcfe30182,C7N,mid,,,,,,,,,,,,,,
+player,oe:team:407a64574852482edb8c1560eab637c,Team Whales,TW,2024,Summer,oe:player:1de085de1da2f0c5f6c05de8a3d2b2d,Claws,mid,,,,,,,,,,,,,,
+player,oe:team:407a64574852482edb8c1560eab637c,Team Whales,TW,2024,Summer,oe:player:9d2474b953a3a0be93880409ccceb4e,Artemis,bot,,,,,,,,,,,,,,
+player,oe:team:407a64574852482edb8c1560eab637c,Team Whales,TW,2024,Summer,oe:player:c93a9785f9ee0a798a2f1252c33ef1d,RonOP,sup,,,,,,,,,,,,,,
+lineup,oe:team:407a64574852482edb8c1560eab637c,Team Whales,TW,2024,Summer,,,,lineup-2cbb0c353bd9b033,TW-01,1,3,oe:player:4d433d67abfab3b3fea642fbcab80e0,oe:player:5a8a1154f338b2f316dd4cb5931c796,oe:player:6b2993d61ed08c13eb8bb8bcfe30182,oe:player:9d2474b953a3a0be93880409ccceb4e,oe:player:c93a9785f9ee0a798a2f1252c33ef1d,Hasmed,Kzt,C7N,Artemis,RonOP
+lineup,oe:team:407a64574852482edb8c1560eab637c,Team Whales,TW,2024,Summer,,,,lineup-04bc58d7b300a2cf,TW-02,2,2,oe:player:4d433d67abfab3b3fea642fbcab80e0,oe:player:5a8a1154f338b2f316dd4cb5931c796,oe:player:1de085de1da2f0c5f6c05de8a3d2b2d,oe:player:9d2474b953a3a0be93880409ccceb4e,oe:player:c93a9785f9ee0a798a2f1252c33ef1d,Hasmed,Kzt,Claws,Artemis,RonOP

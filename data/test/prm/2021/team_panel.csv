@@ -1,0 +1,69 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,oe:player:2925560e555046ad9b0066ff181fe21,Melonik,top,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,oe:player:c71563c4ae48cc1bbd2e7913366cdf7,SLT,top,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,oe:player:589e5a1530e21f585bc59294429dfb9,Akabane,jng,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,oe:player:f03efe870a72a927a911fe0dd4c04d8,Karim kt,jng,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,Reeker,mid,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,oe:player:44189e6dc3089dbf9520de800fa705a,Keduii,bot,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,oe:player:ca5b2a166b112de94b9e0847afb2f21,seaz,sup,,,,,,,,,,,,,,
+lineup,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,,,,lineup-e095ab031a143a51,BIG-01,1,12,oe:player:2925560e555046ad9b0066ff181fe21,oe:player:589e5a1530e21f585bc59294429dfb9,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,oe:player:44189e6dc3089dbf9520de800fa705a,oe:player:ca5b2a166b112de94b9e0847afb2f21,Melonik,Akabane,Reeker,Keduii,seaz
+lineup,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2021,Summer,,,,lineup-bb2933e7810677e5,BIG-02,2,1,oe:player:c71563c4ae48cc1bbd2e7913366cdf7,oe:player:f03efe870a72a927a911fe0dd4c04d8,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,oe:player:44189e6dc3089dbf9520de800fa705a,oe:player:ca5b2a166b112de94b9e0847afb2f21,SLT,Karim kt,Reeker,Keduii,seaz
+player,oe:team:26ff1a9f7fb8e976fbdcc5d2a8ac397,E WIE EINFACH E-SPORTS,EWEE,2021,Summer,oe:player:e360328ed1e82f20a512f191f45719d,Rocklho,top,,,,,,,,,,,,,,
+player,oe:team:26ff1a9f7fb8e976fbdcc5d2a8ac397,E WIE EINFACH E-SPORTS,EWEE,2021,Summer,oe:player:3e1b1e0f9c925b2f504d78f3bd5da22,D4nKa,jng,,,,,,,,,,,,,,
+player,oe:team:26ff1a9f7fb8e976fbdcc5d2a8ac397,E WIE EINFACH E-SPORTS,EWEE,2021,Summer,oe:player:49c0bca4593ff6e2e8a52d3cd726df5,Glowing,mid,,,,,,,,,,,,,,
+player,oe:team:26ff1a9f7fb8e976fbdcc5d2a8ac397,E WIE EINFACH E-SPORTS,EWEE,2021,Summer,oe:player:6fee49e2d64ca0c4ddc8e5fbae794c6,Lothi,bot,,,,,,,,,,,,,,
+player,oe:team:26ff1a9f7fb8e976fbdcc5d2a8ac397,E WIE EINFACH E-SPORTS,EWEE,2021,Summer,oe:player:f9c9bcf46ffbb514d015c45efdacf37,Vaunted,sup,,,,,,,,,,,,,,
+lineup,oe:team:26ff1a9f7fb8e976fbdcc5d2a8ac397,E WIE EINFACH E-SPORTS,EWEE,2021,Summer,,,,lineup-bb12816dd95e1384,EWEE-01,1,2,oe:player:e360328ed1e82f20a512f191f45719d,oe:player:3e1b1e0f9c925b2f504d78f3bd5da22,oe:player:49c0bca4593ff6e2e8a52d3cd726df5,oe:player:6fee49e2d64ca0c4ddc8e5fbae794c6,oe:player:f9c9bcf46ffbb514d015c45efdacf37,Rocklho,D4nKa,Glowing,Lothi,Vaunted
+player,oe:team:514d848d968399a239cdcc3d1412f2d,EURONICS Gaming,EG,2021,Summer,oe:player:bd2fbc5fe3052285f35f643726b511b,Ventair,top,,,,,,,,,,,,,,
+player,oe:team:514d848d968399a239cdcc3d1412f2d,EURONICS Gaming,EG,2021,Summer,oe:player:18b54e8c9a82b492feb24b1010cf45b,Lamabear,jng,,,,,,,,,,,,,,
+player,oe:team:514d848d968399a239cdcc3d1412f2d,EURONICS Gaming,EG,2021,Summer,oe:player:5fc85661a40e14e7066f9e2ab26fe87,InDeed,mid,,,,,,,,,,,,,,
+player,oe:team:514d848d968399a239cdcc3d1412f2d,EURONICS Gaming,EG,2021,Summer,oe:player:8dd84a9df0dc0ec74ebe4547e05a7ad,Tazaku,bot,,,,,,,,,,,,,,
+player,oe:team:514d848d968399a239cdcc3d1412f2d,EURONICS Gaming,EG,2021,Summer,oe:player:a9ba25ce987fe5f38b5b2b35627c6b5,Pandar,sup,,,,,,,,,,,,,,
+lineup,oe:team:514d848d968399a239cdcc3d1412f2d,EURONICS Gaming,EG,2021,Summer,,,,lineup-c27661c007c0fef9,EG-01,1,3,oe:player:bd2fbc5fe3052285f35f643726b511b,oe:player:18b54e8c9a82b492feb24b1010cf45b,oe:player:5fc85661a40e14e7066f9e2ab26fe87,oe:player:8dd84a9df0dc0ec74ebe4547e05a7ad,oe:player:a9ba25ce987fe5f38b5b2b35627c6b5,Ventair,Lamabear,InDeed,Tazaku,Pandar
+player,oe:team:d6bee7b81c11ac0c4318473f54211a9,FC Schalke 04 Evolution,FS0E,2021,Summer,oe:player:08e24fa87d64a6b8173824a409b7bd6,Yoppa,top,,,,,,,,,,,,,,
+player,oe:team:d6bee7b81c11ac0c4318473f54211a9,FC Schalke 04 Evolution,FS0E,2021,Summer,oe:player:27a9c63188ab92f603ab1fd42cb889a,Obsess,jng,,,,,,,,,,,,,,
+player,oe:team:d6bee7b81c11ac0c4318473f54211a9,FC Schalke 04 Evolution,FS0E,2021,Summer,oe:player:1806cb4175771800d1d1ace2817103c,Zwyroo,mid,,,,,,,,,,,,,,
+player,oe:team:d6bee7b81c11ac0c4318473f54211a9,FC Schalke 04 Evolution,FS0E,2021,Summer,oe:player:568a2c8d4ecd7385d177e89013ed6ee,Kynetic,bot,,,,,,,,,,,,,,
+player,oe:team:d6bee7b81c11ac0c4318473f54211a9,FC Schalke 04 Evolution,FS0E,2021,Summer,oe:player:3cd2f0511ee257ee836157168840d95,Tolerant,sup,,,,,,,,,,,,,,
+lineup,oe:team:d6bee7b81c11ac0c4318473f54211a9,FC Schalke 04 Evolution,FS0E,2021,Summer,,,,lineup-513eb3d232cd956e,FS0E-01,1,1,oe:player:08e24fa87d64a6b8173824a409b7bd6,oe:player:27a9c63188ab92f603ab1fd42cb889a,oe:player:1806cb4175771800d1d1ace2817103c,oe:player:568a2c8d4ecd7385d177e89013ed6ee,oe:player:3cd2f0511ee257ee836157168840d95,Yoppa,Obsess,Zwyroo,Kynetic,Tolerant
+player,oe:team:455551fe1d375c5bdf7385bf56a9722,GamerLegion,GAM,2021,Summer,oe:player:a7ad04a90c42364813f58ac20a3b121,Phones,top,,,,,,,,,,,,,,
+player,oe:team:455551fe1d375c5bdf7385bf56a9722,GamerLegion,GAM,2021,Summer,oe:player:6d630f0b571f8381f483b6a6941909a,Rabble,jng,,,,,,,,,,,,,,
+player,oe:team:455551fe1d375c5bdf7385bf56a9722,GamerLegion,GAM,2021,Summer,oe:player:d7432b52de9ff23e6aa98374fe63375,Nite,mid,,,,,,,,,,,,,,
+player,oe:team:455551fe1d375c5bdf7385bf56a9722,GamerLegion,GAM,2021,Summer,oe:player:e77cdf08626bdd7c16cd6b21c29d435,Hjarnan,bot,,,,,,,,,,,,,,
+player,oe:team:455551fe1d375c5bdf7385bf56a9722,GamerLegion,GAM,2021,Summer,oe:player:6369ba49db4cf35b35a7c47e3d4a4fd,Visdom,sup,,,,,,,,,,,,,,
+lineup,oe:team:455551fe1d375c5bdf7385bf56a9722,GamerLegion,GAM,2021,Summer,,,,lineup-dc90e8e874bc2ec0,GAM-01,1,1,oe:player:a7ad04a90c42364813f58ac20a3b121,oe:player:6d630f0b571f8381f483b6a6941909a,oe:player:d7432b52de9ff23e6aa98374fe63375,oe:player:e77cdf08626bdd7c16cd6b21c29d435,oe:player:6369ba49db4cf35b35a7c47e3d4a4fd,Phones,Rabble,Nite,Hjarnan,Visdom
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Spring,oe:player:422d7cc4063f8801a9427860bfd855b,Satorius,top,,,,,,,,,,,,,,
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Spring,oe:player:99594a251af944b3571fe7f37363303,Pridestalkr,jng,,,,,,,,,,,,,,
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Spring,oe:player:6606138426fa9bbef349c96b4afbc77,Czekolad,mid,,,,,,,,,,,,,,
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Spring,oe:player:4491b20edc9ceb1d782095e341051d9,LIDER,mid,,,,,,,,,,,,,,
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Spring,oe:player:71a0da2a0d53879bffd88b072d4c593,Gadget,bot,,,,,,,,,,,,,,
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Spring,oe:player:b5d46805ff0a618dc4c33f3d2f43102,Enjawve,sup,,,,,,,,,,,,,,
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Spring,oe:player:7aa0aebd379414d25f1fcdc396407f1,kamilius,sup,,,,,,,,,,,,,,
+lineup,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Spring,,,,lineup-a1a97ca26cba53db,MN-01,1,1,oe:player:422d7cc4063f8801a9427860bfd855b,oe:player:99594a251af944b3571fe7f37363303,oe:player:6606138426fa9bbef349c96b4afbc77,oe:player:71a0da2a0d53879bffd88b072d4c593,oe:player:7aa0aebd379414d25f1fcdc396407f1,Satorius,Pridestalkr,Czekolad,Gadget,kamilius
+lineup,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2021,Spring,,,,lineup-e0b3a951cba78e78,MN-02,2,1,oe:player:422d7cc4063f8801a9427860bfd855b,oe:player:99594a251af944b3571fe7f37363303,oe:player:4491b20edc9ceb1d782095e341051d9,oe:player:71a0da2a0d53879bffd88b072d4c593,oe:player:b5d46805ff0a618dc4c33f3d2f43102,Satorius,Pridestalkr,LIDER,Gadget,Enjawve
+player,oe:team:efcd9996cce28c8f5c8062ac3b7fbb4,PENTA 1860,P1,2021,Summer,oe:player:1d17186c66b693755087b8af8d0c611,Scarface,top,,,,,,,,,,,,,,
+player,oe:team:efcd9996cce28c8f5c8062ac3b7fbb4,PENTA 1860,P1,2021,Summer,oe:player:34838c71f87f1e1f8929e641124e17b,Rulfchen,jng,,,,,,,,,,,,,,
+player,oe:team:efcd9996cce28c8f5c8062ac3b7fbb4,PENTA 1860,P1,2021,Summer,oe:player:260f4f388d990d8940cfde52de0bda3,Phantomles,mid,,,,,,,,,,,,,,
+player,oe:team:efcd9996cce28c8f5c8062ac3b7fbb4,PENTA 1860,P1,2021,Summer,oe:player:9ea5afea85321b13df74acb62bfb530,Fun K3y,bot,,,,,,,,,,,,,,
+player,oe:team:efcd9996cce28c8f5c8062ac3b7fbb4,PENTA 1860,P1,2021,Summer,oe:player:6b15911e90833052d80c73d67dfce7d,Leon,sup,,,,,,,,,,,,,,
+lineup,oe:team:efcd9996cce28c8f5c8062ac3b7fbb4,PENTA 1860,P1,2021,Summer,,,,lineup-6aca86187c2423e8,P1-01,1,2,oe:player:1d17186c66b693755087b8af8d0c611,oe:player:34838c71f87f1e1f8929e641124e17b,oe:player:260f4f388d990d8940cfde52de0bda3,oe:player:9ea5afea85321b13df74acb62bfb530,oe:player:6b15911e90833052d80c73d67dfce7d,Scarface,Rulfchen,Phantomles,Fun K3y,Leon
+player,oe:team:aa8c3b781d96ddb7a24ab3240918988,SK Gaming Prime,SGP,2021,Summer,oe:player:d1261f9aed96b0ef50b6ab45af68288,Alois,top,,,,,,,,,,,,,,
+player,oe:team:aa8c3b781d96ddb7a24ab3240918988,SK Gaming Prime,SGP,2021,Summer,oe:player:d7135beac9f6c8c1522405454bebed7,Canee,jng,,,,,,,,,,,,,,
+player,oe:team:aa8c3b781d96ddb7a24ab3240918988,SK Gaming Prime,SGP,2021,Summer,oe:player:5ee6f2e1b3c6000a67c9dc360a63c63,twohoyrz,mid,,,,,,,,,,,,,,
+player,oe:team:aa8c3b781d96ddb7a24ab3240918988,SK Gaming Prime,SGP,2021,Summer,oe:player:a1cd4e9b2265b1a11ea157ccc74b1e5,UNF0RGIVEN,bot,,,,,,,,,,,,,,
+player,oe:team:aa8c3b781d96ddb7a24ab3240918988,SK Gaming Prime,SGP,2021,Summer,oe:player:a291e13e72870a901a7a03a59d9c6be,Lilipp,sup,,,,,,,,,,,,,,
+lineup,oe:team:aa8c3b781d96ddb7a24ab3240918988,SK Gaming Prime,SGP,2021,Summer,,,,lineup-e718d5cbfd6947e3,SGP-01,1,1,oe:player:d1261f9aed96b0ef50b6ab45af68288,oe:player:d7135beac9f6c8c1522405454bebed7,oe:player:5ee6f2e1b3c6000a67c9dc360a63c63,oe:player:a1cd4e9b2265b1a11ea157ccc74b1e5,oe:player:a291e13e72870a901a7a03a59d9c6be,Alois,Canee,twohoyrz,UNF0RGIVEN,Lilipp
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2021,Spring,oe:player:bddd4f44136f466c065a2c7a4c53e75,Sleeping,top,,,,,,,,,,,,,,
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2021,Spring,oe:player:4b453f6bfc22f3d73412ce9478d3da3,Kadir,jng,,,,,,,,,,,,,,
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2021,Spring,oe:player:657f1228bb53523274ae58bcd123ae8,Decay,mid,,,,,,,,,,,,,,
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2021,Spring,oe:player:dd4e48d56d876e846579c9e5c64d965,Venzer,bot,,,,,,,,,,,,,,
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2021,Spring,oe:player:23f5249382ade4216547b5e109c5414,jinjo,bot,,,,,,,,,,,,,,
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2021,Spring,oe:player:c7501b809cd41861a30f9e86aeaca29,Dreamer Ace,sup,,,,,,,,,,,,,,
+lineup,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2021,Spring,,,,lineup-6227ce05b2b8ec0b,UOLSE-01,1,1,oe:player:bddd4f44136f466c065a2c7a4c53e75,oe:player:4b453f6bfc22f3d73412ce9478d3da3,oe:player:657f1228bb53523274ae58bcd123ae8,oe:player:23f5249382ade4216547b5e109c5414,oe:player:c7501b809cd41861a30f9e86aeaca29,Sleeping,Kadir,Decay,jinjo,Dreamer Ace
+lineup,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2021,Spring,,,,lineup-8804defcea243c96,UOLSE-02,2,1,oe:player:bddd4f44136f466c065a2c7a4c53e75,oe:player:4b453f6bfc22f3d73412ce9478d3da3,oe:player:657f1228bb53523274ae58bcd123ae8,oe:player:dd4e48d56d876e846579c9e5c64d965,oe:player:c7501b809cd41861a30f9e86aeaca29,Sleeping,Kadir,Decay,Venzer,Dreamer Ace
+player,oe:team:a47e0c589cb9648875be30e30173f4a,WAVE Esports,WE,2021,Summer,oe:player:74cc915f83955219866a1bc32a90285,Sven,top,,,,,,,,,,,,,,
+player,oe:team:a47e0c589cb9648875be30e30173f4a,WAVE Esports,WE,2021,Summer,oe:player:ca9701f085966dfca32e31b1b1e9d55,Lyncas,jng,,,,,,,,,,,,,,
+player,oe:team:a47e0c589cb9648875be30e30173f4a,WAVE Esports,WE,2021,Summer,oe:player:3c3fb027a4593e06fa62c87319b22a6,Eren,mid,,,,,,,,,,,,,,
+player,oe:team:a47e0c589cb9648875be30e30173f4a,WAVE Esports,WE,2021,Summer,oe:player:4d502cddb3e94cb64100be58f85e600,Bung,bot,,,,,,,,,,,,,,
+player,oe:team:a47e0c589cb9648875be30e30173f4a,WAVE Esports,WE,2021,Summer,oe:player:9f65f7ff237a92d74cf2bf2420f2751,kibah,sup,,,,,,,,,,,,,,
+lineup,oe:team:a47e0c589cb9648875be30e30173f4a,WAVE Esports,WE,2021,Summer,,,,lineup-61d97e4d08832496,WE-01,1,1,oe:player:74cc915f83955219866a1bc32a90285,oe:player:ca9701f085966dfca32e31b1b1e9d55,oe:player:3c3fb027a4593e06fa62c87319b22a6,oe:player:4d502cddb3e94cb64100be58f85e600,oe:player:9f65f7ff237a92d74cf2bf2420f2751,Sven,Lyncas,Eren,Bung,kibah

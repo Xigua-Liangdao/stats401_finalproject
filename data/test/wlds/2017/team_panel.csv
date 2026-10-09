@@ -1,0 +1,49 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Unknown,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,Impact,top,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Unknown,oe:player:8a5dbe19794784cfd0553556844f045,Contractz,jng,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Unknown,oe:player:7e0e7ac2a199e8e2ecb30499a3b2153,Jensen,mid,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Unknown,oe:player:267b730dd2e2dcb97182a2795935491,Sneaky,bot,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Unknown,oe:player:4d2f4b9fa48af3a3618b2cbac02fa9b,Smoothie,sup,,,,,,,,,,,,,,
+lineup,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Unknown,,,,lineup-ed8207315c8b2e5f,CLO-01,1,6,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,oe:player:8a5dbe19794784cfd0553556844f045,oe:player:7e0e7ac2a199e8e2ecb30499a3b2153,oe:player:267b730dd2e2dcb97182a2795935491,oe:player:4d2f4b9fa48af3a3618b2cbac02fa9b,Impact,Contractz,Jensen,Sneaky,Smoothie
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2017,Unknown,oe:player:d026936df1996241d1cda58970b2a24,MMD,top,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2017,Unknown,oe:player:f3322656ae1facbf4763677fe2506a3,Karsa,jng,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2017,Unknown,oe:player:e3aa452243a476669824e52c1b7fc6b,Maple,mid,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2017,Unknown,oe:player:7e754adda86a60e0a39d7204ba60424,Betty,bot,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2017,Unknown,oe:player:0908c66a5c361f682282599e75b334f,SwordArt,sup,,,,,,,,,,,,,,
+lineup,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2017,Unknown,,,,lineup-b29f20f624f66020,FW-01,1,2,oe:player:d026936df1996241d1cda58970b2a24,oe:player:f3322656ae1facbf4763677fe2506a3,oe:player:e3aa452243a476669824e52c1b7fc6b,oe:player:7e754adda86a60e0a39d7204ba60424,oe:player:0908c66a5c361f682282599e75b334f,MMD,Karsa,Maple,Betty,SwordArt
+player,oe:team:d996d27c1737a1f7494fc09d6911339,Lyon Gaming,LG,2017,Unknown,oe:player:ff1c2739dbfa8f1dfeccb61919cb9ab,Jirall,top,,,,,,,,,,,,,,
+player,oe:team:d996d27c1737a1f7494fc09d6911339,Lyon Gaming,LG,2017,Unknown,oe:player:de23ee5a66222e1e02da354414f2971,Oddie,jng,,,,,,,,,,,,,,
+player,oe:team:d996d27c1737a1f7494fc09d6911339,Lyon Gaming,LG,2017,Unknown,oe:player:7378a82177ee6bee2015ac5d134abe3,Seiya,mid,,,,,,,,,,,,,,
+player,oe:team:d996d27c1737a1f7494fc09d6911339,Lyon Gaming,LG,2017,Unknown,oe:player:0c5ad5df75cf72ddf6263f311440242,WhiteLotus,bot,,,,,,,,,,,,,,
+player,oe:team:d996d27c1737a1f7494fc09d6911339,Lyon Gaming,LG,2017,Unknown,oe:player:45299b6d8ad2fe721f4eb3c5d804fec,Genthix,sup,,,,,,,,,,,,,,
+lineup,oe:team:d996d27c1737a1f7494fc09d6911339,Lyon Gaming,LG,2017,Unknown,,,,lineup-d5bf0cbf2958436d,LG-01,1,1,oe:player:ff1c2739dbfa8f1dfeccb61919cb9ab,oe:player:de23ee5a66222e1e02da354414f2971,oe:player:7378a82177ee6bee2015ac5d134abe3,oe:player:0c5ad5df75cf72ddf6263f311440242,oe:player:45299b6d8ad2fe721f4eb3c5d804fec,Jirall,Oddie,Seiya,WhiteLotus,Genthix
+player,oe:team:594b183f8fb081ef64820f31ab8d641,Misfits Gaming,MG,2017,Unknown,oe:player:9492b0cfd4d97adce92527c34db72ee,Alphari,top,,,,,,,,,,,,,,
+player,oe:team:594b183f8fb081ef64820f31ab8d641,Misfits Gaming,MG,2017,Unknown,oe:player:d4f3cf480c9676887d4f83f6d96d7c2,Maxlore,jng,,,,,,,,,,,,,,
+player,oe:team:594b183f8fb081ef64820f31ab8d641,Misfits Gaming,MG,2017,Unknown,oe:player:b6ebe3c8487ddc3a23c586e650c4528,PowerOfEvil,mid,,,,,,,,,,,,,,
+player,oe:team:594b183f8fb081ef64820f31ab8d641,Misfits Gaming,MG,2017,Unknown,oe:player:c62a5235ad6bc113a1e64eb0e9aa8c8,Hans Sama,bot,,,,,,,,,,,,,,
+player,oe:team:594b183f8fb081ef64820f31ab8d641,Misfits Gaming,MG,2017,Unknown,oe:player:e22cffb92554f5dde312609feccc6f8,IgNar,sup,,,,,,,,,,,,,,
+lineup,oe:team:594b183f8fb081ef64820f31ab8d641,Misfits Gaming,MG,2017,Unknown,,,,lineup-e75656d9dc839738,MG-01,1,2,oe:player:9492b0cfd4d97adce92527c34db72ee,oe:player:d4f3cf480c9676887d4f83f6d96d7c2,oe:player:b6ebe3c8487ddc3a23c586e650c4528,oe:player:c62a5235ad6bc113a1e64eb0e9aa8c8,oe:player:e22cffb92554f5dde312609feccc6f8,Alphari,Maxlore,PowerOfEvil,Hans Sama,IgNar
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Unknown,oe:player:20aba59cf47a04a6cf10436ce1946ac,Hauntzer,top,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Unknown,oe:player:c271341160441d375411fef9bf2f9ef,Svenskeren,jng,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Unknown,oe:player:63ba5c5e5bb73ace706183b5e05a27e,Bjergsen,mid,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Unknown,oe:player:f25df399390d86b9a1e83216dae597b,Doublelift,bot,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Unknown,oe:player:88b780b9f178fd2e50a458ae282cd7c,Biofrost,sup,,,,,,,,,,,,,,
+lineup,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Unknown,,,,lineup-c787248f4e60058e,TSM-01,1,2,oe:player:20aba59cf47a04a6cf10436ce1946ac,oe:player:c271341160441d375411fef9bf2f9ef,oe:player:63ba5c5e5bb73ace706183b5e05a27e,oe:player:f25df399390d86b9a1e83216dae597b,oe:player:88b780b9f178fd2e50a458ae282cd7c,Hauntzer,Svenskeren,Bjergsen,Doublelift,Biofrost
+player,oe:team:62c1cd9465dc63824593ee5046f5aa8,Team WE,WE,2017,Unknown,oe:player:2ba596643cbbbc20318224181fa46b2,957,top,,,,,,,,,,,,,,
+player,oe:team:62c1cd9465dc63824593ee5046f5aa8,Team WE,WE,2017,Unknown,oe:player:4792ad71dfce44c8d35765c41c07cca,Condi,jng,,,,,,,,,,,,,,
+player,oe:team:62c1cd9465dc63824593ee5046f5aa8,Team WE,WE,2017,Unknown,oe:player:adf9d4f627b07e1c80f85c1e25f4bb8,xiye,mid,,,,,,,,,,,,,,
+player,oe:team:62c1cd9465dc63824593ee5046f5aa8,Team WE,WE,2017,Unknown,oe:player:7b28158d613ea1869441676fa32a3b5,Mystic,bot,,,,,,,,,,,,,,
+player,oe:team:62c1cd9465dc63824593ee5046f5aa8,Team WE,WE,2017,Unknown,oe:player:092f2ba9f39fbc2876e64d12cd662f7,Ben,sup,,,,,,,,,,,,,,
+lineup,oe:team:62c1cd9465dc63824593ee5046f5aa8,Team WE,WE,2017,Unknown,,,,lineup-2f99c5d395095a37,WE-01,1,14,oe:player:2ba596643cbbbc20318224181fa46b2,oe:player:4792ad71dfce44c8d35765c41c07cca,oe:player:adf9d4f627b07e1c80f85c1e25f4bb8,oe:player:7b28158d613ea1869441676fa32a3b5,oe:player:092f2ba9f39fbc2876e64d12cd662f7,957,Condi,xiye,Mystic,Ben
+player,oe:team:364547a649dd1c75e258f0d5168509f,Team oNe eSports,TOE,2017,Unknown,oe:player:ce5fa3b9c8624d541eb1715f6d27a88,VVvert,top,,,,,,,,,,,,,,
+player,oe:team:364547a649dd1c75e258f0d5168509f,Team oNe eSports,TOE,2017,Unknown,oe:player:4722002878fca46731343f6cada2f18,4LaN,jng,,,,,,,,,,,,,,
+player,oe:team:364547a649dd1c75e258f0d5168509f,Team oNe eSports,TOE,2017,Unknown,oe:player:88f05991e7e4a8ed9c837be13c91133,Brucer,mid,,,,,,,,,,,,,,
+player,oe:team:364547a649dd1c75e258f0d5168509f,Team oNe eSports,TOE,2017,Unknown,oe:player:03d8a31fe62908dfdaac78634612f24,Absolut,bot,,,,,,,,,,,,,,
+player,oe:team:364547a649dd1c75e258f0d5168509f,Team oNe eSports,TOE,2017,Unknown,oe:player:0c041d02ab7138f57164fafbc091b2d,RedBert,sup,,,,,,,,,,,,,,
+lineup,oe:team:364547a649dd1c75e258f0d5168509f,Team oNe eSports,TOE,2017,Unknown,,,,lineup-6a8aff46211e02e7,TOE-01,1,1,oe:player:ce5fa3b9c8624d541eb1715f6d27a88,oe:player:4722002878fca46731343f6cada2f18,oe:player:88f05991e7e4a8ed9c837be13c91133,oe:player:03d8a31fe62908dfdaac78634612f24,oe:player:0c041d02ab7138f57164fafbc091b2d,VVvert,4LaN,Brucer,Absolut,RedBert
+player,oe:team:6c951ee7222ac9acd244aa88c9e8330,Young Generation,YG,2017,Unknown,oe:player:2775a63846b6232662fff87128061bb,yT,top,,,,,,,,,,,,,,
+player,oe:team:6c951ee7222ac9acd244aa88c9e8330,Young Generation,YG,2017,Unknown,oe:player:0bdc508a17811a3a860d32749ad44e4,Venus,jng,,,,,,,,,,,,,,
+player,oe:team:6c951ee7222ac9acd244aa88c9e8330,Young Generation,YG,2017,Unknown,oe:player:40c0863db40a68f9732b23e541a37ec,Naul,mid,,,,,,,,,,,,,,
+player,oe:team:6c951ee7222ac9acd244aa88c9e8330,Young Generation,YG,2017,Unknown,oe:player:7d5920ddca78bb9228495209bbc2d4d,Bigkoro,bot,,,,,,,,,,,,,,
+player,oe:team:6c951ee7222ac9acd244aa88c9e8330,Young Generation,YG,2017,Unknown,oe:player:278f9a3d3077c522e71022e302b9e0e,Palette,sup,,,,,,,,,,,,,,
+lineup,oe:team:6c951ee7222ac9acd244aa88c9e8330,Young Generation,YG,2017,Unknown,,,,lineup-a6536b614f1d51fa,YG-01,1,2,oe:player:2775a63846b6232662fff87128061bb,oe:player:0bdc508a17811a3a860d32749ad44e4,oe:player:40c0863db40a68f9732b23e541a37ec,oe:player:7d5920ddca78bb9228495209bbc2d4d,oe:player:278f9a3d3077c522e71022e302b9e0e,yT,Venus,Naul,Bigkoro,Palette

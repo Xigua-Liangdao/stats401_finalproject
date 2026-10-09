@@ -1,18 +1,24 @@
 """One CSV/JSON serializer shared by processed data and frontend test fixtures."""
 from copy import deepcopy
 import json
-from numbers import Real
 
 import pandas as pd
 
-SCHEMA_VERSION = "2.0.0"
+SCHEMA_VERSION = "2.1.0"
 SUMMARY_TABLES = ["players", "pairs", "lineups", "teams", "timeline"]
 NULLABLE_FIELDS = {
     "expected_dpm", "baseline_dpm", "training_role_sd", "adjusted_impact", "train_end_day",
     "pair_impact", "lineup_impact", "mean_impact", "shrunk_impact", "ci_low", "ci_high", "win_rate",
     "gold_concentration", "damage_concentration", "gold_diff_at_15", "xp_diff_at_15", "cs_diff_at_15",
-    "vision_score", "vision_per_minute", "kill_participation", "kills", "deaths", "assists", "kda", "total_cs",
+    "vision_score", "vision_per_minute", "kill_participation", "kills", "deaths", "assists", "kda", "total_cs", "playoffs",
 }
+TEXT_FIELDS = {
+    "record_id", "game_id", "date", "day", "split", "patch", "side", "role", "champion",
+    "role_champion", "player", "team", "opponent_team", "opponent_champion", "player_a", "player_b",
+    "prediction_status", "train_end_day", "affinity_score",
+}
+INTEGER_FIELDS = {"season", "playoffs", "result", "kills", "deaths", "assists", "vision_score",
+                  "total_cs", "fold", "n_games", "n_games_total", "n_days"}
 
 
 def write_json(path, value):
@@ -25,16 +31,15 @@ def records(frame):
 
 
 def field_dtype(series):
-    # pandas can infer object when a numeric summary includes pd.NA. Declare
-    # these as numbers so CSV and JSON consumers see the same public type.
-    values = series.dropna()
-    if str(series.dtype) == "object" and (
-        (not values.empty and all(isinstance(v, Real) and not isinstance(v, bool) for v in values))
-        or (values.empty and (series.name in NULLABLE_FIELDS or series.name.startswith("mean_")
-                              or series.name.endswith("_share")))
-    ):
-        return "float64"
-    return str(series.dtype)
+    # Field semantics, not a particular league's missingness, define the contract.
+    name = series.name
+    if name == "eligible":
+        return "bool"
+    if name in TEXT_FIELDS or name.endswith(("_id", "_player")):
+        return "string"
+    if name in INTEGER_FIELDS:
+        return "Int64" if name in NULLABLE_FIELDS else "int64"
+    return "float64"
 
 
 def cast_table(table, fields):
@@ -51,7 +56,7 @@ def make_schema(tables):
     return {"schema_version": SCHEMA_VERSION, "tables": {
         name: {"file": f"{name}.csv", "rows": len(table), "fields": {
             column: {"dtype": field_dtype(table[column]),
-                     "nullable": bool(table[column].isna().any() or column in NULLABLE_FIELDS
+                     "nullable": bool(column in NULLABLE_FIELDS
                                       or column.startswith("mean_") or column.endswith("_share"))}
             for column in table}}
         for name, table in tables.items()}}

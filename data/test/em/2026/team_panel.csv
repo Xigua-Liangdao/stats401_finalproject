@@ -1,0 +1,45 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2026,Winter,oe:player:027a5217b659e8bedb70978dea494d6,Irrelevant,top,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2026,Winter,oe:player:1506ea935288289a3e2c712b55f280f,Habubu,jng,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2026,Winter,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,Reeker,mid,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2026,Winter,oe:player:9ea5afea85321b13df74acb62bfb530,Fun K3y,bot,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2026,Winter,oe:player:1dad889ff236635dc1e03d02312e79c,Patrik,bot,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2026,Winter,oe:player:ec0971fb900874b1c59179d9cd33687,Kaiser,sup,,,,,,,,,,,,,,
+lineup,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2026,Winter,,,,lineup-eae60007a22b04be,BIG-01,1,3,oe:player:027a5217b659e8bedb70978dea494d6,oe:player:1506ea935288289a3e2c712b55f280f,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,oe:player:1dad889ff236635dc1e03d02312e79c,oe:player:ec0971fb900874b1c59179d9cd33687,Irrelevant,Habubu,Reeker,Patrik,Kaiser
+lineup,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2026,Winter,,,,lineup-adb0315d65438c58,BIG-02,2,1,oe:player:027a5217b659e8bedb70978dea494d6,oe:player:1506ea935288289a3e2c712b55f280f,oe:player:a8ab1ca5ba5183bdad08a3f2eeeb95d,oe:player:9ea5afea85321b13df74acb62bfb530,oe:player:ec0971fb900874b1c59179d9cd33687,Irrelevant,Habubu,Reeker,Fun K3y,Kaiser
+player,oe:team:e0143514c5de64f62eb418004ca2751,Galions,GAL,2026,Winter,oe:player:5fa6eac8bedeed60a83f154d9538ee1,Carlsen,top,,,,,,,,,,,,,,
+player,oe:team:e0143514c5de64f62eb418004ca2751,Galions,GAL,2026,Winter,oe:player:d6a41c1166922d1ff489fdb2fa06289,Thayger,jng,,,,,,,,,,,,,,
+player,oe:team:e0143514c5de64f62eb418004ca2751,Galions,GAL,2026,Winter,oe:player:e42fd90dea956c3986b69209b56ce16,OMON,mid,,,,,,,,,,,,,,
+player,oe:team:e0143514c5de64f62eb418004ca2751,Galions,GAL,2026,Winter,oe:player:3d022fcafe5af9f52df92b17c015fe6,HARPOON,bot,,,,,,,,,,,,,,
+player,oe:team:e0143514c5de64f62eb418004ca2751,Galions,GAL,2026,Winter,oe:player:fa22d396503a5a737f2f169943d7241,Zoelys,sup,,,,,,,,,,,,,,
+lineup,oe:team:e0143514c5de64f62eb418004ca2751,Galions,GAL,2026,Winter,,,,lineup-2cf0ce8d8fabecf5,GAL-01,1,4,oe:player:5fa6eac8bedeed60a83f154d9538ee1,oe:player:d6a41c1166922d1ff489fdb2fa06289,oe:player:e42fd90dea956c3986b69209b56ce16,oe:player:3d022fcafe5af9f52df92b17c015fe6,oe:player:fa22d396503a5a737f2f169943d7241,Carlsen,Thayger,OMON,HARPOON,Zoelys
+player,oe:team:196ea640b81c54e20e32b6294ab9769,Misa Esports,ME,2026,Winter,oe:player:c0f78343a2ad4ba1463245d53a3b440,Ragner,top,,,,,,,,,,,,,,
+player,oe:team:196ea640b81c54e20e32b6294ab9769,Misa Esports,ME,2026,Winter,oe:player:73278a4a86960eeb576a8fd4c9ec699,113,jng,,,,,,,,,,,,,,
+player,oe:team:196ea640b81c54e20e32b6294ab9769,Misa Esports,ME,2026,Winter,oe:player:613a571a4b0b674547093130f2e4093,SlowQ,mid,,,,,,,,,,,,,,
+player,oe:team:196ea640b81c54e20e32b6294ab9769,Misa Esports,ME,2026,Winter,oe:player:2452114de900ce4bb971851b668786d,Hype,bot,,,,,,,,,,,,,,
+player,oe:team:196ea640b81c54e20e32b6294ab9769,Misa Esports,ME,2026,Winter,oe:player:41672e17bc1f86dc5d93955c031d2a9,Stend,sup,,,,,,,,,,,,,,
+lineup,oe:team:196ea640b81c54e20e32b6294ab9769,Misa Esports,ME,2026,Winter,,,,lineup-b2476eaa4759852e,ME-01,1,6,oe:player:c0f78343a2ad4ba1463245d53a3b440,oe:player:73278a4a86960eeb576a8fd4c9ec699,oe:player:613a571a4b0b674547093130f2e4093,oe:player:2452114de900ce4bb971851b668786d,oe:player:41672e17bc1f86dc5d93955c031d2a9,Ragner,113,SlowQ,Hype,Stend
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2026,Winter,oe:player:75414f3b4f03bf449c319eb75f3dd5b,Kryze,top,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2026,Winter,oe:player:060e16e1c91434827c294bac52e8b47,Zicssi,jng,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2026,Winter,oe:player:990de650e44c3b85ec90451de02db04,Jool,mid,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2026,Winter,oe:player:d47955c8bc06bf316f24ee15d45407b,Aetinoth,bot,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2026,Winter,oe:player:973547129a691fb61e886add170ac7a,Piero,sup,,,,,,,,,,,,,,
+lineup,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2026,Winter,,,,lineup-3aa0374ac22ca489,SOL-01,1,15,oe:player:75414f3b4f03bf449c319eb75f3dd5b,oe:player:060e16e1c91434827c294bac52e8b47,oe:player:990de650e44c3b85ec90451de02db04,oe:player:d47955c8bc06bf316f24ee15d45407b,oe:player:973547129a691fb61e886add170ac7a,Kryze,Zicssi,Jool,Aetinoth,Piero
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2026,Winter,oe:player:51777d50bf7bf71ff70b8a32726e40c,Fornoreason,top,,,,,,,,,,,,,,
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2026,Winter,oe:player:41ea0ed55fe655184c9073085b85eea,White,jng,,,,,,,,,,,,,,
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2026,Winter,oe:player:28c63fa3372e3ea966da602ca9137b6,RoyalKanin,mid,,,,,,,,,,,,,,
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2026,Winter,oe:player:ccfb5c69ebcc2008b1dca4ef5c56142,DenVoksne,bot,,,,,,,,,,,,,,
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2026,Winter,oe:player:ae20b1872a922cdc5b8707fbe66c4f0,Twiizt,sup,,,,,,,,,,,,,,
+lineup,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2026,Winter,,,,lineup-e5b0fee240df0033,UOLSE-01,1,3,oe:player:51777d50bf7bf71ff70b8a32726e40c,oe:player:41ea0ed55fe655184c9073085b85eea,oe:player:28c63fa3372e3ea966da602ca9137b6,oe:player:ccfb5c69ebcc2008b1dca4ef5c56142,oe:player:ae20b1872a922cdc5b8707fbe66c4f0,Fornoreason,White,RoyalKanin,DenVoksne,Twiizt
+player,oe:team:b33646d7b7b14dd6da17a88f6ddb592,Verdant,VER,2026,Winter,oe:player:8486d94ef23b38c67c76b647613d881,bobista,top,,,,,,,,,,,,,,
+player,oe:team:b33646d7b7b14dd6da17a88f6ddb592,Verdant,VER,2026,Winter,oe:player:cd521f662fbbec89f03a900e7d9bb63,Mafro,jng,,,,,,,,,,,,,,
+player,oe:team:b33646d7b7b14dd6da17a88f6ddb592,Verdant,VER,2026,Winter,oe:player:014c50a8bcb2f8965db2fa367330876,Furuy,mid,,,,,,,,,,,,,,
+player,oe:team:b33646d7b7b14dd6da17a88f6ddb592,Verdant,VER,2026,Winter,oe:player:0b73817b6d353252df2bbe48993b983,Mishi,bot,,,,,,,,,,,,,,
+player,oe:team:b33646d7b7b14dd6da17a88f6ddb592,Verdant,VER,2026,Winter,oe:player:cb98b4c6c9cb226e72bceb02e195a07,Guggu,sup,,,,,,,,,,,,,,
+lineup,oe:team:b33646d7b7b14dd6da17a88f6ddb592,Verdant,VER,2026,Winter,,,,lineup-c05fc43490a14cb9,VER-01,1,1,oe:player:8486d94ef23b38c67c76b647613d881,oe:player:cd521f662fbbec89f03a900e7d9bb63,oe:player:014c50a8bcb2f8965db2fa367330876,oe:player:0b73817b6d353252df2bbe48993b983,oe:player:cb98b4c6c9cb226e72bceb02e195a07,bobista,Mafro,Furuy,Mishi,Guggu
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2026,Winter,oe:player:4bdb80c84e25651b3d62742c0b61f6d,iBo,top,,,,,,,,,,,,,,
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2026,Winter,oe:player:fe78f3efbfa84d8485d589031596c5b,Pallet,jng,,,,,,,,,,,,,,
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2026,Winter,oe:player:c71bc697e58f3b122ac4bf86e8648ad,Tsiper,mid,,,,,,,,,,,,,,
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2026,Winter,oe:player:e38e8c286a37ea366d40ba664b1d00c,Unkn0wn,bot,,,,,,,,,,,,,,
+player,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2026,Winter,oe:player:5172a81c77dad76588c5025c9aad0ae,Speedy1,sup,,,,,,,,,,,,,,
+lineup,oe:team:b19ab22267512e77945cd498106dcf1,WLGaming Esports,WE,2026,Winter,,,,lineup-b85aab1ae7c044c7,WE-01,1,1,oe:player:4bdb80c84e25651b3d62742c0b61f6d,oe:player:fe78f3efbfa84d8485d589031596c5b,oe:player:c71bc697e58f3b122ac4bf86e8648ad,oe:player:e38e8c286a37ea366d40ba664b1d00c,oe:player:5172a81c77dad76588c5025c9aad0ae,iBo,Pallet,Tsiper,Unkn0wn,Speedy1

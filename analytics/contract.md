@@ -187,7 +187,9 @@ Records a meaningful change to a filter.
 
 Examples:
 
-* changing the season filter;
+* changing the league filter;
+* changing the season filter within the selected league;
+* changing the homepage role ranking;
 * changing a team filter;
 * changing another visualization-level filter;
 * dragging a zoomed chart window, recorded as `target_type` `axis_move` with the previous and next window in `metadata`;

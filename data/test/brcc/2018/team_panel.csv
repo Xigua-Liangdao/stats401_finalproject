@@ -1,0 +1,51 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:5ef087125f8255546c01970122b3cec,Flamengo Esports,FE,2018,Unknown,oe:player:ed7abaae0ee6899cafc612e0fdc5579,Jisu,top,,,,,,,,,,,,,,
+player,oe:team:5ef087125f8255546c01970122b3cec,Flamengo Esports,FE,2018,Unknown,oe:player:1c347deb44214ff5e726bffd9d97abc,Sirt,jng,,,,,,,,,,,,,,
+player,oe:team:5ef087125f8255546c01970122b3cec,Flamengo Esports,FE,2018,Unknown,oe:player:b10346cf5cb42e86bb81b3ec776ffa0,Evrot,mid,,,,,,,,,,,,,,
+player,oe:team:5ef087125f8255546c01970122b3cec,Flamengo Esports,FE,2018,Unknown,oe:player:8949aee3a35b0a789d1090f412d8d61,brTT,bot,,,,,,,,,,,,,,
+player,oe:team:5ef087125f8255546c01970122b3cec,Flamengo Esports,FE,2018,Unknown,oe:player:bd7992c3a0b0398d2833e69f231d5e3,esA,sup,,,,,,,,,,,,,,
+lineup,oe:team:5ef087125f8255546c01970122b3cec,Flamengo Esports,FE,2018,Unknown,,,,lineup-de516712657ce39c,FE-01,1,2,oe:player:ed7abaae0ee6899cafc612e0fdc5579,oe:player:1c347deb44214ff5e726bffd9d97abc,oe:player:b10346cf5cb42e86bb81b3ec776ffa0,oe:player:8949aee3a35b0a789d1090f412d8d61,oe:player:bd7992c3a0b0398d2833e69f231d5e3,Jisu,Sirt,Evrot,brTT,esA
+player,oe:team:3cfb5ebe63afedf7c686dd9bb4c277c,Ilha da Macacada Gaming,IDMG,2018,Unknown,oe:player:49ee3087348e8d44e1feda191744398,Name,top,,,,,,,,,,,,,,
+player,oe:team:3cfb5ebe63afedf7c686dd9bb4c277c,Ilha da Macacada Gaming,IDMG,2018,Unknown,oe:player:27dddda4733563bfee89fd220fc6717,CarioK,jng,,,,,,,,,,,,,,
+player,oe:team:3cfb5ebe63afedf7c686dd9bb4c277c,Ilha da Macacada Gaming,IDMG,2018,Unknown,oe:player:b57e72ed35022b11f16f095682ff782,Anyyy,mid,,,,,,,,,,,,,,
+player,oe:team:3cfb5ebe63afedf7c686dd9bb4c277c,Ilha da Macacada Gaming,IDMG,2018,Unknown,oe:player:1bb1fef0555e06fc6247a154536cccc,Sarkis,bot,,,,,,,,,,,,,,
+player,oe:team:3cfb5ebe63afedf7c686dd9bb4c277c,Ilha da Macacada Gaming,IDMG,2018,Unknown,oe:player:b9f24e83531326204197015b2f43a93,Damage,sup,,,,,,,,,,,,,,
+lineup,oe:team:3cfb5ebe63afedf7c686dd9bb4c277c,Ilha da Macacada Gaming,IDMG,2018,Unknown,,,,lineup-c56a49a417b60f88,IDMG-01,1,2,oe:player:49ee3087348e8d44e1feda191744398,oe:player:27dddda4733563bfee89fd220fc6717,oe:player:b57e72ed35022b11f16f095682ff782,oe:player:1bb1fef0555e06fc6247a154536cccc,oe:player:b9f24e83531326204197015b2f43a93,Name,CarioK,Anyyy,Sarkis,Damage
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2018,Unknown,oe:player:12d4aaf1584f2d9c40545ddc1309ae5,Aoshi,top,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2018,Unknown,oe:player:e81559780effefee74a3c057177f027,Freire,jng,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2018,Unknown,oe:player:d97af337a00ba4e521977755416eae5,Aslan,mid,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2018,Unknown,oe:player:409f6a5ffb18597f1ad5d0cc46861b7,Garo,bot,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2018,Unknown,oe:player:3602f4818a8b622dca04591f45c627f,Kalec,sup,,,,,,,,,,,,,,
+player,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2018,Unknown,oe:player:2365b9c86d57fd1b5a4488f621d3cff,Woodboy,sup,,,,,,,,,,,,,,
+lineup,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2018,Unknown,,,,lineup-1afdd33ddea01ba0,OKE-01,1,4,oe:player:12d4aaf1584f2d9c40545ddc1309ae5,oe:player:e81559780effefee74a3c057177f027,oe:player:d97af337a00ba4e521977755416eae5,oe:player:409f6a5ffb18597f1ad5d0cc46861b7,oe:player:3602f4818a8b622dca04591f45c627f,Aoshi,Freire,Aslan,Garo,Kalec
+lineup,oe:team:536636ce0064fb7b5d3b9e91a0d7ca6,Operation Kino e-Sports,OKE,2018,Unknown,,,,lineup-8c1a305ae5d8b7b1,OKE-02,2,1,oe:player:12d4aaf1584f2d9c40545ddc1309ae5,oe:player:e81559780effefee74a3c057177f027,oe:player:d97af337a00ba4e521977755416eae5,oe:player:409f6a5ffb18597f1ad5d0cc46861b7,oe:player:2365b9c86d57fd1b5a4488f621d3cff,Aoshi,Freire,Aslan,Garo,Woodboy
+player,oe:team:f7357a7d977599b7742a122a2230cae,Redemption eSports Porto Alegre,REPA,2018,Unknown,oe:player:583fa847254818549132d141ed2f4f5,Nyu,top,,,,,,,,,,,,,,
+player,oe:team:f7357a7d977599b7742a122a2230cae,Redemption eSports Porto Alegre,REPA,2018,Unknown,oe:player:38650fd135db39772bc157f764eb8ea,Zuao,jng,,,,,,,,,,,,,,
+player,oe:team:f7357a7d977599b7742a122a2230cae,Redemption eSports Porto Alegre,REPA,2018,Unknown,oe:player:0a0e15e8e14edd7e4039cbf6f4fbfa4,Krastyel,mid,,,,,,,,,,,,,,
+player,oe:team:f7357a7d977599b7742a122a2230cae,Redemption eSports Porto Alegre,REPA,2018,Unknown,oe:player:952f90bd1805db865fdb728cd1f2d92,DudsTheBoy,bot,,,,,,,,,,,,,,
+player,oe:team:f7357a7d977599b7742a122a2230cae,Redemption eSports Porto Alegre,REPA,2018,Unknown,oe:player:c88cada1696defe81464925789aa6d8,Ceos,sup,,,,,,,,,,,,,,
+lineup,oe:team:f7357a7d977599b7742a122a2230cae,Redemption eSports Porto Alegre,REPA,2018,Unknown,,,,lineup-1c37e205ad6fe4f8,REPA-01,1,13,oe:player:583fa847254818549132d141ed2f4f5,oe:player:38650fd135db39772bc157f764eb8ea,oe:player:0a0e15e8e14edd7e4039cbf6f4fbfa4,oe:player:952f90bd1805db865fdb728cd1f2d92,oe:player:c88cada1696defe81464925789aa6d8,Nyu,Zuao,Krastyel,DudsTheBoy,Ceos
+player,oe:team:0be4da26bf3e925132f60c3d537fdab,Submarino Stars,SS,2018,Unknown,oe:player:887ad4cf95811cbf6de125f4b979c71,Duclou,top,,,,,,,,,,,,,,
+player,oe:team:0be4da26bf3e925132f60c3d537fdab,Submarino Stars,SS,2018,Unknown,oe:player:143b6a5b81ffd7e5fc5a8488cb1edd2,Prb,jng,,,,,,,,,,,,,,
+player,oe:team:0be4da26bf3e925132f60c3d537fdab,Submarino Stars,SS,2018,Unknown,oe:player:d194f6e8b8d4df7161f0a8058064fd8,Chavoso,mid,,,,,,,,,,,,,,
+player,oe:team:0be4da26bf3e925132f60c3d537fdab,Submarino Stars,SS,2018,Unknown,oe:player:af668e38dba2d6d215e578563583f23,Juzo,bot,,,,,,,,,,,,,,
+player,oe:team:0be4da26bf3e925132f60c3d537fdab,Submarino Stars,SS,2018,Unknown,oe:player:0ce31aef5072bf6874237a41232ca3b,Blury,sup,,,,,,,,,,,,,,
+lineup,oe:team:0be4da26bf3e925132f60c3d537fdab,Submarino Stars,SS,2018,Unknown,,,,lineup-c7db59018814d03f,SS-01,1,2,oe:player:887ad4cf95811cbf6de125f4b979c71,oe:player:143b6a5b81ffd7e5fc5a8488cb1edd2,oe:player:d194f6e8b8d4df7161f0a8058064fd8,oe:player:af668e38dba2d6d215e578563583f23,oe:player:0ce31aef5072bf6874237a41232ca3b,Duclou,Prb,Chavoso,Juzo,Blury
+player,oe:team:364547a649dd1c75e258f0d5168509f,Team oNe eSports,TOE,2018,Unknown,oe:player:49ee3087348e8d44e1feda191744398,Name,top,,,,,,,,,,,,,,
+player,oe:team:364547a649dd1c75e258f0d5168509f,Team oNe eSports,TOE,2018,Unknown,oe:player:4722002878fca46731343f6cada2f18,4LaN,jng,,,,,,,,,,,,,,
+player,oe:team:364547a649dd1c75e258f0d5168509f,Team oNe eSports,TOE,2018,Unknown,oe:player:7e76d237af4844406d36a27ddb255dd,takeshi,mid,,,,,,,,,,,,,,
+player,oe:team:364547a649dd1c75e258f0d5168509f,Team oNe eSports,TOE,2018,Unknown,oe:player:c05acde6e582d7ebc7f7b5738d7ff2e,Nikola,bot,,,,,,,,,,,,,,
+player,oe:team:364547a649dd1c75e258f0d5168509f,Team oNe eSports,TOE,2018,Unknown,oe:player:54dfc311555112498c08f57e93c0270,JoJo,sup,,,,,,,,,,,,,,
+lineup,oe:team:364547a649dd1c75e258f0d5168509f,Team oNe eSports,TOE,2018,Unknown,,,,lineup-62b1bd99dd0233de,TOE-01,1,2,oe:player:49ee3087348e8d44e1feda191744398,oe:player:4722002878fca46731343f6cada2f18,oe:player:7e76d237af4844406d36a27ddb255dd,oe:player:c05acde6e582d7ebc7f7b5738d7ff2e,oe:player:54dfc311555112498c08f57e93c0270,Name,4LaN,takeshi,Nikola,JoJo
+player,oe:team:2a20f01b9c2fec8d3b781133e2bb7b2,WP Gaming,WG,2018,Unknown,oe:player:531995fe70f90681839d418cb3458a2,Lynx,top,,,,,,,,,,,,,,
+player,oe:team:2a20f01b9c2fec8d3b781133e2bb7b2,WP Gaming,WG,2018,Unknown,oe:player:fe4ecad66fbf9135d6e1e3adeaf00fe,Ferchu,jng,,,,,,,,,,,,,,
+player,oe:team:2a20f01b9c2fec8d3b781133e2bb7b2,WP Gaming,WG,2018,Unknown,oe:player:39de7fd8cd21129bf1a1a1616415dfe,Vampyrus,mid,,,,,,,,,,,,,,
+player,oe:team:2a20f01b9c2fec8d3b781133e2bb7b2,WP Gaming,WG,2018,Unknown,oe:player:c584d7123c1087759efda6d07226b5d,POMBO,bot,,,,,,,,,,,,,,
+player,oe:team:2a20f01b9c2fec8d3b781133e2bb7b2,WP Gaming,WG,2018,Unknown,oe:player:4e0360185eba3ff8c175aebc3278b7b,Hawk,sup,,,,,,,,,,,,,,
+lineup,oe:team:2a20f01b9c2fec8d3b781133e2bb7b2,WP Gaming,WG,2018,Unknown,,,,lineup-21c6b18157dd505a,WG-01,1,2,oe:player:531995fe70f90681839d418cb3458a2,oe:player:fe4ecad66fbf9135d6e1e3adeaf00fe,oe:player:39de7fd8cd21129bf1a1a1616415dfe,oe:player:c584d7123c1087759efda6d07226b5d,oe:player:4e0360185eba3ff8c175aebc3278b7b,Lynx,Ferchu,Vampyrus,POMBO,Hawk
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2018,Unknown,oe:player:325d05dad5fd291cbb49cd50c038ce3,Ayel,top,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2018,Unknown,oe:player:8d7dfafe52c0a56acd811d06297729c,Nappon,jng,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2018,Unknown,oe:player:ae770d2c942cee6dbcfbd1832015231,tinowns,mid,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2018,Unknown,oe:player:0c0d42e4a3273c1a137e83b490b8513,Matsukaze,bot,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2018,Unknown,oe:player:bd35a9f3403e38f0b7d203cf42401e7,Dioud,sup,,,,,,,,,,,,,,
+lineup,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2018,Unknown,,,,lineup-3d650337d42b89d3,PG-01,1,2,oe:player:325d05dad5fd291cbb49cd50c038ce3,oe:player:8d7dfafe52c0a56acd811d06297729c,oe:player:ae770d2c942cee6dbcfbd1832015231,oe:player:0c0d42e4a3273c1a137e83b490b8513,oe:player:bd35a9f3403e38f0b7d203cf42401e7,Ayel,Nappon,tinowns,Matsukaze,Dioud

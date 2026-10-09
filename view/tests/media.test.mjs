@@ -33,15 +33,18 @@ test('missing transfer portraits do not borrow another jersey; unknown teams/yea
   const blg = media.teams.find((team) => team.team_short === 'BLG');
   assert.ok(teamLogoUrl({ id: blg.team_id, season: 2025 }).endsWith('/team/2025/blg.png'));
   assert.equal(teamLogoUrl({ id: blg.team_id, season: 2026 }), TEAM_LOGO_FALLBACK);
+  assert.equal(teamLogoUrl({ id: blg.team_id, season: 2025, league: 'LCK' }), TEAM_LOGO_FALLBACK);
+  assert.equal(playerImageUrl({ ...entity(portrait('Bin', 'BLG')), league: 'LCK' }), PLAYER_IMAGE_FALLBACK);
   assert.equal(playerImageUrl({ id: 'unknown', season: 2025 }), PLAYER_IMAGE_FALLBACK);
 });
 
 test('player links preserve team/year and older links still parse', () => {
   const wei = entity(portrait('Wei', 'BLG'));
   assert.deepEqual(parseHash(href.player(wei.id, wei.teamId, wei.season)), {
-    name: 'player', id: wei.id, teamId: wei.teamId, season: '2025',
+    name: 'player', id: wei.id, teamId: wei.teamId, season: '2025', year: '2025',
   });
   assert.deepEqual(parseHash(href.player(wei.id)), { name: 'player', id: wei.id, teamId: null, season: null });
+  assert.deepEqual(parseHash('#/player/old?season=2025'), { name: 'player', id: 'old', teamId: null, season: '2025', year: '2025' });
   assert.deepEqual(parseHash('#/players/2'), { name: 'players', page: 2 });
 });
 
@@ -52,7 +55,8 @@ test('the full-data loader keeps all 46 lineups and linked player pages in their
     new URL(String(url).replace(/\/data\/(?:test|processed)\//, '/data/processed/')),
   ));
   try {
-    const { dataSource } = await import('../utils/data-source.js');
+    const { createDataSource } = await import('../utils/data-source.js');
+    const dataSource = createDataSource({ league: 'LPL', year: 2025, path: 'lpl/2025', status: 'ready' });
     const catalog = await dataSource.loadCatalog();
     assert.equal(catalog.lineups.length, 46);
     assert.equal(catalog.players.length, 114);

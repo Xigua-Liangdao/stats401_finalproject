@@ -1,0 +1,48 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:22fca4d0e6f23af1d0bfc7b3b4de18c,Antic Esports,AE,2024,Split 2,oe:player:14ab5f52ef3268bfc818e12fda4e226,zorenous,top,,,,,,,,,,,,,,
+player,oe:team:22fca4d0e6f23af1d0bfc7b3b4de18c,Antic Esports,AE,2024,Split 2,oe:player:560bcdf1b95c4d819f35359cdfa1b0f,Foreigner,jng,,,,,,,,,,,,,,
+player,oe:team:22fca4d0e6f23af1d0bfc7b3b4de18c,Antic Esports,AE,2024,Split 2,oe:player:ba8500765879e6c68842b18d6a1c06f,Incursio,mid,,,,,,,,,,,,,,
+player,oe:team:22fca4d0e6f23af1d0bfc7b3b4de18c,Antic Esports,AE,2024,Split 2,oe:player:c2c140b8d1f76f3f79b1aba6bb08c37,Raes,bot,,,,,,,,,,,,,,
+player,oe:team:22fca4d0e6f23af1d0bfc7b3b4de18c,Antic Esports,AE,2024,Split 2,oe:player:ca38694b78ea467cb0eefc93f5d6761,Dragku,sup,,,,,,,,,,,,,,
+lineup,oe:team:22fca4d0e6f23af1d0bfc7b3b4de18c,Antic Esports,AE,2024,Split 2,,,,lineup-3644cafd3efeeb84,AE-01,1,2,oe:player:14ab5f52ef3268bfc818e12fda4e226,oe:player:560bcdf1b95c4d819f35359cdfa1b0f,oe:player:ba8500765879e6c68842b18d6a1c06f,oe:player:c2c140b8d1f76f3f79b1aba6bb08c37,oe:player:ca38694b78ea467cb0eefc93f5d6761,zorenous,Foreigner,Incursio,Raes,Dragku
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2024,Split 2,oe:player:4dca51f5cda20198fb7d9782c6e9057,Meifan,top,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2024,Split 2,oe:player:b8e16de0c7504f66ea36d4acf68f4fd,m0chi,jng,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2024,Split 2,oe:player:cb9c5c9d5a05213ed240fb879d871c5,Guapi,mid,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2024,Split 2,oe:player:361927eda56522d04e1ef6819002389,Katsurii,bot,,,,,,,,,,,,,,
+player,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2024,Split 2,oe:player:823520c81830a5fb0e80365091ed89f,Shinki,sup,,,,,,,,,,,,,,
+lineup,oe:team:cd6e0eea04af23b9c0735dab41a9941,Dire Wolves,DW,2024,Split 2,,,,lineup-3ac2d63fde04bdf5,DW-01,1,2,oe:player:4dca51f5cda20198fb7d9782c6e9057,oe:player:b8e16de0c7504f66ea36d4acf68f4fd,oe:player:cb9c5c9d5a05213ed240fb879d871c5,oe:player:361927eda56522d04e1ef6819002389,oe:player:823520c81830a5fb0e80365091ed89f,Meifan,m0chi,Guapi,Katsurii,Shinki
+player,oe:team:6b379ef5d9ba6269ee1ec9e37f54cb7,FURY Global,FG,2024,Split 1,oe:player:9c5c646d2acabd84f7067db6f6e1eb6,Tomasino,top,,,,,,,,,,,,,,
+player,oe:team:6b379ef5d9ba6269ee1ec9e37f54cb7,FURY Global,FG,2024,Split 1,oe:player:ec77ca071038fca36238d9e7061c405,nox1,jng,,,,,,,,,,,,,,
+player,oe:team:6b379ef5d9ba6269ee1ec9e37f54cb7,FURY Global,FG,2024,Split 1,oe:player:23b9dc4c36313e3cd3e977bd0042002,Chirp,mid,,,,,,,,,,,,,,
+player,oe:team:6b379ef5d9ba6269ee1ec9e37f54cb7,FURY Global,FG,2024,Split 1,oe:player:a6d8a4d49e120a203e932eb713cab02,Hoopa,bot,,,,,,,,,,,,,,
+player,oe:team:6b379ef5d9ba6269ee1ec9e37f54cb7,FURY Global,FG,2024,Split 1,oe:player:a0b096c43f35f3b06d2c8ae068b03cc,Findo,sup,,,,,,,,,,,,,,
+player,oe:team:6b379ef5d9ba6269ee1ec9e37f54cb7,FURY Global,FG,2024,Split 1,oe:player:c06a04d309caaef46aeec425898d402,Toppy,sup,,,,,,,,,,,,,,
+lineup,oe:team:6b379ef5d9ba6269ee1ec9e37f54cb7,FURY Global,FG,2024,Split 1,,,,lineup-669a0067aedacd2f,FG-01,1,2,oe:player:9c5c646d2acabd84f7067db6f6e1eb6,oe:player:ec77ca071038fca36238d9e7061c405,oe:player:23b9dc4c36313e3cd3e977bd0042002,oe:player:a6d8a4d49e120a203e932eb713cab02,oe:player:a0b096c43f35f3b06d2c8ae068b03cc,Tomasino,nox1,Chirp,Hoopa,Findo
+lineup,oe:team:6b379ef5d9ba6269ee1ec9e37f54cb7,FURY Global,FG,2024,Split 1,,,,lineup-c1bf6981f762e918,FG-02,2,2,oe:player:9c5c646d2acabd84f7067db6f6e1eb6,oe:player:ec77ca071038fca36238d9e7061c405,oe:player:23b9dc4c36313e3cd3e977bd0042002,oe:player:a6d8a4d49e120a203e932eb713cab02,oe:player:c06a04d309caaef46aeec425898d402,Tomasino,nox1,Chirp,Hoopa,Toppy
+player,oe:team:788115a84f68bc65fa6d3a4e0f67a3e,Ground Zero Gaming,GZG,2024,Split 2,oe:player:8e422c119fcc0bdb1e78777d4febaaf,Thien,top,,,,,,,,,,,,,,
+player,oe:team:788115a84f68bc65fa6d3a4e0f67a3e,Ground Zero Gaming,GZG,2024,Split 2,oe:player:5cc4071294a16477e992b3c8a2b7715,Shernfire,jng,,,,,,,,,,,,,,
+player,oe:team:788115a84f68bc65fa6d3a4e0f67a3e,Ground Zero Gaming,GZG,2024,Split 2,oe:player:33daf484c86d10f725d57ed31230c73,Fighto,mid,,,,,,,,,,,,,,
+player,oe:team:788115a84f68bc65fa6d3a4e0f67a3e,Ground Zero Gaming,GZG,2024,Split 2,oe:player:de6a79c709c8f1a5538dff9c2bf0ed3,Leemas,bot,,,,,,,,,,,,,,
+player,oe:team:788115a84f68bc65fa6d3a4e0f67a3e,Ground Zero Gaming,GZG,2024,Split 2,oe:player:f18fec425fd84c1a0a854c0be809eaf,Kurak,sup,,,,,,,,,,,,,,
+lineup,oe:team:788115a84f68bc65fa6d3a4e0f67a3e,Ground Zero Gaming,GZG,2024,Split 2,,,,lineup-d32036c1f52bdd23,GZG-01,1,2,oe:player:8e422c119fcc0bdb1e78777d4febaaf,oe:player:5cc4071294a16477e992b3c8a2b7715,oe:player:33daf484c86d10f725d57ed31230c73,oe:player:de6a79c709c8f1a5538dff9c2bf0ed3,oe:player:f18fec425fd84c1a0a854c0be809eaf,Thien,Shernfire,Fighto,Leemas,Kurak
+player,oe:team:788b5f2d3941c1a0d7961eaf043e4f1,ION Global Esports,IGE,2024,Split 1,oe:player:021b3eb9262d136d74c75385ecd077b,Doraemon,top,,,,,,,,,,,,,,
+player,oe:team:788b5f2d3941c1a0d7961eaf043e4f1,ION Global Esports,IGE,2024,Split 1,oe:player:560bcdf1b95c4d819f35359cdfa1b0f,Foreigner,jng,,,,,,,,,,,,,,
+player,oe:team:788b5f2d3941c1a0d7961eaf043e4f1,ION Global Esports,IGE,2024,Split 1,oe:player:d17e0bd143c7353f6c36bba172f4a52,Ko1eee,jng,,,,,,,,,,,,,,
+player,oe:team:788b5f2d3941c1a0d7961eaf043e4f1,ION Global Esports,IGE,2024,Split 1,oe:player:d5eca41c6571d711905a0ea16049a3b,Zhovy,mid,,,,,,,,,,,,,,
+player,oe:team:788b5f2d3941c1a0d7961eaf043e4f1,ION Global Esports,IGE,2024,Split 1,oe:player:23ab75c2e3193db3d24e77f4c73c4b6,Nebula,bot,,,,,,,,,,,,,,
+player,oe:team:788b5f2d3941c1a0d7961eaf043e4f1,ION Global Esports,IGE,2024,Split 1,oe:player:4296dc180b47d29912090b5780ca40f,Styx,bot,,,,,,,,,,,,,,
+player,oe:team:788b5f2d3941c1a0d7961eaf043e4f1,ION Global Esports,IGE,2024,Split 1,oe:player:9c2de80bfa79f67990c54782d3c529a,Hexflash,sup,,,,,,,,,,,,,,
+lineup,oe:team:788b5f2d3941c1a0d7961eaf043e4f1,ION Global Esports,IGE,2024,Split 1,,,,lineup-871c499c840f71ad,IGE-01,1,2,oe:player:021b3eb9262d136d74c75385ecd077b,oe:player:d17e0bd143c7353f6c36bba172f4a52,oe:player:d5eca41c6571d711905a0ea16049a3b,oe:player:4296dc180b47d29912090b5780ca40f,oe:player:9c2de80bfa79f67990c54782d3c529a,Doraemon,Ko1eee,Zhovy,Styx,Hexflash
+lineup,oe:team:788b5f2d3941c1a0d7961eaf043e4f1,ION Global Esports,IGE,2024,Split 1,,,,lineup-dd6c66cf69310930,IGE-02,2,2,oe:player:021b3eb9262d136d74c75385ecd077b,oe:player:560bcdf1b95c4d819f35359cdfa1b0f,oe:player:d5eca41c6571d711905a0ea16049a3b,oe:player:23ab75c2e3193db3d24e77f4c73c4b6,oe:player:9c2de80bfa79f67990c54782d3c529a,Doraemon,Foreigner,Zhovy,Nebula,Hexflash
+player,oe:team:7bd8d762a338118fce3df129202eaed,MAMMOTH,MAM,2024,Split 2,oe:player:c1946d6d67f2ea7693e6d5a7954bb64,Rineko,top,,,,,,,,,,,,,,
+player,oe:team:7bd8d762a338118fce3df129202eaed,MAMMOTH,MAM,2024,Split 2,oe:player:b47ac11098e71a2c48c44480179d52c,Goodo,jng,,,,,,,,,,,,,,
+player,oe:team:7bd8d762a338118fce3df129202eaed,MAMMOTH,MAM,2024,Split 2,oe:player:9a754e5ccd044dd74ff3a9d184350ab,Praedyth,mid,,,,,,,,,,,,,,
+player,oe:team:7bd8d762a338118fce3df129202eaed,MAMMOTH,MAM,2024,Split 2,oe:player:87c66f16f11e3f4955675a146e4bd6d,gunkrab,bot,,,,,,,,,,,,,,
+player,oe:team:7bd8d762a338118fce3df129202eaed,MAMMOTH,MAM,2024,Split 2,oe:player:d7a3fdf1351b72249a47454751549de,Voice,sup,,,,,,,,,,,,,,
+lineup,oe:team:7bd8d762a338118fce3df129202eaed,MAMMOTH,MAM,2024,Split 2,,,,lineup-d8a0c4fcaa84420e,MAM-01,1,2,oe:player:c1946d6d67f2ea7693e6d5a7954bb64,oe:player:b47ac11098e71a2c48c44480179d52c,oe:player:9a754e5ccd044dd74ff3a9d184350ab,oe:player:87c66f16f11e3f4955675a146e4bd6d,oe:player:d7a3fdf1351b72249a47454751549de,Rineko,Goodo,Praedyth,gunkrab,Voice
+player,oe:team:0b27fc98592297c4441bce44760a642,Team Bliss,TB,2024,Split 2,oe:player:c1ddab75d1d921ffed44398c4188d60,BioPanther,top,,,,,,,,,,,,,,
+player,oe:team:0b27fc98592297c4441bce44760a642,Team Bliss,TB,2024,Split 2,oe:player:dd83595fada79ef88d594b2518b6a8c,Kevy,jng,,,,,,,,,,,,,,
+player,oe:team:0b27fc98592297c4441bce44760a642,Team Bliss,TB,2024,Split 2,oe:player:20c094acbddf3fbdfd91293511b4472,Haeri,mid,,,,,,,,,,,,,,
+player,oe:team:0b27fc98592297c4441bce44760a642,Team Bliss,TB,2024,Split 2,oe:player:5a804d07122e4fee39975c8097146f4,Violet,bot,,,,,,,,,,,,,,
+player,oe:team:0b27fc98592297c4441bce44760a642,Team Bliss,TB,2024,Split 2,oe:player:eaaf2e20683cde8408d05159c05528c,Aladoric,sup,,,,,,,,,,,,,,
+lineup,oe:team:0b27fc98592297c4441bce44760a642,Team Bliss,TB,2024,Split 2,,,,lineup-1c2789a6b7b1bb91,TB-01,1,12,oe:player:c1ddab75d1d921ffed44398c4188d60,oe:player:dd83595fada79ef88d594b2518b6a8c,oe:player:20c094acbddf3fbdfd91293511b4472,oe:player:5a804d07122e4fee39975c8097146f4,oe:player:eaaf2e20683cde8408d05159c05528c,BioPanther,Kevy,Haeri,Violet,Aladoric

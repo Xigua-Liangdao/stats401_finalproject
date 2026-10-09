@@ -1,0 +1,60 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:4dfc9a0f1a6e1f2fcd8169ad3cdc5da,Bilibili Gaming Junior,BGJ,2023,Placements,oe:player:6bcd7079c2365c6783de1e39d853c88,Chosen1,top,,,,,,,,,,,,,,
+player,oe:team:4dfc9a0f1a6e1f2fcd8169ad3cdc5da,Bilibili Gaming Junior,BGJ,2023,Placements,oe:player:d677b410373bc790d9a8ec2e6809083,can,jng,,,,,,,,,,,,,,
+player,oe:team:4dfc9a0f1a6e1f2fcd8169ad3cdc5da,Bilibili Gaming Junior,BGJ,2023,Placements,oe:player:e9158589bddf5e324f9449a06875ca1,Wuhen,mid,,,,,,,,,,,,,,
+player,oe:team:4dfc9a0f1a6e1f2fcd8169ad3cdc5da,Bilibili Gaming Junior,BGJ,2023,Placements,oe:player:64d71b4eabcd8de0a1d64bd6d5973c5,Rise,bot,,,,,,,,,,,,,,
+player,oe:team:4dfc9a0f1a6e1f2fcd8169ad3cdc5da,Bilibili Gaming Junior,BGJ,2023,Placements,oe:player:403937c97942cb4634ef8907077ede5,Xiaoxia,sup,,,,,,,,,,,,,,
+lineup,oe:team:4dfc9a0f1a6e1f2fcd8169ad3cdc5da,Bilibili Gaming Junior,BGJ,2023,Placements,,,,lineup-28f3206c41c41194,BGJ-01,1,1,oe:player:6bcd7079c2365c6783de1e39d853c88,oe:player:d677b410373bc790d9a8ec2e6809083,oe:player:e9158589bddf5e324f9449a06875ca1,oe:player:64d71b4eabcd8de0a1d64bd6d5973c5,oe:player:403937c97942cb4634ef8907077ede5,Chosen1,can,Wuhen,Rise,Xiaoxia
+player,oe:team:6a04b6d8daa2cb0c623e81db686de40,EDG Youth Team,EYT,2023,Split 1,oe:player:67a9a13318c92022d3693d56249a340,Alley,top,,,,,,,,,,,,,,
+player,oe:team:6a04b6d8daa2cb0c623e81db686de40,EDG Youth Team,EYT,2023,Split 1,oe:player:91156e269529ff2e4742e58f9d65e5c,Coward,jng,,,,,,,,,,,,,,
+player,oe:team:6a04b6d8daa2cb0c623e81db686de40,EDG Youth Team,EYT,2023,Split 1,oe:player:aa7a0424cfbb93943b0d30d9455f0aa,Cyku,mid,,,,,,,,,,,,,,
+player,oe:team:6a04b6d8daa2cb0c623e81db686de40,EDG Youth Team,EYT,2023,Split 1,oe:player:1b481e5ac2a687de752b330bee95ce8,Renard,bot,,,,,,,,,,,,,,
+player,oe:team:6a04b6d8daa2cb0c623e81db686de40,EDG Youth Team,EYT,2023,Split 1,oe:player:1dd1c5fb7f25cd41b291d43a89e3aef,Today,bot,,,,,,,,,,,,,,
+player,oe:team:6a04b6d8daa2cb0c623e81db686de40,EDG Youth Team,EYT,2023,Split 1,oe:player:03b50ebd9393dbcdcd26fe529b40803,Xiamu,sup,,,,,,,,,,,,,,
+lineup,oe:team:6a04b6d8daa2cb0c623e81db686de40,EDG Youth Team,EYT,2023,Split 1,,,,lineup-440a7279d63c57a1,EYT-01,1,2,oe:player:67a9a13318c92022d3693d56249a340,oe:player:91156e269529ff2e4742e58f9d65e5c,oe:player:aa7a0424cfbb93943b0d30d9455f0aa,oe:player:1dd1c5fb7f25cd41b291d43a89e3aef,oe:player:03b50ebd9393dbcdcd26fe529b40803,Alley,Coward,Cyku,Today,Xiamu
+lineup,oe:team:6a04b6d8daa2cb0c623e81db686de40,EDG Youth Team,EYT,2023,Split 1,,,,lineup-24363a182607cbe1,EYT-02,2,1,oe:player:67a9a13318c92022d3693d56249a340,oe:player:91156e269529ff2e4742e58f9d65e5c,oe:player:aa7a0424cfbb93943b0d30d9455f0aa,oe:player:1b481e5ac2a687de752b330bee95ce8,oe:player:03b50ebd9393dbcdcd26fe529b40803,Alley,Coward,Cyku,Renard,Xiamu
+player,oe:team:6100f2588a65a71921d4f8ee206d94e,LGD Gaming Young Team,LGYT,2023,Placements,oe:player:45d87d7827afe5362cd9d69761b1d60,999,top,,,,,,,,,,,,,,
+player,oe:team:6100f2588a65a71921d4f8ee206d94e,LGD Gaming Young Team,LGYT,2023,Placements,oe:player:19fcca6fd374e79aa33c23aac0efe22,TC,jng,,,,,,,,,,,,,,
+player,oe:team:6100f2588a65a71921d4f8ee206d94e,LGD Gaming Young Team,LGYT,2023,Placements,oe:player:ba7b7da7852a3fa283520f6c02efbac,Realm,mid,,,,,,,,,,,,,,
+player,oe:team:6100f2588a65a71921d4f8ee206d94e,LGD Gaming Young Team,LGYT,2023,Placements,oe:player:2968592c6dc9959335c45083c70afa9,RanL,bot,,,,,,,,,,,,,,
+player,oe:team:6100f2588a65a71921d4f8ee206d94e,LGD Gaming Young Team,LGYT,2023,Placements,oe:player:60bcb8bf9545cff6ef45614c135ab00,wind,sup,,,,,,,,,,,,,,
+lineup,oe:team:6100f2588a65a71921d4f8ee206d94e,LGD Gaming Young Team,LGYT,2023,Placements,,,,lineup-44794d3bd1d9c0e1,LGYT-01,1,1,oe:player:45d87d7827afe5362cd9d69761b1d60,oe:player:19fcca6fd374e79aa33c23aac0efe22,oe:player:ba7b7da7852a3fa283520f6c02efbac,oe:player:2968592c6dc9959335c45083c70afa9,oe:player:60bcb8bf9545cff6ef45614c135ab00,999,TC,Realm,RanL,wind
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2023,Split 1,oe:player:56eb5de1643164c48cdf4219d19e0c0,Delicate,top,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2023,Split 1,oe:player:63aa0255ac0b96978aa564337e89513,Tong,top,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2023,Split 1,oe:player:45f784353fd16e225a028fab39f7fac,YJJ,top,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2023,Split 1,oe:player:8548eb91d0be87a2c399c2473e3e1a3,Mori,jng,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2023,Split 1,oe:player:e97eab7836361b8e665d4be61dbff9b,Yumeng,mid,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2023,Split 1,oe:player:2f78eaac833bb5497298d3796c14ba0,banye,mid,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2023,Split 1,oe:player:0be01924125adebc1a95bbb09d0c4d1,Starry,bot,,,,,,,,,,,,,,
+player,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2023,Split 1,oe:player:7aaf9ed1abaab82dba5f54221cd73d0,xiaosiji,sup,,,,,,,,,,,,,,
+lineup,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2023,Split 1,,,,lineup-4a50eec081807679,OMGA-01,1,1,oe:player:56eb5de1643164c48cdf4219d19e0c0,oe:player:8548eb91d0be87a2c399c2473e3e1a3,oe:player:2f78eaac833bb5497298d3796c14ba0,oe:player:0be01924125adebc1a95bbb09d0c4d1,oe:player:7aaf9ed1abaab82dba5f54221cd73d0,Delicate,Mori,banye,Starry,xiaosiji
+lineup,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2023,Split 1,,,,lineup-92c60a8a1cbad64e,OMGA-02,2,1,oe:player:63aa0255ac0b96978aa564337e89513,oe:player:8548eb91d0be87a2c399c2473e3e1a3,oe:player:e97eab7836361b8e665d4be61dbff9b,oe:player:0be01924125adebc1a95bbb09d0c4d1,oe:player:7aaf9ed1abaab82dba5f54221cd73d0,Tong,Mori,Yumeng,Starry,xiaosiji
+lineup,oe:team:d6ede6ace357c075af068ccac12ae9f,Oh My God Academy,OMGA,2023,Split 1,,,,lineup-d1790670dce71c41,OMGA-03,3,1,oe:player:45f784353fd16e225a028fab39f7fac,oe:player:8548eb91d0be87a2c399c2473e3e1a3,oe:player:2f78eaac833bb5497298d3796c14ba0,oe:player:0be01924125adebc1a95bbb09d0c4d1,oe:player:7aaf9ed1abaab82dba5f54221cd73d0,YJJ,Mori,banye,Starry,xiaosiji
+player,oe:team:67140a291d66109643b99e9dff2cbc3,Rare Atom Period,RAP,2023,Unknown,oe:player:bb38cb2603eee9d2bd81dcb7c3c3ac0,Yu,top,,,,,,,,,,,,,,
+player,oe:team:67140a291d66109643b99e9dff2cbc3,Rare Atom Period,RAP,2023,Unknown,oe:player:158b3ca4e11f71046539eff76f77492,Yge,jng,,,,,,,,,,,,,,
+player,oe:team:67140a291d66109643b99e9dff2cbc3,Rare Atom Period,RAP,2023,Unknown,oe:player:a2065a42ce3df999a5a7eb1a1706b33,zzl,mid,,,,,,,,,,,,,,
+player,oe:team:67140a291d66109643b99e9dff2cbc3,Rare Atom Period,RAP,2023,Unknown,oe:player:73402726625233208f5c5aec67f2a38,Eisley,bot,,,,,,,,,,,,,,
+player,oe:team:67140a291d66109643b99e9dff2cbc3,Rare Atom Period,RAP,2023,Unknown,oe:player:937dc5479c6416d1ad4997538144f6e,Zorah,sup,,,,,,,,,,,,,,
+lineup,oe:team:67140a291d66109643b99e9dff2cbc3,Rare Atom Period,RAP,2023,Unknown,,,,lineup-03efd3b0ecd06b5e,RAP-01,1,3,oe:player:bb38cb2603eee9d2bd81dcb7c3c3ac0,oe:player:158b3ca4e11f71046539eff76f77492,oe:player:a2065a42ce3df999a5a7eb1a1706b33,oe:player:73402726625233208f5c5aec67f2a38,oe:player:937dc5479c6416d1ad4997538144f6e,Yu,Yge,zzl,Eisley,Zorah
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2023,Unknown,oe:player:149d8109793e20ba80f71ae449657c1,PandaC,top,,,,,,,,,,,,,,
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2023,Unknown,oe:player:31b62cc3cf89d670fdef677faed2789,milkyway,jng,,,,,,,,,,,,,,
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2023,Unknown,oe:player:b3323183eb51a00e2777d997b6f72bb,Xzz,mid,,,,,,,,,,,,,,
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2023,Unknown,oe:player:1f6adedbadccaa957a5f57fe690fbf6,zhiqiuyi,bot,,,,,,,,,,,,,,
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2023,Unknown,oe:player:39c5e84d7380e098bdce5e08cd28b7d,Bunny,sup,,,,,,,,,,,,,,
+player,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2023,Unknown,oe:player:fb3b76286633752b61d09ab0ea84ab5,ziyou,sup,,,,,,,,,,,,,,
+lineup,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2023,Unknown,,,,lineup-0fc93b35bb82447d,RC-01,1,2,oe:player:149d8109793e20ba80f71ae449657c1,oe:player:31b62cc3cf89d670fdef677faed2789,oe:player:b3323183eb51a00e2777d997b6f72bb,oe:player:1f6adedbadccaa957a5f57fe690fbf6,oe:player:fb3b76286633752b61d09ab0ea84ab5,PandaC,milkyway,Xzz,zhiqiuyi,ziyou
+lineup,oe:team:5e97f293e9986969e0abb397228dd6f,Royal Club,RC,2023,Unknown,,,,lineup-61d1d94da5c9ab31,RC-02,2,2,oe:player:149d8109793e20ba80f71ae449657c1,oe:player:31b62cc3cf89d670fdef677faed2789,oe:player:b3323183eb51a00e2777d997b6f72bb,oe:player:1f6adedbadccaa957a5f57fe690fbf6,oe:player:39c5e84d7380e098bdce5e08cd28b7d,PandaC,milkyway,Xzz,zhiqiuyi,Bunny
+player,oe:team:eaeaad6cbcd022d2b872d4776aae2e6,Top Esports Challenger,TEC,2023,Split 1,oe:player:d80590035c13589acfbdd2b2dcb6077,Aspire,top,,,,,,,,,,,,,,
+player,oe:team:eaeaad6cbcd022d2b872d4776aae2e6,Top Esports Challenger,TEC,2023,Split 1,oe:player:a7b51467f09577883d7150f37393964,naiyou,jng,,,,,,,,,,,,,,
+player,oe:team:eaeaad6cbcd022d2b872d4776aae2e6,Top Esports Challenger,TEC,2023,Split 1,oe:player:e882d885e6344e29c75779e8a4a307a,Wangxiao,mid,,,,,,,,,,,,,,
+player,oe:team:eaeaad6cbcd022d2b872d4776aae2e6,Top Esports Challenger,TEC,2023,Split 1,oe:player:d971df9441d60af93a87545e6a8f884,JiaQi,bot,,,,,,,,,,,,,,
+player,oe:team:eaeaad6cbcd022d2b872d4776aae2e6,Top Esports Challenger,TEC,2023,Split 1,oe:player:6ad53ca055b82d5e23b83df6093df11,Niket,sup,,,,,,,,,,,,,,
+lineup,oe:team:eaeaad6cbcd022d2b872d4776aae2e6,Top Esports Challenger,TEC,2023,Split 1,,,,lineup-85f78e190e32e3e0,TEC-01,1,14,oe:player:d80590035c13589acfbdd2b2dcb6077,oe:player:a7b51467f09577883d7150f37393964,oe:player:e882d885e6344e29c75779e8a4a307a,oe:player:d971df9441d60af93a87545e6a8f884,oe:player:6ad53ca055b82d5e23b83df6093df11,Aspire,naiyou,Wangxiao,JiaQi,Niket
+player,oe:team:557e2d6abd8a8896014e4351756c305,Weibo Gaming Youth Team,WGYT,2023,Split 1,oe:player:5a2ee980df4f7335900f1eb613b3cf3,Luuuck,top,,,,,,,,,,,,,,
+player,oe:team:557e2d6abd8a8896014e4351756c305,Weibo Gaming Youth Team,WGYT,2023,Split 1,oe:player:d8c4c939a71a2e2961d177a01c3d1f3,Xhow,jng,,,,,,,,,,,,,,
+player,oe:team:557e2d6abd8a8896014e4351756c305,Weibo Gaming Youth Team,WGYT,2023,Split 1,oe:player:6f3cfdc56a1ff1ba6b0e454b6c8ef4f,forse,mid,,,,,,,,,,,,,,
+player,oe:team:557e2d6abd8a8896014e4351756c305,Weibo Gaming Youth Team,WGYT,2023,Split 1,oe:player:35f7bba605457f76dc31105e512e76b,TuT,bot,,,,,,,,,,,,,,
+player,oe:team:557e2d6abd8a8896014e4351756c305,Weibo Gaming Youth Team,WGYT,2023,Split 1,oe:player:4fe4116d4fb3277a95ba0fc4152dcf9,Wuy,sup,,,,,,,,,,,,,,
+player,oe:team:557e2d6abd8a8896014e4351756c305,Weibo Gaming Youth Team,WGYT,2023,Split 1,oe:player:4c96c9aaa582646555163130e869d83,think,sup,,,,,,,,,,,,,,
+lineup,oe:team:557e2d6abd8a8896014e4351756c305,Weibo Gaming Youth Team,WGYT,2023,Split 1,,,,lineup-b50c1763cd13cac9,WGYT-01,1,2,oe:player:5a2ee980df4f7335900f1eb613b3cf3,oe:player:d8c4c939a71a2e2961d177a01c3d1f3,oe:player:6f3cfdc56a1ff1ba6b0e454b6c8ef4f,oe:player:35f7bba605457f76dc31105e512e76b,oe:player:4c96c9aaa582646555163130e869d83,Luuuck,Xhow,forse,TuT,think
+lineup,oe:team:557e2d6abd8a8896014e4351756c305,Weibo Gaming Youth Team,WGYT,2023,Split 1,,,,lineup-5d7697422fb68f6c,WGYT-02,2,1,oe:player:5a2ee980df4f7335900f1eb613b3cf3,oe:player:d8c4c939a71a2e2961d177a01c3d1f3,oe:player:6f3cfdc56a1ff1ba6b0e454b6c8ef4f,oe:player:35f7bba605457f76dc31105e512e76b,oe:player:4fe4116d4fb3277a95ba0fc4152dcf9,Luuuck,Xhow,forse,TuT,Wuy

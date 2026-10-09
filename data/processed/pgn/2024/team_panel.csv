@@ -1,0 +1,33 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:27b676a1e4c8cf0fa2eb95072cf19a6,Away from Normal,AFN,2024,Unknown,oe:player:3cb4b049004c57f211d15ca14cbafb9,Colacioppo,top,,,,,,,,,,,,,,
+player,oe:team:27b676a1e4c8cf0fa2eb95072cf19a6,Away from Normal,AFN,2024,Unknown,oe:player:a41a9dd49ab8a1593f0d73dc38e5fe4,Exos,jng,,,,,,,,,,,,,,
+player,oe:team:27b676a1e4c8cf0fa2eb95072cf19a6,Away from Normal,AFN,2024,Unknown,oe:player:f040ee0b8c54295cc2347930040681a,Mysterias,jng,,,,,,,,,,,,,,
+player,oe:team:27b676a1e4c8cf0fa2eb95072cf19a6,Away from Normal,AFN,2024,Unknown,oe:player:f040ee0b8c54295cc2347930040681a,Mysterias,mid,,,,,,,,,,,,,,
+player,oe:team:27b676a1e4c8cf0fa2eb95072cf19a6,Away from Normal,AFN,2024,Unknown,oe:player:7773e8883f4bf85d29f4e7a0b2d9709,Nox,mid,,,,,,,,,,,,,,
+player,oe:team:27b676a1e4c8cf0fa2eb95072cf19a6,Away from Normal,AFN,2024,Unknown,oe:player:e545a8a51e56837e3d9786f988a1eee,Tenshi,mid,,,,,,,,,,,,,,
+player,oe:team:27b676a1e4c8cf0fa2eb95072cf19a6,Away from Normal,AFN,2024,Unknown,oe:player:fa9822fecac8f52b1326748e518728a,GeeGee,bot,,,,,,,,,,,,,,
+player,oe:team:27b676a1e4c8cf0fa2eb95072cf19a6,Away from Normal,AFN,2024,Unknown,oe:player:f987efb3da0d056699079e5f6755ef2,Pinkmin,sup,,,,,,,,,,,,,,
+lineup,oe:team:27b676a1e4c8cf0fa2eb95072cf19a6,Away from Normal,AFN,2024,Unknown,,,,lineup-83f2b38e7d7b81ea,AFN-01,1,3,oe:player:3cb4b049004c57f211d15ca14cbafb9,oe:player:a41a9dd49ab8a1593f0d73dc38e5fe4,oe:player:7773e8883f4bf85d29f4e7a0b2d9709,oe:player:fa9822fecac8f52b1326748e518728a,oe:player:f987efb3da0d056699079e5f6755ef2,Colacioppo,Exos,Nox,GeeGee,Pinkmin
+lineup,oe:team:27b676a1e4c8cf0fa2eb95072cf19a6,Away from Normal,AFN,2024,Unknown,,,,lineup-296a0c7997a6a2e9,AFN-02,2,2,oe:player:3cb4b049004c57f211d15ca14cbafb9,oe:player:f040ee0b8c54295cc2347930040681a,oe:player:7773e8883f4bf85d29f4e7a0b2d9709,oe:player:fa9822fecac8f52b1326748e518728a,oe:player:f987efb3da0d056699079e5f6755ef2,Colacioppo,Mysterias,Nox,GeeGee,Pinkmin
+lineup,oe:team:27b676a1e4c8cf0fa2eb95072cf19a6,Away from Normal,AFN,2024,Unknown,,,,lineup-54171513f5c9023a,AFN-03,3,1,oe:player:3cb4b049004c57f211d15ca14cbafb9,oe:player:a41a9dd49ab8a1593f0d73dc38e5fe4,oe:player:f040ee0b8c54295cc2347930040681a,oe:player:fa9822fecac8f52b1326748e518728a,oe:player:f987efb3da0d056699079e5f6755ef2,Colacioppo,Exos,Mysterias,GeeGee,Pinkmin
+lineup,oe:team:27b676a1e4c8cf0fa2eb95072cf19a6,Away from Normal,AFN,2024,Unknown,,,,lineup-e1588106b128f022,AFN-04,4,1,oe:player:3cb4b049004c57f211d15ca14cbafb9,oe:player:f040ee0b8c54295cc2347930040681a,oe:player:e545a8a51e56837e3d9786f988a1eee,oe:player:fa9822fecac8f52b1326748e518728a,oe:player:f987efb3da0d056699079e5f6755ef2,Colacioppo,Mysterias,Tenshi,GeeGee,Pinkmin
+player,oe:team:ee569c9f5e85fba8fcf57d51b1b78ed,DREN Esports,DE,2024,Unknown,oe:player:2a2e8a4d073d7f10a9adb064fc8bd38,Conse,top,,,,,,,,,,,,,,
+player,oe:team:ee569c9f5e85fba8fcf57d51b1b78ed,DREN Esports,DE,2024,Unknown,oe:player:d623bb25dc94f5a8dfdab2689ac5615,TheCheeng,top,,,,,,,,,,,,,,
+player,oe:team:ee569c9f5e85fba8fcf57d51b1b78ed,DREN Esports,DE,2024,Unknown,oe:player:d9010060524eb15f81d4a5301286782,Ploxy,jng,,,,,,,,,,,,,,
+player,oe:team:ee569c9f5e85fba8fcf57d51b1b78ed,DREN Esports,DE,2024,Unknown,oe:player:a0c87894f0e56ae5f63b8d22f450532,FENZ1,mid,,,,,,,,,,,,,,
+player,oe:team:ee569c9f5e85fba8fcf57d51b1b78ed,DREN Esports,DE,2024,Unknown,oe:player:cd59def3023c9e0be42a59a178eab0a,Taba,bot,,,,,,,,,,,,,,
+player,oe:team:ee569c9f5e85fba8fcf57d51b1b78ed,DREN Esports,DE,2024,Unknown,oe:player:54cdca5a55dca8e6da7e43d33b7c361,Paradox,sup,,,,,,,,,,,,,,
+lineup,oe:team:ee569c9f5e85fba8fcf57d51b1b78ed,DREN Esports,DE,2024,Unknown,,,,lineup-b5c6251d4e572f21,DE-01,1,7,oe:player:d623bb25dc94f5a8dfdab2689ac5615,oe:player:d9010060524eb15f81d4a5301286782,oe:player:a0c87894f0e56ae5f63b8d22f450532,oe:player:cd59def3023c9e0be42a59a178eab0a,oe:player:54cdca5a55dca8e6da7e43d33b7c361,TheCheeng,Ploxy,FENZ1,Taba,Paradox
+lineup,oe:team:ee569c9f5e85fba8fcf57d51b1b78ed,DREN Esports,DE,2024,Unknown,,,,lineup-369e4f0129422c7a,DE-02,2,3,oe:player:2a2e8a4d073d7f10a9adb064fc8bd38,oe:player:d9010060524eb15f81d4a5301286782,oe:player:a0c87894f0e56ae5f63b8d22f450532,oe:player:cd59def3023c9e0be42a59a178eab0a,oe:player:54cdca5a55dca8e6da7e43d33b7c361,Conse,Ploxy,FENZ1,Taba,Paradox
+player,oe:team:4e32226d1afb63dde4a39d02cb1cd0f,ENEMI3S,ENE,2024,Unknown,oe:player:e72c863b7586a6b3a37e6e91339472d,kPr,top,,,,,,,,,,,,,,
+player,oe:team:4e32226d1afb63dde4a39d02cb1cd0f,ENEMI3S,ENE,2024,Unknown,oe:player:d6978cb4b12a5de75f68b2da2f55dc9,XnS,jng,,,,,,,,,,,,,,
+player,oe:team:4e32226d1afb63dde4a39d02cb1cd0f,ENEMI3S,ENE,2024,Unknown,oe:player:080079ade773c7f23f7a15d3bc04b6f,Skaterot,mid,,,,,,,,,,,,,,
+player,oe:team:4e32226d1afb63dde4a39d02cb1cd0f,ENEMI3S,ENE,2024,Unknown,oe:player:52c10360309e42ce286362204586160,Artenes,bot,,,,,,,,,,,,,,
+player,oe:team:4e32226d1afb63dde4a39d02cb1cd0f,ENEMI3S,ENE,2024,Unknown,oe:player:cdc952e024c99837dc7af684adf322e,Joao,sup,,,,,,,,,,,,,,
+lineup,oe:team:4e32226d1afb63dde4a39d02cb1cd0f,ENEMI3S,ENE,2024,Unknown,,,,lineup-787419da4afe36d6,ENE-01,1,8,oe:player:e72c863b7586a6b3a37e6e91339472d,oe:player:d6978cb4b12a5de75f68b2da2f55dc9,oe:player:080079ade773c7f23f7a15d3bc04b6f,oe:player:52c10360309e42ce286362204586160,oe:player:cdc952e024c99837dc7af684adf322e,kPr,XnS,Skaterot,Artenes,Joao
+player,oe:team:b3407aff8f36af4d7492aceb5b6bfd6,NOVO Esports,NE,2024,Unknown,oe:player:d0f1bda8c77037b1f96242f46f97637,SkaR,top,,,,,,,,,,,,,,
+player,oe:team:b3407aff8f36af4d7492aceb5b6bfd6,NOVO Esports,NE,2024,Unknown,oe:player:501884267ff0b365b574034443687d4,Jony,jng,,,,,,,,,,,,,,
+player,oe:team:b3407aff8f36af4d7492aceb5b6bfd6,NOVO Esports,NE,2024,Unknown,oe:player:585cc115bc3aa9a5ebf7c9521ad6f7f,Ryuin,mid,,,,,,,,,,,,,,
+player,oe:team:b3407aff8f36af4d7492aceb5b6bfd6,NOVO Esports,NE,2024,Unknown,oe:player:282a82702dfe9e5d21a45e7753cb925,Jamie,bot,,,,,,,,,,,,,,
+player,oe:team:b3407aff8f36af4d7492aceb5b6bfd6,NOVO Esports,NE,2024,Unknown,oe:player:a5c70cdfcff6537d4af4e9204ad252c,Tinelli,sup,,,,,,,,,,,,,,
+lineup,oe:team:b3407aff8f36af4d7492aceb5b6bfd6,NOVO Esports,NE,2024,Unknown,,,,lineup-f36e93e024e74269,NE-01,1,11,oe:player:d0f1bda8c77037b1f96242f46f97637,oe:player:501884267ff0b365b574034443687d4,oe:player:585cc115bc3aa9a5ebf7c9521ad6f7f,oe:player:282a82702dfe9e5d21a45e7753cb925,oe:player:a5c70cdfcff6537d4af4e9204ad252c,SkaR,Jony,Ryuin,Jamie,Tinelli

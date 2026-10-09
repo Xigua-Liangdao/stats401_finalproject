@@ -1,0 +1,50 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2019.csv.gz",
+  "source_kind": "pinned_github_mirror",
+  "source_revision": "834ce914f0c79289881697084227fa2933ad344a",
+  "annual_sources": [
+    {
+      "year": 2019,
+      "url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2019.csv.gz",
+      "sha256": "65f631865771bfce1dbff8f6eee2efde72c13ff231fc0f3e6b43365206bdd99a",
+      "revision": "834ce914f0c79289881697084227fa2933ad344a",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:18.069592+00:00",
+      "size_bytes": 72335665,
+      "listed_size_bytes": 72335665,
+      "rows": 97524,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "download_sha256": "e181cb491f1a01755a1e8e6f9b040a9771dfdaa838fc43960ccde1ee4113cc6e",
+      "filename": "2019_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 48
+    },
+    {
+      "year": 2020,
+      "url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2020.csv.gz",
+      "sha256": "c66ddf35d21d1597da13786b52c0190cebd09dab31f73ea4914bdb6b88cea7d9",
+      "revision": "834ce914f0c79289881697084227fa2933ad344a",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:10.715260+00:00",
+      "size_bytes": 88486469,
+      "listed_size_bytes": 88486469,
+      "rows": 117552,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "download_sha256": "397ccaac13ea7793acf749680e61f5513b8401d87b01d1883be34ff15cc33366",
+      "filename": "2020_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 2352
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:34:31.563885+00:00",
+  "annual_csv_sha256": "7270bcd35e5ccf266f0747dc6830e80f20537bb12c3c89c0c07cbf86a2bbf615",
+  "annual_rows": 215076,
+  "league": "CBLOL",
+  "year": 2020,
+  "filter": "league == 'CBLOL' and year == '2020'; all positions and columns preserved",
+  "raw_rows": 2400,
+  "raw_columns": 161,
+  "raw_games": 200,
+  "raw_csv_gz_sha256": "c913690fac4d544c8d902da2ae84d8523c083963c52390fab3225180b4674107"
+}

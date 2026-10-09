@@ -1,0 +1,66 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:87e3e1e75839f75a10bbc66e894d806,FURIA,FUR,2022,Split 1,oe:player:61ea9de879a9b27bb8eddcba7f32f4a,fNb,top,,,,,,,,,,,,,,
+player,oe:team:87e3e1e75839f75a10bbc66e894d806,FURIA,FUR,2022,Split 1,oe:player:b23f665210a1914cab61bc8eba4c9ae,Ranger,jng,,,,,,,,,,,,,,
+player,oe:team:87e3e1e75839f75a10bbc66e894d806,FURIA,FUR,2022,Split 1,oe:player:a672b5bc1c212a6922418fad18734c1,Envy,mid,,,,,,,,,,,,,,
+player,oe:team:87e3e1e75839f75a10bbc66e894d806,FURIA,FUR,2022,Split 1,oe:player:85c460fea615911b6075e0968b63db1,Netuno,bot,,,,,,,,,,,,,,
+player,oe:team:87e3e1e75839f75a10bbc66e894d806,FURIA,FUR,2022,Split 1,oe:player:0c041d02ab7138f57164fafbc091b2d,RedBert,sup,,,,,,,,,,,,,,
+lineup,oe:team:87e3e1e75839f75a10bbc66e894d806,FURIA,FUR,2022,Split 1,,,,lineup-43a6ed53bd4a24ef,FUR-01,1,7,oe:player:61ea9de879a9b27bb8eddcba7f32f4a,oe:player:b23f665210a1914cab61bc8eba4c9ae,oe:player:a672b5bc1c212a6922418fad18734c1,oe:player:85c460fea615911b6075e0968b63db1,oe:player:0c041d02ab7138f57164fafbc091b2d,fNb,Ranger,Envy,Netuno,RedBert
+player,oe:team:50b9075ca20fb326456aded56aa7937,Flamengo MDL,FM,2022,Split 1,oe:player:6daafc30b010acda4ebc20b6785cbc0,Boal,top,,,,,,,,,,,,,,
+player,oe:team:50b9075ca20fb326456aded56aa7937,Flamengo MDL,FM,2022,Split 1,oe:player:3ccca65d3d9843b81f4e251dcf8a3e8,Sting,jng,,,,,,,,,,,,,,
+player,oe:team:50b9075ca20fb326456aded56aa7937,Flamengo MDL,FM,2022,Split 1,oe:player:5913c1b5618afae9f7e2e85111ff769,asta,jng,,,,,,,,,,,,,,
+player,oe:team:50b9075ca20fb326456aded56aa7937,Flamengo MDL,FM,2022,Split 1,oe:player:886e8205ac1b091dbf67dbae83b1544,Tutsz,mid,,,,,,,,,,,,,,
+player,oe:team:50b9075ca20fb326456aded56aa7937,Flamengo MDL,FM,2022,Split 1,oe:player:0cfa7da07f11bd954137ab359972515,Flare,bot,,,,,,,,,,,,,,
+player,oe:team:50b9075ca20fb326456aded56aa7937,Flamengo MDL,FM,2022,Split 1,oe:player:5dedda929608ef07aedda33aa2b474e,Bounty,sup,,,,,,,,,,,,,,
+player,oe:team:50b9075ca20fb326456aded56aa7937,Flamengo MDL,FM,2022,Split 1,oe:player:87b0ff8e56b0ce96bc0a82ea5dc9a7e,Kuri,sup,,,,,,,,,,,,,,
+lineup,oe:team:50b9075ca20fb326456aded56aa7937,Flamengo MDL,FM,2022,Split 1,,,,lineup-6b44e3ab74f1d365,FM-01,1,1,oe:player:6daafc30b010acda4ebc20b6785cbc0,oe:player:3ccca65d3d9843b81f4e251dcf8a3e8,oe:player:886e8205ac1b091dbf67dbae83b1544,oe:player:0cfa7da07f11bd954137ab359972515,oe:player:87b0ff8e56b0ce96bc0a82ea5dc9a7e,Boal,Sting,Tutsz,Flare,Kuri
+lineup,oe:team:50b9075ca20fb326456aded56aa7937,Flamengo MDL,FM,2022,Split 1,,,,lineup-8a8a0743902db32a,FM-02,2,1,oe:player:6daafc30b010acda4ebc20b6785cbc0,oe:player:5913c1b5618afae9f7e2e85111ff769,oe:player:886e8205ac1b091dbf67dbae83b1544,oe:player:0cfa7da07f11bd954137ab359972515,oe:player:5dedda929608ef07aedda33aa2b474e,Boal,asta,Tutsz,Flare,Bounty
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2022,Split 1,oe:player:4a0d0414aac330b32a1a4dd6bac8743,tyrin,top,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2022,Split 1,oe:player:65d1e475734633e28d4523d92a90837,Yampi,jng,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2022,Split 1,oe:player:302f32028cef9d7eeda1dbe74cf59ee,Kick,mid,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2022,Split 1,oe:player:0ce788d020173e8e2e683515c31efda,micaO,bot,,,,,,,,,,,,,,
+player,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2022,Split 1,oe:player:82a42c3ebfd83735f1aaf93cf8adf7e,Decoy,sup,,,,,,,,,,,,,,
+lineup,oe:team:bcb21457414eb9be1d27489ff7e8e59,INTZ,INT,2022,Split 1,,,,lineup-db373454450285fc,INT-01,1,1,oe:player:4a0d0414aac330b32a1a4dd6bac8743,oe:player:65d1e475734633e28d4523d92a90837,oe:player:302f32028cef9d7eeda1dbe74cf59ee,oe:player:0ce788d020173e8e2e683515c31efda,oe:player:82a42c3ebfd83735f1aaf93cf8adf7e,tyrin,Yampi,Kick,micaO,Decoy
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2022,Split 1,oe:player:47a2fd48766f50394a3110fd124de77,Parang,top,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2022,Split 1,oe:player:3d6241a697bf77c402bad659fb172ab,Wiz,jng,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2022,Split 1,oe:player:979d7cbbe1e2a8b55d503047f5c72a0,Hauz,mid,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2022,Split 1,oe:player:bead6d34dbffe42a8c5984aa0dbaeda,Disave,bot,,,,,,,,,,,,,,
+player,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2022,Split 1,oe:player:70d516fd78bcce28e19f4b422bb9f02,scuro,sup,,,,,,,,,,,,,,
+lineup,oe:team:86e551648da70c86cb473ce5d5f26f7,KaBuM! Esports,KE,2022,Split 1,,,,lineup-4a69a27111a4676e,KE-01,1,1,oe:player:47a2fd48766f50394a3110fd124de77,oe:player:3d6241a697bf77c402bad659fb172ab,oe:player:979d7cbbe1e2a8b55d503047f5c72a0,oe:player:bead6d34dbffe42a8c5984aa0dbaeda,oe:player:70d516fd78bcce28e19f4b422bb9f02,Parang,Wiz,Hauz,Disave,scuro
+player,oe:team:658a021a796aa5501503220adb38cf4,LOUD,LOU,2022,Split 1,oe:player:3085815ef497539cb1d93b3c9a16624,Robo,top,,,,,,,,,,,,,,
+player,oe:team:658a021a796aa5501503220adb38cf4,LOUD,LOU,2022,Split 1,oe:player:b04655f0821a30125d72a3442647875,Tay,jng,,,,,,,,,,,,,,
+player,oe:team:658a021a796aa5501503220adb38cf4,LOUD,LOU,2022,Split 1,oe:player:ae770d2c942cee6dbcfbd1832015231,tinowns,mid,,,,,,,,,,,,,,
+player,oe:team:658a021a796aa5501503220adb38cf4,LOUD,LOU,2022,Split 1,oe:player:952f90bd1805db865fdb728cd1f2d92,DudsTheBoy,bot,,,,,,,,,,,,,,
+player,oe:team:658a021a796aa5501503220adb38cf4,LOUD,LOU,2022,Split 1,oe:player:c88cada1696defe81464925789aa6d8,Ceos,sup,,,,,,,,,,,,,,
+lineup,oe:team:658a021a796aa5501503220adb38cf4,LOUD,LOU,2022,Split 1,,,,lineup-1b41a450973d0197,LOU-01,1,2,oe:player:3085815ef497539cb1d93b3c9a16624,oe:player:b04655f0821a30125d72a3442647875,oe:player:ae770d2c942cee6dbcfbd1832015231,oe:player:952f90bd1805db865fdb728cd1f2d92,oe:player:c88cada1696defe81464925789aa6d8,Robo,Tay,tinowns,DudsTheBoy,Ceos
+player,oe:team:84e1da9e55480128662cfdfe79cb892,Liberty,LIB,2022,Split 1,oe:player:63dc9ebe6cd781c9c9cecb54a6d7317,Kiari,top,,,,,,,,,,,,,,
+player,oe:team:84e1da9e55480128662cfdfe79cb892,Liberty,LIB,2022,Split 1,oe:player:946b74bfc34e861b344ae03700af039,Disamis,jng,,,,,,,,,,,,,,
+player,oe:team:84e1da9e55480128662cfdfe79cb892,Liberty,LIB,2022,Split 1,oe:player:0a0e15e8e14edd7e4039cbf6f4fbfa4,Krastyel,mid,,,,,,,,,,,,,,
+player,oe:team:84e1da9e55480128662cfdfe79cb892,Liberty,LIB,2022,Split 1,oe:player:0c0d42e4a3273c1a137e83b490b8513,Matsukaze,bot,,,,,,,,,,,,,,
+player,oe:team:84e1da9e55480128662cfdfe79cb892,Liberty,LIB,2022,Split 1,oe:player:e0ca016e696d77b1ee0467e5825b5ed,Wos,sup,,,,,,,,,,,,,,
+lineup,oe:team:84e1da9e55480128662cfdfe79cb892,Liberty,LIB,2022,Split 1,,,,lineup-1e5fe5648d1e56d4,LIB-01,1,1,oe:player:63dc9ebe6cd781c9c9cecb54a6d7317,oe:player:946b74bfc34e861b344ae03700af039,oe:player:0a0e15e8e14edd7e4039cbf6f4fbfa4,oe:player:0c0d42e4a3273c1a137e83b490b8513,oe:player:e0ca016e696d77b1ee0467e5825b5ed,Kiari,Disamis,Krastyel,Matsukaze,Wos
+player,oe:team:64a41d3f257e38f07d4bd8570809432,Miners,MIN,2022,Split 1,oe:player:609de97618e0efb1e5b4bca418e9d3c,DoRun,top,,,,,,,,,,,,,,
+player,oe:team:64a41d3f257e38f07d4bd8570809432,Miners,MIN,2022,Split 1,oe:player:76cd75b6b8f0def9bc45032dcc32a61,Croc,jng,,,,,,,,,,,,,,
+player,oe:team:64a41d3f257e38f07d4bd8570809432,Miners,MIN,2022,Split 1,oe:player:b57e72ed35022b11f16f095682ff782,Anyyy,mid,,,,,,,,,,,,,,
+player,oe:team:64a41d3f257e38f07d4bd8570809432,Miners,MIN,2022,Split 1,oe:player:39c3a0258d73ffd0112726c410893f6,Celo,bot,,,,,,,,,,,,,,
+player,oe:team:64a41d3f257e38f07d4bd8570809432,Miners,MIN,2022,Split 1,oe:player:e740788e7e937ae3feee9222fae4415,Drop,bot,,,,,,,,,,,,,,
+player,oe:team:64a41d3f257e38f07d4bd8570809432,Miners,MIN,2022,Split 1,oe:player:4e0360185eba3ff8c175aebc3278b7b,Hawk,sup,,,,,,,,,,,,,,
+lineup,oe:team:64a41d3f257e38f07d4bd8570809432,Miners,MIN,2022,Split 1,,,,lineup-d1471418a99e7c55,MIN-01,1,1,oe:player:609de97618e0efb1e5b4bca418e9d3c,oe:player:76cd75b6b8f0def9bc45032dcc32a61,oe:player:b57e72ed35022b11f16f095682ff782,oe:player:39c3a0258d73ffd0112726c410893f6,oe:player:4e0360185eba3ff8c175aebc3278b7b,DoRun,Croc,Anyyy,Celo,Hawk
+lineup,oe:team:64a41d3f257e38f07d4bd8570809432,Miners,MIN,2022,Split 1,,,,lineup-e1b8c519e54a2a33,MIN-02,2,1,oe:player:609de97618e0efb1e5b4bca418e9d3c,oe:player:76cd75b6b8f0def9bc45032dcc32a61,oe:player:b57e72ed35022b11f16f095682ff782,oe:player:e740788e7e937ae3feee9222fae4415,oe:player:4e0360185eba3ff8c175aebc3278b7b,DoRun,Croc,Anyyy,Drop,Hawk
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2022,Split 1,oe:player:d61d8a0b25028f787123bfff542d305,Guigo,top,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2022,Split 1,oe:player:778c6c3733d919a3b64885912be15a9,Aegis,jng,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2022,Split 1,oe:player:dda07addeb137c860725f0c964dcbbf,Grevthar,mid,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2022,Split 1,oe:player:1c010180887360e5d6ab967fd93693d,TitaN,bot,,,,,,,,,,,,,,
+player,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2022,Split 1,oe:player:cb4cd2fd258d5961d2f1c4815b04123,JoJo,sup,,,,,,,,,,,,,,
+lineup,oe:team:67169969ecc058b307edfa9c6b7a3c0,RED Canids,RC,2022,Split 1,,,,lineup-7bd6f908441295ba,RC-01,1,1,oe:player:d61d8a0b25028f787123bfff542d305,oe:player:778c6c3733d919a3b64885912be15a9,oe:player:dda07addeb137c860725f0c964dcbbf,oe:player:1c010180887360e5d6ab967fd93693d,oe:player:cb4cd2fd258d5961d2f1c4815b04123,Guigo,Aegis,Grevthar,TitaN,JoJo
+player,oe:team:92ede2510f2ad0234b1dd75f03108ae,Rensga eSports,RE,2022,Split 1,oe:player:9e3641005a1d5ee5c17edcb985f909b,Trap,top,,,,,,,,,,,,,,
+player,oe:team:92ede2510f2ad0234b1dd75f03108ae,Rensga eSports,RE,2022,Split 1,oe:player:931603f10a47a4241c9c2afbd69107a,Minerva,jng,,,,,,,,,,,,,,
+player,oe:team:92ede2510f2ad0234b1dd75f03108ae,Rensga eSports,RE,2022,Split 1,oe:player:db388b1b18abbdc620de33627c0ef05,Goku,mid,,,,,,,,,,,,,,
+player,oe:team:92ede2510f2ad0234b1dd75f03108ae,Rensga eSports,RE,2022,Split 1,oe:player:559c0cab98dab7824357ff1af6615ea,NinjaKiwi,bot,,,,,,,,,,,,,,
+player,oe:team:92ede2510f2ad0234b1dd75f03108ae,Rensga eSports,RE,2022,Split 1,oe:player:20cbf3318192b3d953e11d6cced699b,Mocha,sup,,,,,,,,,,,,,,
+lineup,oe:team:92ede2510f2ad0234b1dd75f03108ae,Rensga eSports,RE,2022,Split 1,,,,lineup-868d82a1741df9a9,RE-01,1,1,oe:player:9e3641005a1d5ee5c17edcb985f909b,oe:player:931603f10a47a4241c9c2afbd69107a,oe:player:db388b1b18abbdc620de33627c0ef05,oe:player:559c0cab98dab7824357ff1af6615ea,oe:player:20cbf3318192b3d953e11d6cced699b,Trap,Minerva,Goku,NinjaKiwi,Mocha
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2022,Split 1,oe:player:840d0b77e71408d3da84e4f0cae4b73,Wizer,top,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2022,Split 1,oe:player:5e07433d52dbc7bbc4faaf9492dbd2c,CarioK,jng,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2022,Split 1,oe:player:127d6ec83484da3c8b39b70c70f1226,dyNquedo,mid,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2022,Split 1,oe:player:c732cc226501cc21178b9f413cdf3eb,Trigo,bot,,,,,,,,,,,,,,
+player,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2022,Split 1,oe:player:b9f24e83531326204197015b2f43a93,Damage,sup,,,,,,,,,,,,,,
+lineup,oe:team:61450737f7b683db4da7b3e0bf0dced,paiN Gaming,PG,2022,Split 1,,,,lineup-2fb505c049377d74,PG-01,1,14,oe:player:840d0b77e71408d3da84e4f0cae4b73,oe:player:5e07433d52dbc7bbc4faaf9492dbd2c,oe:player:127d6ec83484da3c8b39b70c70f1226,oe:player:c732cc226501cc21178b9f413cdf3eb,oe:player:b9f24e83531326204197015b2f43a93,Wizer,CarioK,dyNquedo,Trigo,Damage

@@ -5,32 +5,63 @@ import { href } from '../../utils/navigation.js';
 import { routeTargetId, trackUi } from '../../utils/track.js';
 import { createStatusChip } from '../layout/status-chip.js';
 
+const BRAND_MARK = new URL('../../../data/img/site/favicon.svg', import.meta.url);
+BRAND_MARK.search = new URL(import.meta.url).search;
+
 const LINKS = [
-  { href: href.home, key: 'nav.home', names: ['home'] },
-  { href: href.players, key: 'nav.catalogue', names: ['players', 'player', 'team'] },
-  { href: href.compare, key: 'nav.comparison', names: ['compare'] },
+  { get href() { return href.home; }, key: 'nav.home', names: ['home'] },
+  { get href() { return href.players; }, key: 'nav.catalogue', names: ['players', 'player', 'team', 'lineup'] },
+  { get href() { return href.compare; }, key: 'nav.comparison', names: ['compare'] },
 ];
 
-function createSeasonSelect({ seasons = [], season, onSeasonChange }) {
-  const options = seasons.length ? seasons : [season].filter((value) => value != null);
+function createSeasonSelect({ seasons = [], selection, onSeasonChange }) {
   return h('select', {
     class: 'season-select',
     'aria-label': t('nav.season'),
     onchange: (event) => {
       const next = event.target.value;
-      if (String(next) !== String(season ?? '')) {
+      if (String(next) !== String(selection?.year ?? '')) {
         trackUi({
           event_name: 'filter_change',
           target_type: 'season_filter',
-          metadata: { from: season == null ? '' : String(season), to: String(next) },
+          metadata: {
+            league: selection?.league ?? '',
+            from: selection?.year == null ? '' : String(selection.year),
+            to: String(next),
+          },
         });
       }
       onSeasonChange?.(next);
     },
-  }, options.map((value) => h('option', {
-    value: String(value),
-    selected: String(value) === String(season),
-  }, [String(value)])));
+  }, seasons.map((entry) => h('option', {
+    value: String(entry.year),
+    selected: String(entry.year) === String(selection?.year),
+    disabled: entry.status !== 'ready',
+    title: entry.reason,
+  }, [entry.status === 'ready' ? String(entry.year) : `${entry.year} · ${t('dataset.unavailable')}${entry.reason ? `: ${entry.reason}` : ''}`])));
+}
+
+function createLeagueSelect({ leagues = [], datasets = [], selection, onLeagueChange }) {
+  return h('select', {
+    class: 'league-select',
+    'aria-label': t('nav.league'),
+    onchange: (event) => {
+      const next = event.target.value;
+      if (next !== selection?.league) {
+        trackUi({
+          event_name: 'filter_change',
+          target_type: 'league_filter',
+          target_id: next,
+          metadata: { from: selection?.league ?? '', to: next },
+        });
+      }
+      onLeagueChange?.(next);
+    },
+  }, leagues.map((league) => h('option', {
+    value: league,
+    selected: league === selection?.league,
+    disabled: !datasets.some((entry) => entry.league === league && entry.status === 'ready'),
+  }, [league])));
 }
 
 function createLanguageSelect({ onLanguageChange }) {
@@ -56,7 +87,7 @@ function createLanguageSelect({ onLanguageChange }) {
   }, [choice.name])));
 }
 
-export function renderSiteHeader(target, routeName, { seasons = [], season, onSeasonChange, onLanguageChange } = {}) {
+export function renderSiteHeader(target, routeName, { leagues = [], datasets = [], seasons = [], selection, onLeagueChange, onSeasonChange, onLanguageChange } = {}) {
   target.classList.remove('is-nav-open');
   const nav = h(
     'nav',
@@ -119,25 +150,34 @@ export function renderSiteHeader(target, routeName, { seasons = [], season, onSe
 
   target.replaceChildren(
     h('div', { class: 'site-header__brand' }, [
-      h('span', { class: 'coord' }, [t('app.kicker')]),
+      h('span', { class: 'coord' }, [t('app.kicker', { league: selection?.league, year: selection?.year })]),
       h('div', { class: 'site-header__title-row' }, [
         h('a', {
           class: 'site-header__brand-name',
           href: href.home,
+          'aria-label': t('app.title'),
           onClick: () => trackUi({
             event_name: 'click',
             target_type: 'nav_link',
             target_id: 'home',
           }),
-        }, [t('home.title')]),
+        }, [
+          h('img', { class: 'site-header__brand-mark', src: BRAND_MARK.href, width: 24, height: 24, alt: '', 'aria-hidden': 'true' }),
+          h('span', {}, [t('app.name')]),
+        ]),
         menu,
       ]),
     ]),
     nav,
     h('div', { class: 'site-header__status' }, [
-      createSeasonSelect({ seasons, season, onSeasonChange }),
+      createLeagueSelect({ leagues, datasets, selection, onLeagueChange }),
+      createSeasonSelect({ seasons, selection, onSeasonChange }),
       createLanguageSelect({ onLanguageChange }),
       createStatusChip({ label: DATASET_MODE, variant: 'mock' }),
+      h('span', { class: 'dataset-coverage' }, [t('dataset.coverage', {
+        start: selection?.date_start?.slice(0, 10) ?? '—',
+        end: selection?.date_end?.slice(0, 10) ?? '—',
+      })]),
     ]),
   );
 }

@@ -1,0 +1,25 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2015,Unknown,oe:player:3136a9f696493782b8b07c895377f81,BalIs,top,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2015,Unknown,oe:player:486a694eed702562985d71457d55481,Hai,jng,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2015,Unknown,oe:player:7e0e7ac2a199e8e2ecb30499a3b2153,Jensen,mid,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2015,Unknown,oe:player:267b730dd2e2dcb97182a2795935491,Sneaky,bot,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2015,Unknown,oe:player:0108d7db35e786901358382563a9e47,LemonNation,sup,,,,,,,,,,,,,,
+lineup,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2015,Unknown,,,,lineup-a9f8873c3be6f11b,CLO-01,1,14,oe:player:3136a9f696493782b8b07c895377f81,oe:player:486a694eed702562985d71457d55481,oe:player:7e0e7ac2a199e8e2ecb30499a3b2153,oe:player:267b730dd2e2dcb97182a2795935491,oe:player:0108d7db35e786901358382563a9e47,BalIs,Hai,Jensen,Sneaky,LemonNation
+player,oe:team:4d2d64aa97a6a4aaa1a538b90b2b8aa,Gravity,GRA,2015,Unknown,oe:player:20aba59cf47a04a6cf10436ce1946ac,Hauntzer,top,,,,,,,,,,,,,,
+player,oe:team:4d2d64aa97a6a4aaa1a538b90b2b8aa,Gravity,GRA,2015,Unknown,oe:player:6bc362dbf494c61ea117fe3c71ca48a,Move,jng,,,,,,,,,,,,,,
+player,oe:team:4d2d64aa97a6a4aaa1a538b90b2b8aa,Gravity,GRA,2015,Unknown,oe:player:a7a579083434329c905df3b17716417,Keane,mid,,,,,,,,,,,,,,
+player,oe:team:4d2d64aa97a6a4aaa1a538b90b2b8aa,Gravity,GRA,2015,Unknown,oe:player:4046e5819c6e57ec8fa00b56834d8aa,Altec,bot,,,,,,,,,,,,,,
+player,oe:team:4d2d64aa97a6a4aaa1a538b90b2b8aa,Gravity,GRA,2015,Unknown,oe:player:19276b73dd23a9eb9c9f08183233a92,Bunny FuFuu,sup,,,,,,,,,,,,,,
+lineup,oe:team:4d2d64aa97a6a4aaa1a538b90b2b8aa,Gravity,GRA,2015,Unknown,,,,lineup-d37cc85dae1f0ffa,GRA-01,1,5,oe:player:20aba59cf47a04a6cf10436ce1946ac,oe:player:6bc362dbf494c61ea117fe3c71ca48a,oe:player:a7a579083434329c905df3b17716417,oe:player:4046e5819c6e57ec8fa00b56834d8aa,oe:player:19276b73dd23a9eb9c9f08183233a92,Hauntzer,Move,Keane,Altec,Bunny FuFuu
+player,oe:team:ae0cec6dc617eba9801ec9939d1c18c,Team Impulse,TI,2015,Unknown,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,Impact,top,,,,,,,,,,,,,,
+player,oe:team:ae0cec6dc617eba9801ec9939d1c18c,Team Impulse,TI,2015,Unknown,oe:player:954601796c16fa224b98f54b380855c,Rush,jng,,,,,,,,,,,,,,
+player,oe:team:ae0cec6dc617eba9801ec9939d1c18c,Team Impulse,TI,2015,Unknown,oe:player:d25b4bd4c72aa2c07ee87adb10b59f1,Gate,mid,,,,,,,,,,,,,,
+player,oe:team:ae0cec6dc617eba9801ec9939d1c18c,Team Impulse,TI,2015,Unknown,oe:player:3caf8d2f2d789c0f073a824f8a71d59,Apollo,bot,,,,,,,,,,,,,,
+player,oe:team:ae0cec6dc617eba9801ec9939d1c18c,Team Impulse,TI,2015,Unknown,oe:player:c1937b687795ce80be0ecf20e181144,Adrian,sup,,,,,,,,,,,,,,
+lineup,oe:team:ae0cec6dc617eba9801ec9939d1c18c,Team Impulse,TI,2015,Unknown,,,,lineup-c6e10173484e1e06,TI-01,1,5,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,oe:player:954601796c16fa224b98f54b380855c,oe:player:d25b4bd4c72aa2c07ee87adb10b59f1,oe:player:3caf8d2f2d789c0f073a824f8a71d59,oe:player:c1937b687795ce80be0ecf20e181144,Impact,Rush,Gate,Apollo,Adrian
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2015,Unknown,oe:player:feee48d6e5d34aed05441b8f436d729,Quas,top,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2015,Unknown,oe:player:614fdab9ca37d9e09310671aae27525,IWDominate,jng,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2015,Unknown,oe:player:7796fc7fdbef88620e2a9fd1df026a7,Fenix,mid,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2015,Unknown,oe:player:8c09ee8e1496710919dcbd718ff285d,Piglet,bot,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2015,Unknown,oe:player:de502f5aaf4b17f9e8a0f4899d596b4,Xpecial,sup,,,,,,,,,,,,,,
+lineup,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2015,Unknown,,,,lineup-0a9789f711f6b5b5,TL-01,1,4,oe:player:feee48d6e5d34aed05441b8f436d729,oe:player:614fdab9ca37d9e09310671aae27525,oe:player:7796fc7fdbef88620e2a9fd1df026a7,oe:player:8c09ee8e1496710919dcbd718ff285d,oe:player:de502f5aaf4b17f9e8a0f4899d596b4,Quas,IWDominate,Fenix,Piglet,Xpecial

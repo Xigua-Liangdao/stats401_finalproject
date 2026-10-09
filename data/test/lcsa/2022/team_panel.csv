@@ -1,0 +1,61 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2022,Spring,oe:player:4362ee79808719e8ae22aa171ca852b,Gamsu,top,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2022,Spring,oe:player:c691200f8d12ee61ae01047c4629c62,Kenvi,jng,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2022,Spring,oe:player:70e6d96860b77bb3e87663215b42a1f,JimieN,mid,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2022,Spring,oe:player:713fae3c1b605df4ee976c6188182a1,Wixxi,bot,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2022,Spring,oe:player:3009272a4d20a33543f3490a7233a48,Sword,sup,,,,,,,,,,,,,,
+lineup,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2022,Spring,,,,lineup-fb5b3dfa13a41a4a,1TA-01,1,1,oe:player:4362ee79808719e8ae22aa171ca852b,oe:player:c691200f8d12ee61ae01047c4629c62,oe:player:70e6d96860b77bb3e87663215b42a1f,oe:player:713fae3c1b605df4ee976c6188182a1,oe:player:3009272a4d20a33543f3490a7233a48,Gamsu,Kenvi,JimieN,Wixxi,Sword
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2022,Spring,oe:player:5e79b66b78498aa1aec126b0b4ca1a1,Darshan,top,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2022,Spring,oe:player:d22aa92e1e9482e79e8a58fb42b5b7b,Malice,jng,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2022,Spring,oe:player:42db31f0aa88a0167fb7651422efbcf,Copy,mid,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2022,Spring,oe:player:fb18ab6bf6bef08402a580d2a96c106,k1ng,bot,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2022,Spring,oe:player:40704dfd2d966862568d29770de57bd,Isles,sup,,,,,,,,,,,,,,
+lineup,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2022,Spring,,,,lineup-0541643466a864b8,CA-01,1,2,oe:player:5e79b66b78498aa1aec126b0b4ca1a1,oe:player:d22aa92e1e9482e79e8a58fb42b5b7b,oe:player:42db31f0aa88a0167fb7651422efbcf,oe:player:fb18ab6bf6bef08402a580d2a96c106,oe:player:40704dfd2d966862568d29770de57bd,Darshan,Malice,Copy,k1ng,Isles
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2022,Spring,oe:player:f04a502d38a0c3b35e53ecef740cf37,Eclipse,top,,,,,,,,,,,,,,
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2022,Spring,oe:player:08936c56ab5a6453c58974a619651c3,eXyu,jng,,,,,,,,,,,,,,
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2022,Spring,oe:player:05a73863e113f3cb6b472a76da2ea52,DARKWINGS,mid,,,,,,,,,,,,,,
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2022,Spring,oe:player:3f96b0d5494895f5e964dc16ea8f27b,Spawn,bot,,,,,,,,,,,,,,
+player,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2022,Spring,oe:player:650f5da2c2068fff2937c3530393c97,JayJ,sup,,,,,,,,,,,,,,
+lineup,oe:team:9b9cc5a065b0b4dd8f57b23361f03ee,Dignitas Academy,DA,2022,Spring,,,,lineup-9f45a286295953a9,DA-01,1,1,oe:player:f04a502d38a0c3b35e53ecef740cf37,oe:player:08936c56ab5a6453c58974a619651c3,oe:player:05a73863e113f3cb6b472a76da2ea52,oe:player:3f96b0d5494895f5e964dc16ea8f27b,oe:player:650f5da2c2068fff2937c3530393c97,Eclipse,eXyu,DARKWINGS,Spawn,JayJ
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2022,Spring,oe:player:4d0ec5fa505ee341aff8b2309356afc,Srtty,top,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2022,Spring,oe:player:6ebdf3a3b56c113137109c45c2abc8f,Tomio,jng,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2022,Spring,oe:player:d3b78a30a7132a543fe9f14a5a25918,Soligo,mid,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2022,Spring,oe:player:c63c7e0755b31f1effbdf2e1f831e7d,Kaori,bot,,,,,,,,,,,,,,
+player,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2022,Spring,oe:player:e635411339ef94e96500cb2b93b5e56,SkyTec,sup,,,,,,,,,,,,,,
+lineup,oe:team:7276a3089a0ff2fb055ae059a87bebf,Evil Geniuses Academy,EGA,2022,Spring,,,,lineup-928f2a45574bff1f,EGA-01,1,2,oe:player:4d0ec5fa505ee341aff8b2309356afc,oe:player:6ebdf3a3b56c113137109c45c2abc8f,oe:player:d3b78a30a7132a543fe9f14a5a25918,oe:player:c63c7e0755b31f1effbdf2e1f831e7d,oe:player:e635411339ef94e96500cb2b93b5e56,Srtty,Tomio,Soligo,Kaori,SkyTec
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2022,Spring,oe:player:e8aba5fbfc41b0621226b08a87e3ded,Philip,top,,,,,,,,,,,,,,
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2022,Spring,oe:player:f9e804c44aa43f18576783a067e99ab,Yuuji,jng,,,,,,,,,,,,,,
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2022,Spring,oe:player:b415fb792209708ad6921cca2e73aff,Spirax,mid,,,,,,,,,,,,,,
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2022,Spring,oe:player:6378658dafc3eeb902fa2e52f909172,Tomo,bot,,,,,,,,,,,,,,
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2022,Spring,oe:player:5a4ed34a7baf1d14942def4ab49ce38,Diamond,sup,,,,,,,,,,,,,,
+lineup,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2022,Spring,,,,lineup-3e2d28232cadcae8,FA-01,1,3,oe:player:e8aba5fbfc41b0621226b08a87e3ded,oe:player:f9e804c44aa43f18576783a067e99ab,oe:player:b415fb792209708ad6921cca2e73aff,oe:player:6378658dafc3eeb902fa2e52f909172,oe:player:5a4ed34a7baf1d14942def4ab49ce38,Philip,Yuuji,Spirax,Tomo,Diamond
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2022,Spring,oe:player:89a68bddd0541e0f26fc044c711eb92,Tony Top,top,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2022,Spring,oe:player:f61764e99a8cc0851a73c850fd43b0c,Amazo,jng,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2022,Spring,oe:player:5b4a9ba6121c6d0e37076f8f3523000,Ryoma,mid,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2022,Spring,oe:player:51d421a31ce72460198ef946995fb11,Stixxay,bot,,,,,,,,,,,,,,
+player,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2022,Spring,oe:player:6c7c8b16d921fbf3394e228f1554ef5,Chime,sup,,,,,,,,,,,,,,
+lineup,oe:team:d1f833765bf7a9a8109d96a1b61afd7,Golden Guardians Academy,GGA,2022,Spring,,,,lineup-8b54074a40840eae,GGA-01,1,1,oe:player:89a68bddd0541e0f26fc044c711eb92,oe:player:f61764e99a8cc0851a73c850fd43b0c,oe:player:5b4a9ba6121c6d0e37076f8f3523000,oe:player:51d421a31ce72460198ef946995fb11,oe:player:6c7c8b16d921fbf3394e228f1554ef5,Tony Top,Amazo,Ryoma,Stixxay,Chime
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2022,Spring,oe:player:d99a604c79ce3c2e76a2f43488d5d4c,Concept,top,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2022,Spring,oe:player:e03653dedd6f4e142f4aca131995964,Chad,jng,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2022,Spring,oe:player:ce833e045ae1fdf546c867198b80566,PrettyGRE,mid,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2022,Spring,oe:player:91a74fa03f163055a19da5b16363fc8,WildTurtle,bot,,,,,,,,,,,,,,
+player,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2022,Spring,oe:player:f8d623a78c27641412debac4080ece7,Joey,sup,,,,,,,,,,,,,,
+lineup,oe:team:c96403ed0b812c805aeb6100bdc19a5,Immortals Academy,IA,2022,Spring,,,,lineup-0cbfad5a3a5c2b42,IA-01,1,2,oe:player:d99a604c79ce3c2e76a2f43488d5d4c,oe:player:e03653dedd6f4e142f4aca131995964,oe:player:ce833e045ae1fdf546c867198b80566,oe:player:91a74fa03f163055a19da5b16363fc8,oe:player:f8d623a78c27641412debac4080ece7,Concept,Chad,PrettyGRE,WildTurtle,Joey
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2022,Spring,oe:player:803305691092adbf1de29f27a98d2a6,V1per,top,,,,,,,,,,,,,,
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2022,Spring,oe:player:a88f9b1cfb0beebb9aee272513500a6,Hyper,jng,,,,,,,,,,,,,,
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2022,Spring,oe:player:3aa24a5774e47fb95dd9963c0b26a1b,Keaiduo,mid,,,,,,,,,,,,,,
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2022,Spring,oe:player:046795fa30debe19eafd497dba544e3,Instinct,bot,,,,,,,,,,,,,,
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2022,Spring,oe:player:aa8dcbc0e74672795afde4d6464b325,Yursan,sup,,,,,,,,,,,,,,
+lineup,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2022,Spring,,,,lineup-c53d940219526fad,TA-01,1,2,oe:player:803305691092adbf1de29f27a98d2a6,oe:player:a88f9b1cfb0beebb9aee272513500a6,oe:player:3aa24a5774e47fb95dd9963c0b26a1b,oe:player:046795fa30debe19eafd497dba544e3,oe:player:aa8dcbc0e74672795afde4d6464b325,V1per,Hyper,Keaiduo,Instinct,Yursan
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2022,Spring,oe:player:5257e05cde806e07b405ddcce85114d,Bradley,top,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2022,Spring,oe:player:a04a853a0f540f156d08711204fe252,Armao,jng,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2022,Spring,oe:player:20c094acbddf3fbdfd91293511b4472,Haeri,mid,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2022,Spring,oe:player:f6b8af05a5af22004a67a78f3046b92,Yeon,bot,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2022,Spring,oe:player:dbe844fcbbc7f54654e54242e79acac,Eyla,sup,,,,,,,,,,,,,,
+lineup,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2022,Spring,,,,lineup-842197a943ee851b,TLA-01,1,12,oe:player:5257e05cde806e07b405ddcce85114d,oe:player:a04a853a0f540f156d08711204fe252,oe:player:20c094acbddf3fbdfd91293511b4472,oe:player:f6b8af05a5af22004a67a78f3046b92,oe:player:dbe844fcbbc7f54654e54242e79acac,Bradley,Armao,Haeri,Yeon,Eyla
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2022,Spring,oe:player:c673476f9542d2905f3622a03a25a09,Mabud,top,,,,,,,,,,,,,,
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2022,Spring,oe:player:55f7df3016af1c9620b0c426e243d0a,Frost4,jng,,,,,,,,,,,,,,
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2022,Spring,oe:player:3454666ac50f3a275dd239db6b4434a,Avano,mid,,,,,,,,,,,,,,
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2022,Spring,oe:player:4775428eef9b4fee90c7c56781352e9,Vex,bot,,,,,,,,,,,,,,
+player,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2022,Spring,oe:player:41c5f02f8439b36ea5d0d37c7b4a2c4,Kenji,sup,,,,,,,,,,,,,,
+lineup,oe:team:333ba9fefa87eda14bd32c5420d7002,Winthrop University,WU,2022,Spring,,,,lineup-4680b1cf853dcac7,WU-01,1,2,oe:player:c673476f9542d2905f3622a03a25a09,oe:player:55f7df3016af1c9620b0c426e243d0a,oe:player:3454666ac50f3a275dd239db6b4434a,oe:player:4775428eef9b4fee90c7c56781352e9,oe:player:41c5f02f8439b36ea5d0d37c7b4a2c4,Mabud,Frost4,Avano,Vex,Kenji

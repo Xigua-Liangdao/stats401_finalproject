@@ -1,0 +1,40 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:ac655e92876e020fc404aff244a95e3,Arctic Gaming México,AGM,2022,Unknown,oe:player:f576de1bd567e8091d2860822f4fd17,Steellar,top,,,,,,,,,,,,,,
+player,oe:team:ac655e92876e020fc404aff244a95e3,Arctic Gaming México,AGM,2022,Unknown,oe:player:ca8e7a1bd79ed4c9aff537414574502,Miang,jng,,,,,,,,,,,,,,
+player,oe:team:ac655e92876e020fc404aff244a95e3,Arctic Gaming México,AGM,2022,Unknown,oe:player:93891f39003d0130de1437a623671a8,Fayonix,mid,,,,,,,,,,,,,,
+player,oe:team:ac655e92876e020fc404aff244a95e3,Arctic Gaming México,AGM,2022,Unknown,oe:player:63c1c50379c9d78cfb0aec3ce7868b4,Hades,bot,,,,,,,,,,,,,,
+player,oe:team:ac655e92876e020fc404aff244a95e3,Arctic Gaming México,AGM,2022,Unknown,oe:player:3ef522d3ad9e45ee5861d965d0fafc9,Lyng,sup,,,,,,,,,,,,,,
+lineup,oe:team:ac655e92876e020fc404aff244a95e3,Arctic Gaming México,AGM,2022,Unknown,,,,lineup-a30ebbf9673bccda,AGM-01,1,3,oe:player:f576de1bd567e8091d2860822f4fd17,oe:player:ca8e7a1bd79ed4c9aff537414574502,oe:player:93891f39003d0130de1437a623671a8,oe:player:63c1c50379c9d78cfb0aec3ce7868b4,oe:player:3ef522d3ad9e45ee5861d965d0fafc9,Steellar,Miang,Fayonix,Hades,Lyng
+player,oe:team:0e99b04d101a93f6de17a4bf5de8b70,Atheris Esports,AE,2022,Unknown,oe:player:a2bc15a0a3749d65c09d28e4e5b1ffe,Mayhem,top,,,,,,,,,,,,,,
+player,oe:team:0e99b04d101a93f6de17a4bf5de8b70,Atheris Esports,AE,2022,Unknown,oe:player:875f4b8a39a46b8de8261f732e6e0f7,Candy,jng,,,,,,,,,,,,,,
+player,oe:team:0e99b04d101a93f6de17a4bf5de8b70,Atheris Esports,AE,2022,Unknown,oe:player:39c532cecb979acba3c261f7f924de1,Zerkxz,mid,,,,,,,,,,,,,,
+player,oe:team:0e99b04d101a93f6de17a4bf5de8b70,Atheris Esports,AE,2022,Unknown,oe:player:dac3ebed07ccecf0b97a0cfb027f1e3,Demy,bot,,,,,,,,,,,,,,
+player,oe:team:0e99b04d101a93f6de17a4bf5de8b70,Atheris Esports,AE,2022,Unknown,oe:player:84e640911c6d6f172d4cf1c7cc78a67,Crecre,sup,,,,,,,,,,,,,,
+lineup,oe:team:0e99b04d101a93f6de17a4bf5de8b70,Atheris Esports,AE,2022,Unknown,,,,lineup-e5e729d21c78161b,AE-01,1,7,oe:player:a2bc15a0a3749d65c09d28e4e5b1ffe,oe:player:875f4b8a39a46b8de8261f732e6e0f7,oe:player:39c532cecb979acba3c261f7f924de1,oe:player:dac3ebed07ccecf0b97a0cfb027f1e3,oe:player:84e640911c6d6f172d4cf1c7cc78a67,Mayhem,Candy,Zerkxz,Demy,Crecre
+player,oe:team:3d3456d514814ba68c9532044bc50e2,Six Karma,SK,2022,Unknown,oe:player:046cc082e82c608b087457f59598674,Nipphu,top,,,,,,,,,,,,,,
+player,oe:team:3d3456d514814ba68c9532044bc50e2,Six Karma,SK,2022,Unknown,oe:player:73fac438d3c20a0bf023d3b4c8b26b2,LiquidDiego,jng,,,,,,,,,,,,,,
+player,oe:team:3d3456d514814ba68c9532044bc50e2,Six Karma,SK,2022,Unknown,oe:player:fbbdc14045f1d9b78dd8fd4ca50306d,Piqueos,mid,,,,,,,,,,,,,,
+player,oe:team:3d3456d514814ba68c9532044bc50e2,Six Karma,SK,2022,Unknown,oe:player:4a867124044ab3fd40ddfb8676e65e7,VirusFx,bot,,,,,,,,,,,,,,
+player,oe:team:3d3456d514814ba68c9532044bc50e2,Six Karma,SK,2022,Unknown,oe:player:980ec552cadeaca681fcac098452eca,NerzhuL,sup,,,,,,,,,,,,,,
+lineup,oe:team:3d3456d514814ba68c9532044bc50e2,Six Karma,SK,2022,Unknown,,,,lineup-1c86cc9be3394336,SK-01,1,3,oe:player:046cc082e82c608b087457f59598674,oe:player:73fac438d3c20a0bf023d3b4c8b26b2,oe:player:fbbdc14045f1d9b78dd8fd4ca50306d,oe:player:4a867124044ab3fd40ddfb8676e65e7,oe:player:980ec552cadeaca681fcac098452eca,Nipphu,LiquidDiego,Piqueos,VirusFx,NerzhuL
+player,oe:team:4160bf895acdf688dc5312c2280fbc4,The Kings,TK,2022,Unknown,oe:player:277003aaa6126d09879b4ffe1bf18b3,pan,top,,,,,,,,,,,,,,
+player,oe:team:4160bf895acdf688dc5312c2280fbc4,The Kings,TK,2022,Unknown,oe:player:fa41f0e745119bde94b1cdcc8d10434,Mataz,jng,,,,,,,,,,,,,,
+player,oe:team:4160bf895acdf688dc5312c2280fbc4,The Kings,TK,2022,Unknown,oe:player:6252fe71513f9bc796f40f41cfeb74e,Cotopaco,mid,,,,,,,,,,,,,,
+player,oe:team:4160bf895acdf688dc5312c2280fbc4,The Kings,TK,2022,Unknown,oe:player:ebc8d71056b04067e8a67dd228a034e,Limitationss,bot,,,,,,,,,,,,,,
+player,oe:team:4160bf895acdf688dc5312c2280fbc4,The Kings,TK,2022,Unknown,oe:player:c39abe593063a27305754918408d3a1,Mun,sup,,,,,,,,,,,,,,
+lineup,oe:team:4160bf895acdf688dc5312c2280fbc4,The Kings,TK,2022,Unknown,,,,lineup-c499b9e0bcf772a3,TK-01,1,2,oe:player:277003aaa6126d09879b4ffe1bf18b3,oe:player:fa41f0e745119bde94b1cdcc8d10434,oe:player:6252fe71513f9bc796f40f41cfeb74e,oe:player:ebc8d71056b04067e8a67dd228a034e,oe:player:c39abe593063a27305754918408d3a1,pan,Mataz,Cotopaco,Limitationss,Mun
+player,oe:team:65f7d8b9f9b44f3476f64abf64c3c19,Tomorrow Esports,TE,2022,Unknown,oe:player:fc2b1c9f4157a53abcd021876d6e0ce,Marth,top,,,,,,,,,,,,,,
+player,oe:team:65f7d8b9f9b44f3476f64abf64c3c19,Tomorrow Esports,TE,2022,Unknown,oe:player:c8f61021689343ff01ae1052f0b8655,Lio,jng,,,,,,,,,,,,,,
+player,oe:team:65f7d8b9f9b44f3476f64abf64c3c19,Tomorrow Esports,TE,2022,Unknown,oe:player:492379b2b8f7ac3f7cc8e0ca6254f4b,Kyoto,mid,,,,,,,,,,,,,,
+player,oe:team:65f7d8b9f9b44f3476f64abf64c3c19,Tomorrow Esports,TE,2022,Unknown,oe:player:1e345e85d542ba323c2fb78cdc2d79b,Alann,bot,,,,,,,,,,,,,,
+player,oe:team:65f7d8b9f9b44f3476f64abf64c3c19,Tomorrow Esports,TE,2022,Unknown,oe:player:da389b790254c0db7f5336076cdf496,Juanma,sup,,,,,,,,,,,,,,
+lineup,oe:team:65f7d8b9f9b44f3476f64abf64c3c19,Tomorrow Esports,TE,2022,Unknown,,,,lineup-9153453025f04cec,TE-01,1,3,oe:player:fc2b1c9f4157a53abcd021876d6e0ce,oe:player:c8f61021689343ff01ae1052f0b8655,oe:player:492379b2b8f7ac3f7cc8e0ca6254f4b,oe:player:1e345e85d542ba323c2fb78cdc2d79b,oe:player:da389b790254c0db7f5336076cdf496,Marth,Lio,Kyoto,Alann,Juanma
+player,oe:team:479dc9903b6f233af09b0227170a0cc,Zylant Esports,ZE,2022,Unknown,oe:player:a742f95d821539baf568851576ca921,Pillo,top,,,,,,,,,,,,,,
+player,oe:team:479dc9903b6f233af09b0227170a0cc,Zylant Esports,ZE,2022,Unknown,oe:player:9e6559218b21069a988c30c9a445470,Mega,jng,,,,,,,,,,,,,,
+player,oe:team:479dc9903b6f233af09b0227170a0cc,Zylant Esports,ZE,2022,Unknown,oe:player:a1501fb78e05ab933a158f00032ae4c,Saens,jng,,,,,,,,,,,,,,
+player,oe:team:479dc9903b6f233af09b0227170a0cc,Zylant Esports,ZE,2022,Unknown,oe:player:53a722597f9fe835806af2f76fbb3b4,Vares,mid,,,,,,,,,,,,,,
+player,oe:team:479dc9903b6f233af09b0227170a0cc,Zylant Esports,ZE,2022,Unknown,oe:player:7e02979fd0ef649653419a704ba461c,Zeypher,bot,,,,,,,,,,,,,,
+player,oe:team:479dc9903b6f233af09b0227170a0cc,Zylant Esports,ZE,2022,Unknown,oe:player:c2a90baf58e14e224415293a8ad34ff,BetaTwinz,sup,,,,,,,,,,,,,,
+player,oe:team:479dc9903b6f233af09b0227170a0cc,Zylant Esports,ZE,2022,Unknown,oe:player:75d3bc3200859ca956d5bf9b96966b7,Messi,sup,,,,,,,,,,,,,,
+lineup,oe:team:479dc9903b6f233af09b0227170a0cc,Zylant Esports,ZE,2022,Unknown,,,,lineup-bda9e4ab19869513,ZE-01,1,15,oe:player:a742f95d821539baf568851576ca921,oe:player:a1501fb78e05ab933a158f00032ae4c,oe:player:53a722597f9fe835806af2f76fbb3b4,oe:player:7e02979fd0ef649653419a704ba461c,oe:player:75d3bc3200859ca956d5bf9b96966b7,Pillo,Saens,Vares,Zeypher,Messi
+lineup,oe:team:479dc9903b6f233af09b0227170a0cc,Zylant Esports,ZE,2022,Unknown,,,,lineup-55cd56be29335ec0,ZE-02,2,1,oe:player:a742f95d821539baf568851576ca921,oe:player:9e6559218b21069a988c30c9a445470,oe:player:53a722597f9fe835806af2f76fbb3b4,oe:player:7e02979fd0ef649653419a704ba461c,oe:player:c2a90baf58e14e224415293a8ad34ff,Pillo,Mega,Vares,Zeypher,BetaTwinz

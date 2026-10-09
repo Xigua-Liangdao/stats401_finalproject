@@ -1,0 +1,13 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2016,Unknown,oe:player:eae234330021a52c3ec6c9fd6fdc753,Korol,top,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2016,Unknown,oe:player:9148a2e81dfb2432807b6738829a1b2,Clearlove,jng,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2016,Unknown,oe:player:71e79ef80600d398d90cfebe3b0b758,Scout,mid,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2016,Unknown,oe:player:c588a2d07b69ca4ba61c96aebd3f793,Deft,bot,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2016,Unknown,oe:player:bda7cc061d7a1576f1dcad33dd505cd,Meiko,sup,,,,,,,,,,,,,,
+lineup,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2016,Unknown,,,,lineup-6fd2b3692f89a6b8,EDG-01,1,1,oe:player:eae234330021a52c3ec6c9fd6fdc753,oe:player:9148a2e81dfb2432807b6738829a1b2,oe:player:71e79ef80600d398d90cfebe3b0b758,oe:player:c588a2d07b69ca4ba61c96aebd3f793,oe:player:bda7cc061d7a1576f1dcad33dd505cd,Korol,Clearlove,Scout,Deft,Meiko
+player,oe:team:2f758c15b9c1781b2d4032011ae1628,I May,IM,2016,Unknown,oe:player:98c980a76febd0efa3407295d69b244,AmazingJ,top,,,,,,,,,,,,,,
+player,oe:team:2f758c15b9c1781b2d4032011ae1628,I May,IM,2016,Unknown,oe:player:9f820219a9712dc03a7ceacbb2d2e18,Fireloli,jng,,,,,,,,,,,,,,
+player,oe:team:2f758c15b9c1781b2d4032011ae1628,I May,IM,2016,Unknown,oe:player:582ca45acfd3e21caca8b786c141385,Athena,mid,,,,,,,,,,,,,,
+player,oe:team:2f758c15b9c1781b2d4032011ae1628,I May,IM,2016,Unknown,oe:player:efced9552c6030d0beaf318ee62926a,Jinjiao,bot,,,,,,,,,,,,,,
+player,oe:team:2f758c15b9c1781b2d4032011ae1628,I May,IM,2016,Unknown,name-player-c17f7c39ef71cf40,Road,sup,,,,,,,,,,,,,,
+lineup,oe:team:2f758c15b9c1781b2d4032011ae1628,I May,IM,2016,Unknown,,,,lineup-6cf42ab40c728399,IM-01,1,1,oe:player:98c980a76febd0efa3407295d69b244,oe:player:9f820219a9712dc03a7ceacbb2d2e18,oe:player:582ca45acfd3e21caca8b786c141385,oe:player:efced9552c6030d0beaf318ee62926a,name-player-c17f7c39ef71cf40,AmazingJ,Fireloli,Athena,Jinjiao,Road

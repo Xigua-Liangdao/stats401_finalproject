@@ -1,0 +1,57 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2019,Spring,oe:player:dc760d6884ce21614b2389ac1c05ec2,FakeGod,top,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2019,Spring,oe:player:f50a30fd2f6e559220dd417b0ce2dd8,Fragas,jng,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2019,Spring,oe:player:d3b78a30a7132a543fe9f14a5a25918,Soligo,mid,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2019,Spring,oe:player:416ea631f3b7a0d79f4263e00736f02,Prismal,bot,,,,,,,,,,,,,,
+player,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2019,Spring,oe:player:4d38e91e966ad67aead69648253640e,Stunt,sup,,,,,,,,,,,,,,
+lineup,oe:team:acbc961cec36a59ede6695669ad7a19,100 Thieves Academy,1TA,2019,Spring,,,,lineup-72d99abf8767ea0a,1TA-01,1,6,oe:player:dc760d6884ce21614b2389ac1c05ec2,oe:player:f50a30fd2f6e559220dd417b0ce2dd8,oe:player:d3b78a30a7132a543fe9f14a5a25918,oe:player:416ea631f3b7a0d79f4263e00736f02,oe:player:4d38e91e966ad67aead69648253640e,FakeGod,Fragas,Soligo,Prismal,Stunt
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2019,Spring,oe:player:a62c9e65a78ee4eb32866252a8245d5,FallenBandit,top,,,,,,,,,,,,,,
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2019,Spring,oe:player:30bccf285c11c18d7698c98ca52d87d,Griffin,jng,,,,,,,,,,,,,,
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2019,Spring,oe:player:cc3a241d9b6a251a9038c7d47131df0,Tuesday,mid,,,,,,,,,,,,,,
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2019,Spring,oe:player:51d421a31ce72460198ef946995fb11,Stixxay,bot,,,,,,,,,,,,,,
+player,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2019,Spring,oe:player:0c0b2dc5720566f5cceb972011221cf,Call Lin,sup,,,,,,,,,,,,,,
+lineup,oe:team:fe409cbd7c72eb621d9c4e7eac75936,CLG Academy,CA,2019,Spring,,,,lineup-7d2b9e7c1a69e827,CA-01,1,1,oe:player:a62c9e65a78ee4eb32866252a8245d5,oe:player:30bccf285c11c18d7698c98ca52d87d,oe:player:cc3a241d9b6a251a9038c7d47131df0,oe:player:51d421a31ce72460198ef946995fb11,oe:player:0c0b2dc5720566f5cceb972011221cf,FallenBandit,Griffin,Tuesday,Stixxay,Call Lin
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2019,Spring,oe:player:61f2c08eb43e1b4fc0bdd988013ee49,Kumo,top,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2019,Spring,oe:player:ed455f823b6586e9e3621dfb5aeb42e,Blaber,jng,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2019,Spring,oe:player:88b2fc44169f986bdffd0ffdb0b534a,Goldenglue,mid,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2019,Spring,oe:player:e6e30c037d0b75caa94827ead86b4ed,Keith,bot,,,,,,,,,,,,,,
+player,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2019,Spring,oe:player:5a4ed34a7baf1d14942def4ab49ce38,Diamond,sup,,,,,,,,,,,,,,
+lineup,oe:team:4e28e7839cbb263369dfcb1794a25e2,Cloud9 Academy,CA,2019,Spring,,,,lineup-c297edd85f767a81,CA-01,1,1,oe:player:61f2c08eb43e1b4fc0bdd988013ee49,oe:player:ed455f823b6586e9e3621dfb5aeb42e,oe:player:88b2fc44169f986bdffd0ffdb0b534a,oe:player:e6e30c037d0b75caa94827ead86b4ed,oe:player:5a4ed34a7baf1d14942def4ab49ce38,Kumo,Blaber,Goldenglue,Keith,Diamond
+player,oe:team:6c12501a3ea9d19dbbd5619f3f938e9,Clutch Gaming Academy,CGA,2019,Spring,oe:player:b656fd67abb3a3f473cb74f20cc242d,Rodov,top,,,,,,,,,,,,,,
+player,oe:team:6c12501a3ea9d19dbbd5619f3f938e9,Clutch Gaming Academy,CGA,2019,Spring,oe:player:3d4a327e2f093e2f46239b688562b14,Magerdanger,jng,,,,,,,,,,,,,,
+player,oe:team:6c12501a3ea9d19dbbd5619f3f938e9,Clutch Gaming Academy,CGA,2019,Spring,oe:player:e05ad65a1d5df220fc7b24536af68bc,Sun,mid,,,,,,,,,,,,,,
+player,oe:team:6c12501a3ea9d19dbbd5619f3f938e9,Clutch Gaming Academy,CGA,2019,Spring,oe:player:9a877004ae6373d34cd9ba93decbbd9,Cody Sun,bot,,,,,,,,,,,,,,
+player,oe:team:6c12501a3ea9d19dbbd5619f3f938e9,Clutch Gaming Academy,CGA,2019,Spring,oe:player:a9db4155cb1d90e3e20befd63d49d4a,Cat 2,sup,,,,,,,,,,,,,,
+lineup,oe:team:6c12501a3ea9d19dbbd5619f3f938e9,Clutch Gaming Academy,CGA,2019,Spring,,,,lineup-08cc1fb510be05d0,CGA-01,1,1,oe:player:b656fd67abb3a3f473cb74f20cc242d,oe:player:3d4a327e2f093e2f46239b688562b14,oe:player:e05ad65a1d5df220fc7b24536af68bc,oe:player:9a877004ae6373d34cd9ba93decbbd9,oe:player:a9db4155cb1d90e3e20befd63d49d4a,Rodov,Magerdanger,Sun,Cody Sun,Cat 2
+player,oe:team:2b688a6cc8da916b7b3aaf2bd615605,Echo Fox Academy,EFA,2019,Spring,oe:player:43b4189712f5ac66bbef0414a8ed2db,Lourlo,top,,,,,,,,,,,,,,
+player,oe:team:2b688a6cc8da916b7b3aaf2bd615605,Echo Fox Academy,EFA,2019,Spring,oe:player:265de6a19ea25898ad88c82167c0251,Panda,jng,,,,,,,,,,,,,,
+player,oe:team:2b688a6cc8da916b7b3aaf2bd615605,Echo Fox Academy,EFA,2019,Spring,oe:player:ce280cfcaa8d028bf7400e597eb666c,Yusui,mid,,,,,,,,,,,,,,
+player,oe:team:2b688a6cc8da916b7b3aaf2bd615605,Echo Fox Academy,EFA,2019,Spring,oe:player:b578b733cbb788fc6ad208314d2c4c2,Lost,bot,,,,,,,,,,,,,,
+player,oe:team:2b688a6cc8da916b7b3aaf2bd615605,Echo Fox Academy,EFA,2019,Spring,oe:player:db3e3f51c9107e26c9bccf9a188ce2e,Fill,sup,,,,,,,,,,,,,,
+lineup,oe:team:2b688a6cc8da916b7b3aaf2bd615605,Echo Fox Academy,EFA,2019,Spring,,,,lineup-7c70357abc8b68c0,EFA-01,1,14,oe:player:43b4189712f5ac66bbef0414a8ed2db,oe:player:265de6a19ea25898ad88c82167c0251,oe:player:ce280cfcaa8d028bf7400e597eb666c,oe:player:b578b733cbb788fc6ad208314d2c4c2,oe:player:db3e3f51c9107e26c9bccf9a188ce2e,Lourlo,Panda,Yusui,Lost,Fill
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2019,Spring,oe:player:3f87e25690ea3bdeb998259fb45445c,Engo,top,,,,,,,,,,,,,,
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2019,Spring,oe:player:09df7e1c00d361f40c47542ae02f736,MAXI,jng,,,,,,,,,,,,,,
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2019,Spring,oe:player:276d05b1111531b04f5945dd776fed6,Nulu,mid,,,,,,,,,,,,,,
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2019,Spring,oe:player:4d37c966e565a988f405b6bb4291d20,Erry,bot,,,,,,,,,,,,,,
+player,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2019,Spring,oe:player:650f5da2c2068fff2937c3530393c97,JayJ,sup,,,,,,,,,,,,,,
+lineup,oe:team:92a5dd0b813a9eea72ba22adf5fe78e,FlyQuest Academy,FA,2019,Spring,,,,lineup-0e0295cd20ace1d2,FA-01,1,1,oe:player:3f87e25690ea3bdeb998259fb45445c,oe:player:09df7e1c00d361f40c47542ae02f736,oe:player:276d05b1111531b04f5945dd776fed6,oe:player:4d37c966e565a988f405b6bb4291d20,oe:player:650f5da2c2068fff2937c3530393c97,Engo,MAXI,Nulu,Erry,JayJ
+player,oe:team:8ec1d9b925364a4f40c174a30023afc,OpTic Gaming Academy,OGA,2019,Spring,oe:player:fa816783145a625c4b502446b18ad93,Allorim,top,,,,,,,,,,,,,,
+player,oe:team:8ec1d9b925364a4f40c174a30023afc,OpTic Gaming Academy,OGA,2019,Spring,oe:player:a2de87eae98d0ab3b85567026561a51,Dardoch,jng,,,,,,,,,,,,,,
+player,oe:team:8ec1d9b925364a4f40c174a30023afc,OpTic Gaming Academy,OGA,2019,Spring,oe:player:840cb670271249908dc449829a692c2,Scarlet,mid,,,,,,,,,,,,,,
+player,oe:team:8ec1d9b925364a4f40c174a30023afc,OpTic Gaming Academy,OGA,2019,Spring,oe:player:c79ce9ec47a91226340af0e57afa782,Neo,bot,,,,,,,,,,,,,,
+player,oe:team:8ec1d9b925364a4f40c174a30023afc,OpTic Gaming Academy,OGA,2019,Spring,oe:player:d25b4bd4c72aa2c07ee87adb10b59f1,Gate,sup,,,,,,,,,,,,,,
+lineup,oe:team:8ec1d9b925364a4f40c174a30023afc,OpTic Gaming Academy,OGA,2019,Spring,,,,lineup-0838c4c1c29af830,OGA-01,1,1,oe:player:fa816783145a625c4b502446b18ad93,oe:player:a2de87eae98d0ab3b85567026561a51,oe:player:840cb670271249908dc449829a692c2,oe:player:c79ce9ec47a91226340af0e57afa782,oe:player:d25b4bd4c72aa2c07ee87adb10b59f1,Allorim,Dardoch,Scarlet,Neo,Gate
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2019,Spring,oe:player:2c1047c61ef1b21a80728eff2cb7cb1,Brandini,top,,,,,,,,,,,,,,
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2019,Spring,oe:player:a04a853a0f540f156d08711204fe252,Armao,jng,,,,,,,,,,,,,,
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2019,Spring,oe:player:c6c67e6161209c24759f6a71ad6ac9b,Fanatiik,jng,,,,,,,,,,,,,,
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2019,Spring,oe:player:e181a641eac63b45915802512997360,Ablazeolive,mid,,,,,,,,,,,,,,
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2019,Spring,oe:player:4e0619e57cb50c4ab1230c2dd72df1b,Tactical,bot,,,,,,,,,,,,,,
+player,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2019,Spring,oe:player:8f7b1c81a23c62a54a6b663cf6badaa,Treatz,sup,,,,,,,,,,,,,,
+lineup,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2019,Spring,,,,lineup-eb3c5a521c4f39ef,TA-01,1,3,oe:player:2c1047c61ef1b21a80728eff2cb7cb1,oe:player:a04a853a0f540f156d08711204fe252,oe:player:e181a641eac63b45915802512997360,oe:player:4e0619e57cb50c4ab1230c2dd72df1b,oe:player:8f7b1c81a23c62a54a6b663cf6badaa,Brandini,Armao,Ablazeolive,Tactical,Treatz
+lineup,oe:team:b2840811ed80a85fcf6f023d4b73f8d,TSM Academy,TA,2019,Spring,,,,lineup-6140449ee7767c60,TA-02,2,2,oe:player:2c1047c61ef1b21a80728eff2cb7cb1,oe:player:c6c67e6161209c24759f6a71ad6ac9b,oe:player:e181a641eac63b45915802512997360,oe:player:4e0619e57cb50c4ab1230c2dd72df1b,oe:player:8f7b1c81a23c62a54a6b663cf6badaa,Brandini,Fanatiik,Ablazeolive,Tactical,Treatz
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2019,Spring,oe:player:2e54334c0a5ce2e3e5a5845df3ab3ad,Jenkins,top,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2019,Spring,oe:player:d9c7d53c5d367ca3d5e760ba0355d9e,MikeYeung,jng,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2019,Spring,oe:player:ef97df9d746d0e65ed18786ab30031c,Insanity,mid,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2019,Spring,oe:player:9129215e2b3c4ffb00f2de34e68c7fb,Shoryu,bot,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2019,Spring,oe:player:d405d30cc615b2947aa5af369ad9fba,Matt Elento,sup,,,,,,,,,,,,,,
+lineup,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2019,Spring,,,,lineup-eb826b3abe4c7d95,TLA-01,1,2,oe:player:2e54334c0a5ce2e3e5a5845df3ab3ad,oe:player:d9c7d53c5d367ca3d5e760ba0355d9e,oe:player:ef97df9d746d0e65ed18786ab30031c,oe:player:9129215e2b3c4ffb00f2de34e68c7fb,oe:player:d405d30cc615b2947aa5af369ad9fba,Jenkins,MikeYeung,Insanity,Shoryu,Matt Elento

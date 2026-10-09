@@ -1,0 +1,57 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:312ee76ca74cbb5cb984d8b71ef4847,GameWard,GAM,2020,Spring,oe:player:c71563c4ae48cc1bbd2e7913366cdf7,SLT,top,,,,,,,,,,,,,,
+player,oe:team:312ee76ca74cbb5cb984d8b71ef4847,GameWard,GAM,2020,Spring,oe:player:f03efe870a72a927a911fe0dd4c04d8,Karim kt,jng,,,,,,,,,,,,,,
+player,oe:team:312ee76ca74cbb5cb984d8b71ef4847,GameWard,GAM,2020,Spring,oe:player:49701c0fb3b04ea8d91f366e90ec798,Von,mid,,,,,,,,,,,,,,
+player,oe:team:312ee76ca74cbb5cb984d8b71ef4847,GameWard,GAM,2020,Spring,oe:player:ae1ff54dadd99e50982a3b18a489389,Seelame,bot,,,,,,,,,,,,,,
+player,oe:team:312ee76ca74cbb5cb984d8b71ef4847,GameWard,GAM,2020,Spring,oe:player:b5d46805ff0a618dc4c33f3d2f43102,Enjawve,sup,,,,,,,,,,,,,,
+lineup,oe:team:312ee76ca74cbb5cb984d8b71ef4847,GameWard,GAM,2020,Spring,,,,lineup-7ae3e65a55945004,GAM-01,1,13,oe:player:c71563c4ae48cc1bbd2e7913366cdf7,oe:player:f03efe870a72a927a911fe0dd4c04d8,oe:player:49701c0fb3b04ea8d91f366e90ec798,oe:player:ae1ff54dadd99e50982a3b18a489389,oe:player:b5d46805ff0a618dc4c33f3d2f43102,SLT,Karim kt,Von,Seelame,Enjawve
+player,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2020,Spring,oe:player:54afd815f1c81e50c822ea16b607ecf,Shemek,top,,,,,,,,,,,,,,
+player,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2020,Spring,oe:player:0973ddfd8ce96a62e85badbe503d163,bluerzor,jng,,,,,,,,,,,,,,
+player,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2020,Spring,oe:player:525ac233cf71bc36a611e27a324144f,toucouille,mid,,,,,,,,,,,,,,
+player,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2020,Spring,oe:player:147a53ba717927e418ef4c86d4c9c18,Smiley,bot,,,,,,,,,,,,,,
+player,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2020,Spring,oe:player:566e0849f6b96ad25981ba1c79ce1a7,Hustlin,sup,,,,,,,,,,,,,,
+lineup,oe:team:d4795b41be2ffe2063d40d1509eb890,GamersOrigin,GAM,2020,Spring,,,,lineup-8ee9a12352551d2c,GAM-01,1,2,oe:player:54afd815f1c81e50c822ea16b607ecf,oe:player:0973ddfd8ce96a62e85badbe503d163,oe:player:525ac233cf71bc36a611e27a324144f,oe:player:147a53ba717927e418ef4c86d4c9c18,oe:player:566e0849f6b96ad25981ba1c79ce1a7,Shemek,bluerzor,toucouille,Smiley,Hustlin
+player,oe:team:2799e04c7212d3c262467ef25427eda,IZI Dream,ID,2020,Spring,oe:player:4b20700639bada36a5a58cc4a8e7135,Eyliph,top,,,,,,,,,,,,,,
+player,oe:team:2799e04c7212d3c262467ef25427eda,IZI Dream,ID,2020,Spring,oe:player:d8116ff88abe7719cbac89a392be848,Vince,top,,,,,,,,,,,,,,
+player,oe:team:2799e04c7212d3c262467ef25427eda,IZI Dream,ID,2020,Spring,oe:player:749ce007caa19bde83de51ba3be5dfe,Bloody,jng,,,,,,,,,,,,,,
+player,oe:team:2799e04c7212d3c262467ef25427eda,IZI Dream,ID,2020,Spring,oe:player:f48a8f161502989fca609408a80bd75,Viking,jng,,,,,,,,,,,,,,
+player,oe:team:2799e04c7212d3c262467ef25427eda,IZI Dream,ID,2020,Spring,oe:player:bd0655defa1f5f33c2c8ac34cfd9d36,Backlund,mid,,,,,,,,,,,,,,
+player,oe:team:2799e04c7212d3c262467ef25427eda,IZI Dream,ID,2020,Spring,oe:player:b8c5bfbff49a0f1459f1c15d824fde7,Sebekx,mid,,,,,,,,,,,,,,
+player,oe:team:2799e04c7212d3c262467ef25427eda,IZI Dream,ID,2020,Spring,oe:player:9db46406fc52d8ca7365f131f37523a,LaFleur,bot,,,,,,,,,,,,,,
+player,oe:team:2799e04c7212d3c262467ef25427eda,IZI Dream,ID,2020,Spring,oe:player:372172c97c0fea4e4a73d2186fc3dab,Toaster,bot,,,,,,,,,,,,,,
+player,oe:team:2799e04c7212d3c262467ef25427eda,IZI Dream,ID,2020,Spring,oe:player:ead9a0dc8ea4d64cd0b25c4bac8d9fd,Nolan,sup,,,,,,,,,,,,,,
+lineup,oe:team:2799e04c7212d3c262467ef25427eda,IZI Dream,ID,2020,Spring,,,,lineup-8980f70705c8c667,ID-01,1,1,oe:player:d8116ff88abe7719cbac89a392be848,oe:player:749ce007caa19bde83de51ba3be5dfe,oe:player:b8c5bfbff49a0f1459f1c15d824fde7,oe:player:9db46406fc52d8ca7365f131f37523a,oe:player:ead9a0dc8ea4d64cd0b25c4bac8d9fd,Vince,Bloody,Sebekx,LaFleur,Nolan
+lineup,oe:team:2799e04c7212d3c262467ef25427eda,IZI Dream,ID,2020,Spring,,,,lineup-b4647e20c13fdf8b,ID-02,2,1,oe:player:4b20700639bada36a5a58cc4a8e7135,oe:player:f48a8f161502989fca609408a80bd75,oe:player:bd0655defa1f5f33c2c8ac34cfd9d36,oe:player:372172c97c0fea4e4a73d2186fc3dab,oe:player:ead9a0dc8ea4d64cd0b25c4bac8d9fd,Eyliph,Viking,Backlund,Toaster,Nolan
+player,oe:team:e31c6dcc465e0b94500ef023f42cdc1,LDLC OL,LO,2020,Spring,oe:player:33bc6e326f1ae1c2b594a985be3e67f,Bando,top,,,,,,,,,,,,,,
+player,oe:team:e31c6dcc465e0b94500ef023f42cdc1,LDLC OL,LO,2020,Spring,oe:player:36607221f848a15f6a1f11961027d7c,TynX,jng,,,,,,,,,,,,,,
+player,oe:team:e31c6dcc465e0b94500ef023f42cdc1,LDLC OL,LO,2020,Spring,oe:player:5eb466e63c91a4ccf328f21715e51ae,Vetheo,mid,,,,,,,,,,,,,,
+player,oe:team:e31c6dcc465e0b94500ef023f42cdc1,LDLC OL,LO,2020,Spring,oe:player:7f3e703e4323775aac9adbc31482e81,M0NK,bot,,,,,,,,,,,,,,
+player,oe:team:e31c6dcc465e0b94500ef023f42cdc1,LDLC OL,LO,2020,Spring,oe:player:5ebcf3b41dc66e5839da4c5f58bd907,YellOwStaR,sup,,,,,,,,,,,,,,
+lineup,oe:team:e31c6dcc465e0b94500ef023f42cdc1,LDLC OL,LO,2020,Spring,,,,lineup-040a0130c49eab31,LO-01,1,1,oe:player:33bc6e326f1ae1c2b594a985be3e67f,oe:player:36607221f848a15f6a1f11961027d7c,oe:player:5eb466e63c91a4ccf328f21715e51ae,oe:player:7f3e703e4323775aac9adbc31482e81,oe:player:5ebcf3b41dc66e5839da4c5f58bd907,Bando,TynX,Vetheo,M0NK,YellOwStaR
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2020,Spring,oe:player:5be118a1aa52664e1dff15ff96c1e67,Agresivoo,top,,,,,,,,,,,,,,
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2020,Spring,oe:player:d730e6017b42d1784032e728fcd4eef,Kirei,jng,,,,,,,,,,,,,,
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2020,Spring,oe:player:657f1228bb53523274ae58bcd123ae8,Decay,mid,,,,,,,,,,,,,,
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2020,Spring,oe:player:4817d93e8f26002377aec42233b3fc2,Jezu,bot,,,,,,,,,,,,,,
+player,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2020,Spring,oe:player:f2264caa34a27d8f01634f39f307c85,Doss,sup,,,,,,,,,,,,,,
+lineup,oe:team:c59bcb753bac65c0397bf9ebbcf850b,Misfits Premier,MP,2020,Spring,,,,lineup-52e3a6367e2f70fd,MP-01,1,2,oe:player:5be118a1aa52664e1dff15ff96c1e67,oe:player:d730e6017b42d1784032e728fcd4eef,oe:player:657f1228bb53523274ae58bcd123ae8,oe:player:4817d93e8f26002377aec42233b3fc2,oe:player:f2264caa34a27d8f01634f39f307c85,Agresivoo,Kirei,Decay,Jezu,Doss
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2020,Spring,oe:player:eec4b8988cbdbc6ba19055261f926e7,Katare,top,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2020,Spring,oe:player:48214ce48e2b8ba2391244084ddd226,Manaty,jng,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2020,Spring,oe:player:e3c9e8502497e64cee54730fbcb10a9,Tonerre,mid,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2020,Spring,oe:player:fbf3b6f00248487b0938436093c4ef7,Wakz,bot,,,,,,,,,,,,,,
+player,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2020,Spring,oe:player:de1fb222dafded7d06b10df578fdd0e,Hantera,sup,,,,,,,,,,,,,,
+lineup,oe:team:90938c428db11f6e372f5c6833b9743,Solary,SOL,2020,Spring,,,,lineup-835708828e34add3,SOL-01,1,1,oe:player:eec4b8988cbdbc6ba19055261f926e7,oe:player:48214ce48e2b8ba2391244084ddd226,oe:player:e3c9e8502497e64cee54730fbcb10a9,oe:player:fbf3b6f00248487b0938436093c4ef7,oe:player:de1fb222dafded7d06b10df578fdd0e,Katare,Manaty,Tonerre,Wakz,Hantera
+player,oe:team:6e14f9bf67e6e4000df4d600ad43bfa,Team MCES,TM,2020,Spring,oe:player:1e0c4218cf022adc238b940a6d10ee6,Kaze,top,,,,,,,,,,,,,,
+player,oe:team:6e14f9bf67e6e4000df4d600ad43bfa,Team MCES,TM,2020,Spring,oe:player:12765429362ae7ef85ed6fdd04d2ad7,Djoko,jng,,,,,,,,,,,,,,
+player,oe:team:6e14f9bf67e6e4000df4d600ad43bfa,Team MCES,TM,2020,Spring,oe:player:819865627d1b1cf24b9e24940eafd6b,Jester,mid,,,,,,,,,,,,,,
+player,oe:team:6e14f9bf67e6e4000df4d600ad43bfa,Team MCES,TM,2020,Spring,oe:player:aac1d2bd9a0bf37d3d916bd808f3a07,Yuuki60,bot,,,,,,,,,,,,,,
+player,oe:team:6e14f9bf67e6e4000df4d600ad43bfa,Team MCES,TM,2020,Spring,oe:player:d555f70f3eba72804bbe4baa1b834e6,Moopz,sup,,,,,,,,,,,,,,
+lineup,oe:team:6e14f9bf67e6e4000df4d600ad43bfa,Team MCES,TM,2020,Spring,,,,lineup-a39dc39be4476b24,TM-01,1,2,oe:player:1e0c4218cf022adc238b940a6d10ee6,oe:player:12765429362ae7ef85ed6fdd04d2ad7,oe:player:819865627d1b1cf24b9e24940eafd6b,oe:player:aac1d2bd9a0bf37d3d916bd808f3a07,oe:player:d555f70f3eba72804bbe4baa1b834e6,Kaze,Djoko,Jester,Yuuki60,Moopz
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2020,Spring,oe:player:cb5feb1b7314637725a2e73bdc9f729,Color,top,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2020,Spring,oe:player:08e24fa87d64a6b8173824a409b7bd6,Yoppa,top,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2020,Spring,oe:player:4970ff1c68c821a6698b4a8c509f46a,Clarence,jng,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2020,Spring,oe:player:1d43b8dc600eba61cd7dd2cd8d6baf6,SAKEN,mid,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2020,Spring,oe:player:0482daf6543f102a27a265342292bb7,Lucker,bot,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2020,Spring,oe:player:bea6c089fd517fff3bc020290ae48f7,Steeelback,sup,,,,,,,,,,,,,,
+player,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2020,Spring,oe:player:eaf899c6268995f9b1e40d1932c6888,Targamas,sup,,,,,,,,,,,,,,
+lineup,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2020,Spring,,,,lineup-2336d5620e0e52fe,VIT-01,1,4,oe:player:cb5feb1b7314637725a2e73bdc9f729,oe:player:4970ff1c68c821a6698b4a8c509f46a,oe:player:1d43b8dc600eba61cd7dd2cd8d6baf6,oe:player:0482daf6543f102a27a265342292bb7,oe:player:eaf899c6268995f9b1e40d1932c6888,Color,Clarence,SAKEN,Lucker,Targamas
+lineup,oe:team:ccd089bf173a5fff1063eb0576201a7,Vitality.Bee,VIT,2020,Spring,,,,lineup-16b2400474d1ebcb,VIT-02,2,1,oe:player:08e24fa87d64a6b8173824a409b7bd6,oe:player:4970ff1c68c821a6698b4a8c509f46a,oe:player:1d43b8dc600eba61cd7dd2cd8d6baf6,oe:player:0482daf6543f102a27a265342292bb7,oe:player:bea6c089fd517fff3bc020290ae48f7,Yoppa,Clarence,SAKEN,Lucker,Steeelback

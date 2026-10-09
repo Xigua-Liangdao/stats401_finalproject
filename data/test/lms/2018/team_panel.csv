@@ -1,0 +1,53 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:666515300647cde21ae9c59716a931a,17 Academy,1A,2018,Spring,oe:player:fcb1b0d0deb613c31391787d335e37a,BoBo,top,,,,,,,,,,,,,,
+player,oe:team:666515300647cde21ae9c59716a931a,17 Academy,1A,2018,Spring,oe:player:a05a0eb92edc97655b85fb6e5b577a6,Gengar,jng,,,,,,,,,,,,,,
+player,oe:team:666515300647cde21ae9c59716a931a,17 Academy,1A,2018,Spring,oe:player:8fc55203eece2309e64c4e9b534d8e1,Kawa,jng,,,,,,,,,,,,,,
+player,oe:team:666515300647cde21ae9c59716a931a,17 Academy,1A,2018,Spring,oe:player:7ac72fcaffb8a4957b89a1745fc28a7,SIUSIU,mid,,,,,,,,,,,,,,
+player,oe:team:666515300647cde21ae9c59716a931a,17 Academy,1A,2018,Spring,oe:player:cdbba59d6d0bf73f91abc2e9fd603d4,pasa,bot,,,,,,,,,,,,,,
+player,oe:team:666515300647cde21ae9c59716a931a,17 Academy,1A,2018,Spring,oe:player:b3de1822b222eedf7242560e9d7b21a,Eason,sup,,,,,,,,,,,,,,
+lineup,oe:team:666515300647cde21ae9c59716a931a,17 Academy,1A,2018,Spring,,,,lineup-4c77190de5d736ad,1A-01,1,1,oe:player:fcb1b0d0deb613c31391787d335e37a,oe:player:a05a0eb92edc97655b85fb6e5b577a6,oe:player:7ac72fcaffb8a4957b89a1745fc28a7,oe:player:cdbba59d6d0bf73f91abc2e9fd603d4,oe:player:b3de1822b222eedf7242560e9d7b21a,BoBo,Gengar,SIUSIU,pasa,Eason
+lineup,oe:team:666515300647cde21ae9c59716a931a,17 Academy,1A,2018,Spring,,,,lineup-baa8e0295118bc24,1A-02,2,1,oe:player:fcb1b0d0deb613c31391787d335e37a,oe:player:8fc55203eece2309e64c4e9b534d8e1,oe:player:7ac72fcaffb8a4957b89a1745fc28a7,oe:player:cdbba59d6d0bf73f91abc2e9fd603d4,oe:player:b3de1822b222eedf7242560e9d7b21a,BoBo,Kawa,SIUSIU,pasa,Eason
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2018,Summer,oe:player:68128d6a24caee5f69e1d31123cf149,Hanabi,top,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2018,Summer,oe:player:8f6c93859e6292511f9b87edfa9a847,MooJin,jng,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2018,Summer,oe:player:b311a3fe13ac9b0ee02985f4759a2e4,Morning,jng,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2018,Summer,oe:player:e3aa452243a476669824e52c1b7fc6b,Maple,mid,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2018,Summer,oe:player:7e754adda86a60e0a39d7204ba60424,Betty,bot,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2018,Summer,oe:player:0908c66a5c361f682282599e75b334f,SwordArt,sup,,,,,,,,,,,,,,
+lineup,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2018,Summer,,,,lineup-a84fc2c444d23821,FW-01,1,2,oe:player:68128d6a24caee5f69e1d31123cf149,oe:player:8f6c93859e6292511f9b87edfa9a847,oe:player:e3aa452243a476669824e52c1b7fc6b,oe:player:7e754adda86a60e0a39d7204ba60424,oe:player:0908c66a5c361f682282599e75b334f,Hanabi,MooJin,Maple,Betty,SwordArt
+lineup,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2018,Summer,,,,lineup-b44913009bab72c7,FW-02,2,1,oe:player:68128d6a24caee5f69e1d31123cf149,oe:player:b311a3fe13ac9b0ee02985f4759a2e4,oe:player:e3aa452243a476669824e52c1b7fc6b,oe:player:7e754adda86a60e0a39d7204ba60424,oe:player:0908c66a5c361f682282599e75b334f,Hanabi,Morning,Maple,Betty,SwordArt
+player,oe:team:0b63f14fd7de22a26869bb1c76f87fc,G-Rex,G-R,2018,Summer,oe:player:d71bdd22c8bb93b8d287dce6f46aed2,PK,top,,,,,,,,,,,,,,
+player,oe:team:0b63f14fd7de22a26869bb1c76f87fc,G-Rex,G-R,2018,Summer,oe:player:608c82ab2789c2111892adf8c5733f1,baybay,jng,,,,,,,,,,,,,,
+player,oe:team:0b63f14fd7de22a26869bb1c76f87fc,G-Rex,G-R,2018,Summer,oe:player:fd964f4b80922071fac5c1485aa284e,Candy,mid,,,,,,,,,,,,,,
+player,oe:team:0b63f14fd7de22a26869bb1c76f87fc,G-Rex,G-R,2018,Summer,oe:player:98c0e38a7fcbc6059c9ff2852640a7c,Wuji,bot,,,,,,,,,,,,,,
+player,oe:team:0b63f14fd7de22a26869bb1c76f87fc,G-Rex,G-R,2018,Summer,oe:player:de6b46438c8c6889b6dbf0684b1effa,Koala,sup,,,,,,,,,,,,,,
+lineup,oe:team:0b63f14fd7de22a26869bb1c76f87fc,G-Rex,G-R,2018,Summer,,,,lineup-7dbdc6c49382edfd,G-R-01,1,3,oe:player:d71bdd22c8bb93b8d287dce6f46aed2,oe:player:608c82ab2789c2111892adf8c5733f1,oe:player:fd964f4b80922071fac5c1485aa284e,oe:player:98c0e38a7fcbc6059c9ff2852640a7c,oe:player:de6b46438c8c6889b6dbf0684b1effa,PK,baybay,Candy,Wuji,Koala
+player,oe:team:6f0162b86d2a0d206ba9a08a1da14be,Hong Kong Attitude,HKA,2018,Summer,oe:player:97e9a3eb84113179c74c87e035d52c8,ikssu,top,,,,,,,,,,,,,,
+player,oe:team:6f0162b86d2a0d206ba9a08a1da14be,Hong Kong Attitude,HKA,2018,Summer,oe:player:766cc4dd4d5005652e8514e3513683f,Gemini,jng,,,,,,,,,,,,,,
+player,oe:team:6f0162b86d2a0d206ba9a08a1da14be,Hong Kong Attitude,HKA,2018,Summer,oe:player:9cfd1934f9883bacceb945d79bddecd,cyeol,mid,,,,,,,,,,,,,,
+player,oe:team:6f0162b86d2a0d206ba9a08a1da14be,Hong Kong Attitude,HKA,2018,Summer,oe:player:1dbd464eef96e9cc4151734185a50c7,Unified,bot,,,,,,,,,,,,,,
+player,oe:team:6f0162b86d2a0d206ba9a08a1da14be,Hong Kong Attitude,HKA,2018,Summer,oe:player:0103d21d116b61eb55fa351242208cf,Kaiwing,sup,,,,,,,,,,,,,,
+lineup,oe:team:6f0162b86d2a0d206ba9a08a1da14be,Hong Kong Attitude,HKA,2018,Summer,,,,lineup-0d2841bba2227a8b,HKA-01,1,3,oe:player:97e9a3eb84113179c74c87e035d52c8,oe:player:766cc4dd4d5005652e8514e3513683f,oe:player:9cfd1934f9883bacceb945d79bddecd,oe:player:1dbd464eef96e9cc4151734185a50c7,oe:player:0103d21d116b61eb55fa351242208cf,ikssu,Gemini,cyeol,Unified,Kaiwing
+player,oe:team:b41d715b166da7092724123264e4560,J Team,JT,2018,Summer,oe:player:55276c10d84e1df7713b441e76e141f,Rest,top,,,,,,,,,,,,,,
+player,oe:team:b41d715b166da7092724123264e4560,J Team,JT,2018,Summer,oe:player:c08eafd7027026f20fd775dc48555fa,Breaker,jng,,,,,,,,,,,,,,
+player,oe:team:b41d715b166da7092724123264e4560,J Team,JT,2018,Summer,oe:player:568fe19f3078824aeca0056e28081bb,FoFo,mid,,,,,,,,,,,,,,
+player,oe:team:b41d715b166da7092724123264e4560,J Team,JT,2018,Summer,oe:player:886831dade87c08a01092da3429cdb7,Lilv,bot,,,,,,,,,,,,,,
+player,oe:team:b41d715b166da7092724123264e4560,J Team,JT,2018,Summer,oe:player:e59e91c17b806ec83b9cbc1f02ba0d9,Ysera,sup,,,,,,,,,,,,,,
+lineup,oe:team:b41d715b166da7092724123264e4560,J Team,JT,2018,Summer,,,,lineup-476097772cfa75ac,JT-01,1,14,oe:player:55276c10d84e1df7713b441e76e141f,oe:player:c08eafd7027026f20fd775dc48555fa,oe:player:568fe19f3078824aeca0056e28081bb,oe:player:886831dade87c08a01092da3429cdb7,oe:player:e59e91c17b806ec83b9cbc1f02ba0d9,Rest,Breaker,FoFo,Lilv,Ysera
+player,oe:team:d17e6a2f130f0cf8dd071ce88d5b870,MAD Team,MT,2018,Summer,oe:player:6992272b71041f83e022a8a49484f5d,Liang,top,,,,,,,,,,,,,,
+player,oe:team:d17e6a2f130f0cf8dd071ce88d5b870,MAD Team,MT,2018,Summer,oe:player:a5a7b88f861bef4c6247a78eb680b7b,Kongyue,jng,,,,,,,,,,,,,,
+player,oe:team:d17e6a2f130f0cf8dd071ce88d5b870,MAD Team,MT,2018,Summer,oe:player:301affc76ea7f69929aff6bf84c642b,Uniboy,mid,,,,,,,,,,,,,,
+player,oe:team:d17e6a2f130f0cf8dd071ce88d5b870,MAD Team,MT,2018,Summer,oe:player:a35715e7a6549f47dc766f75a0b1088,Breeze,bot,,,,,,,,,,,,,,
+player,oe:team:d17e6a2f130f0cf8dd071ce88d5b870,MAD Team,MT,2018,Summer,oe:player:a5f3c6a11b03839d46af9fb43c97c18,K,sup,,,,,,,,,,,,,,
+lineup,oe:team:d17e6a2f130f0cf8dd071ce88d5b870,MAD Team,MT,2018,Summer,,,,lineup-fbe72e148221418f,MT-01,1,3,oe:player:6992272b71041f83e022a8a49484f5d,oe:player:a5a7b88f861bef4c6247a78eb680b7b,oe:player:301affc76ea7f69929aff6bf84c642b,oe:player:a35715e7a6549f47dc766f75a0b1088,oe:player:a5f3c6a11b03839d46af9fb43c97c18,Liang,Kongyue,Uniboy,Breeze,K
+player,oe:team:fc1bd99623705778dfcd456fa72e882,Team Afro,TA,2018,Summer,oe:player:b440509a0106086a67bc2ea9df0a1da,2188,top,,,,,,,,,,,,,,
+player,oe:team:fc1bd99623705778dfcd456fa72e882,Team Afro,TA,2018,Summer,oe:player:e3f530e977d74053c6d70eb84886e75,Epic,jng,,,,,,,,,,,,,,
+player,oe:team:fc1bd99623705778dfcd456fa72e882,Team Afro,TA,2018,Summer,oe:player:704b7865d62b9ef47ba9472faaa2972,MoonBlack,mid,,,,,,,,,,,,,,
+player,oe:team:fc1bd99623705778dfcd456fa72e882,Team Afro,TA,2018,Summer,oe:player:978d7d6bde930f0fa9615627a15b2fc,Art,bot,,,,,,,,,,,,,,
+player,oe:team:fc1bd99623705778dfcd456fa72e882,Team Afro,TA,2018,Summer,oe:player:073078ad985ab97fba3f1ca6550ac36,Zest,sup,,,,,,,,,,,,,,
+lineup,oe:team:fc1bd99623705778dfcd456fa72e882,Team Afro,TA,2018,Summer,,,,lineup-5c8cba57bbb6ba6a,TA-01,1,2,oe:player:b440509a0106086a67bc2ea9df0a1da,oe:player:e3f530e977d74053c6d70eb84886e75,oe:player:704b7865d62b9ef47ba9472faaa2972,oe:player:978d7d6bde930f0fa9615627a15b2fc,oe:player:073078ad985ab97fba3f1ca6550ac36,2188,Epic,MoonBlack,Art,Zest
+player,oe:team:acc3e7a06d4b21fc76b8a3b37812c15,Wayi Spider,WS,2018,Spring,oe:player:1c0f82e0ed5453813fbb076248d655d,Nexus,top,,,,,,,,,,,,,,
+player,oe:team:acc3e7a06d4b21fc76b8a3b37812c15,Wayi Spider,WS,2018,Spring,oe:player:e3f530e977d74053c6d70eb84886e75,Epic,jng,,,,,,,,,,,,,,
+player,oe:team:acc3e7a06d4b21fc76b8a3b37812c15,Wayi Spider,WS,2018,Spring,oe:player:64ff4f1dd75a5654ab87c0bbee89c1e,Wako,mid,,,,,,,,,,,,,,
+player,oe:team:acc3e7a06d4b21fc76b8a3b37812c15,Wayi Spider,WS,2018,Spring,oe:player:a35715e7a6549f47dc766f75a0b1088,Breeze,bot,,,,,,,,,,,,,,
+player,oe:team:acc3e7a06d4b21fc76b8a3b37812c15,Wayi Spider,WS,2018,Spring,oe:player:a5f3c6a11b03839d46af9fb43c97c18,K,sup,,,,,,,,,,,,,,
+lineup,oe:team:acc3e7a06d4b21fc76b8a3b37812c15,Wayi Spider,WS,2018,Spring,,,,lineup-c21093ea1046a687,WS-01,1,2,oe:player:1c0f82e0ed5453813fbb076248d655d,oe:player:e3f530e977d74053c6d70eb84886e75,oe:player:64ff4f1dd75a5654ab87c0bbee89c1e,oe:player:a35715e7a6549f47dc766f75a0b1088,oe:player:a5f3c6a11b03839d46af9fb43c97c18,Nexus,Epic,Wako,Breeze,K

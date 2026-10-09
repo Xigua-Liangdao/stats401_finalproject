@@ -1,0 +1,53 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2025,Champ 1,oe:player:8fd088035c27c50ccdf553c4dafc960,Ady,top,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2025,Champ 1,oe:player:4662f35de23f0aa70c2de445121bf1f,Bangin,top,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2025,Champ 1,oe:player:9e9994e968239ee74f3e1a5bf12a792,Minu,jng,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2025,Champ 1,oe:player:206d09ea128d3b833439e7cf920fb1c,Rang,jng,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2025,Champ 1,oe:player:c21df34df89c6fa7baa125670272558,Hinata,mid,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2025,Champ 1,oe:player:c27aed165db76f8a69fc4acaaa06f5b,Liar,bot,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2025,Champ 1,oe:player:219422de6e9bdaa589479b9992b8b36,Lost,bot,,,,,,,,,,,,,,
+player,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2025,Champ 1,oe:player:991e1b7e0abe0b445300cd123c16dd1,Should,sup,,,,,,,,,,,,,,
+lineup,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2025,Champ 1,,,,lineup-28cb76cc2a501da9,BFA-01,1,2,oe:player:8fd088035c27c50ccdf553c4dafc960,oe:player:9e9994e968239ee74f3e1a5bf12a792,oe:player:c21df34df89c6fa7baa125670272558,oe:player:c27aed165db76f8a69fc4acaaa06f5b,oe:player:991e1b7e0abe0b445300cd123c16dd1,Ady,Minu,Hinata,Liar,Should
+lineup,oe:team:eade4a74478f5f903aeec82cedcd13d,BNK FEARX Academy,BFA,2025,Champ 1,,,,lineup-acbad2a45b4f4755,BFA-02,2,1,oe:player:4662f35de23f0aa70c2de445121bf1f,oe:player:206d09ea128d3b833439e7cf920fb1c,oe:player:c21df34df89c6fa7baa125670272558,oe:player:219422de6e9bdaa589479b9992b8b36,oe:player:991e1b7e0abe0b445300cd123c16dd1,Bangin,Rang,Hinata,Lost,Should
+player,oe:team:00ae39840233a9dc8db235166c32ba7,DN SOOPers Academy,DSA,2025,Champ 1,oe:player:7b0143c0788257bc3e415e83f74cc8b,Midir,top,,,,,,,,,,,,,,
+player,oe:team:00ae39840233a9dc8db235166c32ba7,DN SOOPers Academy,DSA,2025,Champ 1,oe:player:90753d709041bd0dcf21e2f22d781a3,Prever,jng,,,,,,,,,,,,,,
+player,oe:team:00ae39840233a9dc8db235166c32ba7,DN SOOPers Academy,DSA,2025,Champ 1,oe:player:17ae4f247f5fc521bff004a97f4df72,Flip,mid,,,,,,,,,,,,,,
+player,oe:team:00ae39840233a9dc8db235166c32ba7,DN SOOPers Academy,DSA,2025,Champ 1,oe:player:92efc8a49a1bbc8fda4564f78ef7c31,Euphoria,bot,,,,,,,,,,,,,,
+player,oe:team:00ae39840233a9dc8db235166c32ba7,DN SOOPers Academy,DSA,2025,Champ 1,oe:player:98082d11ca69482a663e13b86314e89,CoBiT,sup,,,,,,,,,,,,,,
+lineup,oe:team:00ae39840233a9dc8db235166c32ba7,DN SOOPers Academy,DSA,2025,Champ 1,,,,lineup-d8f5e1fcf6fcbb32,DSA-01,1,3,oe:player:7b0143c0788257bc3e415e83f74cc8b,oe:player:90753d709041bd0dcf21e2f22d781a3,oe:player:17ae4f247f5fc521bff004a97f4df72,oe:player:92efc8a49a1bbc8fda4564f78ef7c31,oe:player:98082d11ca69482a663e13b86314e89,Midir,Prever,Flip,Euphoria,CoBiT
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2025,Champ 1,oe:player:7b7a65bf22bd84faa0337cdbd4e19f5,Sun eater,top,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2025,Champ 1,oe:player:a2c028ef7610fc11196737c4bf6f83a,Nerion,jng,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2025,Champ 1,oe:player:aa07cee593e6c3caeba21b4ee4c6075,AKaJe,mid,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2025,Champ 1,oe:player:0c65320a4df146cc6d1164f7a874537,XeRone,bot,,,,,,,,,,,,,,
+player,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2025,Champ 1,oe:player:9a47349628283db85be5baf30baa76e,Lirua,sup,,,,,,,,,,,,,,
+lineup,oe:team:d6bba391a1129002440759541df27e0,DRX Academy,DA,2025,Champ 1,,,,lineup-9165e76a9c491297,DA-01,1,2,oe:player:7b7a65bf22bd84faa0337cdbd4e19f5,oe:player:a2c028ef7610fc11196737c4bf6f83a,oe:player:aa07cee593e6c3caeba21b4ee4c6075,oe:player:0c65320a4df146cc6d1164f7a874537,oe:player:9a47349628283db85be5baf30baa76e,Sun eater,Nerion,AKaJe,XeRone,Lirua
+player,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Youth,DKY,2025,Champ 1,oe:player:83a9f2514587528a399f60551522962,Nevid,top,,,,,,,,,,,,,,
+player,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Youth,DKY,2025,Champ 1,oe:player:307b6fb75c459e5d0f628aa8e9e438c,Solid,jng,,,,,,,,,,,,,,
+player,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Youth,DKY,2025,Champ 1,oe:player:4f962bf150528860e79560794533c43,Despair,mid,,,,,,,,,,,,,,
+player,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Youth,DKY,2025,Champ 1,oe:player:4438e6de86f317adec821c223d661c8,Jinbeom,bot,,,,,,,,,,,,,,
+player,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Youth,DKY,2025,Champ 1,oe:player:3d3d58f5d926d2292149dc101df276e,Kenia,sup,,,,,,,,,,,,,,
+lineup,oe:team:503cf7645c53c8f084b5cbdec6744a7,Dplus Kia Youth,DKY,2025,Champ 1,,,,lineup-bd0e74cd4e402a9d,DKY-01,1,4,oe:player:83a9f2514587528a399f60551522962,oe:player:307b6fb75c459e5d0f628aa8e9e438c,oe:player:4f962bf150528860e79560794533c43,oe:player:4438e6de86f317adec821c223d661c8,oe:player:3d3d58f5d926d2292149dc101df276e,Nevid,Solid,Despair,Jinbeom,Kenia
+player,oe:team:86318836d208e1ac7c6cc6ae0d4afbe,Gen.G Scholars,GS,2025,Champ 1,oe:player:5dbac11c1e86bdeea9a21039902ec82,Guardian,top,,,,,,,,,,,,,,
+player,oe:team:86318836d208e1ac7c6cc6ae0d4afbe,Gen.G Scholars,GS,2025,Champ 1,oe:player:0cfe46c9ae6f1654b9363084c559648,Zephyr,jng,,,,,,,,,,,,,,
+player,oe:team:86318836d208e1ac7c6cc6ae0d4afbe,Gen.G Scholars,GS,2025,Champ 1,oe:player:f557edcff47190d6f3e4ab271c0c40c,SOLBON,mid,,,,,,,,,,,,,,
+player,oe:team:86318836d208e1ac7c6cc6ae0d4afbe,Gen.G Scholars,GS,2025,Champ 1,oe:player:fc222b2fd22414e0b9e40aaee65fcb5,MUDAI,bot,,,,,,,,,,,,,,
+player,oe:team:86318836d208e1ac7c6cc6ae0d4afbe,Gen.G Scholars,GS,2025,Champ 1,oe:player:7bd90ef7b6699a12ee8176f4708f165,Hosanna,sup,,,,,,,,,,,,,,
+lineup,oe:team:86318836d208e1ac7c6cc6ae0d4afbe,Gen.G Scholars,GS,2025,Champ 1,,,,lineup-551fdb9e136b0921,GS-01,1,3,oe:player:5dbac11c1e86bdeea9a21039902ec82,oe:player:0cfe46c9ae6f1654b9363084c559648,oe:player:f557edcff47190d6f3e4ab271c0c40c,oe:player:fc222b2fd22414e0b9e40aaee65fcb5,oe:player:7bd90ef7b6699a12ee8176f4708f165,Guardian,Zephyr,SOLBON,MUDAI,Hosanna
+player,oe:team:2acbd6362cc5096e13641bd088a72a6,Hanwha Life Esports Academy,HLEA,2025,Champ 1,oe:player:d22a9f456619f24133f9d0ddff50051,Panther,top,,,,,,,,,,,,,,
+player,oe:team:2acbd6362cc5096e13641bd088a72a6,Hanwha Life Esports Academy,HLEA,2025,Champ 1,oe:player:c5297b90d38a4be4c290d17de208d7a,Jackal,jng,,,,,,,,,,,,,,
+player,oe:team:2acbd6362cc5096e13641bd088a72a6,Hanwha Life Esports Academy,HLEA,2025,Champ 1,oe:player:e6d554ea9906d8f2fc26d076d2d4a4c,Cracker,mid,,,,,,,,,,,,,,
+player,oe:team:2acbd6362cc5096e13641bd088a72a6,Hanwha Life Esports Academy,HLEA,2025,Champ 1,oe:player:5614c643c96cea5858c696eee9d509b,Eclipse,bot,,,,,,,,,,,,,,
+player,oe:team:2acbd6362cc5096e13641bd088a72a6,Hanwha Life Esports Academy,HLEA,2025,Champ 1,oe:player:2a024edafb06c7882e2e1f7b57f2f95,Hailstone,sup,,,,,,,,,,,,,,
+lineup,oe:team:2acbd6362cc5096e13641bd088a72a6,Hanwha Life Esports Academy,HLEA,2025,Champ 1,,,,lineup-ae277b90fed7573a,HLEA-01,1,16,oe:player:d22a9f456619f24133f9d0ddff50051,oe:player:c5297b90d38a4be4c290d17de208d7a,oe:player:e6d554ea9906d8f2fc26d076d2d4a4c,oe:player:5614c643c96cea5858c696eee9d509b,oe:player:2a024edafb06c7882e2e1f7b57f2f95,Panther,Jackal,Cracker,Eclipse,Hailstone
+player,oe:team:14ef7370c4cbc9bc08a771e3f7cbb4d,KT Rolster Academy,KRA,2025,Champ 1,oe:player:c0062863e3e99f67607ad1ae9a4299a,Ripple,top,,,,,,,,,,,,,,
+player,oe:team:14ef7370c4cbc9bc08a771e3f7cbb4d,KT Rolster Academy,KRA,2025,Champ 1,oe:player:b7253194da688a72744ff1c032b6cea,Soft,jng,,,,,,,,,,,,,,
+player,oe:team:14ef7370c4cbc9bc08a771e3f7cbb4d,KT Rolster Academy,KRA,2025,Champ 1,oe:player:8f38bd56a477db38563e43ca3bc5994,Cid,mid,,,,,,,,,,,,,,
+player,oe:team:14ef7370c4cbc9bc08a771e3f7cbb4d,KT Rolster Academy,KRA,2025,Champ 1,oe:player:655ff5d5e29058249fdf0ab0e1389f8,FenRir,bot,,,,,,,,,,,,,,
+player,oe:team:14ef7370c4cbc9bc08a771e3f7cbb4d,KT Rolster Academy,KRA,2025,Champ 1,oe:player:47fee7d633dec51ec9eff632349f05c,Pleasure,sup,,,,,,,,,,,,,,
+lineup,oe:team:14ef7370c4cbc9bc08a771e3f7cbb4d,KT Rolster Academy,KRA,2025,Champ 1,,,,lineup-fe06b4737f05e28a,KRA-01,1,3,oe:player:c0062863e3e99f67607ad1ae9a4299a,oe:player:b7253194da688a72744ff1c032b6cea,oe:player:8f38bd56a477db38563e43ca3bc5994,oe:player:655ff5d5e29058249fdf0ab0e1389f8,oe:player:47fee7d633dec51ec9eff632349f05c,Ripple,Soft,Cid,FenRir,Pleasure
+player,oe:team:32cd49a197bd08d99b16fe354e1f758,T1 Esports Academy Rookies,TEAR,2025,Champ 1,oe:player:b8441a3fc649ee4789bc3ded34f46d6,Janus,top,,,,,,,,,,,,,,
+player,oe:team:32cd49a197bd08d99b16fe354e1f758,T1 Esports Academy Rookies,TEAR,2025,Champ 1,oe:player:4d08cbf857994dc42e1b09205158e15,Painter,jng,,,,,,,,,,,,,,
+player,oe:team:32cd49a197bd08d99b16fe354e1f758,T1 Esports Academy Rookies,TEAR,2025,Champ 1,oe:player:9c2752c1d6bb4dc3a7c3365c68271e3,Hwichan,mid,,,,,,,,,,,,,,
+player,oe:team:32cd49a197bd08d99b16fe354e1f758,T1 Esports Academy Rookies,TEAR,2025,Champ 1,oe:player:94e5c960a512595b39fea5f350d7d0d,OddEye,bot,,,,,,,,,,,,,,
+player,oe:team:32cd49a197bd08d99b16fe354e1f758,T1 Esports Academy Rookies,TEAR,2025,Champ 1,oe:player:0997237547f63b0119f6816c13377e9,Abyss,sup,,,,,,,,,,,,,,
+lineup,oe:team:32cd49a197bd08d99b16fe354e1f758,T1 Esports Academy Rookies,TEAR,2025,Champ 1,,,,lineup-fdd7ed649f16c2f1,TEAR-01,1,2,oe:player:b8441a3fc649ee4789bc3ded34f46d6,oe:player:4d08cbf857994dc42e1b09205158e15,oe:player:9c2752c1d6bb4dc3a7c3365c68271e3,oe:player:94e5c960a512595b39fea5f350d7d0d,oe:player:0997237547f63b0119f6816c13377e9,Janus,Painter,Hwichan,OddEye,Abyss

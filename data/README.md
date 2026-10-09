@@ -1,5 +1,9 @@
 # Dataset and frontend contract
 
+## Current multi-dataset layout
+
+The browser now reads `datasets.json` and loads `processed/<league-slug>/<source-year>/` or the matching `test/` bundle. See [the current dataset guide](../docs/datasets.md). The 11 filenames and analytical meanings below are retained, with schema 2.1.0 fixing shared field types and allowing missing optional `playoffs`. League/year identity and coverage are recorded in the registry and each dashboard’s metadata. The flat LPL 2025 files remain a legacy regression fixture; the counts and old integration example below describe that fixture.
+
 ## Start with `test/`, switch to `processed/` later
 
 The cleaning rules and model definitions are a **provisional demo baseline**. The frontend can be developed against `data/test/` while those decisions are refined.

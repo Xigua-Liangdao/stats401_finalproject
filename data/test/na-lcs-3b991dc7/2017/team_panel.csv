@@ -1,0 +1,47 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Spring,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,Impact,top,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Spring,oe:player:8a5dbe19794784cfd0553556844f045,Contractz,jng,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Spring,oe:player:7e0e7ac2a199e8e2ecb30499a3b2153,Jensen,mid,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Spring,oe:player:267b730dd2e2dcb97182a2795935491,Sneaky,bot,,,,,,,,,,,,,,
+player,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Spring,oe:player:4d2f4b9fa48af3a3618b2cbac02fa9b,Smoothie,sup,,,,,,,,,,,,,,
+lineup,oe:team:fc8e90107dabb9a35c490b0d86adea0,Cloud9,CLO,2017,Spring,,,,lineup-ed8207315c8b2e5f,CLO-01,1,12,oe:player:21f59b54f62b5b8b4bc0f63f0f617fc,oe:player:8a5dbe19794784cfd0553556844f045,oe:player:7e0e7ac2a199e8e2ecb30499a3b2153,oe:player:267b730dd2e2dcb97182a2795935491,oe:player:4d2f4b9fa48af3a3618b2cbac02fa9b,Impact,Contractz,Jensen,Sneaky,Smoothie
+player,oe:team:8c6a9b88111f0f2ed8b5c6c5f42614d,Echo Fox,EF,2017,Spring,oe:player:14cbcf095e72902e80938f6a021a176,Looper,top,,,,,,,,,,,,,,
+player,oe:team:8c6a9b88111f0f2ed8b5c6c5f42614d,Echo Fox,EF,2017,Spring,oe:player:440fac38f1ec871b2b6e91e0a1e39de,kfo,top,,,,,,,,,,,,,,
+player,oe:team:8c6a9b88111f0f2ed8b5c6c5f42614d,Echo Fox,EF,2017,Spring,oe:player:f42847a8ed944443fbdcef8cfa7087d,Akaadian,jng,,,,,,,,,,,,,,
+player,oe:team:8c6a9b88111f0f2ed8b5c6c5f42614d,Echo Fox,EF,2017,Spring,oe:player:3656183169810334a96b91129dc9d88,Hard,jng,,,,,,,,,,,,,,
+player,oe:team:8c6a9b88111f0f2ed8b5c6c5f42614d,Echo Fox,EF,2017,Spring,oe:player:a3d74b52c8b1367c7044f417b743d75,Froggen,mid,,,,,,,,,,,,,,
+player,oe:team:8c6a9b88111f0f2ed8b5c6c5f42614d,Echo Fox,EF,2017,Spring,oe:player:e6e30c037d0b75caa94827ead86b4ed,Keith,bot,,,,,,,,,,,,,,
+player,oe:team:8c6a9b88111f0f2ed8b5c6c5f42614d,Echo Fox,EF,2017,Spring,oe:player:d491538da818a2ba11a3195ba035cfd,Big,sup,,,,,,,,,,,,,,
+player,oe:team:8c6a9b88111f0f2ed8b5c6c5f42614d,Echo Fox,EF,2017,Spring,oe:player:d25b4bd4c72aa2c07ee87adb10b59f1,Gate,sup,,,,,,,,,,,,,,
+lineup,oe:team:8c6a9b88111f0f2ed8b5c6c5f42614d,Echo Fox,EF,2017,Spring,,,,lineup-2f25b7845c1e1a2b,EF-01,1,2,oe:player:14cbcf095e72902e80938f6a021a176,oe:player:f42847a8ed944443fbdcef8cfa7087d,oe:player:a3d74b52c8b1367c7044f417b743d75,oe:player:e6e30c037d0b75caa94827ead86b4ed,oe:player:d25b4bd4c72aa2c07ee87adb10b59f1,Looper,Akaadian,Froggen,Keith,Gate
+lineup,oe:team:8c6a9b88111f0f2ed8b5c6c5f42614d,Echo Fox,EF,2017,Spring,,,,lineup-bff385feeb5457bd,EF-02,2,2,oe:player:440fac38f1ec871b2b6e91e0a1e39de,oe:player:3656183169810334a96b91129dc9d88,oe:player:a3d74b52c8b1367c7044f417b743d75,oe:player:e6e30c037d0b75caa94827ead86b4ed,oe:player:d491538da818a2ba11a3195ba035cfd,kfo,Hard,Froggen,Keith,Big
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2017,Spring,oe:player:3136a9f696493782b8b07c895377f81,BalIs,top,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2017,Spring,oe:player:99572d5361ac4c1fc99c9d82b4eb080,Galen,jng,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2017,Spring,oe:player:486a694eed702562985d71457d55481,Hai,mid,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2017,Spring,oe:player:4046e5819c6e57ec8fa00b56834d8aa,Altec,bot,,,,,,,,,,,,,,
+player,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2017,Spring,oe:player:0108d7db35e786901358382563a9e47,LemonNation,sup,,,,,,,,,,,,,,
+lineup,oe:team:2e66da41dc460dd378e3bcc57042d31,FlyQuest,FLY,2017,Spring,,,,lineup-4022cf71f15c6dc7,FLY-01,1,5,oe:player:3136a9f696493782b8b07c895377f81,oe:player:99572d5361ac4c1fc99c9d82b4eb080,oe:player:486a694eed702562985d71457d55481,oe:player:4046e5819c6e57ec8fa00b56834d8aa,oe:player:0108d7db35e786901358382563a9e47,BalIs,Galen,Hai,Altec,LemonNation
+player,oe:team:4eb0013695b2543e1f1a5efe013d978,Phoenix1,PHO,2017,Spring,oe:player:68cc2f153c9e91dcf24c6a18d1120c5,dshao,top,,,,,,,,,,,,,,
+player,oe:team:4eb0013695b2543e1f1a5efe013d978,Phoenix1,PHO,2017,Spring,oe:player:b728b4a88e70fe2d0f10aae80e56ee1,Meteos,jng,,,,,,,,,,,,,,
+player,oe:team:4eb0013695b2543e1f1a5efe013d978,Phoenix1,PHO,2017,Spring,oe:player:d67c1e27e0d8409bec2b32c592172b2,Ryu,mid,,,,,,,,,,,,,,
+player,oe:team:4eb0013695b2543e1f1a5efe013d978,Phoenix1,PHO,2017,Spring,oe:player:0f4e1aaabd074689b7d3ead824d1ee8,Arrow,bot,,,,,,,,,,,,,,
+player,oe:team:4eb0013695b2543e1f1a5efe013d978,Phoenix1,PHO,2017,Spring,oe:player:c1937b687795ce80be0ecf20e181144,Adrian,sup,,,,,,,,,,,,,,
+lineup,oe:team:4eb0013695b2543e1f1a5efe013d978,Phoenix1,PHO,2017,Spring,,,,lineup-890a71daa72df04f,PHO-01,1,1,oe:player:68cc2f153c9e91dcf24c6a18d1120c5,oe:player:b728b4a88e70fe2d0f10aae80e56ee1,oe:player:d67c1e27e0d8409bec2b32c592172b2,oe:player:0f4e1aaabd074689b7d3ead824d1ee8,oe:player:c1937b687795ce80be0ecf20e181144,dshao,Meteos,Ryu,Arrow,Adrian
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Spring,oe:player:20aba59cf47a04a6cf10436ce1946ac,Hauntzer,top,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Spring,oe:player:c271341160441d375411fef9bf2f9ef,Svenskeren,jng,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Spring,oe:player:63ba5c5e5bb73ace706183b5e05a27e,Bjergsen,mid,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Spring,oe:player:91a74fa03f163055a19da5b16363fc8,WildTurtle,bot,,,,,,,,,,,,,,
+player,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Spring,oe:player:88b780b9f178fd2e50a458ae282cd7c,Biofrost,sup,,,,,,,,,,,,,,
+lineup,oe:team:a22510a4756fa424cb0771b13261139,TSM,TSM,2017,Spring,,,,lineup-a178e324ed710a4b,TSM-01,1,3,oe:player:20aba59cf47a04a6cf10436ce1946ac,oe:player:c271341160441d375411fef9bf2f9ef,oe:player:63ba5c5e5bb73ace706183b5e05a27e,oe:player:91a74fa03f163055a19da5b16363fc8,oe:player:88b780b9f178fd2e50a458ae282cd7c,Hauntzer,Svenskeren,Bjergsen,WildTurtle,Biofrost
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2017,Spring,oe:player:43b4189712f5ac66bbef0414a8ed2db,Lourlo,top,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2017,Spring,oe:player:0c4a9660e318dbab19f9648088d1387,Reignover,jng,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2017,Spring,oe:player:8c09ee8e1496710919dcbd718ff285d,Piglet,mid,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2017,Spring,oe:player:f25df399390d86b9a1e83216dae597b,Doublelift,bot,,,,,,,,,,,,,,
+player,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2017,Spring,oe:player:d405d30cc615b2947aa5af369ad9fba,Matt Elento,sup,,,,,,,,,,,,,,
+lineup,oe:team:8eb884e168f28402ce685bedebb5250,Team Liquid,TL,2017,Spring,,,,lineup-d24ab471990bc3aa,TL-01,1,1,oe:player:43b4189712f5ac66bbef0414a8ed2db,oe:player:0c4a9660e318dbab19f9648088d1387,oe:player:8c09ee8e1496710919dcbd718ff285d,oe:player:f25df399390d86b9a1e83216dae597b,oe:player:d405d30cc615b2947aa5af369ad9fba,Lourlo,Reignover,Piglet,Doublelift,Matt Elento
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2017,Spring,oe:player:43e2c87dea1fbecd5a5f29ded6c4faf,Solo,top,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2017,Spring,oe:player:99572d5361ac4c1fc99c9d82b4eb080,Galen,jng,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2017,Spring,oe:player:88b2fc44169f986bdffd0ffdb0b534a,Goldenglue,mid,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2017,Spring,oe:player:8c09ee8e1496710919dcbd718ff285d,Piglet,bot,,,,,,,,,,,,,,
+player,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2017,Spring,oe:player:4d38e91e966ad67aead69648253640e,Stunt,sup,,,,,,,,,,,,,,
+lineup,oe:team:3406c21f701022dbe9d9bf397b41465,Team Liquid Academy,TLA,2017,Spring,,,,lineup-36f75989c68c3779,TLA-01,1,2,oe:player:43e2c87dea1fbecd5a5f29ded6c4faf,oe:player:99572d5361ac4c1fc99c9d82b4eb080,oe:player:88b2fc44169f986bdffd0ffdb0b534a,oe:player:8c09ee8e1496710919dcbd718ff285d,oe:player:4d38e91e966ad67aead69648253640e,Solo,Galen,Goldenglue,Piglet,Stunt
