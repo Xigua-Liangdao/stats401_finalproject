@@ -1,0 +1,64 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:c73ee5d874c7218ab92adf5f3bd0c0e,Aquatik Esports,AE,2022,Spring,oe:player:a3a2a9bdd011223183c3d61538b0e38,Xakutara,top,,,,,,,,,,,,,,
+player,oe:team:c73ee5d874c7218ab92adf5f3bd0c0e,Aquatik Esports,AE,2022,Spring,name-player-8850efe22b8b9378,Sae Itoshi,jng,,,,,,,,,,,,,,
+player,oe:team:c73ee5d874c7218ab92adf5f3bd0c0e,Aquatik Esports,AE,2022,Spring,name-player-130c0000aeb9e53e,Cøol,mid,,,,,,,,,,,,,,
+player,oe:team:c73ee5d874c7218ab92adf5f3bd0c0e,Aquatik Esports,AE,2022,Spring,oe:player:27adef7eacaaa45ade016814da56000,Splorps,bot,,,,,,,,,,,,,,
+player,oe:team:c73ee5d874c7218ab92adf5f3bd0c0e,Aquatik Esports,AE,2022,Spring,oe:player:a9d73f4e7a288ab32e51687660a6ce3,MEMEME670,sup,,,,,,,,,,,,,,
+lineup,oe:team:c73ee5d874c7218ab92adf5f3bd0c0e,Aquatik Esports,AE,2022,Spring,,,,lineup-be1f8a8e9bb4f4b4,AE-01,1,1,oe:player:a3a2a9bdd011223183c3d61538b0e38,name-player-8850efe22b8b9378,name-player-130c0000aeb9e53e,oe:player:27adef7eacaaa45ade016814da56000,oe:player:a9d73f4e7a288ab32e51687660a6ce3,Xakutara,Sae Itoshi,Cøol,Splorps,MEMEME670
+player,name-team-3dcd1a2b5ebf9c4a,Area of Effect Rise,AOER,2022,Spring,oe:player:8e246973cb524359c1b06218cc17135,Shockey,top,,,,,,,,,,,,,,
+player,name-team-3dcd1a2b5ebf9c4a,Area of Effect Rise,AOER,2022,Spring,oe:player:432bb40f06ffd73e634bd03052a7d57,Haise,jng,,,,,,,,,,,,,,
+player,name-team-3dcd1a2b5ebf9c4a,Area of Effect Rise,AOER,2022,Spring,name-player-a63758352f0b9168,iybc9o2 q,mid,,,,,,,,,,,,,,
+player,name-team-3dcd1a2b5ebf9c4a,Area of Effect Rise,AOER,2022,Spring,oe:player:e70be9dbd7eb6380533645d3f090f2f,Vace,bot,,,,,,,,,,,,,,
+player,name-team-3dcd1a2b5ebf9c4a,Area of Effect Rise,AOER,2022,Spring,name-player-a1523c0e345f469c,KennyMasterLin,sup,,,,,,,,,,,,,,
+lineup,name-team-3dcd1a2b5ebf9c4a,Area of Effect Rise,AOER,2022,Spring,,,,lineup-be33d3a3a16e8898,AOER-01,1,1,oe:player:8e246973cb524359c1b06218cc17135,oe:player:432bb40f06ffd73e634bd03052a7d57,name-player-a63758352f0b9168,oe:player:e70be9dbd7eb6380533645d3f090f2f,name-player-a1523c0e345f469c,Shockey,Haise,iybc9o2 q,Vace,KennyMasterLin
+player,oe:team:4c87a422072b2c1e754299a17ea36ce,Grand View University,GVU,2022,Fall,oe:player:f7037a08197325073f58e0c9b6e4d47,Prank,top,,,,,,,,,,,,,,
+player,oe:team:4c87a422072b2c1e754299a17ea36ce,Grand View University,GVU,2022,Fall,oe:player:9e78b6182ea7c97ee2b1fe2e97cb566,Castle,jng,,,,,,,,,,,,,,
+player,oe:team:4c87a422072b2c1e754299a17ea36ce,Grand View University,GVU,2022,Fall,oe:player:396c983d4290901e4060ffe25e7c0eb,DNA,mid,,,,,,,,,,,,,,
+player,oe:team:4c87a422072b2c1e754299a17ea36ce,Grand View University,GVU,2022,Fall,oe:player:ac6c8ea090678bb181b8004e3efd830,Nightstar,bot,,,,,,,,,,,,,,
+player,oe:team:4c87a422072b2c1e754299a17ea36ce,Grand View University,GVU,2022,Fall,oe:player:e0005f81b4e776ca4b32940e3e9bf1a,Pluto1,sup,,,,,,,,,,,,,,
+lineup,oe:team:4c87a422072b2c1e754299a17ea36ce,Grand View University,GVU,2022,Fall,,,,lineup-ca5b453a50d50c00,GVU-01,1,2,oe:player:f7037a08197325073f58e0c9b6e4d47,oe:player:9e78b6182ea7c97ee2b1fe2e97cb566,oe:player:396c983d4290901e4060ffe25e7c0eb,oe:player:ac6c8ea090678bb181b8004e3efd830,oe:player:e0005f81b4e776ca4b32940e3e9bf1a,Prank,Castle,DNA,Nightstar,Pluto1
+player,oe:team:e148df5f8ee1c28556f4d82343d4284,Harrisburg University,HU,2022,Spring,oe:player:6474cffd46702efde788eba091356a5,CloudNguyen,top,,,,,,,,,,,,,,
+player,oe:team:e148df5f8ee1c28556f4d82343d4284,Harrisburg University,HU,2022,Spring,oe:player:78c048012bab5e09a863c4754baa274,Zile,jng,,,,,,,,,,,,,,
+player,oe:team:e148df5f8ee1c28556f4d82343d4284,Harrisburg University,HU,2022,Spring,oe:player:58b5c081c36387d6eb5389ec0eb0574,Emps,mid,,,,,,,,,,,,,,
+player,oe:team:e148df5f8ee1c28556f4d82343d4284,Harrisburg University,HU,2022,Spring,oe:player:eb0255e2375b8ebcc455b8bb62ae01e,Hopefulx,bot,,,,,,,,,,,,,,
+player,oe:team:e148df5f8ee1c28556f4d82343d4284,Harrisburg University,HU,2022,Spring,oe:player:b208ed1b4583e11e7b2e277fb45a8f6,Loop,sup,,,,,,,,,,,,,,
+lineup,oe:team:e148df5f8ee1c28556f4d82343d4284,Harrisburg University,HU,2022,Spring,,,,lineup-c5d51c2682814bf9,HU-01,1,1,oe:player:6474cffd46702efde788eba091356a5,oe:player:78c048012bab5e09a863c4754baa274,oe:player:58b5c081c36387d6eb5389ec0eb0574,oe:player:eb0255e2375b8ebcc455b8bb62ae01e,oe:player:b208ed1b4583e11e7b2e277fb45a8f6,CloudNguyen,Zile,Emps,Hopefulx,Loop
+player,oe:team:b99696624afa81613e7c305f10c6b05,Illinois State University,ISU,2022,Spring,oe:player:3062a9edba61382db75add4b3fe0eea,Disconnector,top,,,,,,,,,,,,,,
+player,oe:team:b99696624afa81613e7c305f10c6b05,Illinois State University,ISU,2022,Spring,oe:player:684880c286f599e706af1f009dd9ae4,GFP,jng,,,,,,,,,,,,,,
+player,oe:team:b99696624afa81613e7c305f10c6b05,Illinois State University,ISU,2022,Spring,oe:player:4f6099e648bf78004394fdbb56140ee,DrewDozer,mid,,,,,,,,,,,,,,
+player,oe:team:b99696624afa81613e7c305f10c6b05,Illinois State University,ISU,2022,Spring,oe:player:69e8187a8af4c2ca3b95e6027ecfc9b,Yen,bot,,,,,,,,,,,,,,
+player,oe:team:b99696624afa81613e7c305f10c6b05,Illinois State University,ISU,2022,Spring,oe:player:aa3fd3870a04b4f9da9f7e49737f52a,Tempos,sup,,,,,,,,,,,,,,
+lineup,oe:team:b99696624afa81613e7c305f10c6b05,Illinois State University,ISU,2022,Spring,,,,lineup-37558ba2c116e557,ISU-01,1,1,oe:player:3062a9edba61382db75add4b3fe0eea,oe:player:684880c286f599e706af1f009dd9ae4,oe:player:4f6099e648bf78004394fdbb56140ee,oe:player:69e8187a8af4c2ca3b95e6027ecfc9b,oe:player:aa3fd3870a04b4f9da9f7e49737f52a,Disconnector,GFP,DrewDozer,Yen,Tempos
+player,oe:team:f32bc8a601cde2e7989f7045b766456,Saint Louis University,SLU,2022,Fall,oe:player:9e4cab8a6c3041527f605caf9913072,Strompest,top,,,,,,,,,,,,,,
+player,oe:team:f32bc8a601cde2e7989f7045b766456,Saint Louis University,SLU,2022,Fall,oe:player:0c27ab31c0bcfcd4eac6d3e155ea686,winnie,jng,,,,,,,,,,,,,,
+player,oe:team:f32bc8a601cde2e7989f7045b766456,Saint Louis University,SLU,2022,Fall,oe:player:afcd3cdcf44e5da63f9e2a3dcb5ba50,Doxa,mid,,,,,,,,,,,,,,
+player,oe:team:f32bc8a601cde2e7989f7045b766456,Saint Louis University,SLU,2022,Fall,oe:player:f6afb3ca3ac4cb969cc0c36330d8ee8,Airren,bot,,,,,,,,,,,,,,
+player,oe:team:f32bc8a601cde2e7989f7045b766456,Saint Louis University,SLU,2022,Fall,oe:player:1fb549aa840b4bd1dc4abefd8097172,Teesum,sup,,,,,,,,,,,,,,
+lineup,oe:team:f32bc8a601cde2e7989f7045b766456,Saint Louis University,SLU,2022,Fall,,,,lineup-89a6fd24fbb2e9d7,SLU-01,1,3,oe:player:9e4cab8a6c3041527f605caf9913072,oe:player:0c27ab31c0bcfcd4eac6d3e155ea686,oe:player:afcd3cdcf44e5da63f9e2a3dcb5ba50,oe:player:f6afb3ca3ac4cb969cc0c36330d8ee8,oe:player:1fb549aa840b4bd1dc4abefd8097172,Strompest,winnie,Doxa,Airren,Teesum
+player,oe:team:01a3132448697cecc30364f52173670,Team Fish Taco,TFT,2022,Fall,oe:player:fa816783145a625c4b502446b18ad93,Allorim,top,,,,,,,,,,,,,,
+player,oe:team:01a3132448697cecc30364f52173670,Team Fish Taco,TFT,2022,Fall,oe:player:398074139a206bc8bbab0be766c6ffa,Wilson,jng,,,,,,,,,,,,,,
+player,oe:team:01a3132448697cecc30364f52173670,Team Fish Taco,TFT,2022,Fall,oe:player:0b980d0c6f947f01b59e62ec06b5d75,Toasty,mid,,,,,,,,,,,,,,
+player,oe:team:01a3132448697cecc30364f52173670,Team Fish Taco,TFT,2022,Fall,oe:player:e7de55f77333c04aa58c892e4c55704,EU Red,bot,,,,,,,,,,,,,,
+player,oe:team:01a3132448697cecc30364f52173670,Team Fish Taco,TFT,2022,Fall,oe:player:29b67a93c1a600beb6904551c853fdd,Trevor,sup,,,,,,,,,,,,,,
+lineup,oe:team:01a3132448697cecc30364f52173670,Team Fish Taco,TFT,2022,Fall,,,,lineup-40cc06e32650c0e0,TFT-01,1,14,oe:player:fa816783145a625c4b502446b18ad93,oe:player:398074139a206bc8bbab0be766c6ffa,oe:player:0b980d0c6f947f01b59e62ec06b5d75,oe:player:e7de55f77333c04aa58c892e4c55704,oe:player:29b67a93c1a600beb6904551c853fdd,Allorim,Wilson,Toasty,EU Red,Trevor
+player,oe:team:b9af077d71abf84d8f8045523ff1b84,Tempest Gaming,TG,2022,Fall,oe:player:81eb81987bcf9be1e3771a7f0a4ca77,Zamudo,top,,,,,,,,,,,,,,
+player,oe:team:b9af077d71abf84d8f8045523ff1b84,Tempest Gaming,TG,2022,Fall,oe:player:33ec03adce2bef14f100376bc7770b2,Munchy,jng,,,,,,,,,,,,,,
+player,oe:team:b9af077d71abf84d8f8045523ff1b84,Tempest Gaming,TG,2022,Fall,oe:player:41de6d6cfb8953c021bbe4ba0701c8a,Messages,mid,,,,,,,,,,,,,,
+player,oe:team:b9af077d71abf84d8f8045523ff1b84,Tempest Gaming,TG,2022,Fall,oe:player:03fb4894c88568133475249f7dda730,Lunar,bot,,,,,,,,,,,,,,
+player,oe:team:b9af077d71abf84d8f8045523ff1b84,Tempest Gaming,TG,2022,Fall,oe:player:1666ca77ab75f7d731e645fa6ef4fc6,Just,sup,,,,,,,,,,,,,,
+lineup,oe:team:b9af077d71abf84d8f8045523ff1b84,Tempest Gaming,TG,2022,Fall,,,,lineup-13acd4b2fedf02ba,TG-01,1,3,oe:player:81eb81987bcf9be1e3771a7f0a4ca77,oe:player:33ec03adce2bef14f100376bc7770b2,oe:player:41de6d6cfb8953c021bbe4ba0701c8a,oe:player:03fb4894c88568133475249f7dda730,oe:player:1666ca77ab75f7d731e645fa6ef4fc6,Zamudo,Munchy,Messages,Lunar,Just
+player,oe:team:c541d877d968f5bd0053efc0f43563d,University of St. Thomas,UOST,2022,Fall,oe:player:98507570b7ae6c8019192bc1b5412c1,Porsche,top,,,,,,,,,,,,,,
+player,oe:team:c541d877d968f5bd0053efc0f43563d,University of St. Thomas,UOST,2022,Fall,oe:player:a2de87eae98d0ab3b85567026561a51,Dardoch,jng,,,,,,,,,,,,,,
+player,oe:team:c541d877d968f5bd0053efc0f43563d,University of St. Thomas,UOST,2022,Fall,oe:player:1c275bedd474301abb6a402792d0731,RobbyBob,mid,,,,,,,,,,,,,,
+player,oe:team:c541d877d968f5bd0053efc0f43563d,University of St. Thomas,UOST,2022,Fall,oe:player:18f6d4c0a224070911cdc12619d8be0,Shogo,bot,,,,,,,,,,,,,,
+player,oe:team:c541d877d968f5bd0053efc0f43563d,University of St. Thomas,UOST,2022,Fall,oe:player:d778769103b62e1222414cd182c4e25,Chookies,sup,,,,,,,,,,,,,,
+lineup,oe:team:c541d877d968f5bd0053efc0f43563d,University of St. Thomas,UOST,2022,Fall,,,,lineup-5742d79ff8ddda91,UOST-01,1,3,oe:player:98507570b7ae6c8019192bc1b5412c1,oe:player:a2de87eae98d0ab3b85567026561a51,oe:player:1c275bedd474301abb6a402792d0731,oe:player:18f6d4c0a224070911cdc12619d8be0,oe:player:d778769103b62e1222414cd182c4e25,Porsche,Dardoch,RobbyBob,Shogo,Chookies
+player,oe:team:79da6e4c61cc7c2baaa793f76839831,Wild West Bandits,WWB,2022,Fall,oe:player:f9b1a72072130a8f7ddb72cf9c8008b,pulse,top,,,,,,,,,,,,,,
+player,oe:team:79da6e4c61cc7c2baaa793f76839831,Wild West Bandits,WWB,2022,Fall,oe:player:2291e1a29406540fce27a3386b57fa5,YHL,jng,,,,,,,,,,,,,,
+player,oe:team:79da6e4c61cc7c2baaa793f76839831,Wild West Bandits,WWB,2022,Fall,oe:player:b995400f180f371663926dec18f077f,CRY NOW,mid,,,,,,,,,,,,,,
+player,oe:team:79da6e4c61cc7c2baaa793f76839831,Wild West Bandits,WWB,2022,Fall,oe:player:c442a7c2c2b8381ca267657859151e6,Jons,mid,,,,,,,,,,,,,,
+player,oe:team:79da6e4c61cc7c2baaa793f76839831,Wild West Bandits,WWB,2022,Fall,oe:player:b995400f180f371663926dec18f077f,CRY NOW,bot,,,,,,,,,,,,,,
+player,oe:team:79da6e4c61cc7c2baaa793f76839831,Wild West Bandits,WWB,2022,Fall,oe:player:c442a7c2c2b8381ca267657859151e6,Jons,bot,,,,,,,,,,,,,,
+player,oe:team:79da6e4c61cc7c2baaa793f76839831,Wild West Bandits,WWB,2022,Fall,oe:player:860b53367b46048f876924b3eda90ed,Plux,sup,,,,,,,,,,,,,,
+lineup,oe:team:79da6e4c61cc7c2baaa793f76839831,Wild West Bandits,WWB,2022,Fall,,,,lineup-4fb8a7987542ad6b,WWB-01,1,2,oe:player:f9b1a72072130a8f7ddb72cf9c8008b,oe:player:2291e1a29406540fce27a3386b57fa5,oe:player:c442a7c2c2b8381ca267657859151e6,oe:player:b995400f180f371663926dec18f077f,oe:player:860b53367b46048f876924b3eda90ed,pulse,YHL,Jons,CRY NOW,Plux
+lineup,oe:team:79da6e4c61cc7c2baaa793f76839831,Wild West Bandits,WWB,2022,Fall,,,,lineup-ab08740fa613f277,WWB-02,2,1,oe:player:f9b1a72072130a8f7ddb72cf9c8008b,oe:player:2291e1a29406540fce27a3386b57fa5,oe:player:b995400f180f371663926dec18f077f,oe:player:c442a7c2c2b8381ca267657859151e6,oe:player:860b53367b46048f876924b3eda90ed,pulse,YHL,CRY NOW,Jons,Plux

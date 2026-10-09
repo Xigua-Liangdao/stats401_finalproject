@@ -1,0 +1,25 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:1ac4df9688139a3995d92043a9aedf9,Big Plays Incorporated,BPI,2015,Summer,name-player-d72bd85e71031dbd,unknown player,top,,,,,,,,,,,,,,
+player,oe:team:1ac4df9688139a3995d92043a9aedf9,Big Plays Incorporated,BPI,2015,Summer,oe:player:4dd47f86a9f1dcf16525c288c568385,Theokoles,jng,,,,,,,,,,,,,,
+player,oe:team:1ac4df9688139a3995d92043a9aedf9,Big Plays Incorporated,BPI,2015,Summer,oe:player:0f92769ac5d2a76f9adc5aea924ed1b,Lynx,mid,,,,,,,,,,,,,,
+player,oe:team:1ac4df9688139a3995d92043a9aedf9,Big Plays Incorporated,BPI,2015,Summer,oe:player:7af77c89b72d6efcd2a22f903f8b304,Padden,bot,,,,,,,,,,,,,,
+player,oe:team:1ac4df9688139a3995d92043a9aedf9,Big Plays Incorporated,BPI,2015,Summer,oe:player:276a74e4409e2bdf5556afadf29f7de,Uloper,sup,,,,,,,,,,,,,,
+lineup,oe:team:1ac4df9688139a3995d92043a9aedf9,Big Plays Incorporated,BPI,2015,Summer,,,,lineup-43e7a298709f1a24,BPI-01,1,5,name-player-d72bd85e71031dbd,oe:player:4dd47f86a9f1dcf16525c288c568385,oe:player:0f92769ac5d2a76f9adc5aea924ed1b,oe:player:7af77c89b72d6efcd2a22f903f8b304,oe:player:276a74e4409e2bdf5556afadf29f7de,unknown player,Theokoles,Lynx,Padden,Uloper
+player,oe:team:4031f92c96fefcf01482e7d143688e6,MeetYourMakers.TR,MEE,2015,Summer,oe:player:8d6442ebdbe1b80a7080cd3d3535e53,Silphi,top,,,,,,,,,,,,,,
+player,oe:team:4031f92c96fefcf01482e7d143688e6,MeetYourMakers.TR,MEE,2015,Summer,oe:player:1c95ef499129a723dba8b13949a3d6f,Halpern,jng,,,,,,,,,,,,,,
+player,oe:team:4031f92c96fefcf01482e7d143688e6,MeetYourMakers.TR,MEE,2015,Summer,oe:player:50ce2da63bea6a618e7578fa5069004,React,mid,,,,,,,,,,,,,,
+player,oe:team:4031f92c96fefcf01482e7d143688e6,MeetYourMakers.TR,MEE,2015,Summer,oe:player:cec8c0268b725079114cc792653648c,S4mpe,bot,,,,,,,,,,,,,,
+player,oe:team:4031f92c96fefcf01482e7d143688e6,MeetYourMakers.TR,MEE,2015,Summer,oe:player:60c7d1c521aba6d16e6c3a38aa3a863,Klaj,sup,,,,,,,,,,,,,,
+lineup,oe:team:4031f92c96fefcf01482e7d143688e6,MeetYourMakers.TR,MEE,2015,Summer,,,,lineup-da8ef2a59a2bbb97,MEE-01,1,6,oe:player:8d6442ebdbe1b80a7080cd3d3535e53,oe:player:1c95ef499129a723dba8b13949a3d6f,oe:player:50ce2da63bea6a618e7578fa5069004,oe:player:cec8c0268b725079114cc792653648c,oe:player:60c7d1c521aba6d16e6c3a38aa3a863,Silphi,Halpern,React,S4mpe,Klaj
+player,oe:team:8c71e7ef32db945e204dfe507ca0b2b,Oyun Hizmetleri ÇİLEKLER,OHÇ,2015,Summer,oe:player:7c752bff9cb38f08618fe71cdf47075,Panky,top,,,,,,,,,,,,,,
+player,oe:team:8c71e7ef32db945e204dfe507ca0b2b,Oyun Hizmetleri ÇİLEKLER,OHÇ,2015,Summer,oe:player:a1c29350caec76079a899ea2def764d,Astarte,jng,,,,,,,,,,,,,,
+player,oe:team:8c71e7ef32db945e204dfe507ca0b2b,Oyun Hizmetleri ÇİLEKLER,OHÇ,2015,Summer,oe:player:94baa913865a729ffe25df1d9473624,LEYL-Ü NEHAR,mid,,,,,,,,,,,,,,
+player,oe:team:8c71e7ef32db945e204dfe507ca0b2b,Oyun Hizmetleri ÇİLEKLER,OHÇ,2015,Summer,oe:player:4c7ab66383de9b1ba06b7841682d547,Madness,bot,,,,,,,,,,,,,,
+player,oe:team:8c71e7ef32db945e204dfe507ca0b2b,Oyun Hizmetleri ÇİLEKLER,OHÇ,2015,Summer,oe:player:e301d4839154bbf266d3362c898a3e4,Cognac,sup,,,,,,,,,,,,,,
+lineup,oe:team:8c71e7ef32db945e204dfe507ca0b2b,Oyun Hizmetleri ÇİLEKLER,OHÇ,2015,Summer,,,,lineup-1ef602f4ef253487,OHÇ-01,1,6,oe:player:7c752bff9cb38f08618fe71cdf47075,oe:player:a1c29350caec76079a899ea2def764d,oe:player:94baa913865a729ffe25df1d9473624,oe:player:4c7ab66383de9b1ba06b7841682d547,oe:player:e301d4839154bbf266d3362c898a3e4,Panky,Astarte,LEYL-Ü NEHAR,Madness,Cognac
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2015,Summer,oe:player:43cd44e4a75ed579c6d17b37532ed06,Realen,top,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2015,Summer,oe:player:9746c19b614617914a00279ff555b2b,Bat0n,jng,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2015,Summer,oe:player:47c86196323656af29a8842dca4fc8e,Rau,mid,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2015,Summer,oe:player:911871aa4d9017d7bcbcdbf9c472557,j1mmy,bot,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2015,Summer,oe:player:db38739eda4ad887b7d852545212528,Zergsting,sup,,,,,,,,,,,,,,
+lineup,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2015,Summer,,,,lineup-6f043e081e4e2d49,TA-01,1,7,oe:player:43cd44e4a75ed579c6d17b37532ed06,oe:player:9746c19b614617914a00279ff555b2b,oe:player:47c86196323656af29a8842dca4fc8e,oe:player:911871aa4d9017d7bcbcdbf9c472557,oe:player:db38739eda4ad887b7d852545212528,Realen,Bat0n,Rau,j1mmy,Zergsting

@@ -1,0 +1,50 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2017.csv.gz",
+  "source_kind": "pinned_github_mirror",
+  "source_revision": "834ce914f0c79289881697084227fa2933ad344a",
+  "annual_sources": [
+    {
+      "year": 2017,
+      "url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2017.csv.gz",
+      "sha256": "d27d5634f4d523c1b756e87c4ef576918633d3b713a1f42647f5ff40e7e9e472",
+      "revision": "834ce914f0c79289881697084227fa2933ad344a",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:05.534507+00:00",
+      "size_bytes": 47990667,
+      "listed_size_bytes": 47990667,
+      "rows": 68424,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "download_sha256": "912fd25df90467bba84a90fb7f208a53022c1c78ea8edf3c4c20a438d1492c9f",
+      "filename": "2017_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 84
+    },
+    {
+      "year": 2018,
+      "url": "https://raw.githubusercontent.com/kiselevart/lol-pro-ranking/834ce914f0c79289881697084227fa2933ad344a/data/oracles_elixir/OE2018.csv.gz",
+      "sha256": "ac1d0a9caf49076ac802be904a3e810277762d6f64c871eaca01ebb3b65ab1df",
+      "revision": "834ce914f0c79289881697084227fa2933ad344a",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:06.324457+00:00",
+      "size_bytes": 57385055,
+      "listed_size_bytes": 57385055,
+      "rows": 80904,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "download_sha256": "6f4bbb2b74b29c831e9a92b62230c47a95f36d58a45bf606b92f06638c8ed27c",
+      "filename": "2018_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 3264
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:35:27.229457+00:00",
+  "annual_csv_sha256": "d6c675754b35ca54daf778d6dab52a449193dcf58f52f5ac97e8cc875907a8b9",
+  "annual_rows": 149328,
+  "league": "TCL",
+  "year": 2018,
+  "filter": "league == 'TCL' and year == '2018'; all positions and columns preserved",
+  "raw_rows": 3348,
+  "raw_columns": 161,
+  "raw_games": 279,
+  "raw_csv_gz_sha256": "e555c495fe5267a950a40d4eac4fdcd34ca348c36a64dee1f518ff535fa5fd63"
+}

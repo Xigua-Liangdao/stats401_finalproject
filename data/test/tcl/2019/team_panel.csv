@@ -1,0 +1,67 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2019,Winter,oe:player:7c752bff9cb38f08618fe71cdf47075,Panky,top,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2019,Winter,oe:player:689bf66ba4ae2467665460278722319,SeongHwan,jng,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2019,Winter,oe:player:4f659c0ac477add1decb9104c0e85d1,Nagne,mid,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2019,Winter,oe:player:d129eb71d537fdbb2cd4c52703f51f4,HolyPhoenix,bot,,,,,,,,,,,,,,
+player,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2019,Winter,oe:player:496ca7c65dbd4beffa678e62d9d4e8d,Farfetch,sup,,,,,,,,,,,,,,
+lineup,oe:team:4f19751f9f051533995772897da2d77,Beşiktaş Esports,BE,2019,Winter,,,,lineup-c0c293490f3fac0a,BE-01,1,1,oe:player:7c752bff9cb38f08618fe71cdf47075,oe:player:689bf66ba4ae2467665460278722319,oe:player:4f659c0ac477add1decb9104c0e85d1,oe:player:d129eb71d537fdbb2cd4c52703f51f4,oe:player:496ca7c65dbd4beffa678e62d9d4e8d,Panky,SeongHwan,Nagne,HolyPhoenix,Farfetch
+player,oe:team:51176816845d58dd15984964ae60734,Bursaspor Esports,BE,2019,Winter,oe:player:8c29150a35520726e52c049db9c53d3,Brolia,top,,,,,,,,,,,,,,
+player,oe:team:51176816845d58dd15984964ae60734,Bursaspor Esports,BE,2019,Winter,oe:player:f6eb3aef3d48417b7d8389b1a5d1729,Ray Lefty,jng,,,,,,,,,,,,,,
+player,oe:team:51176816845d58dd15984964ae60734,Bursaspor Esports,BE,2019,Winter,oe:player:1806cb4175771800d1d1ace2817103c,Zwyroo,mid,,,,,,,,,,,,,,
+player,oe:team:51176816845d58dd15984964ae60734,Bursaspor Esports,BE,2019,Winter,oe:player:a241df6c8ac105eed0555a0cd8b2264,Pilter,bot,,,,,,,,,,,,,,
+player,oe:team:51176816845d58dd15984964ae60734,Bursaspor Esports,BE,2019,Winter,oe:player:f64162c264d5679d130b6e8ae84d704,Invoker,sup,,,,,,,,,,,,,,
+lineup,oe:team:51176816845d58dd15984964ae60734,Bursaspor Esports,BE,2019,Winter,,,,lineup-9a78bc85478383b9,BE-01,1,1,oe:player:8c29150a35520726e52c049db9c53d3,oe:player:f6eb3aef3d48417b7d8389b1a5d1729,oe:player:1806cb4175771800d1d1ace2817103c,oe:player:a241df6c8ac105eed0555a0cd8b2264,oe:player:f64162c264d5679d130b6e8ae84d704,Brolia,Ray Lefty,Zwyroo,Pilter,Invoker
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2019,Winter,oe:player:c0f78343a2ad4ba1463245d53a3b440,Ragner,top,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2019,Winter,oe:player:a48296ad11ed041e4db9991af1057fb,Crystal,jng,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2019,Winter,oe:player:bd0655defa1f5f33c2c8ac34cfd9d36,Backlund,mid,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2019,Winter,oe:player:c05acde6e582d7ebc7f7b5738d7ff2e,Nikola,bot,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2019,Winter,oe:player:2501f7ba78cc0fd07efb7c17666ff12,Korpse,sup,,,,,,,,,,,,,,
+lineup,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2019,Winter,,,,lineup-fe4a3fbe6392c63b,DP-01,1,1,oe:player:c0f78343a2ad4ba1463245d53a3b440,oe:player:a48296ad11ed041e4db9991af1057fb,oe:player:bd0655defa1f5f33c2c8ac34cfd9d36,oe:player:c05acde6e582d7ebc7f7b5738d7ff2e,oe:player:2501f7ba78cc0fd07efb7c17666ff12,Ragner,Crystal,Backlund,Nikola,Korpse
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2019,Winter,oe:player:391e1d1ffad69a80e4602f3680e5c85,Shakuras,top,,,,,,,,,,,,,,
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2019,Winter,oe:player:9a40bf3d8c56e32d4aff0d0b7682b30,Escanor,jng,,,,,,,,,,,,,,
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2019,Winter,oe:player:89bc7b3d84838556e2fe89348d694cd,T1SO,mid,,,,,,,,,,,,,,
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2019,Winter,oe:player:63fb46cfa2f3ee4110bd7489cf18c02,Ruvelius,bot,,,,,,,,,,,,,,
+player,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2019,Winter,oe:player:c26cc8c327e4ec4499ee1694aec1622,Sugarfree,sup,,,,,,,,,,,,,,
+lineup,oe:team:28428f3022fc1ea52264b35912093dc,Galakticos,GAL,2019,Winter,,,,lineup-0c2cc46fa1fcb863,GAL-01,1,1,oe:player:391e1d1ffad69a80e4602f3680e5c85,oe:player:9a40bf3d8c56e32d4aff0d0b7682b30,oe:player:89bc7b3d84838556e2fe89348d694cd,oe:player:63fb46cfa2f3ee4110bd7489cf18c02,oe:player:c26cc8c327e4ec4499ee1694aec1622,Shakuras,Escanor,T1SO,Ruvelius,Sugarfree
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2019,Winter,oe:player:56725baa4909848cfa93d24e8f7f16a,Hioss,top,,,,,,,,,,,,,,
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2019,Winter,oe:player:b7541372647e5c14de2a198f65ce5e6,Taikki,jng,,,,,,,,,,,,,,
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2019,Winter,oe:player:6247b7dcf33210822e5a3f4f6368590,Godbro,mid,,,,,,,,,,,,,,
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2019,Winter,oe:player:4c7ab66383de9b1ba06b7841682d547,Madness,bot,,,,,,,,,,,,,,
+player,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2019,Winter,oe:player:3cd2f0511ee257ee836157168840d95,Tolerant,sup,,,,,,,,,,,,,,
+lineup,oe:team:0edc9f071bd123368afdc0c53a3db20,Galatasaray Esports,GE,2019,Winter,,,,lineup-280680e0696781f4,GE-01,1,1,oe:player:56725baa4909848cfa93d24e8f7f16a,oe:player:b7541372647e5c14de2a198f65ce5e6,oe:player:6247b7dcf33210822e5a3f4f6368590,oe:player:4c7ab66383de9b1ba06b7841682d547,oe:player:3cd2f0511ee257ee836157168840d95,Hioss,Taikki,Godbro,Madness,Tolerant
+player,oe:team:47980e0bc08d56ec5a4274f07016ab5,HWA Gaming,HG,2019,Winter,oe:player:1bc0756ba9102abb5a7cd13d2b618aa,StarScreen,top,,,,,,,,,,,,,,
+player,oe:team:47980e0bc08d56ec5a4274f07016ab5,HWA Gaming,HG,2019,Winter,oe:player:3cf6443ea2d1c4501478ed2dcb431ef,Roulette,jng,,,,,,,,,,,,,,
+player,oe:team:47980e0bc08d56ec5a4274f07016ab5,HWA Gaming,HG,2019,Winter,oe:player:db0cbdc72184ad44ab905be61fc0756,Kofte,mid,,,,,,,,,,,,,,
+player,oe:team:47980e0bc08d56ec5a4274f07016ab5,HWA Gaming,HG,2019,Winter,oe:player:e37058bf2305c3a61e0e69681803f95,stillnumb,bot,,,,,,,,,,,,,,
+player,oe:team:47980e0bc08d56ec5a4274f07016ab5,HWA Gaming,HG,2019,Winter,oe:player:cf31cad88081e431e9f138e00b4f645,Algos,sup,,,,,,,,,,,,,,
+lineup,oe:team:47980e0bc08d56ec5a4274f07016ab5,HWA Gaming,HG,2019,Winter,,,,lineup-b60ce3b99f345038,HG-01,1,1,oe:player:1bc0756ba9102abb5a7cd13d2b618aa,oe:player:3cf6443ea2d1c4501478ed2dcb431ef,oe:player:db0cbdc72184ad44ab905be61fc0756,oe:player:e37058bf2305c3a61e0e69681803f95,oe:player:cf31cad88081e431e9f138e00b4f645,StarScreen,Roulette,Kofte,stillnumb,Algos
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2019,Winter,oe:player:d12be4fd740afa31c400833bee2cba4,fabFabulous,top,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2019,Winter,oe:player:b287539666d56b6bf8155d3e4a8541d,Stomaged,jng,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2019,Winter,oe:player:e6044507491a7471342098b2fa21ce8,Frozen,mid,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2019,Winter,oe:player:01cbcf0e395124de3b78817b75b878c,Zeitnot,bot,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2019,Winter,oe:player:f4e74388bb8ff2f8d88bfc579f7fb61,Wolf,sup,,,,,,,,,,,,,,
+lineup,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2019,Winter,,,,lineup-b05400c4f35a78a7,PS-01,1,13,oe:player:d12be4fd740afa31c400833bee2cba4,oe:player:b287539666d56b6bf8155d3e4a8541d,oe:player:e6044507491a7471342098b2fa21ce8,oe:player:01cbcf0e395124de3b78817b75b878c,oe:player:f4e74388bb8ff2f8d88bfc579f7fb61,fabFabulous,Stomaged,Frozen,Zeitnot,Wolf
+player,oe:team:c4301c851cb9c9c8a622d1855cd7941,Pars eSports,PE,2019,Unknown,oe:player:a9eb1a93c73c55b9db59388be44206b,Luana,top,,,,,,,,,,,,,,
+player,oe:team:c4301c851cb9c9c8a622d1855cd7941,Pars eSports,PE,2019,Unknown,oe:player:a48296ad11ed041e4db9991af1057fb,Crystal,jng,,,,,,,,,,,,,,
+player,oe:team:c4301c851cb9c9c8a622d1855cd7941,Pars eSports,PE,2019,Unknown,oe:player:df7fb677687a886fb22f75da316b949,Saulius,mid,,,,,,,,,,,,,,
+player,oe:team:c4301c851cb9c9c8a622d1855cd7941,Pars eSports,PE,2019,Unknown,oe:player:bd9f7c5d6ab4201b138a3e51dab7056,Alive,bot,,,,,,,,,,,,,,
+player,oe:team:c4301c851cb9c9c8a622d1855cd7941,Pars eSports,PE,2019,Unknown,oe:player:03f78345e4181384977f21872ca866c,Absolute,sup,,,,,,,,,,,,,,
+lineup,oe:team:c4301c851cb9c9c8a622d1855cd7941,Pars eSports,PE,2019,Unknown,,,,lineup-ece3db2c86875f51,PE-01,1,2,oe:player:a9eb1a93c73c55b9db59388be44206b,oe:player:a48296ad11ed041e4db9991af1057fb,oe:player:df7fb677687a886fb22f75da316b949,oe:player:bd9f7c5d6ab4201b138a3e51dab7056,oe:player:03f78345e4181384977f21872ca866c,Luana,Crystal,Saulius,Alive,Absolute
+player,oe:team:1fcd541d3a51d70860c46eaae858ba8,Royal Youth,RY,2019,Unknown,oe:player:2d2b174e23f40f5ea3a0c4151349ca3,Armut,top,,,,,,,,,,,,,,
+player,oe:team:1fcd541d3a51d70860c46eaae858ba8,Royal Youth,RY,2019,Unknown,oe:player:96da046ebab4cac9bcba2c9afd85999,Closer,jng,,,,,,,,,,,,,,
+player,oe:team:1fcd541d3a51d70860c46eaae858ba8,Royal Youth,RY,2019,Unknown,oe:player:f75ea237475cbf72461f5532b955aaf,GBM,mid,,,,,,,,,,,,,,
+player,oe:team:1fcd541d3a51d70860c46eaae858ba8,Royal Youth,RY,2019,Unknown,oe:player:ebec939da49d80219030b8441845ef9,Pilot,bot,,,,,,,,,,,,,,
+player,oe:team:1fcd541d3a51d70860c46eaae858ba8,Royal Youth,RY,2019,Unknown,oe:player:7bd16068637ca7bbbed9db44008bda8,Dumbledoge,sup,,,,,,,,,,,,,,
+lineup,oe:team:1fcd541d3a51d70860c46eaae858ba8,Royal Youth,RY,2019,Unknown,,,,lineup-c28153bebd9d75b4,RY-01,1,6,oe:player:2d2b174e23f40f5ea3a0c4151349ca3,oe:player:96da046ebab4cac9bcba2c9afd85999,oe:player:f75ea237475cbf72461f5532b955aaf,oe:player:ebec939da49d80219030b8441845ef9,oe:player:7bd16068637ca7bbbed9db44008bda8,Armut,Closer,GBM,Pilot,Dumbledoge
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2019,Winter,oe:player:c3d0fe66f45a2105676f3f846711be7,Madly,top,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2019,Winter,oe:player:477ab2c8b98d5fe04786db32b711a52,w4lker,jng,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2019,Winter,oe:player:e6f5a7e37185c25a363d031ef5eafa9,Giyuu,mid,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2019,Winter,oe:player:7af77c89b72d6efcd2a22f903f8b304,Padden,bot,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2019,Winter,oe:player:96215ee4e13a67c2ac7336f26afeeb9,Wendel,sup,,,,,,,,,,,,,,
+lineup,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2019,Winter,,,,lineup-c5237b41717b7950,TA-01,1,1,oe:player:c3d0fe66f45a2105676f3f846711be7,oe:player:477ab2c8b98d5fe04786db32b711a52,oe:player:e6f5a7e37185c25a363d031ef5eafa9,oe:player:7af77c89b72d6efcd2a22f903f8b304,oe:player:96215ee4e13a67c2ac7336f26afeeb9,Madly,w4lker,Giyuu,Padden,Wendel
+player,oe:team:ea2a0b6a4dfccbe3c144dabb2bf99de,YouthCrew Esports,YE,2019,Unknown,oe:player:2b8fa1915cf8454ce61d28e19d4c8e9,Elwind,top,,,,,,,,,,,,,,
+player,oe:team:ea2a0b6a4dfccbe3c144dabb2bf99de,YouthCrew Esports,YE,2019,Unknown,oe:player:eefa702ca5baafd60311d1233abfe14,Savage,jng,,,,,,,,,,,,,,
+player,oe:team:ea2a0b6a4dfccbe3c144dabb2bf99de,YouthCrew Esports,YE,2019,Unknown,oe:player:e2988afe5ce32f702241090f8b4d856,MagiFelix,mid,,,,,,,,,,,,,,
+player,oe:team:ea2a0b6a4dfccbe3c144dabb2bf99de,YouthCrew Esports,YE,2019,Unknown,oe:player:4c7ab66383de9b1ba06b7841682d547,Madness,bot,,,,,,,,,,,,,,
+player,oe:team:ea2a0b6a4dfccbe3c144dabb2bf99de,YouthCrew Esports,YE,2019,Unknown,oe:player:71f5302abea604062e810161d7922b8,Japone,sup,,,,,,,,,,,,,,
+lineup,oe:team:ea2a0b6a4dfccbe3c144dabb2bf99de,YouthCrew Esports,YE,2019,Unknown,,,,lineup-f9f3c66a64970b76,YE-01,1,2,oe:player:2b8fa1915cf8454ce61d28e19d4c8e9,oe:player:eefa702ca5baafd60311d1233abfe14,oe:player:e2988afe5ce32f702241090f8b4d856,oe:player:4c7ab66383de9b1ba06b7841682d547,oe:player:71f5302abea604062e810161d7922b8,Elwind,Savage,MagiFelix,Madness,Japone

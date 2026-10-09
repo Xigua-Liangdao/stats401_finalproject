@@ -1,0 +1,157 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,oe:player:0482daf6543f102a27a265342292bb7,Lucker,top,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,oe:player:a7b756e008bfcb7148cdb51f886c3fa,Sinmivak,top,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,oe:player:6d630f0b571f8381f483b6a6941909a,Rabble,jng,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,oe:player:3f6085758dbaaafd2cb21a4cc5d936e,promisq,jng,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,oe:player:fff6ace561e442d9942185466ee21d5,Blueknight,mid,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,oe:player:0482daf6543f102a27a265342292bb7,Lucker,mid,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,oe:player:d7432b52de9ff23e6aa98374fe63375,Nite,mid,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,oe:player:a7b756e008bfcb7148cdb51f886c3fa,Sinmivak,mid,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,oe:player:fff6ace561e442d9942185466ee21d5,Blueknight,bot,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,oe:player:0482daf6543f102a27a265342292bb7,Lucker,bot,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,oe:player:d7432b52de9ff23e6aa98374fe63375,Nite,bot,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,oe:player:6b15911e90833052d80c73d67dfce7d,Leon,sup,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,oe:player:6d630f0b571f8381f483b6a6941909a,Rabble,sup,,,,,,,,,,,,,,
+player,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,oe:player:3f6085758dbaaafd2cb21a4cc5d936e,promisq,sup,,,,,,,,,,,,,,
+lineup,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,,,,lineup-3b1d76f3a981cb68,AR-01,1,23,oe:player:a7b756e008bfcb7148cdb51f886c3fa,oe:player:6d630f0b571f8381f483b6a6941909a,oe:player:d7432b52de9ff23e6aa98374fe63375,oe:player:0482daf6543f102a27a265342292bb7,oe:player:6b15911e90833052d80c73d67dfce7d,Sinmivak,Rabble,Nite,Lucker,Leon
+lineup,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,,,,lineup-7a15a1b672ddc7ba,AR-02,2,22,oe:player:a7b756e008bfcb7148cdb51f886c3fa,oe:player:6d630f0b571f8381f483b6a6941909a,oe:player:d7432b52de9ff23e6aa98374fe63375,oe:player:0482daf6543f102a27a265342292bb7,oe:player:3f6085758dbaaafd2cb21a4cc5d936e,Sinmivak,Rabble,Nite,Lucker,promisq
+lineup,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,,,,lineup-300753d8f8d738b2,AR-03,3,1,oe:player:a7b756e008bfcb7148cdb51f886c3fa,oe:player:6d630f0b571f8381f483b6a6941909a,oe:player:0482daf6543f102a27a265342292bb7,oe:player:fff6ace561e442d9942185466ee21d5,oe:player:3f6085758dbaaafd2cb21a4cc5d936e,Sinmivak,Rabble,Lucker,Blueknight,promisq
+lineup,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,,,,lineup-35996c71817038d8,AR-04,4,1,oe:player:a7b756e008bfcb7148cdb51f886c3fa,oe:player:6d630f0b571f8381f483b6a6941909a,oe:player:fff6ace561e442d9942185466ee21d5,oe:player:0482daf6543f102a27a265342292bb7,oe:player:3f6085758dbaaafd2cb21a4cc5d936e,Sinmivak,Rabble,Blueknight,Lucker,promisq
+lineup,oe:team:5a5f8cc0161f43afe3461b293535517,AGO ROGUE,AR,2022,Split 2,,,,lineup-ab4dd6b44423d54f,AR-05,5,1,oe:player:0482daf6543f102a27a265342292bb7,oe:player:3f6085758dbaaafd2cb21a4cc5d936e,oe:player:a7b756e008bfcb7148cdb51f886c3fa,oe:player:d7432b52de9ff23e6aa98374fe63375,oe:player:6d630f0b571f8381f483b6a6941909a,Lucker,promisq,Sinmivak,Nite,Rabble
+player,oe:team:5a474b2ad31be89700a3bad1f52f3a4,EAS Team ESCA Gaming,ETEG,2022,Unknown,oe:player:ca39f3d48dc8758be7f2d8924ac25a0,Czaru,top,,,,,,,,,,,,,,
+player,oe:team:5a474b2ad31be89700a3bad1f52f3a4,EAS Team ESCA Gaming,ETEG,2022,Unknown,oe:player:2292a08a60ea93d14e4ab551bb6b18f,Bolszak,jng,,,,,,,,,,,,,,
+player,oe:team:5a474b2ad31be89700a3bad1f52f3a4,EAS Team ESCA Gaming,ETEG,2022,Unknown,oe:player:20a8e429d58dfe01327b4e6f0a1cf05,Ariana,mid,,,,,,,,,,,,,,
+player,oe:team:5a474b2ad31be89700a3bad1f52f3a4,EAS Team ESCA Gaming,ETEG,2022,Unknown,oe:player:ec5db04dc2b131ab53b1e3c0bae0524,Biosun,bot,,,,,,,,,,,,,,
+player,oe:team:5a474b2ad31be89700a3bad1f52f3a4,EAS Team ESCA Gaming,ETEG,2022,Unknown,oe:player:61cc1c5b4d340d82c6fadd8e5c20da1,Grk,sup,,,,,,,,,,,,,,
+lineup,oe:team:5a474b2ad31be89700a3bad1f52f3a4,EAS Team ESCA Gaming,ETEG,2022,Unknown,,,,lineup-15ea3e08a79f5e13,ETEG-01,1,4,oe:player:ca39f3d48dc8758be7f2d8924ac25a0,oe:player:2292a08a60ea93d14e4ab551bb6b18f,oe:player:20a8e429d58dfe01327b4e6f0a1cf05,oe:player:ec5db04dc2b131ab53b1e3c0bae0524,oe:player:61cc1c5b4d340d82c6fadd8e5c20da1,Czaru,Bolszak,Ariana,Biosun,Grk
+player,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,oe:player:ebd4b1a96cf1df7e3defb437097f57d,LeQu,top,,,,,,,,,,,,,,
+player,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,oe:player:e93fad90f312c1f10c64b60e5ba17c7,sheru,top,,,,,,,,,,,,,,
+player,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,oe:player:2d1fca25321f6983dc3e1da11039a80,Diagu,jng,,,,,,,,,,,,,,
+player,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,oe:player:0b86165c05c887717356385698f19fa,Jaunutis1,jng,,,,,,,,,,,,,,
+player,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,oe:player:5dfd291ca7aeebbe24fc1da06e28357,Kanna,jng,,,,,,,,,,,,,,
+player,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,oe:player:35b5dc29a02b62b577ed0c652af69dd,D0MAS,mid,,,,,,,,,,,,,,
+player,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,oe:player:5a23766ce46653d2b63ac4a40cd61c1,Warszi,mid,,,,,,,,,,,,,,
+player,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,oe:player:01fc0520770d413ac765d5395027386,Ruf,bot,,,,,,,,,,,,,,
+player,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,oe:player:9e0d36678131df9bde116a964c542ef,choego,bot,,,,,,,,,,,,,,
+player,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,oe:player:997c1a0bc151774ce9d0793502c6a9a,Lokmays,sup,,,,,,,,,,,,,,
+player,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,oe:player:0114600fd7028a75f762bb772a5f6f1,Mystiques,sup,,,,,,,,,,,,,,
+player,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,oe:player:7096289a31b8eab5b5b315f1734ccb6,WillTheScout,sup,,,,,,,,,,,,,,
+lineup,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,,,,lineup-25d2b4f173639d77,FOR-01,1,12,oe:player:ebd4b1a96cf1df7e3defb437097f57d,oe:player:2d1fca25321f6983dc3e1da11039a80,oe:player:5a23766ce46653d2b63ac4a40cd61c1,oe:player:9e0d36678131df9bde116a964c542ef,oe:player:0114600fd7028a75f762bb772a5f6f1,LeQu,Diagu,Warszi,choego,Mystiques
+lineup,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,,,,lineup-c70fdcafad4febcc,FOR-02,2,12,oe:player:e93fad90f312c1f10c64b60e5ba17c7,oe:player:0b86165c05c887717356385698f19fa,oe:player:35b5dc29a02b62b577ed0c652af69dd,oe:player:01fc0520770d413ac765d5395027386,oe:player:7096289a31b8eab5b5b315f1734ccb6,sheru,Jaunutis1,D0MAS,Ruf,WillTheScout
+lineup,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,,,,lineup-83fcdcd187b99578,FOR-03,3,8,oe:player:e93fad90f312c1f10c64b60e5ba17c7,oe:player:0b86165c05c887717356385698f19fa,oe:player:35b5dc29a02b62b577ed0c652af69dd,oe:player:01fc0520770d413ac765d5395027386,oe:player:997c1a0bc151774ce9d0793502c6a9a,sheru,Jaunutis1,D0MAS,Ruf,Lokmays
+lineup,oe:team:9e12a15ab90a0a26c7e4e5308d3924c,Forsaken,FOR,2022,Split 2,,,,lineup-f1806be035cfca5d,FOR-04,4,6,oe:player:ebd4b1a96cf1df7e3defb437097f57d,oe:player:5dfd291ca7aeebbe24fc1da06e28357,oe:player:5a23766ce46653d2b63ac4a40cd61c1,oe:player:9e0d36678131df9bde116a964c542ef,oe:player:0114600fd7028a75f762bb772a5f6f1,LeQu,Kanna,Warszi,choego,Mystiques
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2022,Split 1,oe:player:8e00e6377e8725af3b2bc927d6710e4,Grzybek,top,,,,,,,,,,,,,,
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2022,Split 1,oe:player:8486d94ef23b38c67c76b647613d881,bobista,top,,,,,,,,,,,,,,
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2022,Split 1,oe:player:4a9683365dbc0dd4b92d296fb2a1042,Aprobata,jng,,,,,,,,,,,,,,
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2022,Split 1,oe:player:b7b762e710417e8129b6a4a1de7dcbb,Badlyyga,jng,,,,,,,,,,,,,,
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2022,Split 1,oe:player:20a8e429d58dfe01327b4e6f0a1cf05,Ariana,mid,,,,,,,,,,,,,,
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2022,Split 1,oe:player:6520964cefa9d79079bf664b7453cfc,Mercy9,mid,,,,,,,,,,,,,,
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2022,Split 1,oe:player:d76cb4dd926111e0b5a4c101f1218a1,bucu,mid,,,,,,,,,,,,,,
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2022,Split 1,oe:player:9bbe92a6cefce18d43887478b670435,Adison,bot,,,,,,,,,,,,,,
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2022,Split 1,oe:player:50cce5a33514ebe62201a0a45314eca,Yashiro,bot,,,,,,,,,,,,,,
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2022,Split 1,oe:player:50083ed74954c533c6c8cac9c553ff9,Xavieles,sup,,,,,,,,,,,,,,
+player,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2022,Split 1,oe:player:945f30b38a435b37c2e70d893cb6a72,YuNIshinoya,sup,,,,,,,,,,,,,,
+lineup,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2022,Split 1,,,,lineup-d839d0bed3b875e5,GG-01,1,34,oe:player:8e00e6377e8725af3b2bc927d6710e4,oe:player:b7b762e710417e8129b6a4a1de7dcbb,oe:player:20a8e429d58dfe01327b4e6f0a1cf05,oe:player:9bbe92a6cefce18d43887478b670435,oe:player:945f30b38a435b37c2e70d893cb6a72,Grzybek,Badlyyga,Ariana,Adison,YuNIshinoya
+lineup,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2022,Split 1,,,,lineup-1910475cceadfced,GG-02,2,10,oe:player:8e00e6377e8725af3b2bc927d6710e4,oe:player:b7b762e710417e8129b6a4a1de7dcbb,oe:player:6520964cefa9d79079bf664b7453cfc,oe:player:9bbe92a6cefce18d43887478b670435,oe:player:945f30b38a435b37c2e70d893cb6a72,Grzybek,Badlyyga,Mercy9,Adison,YuNIshinoya
+lineup,oe:team:3a1d5821b38ab1ddec52f944973d1bd,Gentlemen's Gaming,GG,2022,Split 1,,,,lineup-c043a71c3ace7ebb,GG-03,3,3,oe:player:8486d94ef23b38c67c76b647613d881,oe:player:4a9683365dbc0dd4b92d296fb2a1042,oe:player:d76cb4dd926111e0b5a4c101f1218a1,oe:player:50cce5a33514ebe62201a0a45314eca,oe:player:50083ed74954c533c6c8cac9c553ff9,bobista,Aprobata,bucu,Yashiro,Xavieles
+player,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,oe:player:cc8e8dfcae56920291b5567ad4aa89c,VeyLot,top,,,,,,,,,,,,,,
+player,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,oe:player:0cbadb757e6cd6a2bb77f0748cfe398,Wondro,top,,,,,,,,,,,,,,
+player,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,oe:player:318a60c20ad705c05ceb1e1b2067624,Sh4dowUS,jng,,,,,,,,,,,,,,
+player,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,oe:player:03363ad17685d448dc06c1f252c1896,WRDN,jng,,,,,,,,,,,,,,
+player,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,oe:player:01691a35fd830394e9b5565308805d9,Phlaty,mid,,,,,,,,,,,,,,
+player,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,oe:player:05ba4c8d696dc02d8320c00415f5a4e,Silas,mid,,,,,,,,,,,,,,
+player,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,oe:player:5f8d61302bd034bd4d31a45c68d2f66,Trace,mid,,,,,,,,,,,,,,
+player,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,oe:player:39ffb885bfbe09aa1cf72408e10353c,Baybror,bot,,,,,,,,,,,,,,
+player,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,oe:player:8a58fbf4bd2f3116d830ccab0740530,Jabuticaba,bot,,,,,,,,,,,,,,
+player,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,oe:player:330649b30536a93ea9363a7dd17e7dd,Cospect,sup,,,,,,,,,,,,,,
+player,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,oe:player:b226880189cb11f7da7a0c86544b556,iLEVI,sup,,,,,,,,,,,,,,
+lineup,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,,,,lineup-b7a2e7ee015e14bf,GOS-01,1,20,oe:player:0cbadb757e6cd6a2bb77f0748cfe398,oe:player:03363ad17685d448dc06c1f252c1896,oe:player:01691a35fd830394e9b5565308805d9,oe:player:39ffb885bfbe09aa1cf72408e10353c,oe:player:330649b30536a93ea9363a7dd17e7dd,Wondro,WRDN,Phlaty,Baybror,Cospect
+lineup,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,,,,lineup-947c61d27db747b8,GOS-02,2,15,oe:player:cc8e8dfcae56920291b5567ad4aa89c,oe:player:318a60c20ad705c05ceb1e1b2067624,oe:player:05ba4c8d696dc02d8320c00415f5a4e,oe:player:39ffb885bfbe09aa1cf72408e10353c,oe:player:b226880189cb11f7da7a0c86544b556,VeyLot,Sh4dowUS,Silas,Baybror,iLEVI
+lineup,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,,,,lineup-d327ec320d8d27d7,GOS-03,3,3,oe:player:cc8e8dfcae56920291b5567ad4aa89c,oe:player:318a60c20ad705c05ceb1e1b2067624,oe:player:05ba4c8d696dc02d8320c00415f5a4e,oe:player:8a58fbf4bd2f3116d830ccab0740530,oe:player:b226880189cb11f7da7a0c86544b556,VeyLot,Sh4dowUS,Silas,Jabuticaba,iLEVI
+lineup,oe:team:8e59548c40b71c4232405f8b54fc7f9,Goskilla,GOS,2022,Split 1,,,,lineup-8a9c583342a78903,GOS-04,4,2,oe:player:0cbadb757e6cd6a2bb77f0748cfe398,oe:player:03363ad17685d448dc06c1f252c1896,oe:player:5f8d61302bd034bd4d31a45c68d2f66,oe:player:39ffb885bfbe09aa1cf72408e10353c,oe:player:330649b30536a93ea9363a7dd17e7dd,Wondro,WRDN,Trace,Baybror,Cospect
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:ebd4b1a96cf1df7e3defb437097f57d,LeQu,top,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:1725cf69407d2dcdf2873d0669409e8,Tracyn,top,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:6b7ca7e0fcad1f113f17bc2d30adbf5,adi1,top,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:243afb63fb97e1791ffee0cec41ecdf,Krysia,jng,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:1725cf69407d2dcdf2873d0669409e8,Tracyn,jng,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:6b7ca7e0fcad1f113f17bc2d30adbf5,adi1,jng,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:5a23766ce46653d2b63ac4a40cd61c1,Warszi,mid,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:efde1a9fe9e6f1059c3fce2ec296fae,many,mid,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:1ecc2cf8dc5f05719ca235f6d0be5e2,svns,mid,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:07a5e46488aef307f23a00f275802e8,Piwek,bot,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:1f892f04e94e144dadcc8be197d4f5b,minemaciek,bot,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:1ecc2cf8dc5f05719ca235f6d0be5e2,svns,bot,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:efde1a9fe9e6f1059c3fce2ec296fae,many,sup,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:1f892f04e94e144dadcc8be197d4f5b,minemaciek,sup,,,,,,,,,,,,,,
+player,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,oe:player:e0357bd3e9e044c623fbc77cc985cd7,xCharm,sup,,,,,,,,,,,,,,
+lineup,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,,,,lineup-116a2704dd2ed302,IG-01,1,28,oe:player:1725cf69407d2dcdf2873d0669409e8,oe:player:6b7ca7e0fcad1f113f17bc2d30adbf5,oe:player:efde1a9fe9e6f1059c3fce2ec296fae,oe:player:1ecc2cf8dc5f05719ca235f6d0be5e2,oe:player:1f892f04e94e144dadcc8be197d4f5b,Tracyn,adi1,many,svns,minemaciek
+lineup,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,,,,lineup-0f72f2f56da5d660,IG-02,2,18,oe:player:ebd4b1a96cf1df7e3defb437097f57d,oe:player:243afb63fb97e1791ffee0cec41ecdf,oe:player:5a23766ce46653d2b63ac4a40cd61c1,oe:player:07a5e46488aef307f23a00f275802e8,oe:player:e0357bd3e9e044c623fbc77cc985cd7,LeQu,Krysia,Warszi,Piwek,xCharm
+lineup,oe:team:6cedba5819b5b7c465cb3bb48bfe855,Illuminar Gaming,IG,2022,Split 1,,,,lineup-5698bad2060e9dd4,IG-03,3,1,oe:player:6b7ca7e0fcad1f113f17bc2d30adbf5,oe:player:1725cf69407d2dcdf2873d0669409e8,oe:player:1ecc2cf8dc5f05719ca235f6d0be5e2,oe:player:1f892f04e94e144dadcc8be197d4f5b,oe:player:efde1a9fe9e6f1059c3fce2ec296fae,adi1,Tracyn,svns,minemaciek,many
+player,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2022,Split 2,oe:player:cf9f681ba462478b3361e8912e5921b,Kakan,top,,,,,,,,,,,,,,
+player,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2022,Split 2,oe:player:1803cfd1a017efe15edef6546bdac2b,Gaboesh,jng,,,,,,,,,,,,,,
+player,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2022,Split 2,oe:player:243afb63fb97e1791ffee0cec41ecdf,Krysia,jng,,,,,,,,,,,,,,
+player,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2022,Split 2,oe:player:20f6b753e75c654b14810f5733a9688,Souli,jng,,,,,,,,,,,,,,
+player,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2022,Split 2,oe:player:df7fb677687a886fb22f75da316b949,Saulius,mid,,,,,,,,,,,,,,
+player,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2022,Split 2,oe:player:50cce5a33514ebe62201a0a45314eca,Yashiro,bot,,,,,,,,,,,,,,
+player,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2022,Split 2,oe:player:f77c2becc8145352a637a382dd53fce,Bolyy1,sup,,,,,,,,,,,,,,
+player,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2022,Split 2,oe:player:df5866d3078c786ce03084b78b1f5d9,Czypsy,sup,,,,,,,,,,,,,,
+lineup,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2022,Split 2,,,,lineup-7d051d1a630d06cc,IW-01,1,25,oe:player:cf9f681ba462478b3361e8912e5921b,oe:player:20f6b753e75c654b14810f5733a9688,oe:player:df7fb677687a886fb22f75da316b949,oe:player:50cce5a33514ebe62201a0a45314eca,oe:player:df5866d3078c786ce03084b78b1f5d9,Kakan,Souli,Saulius,Yashiro,Czypsy
+lineup,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2022,Split 2,,,,lineup-3fef499e96eb3d78,IW-02,2,14,oe:player:cf9f681ba462478b3361e8912e5921b,oe:player:243afb63fb97e1791ffee0cec41ecdf,oe:player:df7fb677687a886fb22f75da316b949,oe:player:50cce5a33514ebe62201a0a45314eca,oe:player:f77c2becc8145352a637a382dd53fce,Kakan,Krysia,Saulius,Yashiro,Bolyy1
+lineup,oe:team:bc9bdf946d79f2f1f483b429a7dfffc,Iron Wolves,IW,2022,Split 2,,,,lineup-2ec496a6a5d6627f,IW-03,3,8,oe:player:cf9f681ba462478b3361e8912e5921b,oe:player:1803cfd1a017efe15edef6546bdac2b,oe:player:df7fb677687a886fb22f75da316b949,oe:player:50cce5a33514ebe62201a0a45314eca,oe:player:f77c2becc8145352a637a382dd53fce,Kakan,Gaboesh,Saulius,Yashiro,Bolyy1
+player,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,oe:player:8e00e6377e8725af3b2bc927d6710e4,Grzybek,top,,,,,,,,,,,,,,
+player,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,oe:player:455527eab48df51aaf02979e65dd651,Jaqen,top,,,,,,,,,,,,,,
+player,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,oe:player:1725cf69407d2dcdf2873d0669409e8,Tracyn,top,,,,,,,,,,,,,,
+player,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,oe:player:e063d206e0423d79434c3ed2cf6be6b,Witek,jng,,,,,,,,,,,,,,
+player,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,oe:player:11bd50ce9e013690ead12e9c307d048,Yuta,jng,,,,,,,,,,,,,,
+player,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,oe:player:78254fba153820035874ec50c87c941,Ribu,mid,,,,,,,,,,,,,,
+player,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,oe:player:56b90211cf581dd16f58da4eb71317f,Wojux,mid,,,,,,,,,,,,,,
+player,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,oe:player:9970a9b7dfef2df3002d7217596010e,many,mid,,,,,,,,,,,,,,
+player,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,oe:player:efde1a9fe9e6f1059c3fce2ec296fae,many,mid,,,,,,,,,,,,,,
+player,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,oe:player:fc64481e9be7c98479a123b5ece6f9c,defles,bot,,,,,,,,,,,,,,
+player,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,oe:player:d0cd239b366deb266d3b499aca7e481,mumek,bot,,,,,,,,,,,,,,
+player,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,oe:player:1ecc2cf8dc5f05719ca235f6d0be5e2,svns,bot,,,,,,,,,,,,,,
+player,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,oe:player:451435072a48580d2b9f106c3552370,Zimba,sup,,,,,,,,,,,,,,
+player,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,oe:player:1f892f04e94e144dadcc8be197d4f5b,minemaciek,sup,,,,,,,,,,,,,,
+lineup,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,,,,lineup-2be6a0e128270e28,K&F-01,1,19,oe:player:1725cf69407d2dcdf2873d0669409e8,oe:player:11bd50ce9e013690ead12e9c307d048,oe:player:efde1a9fe9e6f1059c3fce2ec296fae,oe:player:1ecc2cf8dc5f05719ca235f6d0be5e2,oe:player:1f892f04e94e144dadcc8be197d4f5b,Tracyn,Yuta,many,svns,minemaciek
+lineup,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,,,,lineup-db952360b05bae2a,K&F-02,2,12,oe:player:455527eab48df51aaf02979e65dd651,oe:player:e063d206e0423d79434c3ed2cf6be6b,oe:player:78254fba153820035874ec50c87c941,oe:player:d0cd239b366deb266d3b499aca7e481,oe:player:451435072a48580d2b9f106c3552370,Jaqen,Witek,Ribu,mumek,Zimba
+lineup,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,,,,lineup-662d99f3f0f055a1,K&F-03,3,6,oe:player:455527eab48df51aaf02979e65dd651,oe:player:11bd50ce9e013690ead12e9c307d048,oe:player:78254fba153820035874ec50c87c941,oe:player:d0cd239b366deb266d3b499aca7e481,oe:player:451435072a48580d2b9f106c3552370,Jaqen,Yuta,Ribu,mumek,Zimba
+lineup,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,,,,lineup-50c85d47eeaaeb84,K&F-04,4,4,oe:player:8e00e6377e8725af3b2bc927d6710e4,oe:player:11bd50ce9e013690ead12e9c307d048,oe:player:56b90211cf581dd16f58da4eb71317f,oe:player:fc64481e9be7c98479a123b5ece6f9c,oe:player:1f892f04e94e144dadcc8be197d4f5b,Grzybek,Yuta,Wojux,defles,minemaciek
+lineup,oe:team:5628f250931675f9c0d20aad46cc117,Komil & Friends,K&F,2022,Split 1,,,,lineup-f44de7bc3c818112,K&F-05,5,3,oe:player:1725cf69407d2dcdf2873d0669409e8,oe:player:11bd50ce9e013690ead12e9c307d048,oe:player:9970a9b7dfef2df3002d7217596010e,oe:player:1ecc2cf8dc5f05719ca235f6d0be5e2,oe:player:1f892f04e94e144dadcc8be197d4f5b,Tracyn,Yuta,many,svns,minemaciek
+player,oe:team:1158ec5b08f516ca81868bc48293989,Team ESCA Gaming,TEG,2022,Split 1,oe:player:a2694196d288cd26055602729d0bb5c,HeSSZero,top,,,,,,,,,,,,,,
+player,oe:team:1158ec5b08f516ca81868bc48293989,Team ESCA Gaming,TEG,2022,Split 1,oe:player:563de95758c49f2d41e16ee7e9aca8f,Zora,top,,,,,,,,,,,,,,
+player,oe:team:1158ec5b08f516ca81868bc48293989,Team ESCA Gaming,TEG,2022,Split 1,oe:player:24807d9986c4fda13d994791032cde1,Ben3k,jng,,,,,,,,,,,,,,
+player,oe:team:1158ec5b08f516ca81868bc48293989,Team ESCA Gaming,TEG,2022,Split 1,oe:player:4c56aef4b6fee236568a5769a8328aa,Xeonerr,jng,,,,,,,,,,,,,,
+player,oe:team:1158ec5b08f516ca81868bc48293989,Team ESCA Gaming,TEG,2022,Split 1,oe:player:eec9551ee8ca36e4892be7901f79ec2,Dawidsonek,mid,,,,,,,,,,,,,,
+player,oe:team:1158ec5b08f516ca81868bc48293989,Team ESCA Gaming,TEG,2022,Split 1,oe:player:193f83b4d6615f92af0776035551008,Mrozku,mid,,,,,,,,,,,,,,
+player,oe:team:1158ec5b08f516ca81868bc48293989,Team ESCA Gaming,TEG,2022,Split 1,oe:player:e6fafbf627da7992498ce65ebe436cf,lee sang,mid,,,,,,,,,,,,,,
+player,oe:team:1158ec5b08f516ca81868bc48293989,Team ESCA Gaming,TEG,2022,Split 1,oe:player:c98df548b46d873a7994bbe27b43e35,DAMKEXHINO4,bot,,,,,,,,,,,,,,
+player,oe:team:1158ec5b08f516ca81868bc48293989,Team ESCA Gaming,TEG,2022,Split 1,oe:player:3d022fcafe5af9f52df92b17c015fe6,HARPOON,bot,,,,,,,,,,,,,,
+player,oe:team:1158ec5b08f516ca81868bc48293989,Team ESCA Gaming,TEG,2022,Split 1,oe:player:e1ddc411cd92f26392b707a48e5c700,marlon,sup,,,,,,,,,,,,,,
+player,oe:team:1158ec5b08f516ca81868bc48293989,Team ESCA Gaming,TEG,2022,Split 1,oe:player:ded84ce8443d8de05174cd9b702c4e6,uden,sup,,,,,,,,,,,,,,
+lineup,oe:team:1158ec5b08f516ca81868bc48293989,Team ESCA Gaming,TEG,2022,Split 1,,,,lineup-a6caabc5354fdb63,TEG-01,1,19,oe:player:a2694196d288cd26055602729d0bb5c,oe:player:4c56aef4b6fee236568a5769a8328aa,oe:player:193f83b4d6615f92af0776035551008,oe:player:3d022fcafe5af9f52df92b17c015fe6,oe:player:e1ddc411cd92f26392b707a48e5c700,HeSSZero,Xeonerr,Mrozku,HARPOON,marlon
+lineup,oe:team:1158ec5b08f516ca81868bc48293989,Team ESCA Gaming,TEG,2022,Split 1,,,,lineup-58d77d50d900dc61,TEG-02,2,18,oe:player:563de95758c49f2d41e16ee7e9aca8f,oe:player:24807d9986c4fda13d994791032cde1,oe:player:eec9551ee8ca36e4892be7901f79ec2,oe:player:c98df548b46d873a7994bbe27b43e35,oe:player:ded84ce8443d8de05174cd9b702c4e6,Zora,Ben3k,Dawidsonek,DAMKEXHINO4,uden
+lineup,oe:team:1158ec5b08f516ca81868bc48293989,Team ESCA Gaming,TEG,2022,Split 1,,,,lineup-01442f78b107e90b,TEG-03,3,14,oe:player:a2694196d288cd26055602729d0bb5c,oe:player:4c56aef4b6fee236568a5769a8328aa,oe:player:e6fafbf627da7992498ce65ebe436cf,oe:player:3d022fcafe5af9f52df92b17c015fe6,oe:player:e1ddc411cd92f26392b707a48e5c700,HeSSZero,Xeonerr,lee sang,HARPOON,marlon
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2022,Split 1,oe:player:d6d80c43cbc198c8af0407cea242709,mumus100,top,,,,,,,,,,,,,,
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2022,Split 1,oe:player:9312bfc44c1e0686971d076d1364713,Ryuzaki,jng,,,,,,,,,,,,,,
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2022,Split 1,oe:player:b8c5bfbff49a0f1459f1c15d824fde7,Sebekx,mid,,,,,,,,,,,,,,
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2022,Split 1,oe:player:ba6e76e259419420ddff269bb6ef074,Vzz,bot,,,,,,,,,,,,,,
+player,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2022,Split 1,oe:player:a93e0326b85f0312cf1b451e175a7a0,Wojtus,sup,,,,,,,,,,,,,,
+lineup,oe:team:125fc4d6b0dc1b21596f4f06a207d62,Zero Tenacity,ZT,2022,Split 1,,,,lineup-1c5b608ce75eb649,ZT-01,1,53,oe:player:d6d80c43cbc198c8af0407cea242709,oe:player:9312bfc44c1e0686971d076d1364713,oe:player:b8c5bfbff49a0f1459f1c15d824fde7,oe:player:ba6e76e259419420ddff269bb6ef074,oe:player:a93e0326b85f0312cf1b451e175a7a0,mumus100,Ryuzaki,Sebekx,Vzz,Wojtus
+player,oe:team:92e22c0b203c93b7d25c3a07b68575c,devils.one inStreamly,DI,2022,Split 1,oe:player:21db15d0e4d18e9c89e61e2dab0897a,Fok,top,,,,,,,,,,,,,,
+player,oe:team:92e22c0b203c93b7d25c3a07b68575c,devils.one inStreamly,DI,2022,Split 1,oe:player:b5654a6598ed174f4451f5e5dcfb118,Kozi,top,,,,,,,,,,,,,,
+player,oe:team:92e22c0b203c93b7d25c3a07b68575c,devils.one inStreamly,DI,2022,Split 1,oe:player:2d1fca25321f6983dc3e1da11039a80,Diagu,jng,,,,,,,,,,,,,,
+player,oe:team:92e22c0b203c93b7d25c3a07b68575c,devils.one inStreamly,DI,2022,Split 1,oe:player:318a60c20ad705c05ceb1e1b2067624,Sh4dowUS,jng,,,,,,,,,,,,,,
+player,oe:team:92e22c0b203c93b7d25c3a07b68575c,devils.one inStreamly,DI,2022,Split 1,oe:player:fd232826ff3976840e994bb85a3bd46,Domoles,mid,,,,,,,,,,,,,,
+player,oe:team:92e22c0b203c93b7d25c3a07b68575c,devils.one inStreamly,DI,2022,Split 1,oe:player:d76cb4dd926111e0b5a4c101f1218a1,bucu,mid,,,,,,,,,,,,,,
+player,oe:team:92e22c0b203c93b7d25c3a07b68575c,devils.one inStreamly,DI,2022,Split 1,oe:player:8204ca38dc1c42012b5d53131271eb1,Axelent,bot,,,,,,,,,,,,,,
+player,oe:team:92e22c0b203c93b7d25c3a07b68575c,devils.one inStreamly,DI,2022,Split 1,oe:player:2f4dff060d224582dc34b449697b12c,Lothen,bot,,,,,,,,,,,,,,
+player,oe:team:92e22c0b203c93b7d25c3a07b68575c,devils.one inStreamly,DI,2022,Split 1,oe:player:3ecce3085c6886d516d2b8659880394,Robertoos,sup,,,,,,,,,,,,,,
+player,oe:team:92e22c0b203c93b7d25c3a07b68575c,devils.one inStreamly,DI,2022,Split 1,oe:player:af9a185418e02f09e82427c7a5137c5,Taewang,sup,,,,,,,,,,,,,,
+lineup,oe:team:92e22c0b203c93b7d25c3a07b68575c,devils.one inStreamly,DI,2022,Split 1,,,,lineup-17c85a2c91dc0514,DI-01,1,18,oe:player:21db15d0e4d18e9c89e61e2dab0897a,oe:player:2d1fca25321f6983dc3e1da11039a80,oe:player:d76cb4dd926111e0b5a4c101f1218a1,oe:player:8204ca38dc1c42012b5d53131271eb1,oe:player:af9a185418e02f09e82427c7a5137c5,Fok,Diagu,bucu,Axelent,Taewang
+lineup,oe:team:92e22c0b203c93b7d25c3a07b68575c,devils.one inStreamly,DI,2022,Split 1,,,,lineup-82c420efcdc61e7b,DI-02,2,18,oe:player:b5654a6598ed174f4451f5e5dcfb118,oe:player:318a60c20ad705c05ceb1e1b2067624,oe:player:fd232826ff3976840e994bb85a3bd46,oe:player:2f4dff060d224582dc34b449697b12c,oe:player:3ecce3085c6886d516d2b8659880394,Kozi,Sh4dowUS,Domoles,Lothen,Robertoos
+player,oe:team:c4360b2f59028db18a7d5b19ec74bcb,piratesports,PIR,2022,Unknown,oe:player:3bc13ea6109bc562b748f91a7fd56ad,Makk,top,,,,,,,,,,,,,,
+player,oe:team:c4360b2f59028db18a7d5b19ec74bcb,piratesports,PIR,2022,Unknown,oe:player:318a60c20ad705c05ceb1e1b2067624,Sh4dowUS,jng,,,,,,,,,,,,,,
+player,oe:team:c4360b2f59028db18a7d5b19ec74bcb,piratesports,PIR,2022,Unknown,oe:player:fd232826ff3976840e994bb85a3bd46,DOMOLES,mid,,,,,,,,,,,,,,
+player,oe:team:c4360b2f59028db18a7d5b19ec74bcb,piratesports,PIR,2022,Unknown,oe:player:9bbe92a6cefce18d43887478b670435,Adison,bot,,,,,,,,,,,,,,
+player,oe:team:c4360b2f59028db18a7d5b19ec74bcb,piratesports,PIR,2022,Unknown,oe:player:3ecce3085c6886d516d2b8659880394,Robertoos,sup,,,,,,,,,,,,,,
+lineup,oe:team:c4360b2f59028db18a7d5b19ec74bcb,piratesports,PIR,2022,Unknown,,,,lineup-44f8f790bf520503,PIR-01,1,3,oe:player:3bc13ea6109bc562b748f91a7fd56ad,oe:player:318a60c20ad705c05ceb1e1b2067624,oe:player:fd232826ff3976840e994bb85a3bd46,oe:player:9bbe92a6cefce18d43887478b670435,oe:player:3ecce3085c6886d516d2b8659880394,Makk,Sh4dowUS,DOMOLES,Adison,Robertoos

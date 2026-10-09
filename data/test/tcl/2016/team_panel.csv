@@ -1,0 +1,61 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:fb2c3c21cd8bbdb161246014c23e7e7,Beşiktaş.Oyun Hizmetleri,BH,2016,Winter,oe:player:832db89adc73ee4825c49045c403fcd,Xyraz,top,,,,,,,,,,,,,,
+player,oe:team:fb2c3c21cd8bbdb161246014c23e7e7,Beşiktaş.Oyun Hizmetleri,BH,2016,Winter,oe:player:b021d02e17045078576b0bb66fae869,Rawbin IV,jng,,,,,,,,,,,,,,
+player,oe:team:fb2c3c21cd8bbdb161246014c23e7e7,Beşiktaş.Oyun Hizmetleri,BH,2016,Winter,oe:player:78236c2d15825ec9350acf45161e6b5,Immortoru,mid,,,,,,,,,,,,,,
+player,oe:team:fb2c3c21cd8bbdb161246014c23e7e7,Beşiktaş.Oyun Hizmetleri,BH,2016,Winter,oe:player:63fb46cfa2f3ee4110bd7489cf18c02,Ruvelius,bot,,,,,,,,,,,,,,
+player,oe:team:fb2c3c21cd8bbdb161246014c23e7e7,Beşiktaş.Oyun Hizmetleri,BH,2016,Winter,oe:player:e2bda16ec6a37701a59f5528913b505,Rogu,sup,,,,,,,,,,,,,,
+lineup,oe:team:fb2c3c21cd8bbdb161246014c23e7e7,Beşiktaş.Oyun Hizmetleri,BH,2016,Winter,,,,lineup-2fe388ab6b9e6f9b,BH-01,1,13,oe:player:832db89adc73ee4825c49045c403fcd,oe:player:b021d02e17045078576b0bb66fae869,oe:player:78236c2d15825ec9350acf45161e6b5,oe:player:63fb46cfa2f3ee4110bd7489cf18c02,oe:player:e2bda16ec6a37701a59f5528913b505,Xyraz,Rawbin IV,Immortoru,Ruvelius,Rogu
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2016,Winter,oe:player:2b8fa1915cf8454ce61d28e19d4c8e9,Elwind,top,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2016,Winter,oe:player:a48296ad11ed041e4db9991af1057fb,Crystal,jng,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2016,Winter,oe:player:7abb6ed565498fffcd36d179f43a0ad,Abaria,mid,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2016,Winter,oe:player:01cbcf0e395124de3b78817b75b878c,Zeitnot,bot,,,,,,,,,,,,,,
+player,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2016,Winter,oe:player:0fcf46a0679174e62e79f5a6cb3efbf,Arphan,sup,,,,,,,,,,,,,,
+lineup,oe:team:a42600a99997fca0d35f2821662b997,Dark Passage,DP,2016,Winter,,,,lineup-e56a587c09dd94ec,DP-01,1,1,oe:player:2b8fa1915cf8454ce61d28e19d4c8e9,oe:player:a48296ad11ed041e4db9991af1057fb,oe:player:7abb6ed565498fffcd36d179f43a0ad,oe:player:01cbcf0e395124de3b78817b75b878c,oe:player:0fcf46a0679174e62e79f5a6cb3efbf,Elwind,Crystal,Abaria,Zeitnot,Arphan
+player,oe:team:47980e0bc08d56ec5a4274f07016ab5,HWA Gaming,HG,2016,Unknown,oe:player:9829b25a81a6f97335763c274b28525,Marshall,top,,,,,,,,,,,,,,
+player,oe:team:47980e0bc08d56ec5a4274f07016ab5,HWA Gaming,HG,2016,Unknown,oe:player:d2b7178cb3441aaecfdaa5555a4c3f0,Trix,jng,,,,,,,,,,,,,,
+player,oe:team:47980e0bc08d56ec5a4274f07016ab5,HWA Gaming,HG,2016,Unknown,oe:player:d284c886209920a7c477e95581cd099,Hatrixx,mid,,,,,,,,,,,,,,
+player,oe:team:47980e0bc08d56ec5a4274f07016ab5,HWA Gaming,HG,2016,Unknown,oe:player:8a23fea7f80d7a6dc3035fb17f721e1,Revanche,bot,,,,,,,,,,,,,,
+player,oe:team:47980e0bc08d56ec5a4274f07016ab5,HWA Gaming,HG,2016,Unknown,oe:player:6369ba49db4cf35b35a7c47e3d4a4fd,Visdom,sup,,,,,,,,,,,,,,
+lineup,oe:team:47980e0bc08d56ec5a4274f07016ab5,HWA Gaming,HG,2016,Unknown,,,,lineup-24aed7dead001b16,HG-01,1,6,oe:player:9829b25a81a6f97335763c274b28525,oe:player:d2b7178cb3441aaecfdaa5555a4c3f0,oe:player:d284c886209920a7c477e95581cd099,oe:player:8a23fea7f80d7a6dc3035fb17f721e1,oe:player:6369ba49db4cf35b35a7c47e3d4a4fd,Marshall,Trix,Hatrixx,Revanche,Visdom
+player,oe:team:4031f92c96fefcf01482e7d143688e6,MeetYourMakers.TR,MEE,2016,Unknown,oe:player:8d6442ebdbe1b80a7080cd3d3535e53,Silphi,top,,,,,,,,,,,,,,
+player,oe:team:4031f92c96fefcf01482e7d143688e6,MeetYourMakers.TR,MEE,2016,Unknown,oe:player:f926d5dcf4dca16c457e64fc9ef6c87,Gilius,jng,,,,,,,,,,,,,,
+player,oe:team:4031f92c96fefcf01482e7d143688e6,MeetYourMakers.TR,MEE,2016,Unknown,oe:player:50ce2da63bea6a618e7578fa5069004,React,mid,,,,,,,,,,,,,,
+player,oe:team:4031f92c96fefcf01482e7d143688e6,MeetYourMakers.TR,MEE,2016,Unknown,oe:player:cec8c0268b725079114cc792653648c,S4mpe,bot,,,,,,,,,,,,,,
+player,oe:team:4031f92c96fefcf01482e7d143688e6,MeetYourMakers.TR,MEE,2016,Unknown,oe:player:60c7d1c521aba6d16e6c3a38aa3a863,Klaj,sup,,,,,,,,,,,,,,
+lineup,oe:team:4031f92c96fefcf01482e7d143688e6,MeetYourMakers.TR,MEE,2016,Unknown,,,,lineup-e67f74159532606c,MEE-01,1,2,oe:player:8d6442ebdbe1b80a7080cd3d3535e53,oe:player:f926d5dcf4dca16c457e64fc9ef6c87,oe:player:50ce2da63bea6a618e7578fa5069004,oe:player:cec8c0268b725079114cc792653648c,oe:player:60c7d1c521aba6d16e6c3a38aa3a863,Silphi,Gilius,React,S4mpe,Klaj
+player,oe:team:ec45c1d412e89b59d0b013eab4af15e,NumberOne Esports,NE,2016,Winter,oe:player:ffdcd2a3d817929aee8d3a69f82f210,âprox,top,,,,,,,,,,,,,,
+player,oe:team:ec45c1d412e89b59d0b013eab4af15e,NumberOne Esports,NE,2016,Winter,oe:player:8a1c30199bac9efaa2161b14565595c,KonDziSan,jng,,,,,,,,,,,,,,
+player,oe:team:ec45c1d412e89b59d0b013eab4af15e,NumberOne Esports,NE,2016,Winter,oe:player:43fa71a7a53cdb0055f3ce9a9cc01c8,Elysion,mid,,,,,,,,,,,,,,
+player,oe:team:ec45c1d412e89b59d0b013eab4af15e,NumberOne Esports,NE,2016,Winter,oe:player:dc2a5a07c14293d939f53d138b14bd9,KissNkite,bot,,,,,,,,,,,,,,
+player,oe:team:ec45c1d412e89b59d0b013eab4af15e,NumberOne Esports,NE,2016,Winter,oe:player:6f967e4fbe5e6fb9f1e3580ce3a3737,Rydle,sup,,,,,,,,,,,,,,
+lineup,oe:team:ec45c1d412e89b59d0b013eab4af15e,NumberOne Esports,NE,2016,Winter,,,,lineup-4625a383f9802116,NE-01,1,1,oe:player:ffdcd2a3d817929aee8d3a69f82f210,oe:player:8a1c30199bac9efaa2161b14565595c,oe:player:43fa71a7a53cdb0055f3ce9a9cc01c8,oe:player:dc2a5a07c14293d939f53d138b14bd9,oe:player:6f967e4fbe5e6fb9f1e3580ce3a3737,âprox,KonDziSan,Elysion,KissNkite,Rydle
+player,oe:team:ef73b0c8f0ee92631adf7cb11ebe12d,Oyun Hizmetleri,OH,2016,Unknown,oe:player:2dcf3e7e2fc2f4dc742bde24217e292,numlocked,top,,,,,,,,,,,,,,
+player,oe:team:ef73b0c8f0ee92631adf7cb11ebe12d,Oyun Hizmetleri,OH,2016,Unknown,oe:player:189e693bc6ff316d346a55fb304da0f,Kanani,jng,,,,,,,,,,,,,,
+player,oe:team:ef73b0c8f0ee92631adf7cb11ebe12d,Oyun Hizmetleri,OH,2016,Unknown,oe:player:78236c2d15825ec9350acf45161e6b5,Immortoru,mid,,,,,,,,,,,,,,
+player,oe:team:ef73b0c8f0ee92631adf7cb11ebe12d,Oyun Hizmetleri,OH,2016,Unknown,oe:player:63fb46cfa2f3ee4110bd7489cf18c02,Ruvelius,bot,,,,,,,,,,,,,,
+player,oe:team:ef73b0c8f0ee92631adf7cb11ebe12d,Oyun Hizmetleri,OH,2016,Unknown,oe:player:e2bda16ec6a37701a59f5528913b505,Rogu,sup,,,,,,,,,,,,,,
+lineup,oe:team:ef73b0c8f0ee92631adf7cb11ebe12d,Oyun Hizmetleri,OH,2016,Unknown,,,,lineup-8cc0d8079e9c0c96,OH-01,1,2,oe:player:2dcf3e7e2fc2f4dc742bde24217e292,oe:player:189e693bc6ff316d346a55fb304da0f,oe:player:78236c2d15825ec9350acf45161e6b5,oe:player:63fb46cfa2f3ee4110bd7489cf18c02,oe:player:e2bda16ec6a37701a59f5528913b505,numlocked,Kanani,Immortoru,Ruvelius,Rogu
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2016,Winter,oe:player:c540f8b01a25b43ec34c8d517c81195,Thaldrin,top,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2016,Winter,oe:player:b287539666d56b6bf8155d3e4a8541d,Stomaged,jng,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2016,Winter,oe:player:3993eecbf3e9f7e9c94db6bb2fb616d,Naru,mid,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2016,Winter,oe:player:150fa58f33821edfb5684ebe59a84ff,Achuu,bot,,,,,,,,,,,,,,
+player,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2016,Winter,oe:player:7bd16068637ca7bbbed9db44008bda8,Dumbledoge,sup,,,,,,,,,,,,,,
+lineup,oe:team:5203ff881d5c82c5f720eb3a2f3b44c,Papara SuperMassive,PS,2016,Winter,,,,lineup-53fd649da539169b,PS-01,1,2,oe:player:c540f8b01a25b43ec34c8d517c81195,oe:player:b287539666d56b6bf8155d3e4a8541d,oe:player:3993eecbf3e9f7e9c94db6bb2fb616d,oe:player:150fa58f33821edfb5684ebe59a84ff,oe:player:7bd16068637ca7bbbed9db44008bda8,Thaldrin,Stomaged,Naru,Achuu,Dumbledoge
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2016,Winter,oe:player:56725baa4909848cfa93d24e8f7f16a,Hioss,top,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2016,Winter,oe:player:189e693bc6ff316d346a55fb304da0f,Kanani,jng,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2016,Winter,oe:player:90661c844fb6e1b0af64d2c7f0cb2b5,avenuee,mid,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2016,Winter,oe:player:9a4b2ca5e5e063f07eef95723b1e42a,DarkSide,bot,,,,,,,,,,,,,,
+player,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2016,Winter,oe:player:db38739eda4ad887b7d852545212528,Zergsting,sup,,,,,,,,,,,,,,
+lineup,oe:team:ce02eb63c33525b64c0734c872d64cd,Team AURORA,TA,2016,Winter,,,,lineup-5be92f435eef21ce,TA-01,1,1,oe:player:56725baa4909848cfa93d24e8f7f16a,oe:player:189e693bc6ff316d346a55fb304da0f,oe:player:90661c844fb6e1b0af64d2c7f0cb2b5,oe:player:9a4b2ca5e5e063f07eef95723b1e42a,oe:player:db38739eda4ad887b7d852545212528,Hioss,Kanani,avenuee,DarkSide,Zergsting
+player,oe:team:c33c60aabef5b74d45d8c5750d74da5,Team Turquality,TT,2016,Winter,oe:player:b3dae530a02238b0628518ef886e505,Sw0rd,top,,,,,,,,,,,,,,
+player,oe:team:c33c60aabef5b74d45d8c5750d74da5,Team Turquality,TT,2016,Winter,oe:player:42f0c6bffdf96e7806498e6d2c5fb55,Reach,jng,,,,,,,,,,,,,,
+player,oe:team:c33c60aabef5b74d45d8c5750d74da5,Team Turquality,TT,2016,Winter,oe:player:2573f304560955b77060a088f94b11a,LongB,mid,,,,,,,,,,,,,,
+player,oe:team:c33c60aabef5b74d45d8c5750d74da5,Team Turquality,TT,2016,Winter,oe:player:58c78f4fb9672c10bfc01f315bb1a30,kazze,bot,,,,,,,,,,,,,,
+player,oe:team:c33c60aabef5b74d45d8c5750d74da5,Team Turquality,TT,2016,Winter,oe:player:66e43040a8d68df2b0558fe365e1729,Un1tback,sup,,,,,,,,,,,,,,
+lineup,oe:team:c33c60aabef5b74d45d8c5750d74da5,Team Turquality,TT,2016,Winter,,,,lineup-e344e6b7df58ba12,TT-01,1,1,oe:player:b3dae530a02238b0628518ef886e505,oe:player:42f0c6bffdf96e7806498e6d2c5fb55,oe:player:2573f304560955b77060a088f94b11a,oe:player:58c78f4fb9672c10bfc01f315bb1a30,oe:player:66e43040a8d68df2b0558fe365e1729,Sw0rd,Reach,LongB,kazze,Un1tback
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2016,Winter,oe:player:7c752bff9cb38f08618fe71cdf47075,Panky,top,,,,,,,,,,,,,,
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2016,Winter,oe:player:a1c29350caec76079a899ea2def764d,Astarte,jng,,,,,,,,,,,,,,
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2016,Winter,oe:player:94baa913865a729ffe25df1d9473624,LEYL-Ü NEHAR,mid,,,,,,,,,,,,,,
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2016,Winter,oe:player:4c7ab66383de9b1ba06b7841682d547,Madness,bot,,,,,,,,,,,,,,
+player,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2016,Winter,oe:player:e301d4839154bbf266d3362c898a3e4,Cognac,sup,,,,,,,,,,,,,,
+lineup,oe:team:976f493ffced42aa45f10ce70339c46,ÇİLEKLER,ÇİL,2016,Winter,,,,lineup-5389ce8d099eaf0d,ÇİL-01,1,1,oe:player:7c752bff9cb38f08618fe71cdf47075,oe:player:a1c29350caec76079a899ea2def764d,oe:player:94baa913865a729ffe25df1d9473624,oe:player:4c7ab66383de9b1ba06b7841682d547,oe:player:e301d4839154bbf266d3362c898a3e4,Panky,Astarte,LEYL-Ü NEHAR,Madness,Cognac

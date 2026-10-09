@@ -1,0 +1,65 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:2c5866dddf12420590b19eb49ffb082,Crew e-Sports Club,CEC,2016,Unknown,oe:player:d643ea22dc6fe5b0009d1dd5b2ca9aa,Darlik,top,,,,,,,,,,,,,,
+player,oe:team:2c5866dddf12420590b19eb49ffb082,Crew e-Sports Club,CEC,2016,Unknown,oe:player:422d7cc4063f8801a9427860bfd855b,Satorius,top,,,,,,,,,,,,,,
+player,oe:team:2c5866dddf12420590b19eb49ffb082,Crew e-Sports Club,CEC,2016,Unknown,oe:player:454695b3785c861280f88296cd359e0,Clongwen,jng,,,,,,,,,,,,,,
+player,oe:team:2c5866dddf12420590b19eb49ffb082,Crew e-Sports Club,CEC,2016,Unknown,oe:player:50ce2da63bea6a618e7578fa5069004,React,mid,,,,,,,,,,,,,,
+player,oe:team:2c5866dddf12420590b19eb49ffb082,Crew e-Sports Club,CEC,2016,Unknown,oe:player:d129eb71d537fdbb2cd4c52703f51f4,HolyPhoenix,bot,,,,,,,,,,,,,,
+player,oe:team:2c5866dddf12420590b19eb49ffb082,Crew e-Sports Club,CEC,2016,Unknown,oe:player:67499a2d057b1c7d139db3c621e63a5,masterwork,sup,,,,,,,,,,,,,,
+lineup,oe:team:2c5866dddf12420590b19eb49ffb082,Crew e-Sports Club,CEC,2016,Unknown,,,,lineup-3c7609ff7de63e8b,CEC-01,1,5,oe:player:d643ea22dc6fe5b0009d1dd5b2ca9aa,oe:player:454695b3785c861280f88296cd359e0,oe:player:50ce2da63bea6a618e7578fa5069004,oe:player:d129eb71d537fdbb2cd4c52703f51f4,oe:player:67499a2d057b1c7d139db3c621e63a5,Darlik,Clongwen,React,HolyPhoenix,masterwork
+lineup,oe:team:2c5866dddf12420590b19eb49ffb082,Crew e-Sports Club,CEC,2016,Unknown,,,,lineup-edf0f0939c621785,CEC-02,2,2,oe:player:422d7cc4063f8801a9427860bfd855b,oe:player:454695b3785c861280f88296cd359e0,oe:player:50ce2da63bea6a618e7578fa5069004,oe:player:d129eb71d537fdbb2cd4c52703f51f4,oe:player:67499a2d057b1c7d139db3c621e63a5,Satorius,Clongwen,React,HolyPhoenix,masterwork
+player,oe:team:82e9f79d33605efd892beced7a35440,Imperial Esports,IE,2016,Unknown,oe:player:8d6442ebdbe1b80a7080cd3d3535e53,Silphi,top,,,,,,,,,,,,,,
+player,oe:team:82e9f79d33605efd892beced7a35440,Imperial Esports,IE,2016,Unknown,oe:player:4b453f6bfc22f3d73412ce9478d3da3,Kadir,jng,,,,,,,,,,,,,,
+player,oe:team:82e9f79d33605efd892beced7a35440,Imperial Esports,IE,2016,Unknown,oe:player:854a1dbef4c00aebd09ab890ba7bc68,Ravenno,mid,,,,,,,,,,,,,,
+player,oe:team:82e9f79d33605efd892beced7a35440,Imperial Esports,IE,2016,Unknown,oe:player:cec8c0268b725079114cc792653648c,S4mpe,bot,,,,,,,,,,,,,,
+player,oe:team:82e9f79d33605efd892beced7a35440,Imperial Esports,IE,2016,Unknown,oe:player:1d7c8357d59a4b2cb59814dffff7787,Shoami,sup,,,,,,,,,,,,,,
+lineup,oe:team:82e9f79d33605efd892beced7a35440,Imperial Esports,IE,2016,Unknown,,,,lineup-abb69276067b5595,IE-01,1,2,oe:player:8d6442ebdbe1b80a7080cd3d3535e53,oe:player:4b453f6bfc22f3d73412ce9478d3da3,oe:player:854a1dbef4c00aebd09ab890ba7bc68,oe:player:cec8c0268b725079114cc792653648c,oe:player:1d7c8357d59a4b2cb59814dffff7787,Silphi,Kadir,Ravenno,S4mpe,Shoami
+player,oe:team:b867a40fb93da6e032034f570785949,SuperMassive TNG,ST,2016,Summer,oe:player:f5ea6213c328518f2840a59bf48acec,Kektz,top,,,,,,,,,,,,,,
+player,oe:team:b867a40fb93da6e032034f570785949,SuperMassive TNG,ST,2016,Summer,oe:player:3abd71f80f2049f65dc4444a9df0cce,Appen,jng,,,,,,,,,,,,,,
+player,oe:team:b867a40fb93da6e032034f570785949,SuperMassive TNG,ST,2016,Summer,oe:player:5801cdd376f4163689b7ff72c618fae,Crossman,mid,,,,,,,,,,,,,,
+player,oe:team:b867a40fb93da6e032034f570785949,SuperMassive TNG,ST,2016,Summer,oe:player:1ae36f8dab72157bd28127054e3fc81,HeaQ,bot,,,,,,,,,,,,,,
+player,oe:team:b867a40fb93da6e032034f570785949,SuperMassive TNG,ST,2016,Summer,oe:player:998f22fe69ebb2147766db7cc683f31,Purple,sup,,,,,,,,,,,,,,
+lineup,oe:team:b867a40fb93da6e032034f570785949,SuperMassive TNG,ST,2016,Summer,,,,lineup-109147aa5655ef0f,ST-01,1,5,oe:player:f5ea6213c328518f2840a59bf48acec,oe:player:3abd71f80f2049f65dc4444a9df0cce,oe:player:5801cdd376f4163689b7ff72c618fae,oe:player:1ae36f8dab72157bd28127054e3fc81,oe:player:998f22fe69ebb2147766db7cc683f31,Kektz,Appen,Crossman,HeaQ,Purple
+player,oe:team:8b83746d117ad44d17b689eab7cbc0e,Team Cappadocia,TC,2016,Summer,oe:player:6bc5f8935eebe3fdc6fe73e8c61764f,Splendor,top,,,,,,,,,,,,,,
+player,oe:team:8b83746d117ad44d17b689eab7cbc0e,Team Cappadocia,TC,2016,Summer,oe:player:36607221f848a15f6a1f11961027d7c,TynX,jng,,,,,,,,,,,,,,
+player,oe:team:8b83746d117ad44d17b689eab7cbc0e,Team Cappadocia,TC,2016,Summer,oe:player:cdddfed27e16e58aae04d90662bb0b8,Ripi,mid,,,,,,,,,,,,,,
+player,oe:team:8b83746d117ad44d17b689eab7cbc0e,Team Cappadocia,TC,2016,Summer,oe:player:e7d00d56203e02c55441b9eb867f772,NLEBigiBang,bot,,,,,,,,,,,,,,
+player,oe:team:8b83746d117ad44d17b689eab7cbc0e,Team Cappadocia,TC,2016,Summer,oe:player:e07b14e9896fc57cf87bbf9f2e991dd,Mr 0g0,sup,,,,,,,,,,,,,,
+lineup,oe:team:8b83746d117ad44d17b689eab7cbc0e,Team Cappadocia,TC,2016,Summer,,,,lineup-b04421932865e7d7,TC-01,1,1,oe:player:6bc5f8935eebe3fdc6fe73e8c61764f,oe:player:36607221f848a15f6a1f11961027d7c,oe:player:cdddfed27e16e58aae04d90662bb0b8,oe:player:e7d00d56203e02c55441b9eb867f772,oe:player:e07b14e9896fc57cf87bbf9f2e991dd,Splendor,TynX,Ripi,NLEBigiBang,Mr 0g0
+player,oe:team:fcfe169f63d7580c18c9c55bffe478c,Team Orora,TO,2016,Summer,oe:player:8c29150a35520726e52c049db9c53d3,Brolia,top,,,,,,,,,,,,,,
+player,oe:team:fcfe169f63d7580c18c9c55bffe478c,Team Orora,TO,2016,Summer,oe:player:27132e82e5e8af0e412e6272d8ac570,Nerroh,jng,,,,,,,,,,,,,,
+player,oe:team:fcfe169f63d7580c18c9c55bffe478c,Team Orora,TO,2016,Summer,oe:player:7adc518d589f32912c06de8dae7848e,Nisqy,mid,,,,,,,,,,,,,,
+player,oe:team:fcfe169f63d7580c18c9c55bffe478c,Team Orora,TO,2016,Summer,oe:player:911871aa4d9017d7bcbcdbf9c472557,j1mmy,bot,,,,,,,,,,,,,,
+player,oe:team:fcfe169f63d7580c18c9c55bffe478c,Team Orora,TO,2016,Summer,oe:player:348f28a6f47fe8de09e65d8787ec94a,Kirdos,sup,,,,,,,,,,,,,,
+lineup,oe:team:fcfe169f63d7580c18c9c55bffe478c,Team Orora,TO,2016,Summer,,,,lineup-f96b7f9bbac69d40,TO-01,1,8,oe:player:8c29150a35520726e52c049db9c53d3,oe:player:27132e82e5e8af0e412e6272d8ac570,oe:player:7adc518d589f32912c06de8dae7848e,oe:player:911871aa4d9017d7bcbcdbf9c472557,oe:player:348f28a6f47fe8de09e65d8787ec94a,Brolia,Nerroh,Nisqy,j1mmy,Kirdos
+player,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,oe:player:84bff3a326833c7c9181c698f676878,BrokenBlade,top,,,,,,,,,,,,,,
+player,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,oe:player:f3c0ff4acee8f5b9aa2165d00d789e5,Matilda,top,,,,,,,,,,,,,,
+player,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,oe:player:189e693bc6ff316d346a55fb304da0f,Kanani,jng,,,,,,,,,,,,,,
+player,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,oe:player:d92b0904aa4f08f128aa8c6d2775056,Mojito,jng,,,,,,,,,,,,,,
+player,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,oe:player:da87886941820cfc2eee112d0143e90,Abbedagge,mid,,,,,,,,,,,,,,
+player,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,oe:player:fbced201ed9c0e35008d88cd92397dd,Bolulu,mid,,,,,,,,,,,,,,
+player,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,oe:player:5cc28f31113ec7cd7e546b836ccae2b,Energy,mid,,,,,,,,,,,,,,
+player,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,oe:player:3d6c9ac08ada31c184094bbc67afe00,Mean,bot,,,,,,,,,,,,,,
+player,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,oe:player:bfe05de147bc426f177aa035c248192,Ritix,bot,,,,,,,,,,,,,,
+player,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,oe:player:b68ac3562df2f57cfbf365df2b8aee3,Madagger,sup,,,,,,,,,,,,,,
+player,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,oe:player:15db3ef5409ae3e28a62956e451939f,Vexu,sup,,,,,,,,,,,,,,
+lineup,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,,,,lineup-f44e5a6d1788fce8,VA-01,1,3,oe:player:f3c0ff4acee8f5b9aa2165d00d789e5,oe:player:d92b0904aa4f08f128aa8c6d2775056,oe:player:fbced201ed9c0e35008d88cd92397dd,oe:player:bfe05de147bc426f177aa035c248192,oe:player:15db3ef5409ae3e28a62956e451939f,Matilda,Mojito,Bolulu,Ritix,Vexu
+lineup,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,,,,lineup-909c8bbc599b9069,VA-02,2,2,oe:player:84bff3a326833c7c9181c698f676878,oe:player:189e693bc6ff316d346a55fb304da0f,oe:player:da87886941820cfc2eee112d0143e90,oe:player:3d6c9ac08ada31c184094bbc67afe00,oe:player:15db3ef5409ae3e28a62956e451939f,BrokenBlade,Kanani,Abbedagge,Mean,Vexu
+lineup,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,,,,lineup-b959fe9708a4f9c4,VA-03,3,2,oe:player:84bff3a326833c7c9181c698f676878,oe:player:189e693bc6ff316d346a55fb304da0f,oe:player:da87886941820cfc2eee112d0143e90,oe:player:3d6c9ac08ada31c184094bbc67afe00,oe:player:b68ac3562df2f57cfbf365df2b8aee3,BrokenBlade,Kanani,Abbedagge,Mean,Madagger
+lineup,oe:team:fe4037291be174edbe8b85a271f54f5,Victorious Ace,VA,2016,Summer,,,,lineup-c36c3ad6ae11b50a,VA-04,4,1,oe:player:84bff3a326833c7c9181c698f676878,oe:player:189e693bc6ff316d346a55fb304da0f,oe:player:5cc28f31113ec7cd7e546b836ccae2b,oe:player:3d6c9ac08ada31c184094bbc67afe00,oe:player:b68ac3562df2f57cfbf365df2b8aee3,BrokenBlade,Kanani,Energy,Mean,Madagger
+player,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,oe:player:8c29150a35520726e52c049db9c53d3,Brolia,top,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,oe:player:c96f08769340eec7fdf7ee5c193a81a,Orome,top,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,oe:player:ffdcd2a3d817929aee8d3a69f82f210,âprox,top,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,oe:player:721d73bba22b724a5526d6240463c68,Decagon Moon,jng,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,oe:player:8a1c30199bac9efaa2161b14565595c,KonDziSan,jng,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,oe:player:f4e5484adfac6cea59e3d0acf7a766a,berbero,jng,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,oe:player:47c86196323656af29a8842dca4fc8e,Rau,mid,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,oe:player:b8c5bfbff49a0f1459f1c15d824fde7,Sebekx,mid,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,oe:player:a80cd24bb5d26934adffb39e135dc55,Vrow,mid,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,oe:player:3d6c9ac08ada31c184094bbc67afe00,Mean,bot,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,name-player-d72bd85e71031dbd,unknown player,bot,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,oe:player:03f78345e4181384977f21872ca866c,Absolute,sup,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,oe:player:06efe152a554665e02b8dc4f620bf3f,Anthrax,sup,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,oe:player:71f5302abea604062e810161d7922b8,Japone,sup,,,,,,,,,,,,,,
+lineup,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,,,,lineup-95411d0e0cb97699,UT-01,1,3,oe:player:ffdcd2a3d817929aee8d3a69f82f210,oe:player:8a1c30199bac9efaa2161b14565595c,oe:player:b8c5bfbff49a0f1459f1c15d824fde7,name-player-d72bd85e71031dbd,oe:player:71f5302abea604062e810161d7922b8,âprox,KonDziSan,Sebekx,unknown player,Japone
+lineup,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,,,,lineup-ac78afb494d09f78,UT-02,2,2,oe:player:c96f08769340eec7fdf7ee5c193a81a,oe:player:f4e5484adfac6cea59e3d0acf7a766a,oe:player:a80cd24bb5d26934adffb39e135dc55,name-player-d72bd85e71031dbd,oe:player:03f78345e4181384977f21872ca866c,Orome,berbero,Vrow,unknown player,Absolute
+lineup,name-team-bbf4d270ed871a83,unknown team,UT,2016,Summer,,,,lineup-f6a111dafd3cdd99,UT-03,3,2,oe:player:8c29150a35520726e52c049db9c53d3,oe:player:721d73bba22b724a5526d6240463c68,oe:player:47c86196323656af29a8842dca4fc8e,oe:player:3d6c9ac08ada31c184094bbc67afe00,oe:player:06efe152a554665e02b8dc4f620bf3f,Brolia,Decagon Moon,Rau,Mean,Anthrax
