@@ -165,19 +165,50 @@ export function renderSiteHeader(target, routeName, { leagues = [], datasets = [
           h('img', { class: 'site-header__brand-mark', src: BRAND_MARK.href, width: 24, height: 24, alt: '', 'aria-hidden': 'true' }),
           h('span', {}, [t('app.name')]),
         ]),
-        menu,
       ]),
     ]),
     nav,
     h('div', { class: 'site-header__status' }, [
-      createLeagueSelect({ leagues, datasets, selection, onLeagueChange }),
-      createSeasonSelect({ seasons, selection, onSeasonChange }),
-      createLanguageSelect({ onLanguageChange }),
-      createStatusChip({ label: DATASET_MODE, variant: 'mock' }),
-      h('span', { class: 'dataset-coverage' }, [t('dataset.coverage', {
-        start: selection?.date_start?.slice(0, 10) ?? '—',
-        end: selection?.date_end?.slice(0, 10) ?? '—',
-      })]),
+      h('div', { class: 'site-header__controls' }, [
+        createLeagueSelect({ leagues, datasets, selection, onLeagueChange }),
+        createSeasonSelect({ seasons, selection, onSeasonChange }),
+        createLanguageSelect({ onLanguageChange }),
+        createStatusChip({ label: DATASET_MODE, variant: 'mock' }),
+      ]),
     ]),
+    menu,
   );
+  watchSiteHeader(target);
+  fitSiteHeader(target, true);
+}
+
+const COMPACT_HEADER = '(max-width: 1279px)';
+
+function headerOverflows(target) {
+  return target.scrollWidth > target.clientWidth + 1;
+}
+
+function fitSiteHeader(target, force = false) {
+  const width = target.clientWidth;
+  if (!force && target._fitWidth === width) return;
+  target._fitWidth = width;
+  const compact = window.matchMedia(COMPACT_HEADER).matches;
+  target.classList.toggle('is-fit', compact);
+  if (!compact) {
+    target.classList.remove('is-nav-collapsed', 'is-status-wrapped');
+    return;
+  }
+  target.classList.remove('is-nav-collapsed', 'is-status-wrapped');
+  if (headerOverflows(target)) target.classList.add('is-nav-collapsed');
+  if (headerOverflows(target)) target.classList.add('is-status-wrapped');
+  if (!target.classList.contains('is-nav-collapsed')) target.classList.remove('is-nav-open');
+}
+
+function watchSiteHeader(target) {
+  if (target._fitWatch) return;
+  target._fitWatch = true;
+  const query = window.matchMedia(COMPACT_HEADER);
+  query.addEventListener('change', () => fitSiteHeader(target, true));
+  window.addEventListener('resize', () => fitSiteHeader(target));
+  document.fonts?.ready?.then(() => fitSiteHeader(target, true));
 }

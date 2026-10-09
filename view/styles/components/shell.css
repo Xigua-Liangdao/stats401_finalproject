@@ -145,7 +145,7 @@
   z-index: 8;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-end;
   justify-content: space-between;
   gap: 0.75rem 1.4rem;
   min-height: var(--header-h);
@@ -186,6 +186,162 @@
 
 .site-header__menu {
   display: none;
+}
+
+.site-header.is-fit {
+  flex-wrap: nowrap;
+  gap: 0.45rem 0.75rem;
+}
+
+.site-header.is-fit .site-header__brand {
+  flex: 0 0 auto;
+  order: 1;
+  min-width: max-content;
+}
+
+.site-header.is-fit .coord,
+.site-header.is-fit .site-header__brand-name {
+  white-space: nowrap;
+}
+
+.site-header.is-fit .site-header__status {
+  order: 3;
+  flex: 0 0 auto;
+  width: max-content;
+  max-width: none;
+  margin-left: auto;
+}
+
+.site-header.is-fit .site-header__controls {
+  flex-wrap: nowrap;
+}
+
+.site-header.is-fit .site-nav {
+  order: 2;
+  flex: 0 0 auto;
+  margin-left: 0;
+}
+
+.site-header.is-fit.is-nav-collapsed .site-header__status {
+  order: 2;
+  margin-left: 0;
+}
+
+.site-header.is-fit.is-nav-collapsed {
+  flex-wrap: nowrap;
+}
+
+.site-header.is-fit.is-nav-collapsed .site-nav {
+  display: none;
+}
+
+.site-header.is-fit.is-nav-collapsed .site-header__menu {
+  display: inline-flex;
+  order: 3;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-left: auto;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.site-header.is-fit.is-nav-collapsed .site-header__menu:hover,
+.site-header.is-fit.is-nav-collapsed .site-header__menu[aria-expanded='true'] {
+  color: var(--text);
+}
+
+.site-header.is-fit.is-nav-collapsed .site-header__menu-bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 1.05rem;
+}
+
+.site-header.is-fit.is-nav-collapsed .site-header__menu-bars span {
+  display: block;
+  height: 1.5px;
+  background: currentColor;
+  transform-origin: center;
+  transition: transform 160ms ease, opacity 160ms ease;
+}
+
+.site-header.is-fit.is-nav-collapsed.is-nav-open .site-header__menu-bars span:nth-child(1) {
+  transform: translateY(6.5px) rotate(45deg);
+}
+
+.site-header.is-fit.is-nav-collapsed.is-nav-open .site-header__menu-bars span:nth-child(2) {
+  opacity: 0;
+}
+
+.site-header.is-fit.is-nav-collapsed.is-nav-open .site-header__menu-bars span:nth-child(3) {
+  transform: translateY(-6.5px) rotate(-45deg);
+}
+
+.site-header.is-fit.is-nav-collapsed.is-nav-open {
+  flex-wrap: wrap;
+}
+
+.site-header.is-fit.is-nav-collapsed.is-nav-open .site-nav {
+  display: flex;
+  flex: 1 0 100%;
+  flex-direction: column;
+  order: 4;
+  width: 100%;
+  min-width: 0;
+  margin: 0;
+  padding-top: 0.2rem;
+  border-top: 1px solid var(--line);
+}
+
+.site-header.is-fit.is-nav-collapsed.is-nav-open .site-nav a,
+.site-header.is-fit.is-nav-collapsed.is-nav-open .site-nav a:hover,
+.site-header.is-fit.is-nav-collapsed.is-nav-open .site-nav a.is-active {
+  clip-path: none;
+  border-color: transparent;
+  border-radius: 0;
+  background: transparent;
+  min-height: 2.4rem;
+  padding: 0.35rem 0.15rem;
+}
+
+.site-header.is-fit.is-status-wrapped {
+  flex-wrap: wrap;
+}
+
+.site-header.is-fit.is-status-wrapped .site-header__brand {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.site-header.is-fit.is-status-wrapped .site-header__brand-name,
+.site-header.is-fit.is-status-wrapped .coord {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.site-header.is-fit.is-status-wrapped .site-header__menu {
+  order: 2;
+}
+
+.site-header.is-fit.is-status-wrapped .site-header__status {
+  order: 3;
+  flex: 1 1 100%;
+  width: auto;
+  max-width: 100%;
+  align-items: stretch;
+}
+
+.site-header.is-fit.is-status-wrapped .site-header__controls {
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
 }
 
 .site-nav {
@@ -265,9 +421,9 @@
 
 .site-header__status {
   display: flex;
-  align-items: center;
-  gap: 0.55rem;
-  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.28rem;
   margin-left: auto;
   font-family: var(--font-mono);
   font-size: 0.68rem;
@@ -276,10 +432,17 @@
   color: var(--dim);
 }
 
+.site-header__controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
 .league-select { max-width: 13rem; }
 .season-select { max-width: 10rem; }
 .dataset-notice { margin: 1rem var(--page-pad, 1.5rem); }
-.dataset-coverage { flex-basis: 100%; font-size: 0.58rem; letter-spacing: 0.03em; }
 
 .status-chip {
   display: inline-flex;

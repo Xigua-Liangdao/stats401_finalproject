@@ -110,39 +110,16 @@
     overflow-wrap: anywhere;
   }
 
-  .site-header__brand,
-  .site-header__status {
-    flex: 1 1 100%;
-    min-width: 0;
-  }
-
-  .site-header__status {
-    margin-left: 0;
-  }
-
-  .site-header__brand {
-    gap: 0;
-  }
-
-  .site-header__status {
+  .site-header.is-fit.is-status-wrapped .site-header__controls {
     display: grid;
     grid-template-columns: minmax(0, 1fr) minmax(4rem, auto) minmax(5rem, auto);
     gap: 0.35rem 0.55rem;
   }
 
-  .site-header__status .league-select,
-  .site-header__status .season-select,
-  .site-header__status .language-select {
+  .site-header.is-fit.is-status-wrapped .league-select,
+  .site-header.is-fit.is-status-wrapped .season-select,
+  .site-header.is-fit.is-status-wrapped .language-select {
     width: 100%;
-  }
-
-  .site-header__status .status-chip {
-    justify-self: start;
-  }
-
-  .site-header__status .dataset-coverage {
-    grid-column: 1 / -1;
-    overflow-wrap: anywhere;
   }
 
   .league-select,
@@ -156,94 +133,13 @@
     max-width: 100%;
   }
 
-  .site-header__title-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 0.75rem;
-    width: 100%;
+  .site-header.is-fit.is-status-wrapped .site-header__brand-name {
     min-width: 0;
   }
 
-  .site-header__brand-name {
-    min-width: 0;
-    overflow-wrap: anywhere;
-  }
-
-  .site-header__menu {
-    display: inline-flex;
-    flex: 0 0 auto;
-    align-items: center;
-    justify-content: center;
+  .site-header.is-fit.is-nav-collapsed .site-header__menu {
     width: 44px;
     height: 44px;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    color: var(--muted);
-    cursor: pointer;
-  }
-
-  .site-header__menu:hover,
-  .site-header__menu[aria-expanded='true'] {
-    color: var(--text);
-  }
-
-  .site-header__menu-bars {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 5px;
-    width: 1.15rem;
-  }
-
-  .site-header__menu-bars span {
-    display: block;
-    height: 1.5px;
-    background: currentColor;
-    transform-origin: center;
-    transition: transform 160ms ease, opacity 160ms ease;
-  }
-
-  .site-header.is-nav-open .site-header__menu-bars span:nth-child(1) {
-    transform: translateY(6.5px) rotate(45deg);
-  }
-
-  .site-header.is-nav-open .site-header__menu-bars span:nth-child(2) {
-    opacity: 0;
-  }
-
-  .site-header.is-nav-open .site-header__menu-bars span:nth-child(3) {
-    transform: translateY(-6.5px) rotate(-45deg);
-  }
-
-  .site-nav {
-    display: none;
-    flex: 1 1 100%;
-    flex-direction: column;
-    gap: 0;
-    order: 3;
-    width: 100%;
-    min-width: 0;
-    margin: 0;
-    padding-top: 0.2rem;
-    border-top: 1px solid var(--line);
-  }
-
-  .site-header.is-nav-open .site-nav {
-    display: flex;
-  }
-
-  .site-nav a,
-  .site-nav a:hover,
-  .site-nav a.is-active {
-    clip-path: none;
-    border-color: transparent;
-    border-radius: 0;
-    background: transparent;
-    min-height: 44px;
-    padding: 0.4rem 0.15rem;
   }
 
   .home,
@@ -284,7 +180,7 @@
     flex-wrap: wrap;
   }
 
-  .site-header.is-nav-open .site-nav a {
+  .site-header.is-fit.is-nav-collapsed.is-nav-open .site-nav a {
     animation: site-nav-in 160ms ease;
   }
 }
@@ -301,8 +197,8 @@
 }
 
 @media (max-width: 640px) and (prefers-reduced-motion: reduce) {
-  .site-header__menu-bars span,
-  .site-header.is-nav-open .site-nav a {
+  .site-header.is-fit.is-nav-collapsed .site-header__menu-bars span,
+  .site-header.is-fit.is-nav-collapsed.is-nav-open .site-nav a {
     animation: none;
     transition: none;
   }
