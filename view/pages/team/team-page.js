@@ -8,6 +8,7 @@ import { renderTeamStages, renderTeamStats } from '../../features/team/team-stat
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
 import { backAction, href, readCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
+import { routeTargetId } from '../../utils/track.js';
 import { renderNotFound } from '../not-found.js';
 
 export async function renderTeamPage(target, id) {
@@ -47,6 +48,11 @@ export async function renderTeamPage(target, id) {
           createButton({
             label: back.label,
             href: back.href,
+            track: {
+              event_name: 'click',
+              target_type: 'nav_link',
+              target_id: routeTargetId(back.href),
+            },
           }),
         ],
       }),

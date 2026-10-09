@@ -4,6 +4,7 @@ import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
 import { groupMatches } from '../../utils/search-text.js';
+import { trackUi } from '../../utils/track.js';
 
 export const CATALOGUE_PAGE_SIZE = {
   players: 100,
@@ -13,7 +14,14 @@ export const CATALOGUE_PAGE_SIZE = {
 export function createTeamBlockHeader(team, meta) {
   return h('header', { class: 'team-block__header' }, [
     createTeamLogo(team),
-    h('a', { href: href.team(team.id) }, [
+    h('a', {
+      href: href.team(team.id),
+      onClick: () => trackUi({
+        event_name: 'click',
+        target_type: 'team_link',
+        target_id: team.id,
+      }),
+    }, [
       h('div', { class: 'coord' }, [t('common.organization')]),
       h('h2', { class: 'team-block__name' }, [team.name]),
     ]),
@@ -125,6 +133,13 @@ export function createTeamGroupedCatalogue({
     }));
   }
 
+  input.addEventListener('focus', () => {
+    trackUi({
+      event_name: 'search_open',
+      target_type: 'team_search',
+      target_id: variant,
+    });
+  });
   input.addEventListener('input', () => {
     query = input.value;
     filteredPage = 1;

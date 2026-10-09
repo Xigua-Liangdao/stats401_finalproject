@@ -10,6 +10,7 @@ import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-dra
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
 import { backAction, href, readCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
+import { routeTargetId, trackUi } from '../../utils/track.js';
 import { renderNotFound } from '../not-found.js';
 
 async function openPlayerPairImpact(player) {
@@ -54,11 +55,23 @@ export async function renderPlayerPage(target, id, teamId, season) {
           createButton({
             label: back.label,
             href: back.href,
+            track: {
+              event_name: 'click',
+              target_type: 'nav_link',
+              target_id: routeTargetId(back.href),
+            },
           }),
           createButton({
             label: t('player.pairImpact'),
             variant: 'accent',
-            onClick: () => openPlayerPairImpact(player),
+            onClick: () => {
+              trackUi({
+                event_name: 'click',
+                target_type: 'pair_impact_button',
+                target_id: player.id,
+              });
+              openPlayerPairImpact(player);
+            },
           }),
         ],
       }),

@@ -1,5 +1,6 @@
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
+import { trackUi } from '../../utils/track.js';
 import { PLAYER_CHART_CATEGORIES, findCategory } from './player-chart-config.js';
 import { mountPlayerRadar, createRadarAxes, createRadarScaleNote } from './player-radar-chart.js?v=scale-zoom';
 import { mountPlayerTimeline } from './player-timeline-chart.js';
@@ -35,6 +36,12 @@ function createMetricPicks(metrics, selectedIds, onChange) {
               } else {
                 selectedIds.add(metric.id);
               }
+              trackUi({
+                event_name: 'filter_change',
+                target_type: 'metric_filter',
+                target_id: `player-timeline|${metric.id}`,
+                metadata: { from: on ? 'on' : 'off', to: on ? 'off' : 'on' },
+              });
               render();
               onChange([...selectedIds]);
             },
@@ -157,7 +164,17 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
     if (predictedInput.checked) radarChart.setPredicted(true);
 
     categorySelect.addEventListener('change', () => {
-      category = findCategory(categorySelect.value);
+      const from = category.id;
+      const to = categorySelect.value;
+      category = findCategory(to);
+      if (from !== to) {
+        trackUi({
+          event_name: 'filter_change',
+          target_type: 'chart_category',
+          target_id: 'player-timeline',
+          metadata: { from, to },
+        });
+      }
       selectedIds.clear();
       const defaults = category.id === 'dpm' ? category.metrics : [category.metrics[0]];
       for (const metric of defaults) selectedIds.add(metric.id);
@@ -165,10 +182,24 @@ export function renderPlayerVisualizations({ player, games, players = [] }) {
       timelineChart.update(selectedFields(category, selectedIds));
     });
     baselineInput.addEventListener('change', (event) => {
-      radarChart.setBaseline(event.target.checked);
+      const to = event.target.checked;
+      trackUi({
+        event_name: 'filter_change',
+        target_type: 'baseline_toggle',
+        target_id: 'player-radar|baseline',
+        metadata: { from: !to, to },
+      });
+      radarChart.setBaseline(to);
     });
     predictedInput.addEventListener('change', (event) => {
-      radarChart.setPredicted(event.target.checked);
+      const to = event.target.checked;
+      trackUi({
+        event_name: 'filter_change',
+        target_type: 'predicted_toggle',
+        target_id: 'player-radar|predicted',
+        metadata: { from: !to, to },
+      });
+      radarChart.setPredicted(to);
     });
   });
 

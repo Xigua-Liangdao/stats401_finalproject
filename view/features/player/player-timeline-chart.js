@@ -2,6 +2,7 @@ import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatCompactDate, formatDate, parseGameDate } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
+import { createTooltipWatch, trackUi } from '../../utils/track.js';
 import { colorForSeries, formatChartValue, SERIES_META, yTickFormat } from './player-chart-config.js';
 
 function sortByDate(games) {
@@ -162,6 +163,7 @@ export function mountPlayerTimeline(stage, { games }) {
     brushSvg.node(),
   ]);
   const tooltip = h('div', { class: 'chart-tooltip', hidden: true });
+  const tooltipWatch = createTooltipWatch('player-timeline');
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
   plotHost.append(svg.node(), tooltip);
   stage.append(plotHost, dock);
@@ -171,12 +173,14 @@ export function mountPlayerTimeline(stage, { games }) {
   let to = lastIndex;
   let userBrushing = false;
   let movingBrush = false;
+  let brushGesture = null;
   let brushWidth = 0;
   let xIndex = null;
   let plotMetrics = null;
   let panning = false;
   let panStartX = 0;
   let lastPanX = 0;
+  let panOrigin = null;
   const svgNode = svg.node();
 
   svgNode.addEventListener('pointerdown', (event) => {
@@ -189,6 +193,7 @@ export function mountPlayerTimeline(stage, { games }) {
     panning = true;
     panStartX = event.clientX;
     lastPanX = event.clientX;
+    panOrigin = { mode: 'drag', from, to };
     hideTip();
     svgNode.setPointerCapture(event.pointerId);
     stage.classList.add('is-panning');
@@ -209,13 +214,17 @@ export function mountPlayerTimeline(stage, { games }) {
   function endPan() {
     if (!panning) return;
     panning = false;
+    panOrigin = null;
     stage.classList.remove('is-panning');
   }
   svgNode.addEventListener('pointerup', (event) => {
     if (!panning) return;
     const moved = Math.abs(event.clientX - panStartX) > 4;
+    const gesture = panOrigin;
     endPan();
-    if (moved) hideTip();
+    if (!moved) return;
+    hideTip();
+    trackAxis(gesture);
   });
   svgNode.addEventListener('pointercancel', endPan);
 
@@ -228,10 +237,12 @@ export function mountPlayerTimeline(stage, { games }) {
 
   function hideTip() {
     tooltip.hidden = true;
+    tooltipWatch.hide();
   }
 
   function showTip(event, point, field) {
     if (panning) return;
+    tooltipWatch.show(`${point.game?.id ?? point.index}|${field}`);
     tooltip.innerHTML = tooltipLines(point.game, field, point.value)
       .map((line) => `<div>${line}</div>`)
       .join('');
@@ -279,14 +290,39 @@ export function mountPlayerTimeline(stage, { games }) {
     brushSvg.attr('aria-valuenow', visibleEnd());
   }
 
+  function trackAxis(gesture) {
+    if (!gesture || (gesture.from === from && gesture.to === to)) return;
+    const targetType = gesture.mode === 'drag'
+      ? 'axis_move'
+      : gesture.mode === 'handle' ? 'axis_resize' : null;
+    if (!targetType) return;
+    const metadata = {
+      from: { start: gesture.from, end: gesture.to },
+      to: { start: from, end: to },
+    };
+    if (targetType === 'axis_resize') {
+      const startMoved = gesture.from !== from;
+      const endMoved = gesture.to !== to;
+      metadata.edge = startMoved && endMoved ? 'both' : startMoved ? 'start' : 'end';
+    }
+    trackUi({
+      event_name: 'filter_change',
+      target_type: targetType,
+      target_id: 'player-timeline',
+      metadata,
+    });
+  }
+
   function onBrush(event) {
     if (movingBrush || !event.sourceEvent) return;
     if (event.type === 'start') {
       userBrushing = true;
+      brushGesture = { mode: event.mode, from, to };
       return;
     }
     if (!userBrushing || !event.selection || !xIndex) {
       userBrushing = false;
+      brushGesture = null;
       syncBrush();
       return;
     }
@@ -300,8 +336,11 @@ export function mountPlayerTimeline(stage, { games }) {
     drawChart();
     syncControls();
     if (event.type === 'end') {
+      const gesture = brushGesture;
+      brushGesture = null;
       userBrushing = false;
       syncBrush();
+      trackAxis(gesture);
     }
   }
 

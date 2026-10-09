@@ -1,6 +1,16 @@
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
 
+function reportPage(targetType, id) {
+  import('../../utils/track.js')
+    .then(({ trackUi }) => trackUi({
+      event_name: 'click',
+      target_type: targetType,
+      target_id: id,
+    }))
+    .catch((error) => console.error('[Analytics] trackEvent failed:', error));
+}
+
 export const GAME_PAGE_SIZE = 10;
 const PAGER_RADIUS = 2;
 
@@ -21,7 +31,7 @@ export function pageMarks(page, pageCount, radius = PAGER_RADIUS) {
   return marks;
 }
 
-export function fillPager(pager, { page, pageCount, onPage }) {
+export function fillPager(pager, { page, pageCount, onPage, targetType = 'catalogue_pager' }) {
   if (pageCount <= 1) {
     pager.replaceChildren();
     pager.hidden = true;
@@ -48,6 +58,7 @@ export function fillPager(pager, { page, pageCount, onPage }) {
       if (!Number.isInteger(next)) return;
       const target = Math.min(pageCount, Math.max(1, next));
       if (target === page) return;
+      reportPage(targetType, target);
       onPage(target);
     };
     jump.addEventListener('keydown', (event) => {
@@ -75,6 +86,7 @@ export function fillPager(pager, { page, pageCount, onPage }) {
         'aria-current': mark === page ? 'page' : undefined,
         onClick: () => {
           if (mark === page) return;
+          reportPage(targetType, mark);
           onPage(mark);
         },
       }, [String(mark)]);
@@ -109,6 +121,7 @@ export function createPagedList({
     fillPager(pager, {
       page,
       pageCount,
+      targetType: 'catalogue_pager',
       onPage: (number) => {
         page = number;
         onPageChange?.(page);

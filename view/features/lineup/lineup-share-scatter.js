@@ -4,6 +4,7 @@ import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatDate, formatPercent, formatRole } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
+import { createTooltipWatch, trackUi } from '../../utils/track.js';
 import { createGameMark } from './lineup-range-dock.js';
 import { mixValue, roleValue } from './lineup-playback.js';
 
@@ -85,10 +86,17 @@ export function createLineupShareScatterPanel({ games = [], playback }) {
         formatRole(role),
       ]);
       input.addEventListener('change', () => {
-        if (input.checked) visibleRoles.add(role);
+        const to = input.checked;
+        if (to) visibleRoles.add(role);
         else visibleRoles.delete(role);
-        label.classList.toggle('is-on', input.checked);
+        label.classList.toggle('is-on', to);
         chart?.setVisibleRoles();
+        trackUi({
+          event_name: 'filter_change',
+          target_type: 'role_filter',
+          target_id: `lineup-share-scatter|${role}`,
+          metadata: { from: !to, to },
+        });
       });
       return label;
     }),
@@ -122,9 +130,18 @@ export function createLineupShareScatterPanel({ games = [], playback }) {
 
   queueMicrotask(() => {
     chart = mountLineupShareScatter(stage, { games, playback, onSpanChange: syncZoom, visibleRoles });
-    zoomInBtn.addEventListener('click', () => chart.zoomIn());
-    zoomOutBtn.addEventListener('click', () => chart.zoomOut());
-    resetBtn.addEventListener('click', () => chart.resetZoom());
+    zoomInBtn.addEventListener('click', () => {
+      trackUi({ event_name: 'click', target_type: 'chart_zoom', target_id: 'lineup-share-scatter|in' });
+      chart.zoomIn();
+    });
+    zoomOutBtn.addEventListener('click', () => {
+      trackUi({ event_name: 'click', target_type: 'chart_zoom', target_id: 'lineup-share-scatter|out' });
+      chart.zoomOut();
+    });
+    resetBtn.addEventListener('click', () => {
+      trackUi({ event_name: 'click', target_type: 'chart_zoom', target_id: 'lineup-share-scatter|reset' });
+      chart.resetZoom();
+    });
   });
 
   return node;
@@ -153,6 +170,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
   let panning = false;
   let panStartX = 0;
   let lastPanX = 0;
+  let panOrigin = null;
   let suppressClick = false;
   let frameState = null;
   let paintKey = '';
@@ -163,6 +181,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
   const tooltip = document.createElement('div');
   tooltip.className = 'chart-tooltip';
   tooltip.hidden = true;
+  const tooltipWatch = createTooltipWatch('lineup-share-scatter');
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
   svg.append('title').text(t('lineup.oneGame'));
   plotHost.append(svg.node(), tooltip);
@@ -176,6 +195,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
     panning = true;
     panStartX = event.clientX;
     lastPanX = event.clientX;
+    panOrigin = { start: xStart, end: xStart + windowWidth() };
     hideTip();
     svgNode.setPointerCapture(event.pointerId);
     stage.classList.add('is-panning');
@@ -191,17 +211,30 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
   svgNode.addEventListener('pointerup', (event) => {
     if (!panning) return;
     const moved = Math.abs(event.clientX - panStartX) > 4;
+    const origin = panOrigin;
     panning = false;
+    panOrigin = null;
     stage.classList.remove('is-panning');
-    if (moved) {
-      suppressClick = true;
-      setTimeout(() => {
-        suppressClick = false;
-      }, 0);
-    }
+    if (!moved || !origin) return;
+    suppressClick = true;
+    setTimeout(() => {
+      suppressClick = false;
+    }, 0);
+    const end = xStart + windowWidth();
+    if (origin.start === xStart && origin.end === end) return;
+    trackUi({
+      event_name: 'filter_change',
+      target_type: 'axis_move',
+      target_id: 'lineup-share-scatter',
+      metadata: {
+        from: { start: origin.start, end: origin.end },
+        to: { start: xStart, end },
+      },
+    });
   });
   svgNode.addEventListener('pointercancel', () => {
     panning = false;
+    panOrigin = null;
     stage.classList.remove('is-panning');
   });
 
@@ -229,6 +262,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
 
   function hideTip() {
     tooltip.hidden = true;
+    tooltipWatch.hide();
   }
 
   function currentGame() {
@@ -240,6 +274,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
     const game = currentGame();
     const slot = game?.roles?.[role];
     if (!game || !slot) return;
+    tooltipWatch.show(`${game.id}|${role}`);
     const opponent = game.opponent?.name ?? game.opponent?.short;
     tooltip.innerHTML = [
       `<div>${slot.name ?? slot.id} · ${formatRole(role)}</div>`,
@@ -463,6 +498,7 @@ export function mountLineupShareScatter(stage, { games = [], playback, onSpanCha
       .attr('role', 'button')
       .attr('aria-label', (point) => `${point.name ?? point.role}, ${formatRole(point.role)}, ${formatDate(point.game.date)}`)
       .on('mousemove', (event, point) => {
+        tooltipWatch.show(`${point.game.id}|${point.role}`);
         layer.selectAll('.share-dot').classed('is-linked', (item) => item.game.id === point.game.id);
         const opponent = point.game.opponent?.name ?? point.game.opponent?.short;
         tooltip.innerHTML = [

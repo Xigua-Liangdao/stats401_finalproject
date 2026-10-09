@@ -7,6 +7,12 @@ import { href } from '../../utils/navigation.js';
 import { getSelectedDataset } from '../../utils/season.js';
 import { RANKING_ROLES, RANKING_MIN_GAMES, RANKING_MIN_DAYS, rankPlayersByRole, rankTeamsByDamage } from './home-ranking.js';
 
+function reportUi(event) {
+  import('../../utils/track.js')
+    .then(({ trackUi }) => trackUi(event))
+    .catch((error) => console.error('[Analytics] trackEvent failed:', error));
+}
+
 const TOP_TEAM_COUNT = 6;
 
 function countEligible(items) {
@@ -81,7 +87,15 @@ function createChampion(team) {
     h('div', { class: 'home-champion__kicker coord' }, [t('home.champion')]),
     h('p', { class: 'home-champion__meta' }, [t('home.championMissing')]),
   ]);
-  return h('a', { class: 'home-champion panel', href: href.team(team.id) }, [
+  return h('a', {
+    class: 'home-champion panel',
+    href: href.team(team.id),
+    onClick: () => reportUi({
+      event_name: 'click',
+      target_type: 'champion_panel',
+      target_id: team.id,
+    }),
+  }, [
     h('div', { class: 'home-champion__kicker coord' }, [t('home.champion')]),
     createTeamLogo(team),
     h('div', { class: 'home-champion__name display' }, [team.name]),
@@ -108,12 +122,17 @@ function playerFacts(player) {
 function createPlayerLeaderCard(player) {
   const playerHref = href.player(player.id, player.teamId, player.season);
   const teamName = player.team?.name;
+  const trackPlayer = () => reportUi({
+    event_name: 'click',
+    target_type: 'player_card',
+    target_id: player.id,
+  });
   return h('article', { class: 'home-player__card' }, [
-    h('a', { class: 'home-player__photo', href: playerHref }, [
+    h('a', { class: 'home-player__photo', href: playerHref, onClick: trackPlayer }, [
       createPlayerPortrait(player),
     ]),
     h('div', { class: 'home-player__copy' }, [
-      h('a', { class: 'home-player__name display', href: playerHref }, [player.name]),
+      h('a', { class: 'home-player__name display', href: playerHref, onClick: trackPlayer }, [player.name]),
       h('p', { class: 'home-player__team' }, [
         [teamName, formatRole(player.role)].filter(Boolean).join(' · '),
       ]),
@@ -131,6 +150,7 @@ export function createRoleLeaders(players) {
   const select = h('select', { class: 'chart-select', 'aria-label': t('home.rankingRole') },
     RANKING_ROLES.map((key) => h('option', { value: key }, [formatRole(key)])));
   select.value = role;
+  let shownRole = role;
   function update() {
     const leader = rankings.get(select.value)?.[0];
     content.replaceChildren(leader ? createPlayerLeaderCard(leader)
@@ -138,7 +158,19 @@ export function createRoleLeaders(players) {
         role: formatRole(select.value), games: RANKING_MIN_GAMES, days: RANKING_MIN_DAYS,
       })]));
   }
-  select.addEventListener('change', update);
+  select.addEventListener('change', () => {
+    const next = select.value;
+    if (next !== shownRole) {
+      reportUi({
+        event_name: 'filter_change',
+        target_type: 'ranking_role',
+        target_id: next,
+        metadata: { from: shownRole, to: next },
+      });
+      shownRole = next;
+    }
+    update();
+  });
   update();
   return h('section', { class: 'home-player' }, [
     h('div', { class: 'home-teams__head' }, [
@@ -153,7 +185,15 @@ export function createRoleLeaders(players) {
 }
 
 function createTeamCard(team, index) {
-  return h('a', { class: 'home-team', href: href.team(team.id) }, [
+  return h('a', {
+    class: 'home-team',
+    href: href.team(team.id),
+    onClick: () => reportUi({
+      event_name: 'click',
+      target_type: 'team_card',
+      target_id: team.id,
+    }),
+  }, [
     h('span', { class: 'home-team__rank' }, [String(index + 1).padStart(2, '0')]),
     createTeamLogo(team),
     h('span', { class: 'home-team__name' }, [team.name]),
@@ -168,6 +208,9 @@ function createTeamCard(team, index) {
 }
 
 export async function renderHomePage(target) {
+  import('../../../analytics/index.js')
+    .then(({ initAnalytics }) => initAnalytics())
+    .catch((error) => console.error('[Analytics] init failed:', error));
   const catalog = await dataSource.loadCatalog();
   const dataset = catalog.dataset ?? getSelectedDataset();
   const season = dataset?.year ?? catalog.season;
@@ -212,7 +255,15 @@ export async function renderHomePage(target) {
           ? h('div', { class: 'home-teams__row' }, ranked.slice(0, TOP_TEAM_COUNT).map(createTeamCard))
           : h('p', { class: 'empty-state' }, [t('home.noTeamRanking')]),
         h('p', { class: 'home-overview__note' }, [t('home.rankingInterpretation')]),
-        h('a', { class: 'home-more', href: href.players }, [t('nav.seeMore')]),
+        h('a', {
+          class: 'home-more',
+          href: href.players,
+          onClick: () => reportUi({
+            event_name: 'click',
+            target_type: 'see_more',
+            target_id: 'catalogue',
+          }),
+        }, [t('nav.seeMore')]),
       ]),
     ]),
   );

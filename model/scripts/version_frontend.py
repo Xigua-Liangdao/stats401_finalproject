@@ -15,6 +15,10 @@ START = "    <!-- BEGIN GENERATED MODULE VERSIONS -->"
 END = "    <!-- END GENERATED MODULE VERSIONS -->"
 IMPORT = re.compile(r'''\b(?:from\s*|import\s*\(?\s*)['"](\.[^'"\n]+\.js(?:\?[^'"\n]*)?)['"]''')
 LANG = ROOT / "data" / "lang"
+ANALYTICS = ROOT / "analytics"
+# Official browser ESM build for supabase-js v2. Not a local file, so it is
+# pinned on the v2 line rather than the content-hash release.
+SUPABASE_JS = "https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2/+esm"
 
 
 def language_binding(stem, used):
@@ -99,10 +103,11 @@ def sync_language_index(check, root=ROOT):
 
 
 def frontend_modules(root=ROOT):
-    view, lang = root / "view", root / "data/lang"
+    view, lang, analytics = root / "view", root / "data/lang", root / "analytics"
     view_modules = [path for path in view.rglob("*.js") if "tests" not in path.relative_to(view).parts]
     lang_modules = list(lang.rglob("*.js")) if lang.is_dir() else []
-    return sorted(view_modules + lang_modules)
+    analytics_modules = list(analytics.rglob("*.js")) if analytics.is_dir() else []
+    return sorted(view_modules + lang_modules + analytics_modules)
 
 
 def map_key(path, root=ROOT):
@@ -129,12 +134,14 @@ def build_html(root=ROOT):
         for specifier in IMPORT.findall(path.read_text()):
             parsed = urlsplit(specifier)
             target = (path.parent / parsed.path).resolve()
-            if not target.is_file() or not (target.is_relative_to(view) or target.is_relative_to(lang)):
+            allowed = target.is_relative_to(view) or target.is_relative_to(lang) or target.is_relative_to(root / "analytics")
+            if not target.is_file() or not allowed:
                 raise ValueError(f"Unresolved local import in {path.relative_to(root)}: {specifier}")
             # Existing ?v=scale-zoom / ?v=catalogue-back aliases must converge on
             # the same URL, including stateful modules such as assets.js.
             alias = map_key(target, root) + (f"?{parsed.query}" if parsed.query else "")
             imports[alias] = f"{map_key(target, root)}?v={version}"
+    imports["@supabase/supabase-js"] = SUPABASE_JS
     block = "\n".join([START, '    <script type="importmap">',
                         json.dumps({"imports": dict(sorted(imports.items()))}, indent=2),
                         "    </script>", END])

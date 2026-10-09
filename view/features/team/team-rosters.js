@@ -1,6 +1,7 @@
 import { createRosterSlot, createMiniSlot } from '../../components/catalogue/roster-slot.js';
 import { createSectionBlock } from '../../components/layout/section-block.js';
 import { href } from '../../utils/navigation.js';
+import { trackUi } from '../../utils/track.js';
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
 
@@ -30,7 +31,15 @@ export function renderTeamLineups(lineups) {
           'div',
           { class: 'team-block__items', style: { padding: 0 } },
           lineups.map((lineup) =>
-            h('a', { class: 'lineup-strip', href: href.lineup(lineup.id) }, [
+            h('a', {
+              class: 'lineup-strip',
+              href: href.lineup(lineup.id),
+              onClick: () => trackUi({
+                event_name: 'click',
+                target_type: 'lineup_card',
+                target_id: lineup.id,
+              }),
+            }, [
               h('div', { class: 'lineup-strip__top' }, [
                 h('div', { class: 'lineup-strip__name' }, [lineup.name]),
                 h('div', { class: 'coord' }, [lineup.context]),

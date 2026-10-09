@@ -2,6 +2,7 @@ import { DATASET_MODE } from '../../utils/constants.js';
 import { h } from '../../utils/dom.js';
 import { currentLanguage, languageChoices, t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
+import { routeTargetId, trackUi } from '../../utils/track.js';
 import { createStatusChip } from '../layout/status-chip.js';
 
 const BRAND_MARK = new URL('../../../data/img/site/favicon.svg', import.meta.url);
@@ -17,7 +18,21 @@ function createSeasonSelect({ seasons = [], selection, onSeasonChange }) {
   return h('select', {
     class: 'season-select',
     'aria-label': t('nav.season'),
-    onchange: (event) => onSeasonChange?.(event.target.value),
+    onchange: (event) => {
+      const next = event.target.value;
+      if (String(next) !== String(selection?.year ?? '')) {
+        trackUi({
+          event_name: 'filter_change',
+          target_type: 'season_filter',
+          metadata: {
+            league: selection?.league ?? '',
+            from: selection?.year == null ? '' : String(selection.year),
+            to: String(next),
+          },
+        });
+      }
+      onSeasonChange?.(next);
+    },
   }, seasons.map((entry) => h('option', {
     value: String(entry.year),
     selected: String(entry.year) === String(selection?.year),
@@ -30,7 +45,18 @@ function createLeagueSelect({ leagues = [], datasets = [], selection, onLeagueCh
   return h('select', {
     class: 'league-select',
     'aria-label': t('nav.league'),
-    onchange: (event) => onLeagueChange?.(event.target.value),
+    onchange: (event) => {
+      const next = event.target.value;
+      if (next !== selection?.league) {
+        trackUi({
+          event_name: 'filter_change',
+          target_type: 'league_filter',
+          target_id: next,
+          metadata: { from: selection?.league ?? '', to: next },
+        });
+      }
+      onLeagueChange?.(next);
+    },
   }, leagues.map((league) => h('option', {
     value: league,
     selected: league === selection?.league,
@@ -43,7 +69,18 @@ function createLanguageSelect({ onLanguageChange }) {
   return h('select', {
     class: 'language-select',
     'aria-label': t('nav.language'),
-    onchange: (event) => onLanguageChange?.(event.target.value),
+    onchange: (event) => {
+      const next = event.target.value;
+      if (next !== current) {
+        trackUi({
+          event_name: 'click',
+          target_type: 'language_select',
+          target_id: next,
+          metadata: { from: current, to: next },
+        });
+      }
+      onLanguageChange?.(next);
+    },
   }, languageChoices().map((choice) => h('option', {
     value: choice.id,
     selected: choice.id === current,
@@ -61,6 +98,11 @@ export function renderSiteHeader(target, routeName, { leagues = [], datasets = [
         {
           href: link.href,
           class: link.names.includes(routeName) ? 'is-active' : '',
+          onClick: () => trackUi({
+            event_name: 'click',
+            target_type: 'nav_link',
+            target_id: routeTargetId(link.href),
+          }),
         },
         [t(link.key)],
       ),
@@ -87,7 +129,13 @@ export function renderSiteHeader(target, routeName, { leagues = [], datasets = [
   }
 
   menu.addEventListener('click', () => {
-    setMenuOpen(!target.classList.contains('is-nav-open'));
+    const open = !target.classList.contains('is-nav-open');
+    setMenuOpen(open);
+    trackUi({
+      event_name: 'click',
+      target_type: 'nav_menu',
+      target_id: open ? 'open' : 'close',
+    });
   });
   nav.addEventListener('click', (event) => {
     if (event.target.closest('a')) setMenuOpen(false);
@@ -104,7 +152,16 @@ export function renderSiteHeader(target, routeName, { leagues = [], datasets = [
     h('div', { class: 'site-header__brand' }, [
       h('span', { class: 'coord' }, [t('app.kicker', { league: selection?.league, year: selection?.year })]),
       h('div', { class: 'site-header__title-row' }, [
-        h('a', { class: 'site-header__brand-name', href: href.home, 'aria-label': t('app.title') }, [
+        h('a', {
+          class: 'site-header__brand-name',
+          href: href.home,
+          'aria-label': t('app.title'),
+          onClick: () => trackUi({
+            event_name: 'click',
+            target_type: 'nav_link',
+            target_id: 'home',
+          }),
+        }, [
           h('img', { class: 'site-header__brand-mark', src: BRAND_MARK.href, width: 24, height: 24, alt: '', 'aria-hidden': 'true' }),
           h('span', {}, [t('app.name')]),
         ]),

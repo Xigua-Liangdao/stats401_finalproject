@@ -4,6 +4,7 @@ import { h } from '../../utils/dom.js';
 import { formatRole } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
 import { entityNameParts, matchesQuery } from '../../utils/search-text.js';
+import { trackUi } from '../../utils/track.js';
 import { createLineupComparison, createPlayerComparison } from './comparison-result.js';
 
 function teamMark(team) {
@@ -17,7 +18,7 @@ function teamMark(team) {
   return img;
 }
 
-function createSearchSelect({ label, placeholder, options, onChange }) {
+function createSearchSelect({ label, placeholder, options, onChange, side }) {
   let open = false;
   let query = '';
   let value = '';
@@ -72,6 +73,12 @@ function createSearchSelect({ label, placeholder, options, onChange }) {
           h('span', {}, [option.label]),
         ]);
         item.addEventListener('click', () => {
+          trackUi({
+            event_name: 'click',
+            target_type: 'team_selector',
+            target_id: option.id,
+            metadata: { side },
+          });
           value = option.id;
           close();
           onChange?.(value);
@@ -93,6 +100,11 @@ function createSearchSelect({ label, placeholder, options, onChange }) {
 
   function openMenu() {
     open = true;
+    trackUi({
+      event_name: 'search_open',
+      target_type: 'team_search',
+      target_id: side,
+    });
     menu.hidden = false;
     paintTrigger();
     paintList();
@@ -264,6 +276,7 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     label: t('common.team'),
     placeholder: t('compare.selectTeam'),
     options: teamOptions,
+    side: 'left',
     onChange: (teamId) => {
       leftTeamId = teamId;
       leftId = '';
@@ -274,6 +287,7 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     label: t('common.team'),
     placeholder: t('compare.selectTeam'),
     options: teamOptions,
+    side: 'right',
     onChange: (teamId) => {
       rightTeamId = teamId;
       rightId = '';
@@ -284,6 +298,11 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
   function setMode(next) {
     const resolved = next === 'lineup' ? 'lineup' : 'player';
     if (resolved === mode) return;
+    trackUi({
+      event_name: 'click',
+      target_type: 'comparison_mode',
+      target_id: resolved,
+    });
     mode = resolved;
     leftId = '';
     rightId = '';
@@ -298,11 +317,31 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
   playerButton.addEventListener('click', () => setMode('player'));
   lineupButton.addEventListener('click', () => setMode('lineup'));
   leftSubject.select.addEventListener('change', () => {
-    leftId = leftSubject.select.value;
+    const from = leftId;
+    const to = leftSubject.select.value;
+    leftId = to;
+    if (to !== from) {
+      trackUi({
+        event_name: 'click',
+        target_type: mode === 'lineup' ? 'lineup_selector' : 'player_selector',
+        target_id: to,
+        metadata: { side: 'left', from, to },
+      });
+    }
     refresh('left');
   });
   rightSubject.select.addEventListener('change', () => {
-    rightId = rightSubject.select.value;
+    const from = rightId;
+    const to = rightSubject.select.value;
+    rightId = to;
+    if (to !== from) {
+      trackUi({
+        event_name: 'click',
+        target_type: mode === 'lineup' ? 'lineup_selector' : 'player_selector',
+        target_id: to,
+        metadata: { side: 'right', from, to },
+      });
+    }
     refresh('right');
   });
   contentSelect.addEventListener('change', paint);

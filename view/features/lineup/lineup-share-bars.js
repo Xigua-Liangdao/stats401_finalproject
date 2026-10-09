@@ -4,6 +4,7 @@ import { h } from '../../utils/dom.js';
 import { formatCompactDate, formatPercent, formatRole } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
 import { href } from '../../utils/navigation.js';
+import { createTooltipWatch, trackUi } from '../../utils/track.js';
 import { createGameMark } from './lineup-range-dock.js';
 import { mixValue, roleValue } from './lineup-playback.js';
 
@@ -73,6 +74,7 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback } 
   const tooltip = document.createElement('div');
   tooltip.className = 'chart-tooltip';
   tooltip.hidden = true;
+  const tooltipWatch = createTooltipWatch('lineup-share-bars');
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
   svg.append('title').text(t('lineup.sameGame'));
   stage.append(frameLabel, svg.node(), tooltip);
@@ -88,6 +90,7 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback } 
 
   function hideTip() {
     tooltip.hidden = true;
+    tooltipWatch.hide();
   }
 
   function shownValue(row, field) {
@@ -109,6 +112,9 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback } 
 
   function showTip(event, row) {
     const game = frameState?.games?.[frameState.landed ?? frameState.index];
+    const subject = row.player?.id || row.role;
+    const shownGame = frameState?.mode === 'dynamic' && game ? game.id : 'range';
+    tooltipWatch.show(`${subject}|${shownGame}`);
     const count = frameState ? frameState.to - frameState.from + 1 : 0;
     tooltip.innerHTML = [
       `<div>${row.name} · ${formatRole(row.role)}</div>`,
@@ -123,9 +129,14 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback } 
     tooltip.style.top = `${Math.max(8, event.clientY - bounds.top - 12)}px`;
   }
 
-  function openPlayer(row) {
+  function openPlayer(row, series) {
     const player = row.player;
     if (!player) return;
+    trackUi({
+      event_name: 'click',
+      target_type: 'share_bar',
+      target_id: `${player.id}|${series?.id || row.role}`,
+    });
     window.location.hash = href.player(player.id, player.teamId, player.season);
   }
 
@@ -220,11 +231,11 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback } 
       .on('mouseleave', hideTip)
       .on('focus', (event, item) => showTip(event, item.row))
       .on('blur', hideTip)
-      .on('click', (_, item) => openPlayer(item.row))
+      .on('click', (_, item) => openPlayer(item.row, item.series))
       .on('keydown', (event, item) => {
         if (event.key === 'Enter' || event.key === ' ') {
           event.preventDefault();
-          openPlayer(item.row);
+          openPlayer(item.row, item.series);
         }
       });
     marks.selectAll('.chart-bar-count')

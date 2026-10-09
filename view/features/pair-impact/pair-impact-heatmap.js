@@ -3,6 +3,7 @@ import { h } from '../../utils/dom.js';
 import { formatCount, formatImpact, formatPercent, formatRole } from '../../utils/formatting.js';
 import { PLACEHOLDER } from '../../utils/constants.js';
 import { t } from '../../utils/i18n.js';
+import { createTooltipWatch } from '../../utils/track.js';
 import { createEligibilityNotice } from '../../components/layout/eligibility-notice.js';
 
 function playerLabel(player) {
@@ -119,6 +120,7 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
   stage.replaceChildren();
 
   const { players, cells, limit } = heatmap;
+  const tooltipWatch = createTooltipWatch('pair-impact');
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
   svg.append('title').text(t('heat.svg'));
   stage.append(svg.node());
@@ -176,6 +178,7 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
 
   function clearHover() {
     hovered = null;
+    tooltipWatch.hide();
     syncDetail();
     applyActive();
     publish();
@@ -273,7 +276,11 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
           kind: kindCopy(cell.kind),
         }),
       )
-      .on('mouseenter', (_, cell) => selectCell(cell))
+      .on('mouseenter', (_, cell) => {
+        selectCell(cell);
+        const ids = [players[cell.row]?.id, players[cell.col]?.id].filter(Boolean).sort();
+        tooltipWatch.show(ids.join('|'));
+      })
       .on('mouseleave', (event) => {
         if (event.relatedTarget && stage.contains(event.relatedTarget)) return;
         clearHover();

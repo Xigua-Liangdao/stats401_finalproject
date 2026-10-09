@@ -528,9 +528,6 @@ return {
     const games = rows
       .filter((row) => row.player_id === playerId)
       .map((row) => enrichGame(mapPlayerGame(row), catalog));
-    if (!games.length) {
-      console.info('[data] no player games', { playerId, file: 'player_games.csv' });
-    }
     return games;
   },
 
@@ -539,9 +536,6 @@ return {
     const games = rows
       .filter((row) => row.team_id === teamId)
       .map((row) => enrichGame(mapPlayerGame(row), catalog));
-    if (!games.length) {
-      console.info('[data] no team player games', { teamId, file: 'player_games.csv' });
-    }
     return games;
   },
 
@@ -565,9 +559,6 @@ return {
         const side = sides.get(`${row.game_id}|${row.lineup_id}`) ?? null;
         return enrichGame(mapLineupGame(row, other?.team_id ?? null, side), catalog);
       });
-    if (!games.length) {
-      console.info('[data] no lineup games', { lineupId, file: 'lineup_games.csv' });
-    }
     return games;
   },
 };

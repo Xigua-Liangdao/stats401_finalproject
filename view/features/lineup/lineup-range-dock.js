@@ -3,6 +3,7 @@ import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatCompactDate, formatResult } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
+import { trackUi } from '../../utils/track.js';
 import { roleValue } from './lineup-playback.js';
 
 function sideKey(side) {
@@ -84,6 +85,7 @@ export function createLineupRangeDock({ playback }) {
   let frameState = null;
   let userBrushing = false;
   let movingBrush = false;
+  let brushGesture = null;
   let brushWidth = 0;
   let xIndex = null;
   const brush = d3.brushX().on('start brush end', onBrush);
@@ -135,14 +137,45 @@ export function createLineupRangeDock({ playback }) {
     syncPlayhead();
   }
 
+  function trackAxis(gesture) {
+    const nextFrom = frameState?.from ?? 0;
+    const nextTo = frameState?.to ?? lastIndex;
+    if (!gesture || (gesture.from === nextFrom && gesture.to === nextTo)) return;
+    const targetType = gesture.mode === 'drag'
+      ? 'axis_move'
+      : gesture.mode === 'handle' ? 'axis_resize' : null;
+    if (!targetType) return;
+    const metadata = {
+      from: { start: gesture.from, end: gesture.to },
+      to: { start: nextFrom, end: nextTo },
+    };
+    if (targetType === 'axis_resize') {
+      const startMoved = gesture.from !== nextFrom;
+      const endMoved = gesture.to !== nextTo;
+      metadata.edge = startMoved && endMoved ? 'both' : startMoved ? 'start' : 'end';
+    }
+    trackUi({
+      event_name: 'filter_change',
+      target_type: targetType,
+      target_id: 'lineup-range',
+      metadata,
+    });
+  }
+
   function onBrush(event) {
     if (movingBrush || !event.sourceEvent || !playback) return;
     if (event.type === 'start') {
       userBrushing = true;
+      brushGesture = {
+        mode: event.mode,
+        from: frameState?.from ?? 0,
+        to: frameState?.to ?? lastIndex,
+      };
       return;
     }
     if (!userBrushing || !event.selection || !xIndex) {
       userBrushing = false;
+      brushGesture = null;
       syncBrush();
       return;
     }
@@ -153,8 +186,11 @@ export function createLineupRangeDock({ playback }) {
     );
     playback.setRange(start, end);
     if (event.type === 'end') {
+      const gesture = brushGesture;
+      brushGesture = null;
       userBrushing = false;
       syncBrush();
+      trackAxis(gesture);
     }
   }
 
@@ -248,13 +284,42 @@ export function createLineupRangeDock({ playback }) {
   });
   observer.observe(node);
 
-  staticButton.addEventListener('click', () => playback?.setMode('static'));
-  dynamicButton.addEventListener('click', () => playback?.setMode('dynamic'));
-  playButton.addEventListener('click', () => playback?.play());
-  pauseButton.addEventListener('click', () => playback?.pause());
-  restartButton.addEventListener('click', () => playback?.restart());
-  prevButton.addEventListener('click', () => playback?.step(-1));
-  nextButton.addEventListener('click', () => playback?.step(1));
+  function trackPlayback(targetId) {
+    trackUi({
+      event_name: 'click',
+      target_type: 'playback_control',
+      target_id: `lineup-range|${targetId}`,
+    });
+  }
+
+  staticButton.addEventListener('click', () => {
+    if ((frameState?.mode ?? 'static') !== 'static') trackPlayback('static');
+    playback?.setMode('static');
+  });
+  dynamicButton.addEventListener('click', () => {
+    if (frameState?.mode !== 'dynamic') trackPlayback('dynamic');
+    playback?.setMode('dynamic');
+  });
+  playButton.addEventListener('click', () => {
+    trackPlayback('play');
+    playback?.play();
+  });
+  pauseButton.addEventListener('click', () => {
+    trackPlayback('pause');
+    playback?.pause();
+  });
+  restartButton.addEventListener('click', () => {
+    trackPlayback('restart');
+    playback?.restart();
+  });
+  prevButton.addEventListener('click', () => {
+    trackPlayback('previous');
+    playback?.step(-1);
+  });
+  nextButton.addEventListener('click', () => {
+    trackPlayback('next');
+    playback?.step(1);
+  });
 
   playback?.subscribe((state) => {
     const rangeChanged = !frameState || frameState.from !== state.from || frameState.to !== state.to;
