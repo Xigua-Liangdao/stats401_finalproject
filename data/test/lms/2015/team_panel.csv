@@ -1,0 +1,46 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2015,Spring,oe:player:e6a0ec03e2438e4b0d269f90a2d43e8,Steak,top,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2015,Spring,oe:player:f3322656ae1facbf4763677fe2506a3,Karsa,jng,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2015,Spring,oe:player:e3aa452243a476669824e52c1b7fc6b,Maple,mid,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2015,Spring,oe:player:796834e7a2839412d79dbc5f1327594,NL,bot,,,,,,,,,,,,,,
+player,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2015,Spring,oe:player:0908c66a5c361f682282599e75b334f,SwordArt,sup,,,,,,,,,,,,,,
+lineup,oe:team:7cd8dc1c987b84b99e3d246d1943c92,Flash Wolves,FW,2015,Spring,,,,lineup-bc16c5216bea4edc,FW-01,1,4,oe:player:e6a0ec03e2438e4b0d269f90a2d43e8,oe:player:f3322656ae1facbf4763677fe2506a3,oe:player:e3aa452243a476669824e52c1b7fc6b,oe:player:796834e7a2839412d79dbc5f1327594,oe:player:0908c66a5c361f682282599e75b334f,Steak,Karsa,Maple,NL,SwordArt
+player,oe:team:f6916bcaf8f0e2930832c306d5476a3,Hong Kong Esports,HKE,2015,Spring,oe:player:b34c7c6fbe78d3825bd9496c54e5eee,Stanley,top,,,,,,,,,,,,,,
+player,oe:team:f6916bcaf8f0e2930832c306d5476a3,Hong Kong Esports,HKE,2015,Spring,oe:player:e1ed110d0295ccf1fc8831d39d8236a,DinTer,jng,,,,,,,,,,,,,,
+player,oe:team:f6916bcaf8f0e2930832c306d5476a3,Hong Kong Esports,HKE,2015,Spring,oe:player:9d7317709f271e4eaefe727a269c734,Toyz,mid,,,,,,,,,,,,,,
+player,oe:team:f6916bcaf8f0e2930832c306d5476a3,Hong Kong Esports,HKE,2015,Spring,oe:player:94febb5b16671d3d345f1998ab6ceca,GodJJ,bot,,,,,,,,,,,,,,
+player,oe:team:f6916bcaf8f0e2930832c306d5476a3,Hong Kong Esports,HKE,2015,Spring,oe:player:9ce0043331f3999cc2ee205ab7c2d73,Olleh,sup,,,,,,,,,,,,,,
+lineup,oe:team:f6916bcaf8f0e2930832c306d5476a3,Hong Kong Esports,HKE,2015,Spring,,,,lineup-55b4d76f01291dba,HKE-01,1,3,oe:player:b34c7c6fbe78d3825bd9496c54e5eee,oe:player:e1ed110d0295ccf1fc8831d39d8236a,oe:player:9d7317709f271e4eaefe727a269c734,oe:player:94febb5b16671d3d345f1998ab6ceca,oe:player:9ce0043331f3999cc2ee205ab7c2d73,Stanley,DinTer,Toyz,GodJJ,Olleh
+player,oe:team:451c3e722d7502dddcb89644aaa9fa8,Logitech G Snipers,LGS,2015,Spring,oe:player:a85eda610b5022b847f5fdbfc76f622,CCB,top,,,,,,,,,,,,,,
+player,oe:team:451c3e722d7502dddcb89644aaa9fa8,Logitech G Snipers,LGS,2015,Spring,oe:player:d88ddce8e69dce8fa510b4b415b7ef6,Jcain,jng,,,,,,,,,,,,,,
+player,oe:team:451c3e722d7502dddcb89644aaa9fa8,Logitech G Snipers,LGS,2015,Spring,oe:player:e59e91c17b806ec83b9cbc1f02ba0d9,Ysera,mid,,,,,,,,,,,,,,
+player,oe:team:451c3e722d7502dddcb89644aaa9fa8,Logitech G Snipers,LGS,2015,Spring,oe:player:e6cdbdf8135f776cbc6f962f20056c7,3z,bot,,,,,,,,,,,,,,
+player,oe:team:451c3e722d7502dddcb89644aaa9fa8,Logitech G Snipers,LGS,2015,Spring,oe:player:a5f3c6a11b03839d46af9fb43c97c18,K,sup,,,,,,,,,,,,,,
+lineup,oe:team:451c3e722d7502dddcb89644aaa9fa8,Logitech G Snipers,LGS,2015,Spring,,,,lineup-9399e6da494d5650,LGS-01,1,1,oe:player:a85eda610b5022b847f5fdbfc76f622,oe:player:d88ddce8e69dce8fa510b4b415b7ef6,oe:player:e59e91c17b806ec83b9cbc1f02ba0d9,oe:player:e6cdbdf8135f776cbc6f962f20056c7,oe:player:a5f3c6a11b03839d46af9fb43c97c18,CCB,Jcain,Ysera,3z,K
+player,oe:team:23f2bd279251a0ee0f8c762ee3b0700,Machi Crew,MC,2015,Spring,oe:player:9c276da49ec7177b36f20506846e64d,HanShao,top,,,,,,,,,,,,,,
+player,oe:team:23f2bd279251a0ee0f8c762ee3b0700,Machi Crew,MC,2015,Spring,oe:player:2961c0cceffb900a2106f8dcc232519,HanJi,jng,,,,,,,,,,,,,,
+player,oe:team:23f2bd279251a0ee0f8c762ee3b0700,Machi Crew,MC,2015,Spring,oe:player:6b0ead7f8a6316873738570387ba740,LeeMid,mid,,,,,,,,,,,,,,
+player,oe:team:23f2bd279251a0ee0f8c762ee3b0700,Machi Crew,MC,2015,Spring,oe:player:e37012e3fa0cf975883af139e42899b,HoneyRain,bot,,,,,,,,,,,,,,
+player,oe:team:23f2bd279251a0ee0f8c762ee3b0700,Machi Crew,MC,2015,Spring,oe:player:08ff3497d795b3da96ce9f3944dc4e5,Melon,sup,,,,,,,,,,,,,,
+lineup,oe:team:23f2bd279251a0ee0f8c762ee3b0700,Machi Crew,MC,2015,Spring,,,,lineup-4d9d6e8066b5a265,MC-01,1,2,oe:player:9c276da49ec7177b36f20506846e64d,oe:player:2961c0cceffb900a2106f8dcc232519,oe:player:6b0ead7f8a6316873738570387ba740,oe:player:e37012e3fa0cf975883af139e42899b,oe:player:08ff3497d795b3da96ce9f3944dc4e5,HanShao,HanJi,LeeMid,HoneyRain,Melon
+player,oe:team:274c62a6d7e34e0e66e5f267a39d5f7,Machi Esports,ME,2015,Summer,oe:player:fcb1b0d0deb613c31391787d335e37a,BoBo,top,,,,,,,,,,,,,,
+player,oe:team:274c62a6d7e34e0e66e5f267a39d5f7,Machi Esports,ME,2015,Summer,oe:player:9bb8875f9d6491cc32951e5bf355db7,marilyn,jng,,,,,,,,,,,,,,
+player,oe:team:274c62a6d7e34e0e66e5f267a39d5f7,Machi Esports,ME,2015,Summer,oe:player:c31d9121946c66a4be31950f016b3a4,Grail,mid,,,,,,,,,,,,,,
+player,oe:team:274c62a6d7e34e0e66e5f267a39d5f7,Machi Esports,ME,2015,Summer,oe:player:580b3515241225a5ea419b08b8940e2,Dee,bot,,,,,,,,,,,,,,
+player,oe:team:274c62a6d7e34e0e66e5f267a39d5f7,Machi Esports,ME,2015,Summer,oe:player:b22e5326020f91cc525d187f7c416a3,Dreamer,sup,,,,,,,,,,,,,,
+lineup,oe:team:274c62a6d7e34e0e66e5f267a39d5f7,Machi Esports,ME,2015,Summer,,,,lineup-10fb25f9328a744c,ME-01,1,2,oe:player:fcb1b0d0deb613c31391787d335e37a,oe:player:9bb8875f9d6491cc32951e5bf355db7,oe:player:c31d9121946c66a4be31950f016b3a4,oe:player:580b3515241225a5ea419b08b8940e2,oe:player:b22e5326020f91cc525d187f7c416a3,BoBo,marilyn,Grail,Dee,Dreamer
+player,oe:team:cda8735d6cec0a3e7a2676682d66953,Taipei Assassins,TA,2015,Spring,oe:player:b311a3fe13ac9b0ee02985f4759a2e4,Morning,top,,,,,,,,,,,,,,
+player,oe:team:cda8735d6cec0a3e7a2676682d66953,Taipei Assassins,TA,2015,Spring,oe:player:b6122550944ba830ebc816eebc06760,Winds,jng,,,,,,,,,,,,,,
+player,oe:team:cda8735d6cec0a3e7a2676682d66953,Taipei Assassins,TA,2015,Spring,oe:player:bc8730f7e75924373fb335ad4f00b5e,Chawy,mid,,,,,,,,,,,,,,
+player,oe:team:cda8735d6cec0a3e7a2676682d66953,Taipei Assassins,TA,2015,Spring,oe:player:b1e10c40bba8608f1acfd3acdea43c2,GuGer,bot,,,,,,,,,,,,,,
+player,oe:team:cda8735d6cec0a3e7a2676682d66953,Taipei Assassins,TA,2015,Spring,oe:player:e0c3b0526a8b0ca8604e3bae81876ca,Chieh,sup,,,,,,,,,,,,,,
+lineup,oe:team:cda8735d6cec0a3e7a2676682d66953,Taipei Assassins,TA,2015,Spring,,,,lineup-150ecfa83b4e1389,TA-01,1,3,oe:player:b311a3fe13ac9b0ee02985f4759a2e4,oe:player:b6122550944ba830ebc816eebc06760,oe:player:bc8730f7e75924373fb335ad4f00b5e,oe:player:b1e10c40bba8608f1acfd3acdea43c2,oe:player:e0c3b0526a8b0ca8604e3bae81876ca,Morning,Winds,Chawy,GuGer,Chieh
+player,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Spring,oe:player:eaa7919421a94315db4b9a09902695c,Ziv,top,,,,,,,,,,,,,,
+player,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Spring,oe:player:2807decf1b7a6545e949e8715316c12,Albis,jng,,,,,,,,,,,,,,
+player,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Spring,oe:player:b1fae887c1a63cf24d7852eac268d5e,Mountain,jng,,,,,,,,,,,,,,
+player,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Spring,oe:player:162b96e90e71d9d3c768f451fb0ce59,Westdoor,mid,,,,,,,,,,,,,,
+player,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Spring,oe:player:978b697963cfc5abfced8a4b611977c,An,bot,,,,,,,,,,,,,,
+player,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Spring,oe:player:2807decf1b7a6545e949e8715316c12,Albis,sup,,,,,,,,,,,,,,
+player,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Spring,oe:player:6b35c415404d38ff8782e3532013d84,GreenTea,sup,,,,,,,,,,,,,,
+lineup,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Spring,,,,lineup-cae13fc43615e7e5,AEC-01,1,12,oe:player:eaa7919421a94315db4b9a09902695c,oe:player:b1fae887c1a63cf24d7852eac268d5e,oe:player:162b96e90e71d9d3c768f451fb0ce59,oe:player:978b697963cfc5abfced8a4b611977c,oe:player:2807decf1b7a6545e949e8715316c12,Ziv,Mountain,Westdoor,An,Albis
+lineup,oe:team:d15303823a1dccff9f3068fb357e356,ahq eSports Club,AEC,2015,Spring,,,,lineup-dc004b6708689007,AEC-02,2,1,oe:player:eaa7919421a94315db4b9a09902695c,oe:player:2807decf1b7a6545e949e8715316c12,oe:player:162b96e90e71d9d3c768f451fb0ce59,oe:player:978b697963cfc5abfced8a4b611977c,oe:player:6b35c415404d38ff8782e3532013d84,Ziv,Albis,Westdoor,An,GreenTea

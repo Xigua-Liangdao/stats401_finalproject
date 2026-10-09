@@ -1,0 +1,37 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:32c3055d495d91676e208b0c8997536,Incubus,INC,2023,Unknown,oe:player:dfeef0ad11329eb650c8146697b943e,JuanDeDios,top,,,,,,,,,,,,,,
+player,oe:team:32c3055d495d91676e208b0c8997536,Incubus,INC,2023,Unknown,oe:player:e48399fc3f73709f52da476693e76ac,Shall,jng,,,,,,,,,,,,,,
+player,oe:team:32c3055d495d91676e208b0c8997536,Incubus,INC,2023,Unknown,oe:player:fbbdc14045f1d9b78dd8fd4ca50306d,Piqueos,mid,,,,,,,,,,,,,,
+player,oe:team:32c3055d495d91676e208b0c8997536,Incubus,INC,2023,Unknown,oe:player:54861efdd06fc309e1c9a420feff98e,Scenario,bot,,,,,,,,,,,,,,
+player,oe:team:32c3055d495d91676e208b0c8997536,Incubus,INC,2023,Unknown,oe:player:1a78e472bae7d14a62db8e30ea6cfd9,Ceviche,sup,,,,,,,,,,,,,,
+lineup,oe:team:32c3055d495d91676e208b0c8997536,Incubus,INC,2023,Unknown,,,,lineup-fd22cbd989ed8558,INC-01,1,2,oe:player:dfeef0ad11329eb650c8146697b943e,oe:player:e48399fc3f73709f52da476693e76ac,oe:player:fbbdc14045f1d9b78dd8fd4ca50306d,oe:player:54861efdd06fc309e1c9a420feff98e,oe:player:1a78e472bae7d14a62db8e30ea6cfd9,JuanDeDios,Shall,Piqueos,Scenario,Ceviche
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2023,Opening,oe:player:277003aaa6126d09879b4ffe1bf18b3,pan,top,,,,,,,,,,,,,,
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2023,Opening,oe:player:74b6d082d7e7a7542e597f069dcc947,Seize,jng,,,,,,,,,,,,,,
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2023,Opening,oe:player:722c8846b5f0c756efb2affe467958a,Kaze,mid,,,,,,,,,,,,,,
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2023,Opening,oe:player:c92846465f8656d027f9148726b2b5c,Gavotto,bot,,,,,,,,,,,,,,
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2023,Opening,oe:player:1e48e6a94caf09f3d8275ffba847eea,Jelly,sup,,,,,,,,,,,,,,
+lineup,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2023,Opening,,,,lineup-222433edccce6ca9,ISU-01,1,8,oe:player:277003aaa6126d09879b4ffe1bf18b3,oe:player:74b6d082d7e7a7542e597f069dcc947,oe:player:722c8846b5f0c756efb2affe467958a,oe:player:c92846465f8656d027f9148726b2b5c,oe:player:1e48e6a94caf09f3d8275ffba847eea,pan,Seize,Kaze,Gavotto,Jelly
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2023,Opening,oe:player:aa07f9f46650db64bb09c743b4c561d,Bong,top,,,,,,,,,,,,,,
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2023,Opening,oe:player:de23ee5a66222e1e02da354414f2971,Oddie,jng,,,,,,,,,,,,,,
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2023,Opening,oe:player:5b86bafc34d79c84a8847d29b64ca29,Mireu,mid,,,,,,,,,,,,,,
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2023,Opening,oe:player:219d2d945cfbd391d0ade5e352a1bc5,ceo,bot,,,,,,,,,,,,,,
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2023,Opening,oe:player:a2d7b8856032bf106783621b9afeb41,Lyonz,sup,,,,,,,,,,,,,,
+lineup,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2023,Opening,,,,lineup-764354e0c426c709,MR-01,1,13,oe:player:aa07f9f46650db64bb09c743b4c561d,oe:player:de23ee5a66222e1e02da354414f2971,oe:player:5b86bafc34d79c84a8847d29b64ca29,oe:player:219d2d945cfbd391d0ade5e352a1bc5,oe:player:a2d7b8856032bf106783621b9afeb41,Bong,Oddie,Mireu,ceo,Lyonz
+player,oe:team:0a9aa50beea19fcbc6b939fe6b94f08,Team Aze,TA,2023,Opening,oe:player:47a2fd48766f50394a3110fd124de77,Parang,top,,,,,,,,,,,,,,
+player,oe:team:0a9aa50beea19fcbc6b939fe6b94f08,Team Aze,TA,2023,Opening,oe:player:6668aeb76ec30bf3ee3fd35f5f63e1a,Dimitry,jng,,,,,,,,,,,,,,
+player,oe:team:0a9aa50beea19fcbc6b939fe6b94f08,Team Aze,TA,2023,Opening,oe:player:b6c18d4d98745c100d8234a673b0c8a,Aloned,mid,,,,,,,,,,,,,,
+player,oe:team:0a9aa50beea19fcbc6b939fe6b94f08,Team Aze,TA,2023,Opening,oe:player:e24ee2487879116dcab772c0ac4fe34,Focus,bot,,,,,,,,,,,,,,
+player,oe:team:0a9aa50beea19fcbc6b939fe6b94f08,Team Aze,TA,2023,Opening,oe:player:4ff224901b37d52d1f1d85e6c702a39,IgnaVilu,sup,,,,,,,,,,,,,,
+lineup,oe:team:0a9aa50beea19fcbc6b939fe6b94f08,Team Aze,TA,2023,Opening,,,,lineup-7bbd5c5a944bda20,TA-01,1,2,oe:player:47a2fd48766f50394a3110fd124de77,oe:player:6668aeb76ec30bf3ee3fd35f5f63e1a,oe:player:b6c18d4d98745c100d8234a673b0c8a,oe:player:e24ee2487879116dcab772c0ac4fe34,oe:player:4ff224901b37d52d1f1d85e6c702a39,Parang,Dimitry,Aloned,Focus,IgnaVilu
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2023,Unknown,oe:player:4dc315d81b795cd55c41c10c10507e3,Zerito,top,,,,,,,,,,,,,,
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2023,Unknown,oe:player:74b6d082d7e7a7542e597f069dcc947,Seize,jng,,,,,,,,,,,,,,
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2023,Unknown,oe:player:1b26a8bba6e841f1c375b283db5c1c6,Keine,mid,,,,,,,,,,,,,,
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2023,Unknown,oe:player:b515d3ad1101ed51f7adba54f32dadc,Krim,bot,,,,,,,,,,,,,,
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2023,Unknown,oe:player:4bcb5078b4938faef69ad7e0e5718a9,Bardito,sup,,,,,,,,,,,,,,
+lineup,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2023,Unknown,,,,lineup-d744adac0147810d,XE-01,1,2,oe:player:4dc315d81b795cd55c41c10c10507e3,oe:player:74b6d082d7e7a7542e597f069dcc947,oe:player:1b26a8bba6e841f1c375b283db5c1c6,oe:player:b515d3ad1101ed51f7adba54f32dadc,oe:player:4bcb5078b4938faef69ad7e0e5718a9,Zerito,Seize,Keine,Krim,Bardito
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2023,Opening,oe:player:4dc315d81b795cd55c41c10c10507e3,Zerito,top,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2023,Opening,oe:player:5df80e26e27620b567db59e8567a061,Solid,jng,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2023,Opening,oe:player:1b26a8bba6e841f1c375b283db5c1c6,Keine,mid,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2023,Opening,oe:player:49dea036f5b15e39632aaaf1666a28b,5kid,bot,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2023,Opening,oe:player:145201414ecb853de684fbe7d6bb5b6,Ackerman,sup,,,,,,,,,,,,,,
+lineup,oe:team:7e3dd5ff49e1a44784d225d2de40260,inf,INF,2023,Opening,,,,lineup-a770028980539388,INF-01,1,3,oe:player:4dc315d81b795cd55c41c10c10507e3,oe:player:5df80e26e27620b567db59e8567a061,oe:player:1b26a8bba6e841f1c375b283db5c1c6,oe:player:49dea036f5b15e39632aaaf1666a28b,oe:player:145201414ecb853de684fbe7d6bb5b6,Zerito,Solid,Keine,5kid,Ackerman

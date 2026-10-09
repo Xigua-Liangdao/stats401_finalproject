@@ -1,0 +1,61 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:60e5f1fdc57df40ba2ca71ecf3c3b52,Boca Juniors Gaming,BJG,2023,Unknown,oe:player:c664a24ea7c8c455fdfef7304cfc5f3,Izaenk,top,,,,,,,,,,,,,,
+player,oe:team:60e5f1fdc57df40ba2ca71ecf3c3b52,Boca Juniors Gaming,BJG,2023,Unknown,oe:player:6fcdabd738f406125579024dbe435d4,Trashy,jng,,,,,,,,,,,,,,
+player,oe:team:60e5f1fdc57df40ba2ca71ecf3c3b52,Boca Juniors Gaming,BJG,2023,Unknown,oe:player:54f128223ee01afa0a5c6412027a8ae,DiDi,mid,,,,,,,,,,,,,,
+player,oe:team:60e5f1fdc57df40ba2ca71ecf3c3b52,Boca Juniors Gaming,BJG,2023,Unknown,oe:player:e696b945dfc0ddac2048caa0064e15d,notdefused,bot,,,,,,,,,,,,,,
+player,oe:team:60e5f1fdc57df40ba2ca71ecf3c3b52,Boca Juniors Gaming,BJG,2023,Unknown,oe:player:41abde78c0e4623c554cfda468d695c,Tufi,sup,,,,,,,,,,,,,,
+lineup,oe:team:60e5f1fdc57df40ba2ca71ecf3c3b52,Boca Juniors Gaming,BJG,2023,Unknown,,,,lineup-71d95dcf508d59b7,BJG-01,1,1,oe:player:c664a24ea7c8c455fdfef7304cfc5f3,oe:player:6fcdabd738f406125579024dbe435d4,oe:player:54f128223ee01afa0a5c6412027a8ae,oe:player:e696b945dfc0ddac2048caa0064e15d,oe:player:41abde78c0e4623c554cfda468d695c,Izaenk,Trashy,DiDi,notdefused,Tufi
+player,oe:team:32c61c5bf86fc0dad1a88712e34f3fc,EBRO,EBR,2023,Unknown,oe:player:fb6fc095466c769a4c96dfa965c266e,Thoryn,top,,,,,,,,,,,,,,
+player,oe:team:32c61c5bf86fc0dad1a88712e34f3fc,EBRO,EBR,2023,Unknown,oe:player:17badd69433ad6e3af7dfdcfc573eeb,Winter,jng,,,,,,,,,,,,,,
+player,oe:team:32c61c5bf86fc0dad1a88712e34f3fc,EBRO,EBR,2023,Unknown,oe:player:d458d24a79e0fc44a1421acceca3424,Termo,mid,,,,,,,,,,,,,,
+player,oe:team:32c61c5bf86fc0dad1a88712e34f3fc,EBRO,EBR,2023,Unknown,oe:player:55d0a6376b5df0cba24b1abbbd2ae94,Deftsu,bot,,,,,,,,,,,,,,
+player,oe:team:32c61c5bf86fc0dad1a88712e34f3fc,EBRO,EBR,2023,Unknown,oe:player:ce0ccf8e3cd5791e2ab4089e7711a47,Apolo,sup,,,,,,,,,,,,,,
+lineup,oe:team:32c61c5bf86fc0dad1a88712e34f3fc,EBRO,EBR,2023,Unknown,,,,lineup-f8f3f03522128561,EBR-01,1,1,oe:player:fb6fc095466c769a4c96dfa965c266e,oe:player:17badd69433ad6e3af7dfdcfc573eeb,oe:player:d458d24a79e0fc44a1421acceca3424,oe:player:55d0a6376b5df0cba24b1abbbd2ae94,oe:player:ce0ccf8e3cd5791e2ab4089e7711a47,Thoryn,Winter,Termo,Deftsu,Apolo
+player,oe:team:7cad317ac6d3deeb0421bca81551efd,Globant Emerald,GE,2023,Unknown,oe:player:3b8e692a2ac018a33e3a2652ab76dab,Rahab,top,,,,,,,,,,,,,,
+player,oe:team:7cad317ac6d3deeb0421bca81551efd,Globant Emerald,GE,2023,Unknown,oe:player:3903aab323863bd2e9b68218a7a65eb,Follow,jng,,,,,,,,,,,,,,
+player,oe:team:7cad317ac6d3deeb0421bca81551efd,Globant Emerald,GE,2023,Unknown,oe:player:30fda405a39a1754550e87835c669fb,Emp,mid,,,,,,,,,,,,,,
+player,oe:team:7cad317ac6d3deeb0421bca81551efd,Globant Emerald,GE,2023,Unknown,oe:player:d6512817657af74944409f9db236876,Kindless,bot,,,,,,,,,,,,,,
+player,oe:team:7cad317ac6d3deeb0421bca81551efd,Globant Emerald,GE,2023,Unknown,oe:player:b8ccb77381d4aefd16e6fd2849356bc,Tulz,sup,,,,,,,,,,,,,,
+lineup,oe:team:7cad317ac6d3deeb0421bca81551efd,Globant Emerald,GE,2023,Unknown,,,,lineup-1794f21f791e2c8f,GE-01,1,1,oe:player:3b8e692a2ac018a33e3a2652ab76dab,oe:player:3903aab323863bd2e9b68218a7a65eb,oe:player:30fda405a39a1754550e87835c669fb,oe:player:d6512817657af74944409f9db236876,oe:player:b8ccb77381d4aefd16e6fd2849356bc,Rahab,Follow,Emp,Kindless,Tulz
+player,oe:team:d5772fdb1ae7fcc8046fa2e056a8715,Malvinas Gaming,MG,2023,Unknown,oe:player:fc89421a5b3f5cbef82f93eed2a1f95,Sunblast,top,,,,,,,,,,,,,,
+player,oe:team:d5772fdb1ae7fcc8046fa2e056a8715,Malvinas Gaming,MG,2023,Unknown,oe:player:f1679ba0230483418084ea47bec81c7,Tierwulf,jng,,,,,,,,,,,,,,
+player,oe:team:d5772fdb1ae7fcc8046fa2e056a8715,Malvinas Gaming,MG,2023,Unknown,oe:player:941ddfdc65e77e0758fdd69fbde3b1e,Daedra,mid,,,,,,,,,,,,,,
+player,oe:team:d5772fdb1ae7fcc8046fa2e056a8715,Malvinas Gaming,MG,2023,Unknown,oe:player:3a631438d6f2eba0ef81c8cc070fe15,iso,bot,,,,,,,,,,,,,,
+player,oe:team:d5772fdb1ae7fcc8046fa2e056a8715,Malvinas Gaming,MG,2023,Unknown,oe:player:7a913e753d77491e84e55c61204fb0c,Gralou,sup,,,,,,,,,,,,,,
+lineup,oe:team:d5772fdb1ae7fcc8046fa2e056a8715,Malvinas Gaming,MG,2023,Unknown,,,,lineup-ed82f0fa6be7109e,MG-01,1,1,oe:player:fc89421a5b3f5cbef82f93eed2a1f95,oe:player:f1679ba0230483418084ea47bec81c7,oe:player:941ddfdc65e77e0758fdd69fbde3b1e,oe:player:3a631438d6f2eba0ef81c8cc070fe15,oe:player:7a913e753d77491e84e55c61204fb0c,Sunblast,Tierwulf,Daedra,iso,Gralou
+player,oe:team:aa901e4bbb1fae688437d636787b958,Newell's Esports,NE,2023,Unknown,oe:player:0b7102c2b1e1a858fc6758da01c91aa,Vonki,top,,,,,,,,,,,,,,
+player,oe:team:aa901e4bbb1fae688437d636787b958,Newell's Esports,NE,2023,Unknown,oe:player:102e8a95360e76f3fd98a83d2a0216d,Rhaast,jng,,,,,,,,,,,,,,
+player,oe:team:aa901e4bbb1fae688437d636787b958,Newell's Esports,NE,2023,Unknown,oe:player:4d8b3e2d28d8e9d0791a7a152ce14f2,DySuo,mid,,,,,,,,,,,,,,
+player,oe:team:aa901e4bbb1fae688437d636787b958,Newell's Esports,NE,2023,Unknown,oe:player:c6445581b2cfc3646f4dc0ccf41753d,ianshaka,bot,,,,,,,,,,,,,,
+player,oe:team:aa901e4bbb1fae688437d636787b958,Newell's Esports,NE,2023,Unknown,oe:player:8267996de47b66c244c62c5839ef301,Vico7,sup,,,,,,,,,,,,,,
+lineup,oe:team:aa901e4bbb1fae688437d636787b958,Newell's Esports,NE,2023,Unknown,,,,lineup-38a68bcf80f9a99c,NE-01,1,1,oe:player:0b7102c2b1e1a858fc6758da01c91aa,oe:player:102e8a95360e76f3fd98a83d2a0216d,oe:player:4d8b3e2d28d8e9d0791a7a152ce14f2,oe:player:c6445581b2cfc3646f4dc0ccf41753d,oe:player:8267996de47b66c244c62c5839ef301,Vonki,Rhaast,DySuo,ianshaka,Vico7
+player,oe:team:5d09f3012c419e96c75321094d349ab,PRIMATE,PRI,2023,Unknown,oe:player:8878e7050143a0fe4020498043fcc0d,Nate,top,,,,,,,,,,,,,,
+player,oe:team:5d09f3012c419e96c75321094d349ab,PRIMATE,PRI,2023,Unknown,oe:player:b4d059c2d83f1f968ec04962a463529,Peluca,top,,,,,,,,,,,,,,
+player,oe:team:5d09f3012c419e96c75321094d349ab,PRIMATE,PRI,2023,Unknown,oe:player:efbba3a734bb8ea2cd95149a1dfabad,Kanaxi,jng,,,,,,,,,,,,,,
+player,oe:team:5d09f3012c419e96c75321094d349ab,PRIMATE,PRI,2023,Unknown,oe:player:1467126c80d44f4144a8c6a9edb3cf2,Shookz,jng,,,,,,,,,,,,,,
+player,oe:team:5d09f3012c419e96c75321094d349ab,PRIMATE,PRI,2023,Unknown,oe:player:b146d01b1c50e07ca869c04c700b926,Chordy,mid,,,,,,,,,,,,,,
+player,oe:team:5d09f3012c419e96c75321094d349ab,PRIMATE,PRI,2023,Unknown,oe:player:722c8846b5f0c756efb2affe467958a,Kaze,mid,,,,,,,,,,,,,,
+player,oe:team:5d09f3012c419e96c75321094d349ab,PRIMATE,PRI,2023,Unknown,oe:player:b515d3ad1101ed51f7adba54f32dadc,Krim,bot,,,,,,,,,,,,,,
+player,oe:team:5d09f3012c419e96c75321094d349ab,PRIMATE,PRI,2023,Unknown,oe:player:8d98ddbb3342b8c70a01f5006320843,Uxie,bot,,,,,,,,,,,,,,
+player,oe:team:5d09f3012c419e96c75321094d349ab,PRIMATE,PRI,2023,Unknown,oe:player:d0c1a41d99e922177d319c13b54418c,Shmebu,sup,,,,,,,,,,,,,,
+player,oe:team:5d09f3012c419e96c75321094d349ab,PRIMATE,PRI,2023,Unknown,oe:player:e563e31738ed1852de1af803287228f,Wuxel,sup,,,,,,,,,,,,,,
+lineup,oe:team:5d09f3012c419e96c75321094d349ab,PRIMATE,PRI,2023,Unknown,,,,lineup-cbd182bc16c09ed1,PRI-01,1,12,oe:player:8878e7050143a0fe4020498043fcc0d,oe:player:1467126c80d44f4144a8c6a9edb3cf2,oe:player:b146d01b1c50e07ca869c04c700b926,oe:player:b515d3ad1101ed51f7adba54f32dadc,oe:player:d0c1a41d99e922177d319c13b54418c,Nate,Shookz,Chordy,Krim,Shmebu
+lineup,oe:team:5d09f3012c419e96c75321094d349ab,PRIMATE,PRI,2023,Unknown,,,,lineup-a3bc771f8fc30da3,PRI-02,2,2,oe:player:b4d059c2d83f1f968ec04962a463529,oe:player:efbba3a734bb8ea2cd95149a1dfabad,oe:player:722c8846b5f0c756efb2affe467958a,oe:player:8d98ddbb3342b8c70a01f5006320843,oe:player:e563e31738ed1852de1af803287228f,Peluca,Kanaxi,Kaze,Uxie,Wuxel
+player,oe:team:0444a233369afe0d17d6b8bafc147a4,River Plate Gaming,RPG,2023,Unknown,oe:player:046cc082e82c608b087457f59598674,Nipphu,top,,,,,,,,,,,,,,
+player,oe:team:0444a233369afe0d17d6b8bafc147a4,River Plate Gaming,RPG,2023,Unknown,oe:player:e8013b081e457f1c1c8dcd3146b5185,KinGi,jng,,,,,,,,,,,,,,
+player,oe:team:0444a233369afe0d17d6b8bafc147a4,River Plate Gaming,RPG,2023,Unknown,oe:player:39d68aa20f0b0b1ddddb871a7b26fbf,Enga,mid,,,,,,,,,,,,,,
+player,oe:team:0444a233369afe0d17d6b8bafc147a4,River Plate Gaming,RPG,2023,Unknown,oe:player:f4d626477098810efdd3105f477bae5,TomnaM,bot,,,,,,,,,,,,,,
+player,oe:team:0444a233369afe0d17d6b8bafc147a4,River Plate Gaming,RPG,2023,Unknown,oe:player:de74dc0ce635e91e85ca1a5056668cb,Keishao,sup,,,,,,,,,,,,,,
+lineup,oe:team:0444a233369afe0d17d6b8bafc147a4,River Plate Gaming,RPG,2023,Unknown,,,,lineup-d731e6c8ba59ce96,RPG-01,1,1,oe:player:046cc082e82c608b087457f59598674,oe:player:e8013b081e457f1c1c8dcd3146b5185,oe:player:39d68aa20f0b0b1ddddb871a7b26fbf,oe:player:f4d626477098810efdd3105f477bae5,oe:player:de74dc0ce635e91e85ca1a5056668cb,Nipphu,KinGi,Enga,TomnaM,Keishao
+player,oe:team:65140c73015d004b0456fb43ba373a4,WAP Esports,WE,2023,Unknown,oe:player:c32e66894e6e164bea6d26fe5aaf78b,GianKios,top,,,,,,,,,,,,,,
+player,oe:team:65140c73015d004b0456fb43ba373a4,WAP Esports,WE,2023,Unknown,oe:player:4a89d5ca1cb775edbe3417d9cb4a4f4,Sydux,top,,,,,,,,,,,,,,
+player,oe:team:65140c73015d004b0456fb43ba373a4,WAP Esports,WE,2023,Unknown,oe:player:22f1a4667604b8557c9b209c201b4bc,Aug,jng,,,,,,,,,,,,,,
+player,oe:team:65140c73015d004b0456fb43ba373a4,WAP Esports,WE,2023,Unknown,oe:player:d15b82adddaa090c020804784cb9ed3,Funky,jng,,,,,,,,,,,,,,
+player,oe:team:65140c73015d004b0456fb43ba373a4,WAP Esports,WE,2023,Unknown,oe:player:6aff04000a3032154606825dbb26529,Fear,mid,,,,,,,,,,,,,,
+player,oe:team:65140c73015d004b0456fb43ba373a4,WAP Esports,WE,2023,Unknown,oe:player:11ca8602d3855c158442bb37c9254bb,Neadz,mid,,,,,,,,,,,,,,
+player,oe:team:65140c73015d004b0456fb43ba373a4,WAP Esports,WE,2023,Unknown,oe:player:736b6039f07dc28432644d2a9997abe,Lac,bot,,,,,,,,,,,,,,
+player,oe:team:65140c73015d004b0456fb43ba373a4,WAP Esports,WE,2023,Unknown,oe:player:a437d572ab9c377f6e52f30382f1c2d,Sebbek,bot,,,,,,,,,,,,,,
+player,oe:team:65140c73015d004b0456fb43ba373a4,WAP Esports,WE,2023,Unknown,oe:player:33bf44e514be6f41d30b041c0afcd4a,Fortu,sup,,,,,,,,,,,,,,
+player,oe:team:65140c73015d004b0456fb43ba373a4,WAP Esports,WE,2023,Unknown,oe:player:31235bb3dd90d71b658d5ede31ecc49,Manuize,sup,,,,,,,,,,,,,,
+lineup,oe:team:65140c73015d004b0456fb43ba373a4,WAP Esports,WE,2023,Unknown,,,,lineup-fe40e0de34f2e5e7,WE-01,1,6,oe:player:c32e66894e6e164bea6d26fe5aaf78b,oe:player:d15b82adddaa090c020804784cb9ed3,oe:player:11ca8602d3855c158442bb37c9254bb,oe:player:736b6039f07dc28432644d2a9997abe,oe:player:33bf44e514be6f41d30b041c0afcd4a,GianKios,Funky,Neadz,Lac,Fortu
+lineup,oe:team:65140c73015d004b0456fb43ba373a4,WAP Esports,WE,2023,Unknown,,,,lineup-9184bbe5c54f3a74,WE-02,2,2,oe:player:4a89d5ca1cb775edbe3417d9cb4a4f4,oe:player:22f1a4667604b8557c9b209c201b4bc,oe:player:6aff04000a3032154606825dbb26529,oe:player:a437d572ab9c377f6e52f30382f1c2d,oe:player:31235bb3dd90d71b658d5ede31ecc49,Sydux,Aug,Fear,Sebbek,Manuize

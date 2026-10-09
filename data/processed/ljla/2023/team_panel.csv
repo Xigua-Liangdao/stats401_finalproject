@@ -1,0 +1,53 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:3b1c9e07a26cdc1ed8b830314e19cfd,AXIZ Academy,AA,2023,Regular,oe:player:dff8a724f95b1b3c78c7b026b0f55fa,Taicho,top,,,,,,,,,,,,,,
+player,oe:team:3b1c9e07a26cdc1ed8b830314e19cfd,AXIZ Academy,AA,2023,Regular,oe:player:939c3714742dbcd5d98cc2e2e399750,HALdesu,jng,,,,,,,,,,,,,,
+player,oe:team:3b1c9e07a26cdc1ed8b830314e19cfd,AXIZ Academy,AA,2023,Regular,oe:player:9820f8d5b4978685037408423cacd0b,1buki,mid,,,,,,,,,,,,,,
+player,oe:team:3b1c9e07a26cdc1ed8b830314e19cfd,AXIZ Academy,AA,2023,Regular,oe:player:0f85b549fe1f2d3f869e4c95bf74091,evol,bot,,,,,,,,,,,,,,
+player,oe:team:3b1c9e07a26cdc1ed8b830314e19cfd,AXIZ Academy,AA,2023,Regular,oe:player:040463583a2d75b5db770ba0813be39,Kentakki,sup,,,,,,,,,,,,,,
+lineup,oe:team:3b1c9e07a26cdc1ed8b830314e19cfd,AXIZ Academy,AA,2023,Regular,,,,lineup-6ccfbac8c6c22b8d,AA-01,1,21,oe:player:dff8a724f95b1b3c78c7b026b0f55fa,oe:player:939c3714742dbcd5d98cc2e2e399750,oe:player:9820f8d5b4978685037408423cacd0b,oe:player:0f85b549fe1f2d3f869e4c95bf74091,oe:player:040463583a2d75b5db770ba0813be39,Taicho,HALdesu,1buki,evol,Kentakki
+player,oe:team:26de0e706bbdee6670640bb499d80a9,Burning Core Toyama Academy,BCTA,2023,Regular,oe:player:791004876d01738e81bb09de69a255d,Ussii,top,,,,,,,,,,,,,,
+player,oe:team:26de0e706bbdee6670640bb499d80a9,Burning Core Toyama Academy,BCTA,2023,Regular,oe:player:c46dc30e7888a9b9eaee54bb9698d27,Tatsu,jng,,,,,,,,,,,,,,
+player,oe:team:26de0e706bbdee6670640bb499d80a9,Burning Core Toyama Academy,BCTA,2023,Regular,oe:player:1b1e7d4392249cce6332592fb350a37,Yoshida,mid,,,,,,,,,,,,,,
+player,oe:team:26de0e706bbdee6670640bb499d80a9,Burning Core Toyama Academy,BCTA,2023,Regular,oe:player:89cfa094070b0a8a007be06b079dbc7,Sunleaf,bot,,,,,,,,,,,,,,
+player,oe:team:26de0e706bbdee6670640bb499d80a9,Burning Core Toyama Academy,BCTA,2023,Regular,oe:player:32e4293494bad7994670053fb0a67b5,besu,sup,,,,,,,,,,,,,,
+lineup,oe:team:26de0e706bbdee6670640bb499d80a9,Burning Core Toyama Academy,BCTA,2023,Regular,,,,lineup-c03a6bdb75f48473,BCTA-01,1,22,oe:player:791004876d01738e81bb09de69a255d,oe:player:c46dc30e7888a9b9eaee54bb9698d27,oe:player:1b1e7d4392249cce6332592fb350a37,oe:player:89cfa094070b0a8a007be06b079dbc7,oe:player:32e4293494bad7994670053fb0a67b5,Ussii,Tatsu,Yoshida,Sunleaf,besu
+player,oe:team:d83c59bf7d6cbaba72f9d6684114336,Crest Gaming Act Academy,CGAA,2023,Regular,oe:player:fbda6b0c0c46b4abfd3518c03e96e02,Perle,top,,,,,,,,,,,,,,
+player,oe:team:d83c59bf7d6cbaba72f9d6684114336,Crest Gaming Act Academy,CGAA,2023,Regular,oe:player:39781e6e659cc38912c92b65a1761b3,Tima,jng,,,,,,,,,,,,,,
+player,oe:team:d83c59bf7d6cbaba72f9d6684114336,Crest Gaming Act Academy,CGAA,2023,Regular,oe:player:540248913959f74ac98ee84ff5c1dcd,Alps,mid,,,,,,,,,,,,,,
+player,oe:team:d83c59bf7d6cbaba72f9d6684114336,Crest Gaming Act Academy,CGAA,2023,Regular,name-player-813659191671e258,CGA suzuki,mid,,,,,,,,,,,,,,
+player,oe:team:d83c59bf7d6cbaba72f9d6684114336,Crest Gaming Act Academy,CGAA,2023,Regular,oe:player:0b2a8385eb649ea60d639801de9026e,Tele,bot,,,,,,,,,,,,,,
+player,oe:team:d83c59bf7d6cbaba72f9d6684114336,Crest Gaming Act Academy,CGAA,2023,Regular,oe:player:579eab5c8b8db892cc12d4905841a27,Odessa,sup,,,,,,,,,,,,,,
+lineup,oe:team:d83c59bf7d6cbaba72f9d6684114336,Crest Gaming Act Academy,CGAA,2023,Regular,,,,lineup-0e74145fa90b4094,CGAA-01,1,23,oe:player:fbda6b0c0c46b4abfd3518c03e96e02,oe:player:39781e6e659cc38912c92b65a1761b3,oe:player:540248913959f74ac98ee84ff5c1dcd,oe:player:0b2a8385eb649ea60d639801de9026e,oe:player:579eab5c8b8db892cc12d4905841a27,Perle,Tima,Alps,Tele,Odessa
+lineup,oe:team:d83c59bf7d6cbaba72f9d6684114336,Crest Gaming Act Academy,CGAA,2023,Regular,,,,lineup-2e14332d96867f9f,CGAA-02,2,1,oe:player:fbda6b0c0c46b4abfd3518c03e96e02,oe:player:39781e6e659cc38912c92b65a1761b3,name-player-813659191671e258,oe:player:0b2a8385eb649ea60d639801de9026e,oe:player:579eab5c8b8db892cc12d4905841a27,Perle,Tima,CGA suzuki,Tele,Odessa
+player,oe:team:845f7165c7cdaad9d2a2d764375d0df,DetonatioN FocusMe Academy,DFA,2023,Regular,oe:player:dab9d868efc0d19f7f347ba16c372bc,Karaage,top,,,,,,,,,,,,,,
+player,oe:team:845f7165c7cdaad9d2a2d764375d0df,DetonatioN FocusMe Academy,DFA,2023,Regular,oe:player:448be00c9923136e0b3f872e09157d5,Racon,jng,,,,,,,,,,,,,,
+player,oe:team:845f7165c7cdaad9d2a2d764375d0df,DetonatioN FocusMe Academy,DFA,2023,Regular,oe:player:4afb518ee224e2956ac4e4b9e3e6e7a,Jericho,mid,,,,,,,,,,,,,,
+player,oe:team:845f7165c7cdaad9d2a2d764375d0df,DetonatioN FocusMe Academy,DFA,2023,Regular,oe:player:437d461430ecc08e2d51abbcf5ce9b3,Milan,bot,,,,,,,,,,,,,,
+player,oe:team:845f7165c7cdaad9d2a2d764375d0df,DetonatioN FocusMe Academy,DFA,2023,Regular,oe:player:60f8a2c1e63bf70c1d48c5d4a507ec3,fyrk,sup,,,,,,,,,,,,,,
+lineup,oe:team:845f7165c7cdaad9d2a2d764375d0df,DetonatioN FocusMe Academy,DFA,2023,Regular,,,,lineup-04718fbc1730c64e,DFA-01,1,20,oe:player:dab9d868efc0d19f7f347ba16c372bc,oe:player:448be00c9923136e0b3f872e09157d5,oe:player:4afb518ee224e2956ac4e4b9e3e6e7a,oe:player:437d461430ecc08e2d51abbcf5ce9b3,oe:player:60f8a2c1e63bf70c1d48c5d4a507ec3,Karaage,Racon,Jericho,Milan,fyrk
+player,oe:team:d7f0eddf6b5b5f8d94d79ac85f44974,FENNEL Academy,FA,2023,Regular,oe:player:555e3934816743f30cdda4c7cc0dfe3,Momo,top,,,,,,,,,,,,,,
+player,oe:team:d7f0eddf6b5b5f8d94d79ac85f44974,FENNEL Academy,FA,2023,Regular,oe:player:6fd447726eaeb00dd3dbf3e3802d31f,Yunika,jng,,,,,,,,,,,,,,
+player,oe:team:d7f0eddf6b5b5f8d94d79ac85f44974,FENNEL Academy,FA,2023,Regular,oe:player:2caa05c21e7e142214c20319ff97d09,Kakkun,mid,,,,,,,,,,,,,,
+player,oe:team:d7f0eddf6b5b5f8d94d79ac85f44974,FENNEL Academy,FA,2023,Regular,oe:player:5057f5406b08307b5f50e2030133a90,wanan,bot,,,,,,,,,,,,,,
+player,oe:team:d7f0eddf6b5b5f8d94d79ac85f44974,FENNEL Academy,FA,2023,Regular,oe:player:cf038455252f25be05eccbb85a1e2de,Shakespeare,sup,,,,,,,,,,,,,,
+lineup,oe:team:d7f0eddf6b5b5f8d94d79ac85f44974,FENNEL Academy,FA,2023,Regular,,,,lineup-7c5b58f71c1166a7,FA-01,1,20,oe:player:555e3934816743f30cdda4c7cc0dfe3,oe:player:6fd447726eaeb00dd3dbf3e3802d31f,oe:player:2caa05c21e7e142214c20319ff97d09,oe:player:5057f5406b08307b5f50e2030133a90,oe:player:cf038455252f25be05eccbb85a1e2de,Momo,Yunika,Kakkun,wanan,Shakespeare
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2023,Regular,oe:player:784c615bc4ca91029377523e15b8c82,YellowYoshi,top,,,,,,,,,,,,,,
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2023,Regular,oe:player:af84f1c98815a4084ab217947ecd721,ankochan,jng,,,,,,,,,,,,,,
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2023,Regular,oe:player:840740728493a3b1a074503ed967f5d,Kaito,mid,,,,,,,,,,,,,,
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2023,Regular,oe:player:5507d93614d7299eae429bc890d23bc,HowLa,bot,,,,,,,,,,,,,,
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2023,Regular,oe:player:3095d8f7f9a0e5a05330f99a6530fa7,Charley,sup,,,,,,,,,,,,,,
+lineup,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2023,Regular,,,,lineup-d1c7939c738f9808,FSHGA-01,1,27,oe:player:784c615bc4ca91029377523e15b8c82,oe:player:af84f1c98815a4084ab217947ecd721,oe:player:840740728493a3b1a074503ed967f5d,oe:player:5507d93614d7299eae429bc890d23bc,oe:player:3095d8f7f9a0e5a05330f99a6530fa7,YellowYoshi,ankochan,Kaito,HowLa,Charley
+player,oe:team:e03a850dd5c4b5029e75de77a2afb98,Sengoku Gaming Academy,SGA,2023,Regular,oe:player:e59f7c2f41aa5d613b58a09c14bc0dc,Senmary,top,,,,,,,,,,,,,,
+player,oe:team:e03a850dd5c4b5029e75de77a2afb98,Sengoku Gaming Academy,SGA,2023,Regular,oe:player:383a258931b627e75d35c34ef49e94f,Funahwi,jng,,,,,,,,,,,,,,
+player,oe:team:e03a850dd5c4b5029e75de77a2afb98,Sengoku Gaming Academy,SGA,2023,Regular,oe:player:f072b8d92693786d40dfa56ddeac73a,rre,mid,,,,,,,,,,,,,,
+player,oe:team:e03a850dd5c4b5029e75de77a2afb98,Sengoku Gaming Academy,SGA,2023,Regular,oe:player:446ab8975b0d404881263d03beae83a,chico,bot,,,,,,,,,,,,,,
+player,oe:team:e03a850dd5c4b5029e75de77a2afb98,Sengoku Gaming Academy,SGA,2023,Regular,oe:player:4f6e2a83ff7cd4f0c9c97034862ac3e,fonix,sup,,,,,,,,,,,,,,
+player,oe:team:e03a850dd5c4b5029e75de77a2afb98,Sengoku Gaming Academy,SGA,2023,Regular,oe:player:5ea815668e4f6c9b43e723e843c22b9,fonix,sup,,,,,,,,,,,,,,
+lineup,oe:team:e03a850dd5c4b5029e75de77a2afb98,Sengoku Gaming Academy,SGA,2023,Regular,,,,lineup-8fc35f1ca03457a3,SGA-01,1,18,oe:player:e59f7c2f41aa5d613b58a09c14bc0dc,oe:player:383a258931b627e75d35c34ef49e94f,oe:player:f072b8d92693786d40dfa56ddeac73a,oe:player:446ab8975b0d404881263d03beae83a,oe:player:4f6e2a83ff7cd4f0c9c97034862ac3e,Senmary,Funahwi,rre,chico,fonix
+lineup,oe:team:e03a850dd5c4b5029e75de77a2afb98,Sengoku Gaming Academy,SGA,2023,Regular,,,,lineup-a59e8da8b80942e2,SGA-02,2,4,oe:player:e59f7c2f41aa5d613b58a09c14bc0dc,oe:player:383a258931b627e75d35c34ef49e94f,oe:player:f072b8d92693786d40dfa56ddeac73a,oe:player:446ab8975b0d404881263d03beae83a,oe:player:5ea815668e4f6c9b43e723e843c22b9,Senmary,Funahwi,rre,chico,fonix
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2023,Regular,oe:player:feb29d48f9133d43a2a5faad1d92253,Pinnnk,top,,,,,,,,,,,,,,
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2023,Regular,oe:player:841a33657841e55eb6b68b86de53af9,Bruce,jng,,,,,,,,,,,,,,
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2023,Regular,oe:player:f6d396ec0d1bfac782d5389da59df76,Enapon,mid,,,,,,,,,,,,,,
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2023,Regular,oe:player:523b1440a5811bd9b4730c2a63545b7,ezman,bot,,,,,,,,,,,,,,
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2023,Regular,oe:player:29012ae868f0b8231247f3ce25f2d0c,L0SER,sup,,,,,,,,,,,,,,
+lineup,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2023,Regular,,,,lineup-97f3db7a9cd67809,VEA-01,1,28,oe:player:feb29d48f9133d43a2a5faad1d92253,oe:player:841a33657841e55eb6b68b86de53af9,oe:player:f6d396ec0d1bfac782d5389da59df76,oe:player:523b1440a5811bd9b4730c2a63545b7,oe:player:29012ae868f0b8231247f3ce25f2d0c,Pinnnk,Bruce,Enapon,ezman,L0SER

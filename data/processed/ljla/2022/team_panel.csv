@@ -1,0 +1,51 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:3b1c9e07a26cdc1ed8b830314e19cfd,AXIZ Academy,AA,2022,Regular,oe:player:5064cc00691ebc4231287c2c7b827e1,Rando,top,,,,,,,,,,,,,,
+player,oe:team:3b1c9e07a26cdc1ed8b830314e19cfd,AXIZ Academy,AA,2022,Regular,oe:player:af84f1c98815a4084ab217947ecd721,ankochan,jng,,,,,,,,,,,,,,
+player,oe:team:3b1c9e07a26cdc1ed8b830314e19cfd,AXIZ Academy,AA,2022,Regular,oe:player:58dc03802265a41c29505f271385785,Nolisio,mid,,,,,,,,,,,,,,
+player,oe:team:3b1c9e07a26cdc1ed8b830314e19cfd,AXIZ Academy,AA,2022,Regular,oe:player:ad3bc958961453e183c2d03c48ccdd8,Akabuff,bot,,,,,,,,,,,,,,
+player,oe:team:3b1c9e07a26cdc1ed8b830314e19cfd,AXIZ Academy,AA,2022,Regular,oe:player:4f6e2a83ff7cd4f0c9c97034862ac3e,fonix,sup,,,,,,,,,,,,,,
+player,oe:team:3b1c9e07a26cdc1ed8b830314e19cfd,AXIZ Academy,AA,2022,Regular,oe:player:5ea815668e4f6c9b43e723e843c22b9,fonix,sup,,,,,,,,,,,,,,
+lineup,oe:team:3b1c9e07a26cdc1ed8b830314e19cfd,AXIZ Academy,AA,2022,Regular,,,,lineup-9918d998f765936e,AA-01,1,4,oe:player:5064cc00691ebc4231287c2c7b827e1,oe:player:af84f1c98815a4084ab217947ecd721,oe:player:58dc03802265a41c29505f271385785,oe:player:ad3bc958961453e183c2d03c48ccdd8,oe:player:4f6e2a83ff7cd4f0c9c97034862ac3e,Rando,ankochan,Nolisio,Akabuff,fonix
+lineup,oe:team:3b1c9e07a26cdc1ed8b830314e19cfd,AXIZ Academy,AA,2022,Regular,,,,lineup-da416899aea1c65c,AA-02,2,3,oe:player:5064cc00691ebc4231287c2c7b827e1,oe:player:af84f1c98815a4084ab217947ecd721,oe:player:58dc03802265a41c29505f271385785,oe:player:ad3bc958961453e183c2d03c48ccdd8,oe:player:5ea815668e4f6c9b43e723e843c22b9,Rando,ankochan,Nolisio,Akabuff,fonix
+player,oe:team:26de0e706bbdee6670640bb499d80a9,Burning Core Toyama Academy,BCTA,2022,Regular,oe:player:f7c3eb507dc041ffdd1f2c8b60fbeae,AIM4,top,,,,,,,,,,,,,,
+player,oe:team:26de0e706bbdee6670640bb499d80a9,Burning Core Toyama Academy,BCTA,2022,Regular,oe:player:a123b46c279128ac51a30f96b249f20,Calamity,jng,,,,,,,,,,,,,,
+player,oe:team:26de0e706bbdee6670640bb499d80a9,Burning Core Toyama Academy,BCTA,2022,Regular,oe:player:f6d396ec0d1bfac782d5389da59df76,Enapon,mid,,,,,,,,,,,,,,
+player,oe:team:26de0e706bbdee6670640bb499d80a9,Burning Core Toyama Academy,BCTA,2022,Regular,oe:player:89cfa094070b0a8a007be06b079dbc7,Sunleaf,bot,,,,,,,,,,,,,,
+player,oe:team:26de0e706bbdee6670640bb499d80a9,Burning Core Toyama Academy,BCTA,2022,Regular,oe:player:181a727d0b7341075cf4e347f218b75,koisi,sup,,,,,,,,,,,,,,
+lineup,oe:team:26de0e706bbdee6670640bb499d80a9,Burning Core Toyama Academy,BCTA,2022,Regular,,,,lineup-58eac03186491190,BCTA-01,1,7,oe:player:f7c3eb507dc041ffdd1f2c8b60fbeae,oe:player:a123b46c279128ac51a30f96b249f20,oe:player:f6d396ec0d1bfac782d5389da59df76,oe:player:89cfa094070b0a8a007be06b079dbc7,oe:player:181a727d0b7341075cf4e347f218b75,AIM4,Calamity,Enapon,Sunleaf,koisi
+player,oe:team:d83c59bf7d6cbaba72f9d6684114336,Crest Gaming Act Academy,CGAA,2022,Regular,oe:player:555e3934816743f30cdda4c7cc0dfe3,Momo,top,,,,,,,,,,,,,,
+player,oe:team:d83c59bf7d6cbaba72f9d6684114336,Crest Gaming Act Academy,CGAA,2022,Regular,oe:player:383a258931b627e75d35c34ef49e94f,Funahwi,jng,,,,,,,,,,,,,,
+player,oe:team:d83c59bf7d6cbaba72f9d6684114336,Crest Gaming Act Academy,CGAA,2022,Regular,oe:player:2caa05c21e7e142214c20319ff97d09,Kakkun,mid,,,,,,,,,,,,,,
+player,oe:team:d83c59bf7d6cbaba72f9d6684114336,Crest Gaming Act Academy,CGAA,2022,Regular,oe:player:437d461430ecc08e2d51abbcf5ce9b3,Milan,bot,,,,,,,,,,,,,,
+player,oe:team:d83c59bf7d6cbaba72f9d6684114336,Crest Gaming Act Academy,CGAA,2022,Regular,oe:player:061327708fd87f586bc099d5d1bf824,Primo,sup,,,,,,,,,,,,,,
+lineup,oe:team:d83c59bf7d6cbaba72f9d6684114336,Crest Gaming Act Academy,CGAA,2022,Regular,,,,lineup-ba9f8e9d523e8289,CGAA-01,1,10,oe:player:555e3934816743f30cdda4c7cc0dfe3,oe:player:383a258931b627e75d35c34ef49e94f,oe:player:2caa05c21e7e142214c20319ff97d09,oe:player:437d461430ecc08e2d51abbcf5ce9b3,oe:player:061327708fd87f586bc099d5d1bf824,Momo,Funahwi,Kakkun,Milan,Primo
+player,oe:team:845f7165c7cdaad9d2a2d764375d0df,DetonatioN FocusMe Academy,DFA,2022,Regular,oe:player:37868ce320afa69d0c0387124e61968,tol2,top,,,,,,,,,,,,,,
+player,oe:team:845f7165c7cdaad9d2a2d764375d0df,DetonatioN FocusMe Academy,DFA,2022,Regular,oe:player:d51796c7c27a60d20bb30a03ef92124,Nesty,jng,,,,,,,,,,,,,,
+player,oe:team:845f7165c7cdaad9d2a2d764375d0df,DetonatioN FocusMe Academy,DFA,2022,Regular,oe:player:feb29d48f9133d43a2a5faad1d92253,Pinnnk,mid,,,,,,,,,,,,,,
+player,oe:team:845f7165c7cdaad9d2a2d764375d0df,DetonatioN FocusMe Academy,DFA,2022,Regular,oe:player:5478b0e422debd17a186095690432bf,Marimo,bot,,,,,,,,,,,,,,
+player,oe:team:845f7165c7cdaad9d2a2d764375d0df,DetonatioN FocusMe Academy,DFA,2022,Regular,oe:player:f2f2cfca176af1632ee10cab0698564,reri,sup,,,,,,,,,,,,,,
+lineup,oe:team:845f7165c7cdaad9d2a2d764375d0df,DetonatioN FocusMe Academy,DFA,2022,Regular,,,,lineup-842c63266ecba880,DFA-01,1,15,oe:player:37868ce320afa69d0c0387124e61968,oe:player:d51796c7c27a60d20bb30a03ef92124,oe:player:feb29d48f9133d43a2a5faad1d92253,oe:player:5478b0e422debd17a186095690432bf,oe:player:f2f2cfca176af1632ee10cab0698564,tol2,Nesty,Pinnnk,Marimo,reri
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2022,Regular,oe:player:e59f7c2f41aa5d613b58a09c14bc0dc,Senmary,top,,,,,,,,,,,,,,
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2022,Regular,oe:player:2e1dc2b5f5614d934a8e38cb776353e,Dragonblood,jng,,,,,,,,,,,,,,
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2022,Regular,oe:player:b990574b212111be3e5f84c8e08b15f,Wasteland,mid,,,,,,,,,,,,,,
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2022,Regular,oe:player:446ab8975b0d404881263d03beae83a,chico,bot,,,,,,,,,,,,,,
+player,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2022,Regular,oe:player:3095d8f7f9a0e5a05330f99a6530fa7,Charley,sup,,,,,,,,,,,,,,
+lineup,oe:team:1db6b0bedabd9183def8928e75633c6,Fukuoka Softbank HAWKS gaming Academy,FSHGA,2022,Regular,,,,lineup-5a143b8a95919f4c,FSHGA-01,1,7,oe:player:e59f7c2f41aa5d613b58a09c14bc0dc,oe:player:2e1dc2b5f5614d934a8e38cb776353e,oe:player:b990574b212111be3e5f84c8e08b15f,oe:player:446ab8975b0d404881263d03beae83a,oe:player:3095d8f7f9a0e5a05330f99a6530fa7,Senmary,Dragonblood,Wasteland,chico,Charley
+player,oe:team:0efbfba0e842adbd975dbebaa4abacb,Rascal Jester Academy,RJA,2022,Regular,oe:player:335e11eebe9fa7296aeed6cd9614347,R1ngoKun,top,,,,,,,,,,,,,,
+player,oe:team:0efbfba0e842adbd975dbebaa4abacb,Rascal Jester Academy,RJA,2022,Regular,oe:player:c46dc30e7888a9b9eaee54bb9698d27,Tatsu,jng,,,,,,,,,,,,,,
+player,oe:team:0efbfba0e842adbd975dbebaa4abacb,Rascal Jester Academy,RJA,2022,Regular,oe:player:37a83b1f672db5f92a22213b0cdfe29,eguto,mid,,,,,,,,,,,,,,
+player,oe:team:0efbfba0e842adbd975dbebaa4abacb,Rascal Jester Academy,RJA,2022,Regular,oe:player:11a3c17abeb00bb2cf65b808431afa2,wada1,bot,,,,,,,,,,,,,,
+player,oe:team:0efbfba0e842adbd975dbebaa4abacb,Rascal Jester Academy,RJA,2022,Regular,oe:player:cf038455252f25be05eccbb85a1e2de,Shakespeare,sup,,,,,,,,,,,,,,
+lineup,oe:team:0efbfba0e842adbd975dbebaa4abacb,Rascal Jester Academy,RJA,2022,Regular,,,,lineup-c21a4f2972695151,RJA-01,1,7,oe:player:335e11eebe9fa7296aeed6cd9614347,oe:player:c46dc30e7888a9b9eaee54bb9698d27,oe:player:37a83b1f672db5f92a22213b0cdfe29,oe:player:11a3c17abeb00bb2cf65b808431afa2,oe:player:cf038455252f25be05eccbb85a1e2de,R1ngoKun,Tatsu,eguto,wada1,Shakespeare
+player,oe:team:e03a850dd5c4b5029e75de77a2afb98,Sengoku Gaming Academy,SGA,2022,Regular,oe:player:0860cf806314c1f1ea14aaf90bc98e0,Ricky,top,,,,,,,,,,,,,,
+player,oe:team:e03a850dd5c4b5029e75de77a2afb98,Sengoku Gaming Academy,SGA,2022,Regular,oe:player:e7fac638d70ee359814dd7598dae612,Popon,jng,,,,,,,,,,,,,,
+player,oe:team:e03a850dd5c4b5029e75de77a2afb98,Sengoku Gaming Academy,SGA,2022,Regular,oe:player:44c59988a0ef956f486caa7d02052ed,Akainu,mid,,,,,,,,,,,,,,
+player,oe:team:e03a850dd5c4b5029e75de77a2afb98,Sengoku Gaming Academy,SGA,2022,Regular,oe:player:785c0d3b9969e1cf711dcd09ee4bffb,Moyashi,bot,,,,,,,,,,,,,,
+player,oe:team:e03a850dd5c4b5029e75de77a2afb98,Sengoku Gaming Academy,SGA,2022,Regular,oe:player:33d4031a9e656b75df573d896483028,chilioil,sup,,,,,,,,,,,,,,
+lineup,oe:team:e03a850dd5c4b5029e75de77a2afb98,Sengoku Gaming Academy,SGA,2022,Regular,,,,lineup-ee3f1ac4be67c26d,SGA-01,1,14,oe:player:0860cf806314c1f1ea14aaf90bc98e0,oe:player:e7fac638d70ee359814dd7598dae612,oe:player:44c59988a0ef956f486caa7d02052ed,oe:player:785c0d3b9969e1cf711dcd09ee4bffb,oe:player:33d4031a9e656b75df573d896483028,Ricky,Popon,Akainu,Moyashi,chilioil
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2022,Regular,oe:player:25ad9e28babad3e903a3aa64c725614,Pon,top,,,,,,,,,,,,,,
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2022,Regular,oe:player:c11a22bb557caefe8a0f3535dbf6d20,HRK,jng,,,,,,,,,,,,,,
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2022,Regular,oe:player:f072b8d92693786d40dfa56ddeac73a,rre,mid,,,,,,,,,,,,,,
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2022,Regular,oe:player:523b1440a5811bd9b4730c2a63545b7,ezman,bot,,,,,,,,,,,,,,
+player,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2022,Regular,oe:player:45d7cff595b0340ab6bd1a134349cb5,Laxy,sup,,,,,,,,,,,,,,
+lineup,oe:team:c8d302e68ffd3e684186a0db372b7b6,V3 Esports Academy,VEA,2022,Regular,,,,lineup-0326317cc0b03c43,VEA-01,1,9,oe:player:25ad9e28babad3e903a3aa64c725614,oe:player:c11a22bb557caefe8a0f3535dbf6d20,oe:player:f072b8d92693786d40dfa56ddeac73a,oe:player:523b1440a5811bd9b4730c2a63545b7,oe:player:45d7cff595b0340ab6bd1a134349cb5,Pon,HRK,rre,ezman,Laxy

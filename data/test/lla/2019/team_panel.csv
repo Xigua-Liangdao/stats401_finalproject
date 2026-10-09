@@ -1,0 +1,53 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:ac644a006bcf1a44682d666df19864c,All Knights,AK,2019,Opening,oe:player:47a2fd48766f50394a3110fd124de77,Parang,top,,,,,,,,,,,,,,
+player,oe:team:ac644a006bcf1a44682d666df19864c,All Knights,AK,2019,Opening,oe:player:9913a58fbfe2e8e359666adfe057dac,Hoglet,jng,,,,,,,,,,,,,,
+player,oe:team:ac644a006bcf1a44682d666df19864c,All Knights,AK,2019,Opening,oe:player:ea27a3ffe33c2ddd9363d29152363a7,Plugo,mid,,,,,,,,,,,,,,
+player,oe:team:ac644a006bcf1a44682d666df19864c,All Knights,AK,2019,Opening,oe:player:e6f383fc7318fb2ab6aa67191ce5231,Zeicro,bot,,,,,,,,,,,,,,
+player,oe:team:ac644a006bcf1a44682d666df19864c,All Knights,AK,2019,Opening,oe:player:27aa6f7581052e7ff48e1bca901313f,Newbie,sup,,,,,,,,,,,,,,
+lineup,oe:team:ac644a006bcf1a44682d666df19864c,All Knights,AK,2019,Opening,,,,lineup-59791cebfb6fe9d7,AK-01,1,2,oe:player:47a2fd48766f50394a3110fd124de77,oe:player:9913a58fbfe2e8e359666adfe057dac,oe:player:ea27a3ffe33c2ddd9363d29152363a7,oe:player:e6f383fc7318fb2ab6aa67191ce5231,oe:player:27aa6f7581052e7ff48e1bca901313f,Parang,Hoglet,Plugo,Zeicro,Newbie
+player,oe:team:6414602bd3443e9f8c3aae5c73bbc5a,Furious Gaming,FG,2019,Opening,oe:player:36b92108c1f71cd425ded7abc50b86b,Akunma,top,,,,,,,,,,,,,,
+player,oe:team:6414602bd3443e9f8c3aae5c73bbc5a,Furious Gaming,FG,2019,Opening,oe:player:52b4f060a577ff87c99118d97fa75f4,Josedeodo,jng,,,,,,,,,,,,,,
+player,oe:team:6414602bd3443e9f8c3aae5c73bbc5a,Furious Gaming,FG,2019,Opening,oe:player:b6c18d4d98745c100d8234a673b0c8a,Aloned,mid,,,,,,,,,,,,,,
+player,oe:team:6414602bd3443e9f8c3aae5c73bbc5a,Furious Gaming,FG,2019,Opening,oe:player:7e02979fd0ef649653419a704ba461c,Zeypher,bot,,,,,,,,,,,,,,
+player,oe:team:6414602bd3443e9f8c3aae5c73bbc5a,Furious Gaming,FG,2019,Opening,oe:player:7a913e753d77491e84e55c61204fb0c,Gralou,sup,,,,,,,,,,,,,,
+lineup,oe:team:6414602bd3443e9f8c3aae5c73bbc5a,Furious Gaming,FG,2019,Opening,,,,lineup-9467d552cf126346,FG-01,1,2,oe:player:36b92108c1f71cd425ded7abc50b86b,oe:player:52b4f060a577ff87c99118d97fa75f4,oe:player:b6c18d4d98745c100d8234a673b0c8a,oe:player:7e02979fd0ef649653419a704ba461c,oe:player:7a913e753d77491e84e55c61204fb0c,Akunma,Josedeodo,Aloned,Zeypher,Gralou
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2019,Opening,oe:player:95bacd099548cd6ef0c33642a7a43cc,Relic,top,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2019,Opening,oe:player:5df80e26e27620b567db59e8567a061,Solid,jng,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2019,Opening,oe:player:6252fe71513f9bc796f40f41cfeb74e,Cotopaco,mid,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2019,Opening,oe:player:a5e24abc881e8801425e90fb62325e8,Renyu,bot,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2019,Opening,oe:player:f8973e628fba305c55004351b4f7e34,Arce,sup,,,,,,,,,,,,,,
+player,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2019,Opening,oe:player:fb27d854869d677f23afe0195edc5b8,Choisix,sup,,,,,,,,,,,,,,
+lineup,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2019,Opening,,,,lineup-89b38f8927b490bd,INF-01,1,2,oe:player:95bacd099548cd6ef0c33642a7a43cc,oe:player:5df80e26e27620b567db59e8567a061,oe:player:6252fe71513f9bc796f40f41cfeb74e,oe:player:a5e24abc881e8801425e90fb62325e8,oe:player:f8973e628fba305c55004351b4f7e34,Relic,Solid,Cotopaco,Renyu,Arce
+lineup,oe:team:7e3dd5ff49e1a44784d225d2de40260,INFINITY,INF,2019,Opening,,,,lineup-b3758a0d529ce12c,INF-02,2,1,oe:player:95bacd099548cd6ef0c33642a7a43cc,oe:player:5df80e26e27620b567db59e8567a061,oe:player:6252fe71513f9bc796f40f41cfeb74e,oe:player:a5e24abc881e8801425e90fb62325e8,oe:player:fb27d854869d677f23afe0195edc5b8,Relic,Solid,Cotopaco,Renyu,Choisix
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2019,Opening,oe:player:ba60f2274afd5a39163aeade95ddab3,Buggax,top,,,,,,,,,,,,,,
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2019,Opening,oe:player:de23ee5a66222e1e02da354414f2971,Oddie,jng,,,,,,,,,,,,,,
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2019,Opening,oe:player:7378a82177ee6bee2015ac5d134abe3,Seiya,mid,,,,,,,,,,,,,,
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2019,Opening,oe:player:c06e32c1b9d774a347e81455f6eeaf4,WARANGELUS,bot,,,,,,,,,,,,,,
+player,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2019,Opening,oe:player:efa5397985b8609a5dbeb430a4bcadd,Slow,sup,,,,,,,,,,,,,,
+lineup,oe:team:5737b101780a9835142549164be1ac4,Isurus,ISU,2019,Opening,,,,lineup-3599d0cf2eb4a4ea,ISU-01,1,14,oe:player:ba60f2274afd5a39163aeade95ddab3,oe:player:de23ee5a66222e1e02da354414f2971,oe:player:7378a82177ee6bee2015ac5d134abe3,oe:player:c06e32c1b9d774a347e81455f6eeaf4,oe:player:efa5397985b8609a5dbeb430a4bcadd,Buggax,Oddie,Seiya,WARANGELUS,Slow
+player,oe:team:c5b7f439779b465529ff283c53f41c0,Kaos Latin Gamers,KLG,2019,Opening,oe:player:8878e7050143a0fe4020498043fcc0d,Nate,top,,,,,,,,,,,,,,
+player,oe:team:c5b7f439779b465529ff283c53f41c0,Kaos Latin Gamers,KLG,2019,Opening,oe:player:8c6de89ec4d4274e956b0db6588f489,Froststrike,jng,,,,,,,,,,,,,,
+player,oe:team:c5b7f439779b465529ff283c53f41c0,Kaos Latin Gamers,KLG,2019,Opening,oe:player:288d8e1e6e78a857421f10ee40d3fba,Zelt,mid,,,,,,,,,,,,,,
+player,oe:team:c5b7f439779b465529ff283c53f41c0,Kaos Latin Gamers,KLG,2019,Opening,oe:player:2de1239f236684c5bee75bd524a38a5,Fix,bot,,,,,,,,,,,,,,
+player,oe:team:c5b7f439779b465529ff283c53f41c0,Kaos Latin Gamers,KLG,2019,Opening,oe:player:115cbb13ff7ef811c05d6e95bf224c2,Shadow,sup,,,,,,,,,,,,,,
+lineup,oe:team:c5b7f439779b465529ff283c53f41c0,Kaos Latin Gamers,KLG,2019,Opening,,,,lineup-7555d578255857ef,KLG-01,1,2,oe:player:8878e7050143a0fe4020498043fcc0d,oe:player:8c6de89ec4d4274e956b0db6588f489,oe:player:288d8e1e6e78a857421f10ee40d3fba,oe:player:2de1239f236684c5bee75bd524a38a5,oe:player:115cbb13ff7ef811c05d6e95bf224c2,Nate,Froststrike,Zelt,Fix,Shadow
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2019,Opening,oe:player:405ba4c6b60f0e22b850cb164a931d9,Acce,top,,,,,,,,,,,,,,
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2019,Opening,oe:player:5aa99e88083b40b8070e90f314e92ca,Grell,jng,,,,,,,,,,,,,,
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2019,Opening,oe:player:15cf38bf8a684a1b5895ad3daa0e379,Leza,mid,,,,,,,,,,,,,,
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2019,Opening,oe:player:51f3aa27af393f856e9f2fc334f465e,Nobody,bot,,,,,,,,,,,,,,
+player,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2019,Opening,oe:player:9543a90d85dc2083fdfcd1e615abebf,Baula,sup,,,,,,,,,,,,,,
+lineup,oe:team:2cb996a4b0ffaca3bcf66fe91450243,Movistar R7,MR,2019,Opening,,,,lineup-d077deb37b917e0c,MR-01,1,1,oe:player:405ba4c6b60f0e22b850cb164a931d9,oe:player:5aa99e88083b40b8070e90f314e92ca,oe:player:15cf38bf8a684a1b5895ad3daa0e379,oe:player:51f3aa27af393f856e9f2fc334f465e,oe:player:9543a90d85dc2083fdfcd1e615abebf,Acce,Grell,Leza,Nobody,Baula
+player,oe:team:c6d5aa661b7fc79404111ac75fbdcd4,Pixel Esports Club,PEC,2019,Opening,oe:player:046cc082e82c608b087457f59598674,Nipphu,top,,,,,,,,,,,,,,
+player,oe:team:c6d5aa661b7fc79404111ac75fbdcd4,Pixel Esports Club,PEC,2019,Opening,oe:player:81eed41b598a207697930065353ba1c,QQMore,jng,,,,,,,,,,,,,,
+player,oe:team:c6d5aa661b7fc79404111ac75fbdcd4,Pixel Esports Club,PEC,2019,Opening,oe:player:9d8b079deedcc90dda4617fb4ffac40,TopLop,mid,,,,,,,,,,,,,,
+player,oe:team:c6d5aa661b7fc79404111ac75fbdcd4,Pixel Esports Club,PEC,2019,Opening,oe:player:2d5070cb136d4cd8f418bd5a68db42a,Manu,bot,,,,,,,,,,,,,,
+player,oe:team:c6d5aa661b7fc79404111ac75fbdcd4,Pixel Esports Club,PEC,2019,Opening,oe:player:d0c1a41d99e922177d319c13b54418c,Shmebu,sup,,,,,,,,,,,,,,
+lineup,oe:team:c6d5aa661b7fc79404111ac75fbdcd4,Pixel Esports Club,PEC,2019,Opening,,,,lineup-fe368d4ad6d87e11,PEC-01,1,5,oe:player:046cc082e82c608b087457f59598674,oe:player:81eed41b598a207697930065353ba1c,oe:player:9d8b079deedcc90dda4617fb4ffac40,oe:player:2d5070cb136d4cd8f418bd5a68db42a,oe:player:d0c1a41d99e922177d319c13b54418c,Nipphu,QQMore,TopLop,Manu,Shmebu
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2019,Opening,oe:player:18fb9695f004925012bf3ae5826b780,Stray,top,,,,,,,,,,,,,,
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2019,Opening,oe:player:0b40e97e791b729df31de592c372457,Itsi,jng,,,,,,,,,,,,,,
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2019,Opening,oe:player:333d5e6e8641054e71e0f7ff8b2e00a,Xuradel,mid,,,,,,,,,,,,,,
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2019,Opening,oe:player:d6512817657af74944409f9db236876,Kindless,bot,,,,,,,,,,,,,,
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2019,Opening,oe:player:fed32be48ab75d2973e31b8573c3fad,DCStar,sup,,,,,,,,,,,,,,
+player,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2019,Opening,oe:player:1ed28fd4c930dec838338aafe2531db,Minibestia,sup,,,,,,,,,,,,,,
+lineup,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2019,Opening,,,,lineup-779d419bdb6207b3,XE-01,1,2,oe:player:18fb9695f004925012bf3ae5826b780,oe:player:0b40e97e791b729df31de592c372457,oe:player:333d5e6e8641054e71e0f7ff8b2e00a,oe:player:d6512817657af74944409f9db236876,oe:player:fed32be48ab75d2973e31b8573c3fad,Stray,Itsi,Xuradel,Kindless,DCStar
+lineup,oe:team:e2032cdda6a487d10b7be0435e4fb31,XTEN Esports,XE,2019,Opening,,,,lineup-5ef9bf385d9e15bb,XE-02,2,1,oe:player:18fb9695f004925012bf3ae5826b780,oe:player:0b40e97e791b729df31de592c372457,oe:player:333d5e6e8641054e71e0f7ff8b2e00a,oe:player:d6512817657af74944409f9db236876,oe:player:1ed28fd4c930dec838338aafe2531db,Stray,Itsi,Xuradel,Kindless,Minibestia

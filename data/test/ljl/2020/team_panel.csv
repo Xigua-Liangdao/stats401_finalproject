@@ -1,0 +1,25 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,oe:player:9d740e6925ca1017a4630fb4ebfc402,uinyan,top,,,,,,,,,,,,,,
+player,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,oe:player:9913a58fbfe2e8e359666adfe057dac,Hoglet,jng,,,,,,,,,,,,,,
+player,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,oe:player:c6b497a4ce22932b70f06b255827c6e,Gariaru,mid,,,,,,,,,,,,,,
+player,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,oe:player:1dc15f85f51cc23d21b67245d847991,Hide,bot,,,,,,,,,,,,,,
+player,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,oe:player:73e82c479af3a7c2da939e8200e60f8,Corporal,sup,,,,,,,,,,,,,,
+lineup,oe:team:800133e1f0fb01e3326d93eee58f0f4,AXIZ,AXI,2020,Spring,,,,lineup-9611900fa3edbd0c,AXI-01,1,2,oe:player:9d740e6925ca1017a4630fb4ebfc402,oe:player:9913a58fbfe2e8e359666adfe057dac,oe:player:c6b497a4ce22932b70f06b255827c6e,oe:player:1dc15f85f51cc23d21b67245d847991,oe:player:73e82c479af3a7c2da939e8200e60f8,uinyan,Hoglet,Gariaru,Hide,Corporal
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2020,Spring,oe:player:376d5e3b1257e6972228d458943f74c,Evi,top,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2020,Spring,oe:player:47f1917849906027f365eff06d45c27,Steal,jng,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2020,Spring,oe:player:dd4660dccac3ba0b8f35cb319a686a4,Ceros,mid,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2020,Spring,oe:player:0d798f24869b290bfcdf6427d958118,Yutapon,bot,,,,,,,,,,,,,,
+player,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2020,Spring,oe:player:28210a578227a57de61f42f4bd0d2b4,Gaeng,sup,,,,,,,,,,,,,,
+lineup,oe:team:e435aa3ecb82a89e60544f5f5857a81,DetonatioN FocusMe,DF,2020,Spring,,,,lineup-741fb63b248c71bb,DF-01,1,16,oe:player:376d5e3b1257e6972228d458943f74c,oe:player:47f1917849906027f365eff06d45c27,oe:player:dd4660dccac3ba0b8f35cb319a686a4,oe:player:0d798f24869b290bfcdf6427d958118,oe:player:28210a578227a57de61f42f4bd0d2b4,Evi,Steal,Ceros,Yutapon,Gaeng
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2020,Spring,oe:player:61113c79bb5a88e9320744e0f675f1e,apaMEN,top,,,,,,,,,,,,,,
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2020,Spring,oe:player:e4ef81cce7e4e10033ebb10962dfdd5,Blank,jng,,,,,,,,,,,,,,
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2020,Spring,oe:player:8a60ce4b25f019ef349c4ed568efeb4,Pirean,mid,,,,,,,,,,,,,,
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2020,Spring,oe:player:785c0d3b9969e1cf711dcd09ee4bffb,Moyashi,bot,,,,,,,,,,,,,,
+player,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2020,Spring,oe:player:293f0d0e03a4b786400eb00d3f859a8,Enty,sup,,,,,,,,,,,,,,
+lineup,oe:team:345e0df57cf03f34fe5e509af96e7bd,Sengoku Gaming,SG,2020,Spring,,,,lineup-117117125970f22e,SG-01,1,9,oe:player:61113c79bb5a88e9320744e0f675f1e,oe:player:e4ef81cce7e4e10033ebb10962dfdd5,oe:player:8a60ce4b25f019ef349c4ed568efeb4,oe:player:785c0d3b9969e1cf711dcd09ee4bffb,oe:player:293f0d0e03a4b786400eb00d3f859a8,apaMEN,Blank,Pirean,Moyashi,Enty
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2020,Spring,oe:player:bc6c09548f555712ab0eed5c2f94e82,Paz,top,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2020,Spring,oe:player:a7f0b16a54f4bd0dcb6fb7bb625b3cb,Bugi,jng,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2020,Spring,oe:player:f97ecbe7f4f778302e893532b26279e,Acee,mid,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2020,Spring,oe:player:5a607b1f01f155eae1bd6e2a78763f5,Archer,bot,,,,,,,,,,,,,,
+player,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2020,Spring,oe:player:ca18f3cf2fd9adb391d4770c33286f0,Raina,sup,,,,,,,,,,,,,,
+lineup,oe:team:af4b23d4634c4e6ecb5659fb1e689e9,V3 Esports,VE,2020,Spring,,,,lineup-1c9ecd01a57455dc,VE-01,1,7,oe:player:bc6c09548f555712ab0eed5c2f94e82,oe:player:a7f0b16a54f4bd0dcb6fb7bb625b3cb,oe:player:f97ecbe7f4f778302e893532b26279e,oe:player:5a607b1f01f155eae1bd6e2a78763f5,oe:player:ca18f3cf2fd9adb391d4770c33286f0,Paz,Bugi,Acee,Archer,Raina
