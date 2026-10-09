@@ -1,0 +1,41 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2016,Summer,oe:player:f2a47c6809d88e175dade0ef7b16aa1,Mouse,top,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2016,Summer,oe:player:9148a2e81dfb2432807b6738829a1b2,Clearlove,jng,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2016,Summer,oe:player:71e79ef80600d398d90cfebe3b0b758,Scout,mid,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2016,Summer,oe:player:c588a2d07b69ca4ba61c96aebd3f793,Deft,bot,,,,,,,,,,,,,,
+player,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2016,Summer,oe:player:bda7cc061d7a1576f1dcad33dd505cd,Meiko,sup,,,,,,,,,,,,,,
+lineup,oe:team:056c3140a119e44a03d462e2c832f27,EDward Gaming,EDG,2016,Summer,,,,lineup-720680853480af6a,EDG-01,1,5,oe:player:f2a47c6809d88e175dade0ef7b16aa1,oe:player:9148a2e81dfb2432807b6738829a1b2,oe:player:71e79ef80600d398d90cfebe3b0b758,oe:player:c588a2d07b69ca4ba61c96aebd3f793,oe:player:bda7cc061d7a1576f1dcad33dd505cd,Mouse,Clearlove,Scout,Deft,Meiko
+player,oe:team:2f758c15b9c1781b2d4032011ae1628,I May,IM,2016,Summer,oe:player:98c980a76febd0efa3407295d69b244,AmazingJ,top,,,,,,,,,,,,,,
+player,oe:team:2f758c15b9c1781b2d4032011ae1628,I May,IM,2016,Summer,oe:player:1543270746c53916a42c2f6e6c71604,Avoidless,jng,,,,,,,,,,,,,,
+player,oe:team:2f758c15b9c1781b2d4032011ae1628,I May,IM,2016,Summer,oe:player:7eaba623487d46d2c22fe07755332c9,BaeMe,mid,,,,,,,,,,,,,,
+player,oe:team:2f758c15b9c1781b2d4032011ae1628,I May,IM,2016,Summer,oe:player:efced9552c6030d0beaf318ee62926a,Jinjiao,bot,,,,,,,,,,,,,,
+player,oe:team:2f758c15b9c1781b2d4032011ae1628,I May,IM,2016,Summer,name-player-c17f7c39ef71cf40,Road,sup,,,,,,,,,,,,,,
+lineup,oe:team:2f758c15b9c1781b2d4032011ae1628,I May,IM,2016,Summer,,,,lineup-ef939d83b3b38f5d,IM-01,1,2,oe:player:98c980a76febd0efa3407295d69b244,oe:player:1543270746c53916a42c2f6e6c71604,oe:player:7eaba623487d46d2c22fe07755332c9,oe:player:efced9552c6030d0beaf318ee62926a,name-player-c17f7c39ef71cf40,AmazingJ,Avoidless,BaeMe,Jinjiao,Road
+player,oe:team:53a258f289c26d94431c0496a54e151,Invictus Gaming,IG,2016,Summer,oe:player:6ef4f059bc7362302ad93050e7854b3,Zz1tai,top,,,,,,,,,,,,,,
+player,oe:team:53a258f289c26d94431c0496a54e151,Invictus Gaming,IG,2016,Summer,oe:player:eead4a0e1ca42500ee379c3ead73cfd,Kid,jng,,,,,,,,,,,,,,
+player,oe:team:53a258f289c26d94431c0496a54e151,Invictus Gaming,IG,2016,Summer,oe:player:1213778b5c6d69dcb26aa89f7d0aaa9,Rookie,mid,,,,,,,,,,,,,,
+player,oe:team:53a258f289c26d94431c0496a54e151,Invictus Gaming,IG,2016,Summer,oe:player:0f4317a0c9d88aa9948683815c2ba14,Rain,bot,,,,,,,,,,,,,,
+player,oe:team:53a258f289c26d94431c0496a54e151,Invictus Gaming,IG,2016,Summer,oe:player:d630bfe5d116103095d33547f5f7db8,Kitties,sup,,,,,,,,,,,,,,
+player,oe:team:53a258f289c26d94431c0496a54e151,Invictus Gaming,IG,2016,Summer,oe:player:0dc2edc1d6634202a971c72891d6265,Tabe,sup,,,,,,,,,,,,,,
+lineup,oe:team:53a258f289c26d94431c0496a54e151,Invictus Gaming,IG,2016,Summer,,,,lineup-8f75a071b86f349d,IG-01,1,1,oe:player:6ef4f059bc7362302ad93050e7854b3,oe:player:eead4a0e1ca42500ee379c3ead73cfd,oe:player:1213778b5c6d69dcb26aa89f7d0aaa9,oe:player:0f4317a0c9d88aa9948683815c2ba14,oe:player:d630bfe5d116103095d33547f5f7db8,Zz1tai,Kid,Rookie,Rain,Kitties
+lineup,oe:team:53a258f289c26d94431c0496a54e151,Invictus Gaming,IG,2016,Summer,,,,lineup-b336961a4e0deca1,IG-02,2,1,oe:player:6ef4f059bc7362302ad93050e7854b3,oe:player:eead4a0e1ca42500ee379c3ead73cfd,oe:player:1213778b5c6d69dcb26aa89f7d0aaa9,oe:player:0f4317a0c9d88aa9948683815c2ba14,oe:player:0dc2edc1d6634202a971c72891d6265,Zz1tai,Kid,Rookie,Rain,Tabe
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Summer,oe:player:fa63162e5fdad40447d9895396a62fc,Jinoo,top,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Summer,oe:player:80a0409a4c898bd100c41af1cca5da1,MaRin,top,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Summer,oe:player:05bbbf6959f2b7ace12e90d1a58a212,Eimy,jng,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Summer,oe:player:f5c0d5ed7af24d3aa55b4666cc4596a,Funny,mid,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Summer,oe:player:5d859973609e453b2c48448851e4bfb,imp,bot,,,,,,,,,,,,,,
+player,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Summer,oe:player:707db7bba13f08e124e564143ff4aa3,pyl,sup,,,,,,,,,,,,,,
+lineup,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Summer,,,,lineup-0243e253d1e24066,LGD-01,1,1,oe:player:fa63162e5fdad40447d9895396a62fc,oe:player:05bbbf6959f2b7ace12e90d1a58a212,oe:player:f5c0d5ed7af24d3aa55b4666cc4596a,oe:player:5d859973609e453b2c48448851e4bfb,oe:player:707db7bba13f08e124e564143ff4aa3,Jinoo,Eimy,Funny,imp,pyl
+lineup,oe:team:5f401785b6b78326f9a46b3c6b206ed,LGD Gaming,LGD,2016,Summer,,,,lineup-4b522abfae3b4370,LGD-02,2,1,oe:player:80a0409a4c898bd100c41af1cca5da1,oe:player:05bbbf6959f2b7ace12e90d1a58a212,oe:player:f5c0d5ed7af24d3aa55b4666cc4596a,oe:player:5d859973609e453b2c48448851e4bfb,oe:player:707db7bba13f08e124e564143ff4aa3,MaRin,Eimy,Funny,imp,pyl
+player,oe:team:7e76012fb69f9e19b2dc690dde98ac1,Newbee,NEW,2016,Summer,oe:player:5206560a306a2e085a437fd258eb57c,V,top,,,,,,,,,,,,,,
+player,oe:team:7e76012fb69f9e19b2dc690dde98ac1,Newbee,NEW,2016,Summer,oe:player:ae832e9b5bda2699db45f3fa6aa8c55,Swift,jng,,,,,,,,,,,,,,
+player,oe:team:7e76012fb69f9e19b2dc690dde98ac1,Newbee,NEW,2016,Summer,oe:player:73fd5ac9aca9c8627b8e851c99f49c4,dade,mid,,,,,,,,,,,,,,
+player,oe:team:7e76012fb69f9e19b2dc690dde98ac1,Newbee,NEW,2016,Summer,oe:player:ef97b40b2245d3690c745cd6e8c663d,Happy,bot,,,,,,,,,,,,,,
+player,oe:team:7e76012fb69f9e19b2dc690dde98ac1,Newbee,NEW,2016,Summer,oe:player:3a51d2dae2a4c583a3f70ceed2e17ff,Mor,sup,,,,,,,,,,,,,,
+lineup,oe:team:7e76012fb69f9e19b2dc690dde98ac1,Newbee,NEW,2016,Summer,,,,lineup-e4c27fb941ff93e3,NEW-01,1,5,oe:player:5206560a306a2e085a437fd258eb57c,oe:player:ae832e9b5bda2699db45f3fa6aa8c55,oe:player:73fd5ac9aca9c8627b8e851c99f49c4,oe:player:ef97b40b2245d3690c745cd6e8c663d,oe:player:3a51d2dae2a4c583a3f70ceed2e17ff,V,Swift,dade,Happy,Mor
+player,oe:team:73f3126d91d35faa5d5ce34abadb865,Royal Never Give Up,RNG,2016,Summer,oe:player:14cbcf095e72902e80938f6a021a176,Looper,top,,,,,,,,,,,,,,
+player,oe:team:73f3126d91d35faa5d5ce34abadb865,Royal Never Give Up,RNG,2016,Summer,oe:player:71fb72e750329576210775b19d912e6,Mlxg,jng,,,,,,,,,,,,,,
+player,oe:team:73f3126d91d35faa5d5ce34abadb865,Royal Never Give Up,RNG,2016,Summer,oe:player:beea9fe15bff6a7ab0b3913d3d5fde6,Xiaohu,mid,,,,,,,,,,,,,,
+player,oe:team:73f3126d91d35faa5d5ce34abadb865,Royal Never Give Up,RNG,2016,Summer,oe:player:52e418c848e0f05f1ae3d63fb2f806a,Uzi,bot,,,,,,,,,,,,,,
+player,oe:team:73f3126d91d35faa5d5ce34abadb865,Royal Never Give Up,RNG,2016,Summer,oe:player:357742da3f7a2fcec0fcffa840db38c,Mata,sup,,,,,,,,,,,,,,
+lineup,oe:team:73f3126d91d35faa5d5ce34abadb865,Royal Never Give Up,RNG,2016,Summer,,,,lineup-69c2913d5220eebe,RNG-01,1,12,oe:player:14cbcf095e72902e80938f6a021a176,oe:player:71fb72e750329576210775b19d912e6,oe:player:beea9fe15bff6a7ab0b3913d3d5fde6,oe:player:52e418c848e0f05f1ae3d63fb2f806a,oe:player:357742da3f7a2fcec0fcffa840db38c,Looper,Mlxg,Xiaohu,Uzi,Mata
