@@ -1,0 +1,61 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2022,Spring,oe:player:df13ba84b4ea6932f7e10b5e51e7cf5,Venour,top,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2022,Spring,oe:player:b0a4ae62486ca215c199e72698738b7,Pabu,jng,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2022,Spring,oe:player:eb26eb96a04224878fb492a5a8cefa8,ZaZee,mid,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2022,Spring,oe:player:44189e6dc3089dbf9520de800fa705a,Keduii,bot,,,,,,,,,,,,,,
+player,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2022,Spring,oe:player:a01962da0921577bca0e84951082b3f,Quicktimer,sup,,,,,,,,,,,,,,
+lineup,oe:team:3de935df8f40fbb4d0e564d4a20e6cb,Berlin International Gaming,BIG,2022,Spring,,,,lineup-4e34d55ca121cb8a,BIG-01,1,1,oe:player:df13ba84b4ea6932f7e10b5e51e7cf5,oe:player:b0a4ae62486ca215c199e72698738b7,oe:player:eb26eb96a04224878fb492a5a8cefa8,oe:player:44189e6dc3089dbf9520de800fa705a,oe:player:a01962da0921577bca0e84951082b3f,Venour,Pabu,ZaZee,Keduii,Quicktimer
+player,oe:team:26ff1a9f7fb8e976fbdcc5d2a8ac397,E WIE EINFACH E-SPORTS,EWEE,2022,Spring,oe:player:85b934472d7d6fc3811f1659e44271e,Marcel,top,,,,,,,,,,,,,,
+player,oe:team:26ff1a9f7fb8e976fbdcc5d2a8ac397,E WIE EINFACH E-SPORTS,EWEE,2022,Spring,oe:player:a04f4a8e24d54ff98fc27a5aa5a0c3c,Afroboi,jng,,,,,,,,,,,,,,
+player,oe:team:26ff1a9f7fb8e976fbdcc5d2a8ac397,E WIE EINFACH E-SPORTS,EWEE,2022,Spring,oe:player:4817eee6e21d12824c37bfbdaf2c325,Kaymin,mid,,,,,,,,,,,,,,
+player,oe:team:26ff1a9f7fb8e976fbdcc5d2a8ac397,E WIE EINFACH E-SPORTS,EWEE,2022,Spring,oe:player:6fee49e2d64ca0c4ddc8e5fbae794c6,Lothi,bot,,,,,,,,,,,,,,
+player,oe:team:26ff1a9f7fb8e976fbdcc5d2a8ac397,E WIE EINFACH E-SPORTS,EWEE,2022,Spring,oe:player:615d130a96bbfca574dfbe98235599d,PsYcraw,sup,,,,,,,,,,,,,,
+lineup,oe:team:26ff1a9f7fb8e976fbdcc5d2a8ac397,E WIE EINFACH E-SPORTS,EWEE,2022,Spring,,,,lineup-f6be94faee3b170a,EWEE-01,1,2,oe:player:85b934472d7d6fc3811f1659e44271e,oe:player:a04f4a8e24d54ff98fc27a5aa5a0c3c,oe:player:4817eee6e21d12824c37bfbdaf2c325,oe:player:6fee49e2d64ca0c4ddc8e5fbae794c6,oe:player:615d130a96bbfca574dfbe98235599d,Marcel,Afroboi,Kaymin,Lothi,PsYcraw
+player,oe:team:980ab072663574c2e4fca71f275d302,Eintracht Spandau,ES,2022,Spring,oe:player:e5b3b161ff096a1dc71d9ea67c55897,Pride,top,,,,,,,,,,,,,,
+player,oe:team:980ab072663574c2e4fca71f275d302,Eintracht Spandau,ES,2022,Spring,oe:player:27a9c63188ab92f603ab1fd42cb889a,Obsess,jng,,,,,,,,,,,,,,
+player,oe:team:980ab072663574c2e4fca71f275d302,Eintracht Spandau,ES,2022,Spring,oe:player:b4c2b550635fe54fd29f2b64dfaca55,Special,mid,,,,,,,,,,,,,,
+player,oe:team:980ab072663574c2e4fca71f275d302,Eintracht Spandau,ES,2022,Spring,oe:player:568a2c8d4ecd7385d177e89013ed6ee,Kynetic,bot,,,,,,,,,,,,,,
+player,oe:team:980ab072663574c2e4fca71f275d302,Eintracht Spandau,ES,2022,Spring,oe:player:e038414b765a8bda52e602f7eaeff04,Prime,sup,,,,,,,,,,,,,,
+lineup,oe:team:980ab072663574c2e4fca71f275d302,Eintracht Spandau,ES,2022,Spring,,,,lineup-2c773eaafb91acbc,ES-01,1,13,oe:player:e5b3b161ff096a1dc71d9ea67c55897,oe:player:27a9c63188ab92f603ab1fd42cb889a,oe:player:b4c2b550635fe54fd29f2b64dfaca55,oe:player:568a2c8d4ecd7385d177e89013ed6ee,oe:player:e038414b765a8bda52e602f7eaeff04,Pride,Obsess,Special,Kynetic,Prime
+player,oe:team:1d0f5e58f39613aff1a3dd4ed85933e,FC Schalke 04 Esports,FS0E,2022,Spring,oe:player:1d17186c66b693755087b8af8d0c611,Scarface,top,,,,,,,,,,,,,,
+player,oe:team:1d0f5e58f39613aff1a3dd4ed85933e,FC Schalke 04 Esports,FS0E,2022,Spring,oe:player:5450c7731de19c131ce20ea74933cc2,ISMA,jng,,,,,,,,,,,,,,
+player,oe:team:1d0f5e58f39613aff1a3dd4ed85933e,FC Schalke 04 Esports,FS0E,2022,Spring,oe:player:657f1228bb53523274ae58bcd123ae8,Decay,mid,,,,,,,,,,,,,,
+player,oe:team:1d0f5e58f39613aff1a3dd4ed85933e,FC Schalke 04 Esports,FS0E,2022,Spring,oe:player:48bef668b5cb10ddc6c3865d460e327,TakeSet,bot,,,,,,,,,,,,,,
+player,oe:team:1d0f5e58f39613aff1a3dd4ed85933e,FC Schalke 04 Esports,FS0E,2022,Spring,oe:player:dbb4f0b38307e3b2a6c2e6568262dc7,HungryPanda,sup,,,,,,,,,,,,,,
+lineup,oe:team:1d0f5e58f39613aff1a3dd4ed85933e,FC Schalke 04 Esports,FS0E,2022,Spring,,,,lineup-130a305696f3cb46,FS0E-01,1,1,oe:player:1d17186c66b693755087b8af8d0c611,oe:player:5450c7731de19c131ce20ea74933cc2,oe:player:657f1228bb53523274ae58bcd123ae8,oe:player:48bef668b5cb10ddc6c3865d460e327,oe:player:dbb4f0b38307e3b2a6c2e6568262dc7,Scarface,ISMA,Decay,TakeSet,HungryPanda
+player,oe:team:455551fe1d375c5bdf7385bf56a9722,GamerLegion,GAM,2022,Unknown,oe:player:1f8b2df4c6ee43a1c1dc29817c0a201,Sacre,top,,,,,,,,,,,,,,
+player,oe:team:455551fe1d375c5bdf7385bf56a9722,GamerLegion,GAM,2022,Unknown,oe:player:3e1b1e0f9c925b2f504d78f3bd5da22,D4nKa,jng,,,,,,,,,,,,,,
+player,oe:team:455551fe1d375c5bdf7385bf56a9722,GamerLegion,GAM,2022,Unknown,oe:player:7e33124e33721ef8f70d2dd843b57da,ESCIK,mid,,,,,,,,,,,,,,
+player,oe:team:455551fe1d375c5bdf7385bf56a9722,GamerLegion,GAM,2022,Unknown,oe:player:23f5249382ade4216547b5e109c5414,jinjo,bot,,,,,,,,,,,,,,
+player,oe:team:455551fe1d375c5bdf7385bf56a9722,GamerLegion,GAM,2022,Unknown,oe:player:6369ba49db4cf35b35a7c47e3d4a4fd,Visdom,sup,,,,,,,,,,,,,,
+lineup,oe:team:455551fe1d375c5bdf7385bf56a9722,GamerLegion,GAM,2022,Unknown,,,,lineup-38f99790e72aa2c4,GAM-01,1,5,oe:player:1f8b2df4c6ee43a1c1dc29817c0a201,oe:player:3e1b1e0f9c925b2f504d78f3bd5da22,oe:player:7e33124e33721ef8f70d2dd843b57da,oe:player:23f5249382ade4216547b5e109c5414,oe:player:6369ba49db4cf35b35a7c47e3d4a4fd,Sacre,D4nKa,ESCIK,jinjo,Visdom
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2022,Spring,oe:player:2c8efc1ed4a1fd3a51dbd7e29d8ea6c,BOSS,top,,,,,,,,,,,,,,
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2022,Spring,oe:player:ca9701f085966dfca32e31b1b1e9d55,Lyncas,jng,,,,,,,,,,,,,,
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2022,Spring,oe:player:3587454d4910f0665e2fda36ad2e91c,Nomanz,mid,,,,,,,,,,,,,,
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2022,Spring,oe:player:d12b043b44563dd9443919f8637de22,Peco,bot,,,,,,,,,,,,,,
+player,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2022,Spring,oe:player:371572c71e802c9eefa062240d816e9,Saviour,sup,,,,,,,,,,,,,,
+lineup,oe:team:7c4854374e4daa6b00206eb922359a9,MOUZ NXT,MN,2022,Spring,,,,lineup-db7e82227e2a398d,MN-01,1,1,oe:player:2c8efc1ed4a1fd3a51dbd7e29d8ea6c,oe:player:ca9701f085966dfca32e31b1b1e9d55,oe:player:3587454d4910f0665e2fda36ad2e91c,oe:player:d12b043b44563dd9443919f8637de22,oe:player:371572c71e802c9eefa062240d816e9,BOSS,Lyncas,Nomanz,Peco,Saviour
+player,oe:team:efcd9996cce28c8f5c8062ac3b7fbb4,PENTA 1860,P1,2022,Spring,oe:player:bddd4f44136f466c065a2c7a4c53e75,Sleeping,top,,,,,,,,,,,,,,
+player,oe:team:efcd9996cce28c8f5c8062ac3b7fbb4,PENTA 1860,P1,2022,Spring,oe:player:34838c71f87f1e1f8929e641124e17b,Rulfchen,jng,,,,,,,,,,,,,,
+player,oe:team:efcd9996cce28c8f5c8062ac3b7fbb4,PENTA 1860,P1,2022,Spring,oe:player:260f4f388d990d8940cfde52de0bda3,Phantomles,mid,,,,,,,,,,,,,,
+player,oe:team:efcd9996cce28c8f5c8062ac3b7fbb4,PENTA 1860,P1,2022,Spring,oe:player:9ea5afea85321b13df74acb62bfb530,Fun K3y,bot,,,,,,,,,,,,,,
+player,oe:team:efcd9996cce28c8f5c8062ac3b7fbb4,PENTA 1860,P1,2022,Spring,oe:player:3cd2f0511ee257ee836157168840d95,Tolerant,sup,,,,,,,,,,,,,,
+lineup,oe:team:efcd9996cce28c8f5c8062ac3b7fbb4,PENTA 1860,P1,2022,Spring,,,,lineup-6a28bb2c2899dd17,P1-01,1,1,oe:player:bddd4f44136f466c065a2c7a4c53e75,oe:player:34838c71f87f1e1f8929e641124e17b,oe:player:260f4f388d990d8940cfde52de0bda3,oe:player:9ea5afea85321b13df74acb62bfb530,oe:player:3cd2f0511ee257ee836157168840d95,Sleeping,Rulfchen,Phantomles,Fun K3y,Tolerant
+player,oe:team:aa8c3b781d96ddb7a24ab3240918988,SK Gaming Prime,SGP,2022,Spring,oe:player:d1261f9aed96b0ef50b6ab45af68288,Alois,top,,,,,,,,,,,,,,
+player,oe:team:aa8c3b781d96ddb7a24ab3240918988,SK Gaming Prime,SGP,2022,Spring,oe:player:247cede38bc224fc82ea98ca18ddacf,Eckas,jng,,,,,,,,,,,,,,
+player,oe:team:aa8c3b781d96ddb7a24ab3240918988,SK Gaming Prime,SGP,2022,Spring,oe:player:5f4898a107d2948045588584562be3f,Dehaste,mid,,,,,,,,,,,,,,
+player,oe:team:aa8c3b781d96ddb7a24ab3240918988,SK Gaming Prime,SGP,2022,Spring,oe:player:71a0da2a0d53879bffd88b072d4c593,Gadget,bot,,,,,,,,,,,,,,
+player,oe:team:aa8c3b781d96ddb7a24ab3240918988,SK Gaming Prime,SGP,2022,Spring,oe:player:0114600fd7028a75f762bb772a5f6f1,Mystiques,sup,,,,,,,,,,,,,,
+lineup,oe:team:aa8c3b781d96ddb7a24ab3240918988,SK Gaming Prime,SGP,2022,Spring,,,,lineup-e4d8f2b6f4ac170c,SGP-01,1,1,oe:player:d1261f9aed96b0ef50b6ab45af68288,oe:player:247cede38bc224fc82ea98ca18ddacf,oe:player:5f4898a107d2948045588584562be3f,oe:player:71a0da2a0d53879bffd88b072d4c593,oe:player:0114600fd7028a75f762bb772a5f6f1,Alois,Eckas,Dehaste,Gadget,Mystiques
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2022,Spring,oe:player:4bdb80c84e25651b3d62742c0b61f6d,iBo,top,,,,,,,,,,,,,,
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2022,Spring,oe:player:6fc5fe723eed4ba4c230292be365c66,Lurox,jng,,,,,,,,,,,,,,
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2022,Spring,oe:player:6d80c6c8181e4e3c34d58e53dacf52f,Ruby,mid,,,,,,,,,,,,,,
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2022,Spring,oe:player:aa645186a4b5f3f27952c2fa5485fab,Reptile,bot,,,,,,,,,,,,,,
+player,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2022,Spring,oe:player:c7501b809cd41861a30f9e86aeaca29,Dreamer Ace,sup,,,,,,,,,,,,,,
+lineup,oe:team:6a060bd74c9041bf0aa89adf9d15d12,Unicorns of Love Sexy Edition,UOLSE,2022,Spring,,,,lineup-56d647b68d883546,UOLSE-01,1,1,oe:player:4bdb80c84e25651b3d62742c0b61f6d,oe:player:6fc5fe723eed4ba4c230292be365c66,oe:player:6d80c6c8181e4e3c34d58e53dacf52f,oe:player:aa645186a4b5f3f27952c2fa5485fab,oe:player:c7501b809cd41861a30f9e86aeaca29,iBo,Lurox,Ruby,Reptile,Dreamer Ace
+player,oe:team:a47e0c589cb9648875be30e30173f4a,WAVE Esports,WE,2022,Spring,oe:player:e4e943fa882367a96fb2a365de4e28c,sOAZ,top,,,,,,,,,,,,,,
+player,oe:team:a47e0c589cb9648875be30e30173f4a,WAVE Esports,WE,2022,Spring,oe:player:cea1465f096bff24df67c9c17cc450c,MiraiX,jng,,,,,,,,,,,,,,
+player,oe:team:a47e0c589cb9648875be30e30173f4a,WAVE Esports,WE,2022,Spring,oe:player:9440a1abe3aee8e5a74aea6b7e4cd81,Xoura,mid,,,,,,,,,,,,,,
+player,oe:team:a47e0c589cb9648875be30e30173f4a,WAVE Esports,WE,2022,Spring,oe:player:4d502cddb3e94cb64100be58f85e600,Bung,bot,,,,,,,,,,,,,,
+player,oe:team:a47e0c589cb9648875be30e30173f4a,WAVE Esports,WE,2022,Spring,oe:player:647acfc77eba36776fb2c61bce27d3d,Adept,sup,,,,,,,,,,,,,,
+lineup,oe:team:a47e0c589cb9648875be30e30173f4a,WAVE Esports,WE,2022,Spring,,,,lineup-c5eaf2c6ec4d2e25,WE-01,1,2,oe:player:e4e943fa882367a96fb2a365de4e28c,oe:player:cea1465f096bff24df67c9c17cc450c,oe:player:9440a1abe3aee8e5a74aea6b7e4cd81,oe:player:4d502cddb3e94cb64100be58f85e600,oe:player:647acfc77eba36776fb2c61bce27d3d,sOAZ,MiraiX,Xoura,Bung,Adept

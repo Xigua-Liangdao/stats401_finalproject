@@ -1,0 +1,67 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2020,Winter,oe:player:f3c0ff4acee8f5b9aa2165d00d789e5,Matilda,top,,,,,,,,,,,,,,
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2020,Winter,oe:player:b006c667ce96baeef47b5313b47b6d4,Mayhem,top,,,,,,,,,,,,,,
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2020,Winter,oe:player:ec4693d7437c8771080c41aefa52c3d,Chosen,jng,,,,,,,,,,,,,,
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2020,Winter,oe:player:ecb29676899ee7344ee0f7db0278ae3,Umut,mid,,,,,,,,,,,,,,
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2020,Winter,oe:player:94bd09e871c2cae3e60162432331159,Boncuk,bot,,,,,,,,,,,,,,
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2020,Winter,oe:player:63fb46cfa2f3ee4110bd7489cf18c02,Ruvelius,bot,,,,,,,,,,,,,,
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2020,Winter,oe:player:f64162c264d5679d130b6e8ae84d704,Invoker,sup,,,,,,,,,,,,,,
+player,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2020,Winter,oe:player:2501f7ba78cc0fd07efb7c17666ff12,Korpse,sup,,,,,,,,,,,,,,
+lineup,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2020,Winter,,,,lineup-5fe510e4ecff513c,5RA-01,1,1,oe:player:b006c667ce96baeef47b5313b47b6d4,oe:player:ec4693d7437c8771080c41aefa52c3d,oe:player:ecb29676899ee7344ee0f7db0278ae3,oe:player:94bd09e871c2cae3e60162432331159,oe:player:f64162c264d5679d130b6e8ae84d704,Mayhem,Chosen,Umut,Boncuk,Invoker
+lineup,oe:team:65838799d4f18b5f3cda973edca3e8b,5 Ronin Academy,5RA,2020,Winter,,,,lineup-9def6e6814f7f931,5RA-02,2,1,oe:player:f3c0ff4acee8f5b9aa2165d00d789e5,oe:player:ec4693d7437c8771080c41aefa52c3d,oe:player:ecb29676899ee7344ee0f7db0278ae3,oe:player:63fb46cfa2f3ee4110bd7489cf18c02,oe:player:2501f7ba78cc0fd07efb7c17666ff12,Matilda,Chosen,Umut,Ruvelius,Korpse
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2020,Winter,oe:player:7f1b3a3cd866a23e17542c63254d2c1,existence,top,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2020,Winter,oe:player:f0d9ba082555d7aac872bc9e43226c2,Kireas,jng,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2020,Winter,oe:player:e37058bf2305c3a61e0e69681803f95,stillnumb,mid,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2020,Winter,oe:player:dcb66ff6e4a2517ade22183779939c9,Rate,bot,,,,,,,,,,,,,,
+player,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2020,Winter,oe:player:31875a5f463ab30169d2fde95ed8003,EliWood,sup,,,,,,,,,,,,,,
+lineup,oe:team:1983b6e9dc5d2b7538f8787448dd5d7,Beşiktaş Academy,BA,2020,Winter,,,,lineup-518e00bb55282dc1,BA-01,1,1,oe:player:7f1b3a3cd866a23e17542c63254d2c1,oe:player:f0d9ba082555d7aac872bc9e43226c2,oe:player:e37058bf2305c3a61e0e69681803f95,oe:player:dcb66ff6e4a2517ade22183779939c9,oe:player:31875a5f463ab30169d2fde95ed8003,existence,Kireas,stillnumb,Rate,EliWood
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2020,Winter,oe:player:f3f1edfba7200c65b417d359a6f9c82,pr1me,top,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2020,Winter,oe:player:996a6f7b84dac5ef2f92cee17f6be2d,Oguzkhan,jng,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2020,Winter,oe:player:403ff27247ed8e4fcc7aa6c79e2a740,Maximillion,mid,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2020,Winter,oe:player:5cd540b4904b9ac5580405a32d205ff,Pulse,mid,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2020,Winter,oe:player:6afd1b6e045dcb8a9648a0b1dc0456a,Morgen,bot,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2020,Winter,oe:player:9e478944fadb880b7b1bb518c5c5876,Wasteee,bot,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2020,Winter,oe:player:af726fb805679de1745e6a90b0bd629,Yammycj,sup,,,,,,,,,,,,,,
+player,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2020,Winter,oe:player:503344e77b07a6cc49ce8ca65230e34,tade,sup,,,,,,,,,,,,,,
+lineup,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2020,Winter,,,,lineup-dc87fb99bf94842d,DPA-01,1,1,oe:player:f3f1edfba7200c65b417d359a6f9c82,oe:player:996a6f7b84dac5ef2f92cee17f6be2d,oe:player:5cd540b4904b9ac5580405a32d205ff,oe:player:6afd1b6e045dcb8a9648a0b1dc0456a,oe:player:af726fb805679de1745e6a90b0bd629,pr1me,Oguzkhan,Pulse,Morgen,Yammycj
+lineup,oe:team:9a7713efaa6251ddeb7736b04a99d07,Dark Passage Academy,DPA,2020,Winter,,,,lineup-fba71bbfacb48a2b,DPA-02,2,1,oe:player:f3f1edfba7200c65b417d359a6f9c82,oe:player:996a6f7b84dac5ef2f92cee17f6be2d,oe:player:403ff27247ed8e4fcc7aa6c79e2a740,oe:player:9e478944fadb880b7b1bb518c5c5876,oe:player:503344e77b07a6cc49ce8ca65230e34,pr1me,Oguzkhan,Maximillion,Wasteee,tade
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2020,Winter,oe:player:e9b43cf8367b0cbc41e36813d82d9c9,Lenom,top,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2020,Winter,oe:player:1506ea935288289a3e2c712b55f280f,Habubu,jng,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2020,Winter,oe:player:b8eb4bc8ac18dd129641b9a6b08820c,RedHand,jng,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2020,Winter,oe:player:18a59f5baf54951b3cb98f9dc59a2c7,Midkid,mid,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2020,Winter,oe:player:09d60b7619558098c8be8459e6061b9,Luger,bot,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2020,Winter,oe:player:5baab788f9f96f4be0d028e8b833ba8,Neos,bot,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2020,Winter,oe:player:cf31cad88081e431e9f138e00b4f645,Algos,sup,,,,,,,,,,,,,,
+player,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2020,Winter,oe:player:f216690ac90e0a1c2097a616cb4453e,Sparz,sup,,,,,,,,,,,,,,
+lineup,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2020,Winter,,,,lineup-472893fe96259b81,FA-01,1,1,oe:player:e9b43cf8367b0cbc41e36813d82d9c9,oe:player:1506ea935288289a3e2c712b55f280f,oe:player:18a59f5baf54951b3cb98f9dc59a2c7,oe:player:09d60b7619558098c8be8459e6061b9,oe:player:cf31cad88081e431e9f138e00b4f645,Lenom,Habubu,Midkid,Luger,Algos
+lineup,oe:team:bc8cec60082a7eec4704c6ea73c2e4f,Fenerbahçe Academy,FA,2020,Winter,,,,lineup-75fa51caf12505a6,FA-02,2,1,oe:player:e9b43cf8367b0cbc41e36813d82d9c9,oe:player:b8eb4bc8ac18dd129641b9a6b08820c,oe:player:18a59f5baf54951b3cb98f9dc59a2c7,oe:player:5baab788f9f96f4be0d028e8b833ba8,oe:player:f216690ac90e0a1c2097a616cb4453e,Lenom,RedHand,Midkid,Neos,Sparz
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2020,Winter,oe:player:a9eb1a93c73c55b9db59388be44206b,Luana,top,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2020,Winter,oe:player:d2b7178cb3441aaecfdaa5555a4c3f0,Trix,jng,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2020,Winter,oe:player:5f76f198cbbf171d85c94220ba63eaf,xKenzuke,mid,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2020,Winter,oe:player:bf95f0a99dd7be89d7867d0d9f961ce,Coldraa,bot,,,,,,,,,,,,,,
+player,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2020,Winter,oe:player:8fa8e03368dfcf76757e547fb75ae3f,Tarky,sup,,,,,,,,,,,,,,
+lineup,oe:team:b9ec146a4772e94d2d303fcdbb73112,Galakticos Academy,GA,2020,Winter,,,,lineup-69c65407fcc17a47,GA-01,1,1,oe:player:a9eb1a93c73c55b9db59388be44206b,oe:player:d2b7178cb3441aaecfdaa5555a4c3f0,oe:player:5f76f198cbbf171d85c94220ba63eaf,oe:player:bf95f0a99dd7be89d7867d0d9f961ce,oe:player:8fa8e03368dfcf76757e547fb75ae3f,Luana,Trix,xKenzuke,Coldraa,Tarky
+player,oe:team:e16e08020a1c1f4b5e15b794a4e7ea3,Royal Youth Academy,RYA,2020,Winter,oe:player:eeec6c7a9d2b475c23650b202208b89,Lot,top,,,,,,,,,,,,,,
+player,oe:team:e16e08020a1c1f4b5e15b794a4e7ea3,Royal Youth Academy,RYA,2020,Winter,oe:player:8a729e3599082e74fcca776b295d0e1,Typhoon,jng,,,,,,,,,,,,,,
+player,oe:team:e16e08020a1c1f4b5e15b794a4e7ea3,Royal Youth Academy,RYA,2020,Winter,oe:player:8f84b3e1ea431d26d9ad272eba9ba8c,Camana,mid,,,,,,,,,,,,,,
+player,oe:team:e16e08020a1c1f4b5e15b794a4e7ea3,Royal Youth Academy,RYA,2020,Winter,oe:player:94bd09e871c2cae3e60162432331159,Boncuk,bot,,,,,,,,,,,,,,
+player,oe:team:e16e08020a1c1f4b5e15b794a4e7ea3,Royal Youth Academy,RYA,2020,Winter,oe:player:b5a0f0e22cd81fdd49bf1c26c64f265,Carve,sup,,,,,,,,,,,,,,
+lineup,oe:team:e16e08020a1c1f4b5e15b794a4e7ea3,Royal Youth Academy,RYA,2020,Winter,,,,lineup-f522c9eb80261dba,RYA-01,1,1,oe:player:eeec6c7a9d2b475c23650b202208b89,oe:player:8a729e3599082e74fcca776b295d0e1,oe:player:8f84b3e1ea431d26d9ad272eba9ba8c,oe:player:94bd09e871c2cae3e60162432331159,oe:player:b5a0f0e22cd81fdd49bf1c26c64f265,Lot,Typhoon,Camana,Boncuk,Carve
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2020,Unknown,oe:player:3e975a8f561bfafd8a63d3bb1b5a8f0,Oncan,top,,,,,,,,,,,,,,
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2020,Unknown,oe:player:73278a4a86960eeb576a8fd4c9ec699,113,jng,,,,,,,,,,,,,,
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2020,Unknown,oe:player:4fadb7e6e30c736d1c3f976f89dd0c0,KSAEZ,mid,,,,,,,,,,,,,,
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2020,Unknown,oe:player:d3ff49930cbb26f4e2ab15696745d52,Machine,bot,,,,,,,,,,,,,,
+player,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2020,Unknown,oe:player:3c746a353303fe7d4c4b04ed85bf47b,Fastlegged,sup,,,,,,,,,,,,,,
+lineup,oe:team:437a2fa4639d8cb1677176861d69260,SuperMassive Academy,SA,2020,Unknown,,,,lineup-cfc68d078c3f8e25,SA-01,1,4,oe:player:3e975a8f561bfafd8a63d3bb1b5a8f0,oe:player:73278a4a86960eeb576a8fd4c9ec699,oe:player:4fadb7e6e30c736d1c3f976f89dd0c0,oe:player:d3ff49930cbb26f4e2ab15696745d52,oe:player:3c746a353303fe7d4c4b04ed85bf47b,Oncan,113,KSAEZ,Machine,Fastlegged
+player,oe:team:ec79d991a7dd0150a5f4b447c0ab1f4,Team AURORA Academy,TAA,2020,Unknown,oe:player:c3d0fe66f45a2105676f3f846711be7,Madly,top,,,,,,,,,,,,,,
+player,oe:team:ec79d991a7dd0150a5f4b447c0ab1f4,Team AURORA Academy,TAA,2020,Unknown,oe:player:de442faff7b7cdc0fba7d6d5caff5e1,Elramir,jng,,,,,,,,,,,,,,
+player,oe:team:ec79d991a7dd0150a5f4b447c0ab1f4,Team AURORA Academy,TAA,2020,Unknown,oe:player:1b2076ac634f57ba224836d8c0ea2e4,Kruimel,mid,,,,,,,,,,,,,,
+player,oe:team:ec79d991a7dd0150a5f4b447c0ab1f4,Team AURORA Academy,TAA,2020,Unknown,oe:player:dbc932ea3d30b98a49d66e17c6c4d62,Black,bot,,,,,,,,,,,,,,
+player,oe:team:ec79d991a7dd0150a5f4b447c0ab1f4,Team AURORA Academy,TAA,2020,Unknown,oe:player:f216690ac90e0a1c2097a616cb4453e,Sparz,sup,,,,,,,,,,,,,,
+lineup,oe:team:ec79d991a7dd0150a5f4b447c0ab1f4,Team AURORA Academy,TAA,2020,Unknown,,,,lineup-994a791ad1b1b0ea,TAA-01,1,4,oe:player:c3d0fe66f45a2105676f3f846711be7,oe:player:de442faff7b7cdc0fba7d6d5caff5e1,oe:player:1b2076ac634f57ba224836d8c0ea2e4,oe:player:dbc932ea3d30b98a49d66e17c6c4d62,oe:player:f216690ac90e0a1c2097a616cb4453e,Madly,Elramir,Kruimel,Black,Sparz
+player,oe:team:637d0a65124780ff6ecca6ec06e67c2,İstanbul Wildcats Academy,İWA,2020,Winter,oe:player:1bc0756ba9102abb5a7cd13d2b618aa,StarScreen,top,,,,,,,,,,,,,,
+player,oe:team:637d0a65124780ff6ecca6ec06e67c2,İstanbul Wildcats Academy,İWA,2020,Winter,oe:player:92b76c3a9967d6322741aa6d2ba4a2b,Ferret,jng,,,,,,,,,,,,,,
+player,oe:team:637d0a65124780ff6ecca6ec06e67c2,İstanbul Wildcats Academy,İWA,2020,Winter,oe:player:e3b8d5a9290fe0c7458dc01db4dc9dc,Serin,mid,,,,,,,,,,,,,,
+player,oe:team:637d0a65124780ff6ecca6ec06e67c2,İstanbul Wildcats Academy,İWA,2020,Winter,oe:player:c63c7e0755b31f1effbdf2e1f831e7d,Kaori,bot,,,,,,,,,,,,,,
+player,oe:team:637d0a65124780ff6ecca6ec06e67c2,İstanbul Wildcats Academy,İWA,2020,Winter,oe:player:090ad4635f32bf67bcfcef5c6591395,Pbd,sup,,,,,,,,,,,,,,
+lineup,oe:team:637d0a65124780ff6ecca6ec06e67c2,İstanbul Wildcats Academy,İWA,2020,Winter,,,,lineup-6158ec8ae7e165e0,İWA-01,1,15,oe:player:1bc0756ba9102abb5a7cd13d2b618aa,oe:player:92b76c3a9967d6322741aa6d2ba4a2b,oe:player:e3b8d5a9290fe0c7458dc01db4dc9dc,oe:player:c63c7e0755b31f1effbdf2e1f831e7d,oe:player:090ad4635f32bf67bcfcef5c6591395,StarScreen,Ferret,Serin,Kaori,Pbd

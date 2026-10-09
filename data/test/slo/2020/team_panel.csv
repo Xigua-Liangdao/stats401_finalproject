@@ -1,0 +1,58 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:67acf50fd9db87b9aec311bedf9bea3,BCN Squad,BS,2020,Spring,oe:player:8b9d3f48ed566e38a0e5877897d4b87,Wardain,top,,,,,,,,,,,,,,
+player,oe:team:67acf50fd9db87b9aec311bedf9bea3,BCN Squad,BS,2020,Spring,oe:player:f48a8f161502989fca609408a80bd75,Viking,jng,,,,,,,,,,,,,,
+player,oe:team:67acf50fd9db87b9aec311bedf9bea3,BCN Squad,BS,2020,Spring,oe:player:bd0655defa1f5f33c2c8ac34cfd9d36,Backlund,mid,,,,,,,,,,,,,,
+player,oe:team:67acf50fd9db87b9aec311bedf9bea3,BCN Squad,BS,2020,Spring,oe:player:af0e03279f7636eaa685de5c737d42c,Nixerino,bot,,,,,,,,,,,,,,
+player,oe:team:67acf50fd9db87b9aec311bedf9bea3,BCN Squad,BS,2020,Spring,oe:player:76ef223f4368f01c3e7b4adbdc96c3e,Homi,sup,,,,,,,,,,,,,,
+lineup,oe:team:67acf50fd9db87b9aec311bedf9bea3,BCN Squad,BS,2020,Spring,,,,lineup-dbdefca42901c5b9,BS-01,1,1,oe:player:8b9d3f48ed566e38a0e5877897d4b87,oe:player:f48a8f161502989fca609408a80bd75,oe:player:bd0655defa1f5f33c2c8ac34cfd9d36,oe:player:af0e03279f7636eaa685de5c737d42c,oe:player:76ef223f4368f01c3e7b4adbdc96c3e,Wardain,Viking,Backlund,Nixerino,Homi
+player,oe:team:b350e8583018688fb4cea844b7f9806,G2 Arctic,GA,2020,Spring,oe:player:be9758f87345bcce47970a8f17b3c07,Oscarinin,top,,,,,,,,,,,,,,
+player,oe:team:b350e8583018688fb4cea844b7f9806,G2 Arctic,GA,2020,Spring,oe:player:064499cc8ab359fa4293b76349969c1,Nasser,jng,,,,,,,,,,,,,,
+player,oe:team:b350e8583018688fb4cea844b7f9806,G2 Arctic,GA,2020,Spring,oe:player:2ce40d4fbbf0ead33ca1614540f4479,FeeNiixZ,mid,,,,,,,,,,,,,,
+player,oe:team:b350e8583018688fb4cea844b7f9806,G2 Arctic,GA,2020,Spring,oe:player:1223a0ed2bfab9b714c72d965df8133,Supa,bot,,,,,,,,,,,,,,
+player,oe:team:b350e8583018688fb4cea844b7f9806,G2 Arctic,GA,2020,Spring,oe:player:48dcc42a868c5b2493c7a4eb1131332,Aesenar,sup,,,,,,,,,,,,,,
+lineup,oe:team:b350e8583018688fb4cea844b7f9806,G2 Arctic,GA,2020,Spring,,,,lineup-14a1d1a1dd15b455,GA-01,1,13,oe:player:be9758f87345bcce47970a8f17b3c07,oe:player:064499cc8ab359fa4293b76349969c1,oe:player:2ce40d4fbbf0ead33ca1614540f4479,oe:player:1223a0ed2bfab9b714c72d965df8133,oe:player:48dcc42a868c5b2493c7a4eb1131332,Oscarinin,Nasser,FeeNiixZ,Supa,Aesenar
+player,oe:team:6dd9fc16013a656e475c1b1eb7d4e06,Giants,GIA,2020,Spring,oe:player:2e10aa4c385d76eb9fc276fa0b72939,Th3Antonio,top,,,,,,,,,,,,,,
+player,oe:team:6dd9fc16013a656e475c1b1eb7d4e06,Giants,GIA,2020,Spring,oe:player:18b54e8c9a82b492feb24b1010cf45b,Lamabear,jng,,,,,,,,,,,,,,
+player,oe:team:6dd9fc16013a656e475c1b1eb7d4e06,Giants,GIA,2020,Spring,oe:player:ce833e045ae1fdf546c867198b80566,PrettyGRE,mid,,,,,,,,,,,,,,
+player,oe:team:6dd9fc16013a656e475c1b1eb7d4e06,Giants,GIA,2020,Spring,oe:player:938cdb097f33f0feb9c12f0729e8e69,Attila,bot,,,,,,,,,,,,,,
+player,oe:team:6dd9fc16013a656e475c1b1eb7d4e06,Giants,GIA,2020,Spring,oe:player:6ff2cdf6d41f39c79d6ff057f6ffb99,Erdote,sup,,,,,,,,,,,,,,
+lineup,oe:team:6dd9fc16013a656e475c1b1eb7d4e06,Giants,GIA,2020,Spring,,,,lineup-e317b3eff9a6a018,GIA-01,1,1,oe:player:2e10aa4c385d76eb9fc276fa0b72939,oe:player:18b54e8c9a82b492feb24b1010cf45b,oe:player:ce833e045ae1fdf546c867198b80566,oe:player:938cdb097f33f0feb9c12f0729e8e69,oe:player:6ff2cdf6d41f39c79d6ff057f6ffb99,Th3Antonio,Lamabear,PrettyGRE,Attila,Erdote
+player,oe:team:9b4c0a1b3fce5f8df14d86277203dfe,MAD Lions Madrid,MLM,2020,Spring,oe:player:69dc670d17874354602d0b4f2327e02,Werlyb,top,,,,,,,,,,,,,,
+player,oe:team:9b4c0a1b3fce5f8df14d86277203dfe,MAD Lions Madrid,MLM,2020,Spring,oe:player:1a054b9e92d2152d185c99911b65bee,Koldo,jng,,,,,,,,,,,,,,
+player,oe:team:9b4c0a1b3fce5f8df14d86277203dfe,MAD Lions Madrid,MLM,2020,Spring,oe:player:d284c886209920a7c477e95581cd099,Hatrixx,mid,,,,,,,,,,,,,,
+player,oe:team:9b4c0a1b3fce5f8df14d86277203dfe,MAD Lions Madrid,MLM,2020,Spring,oe:player:717bb4d71a2dab54e7020b1a8fde420,Flakked,bot,,,,,,,,,,,,,,
+player,oe:team:9b4c0a1b3fce5f8df14d86277203dfe,MAD Lions Madrid,MLM,2020,Spring,oe:player:e038414b765a8bda52e602f7eaeff04,Prime,sup,,,,,,,,,,,,,,
+lineup,oe:team:9b4c0a1b3fce5f8df14d86277203dfe,MAD Lions Madrid,MLM,2020,Spring,,,,lineup-ee089e7f49c492ea,MLM-01,1,2,oe:player:69dc670d17874354602d0b4f2327e02,oe:player:1a054b9e92d2152d185c99911b65bee,oe:player:d284c886209920a7c477e95581cd099,oe:player:717bb4d71a2dab54e7020b1a8fde420,oe:player:e038414b765a8bda52e602f7eaeff04,Werlyb,Koldo,Hatrixx,Flakked,Prime
+player,oe:team:c1db99dba74a3a144f637b616c9f4f7,S2V Esports,SE,2020,Spring,oe:player:72c5cc0e2586935d16539f31a2a4fec,ACD,top,,,,,,,,,,,,,,
+player,oe:team:c1db99dba74a3a144f637b616c9f4f7,S2V Esports,SE,2020,Spring,oe:player:778fa012f6e60cd5df26483c1573b1e,Nyx,jng,,,,,,,,,,,,,,
+player,oe:team:c1db99dba74a3a144f637b616c9f4f7,S2V Esports,SE,2020,Spring,oe:player:335a1c64fb1fcd51fef976d73a69d08,Lvsyan,mid,,,,,,,,,,,,,,
+player,oe:team:c1db99dba74a3a144f637b616c9f4f7,S2V Esports,SE,2020,Spring,oe:player:13f372e29c8a4f2cf058c8d81bb0189,Barcode,bot,,,,,,,,,,,,,,
+player,oe:team:c1db99dba74a3a144f637b616c9f4f7,S2V Esports,SE,2020,Spring,oe:player:9179efed5ca80e55ed0ae365bf086f1,Viketox,sup,,,,,,,,,,,,,,
+lineup,oe:team:c1db99dba74a3a144f637b616c9f4f7,S2V Esports,SE,2020,Spring,,,,lineup-10e72a755866df0a,SE-01,1,2,oe:player:72c5cc0e2586935d16539f31a2a4fec,oe:player:778fa012f6e60cd5df26483c1573b1e,oe:player:335a1c64fb1fcd51fef976d73a69d08,oe:player:13f372e29c8a4f2cf058c8d81bb0189,oe:player:9179efed5ca80e55ed0ae365bf086f1,ACD,Nyx,Lvsyan,Barcode,Viketox
+player,oe:team:65ef83f1c6a889cdc68ff12943c9f45,Team Queso,TQ,2020,Spring,oe:player:83b3577e711602105ca98fcec43e183,R4VEN,top,,,,,,,,,,,,,,
+player,oe:team:65ef83f1c6a889cdc68ff12943c9f45,Team Queso,TQ,2020,Spring,oe:player:e7a786ab701bae59d69797bd8732c04,Demon12,jng,,,,,,,,,,,,,,
+player,oe:team:65ef83f1c6a889cdc68ff12943c9f45,Team Queso,TQ,2020,Spring,oe:player:b616375c060208f8988c4aa13a23c18,Miniduke,mid,,,,,,,,,,,,,,
+player,oe:team:65ef83f1c6a889cdc68ff12943c9f45,Team Queso,TQ,2020,Spring,oe:player:e6f8300f45b071d113356fc27cedf4c,Rayito,bot,,,,,,,,,,,,,,
+player,oe:team:65ef83f1c6a889cdc68ff12943c9f45,Team Queso,TQ,2020,Spring,oe:player:b810e09b68d5ff70b3ba0e0e4bfde39,Aizhon,sup,,,,,,,,,,,,,,
+lineup,oe:team:65ef83f1c6a889cdc68ff12943c9f45,Team Queso,TQ,2020,Spring,,,,lineup-8cbe55da7972c350,TQ-01,1,2,oe:player:83b3577e711602105ca98fcec43e183,oe:player:e7a786ab701bae59d69797bd8732c04,oe:player:b616375c060208f8988c4aa13a23c18,oe:player:e6f8300f45b071d113356fc27cedf4c,oe:player:b810e09b68d5ff70b3ba0e0e4bfde39,R4VEN,Demon12,Miniduke,Rayito,Aizhon
+player,oe:team:746e6715fc4295c54954be5efc385af,UCAM Esports,UE,2020,Spring,oe:player:922ba451a5475f400af26015cfc91eb,Aziado,top,,,,,,,,,,,,,,
+player,oe:team:746e6715fc4295c54954be5efc385af,UCAM Esports,UE,2020,Spring,oe:player:6c2d19f781192a84726e07f68a531b6,Markoon,jng,,,,,,,,,,,,,,
+player,oe:team:746e6715fc4295c54954be5efc385af,UCAM Esports,UE,2020,Spring,oe:player:97e737335eeb7b84909a07bc9e96eed,Baca,mid,,,,,,,,,,,,,,
+player,oe:team:746e6715fc4295c54954be5efc385af,UCAM Esports,UE,2020,Spring,oe:player:ab943d97892a252a6d27378f8ed94ee,Rafitta,bot,,,,,,,,,,,,,,
+player,oe:team:746e6715fc4295c54954be5efc385af,UCAM Esports,UE,2020,Spring,oe:player:b20a4217acaf4316739c6a5f6679ef6,Plasma,sup,,,,,,,,,,,,,,
+lineup,oe:team:746e6715fc4295c54954be5efc385af,UCAM Esports,UE,2020,Spring,,,,lineup-2218617ffa749649,UE-01,1,6,oe:player:922ba451a5475f400af26015cfc91eb,oe:player:6c2d19f781192a84726e07f68a531b6,oe:player:97e737335eeb7b84909a07bc9e96eed,oe:player:ab943d97892a252a6d27378f8ed94ee,oe:player:b20a4217acaf4316739c6a5f6679ef6,Aziado,Markoon,Baca,Rafitta,Plasma
+player,oe:team:30c141fd39621b22cf67eb62dbaea69,eMonkeyz,EMO,2020,Spring,oe:player:fe2e2139e5ab31e17185537b335e52b,Kubu,top,,,,,,,,,,,,,,
+player,oe:team:30c141fd39621b22cf67eb62dbaea69,eMonkeyz,EMO,2020,Spring,oe:player:f1bf3336d6fd120b3eee3952c39c067,Carbono,jng,,,,,,,,,,,,,,
+player,oe:team:30c141fd39621b22cf67eb62dbaea69,eMonkeyz,EMO,2020,Spring,oe:player:466d302713c8abd2346b8f1e6ec6234,DoubleAiM,jng,,,,,,,,,,,,,,
+player,oe:team:30c141fd39621b22cf67eb62dbaea69,eMonkeyz,EMO,2020,Spring,oe:player:ae97b9649e39ad901b680f74c3f56b3,Tirex,mid,,,,,,,,,,,,,,
+player,oe:team:30c141fd39621b22cf67eb62dbaea69,eMonkeyz,EMO,2020,Spring,oe:player:89af6c0570c6f4e0f713b968f6f3830,Universe,mid,,,,,,,,,,,,,,
+player,oe:team:30c141fd39621b22cf67eb62dbaea69,eMonkeyz,EMO,2020,Spring,oe:player:8dcf74d292175b41e29b7f7562dc96e,RNATION,bot,,,,,,,,,,,,,,
+player,oe:team:30c141fd39621b22cf67eb62dbaea69,eMonkeyz,EMO,2020,Spring,oe:player:06061bba9bacc0fd18efdf376742d99,Xixauxas,sup,,,,,,,,,,,,,,
+lineup,oe:team:30c141fd39621b22cf67eb62dbaea69,eMonkeyz,EMO,2020,Spring,,,,lineup-2cdb81bbae87cc2e,EMO-01,1,1,oe:player:fe2e2139e5ab31e17185537b335e52b,oe:player:466d302713c8abd2346b8f1e6ec6234,oe:player:ae97b9649e39ad901b680f74c3f56b3,oe:player:8dcf74d292175b41e29b7f7562dc96e,oe:player:06061bba9bacc0fd18efdf376742d99,Kubu,DoubleAiM,Tirex,RNATION,Xixauxas
+lineup,oe:team:30c141fd39621b22cf67eb62dbaea69,eMonkeyz,EMO,2020,Spring,,,,lineup-b86fca6b4d2ad847,EMO-02,2,1,oe:player:fe2e2139e5ab31e17185537b335e52b,oe:player:f1bf3336d6fd120b3eee3952c39c067,oe:player:89af6c0570c6f4e0f713b968f6f3830,oe:player:8dcf74d292175b41e29b7f7562dc96e,oe:player:06061bba9bacc0fd18efdf376742d99,Kubu,Carbono,Universe,RNATION,Xixauxas
+player,oe:team:c5065df5008bc2f0a6df83dc37c6f1d,x6tence,X6T,2020,Spring,oe:player:4841aa27ab85be0b9f45fed1d5e7b09,Kackos,top,,,,,,,,,,,,,,
+player,oe:team:c5065df5008bc2f0a6df83dc37c6f1d,x6tence,X6T,2020,Spring,oe:player:2d8d532cbcd9a4122f3aa4f5c231661,Jorx,jng,,,,,,,,,,,,,,
+player,oe:team:c5065df5008bc2f0a6df83dc37c6f1d,x6tence,X6T,2020,Spring,oe:player:1088cd31175ca69bc2f4e15277a079c,Siler,mid,,,,,,,,,,,,,,
+player,oe:team:c5065df5008bc2f0a6df83dc37c6f1d,x6tence,X6T,2020,Spring,oe:player:230dabb5aaa82e83fc96b25c1fef7dc,CarritosKami,bot,,,,,,,,,,,,,,
+player,oe:team:c5065df5008bc2f0a6df83dc37c6f1d,x6tence,X6T,2020,Spring,oe:player:bca44d9264f7f9b3de7b913a66371e7,DuaLL,sup,,,,,,,,,,,,,,
+lineup,oe:team:c5065df5008bc2f0a6df83dc37c6f1d,x6tence,X6T,2020,Spring,,,,lineup-e6f91ac134d12cfa,X6T-01,1,1,oe:player:4841aa27ab85be0b9f45fed1d5e7b09,oe:player:2d8d532cbcd9a4122f3aa4f5c231661,oe:player:1088cd31175ca69bc2f4e15277a079c,oe:player:230dabb5aaa82e83fc96b25c1fef7dc,oe:player:bca44d9264f7f9b3de7b913a66371e7,Kackos,Jorx,Siler,CarritosKami,DuaLL
