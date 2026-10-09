@@ -1,0 +1,34 @@
+{
+  "source_name": "Oracle's Elixir",
+  "source_page": "https://oracleselixir.com/tools/downloads",
+  "download_url": "https://raw.githubusercontent.com/weiyuanoh/Worlds-LOL/3c363cbce4a9dec5c164e85d2ae95fd88b45139c/data/raw/2022_LoL_esports_match_data_from_OraclesElixir.csv",
+  "source_kind": "pinned_github_mirror",
+  "source_revision": "3c363cbce4a9dec5c164e85d2ae95fd88b45139c",
+  "annual_sources": [
+    {
+      "year": 2022,
+      "url": "https://raw.githubusercontent.com/weiyuanoh/Worlds-LOL/3c363cbce4a9dec5c164e85d2ae95fd88b45139c/data/raw/2022_LoL_esports_match_data_from_OraclesElixir.csv",
+      "sha256": "4c4229e5fc76587ceb02531c6c522c6f690465b74e069451357604286854a1f1",
+      "revision": "3c363cbce4a9dec5c164e85d2ae95fd88b45139c",
+      "source_kind": "pinned_github_mirror",
+      "retrieved_at_utc": "2026-10-09T05:32:07.183942+00:00",
+      "size_bytes": 97621487,
+      "listed_size_bytes": 97621487,
+      "rows": 150312,
+      "snapshot_note": "Pinned public Oracle's Elixir mirror snapshot; official Drive download was quota-limited. Recorded schema and coverage describe the retrieved snapshot.",
+      "filename": "2022_LoL_esports_match_data_from_OraclesElixir.csv",
+      "selected_rows": 900
+    }
+  ],
+  "cross_source_exact_duplicates_removed": 0,
+  "retrieved_at_utc": "2026-10-09T05:34:43.071774+00:00",
+  "annual_csv_sha256": "4c4229e5fc76587ceb02531c6c522c6f690465b74e069451357604286854a1f1",
+  "annual_rows": 150312,
+  "league": "IC",
+  "year": 2022,
+  "filter": "league == 'IC' and year == '2022'; all positions and columns preserved",
+  "raw_rows": 900,
+  "raw_columns": 165,
+  "raw_games": 75,
+  "raw_csv_gz_sha256": "7bd90b2f0c6d86d8edd213ed3e075851a8a16bde6f02045c4f8238ae890157a7"
+}

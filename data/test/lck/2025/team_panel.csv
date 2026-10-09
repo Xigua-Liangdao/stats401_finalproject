@@ -1,0 +1,45 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:5c2e7e9ea8dfcba0150d9a5619baecf,BNK FEARX,BF,2025,Rounds 1-2,oe:player:d87853a5c1c5463889d70a62cdbcffc,Clear,top,,,,,,,,,,,,,,
+player,oe:team:5c2e7e9ea8dfcba0150d9a5619baecf,BNK FEARX,BF,2025,Rounds 1-2,oe:player:637ed20b1e41be1c51bd1a4cb211357,Raptor,jng,,,,,,,,,,,,,,
+player,oe:team:5c2e7e9ea8dfcba0150d9a5619baecf,BNK FEARX,BF,2025,Rounds 1-2,oe:player:d709285b163a94af9d819e568c592ba,VicLa,mid,,,,,,,,,,,,,,
+player,oe:team:5c2e7e9ea8dfcba0150d9a5619baecf,BNK FEARX,BF,2025,Rounds 1-2,oe:player:178ec186b0d43d2669342596c2808cd,Diable,bot,,,,,,,,,,,,,,
+player,oe:team:5c2e7e9ea8dfcba0150d9a5619baecf,BNK FEARX,BF,2025,Rounds 1-2,oe:player:b0ec3df39d61f953e7af0afd8eb8c4a,Kellin,sup,,,,,,,,,,,,,,
+lineup,oe:team:5c2e7e9ea8dfcba0150d9a5619baecf,BNK FEARX,BF,2025,Rounds 1-2,,,,lineup-e356de931be50bda,BF-01,1,3,oe:player:d87853a5c1c5463889d70a62cdbcffc,oe:player:637ed20b1e41be1c51bd1a4cb211357,oe:player:d709285b163a94af9d819e568c592ba,oe:player:178ec186b0d43d2669342596c2808cd,oe:player:b0ec3df39d61f953e7af0afd8eb8c4a,Clear,Raptor,VicLa,Diable,Kellin
+player,oe:team:b3c72a20aa56f5d28022ac04a7dc294,DN SOOPers,DS,2025,Rounds 1-2,oe:player:6e6a78244523ed9e54731d07d1f79f4,DuDu,top,,,,,,,,,,,,,,
+player,oe:team:b3c72a20aa56f5d28022ac04a7dc294,DN SOOPers,DS,2025,Rounds 1-2,oe:player:a2357eb17578485c2ba736db36cbc42,Pyosik,jng,,,,,,,,,,,,,,
+player,oe:team:b3c72a20aa56f5d28022ac04a7dc294,DN SOOPers,DS,2025,Rounds 1-2,oe:player:317aeb74a6dd16bea711bbad361ca44,BuLLDoG,mid,,,,,,,,,,,,,,
+player,oe:team:b3c72a20aa56f5d28022ac04a7dc294,DN SOOPers,DS,2025,Rounds 1-2,oe:player:460ae5a7af8d68f7831b70307210ab3,Berserker,bot,,,,,,,,,,,,,,
+player,oe:team:b3c72a20aa56f5d28022ac04a7dc294,DN SOOPers,DS,2025,Rounds 1-2,oe:player:dea5251e486aed942e1bc06e1d5c116,Life,sup,,,,,,,,,,,,,,
+lineup,oe:team:b3c72a20aa56f5d28022ac04a7dc294,DN SOOPers,DS,2025,Rounds 1-2,,,,lineup-34b5050760e861d6,DS-01,1,2,oe:player:6e6a78244523ed9e54731d07d1f79f4,oe:player:a2357eb17578485c2ba736db36cbc42,oe:player:317aeb74a6dd16bea711bbad361ca44,oe:player:460ae5a7af8d68f7831b70307210ab3,oe:player:dea5251e486aed942e1bc06e1d5c116,DuDu,Pyosik,BuLLDoG,Berserker,Life
+player,oe:team:101f8589e58c724c1dcd5a9c1555277,DRX,DRX,2025,Cup,oe:player:6fbf57b984dbf130701e09ea4110bb8,Rich,top,,,,,,,,,,,,,,
+player,oe:team:101f8589e58c724c1dcd5a9c1555277,DRX,DRX,2025,Cup,oe:player:3f4027dc08a489bd4d5390913f5dc71,Sponge,jng,,,,,,,,,,,,,,
+player,oe:team:101f8589e58c724c1dcd5a9c1555277,DRX,DRX,2025,Cup,oe:player:bd6a2e6aaeb993fd29f43790265297f,Ucal,mid,,,,,,,,,,,,,,
+player,oe:team:101f8589e58c724c1dcd5a9c1555277,DRX,DRX,2025,Cup,oe:player:a41eb80b5f23627fc710cc41c516e49,LazyFeel,bot,,,,,,,,,,,,,,
+player,oe:team:101f8589e58c724c1dcd5a9c1555277,DRX,DRX,2025,Cup,oe:player:5ef70ecd799a70ebbda239cd9a9f1e7,Andil,sup,,,,,,,,,,,,,,
+lineup,oe:team:101f8589e58c724c1dcd5a9c1555277,DRX,DRX,2025,Cup,,,,lineup-7ca71620b1b77528,DRX-01,1,2,oe:player:6fbf57b984dbf130701e09ea4110bb8,oe:player:3f4027dc08a489bd4d5390913f5dc71,oe:player:bd6a2e6aaeb993fd29f43790265297f,oe:player:a41eb80b5f23627fc710cc41c516e49,oe:player:5ef70ecd799a70ebbda239cd9a9f1e7,Rich,Sponge,Ucal,LazyFeel,Andil
+player,oe:team:ef69efa6acebe94107f0cf1ba716806,Dplus Kia,DK,2025,Rounds 1-2,oe:player:da9f969a7ab3819b9e528072aa4d5e6,Siwoo,top,,,,,,,,,,,,,,
+player,oe:team:ef69efa6acebe94107f0cf1ba716806,Dplus Kia,DK,2025,Rounds 1-2,oe:player:10b86429ce8048aba673d802632e358,Lucid,jng,,,,,,,,,,,,,,
+player,oe:team:ef69efa6acebe94107f0cf1ba716806,Dplus Kia,DK,2025,Rounds 1-2,oe:player:5f8ff49cd56eae61d635966b183a451,ShowMaker,mid,,,,,,,,,,,,,,
+player,oe:team:ef69efa6acebe94107f0cf1ba716806,Dplus Kia,DK,2025,Rounds 1-2,oe:player:85104684d1eb7f4c0ce393441a0b669,Aiming,bot,,,,,,,,,,,,,,
+player,oe:team:ef69efa6acebe94107f0cf1ba716806,Dplus Kia,DK,2025,Rounds 1-2,oe:player:dee54127bb56d2e2540ba71cc416f1c,BeryL,sup,,,,,,,,,,,,,,
+lineup,oe:team:ef69efa6acebe94107f0cf1ba716806,Dplus Kia,DK,2025,Rounds 1-2,,,,lineup-9327a34f1b60422d,DK-01,1,12,oe:player:da9f969a7ab3819b9e528072aa4d5e6,oe:player:10b86429ce8048aba673d802632e358,oe:player:5f8ff49cd56eae61d635966b183a451,oe:player:85104684d1eb7f4c0ce393441a0b669,oe:player:dee54127bb56d2e2540ba71cc416f1c,Siwoo,Lucid,ShowMaker,Aiming,BeryL
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2025,Rounds 1-2,oe:player:03daae1844b9ad257324c3eedf41e28,Kiin,top,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2025,Rounds 1-2,oe:player:92544d7a994bd6841cccd9f6e42e3de,Canyon,jng,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2025,Rounds 1-2,oe:player:fb6e61b8acb05df17b7e5ad4ae7c800,Chovy,mid,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2025,Rounds 1-2,oe:player:eada4723af6f51cf2391d85b5fde49b,Ruler,bot,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2025,Rounds 1-2,oe:player:605821ebcf6a2e53f03ec6e8e463d1b,Duro,sup,,,,,,,,,,,,,,
+lineup,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2025,Rounds 1-2,,,,lineup-7a1ebf0f0d518f67,GEN-01,1,3,oe:player:03daae1844b9ad257324c3eedf41e28,oe:player:92544d7a994bd6841cccd9f6e42e3de,oe:player:fb6e61b8acb05df17b7e5ad4ae7c800,oe:player:eada4723af6f51cf2391d85b5fde49b,oe:player:605821ebcf6a2e53f03ec6e8e463d1b,Kiin,Canyon,Chovy,Ruler,Duro
+player,oe:team:b77b3f6068e20a2b3edc0ecd3dc70d4,HANJIN BRION,HB,2025,Cup,oe:player:f73dde2d8c7879ae8d1fcdc03c4ffeb,Morgan,top,,,,,,,,,,,,,,
+player,oe:team:b77b3f6068e20a2b3edc0ecd3dc70d4,HANJIN BRION,HB,2025,Cup,oe:player:845ea84cec22236278388f19fcd20bf,HamBak,jng,,,,,,,,,,,,,,
+player,oe:team:b77b3f6068e20a2b3edc0ecd3dc70d4,HANJIN BRION,HB,2025,Cup,oe:player:6adb46561c24655e0455d9b3fdc5698,Clozer,mid,,,,,,,,,,,,,,
+player,oe:team:b77b3f6068e20a2b3edc0ecd3dc70d4,HANJIN BRION,HB,2025,Cup,oe:player:2452114de900ce4bb971851b668786d,Hype,bot,,,,,,,,,,,,,,
+player,oe:team:b77b3f6068e20a2b3edc0ecd3dc70d4,HANJIN BRION,HB,2025,Cup,oe:player:3126bca5d4d2555ba3b460699508e16,Pollu,sup,,,,,,,,,,,,,,
+lineup,oe:team:b77b3f6068e20a2b3edc0ecd3dc70d4,HANJIN BRION,HB,2025,Cup,,,,lineup-21fbd34487b14007,HB-01,1,4,oe:player:f73dde2d8c7879ae8d1fcdc03c4ffeb,oe:player:845ea84cec22236278388f19fcd20bf,oe:player:6adb46561c24655e0455d9b3fdc5698,oe:player:2452114de900ce4bb971851b668786d,oe:player:3126bca5d4d2555ba3b460699508e16,Morgan,HamBak,Clozer,Hype,Pollu
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2025,Rounds 1-2,oe:player:86a59ad7ba2334ad7505f303d3f2ab6,Casting,top,,,,,,,,,,,,,,
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2025,Rounds 1-2,oe:player:29bef8f5895e5e4fef8ff0945e68567,PerfecT,top,,,,,,,,,,,,,,
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2025,Rounds 1-2,oe:player:f9fe6d28d5b67bf9ac673b2cc8edf15,Cuzz,jng,,,,,,,,,,,,,,
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2025,Rounds 1-2,oe:player:30361653a485a9609fb2d3aa073282c,Bdd,mid,,,,,,,,,,,,,,
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2025,Rounds 1-2,oe:player:18bdb3898e7fecb3bb0be7ff075d509,deokdam,bot,,,,,,,,,,,,,,
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2025,Rounds 1-2,oe:player:ee051912ad5f9a97aa9ce4980cbb481,Peter,sup,,,,,,,,,,,,,,
+lineup,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2025,Rounds 1-2,,,,lineup-271f650f8ad3f488,KR-01,1,1,oe:player:29bef8f5895e5e4fef8ff0945e68567,oe:player:f9fe6d28d5b67bf9ac673b2cc8edf15,oe:player:30361653a485a9609fb2d3aa073282c,oe:player:18bdb3898e7fecb3bb0be7ff075d509,oe:player:ee051912ad5f9a97aa9ce4980cbb481,PerfecT,Cuzz,Bdd,deokdam,Peter
+lineup,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2025,Rounds 1-2,,,,lineup-bd9cf2f5bd08bf5a,KR-02,2,1,oe:player:86a59ad7ba2334ad7505f303d3f2ab6,oe:player:f9fe6d28d5b67bf9ac673b2cc8edf15,oe:player:30361653a485a9609fb2d3aa073282c,oe:player:18bdb3898e7fecb3bb0be7ff075d509,oe:player:ee051912ad5f9a97aa9ce4980cbb481,Casting,Cuzz,Bdd,deokdam,Peter

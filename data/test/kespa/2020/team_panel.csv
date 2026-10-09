@@ -1,0 +1,39 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:101f8589e58c724c1dcd5a9c1555277,DRX,DRX,2020,Unknown,oe:player:a1f3b2bb3f36e5113237f92d76dc4c8,Doran,top,,,,,,,,,,,,,,
+player,oe:team:101f8589e58c724c1dcd5a9c1555277,DRX,DRX,2020,Unknown,oe:player:a2357eb17578485c2ba736db36cbc42,Pyosik,jng,,,,,,,,,,,,,,
+player,oe:team:101f8589e58c724c1dcd5a9c1555277,DRX,DRX,2020,Unknown,oe:player:fb6e61b8acb05df17b7e5ad4ae7c800,Chovy,mid,,,,,,,,,,,,,,
+player,oe:team:101f8589e58c724c1dcd5a9c1555277,DRX,DRX,2020,Unknown,oe:player:c588a2d07b69ca4ba61c96aebd3f793,Deft,bot,,,,,,,,,,,,,,
+player,oe:team:101f8589e58c724c1dcd5a9c1555277,DRX,DRX,2020,Unknown,oe:player:db79ce6ad35451c938fbe2995dabd37,Keria,sup,,,,,,,,,,,,,,
+lineup,oe:team:101f8589e58c724c1dcd5a9c1555277,DRX,DRX,2020,Unknown,,,,lineup-650d8d893f293854,DRX-01,1,9,oe:player:a1f3b2bb3f36e5113237f92d76dc4c8,oe:player:a2357eb17578485c2ba736db36cbc42,oe:player:fb6e61b8acb05df17b7e5ad4ae7c800,oe:player:c588a2d07b69ca4ba61c96aebd3f793,oe:player:db79ce6ad35451c938fbe2995dabd37,Doran,Pyosik,Chovy,Deft,Keria
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2020,Unknown,oe:player:f17b90d1dd0f1814bb1f82f77c2f861,Nuguri,top,,,,,,,,,,,,,,
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2020,Unknown,oe:player:92544d7a994bd6841cccd9f6e42e3de,Canyon,jng,,,,,,,,,,,,,,
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2020,Unknown,oe:player:5f8ff49cd56eae61d635966b183a451,ShowMaker,mid,,,,,,,,,,,,,,
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2020,Unknown,oe:player:c49e6d739a7a7356e88aa84503666ee,Nuclear,bot,,,,,,,,,,,,,,
+player,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2020,Unknown,oe:player:dee54127bb56d2e2540ba71cc416f1c,BeryL,sup,,,,,,,,,,,,,,
+lineup,oe:team:2a247555001e6364757f171f158f997,Dplus KIA,DK,2020,Unknown,,,,lineup-80d6630a975fa2d1,DK-01,1,2,oe:player:f17b90d1dd0f1814bb1f82f77c2f861,oe:player:92544d7a994bd6841cccd9f6e42e3de,oe:player:5f8ff49cd56eae61d635966b183a451,oe:player:c49e6d739a7a7356e88aa84503666ee,oe:player:dee54127bb56d2e2540ba71cc416f1c,Nuguri,Canyon,ShowMaker,Nuclear,BeryL
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2020,Unknown,oe:player:03daae1844b9ad257324c3eedf41e28,Kiin,top,,,,,,,,,,,,,,
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2020,Unknown,oe:player:5fac949d3a1a7631ddaef68ea4cbe1e,Dread,jng,,,,,,,,,,,,,,
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2020,Unknown,oe:player:ae4cccea87290717523772f7472e7f5,Spirit,jng,,,,,,,,,,,,,,
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2020,Unknown,oe:player:6c1fa8d6ae91f559b9d317477dad3ea,Fly,mid,,,,,,,,,,,,,,
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2020,Unknown,oe:player:7b28158d613ea1869441676fa32a3b5,Mystic,bot,,,,,,,,,,,,,,
+player,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2020,Unknown,oe:player:1e48e6a94caf09f3d8275ffba847eea,Jelly,sup,,,,,,,,,,,,,,
+lineup,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2020,Unknown,,,,lineup-78fe9e15be4e263c,KF-01,1,4,oe:player:03daae1844b9ad257324c3eedf41e28,oe:player:ae4cccea87290717523772f7472e7f5,oe:player:6c1fa8d6ae91f559b9d317477dad3ea,oe:player:7b28158d613ea1869441676fa32a3b5,oe:player:1e48e6a94caf09f3d8275ffba847eea,Kiin,Spirit,Fly,Mystic,Jelly
+lineup,oe:team:0b65555ba9e97910fc1e7264a99fa24,Kwangdong Freecs,KF,2020,Unknown,,,,lineup-2012be2fc14d4b69,KF-02,2,1,oe:player:03daae1844b9ad257324c3eedf41e28,oe:player:5fac949d3a1a7631ddaef68ea4cbe1e,oe:player:6c1fa8d6ae91f559b9d317477dad3ea,oe:player:7b28158d613ea1869441676fa32a3b5,oe:player:1e48e6a94caf09f3d8275ffba847eea,Kiin,Dread,Fly,Mystic,Jelly
+player,oe:team:14098ac4d339fe1a0f13e74109a493c,Rockhead Players,RP,2020,Unknown,oe:player:93f82d825f42b45556c854fdfcef571,SoaR,top,,,,,,,,,,,,,,
+player,oe:team:14098ac4d339fe1a0f13e74109a493c,Rockhead Players,RP,2020,Unknown,oe:player:be26898a3600cb5e9898c0ab68d9139,BroCColi,jng,,,,,,,,,,,,,,
+player,oe:team:14098ac4d339fe1a0f13e74109a493c,Rockhead Players,RP,2020,Unknown,oe:player:245a58a5dc42397caf57bc06c2c0afd,Ian,mid,,,,,,,,,,,,,,
+player,oe:team:14098ac4d339fe1a0f13e74109a493c,Rockhead Players,RP,2020,Unknown,oe:player:ebec939da49d80219030b8441845ef9,Pilot,bot,,,,,,,,,,,,,,
+player,oe:team:14098ac4d339fe1a0f13e74109a493c,Rockhead Players,RP,2020,Unknown,oe:player:a72464c4b816f4ce92d5ed43bebbf62,SUP,sup,,,,,,,,,,,,,,
+lineup,oe:team:14098ac4d339fe1a0f13e74109a493c,Rockhead Players,RP,2020,Unknown,,,,lineup-a16606ae6cf955eb,RP-01,1,2,oe:player:93f82d825f42b45556c854fdfcef571,oe:player:be26898a3600cb5e9898c0ab68d9139,oe:player:245a58a5dc42397caf57bc06c2c0afd,oe:player:ebec939da49d80219030b8441845ef9,oe:player:a72464c4b816f4ce92d5ed43bebbf62,SoaR,BroCColi,Ian,Pilot,SUP
+player,oe:team:0ce92abf77546dafee13c1c3f37c25e,Spear Gaming,SG,2020,Unknown,oe:player:21846207612858fb49a468b43e56dd3,Destroy,top,,,,,,,,,,,,,,
+player,oe:team:0ce92abf77546dafee13c1c3f37c25e,Spear Gaming,SG,2020,Unknown,oe:player:cc00384e754d3b4db840275587813eb,Yohan,jng,,,,,,,,,,,,,,
+player,oe:team:0ce92abf77546dafee13c1c3f37c25e,Spear Gaming,SG,2020,Unknown,oe:player:ba2664f94e92e7e9e06fe8582b1f4ec,Chasy,mid,,,,,,,,,,,,,,
+player,oe:team:0ce92abf77546dafee13c1c3f37c25e,Spear Gaming,SG,2020,Unknown,oe:player:030a726de315d9ad86989bf360809e9,Prince,bot,,,,,,,,,,,,,,
+player,oe:team:0ce92abf77546dafee13c1c3f37c25e,Spear Gaming,SG,2020,Unknown,oe:player:29e873916dcb14c9feb6b85d253cb87,Asper,sup,,,,,,,,,,,,,,
+lineup,oe:team:0ce92abf77546dafee13c1c3f37c25e,Spear Gaming,SG,2020,Unknown,,,,lineup-07790ee10e422c8e,SG-01,1,2,oe:player:21846207612858fb49a468b43e56dd3,oe:player:cc00384e754d3b4db840275587813eb,oe:player:ba2664f94e92e7e9e06fe8582b1f4ec,oe:player:030a726de315d9ad86989bf360809e9,oe:player:29e873916dcb14c9feb6b85d253cb87,Destroy,Yohan,Chasy,Prince,Asper
+player,name-team-bbf4d270ed871a83,unknown team,UT,2020,Unknown,oe:player:7277de5f2ed6f17c61f1f25594591a8,Meaning,top,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2020,Unknown,oe:player:c26dd92b4af66a5de0594ddd44a3943,Magong,jng,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2020,Unknown,oe:player:779263ec4c1b5f9943badee2e45e66f,Rex,mid,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2020,Unknown,oe:player:767226293077313c4cdd84877a3e3ca,Enjoy,bot,,,,,,,,,,,,,,
+player,name-team-bbf4d270ed871a83,unknown team,UT,2020,Unknown,oe:player:f7f873beef2f6b2efc353cdb25da76d,Tang,sup,,,,,,,,,,,,,,
+lineup,name-team-bbf4d270ed871a83,unknown team,UT,2020,Unknown,,,,lineup-6c9c0427664f06a1,UT-01,1,2,oe:player:7277de5f2ed6f17c61f1f25594591a8,oe:player:c26dd92b4af66a5de0594ddd44a3943,oe:player:779263ec4c1b5f9943badee2e45e66f,oe:player:767226293077313c4cdd84877a3e3ca,oe:player:f7f873beef2f6b2efc353cdb25da76d,Meaning,Magong,Rex,Enjoy,Tang

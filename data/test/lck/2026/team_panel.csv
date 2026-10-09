@@ -1,0 +1,35 @@
+kind,team_id,team,team_short,season,split,player_id,player,role,lineup_id,lineup_name,lineup_index,n_games,top_id,jng_id,mid_id,bot_id,sup_id,top_player,jng_player,mid_player,bot_player,sup_player
+player,oe:team:b3c72a20aa56f5d28022ac04a7dc294,DN SOOPers,DS,2026,Cup,oe:player:6e6a78244523ed9e54731d07d1f79f4,DuDu,top,,,,,,,,,,,,,,
+player,oe:team:b3c72a20aa56f5d28022ac04a7dc294,DN SOOPers,DS,2026,Cup,oe:player:a2357eb17578485c2ba736db36cbc42,Pyosik,jng,,,,,,,,,,,,,,
+player,oe:team:b3c72a20aa56f5d28022ac04a7dc294,DN SOOPers,DS,2026,Cup,oe:player:6adb46561c24655e0455d9b3fdc5698,Clozer,mid,,,,,,,,,,,,,,
+player,oe:team:b3c72a20aa56f5d28022ac04a7dc294,DN SOOPers,DS,2026,Cup,oe:player:18bdb3898e7fecb3bb0be7ff075d509,deokdam,bot,,,,,,,,,,,,,,
+player,oe:team:b3c72a20aa56f5d28022ac04a7dc294,DN SOOPers,DS,2026,Cup,oe:player:dea5251e486aed942e1bc06e1d5c116,Life,sup,,,,,,,,,,,,,,
+player,oe:team:b3c72a20aa56f5d28022ac04a7dc294,DN SOOPers,DS,2026,Cup,oe:player:ee051912ad5f9a97aa9ce4980cbb481,Peter,sup,,,,,,,,,,,,,,
+lineup,oe:team:b3c72a20aa56f5d28022ac04a7dc294,DN SOOPers,DS,2026,Cup,,,,lineup-8701be52952cef49,DS-01,1,4,oe:player:6e6a78244523ed9e54731d07d1f79f4,oe:player:a2357eb17578485c2ba736db36cbc42,oe:player:6adb46561c24655e0455d9b3fdc5698,oe:player:18bdb3898e7fecb3bb0be7ff075d509,oe:player:ee051912ad5f9a97aa9ce4980cbb481,DuDu,Pyosik,Clozer,deokdam,Peter
+lineup,oe:team:b3c72a20aa56f5d28022ac04a7dc294,DN SOOPers,DS,2026,Cup,,,,lineup-e3f7ad379892d926,DS-02,2,2,oe:player:6e6a78244523ed9e54731d07d1f79f4,oe:player:a2357eb17578485c2ba736db36cbc42,oe:player:6adb46561c24655e0455d9b3fdc5698,oe:player:18bdb3898e7fecb3bb0be7ff075d509,oe:player:dea5251e486aed942e1bc06e1d5c116,DuDu,Pyosik,Clozer,deokdam,Life
+player,oe:team:ef69efa6acebe94107f0cf1ba716806,Dplus Kia,DK,2026,Cup,oe:player:da9f969a7ab3819b9e528072aa4d5e6,Siwoo,top,,,,,,,,,,,,,,
+player,oe:team:ef69efa6acebe94107f0cf1ba716806,Dplus Kia,DK,2026,Cup,oe:player:10b86429ce8048aba673d802632e358,Lucid,jng,,,,,,,,,,,,,,
+player,oe:team:ef69efa6acebe94107f0cf1ba716806,Dplus Kia,DK,2026,Cup,oe:player:5f8ff49cd56eae61d635966b183a451,ShowMaker,mid,,,,,,,,,,,,,,
+player,oe:team:ef69efa6acebe94107f0cf1ba716806,Dplus Kia,DK,2026,Cup,oe:player:eaebb7118d7bd83eabac513053e1f6c,Smash,bot,,,,,,,,,,,,,,
+player,oe:team:ef69efa6acebe94107f0cf1ba716806,Dplus Kia,DK,2026,Cup,oe:player:99e732def3601275db892c84fb85a0c,Career,sup,,,,,,,,,,,,,,
+lineup,oe:team:ef69efa6acebe94107f0cf1ba716806,Dplus Kia,DK,2026,Cup,,,,lineup-a6dd817bea105063,DK-01,1,15,oe:player:da9f969a7ab3819b9e528072aa4d5e6,oe:player:10b86429ce8048aba673d802632e358,oe:player:5f8ff49cd56eae61d635966b183a451,oe:player:eaebb7118d7bd83eabac513053e1f6c,oe:player:99e732def3601275db892c84fb85a0c,Siwoo,Lucid,ShowMaker,Smash,Career
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2026,Cup,oe:player:03daae1844b9ad257324c3eedf41e28,Kiin,top,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2026,Cup,oe:player:92544d7a994bd6841cccd9f6e42e3de,Canyon,jng,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2026,Cup,oe:player:fb6e61b8acb05df17b7e5ad4ae7c800,Chovy,mid,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2026,Cup,oe:player:eada4723af6f51cf2391d85b5fde49b,Ruler,bot,,,,,,,,,,,,,,
+player,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2026,Cup,oe:player:605821ebcf6a2e53f03ec6e8e463d1b,Duro,sup,,,,,,,,,,,,,,
+lineup,oe:team:50f58982d91a36557ec8aec52ab014f,Gen.G,GEN,2026,Cup,,,,lineup-7a1ebf0f0d518f67,GEN-01,1,4,oe:player:03daae1844b9ad257324c3eedf41e28,oe:player:92544d7a994bd6841cccd9f6e42e3de,oe:player:fb6e61b8acb05df17b7e5ad4ae7c800,oe:player:eada4723af6f51cf2391d85b5fde49b,oe:player:605821ebcf6a2e53f03ec6e8e463d1b,Kiin,Canyon,Chovy,Ruler,Duro
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2026,Cup,oe:player:29bef8f5895e5e4fef8ff0945e68567,PerfecT,top,,,,,,,,,,,,,,
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2026,Cup,oe:player:f9fe6d28d5b67bf9ac673b2cc8edf15,Cuzz,jng,,,,,,,,,,,,,,
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2026,Cup,oe:player:30361653a485a9609fb2d3aa073282c,Bdd,mid,,,,,,,,,,,,,,
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2026,Cup,oe:player:85104684d1eb7f4c0ce393441a0b669,Aiming,bot,,,,,,,,,,,,,,
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2026,Cup,oe:player:78081d0b3c01f1f295d52d53744261a,Ghost,sup,,,,,,,,,,,,,,
+player,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2026,Cup,oe:player:3126bca5d4d2555ba3b460699508e16,Pollu,sup,,,,,,,,,,,,,,
+lineup,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2026,Cup,,,,lineup-0247fb3233d7ee23,KR-01,1,1,oe:player:29bef8f5895e5e4fef8ff0945e68567,oe:player:f9fe6d28d5b67bf9ac673b2cc8edf15,oe:player:30361653a485a9609fb2d3aa073282c,oe:player:85104684d1eb7f4c0ce393441a0b669,oe:player:78081d0b3c01f1f295d52d53744261a,PerfecT,Cuzz,Bdd,Aiming,Ghost
+lineup,oe:team:d723992568441c6bafa2658129eade7,KT Rolster,KR,2026,Cup,,,,lineup-e89935a0b865dc8c,KR-02,2,1,oe:player:29bef8f5895e5e4fef8ff0945e68567,oe:player:f9fe6d28d5b67bf9ac673b2cc8edf15,oe:player:30361653a485a9609fb2d3aa073282c,oe:player:85104684d1eb7f4c0ce393441a0b669,oe:player:3126bca5d4d2555ba3b460699508e16,PerfecT,Cuzz,Bdd,Aiming,Pollu
+player,oe:team:1d0389df0c5eea93b04122ba167c010,Kiwoom DRX,KD,2026,Cup,oe:player:6fbf57b984dbf130701e09ea4110bb8,Rich,top,,,,,,,,,,,,,,
+player,oe:team:1d0389df0c5eea93b04122ba167c010,Kiwoom DRX,KD,2026,Cup,oe:player:baf26814ef7b2f10fac33a00c3d53a3,Willer,jng,,,,,,,,,,,,,,
+player,oe:team:1d0389df0c5eea93b04122ba167c010,Kiwoom DRX,KD,2026,Cup,oe:player:bd6a2e6aaeb993fd29f43790265297f,Ucal,mid,,,,,,,,,,,,,,
+player,oe:team:1d0389df0c5eea93b04122ba167c010,Kiwoom DRX,KD,2026,Cup,oe:player:8643b56ba8000250b81fdaca1d7f06e,Jiwoo,bot,,,,,,,,,,,,,,
+player,oe:team:1d0389df0c5eea93b04122ba167c010,Kiwoom DRX,KD,2026,Cup,oe:player:5ef70ecd799a70ebbda239cd9a9f1e7,Andil,sup,,,,,,,,,,,,,,
+lineup,oe:team:1d0389df0c5eea93b04122ba167c010,Kiwoom DRX,KD,2026,Cup,,,,lineup-f270b4199912263a,KD-01,1,7,oe:player:6fbf57b984dbf130701e09ea4110bb8,oe:player:baf26814ef7b2f10fac33a00c3d53a3,oe:player:bd6a2e6aaeb993fd29f43790265297f,oe:player:8643b56ba8000250b81fdaca1d7f06e,oe:player:5ef70ecd799a70ebbda239cd9a9f1e7,Rich,Willer,Ucal,Jiwoo,Andil
