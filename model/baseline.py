@@ -7,6 +7,7 @@ from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import OneHotEncoder
+from prepare import validate_scope
 
 FEATURES = ["role", "role_champion", "opponent_champion", "patch", "side", "team_id", "opponent_team_id"]
 ALPHA = 20.0
@@ -31,12 +32,24 @@ def chronological_blocks(frame, n_blocks=5):
 
 
 def evaluate(frame):
+    validate_scope(frame)
     p = frame.copy()
     p["fold"] = 0
     p["prediction_status"] = "warmup"
     for c in ["expected_dpm", "baseline_dpm", "training_role_sd", "adjusted_impact"]:
         p[c] = np.nan
     p["train_end_day"] = pd.Series(pd.NA, index=p.index, dtype="string")
+    if p.day.nunique() < 10:
+        reason = "Fewer than 10 distinct match days; out-of-time evaluation is unavailable."
+        unavailable = {"mae_dpm": None, "rmse_dpm": None, "r2_dpm": None, "rows": 0}
+        report = {"status": "insufficient_history", "reason": reason,
+                  "target": "damage to champions per minute (DPM)", "features": FEATURES,
+                  "alpha": ALPHA, "warmup_rows": len(p), "evaluated_rows": 0,
+                  "context_ridge": dict(unavailable), "role_mean": dict(unavailable),
+                  "folds": [], "by_role": {}}
+        artifact = {"status": "insufficient_history", "model_type": None, "reason": reason,
+                    "usage": "No model was fitted; all predictions remain unavailable."}
+        return p, report, artifact
     folds = []
     for number, days in enumerate(chronological_blocks(p)[1:], start=1):
         train = p[p.day < days[0]]
@@ -61,7 +74,7 @@ def evaluate(frame):
                       "context_ridge": metrics(test.dpm, predicted), "role_mean": metrics(test.dpm, naive),
                       "unseen_category_fraction": {c: float((~test[c].isin(train[c])).mean()) for c in FEATURES}})
     held = p[p.prediction_status == "out_of_time"]
-    report = {"target": "damage to champions per minute (DPM)", "features": FEATURES,
+    report = {"status": "evaluated", "target": "damage to champions per minute (DPM)", "features": FEATURES,
               "alpha": ALPHA, "hyperparameter_selection": "fixed before evaluation; no tuning on these folds",
               "protocol": "5 contiguous blocks of unique match days; block 1 warmup; expanding training for blocks 2-5",
               "warmup_rows": int((p.fold == 0).sum()), "evaluated_rows": len(held),

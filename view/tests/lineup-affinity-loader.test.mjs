@@ -38,6 +38,7 @@ test('lineup drawer context loads only affinity_score, preserves payload, and sh
   const payload = fixturePayload();
   const requests = [];
   globalThis.fetch = async (url) => {
+    if (new URL(url).pathname.endsWith('/datasets.json')) return new Response(JSON.stringify({ version: 1, default: { league: 'LPL', year: 2025 }, datasets: [{ league: 'LPL', year: 2025, path: 'lpl/2025', status: 'ready' }] }));
     requests.push(new URL(url).pathname.split('/').pop());
     assert.equal(requests.at(-1), 'lineups.csv', 'lineup heatmap must not fetch other inputs');
     return new Response(affinityCsv(JSON.stringify(payload)));
@@ -70,7 +71,8 @@ test('catalogue and lineup affinity reuse lineups.csv; pair APIs lazily load pai
       : await readFile(url));
   };
   try {
-    const { dataSource } = await import('../utils/data-source.js?affinity-loader-lazy');
+    const { createDataSource } = await import('../utils/data-source.js');
+    const dataSource = createDataSource({ league: 'LPL', year: 2025, path: 'lpl/2025', status: 'ready' });
     const catalog = await dataSource.loadCatalog();
     assert.ok(catalog.teams.length);
     assert.ok(!requests.includes('pairs.csv'));

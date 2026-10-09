@@ -1,6 +1,8 @@
 export default {
+  "home.championMissing": "Champion information is not provided for this dataset.",
+  "home.evaluationCoverage": "{count} evaluated · {share}",
   "home.title": "Lineup Synergy",
-  "home.lead": "Lineup synergy in the League of Legends Pro League (LPL)",
+  "home.lead": "Lineup synergy in {league} · {year}",
   "home.overview": "Season overview",
   "home.topTeams": "Top teams",
   "home.season": "{season} season",

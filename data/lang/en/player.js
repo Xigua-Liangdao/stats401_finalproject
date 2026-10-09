@@ -10,7 +10,7 @@ export default {
   "player.actualVsExpected": "Actual vs expected",
   "player.overall": "Overall",
   "player.totalGames": "Total games",
-  "player.totalHint": "All available seasons in the dataset",
+  "player.totalHint": "All available games in the selected league/year",
   "player.currentSeason": "Current season · {season}",
   "player.pairImpact": "Check Pair Impact",
   "player.portrait": "Player portrait",

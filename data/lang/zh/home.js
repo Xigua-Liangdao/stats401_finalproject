@@ -1,6 +1,8 @@
 export default {
+  "home.championMissing": "此数据集未提供冠军资料。",
+  "home.evaluationCoverage": "{count} 场已评估 · {share}",
   "home.title": "狂拽酷霸炫的名字！",
-  "home.lead": "英雄联盟职业联赛（LPL）中的阵容协同",
+  "home.lead": "{league} · {year} 年的阵容协同",
   "home.overview": "赛季概览",
   "home.topTeams": "热门战队",
   "home.season": "{season} 赛季",

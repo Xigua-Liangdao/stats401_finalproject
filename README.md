@@ -1,4 +1,14 @@
-# Measuring Lineup Synergy in the LPL
+# League of Legends Lineup Analysis
+
+The current application supports registry-driven **league / event × season-year** selection. Python builds independent data bundles from pinned Oracle’s Elixir annual sources; the native JavaScript/D3 site switches the catalogue, profiles, charts and comparison view together.
+
+See [dataset expansion and reproduction](docs/datasets.md) for source coverage, directory structure, generation commands and integration with `xuye_ua`. The 2014–2026 source inventory is pinned in [`data/source_inventory.json`](data/source_inventory.json); actual ready/unavailable combinations and date coverage are recorded in [`data/datasets.json`](data/datasets.json). The retrieved 2026 snapshot currently ends on **July 28, 2026**.
+
+The verified expansion contains **509 league/year combinations**, **124 league/event labels** and **98,241 games**. Build a compressed static release with `python model/scripts/build_site.py --output /path/outside/the/repository/site`, then serve that directory and open `/view/`. Full analytical exports exceed the GitHub Pages site-size limit; the [release builder](model/scripts/SITE_BUILD.md) packages the browser's required files and verifies their size. It does not publish the site.
+
+## Original interim report — LPL 2025 snapshot
+
+The report below documents the earlier course milestone and its fixed LPL 2025 reference data. Its planned-interaction descriptions are historical; the current interface already includes interactive profiles, timelines, lineup playback, comparisons, bilingual labels and responsive layouts.
 
 **STATS 401 final project · In-class demo progress check**
 

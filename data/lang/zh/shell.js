@@ -1,5 +1,12 @@
 export default {
-  "app.kicker": "LPL 2025 · STATS 401",
+  "nav.league": "赛区 / 赛事",
+  "dataset.coverage": "数据覆盖：{start} 至 {end}",
+  "dataset.unavailable": "暂不可用",
+  "dataset.unavailableReason": "该赛区及年份没有可用的有效比赛数据，请选择其他年份或赛区。",
+  "dataset.selectionMissing": "数据目录中没有请求的赛区及年份，已显示可用的数据集。",
+  "dataset.entityMissing": "所选赛区及年份中没有此条目，已返回对应目录。",
+  "dataset.noModel": "该赛区及年份的比赛日不足，无法训练并评估历史模型。比赛记录仍可浏览，预测及调整后分数暂不可用。",
+  "app.kicker": "{league} {year} · STATS 401",
   "app.tagline": "Beyond KDA",
   "app.skip": "跳到内容",
   "app.loading": "正在载入目录",

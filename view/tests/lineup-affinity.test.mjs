@@ -53,7 +53,7 @@ function originalHeatmap(lineup, panel, pairRows) {
 
 for (const dataset of ['processed', 'test']) {
   test(`${dataset}: every stored lineup heatmap exactly matches the original frontend computation`, async () => {
-    const readCsv = async (name) => parseCsv(await readFile(new URL(`../../data/${dataset}/${name}.csv`, import.meta.url), 'utf8'));
+    const readCsv = async (name) => parseCsv(await readFile(new URL(`../../data/${dataset}/lpl/2025/${name}.csv`, import.meta.url), 'utf8'));
     const [lineups, panel, pairs] = await Promise.all(['lineups', 'team_panel', 'pairs'].map(readCsv));
     assert.ok(lineups.length > 0);
     assert.equal(Object.keys(lineups[0]).at(-1), 'affinity_score');

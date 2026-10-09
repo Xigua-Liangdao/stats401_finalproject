@@ -5,9 +5,13 @@ import { t } from '../../utils/i18n.js';
 import { PLACEHOLDER } from '../../utils/constants.js';
 import { loadLineupHeatmap, loadTeamHeatmap } from './pair-impact-data.js';
 import { createPairHeatmapPanel } from './pair-impact-heatmap.js';
+import { getSelectedDataset } from '../../utils/season.js';
 
 export async function openPairImpactDrawer({ lineupId, teamId, teamName, selectedIds }) {
+  const selection = getSelectedDataset();
+  const route = window.location.hash;
   const heatmap = teamId ? await loadTeamHeatmap(teamId) : await loadLineupHeatmap(lineupId);
+  if (getSelectedDataset() !== selection || window.location.hash !== route) return;
   const players = heatmap.players.map((player) => player.name).join(' · ');
   const highlighted = selectedIds?.length
     ? selectedIds

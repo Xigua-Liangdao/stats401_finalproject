@@ -7,6 +7,7 @@ import { fromData, t } from './i18n.js';
 import { parseCsv } from './csv.js';
 import { loadMedia } from './assets.js';
 import { setLoadProgress } from './load-progress.js';
+import { datasetKey, ensureDataset } from './season.js';
 
 function indexById(items) {
   return Object.fromEntries(items.map((item) => [item.id, item]));
@@ -142,7 +143,7 @@ function lineupPlayersFromRow(row, playerByTeam) {
   }).filter(Boolean);
 }
 
-function hydrateFromPanel(rows, summaries = {}) {
+function hydrateFromPanel(rows, summaries = {}, entry) {
   const playerRows = rows.filter((row) => row.kind === 'player');
   const lineupRows = rows.filter((row) => row.kind === 'lineup');
   const playerStats = new Map(
@@ -165,6 +166,7 @@ function hydrateFromPanel(rows, summaries = {}) {
     seenTeams.add(row.team_id);
     const team = {
       id: row.team_id,
+      league: entry.league,
       short: row.team_short || row.team,
       season: Number(row.season) || row.season,
       split: row.split || t('common.unknown'),
@@ -179,6 +181,7 @@ function hydrateFromPanel(rows, summaries = {}) {
   const players = playerRows.map((row) => {
     const player = {
       id: row.player_id,
+      league: entry.league,
       role: row.role,
       season: Number(row.season),
       teamId: row.team_id,
@@ -196,7 +199,7 @@ function hydrateFromPanel(rows, summaries = {}) {
 
   const lineups = lineupRows.map((row) => {
     const attached = lineupPlayersFromRow(row, playerByTeam).map((player) => (
-      copyRecord(player, { team: player.team || teamById[row.team_id] })
+      copyRecord(player, { league: entry.league, team: player.team || teamById[row.team_id] })
     ));
     const games = row.n_games === '' ? null : Number(row.n_games);
     const split = row.split || teamById[row.team_id]?.split || t('common.unknown');
@@ -205,6 +208,7 @@ function hydrateFromPanel(rows, summaries = {}) {
       : split;
     return {
       id: row.lineup_id,
+      league: entry.league,
       name: row.lineup_name || row.lineup_id,
       teamId: row.team_id,
       context,
@@ -221,7 +225,9 @@ function hydrateFromPanel(rows, summaries = {}) {
   return {
     season: Number(first.season) || teams[0]?.season || null,
     split: first.split || teams[0]?.split || t('common.unknown'),
-    sourceLabel: `${DATASET} / team_panel`,
+    league: entry.league,
+    dataset: entry,
+    sourceLabel: `${DATASET} / ${entry.path} / team_panel`,
     mode: DATASET,
     teams,
     players,
@@ -232,18 +238,47 @@ function hydrateFromPanel(rows, summaries = {}) {
   };
 }
 
+// Each source owns its promises and maps. In-flight reads retain the original
+// league/year even when the user switches selection before a request completes.
+export function createDataSource(entry, { fetcher = (...args) => fetch(...args), mediaLoader = loadMedia } = {}) {
+  if (entry?.status !== 'ready' || !/^[a-z0-9_-]+\/\d{4}$/.test(entry.path)) {
+    throw new Error(entry?.reason || 'Dataset is unavailable.');
+  }
+  if (entry.compression != null && entry.compression !== 'gzip') {
+    throw new Error(`Unsupported dataset compression: ${entry.compression}`);
+  }
 function datasetUrl(filename) {
   const dataset = DATASET || 'test';
-  return new URL(`../../data/${dataset}/${filename}`, import.meta.url);
+  const file = entry.compression === 'gzip' ? `${filename}.gz` : filename;
+  const url = new URL(`../../data/${dataset}/${entry.path}/${file}`, import.meta.url);
+  const version = entry.data_version || entry.source_sha256;
+  if (version) url.searchParams.set('v', version);
+  return url;
 }
 
 async function fetchCsv(filename) {
   const url = datasetUrl(filename);
-  const response = await fetch(url);
+  const response = await fetcher(url);
+  const file = entry.compression === 'gzip' ? `${filename}.gz` : filename;
   if (!response.ok) {
-    throw new Error(`Failed to load ${filename} (${response.status})`);
+    throw new Error(`Failed to load ${file} (${response.status})`);
   }
-  const rows = parseCsv(await response.text());
+  let text;
+  if (entry.compression === 'gzip') {
+    if (typeof DecompressionStream !== 'function') {
+      throw new Error(`Cannot load ${file}: this browser does not support gzip decompression (DecompressionStream).`);
+    }
+    try {
+      if (!response.body) throw new Error('The response body is empty.');
+      const stream = response.body.pipeThrough(new DecompressionStream('gzip'));
+      text = await new Response(stream).text();
+    } catch (error) {
+      throw new Error(`Failed to decompress ${file}: ${error.message}`, { cause: error });
+    }
+  } else {
+    text = await response.text();
+  }
+  const rows = parseCsv(text);
   console.info('[data]', filename, { dataset: DATASET, url: url.href, rows: rows.length });
   return rows;
 }
@@ -256,12 +291,18 @@ let lineupGamesPromise;
 const lineupAffinityById = new Map();
 
 function loadLineupRows() {
-  if (!lineupRowsPromise) lineupRowsPromise = fetchCsv('lineups.csv');
+  if (!lineupRowsPromise) lineupRowsPromise = fetchCsv('lineups.csv').catch((error) => {
+    lineupRowsPromise = null;
+    throw error;
+  });
   return lineupRowsPromise;
 }
 
 function loadPairs() {
-  if (!pairsPromise) pairsPromise = fetchCsv('pairs.csv').then((rows) => sortPairs(rows.map(mapPair)));
+  if (!pairsPromise) pairsPromise = fetchCsv('pairs.csv').then((rows) => sortPairs(rows.map(mapPair))).catch((error) => {
+    pairsPromise = null;
+    throw error;
+  });
   return pairsPromise;
 }
 
@@ -280,22 +321,31 @@ function loadCatalogRecord() {
       track(fetchCsv('players.csv')),
       track(loadLineupRows()),
       track(fetchCsv('teams.csv')),
-      track(loadMedia()),
+      track(mediaLoader()),
     ]).then(([panel, players, lineups, teams]) => {
       if (!panel.length) throw new Error('team_panel.csv is empty.');
-      return hydrateFromPanel(panel, { players, lineups, teams });
+      return hydrateFromPanel(panel, { players, lineups, teams }, entry);
+    }).catch((error) => {
+      catalogPromise = null;
+      throw error;
     });
   }
   return catalogPromise;
 }
 
 function loadPlayerGameRows() {
-  if (!playerGamesPromise) playerGamesPromise = fetchCsv('player_games.csv');
+  if (!playerGamesPromise) playerGamesPromise = fetchCsv('player_games.csv').catch((error) => {
+    playerGamesPromise = null;
+    throw error;
+  });
   return playerGamesPromise;
 }
 
 function loadLineupGameRows() {
-  if (!lineupGamesPromise) lineupGamesPromise = fetchCsv('lineup_games.csv');
+  if (!lineupGamesPromise) lineupGamesPromise = fetchCsv('lineup_games.csv').catch((error) => {
+    lineupGamesPromise = null;
+    throw error;
+  });
   return lineupGamesPromise;
 }
 
@@ -395,7 +445,7 @@ function pairsForPlayers(pairs, playerIds, teamId) {
   });
 }
 
-export const dataSource = {
+return {
   mode: DATASET,
 
   async loadCatalog() {
@@ -529,3 +579,23 @@ function enrichGame(game, { teamById, playerById, lineupById }) {
     lineup: game.lineupId ? lineupById[game.lineupId] ?? null : null,
   });
 }
+
+}
+
+const sources = new Map();
+const METHODS = [
+  'loadCatalog', 'getTeam', 'getPlayer', 'getLineup', 'getLineupAffinity',
+  'listPlayersByTeam', 'listLineupsByTeam', 'listTeamPlayers', 'listTeamLineups',
+  'listTeamPairs', 'listPairsForPlayer', 'listPairsForPlayers', 'loadPlayerGames',
+  'loadTeamPlayerGames', 'loadLineupGames',
+];
+
+export const dataSource = {
+  mode: DATASET,
+  ...Object.fromEntries(METHODS.map((method) => [method, async (...args) => {
+    const entry = await ensureDataset();
+    const key = `${DATASET}|${datasetKey(entry)}|${entry.path}|${entry.data_version || entry.source_sha256 || ''}|${entry.compression || ''}`;
+    if (!sources.has(key)) sources.set(key, createDataSource(entry));
+    return sources.get(key)[method](...args);
+  }])),
+};

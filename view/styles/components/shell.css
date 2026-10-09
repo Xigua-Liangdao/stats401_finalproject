@@ -163,6 +163,7 @@
   background: linear-gradient(90deg, var(--accent), var(--gold));
 }
 
+.league-select,
 .season-select,
 .language-select {
   appearance: none;
@@ -191,6 +192,8 @@
   text-transform: none;
 }
 
+.league-select:hover,
+.league-select:focus-visible,
 .season-select:hover,
 .season-select:focus-visible,
 .language-select:hover,
@@ -203,6 +206,7 @@
   display: flex;
   align-items: center;
   gap: 0.55rem;
+  flex-wrap: wrap;
   margin-left: auto;
   font-family: var(--font-mono);
   font-size: 0.68rem;
@@ -210,6 +214,11 @@
   text-transform: uppercase;
   color: var(--dim);
 }
+
+.league-select { max-width: 13rem; }
+.season-select { max-width: 10rem; }
+.dataset-notice { margin: 1rem var(--page-pad, 1.5rem); }
+.dataset-coverage { flex-basis: 100%; font-size: 0.58rem; letter-spacing: 0.03em; }
 
 .status-chip {
   display: inline-flex;

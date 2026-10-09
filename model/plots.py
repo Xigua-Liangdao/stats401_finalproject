@@ -1,11 +1,6 @@
 """Three reproducible static figures, using the same exports as the frontend."""
 from __future__ import annotations
 
-import matplotlib
-matplotlib.use("Agg")
-import matplotlib.pyplot as plt
-from matplotlib.colors import TwoSlopeNorm
-from matplotlib.ticker import PercentFormatter
 import numpy as np
 import pandas as pd
 
@@ -15,6 +10,7 @@ COLORS = {"top": "#3569ab", "jng": "#0c8979", "mid": "#b58018", "bot": "#c35264"
 
 
 def style():
+    import matplotlib.pyplot as plt
     plt.rcParams.update({"font.family": "DejaVu Sans", "font.size": 11,
                          "axes.spines.top": False, "axes.spines.right": False,
                          "axes.labelcolor": "#344054", "text.color": "#172b3a",
@@ -24,6 +20,7 @@ def style():
 
 
 def save(fig, destination, name):
+    import matplotlib.pyplot as plt
     fig.savefig(destination / f"{name}.png", dpi=160)
     fig.savefig(destination / f"{name}.svg", metadata={"Date": None})
     svg_path = destination / f"{name}.svg"
@@ -31,17 +28,37 @@ def save(fig, destination, name):
     plt.close(fig)
 
 
-def make_figures(tables, destination):
-    style()
+def select_examples(tables):
+    eligible = tables["players"][tables["players"].eligible]
+    if eligible.empty:
+        return {"timeline_player_id": None, "timeline_team_id": None, "timeline_role": None,
+                "heatmap_team_id": None, "selection_rule": "No eligible player; no static figures generated"}
+    focus = eligible.sort_values(["n_games", "player_id", "team_id", "role"], ascending=[False, True, True, True]).iloc[0]
+    team = tables["teams"].sort_values(["n_games", "team_id"], ascending=[False, True]).iloc[0]
+    return {"timeline_player_id": focus.player_id, "timeline_team_id": focus.team_id, "timeline_role": focus.role,
+            "heatmap_team_id": team.team_id, "selection_rule": "largest number of evaluated games; stable ID breaks ties"}
+
+
+def make_figures(tables, destination, label=None):
+    if label is None:
+        label = str(int(tables["players"].season.iloc[0]))
     destination.mkdir(parents=True, exist_ok=True)
     players = tables["players"]
     eligible = players[players.eligible]
     if eligible.empty:
-        raise ValueError("No players have enough held-out games for static figures.")
+        return select_examples(tables)
+    # Batch data generation and insufficient-history datasets need no plotting
+    # installation. Load the optional runtime only when actually drawing.
+    import matplotlib
+    matplotlib.use("Agg")
+    import matplotlib.pyplot as plt
+    from matplotlib.colors import TwoSlopeNorm
+    from matplotlib.ticker import PercentFormatter
+    style()
     fig, ax = plt.subplots(figsize=(11, 6.6))
     fig.subplots_adjust(top=.80, bottom=.19, left=.11, right=.96)
     fig.text(.06, .94, "Resource share and adjusted damage", fontsize=21, weight="bold")
-    fig.text(.06, .885, "2025 LPL · each point is one player, team and role; at least 10 evaluated games on 3 days", fontsize=10)
+    fig.text(.06, .885, f"{label} · each point is one player, team and role; at least 10 evaluated games on 3 days", fontsize=10)
     ax.axhline(0, color="#8595a6", linestyle="--", linewidth=1)
     for role in ROLES:
         g = eligible[eligible.role == role]
@@ -52,7 +69,7 @@ def make_figures(tables, destination):
     ax.grid(alpha=.18, axis="y")
     ax.legend(loc="lower left", bbox_to_anchor=(0, 1.01), ncol=5, fontsize=9, frameon=False, handletextpad=.3)
     fig.text(.06, .065, "Adjusted damage = (actual DPM − predicted DPM) / training-role SD. Point area increases with game count.", fontsize=9)
-    fig.text(.06, .03, "Source: Oracle's Elixir, pinned 2025 LPL snapshot. Estimates describe damage output, not overall player value.", fontsize=9, color="#667085")
+    fig.text(.06, .03, f"Source: Oracle's Elixir, pinned {label} snapshot. Estimates describe damage output, not overall player value.", fontsize=9, color="#667085")
     save(fig, destination, "01_resource_impact")
 
     # Selection by coverage, not by strongest-looking residual.
@@ -87,7 +104,8 @@ def make_figures(tables, destination):
             i, j = ids.index(pair.player_a_id), ids.index(pair.player_b_id)
             matrix[i, j] = matrix[j, i] = pair.shrunk_impact
             counts[i, j] = counts[j, i] = pair.n_games
-    limit = max(.15, float(np.nanmax(np.abs(matrix))))
+    finite = np.abs(matrix[np.isfinite(matrix)])
+    limit = max(.15, float(finite.max())) if finite.size else .15
     fig, ax = plt.subplots(figsize=(11, 8.4))
     fig.subplots_adjust(top=.79, bottom=.26, left=.23, right=.91)
     fig.text(.06, .95, f"Teammate co-performance: {team.team}", fontsize=20, weight="bold")

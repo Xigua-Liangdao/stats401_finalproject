@@ -1,5 +1,12 @@
 export default {
-  "app.kicker": "LPL 2025 · STATS 401",
+  "nav.league": "League / event",
+  "dataset.coverage": "Data coverage: {start} – {end}",
+  "dataset.unavailable": "Unavailable",
+  "dataset.unavailableReason": "This league/year has no valid exported games. Choose another year or league.",
+  "dataset.selectionMissing": "The requested league/year is not in the data catalog. Showing an available dataset.",
+  "dataset.entityMissing": "This record is not present in the selected league/year. Showing its catalogue.",
+  "dataset.noModel": "There are not enough match days to fit and evaluate a historical model for this league/year. Match records remain available; predictions and adjusted scores are unavailable.",
+  "app.kicker": "{league} {year} · STATS 401",
   "app.tagline": "Beyond KDA",
   "app.skip": "Skip to content",
   "app.loading": "Loading catalog",
