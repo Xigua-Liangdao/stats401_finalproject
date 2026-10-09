@@ -1,3 +1,55 @@
+.route-loading {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 11;
+  display: grid;
+  place-items: center;
+  padding: 1.5rem;
+  background: var(--bg);
+}
+
+.route-loading[hidden] {
+  display: none;
+}
+
+.route-loading__panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.95rem;
+  max-width: 20rem;
+}
+
+.route-loading__spinner {
+  width: 2.25rem;
+  height: 2.25rem;
+  border: 3px solid rgba(157, 180, 208, 0.35);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: route-loading-spin 0.75s linear infinite;
+}
+
+.route-loading__text {
+  margin: 0;
+  color: var(--muted);
+  font-family: var(--font-ui);
+  font-size: 0.98rem;
+  line-height: 1.55;
+  text-align: center;
+}
+
+@keyframes route-loading-spin {
+  to { transform: rotate(360deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-loading__spinner {
+    animation: none;
+  }
+}
+
 .route-wipe {
   pointer-events: none;
   position: fixed;
