@@ -62,8 +62,6 @@ export function enableDeveloperMode() {
   if (isDeveloperMode()) return;
   writeStored(true);
   clickCount = 0;
-  console.log('[Analytics] Developer Mode enabled');
-  console.log('[Analytics] is_test: true');
   syncDeveloperIndicator();
   showNotice('Developer Mode enabled');
 }
@@ -72,8 +70,6 @@ export function disableDeveloperMode() {
   if (!isDeveloperMode()) return;
   writeStored(false);
   clickCount = 0;
-  console.log('[Analytics] Developer Mode disabled');
-  console.log('[Analytics] is_test: false');
   syncDeveloperIndicator();
   showNotice('Developer Mode disabled');
 }

@@ -279,7 +279,6 @@ async function fetchCsv(filename) {
     text = await response.text();
   }
   const rows = parseCsv(text);
-  console.info('[data]', filename, { dataset: DATASET, url: url.href, rows: rows.length });
   return rows;
 }
 

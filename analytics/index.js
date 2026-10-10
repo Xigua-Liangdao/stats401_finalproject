@@ -26,14 +26,10 @@ export function initAnalytics() {
     watchDevice();
     const anonymous = readOrCreateAnonymousId();
     const session = readOrCreateSessionId();
-    const isTest = isDeveloperMode();
     if (!started) {
       started = true;
-      console.log('[Analytics] initialized');
       logIdentity('anonymous_id', anonymous);
       logIdentity('session_id', session);
-      console.log(`[Analytics] is_test: ${isTest}`);
-      console.log(`[Analytics] device: ${currentDevice()}`);
     }
     bindDeveloperMode();
     syncDeveloperIndicator();
