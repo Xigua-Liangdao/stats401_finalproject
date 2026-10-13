@@ -486,12 +486,29 @@
   color: var(--dim);
 }
 
-.site-footer__developer {
+.site-footer__developer,
+.site-footer__feedback {
   margin-left: auto;
   font-size: 0.62rem;
   letter-spacing: 0.08em;
   text-transform: none;
   color: var(--dim);
+}
+
+.site-footer__feedback {
+  text-decoration: none;
+}
+
+.site-footer__feedback:hover,
+.site-footer__feedback:focus-visible {
+  color: var(--accent);
+}
+
+.site-footer:has(.site-footer__developer) .site-footer__feedback {
+  display: none;
+}
+
+.site-footer__developer {
   cursor: default;
   user-select: none;
 }

@@ -71,6 +71,8 @@ export function applyDocumentCopy() {
   if (footer) {
     footer.textContent = ['STATS 401', t('app.name'), t('app.authorTu'), t('app.authorChen')].join(' · ');
   }
+  const feedback = document.querySelector('.site-footer__feedback');
+  if (feedback) feedback.textContent = t('app.feedback');
   const startup = document.querySelector('#startup');
   if (startup) startup.setAttribute('aria-label', t('app.loading'));
   const startupId = document.querySelector('.startup__id');

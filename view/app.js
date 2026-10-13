@@ -9,6 +9,7 @@ import { renderPlayerCataloguePage } from './pages/player/player-catalogue-page.
 import { renderPlayerPage } from './pages/player/player-page.js?v=scale-zoom';
 import { renderTeamPage } from './pages/team/team-page.js';
 import { h } from './utils/dom.js';
+import { syncDeveloperIndicator } from '../analytics/developerMode.js';
 import { applyDocumentCopy, setLanguage, t } from './utils/i18n.js';
 import { datasetRequestForRoute, navigate, routeAfterDatasetChange, routeHref, startRouter } from './utils/navigation.js?v=catalogue-back';
 import { leagueOptions, loadDatasetManifest, seasonOptions, setDatasetSelection } from './utils/season.js';
@@ -16,6 +17,7 @@ import { dataSource } from './utils/data-source.js';
 import { createRouteTransition, shouldPlayRouteWipe } from './utils/route-transition.js';
 
 applyDocumentCopy();
+syncDeveloperIndicator();
 
 const header = document.querySelector('#site-header');
 const app = document.querySelector('#app');

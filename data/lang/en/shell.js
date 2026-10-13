@@ -18,6 +18,7 @@ export default {
   "app.linking": "Linking file",
   "app.authorTu": "Teresa Tu",
   "app.authorChen": "Xuye Chen",
+  "app.feedback": "Feedback",
   "app.loadFailed": "Terminal failed to load this file. See console.",
   "nav.home": "Home",
   "nav.catalogue": "Catalogue",

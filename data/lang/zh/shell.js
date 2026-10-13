@@ -18,6 +18,7 @@ export default {
   "app.linking": "正在连接档案",
   "app.authorTu": "Teresa Tu",
   "app.authorChen": "Xuye Chen",
+  "app.feedback": "反馈",
   "app.loadFailed": "终端未能载入此档案。请查看控制台。",
   "nav.home": "首页",
   "nav.catalogue": "目录",
