@@ -1,5 +1,11 @@
 export default {
   "compare.search": "Search {label}",
+  "compare.editSelection": "Change comparison",
+  "compare.hideSelection": "Show chart",
+  "compare.selectionSummary": "{left} vs {right}",
+  "compare.evaluatedGames": "Evaluated games",
+  "compare.evaluatedWinRate": "Evaluated-game win rate",
+  "compare.sampleCount": "{count} games",
   "compare.selectLineup": "Select lineup",
   "compare.selectPlayer": "Select player",
   "compare.selectTeam": "Select team",

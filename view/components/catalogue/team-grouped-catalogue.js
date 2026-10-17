@@ -98,7 +98,9 @@ export function createTeamGroupedCatalogue({
   renderItems,
   pageSize = CATALOGUE_PAGE_SIZE[variant] ?? CATALOGUE_PAGE_SIZE.players,
   initialPage = 1,
+  initialQuery = '',
   onPageChange,
+  onStateChange,
 }) {
   const host = h('div', { class: 'catalogue-results' });
   const input = h('input', {
@@ -107,12 +109,16 @@ export function createTeamGroupedCatalogue({
     placeholder: t('catalogue.searchTeam'),
     'aria-label': t('catalogue.searchTeam'),
   });
-  let query = '';
-  let filteredPage = 1;
+  let query = initialQuery;
+  let currentPage = initialPage;
+  input.value = query;
 
   function paint() {
     const needle = query.trim().toLowerCase();
     const shown = needle ? groups.filter((group) => groupMatches(group, needle)) : groups;
+    const count = shown.reduce((sum, group) => sum + (getItems ? getItems(group) : itemsFor(group, variant)).length, 0);
+    currentPage = Math.min(Math.max(1, Math.ceil(count / pageSize)), Math.max(1, currentPage));
+    onStateChange?.({ query, page: currentPage });
     if (!shown.length) {
       host.replaceChildren(h('p', { class: 'empty-state' }, [t('catalogue.noTeams')]));
       return;
@@ -124,12 +130,12 @@ export function createTeamGroupedCatalogue({
       renderItem,
       renderItems,
       pageSize,
-      initialPage: needle ? filteredPage : initialPage,
-      onPageChange: needle
-        ? (page) => {
-          filteredPage = page;
-        }
-        : onPageChange,
+      initialPage: currentPage,
+      onPageChange: (page) => {
+        currentPage = page;
+        onPageChange?.(page);
+        onStateChange?.({ query, page });
+      },
     }));
   }
 
@@ -142,7 +148,7 @@ export function createTeamGroupedCatalogue({
   });
   input.addEventListener('input', () => {
     query = input.value;
-    filteredPage = 1;
+    currentPage = 1;
     paint();
   });
   paint();

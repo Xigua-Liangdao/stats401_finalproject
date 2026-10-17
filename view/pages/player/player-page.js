@@ -9,7 +9,7 @@ import { renderPlayerGamesCatalogue } from '../../features/player-games/player-g
 import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js';
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
-import { backAction, href, readCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
+import { backAction, href, parseHash, readCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
 import { routeTargetId, trackUi } from '../../utils/track.js';
 import { renderNotFound } from '../not-found.js';
 
@@ -22,6 +22,7 @@ async function openPlayerPairImpact(player) {
 }
 
 export async function renderPlayerPage(target, id, teamId, season) {
+  const route = parseHash();
   const [player, groups] = await Promise.all([loadPlayer(id, teamId, season), loadPlayerCatalog()]);
   if (!player) {
     renderNotFound(target);
@@ -76,7 +77,7 @@ export async function renderPlayerPage(target, id, teamId, season) {
         ],
       }),
       renderPlayerStats(player, games, players),
-      renderPlayerGamesCatalogue(games),
+      renderPlayerGamesCatalogue(games, route),
     ]),
   );
 }

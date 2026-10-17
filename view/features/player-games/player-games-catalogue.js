@@ -4,7 +4,7 @@ import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
 import { openPlayerGameInfo } from './player-game-info.js?v=game-stats';
 
-export function renderPlayerGamesCatalogue(games) {
+export function renderPlayerGamesCatalogue(games, route) {
   return createSectionBlock({
     index: t('catalogue.related'),
     title: t('catalogue.playerGames'),
@@ -13,6 +13,7 @@ export function renderPlayerGamesCatalogue(games) {
       ? createGameCatalogue({
           games: games.map((game) => ({ ...game, summary: game.champion ?? null })),
           champion: true,
+          route,
           onInfo: openPlayerGameInfo,
         })
       : h('div', { class: 'empty-state' }, [t('catalogue.noPlayerGames')]),

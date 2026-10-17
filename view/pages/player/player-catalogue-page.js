@@ -3,16 +3,19 @@ import { createTeamGroupedCatalogue } from '../../components/catalogue/team-grou
 import { createPageShell } from '../../components/layout/page-shell.js';
 import { loadPlayerCatalog } from '../../features/player/player-data.js';
 import { indexed, t } from '../../utils/i18n.js';
-import { href, rememberCataloguePage } from '../../utils/navigation.js?v=catalogue-back';
+import { href, parseHash, rememberCataloguePage, updateRouteState } from '../../utils/navigation.js?v=catalogue-back';
 
-export async function renderPlayerCataloguePage(target, page = 1) {
+export async function renderPlayerCataloguePage(target, page = 1, query = '') {
+  const route = parseHash();
   const groups = await loadPlayerCatalog();
   const onPageChange = rememberCataloguePage('players', page);
 
   const catalogue = createTeamGroupedCatalogue({
     variant: 'players',
     initialPage: page,
+    initialQuery: query,
     onPageChange,
+    onStateChange: (state) => updateRouteState(state, route),
     groups: groups.map((group) => ({
       ...group,
       meta: t('catalogue.players', { count: String(group.players.length).padStart(2, '0') }),

@@ -3,12 +3,13 @@ import { t } from '../../utils/i18n.js';
 import { statValue } from '../../utils/stats.js';
 import { LINEUP_STAT_CARDS } from '../lineup/lineup-data.js';
 import { loadLineupHeatmap } from '../pair-impact/pair-impact-data.js';
-import { createPairHeatmapPanel } from '../pair-impact/pair-impact-heatmap.js';
+import { createPairHeatmapPanel, createSharedPairHeatmapLegend } from '../pair-impact/pair-impact-heatmap.js';
+import { sharedPairHeatmapLimit } from '../pair-impact/pair-impact-scale.js';
 import { createCompareRadar } from './comparison-radar.js';
 
 const PLAYER_STATS = [
-  { field: 'n_games', format: 'count', get label() { return t('common.games'); } },
-  { field: 'win_rate', format: 'percent', get label() { return t('common.winRate'); } },
+  { field: 'n_games', format: 'count', get label() { return t('compare.evaluatedGames'); } },
+  { field: 'win_rate', format: 'percent', get label() { return t('compare.evaluatedWinRate'); } },
   { field: 'mean_gold_share', format: 'percent', get label() { return t('common.goldShare'); } },
   { field: 'mean_damage_share', format: 'percent', get label() { return t('common.damageShare'); } },
   { field: 'mean_dpm', format: 'dpm', get label() { return t('common.dpm'); } },
@@ -17,6 +18,15 @@ const PLAYER_STATS = [
 ];
 
 export function createStatCompare({ rows, left, right }) {
+  function value(entity, row) {
+    const field = row.field ?? row.key;
+    const formatted = statValue(entity.stats?.[field], row.format);
+    return field === 'win_rate'
+      ? [formatted, h('small', { class: 'compare-stats__sample' }, [
+        t('compare.sampleCount', { count: statValue(entity.stats?.n_games, 'count') }),
+      ])]
+      : [formatted];
+  }
   return h('div', { class: 'compare-stats panel' }, [
     h('div', { class: 'compare-stats__row compare-stats__row--head' }, [
       h('span', {}, ['']),
@@ -24,9 +34,9 @@ export function createStatCompare({ rows, left, right }) {
       h('span', { class: 'compare-stats__name compare-stats__name--right' }, [right.name]),
     ]),
     ...rows.map((row) => h('div', { class: 'compare-stats__row' }, [
-      h('span', { class: 'compare-stats__label' }, [row.label]),
-      h('span', { class: 'compare-stats__value compare-stats__value--left' }, [statValue(left.stats?.[row.field ?? row.key], row.format)]),
-      h('span', { class: 'compare-stats__value compare-stats__value--right' }, [statValue(right.stats?.[row.field ?? row.key], row.format)]),
+      h('span', { class: 'compare-stats__label' }, [(row.field ?? row.key) === 'win_rate' ? t('compare.evaluatedWinRate') : row.label]),
+      h('span', { class: 'compare-stats__value compare-stats__value--left' }, value(left, row)),
+      h('span', { class: 'compare-stats__value compare-stats__value--right' }, value(right, row)),
     ])),
   ]);
 }
@@ -59,7 +69,8 @@ export function createLineupComparison({ left, right }) {
 function syncedHeatmaps(results) {
   const apis = [null, null];
   let origin = null;
-  return results.map((result, index) => {
+  const colorLimit = sharedPairHeatmapLimit(results.map((result) => result.heatmap));
+  const panels = results.map((result, index) => {
     if (!result.heatmap) {
       return h('div', { class: 'panel compare-heatmap-empty' }, [
         h('p', { class: 'viz-placeholder__title' }, [result.lineup.name]),
@@ -68,6 +79,8 @@ function syncedHeatmaps(results) {
     }
     return createPairHeatmapPanel({
       heatmap: result.heatmap,
+      colorLimit,
+      showLegend: false,
       teamName: [result.lineup.name, result.lineup.team?.name].filter(Boolean).join(' · '),
       onInspect(state) {
         const other = apis[1 - index];
@@ -81,6 +94,9 @@ function syncedHeatmaps(results) {
       },
     });
   });
+  return results.some((result) => result.heatmap)
+    ? [createSharedPairHeatmapLegend(colorLimit), ...panels]
+    : panels;
 }
 
 function loadPanel(lineup) {

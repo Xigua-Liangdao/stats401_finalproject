@@ -10,7 +10,7 @@ function forSeason(groups, season) {
   return groups.filter((group) => String(group.team.season) === String(season));
 }
 
-export async function renderComparisonPage(target) {
+export async function renderComparisonPage(target, initialState = {}) {
   const season = getSelectedSeason();
   const [playerGroups, lineupGroups] = await Promise.all([
     dataSource.listPlayersByTeam(),
@@ -32,7 +32,7 @@ export async function renderComparisonPage(target) {
         { label: t('nav.comparison') },
       ],
       children: h('div', {}, [
-        createComparisonBoard({ teams, playersByTeam, lineupsByTeam }),
+        createComparisonBoard({ teams, playersByTeam, lineupsByTeam, initialState }),
       ]),
     }),
   );

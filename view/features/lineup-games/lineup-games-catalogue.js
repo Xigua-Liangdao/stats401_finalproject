@@ -4,7 +4,7 @@ import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
 import { openLineupGameInfo } from './lineup-game-info.js?v=game-stats';
 
-export function renderLineupGamesCatalogue(games) {
+export function renderLineupGamesCatalogue(games, route) {
   return createSectionBlock({
     index: t('catalogue.related'),
     title: t('catalogue.lineupGames'),
@@ -12,6 +12,7 @@ export function renderLineupGamesCatalogue(games) {
     children: games.length
       ? createGameCatalogue({
           games,
+          route,
           onInfo: (item) => openLineupGameInfo(item, games),
         })
       : h('div', { class: 'empty-state' }, [t('catalogue.noLineupGames')]),

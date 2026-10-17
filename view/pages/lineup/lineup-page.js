@@ -10,11 +10,12 @@ import { renderLineupGamesCatalogue } from '../../features/lineup-games/lineup-g
 import { openPairImpactDrawer } from '../../features/pair-impact/pair-impact-drawer.js';
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
-import { backAction, href } from '../../utils/navigation.js?v=catalogue-back';
+import { backAction, href, parseHash } from '../../utils/navigation.js?v=catalogue-back';
 import { routeTargetId, trackUi } from '../../utils/track.js';
 import { renderNotFound } from '../not-found.js';
 
 export async function renderLineupPage(target, id) {
+  const route = parseHash();
   const lineup = await loadLineup(id);
   if (!lineup) {
     renderNotFound(target);
@@ -71,7 +72,7 @@ export async function renderLineupPage(target, id) {
       }),
       renderLineupRoster(lineup.players),
       renderLineupStats(lineup, games),
-      renderLineupGamesCatalogue(games),
+      renderLineupGamesCatalogue(games, route),
     ]),
   );
 }

@@ -107,7 +107,11 @@ test('a warmup-only homepage shows both ranking empty states and no invented cha
   try {
     const target = new Element('main');
     await renderHomePage(target);
-    assert.match(target.textContent, /Champion information is not provided/);
+    assert.doesNotMatch(target.textContent, /Champion information is not provided|Season champion/);
+    const entries = descendants(target).filter((node) => node.className === 'home-analysis__link');
+    assert.equal(entries.length, 2);
+    assert.equal(entries[0].attributes.href, '#/compare?mode=player&league=LPL&year=2025');
+    assert.equal(entries[1].attributes.href, '#/compare?mode=lineup&league=LPL&year=2025');
     assert.match(target.textContent, /No team meets the sample requirement/);
     assert.match(target.textContent, /No TOP player/);
     assert.equal(descendants(target).filter((node) => node.className === 'empty-state').length, 2);

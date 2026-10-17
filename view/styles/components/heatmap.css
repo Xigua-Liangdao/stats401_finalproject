@@ -94,6 +94,50 @@
   font-size: 8px;
 }
 
+.heatmap-shared-legend {
+  grid-column: 1 / -1;
+  display: grid;
+  gap: 0.45rem;
+  margin: 0;
+  padding: 0.8rem 1rem;
+  font-family: var(--font-mono);
+}
+
+.heatmap-shared-legend__title {
+  color: var(--text);
+  font-size: 0.76rem;
+}
+
+.heatmap-shared-legend__strip {
+  display: block;
+  width: 100%;
+  height: 12px;
+  border-radius: 3px;
+}
+
+.heatmap-shared-legend__ticks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  color: var(--muted);
+  font-size: 0.68rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.heatmap-shared-legend__ticks span:nth-child(2) {
+  text-align: center;
+}
+
+.heatmap-shared-legend__ticks span:last-child {
+  text-align: right;
+}
+
+.heatmap-shared-legend__note {
+  margin: 0;
+  color: var(--dim);
+  font-size: 0.66rem;
+  line-height: 1.5;
+}
+
 .heatmap-detail {
   margin-top: 0.65rem;
   padding: 0.55rem 0.65rem 0.5rem;

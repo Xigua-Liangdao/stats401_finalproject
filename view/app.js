@@ -11,7 +11,7 @@ import { renderTeamPage } from './pages/team/team-page.js';
 import { h } from './utils/dom.js';
 import { syncDeveloperIndicator } from '../analytics/developerMode.js';
 import { applyDocumentCopy, setLanguage, t } from './utils/i18n.js';
-import { datasetRequestForRoute, navigate, routeAfterDatasetChange, routeHref, startRouter } from './utils/navigation.js?v=catalogue-back';
+import { datasetRequestForRoute, navigate, parseHash, routeAfterDatasetChange, routeHref, startRouter } from './utils/navigation.js?v=catalogue-back';
 import { leagueOptions, loadDatasetManifest, seasonOptions, setDatasetSelection } from './utils/season.js';
 import { dataSource } from './utils/data-source.js';
 import { createRouteTransition, shouldPlayRouteWipe } from './utils/route-transition.js';
@@ -74,7 +74,7 @@ async function render(route) {
       onLeagueChange: (league) => changeDataset({ league }),
       onSeasonChange: (year) => changeDataset({ league: entry.league, year }),
       onLanguageChange: (id) => {
-        if (setLanguage(id)) render(currentRoute);
+        if (setLanguage(id)) render(parseHash());
       },
     });
 
@@ -101,8 +101,8 @@ async function render(route) {
       }
       try {
         if (renderedRoute.name === 'home') await renderHomePage(target);
-        else if (renderedRoute.name === 'compare') await renderComparisonPage(target);
-        else if (renderedRoute.name === 'players') await renderPlayerCataloguePage(target, renderedRoute.page);
+        else if (renderedRoute.name === 'compare') await renderComparisonPage(target, renderedRoute);
+        else if (renderedRoute.name === 'players') await renderPlayerCataloguePage(target, renderedRoute.page, renderedRoute.query);
         else if (renderedRoute.name === 'player') await renderPlayerPage(target, renderedRoute.id, renderedRoute.teamId, renderedRoute.year);
         else if (renderedRoute.name === 'lineup') await renderLineupPage(target, renderedRoute.id);
         else if (renderedRoute.name === 'team') await renderTeamPage(target, renderedRoute.id);

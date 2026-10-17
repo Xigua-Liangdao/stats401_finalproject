@@ -36,7 +36,40 @@ export function routeHref(route, selection = getSelectedDataset()) {
     path = `#/${route.name}/${encodeURIComponent(route.id)}`;
     if (route.teamId) params.set('team', route.teamId);
   } else if (route.name === 'not-found') path = '#/not-found';
+  if (route.name === 'compare') {
+    if (route.mode === 'lineup') params.set('mode', 'lineup');
+    for (const [key, field] of Object.entries(COMPARISON_PARAMS)) {
+      if (route[field]) params.set(key, route[field]);
+    }
+  }
+  if (route.name === 'players' && route.query) params.set('q', route.query);
+  if (['player', 'lineup'].includes(route.name)) {
+    if (clampPage(route.gamePage) > 1) params.set('gamePage', String(clampPage(route.gamePage)));
+    if (route.dateOrder === 'asc') params.set('order', 'asc');
+    for (const field of ['split', 'patch']) {
+      if (route[field]) params.set(field, route[field]);
+    }
+    if (['win', 'loss'].includes(route.result)) params.set('result', route.result);
+  }
   return withDataset(`${path}${params.size ? `?${params}` : ''}`, selection);
+}
+
+const COMPARISON_PARAMS = {
+  leftTeam: 'leftTeamId', rightTeam: 'rightTeamId', left: 'leftId', right: 'rightId',
+};
+
+// Update the current analysis without rebuilding the page or adding a history
+// entry for every selector/keystroke. The complete URL remains shareable.
+export function updateRouteState(patch, expectedRoute) {
+  const current = parseHash();
+  if (expectedRoute && ['name', 'id', 'teamId', 'league', 'year'].some((field) => (
+    String(current[field] ?? '') !== String(expectedRoute[field] ?? '')
+  ))) return current;
+  const route = { ...current, ...patch };
+  const selection = route.league && route.year ? route : getSelectedDataset();
+  const url = `${window.location.pathname}${window.location.search}${routeHref(route, selection)}`;
+  history.replaceState(history.state, '', url);
+  return route;
 }
 
 export function routeAfterDatasetChange(route) {
@@ -94,9 +127,7 @@ export function rememberCataloguePage(kind, page) {
   writeCataloguePage(kind, page);
   return (next) => {
     writeCataloguePage(kind, next);
-    const nextHash = catalogueHref(kind, next);
-    const url = `${window.location.pathname}${window.location.search}${nextHash}`;
-    history.replaceState(null, '', url);
+    updateRouteState({ page: next });
   };
 }
 
@@ -182,10 +213,18 @@ export function parseHash(hash = window.location.hash) {
   const route = (record) => ({ ...record, ...context });
 
   if (parts.length === 0) return route({ name: 'home' });
-  if (parts[0] === 'compare' && parts.length === 1) return route({ name: 'compare' });
+  if (parts[0] === 'compare' && parts.length === 1) {
+    const state = { name: 'compare' };
+    if (params.get('mode') === 'lineup') state.mode = 'lineup';
+    for (const [key, field] of Object.entries(COMPARISON_PARAMS)) {
+      if (params.get(key)) state[field] = params.get(key);
+    }
+    return route(state);
+  }
   if (parts[0] === 'players') {
     if (parts[1] && !/^\d+$/.test(parts[1])) return { name: 'not-found' };
-    return route({ name: 'players', page: parseCataloguePage(parts[1]) });
+    return route({ name: 'players', page: parseCataloguePage(parts[1]),
+      ...(params.get('q') ? { query: params.get('q') } : {}) });
   }
   let id;
   try { id = parts[1] ? decodeURIComponent(parts[1]) : null; }
@@ -193,14 +232,26 @@ export function parseHash(hash = window.location.hash) {
   if (parts[0] === 'player' && id) return route({
     name: 'player', id,
     teamId: params.get('team'), season: context.year ?? null,
+    ...gameTableState(params),
   });
   if (parts[0] === 'lineups') {
     if (parts[1] && !/^\d+$/.test(parts[1])) return { name: 'not-found' };
     return route({ name: 'players', page: parseCataloguePage(parts[1]) });
   }
-  if (parts[0] === 'lineup' && id) return route({ name: 'lineup', id });
+  if (parts[0] === 'lineup' && id) return route({ name: 'lineup', id, ...gameTableState(params) });
   if (parts[0] === 'team' && id) return route({ name: 'team', id });
   return route({ name: 'not-found' });
+}
+
+function gameTableState(params) {
+  const state = {};
+  if (clampPage(params.get('gamePage')) > 1) state.gamePage = clampPage(params.get('gamePage'));
+  if (params.get('order') === 'asc') state.dateOrder = 'asc';
+  for (const field of ['split', 'patch']) {
+    if (params.get(field)) state[field] = params.get(field);
+  }
+  if (['win', 'loss'].includes(params.get('result'))) state.result = params.get('result');
+  return state;
 }
 
 export function navigate(to) {
@@ -209,9 +260,12 @@ export function navigate(to) {
 
 export function startRouter(onRoute) {
   let lastHash = null;
-  const handle = () => {
+  const handle = (event) => {
     const nextHash = normalizeHash(window.location.hash || '#/');
-    if (lastHash) recordNavigation(lastHash, nextHash);
+    // replaceState can change filters between hashchange events. oldURL keeps
+    // the actual departing analysis in the in-app Back action.
+    const fromHash = event?.oldURL ? new URL(event.oldURL).hash : lastHash;
+    if (fromHash) recordNavigation(fromHash, nextHash);
     lastHash = nextHash;
     onRoute(parseHash(nextHash));
   };

@@ -5,7 +5,9 @@ import { formatRole } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
 import { entityNameParts, matchesQuery } from '../../utils/search-text.js';
 import { trackUi } from '../../utils/track.js';
+import { updateRouteState } from '../../utils/navigation.js';
 import { createLineupComparison, createPlayerComparison } from './comparison-result.js';
+import { resolveComparisonState } from './comparison-state.js';
 
 function teamMark(team) {
   const img = h('img', {
@@ -18,10 +20,10 @@ function teamMark(team) {
   return img;
 }
 
-function createSearchSelect({ label, placeholder, options, onChange, side }) {
+function createSearchSelect({ label, placeholder, options, onChange, side, initialValue = '' }) {
   let open = false;
   let query = '';
-  let value = '';
+  let value = initialValue;
   const trigger = h('button', {
     type: 'button',
     class: 'search-select__trigger',
@@ -146,12 +148,10 @@ function subjectPlaceholder(mode) {
   return mode === 'lineup' ? t('compare.selectLineup') : t('compare.selectPlayer');
 }
 
-export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam }) {
-  let mode = 'player';
-  let leftTeamId = '';
-  let rightTeamId = '';
-  let leftId = '';
-  let rightId = '';
+export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam, initialState = {} }) {
+  let { mode, leftTeamId, rightTeamId, leftId, rightId } = resolveComparisonState(
+    initialState, { teams, playersByTeam, lineupsByTeam },
+  );
   const players = [...playersByTeam.values()].flat();
   const teamOptions = teams.map((team) => ({
     id: team.id,
@@ -162,10 +162,10 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
   }));
 
   const playerButton = h('button', {
-    class: 'radar-zoom-btn', type: 'button', 'aria-pressed': 'true',
+    class: 'radar-zoom-btn', type: 'button', 'aria-pressed': String(mode === 'player'),
   }, [t('common.player')]);
   const lineupButton = h('button', {
-    class: 'radar-zoom-btn', type: 'button', 'aria-pressed': 'false',
+    class: 'radar-zoom-btn', type: 'button', 'aria-pressed': String(mode === 'lineup'),
   }, [t('common.lineup')]);
   const leftSubject = createSubjectSelect(t('common.player'));
   const rightSubject = createSubjectSelect(t('common.player'));
@@ -176,6 +176,21 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
   const result = h('div', { class: 'compare-stage' }, [
     h('p', { class: 'compare-stage__label' }, [t('compare.selectBoth')]),
   ]);
+  let controlsCollapsed = false;
+  const selection = h('p', { class: 'compare-selection', 'aria-live': 'polite' });
+  const toggle = h('button', {
+    class: 'compare-controls-toggle', type: 'button', 'aria-controls': 'compare-controls',
+  });
+
+  function syncCollapse() {
+    root.classList.toggle('is-controls-collapsed', controlsCollapsed);
+    toggle.setAttribute('aria-expanded', String(!controlsCollapsed));
+    toggle.textContent = t(controlsCollapsed ? 'compare.editSelection' : 'compare.hideSelection');
+  }
+
+  function persist() {
+    updateRouteState({ mode, leftTeamId, rightTeamId, leftId, rightId }, initialState);
+  }
 
   function roster(teamId) {
     if (!teamId) return [];
@@ -255,7 +270,15 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     paintRosters();
     const left = entity(leftTeamId, leftId);
     const right = entity(rightTeamId, rightId);
-    if (!left || !right || left.id === right.id) {
+    const ready = Boolean(left && right && left.id !== right.id);
+    root.classList.toggle('has-comparison', ready);
+    controlsCollapsed = ready;
+    selection.textContent = ready ? t('compare.selectionSummary', {
+      left: `${left.name} · ${left.team?.short || left.team?.name || ''}`,
+      right: `${right.name} · ${right.team?.short || right.team?.name || ''}`,
+    }) : '';
+    syncCollapse();
+    if (!ready) {
       result.className = 'compare-stage';
       result.replaceChildren(h('p', { class: 'compare-stage__label' }, [t('compare.selectBoth')]));
       return;
@@ -270,6 +293,8 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     fillSubject(changedSide === 'left' ? rightSubject : leftSubject, changedSide === 'left' ? 'right' : 'left');
     fillSubject(changedSide === 'left' ? leftSubject : rightSubject, changedSide);
     paint();
+    persist();
+    if (controlsCollapsed && window.matchMedia('(max-width: 720px)').matches) toggle.focus();
   }
 
   const leftTeam = createSearchSelect({
@@ -277,6 +302,7 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     placeholder: t('compare.selectTeam'),
     options: teamOptions,
     side: 'left',
+    initialValue: leftTeamId,
     onChange: (teamId) => {
       leftTeamId = teamId;
       leftId = '';
@@ -288,6 +314,7 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     placeholder: t('compare.selectTeam'),
     options: teamOptions,
     side: 'right',
+    initialValue: rightTeamId,
     onChange: (teamId) => {
       rightTeamId = teamId;
       rightId = '';
@@ -312,6 +339,7 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     fillSubject(rightSubject, 'right');
     syncContent();
     paint();
+    persist();
   }
 
   playerButton.addEventListener('click', () => setMode('player'));
@@ -345,6 +373,10 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     refresh('right');
   });
   contentSelect.addEventListener('change', paint);
+  toggle.addEventListener('click', () => {
+    controlsCollapsed = !controlsCollapsed;
+    syncCollapse();
+  });
   fillSubject(leftSubject, 'left');
   fillSubject(rightSubject, 'right');
   syncContent();
@@ -356,7 +388,7 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     roster,
   ]);
 
-  return h('div', { class: 'compare-section' }, [
+  const controls = h('div', { class: 'compare-controls', id: 'compare-controls' }, [
     h('div', { class: 'compare-mode', role: 'group', 'aria-label': t('compare.type') }, [
       playerButton,
       lineupButton,
@@ -370,6 +402,13 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
       ]),
       side(t('common.right'), rightTeam, rightSubject, rightRoster),
     ]),
+  ]);
+  const root = h('div', { class: 'compare-section' }, [
+    h('div', { class: 'compare-selection-bar' }, [selection, toggle]),
+    controls,
     result,
   ]);
+  paint();
+  persist();
+  return root;
 }

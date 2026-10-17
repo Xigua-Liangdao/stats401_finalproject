@@ -1,4 +1,6 @@
 export default {
+  "stat.evaluatedWinRate": "已评估比赛胜率 · {count} 场",
+  "stat.seasonWinRate": "全赛季胜率 · {count} 场",
   "stat.kda": "KDA",
   "stat.kdaHint": "（击杀 + 助攻）/ max(死亡, 1)",
   "stat.dpmHint": "每分钟对英雄伤害",

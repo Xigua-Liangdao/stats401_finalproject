@@ -22,7 +22,7 @@ function renderSeasonStats(player, games) {
           value: statValue(record.gamesPlayed, 'count'),
         },
         {
-          label: t('common.winRate'),
+          label: t('stat.seasonWinRate', { count: statValue(record.decidedGames, 'count') }),
           hint: t('player.winHint'),
           value: statValue(record.winRate, 'percent'),
         },

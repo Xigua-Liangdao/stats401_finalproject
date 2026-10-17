@@ -1,4 +1,6 @@
 export default {
+  "stat.evaluatedWinRate": "Evaluated-game win rate · {count} games",
+  "stat.seasonWinRate": "Full-season win rate · {count} games",
   "stat.kda": "KDA",
   "stat.kdaHint": "(Kills + assists) / max(deaths, 1)",
   "stat.dpmHint": "Damage to champions per minute",

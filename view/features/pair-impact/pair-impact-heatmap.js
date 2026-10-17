@@ -5,6 +5,7 @@ import { PLACEHOLDER } from '../../utils/constants.js';
 import { t } from '../../utils/i18n.js';
 import { createTooltipWatch } from '../../utils/track.js';
 import { createEligibilityNotice } from '../../components/layout/eligibility-notice.js';
+import { PAIR_HEATMAP_COLORS } from './pair-impact-scale.js';
 
 function playerLabel(player) {
   const role = player.role ? formatRole(player.role) : PLACEHOLDER;
@@ -19,7 +20,7 @@ function colorScale(limit) {
   return d3
     .scaleLinear()
     .domain([-limit, 0, limit])
-    .range(['#c35264', '#1c2a40', '#3ec8ff'])
+    .range(PAIR_HEATMAP_COLORS)
     .clamp(true);
 }
 
@@ -87,7 +88,33 @@ function renderDetail(detail, cell, players) {
 
 let heatmapSerial = 0;
 
-export function createPairHeatmapPanel({ heatmap, selectedIds = [], teamName, onInspect, bind }) {
+export function createSharedPairHeatmapLegend(limit) {
+  const gradientId = `heatmap-shared-scale-${heatmapSerial += 1}`;
+  const strip = d3.create('svg')
+    .attr('class', 'heatmap-shared-legend__strip')
+    .attr('viewBox', '0 0 600 12')
+    .attr('preserveAspectRatio', 'none')
+    .attr('aria-hidden', 'true');
+  const gradient = strip.append('defs').append('linearGradient')
+    .attr('id', gradientId).attr('color-interpolation', 'sRGB');
+  PAIR_HEATMAP_COLORS.forEach((color, index) => {
+    gradient.append('stop').attr('offset', `${index * 50}%`).attr('stop-color', color);
+  });
+  strip.append('rect').attr('width', 600).attr('height', 12).attr('fill', `url(#${gradientId})`);
+
+  return h('figure', { class: 'heatmap-shared-legend panel', dataset: { colorLimit: limit } }, [
+    h('figcaption', { class: 'heatmap-shared-legend__title' }, [t('heat.sharedScale')]),
+    strip.node(),
+    h('div', { class: 'heatmap-shared-legend__ticks' }, [
+      h('span', {}, [formatImpact(-limit)]),
+      h('span', {}, ['0']),
+      h('span', {}, [formatImpact(limit)]),
+    ]),
+    h('p', { class: 'heatmap-shared-legend__note' }, [t('heat.sharedScaleNote')]),
+  ]);
+}
+
+export function createPairHeatmapPanel({ heatmap, selectedIds = [], teamName, onInspect, bind, colorLimit, showLegend = true }) {
   const { players, hasEligiblePair } = heatmap;
   const stage = h('div', { class: 'viz-stage pair-heatmap-stage', role: 'presentation' });
   const detail = h('div', { class: 'heatmap-detail', 'aria-live': 'polite' });
@@ -108,18 +135,20 @@ export function createPairHeatmapPanel({ heatmap, selectedIds = [], teamName, on
 
   queueMicrotask(() => {
     if (!stage.isConnected) return;
-    const api = mountPairHeatmap(stage, detail, { heatmap, selectedIds, onInspect });
+    const api = mountPairHeatmap(stage, detail, { heatmap, selectedIds, onInspect, colorLimit, showLegend });
     bind?.(api);
   });
 
   return node;
 }
 
-export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onInspect } = {}) {
+export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onInspect, colorLimit, showLegend = true } = {}) {
   stage.classList.add('is-mounted');
   stage.replaceChildren();
 
-  const { players, cells, limit } = heatmap;
+  const { players, cells } = heatmap;
+  const limit = colorLimit ?? heatmap.limit;
+  stage.dataset.colorLimit = String(limit);
   const tooltipWatch = createTooltipWatch('pair-impact');
   const svg = d3.create('svg').attr('class', 'chart-svg').attr('role', 'img');
   svg.append('title').text(t('heat.svg'));
@@ -209,7 +238,7 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
     const split = n > 5;
     const labelW = Math.min(108, Math.max(72, width * 0.22));
     const labelH = 72;
-    const legendGutter = split ? 64 : 28;
+    const legendGutter = showLegend ? (split ? 64 : 28) : 8;
     const size = split
       ? Math.max(160, width - labelW - legendGutter)
       : Math.min(width - labelW - legendGutter, Math.max(stage.clientHeight, 280) - labelH - 8);
@@ -321,6 +350,8 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
       }
     });
     applyActive();
+
+    if (!showLegend) return;
 
     const legendX = originX + size + 8;
     const legendY = originY;

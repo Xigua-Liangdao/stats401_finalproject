@@ -84,6 +84,69 @@
   text-transform: uppercase;
 }
 
+.home-analysis {
+  display: grid;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.home-analysis__kicker {
+  color: var(--accent);
+}
+
+.home-analysis__link {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--accent);
+  border-radius: var(--radius);
+  background: var(--bg-slot);
+  color: inherit;
+}
+
+.home-analysis__link:last-child {
+  border-left-color: var(--gold);
+}
+
+.home-analysis__link:hover,
+.home-analysis__link:focus-visible {
+  border-color: var(--accent);
+  outline: 1px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.home-analysis__index,
+.home-analysis__arrow {
+  flex: none;
+  color: var(--accent);
+}
+
+.home-analysis__copy {
+  display: grid;
+  flex: 1;
+  min-width: 0;
+  gap: 0.12rem;
+}
+
+.home-analysis__copy strong {
+  font-size: 0.96rem;
+  line-height: 1.35;
+  color: var(--text);
+}
+
+.home-analysis__copy > span {
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.4;
+}
+
+.home-analysis__arrow {
+  font-size: 1.25rem;
+}
+
 .home-title {
   margin: 0.22rem 0 0.55rem;
   font-family: var(--font-display);
@@ -389,9 +452,34 @@
 
 @media (max-width: 640px) {
   .home-hero,
-  .home-overview dl,
   .home-teams__row {
     grid-template-columns: 1fr;
+  }
+
+  .home-hero {
+    gap: 0.85rem;
+    padding-bottom: 0.85rem;
+  }
+
+  .home-overview dl {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .home-metric {
+    padding: 0.6rem 0.65rem;
+  }
+
+  .home-overview dt,
+  .home-overview__note {
+    font-size: 0.7rem;
+    letter-spacing: 0.02em;
+    line-height: 1.4;
+  }
+
+  .home-overview dd {
+    margin: 0.3rem 0 0.2rem;
+    font-size: 1.8rem;
   }
 
   .home-player__card {

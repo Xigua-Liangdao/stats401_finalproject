@@ -144,6 +144,7 @@ export function seasonRecord(games, season) {
   const wins = decided.filter((game) => game.result === 1).length;
   return {
     gamesPlayed: seasonGames.length,
+    decidedGames: decided.length,
     winRate: decided.length ? wins / decided.length : null,
     totalGames: games.length,
   };

@@ -3,7 +3,7 @@ import { dataSource } from '../../utils/data-source.js';
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
 import { formatCount, formatFixed, formatImpact, formatPercent, formatRole } from '../../utils/formatting.js';
-import { href } from '../../utils/navigation.js';
+import { href, withDataset } from '../../utils/navigation.js';
 import { getSelectedDataset } from '../../utils/season.js';
 import { RANKING_ROLES, RANKING_MIN_GAMES, RANKING_MIN_DAYS, rankPlayersByRole, rankTeamsByDamage } from './home-ranking.js';
 
@@ -83,10 +83,6 @@ export function championTeam(teams, dataset) {
 }
 
 function createChampion(team) {
-  if (!team) return h('section', { class: 'home-champion panel' }, [
-    h('div', { class: 'home-champion__kicker coord' }, [t('home.champion')]),
-    h('p', { class: 'home-champion__meta' }, [t('home.championMissing')]),
-  ]);
   return h('a', {
     class: 'home-champion panel',
     href: href.team(team.id),
@@ -108,6 +104,22 @@ function createChampion(team) {
   ]);
 }
 
+function createAnalysisEntries(dataset) {
+  return h('section', { class: 'home-analysis', 'aria-label': t('home.startAnalysis') }, [
+    h('div', { class: 'home-analysis__kicker coord' }, [t('home.startAnalysis')]),
+    ...['player', 'lineup'].map((mode, index) => h('a', {
+      class: 'home-analysis__link', href: withDataset(`#/compare?mode=${mode}`, dataset),
+    }, [
+      h('span', { class: 'home-analysis__index coord', 'aria-hidden': 'true' }, [String(index + 1).padStart(2, '0')]),
+      h('span', { class: 'home-analysis__copy' }, [
+        h('strong', {}, [t(`home.analyze${mode === 'player' ? 'Players' : 'Lineups'}`)]),
+        h('span', {}, [t(`home.${mode}Question`)]),
+      ]),
+      h('span', { class: 'home-analysis__arrow', 'aria-hidden': 'true' }, ['↗']),
+    ])),
+  ]);
+}
+
 function playerFacts(player) {
   const stats = player.stats ?? {};
   return [
@@ -115,7 +127,7 @@ function playerFacts(player) {
     [t('home.evaluated'), formatCount(stats.n_games)],
     [t('home.matchDays'), formatCount(stats.n_days)],
     [t('common.dpm'), formatFixed(stats.mean_dpm, 0)],
-    [t('common.winRate'), formatPercent(stats.win_rate)],
+    [t('stat.evaluatedWinRate', { count: formatCount(stats.n_games) }), formatPercent(stats.win_rate)],
   ];
 }
 
@@ -216,6 +228,7 @@ export async function renderHomePage(target) {
   const season = dataset?.year ?? catalog.season;
   const view = forSeason(catalog, season);
   const ranked = rankTeamsByDamage(view.teams);
+  const champion = championTeam(view.teams, dataset);
 
   target.append(
     h('div', { class: 'home' }, [
@@ -229,7 +242,7 @@ export async function renderHomePage(target) {
             end: dataset.date_end?.slice(0, 10) ?? '—',
           })]),
         ]),
-        createChampion(championTeam(view.teams, dataset)),
+        champion ? createChampion(champion) : createAnalysisEntries(dataset),
       ]),
       h('section', { class: 'home-overview', 'aria-label': t('home.overview') }, [
         h('dl', {}, overviewItems(view, dataset).map(([kind, label, value, note]) => (

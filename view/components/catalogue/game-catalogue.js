@@ -2,6 +2,7 @@ import { h } from '../../utils/dom.js';
 import { parseGameDate } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
 import { trackUi } from '../../utils/track.js';
+import { parseHash, updateRouteState } from '../../utils/navigation.js';
 import { GAME_PAGE_SIZE, fillPager } from './paged-list.js';
 import { createGameRow } from './game-row.js';
 
@@ -24,23 +25,23 @@ function headButton(className, onClick) {
   return h('button', { type: 'button', class: className, onClick });
 }
 
-export function createGameCatalogue({ games, onInfo, champion = false }) {
+export function createGameCatalogue({ games, onInfo, champion = false, route = parseHash() }) {
   const tbody = h('tbody');
   const pager = h('nav', { class: 'pager', 'aria-label': t('nav.pages') });
   const menu = h('div', { class: 'game-table__menu', role: 'menu', hidden: true });
-  let page = 1;
-  let dateOrder = 'desc';
-  let split = '';
-  let patch = '';
-  let result = '';
+  let page = Number.isSafeInteger(route.gamePage) && route.gamePage > 0 ? route.gamePage : 1;
+  let dateOrder = route.dateOrder === 'asc' ? 'asc' : 'desc';
+  let result = ['win', 'loss'].includes(route.result) ? route.result : '';
   let openMenu = '';
   let dismissMenu = null;
   const columnCount = champion ? 6 : 5;
   const splits = uniqueSorted(games.map((game) => game.split), splitCompare);
   const patches = uniqueSorted(
-    games.map((game) => game.patch),
+    games.map((game) => game.patch == null ? null : String(game.patch)),
     (a, b) => String(a).localeCompare(String(b), undefined, { numeric: true }),
   );
+  let split = splits.includes(route.split) ? route.split : '';
+  let patch = patches.includes(route.patch) ? route.patch : '';
 
   const dateButton = headButton('game-table__sort', () => {
     closeMenu();
@@ -211,6 +212,7 @@ export function createGameCatalogue({ games, onInfo, champion = false }) {
           h('td', { class: 'game-table__empty', colspan: String(columnCount) }, [t('catalogue.emptyGames')]),
         ])]));
     paintPager(items.length ? pageCount : 1);
+    updateRouteState({ gamePage: page, dateOrder, split, patch, result }, route);
   }
 
   const table = h('table', { class: 'game-table' }, [

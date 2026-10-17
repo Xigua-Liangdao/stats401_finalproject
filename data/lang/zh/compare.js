@@ -1,5 +1,11 @@
 export default {
   "compare.search": "搜索{label}",
+  "compare.editSelection": "更换对比对象",
+  "compare.hideSelection": "收起选择，查看图表",
+  "compare.selectionSummary": "{left} 对比 {right}",
+  "compare.evaluatedGames": "已评估比赛",
+  "compare.evaluatedWinRate": "已评估比赛胜率",
+  "compare.sampleCount": "{count} 场",
   "compare.selectLineup": "选择阵容",
   "compare.selectPlayer": "选择选手",
   "compare.selectTeam": "选择战队",
