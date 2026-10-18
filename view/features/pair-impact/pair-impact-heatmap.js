@@ -1,3 +1,4 @@
+import { CHART_MIN_HEIGHT, CHART_MIN_WIDTH } from '../../utils/chart-layout.js';
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { formatCount, formatImpact, formatPercent, formatRole } from '../../utils/formatting.js';
@@ -6,6 +7,40 @@ import { t } from '../../utils/i18n.js';
 import { createTooltipWatch } from '../../utils/track.js';
 import { createEligibilityNotice } from '../../components/layout/eligibility-notice.js';
 import { PAIR_HEATMAP_COLORS } from './pair-impact-scale.js';
+
+const SPLIT_PLAYER_COUNT = 5;
+const LABEL_WIDTH_MAX = 108;
+const LABEL_WIDTH_MIN = 72;
+const LABEL_WIDTH_RATIO = 0.22;
+const LABEL_HEIGHT = 72;
+const LEGEND_GUTTER_SPLIT = 64;
+const LEGEND_GUTTER = 28;
+const LEGEND_GUTTER_NONE = 8;
+const SPLIT_MIN_SIZE = 160;
+const SPLIT_HEIGHT_PAD = 12;
+const COMPACT_HEIGHT_PAD = 8;
+const LEGEND_WIDTH = 12;
+const ORIGIN_Y = 6;
+const CELL_TEXT_MIN = 34;
+const CELL_DETAIL_MIN = 46;
+const CELL_LABEL_LIFT = 6;
+const CELL_COUNT_DROP = 8;
+const TICK_GAP = 8;
+const COLUMN_LABEL_DROP = 10;
+const COLUMN_LABEL_ANGLE = -48;
+const CELL_INSET = 1;
+const CELL_GAP = 2;
+const CELL_RADIUS = 2;
+const EMPTY_CELL_FILL = 'rgba(18, 28, 46, 0.92)';
+const LABEL_CONTRAST = 0.65;
+const LEGEND_GAP = 8;
+const LEGEND_TICK_GAP = 4;
+const SHARED_LEGEND_WIDTH = 600;
+const SHARED_LEGEND_HEIGHT = 12;
+const SHARED_LEGEND_STOP = 50;
+const GRADIENT_START = '0%';
+const GRADIENT_MID = '50%';
+const GRADIENT_END = '100%';
 
 function playerLabel(player) {
   const role = player.role ? formatRole(player.role) : PLACEHOLDER;
@@ -92,15 +127,15 @@ export function createSharedPairHeatmapLegend(limit) {
   const gradientId = `heatmap-shared-scale-${heatmapSerial += 1}`;
   const strip = d3.create('svg')
     .attr('class', 'heatmap-shared-legend__strip')
-    .attr('viewBox', '0 0 600 12')
+    .attr('viewBox', `0 0 ${SHARED_LEGEND_WIDTH} ${SHARED_LEGEND_HEIGHT}`)
     .attr('preserveAspectRatio', 'none')
     .attr('aria-hidden', 'true');
   const gradient = strip.append('defs').append('linearGradient')
     .attr('id', gradientId).attr('color-interpolation', 'sRGB');
   PAIR_HEATMAP_COLORS.forEach((color, index) => {
-    gradient.append('stop').attr('offset', `${index * 50}%`).attr('stop-color', color);
+    gradient.append('stop').attr('offset', `${index * SHARED_LEGEND_STOP}%`).attr('stop-color', color);
   });
-  strip.append('rect').attr('width', 600).attr('height', 12).attr('fill', `url(#${gradientId})`);
+  strip.append('rect').attr('width', SHARED_LEGEND_WIDTH).attr('height', SHARED_LEGEND_HEIGHT).attr('fill', `url(#${gradientId})`);
 
   return h('figure', { class: 'heatmap-shared-legend panel', dataset: { colorLimit: limit } }, [
     h('figcaption', { class: 'heatmap-shared-legend__title' }, [t('heat.sharedScale')]),
@@ -233,16 +268,16 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
       return;
     }
     const width = stage.clientWidth;
-    if (width < 40 || width === drawnWidth) return;
+    if (width < CHART_MIN_WIDTH || width === drawnWidth) return;
     drawnWidth = width;
-    const split = n > 5;
-    const labelW = Math.min(108, Math.max(72, width * 0.22));
-    const labelH = 72;
-    const legendGutter = showLegend ? (split ? 64 : 28) : 8;
+    const split = n > SPLIT_PLAYER_COUNT;
+    const labelW = Math.min(LABEL_WIDTH_MAX, Math.max(LABEL_WIDTH_MIN, width * LABEL_WIDTH_RATIO));
+    const labelH = LABEL_HEIGHT;
+    const legendGutter = showLegend ? (split ? LEGEND_GUTTER_SPLIT : LEGEND_GUTTER) : LEGEND_GUTTER_NONE;
     const size = split
-      ? Math.max(160, width - labelW - legendGutter)
-      : Math.min(width - labelW - legendGutter, Math.max(stage.clientHeight, 280) - labelH - 8);
-    const height = split ? size + labelH + 12 : Math.max(stage.clientHeight, 280);
+      ? Math.max(SPLIT_MIN_SIZE, width - labelW - legendGutter)
+      : Math.min(width - labelW - legendGutter, Math.max(stage.clientHeight, CHART_MIN_HEIGHT) - labelH - COMPACT_HEIGHT_PAD);
+    const height = split ? size + labelH + SPLIT_HEIGHT_PAD : Math.max(stage.clientHeight, CHART_MIN_HEIGHT);
     if (split) stage.style.height = `${height}px`;
     svg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
     svg.selectAll('*').remove();
@@ -258,25 +293,25 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
       return;
     }
 
-    const legendW = 12;
+    const legendW = LEGEND_WIDTH;
     const originX = labelW;
-    const originY = 6;
+    const originY = ORIGIN_Y;
     const cellSize = size / n;
-    const showCellText = cellSize >= 34;
+    const showCellText = cellSize >= CELL_TEXT_MIN;
     const root = svg.append('g');
 
     players.forEach((player, index) => {
       const isSelected = selected.has(player.id);
       root.append('text')
         .attr('class', isSelected ? 'heatmap-tick heatmap-tick--selected' : 'heatmap-tick')
-        .attr('x', originX - 8)
+        .attr('x', originX - TICK_GAP)
         .attr('y', originY + (index + 0.5) * cellSize)
         .attr('text-anchor', 'end')
         .attr('dominant-baseline', 'middle')
         .text(playerLabel(player));
       root.append('text')
         .attr('class', isSelected ? 'heatmap-tick heatmap-tick--selected' : 'heatmap-tick')
-        .attr('transform', `translate(${originX + (index + 0.5) * cellSize}, ${originY + size + 10}) rotate(-48)`)
+        .attr('transform', `translate(${originX + (index + 0.5) * cellSize}, ${originY + size + COLUMN_LABEL_DROP}) rotate(${COLUMN_LABEL_ANGLE})`)
         .attr('text-anchor', 'end')
         .attr('dominant-baseline', 'hanging')
         .text(playerLabel(player));
@@ -288,12 +323,12 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
       .data(cells)
       .join('rect')
       .attr('class', (cell) => `heatmap-cell heatmap-cell--${cell.kind}`)
-      .attr('x', (cell) => originX + cell.col * cellSize + 1)
-      .attr('y', (cell) => originY + cell.row * cellSize + 1)
-      .attr('width', Math.max(0, cellSize - 2))
-      .attr('height', Math.max(0, cellSize - 2))
-      .attr('rx', 2)
-      .attr('fill', (cell) => (hasScore(cell) ? fill(cell.value) : 'rgba(18, 28, 46, 0.92)'))
+      .attr('x', (cell) => originX + cell.col * cellSize + CELL_INSET)
+      .attr('y', (cell) => originY + cell.row * cellSize + CELL_INSET)
+      .attr('width', Math.max(0, cellSize - CELL_GAP))
+      .attr('height', Math.max(0, cellSize - CELL_GAP))
+      .attr('rx', CELL_RADIUS)
+      .attr('fill', (cell) => (hasScore(cell) ? fill(cell.value) : EMPTY_CELL_FILL))
       .attr('tabindex', 0)
       .attr('role', 'button')
       .attr('aria-pressed', 'false')
@@ -330,19 +365,19 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
       if (showCellText && hasScore(cell)) {
         const abs = Math.abs(cell.value);
         root.append('text')
-          .attr('class', abs > 0.65 * limit ? 'heatmap-cell-label heatmap-cell-label--on' : 'heatmap-cell-label')
+          .attr('class', abs > LABEL_CONTRAST * limit ? 'heatmap-cell-label heatmap-cell-label--on' : 'heatmap-cell-label')
           .attr('pointer-events', 'none')
           .attr('x', x + cellSize / 2)
-          .attr('y', y + cellSize / 2 - (cellSize >= 46 ? 6 : 0))
+          .attr('y', y + cellSize / 2 - (cellSize >= CELL_DETAIL_MIN ? CELL_LABEL_LIFT : 0))
           .attr('text-anchor', 'middle')
           .attr('dominant-baseline', 'middle')
           .text(formatImpact(cell.value));
-        if (cellSize >= 46) {
+        if (cellSize >= CELL_DETAIL_MIN) {
           root.append('text')
-            .attr('class', abs > 0.65 * limit ? 'heatmap-cell-label heatmap-cell-label--on' : 'heatmap-cell-label')
+            .attr('class', abs > LABEL_CONTRAST * limit ? 'heatmap-cell-label heatmap-cell-label--on' : 'heatmap-cell-label')
             .attr('pointer-events', 'none')
             .attr('x', x + cellSize / 2)
-            .attr('y', y + cellSize / 2 + 8)
+            .attr('y', y + cellSize / 2 + CELL_COUNT_DROP)
             .attr('text-anchor', 'middle')
             .attr('dominant-baseline', 'middle')
             .text(`n=${formatCount(cell.pair.stats.n_games)}`);
@@ -353,16 +388,16 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
 
     if (!showLegend) return;
 
-    const legendX = originX + size + 8;
+    const legendX = originX + size + LEGEND_GAP;
     const legendY = originY;
     const legendH = size;
     const legendScale = d3.scaleLinear().domain([limit, -limit]).range([legendY, legendY + legendH]);
     const ticks = [limit, 0, -limit];
     const defs = svg.append('defs');
     const gradient = defs.append('linearGradient').attr('id', gradientId).attr('x1', '0').attr('x2', '0').attr('y1', '0').attr('y2', '1');
-    gradient.append('stop').attr('offset', '0%').attr('stop-color', fill(limit));
-    gradient.append('stop').attr('offset', '50%').attr('stop-color', fill(0));
-    gradient.append('stop').attr('offset', '100%').attr('stop-color', fill(-limit));
+    gradient.append('stop').attr('offset', GRADIENT_START).attr('stop-color', fill(limit));
+    gradient.append('stop').attr('offset', GRADIENT_MID).attr('stop-color', fill(0));
+    gradient.append('stop').attr('offset', GRADIENT_END).attr('stop-color', fill(-limit));
     root.append('rect')
       .attr('x', legendX)
       .attr('y', legendY)
@@ -372,7 +407,7 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
     ticks.forEach((tick) => {
       root.append('text')
         .attr('class', 'heatmap-legend-tick')
-        .attr('x', legendX + legendW + 4)
+        .attr('x', legendX + legendW + LEGEND_TICK_GAP)
         .attr('y', legendScale(tick))
         .attr('dominant-baseline', tick === limit ? 'hanging' : tick === -limit ? 'auto' : 'middle')
         .text(formatImpact(tick));

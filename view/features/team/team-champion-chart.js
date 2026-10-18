@@ -1,3 +1,4 @@
+import { CHART_MIN_HEIGHT, CHART_MIN_WIDTH, TOOLTIP_RESERVE, placeTooltip } from '../../utils/chart-layout.js';
 import { createEligibilityNotice } from '../../components/layout/eligibility-notice.js';
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
@@ -6,6 +7,19 @@ import { t } from '../../utils/i18n.js';
 import { PLACEHOLDER } from '../../utils/constants.js';
 import { isEligible } from '../../utils/stats.js';
 import { createTooltipWatch, trackUi } from '../../utils/track.js';
+
+const ROW_CHROME = 52;
+const ROW_HEIGHT = 28;
+const ROW_TAIL = 36;
+const MARGIN = { top: 12, right: 44, bottom: 36, left: 128 };
+const BAND_PADDING = 0.22;
+const MAX_X_TICKS = 8;
+const TICK_PADDING = 8;
+const X_LABEL_OFFSET = 30;
+const BAR_RADIUS = 2;
+const COUNT_GAP = 6;
+const COUNT_DOMAIN_FLOOR = 1;
+const PERCENT_SCALE = 100;
 
 export function championPickCounts(games) {
   const counts = new Map();
@@ -129,16 +143,14 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
   }
 
   function showTip(event, row, total) {
-    const share = total ? Math.round((row.n / total) * 100) : 0;
+    const share = total ? Math.round((row.n / total) * PERCENT_SCALE) : 0;
     tooltip.innerHTML = [
       `<div>${row.champion}</div>`,
       `<div>${t('team.pickGames', { count: formatCount(row.n) })}</div>`,
       `<div>${t('team.pickShare', { share })}</div>`,
     ].join('');
     tooltip.hidden = false;
-    const bounds = stage.getBoundingClientRect();
-    tooltip.style.left = `${Math.min(event.clientX - bounds.left + 12, bounds.width - 160)}px`;
-    tooltip.style.top = `${Math.max(8, event.clientY - bounds.top - 12)}px`;
+    placeTooltip(tooltip, event, stage, TOOLTIP_RESERVE);
   }
 
   function draw() {
@@ -148,8 +160,8 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
     }
     const { rows: data, playerName: name } = current;
     const width = stage.clientWidth;
-    if (width < 40) return;
-    const height = Math.max(280, 52 + data.length * 28 + 36);
+    if (width < CHART_MIN_WIDTH) return;
+    const height = Math.max(CHART_MIN_HEIGHT, ROW_CHROME + data.length * ROW_HEIGHT + ROW_TAIL);
     stage.style.minHeight = `${height}px`;
     svg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
     svg.selectAll('*').remove();
@@ -167,18 +179,18 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
       return;
     }
 
-    const margin = { top: 12, right: 44, bottom: 36, left: 128 };
-    const innerWidth = Math.max(40, width - margin.left - margin.right);
+    const margin = MARGIN;
+    const innerWidth = Math.max(CHART_MIN_WIDTH, width - margin.left - margin.right);
     const innerHeight = height - margin.top - margin.bottom;
     const plot = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
-    const maxCount = d3.max(data, (row) => row.n) || 1;
+    const maxCount = d3.max(data, (row) => row.n) || COUNT_DOMAIN_FLOOR;
     const total = d3.sum(data, (row) => row.n);
     const y = d3.scaleBand()
       .domain(data.map((row) => row.champion))
       .range([0, innerHeight])
-      .padding(0.22);
+      .padding(BAND_PADDING);
     const x = d3.scaleLinear().domain([0, maxCount]).range([0, innerWidth]);
-    const xTicks = x.ticks(Math.min(8, maxCount)).filter((tick) => Number.isInteger(tick));
+    const xTicks = x.ticks(Math.min(MAX_X_TICKS, maxCount)).filter((tick) => Number.isInteger(tick));
 
     plot.append('g')
       .attr('class', 'chart-grid')
@@ -191,12 +203,12 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
       .attr('transform', `translate(0,${innerHeight})`)
       .call(d3.axisBottom(x).tickValues(xTicks).tickFormat(d3.format('d')).tickSizeOuter(0));
 
-    plot.append('g').attr('class', 'chart-axis').call(d3.axisLeft(y).tickSize(0).tickPadding(8));
+    plot.append('g').attr('class', 'chart-axis').call(d3.axisLeft(y).tickSize(0).tickPadding(TICK_PADDING));
 
     plot.append('text')
       .attr('class', 'chart-axis-label')
       .attr('x', innerWidth)
-      .attr('y', innerHeight + 30)
+      .attr('y', innerHeight + X_LABEL_OFFSET)
       .attr('text-anchor', 'end')
       .text(t('common.games'));
 
@@ -209,7 +221,7 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
       .attr('y', (row) => y(row.champion))
       .attr('width', (row) => Math.max(0, x(row.n)))
       .attr('height', y.bandwidth())
-      .attr('rx', 2)
+      .attr('rx', BAR_RADIUS)
       .attr('tabindex', 0)
       .attr('role', 'img')
       .attr('aria-label', (row) => t('team.pickLabel', { champion: row.champion, count: formatCount(row.n) }))
@@ -227,7 +239,7 @@ export function mountTeamChampionChart(stage, { rows = [], playerName } = {}) {
       .join('text')
       .attr('class', 'chart-bar-count')
       .attr('pointer-events', 'none')
-      .attr('x', (row) => x(row.n) + 6)
+      .attr('x', (row) => x(row.n) + COUNT_GAP)
       .attr('y', (row) => y(row.champion) + y.bandwidth() / 2)
       .attr('dominant-baseline', 'middle')
       .text((row) => formatCount(row.n));

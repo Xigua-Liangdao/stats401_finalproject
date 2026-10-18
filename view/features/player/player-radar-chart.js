@@ -1,3 +1,14 @@
+import {
+  CHART_MIN_WIDTH,
+  FULL_SPAN,
+  RADAR_GRID_RINGS,
+  RADAR_INSET,
+  RADAR_LABEL_DY,
+  RADAR_LABEL_PAD,
+  RADAR_POINT_RADIUS,
+  RADAR_RANGE_DY,
+  placeTooltip,
+} from '../../utils/chart-layout.js';
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
@@ -8,6 +19,11 @@ import {
 } from './player-baseline.js';
 
 export { createRadarAxes, axisRangeLabel } from './player-baseline.js';
+
+const RADAR_MIN_HEIGHT = 260;
+const TOOLTIP_OFFSET = 10;
+const TOOLTIP_RESERVE_RADAR = 170;
+const PREDICTED_POINT_RADIUS = 4.2;
 
 export function createRadarScaleNote(axes, span = 1) {
   return h('div', { class: 'radar-scale-note' }, [
@@ -82,9 +98,7 @@ export function mountPlayerRadar(stage, { stats = {}, axes } = {}) {
     rows.push(t('radar.windowFrom', { range: axisRangeLabel(axis, span) }));
     tooltip.innerHTML = rows.map((line) => `<div>${line}</div>`).join('');
     tooltip.hidden = false;
-    const bounds = stage.getBoundingClientRect();
-    tooltip.style.left = `${Math.min(event.clientX - bounds.left + 10, bounds.width - 170)}px`;
-    tooltip.style.top = `${Math.max(8, event.clientY - bounds.top - 10)}px`;
+    placeTooltip(tooltip, event, stage, TOOLTIP_RESERVE_RADAR, { x: TOOLTIP_OFFSET, y: TOOLTIP_OFFSET });
   }
 
   function drawProfile(root, values, center, radius, className, dotRadius) {
@@ -111,8 +125,8 @@ export function mountPlayerRadar(stage, { stats = {}, axes } = {}) {
 
   function draw() {
     const width = stage.clientWidth;
-    const height = Math.max(stage.clientHeight, 260);
-    if (width < 40) return;
+    const height = Math.max(stage.clientHeight, RADAR_MIN_HEIGHT);
+    if (width < CHART_MIN_WIDTH) return;
     svg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
     svg.selectAll('*').remove();
 
@@ -128,12 +142,12 @@ export function mountPlayerRadar(stage, { stats = {}, axes } = {}) {
 
     const size = Math.min(width, height);
     const center = size / 2;
-    const radius = size / 2 - 64;
+    const radius = size / 2 - RADAR_INSET;
     const offsetX = (width - size) / 2;
     const offsetY = (height - size) / 2;
     const root = svg.append('g').attr('transform', `translate(${offsetX},${offsetY})`);
 
-    for (const ring of [0.25, 0.75, 1]) {
+    for (const ring of RADAR_GRID_RINGS) {
       root.append('polygon')
         .attr('class', 'radar-grid')
         .attr('points', polygon(axes.map(() => ring), center, radius));
@@ -145,25 +159,25 @@ export function mountPlayerRadar(stage, { stats = {}, axes } = {}) {
     }
 
     axes.forEach((axis, index) => {
-      const [x, y] = pointAt(center, radius, index, axes.length, 1);
+      const [x, y] = pointAt(center, radius, index, axes.length, FULL_SPAN);
       root.append('line')
         .attr('class', 'radar-axis')
         .attr('x1', center)
         .attr('y1', center)
         .attr('x2', x)
         .attr('y2', y);
-      const [lx, ly] = pointAt(center, radius + 28, index, axes.length, 1);
+      const [lx, ly] = pointAt(center, radius + RADAR_LABEL_PAD, index, axes.length, FULL_SPAN);
       const label = root.append('text')
         .attr('class', 'radar-label')
         .attr('x', lx)
         .attr('y', ly)
         .attr('text-anchor', 'middle')
         .attr('dominant-baseline', 'middle');
-      label.append('tspan').attr('x', lx).attr('dy', '-0.35em').text(axis.label);
+      label.append('tspan').attr('x', lx).attr('dy', RADAR_LABEL_DY).text(axis.label);
       label.append('tspan')
         .attr('class', 'radar-range')
         .attr('x', lx)
-        .attr('dy', '1.2em')
+        .attr('dy', RADAR_RANGE_DY)
         .text(axisRangeLabel(axis, span));
     });
 
@@ -172,7 +186,7 @@ export function mountPlayerRadar(stage, { stats = {}, axes } = {}) {
         .attr('class', 'radar-baseline')
         .attr('points', polygon(axes.map(() => BASELINE_RADIUS), center, radius));
     }
-    drawProfile(root, profileValues(stats, axes), center, radius, 'radar-actual', 3.2);
+    drawProfile(root, profileValues(stats, axes), center, radius, 'radar-actual', RADAR_POINT_RADIUS);
     if (showPredicted) axes.forEach((axis, index) => {
       const value = radiusFor(
         axis,
@@ -186,14 +200,14 @@ export function mountPlayerRadar(stage, { stats = {}, axes } = {}) {
         .attr('class', 'radar-predicted-point')
         .attr('cx', x)
         .attr('cy', y)
-        .attr('r', 4.2);
+        .attr('r', PREDICTED_POINT_RADIUS);
     });
 
     root.append('circle')
       .attr('class', 'radar-hit')
       .attr('cx', center)
       .attr('cy', center)
-      .attr('r', radius + 28)
+      .attr('r', radius + RADAR_LABEL_PAD)
       .on('mousemove', (event) => {
         const [mx, my] = d3.pointer(event, root.node());
         const angle = Math.atan2(my - center, mx - center);

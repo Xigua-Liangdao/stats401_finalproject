@@ -8,7 +8,7 @@ import { LINEUP_STAT_CARDS } from './lineup-data.js';
 import { createLineupRangeDock } from './lineup-range-dock.js';
 import { createLineupPlayback } from './lineup-playback.js';
 import { createLineupShareBarsPanel } from './lineup-share-bars.js';
-import { createLineupShareScatterPanel } from './lineup-share-scatter.js';
+import { createLineupShareScatterPanel } from './lineup-share-panel.js';
 
 export function renderLineupStats(lineup, games = []) {
   const stats = lineup.stats ?? {};

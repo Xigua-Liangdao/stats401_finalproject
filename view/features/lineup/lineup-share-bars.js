@@ -1,3 +1,15 @@
+import {
+  AXIS_TICKS,
+  CHART_MIN_HEIGHT,
+  CHART_MIN_WIDTH,
+  SHARE_DOMAIN_FLOOR,
+  COARSE_AXIS_TICKS,
+  PHONE_MEDIA,
+  TOOLTIP_RESERVE,
+  AXIS_TURN_DEG,
+  VERTICAL_LABEL,
+  placeTooltip,
+} from '../../utils/chart-layout.js';
 import { ROLE_COLORS, ROLE_ORDER } from '../../utils/constants.js';
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
@@ -7,6 +19,29 @@ import { href } from '../../utils/navigation.js';
 import { createTooltipWatch, trackUi } from '../../utils/track.js';
 import { createGameMark } from './lineup-range-dock.js';
 import { mixValue, roleValue } from './lineup-playback.js';
+
+const PHONE_MARGIN = { top: 12, right: 8, bottom: 58, left: 34 };
+const DESKTOP_MARGIN = { top: 16, right: 16, bottom: 48, left: 52 };
+const PHONE_BAND_PADDING = 0.18;
+const DESKTOP_BAND_PADDING = 0.28;
+const SERIES_BAND_PADDING = 0.12;
+const BAR_LABEL_MIN = 36;
+const BAR_LABEL_MIN_WIDTH = 12;
+const PHONE_NAME_ANGLE = -40;
+const DESKTOP_NAME_ANGLE = -28;
+const PHONE_LABEL_FONT = 8;
+const PHONE_TICK_PADDING = 2;
+const DESKTOP_TICK_PADDING = 3;
+const PHONE_AXIS_FONT = 9;
+const PHONE_TICK_Y = -8;
+const PHONE_Y_LABEL_OFFSET = -24;
+const DESKTOP_Y_LABEL_OFFSET = -40;
+const BAR_RADIUS = 2;
+const COUNT_ABOVE_GAP = 4;
+const COUNT_DY = '0.32em';
+const COUNT_FILL = '#102033';
+const NAME_DX = '-0.2em';
+const NAME_DY = '0.35em';
 
 const SHARE_SERIES = [
   { id: 'gold_share', tone: 'gold', get label() { return t('common.goldShare'); } },
@@ -30,7 +65,7 @@ function shareMax(games) {
   const values = games.flatMap((game) => SHARE_SERIES.flatMap((series) => (
     ROLE_ORDER.map((role) => roleValue(game, role, series.id))
   )));
-  return Math.max(0.2, d3.max(values.filter((value) => value != null)) ?? 0.2);
+  return Math.max(SHARE_DOMAIN_FLOOR, d3.max(values.filter((value) => value != null)) ?? SHARE_DOMAIN_FLOOR);
 }
 
 function shareLegend() {
@@ -124,9 +159,7 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback } 
       ...SHARE_SERIES.map((series) => `<div>${t('lineup.tipShare', { label: series.label, value: formatPercent(shownValue(row, series.id)) })}</div>`),
     ].filter(Boolean).join('');
     tooltip.hidden = false;
-    const bounds = stage.getBoundingClientRect();
-    tooltip.style.left = `${Math.min(event.clientX - bounds.left + 12, bounds.width - 160)}px`;
-    tooltip.style.top = `${Math.max(8, event.clientY - bounds.top - 12)}px`;
+    placeTooltip(tooltip, event, stage, TOOLTIP_RESERVE);
   }
 
   function openPlayer(row, series) {
@@ -146,8 +179,8 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback } 
       return;
     }
     const width = stage.clientWidth;
-    const height = Math.max(stage.clientHeight, 280);
-    if (width < 40) return;
+    const height = Math.max(stage.clientHeight, CHART_MIN_HEIGHT);
+    if (width < CHART_MIN_WIDTH) return;
     svg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
     svg.selectAll('*').remove();
     svg.append('title').text(t('lineup.vizShares'));
@@ -165,21 +198,19 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback } 
       return;
     }
 
-    const phone = window.matchMedia('(max-width: 640px)').matches;
-    const margin = phone
-      ? { top: 12, right: 8, bottom: 58, left: 34 }
-      : { top: 16, right: 16, bottom: 48, left: 52 };
-    const innerWidth = Math.max(40, width - margin.left - margin.right);
+    const phone = window.matchMedia(PHONE_MEDIA).matches;
+    const margin = phone ? PHONE_MARGIN : DESKTOP_MARGIN;
+    const innerWidth = Math.max(CHART_MIN_WIDTH, width - margin.left - margin.right);
     innerHeight = height - margin.top - margin.bottom;
     const plot = svg.append('g').attr('transform', `translate(${margin.left},${margin.top})`);
-    x = d3.scaleBand().domain(rows.map((row) => row.role)).range([0, innerWidth]).padding(phone ? 0.18 : 0.28);
-    xSeries = d3.scaleBand().domain(SHARE_SERIES.map((series) => series.id)).range([0, x.bandwidth()]).padding(0.12);
+    x = d3.scaleBand().domain(rows.map((row) => row.role)).range([0, innerWidth]).padding(phone ? PHONE_BAND_PADDING : DESKTOP_BAND_PADDING);
+    xSeries = d3.scaleBand().domain(SHARE_SERIES.map((series) => series.id)).range([0, x.bandwidth()]).padding(SERIES_BAND_PADDING);
     y = d3.scaleLinear().domain([0, shareMax(games)]).nice().range([innerHeight, 0]);
-    labelBars = xSeries.bandwidth() >= 36;
+    labelBars = xSeries.bandwidth() >= BAR_LABEL_MIN;
 
     plot.append('g')
       .attr('class', 'chart-grid')
-      .call(d3.axisLeft(y).ticks(5).tickSize(-innerWidth).tickFormat(() => ''))
+      .call(d3.axisLeft(y).ticks(AXIS_TICKS).tickSize(-innerWidth).tickFormat(() => ''))
       .select('.domain')
       .remove();
     const names = plot.append('g')
@@ -187,33 +218,33 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback } 
       .attr('transform', `translate(0,${innerHeight})`)
       .call(d3.axisBottom(x).tickFormat((role) => rows.find((row) => row.role === role)?.name ?? formatRole(role)).tickSizeOuter(0));
     names.selectAll('text')
-      .attr('transform', phone ? 'rotate(-40)' : 'rotate(-28)')
-      .style('font-size', phone ? '8px' : null)
+      .attr('transform', phone ? `rotate(${PHONE_NAME_ANGLE})` : `rotate(${DESKTOP_NAME_ANGLE})`)
+      .style('font-size', phone ? `${PHONE_LABEL_FONT}px` : null)
       .style('fill', (role) => ROLE_COLORS[role] ?? null)
       .attr('text-anchor', 'end')
-      .attr('dx', '-0.2em')
-      .attr('dy', '0.35em');
+      .attr('dx', NAME_DX)
+      .attr('dy', NAME_DY);
     const yAxis = plot.append('g')
       .attr('class', 'chart-axis chart-axis--y')
-      .call(d3.axisLeft(y).ticks(4).tickFormat((value) => formatPercent(value)).tickSizeOuter(0).tickPadding(phone ? 2 : 3));
+      .call(d3.axisLeft(y).ticks(COARSE_AXIS_TICKS).tickFormat((value) => formatPercent(value)).tickSizeOuter(0).tickPadding(phone ? PHONE_TICK_PADDING : DESKTOP_TICK_PADDING));
     if (phone) {
       yAxis.selectAll('text')
-        .style('font-size', '9px')
-        .attr('transform', 'rotate(-90)')
+        .style('font-size', `${PHONE_AXIS_FONT}px`)
+        .attr('transform', VERTICAL_LABEL)
         .attr('text-anchor', 'middle')
         .attr('x', 0)
         .attr('dx', null)
         .attr('dy', null)
-        .attr('y', -8);
+        .attr('y', PHONE_TICK_Y);
     }
     const yLabel = plot.append('text')
       .attr('class', 'chart-axis-label')
-      .attr('transform', 'rotate(-90)')
+      .attr('transform', VERTICAL_LABEL)
       .attr('x', 0)
-      .attr('y', phone ? -24 : -40)
+      .attr('y', phone ? PHONE_Y_LABEL_OFFSET : DESKTOP_Y_LABEL_OFFSET)
       .attr('text-anchor', 'end')
       .text(t('common.share'));
-    if (phone) yLabel.style('font-size', '9px');
+    if (phone) yLabel.style('font-size', `${PHONE_AXIS_FONT}px`);
 
     const marks = plot.selectAll('.share-mark').data(rows).join('g')
       .attr('class', 'share-mark')
@@ -224,7 +255,7 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback } 
       .attr('class', (item) => `share-bar share-bar--${item.series.tone}`)
       .attr('x', (item) => xSeries(item.series.id))
       .attr('width', xSeries.bandwidth())
-      .attr('rx', 2)
+      .attr('rx', BAR_RADIUS)
       .attr('tabindex', 0)
       .attr('role', 'link')
       .on('mousemove', (event, item) => showTip(event, item.row))
@@ -244,7 +275,7 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback } 
       .attr('class', 'chart-bar-count')
       .attr('pointer-events', 'none')
       .attr('text-anchor', 'middle')
-      .style('font-size', phone ? '8px' : null);
+      .style('font-size', phone ? `${PHONE_LABEL_FONT}px` : null);
     paint(frameState);
   }
 
@@ -283,17 +314,17 @@ export function mountLineupShareBars(stage, { rows = [], games = [], playback } 
       if (labelBars) {
         text.attr('transform', null)
           .attr('x', center)
-          .attr('y', top - 4)
+          .attr('y', top - COUNT_ABOVE_GAP)
           .style('fill', null)
           .text(caption);
         return;
       }
-      if (barHeight >= 36 && barWidth >= 12) {
-        text.attr('transform', `rotate(-90, ${center}, ${top + barHeight / 2})`)
+      if (barHeight >= BAR_LABEL_MIN && barWidth >= BAR_LABEL_MIN_WIDTH) {
+        text.attr('transform', `rotate(${AXIS_TURN_DEG}, ${center}, ${top + barHeight / 2})`)
           .attr('x', center)
           .attr('y', top + barHeight / 2)
-          .attr('dy', '0.32em')
-          .style('fill', '#102033')
+          .attr('dy', COUNT_DY)
+          .style('fill', COUNT_FILL)
           .text(caption);
         return;
       }

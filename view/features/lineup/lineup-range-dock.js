@@ -1,3 +1,11 @@
+import {
+  BRUSH_EDGE,
+  BRUSH_HEIGHT,
+  BRUSH_MIN_SPAN,
+  BRUSH_PAD,
+  CHART_MIN_WIDTH,
+  SPARK_INSET,
+} from '../../utils/chart-layout.js';
 import { ROLE_ORDER } from '../../utils/constants.js';
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
@@ -5,6 +13,14 @@ import { formatCompactDate, formatResult } from '../../utils/formatting.js';
 import { t } from '../../utils/i18n.js';
 import { trackUi } from '../../utils/track.js';
 import { roleValue } from './lineup-playback.js';
+
+const MIN_BRUSH_SELECTION = 8;
+const SPARK_FLAT_PAD = 0.05;
+const PLAYHEAD_INSET_Y = 4;
+const PLAYHEAD_LINE_INSET = 2;
+const PLAYHEAD_MIN_WIDTH = 2;
+const PLAYHEAD_RADIUS = 3.5;
+const PLAYHEAD_CORNER = 2;
 
 function sideKey(side) {
   const value = String(side ?? '').toLowerCase();
@@ -210,7 +226,7 @@ export function createLineupRangeDock({ playback }) {
     const fromX = xIndex(frameState.from);
     marker.select('rect')
       .attr('x', Math.min(fromX, x))
-      .attr('width', Math.max(2, Math.abs(x - fromX)));
+      .attr('width', Math.max(PLAYHEAD_MIN_WIDTH, Math.abs(x - fromX)));
     marker.select('line').attr('x1', x).attr('x2', x);
     marker.select('circle').attr('cx', x);
   }
@@ -223,15 +239,15 @@ export function createLineupRangeDock({ playback }) {
     const x1 = xIndex(to);
     if (!Number.isFinite(x0) || !Number.isFinite(x1)) return;
     movingBrush = true;
-    brushG.call(brush.move, x1 - x0 < 8 ? [x0, x0 + 8] : [x0, x1]);
+    brushG.call(brush.move, x1 - x0 < MIN_BRUSH_SELECTION ? [x0, x0 + MIN_BRUSH_SELECTION] : [x0, x1]);
     movingBrush = false;
   }
 
   function layoutBrush(width) {
-    const height = 36;
-    const pad = 10;
+    const height = BRUSH_HEIGHT;
+    const pad = BRUSH_PAD;
     brushSvg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
-    xIndex = d3.scaleLinear().domain([0, Math.max(1, lastIndex)]).range([pad, Math.max(pad + 1, width - pad)]);
+    xIndex = d3.scaleLinear().domain([0, Math.max(BRUSH_MIN_SPAN, lastIndex)]).range([pad, Math.max(pad + BRUSH_MIN_SPAN, width - pad)]);
     let backdrop = brushSvg.select('.timeline-brush-back');
     if (backdrop.empty()) backdrop = brushSvg.insert('g', '.timeline-brush').attr('class', 'timeline-brush-back');
     backdrop.selectAll('*').remove();
@@ -248,24 +264,24 @@ export function createLineupRangeDock({ playback }) {
     if (spark.length > 1) {
       const extent = d3.extent(spark, (point) => point.value);
       const ySpark = d3.scaleLinear()
-        .domain(extent[0] === extent[1] ? [extent[0] - 0.05, extent[1] + 0.05] : extent)
-        .range([height - 6, 6]);
+        .domain(extent[0] === extent[1] ? [extent[0] - SPARK_FLAT_PAD, extent[1] + SPARK_FLAT_PAD] : extent)
+        .range([height - SPARK_INSET, SPARK_INSET]);
       backdrop.append('path')
         .attr('class', 'timeline-spark')
         .attr('fill', 'none')
         .attr('d', d3.line().x((point) => xIndex(point.index)).y((point) => ySpark(point.value))(spark));
     }
-    brush.extent([[pad, 3], [Math.max(pad + 1, width - pad), height - 3]]);
+    brush.extent([[pad, BRUSH_EDGE], [Math.max(pad + BRUSH_MIN_SPAN, width - pad), height - BRUSH_EDGE]]);
     brushG.call(brush);
     let marker = brushSvg.select('.timeline-playhead');
     if (marker.empty()) {
       marker = brushSvg.append('g').attr('class', 'timeline-playhead');
-      marker.append('rect').attr('y', 4).attr('height', height - 8).attr('rx', 2);
-      marker.append('line').attr('y1', 2).attr('y2', height - 2);
-      marker.append('circle').attr('cy', height / 2).attr('r', 3.5);
+      marker.append('rect').attr('y', PLAYHEAD_INSET_Y).attr('height', height - PLAYHEAD_INSET_Y * 2).attr('rx', PLAYHEAD_CORNER);
+      marker.append('line').attr('y1', PLAYHEAD_LINE_INSET).attr('y2', height - PLAYHEAD_LINE_INSET);
+      marker.append('circle').attr('cy', height / 2).attr('r', PLAYHEAD_RADIUS);
     } else {
-      marker.select('rect').attr('height', height - 8);
-      marker.select('line').attr('y2', height - 2);
+      marker.select('rect').attr('height', height - PLAYHEAD_INSET_Y * 2);
+      marker.select('line').attr('y2', height - PLAYHEAD_LINE_INSET);
       marker.select('circle').attr('cy', height / 2);
     }
     marker.raise();
@@ -280,7 +296,7 @@ export function createLineupRangeDock({ playback }) {
       return;
     }
     const width = Math.round(node.clientWidth);
-    if (width > 40 && width !== brushWidth) layoutBrush(width);
+    if (width > CHART_MIN_WIDTH && width !== brushWidth) layoutBrush(width);
   });
   observer.observe(node);
 

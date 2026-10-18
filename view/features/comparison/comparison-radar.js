@@ -1,3 +1,13 @@
+import {
+  CHART_MIN_WIDTH,
+  FULL_SPAN,
+  RADAR_GRID_RINGS,
+  RADAR_INSET,
+  RADAR_LABEL_DY,
+  RADAR_LABEL_PAD,
+  RADAR_POINT_RADIUS,
+  RADAR_RANGE_DY,
+} from '../../utils/chart-layout.js';
 import { d3 } from '../../utils/d3.js';
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
@@ -11,6 +21,11 @@ import {
   profileValues,
   radiusFor,
 } from '../player/player-baseline.js';
+
+const RADAR_MIN_HEIGHT = 360;
+const TOOLTIP_OFFSET = 10;
+const TOOLTIP_EDGE = 8;
+const TOOLTIP_RESERVE_RADAR = 180;
 
 function pointAt(center, radius, index, total, value) {
   const angle = -Math.PI / 2 + (Math.PI * 2 * index) / total;
@@ -78,13 +93,13 @@ function mount(stage, tip, { left, right, axes }) {
     tip.replaceChildren(...lines.map((line) => h('div', {}, [line])));
     tip.hidden = false;
     const bounds = stage.getBoundingClientRect();
-    tip.style.left = `${Math.min(event.clientX - bounds.left + 10, Math.max(8, bounds.width - 180))}px`;
-    tip.style.top = `${Math.max(8, event.clientY - bounds.top - 10)}px`;
+    tip.style.left = `${Math.min(event.clientX - bounds.left + TOOLTIP_OFFSET, Math.max(TOOLTIP_EDGE, bounds.width - TOOLTIP_RESERVE_RADAR))}px`;
+    tip.style.top = `${Math.max(TOOLTIP_EDGE, event.clientY - bounds.top - TOOLTIP_OFFSET)}px`;
   }
 
   function drawProfile(root, stats, center, radius, className) {
     const radii = profileValues(stats, axes).map((value, index) => (
-      radiusFor(axes[index], value, baselineValue(stats, axes[index].key), 1)
+      radiusFor(axes[index], value, baselineValue(stats, axes[index].key), FULL_SPAN)
     ));
     for (const segment of profileSegments(radii)) {
       const points = segment.points
@@ -102,7 +117,7 @@ function mount(stage, tip, { left, right, axes }) {
           .attr('class', `${className}-point`)
           .attr('cx', x)
           .attr('cy', y)
-          .attr('r', 3.2);
+          .attr('r', RADAR_POINT_RADIUS);
       }
     }
   }
@@ -113,45 +128,45 @@ function mount(stage, tip, { left, right, axes }) {
       return;
     }
     const width = stage.clientWidth;
-    const height = Math.max(stage.clientHeight, 360);
-    if (width < 40) return;
+    const height = Math.max(stage.clientHeight, RADAR_MIN_HEIGHT);
+    if (width < CHART_MIN_WIDTH) return;
     svg.attr('viewBox', `0 0 ${width} ${height}`).attr('width', width).attr('height', height);
     svg.selectAll('*').remove();
 
     const size = Math.min(width, height);
     const center = size / 2;
-    const radius = size / 2 - 64;
+    const radius = size / 2 - RADAR_INSET;
     const root = svg.append('g').attr(
       'transform',
       `translate(${(width - size) / 2},${(height - size) / 2})`,
     );
 
-    for (const ring of [0.25, 0.75, 1]) {
+    for (const ring of RADAR_GRID_RINGS) {
       root.append('polygon')
         .attr('class', 'radar-grid')
         .attr('points', polygon(axes.map(() => ring), center, radius));
     }
     axes.forEach((axis, index) => {
-      const [x, y] = pointAt(center, radius, index, axes.length, 1);
+      const [x, y] = pointAt(center, radius, index, axes.length, FULL_SPAN);
       root.append('line')
         .attr('class', 'radar-axis')
         .attr('x1', center)
         .attr('y1', center)
         .attr('x2', x)
         .attr('y2', y);
-      const [lx, ly] = pointAt(center, radius + 28, index, axes.length, 1);
+      const [lx, ly] = pointAt(center, radius + RADAR_LABEL_PAD, index, axes.length, FULL_SPAN);
       const label = root.append('text')
         .attr('class', 'radar-label')
         .attr('x', lx)
         .attr('y', ly)
         .attr('text-anchor', 'middle')
         .attr('dominant-baseline', 'middle');
-      label.append('tspan').attr('x', lx).attr('dy', '-0.35em').text(axis.label);
+      label.append('tspan').attr('x', lx).attr('dy', RADAR_LABEL_DY).text(axis.label);
       label.append('tspan')
         .attr('class', 'radar-range')
         .attr('x', lx)
-        .attr('dy', '1.2em')
-        .text(axisRangeLabel(axis, 1));
+        .attr('dy', RADAR_RANGE_DY)
+        .text(axisRangeLabel(axis, FULL_SPAN));
     });
 
     root.append('polygon')
@@ -164,7 +179,7 @@ function mount(stage, tip, { left, right, axes }) {
       .attr('class', 'radar-hit')
       .attr('cx', center)
       .attr('cy', center)
-      .attr('r', radius + 28)
+      .attr('r', radius + RADAR_LABEL_PAD)
       .on('mousemove', (event) => {
         const [mx, my] = d3.pointer(event, root.node());
         const angle = Math.atan2(my - center, mx - center);
