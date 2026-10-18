@@ -8,6 +8,7 @@ export default {
   "compare.sampleCount": "{count} 场",
   "compare.selectLineup": "选择阵容",
   "compare.selectPlayer": "选择选手",
+  "compare.noPlayers": "没有选手",
   "compare.selectTeam": "选择战队",
   "compare.selectBoth": "请选择两侧",
   "compare.sameRole": "仅限相同位置",

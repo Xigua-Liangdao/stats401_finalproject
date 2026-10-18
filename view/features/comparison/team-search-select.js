@@ -1,6 +1,7 @@
 import { TEAM_LOGO_FALLBACK, bindImageFallback, teamLogoUrl } from '../../utils/assets.js';
 import { h } from '../../utils/dom.js';
 import { t } from '../../utils/i18n.js';
+import { formatRole } from '../../utils/formatting.js';
 import { entityNameParts, matchesQuery } from '../../utils/search-text.js';
 import { trackUi } from '../../utils/track.js';
 
@@ -15,10 +16,30 @@ function teamMark(team) {
   return img;
 }
 
-export function createSearchSelect({ label, placeholder, options, onChange, side, initialValue = '' }) {
+function optionParts(option) {
+  return [
+    option.label,
+    ...entityNameParts('teams', option.team),
+    ...(option.player ? [...entityNameParts('players', option.player), option.player.name, option.player.role, formatRole(option.player.role)] : []),
+    ...(option.players ?? []).flatMap((player) => entityNameParts('players', player)),
+  ];
+}
+
+export function createSearchSelect({
+  label,
+  placeholder,
+  options,
+  onChange,
+  side,
+  initialValue = '',
+  emptyLabel = t('catalogue.noTeams'),
+  selectType = 'team_selector',
+  searchType = 'team_search',
+}) {
   let open = false;
   let query = '';
   let value = initialValue;
+  let choices = options;
   const trigger = h('button', {
     type: 'button',
     class: 'search-select__trigger',
@@ -39,13 +60,13 @@ export function createSearchSelect({ label, placeholder, options, onChange, side
   ]);
 
   function current() {
-    return options.find((option) => option.id === value) ?? null;
+    return choices.find((option) => option.id === value) ?? null;
   }
 
   function paintTrigger() {
     const option = current();
     const parts = [];
-    if (option) parts.push(teamMark(option.team));
+    if (option?.team) parts.push(teamMark(option.team));
     parts.push(h('span', { class: option ? 'search-select__value' : 'search-select__placeholder' }, [
       option?.label ?? placeholder,
     ]));
@@ -54,10 +75,7 @@ export function createSearchSelect({ label, placeholder, options, onChange, side
   }
 
   function paintList() {
-    const shown = options.filter((option) => matchesQuery(query, [
-      ...entityNameParts('teams', option.team),
-      ...(option.players ?? []).flatMap((player) => entityNameParts('players', player)),
-    ]));
+    const shown = choices.filter((option) => matchesQuery(query, optionParts(option)));
     list.replaceChildren(...(shown.length
       ? shown.map((option) => {
         const item = h('button', {
@@ -66,23 +84,23 @@ export function createSearchSelect({ label, placeholder, options, onChange, side
           role: 'option',
           'aria-selected': option.id === value ? 'true' : 'false',
         }, [
-          teamMark(option.team),
+          ...(option.team ? [teamMark(option.team)] : []),
           h('span', {}, [option.label]),
         ]);
         item.addEventListener('click', () => {
           trackUi({
             event_name: 'click',
-            target_type: 'team_selector',
-            target_id: option.id,
+            target_type: selectType,
+            target_id: option.player?.id ?? option.id,
             metadata: { side },
           });
           value = option.id;
           close();
-          onChange?.(value);
+          onChange?.(option);
         });
         return item;
       })
-      : [h('p', { class: 'search-select__empty' }, [t('catalogue.noTeams')])]));
+      : [h('p', { class: 'search-select__empty' }, [emptyLabel])]));
   }
 
   function close() {
@@ -99,7 +117,7 @@ export function createSearchSelect({ label, placeholder, options, onChange, side
     open = true;
     trackUi({
       event_name: 'search_open',
-      target_type: 'team_search',
+      target_type: searchType,
       target_id: side,
     });
     menu.hidden = false;
@@ -124,6 +142,19 @@ export function createSearchSelect({ label, placeholder, options, onChange, side
     if (!node.contains(event.target)) close();
   });
 
+  function setValue(next) {
+    value = next ?? '';
+    if (open) paintList();
+    paintTrigger();
+  }
+
+  function setOptions(next) {
+    choices = next;
+    if (!choices.some((option) => option.id === value)) value = '';
+    if (open) paintList();
+    paintTrigger();
+  }
+
   paintTrigger();
-  return { node };
+  return { node, setValue, setOptions };
 }

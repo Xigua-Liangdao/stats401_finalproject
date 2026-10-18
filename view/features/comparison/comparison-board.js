@@ -70,6 +70,7 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
   }
 
   function roster(teamId) {
+    if (mode === 'player' && !teamId) return players;
     if (!teamId) return [];
     return mode === 'lineup'
       ? (lineupsByTeam.get(teamId) ?? [])
@@ -86,15 +87,23 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     return other?.role ?? null;
   }
 
+  function playerOption(player) {
+    const teamId = player.teamId || player.team?.id || '';
+    const teamName = player.team?.short || player.team?.name || '';
+    const name = `${player.name} · ${formatRole(player.role)}`;
+    return {
+      id: `${teamId}|${player.id}`,
+      label: teamName ? `${name} · ${teamName}` : name,
+      team: player.team,
+      player,
+    };
+  }
+
   function subjectsFor(teamId, side) {
     const role = lockedRole(side);
     const taken = side === 'left' ? rightId : leftId;
     return roster(teamId)
-      .filter((item) => (!role || item.role === role) && item.id !== taken)
-      .map((item) => ({
-        id: item.id,
-        label: mode === 'player' ? `${item.name} · ${formatRole(item.role)}` : item.name,
-      }));
+      .filter((item) => (!role || item.role === role) && item.id !== taken);
   }
 
   function fillSubject(field, side) {
@@ -103,15 +112,39 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     const options = subjectsFor(teamId, side);
     field.select.replaceChildren(
       h('option', { value: '' }, [subjectPlaceholder(mode)]),
-      ...options.map((option) => h('option', { value: option.id }, [option.label])),
+      ...options.map((item) => h('option', { value: item.id }, [item.name])),
     );
-    const keep = options.some((option) => option.id === current);
+    const keep = options.some((item) => item.id === current);
     field.select.value = keep ? current : '';
     field.select.disabled = !teamId;
     if (side === 'left') leftId = field.select.value;
     else rightId = field.select.value;
     field.label.data = subjectLabel(mode);
     field.select.setAttribute('aria-label', subjectLabel(mode));
+  }
+
+  function fillPlayerSearch(field, side) {
+    const teamId = side === 'left' ? leftTeamId : rightTeamId;
+    const current = side === 'left' ? leftId : rightId;
+    const options = subjectsFor(teamId, side).map(playerOption);
+    const selected = options.find((option) => option.player.id === current && (option.player.teamId || option.player.team?.id) === teamId);
+    field.setOptions(options);
+    field.setValue(selected?.id ?? '');
+    if (side === 'left') leftId = selected?.player.id ?? '';
+    else rightId = selected?.player.id ?? '';
+  }
+
+  function fillSide(field, search, side) {
+    if (mode === 'player') fillPlayerSearch(search, side);
+    else fillSubject(field, side);
+  }
+
+  function showSubjectControls() {
+    const players = mode === 'player';
+    leftPlayerSearch.node.hidden = !players;
+    rightPlayerSearch.node.hidden = !players;
+    leftSubject.node.hidden = players;
+    rightSubject.node.hidden = players;
   }
 
   function syncContent() {
@@ -167,8 +200,8 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
   }
 
   function refresh(changedSide) {
-    fillSubject(changedSide === 'left' ? rightSubject : leftSubject, changedSide === 'left' ? 'right' : 'left');
-    fillSubject(changedSide === 'left' ? leftSubject : rightSubject, changedSide);
+    fillSide(changedSide === 'left' ? rightSubject : leftSubject, changedSide === 'left' ? rightPlayerSearch : leftPlayerSearch, changedSide === 'left' ? 'right' : 'left');
+    fillSide(changedSide === 'left' ? leftSubject : rightSubject, changedSide === 'left' ? leftPlayerSearch : rightPlayerSearch, changedSide);
     paint();
     persist();
     if (controlsCollapsed && window.matchMedia(COMPARE_FOCUS_MEDIA).matches) toggle.focus();
@@ -180,8 +213,8 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     options: teamOptions,
     side: 'left',
     initialValue: leftTeamId,
-    onChange: (teamId) => {
-      leftTeamId = teamId;
+    onChange: (option) => {
+      leftTeamId = option?.id ?? '';
       leftId = '';
       refresh('left');
     },
@@ -192,9 +225,41 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     options: teamOptions,
     side: 'right',
     initialValue: rightTeamId,
-    onChange: (teamId) => {
-      rightTeamId = teamId;
+    onChange: (option) => {
+      rightTeamId = option?.id ?? '';
       rightId = '';
+      refresh('right');
+    },
+  });
+  const leftPlayerSearch = createSearchSelect({
+    label: t('common.player'),
+    placeholder: t('compare.selectPlayer'),
+    options: [],
+    side: 'left',
+    emptyLabel: t('compare.noPlayers'),
+    selectType: 'player_selector',
+    searchType: 'player_search',
+    onChange: (option) => {
+      const player = option?.player;
+      leftTeamId = player?.teamId || player?.team?.id || '';
+      leftId = player?.id ?? '';
+      leftTeam.setValue(leftTeamId);
+      refresh('left');
+    },
+  });
+  const rightPlayerSearch = createSearchSelect({
+    label: t('common.player'),
+    placeholder: t('compare.selectPlayer'),
+    options: [],
+    side: 'right',
+    emptyLabel: t('compare.noPlayers'),
+    selectType: 'player_selector',
+    searchType: 'player_search',
+    onChange: (option) => {
+      const player = option?.player;
+      rightTeamId = player?.teamId || player?.team?.id || '';
+      rightId = player?.id ?? '';
+      rightTeam.setValue(rightTeamId);
       refresh('right');
     },
   });
@@ -212,8 +277,9 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     rightId = '';
     playerButton.setAttribute('aria-pressed', mode === 'player' ? 'true' : 'false');
     lineupButton.setAttribute('aria-pressed', mode === 'lineup' ? 'true' : 'false');
-    fillSubject(leftSubject, 'left');
-    fillSubject(rightSubject, 'right');
+    showSubjectControls();
+    fillSide(leftSubject, leftPlayerSearch, 'left');
+    fillSide(rightSubject, rightPlayerSearch, 'right');
     syncContent();
     paint();
     persist();
@@ -254,13 +320,15 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
     controlsCollapsed = !controlsCollapsed;
     syncCollapse();
   });
-  fillSubject(leftSubject, 'left');
-  fillSubject(rightSubject, 'right');
+  showSubjectControls();
+  fillSide(leftSubject, leftPlayerSearch, 'left');
+  fillSide(rightSubject, rightPlayerSearch, 'right');
   syncContent();
 
-  const side = (kicker, teamSelect, subject, roster) => h('div', { class: 'compare-side' }, [
+  const side = (kicker, teamSelect, subject, playerSearch, roster) => h('div', { class: 'compare-side' }, [
     h('div', { class: 'coord compare-side__label' }, [kicker]),
     teamSelect.node,
+    playerSearch.node,
     subject.node,
     roster,
   ]);
@@ -271,13 +339,13 @@ export function createComparisonBoard({ teams = [], playersByTeam, lineupsByTeam
       lineupButton,
     ]),
     h('div', { class: 'compare-board' }, [
-      side(t('common.left'), leftTeam, leftSubject, leftRoster),
+      side(t('common.left'), leftTeam, leftSubject, leftPlayerSearch, leftRoster),
       h('div', { class: 'compare-content' }, [
         h('div', { class: 'coord compare-side__label' }, [t('common.content')]),
         h('label', { class: 'chart-control' }, [t('common.comparison'), contentSelect]),
         contentNote,
       ]),
-      side(t('common.right'), rightTeam, rightSubject, rightRoster),
+      side(t('common.right'), rightTeam, rightSubject, rightPlayerSearch, rightRoster),
     ]),
   ]);
   const root = h('div', { class: 'compare-section' }, [

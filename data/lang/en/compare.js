@@ -8,6 +8,7 @@ export default {
   "compare.sampleCount": "{count} games",
   "compare.selectLineup": "Select lineup",
   "compare.selectPlayer": "Select player",
+  "compare.noPlayers": "No players",
   "compare.selectTeam": "Select team",
   "compare.selectBoth": "Select both sides",
   "compare.sameRole": "Same role only",
