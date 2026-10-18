@@ -13,9 +13,9 @@ const LABEL_WIDTH_MAX = 108;
 const LABEL_WIDTH_MIN = 72;
 const LABEL_WIDTH_RATIO = 0.22;
 const LABEL_HEIGHT = 72;
-const LEGEND_GUTTER_SPLIT = 64;
-const LEGEND_GUTTER = 28;
 const LEGEND_GUTTER_NONE = 8;
+const LEGEND_LABEL_MIN = 36;
+const LEGEND_LABEL_PAD = 2;
 const SPLIT_MIN_SIZE = 160;
 const SPLIT_HEIGHT_PAD = 12;
 const COMPACT_HEIGHT_PAD = 8;
@@ -41,6 +41,18 @@ const SHARED_LEGEND_STOP = 50;
 const GRADIENT_START = '0%';
 const GRADIENT_MID = '50%';
 const GRADIENT_END = '100%';
+
+function legendGutterWidth(svg, limit) {
+  const sample = [formatImpact(limit), formatImpact(-Math.abs(limit))]
+    .reduce((widest, label) => (label.length > widest.length ? label : widest), '');
+  const probe = svg.append('text')
+    .attr('class', 'heatmap-legend-tick')
+    .attr('visibility', 'hidden')
+    .text(sample);
+  const measured = probe.node()?.getComputedTextLength() ?? 0;
+  probe.remove();
+  return LEGEND_GAP + LEGEND_WIDTH + LEGEND_TICK_GAP + Math.max(LEGEND_LABEL_MIN, measured) + LEGEND_LABEL_PAD;
+}
 
 function playerLabel(player) {
   const role = player.role ? formatRole(player.role) : PLACEHOLDER;
@@ -273,7 +285,7 @@ export function mountPairHeatmap(stage, detail, { heatmap, selectedIds = [], onI
     const split = n > SPLIT_PLAYER_COUNT;
     const labelW = Math.min(LABEL_WIDTH_MAX, Math.max(LABEL_WIDTH_MIN, width * LABEL_WIDTH_RATIO));
     const labelH = LABEL_HEIGHT;
-    const legendGutter = showLegend ? (split ? LEGEND_GUTTER_SPLIT : LEGEND_GUTTER) : LEGEND_GUTTER_NONE;
+    const legendGutter = showLegend ? legendGutterWidth(svg, limit) : LEGEND_GUTTER_NONE;
     const size = split
       ? Math.max(SPLIT_MIN_SIZE, width - labelW - legendGutter)
       : Math.min(width - labelW - legendGutter, Math.max(stage.clientHeight, CHART_MIN_HEIGHT) - labelH - COMPACT_HEIGHT_PAD);
