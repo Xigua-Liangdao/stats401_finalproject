@@ -1,6 +1,7 @@
 /** Generated from the message files in this folder. */
 import { locale, name } from './meta.js';
 import names from './names.js';
+import assistant from './assistant.js';
 import catalogue from './catalogue.js';
 import charts from './charts.js';
 import compare from './compare.js';
@@ -17,6 +18,7 @@ export default {
   name,
   locale,
   messages: {
+    ...assistant,
     ...catalogue,
     ...charts,
     ...compare,

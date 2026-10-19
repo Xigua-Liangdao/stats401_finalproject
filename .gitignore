@@ -10,3 +10,8 @@ model/reports/*/*/build.json
 model/reports/*/*/build.log
 
 data/processed
+
+# School API key for local worker dev. Never commit the real file.
+chat/.dev.vars
+.dev.vars
+chat/.wrangler/

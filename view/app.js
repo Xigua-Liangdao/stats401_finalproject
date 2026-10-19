@@ -15,6 +15,7 @@ import { datasetRequestForRoute, navigate, parseHash, routeAfterDatasetChange, r
 import { leagueOptions, loadDatasetManifest, seasonOptions, setDatasetSelection } from './utils/season.js';
 import { dataSource } from './utils/data-source.js';
 import { createRouteTransition, shouldPlayRouteWipe } from './utils/route-transition.js';
+import { mountAssistant } from './features/assistant/assistant-widget.js';
 
 applyDocumentCopy();
 syncDeveloperIndicator();
@@ -128,4 +129,5 @@ async function render(route) {
   }
 }
 
+mountAssistant(document.body);
 startRouter(render);

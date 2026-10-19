@@ -1,0 +1,15 @@
+name = "stats401-assistant"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+
+# The school API key does not belong in this file or in git.
+# From this directory:
+#   npx wrangler secret put AI_API_KEY
+#   npx wrangler deploy
+# Put the printed workers.dev origin into the assistant-endpoint meta tag.
+# Duke Kunshan's gateway is OpenAI-compatible. The sk- key stays in `wrangler secret`, not here.
+# A later public release only needs these two lines changed, for example to Qianwen.
+
+[vars]
+AI_API_URL = "https://aichat.dukekunshan.edu.cn:3443/v1"
+AI_MODEL = "auto_xc224"
