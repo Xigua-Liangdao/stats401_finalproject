@@ -17,18 +17,14 @@ body.is-starting .assistant {
   width: 58px;
   height: 58px;
   padding: 0;
-  border: 1px solid var(--line-strong);
+  border: 3px solid rgba(255, 248, 236, 0.92);
   border-radius: 50%;
   background:
-    radial-gradient(circle at 35% 30%, rgba(122, 223, 255, 0.5), transparent 46%),
-    var(--bg-elev);
-  color: var(--accent-strong);
-  box-shadow: var(--shadow-soft);
+    radial-gradient(circle at 32% 28%, #fff8ea 0%, rgba(255, 248, 234, 0) 28%),
+    radial-gradient(circle at 58% 68%, #ffe28a 0%, #ff8d6a 48%, #ff6d9d 100%);
+  box-shadow: 0 8px 18px rgba(255, 125, 154, 0.38);
   cursor: grab;
   touch-action: none;
-  font-family: var(--font-display);
-  font-size: 1.45rem;
-  letter-spacing: 0.04em;
 }
 
 .assistant.is-dragging .assistant__orb {

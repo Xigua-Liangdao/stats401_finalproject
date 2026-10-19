@@ -1,7 +1,6 @@
 export default {
   "assistant.open": "Open assistant",
   "assistant.close": "Close assistant",
-  "assistant.orb": "Ask",
   "assistant.title": "Assistant",
   "assistant.placeholder": "Ask about a player, a team, or this chart",
   "assistant.send": "Send",

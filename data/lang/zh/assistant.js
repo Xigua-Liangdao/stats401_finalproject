@@ -1,7 +1,6 @@
 export default {
   "assistant.open": "打开助手",
   "assistant.close": "收起助手",
-  "assistant.orb": "问",
   "assistant.title": "助手",
   "assistant.placeholder": "问问选手、战队，或这张图",
   "assistant.send": "发送",

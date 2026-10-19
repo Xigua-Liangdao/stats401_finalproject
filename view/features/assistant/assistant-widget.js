@@ -60,7 +60,7 @@ export function mountAssistant(parent = document.body) {
     type: 'button',
     'aria-expanded': 'false',
     'aria-label': t('assistant.open'),
-  }, [t('assistant.orb')]);
+  });
   host.append(panel, orb);
   parent.append(host);
 
@@ -128,7 +128,6 @@ export function mountAssistant(parent = document.body) {
   function setOpen(next) {
     open = next;
     panel.hidden = !open;
-    orb.textContent = t('assistant.orb');
     title.textContent = t('assistant.title');
     send.textContent = t('assistant.send');
     input.placeholder = t('assistant.placeholder');
