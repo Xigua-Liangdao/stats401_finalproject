@@ -95,6 +95,10 @@
   color: var(--dim);
 }
 
+.chart-control[hidden] {
+  display: none;
+}
+
 .chart-select {
   min-width: 11rem;
   padding: 0.35rem 0.5rem;
